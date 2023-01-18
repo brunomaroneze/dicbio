@@ -325,3 +325,47 @@ DataframeTotal$sentence[DataframeTotal$sentence=="Abertura da <b>anthera</b> pel
 write.csv(DataframeTotal, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
 
 rm(i, lematizar, CriaDataframeDados, CorpusMetadata, DadosdoDicionario, DataframeTotal, LematizacaoDataFrame)
+
+
+# Testes para o algoritmo que extrai dados do XML
+
+library(XML)
+library(xml2)
+library(stylo)
+
+CorpusTesteXML <- read_xml("tests/Vandelli.xml", encoding = "UTF-8")
+#corpusRoot <- xml_root(CorpusTesteXML)
+terms <- xml_find_all(CorpusTesteXML, "//term")
+tokenTerms <- xml_text(terms)
+token_lemma <- xml_attr(terms, attr = "lemma")
+token_orth <- xml_attr(terms, attr = "orth")
+token_gram <- xml_attr(terms, attr = "gram")
+token_senseNumber <- xml_attr(terms, attr = "senseNumber")
+
+token_sentence <- NULL
+for(i in 1:length(terms)){
+  token_sentence[i] <- as.character(xml_find_all(terms[i],
+                                                 xpath = "./ancestor::s"))
+  token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
+}
+
+DataFrameTesteXML <- data.frame(
+  token = tokenTerms,
+  lemma = token_lemma,
+  orth = token_orth,
+  gram = token_gram,
+  sensenumber = token_senseNumber,
+  sentence = token_sentence
+)
+
+for(x in 1:length(DataFrameTesteXML$lemma)){
+  if(is.na(DataFrameTesteXML$lemma[x])){
+    DataFrameTesteXML$lemma[x] <- DataFrameTesteXML$token[x]
+  }
+  if(is.na(DataFrameTesteXML$orth[x])){
+    DataFrameTesteXML$orth[x] <- DataFrameTesteXML$token[x]
+  }
+  if(is.na(DataFrameTesteXML$sensenumber[x])){
+    DataFrameTesteXML$sensenumber[x] <- "1"
+  }
+}
