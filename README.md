@@ -1,6 +1,6 @@
 # Dicionário Histórico de Termos da Biologia
 
-O *Dicionário Histórico de Termos da Biologia* é consultável neste link: https://dicionariodebiologia.shinyapps.io/Dicio_Biologia
+O *Dicionário Histórico de Termos da Biologia* é consultável neste link: https://dicbio.fflch.usp.br
 
 Este repositório contém o código-fonte desse dicionário (app.R) e os arquivos .CSV que o alimentam.
 
