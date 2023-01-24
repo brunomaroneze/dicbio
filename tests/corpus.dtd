@@ -1,0 +1,20 @@
+<!ELEMENT text (front, body, back)>
+<!ELEMENT front (#PCDATA|s|pb|note|obs|foreign)*>
+<!ELEMENT body (#PCDATA|s|pb|note|obs|foreign)*>
+<!ELEMENT back (#PCDATA|s|pb|note|obs|foreign)*>
+<!ELEMENT s (#PCDATA|w|term|note|pb|foreign)*>
+<!ELEMENT w (#PCDATA)>
+ <!ATTLIST w synonym CDATA #IMPLIED>
+ <!ATTLIST w orth CDATA #IMPLIED>
+<!ELEMENT pb EMPTY>
+ <!ATTLIST pb n CDATA #REQUIRED>
+<!ELEMENT term (#PCDATA)>
+ <!ATTLIST term lemma CDATA #IMPLIED>
+ <!ATTLIST term orth CDATA #IMPLIED>
+ <!ATTLIST term msd CDATA #IMPLIED>
+ <!ATTLIST term senseNumber CDATA #IMPLIED>
+<!ELEMENT note (#PCDATA|s|pb|obs|foreign)*>
+<!ELEMENT foreign (#PCDATA)>
+<!ATTLIST foreign lang CDATA #REQUIRED>
+<!ELEMENT obs (#PCDATA)>
+ <!ATTLIST obs info CDATA #REQUIRED>

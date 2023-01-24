@@ -339,7 +339,7 @@ terms <- xml_find_all(CorpusTesteXML, "//term")
 tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "orth")
-token_gram <- xml_attr(terms, attr = "gram")
+token_gram <- xml_attr(terms, attr = "msd")
 token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 
 token_sentence <- NULL

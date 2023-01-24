@@ -1,16 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE text SYSTEM "corpus.dtd">
 <text>
-    <s>DICCIONARIO DOS TERMOS TECHNICOS DE HISTORIA NATURAL EXTRAHIDOS Das Obras de Linnéo, com a sua explicaçaõ, e estampas abertas em cobre, para facilitar a <w synonym="entendimento">intelligencia</w> dos mesmos.</s>
+    <front><s>DICCIONARIO DOS TERMOS TECHNICOS DE HISTORIA NATURAL EXTRAHIDOS Das Obras de Linnéo, com a sua explicaçaõ, e estampas abertas em cobre, para facilitar a <w synonym="entendimento">intelligencia</w> dos mesmos.</s>
     E
-    <s>A MEMORIA SOBRE A UTILIDADE DOS JARDINS BOTANICOS QUE OFFERECE A RAYNHA D. MARIA I NOSSA SENHORA DOMINGOS VANDELLI Director do Real Jardim Botanico, e Lente das Cadeiras de Chymica, e de Historia Natural na Universidade de Coimbra, &amp;c.</s>
+    <s>A MEMORIA SOBRE A UTILIDADE DOS <term lemma="jardim botânico" orth="JARDINS BOTÂNICOS" msd="plural">JARDINS BOTANICOS</term> QUE OFFERECE A RAYNHA D. MARIA I NOSSA SENHORA DOMINGOS VANDELLI Director do Real <term lemma="jardim botânico" orth="Jardim Botânico">Jardim Botanico</term>, e Lente das Cadeiras de Chymica, e de Historia Natural na Universidade de Coimbra, &amp;c.</s>
     
     <s>COIMBRA
     Na Real Officina da Universidade.
     M DCC LXXXVIII.</s>
     <s>Com licença da Real Mesa da Cõmissaõ Geral sobre o Exame, e Censura dos Livros, Foi taixado este Livro em Papel a dous mil e duzentos reis.</s>
     <s>Vende-se na loje de Antonio Barneoud á Sé Velha.</s>
-    
-    <pb n="I"/>
-    B. L.
+    <pb n="I"/></front>
+    <body>B. L.
     
     <s>O Homem só com a força da sua imaginaçaõ naõ podia comer, nem vestir-se, nem executar os seus desejos; em fim nada podia fazer sem o auxilio das producçoens naturaes, que saõ a base de todas as Artes, de que dependem principalmente os commodos, e prazeres da vida.</s> <s>Pois que o conhecimento dellas contribue á felicidade humana.</s>
     Além disso tambem serve a exercer os genios mais sublimes, e serve de recreio, e divertimento ás pessoas, que estaõ em outra cousa occupadas.
@@ -18,7 +19,7 @@
     <s>No seculo passado, e no principio do presente haviaõ muitos Museos de Medalhas, dos quaes agora ha poucos, e preferem-se os da Historia Natural<note><s>A impossibilidade de se poderem ver todas as producçoens da Natureza espalhadas em paízes taõ remotos, supre o Museo, no qual como em hum Amphitheatro apparece em huma vista de olhos, o que o nosso Globo contém.</s> <s>V. Memoria sobre a utilidade, e uso dos Museos de Historia Natural. D. V.</s></note>.</s>
     O conhecimento das producçoens naturaes, ou a Historia Natural em toda a sua extensaõ abrange o Universo; por isso se dividio em varios generos de sciencias, as quaes muitas vezes se confundem. A Anatomia, Medicina, Economia, e muitas Artes saõ ramos dessa vasta sciencia, que se divide em Zoologia, Botanica, e Mineralogia.
     O estudo da Zoologia naõ consiste em hum simplex conhecimento dos nomes de cada animal; mas he necessario saber quanto for possivel a sua anatomia, seu modo de viver, e multiplicar, os seus alimentos, as utilidades, que desses se pódem tirar; e saber <pb n="III"/>aumentar, e curar, e sustentar os que saõ necessarios na economia; procurar descubrir os usos daquelles que ainda naõ conhecemos immediatamente, ou extinguillos se saõ nocivos, ou defender-se delles.
-    O saber pois somente o nome das plantas naõ he ser Botanico, o verdadeiro Botanico deve saber álem disso a parte mais difficultoza, e interessante, que he conhecer as suas propriedades, usos economicos, e medicinaes; saber a sua vegetaçaõ, modo de multiplicar as mais uteis, os terrenos mais convenientes para isso, e o modo de os fertilizar<note>Memoria sobre a utilidade dos Jardins Botanicos, a respeito da Agricultura, e principalmente da cultivaçaõ das charnecas pelo D.D. V. Lisboa.1, 70.</note>.
+    O saber pois somente o nome das plantas naõ he ser Botanico, o verdadeiro Botanico deve saber álem disso a parte mais difficultoza, e interessante, que he conhecer as suas propriedades, usos economicos, e medicinaes; saber a sua vegetaçaõ, modo de multiplicar as mais uteis, os terrenos mais convenientes para isso, e o modo de os fertilizar<note><s>Memoria sobre a utilidade dos <term lemma="jardim botânico" orth="Jardins Botânicos" msd="plural">Jardins Botanicos</term>, a respeito da Agricultura, e principalmente da cultivaçaõ das charnecas pelo D.D. V. Lisboa.1, 70.</s></note>.
     Os Naturalistas antigos conheciaõ as minas de Ferro; mas a falta de observar a propriedade de huma, que he o Magnete, a qual mostra o Norte, he quem privou os antigos por tantos seculos do commercio com as Naçoens mais distantes, e de saber a grandeza, e figura da Terra.
     <pb n="IV"/>Os Modernos pois com a mencionada  observação atreveraõ-se a entrar no alto mar, chegaraõ aos fins mais distantes da Affrica, reconheceraõ as praias orientaes da Asia, dirigindo-se ao Poente descobriraõ a America. 
     Naõ consiste pois o estudo da Historia Natural, na simples nomenclatura; mas nas observaçoens, e nas experiencias para conhecer as relaçoens, a ordem da Natureza, sua economia, policia, e formação da Terra, e rovoluçoens, que soffreo, e em fim as utilidades, que se pódem tirar das producçoens naturaes além das conhecidas. 
@@ -26,8 +27,8 @@
     Esta obra divide-se em Terminologia 1. dos Mammaes. 2. das Aves. 3. dos Peixes 4. dos Amphibios. 5. dos Insectos. 6. dos Vermes. 7. da Botanica. 8.e da Mineralogia.
     As obras de Fabricio, Gouvaõ, e Reuss serviraõ para os Insectos, Peixes, e pela Botanica.
     <s>Para facilitar pois o achar-se promptamente a <w orth="explicação">explicaõ</w> de cada termo, haverá no fim dous Indices geraes, que redusiraõ toda esta obra a hum verdadeiro Diccionario; accrescendo a isto todas as figuras necessarias para mais facilitar a intelligencia dos termos,</s>
-    <s>E por que os generos das Gramas saõ difficultosos, se accrescentou duas taboas com os riscos de todas  <term lemma="frutificação" orth="frutificações" gram="plural">frutificaçoens</term> dos ditos generos.</s>
-    E naõ tendo até agora huma Flora de <pb n="VI"/>Portugal<note>A unica obra de Botanica, que temos de Portugal, he o Viridarium Lusitanicum do Grysley, da qual obra assim me escreveo o Cel. Linnéo "<foreign xml:lang="lat">Postquam tota Europa calcata est Botanicorum pedibus, restat etiamnum sola Lusitania, quae India Europaea dicenda, &amp; felicissima Terra. Habemus tantum Grysley Viridarium Lusitanicum, miserrimum opus, cujus Plantas Oedipus sit, qui intelligat. Alit Ista Terra quamplurimas rarissimas plantas, uti constat ex numerosis istis Tournefortii Lusitanicis in Institutionibus R. Herbariae nominatis, sed nullibi descriptis, aut delineatis, adeoque etiamnum novis, quam nemo, nisi alter Oedipus intelligat.</foreign>" Lin. Epist. 10. an. 1765.</note>, e do Brasil, ajuntamos a este Diccionario hum ensayo dellas, com os nomes Portuguezes, virtudes medicinaes, e uso na Tinturaria. 
+    <s>E por que os generos das Gramas saõ difficultosos, se accrescentou duas taboas com os riscos de todas  <term lemma="frutificação" orth="frutificações" msd="plural">frutificaçoens</term> dos ditos generos.</s>
+    E naõ tendo até agora huma Flora de <pb n="VI"/>Portugal<note>A unica obra de Botanica, que temos de Portugal, he o Viridarium Lusitanicum do Grysley, da qual obra assim me escreveo o Cel. Linnéo "<foreign lang="lat">Postquam tota Europa calcata est Botanicorum pedibus, restat etiamnum sola Lusitania, quae India Europaea dicenda, &amp; felicissima Terra. Habemus tantum Grysley Viridarium Lusitanicum, miserrimum opus, cujus Plantas Oedipus sit, qui intelligat. Alit Ista Terra quamplurimas rarissimas plantas, uti constat ex numerosis istis Tournefortii Lusitanicis in Institutionibus R. Herbariae nominatis, sed nullibi descriptis, aut delineatis, adeoque etiamnum novis, quam nemo, nisi alter Oedipus intelligat.</foreign>" Lin. Epist. 10. an. 1765.</note>, e do Brasil, ajuntamos a este Diccionario hum ensayo dellas, com os nomes Portuguezes, virtudes medicinaes, e uso na Tinturaria. 
     <pb n="1"/>
     CLASSE I
     MAMMAES
@@ -1243,7 +1244,7 @@
     ROSTRUM. V. Os Rictus, Rostrum.
     S.
     SCABER, tuberculatus. A superficie com <pb n="70"/>tuberculos, ou pequenos aculeos, ou escamas reviradas &amp;c. Scorpæna.
-    <s>SCUTELLUM. He hum corpo de substancia entre <term lemma="cartilagíneo" orth="cartilagínea" gram="feminino singular">cartilaginea</term>, e coriacea, Lepadogaster, Gouan, quasi redondo, concavo marginado posto no abdomen do peixe.</s>
+    <s>SCUTELLUM. He hum corpo de substancia entre <term lemma="cartilagíneo" orth="cartilagínea" msd="feminino singular">cartilaginea</term>, e coriacea, Lepadogaster, Gouan, quasi redondo, concavo marginado posto no abdomen do peixe.</s>
     SEMISAGITTATUS. He aquella parte do peixe, que representa a figura de meia setta.
     SQUAMAE. Corpo pellucido corneo, que serve de tegumento aos peixes.
     Os tegumentos, que cobrem o tronco saõ, ou huma pelle simples, ou escamas. As escamas saõ corpos transparentes de natureza cornea, de que principalmente o corpo dos peixes está cuberto em parte, ou em todo. Os peixes naõ saõ os unicos, que tem escamas. Os lagartos, as cobras tambem tem escamas, que saõ da mesma natureza.
@@ -1447,7 +1448,7 @@
     — Acutæ. Agudas. Hyppobosca. fig. 72.
     — Acuminatæ. Alguma cousa agudas no apice. Bombyx atlas.
     ANASTOMOSIS. Quando os vasos, ou fibras se unem á maneira de rede. Cicada plebeia.
-    <s>ANTENNÆ. As antennas saõ huns <term lemma="filamento" gram="plural" senseNumber="2">filamentos</term> articulados moveis, que servem de sensorio, e tem differentes nomes.</s> Tab. VI. fig. II. III. c. c. c.c.
+    <s>ANTENNÆ. As antennas saõ huns <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term> articulados moveis, que servem de sensorio, e tem differentes nomes.</s> Tab. VI. fig. II. III. c. c. c.c.
     Pelo numero.
     — Nullæ. Quando o insecto as naõ tem. Aranea, Phalangium. fig. 79.
     — Duæ. Duas, na maior parte dos insectos.
@@ -1540,7 +1541,7 @@
     — Setacea. Adelgaçada pouco, e pouco. Ephemera.
     — Setosa. O mesmo.
     — Corniculata. Com espinha cornea, aguda, rija. Sirex. fig. 55.
-    — <s>Forcipata. Com duas unhas arqueadas, que saõ <term lemma="conivente" orth="coniventes" gram="plural">conniventes</term>, ou se avisinhaõ na ponta. Forficula.</s>
+    — <s>Forcipata. Com duas unhas arqueadas, que saõ <term lemma="conivente" orth="coniventes" msd="plural">conniventes</term>, ou se avisinhaõ na ponta. Forficula.</s>
     — Hamoso-forcipata. Com as unhas reviradas nas pontas como hum anzol, no mais he forcipata. Libellula.
     — Chelata. Mais grossa na ponta, com hum dedo pollegar movel. Panorpa. fig. 51.
     — Dentata. Com dentes, ou prominencias angulozas. Forficula.
@@ -1683,7 +1684,7 @@
     — Spinosa. Com aculeos fortes, e rijos, agudos. Curculio, Hispa.
     — Glabra. Oppostos aos antecedentes.
     Pela sutura.
-    — <s>Longitudinalis. A margem interior dos elytros saõ <term lemma="conivente" orth="coniventes" gram="plural">conniventes</term>.</s>
+    — <s>Longitudinalis. A margem interior dos elytros saõ <term lemma="conivente" orth="coniventes" msd="plural">conniventes</term>.</s>
     — Transversalis. Os dous elytros estaõ pegados por esta sutura ao thorax.
     Pela margem.
     — Marginata. Com a margem prominente, ou sahida para fóra. Silpha, Cassida. fig. 12.
@@ -1989,7 +1990,7 @@
     OS. A bocca para tomar o alimento he cousa, que todos tem, e naquelles Insectos, em que parece faltar, supprem alguns poros; ella consta de clypeo, beiços, mandibulas, maxillas, galea, palpos, lingua espiral, proboscide, rostro, houstello.
     — Forcipatum. Á maneira de tenaz. Hister. fig. 4.
     P. 
-    <s>PALPI. Saõ os <term lemma="filamento" gram="plural" senseNumber="2">filamentos</term> juntos á bocca, <pb n="104"/>articulados moveis, que servem de sensorio.</s> Tab. VI. fig. II. III. b. b.
+    <s>PALPI. Saõ os <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term> juntos á bocca, <pb n="104"/>articulados moveis, que servem de sensorio.</s> Tab. VI. fig. II. III. b. b.
     Pelo numero.
     — Nulli. Nenhum. Notonecta.
     — Duo. Dous. Aranea, Scolopendra.
@@ -2280,7 +2281,7 @@
     — Marginatus. Com os lados, ou margem alguma cousa prominente, ou sahida, e estendida mais para fóra. Sylpha. Lampyris. fig. 18.
     — Spinosus. De ambos os lados tem huma ponta rija. Cerambix. fig. 21.
     — Dentatus. Com pontas mais pequenas horizontaes dezunidas entre si. Prionus.
-    — <s>Tentaculatus. Com tentaculos, que se contrahem, <term lemma="bífido" orth="bífidos" gram="masculino plural">bifidos</term> ou divididos em dous, em ambos os lados. Malachius.</s>
+    — <s>Tentaculatus. Com tentaculos, que se contrahem, <term lemma="bífido" orth="bífidos" msd="masculino plural">bifidos</term> ou divididos em dous, em ambos os lados. Malachius.</s>
     — Callosus. Cuberto de huma substancia differente da do thorax. Chrysomela collaris.
     — Ciliatus. Com a margem cercada de sedas prallelas postas ao comprido.
     — Erosus. Com excavações maiores, ou menores nos dous lados da margem do thorax. Cerambix. Prionus.
@@ -2510,9 +2511,9 @@
     — Transversa. Atravessada.
     — Bifidus. Extremidade da concha, que se divide em duas.
     BIVALVIS. Diz-se da concha, que consta de duas valvas.
-    <s>BRACHIUM. Da-se este nome de braço, a huma especie de cirros grossos, e compridos, com que a Sepia, ou siba abraça, ou apanha alguns animaes, e por meio dos <term lemma="cotilédone" orth="cotilédones" gram="plural">cotyledones</term> postos na parte interior dos mesmos cirros, chupa o humor dos animaes.</s>
+    <s>BRACHIUM. Da-se este nome de braço, a huma especie de cirros grossos, e compridos, com que a Sepia, ou siba abraça, ou apanha alguns animaes, e por meio dos <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term> postos na parte interior dos mesmos cirros, chupa o humor dos animaes.</s>
     BRACHIATA. Com braços.
-    <s>BYSSUS. He huma especie de <term lemma="filamento" gram="plural" senseNumber="2">filamentos</term>, que <pb n="128"/>sahem dos Molluscos, com que as conchas se pegaõ humas ás outras, ou aos rochedos. Pinna, Mytilus.</s>
+    <s>BYSSUS. He huma especie de <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term>, que <pb n="128"/>sahem dos Molluscos, com que as conchas se pegaõ humas ás outras, ou aos rochedos. Pinna, Mytilus.</s>
     C.
     CALLUM. Callo, ou callosidade em lugar de dentes.
     — Gibbum. Convexo. Chama. fig. 12.
@@ -2595,7 +2596,7 @@
     CINGULUM. Cinto, ou banda, as vezes significa zona, ou costa, ou huma cadêa de nós.
     — Elevatum. Elevado. Bulla gibbosa.
     — Muricatum. Com pequenos espinhos.
-    <s>CIRRI. Saõ os <term lemma="filamento" gram="plural" senseNumber="2">filamentos</term> das conchas multivalves. Lepas.</s> Tab. XIII. fig. 2. d.
+    <s>CIRRI. Saõ os <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term> das conchas multivalves. Lepas.</s> Tab. XIII. fig. 2. d.
     Ou tambem nos Molluscos saõ de algum modo semelhantes aos dos peixes.
     CIRROSUS. Cirrozo, ou filamentoso.
     CLYPEUS. Escudo carnoso no dorso. Limax.
@@ -3163,7 +3164,7 @@
     — Cornea, continua, ramosa, basi adnata, cortice obducta. De substancia cornea, continuada, ramosa, pegada com a base a algum corpo, e cuberta com a casca. Gorgonia.
     — Corpus liberum, articulatum simplici catena. Corpo livre sem ser pegado, a outro com articulacoẽs, ou nós, que formaõ como huma cadêa simples. Taenia.
     — Fibroso articulata. Composta de fibras articuladas. Sertularia. fig. 16.
-    — <s>Filamentosa, calcaria. Composta de <term lemma="filamento" gram="plural" senseNumber="2">filamentos</term>, e de substancia calcaria. Corallina.</s>
+    — <s>Filamentosa, calcaria. Composta de <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term>, e de substancia calcaria. Corallina.</s>
     — Florem in verticem vibrans. Que faz tremer a flor em redemoinho. Vorticella.
     — Gelatinosa. De substancia gelatinosa. Hydra. fig. 17.
     — Lapidea, rigida. De substancia de pedra, rija. Isis.
@@ -3229,7 +3230,7 @@
     — Duplicata. Com duas linhas elevadas.
     — Marginata. Elevada com angulo á maneira de quilha.
     T.
-    <s>TENTACULA. Saõ humas partes carnosas dos Vermes, que se pódem estender, e recolher voluntariamente, e correspondem ás antennas dos Insectos, com a differença porem, que nos insectos saõ as antennas <term lemma="cartilagíneo" orth="cartilagíneas" gram="feminino plural">cartilagineas</term>, e articuladas, e naõ se podem recolher.</s> Os tentaculos saõ dous, ou quatro.
+    <s>TENTACULA. Saõ humas partes carnosas dos Vermes, que se pódem estender, e recolher voluntariamente, e correspondem ás antennas dos Insectos, com a differença porem, que nos insectos saõ as antennas <term lemma="cartilagíneo" orth="cartilagíneas" msd="feminino plural">cartilagineas</term>, e articuladas, e naõ se podem recolher.</s> Os tentaculos saõ dous, ou quatro.
     — Bipartita. Divididos em dous. Triton.
     — Brachiformia. Á maneira de braços. Lernaea:
     — Capillaria. Muito delgados como cabellos. Terebella.
@@ -3634,11 +3635,11 @@
     
     Publicos, que aparecem, e que todos os podem ver.
     MONOCLINIA. Os maridos, e as mulheres no mesmo lugar.
-    <s>As Flores todas saõ hermaphroditas, e os <term lemma="estame" gram="plural">estames</term> com os pistillos estaõ na mesma flor.</s>
+    <s>As Flores todas saõ <term lemma="hermafrodita" orth="hermafroditas" msd="feminino plural">hermaphroditas</term>, e os <term lemma="estame" msd="plural">estames</term> com os pistillos estaõ na mesma flor.</s>
     DIFFINITAS. Os maridos naõ tem correlação alguma entre si.
-    <s>Os <term lemma="estame" gram="plural">estames</term> de nenhum modo estaõ unidos entre si.</s>
+    <s>Os <term lemma="estame" msd="plural">estames</term> de nenhum modo estaõ unidos entre si.</s>
     INDIFFERENTISMUS. Os maridos naõ tem subordinaçaõ alguma entre si. 
-    <s>Os <term lemma="estame" gram="plural">estames</term> naõ tem entre si alguma determinada proporçaõ no comprimento.</s>
+    <s>Os <term lemma="estame" msd="plural">estames</term> naõ tem entre si alguma determinada proporçaõ no comprimento.</s>
     MONANDRIA	1
     DIANDRIA	2
     TRIANDRIA	3
@@ -3654,31 +3655,31 @@
     <s>ou mais, e pegados na parte interior do <term lemma="cálice" orth="cálice">caliz</term>.</s>
     13. POLYANDRIA. 	20 ou mais no receptaculo.
     b. SUBORDINATIO. Alguns maridos estaõ preferidos a outros.
-    <s>Dous <term lemma="estame" gram="plural">estames</term> sempre mais breves, que os outros.</s>
+    <s>Dous <term lemma="estame" msd="plural">estames</term> sempre mais breves, que os outros.</s>
     
     <pb n="190"/>
     
-    14. <s>DIDYNAMIA. Quatro <term lemma="estame" gram="plural">estames</term>, dos quaes dous saõ mais breves.</s>
-    15. <s>TETRADYNAMIA. Seis <term lemma="estame" gram="plural">estames</term>, dos quaes dous saõ mais breves.</s>
+    14. <s>DIDYNAMIA. Quatro <term lemma="estame" msd="plural">estames</term>, dos quaes dous saõ mais breves.</s>
+    15. <s>TETRADYNAMIA. Seis <term lemma="estame" msd="plural">estames</term>, dos quaes dous saõ mais breves.</s>
     B. <s>AFFINITAS. Os maridos chegados, ou parentes.
-    Os <term lemma="estame" gram="plural">estames</term> estaõ unidos por alguma parte entre si, ou com o pistillo.</s>
-    16. <s>MONADELPHIA. Os <term lemma="estame" gram="plural">estames</term> por meio dos <term lemma="filamento" gram="plural">filamentos</term> formaõ hum só corpo.</s>
+    Os <term lemma="estame" msd="plural">estames</term> estaõ unidos por alguma parte entre si, ou com o pistillo.</s>
+    16. <s>MONADELPHIA. Os <term lemma="estame" msd="plural">estames</term> por meio dos <term lemma="filamento" msd="plural">filamentos</term> formaõ hum só corpo.</s>
     17. DIADELPHIA. Formaõ dous corpos.
     18. POLYADELPHIA. Formaõ tres, ou muitos corpos.
-    19. <s>SYNGENESIA. Os <term lemma="estame" gram="plural">estames</term> por meio das <term lemma="antera" orth="anteras" gram="plural">antheras</term> (raras vezes unidos com os <term lemma="filamento" gram="plural">filamentos</term>) formaõ hum cylindro.</s>
-    20. <s>GYNANDRIA. Quando os <term lemma="estame" gram="plural">estames</term> naõ estaõ pegados ao receptaculo, mas ao pistillo.</s>
+    19. <s>SYNGENESIA. Os <term lemma="estame" msd="plural">estames</term> por meio das <term lemma="antera" orth="anteras" msd="plural">antheras</term> (raras vezes unidos com os <term lemma="filamento" msd="plural">filamentos</term>) formaõ hum cylindro.</s>
+    20. <s>GYNANDRIA. Quando os <term lemma="estame" msd="plural">estames</term> naõ estaõ pegados ao receptaculo, mas ao pistillo.</s>
     2. DICLINIA. Duas camas. Os maridos, e as mulheres estão em camas separadas.
     Flores machos, e femeas na mesma especie de planta.
     21. MONOECIA. Flores machos, e Femeas na mesma planta.
     22. DIOECIA. Flores machos em huma planta, e as femeas em outra.
-    23. POLYGAMIA. Flores hermaphroditos, e machos, ou femeas na mesma planta.
+    23. <s>POLYGAMIA. Flores <term lemma="hermafrodita" orth="hermafroditas" msd="masculino plural">hermaphroditos</term>, e machos, ou femeas na mesma planta.</s>
     II. CLANDESTINÆ. Cazamentos escondidos.
     As flores saõ taõ pequenas, que se naõ podem ver sem ajuda de lente.
     24. CRYPTOGAMIA. As flores dentro do fructo ou escondidas de outro modo.
     
     <pb n="191"/>
     
-    <s>As ordens das primeiras treze classes determinaõ-se pelo numero das femeas, ou pistillos, e na falta destes, pelo dos <term lemma="estigma" gram="plural">estigmas</term>; e assim se diz v.g. Monandria Monogynia sendo hum pistillo Digynia dous Tryginia &amp;c. Poligynia mais de dez.</s>
+    <s>As ordens das primeiras treze classes determinaõ-se pelo numero das femeas, ou pistillos, e na falta destes, pelo dos <term lemma="estigma" msd="plural">estigmas</term>; e assim se diz v.g. Monandria Monogynia sendo hum pistillo Digynia dous Tryginia &amp;c. Poligynia mais de dez.</s>
     
     A classe 14.DUDYNAMIA tem tres ordens.
     1.Gymnospermia. Sementes descubertas;
@@ -3687,15 +3688,15 @@
     A classe 15. TETRADYNAMIA.
     <s>Siliculosa. Com pequenas siliquas.</s>
     Siliquosa. Com siliquas mais compridas.
-    <s>As classes 16. 17. 18. tem as ordens pelo numero dos <term lemma="estame" gram="plural">estames</term>.</s>
+    <s>As classes 16. 17. 18. tem as ordens pelo numero dos <term lemma="estame" msd="plural">estames</term>.</s>
     A 19. SYNGENESIA.
-    <s>As ordens Polygamia aqualis consta de muitas flores pequenas com <term lemma="estame" gram="plural">estames</term>, e pistillos.</s>
-    <s>Polygamia spuria, quando as pequenas flores hermaphroditas estaõ no meio, ou no <term>disco</term> do receptaculo, e os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> femeas occupaõ a margem, ou circunferencia do receptaculo.</s>
+    <s>As ordens Polygamia aqualis consta de muitas flores pequenas com <term lemma="estame" msd="plural">estames</term>, e pistillos.</s>
+    <s>Polygamia spuria, quando as pequenas flores <term lemma="hermafrodita" orth="hermafroditas" msd="feminino plural">hermaphroditas</term> estaõ no meio, ou no <term>disco</term> do receptaculo, e os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> femeas occupaõ a margem, ou circunferencia do receptaculo.</s>
     Esta divide-se em.
-    2. <s>Superflua, quando as flores <term lemma="hermafrodita" orth="hermafroditas" gram="feminino plural">hermophroditas</term> do <term>disco</term> tem <term>estigma</term>, e daõ semente, e as flores da margem, ou do raio, ou as femeas tambem daõ sementes.</s>
-    3. <s>Frustranea, quando os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> hermaphroditos do <term>disco</term> daõ sementes, e as femeas do raio, ou margem por falta de <term>estigma</term> naõ daõ sementes.</s>
-    4. <s>Necessaria, quando as flores hermaphroditas do <pb n="192"/><term>disco</term> naõ daõ sementes por falta de <term>estigma</term>; e os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term>, ou femeas do rayo he que as daõ.</s>
-    5. <s>Segregata. Hum <term lemma="cálice" orth="cálice">caliz</term> commum contem muitos <term lemma="cálice" orth="cálices" gram="plural">calizes</term> com as suas flores.</s>
+    2. <s>Superflua, quando as flores <term lemma="hermafrodita" orth="hermafroditas" msd="feminino plural">hermophroditas</term> do <term>disco</term> tem <term>estigma</term>, e daõ semente, e as flores da margem, ou do raio, ou as femeas tambem daõ sementes.</s>
+    3. <s>Frustranea, quando os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> <term lemma="hermafrodita" orth="hermafroditas" msd="masculino plural">hermaphroditos</term> do <term>disco</term> daõ sementes, e as femeas do raio, ou margem por falta de <term>estigma</term> naõ daõ sementes.</s>
+    4. <s>Necessaria, quando as flores <term lemma="hermafrodita" orth="hermafroditas" msd="feminino plural">hermaphroditas</term> do <pb n="192"/><term>disco</term> naõ daõ sementes por falta de <term>estigma</term>; e os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term>, ou femeas do rayo he que as daõ.</s>
+    5. <s>Segregata. Hum <term lemma="cálice" orth="cálice">caliz</term> commum contem muitos <term lemma="cálice" orth="cálices" msd="plural">calizes</term> com as suas flores.</s>
     6. <s>Monogamia. <term lemma="cálice" orth="Cálice">Caliz</term> com huma só flor.</s>
     
     <pb n="193"/>
@@ -3715,11 +3716,11 @@
     <pb n="194"/>
     
     _ Biennis. De dous annos. Vegeta no primeiro anno, e no segundo frutifica, e morre. Tragopogon, Secale.
-    _ <s>Perennis. Perenne, a qual com a producçaõ de novas <term lemma="gema" orth="gemas" gram="plural">gemmas</term>, ou <term lemma="gomo" gram="plural">gomos</term> em cada anno produz nova herva. Glechoma hederacea, Viola odorata.</s>
+    _ <s>Perennis. Perenne, a qual com a producçaõ de novas <term lemma="gema" orth="gemas" msd="plural">gemmas</term>, ou <term lemma="gomo" msd="plural">gomos</term> em cada anno produz nova herva. Glechoma hederacea, Viola odorata.</s>
     _ Fruticosa, lignosa. A raiz, ou he de substancia carnosa, ou lignosa, ou tenra, ou rija, ou sucosa, ou farinacea.
     3. Pela partiçaõ.
     _Simplex, fig. 129. b. Quando a raiz senaõ divide em parte alguma. Scabiosa succisa.
-    _ <s>Fibrosa. fig. 130. b. A qual consta sómente de pequenas raizes <term lemma="fibroso" gram="feminino plural">fibrosas</term>, ou <term lemma="filamento" gram="plural">filamentos</term>; como nas Gramas, Malva &amp;c.</s>
+    _ <s>Fibrosa. fig. 130. b. A qual consta sómente de pequenas raizes <term lemma="fibroso" msd="feminino plural">fibrosas</term>, ou <term lemma="filamento" msd="plural">filamentos</term>; como nas Gramas, Malva &amp;c.</s>
     _ Ramosa. fig.130 a. Dividindo-se em ramos lateraes. Plantago psyllium.
     _ Fusiformis. fig, 129. b. De figura de hum fuso. Oblonga crassa, e adelgaçada para a sua ponta. Raphanus, Pastinaca, Daucus.
     _ Palmata, s. digitata. Dividida longitudinalmente em muitas partes quase iguaes, como abas carnosas, que chegaõ até o principio, onde se unem entre si. Orchis latifolia, maculata.
@@ -3735,23 +3736,23 @@
     _ Perpendicularis. fig. 129. b. Quando a raiz desce perpendicularmente para baixo. Rapa.
     _ Horizontalis Quando a raiz conserva huma situaçaõ horizontal, ou atravessada debaixo da terra. Iris.
     _ Inclinata. Curvada.
-    <s>Pegados á raiz corpos, que contem germes, ou <term lemma="bulbo" gram="plural">bulbos</term>.</s>
+    <s>Pegados á raiz corpos, que contem germes, ou <term lemma="bulbo" msd="plural">bulbos</term>.</s>
     5. c.) - Globosa. fig 129. a. Arredondada, sendo quasi redonda com raizes lateraes. Ranunculus bulbosus. Chærophyllum. Brassica rapa.
     _ Tuberosa. fig. 128. He aquella raiz, que he formada de corpos redondos, carnosos unidos entre si em feixe quasi por meio de hum fio. Paeonia. Solanum tuberosum.
-    _ <s>Fascicularis, fasciculata. Quando a raiz principal carnosa lança outros pequenos fios, ou <term lemma="filamento" gram="plural">filamentos</term> approximados, parallelos entre si. Orchis abortiva. Ranunculus ficaria.</s>
+    _ <s>Fascicularis, fasciculata. Quando a raiz principal carnosa lança outros pequenos fios, ou <term lemma="filamento" msd="plural">filamentos</term> approximados, parallelos entre si. Orchis abortiva. Ranunculus ficaria.</s>
     _ Stolonifera. Raiz que tem pimpolhos.
     6. d.) _ <s>Squamosa. Chama-se <term lemma="escamoso">escamosa</term> sendo cuberta de escamas. Lilium.</s>
     _ Duplicata. Sendo duplicada.. Fritilaria.
     _ Solida. Sendo solida. Tulipa. 
-    _ <s>Bulbosa. O <term lemma="bulbo">Bulbo</term>, quando a raiz he mais grossa, que o tronco. fig 125; e a raiz <term lemma="bulboso" gram="feminino singular">bulbosa</term> he de huma substancia mais molle, succosa; ou esta he tunicata. Allium sativum, ou <term lemma="escamoso">escamosa</term>. Lilium. <pb n="196"/>dobrada. Fritillaria, ou testiculata, Crypripedium calceolus.</s>
-    _ <s>Granulata. Constando de muitos grãos <term lemma="bulboso" gram="masculino plural">bulbosos</term>, ou de particulas carnosas espalhadas. Saxifraga granulata.</s>
+    _ <s>Bulbosa. O <term lemma="bulbo">Bulbo</term>, quando a raiz he mais grossa, que o tronco. fig 125; e a raiz <term lemma="bulboso" msd="feminino singular">bulbosa</term> he de huma substancia mais molle, succosa; ou esta he tunicata. Allium sativum, ou <term lemma="escamoso">escamosa</term>. Lilium. <pb n="196"/>dobrada. Fritillaria, ou testiculata, Crypripedium calceolus.</s>
+    _ <s>Granulata. Constando de muitos grãos <term lemma="bulboso" msd="masculino plural">bulbosos</term>, ou de particulas carnosas espalhadas. Saxifraga granulata.</s>
     _ Tunicata. Quando a raiz está envolvida em membrana. Allium sativum. 
     _ Nuda. Destituida de tunica. 
     _ Parasitica. Quando a raiz da planta senaõ serve da terra para tirar o seu nutrimento, mas sim se une a outra planta, da qual se sustenta. Orobanche, Algæ.
     Ala. Aza, ou 1: he o espaço entre o caule, e a folha
     2.) Alae. Azas se dizem os petalos das flores papilionaceas, entre o Vexillo, e a Carina.
     3.) Ou saõ as extremidades delgadas, e membranaceas de alguma semente, como na do Freixo.
-    4.) <s>Ou saõ aquellas membranas <term lemma="foliáceo" orth="foliáceas" gram="feminino plural">foliaceas</term>, que descem pelo comprimento do caule.</s>
+    4.) <s>Ou saõ aquellas membranas <term lemma="foliáceo" orth="foliáceas" msd="feminino plural">foliaceas</term>, que descem pelo comprimento do caule.</s>
     
     TRUNCUS 
     7. <s>TRUNCUS. Parte da planta, que sahindo da terra levanta com sigo a <term lemma="frutificação" orth="frutificação">fructificaçaõ</term>, e juntamente as folhas.</s>
@@ -3792,10 +3793,10 @@
     Bima, trimave. Que no espaço de dous, ou tres annos morre.
     Sempervirens. Que naõ alarga as folhas, sem nascerem outras. Viola.
     Algumas ervas porem no inverno largaõ as folhas, mas da raiz pois novas nascem.
-    _ <s>Suffruticosus, frutescens. Quando a planta conserua o caule naõ muito alto no inverno sem <term lemma="gomo" gram="plural">gomos</term> ou <term lemma="gema" gram="plural">gemas</term>. Solanum dulcamara.</s>
+    _ <s>Suffruticosus, frutescens. Quando a planta conserua o caule naõ muito alto no inverno sem <term lemma="gomo" msd="plural">gomos</term> ou <term lemma="gema" msd="plural">gemas</term>. Solanum dulcamara.</s>
     _ Fruticosus. Perenne, sahindo da mesma raiz muitos caules baixos, e rijos. Spartium scoparium, Echium fruticosum.
-    <s>Frutex. Planta perenne com <term lemma="gomo" gram="plural">gomos</term> no tronco, que quasi nunca chega a altura de Arvore. Roseira.</s>
-    <s>Suffrutex. Planta perenne, rija, lignosa, mais baixa do frutice, e tem <term lemma="gomo" gram="plural">gomos</term>. Tomilho, Alfazema.</s>
+    <s>Frutex. Planta perenne com <term lemma="gomo" msd="plural">gomos</term> no tronco, que quasi nunca chega a altura de Arvore. Roseira.</s>
+    <s>Suffrutex. Planta perenne, rija, lignosa, mais baixa do frutice, e tem <term lemma="gomo" msd="plural">gomos</term>. Tomilho, Alfazema.</s>
     _ Arboreus. Sendo hum só, e este alto perenne, Alcea arborea.
     Arbor. A arvore he huma especie de planta perenne, com simples tronco, alto, grosso, rijo, com ramos.
     _ Solidus. fig. 126. Que está chêo internamente; que consta de substancia macissa, e medulla compacta. Sambucus. Prunus.
@@ -3805,7 +3806,7 @@
     <pb n="199"/>
     
     _ Farctus. Todo chêo, sem cavidade alguma. Salix, Sambucus.
-    _ <s>Alatus. Com azas, ou membrana <term lemma="foliáceo" orth="foliácea" gram="feminino singular">foliacea</term>, que se extende pelo seu comprimento. Sigisbekia occidentalis.</s>
+    _ <s>Alatus. Com azas, ou membrana <term lemma="foliáceo" orth="foliácea" msd="feminino singular">foliacea</term>, que se extende pelo seu comprimento. Sigisbekia occidentalis.</s>
     Considerando o caule em quanto à sua medida.
     10. Pela medida.
     _Linearis. Tendo o comprimento de huma linha_de_Pariz; isto he o comprimento da lunula da unha do dedo pollegar.
@@ -3836,14 +3837,14 @@
     _ Diffusus. Constando de ramos patentes ou abertos Fumaria officinalis.
     _Procumbens. Se extende horizontalmente pela superficie da terra. Anagallis arvensis.
     _ Decumbens. Quando o caule se levanta <pb n="201"/>primeiramente algum tanto, e depois se extende pela mesma superficie da terra. Thymus serpyllum.
-    _ <s>Stoloniferus. Diz-se daquelle caule, cujos ramos, que tem <term lemma="gomo" gram="plural">gomos</term>, ou <term lemma="gema" gram="plural">gemas</term>, descendo até á terra lançaõ nella novas raizes, e destas nascem novas hastes. Ajuga reptans, Viola odorata.</s>
+    _ <s>Stoloniferus. Diz-se daquelle caule, cujos ramos, que tem <term lemma="gomo" msd="plural">gomos</term>, ou <term lemma="gema" msd="plural">gemas</term>, descendo até á terra lançaõ nella novas raizes, e destas nascem novas hastes. Ajuga reptans, Viola odorata.</s>
     _ Stolones. Pimpolhos, que nascem do pé do caule, ou da raiz, que arrancados se plantaõ. Cornus, Sorbus, Ficus.
     12._ b.) Sarmentosus. fig. 131. He hum caule quasi nú, repente, sem raizes lateraes, ou caule delgado, e de igual grossura, com nós, que lançaõ raizes. Vitis vinifera. Clematis vitalba. 
     _ Radicans. fig. 112. Lançando dos ramos varias raizes, com as quaes se eleva a grande altura. Hedera helix. 
     _ Repens. Caule, que lança varias raizes extendendo-se horizontalmente sobre a terra. Potentilla anserina. Lysimachia  nummularia.
     13. _ c.) Geniculatus. Chêo de nós, ou articulaçoens. Gramina. Galeopsis.
     _ <s>Flexuosus. Tendo articulaçoens viradas ora para huma, ora para outra parte, ou virando-se de <term>gomo</term> em <term>gomo</term>. Solanum dulcamara.</s>
-    _ <s>Scandens. Caule que sobe pelos corpos vizinhos sustentado pelos seus <term lemma="capréolo" orth="capréolos" gram="plural">capreolos</term>, ou Elos. Clematis vitalba. Vitis.</s>
+    _ <s>Scandens. Caule que sobe pelos corpos vizinhos sustentado pelos seus <term lemma="capréolo" orth="capréolos" msd="plural">capreolos</term>, ou Elos. Clematis vitalba. Vitis.</s>
     _ Volubilis. fig. 115. Subindo espiralmente por outra qualquer planta. Bryonia dioica. 
     _ Sinistrorsum ( fig. 115. Envolvendo-se da parte esquerda para a direita. Lonicera periclymenum. Humulus lupulus.
     _ Dextrorsum. ) Envolvendo-se contra o movimento do sol. Convolvulus, Phaseolus. 
@@ -3861,7 +3862,7 @@
     15. Com os lados planos entre os angulos.
     b.) Di-tri-tetra-penta-hexa-polygonus, seu tri-quadr-quinq-sex-mult-angularis. Assim se chama o caule triangular, quadrangular &amp;c. pelo numero dos angulos longitudinaes prominentes, e igualmente distantes, com os lados entre os angulos, convexos. Trigonus de tres angulos Ranunculus flammula. Tetragonus de quatro Mentha; polygonus de muitos angulos Cactus heptagonus.
     16. Em quanto ao vestido. 
-    _ <s>Nudus. fig. 113. Sendo destituido de folhas, escamas, <term lemma="estípula" orth="estípulas" gram="plural">estipulas</term>, e outras excrecencias; porém isto naõ he absoluta, mas sim relativamente a outra especie. Euphorbia, Cactus. Cuscuta europaea.</s> 
+    _ <s>Nudus. fig. 113. Sendo destituido de folhas, escamas, <term lemma="estípula" orth="estípulas" msd="plural">estipulas</term>, e outras excrecencias; porém isto naõ he absoluta, mas sim relativamente a outra especie. Euphorbia, Cactus. Cuscuta europaea.</s> 
     _Aphyllus. fig. 117. Sendo destituido de folhas. 
     Calendula.
     
@@ -3896,9 +3897,9 @@
     _ Pilosus. Cuberto de pellos prolongados simplices, e distinctos. Lamium purpureum.
     _ Spinosus. fig. 121. Armado de espinhos, que estaõ pegados ao ligno, ou paó. Prunus spinosa.
     _Urens. Sendo cuberto de humas arestas rijas, que parecem queimar, quando se tocaõ. Urtica.
-    20_ d.) <s>Stipulatus. fig. 118. b. Constando de <term lemma="estípula" orth="estípulas" gram="plural">estipulas</term>. Papilionaceæ. V. Stipula. (68)</s>
+    20_ d.) <s>Stipulatus. fig. 118. b. Constando de <term lemma="estípula" orth="estípulas" msd="plural">estipulas</term>. Papilionaceæ. V. Stipula. (68)</s>
     _ Membranatus. Sendo chato á maneira de huma folha, e parece ter azas por causa das suas membranas longitudinaes. Scrophularia aquatica. 
-    _ <s>Bulbiferus. Que contem corpos carnosos, isto he, <term lemma="bulboso" gram="masculino plural">bulbosos</term>. Allium carinatum na umbella; Raninculus ficaria nas axillas, donde sahem os ramos.</s>
+    _ <s>Bulbiferus. Que contem corpos carnosos, isto he, <term lemma="bulboso" msd="masculino plural">bulbosos</term>. Allium carinatum na umbella; Raninculus ficaria nas axillas, donde sahem os ramos.</s>
     
     <pb n="205"/>
     
@@ -3923,7 +3924,7 @@
     _ Ramosissimus, seu subdivisus. Sendo cheio de muitos ramos desordenados. Gallium saxatile. 
     _ d.) Virgatus. Dotado de muitos pequenos ramos desiguaes, debeis, flexiveis, formando entre si varios feixes. Antirrhinum genistifolium. Betula alba.
     _Paniculatus. Dividido em varios ramos e estes subdivididos em outros ramos mais pequenos. (103.) Panicula
-    _ <s>Fastigiatus. Quando os ramos se levantaõ em feixe de tal forma, que ficaõ iguaes como se fossem cortados horizontalmente; e assim se chamaõ fastigiati flores, quando os peciolos elevaõ as <term lemma="frutificação" orth="frutificações" gram="plural">fructificaçoens</term> em hum feixe. &amp;c.</s>
+    _ <s>Fastigiatus. Quando os ramos se levantaõ em feixe de tal forma, que ficaõ iguaes como se fossem cortados horizontalmente; e assim se chamaõ fastigiati flores, quando os peciolos elevaõ as <term lemma="frutificação" orth="frutificações" msd="plural">fructificaçoens</term> em hum feixe. &amp;c.</s>
     e) _ Patens. Se muitos troncos, que nascem da raiz se afastaõ entre si formando angulos agudos.
     _ <s>Divaricatus. Opposto ao <term>coarctado</term>, ou apertado, quando o tronco lança muitos caules perto da terra sendo muito distantes entre si, e formando com o tronco hum angulo obtuzo.</s>
     
@@ -3973,8 +3974,8 @@
     _ 3.) Ramea fig.90. Nascendo estas folhas pelos ramos. 
     _ 4.) Axilllaria. Nascendo a folha entre o ramo, e o caule, ou no angulo, que forma o ramo com o caule.
     _ Subaxillaria que nascem inferiormente ao ramo, ou angulo. Serratula.
-    _ 5.) <s>Floralia. fig. 91. Nascendo donde sahe a flor, ou nos pedunculos, e por se conservarem, he que differem das <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>, que cahem. Salvia.</s>
-    _6.) <s>Seminalia. fig. 88. As primeiras folhas, que sahem da semente, que dantes foraõ os <term lemma="cotilédone" orth="cotilédones" gram="plural">cotyledones</term>, e estas cahem. Brassica rapa.</s>
+    _ 5.) <s>Floralia. fig. 91. Nascendo donde sahe a flor, ou nos pedunculos, e por se conservarem, he que differem das <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>, que cahem. Salvia.</s>
+    _6.) <s>Seminalia. fig. 88. As primeiras folhas, que sahem da semente, que dantes foraõ os <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term>, e estas cahem. Brassica rapa.</s>
     30. Consideradas em quanto ao numero.
     1. 2. 3. poucas folhas, muitas, duas a duas, ou tres a tres &amp;c.
     31. Em quanto á sua situaçaõ.
@@ -4112,7 +4113,7 @@
     _ Squarrosum. As divizoens, da folha se extendem por toda a parte, ou tambem se diz da folha dividida em divizoens elevadas, que naõ saõ parallelas ao plano da mesma folha. 
     44. Considerada a folha em quanto á sua margem. 
     <s>Por margem da folha entendem-se todos os lados exteriores, naõ fallando do <term senseNumber="2">disco</term>.</s> 
-    _ a.) <s>Integerrimum fig. 42. Folha destituida de incizuras, ou <term lemma="crena" gram="plural">crenas</term>, isto he quando a margem da folha he linear, e de nenhuma sorte excavada. Lonicera xylosteum.</s>
+    _ a.) <s>Integerrimum fig. 42. Folha destituida de incizuras, ou <term lemma="crena" msd="plural">crenas</term>, isto he quando a margem da folha he linear, e de nenhuma sorte excavada. Lonicera xylosteum.</s>
     _ Crenatum fig. 38. He a margem da folha recortada com angulos, que se naõ inclinaõ, nem para huma, nem para outra parte. Ajuga reptans. Teucrium chamædrys. 
     _ Acute-crenatum fig.35. Sendo os angulos agudos. 
     _ Obtuse-crenatum. fig. 36. Com os angulos obtusos. 
@@ -4137,7 +4138,7 @@
     <pb n="221"/> 
     
     _ Spinosum inerme. Tendo na margem pontas molles, que naõ picaõ. 
-    _ <s>Cartilagineum, fig. 34. Sendo a margem <term lemma="cartilagíneo" orth="cartilagínea" gram="feminino singular">cartilaginea</term>, differente da substancia do <term senseNumber="2">disco</term>, ou da superficie, Sedum.</s>
+    _ <s>Cartilagineum, fig. 34. Sendo a margem <term lemma="cartilagíneo" orth="cartilagínea" msd="feminino singular">cartilaginea</term>, differente da substancia do <term senseNumber="2">disco</term>, ou da superficie, Sedum.</s>
     45. _ b) Repandum, fig. 46. Sendo a margem da folha chêa de voltas, e angulos; tendo estes varias excavaçoens, ou segmentos de circulo, e com obtuzas curvaduras entre si afastadas. Chenopodium glaucum. 
     _ Lacerum. fig. 24. Folha, cuja margem está cortada de varios modos, e as suas lacinias saõ desiguaes. Crepis tectorum. 
     _ Erosum. fig. 21. Folha sinuatum, cujas excavaçoens contem outras mui pequenas, e com lacinias desiguaes. Chenopodium album. (43)
@@ -4158,7 +4159,7 @@
     _ Acuminatum. fig. 42. Acabando em ponta mui fina, á maneira de sovela (40). Lamium album.
     _ Cuspidatum. He o mesmo que acuminatum, mas com a ponta alguma cousa mais rija, ou que acaba com o apice á maneira de seda. 
     _ Mucronatum. He huma especie do antecedente, mas com a ponta mais comprida, e picante, e algum tanto dura, ou que acaba com ponta sahida para fora. Gallium uliginosum. 
-    _ <s>Cirrhosum, cirrhatum. fig. 72. 73. Terminando em cirrhos no apice, isto he, em varios <term lemma="filamento" gram="plural">filamentos</term>, por meio dos quaes sobem por outros corpos. Lathyrus. Pisum sativum.</s>
+    _ <s>Cirrhosum, cirrhatum. fig. 72. 73. Terminando em cirrhos no apice, isto he, em varios <term lemma="filamento" msd="plural">filamentos</term>, por meio dos quaes sobem por outros corpos. Lathyrus. Pisum sativum.</s>
     48. Em quanto á superficie. 
     _ a) Pagina superiore. He a superficie da folha, que esta virada para o cêo, por naõ ser a folha torta. 
     _ _ Inferiore s. prona. Que está virada para a terra. 
@@ -4239,7 +4240,7 @@
     — Tenue, nervosum, venosum. Com nervos.
     56. c.) Triquetrum. fig. 59. Huma folha á maneira de sovela, cujos tres lados longitudinaes saõ planos. Cyperus elatus. Trigonum pouco diferente da este. 
     — <s>Anceps. Tendo dous angulos longitudinaes, prominentes, oppostos, e o <term senseNumber="2">disco</term> mais convexo. Cyperus flavescens.</s>
-    — <s>Lingulatum, linguiforme. Folha linear, carnosa, obtusa, convexa pela parte inferior, e a sua margem muitas vezes he <term lemma="cartilagíneo" orth="cartilagínea" gram="feminino singular">cartilaginea</term>. Mesymbryanthemum linguiforme. Asplenium.</s>
+    — <s>Lingulatum, linguiforme. Folha linear, carnosa, obtusa, convexa pela parte inferior, e a sua margem muitas vezes he <term lemma="cartilagíneo" orth="cartilagínea" msd="feminino singular">cartilaginea</term>. Mesymbryanthemum linguiforme. Asplenium.</s>
     — Ensiforme. He o mesmo, que anceps hindo-se adelgaçando da base para a ponta. Iris pseudoacorus. Gladiolus communis. 
     — Subulatum. fig. 8. Folha, que pela parte inferior he linear, redonda; mas para a ponta pouco, e pouco adelgaçada. Sedum rupestre. 
     — Acinaciforme. fig. 56. folha carnosa lanceolada, comprimida nos lados, com hum lado convexo, e apertado, e outro mais direito, e mais grosso á maneira de alfange. Mesymbryanthemum. 
@@ -4350,8 +4351,8 @@
     — Solitariae. Huma só na mesma base, ou simplices espalhadas sem ordem. Na parte interior <pb n="235"/>Melianthus, na parte exterior Ruscus.
     — Nullae. Nenhuma. Asperifoliae, Didynamiae, Orchideae.  
     — Praesentes. Que estaõ nas Papilionaceas, e na Icosandria.
-    69. b.) <s>Laterales. As <term lemma="estípula" orth="estípulas" gram="plural">estipulas</term> nascem nos lados do peciolo, ou pedunculo.</s>
-    — <s>Extrafoliaceae. Existindo as <term lemma="estípula" orth="estípulas" gram="plural">estipulas</term> no principio da folha, entre o peciolo, e a mesma folha. Diadelphia, Alnus, Tilia.</s>
+    69. b.) <s>Laterales. As <term lemma="estípula" orth="estípulas" msd="plural">estipulas</term> nascem nos lados do peciolo, ou pedunculo.</s>
+    — <s>Extrafoliaceae. Existindo as <term lemma="estípula" orth="estípulas" msd="plural">estipulas</term> no principio da folha, entre o peciolo, e a mesma folha. Diadelphia, Alnus, Tilia.</s>
     — Intrafoliaceae. Se achaõ na folha, na sua parte superior. Ficus, Morus. 
     — Oppositifoliaceae. Sendo unidas aos peciolos das folhas oppostas á situaçaõ das folhas.
     70. c.)  Caduce. Cahindo antes, que as folhas.
@@ -4409,7 +4410,7 @@
     81. c.) Hami. Saõ sedas simplices, que estaõ arqueadas para baixo, ou com pontas agudas encurvadas. Arctium Lappa. Geum urbanum. 
     Glochides. Saõ sedas com a ponta dividida em duas partes, e estas reviradas para traz formando angulo agudo.
     Triglochides. Saõ glochides com tres pontas.
-    82. d.) <s>Glandulae. fig. 118. c. 119. Saõ humas papillas, ou pequenas eminencias redondas, que separaõ hum humor nas incisuras das folhas, mais inferiores, Salix alba. Na base dos <term lemma="estame" gram="plural">estames</term> ou <term lemma="filamento" gram="plural">filamentos</term>. Brassica, Cheiranthus.</s>
+    82. d.) <s>Glandulae. fig. 118. c. 119. Saõ humas papillas, ou pequenas eminencias redondas, que separaõ hum humor nas incisuras das folhas, mais inferiores, Salix alba. Na base dos <term lemma="estame" msd="plural">estames</term> ou <term lemma="filamento" msd="plural">filamentos</term>. Brassica, Cheiranthus.</s>
     — Vesicularis. A maneira de bexiga. Mesembryanthemum. 
     — Globularis. Redonda. Atriplex.
     — Sessilis Stipitata. Sem pezinho. Porus. 
@@ -4418,14 +4419,14 @@
     — Concavae. fig. 118. c. Concavas. 
     — Petiolaes. fig. 119. Nos peciolos. Viburnum opolus.
     — Pedunculares. Nos  pedunculos.
-    — <s>Stipulares. Nas <term lemma="estípula" orth="estípulas" gram="plural">estipulas</term>.</s>
+    — <s>Stipulares. Nas <term lemma="estípula" orth="estípulas" msd="plural">estipulas</term>.</s>
     — Capillares. Como cabellos. Ribes, Antirrhinum: Scrophularia. Cerastium.
     
     <pb n="239"/>
     
     83.) Viscositas. Humor crasso, peganhoso, que unta o caule ao redor, as folhas &amp;c. Paris, Silene.
     Glutinositas. Humor crasso, e pegajoso, que unta a planta ao redor, e que a faz escorregadiça.
-    Cerastium viscosum, Senecio viscosus. <s>Gemmae os <term lemma="gomo" gram="plural">gomos</term>, ou <term lemma="gema" gram="plural">gemas</term> das folhas principalmente das plantas rezinosas. Populus nigra.</s>
+    Cerastium viscosum, Senecio viscosus. <s>Gemmae os <term lemma="gomo" msd="plural">gomos</term>, ou <term lemma="gema" msd="plural">gemas</term> das folhas principalmente das plantas rezinosas. Populus nigra.</s>
     Resina. A rezina he dissoluvel no espirito de vinho, arde no fogo. Therebinthina.
     Gummi. Goma, dissolve-se na agua, e naõ no espirito de vinho, nem arde no fogo. Gummi arabicum, Ceraforum, Prunorum.
     Gumi-resina. He huma mistura de goma, e rezina, e assim parte della dissolve-se em agua, e parte no espirito de vinho. Aloe. 
@@ -4456,7 +4457,7 @@
     88. <s>Pedunculus. He hum tronco parcial, que levanta a <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>, e naõ as folhas.</s>
     I.<s>Partialis, Sive pedicellus. fig. 132. 149. 145. Que sustenta quasi sempre huma só <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>. fig. 135. b. ou que sahe de outro pedunculo comum.</s>
     Scapus. Pedunculo, que sahe immediatamente da <pb n="241"/>raiz, e parece hum caule.
-    2. <s>Communis. fig. 163. 164. 165. 167. Pedunculo, que sustenta muitas <term lemma="frutificação" gram="plural">frutificações</term>, que he commum a muitas flores.</s>
+    2. <s>Communis. fig. 163. 164. 165. 167. Pedunculo, que sustenta muitas <term lemma="frutificação" msd="plural">frutificações</term>, que he commum a muitas flores.</s>
     a.) Pelo lugar. 
     — Radicalis. Sahindo immediatamente da raiz. 
     — Caulinus. Do caule. 
@@ -4511,10 +4512,10 @@
     — Attenuatus, acuminatus. Mais delgado para a ponta, ou flor. 
     — Incrassatus. Mais grosso na ponta, o que succede ordinariamente nas flores cernuas. Tragopoguon. 
     — Clavatus. Engrossado na vizinhança da flor como huma cachamorra. 
-    — <s>Nudus. Sem <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>, folhas, escamas, ou buço.</s>
+    — <s>Nudus. Sem <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>, folhas, escamas, ou buço.</s>
     — Squamosus. (16) Com escamas.
     — Foliatus. Cuberto com folhas.  
-    — <s>Bracteatus. (81) Com <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>.</s>
+    — <s>Bracteatus. (81) Com <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>.</s>
     — Geniculatus. (13) Com nós. 
     — Articulatus. (22) Com articulaçoens. 
     
@@ -4522,12 +4523,12 @@
     Florescentia.
     
     94. Inflorescentia. He o modo com que as flores estaõ unidas á planta por meio do pedunculo.
-    <s>Flos. Parte filamentosa, e membranacea, primeira que o fruto, e conhecida pela elegancia das suas cores. Consta de Calix, Corolla, <term lemma="estame" gram="plural">Estames</term>, Pistillo, Pericarpio, Semente, Receptaculo.</s> 
-    <s>A essencia da flor consiste na <term lemma="antera" orth="Antera" gram="singular">Anthera</term>, e <term>estigma</term>.</s>
+    <s>Flos. Parte filamentosa, e membranacea, primeira que o fruto, e conhecida pela elegancia das suas cores. Consta de Calix, Corolla, <term lemma="estame" msd="plural">Estames</term>, Pistillo, Pericarpio, Semente, Receptaculo.</s> 
+    <s>A essencia da flor consiste na <term lemma="antera" orth="Antera" msd="singular">Anthera</term>, e <term>estigma</term>.</s>
     A essencia do fruto na semente.
     <s>A essencia da <term lemma="frutificação" orth="frutificação">frutificaçaõ</term> consiste na flor, e fruto.</s> 
     <s>A essencia dos vegetaes consiste na <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>.</s>
-    <s>A <term lemma="frutificação" orth="frutificação">frutificaçaõ</term> inclue-se na <term lemma="antera" orth="Antera" gram="singular">Anthera</term>, <term>Estigma</term>, e Semente.</s>
+    <s>A <term lemma="frutificação" orth="frutificação">frutificaçaõ</term> inclue-se na <term lemma="antera" orth="Antera" msd="singular">Anthera</term>, <term>Estigma</term>, e Semente.</s>
     
     <pb n="244"/>
     
@@ -4551,8 +4552,8 @@
     Verticillus. fig. 166. He formada de muitas flores quasi sesseis, ou quasi sem pedunculos: he huma coroa, que cerca o caule á maneira de anel. 
     — a.) Sessilis. Sendo as pequenas flores sem pedunculos visiveis. (94)
     — Pedunculatus. Tendo as flores pedunculos. 
-    — b.) <s>Nudus. Sem involucros: ou <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>. &amp;c.</s>
-    — <s>Bracteatus. Com <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>.</s> (81)
+    — b.) <s>Nudus. Sem involucros: ou <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>. &amp;c.</s>
+    — <s>Bracteatus. Com <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>.</s> (81)
     
     <pb n="245"/>
     — c.) Involucratus. Com involucro. (112)
@@ -4611,7 +4612,7 @@
     — Coarctata. Os pedicellos, ou pequenos ramos estaõ quasi parallelos entre si.
     
     <s>FRUCTIFICATIO
-    <Term lemma="frutificação" orth="frutificação">Frutificaçaõ</Term>.
+    <term lemma="frutificação" orth="frutificação">Frutificaçaõ</term>.
     
     104. Fructificatio. He a parte dos vegetaes, que dura certo tempo, que acaba o antigo, e principia hum novo estado.</s>
     Fructus. He a parte da planta annual unida á flor, e que succede á mesma, que em chegando ao seu estado de perfeiçaõ se despega espontaneamente da planta, e recebida na terra dá principio a huma nova planta.
@@ -4620,7 +4621,7 @@
     <s>Tuberculum. He huma <term lemma="frutificação" orth="frutificação">fructificaçaõ</term> formada de pontos asperos, e estes quasi formados de pós. Lichen.</s>
     <s>Scutellum. He a <term lemma="frutificação" orth="frutificação">fructificaçaõ</term> com articulaçoens, concava, e com a margem elevada. Lichen.</s>
     <s>A <term lemma="frutificação" orth="frutificação">fructificaçaõ</term> differe em cada huma das suas partes pelo numero, pela figura, proporçaõ, e situaçaõ.</s>
-    <s>Conhece-se pela <term lemma="antera" orth="Antera" gram="singular">Anthera</term>, pelo <term>Estigma</term>, e pela Semente,</s>
+    <s>Conhece-se pela <term lemma="antera" orth="Antera" msd="singular">Anthera</term>, pelo <term>Estigma</term>, e pela Semente,</s>
     <s>Acinus. He a semente das uvas, ou o <term>gomo</term> do fruto do Sabugueiro &amp;c.</s>
     <s>Simplex. Constando a <term lemma="frutificação" orth="frutificação">fructificaçaõ</term> de poucas flores, e esta desunidas.</s>
     Composita, aggregata. Consta de muitas pequenas flores de figura particular, postas na mesma <pb n="249"/>base, ou receptaculo, Syngenesia. 
@@ -4631,17 +4632,17 @@
     — Caducus. Que cahe, quando a flor principia a abrir-se Papaver, Epimedium.
     — Deciduus. Cahindo juntamente a corolla. Tetradynamia. Berberis. 
     — Persistens. Conserva-se até amadurecer perfeitamente o fruto. Didynamia. Berberis. 
-    — <s>Geminus. Quando saõ dous <term lemma="cálice" orth="cálices" gram="plural">calices</term>.</s>
+    — <s>Geminus. Quando saõ dous <term lemma="cálice" orth="cálices" msd="plural">calices</term>.</s>
     — Nullus. Nenhum. Tulipa, Llilium.
     — Simplex. Simples. Primula.
     — Duplex, geminus. Duplicado. Malva. Hibiscus. 
     — Triplex. Tres.
     — <s>Perianthium, Derivado do vocabulo grego. Περι ανθος isto é he junto á flor. Algumas vezes se considera a <term lemma="bráctea" orth="bráctea">bractea</term> como periancio, como no Helleboro, Nigella hepatica.</s>
-    — a.) <s>Fructificationis. Incluindo <term lemma="estame" gram="plural">estames</term>, e germen.</s>
+    — a.) <s>Fructificationis. Incluindo <term lemma="estame" msd="plural">estames</term>, e germen.</s>
     
-    — b.) <s>Floris. Contendo somente <term lemma="estame" gram="plural">estames</term>.</s> (127).
+    — b.) <s>Floris. Contendo somente <term lemma="estame" msd="plural">estames</term>.</s> (127).
     — y.) Fructus. Incluindo somente o fruto. (133)
-    <s>O periancio differe da <term lemma="bráctea" orth="bráctea">bractea</term>, porque aquelle apodrece em o fruto sendo maduro, se naõ he dantes, o que naõ succede ás <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>, ou folhas floraes.</s>
+    <s>O periancio differe da <term lemma="bráctea" orth="bráctea">bractea</term>, porque aquelle apodrece em o fruto sendo maduro, se naõ he dantes, o que naõ succede ás <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>, ou folhas floraes.</s>
     106. I. Proprium. Incluindo só huma flor.
     — a.) Monophyllum. Constando de huma só folha, <pb n="250"/>que se inteira na base, posto que o limbo seja muitas vezes dividido. Datura, Primula.
     — Diphyllum.Constando de duas. Papaver.
@@ -4706,9 +4707,9 @@
     — Hexaphyllum. De seis. Daucus.
     113.<s> Gluma. fig. 134. a. <term lemma="cálice" orth="Cálice">Caliz</term> proprio das gramas: elle, he formado de pequenas folhas concavas, que se unem.</s> Pelo numero das valvas se diz uni, bi, tri, valvis, e apenas consta de seis.
     Valvae. Saõ laminas seccas, que resistem à chuva, tem a rigeza de papel, e quasi sempre saõ compridas.
-    — 114. a.) <s>Uniflora. Que contem huma só flor, e esta, ou he perfeita com <term lemma="estame" gram="plural">estames</term>, e pistillo, ou sòmente tem <term lemma="estame" gram="plural">estames</term>, ou tem pistillo. Panicum, Phalaris.</s>
-    — <s>Biflora. Contendo dous <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term>.</s>
-    — <s>Multiflora. Tendo mais, que dous <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term>. Triticum.</s>
+    — 114. a.) <s>Uniflora. Que contem huma só flor, e esta, ou he perfeita com <term lemma="estame" msd="plural">estames</term>, e pistillo, ou sòmente tem <term lemma="estame" msd="plural">estames</term>, ou tem pistillo. Panicum, Phalaris.</s>
+    — <s>Biflora. Contendo dous <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term>.</s>
+    — <s>Multiflora. Tendo mais, que dous <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term>. Triticum.</s>
     — b.) Univalvis. Se a flor alem das valvas, que servem de corolla, vem cuberta com huma só valva, ou escama.
     — Bi-multi-valvis. A flor tem duas &amp;c. escamas, ou valvas, ou muitas; seis Hordeum.
     — c.) Colorata. De outra côr, que naõ seja a côr verde herbacea.
@@ -4726,8 +4727,8 @@
     — Flexa. Arista, que tem no meio hum nó torcido. Avena. 
     — Geniculata, articulata. Com nós, ou articulaçoens. Stipa Plumosa.
     — Recurvata. Arqueada para a parte exterior.
-    116. <s>Amentum. fig. 137. He hum <term lemma="cálice" orth="cálice">caliz</term> produzido do receptaculo commum, filiforme, paleaceo, gemmaceo, ou com <term lemma="gomo" gram="plural">gomos</term>. Fuglans.</s>
-    — <s>Squamosum. Quando os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> estaõ guarnecidos de escamas. Carpinus.</s> — Nudum. Sem escamas. 
+    116. <s>Amentum. fig. 137. He hum <term lemma="cálice" orth="cálice">caliz</term> produzido do receptaculo commum, filiforme, paleaceo, gemmaceo, ou com <term lemma="gomo" msd="plural">gomos</term>. Fuglans.</s>
+    — <s>Squamosum. Quando os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> estaõ guarnecidos de escamas. Carpinus.</s> — Nudum. Sem escamas. 
     Pericarpium. Fruto, que sahe do amento, que representa huma figura conica. 
     Strobilus. De figura conica. 
     — <s>Arista. Estando a corolla pegada ao <term lemma="cálice" orth="cálice">caliz</term> com pequeno pedunculo.</s> 
@@ -4739,7 +4740,7 @@
     — Monophylla. De huma só folha. Narcissus.
     — Diphylla. De duas folhas. Stratiotes imbricata. Musa.
     — Imbricata. Com escamas dispostas á maneira de telhas. Musa. 
-    118. <s>Calyptra. fig. 136. <term lemma="cálice" orth="Cálice">Caliz</term> proprio dos musgos, que vem a ser hum pequeno operculo, ou tampa, que cobre a <term lemma="antera" orth="antera" gram="singular">anthera</term>. Polytrichum commune.</s>
+    118. <s>Calyptra. fig. 136. <term lemma="cálice" orth="Cálice">Caliz</term> proprio dos musgos, que vem a ser hum pequeno operculo, ou tampa, que cobre a <term lemma="antera" orth="antera" msd="singular">anthera</term>. Polytrichum commune.</s>
     — <s>Recta. Sendo este <term lemma="cálice" orth="cálice">caliz</term> calyptra perpendicular.</s>
     — <s>Obliqua. Sendo este <term lemma="cálice" orth="cálice">caliz</term> calyptra posto obliquamente, ou virado para algum lado.</s>
     119. <s>Volva. fig. 139. b. Chama-se impropriamente <term lemma="cálice" orth="cálice">caliz</term>: elle he huma membrana (para assim me explicar) que une a periferia do pileo (vid. infr.) dos cucumellos antes da expançaõ, depois da qual se dilacera perdendo a semilhança do <term lemma="cálice" orth="cálice">caliz</term>.</s>
@@ -4747,7 +4748,7 @@
     — Remota. Distante do pileo.
     — Remotissima. Muito mais distante.
     120 <s>Corolla. He o libro da planta, que se acha extendido na flor, ou he huma membrana interna da flor, ou huma folha, ou pequenas folhas, de substancia mais tenra, sempre linda, e differente da cór do <term lemma="cálice" orth="cálice">caliz</term>.</s>
-    <s>A corolla se distingue do Periancio, porque a quella, pela situaçaõ, alterna com os <term lemma="estame" gram="plural">estames</term>, e este está opposto aos mesmos.</s>
+    <s>A corolla se distingue do Periancio, porque a quella, pela situaçaõ, alterna com os <term lemma="estame" msd="plural">estames</term>, e este está opposto aos mesmos.</s>
     
     <pb n="256"/> 
     — Aequalis. As partes da corolla naõ saõ iguaes pela figura, tamanho, e proporçaõ.
@@ -4773,7 +4774,7 @@
     — Fissa. 2-12- Multifida. (107)
     — Partita. 2-Multipartita. (107)
     — Bifida. Dividida em dous com divisoens pouco profundas Utricularia. trifida, em tres, Alisma. quadrifida, em quatro Rinanthus, quinquefida em cinco Nicotiana. Sexfida Pavia Oectofidas, em oito Tormentilla. decemdida, Potentilla, Fragaria. duodecenfida, Lytbrum. 
-    <s>Corolla universalis. Nas flores agregadas como Globularia, Scabiosa, &amp;c. que constaõ de muitos <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> postos em hum <term lemma="cálice" orth="cálice">caliz</term> commum.</s> Entende-se por corolla universal todo este ajuntamento de flores.
+    <s>Corolla universalis. Nas flores agregadas como Globularia, Scabiosa, &amp;c. que constaõ de muitos <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> postos em hum <term lemma="cálice" orth="cálice">caliz</term> commum.</s> Entende-se por corolla universal todo este ajuntamento de flores.
     122. c.) Regularis aequalitate. Corolla regular na <pb n="258"/>igualdade, quando o limbo, ou lacinias na corolla monopetala, e as laminas na corolla polipetala saõ iguaes no tamanho, e na figura. Lychnis. Aquilegia.
     — Irregularis. Irregular, quando as partes do limbo, ou da lamina taõ differentes pela figura, grandeza, e proporçaõ. Echium vulgare. Aconitum. Lamium. 
     — Inaequalis. Quando as ditas partes se correspondem naõ no tamanho, mas só na proporçaõ; demaneira, que se forma huma flor regular. Butomus. 
@@ -4815,19 +4816,19 @@
     — Papillionacea. Á semelhança quasi de borboleta: esta corolla consta de quatro petalos irregulares, ou desiguaes. Pisum. Lathyrus.
     Carina, concha. He o petalo inferior do feitio de barco.
     Alis. Saõ os petalos lateraes hum em cada lado da flor.
-    <s>Vexillo. He o petalo superior quasi sempre dividido em duas partes na base, ou na unha, que inclue os <term lemma="estame" gram="plural">estames</term>, e o pistillo.</s>
+    <s>Vexillo. He o petalo superior quasi sempre dividido em duas partes na base, ou na unha, que inclue os <term lemma="estame" msd="plural">estames</term>, e o pistillo.</s>
     — Rosacea. Sendo regular, e de cinco petalos, como nas umbelliferas; quando consta de muitos petalos dispostos em circulo. Rosa, Ranunculus. Sendo seis petalos d e, chama-se planta Liliacea. Tulipa, Asphodelus.
     — Anomala. Corolla, de muitos ineguaes petalos com nectario. Tropaeolum indicum.
     124. e.)
     
     <pb n="261"/>
     
-    124. e.) <s>Composita. Chama-se corolla composta, quando estaõ muitas pequenas flores em huma base, ou receptaculo commum, ou em hum <term lemma="cálice" orth="cálice">caliz</term> commum. (111), e tambem ao mesmo tempo as <term lemma="antera" orth="anteras" gram="plural">antheras</term> de cada flor estaõ unidas entre si formando hum cylindro.</s>
-    — <s>Ligulata, seu semiflosculosa Tournefort. Quando o limbo das pequenas corollas dos <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> na parte exterior está extendido, e he mais comprido, formando huma pequena correa.</s>
+    124. e.) <s>Composita. Chama-se corolla composta, quando estaõ muitas pequenas flores em huma base, ou receptaculo commum, ou em hum <term lemma="cálice" orth="cálice">caliz</term> commum. (111), e tambem ao mesmo tempo as <term lemma="antera" orth="anteras" msd="plural">antheras</term> de cada flor estaõ unidas entre si formando hum cylindro.</s>
+    — <s>Ligulata, seu semiflosculosa Tournefort. Quando o limbo das pequenas corollas dos <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> na parte exterior está extendido, e he mais comprido, formando huma pequena correa.</s>
     — Tubulosa, seu flosculosa de Tournefort. Cada huma das pequenas corollas saõ de feitio de canudo, e quasi iguaes.
     — <s>Radiata. As pequenas corollas do <term>disco</term> da flor commua, ou que estaõ no meio, saõ tubulosas, e as corollas, que estaõ na circunferencia saõ liguladas; e assim Tournefort chama a estas flores flores radiati. Aster. Jacobæa.</s>
     — Floribus tubulosis. A flor consta sómente destas flores tubulosas. Centaurea.
-    — <s>Floribus subnudis. Quando os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> da circunferencia estaõ quasi sem corolla. Artemisia.</s>
+    — <s>Floribus subnudis. Quando os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> da circunferencia estaõ quasi sem corolla. Artemisia.</s>
     — Undulata. (53) Gloriosa.
     — Plicata. (53) Convolvulus.
     — Torta. (170) Asclepias, Vinca.
@@ -4856,8 +4857,8 @@
     — <s>Nudus. Naõ existindo <term lemma="cálice" orth="cálice">caliz</term>.</s>
     — <s>Seminudus. Quando em lugar do <term lemma="cálice" orth="cálice">caliz</term> periancio ha alguma <term lemma="bráctea" orth="bráctea">bractea</term>, ou folha floral.</s>
     — Apetalus. Sem corolla.
-    — <s>Discoideus. A flor naõ tem raios; mas com tudo existem <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> parciaes.</s>
-    — <s>Capitatus. Chama-se a flor, cujo <term lemma="cálice" orth="cálice">caliz</term>, he de figura oval, formando hum collo, donde sahem os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term>. Carduus.</s>
+    — <s>Discoideus. A flor naõ tem raios; mas com tudo existem <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> parciaes.</s>
+    — <s>Capitatus. Chama-se a flor, cujo <term lemma="cálice" orth="cálice">caliz</term>, he de figura oval, formando hum collo, donde sahem os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term>. Carduus.</s>
     126. Nectarium. fig. 145. a. Parte da flor, que encerra o nectar da mesma flor, ou hum humor <pb n="263"/>doce como o mel. O tubo das fiores monopetalas quasi sempre contem mél.
     — Campanulatum. fig. 146. a. Vid. Corolla.
     — Cornutum. fig. 147. a. Á maneira de ponta. Aconiti.
@@ -4867,13 +4868,13 @@
     — Petalinum. Nos petalos, como na base do tubo Lamium, na unha do petalo. Orchis, Lilium.
     — Saccatum. Junto do sacco da corolla de varias flores, ou nas corollas monopetalas em huma cavidade ao pé da base. Antirrhinum majus.
     127. Stamina. fig. 149. a, e. fig. 150. 143. d. e. Saõ as entranhas, ou vasos exteriores para a preparaçaõ do pollen, ou esperma.
-    <s>Os <term lemma="estame" gram="plural">estames</term> saõ aquelles fios, ou <term lemma="filamento" gram="plural">filamentos</term>, que estaõ ao redor do germe, e que nos seus apices tem pollen, ou pó, que fecunda o germe.</s>
-    <s>As partes. Saõ filamentum, <term lemma="antera" orth="antera" gram="singular">anthera</term>, pollen; este he o <w orth="instrumento">instumento</w> masculino.</s> <s>Filamentum. fig. 150 a. 149. c. 143. d. He a parte, que sustenta, une a <term lemma="antera" orth="antera" gram="singular">anthera</term> (131), ou he o pè da <term lemma="antera" orth="antera" gram="singular">anthera</term>, pelo qual esta se une á planta; ás vezes faltaõ totalmente os <term lemma="filamento" gram="plural">filamentos</term>, ou saõ taõ pequenos, que apenas apparecem, e entaõ contaõ-se as <term lemma="antera" orth="anteras" gram="plural">antheras</term>.</s>
-    <s>Os <term lemma="filamento" gram="plural">filamentos</term> differem pelo numero, pela figura, proporçaõ, e situaçaõ.</s>
-    <s>As <term lemma="antera" orth="anteras" gram="plural">antheras</term>differem.</s> <s>Pelo numero, pelas <pb n="264"/>separações, ou divisoens, pela falta dellas, pela figura, pelo modo de se abrir, pela uniaõ com os <term lemma="filamento" gram="plural">filamentos</term>, ou entre si, e pela situaçaõ.</s>
-    <s>Pelo numero dos <term lemma="estame" gram="plural">estames</term>, ou <term lemma="filamento" gram="plural">filamentos</term>. Monandria, quando he hum só; Diandria dous. Triandria tres. Tetrandria quatro. Pentandria cinco. &amp;c. ou monostemonis, distemonis; ou por alguns Botanicos, significa o mesmo, que monanthera, dianthera com huma, com duas <term lemma="antera" orth="anteras" gram="plural">antheras</term>.</s>
+    <s>Os <term lemma="estame" msd="plural">estames</term> saõ aquelles fios, ou <term lemma="filamento" msd="plural">filamentos</term>, que estaõ ao redor do germe, e que nos seus apices tem pollen, ou pó, que fecunda o germe.</s>
+    <s>As partes. Saõ filamentum, <term lemma="antera" orth="antera" msd="singular">anthera</term>, pollen; este he o <w orth="instrumento">instumento</w> masculino.</s> <s>Filamentum. fig. 150 a. 149. c. 143. d. He a parte, que sustenta, une a <term lemma="antera" orth="antera" msd="singular">anthera</term> (131), ou he o pè da <term lemma="antera" orth="antera" msd="singular">anthera</term>, pelo qual esta se une á planta; ás vezes faltaõ totalmente os <term lemma="filamento" msd="plural">filamentos</term>, ou saõ taõ pequenos, que apenas apparecem, e entaõ contaõ-se as <term lemma="antera" orth="anteras" msd="plural">antheras</term>.</s>
+    <s>Os <term lemma="filamento" msd="plural">filamentos</term> differem pelo numero, pela figura, proporçaõ, e situaçaõ.</s>
+    <s>As <term lemma="antera" orth="anteras" msd="plural">antheras</term>differem.</s> <s>Pelo numero, pelas <pb n="264"/>separações, ou divisoens, pela falta dellas, pela figura, pelo modo de se abrir, pela uniaõ com os <term lemma="filamento" msd="plural">filamentos</term>, ou entre si, e pela situaçaõ.</s>
+    <s>Pelo numero dos <term lemma="estame" msd="plural">estames</term>, ou <term lemma="filamento" msd="plural">filamentos</term>. Monandria, quando he hum só; Diandria dous. Triandria tres. Tetrandria quatro. Pentandria cinco. &amp;c. ou monostemonis, distemonis; ou por alguns Botanicos, significa o mesmo, que monanthera, dianthera com huma, com duas <term lemma="antera" orth="anteras" msd="plural">antheras</term>.</s>
     <s>Laciniis. (120). Tendo o <term>filamento</term> hum apendis, ou lacinia. Salvia, Fumaria.</s>
-    128. <s>Pela figura. Os <term lemma="filamento" gram="plural">filamentos</term>.</s>
+    128. <s>Pela figura. Os <term lemma="filamento" msd="plural">filamentos</term>.</s>
     — Capillaria. Sendo delgados como os cabellos; da mesma grossura em todo o seu comprimento. Plantago.
     — Plana. Chatos, largos, delgados á maneira de huma membrana (53). Ornithogalum. Allium porrum.
     — Cuneiformia. (39) Do feitio de huma cunha. Thalictrum.
@@ -4882,13 +4883,13 @@
     — Emarginata. (46) Allium porrum.
     — Reflexa. (33) Gloriosa.
     — Hirsuta. Cubertos de huma laã alguma cousa rija. Verbascum Thapsus. Tradescantia. Anthericum.
-    129. <s>Pela inserçaõ, ou lugar onde os <term lemma="filamento" gram="plural">filamentos</term> estaõ pegados.</s>
+    129. <s>Pela inserçaõ, ou lugar onde os <term lemma="filamento" msd="plural">filamentos</term> estaõ pegados.</s>
     — <s>Calyci opposita. Oppostos, ou postos de fronte de cada lacinia do <term lemma="cálice" orth="cálice">caliz</term>. Urtica.</s>
     — <s>Calyci alterna. Postos entre as lacinias do <term lemma="cálice" orth="cálice">caliz</term>.</s>
-    — <s>Corollae inserta. Em muitas corollas monopetalas estaõ os <term lemma="estame" gram="plural">estames</term>, ou <term lemma="filamento" gram="plural">filamentos</term> pegados á corolla; <pb n="265"/>raras vezes nas polypetalas. Tulipa, Elaeagnus.</s>
+    — <s>Corollae inserta. Em muitas corollas monopetalas estaõ os <term lemma="estame" msd="plural">estames</term>, ou <term lemma="filamento" msd="plural">filamentos</term> pegados á corolla; <pb n="265"/>raras vezes nas polypetalas. Tulipa, Elaeagnus.</s>
     — <s>Calyci inserta. Pegados na parte interior do <term lemma="cálice" orth="cálice">caliz</term>, raras vezes se observa isto nas flores sem corolla. Rosa, e em toda a classe Icosandria.</s>
     — Pistillo inserta. Pegados ao pistillo. Orchis &amp;c. na classe Gynandria.
-    — <s>Receptaculo inserta. Quando os <term lemma="estame" gram="plural">estames</term> estaõ pegados na base da flor, ou do receptaculo, onde estaõ tambem pegados o <term lemma="cálice" orth="cálice">caliz</term>, e a corolla; isto he o mais commum.</s>
+    — <s>Receptaculo inserta. Quando os <term lemma="estame" msd="plural">estames</term> estaõ pegados na base da flor, ou do receptaculo, onde estaõ tambem pegados o <term lemma="cálice" orth="cálice">caliz</term>, e a corolla; isto he o mais commum.</s>
     130. Pela proporçaõ.
     — Æqualia. Tendo todos o mesmo comprimento
     — Inaequalia. Quando saõ desiguaes, alguns maiores, e outros menores. Lichnis, Daphne, Saxifraga.
@@ -4897,27 +4898,27 @@
     — <s>Brevissima. Muito breves respectivamente á corolla, ou ao <term lemma="cálice" orth="cálice">caliz</term> nos apetalos. Triglochin.</s>
     — Connata. Estando unidos entre si, formando hum só corpo, ou dous &amp;c. como nas classes Monadelphia, Diadelphia, Polyadelphia.
     — Libera. Que naõ estaõ unidos.
-    <s>Stamina castrata. Se os <term lemma="estame" gram="plural">estames</term> faltaõ totalmente; ou somente as <term lemma="antera" orth="anteras" gram="plural">antheras</term> necessarias para a <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>.</s>
-    131. <s>Anthera, seu apices, seu Capitula, seu testicula. fig. 143. e. 149. f. g. fig. 150. b. He a parte da flor prenhe do pollen, ou esperma (132), que vem lançando fora, quando a <term lemma="antera" orth="antera" gram="singular">anthera</term> está madura.</s> <s>Nos musgos o seu capitulo he a <term lemma="antera" orth="antera" gram="singular">anthera</term>.</s>
+    <s>Stamina castrata. Se os <term lemma="estame" msd="plural">estames</term> faltaõ totalmente; ou somente as <term lemma="antera" orth="anteras" msd="plural">antheras</term> necessarias para a <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>.</s>
+    131. <s>Anthera, seu apices, seu Capitula, seu testicula. fig. 143. e. 149. f. g. fig. 150. b. He a parte da flor prenhe do pollen, ou esperma (132), que vem lançando fora, quando a <term lemma="antera" orth="antera" msd="singular">anthera</term> está madura.</s> <s>Nos musgos o seu capitulo he a <term lemma="antera" orth="antera" msd="singular">anthera</term>.</s>
     
     <pb n="266"/>
     
     <s>Pileus fungorum. He hum segmento de esfera mais, ou menos grande, estendido horizontalmente, debaixo do qual suppoem alguns Botanicos, que existe a sua <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>; quando outros consideraõ os cucumelos como pertencentes ao reyno animal.</s>
     Antherae, vel pares. A duas e duas.
     — vel plures. Muitas.
-    — <s>vel pauciores. Menos, que os <term lemma="filamento" gram="plural">filamentos</term>.</s>
-    — <s>Connatae, coalitae. Varias <term lemma="antera" orth="anteras" gram="plural">antheras</term> estaõ unidas fortemente entre si; ou quando formaõ hum só corpo, como na classe Syngenesia.</s>
-    — <s>Lateralis. A <term lemma="antera" orth="antera" gram="singular">anthera</term> pegada pelo seu lado ao filamento. Paris. Asarum.</s>
-    — <s>Versatilis, incumbens. A ponta do <term>filamento</term> se pega no meio do lado da <term lemma="antera" orth="antera" gram="singular">anthera</term>. Tulipa, Gramina.</s>
-    <s>Anthera unica. Huma só em cada hum <term>filamento</term>, na maior parte das flores; huma em tres <term lemma="filamento" gram="plural">filamentos</term>. Cucurbita; huma em cinco <term lemma="filamento" gram="plural">filamentos</term> na classe Syngenesia.</s>
-    <s>Antherae duae: Duas <term lemma="antera" orth="anteras" gram="plural">antheras</term> em hum só <term>filamento</term>; Mercurialis; tres <term lemma="antera" orth="anteras" gram="plural">antheras</term> em hum só <term>filamento</term>, Fumaria; cinco em tres <term lemma="filamento" gram="plural">filamentos</term> Brionia; cinco em cada <term>filamento</term>. Theobroma.</s>
-    <s>Loculi. Saõ concameraçoens, ou cavidades, da <term lemma="antera" orth="antera" gram="singular">anthera</term>, nas quaes está o pollen; e que se distinguem bem quando o pollen sahio.</s>
-    <s>Segundo o numero dos ditos loculamentos he que se denominaõ as <term lemma="antera" orth="anteras" gram="plural">antheras</term>.</s>
-    — <s>Bi-tri, quadri-multiloculares. <term lemma="antera" orth="Antera" gram="singular">Anthera</term> com dous, tres &amp;c. loculos.</s>
+    — <s>vel pauciores. Menos, que os <term lemma="filamento" msd="plural">filamentos</term>.</s>
+    — <s>Connatae, coalitae. Varias <term lemma="antera" orth="anteras" msd="plural">antheras</term> estaõ unidas fortemente entre si; ou quando formaõ hum só corpo, como na classe Syngenesia.</s>
+    — <s>Lateralis. A <term lemma="antera" orth="antera" msd="singular">anthera</term> pegada pelo seu lado ao filamento. Paris. Asarum.</s>
+    — <s>Versatilis, incumbens. A ponta do <term>filamento</term> se pega no meio do lado da <term lemma="antera" orth="antera" msd="singular">anthera</term>. Tulipa, Gramina.</s>
+    <s>Anthera unica. Huma só em cada hum <term>filamento</term>, na maior parte das flores; huma em tres <term lemma="filamento" msd="plural">filamentos</term>. Cucurbita; huma em cinco <term lemma="filamento" msd="plural">filamentos</term> na classe Syngenesia.</s>
+    <s>Antherae duae: Duas <term lemma="antera" orth="anteras" msd="plural">antheras</term> em hum só <term>filamento</term>; Mercurialis; tres <term lemma="antera" orth="anteras" msd="plural">antheras</term> em hum só <term>filamento</term>, Fumaria; cinco em tres <term lemma="filamento" msd="plural">filamentos</term> Brionia; cinco em cada <term>filamento</term>. Theobroma.</s>
+    <s>Loculi. Saõ concameraçoens, ou cavidades, da <term lemma="antera" orth="antera" msd="singular">anthera</term>, nas quaes está o pollen; e que se distinguem bem quando o pollen sahio.</s>
+    <s>Segundo o numero dos ditos loculamentos he que se denominaõ as <term lemma="antera" orth="anteras" msd="plural">antheras</term>.</s>
+    — <s>Bi-tri, quadri-multiloculares. <term lemma="antera" orth="Antera" msd="singular">Anthera</term> com dous, tres &amp;c. loculos.</s>
     Unicus, com hum loculo, ou cavidade. Mercurialis.
-    <s>Geminus, dous, Helleborus; ter tres, Orchis; <pb n="267"/>quater quatro, Fritillaria; por isso he que se diz <term lemma="antera" orth="antera" gram="singular">anthera</term> unilocular, bilocular &amp;c.</s>
-    <s>Apertura, Dechiscentia. Abertura da <term lemma="antera" orth="antera" gram="singular">anthera</term> pela qual sahe, ou se lança o pollen da sua cavidade, ou loculo, a qual está em hum lado da <term lemma="antera" orth="antera" gram="singular">anthera</term> no Leucojum; em muitas plantas tem as <term lemma="antera" orth="anteras" gram="plural">antheras</term> esta abertura no apice Solanum; outras desde a base atè ao apice, Epimedium. fig. 49. f.</s>
-    <s>Figura da <term lemma="antera" orth="antera" gram="singular">anthera</term>.</s>
+    <s>Geminus, dous, Helleborus; ter tres, Orchis; <pb n="267"/>quater quatro, Fritillaria; por isso he que se diz <term lemma="antera" orth="antera" msd="singular">anthera</term> unilocular, bilocular &amp;c.</s>
+    <s>Apertura, Dechiscentia. Abertura da <term lemma="antera" orth="antera" msd="singular">anthera</term> pela qual sahe, ou se lança o pollen da sua cavidade, ou loculo, a qual está em hum lado da <term lemma="antera" orth="antera" msd="singular">anthera</term> no Leucojum; em muitas plantas tem as <term lemma="antera" orth="anteras" msd="plural">antheras</term> esta abertura no apice Solanum; outras desde a base atè ao apice, Epimedium. fig. 49. f.</s>
+    <s>Figura da <term lemma="antera" orth="antera" msd="singular">anthera</term>.</s>
     — Oblonga. Muito comprida. Lilium.
     — Globosa. Á maneira de globo Mercurialis.
     — Angulosa, angulata. Com angulos. Tulipa.
@@ -4928,17 +4929,17 @@
     — Basi. Pela sua base, na maior parte das flores.
     — Latere. Pelo lado. Canna.
     — Nectario. Pelo nectario. Costus.
-    <s>Situaçaõ, ou lugar nos <term lemma="filamento" gram="plural">filamentos</term>.</s>
+    <s>Situaçaõ, ou lugar nos <term lemma="filamento" msd="plural">filamentos</term>.</s>
     — <s>Apice. Na ponta do <term>filamento</term>, ordinariamente.</s>
     — Latere. Em hum lado. Paris. Asarum.
     — Pistillo. Ao pistillo. Aristolochia.
     — Receptaculo. Ao receptaculo. Arum.
     132. Pollen. fig. 151. a. He o pó da flor, cujo pó sendo humedecido por hum humor particular rompe-se e lança huns atomos elasticos. A figura 149. f. reprezenta este pó subtil visto com o microscopio; cum halitu elastico, s: aura seminali b. no tempo da sua expulsaõ. Needham decovert. microscop. p. 83. t. 5. fig. 5.
-    133. <s>Pistillum. fig. 143. 149. d. 150. a. 152. He huma parte da flor posta no meio, pela qual entra o pollen, ou a aura seminal no germe, ou <pb n="268"/>ovario para a fecundaçaõ; està cercado dos <term lemma="filamento" gram="plural">filamentos</term>, e está posto geralmente entre as <term lemma="antera" orth="anteras" gram="plural">antheras</term>, e consta de germe, stilo, e <term>estigma</term>.</s>
+    133. <s>Pistillum. fig. 143. 149. d. 150. a. 152. He huma parte da flor posta no meio, pela qual entra o pollen, ou a aura seminal no germe, ou <pb n="268"/>ovario para a fecundaçaõ; està cercado dos <term lemma="filamento" msd="plural">filamentos</term>, e está posto geralmente entre as <term lemma="antera" orth="anteras" msd="plural">antheras</term>, e consta de germe, stilo, e <term>estigma</term>.</s>
     Os pistilos saõ differentes.
     Em quanto ao numero, ás lacinias, á figura, comprimento, grossura, e situaçaõ.
     <s>O Pistillo consta de Germe, Stilo, e <term>estigma</term>.</s>
-    134. Germen fig. 143. a. 149. b. 135. a. <s>O germe he o principio do fruto, que existe na flor, principalmente no mesmo tempo, em que as <term lemma="antera" orth="anteras" gram="plural">antheras</term> lançaõ o pó.</s> Corresponde ao ovario, e está na parte inferior da flor.
+    134. Germen fig. 143. a. 149. b. 135. a. <s>O germe he o principio do fruto, que existe na flor, principalmente no mesmo tempo, em que as <term lemma="antera" orth="anteras" msd="plural">antheras</term> lançaõ o pó.</s> Corresponde ao ovario, e está na parte inferior da flor.
     — <s>Superum. O germe incluido na corolla superior ao <term lemma="cálice" orth="cálice">caliz</term> posto acima do receptaculo, ou base da flor; ou o <term lemma="cálice" orth="cálice">caliz</term> fica com a sua base inferior ao germe. Paris, Prumus, Cerasus. Berberis. Pulmonaria.</s>
     — <s>Inferum. O Germe está posto inferiormente á corolla; ou está debaixo do receptaculo da flor, ou quando o <term lemma="cálice" orth="cálice">caliz</term> se muda em fruto, segundo Tournefort; e assim vem a ser flos superus de Linneo. Pyrus communis. Pyrus malus, Gallium.</s>
     135. <s>Stylus. fig. 143. b. 149. c. 152: b He a parte do meio do pistillo, ou huma efpecie de pedunculo, que está acima do germe, e sustenta o <term>estigma</term> (137); ou como huma especie de canudo, pelo qual passa a aura seminal, que fecunda o germe.</s>
@@ -4957,14 +4958,14 @@
     Pela duraçaõ.
     — Persistens. Que dura muito tempo. Tetradynamia.
     — Marcescens. Que se murcha logo, que se fecunda o germe.
-    136 <s>Pela proporçaõ aos <term lemma="estame" gram="plural">estames</term>.</s> (64.).
-    — <s>Longissimus. Muito mais comprido, que os <term lemma="estame" gram="plural">estames</term>, Campanula, Zea Mays. Scrozonera.</s>
-    — <s>Brevissimus. Muito mais breve, que os <term lemma="estame" gram="plural">estames</term>.</s>
+    136 <s>Pela proporçaõ aos <term lemma="estame" msd="plural">estames</term>.</s> (64.).
+    — <s>Longissimus. Muito mais comprido, que os <term lemma="estame" msd="plural">estames</term>, Campanula, Zea Mays. Scrozonera.</s>
+    — <s>Brevissimus. Muito mais breve, que os <term lemma="estame" msd="plural">estames</term>.</s>
     — Nullus. Nenhum. Papaver.
-    — <s>Longitudine staminum. Do comprimento dos <term lemma="estame" gram="plural">estames</term> na maior parte das flores. Nicotiana.</s>
-    — <s>Crassior. Mais grosso, que os <term lemma="estame" gram="plural">estames</term>. Leucojum.</s>
-    — <s>Tenuior. Mais delgado, que os <term lemma="estame" gram="plural">estames</term>. Ceratocarpus.</s>
-    — <s>Aequalis. Igual na grossura aos <term lemma="estame" gram="plural">estames</term>. Lamium.</s>
+    — <s>Longitudine staminum. Do comprimento dos <term lemma="estame" msd="plural">estames</term> na maior parte das flores. Nicotiana.</s>
+    — <s>Crassior. Mais grosso, que os <term lemma="estame" msd="plural">estames</term>. Leucojum.</s>
+    — <s>Tenuior. Mais delgado, que os <term lemma="estame" msd="plural">estames</term>. Ceratocarpus.</s>
+    — <s>Aequalis. Igual na grossura aos <term lemma="estame" msd="plural">estames</term>. Lamium.</s>
     Pela divizaõ, que naõ chega até a sua base.
     — Bifidus. Dividido em dous, formando angulo muito agudo. Polygonum persicaria.
     — Dichotomus. Divide-se em dous; mas estas divizoens formaõ hum angulo recto. (22)
@@ -5139,12 +5140,12 @@
     <pb n="278"/>
     Rostellum. He a parte simples do corculo descendente, ou a base da plumula, que forma a raiz, formando a plumula o tronco, ou caule.
     O ser, ou essencia da semente. <s>Consiste no corculo, o qual está pegado ao <term lemma="cotilédone" orth="cotilédone">cotyledon</term>, e he cuberto pelo mesmo, e depois he todo cuberto com huma membrana, ou tunica.</s>
-    Propagines muscorum. <s>Saõ sementes sem tunicas, e <term lemma="cotilédone" orth="cotilédones" gram="plural">cotyledones</term> de maneira, que o corculo está nû, e assim o rostello está pegado ao <term lemma="cálice" orth="cálice">caliz</term>,</s>
+    Propagines muscorum. <s>Saõ sementes sem tunicas, e <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term> de maneira, que o corculo está nû, e assim o rostello está pegado ao <term lemma="cálice" orth="cálice">caliz</term>,</s>
     149. As partes menos essenciaes da semente, mas que existem em todas as sementes, excepto as dos musgos, saõ.
     Cotyledon s: Placenta. He hum corpo, ou folha grossa no lado da Semente, que absorve a agua, que cahe, serve, para nutrir no principio a planta.
-    <s>Monocotyledon. Hum só <term lemma="cotilédone" orth="cotilédone">cotyledon</term>. As antas <term lemma="bulboso" gram="feminino plural">bulbosas</term>. Allium, Cepa.</s>
+    <s>Monocotyledon. Hum só <term lemma="cotilédone" orth="cotilédone">cotyledon</term>. As antas <term lemma="bulboso" msd="feminino plural">bulbosas</term>. Allium, Cepa.</s>
     Dicotyledon. Dous, quasi todas as sementes, Phaseolus, Pisum. Melo.
-    <s>Polycotyledon. Com muitos <term lemma="cotilédone" orth="cotilédones" gram="plural">cotyledones</term>; saõ poucas plantas; des, Pinus. cinco Cupressus. quatro Linum.</s>
+    <s>Polycotyledon. Com muitos <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term>; saõ poucas plantas; des, Pinus. cinco Cupressus. quatro Linum.</s>
     Hilum, s: Hylus. He a cicatriz da semente produzida do lugar, por onde a semente se pega no fruto; esta he bem vizivel no Cordiospermum, Staphylea, Phaseolus.
     Arillus. He a tunica, ou cuberta exterior particular da semente, que expontaneamente se separa della na vegetaçaõ, ou evoluçaõ da semente. Cucumis, Dictamnus.
     — a.) Suculentus. Este arillo tem çumo. Evonymus.
@@ -5170,7 +5171,7 @@
     — Rugosum. (50) &amp;c.
     Pela consistencia, ou rijeza.
     — Osseum. Rija como o osso. Lithospermum. Nuces. Corylus.
-    — <s>Callossum, cartilagineum. De substancia callosa, ou <term lemma="cartilagíneo" orth="cartilagínea" gram="feminino singular">cartilaginea</term>. Citrus.</s>
+    — <s>Callossum, cartilagineum. De substancia callosa, ou <term lemma="cartilagíneo" orth="cartilagínea" msd="feminino singular">cartilaginea</term>. Citrus.</s>
     153. <s>Corona. He o <term lemma="cálice" orth="cálice">caliz</term> pegado á summidade da <pb n="280"/>semente, cujo <term lemma="cálice" orth="cálice">caliz</term> he o da flor, por meio do qual o vento a faz voar. Scabiosa.</s>
     Pappus. fig. 162. He huma coroa posta no apice da semente formada de huma especie de pluma, ou de pellos, pela qual o vento a transporta pelo ár. Taraxacum.
     Este papo pois he 1. stipitatus. fig. 162. b. Tendo hum fio, que sustenta o papo, e o une á semente.
@@ -5197,8 +5198,8 @@
     4. Caliculus. He a pequena coroa com pequenas preganas feita de hum só pedaço, que está no apice da semente. Scabiosa. Statice. Trifolium.
     5. Nux. Noz, semente cuberta com huma casca ossea. Corylus avellana.
     Nos frutos Drupa chama-se nucleus 1-2. &amp;c. locularis, bilocularis.
-    6. <s>Propago. He a semente dos musgos sem arillo, e sem <term lemma="cotilédone" orth="cotilédones" gram="plural">cotyledones</term>.</s>
-    155. <s>Receptaculum. He o leito, ou placenta, ou base, em que estaõ pegadas as partes da <term lemma="frutificação" orth="frutificação">frutificaçaõ</term> (104).</s> <s>O receptaculo cerca internamente as paredes do <term lemma="cálice" orth="cálice">caliz</term> na classe Icosandria, e em algumas outras plantas; e assim a corolla, e os <term lemma="filamento" gram="plural">filamentos</term> estaõ pegados ao <term lemma="cálice" orth="cálice">caliz</term>. Fragaria. Pyrus.</s>
+    6. <s>Propago. He a semente dos musgos sem arillo, e sem <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term>.</s>
+    155. <s>Receptaculum. He o leito, ou placenta, ou base, em que estaõ pegadas as partes da <term lemma="frutificação" orth="frutificação">frutificaçaõ</term> (104).</s> <s>O receptaculo cerca internamente as paredes do <term lemma="cálice" orth="cálice">caliz</term> na classe Icosandria, e em algumas outras plantas; e assim a corolla, e os <term lemma="filamento" msd="plural">filamentos</term> estaõ pegados ao <term lemma="cálice" orth="cálice">caliz</term>. Fragaria. Pyrus.</s>
     Placenta He o receptaculo nas flores compostas.
     — <s>Proprium. Particular a huma só <term lemma="frutificação" orth="frutificação">frutificaçaõ</term>.</s>
     — Fructificationis. Receptaculo commum á flor, e ao fruto.
@@ -5207,7 +5208,7 @@
     
     <pb n="282"/>
     — Seminum. fig. 161. Base, em que estaõ pegadas as sementes no fruto. Hyoscimus.
-    156. <s>Commune. (140. 141. 135. 133) Quando sustenta, e une muitos <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term>, e os seus frutos de tal modo, que tirados alguns se produz irregularidade.</s>
+    156. <s>Commune. (140. 141. 135. 133) Quando sustenta, e une muitos <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term>, e os seus frutos de tal modo, que tirados alguns se produz irregularidade.</s>
     Pela superficie.
     — Nudum. fig. 140. Sem pellos, sedas, villos, palhas &amp;c. Leontodon. Taraxacum.
     — Punctatum. fig. 140. Cuberto de pontos excavados, e nû em quanto ao mais. Leontodon, Taraxacum. Chrysanthemum.
@@ -5215,14 +5216,14 @@
     — Villosum. Cuberto de villos (79). Artemisia. Absynthium. Carduus.
     — Pilosum. Com pellos (79). Carthamus.
     — Setosum. Cercado de sedas (80). Arctium. Lappa, Centaurea, Cyanus.
-    — <s>Paleaceum, fig. 141. b. Com palhas, ou lamellas postas perpendicularmente, que dividem os <term lemma="flósculo" orth="flósculos" gram="plural">flosculos</term> entre si.</s>
+    — <s>Paleaceum, fig. 141. b. Com palhas, ou lamellas postas perpendicularmente, que dividem os <term lemma="flósculo" orth="flósculos" msd="plural">flosculos</term> entre si.</s>
     157. b. Pela figura.
     — Planum. Plano, ou espalmado na superficie. Achillæa millefolium.
     — Convexum. Com a superficie elevada, formando hum segmento de esfera. Matricaria chamomilla.
     — Conicum. fig. 141. Com a superficie elevada em figura conica. Anthemis. Bellis.
     — Concavum. Concavo.
     — Subulatum. (56)
-    158. <s>Compositus flos. Receptaculo estendido, convexo, commum a muitas pequenas flores monopetatas, com as <term lemma="antera" orth="anteras" gram="plural">antheras</term> unidas em cylindro.</s>
+    158. <s>Compositus flos. Receptaculo estendido, convexo, commum a muitas pequenas flores monopetatas, com as <term lemma="antera" orth="anteras" msd="plural">antheras</term> unidas em cylindro.</s>
     
     <pb n="283"/>
     — 1. Ligulatus, aut semiflosculosus Tournefort. Todas as pequenas corollas saõ planas, e estendidas para a parte externa.
@@ -5231,17 +5232,17 @@
     <s>Compositus, radiatus flos. A flor composta radiada consta de <term>disco</term> e raio.</s>
     Radius. O raio he formado de pequenas corollas irregulares postas na circunferencia.
     <s>Discus. A superficie, ou centro da flor, consta de pequenas corollas quasi sempre regulares: na flor composta he a parte do meio, que acaba, ou que vem cercada com a margem do <term lemma="cálice" orth="cálice">caliz</term>.</s>
-    <s>Decompositus. Flor composta de flores compostas; contem em hum <term lemma="cálice" orth="cálice">caliz</term> commum <term lemma="cálice" orth="cálices" gram="plural">calices</term> menores, que saõ communs a muitas flores. Sphaerantus.</s>
+    <s>Decompositus. Flor composta de flores compostas; contem em hum <term lemma="cálice" orth="cálice">caliz</term> commum <term lemma="cálice" orth="cálices" msd="plural">calices</term> menores, que saõ communs a muitas flores. Sphaerantus.</s>
     <s>Completus flos. Flor completa, ou perfeita, consta de corolla, e <term lemma="cálice" orth="cálice">caliz</term>.</s>
     <s>Incompletus. Faltando na flor a corolla, ou o <term lemma="cálice" orth="cálice">caliz</term>.</s>
     Apetalus flos. Flor sem corolla,
     <s>Nudus. Flor sem <term lemma="cálice" orth="cálice">caliz</term>.</s>
-    159. <s>Aggregatus flos. Flor, cujo receptaculo, ou base larga, inteira, contem muitas pequenas flores com pequenos peciolos; porem as <term lemma="antera" orth="anteras" gram="plural">antheras</term> naõ estaõ unidas entre si. Scabiosa, Dipsacus.</s>
+    159. <s>Aggregatus flos. Flor, cujo receptaculo, ou base larga, inteira, contem muitas pequenas flores com pequenos peciolos; porem as <term lemma="antera" orth="anteras" msd="plural">antheras</term> naõ estaõ unidas entre si. Scabiosa, Dipsacus.</s>
     Amentaceus aggregatus. O receptaculo, ou base desta flor he comprida, e delgada, e da mesma largura em todo o comprimento, e dividido com escamas do mesmo amento. Betula. Salix. Urtica. Pinus, Juniperus.
     <pb n="284"/><s>Glumosus aggregatus. O receptaculo delgado, comprido, de igual grossura; porém a sua base he huma gluma, ou especie de <term lemma="cálice" orth="cálice">caliz</term> commum. Festuca, Poa, Lolium, Hordeum.</s>
     Spadiceus aggregatus. Especie de flor, cujo receptaculo está dentro da Spata, e he commum a muitas pequenas flores. Arum.
     160. Umbella. As flores dispostas em forma de umbella, o que succede, quando todos os pedunculos das flores sahem do mesmo centro fazendo assim huma circunferencia igual. Pastinaca, Cuminum.
-    Umbellatus flos. fig. 135. Hum receptaculo, ou base commua dividida, e allongada, ou estendida em pedunculos á maneira de fios proporcionaes, os quaes todos sahem do mesmo centro, ou que sahindo todos do mesmo ponto formaõ huma circunferencia igual. <s>Cada flor contém cinco <term lemma="estame" gram="plural">estames</term> desunidos, que cahem depois de fecundado o germe, o qual está posto debaixo da corolla: o pistillo he <term lemma="bífido" orth="bífido">bifido</term>, as sementes saõ duas, unidas entre si pela summidade. Astrantia, Sanicula.</s>
+    Umbellatus flos. fig. 135. Hum receptaculo, ou base commua dividida, e allongada, ou estendida em pedunculos á maneira de fios proporcionaes, os quaes todos sahem do mesmo centro, ou que sahindo todos do mesmo ponto formaõ huma circunferencia igual. <s>Cada flor contém cinco <term lemma="estame" msd="plural">estames</term> desunidos, que cahem depois de fecundado o germe, o qual está posto debaixo da corolla: o pistillo he <term lemma="bífido" orth="bífido">bifido</term>, as sementes saõ duas, unidas entre si pela summidade. Astrantia, Sanicula.</s>
     Spuria umbella. He huma flor aggregada, na qual os peclunculos sahem de hum ponto commum, mas depois dividem-se irregularmente em ramos.
     a.) Pela divisaõ.
     — Simplex. He simples, quando o receptaculo he dividido em pedunculos huma só vez. Sanicula. Eryngium.
@@ -5260,8 +5261,8 @@
     — Nutans. Contraria á precedente. Solenum nigrum.
     — Cernua. He entre a erecta, e a nutans declinada alguma cousa para hum lado. Chærophyllum tremulum.
     163. Cyma, flos cymosus. He hum receptaculo, ou huma base dividida em pedunculos, dos quaes todos os primeiros sahem como na umbella da o mesmo centro; mas os segundos, ou os mais pequenos naõ sahem do mesmo centro, mas <pb n="286"/>sahem sem ordem. Sambucus nigra, Sambucus ebulus, Solanum dulcamara.
-    — <s>Nuda. Sem involucro, ou <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>. Cornus sanguineus.</s>
-    — <s>Bracteata. Com <term lemma="bráctea" orth="brácteas" gram="plural">bracteas</term>.</s> (87)
+    — <s>Nuda. Sem involucro, ou <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>. Cornus sanguineus.</s>
+    — <s>Bracteata. Com <term lemma="bráctea" orth="brácteas" msd="plural">bracteas</term>.</s> (87)
     — Ramosa. Dividida em ramos. Sedum album.
     — Trifida Dividida em tres até ao meio. Sedum acre.
     — Tripartita. Dividida até á base em tres. Sambucus Ebulus.
@@ -5394,21 +5395,21 @@
     <pb n="292"/>
      
     <pb n="293"/>
-    MEMÓRIA SOBRE A UTILIDADE DOS JARDINS BOTANICOS A RESPEITO DA AGRICULTURA, E PRINCIPALMENTE DA CULTIVAÇÃO DAS CHARNECAS
+    <s>MEMÓRIA SOBRE A UTILIDADE DOS <term lemma="jardim botânico" orth="JARDINS BOTÂNICOS" msd="plural">JARDINS BOTANICOS</term> A RESPEITO DA AGRICULTURA, E PRINCIPALMENTE DA CULTIVAÇÃO DAS CHARNECAS</s>
     
     A sciencia da Agricultura<note>Os authores, que escreveraõ da politica como Platão Xenofonte, Aristoteles, fizeraõ da Agricultura uma parte essencial della. Os Heróes de Roma applicavaõ-se à cultura da terra; e esta como diz Plinio se gloriava de ser cultivada por mãos victoriosas, e triunfantes. Gaudente terra vomere laureato. Varraõ  cita cincoenta authores gregos, que escreveraõ sobre este assumpto. Cataõ, Columella, Varraõ, fizeraõ ver com suas investigações a grande extençaõ, e utilidade desta sciencia. De alguns paizes se póde dizer o que Columella escreveo no tempo de Tiberio: Vejo em Roma academias de Filosofos, Oradores, Geometras, <pb n="294"/>
     e musicos; vejo homens que estudaõ as artes, que tem o por objeto o paladar, e o ornato dos cabellos, e ao mesmo tempo contemplo desprezada a Agricultura.</note> consiste principalmente no conhecimento dos vegetaes, de sua natureza, e do clima, e terreno em que nascem; na causa da fertilidade da terra, na influencia do ar sobre os vegetaes, e nas regras praticas necessarias para a boa cultura. 
-    <pb n="294"/>O primeiro conhecimento adquire-se com o estudo da botanica, o segundo com experiencias e reflexões fisicas, o terceiro, e quarto com hum jardim botanico, no qual he necessario cultivar os vegetaes de todos os climas, e terrenos.
+    <pb n="294"/><s>O primeiro conhecimento adquire-se com o estudo da botanica, o segundo com experiencias e reflexões fisicas, o terceiro, e quarto com hum <term lemma="jardim botânico" orth="jardim botânico">jardim botanico</term>, no qual he necessario cultivar os vegetaes de todos os climas, e terrenos.</s>
     Hum botanico ignora inteiramente quaes sejaõ os terrenos estereis (se exceptuarmos um cham cheio de ocra, enxofre, ou sal) por cuja causa póde escolher entre treze mil, e mais plantas, que se conhecem, as que são uteis á economia, e proprias á qualidade do terreno<note>Sendo na agricultura hum principio certo escolher os vegetaes para aquelles terrenos, que lhes são proprios.</note>; pois que he certo, que existem plantas proporcionadas a todos os diferentes terrenos: por exemplo para as terras, que os Francezes chamaõ franche que saõ os ordinarios terrenos cultivados; para os lugares cheios de barro, greda, e areia; para os campos aridos, aquosos e arenosos maritimos.
     Duas saõ as opnioens a respeito da fertilidade da terra. A primeira, he que a terra ferve somente de matriz aos vegetaes, e de nada mais: a segunda que os vegetaes tomaõ o maior nutrimento da terra. O que he porem incontestavel, he que o maior nutrimento das plantas depende da agua, e principalmente da chuva, a qual com as  particulas differentes que traz da atomosphera, e dos saes, e olios depositados na terra concorre muito para a vegetaçaõ. Alem do que contribue o calor, a luz e materia eletrica.
     Se eu quizesse dilatar sobre esse assunpto, que tem sido tratado por muitos authores de <pb n="295"/>Agricultura, seria muito diffuso; basta que se saiba, que huma terra, a qual naõ dá passagem ás aguas, como o barro, nem admite a influencia do ar, he esteril para algumas plantas, e fecunda para outras, e que hum terreno arenoso, o qual naõ retem as aguas, nem os saes necessarios, he infecundo para muitas plantas, e fecundissimo para outras.
-    Quão grande seja a utilidade de hum Jardim Botanico (alem do gosto de ver juntas as plantas de todas as partes do mundo, e do proveito que dellas recebem, a Medicina, as Artes, o Commercio &amp;c.<note>A respeito de sua grande utilidade ja foraõ estabelecidos em França doze Jardins Botanicos, em Hespanha dous, em Saboia hum, em Italia treze: em Alemanha vinte, em Inglaterra tres, na Prussia quatro, em Hollanda oito, em Dinamarca hum, em Suecia tres, na polonia hum, na Russia hum; alem de muitos jardins particulares. Os monarcas naõ se contentaraõ somente com esta instituiçaõ; mas com grandes despesas mandaraõ ás diferentes partes do mundo Botanicos para descobrirem novas plantas. Fillipe II. Rey de Hespanha mandou o seu primeiro medico Hernandes ao Mexico para cuja viagem lhe deu 250000 cruzados, e elle descobrio sete centas plantas. Luiz XIV. no meio de suas victorias ordenou viagens a varias partes, as Ilhas da America mandou Plumier, ao oriente Tournefort, e ao Peru Feville. Luiz XV. mandou Foze Fussem a America. O imperador Francisco I. mandou as Ilhas Antilhas Jacquin. O prezente Rey de Sardenha mandou Donati á Asia. El Rey de Dinamarca Forskol ao Egipto; alem de muitos expedidos por varias Academias como da de Suecia, o Kham a Pensilvania, Oshek a India Oriental, Toren ao Surate, Hasselquist  á Palestina, Alsroemer á Europa Austral, e outros que de sua propria vontade foraõ viajar como Brovvn á Jamaica, e agora se acha na ilha de S. Thomé, Audanson ao Senegal, e o Banks á Ilha de Terra Nova, e as Ilhas do Mar do Sul.</note>) para a Agricultura só o ignora aquelle, que naõ sabe quantas plantas de regioens remotas por meio dos Jardins são hoje commuas, e ordinarias na Europa, <pb n="296"/>e cujo numero se vai cada dia aumentando; de que he prova evidente França, Suecia e Alemanha.
+    <s>Quão grande seja a utilidade de hum <term lemma="jardim botânico" orth="Jardim Botânico">Jardim Botanico</term> (alem do gosto de ver juntas as plantas de todas as partes do mundo, e do proveito que dellas recebem, a Medicina, as Artes, o Commercio &amp;c.<note><s>A respeito de sua grande utilidade ja foraõ estabelecidos em França doze <term lemma="jardim botânico" orth="Jardins Botânicos" msd="plural">Jardins Botanicos</term>, em Hespanha dous, em Saboia hum, em Italia treze: em Alemanha vinte, em Inglaterra tres, na Prussia quatro, em Hollanda oito, em Dinamarca hum, em Suecia tres, na polonia hum, na Russia hum; alem de muitos jardins particulares.</s> Os monarcas naõ se contentaraõ somente com esta instituiçaõ; mas com grandes despesas mandaraõ ás diferentes partes do mundo Botanicos para descobrirem novas plantas. Fillipe II. Rey de Hespanha mandou o seu primeiro medico Hernandes ao Mexico para cuja viagem lhe deu 250000 cruzados, e elle descobrio sete centas plantas. Luiz XIV. no meio de suas victorias ordenou viagens a varias partes, as Ilhas da America mandou Plumier, ao oriente Tournefort, e ao Peru Feville. Luiz XV. mandou Foze Fussem a America. O imperador Francisco I. mandou as Ilhas Antilhas Jacquin. O prezente Rey de Sardenha mandou Donati á Asia. El Rey de Dinamarca Forskol ao Egipto; alem de muitos expedidos por varias Academias como da de Suecia, o Kham a Pensilvania, Oshek a India Oriental, Toren ao Surate, Hasselquist  á Palestina, Alsroemer á Europa Austral, e outros que de sua propria vontade foraõ viajar como Brovvn á Jamaica, e agora se acha na ilha de S. Thomé, Audanson ao Senegal, e o Banks á Ilha de Terra Nova, e as Ilhas do Mar do Sul.</note>) para a Agricultura só o ignora aquelle, que naõ sabe quantas plantas de regioens remotas por meio dos Jardins são hoje commuas, e ordinarias na Europa, <pb n="296"/>e cujo numero se vai cada dia aumentando; de que he prova evidente França, Suecia e Alemanha.</s>
     Por enquanto, com o conhecimento botanico adquirido nos mais celebres Jardins, tem os Inglezes, e Francezes examinado, e reconhecido a maior parte das plantas que nascem nas suas conquistas da America, e tem tirado imensa utilidade e cada vez podérão tirar maior lucro.
     Muito me dilataria eu se quizesse referir todas algumas das quaes<note>Piper amalago. Piper aduncum. Piper verticillatum. Bromelia Pinguin. Cassia occidentalis. Guajacum officinale da Jamaica. Cinna arundinacen. Collinfonia canadensis do Canadá. Laurus Bezoin. Polygala senega. Lobelia sipbilitica. Liquidambar styraciflua. Myrica cerifera da Virginia. Rbus vernix. Acer sacbarinum da Pensilvania. Amyris clemifera da Carolina. Laurus Cinnamomum da Martinica. Spigelia anthelmia da Cajenna, e do Brasil. Laurus sassafras da Virginia, e do Brasil. Eupborbia Ipecacuanba da Virginia, do Canada, do Brasil. Smilax salsaparrilla da Virginia, e do Brasil. Morus tinctoria da Jamaica, e do Brasil. &amp;c.</note> são da America meridional. Que vasto campo se me offerecia agora para huma dilatada digressaõ, mas nem o tempo, nem a minha ocupaçaõ; nem o assumpto me permitte.
-    Nos Jardins Botanicos como se cultivaõ as differentes plantas de todos os climas, e terrenos, conhecem-se, e escolhem-se as mais proprias, e adequadas ao Paiz.
-    Quantas plantas saõ hoje commuas, ordinarias, que trazem a sua origem das regioens mais distantes? O trigo, ainda que se naõ sabe verdadeiramente o lugar de seu nascimento naõ he planta da Europa. O Milho painço<note>Panicum miliaceum.</note> he da India. A Aveia<note>Avena sativa.</note> he da Ilha <pb n="297"/>de Joaõ Fernandes, as Borragens vieraõ de Aleppo<note>Borrago officinalis.</note>. O rabaõ<note>Raphanus sativus.</note> da China; o milho<note>Zea Mays.</note> da America; o Arroz he planta, que se julga da Ethiopia, e que antes se cultivava na India<note>Oryza sativa</note>; a Fava<note>Vicia faba.</note> he do Egypto; a Amoreira branca<note>Morus alla.</note> da China; os Tomates<note>Solanum Lycorpersicum.</note> da America; a Bringella<note>Solanum melongena.</note> he Asia, Africa e America; o Pimentaõ<note>Capsicum anunum.</note> he do Brasil; a Cidreira<note>Citrus medica.</note>, o Limoeiro<note>Citrus limon.</note> da Asia, Media, Assiria; a Laranjeira<note>Citrus aurantium.</note> da China; o Igname<note>Arum colocasia.</note>, a Açafroa<note>Carthamus tinctorius.</note> he do Egypto; a Piteira<note>Agave Americana.</note> he da America &amp;c. Quasi todas as nossas arvores frutiferas saõ de outros paizes. Deixo de fallar de tantas arvores, plantas da Asia, Africa, e America que estaõ ja introduzidas na Europa, ou para ornato de Jardins, ou para outra utilidade, porque faria um dilatado catalogo, principalmente se ajuntasse todas as plantas de outros paizes, que neste Real Jardim Botanico tenho experimentado serem adequadas, e proprias para este feliz clima. 
+    <s>Nos <term lemma="jardim botânico" orth="Jardins Botânicos" msd="plural">Jardins Botanicos</term> como se cultivaõ as differentes plantas de todos os climas, e terrenos, conhecem-se, e escolhem-se as mais proprias, e adequadas ao Paiz.</s>
+    Quantas plantas saõ hoje commuas, ordinarias, que trazem a sua origem das regioens mais distantes? O trigo, ainda que se naõ sabe verdadeiramente o lugar de seu nascimento naõ he planta da Europa. O Milho painço<note>Panicum miliaceum.</note> he da India. A Aveia<note>Avena sativa.</note> he da Ilha <pb n="297"/>de Joaõ Fernandes, as Borragens vieraõ de Aleppo<note>Borrago officinalis.</note>. O rabaõ<note>Raphanus sativus.</note> da China; o milho<note>Zea Mays.</note> da America; o Arroz he planta, que se julga da Ethiopia, e que antes se cultivava na India<note>Oryza sativa</note>; a Fava<note>Vicia faba.</note> he do Egypto; a Amoreira branca<note>Morus alla.</note> da China; os Tomates<note>Solanum Lycorpersicum.</note> da America; a Bringella<note>Solanum melongena.</note> he Asia, Africa e America; o Pimentaõ<note>Capsicum anunum.</note> he do Brasil; a Cidreira<note>Citrus medica.</note>, o Limoeiro<note>Citrus limon.</note> da Asia, Media, Assiria; a Laranjeira<note>Citrus aurantium.</note> da China; o Igname<note>Arum colocasia.</note>, a Açafroa<note>Carthamus tinctorius.</note> he do Egypto; a Piteira<note>Agave Americana.</note> he da America &amp;c. Quasi todas as nossas arvores frutiferas saõ de outros paizes. <s>Deixo de fallar de tantas arvores, plantas da Asia, Africa, e America que estaõ ja introduzidas na Europa, ou para ornato de Jardins, ou para outra utilidade, porque faria um dilatado catalogo, principalmente se ajuntasse todas as plantas de outros paizes, que neste Real <term lemma="jardim botânico" orth="Jardim Botânico">Jardim Botanico</term> tenho experimentado serem adequadas, e proprias para este feliz clima.</s> 
     Basta que se saiba, que muitas dellas uteis á Economia, ás Artes, e ao Commercio se daõ felizmente, e que saõ rarissimas as plantas da America Septentrional, que aqui se naõ daõ bem, e de huma parte dellas póde servir de prova o Jardim de Mr. de Wisme. 
-    Alem das plantas da Asia, Affrica, e America; com a instituiçaõ dos Jardins Botanicos em varias partes sabe-se, que plantas uteis de varios climas da mesma Europa se podem transplantar para cada Paiz.
+    <s>Alem das plantas da Asia, Affrica, e America; com a instituiçaõ dos <term lemma="jardim botânico" orth="Jardins Botânicos" msd="plural">Jardins Botanicos</term> em varias partes sabe-se, que plantas uteis de varios climas da mesma Europa se podem transplantar para cada Paiz.</s>
     <pb n="298"/>A outra summa utilidade, que se tira da Botanica, e dos Jardins he saber quaes plantas uteis na Economica &amp;c. Se podem cultivar nos diversos clima,e terrenos, de modo que dos terrenos incultos, e comummunmente tidos por estereis se possa tirar grande proveito.
     Os terrenos incultos que vulgarmente se chamaõ Charnecas naõ saõ estereis, e se podem fazer uteis; de que temos varios exemplos em Inglaterra, Irlanda, Dinamarka, Suecia, e no Anjou nas fazendas do Marquez de Turbilly<note>Memoire sur les defrichemens. Amsterdam 1762. 8.</note>; e em Liria nas terras visinhas a Fabrica de vidros de G. Stephens.
     A mesma observaçaõ monstra que semelhantes terrenos naõ saõ infecundos, pois nelles (como nos do Alentejo) nascem varias especies de plantas naturalmente como Tomilho<note>Thymus vulgaris. Thymus villosus</note>, Estevas<note>Cistus ladanifera</note>, Camarinhas<note>Empetrum album</note>, Urze<note>Erica viridi purpurea.</note>, Quarqueja<note>Genista tridentata</note>, Rosmaninho<note>Lavendula Stoecas</note>, Aderno<note>Phillyrea angustifolia</note>, Herva das sete sangrias<note>Lithospermum fruticosum.</note>, Carrasco<note>Quercus coccifera, Quercus nana</note>, Aroeira<note>Pistacia lentiscus</note>, Pinheiro<note>Pinus Sylvestris</note>, Zimbro<note>Juniperus oxicendrus</note>, Gilbarbeira<note>Ruseus aculeatus</note>, Roselha<note>Cistus albidus</note>, e muitas mais, a que faltaõ os nomes Portuguezes.<note>Erica scoparia, ciliaris, cinerea, vulgaris. Myrtus lusitanica. Ulex europeus Tojo. Centaurea aspera, Drosera Lusitanica, Agrostis stolonifera, Ophrys insectifera, Leucojum autumnale &amp;c.</note>
@@ -5425,11 +5426,10 @@
     Nos lugares arenosos maritimos seria muito util <pb n="301"/>a cultura da flor de Crystal, ou soda<note>Salsola Sativa. Chenopodium maritimum.</note>, que serve para fazer o vidro, e o sabaõ, como tambem a de outras plantas proveitosas.<note>Eryngium maritimum. Cochlearia officinalis. Brassica mapus. Triglochin maritimum. Hedysarum caput Galli. Trifolium gromecratum, striatum, Lotus maritimus, cytisoides. Carex arenaria, Cenchrus racemosus. Triticum maritimum &amp;c.</note>
     As plantas, que nos lugares seccos, e onde ha greda se daõ bem saõ muitas<note>Anthemis tinctoria</note>, algumas das quaes serviriaõ para pastos<note>Hedysarum onobryebis. Trifolium spadiceum, filiforme. Medicago sativa, falcata. Andropogon ischoemum. Aegilops triuncialis. Poterium sanguisorba &amp;c.</note>. As plantas proprias para lugares humidos<note>Scirpus fluitans sylvaticus. Phalaris arundinacea. Alopecurus Monspeliensis, geniculatus. Aira aquatica. Poa aquatica. Cynosurus ceraleus.</note> aquosos, e de alagoas<note>Oryza sativa. Scirpus palusiris. Poa palusiris. Festuca fluitans. &amp;c.</note> tambem dariaõ alguma utilidade. 
     E por hora basta; porque para se tratar a fundo qualquer destes objectos seria necessario mais tempo. 
-    Se corresponder a aceitaçaõ do Publico aos meus sinceros dezejos occupar-me-hei em fazer experiencias sobre as plantas que se cultivaõ, e se cultivaraõ neste Real Jardim Botanico a fim de conhecer as mais adequadas para este feliz clima, e aquellas que multiplicadas poderaõ dar maior utilidade: farei mais exactas observações sobre os lugares incultos: indicarei os meios proporcionados conforme as situaçoens, e producçoens, tratando fundamentalmente de todos estes objectos.
+    <s>Se corresponder a aceitaçaõ do Publico aos meus sinceros dezejos occupar-me-hei em fazer experiencias sobre as plantas que se cultivaõ, e se cultivaraõ neste Real <term lemma="jardim botânico" orth="Jardim Botânico">Jardim Botanico</term> a fim de conhecer as mais adequadas para este feliz clima, e aquellas que multiplicadas poderaõ dar maior utilidade: farei mais exactas observações sobre os lugares incultos: indicarei os meios proporcionados conforme as situaçoens, e producçoens, tratando fundamentalmente de todos estes objectos.</s>
     
-    <pb n="302"/>
-    
-    Erros  				 				 	Emendas
+    <pb n="302"/></body>
+    <back>Erros  				 				 	Emendas
     Pag. 4. lin. 18 Comelus 				Camelos.
     Pag. 5. lin. 2  Fronte 					Frente.
     Pag. 9. lin. 32 	em torno 				ao redor.
@@ -5510,5 +5510,5 @@
     Pag. 94.lin. 11. utrisque.				utriusque.
     Pag. 95. lin. 32. ajcerent.				jacerent.
     <pb n="305"/>
-    <obs info="Faltam as páginas de 305 adiante: I até XXXVI"/>
+    <obs info="Faltam as páginas de 305 adiante: I até XXXVI"/></back>
 </text>
