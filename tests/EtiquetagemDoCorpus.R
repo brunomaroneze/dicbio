@@ -333,7 +333,7 @@ library(XML)
 library(xml2)
 library(stylo)
 
-CorpusTesteXML <- read_xml("tests/Vandelli.xml", encoding = "UTF-8")
+CorpusTesteXML <- read_xml("tests/diciovandelli.xml", encoding = "UTF-8")
 #corpusRoot <- xml_root(CorpusTesteXML)
 terms <- xml_find_all(CorpusTesteXML, "//term")
 tokenTerms <- xml_text(terms)
@@ -343,10 +343,20 @@ token_gram <- xml_attr(terms, attr = "msd")
 token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 
 token_sentence <- NULL
+author <- NULL
+date <- NULL
 for(i in 1:length(terms)){
-  token_sentence[i] <- as.character(xml_find_all(terms[i],
+  token_sentence[i] <- as.character(xml_find_first(terms[i],
                                                  xpath = "./ancestor::s"))
   token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
+  
+  author[i] <- as.character(xml_find_first(terms[i],
+                                           xpath = "string(/text/@author)"))
+  date[i] <- as.character(xml_find_first(terms[i],
+                                         xpath = "string(/text/@date)"))
+  
+  token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
+                              ", ", date[i], ")")
 }
 
 DataFrameTesteXML <- data.frame(

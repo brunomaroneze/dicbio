@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE text SYSTEM "corpus.dtd">
-<text><front>ANATOMIA DO CORPO HUMANO, RECOPILADA COM DOUTRINAS Medicas, Chimicas, Filosoficas, Mathematicas, com Indices, e Estampas, representantes todas as partes do corpo humano, Dividida em tres Livros, E DEDICADA AO MUITO ALTO, E MUITO PODEROSO REY DE PORTUGAL D. JOAÕ V NOSSO SENHOR, BERNARDO SANTUCCI, NATURAL DE CORTONA, MESTRE em Artes, e Doutor em Medicina pela Universidade de Bolonha, Medico da Serenissima Violante Beatriz de Baviera, Graõ Princeza de Toscana, e Lente Regio da Cadeira de Anatomia no Hospital Real destas Cidades de Lisboa.
+<text author="SANTUCCI, Bernardo" title="Anatomia do Corpo Humano..." date="1739">
+   <front>ANATOMIA DO CORPO HUMANO, RECOPILADA COM DOUTRINAS Medicas, Chimicas, Filosoficas, Mathematicas, com Indices, e Estampas, representantes todas as partes do corpo humano, Dividida em tres Livros, E DEDICADA AO MUITO ALTO, E MUITO PODEROSO REY DE PORTUGAL D. JOAÕ V NOSSO SENHOR, BERNARDO SANTUCCI, NATURAL DE CORTONA, MESTRE em Artes, e Doutor em Medicina pela Universidade de Bolonha, Medico da Serenissima Violante Beatriz de Baviera, Graõ Princeza de Toscana, e Lente Regio da Cadeira de Anatomia no Hospital Real destas Cidades de Lisboa.
 
 LISBOA OCCIDENTAL, Na Officina de ANTONIO PEDROZO GALRAM, M DCC XXXIX.
 Com todas as licenças necessarias, e Privilegio Real.
@@ -90,18 +91,14 @@ PROEMIO.
 3 Primeiramente se ha de notar, que pelos nossos sentidos se conhece huma grande diversidade de partes solidas, em quanto aos accidentes sensiveis de cor, dureza, &amp;c. mas se as virmos com os olhos do entendimento mais interiormente, conhecerseha, que todas as partes do corpo, e pelo conseguinte, que todo o nosso corpo se compoem de innumeraveis fibras, e muy tenues, como fios muy delgados. Isto se vê manifestamente nos nervos, os quaes nenhuma outra cousa parecem, senaõ huma multidaõ de fibras subtilissimas, que procedem do cerebro, e da espinhal medulla. 
 4 Da mesma sorte saõ as membranas, cuja substancia he quasi da mesma natureza dos nervos, e se bem considerarmos, nenhuma outra cousa mostraõ ser na realidade, senaõ hum tecido de fibras nervosas.
 5 Tambem os musculos, e as carnes se compoem das mesmas fibras nervosas, as quaes mais unidas entre si, e constipadas, constituem os tendoens dos musculos. Estes tendoens saõ de cor branca, e nos mais accidentes saõ mais semelhantes aos nervos: quando aquellas fibras menos unidas entre si estaõ na cavidade que chamaõ os Anatomicos ventre do musculo, e recebem algum sangue, se fazem vermelhas, e parecem de diversa natureza: mas lavando-se muitas vezes, ou estando muito tempo na agua, de modo que se lhe tire todo o sangue, que tiverem, ficaõ brancas, e semelhantes ás fibras dos tendoens.
-6 <s>Tambem a origem, e a composiçaõ das <term>cartilagens</term>, e dos osso, naõ procede, senaõ das fibras, porque as cartilagens primeiro foraõ membranas, e das cartilagens se <pb n="4" />fazem os ossos, como se vê manifestamente nos ossos da cabeça, alguns dos quaes naõ tem dureza, senaõ passando algum tempo depois do nascimento, o que qualquer póde observar nas crianças.</s>
+6 <s>Tambem a origem, e a composiçaõ das cartilagens, e dos osso, naõ procede, senaõ das fibras, porque as cartilagens primeiro foraõ membranas, e das cartilagens se <pb n="4" />fazem os ossos, como se vê manifestamente nos ossos da cabeça, alguns dos quaes naõ tem dureza, senaõ passando algum tempo depois do nascimento, o que qualquer póde observar nas crianças.</s>
 7 Donde se segue, que todas as partes  do corpo se resolvem em fibras: a origem das fibras, parece que vem do cerebro, e da espinhal medulla, porque dahi sahem os nervos, que se distribuem por todo o corpo. E estas partes nos principios da geração se vem primeiro, que as mais; e assim he muy verosimil, que todas as fibras saõ huns canaezinhios muy delgados, pelos quaes passa o succo, principalmente o nervoso.
 8 Nem de outra parte havemos de entender, que procede a nutrição, senaõ destes succos, quando abundaõ dentro daquelles canaezinhos, os quaes, em quanto saõ molles, com o impulso dos ditos succos se alargaõ, e se aestendem, deixando póros abertos, e por elles se introduzem algumas particulas dos mesmos succos.
 9 Daqui procede naõ só a nutrição, mas tambem o augmento das partes. Porém quando aquelles canaezinhos se fazem taõ <pb n="5" />fortes, de sorte, que naõ cedaõ facilmente ao impulso do succo, para que se possa entrar entaõ só tem lugar a nutriçaõ, porque entaõ sómente pelo novo succo, que entra, se substituem novas particulas em lugar de outras, que continuamente se consomem: Posto que a nutriçaõ naõ só proceda do succo, que passa pelas fibrasinhas, como temos dito, mas também do que exteriormente circula, o que principalmente faz o sangue, do qual depende a grossura, e a robusteza das partes.
 10 Segundo a diversa tecedura, e entresamento das fibras, e a diversa natureza dos humores, e dos succos, que exteriormente circulaõ, ou que entraõ nas taes fibras, nasce a varia composição das partes; mas principalmente das fibrasinhas variamente dispostas, e unidas humas com outras, se fazem as membranas, as quaes ou se estendem, e se alargaõ para defensa das outras partes, ou se estreitaõ formando huns canaes, o vasos para a circulação dos humores, ou finalmente se fazem redondos, convertendo-se em folliculos, e glandulas para a separaçaõ dos mesmos humores. 
-
-[página 6]
+<pb n="6" />
 11 Pelo que, todo o corpo do animal assim como remotamente se pode resolver em fibras pequeninas, se resolvem aproximadamente nas fibras mayores, que fazem mayor corpo, como saõ as que vemos nos musculos, e também se resolvem em membranas, vasos, e glandulas. Assim as fibrasinhas, das quaes dissemos, que todas aquellas partes se compoem, estaõ entre si taõ unidas humas com as outras, que constituem huma parte  daquellas, que chamamos similares; estas saõ as que se naõ resolvem em partes de diverso genero. Galeno as define assim: Similares partes sunt, quae omnes sibi mutuo, tum  toti similes partes haent. Partes similares saõ as que todos entre si, e respectivamente ao todo saõ perfeitamente semelhantes. Assim como as arterias, veas, nervos, ossos, cartilagens, membranas, ligamentos, tunicas, carne, &amp;c.
-12 Das partes similares se compoem as que chamamos instrumentaes. Estas se pódem definir assim: Partes, que se compoem de particulas simplices, e similares para serem instrumentos das acçoens perfeitas. Isto tudo, que atégora temos dito, só pertence
-
-[página 7]
-ás partes do corpo humano em geral, e á sua origem, e principios; daqui por diante trataremos de cada uma dellas em particular.
+12 Das partes similares se compoem as que chamamos instrumentaes. Estas se pódem definir assim: Partes, que se compoem de particulas simplices, e similares para serem instrumentos das acçoens perfeitas. Isto tudo, que atégora temos dito, só pertence<pb n="7" />ás partes do corpo humano em geral, e á sua origem, e principios; daqui por diante trataremos de cada uma dellas em particular.
 
 CAPITULO I.
 
@@ -141,8 +138,7 @@ Das partes, que servem de cubertura commua a todo o corpo.
 7 Além destas glandulas, foraõ descubertas outras pelo dito Malpighio, Valsalva,
 e Morgagno, e estas se naõ apparecem em toda a cute, ao menos vem-se em certas partes da mesma cute, às quaes chamao sebaceas, por causa da materia, que separaõ, que parece sebo.
 8 Á cute pertencem as unhas, e os cabellos. As unhas saõ laminas moderadamente duras, flexiveis, transparentes, mais brandas, e tenues junto à raiz, onde se vê huma porçaõ branca, que pela sua figura se chama Lunula: a parte anterior nao està pegada à outra cousa, a posterior està pegada à cuticula, donde nascem.
-
-[Página 15]
+<pb n="15" />
 9 Nenhuma outra cousa sao as unhas, senaõ muitos canosinhos, dispostos com certa ordem, pelos quaes, como por humas bainhas, passaõ os filamentos das papillas cutaneas. Estes canosinhos saõ de natureza cornea, dentro dos quaes está hum humor, o qual conglutinando-se, fazem que os mesmos canos fiquem muito endurecidos.
 
 10 Advirta-se, que as unhas nao crescem depois de morto o homem, (como alguns crem) mas parece que crescem, pela resedaçaõ, e contracçaõ da pelle; e também pode ser por naõ serem cortadas no tempo da doença, como diz o doutissimo Ruischio nos seus livros: Ungues extra cutem quidem prominent; non quod excreverint post mortem, uti vulgus credidit; sed propter cutis contractionem, exiccationemque: ne dicam quod non solemus ungues refecare quum agrotamus, &amp; lecto decumbimus. 
@@ -178,8 +174,7 @@ tantos follesinhos, que estaõ escondidos dentro da mesma membrana.
 
 7 Serve o Peritôneo para conter as entranhas do abdomen, como se vê na figura primeira da estampa 2. e daqui nasce, que rompendo-se, cahem as mesmas entranhas. Serve tambem para separar o humor, que junto com a gordura do redenho faz os intestinos lubricos pela parte exterior para facilitar os seus movimentos.
 
-[Página 22]
-
+<pb n="22" />
 CÁPITULO IV.
 
 Do Redenho
@@ -264,24 +259,12 @@ rede, que està junto do orificio esquerdo, e por esta causa o tal orificio tem 
 
 
 
-[página 243]
+<pb n="243" />
 LIVRO SEGUNDO
 DA OSTEOLOGIA, OU DOS OSSOS.
 CAPITULO I
-           DAQUI per diante tratarey dos ossos, e tudo o que disser, naõ serà de menor utilidade, e necessidade, do que he tudo o que tenho explicado nas liçoens precedentes; porque sem o conhecimento dos ossos, isto he, sem saber como estaõ unidos, e formados, e quaes saõ as partes de
-
-[Texto na margem direita da página:
-Mostra-se aos Cirurgiões a necessidade de saber os ossos.]
-
-[página 244]
-de que constaõ, naõ se pòde reduzir deslocaçaõ alguma, ou simples, ou complicada, nem sarar alguma fractura, ou ferida causada de quéda, ou balla de espingarda, ou de outras semelhantes armas; nos quaes casos estando mudada a natural economia, ou constituiçaõ dos ossos, naõ se pòde reduzir a perfeiçaõ sem esta faculdade, e noticia; logo naõ se pòde duvidar, que pertence à obrigaçaõ do Cirurgiaõ tambem o conhecimento de todos os ossos, de que se compoem o corpo humano.
-2	Os ossos saõ estabelecimento, ou base do corpo, como diz Cicero: Quid dicam de ossibus? quae, subjecta corpori mirabiles commissuras habent, &amp; ad stabilitatem aptas, &amp; ad artus firmandos accommodatas, &amp; ad motum, &amp; omnem corporis actionem. As suas palavras traduzidas em Portuguez, vem a dizer: Que direy dos offos? Que sendo fundamento do corpo, tem commissuras admiraveis, accommodadas para sua firmeza, e para fortificar os membros, e fazer os movimentos, e todas as acçoens de todo o corpo. Galeno define os ossos assim: Parte mais du-
-
-[Texto na margem esquerda da página:
-Os ossos são a base do corpo. Cic lib 2. de nat Deor. pag. 1290.]
-
-[Página 245]
-ra, secca, e mais terrestre das que ha no corpo: Os est pars omnium totius corporis durissima, siccissima, e maximé terrestris.
+           DAQUI per diante tratarey dos ossos, e tudo o que disser, naõ serà de menor utilidade, e necessidade, do que he tudo o que tenho explicado nas liçoens precedentes; porque sem o conhecimento dos ossos, isto he, sem saber como estaõ unidos, e formados, e quaes saõ as partes <note>Mostra-se aos Cirurgiões a necessidade de saber os ossos.</note><pb n="244" />de que constaõ, naõ se pòde reduzir deslocaçaõ alguma, ou simples, ou complicada, nem sarar alguma fractura, ou ferida causada de quéda, ou balla de espingarda, ou de outras semelhantes armas; nos quaes casos estando mudada a natural economia, ou constituiçaõ dos ossos, naõ se pòde reduzir a perfeiçaõ sem esta faculdade, e noticia; logo naõ se pòde duvidar, que pertence à obrigaçaõ do Cirurgiaõ tambem o conhecimento de todos os ossos, de que se compoem o corpo humano.
+<note>Os ossos são a base do corpo. Cic lib 2. de nat Deor. pag. 1290.</note>2	Os ossos saõ estabelecimento, ou base do corpo, como diz Cicero: Quid dicam de ossibus? quae, subjecta corpori mirabiles commissuras habent, &amp; ad stabilitatem aptas, &amp; ad artus firmandos accommodatas, &amp; ad motum, &amp; omnem corporis actionem. As suas palavras traduzidas em Portuguez, vem a dizer: Que direy dos offos? Que sendo fundamento do corpo, tem commissuras admiraveis, accommodadas para sua firmeza, e para fortificar os membros, e fazer os movimentos, e todas as acçoens de todo o corpo. Galeno define os ossos assim: Parte mais <pb n="245" />dura, secca, e mais terrestre das que ha no corpo: Os est pars omnium totius corporis durissima, siccissima, e maximé terrestris.
 3	Nascem os ossos, como temos dito acima, da mesma sorte, que as outras partes, que no feto apparecem primeiro membranosas, e pouco a pouco se fazem cartilaginosas e finalmente endurecem de sorte, que se fazem de natureza de ossos. Assim diz Munich, e assim se vê na moleira das crianças, nas quaes a parte anterior primeiro mostra ser membrana, e depois cartilagem; mas ultimamente nos adultos são ossos. Isto naõ sò se observa nos ossos da molleira; mas tambem em outras partes do corpo.
 4	Estaõ cobertos os ossos com huma membrana, que he como hum véo, a qual se chama Periostio, exceptuando os dentes, os quaes naõ tem semelhante membrana para evitar as dores, que comendo causariaõ, se estivessem cubertos.
 5	Esta membrana Periostio tem grande numero de vasos, os quaes estaõ muito unidos huns aos outros, e vaõ continuados

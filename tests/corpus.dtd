@@ -1,4 +1,7 @@
 <!ELEMENT text (front, body, back)>
+ <!ATTLIST text author CDATA #REQUIRED>
+ <!ATTLIST text title CDATA #REQUIRED>
+ <!ATTLIST text date CDATA #REQUIRED>
 <!ELEMENT front (#PCDATA|s|pb|note|obs|foreign)*>
 <!ELEMENT body (#PCDATA|s|pb|note|obs|foreign)*>
 <!ELEMENT back (#PCDATA|s|pb|note|obs|foreign)*>
