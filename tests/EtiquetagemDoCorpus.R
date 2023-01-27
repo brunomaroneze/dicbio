@@ -333,14 +333,18 @@ library(XML)
 library(xml2)
 library(stylo)
 
+teste1 <- readChar("tests/diciovandelli.xml", file.info("tests/diciovandelli.xml")$size)
+teste1 <- gsub("^.+?\\n(.*)","\\1", teste1) #tira a primeira linha
+teste1 <- gsub("^.+?\\n(.*)","\\1", teste1) #tira a segunda linha
 
-CorpusTesteXML <- read_xml("tests/diciovandelli.xml", encoding = "UTF-8")
+teste2 <- readChar("tests/anatomiasantucci.xml", file.info("tests/anatomiasantucci.xml")$size)
+teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) #tira a primeira linha
+teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) #tira a segunda linha
+
+testejunto <- paste("<corpus>", teste1, "\\n", teste2, "</corpus>")
+
+CorpusTesteXML <- read_xml(testejunto, encoding = "UTF-8")
 #corpusRoot <- xml_root(CorpusTesteXML)
-#teste1 <- readChar("tests/diciovandelli.xml", file.info("tests/diciovandelli.xml")$size)
-#teste2 <- readChar("tests/anatomiasantucci.xml", file.info("tests/anatomiasantucci.xml")$size)
-#teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) [tira a primeira linha]
-#teste2 <- gsub("^.+?\\n(.*)","<corpus>\\1", teste2) inclui a tag raiz
-#teste2 <- paste0(teste2, "</corpus>") fecha a tag raiz
 
 terms <- xml_find_all(CorpusTesteXML, "//term")
 tokenTerms <- xml_text(terms)
@@ -358,9 +362,9 @@ for(i in 1:length(terms)){
   token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
   
   author[i] <- as.character(xml_find_first(terms[i],
-                                           xpath = "string(/text/@author)"))
+                                           xpath = "string(//text/@author)"))
   date[i] <- as.character(xml_find_first(terms[i],
-                                         xpath = "string(/text/@date)"))
+                                         xpath = "string(//text/@date)"))
   
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ")")
@@ -389,3 +393,25 @@ for(x in 1:length(DataFrameTesteXML$lemma)){
 }
 rm(x, i, terms, CorpusTesteXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms)
+
+Dataframeteste1 <- CriaDataframeDados("anatomiasantucci.xml")
+listasentencas <- unique(Dataframeteste1$sentence)
+for(c in 1:length(listasentencas)){
+  if(str_detect(listasentencas[c], regex("^\\<.+\\>$"))){
+    listasentencas[c] <- ""
+  } else if(listasentencas[c] == "<!"){
+    listasentencas[c] <- ""
+  }else if(str_detect(listasentencas[c], "DOCTYPE")){
+    listasentencas[c] <- ""
+  }else if(str_detect(listasentencas[c], regex("^\\<s>"))){
+    listasentencas[c] <- ""
+  }
+}
+listasentencas <- listasentencas[listasentencas != ""]
+
+for(d in 1:length(listasentencas)){
+  teste1 <- str_replace(teste1, listasentencas[d],
+                        paste0("<s>", listasentencas[d], "</s>"))
+}
+arquivo <- file("arquivo.txt")
+writeLines(teste1, arquivo)
