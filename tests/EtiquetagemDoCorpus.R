@@ -333,8 +333,15 @@ library(XML)
 library(xml2)
 library(stylo)
 
+
 CorpusTesteXML <- read_xml("tests/diciovandelli.xml", encoding = "UTF-8")
 #corpusRoot <- xml_root(CorpusTesteXML)
+#teste1 <- readChar("tests/diciovandelli.xml", file.info("tests/diciovandelli.xml")$size)
+#teste2 <- readChar("tests/anatomiasantucci.xml", file.info("tests/anatomiasantucci.xml")$size)
+#teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) [tira a primeira linha]
+#teste2 <- gsub("^.+?\\n(.*)","<corpus>\\1", teste2) inclui a tag raiz
+#teste2 <- paste0(teste2, "</corpus>") fecha a tag raiz
+
 terms <- xml_find_all(CorpusTesteXML, "//term")
 tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
@@ -358,6 +365,7 @@ for(i in 1:length(terms)){
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ")")
 }
+rm(author, date)
 
 DataFrameTesteXML <- data.frame(
   token = tokenTerms,
@@ -379,3 +387,5 @@ for(x in 1:length(DataFrameTesteXML$lemma)){
     DataFrameTesteXML$sensenumber[x] <- "1"
   }
 }
+rm(x, i, terms, CorpusTesteXML, token_gram, token_lemma, token_orth,
+   token_senseNumber, token_sentence, tokenTerms)
