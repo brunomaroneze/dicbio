@@ -333,11 +333,11 @@ library(XML)
 library(xml2)
 library(stylo)
 
-teste1 <- readChar("tests/diciovandelli.xml", file.info("tests/diciovandelli.xml")$size)
+teste1 <- readChar("data/diciovandelli.xml", file.info("data/diciovandelli.xml")$size)
 teste1 <- gsub("^.+?\\n(.*)","\\1", teste1) #tira a primeira linha
 teste1 <- gsub("^.+?\\n(.*)","\\1", teste1) #tira a segunda linha
 
-teste2 <- readChar("tests/anatomiasantucci.xml", file.info("tests/anatomiasantucci.xml")$size)
+teste2 <- readChar("data/anatomiasantucci.xml", file.info("data/anatomiasantucci.xml")$size)
 teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) #tira a primeira linha
 teste2 <- gsub("^.+?\\n(.*)","\\1", teste2) #tira a segunda linha
 
@@ -394,24 +394,35 @@ for(x in 1:length(DataFrameTesteXML$lemma)){
 rm(x, i, terms, CorpusTesteXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms)
 
-Dataframeteste1 <- CriaDataframeDados("anatomiasantucci.xml")
-listasentencas <- unique(Dataframeteste1$sentence)
-for(c in 1:length(listasentencas)){
-  if(str_detect(listasentencas[c], regex("^\\<.+\\>$"))){
-    listasentencas[c] <- ""
-  } else if(listasentencas[c] == "<!"){
-    listasentencas[c] <- ""
-  }else if(str_detect(listasentencas[c], "DOCTYPE")){
-    listasentencas[c] <- ""
-  }else if(str_detect(listasentencas[c], regex("^\\<s>"))){
-    listasentencas[c] <- ""
-  }
-}
-listasentencas <- listasentencas[listasentencas != ""]
+# Este código abaixo tenta incluir a tag <s></s> em todas as sentenças
+# do texto. Não funciona porque algumas das sentenças são aplicadas
+# dentro de outras, como sentenças curtas ("L" por exemplo)
 
-for(d in 1:length(listasentencas)){
-  teste1 <- str_replace(teste1, listasentencas[d],
-                        paste0("<s>", listasentencas[d], "</s>"))
-}
-arquivo <- file("arquivo.txt")
-writeLines(teste1, arquivo)
+#Dataframeteste1 <- CriaDataframeDados("anatomiasantucci.xml")
+#listasentencas <- unique(Dataframeteste1$sentence)
+
+#for(c in 1:length(listasentencas)){
+#  if(str_detect(listasentencas[c], regex("^\\<.+\\>$"))){
+#    listasentencas[c] <- ""
+#  } else if(listasentencas[c] == "<!"){
+#    listasentencas[c] <- ""
+#  }else if(str_detect(listasentencas[c], "DOCTYPE")){
+#    listasentencas[c] <- ""
+#  }else if(str_detect(listasentencas[c], regex("^\\<s>"))){
+#    listasentencas[c] <- ""
+#  }
+#  listasentencas <- listasentencas[listasentencas != ""]
+#}
+
+#for(d in 1:length(listasentencas)){
+#    listasentencas[d] <- str_replace(listasentencas[d], regex("^<.+>"), "")
+  
+#}
+
+#for(e in 1:length(listasentencas)){
+#  teste2 <- str_replace(teste2, listasentencas[e],
+#                        paste0("<s>", listasentencas[e], "</s>"))
+#}  
+
+#arquivo <- file("arquivo.txt")
+#writeLines(teste2, arquivo)
