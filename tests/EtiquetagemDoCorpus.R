@@ -66,7 +66,7 @@ DataFrameTotalXML <- data.frame(
 # Se o lema está vazio, por defeito será igual ao token
 # Se o campo de atualização ortográfica está vazio, por defeito será
 # igual ao lema
-# Se o número da acepção está vazaio, por defeito será 1
+# Se o número da acepção está vazio, por defeito será 1
 for(x in 1:length(DataFrameTotalXML$lemma)){
   if(is.na(DataFrameTotalXML$lemma[x])){
     DataFrameTotalXML$lemma[x] <- DataFrameTotalXML$token[x]
@@ -79,14 +79,12 @@ for(x in 1:length(DataFrameTotalXML$lemma)){
   }
 }
 
-# Escrever um script para incluir uma coluna de variantes para cada lema
-# Lê cada token; se diferente do lema, acrescenta na coluna "variantes"
-# o tolower(token), pastado com o gram correspondente
-# No algoritmo do dicionário, tem que pastar usando "unique" as variantes
-# de cada lema
+# Preenche a coluna "variantes" com informações do token, lemma e gram
 
-#variantesdefrutificacao <- unique(tolower(DataFrameTotalXML$token[DataFrameTotalXML$lemma=="frutificação"]))
-#variantesdefrutificacao <- paste(variantesdefrutificacao, sep = ", ")
+DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
+                                     paste0(tolower(DataFrameTotalXML$token),
+                                    " (", DataFrameTotalXML$gram, ")"),
+                                    paste0(tolower(DataFrameTotalXML$token)))
 
 
 # Salva o arquivo
@@ -95,7 +93,7 @@ write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncodin
 # Limpa a memória
 rm(x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpustotal, DataFrameTotalXML)
+   corpusSantucci, corpustotal, DataFrameTotalXML, cr)
 
 
 
