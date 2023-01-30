@@ -21,12 +21,8 @@ TokTextDF <- read.csv("./data/DataframePrincipal.csv", encoding = "UTF-8")
 LematizacaoDataFrame <- read.csv("./data/OrtografiaLematizacao.csv",
                                  encoding = "UTF-8")
 
-# Lê os metadados do córpus
-CorpusMetadata <- read.csv2("./data/CorpusTextsMetadata.csv", encoding = "UTF-8")
-colnames(CorpusMetadata) <- c("Filename", "Author", "Title", "DateOfPublication")
-
 # Cria uma função que retorna os contextos de uma palavra consultada, com a
-# palavra negritada, # e formata para mostrar; os parâmetros são a
+# palavra negritada, e formata para mostrar; os parâmetros são a
 # palavra-entrada e o número da acepção
 Contextos <- function(InputConsulta, SenseNumber){
   ContextosTexto <- as.list(TokTextDF$sentence[TokTextDF$lemma == InputConsulta & TokTextDF$sensenumber==SenseNumber])
