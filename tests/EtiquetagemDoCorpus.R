@@ -38,10 +38,23 @@ token_sentence <- NULL
 author <- NULL
 date <- NULL
 for(i in 1:length(terms)){
+# Insere um caractere qualquer para depois ser transformado em <b></b>
+  xml_text(terms[i]) <- paste0("[b]", xml_text(terms[i]), "[xb]")
+
+# Extrai todas as sentenças e limpa as marcações
   token_sentence[i] <- as.character(xml_find_first(terms[i],
                                                  xpath = "./ancestor::s"))
   token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
-  
+
+# Substitui as marcas inseridas pelas marcas de negrito
+  token_sentence[i] <- gsub("\\[b\\]", "<b>", token_sentence[i])
+  token_sentence[i] <- gsub("\\[xb\\]", "</b>", token_sentence[i])
+
+# Retorna à forma anterior (necessário para não afetar o negrito nos outros termos)
+  xml_text(terms[i]) <- gsub("\\[b\\]", "", xml_text(terms[i]))
+  xml_text(terms[i]) <- gsub("\\[xb\\]", "", xml_text(terms[i]))
+
+#Insere autor e data
   author[i] <- as.character(xml_find_first(terms[i],
                                        xpath = "string(./ancestor::text/@author)"))
   date[i] <- as.character(xml_find_first(terms[i],
