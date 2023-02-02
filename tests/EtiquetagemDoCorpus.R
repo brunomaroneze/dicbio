@@ -120,7 +120,7 @@ write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncodin
 # Limpa a memória
 rm(x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpustotal, DataFrameTotalXML, cr)
+   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML)
 
 
 
