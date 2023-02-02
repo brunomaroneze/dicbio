@@ -3,7 +3,6 @@ title: "ProjectIntro"
 output: html_document
 ---
 
-
 # Sobre este dicionário
 
 O Dicionário Histórico de Termos da Biologia, em elaboração, traz definições e informações histórico-etimológicas para termos da Biologia extraídos de textos científicos do século XVIII.
@@ -12,7 +11,7 @@ Atualmente, o dicionário contém 65 verbetes, com definições e informações 
 
 A descrição do córpus, a equipe e outras informações relevantes encontram-se em "Documentação".
 
-Este projeto conta com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+Este projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte, e também conta com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
 
 Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
 

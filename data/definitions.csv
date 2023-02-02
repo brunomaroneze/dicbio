@@ -1,21 +1,21 @@
 ,Headword,SenseNumber,Definition
 1,antera,1,Parte da flor que contém o pólen.
-2,bífido,1,"Dividido em duas partes, em geral na parte superior (diz-se de folhas, cirros e outras estruturas vegetais)."
+2,bífido,1,"Dividido em duas partes, em geral na parte superior (diz-se de folhas, cirros e outras estruturas vegetais, bem como de palpos e outras estruturas dos insetos)."
 3,bráctea,1,"Folha anexa à flor da florada seguinte, que se diferencia, em certos aspectos, das demais folhas."
 4,bulbo,1,"Órgão vegetal presente em certas plantas, que armazena nutrientes para a planta utilizar em época desfavorável."
 5,bulboso,1,Que tem forma de bulbo.
 6,cálice,1,"Parte da flor que cerca a corola, o estame e o pistilo, formado pelas sépalas, e em geral de cor verde."
 7,capréolo,1,O mesmo que cirro.
-8,cartilagíneo,1,Semelhante a uma cartilagem (diz-se de estrutura vegetal).
+8,cartilagíneo,1,Semelhante a uma cartilagem (diz-se de estrutura vegetal ou animal).
 9,coarctado,1,"Apertado, restringido; cujas estruturas são muito próximas entre si."
-10,conivente,1,Cujas extremidades se aproximam ou se tocam (diz-se de folhas ou outras estruturas vegetais).
+10,conivente,1,"Cujas extremidades se aproximam ou se tocam (diz-se de estruturas vegetais, como folhas, ou animais, como unhas)."
 11,cotilédone,1,Folha que se forma no embrião de certas plantas e que serve para nutrir o desenvolvimento da planta.
 12,crena,1,Incisura perpendicular obtusa na margem de certas folhas.
 13,cutícula,1,"Membrana que reveste a raiz das plantas, por cima da casca."
 14,deflexo,1,Encurvado para a parte inferior (diz-se de ramo).
 15,disco,1,Estrutura em forma de disco localizada no centro do receptáculo.
 16,epiderme,1,Camada de revestimento da raiz ou do caule de uma planta; cutícula.
-17,escamoso,1,Coberto de escamas (diz-se de raiz).
+17,escamoso,1,Coberto de escamas (diz-se de pele animal ou de raiz vegetal).
 18,estame,1,"Estrutura correspondente ao órgão masculino das flores, formado por um filamento que sustenta a antera, onde se localiza o pólen."
 19,estigma,1,"Parte superior do pistilo, rica em uma substância líquida e pegajosa que capta os grãos de pólen para a fecundação."
 20,estípula,1,Escama que nasce na base do pecíolo ou do pedúnculo.
@@ -28,7 +28,7 @@
 27,gomo,1,O mesmo que gema.
 28,hermafrodita,1,Que apresenta os órgãos reprodutores de ambos os sexos no mesmo indivíduo (diz-se de flor).
 29,jardim botânico,1,"Jardim onde se cultivam plantas para fins de estudo, em geral aberto à visitação pública."
-30,lacínia,1,"Divisão semelhante a abas em uma folha, estigma ou corola."
+30,lacínia,1,"Divisão semelhante a abas em uma estrutura vegetal (como folha, estigma ou corola) ou animal (como concha ou tentáculo)."
 31,longitudinal,1,No sentido do comprimento.
 32,medular,1,Relativo à substância interna presente nos vegetais.
 33,membranáceo,1,"Delgado, comprido, em formato de lâmina ou membrana."
@@ -47,7 +47,7 @@
 46,sexual,1,Relativo à reprodução sexuada.
 47,síliqua,1,"Pericarpo de duas valvas, côncavo, cujo comprimento excede a largura, com sementes presas ao longo das suturas."
 48,sucoso,1,Cheio de suco.
-49,túnica,1,"Membrana que reveste certas estruturas vegetais, como raízes ou sementes."
+49,túnica,1,"Membrana que reveste certas estruturas vegetais, como raízes ou sementes, ou animais, como olhos."
 50,vilo,1,"Excrescência do caule ou da folha semelhante a um pelo, formando uma espécie de buço."
 51,gema,2,Porção interna do ovo das aves.
 52,verrucoso,1,Semelhante a uma verruga.
@@ -66,3 +66,10 @@
 65,ócciput,1,"Osso do crânio situado na parte inferoposterior da cabeça, próximo à nuca."
 66,inseto,1,"Animal invertebrado, com corpo segmentado, membros articulados e exoesqueleto, pertencente à classe dos insetos."
 67,pericarpo,1,"Membrana que reveste o ovário da planta e que, com o amadurecimento, se torna o próprio fruto."
+68,disco,3,Parte central das valvas de certos moluscos.
+69,epiderme,2,Membrana que reveste as conchas de certos moluscos.
+70,filamento,2,"Qualquer estrutura animal semelhante a um fio, como antenas ou bissos."
+71,medular,2,Relativo à medula óssea.
+72,pedúnculo,2,"Haste que sustenta diversas estruturas dos insetos, como antenas, olhos ou o abdômen."
+73,vilo,2,Estrutura semelhante a pelos presente nas caudas ou nos pés de certos insetos.
+74,diafragma,2,"Membrana que separa duas ou mais cavidades, em certos animais (como moluscos) e vegetais (como cavidades em frutos)."
