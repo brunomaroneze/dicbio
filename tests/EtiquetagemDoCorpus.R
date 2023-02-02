@@ -16,7 +16,12 @@ corpusSantucci <- readChar("data/anatomiasantucci.xml", file.info("data/anatomia
 corpusSantucci <- gsub("^.+?\\n(.*)","\\1", corpusSantucci) #tira a primeira linha
 corpusSantucci <- gsub("^.+?\\n(.*)","\\1", corpusSantucci) #tira a segunda linha
 
-corpustotal <- paste("<corpus>", corpusVandelli, "\\n", corpusSantucci, "</corpus>")
+corpusBrotero <- readChar("data/compendio1brotero.xml", file.info("data/compendio1brotero.xml")$size)
+corpusBrotero <- gsub("^.+?\\n(.*)","\\1", corpusBrotero) #tira a primeira linha
+corpusBrotero <- gsub("^.+?\\n(.*)","\\1", corpusBrotero) #tira a segunda linha
+
+corpustotal <- paste("<corpus>", corpusVandelli, "\\n",
+                     corpusSantucci, "\\n", corpusBrotero, "</corpus>")
 
 
 # Lê a árvore XML do corpus total, extrai todos os termos e atributos
