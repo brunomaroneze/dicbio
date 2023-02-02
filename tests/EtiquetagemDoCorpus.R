@@ -60,6 +60,15 @@ for(i in 1:length(terms)){
   date[i] <- as.character(xml_find_first(terms[i],
                                        xpath = "string(./ancestor::text/@date)"))
   
+# Insere número de página
+# Este código identifica as quebras de página presentes dentro de uma sentença
+  #  teste2 <- as.character(xml_find_first(token_sentence,
+  #  xpath = "./descendant::pb/@n"))
+# Tem que usar um "if"; se tiver quebra de página dentro da sentença,
+# então o número da página será o anterior mais o atual
+# "else", será só o anterior
+# O XPATH para identificar o anterior deve ter a ver com "preceding"
+  
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ")")
 }
