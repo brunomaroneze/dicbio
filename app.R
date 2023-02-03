@@ -25,7 +25,7 @@ Contextos <- function(InputConsulta, SenseNumber){
   ContextosTextoFormatados <- NULL
   for(a in 1:length(ContextosTexto)){
     
-    ContextosTextoFormatados[a] <- paste0(a, " - ", ContextosTexto[a], "<hr>")
+    ContextosTextoFormatados[a] <- paste0(a, " - ", ContextosTexto[a], "<br><br>")
     
   }
   ContextosTextoFormatados <- as.list(ContextosTextoFormatados)
@@ -98,19 +98,22 @@ ui <- fluidPage(
                                                 ),
                                     mainPanel(width = 9,
                                               fluidRow(
-                                              column(8, 
-                                                        htmlOutput("Entry"),
-                                                        tags$hr(),
-                                                        htmlOutput("Definition"),
-                                                        tags$hr(),
-                                                        htmlOutput("Etymo"),
-                                                        tags$hr(),
-                                                        htmlOutput("FirstAttestation"),
-                                                        tags$br()
+                                              column(7, 
+                                                    htmlOutput("Entry"),
+                                                    tags$hr(),
+                                                    #htmlOutput("Definition"),
+                                                    #tags$hr(),
+                                                    htmlOutput("Etymo"),
+                                                    tags$hr(),
+                                                    htmlOutput("FirstAttestation"),
+                                                    tags$hr(),
+                                                    htmlOutput("HowToCite"),
+                                                    tags$br()
                                               ),
-                                              column(4,
-                                                     htmlOutput("HowToCite"),
-                                                     )
+                                              column(5
+                                                    , HTML("<b>Definição(ões):</b><br>")
+                                                    ,htmlOutput("Definition"),
+                                                    )
                                               )    
                                                   )
                                                   
@@ -186,10 +189,12 @@ server <- function(input, output, session) {
       
       Definicao <- definitions$Definition[definitions$Headword == EntryData()$Headword][c]
       Definition[c] <- paste0(c, ". ", Definicao,
-                              "<br><details><summary>Exemplos (<u>clique para expandir</u>)</summary><span style='font-size:.8em;'>",
-             paste(Contextos(EntryData()$Headword, c), collapse = ""), "</span></details><br>")
+                              "<div style='height: 30vh; overflow-y: auto;
+                              font-size:.8em;'>",
+             paste(Contextos(EntryData()$Headword, c), collapse = ""),
+             "</div><br>")
     }
-    
+
     Definition
     
   })
