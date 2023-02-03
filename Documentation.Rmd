@@ -29,16 +29,30 @@ O **Dicionário Histórico de Termos da Biologia** é inteiramente baseado num c
 
 Optou-se por, inicialmente, incluir no córpus apenas textos do século XVIII (por ser este um momento histórico altamente significativo no desenvolvimento da Ciência, especialmente em língua portuguesa); posteriormente, pretende-se incluir outros períodos históricos (tanto anteriores quanto posteriores).
 
-O córpus está disponibilizado em formato .txt (cf. "Política de disponibilização dos dados") e é etiquetado por meio de um algoritmo computacional (cf. "Estrutura computacional") também disponível no repositório *GitHub*.
+Os textos que compõem o córpus (cf. "Textos que compõem o córpus", abaixo) estão disponibilizados em formato .xml (cf. "Política de disponibilização dos dados"), com as etiquetas descritas abaixo; o *script* que extrai as informações dos textos (cf. "Estrutura computacional") também disponível no repositório *GitHub*.
 
 ### Textos que compõem o córpus:
-Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O córpus transcrito em formato .txt está disponível no repositório *GitHub* (cf. "Política de disponibilização dos dados").
+Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O córpus transcrito em formato .xml está disponível no repositório *GitHub* (cf. "Política de disponibilização dos dados").
 
 - BROTERO, Félix de Avelar. [**Compendio de Botanica**](https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html). Vol. 1. Paris: Vende-se em Lisboa, em caza de Paulo Martin, Mercador de Livros, 1788.
 
 - SANTUCCI, Bernardo. [**Anatomia do corpo humano**](https://books.google.com.br/books/about/Anatomia_do_corpo_humano.html?id=D83JL7ybBeUC&redir_esc=y). Lisboa: na Officina de Antonio Pedrozo Galram, 1739.
 
 - VANDELLI, Domingos. [**Diccionario dos termos technicos de Historia Natural**](https://purl.pt/13958). Coimbra: na Real Officina da Universidade, 1788.
+
+### Etiquetas XML empregadas no córpus
+Os textos que compõem o córpus são etiquetados com o emprego das seguintes etiquetas XML:
+- **text** - É o nó-raiz de cada texto; contém os metadados do texto, indicados pelos atributos "author" (*autor*), "title" (*título*) e "date" (*data*);
+- **front** - Elemento obrigatório que contém o texto da folha de rosto de cada obra;
+- **body** - Elemento obrigatório que contém o texto principal de cada obra;
+- **back** - Elemento obrigatório que contém os textos que eventualmente se encontram ao final de cada obra, após o texto principal, como índices e tabelas;
+- **s** - Etiqueta que delimita sentenças ou contextos maiores, entendidos como mínimos para a exemplificação do emprego de algum termo;
+- **term** - Etiqueta que marca os termos que integram a nomenclatura do dicionário; pode vir acompanhada dos atributos *lemma* (lema), *orth* (forma ortográfica atualizada), *msd* (descrição morfossintática, como "plural" ou "feminino") e *senseNumber* (número da acepção);
+- **w** - Etiqueta empregada para o registro de informações (inseridas como atributos) sobre palavras diversas do texto, mas que não são termos e não constam da nomenclatura do dicionário;
+- **note** - Etiqueta que delimita notas de rodapé ou de margem de página;
+- **foreign** - Indica que a palavra ou o trecho delimitado está numa língua diferente da do português; o atributo *lang* indica que língua é essa;
+- **pb** - Elemento vazio que indica quebra de página da obra; o número da página que se inicia a partir desta marca é indicada no atributo *n*;
+- **obs** - Elemento vazio empregado para a inserção de observações diversas no texto, como comentários sobre a transcrição.
 
 ## Critérios lexicográficos
 Descrevem-se aqui os critérios adotados na seleção das entradas e na elaboração dos verbetes.
@@ -111,6 +125,8 @@ Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicion�
 A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD.
 
 A redação dos primeiros verbetes e a criação da parte computacional do dicionário foram possíveis graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. **Graça Rio-Torto**.
+
+A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio do técnico **Thiago Gomes Veríssimo**.
 
 Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico online.
 

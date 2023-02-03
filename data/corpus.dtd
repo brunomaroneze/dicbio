@@ -19,5 +19,5 @@
 <!ELEMENT note (#PCDATA|s|pb|obs|foreign)*>
 <!ELEMENT foreign (#PCDATA)>
 <!ATTLIST foreign lang CDATA #REQUIRED>
-<!ELEMENT obs (#PCDATA)>
+<!ELEMENT obs EMPTY>
  <!ATTLIST obs info CDATA #REQUIRED>

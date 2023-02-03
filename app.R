@@ -17,16 +17,8 @@ definitions <- read.csv("./data/definitions.csv", encoding = "UTF-8")
 # Lê o córpus etiquetado
 TokTextDF <- read.csv("./data/DataframePrincipal.csv", encoding = "UTF-8")
 
-# Abre o arquivo de lemas
-LematizacaoDataFrame <- read.csv("./data/OrtografiaLematizacao.csv",
-                                 encoding = "UTF-8")
-
-# Lê os metadados do córpus
-CorpusMetadata <- read.csv2("./data/CorpusTextsMetadata.csv", encoding = "UTF-8")
-colnames(CorpusMetadata) <- c("Filename", "Author", "Title", "DateOfPublication")
-
 # Cria uma função que retorna os contextos de uma palavra consultada, com a
-# palavra negritada, # e formata para mostrar; os parâmetros são a
+# palavra negritada, e formata para mostrar; os parâmetros são a
 # palavra-entrada e o número da acepção
 Contextos <- function(InputConsulta, SenseNumber){
   ContextosTexto <- as.list(TokTextDF$sentence[TokTextDF$lemma == InputConsulta & TokTextDF$sensenumber==SenseNumber])
@@ -40,56 +32,30 @@ Contextos <- function(InputConsulta, SenseNumber){
   return(ContextosTextoFormatados)
 }
 
-# Acrescenta variantes gráficas
+# Acrescenta a coluna das variantes gráficas a partir do dataframe
 
-#lê o lema
-#se o token for diferente da ortografia, então inclui o token e a classe
-#gramatical numa coluna extra
-#Junta todos os tokens variantes do mesmo lema num só e inclui nos dados
 
-IncluirVariantes <- function(Token, Ortografia, FormaFlex){
-  if(Token != Ortografia){
-    
-    Variantes <- paste0(Token, " (", FormaFlex, ")")
-    
-  }else{ Variantes <- NA }
-  
-}
-
-for(n in 1:length(LematizacaoDataFrame$Token)){
-  
-  LematizacaoDataFrame$Variantes[n] <- 
-    IncluirVariantes(LematizacaoDataFrame$Token[n],
-                     LematizacaoDataFrame$Ortografia[n],
-                     LematizacaoDataFrame$InflForm[n])
-  
-}
-
-for(i in 1:length(data$Headword)){
-  
-  if(data$Headword[i] %in% LematizacaoDataFrame$Lemma){
-    
-    data$VariantSpellings[i] <-
-      sub(", NA$", "", 
-          paste(LematizacaoDataFrame$Variantes[LematizacaoDataFrame$Lemma
-                                               == data$Headword[i]],
-                collapse = ", "))
+for(n in 1:length(data$Headword)){
+  data$VariantSpellings[n] <- paste(sort(unique
+                  (TokTextDF$variants
+                    [tolower(TokTextDF$lemma)==tolower(data$Headword)[n]])),
+                  collapse = ", ")
+  if(data$VariantSpellings[n] == data$Headword[n]){
+    data$VariantSpellings[n] <- NA
   }
 }
 
-data$VariantSpellings <- sub("NA, ", "", data$VariantSpellings)
-data$VariantSpellings[data$VariantSpellings == "NA"] <- NA
-
-# Cria uma lista com todas as variantes e lemas
-listatotal <- sort(unique(c(LematizacaoDataFrame$Token,
-                             LematizacaoDataFrame$Ortografia,
-                             LematizacaoDataFrame$Lemma, data$Headword)))
+# Cria uma lista com todas as variantes e lemas, a ser usada
+# na versão futura para incluir a pesquisa com variantes
+# listatotal <- sort(unique(c(TokTextDF$token,
+#                             TokTextDF$orth,
+#                             TokTextDF$lemma, data$Headword)))
 
 ui <- fluidPage(
   navbarPage(id="Dict", title=HTML("Dicionário Histórico de Termos da Biologia"), # Dá para fazer
                                                                                   # o título linkar 
                                                             # para a página inicial assim:
-                                                        # title=tags$a(href="https://brunomaroneze.shinyapps.io/Dicio_Botanica/"
+                                                        # title=tags$a(href="https://dicbio.fflch.usp.br/"
              
              windowTitle="Dicionário Histórico de Termos da Biologia", 
              collapsible = TRUE, inverse = FALSE, theme = shinytheme("readable"),
@@ -176,16 +142,16 @@ server <- function(input, output, session) {
     EntryData <- as.list(data[data$Headword==input$headword,])
     EntryData
     
-    }else if(input$headword %in% LematizacaoDataFrame$Token){
+    }else if(input$headword %in% TokTextDF$token){
       
-    RealHeadword <- LematizacaoDataFrame$Lemma[LematizacaoDataFrame$Token
+    RealHeadword <- TokTextDF$lemma[TokTextDF$token
                                                == input$headword]
     EntryData <- as.list(data[data$Headword==RealHeadword,])
     EntryData
     
-    } else if(input$headword %in% LematizacaoDataFrame$Ortografia){
+    } else if(input$headword %in% TokTextDF$orth){
     
-    RealHeadword <- LematizacaoDataFrame$Lemma[LematizacaoDataFrame$Ortografia
+    RealHeadword <- TokTextDF$lemma[TokTextDF$orth
                                                  == input$headword]
     EntryData <- as.list(data[data$Headword==RealHeadword,])
     EntryData  
@@ -287,7 +253,7 @@ server <- function(input, output, session) {
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
 
     } else {
@@ -299,7 +265,7 @@ server <- function(input, output, session) {
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
     }
   }) 
