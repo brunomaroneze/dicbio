@@ -34,6 +34,7 @@ Contextos <- function(InputConsulta, SenseNumber){
 
 # Acrescenta a coluna das variantes gráficas a partir do dataframe
 
+
 for(n in 1:length(data$Headword)){
   data$VariantSpellings[n] <- paste(sort(unique
                   (TokTextDF$variants
@@ -54,7 +55,7 @@ ui <- fluidPage(
   navbarPage(id="Dict", title=HTML("Dicionário Histórico de Termos da Biologia"), # Dá para fazer
                                                                                   # o título linkar 
                                                             # para a página inicial assim:
-                                                        # title=tags$a(href="https://brunomaroneze.shinyapps.io/Dicio_Botanica/"
+                                                        # title=tags$a(href="https://dicbio.fflch.usp.br/"
              
              windowTitle="Dicionário Histórico de Termos da Biologia", 
              collapsible = TRUE, inverse = FALSE, theme = shinytheme("readable"),
@@ -252,7 +253,7 @@ server <- function(input, output, session) {
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
 
     } else {
@@ -264,7 +265,7 @@ server <- function(input, output, session) {
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
     }
   }) 
