@@ -1,7 +1,7 @@
 #library(tidyverse)
 #library(DT)
 #library(data.table)
-#library(stringr)
+library(stringr)
 
 library(XML)
 library(xml2)
@@ -42,6 +42,8 @@ token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 token_sentence <- NULL
 author <- NULL
 date <- NULL
+currentPage <- NULL
+previousPage <- NULL
 pageNumber <- NULL
 for(i in 1:length(terms)){
 # Insere um caractere qualquer para depois ser transformado em <b></b>
@@ -66,31 +68,45 @@ for(i in 1:length(terms)){
   date[i] <- as.character(xml_find_first(terms[i],
                                        xpath = "string(./ancestor::text/@date)"))
   
-# Insere número de página
-# Este código identifica as quebras de página presentes dentro de uma sentença
-  #  teste2 <- as.character(xml_find_first(token_sentence,
-  #  xpath = "./descendant::pb/@n"))
-# Tem que usar um "if"; se tiver quebra de página dentro da sentença,
-# então o número da página será o anterior mais o atual
-# "else", será só o anterior
-# O XPATH para identificar o anterior deve ter a ver com "preceding"
-  
-  if(as.character(xml_find_first(terms[i],
-                                 xpath = "string(./preceding-sibling::pb/@n|
-                                 ./following-sibling::pb/@n)")) != ""){
-  
-    pageNumber[i] <- as.character(xml_find_first(terms[i],
-                                                 xpath = "string(./preceding-sibling::pb/@n|
-                                                 ./following-sibling::pb/@n)"))
+# Insere números de páginas
 
-  }else{
-    pageNumber[i] <- "vazio"
+# Primeiro, testa para ver se dentro da sentença do termo tem alguma quebra
+  # de página
+  if(as.character(xml_find_first(terms[i],
+                      xpath = "string(./preceding-sibling::pb/@n)")) != ""){
+ 
+  # Se tiver quebra de página, o número de página será a anterior mais a 
+    # seguinte, com um tracinho
+    
+    currentPage[i] <- as.character(xml_find_first(terms[i],
+                                     xpath = "string(./preceding-sibling::pb/@n)"))
+    previousPage[i] <- str_extract(as.character(first(tail(xml_find_all(terms[i],
+                                          xpath = "./preceding::pb/@n"), 2))),
+                                   "(?<=\").+(?=\")")
+
+    pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
+
+    
+  }else if(as.character(xml_find_first(terms[i],
+                               xpath = "string(./following-sibling::pb/@n)")) != ""){
+    
+    currentPage[i] <- as.character(xml_find_first(terms[i],
+                                            xpath = "string(./following-sibling::pb/@n)"))
+    previousPage[i] <- str_extract(as.character(first(tail(xml_find_all(terms[i],
+                                      xpath = "./preceding::pb/@n"), 1))),
+                                   "(?<=\").+(?=\")")
+    pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
+    
+  }else{ # Se não tiver quebra de página, o número da página será o anterior
+    pageNumber[i] <- str_extract(as.character(tail(xml_find_all(terms[i],
+                                                    xpath = "./preceding::pb/@n"), 1)),
+                                 "(?<=\").+(?=\")")
   }
 
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ", p. ", pageNumber[i], ")")
 }
-rm(author, date)
+rm(author, date, pageNumber, currentPage, previousPage)
 
 # Cria um dataframe único
 DataFrameTotalXML <- data.frame(
