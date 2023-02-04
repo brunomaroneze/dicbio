@@ -42,13 +42,14 @@ token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 token_sentence <- NULL
 author <- NULL
 date <- NULL
+pageNumber <- NULL
 for(i in 1:length(terms)){
 # Insere um caractere qualquer para depois ser transformado em <b></b>
   xml_text(terms[i]) <- paste0("[b]", xml_text(terms[i]), "[xb]")
 
 # Extrai todas as sentenças e limpa as marcações
   token_sentence[i] <- as.character(xml_find_first(terms[i],
-                                                 xpath = "./ancestor::s"))
+                                                   xpath = "./ancestor::s"))
   token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
 
 # Substitui as marcas inseridas pelas marcas de negrito
@@ -74,8 +75,20 @@ for(i in 1:length(terms)){
 # "else", será só o anterior
 # O XPATH para identificar o anterior deve ter a ver com "preceding"
   
+  if(as.character(xml_find_first(terms[i],
+                                 xpath = "string(./preceding-sibling::pb/@n|
+                                 ./following-sibling::pb/@n)")) != ""){
+  
+    pageNumber[i] <- as.character(xml_find_first(terms[i],
+                                                 xpath = "string(./preceding-sibling::pb/@n|
+                                                 ./following-sibling::pb/@n)"))
+
+  }else{
+    pageNumber[i] <- "vazio"
+  }
+
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
-                              ", ", date[i], ")")
+                              ", ", date[i], ", p. ", pageNumber[i], ")")
 }
 rm(author, date)
 
