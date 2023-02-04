@@ -7,9 +7,8 @@ library(DT)
 library(markdown)
 library(stringr)
 
-# Lê a base de dados do dicionário e corrige o erro da codificação UTF-8 
+# Lê a base de dados do dicionário
 data <- read.csv("./data/DadosDoDicionario.csv", encoding = "UTF-8")
-#colnames(data) <- c("ID","Headword", "FirstAttestationDate", "FirstAttestationExampleMD", "VariantSpellings", "Etymology", "WClass", "Credits")
 
 # Lê o arquivo com as definições
 definitions <- read.csv("./data/definitions.csv", encoding = "UTF-8")
@@ -190,7 +189,7 @@ server <- function(input, output, session) {
       Definicao <- definitions$Definition[definitions$Headword == EntryData()$Headword][c]
       Definition[c] <- paste0(c, ". ", Definicao,
                               "<div style='height: 30vh; overflow-y: auto;
-                              font-size:.8em;'>",
+                              font-size:.7em;'>",
              paste(Contextos(EntryData()$Headword, c), collapse = ""),
              "</div><br>")
     }
@@ -253,8 +252,8 @@ server <- function(input, output, session) {
     
     if(DateOfCreation == DateOfUpdate){
       paste0("<p style='font-size: .7em;'><br>Autores(as) do verbete: ",
-             EntryAuthors, "</p><hr><p style='font-size: .7em;'>Este verbete foi incluído em ",
-             DateOfCreation, "</p><hr><p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
+             EntryAuthors, "</p><br><p style='font-size: .7em;'>Este verbete foi incluído em ",
+             DateOfCreation, "</p><br><p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
@@ -264,8 +263,8 @@ server <- function(input, output, session) {
     } else {
       
       paste0("<p style='font-size: .7em;'><br>Autores(as) do verbete: ",
-             EntryAuthors, "</p><hr><p style='font-size: .7em;'>Este verbete foi incluído em ",
-             DateOfCreation, " e atualizado em ", DateOfUpdate, "</p><hr>",
+             EntryAuthors, "</p><br><p style='font-size: .7em;'>Este verbete foi incluído em ",
+             DateOfCreation, " e atualizado em ", DateOfUpdate, "</p><br>",
              "<p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
