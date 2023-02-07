@@ -5,7 +5,6 @@ Ana Menegassi
     cibário
     mandíbula
 
-
 Dannielly
     caule
     raiz
@@ -20,8 +19,6 @@ Matheus
     carúncula
     cetáceo
 
-
-
 Raissa
     Botânica (nome da ciência)
     botânico (cientista)
@@ -29,7 +26,6 @@ Raissa
     suculento (succulento)
     cirro (cirrho)
     
-
 Adriane
     músculo
     lúnula
@@ -43,8 +39,6 @@ Bruno
     árvore
     desenvolução
     lanceolado
-
-
 
 Protocolo de pesquisa dos termos:
 1. Marcar, com a tag <term>, as ocorrências do termo nos textos do córpus;
