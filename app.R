@@ -7,9 +7,8 @@ library(DT)
 library(markdown)
 library(stringr)
 
-# Lê a base de dados do dicionário e corrige o erro da codificação UTF-8 
+# Lê a base de dados do dicionário
 data <- read.csv("./data/DadosDoDicionario.csv", encoding = "UTF-8")
-#colnames(data) <- c("ID","Headword", "FirstAttestationDate", "FirstAttestationExampleMD", "VariantSpellings", "Etymology", "WClass", "Credits")
 
 # Lê o arquivo com as definições
 definitions <- read.csv("./data/definitions.csv", encoding = "UTF-8")
@@ -25,7 +24,7 @@ Contextos <- function(InputConsulta, SenseNumber){
   ContextosTextoFormatados <- NULL
   for(a in 1:length(ContextosTexto)){
     
-    ContextosTextoFormatados[a] <- paste0(a, " - ", ContextosTexto[a], "<hr>")
+    ContextosTextoFormatados[a] <- paste0(a, " - ", ContextosTexto[a], "<br><br>")
     
   }
   ContextosTextoFormatados <- as.list(ContextosTextoFormatados)
@@ -33,6 +32,7 @@ Contextos <- function(InputConsulta, SenseNumber){
 }
 
 # Acrescenta a coluna das variantes gráficas a partir do dataframe
+
 
 for(n in 1:length(data$Headword)){
   data$VariantSpellings[n] <- paste(sort(unique
@@ -54,7 +54,7 @@ ui <- fluidPage(
   navbarPage(id="Dict", title=HTML("Dicionário Histórico de Termos da Biologia"), # Dá para fazer
                                                                                   # o título linkar 
                                                             # para a página inicial assim:
-                                                        # title=tags$a(href="https://brunomaroneze.shinyapps.io/Dicio_Botanica/"
+                                                        # title=tags$a(href="https://dicbio.fflch.usp.br/"
              
              windowTitle="Dicionário Histórico de Termos da Biologia", 
              collapsible = TRUE, inverse = FALSE, theme = shinytheme("readable"),
@@ -97,19 +97,22 @@ ui <- fluidPage(
                                                 ),
                                     mainPanel(width = 9,
                                               fluidRow(
-                                              column(8, 
-                                                        htmlOutput("Entry"),
-                                                        tags$hr(),
-                                                        htmlOutput("Definition"),
-                                                        tags$hr(),
-                                                        htmlOutput("Etymo"),
-                                                        tags$hr(),
-                                                        htmlOutput("FirstAttestation"),
-                                                        tags$br()
+                                              column(7, 
+                                                    htmlOutput("Entry"),
+                                                    tags$hr(),
+                                                    #htmlOutput("Definition"),
+                                                    #tags$hr(),
+                                                    htmlOutput("Etymo"),
+                                                    tags$hr(),
+                                                    htmlOutput("FirstAttestation"),
+                                                    tags$hr(),
+                                                    htmlOutput("HowToCite"),
+                                                    tags$br()
                                               ),
-                                              column(4,
-                                                     htmlOutput("HowToCite"),
-                                                     )
+                                              column(5
+                                                    , HTML("<b>Definição(ões):</b><br>")
+                                                    ,htmlOutput("Definition"),
+                                                    )
                                               )    
                                                   )
                                                   
@@ -185,10 +188,12 @@ server <- function(input, output, session) {
       
       Definicao <- definitions$Definition[definitions$Headword == EntryData()$Headword][c]
       Definition[c] <- paste0(c, ". ", Definicao,
-                              "<br><details><summary>Exemplos (<u>clique para expandir</u>)</summary><span style='font-size:.8em;'>",
-             paste(Contextos(EntryData()$Headword, c), collapse = ""), "</span></details><br>")
+                              "<div style='height: 30vh; overflow-y: auto;
+                              font-size:.7em;'>",
+             paste(Contextos(EntryData()$Headword, c), collapse = ""),
+             "</div><br>")
     }
-    
+
     Definition
     
   })
@@ -247,24 +252,24 @@ server <- function(input, output, session) {
     
     if(DateOfCreation == DateOfUpdate){
       paste0("<p style='font-size: .7em;'><br>Autores(as) do verbete: ",
-             EntryAuthors, "</p><hr><p style='font-size: .7em;'>Este verbete foi incluído em ",
-             DateOfCreation, "</p><hr><p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
+             EntryAuthors, "</p><br><p style='font-size: .7em;'>Este verbete foi incluído em ",
+             DateOfCreation, "</p><br><p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
 
     } else {
       
       paste0("<p style='font-size: .7em;'><br>Autores(as) do verbete: ",
-             EntryAuthors, "</p><hr><p style='font-size: .7em;'>Este verbete foi incluído em ",
-             DateOfCreation, " e atualizado em ", DateOfUpdate, "</p><hr>",
+             EntryAuthors, "</p><br><p style='font-size: .7em;'>Este verbete foi incluído em ",
+             DateOfCreation, " e atualizado em ", DateOfUpdate, "</p><br>",
              "<p style='font-size: .7em;'><b>Como citar este verbete:</b><br>",
              AuthorInReference, ". ",
              str_to_title(EntryData()$Headword), ". In: MARONEZE, Bruno (coord.) 
            <b>Dicionário Histórico de Termos da Biologia</b>. 2022. Disponível em: 
-           https://dicionariodebiologia.shinyapps.io/Dicio_Biologia. 
+           https://dicbio.fflch.usp.br/. 
            Acesso em: ", format(Sys.Date(), "%d %b. %Y"), ".</p><hr>")
     }
   }) 

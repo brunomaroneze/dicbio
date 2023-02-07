@@ -2,7 +2,7 @@
 <!DOCTYPE text SYSTEM "corpus.dtd">
 <text author="VANDELLI, Domingos" title="Diccionario dos Termos Technicos de Historia Natural..."
 date="1788">
-    <front><s>DICCIONARIO DOS TERMOS TECHNICOS DE HISTORIA NATURAL EXTRAHIDOS Das Obras de Linnéo, com a sua explicaçaõ, e estampas abertas em cobre, para facilitar a <w synonym="entendimento">intelligencia</w> dos mesmos.</s>
+    <front><pb n="página de rosto" /><s>DICCIONARIO DOS TERMOS TECHNICOS DE HISTORIA NATURAL EXTRAHIDOS Das Obras de Linnéo, com a sua explicaçaõ, e estampas abertas em cobre, para facilitar a <w synonym="entendimento">intelligencia</w> dos mesmos.</s>
     E
     <s>A MEMORIA SOBRE A UTILIDADE DOS <term lemma="jardim botânico" orth="JARDINS BOTÂNICOS" msd="plural">JARDINS BOTANICOS</term> QUE OFFERECE A RAYNHA D. MARIA I NOSSA SENHORA DOMINGOS VANDELLI Director do Real <term lemma="jardim botânico" orth="Jardim Botânico">Jardim Botanico</term>, e Lente das Cadeiras de Chymica, e de Historia Natural na Universidade de Coimbra, &amp;c.</s>
     
@@ -91,23 +91,23 @@ date="1788">
     - Retrorsum versus. Recurvado para traz. Ovis.
     <s>CYSTIFERUS Umbilicus. Embigo que tem huma bexiga, ou cavidade, onde se conserva hum humor <pb n="4"/>particular separado de huma <term lemma="glândula">glandula</term>. Sus porcus.</s>
     - Dorsus. No dorso, ou nas costas. Sus Tajacú.
-     
-     
+          
     D.
      
     DENTES. Os dentes saõ, os instrumentos cibarios, osseos, postos nas mandibulas.
     - Lucisores. Saõ os primeiros dentes, que servem para cortar, e arrancar o alimento. Homo. Tab. I. fig.1.2.4.5.6.a
-    - Laniarii. Estes saõ de huma figura cônica, mais elevados, pontiagudos, que servem para dilacerar. Canis. Fig. 1.2.5.b.
-    - Molares. Estes saõ obtuzos (ainda que nas feras tenhaõ suas pontas), e servem para triturarem o alimento. Bellue. Fere. Fig. 1.2.4.5.6.c. DENS. Dente.
+    - Laniarii. Estes saõ de huma figura conica, mais elevados, pontiagudos, que servem para dilacerar. Canis. Fig. 1.2.5.b.
+    - Molares. Estes saõ obtuzos (ainda que nas feras tenhaõ suas pontas), e servem para triturarem o alimento. Bellue. Fere. Fig. 1.2.4.5.6.c.
+    DENS. Dente.
     - Solitarius. Separado dos outros. Fig. 6. D
     - Serratus. Cortado na sua borda á maneira de serra. Delphinus Orca.
     - Spatiformis. A modo de espatula. Comelus. Fig. 6.a
-    - Duplicatus.Com escavaçaõ, que parece hum dente duplicado. Lepus.
+    - Duplicatus. Com excavaçaõ, que parece hum dente duplicado. Lepus.
     - Recumbens. Como deitado. Erinaccus.
-    - Cuspidato-conicus. Que acaba em ponta, de figura cônica.
+    - Cuspidato-conicus. Que acaba em ponta, de figura conica.
     - Approximatus. Aproximado a outros dentes.
     - Remotus. Distante dos outros dentes.
-    - Porrectus. Saido para fora.
+    - Porrectus. Sahido para fora.
     - Compressus. Chato.
     - Sublobatus. Quasi lobado, ou com pequenas prominencias na baze.
     - Exertus. O mesmo que porrectus.
@@ -121,7 +121,6 @@ date="1788">
     - Tricuspidatus. Com tres pontas. Fig. 2.c.
     - Terni dentes molares. A tres, a tres unidos em cada lado dos dois queixos. Félis.
     DIDACTYLUS. Animal, que só tem dois dedos. Myrmecophaga didactyla.
-     
      
     E.
      
@@ -156,7 +155,7 @@ date="1788">
      
     I.
      
-    IMPINNIS. Sem barbatana. Balena mysticetus.
+    IMPINNIS. Sem barbatana. Balaena mysticetus.
     JUBA. Saõ os cabellos postos na parte superior do pescoço, chamado Cervix, a que daõ o nome de crinas. Equus, Bos bonasus, bison.
      
      
@@ -174,10 +173,10 @@ date="1788">
     LINGUA. Lingua.
     - Simplex. Simples.
     - Denticulato-ciliata. Que tem na borda excavaçoes, e prominencias agudas, e alem disso papillas, ou fibras carnosas a modo de cilias.
-    - Supra aculeata. Com acúleos, ou papillas rijas, e agudas na parte superior, como no Gato.
+    - Supra aculeata. Com aculeos, ou papillas rijas, e agudas na parte superior, como no Gato.
     - Filiformis. Da mesma largura em todo o comprimento.
     - Teres. Redonda.
-    - Extensilis. Que se alonga, e se contrahe a arbítrio do animal.
+    - Extensilis. Que se alonga, e se contrahe a arbitrio do animal.
     - Subciliata. Que tem na sua borda algumas cilias, ou fibras paralelas carnosas a modo de pastanas. Didelphis.
      
      
@@ -186,16 +185,16 @@ date="1788">
     MACULA. Malha.
     - Virgata. Malha com linhas como vergas extendidas ao comprimento.
     - Triloba. Formada de três segmentos de circulo unidos.
-    MANICATUS. Chama-se assim todo o animal, que tanto nas palmas das maõs, como nas plantas dos pés cria muito pelo por meio do qual pode correr ligeiramente por entre os abrolhos. Lepus.
+    MANICATUS. Chama-se assim todo o animal, que tanto nas palmas das maõs, como nas plantas dos pés cria muito pello por meio do qual pode correr ligeiramente por entre os abrolhos. Lepus.
     MANULEATUS. He aquelle animal, cujas unhas saõ de figura oval. Homo, Simia.
-    MAMMAE Pectorales.Que estaõ no peito.
+    MAMMAE Pectorales Que estaõ no peito.
     - Abdominales. No abdomen.
     - Inguinales. Nas ingues, isto he, nas virilhas.
-    MEMBRANA Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas vezes transparente, movel, posta debaixo da palpebra superior do olho, com a qual se cobre a pupila de alguns animaes. Lepus, Homo Triglodytes.
+    MEMBRANA Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas vezes transparente, movel, posta debaixo da palpebra superior do olho, com a qual se cobre a pupilla de alguns animaes. Lepus, Homo Triglodytes.
     MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só femia.
     MUCRONATUS. A parte do animal, que acaba em ponta aguda.
-    MUTICUS. Sem acúleos. Termo proprio aos animaes destituidos de unhas.
-    <s>MYSTACES. Saõ aquelles pelos compridos, e rijos, que tem v.g. o Gato, ou o Caõ, ao pè dos narizes, e assima da <term lemma="órbita">orbita</term> do olho, ou sobrancelha.</s>
+    MUTICUS. Sem aculeos. Termo proprio aos animaes destituidos de unhas.
+    <s>MYSTACES. Saõ aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou o Caõ, ao pè dos narizes, e assima da <term lemma="órbita">orbita</term> do olho, ou sobrancelha.</s>
      
      
      
@@ -210,7 +209,7 @@ date="1788">
     - Infundibiliformis lanceolatus. A maneira de funil, e acaba em figura de lança. Vespertilio specirum.
     - Foliatus planus acuminatus. Tem huma membrana ao redor a modo de folha, acaba em ponta. Vespertilio perspicillatus.
     - Foliato-obcerdatus. Foliato, ou a maneira de folha, com figura de coraçaõ inverso. Vespert: Spasma.
-    - Refimus. Narizes, ou ventas chatas com a extremidade revirada para sima. Linnéo serve-se deste termo para mostrar hum nariz chato, e como cortado.
+    - Resimus. Narizes, ou ventas chatas com a extremidade revirada para sima. Linnéo serve-se deste termo para mostrar hum nariz chato, e como cortado.
      
     <pb n="9"/>
      
@@ -223,7 +222,7 @@ date="1788">
     - Tetradactylis. Com quatro dedos.
     - Fissa. Os dedos divididos sem membrana.
     - Palmata. Os dedos unidos entre si com membrana.
-    PALPEBRA. Capellas dos olhos onde se achaõ postas as pestanas, que servem para cobrir o olho; e estas saõ os cabelos, que servem para desviar o pó do mesmo olho.
+    PALPEBRA. Capellas dos olhos onde se achaõ postas as pestanas, que servem para cobrir o olho; e estas saõ os cabellos, que servem para desviar o pó do mesmo olho.
     PARALLELUS. Diz-se daquelas partes do animal, que sempre observaõ a mesma distancia entre si, sem que se possaõ encontrar, ainda que sejaõ produzidas.
     PEDES. Compedes. Nos Plagiuros, ou Cetaceos os pés posteriores formando huma pinna.
     PES. O pé.
@@ -438,13 +437,11 @@ date="1788">
     - Patulae. Bem abertas. Psophia.
     - Tubulosae. Com os tubos direitos. Cucullus. Com os tubos paralelos ao bico. Procellaria.
      
-     
     <pb n="21"/>NUCHA. A parte superior do pescoço, onde este se une com a cabeça. Tab.II.fig.2.z.
     NUDA Cutis. Sem pennas nos dous lados do pescoço, da cabeça até ao interscapuleo, e dos sovacos, ou axillas das azas pelos lados do peito até as ingues, ou virilhas, e até aos femores posteriores.
-     
-     
+    
     O
-    OCCIPUT. V. Pileus.
+    <foreign lang="latim">OCCIPUT</foreign>. V. Pileus.
     ORBITA. He o espaço, que fica ao redor dos olhos.
     <s>OVUM. Ovo. Fig.I. e cavidade com ar. d. branco. b. <term senseNumber="2">gema</term>. a. punctum saliens, ou rudimento da Ave.</s>
     
@@ -3708,7 +3705,7 @@ date="1788">
     Radix. Raiz he a parte da planta comque ella está pegada ao lugar do seu nascimento. A raiz he o principal instrumento da nutriçaõ da planta: a raiz está na terra, e cresce debaixo della.
     <s>Quando está pois pegada á outra planta, e naõ á terra, então chama-se a planta <term lemma="parasítico" orth="parasítica" msd="feminino singular">parasitica</term> como Epidendrum, Viscum.</s>
     <s>A raiz he vestida ou cercada de <term lemma="cutícula" orth="cutícula">cuticula</term>, ou <term>epiderme</term> compacta, e muitas vezes transparente. Debaixo desta pellicula delgada, ou <term>epiderme</term>, está a casca cortex, debaixo desta está o lignum, ou paó, e no meio a medulla carnoza, ou de substancia rija como o paó.</s>
-    A raiz divide-se a) em Caudex ascendens, que é a quella porçaõ da mesma raiz, que está fora da terra, e que nas arvores se chama Truncus.
+    <s>A raiz divide-se a) em Caudex ascendens, que é <w orth="aquela">a quella</w> porçaõ da mesma raiz, que está fora da terra, e que nas arvores se chama Truncus.</s>
     b) E em caudex descendens, que se esconde pouco, e pouco debaixo da terra com ramos, ou fibras mais delgadas.
     2. Pela duraçaõ.
     — Annua. Annual, que morre com o caule todos os annos, e que se propaga todos os annos pela semente, a maior parte das gramas, e dos feijoens.
@@ -3809,7 +3806,7 @@ date="1788">
     _ <s>Alatus. Com azas, ou membrana <term lemma="foliáceo" orth="foliácea" msd="feminino singular">foliacea</term>, que se extende pelo seu comprimento. Sigisbekia occidentalis.</s>
     Considerando o caule em quanto à sua medida.
     10. Pela medida.
-    _Linearis. Tendo o comprimento de huma linha_de_Pariz; isto he o comprimento da lunula da unha do dedo pollegar.
+    _Linearis. Tendo o comprimento de huma linha de Pariz; isto he o comprimento da lunula da unha do dedo pollegar.
     _ Unguicularis. Sendo a sua longitude de seis linhas, ou meia pollegada.
     _ Polliearis. Sendo do comprimento da articulaçaõ exterior do dedo pollex, ou de huma pollegada.
     _Cubitalis caulis. Do comprimento de covado. Heracleum_sphondylium.
@@ -3819,11 +3816,7 @@ date="1788">
     _ Dodrantalis. Igual ao espaço, que ha entre a ponta do pollegar, e o dedo pequeno estendido, nove pollegadas. 
     _ Orgyalis. Quando o caule sobe a altura de seis pés. Malva arborea.
     PROPORTIO. Proporçaõ do caule com as folhas, e outras partes da planta. 
-    b.) Pela grossura. Esta exprime-se por cousa muito
-    
-    <pb n="200"/>
-    
-    conhecida vg. coxa, pollegar, cabeça humana. &amp;c.
+    b.) Pela grossura. Esta exprime-se por cousa muito <pb n="200"/>conhecida vg. coxa, pollegar, cabeça humana. &amp;c.
     11.) Pela direcçaõ, ou situaçaõ.
     _ a.) erectus. fig. 117.  Quando o caule se eleva quasi perpendicularmente. Verbascum thapsus.
     _Strictus. Quando de nenhuma sorte se afasta da perpendicular. Alcea rosea.
@@ -3841,13 +3834,13 @@ date="1788">
     _ <s>Stolones. <term lemma="pimpolho" msd="plural">Pimpolhos</term>, que nascem do pé do caule, ou da raiz, que arrancados se plantaõ. Cornus, Sorbus, Ficus.</s>
     12._ b.) <s>Sarmentosus. fig. 131. He hum caule quasi nú, <term>repente</term>, sem raizes lateraes, ou caule delgado, e de igual grossura, com nós, que lançaõ raizes. Vitis vinifera. Clematis vitalba.</s>
     _ Radicans. fig. 112. Lançando dos ramos varias raizes, com as quaes se eleva a grande altura. Hedera helix. 
-    _ Repens. Caule, que lança varias raizes extendendo-se horizontalmente sobre a terra. Potentilla anserina. Lysimachia  nummularia.
+    _ Repens. Caule, que lança varias raizes extendendo-se horizontalmente sobre a terra. Potentilla anserina. Lysimachia nummularia.
     13. _ c.) Geniculatus. Chêo de nós, ou articulaçoens. Gramina. Galeopsis.
     _ <s>Flexuosus. Tendo articulaçoens viradas ora para huma, ora para outra parte, ou virando-se de <term>gomo</term> em <term>gomo</term>. Solanum dulcamara.</s>
     _ <s>Scandens. Caule que sobe pelos corpos vizinhos sustentado pelos seus <term lemma="capréolo" orth="capréolos" msd="plural">capreolos</term>, ou Elos. Clematis vitalba. Vitis.</s>
     _ Volubilis. fig. 115. Subindo espiralmente por outra qualquer planta. Bryonia dioica. 
-    _ Sinistrorsum ( fig. 115. Envolvendo-se da parte esquerda para a direita. Lonicera periclymenum. Humulus lupulus.
-    _ Dextrorsum. ) Envolvendo-se contra o movimento do sol. Convolvulus, Phaseolus. 
+    _ Sinistrorsum (fig. 115. Envolvendo-se da parte esquerda para a direita. Lonicera periclymenum. Humulus lupulus.
+    _ Dextrorsum.) Envolvendo-se contra o movimento do sol. Convolvulus, Phaseolus. 
     
     <pb n="202"/>
     
@@ -3875,7 +3868,7 @@ date="1788">
     _ Imbricatus. fig. 115. As folhas vaõ cubrindo a base humas das outras a maneira das telhas no telhado. Tussilago farfara.
     17 Pela superficie.
     _ a.) Suberosus. A casca do caule nos representa as qualidades de substancias de cortiça; 
-    _ Rimosus. Tendoa casca varias fendas, e profundas.
+    _ Rimosus. Tendo a casca varias fendas, e profundas.
     _ Tunicatus. fig. 127. Sendo revestido de algumas membranas. 
     18 _ b.) Levis. Sendo de huma superficie igual. Rannunculus aconitifolius. 
     _ Striatus. Constando de regos tenues, e superficiaes, ou de elevaçoens distantes, ou de linhas excavadas muito delgadas dispostas longitudinalmente. Rumex crispus. 
@@ -3991,7 +3984,7 @@ date="1788">
     _ Coadunata. Unindo-se varias folhas, que parece crescerem de huma base só.
     _ Approximata. Deixando pequeno espaço entre as suas bases.
     _ Remota. Sendo estas folhas distantes humas das outras. Polypodium fragile. 
-    32. b.) Opposita. fig. 82. ad 86. 103.  Quando as folhas do caule se achaõ duas e duas, porem dispostas em cada lado á maneira de cruz. Veronica teucrium. 
+    32. b.) Opposita. fig. 82. ad 86. 103.  Quando as folhas do caule se achaõ duas e duas, porem dispostas em cada lado á maneira de cruz. Veronica teucrium.
     _ Decussata. Quando as folhas postas a quatro e quatro oppostas, vendo-se a planta verticalmente mostraõ, ou parecem ser divididas entre quatro partes.
     _ Stellata. As folhas reprezentaõ a figura de estrela, com 6. folhas. Rubia tinctorum. 
     _ Verticillata. fig. 101. 102. O caule he cercado por mais de duas folhas; e do numero destas se diz terna, quaterna, quina, sena. Lilium martagon. Asperula odorata.
@@ -4135,8 +4128,7 @@ date="1788">
     _ Denticulatum. Folhas com incisuras de dentes, ou de serra, mas estas mais agudas. Epilobium tetragonum. 
     _ Spinosum. Na margem, ou na superficie da folha estaõ pontas rijas, e picantes, que se naõ podem arrancar sem romper a folha. Dracocephalum austriacum. 
     
-    <pb n="221"/> 
-    
+    <pb n="221"/>    
     _ Spinosum inerme. Tendo na margem pontas molles, que naõ picaõ. 
     _ <s>Cartilagineum, fig. 34. Sendo a margem <term lemma="cartilagíneo" orth="cartilagínea" msd="feminino singular">cartilaginea</term>, differente da substancia do <term senseNumber="2">disco</term>, ou da superficie, Sedum.</s>
     45. _ b) Repandum, fig. 46. Sendo a margem da folha chêa de voltas, e angulos; tendo estes varias excavaçoens, ou segmentos de circulo, e com obtuzas curvaduras entre si afastadas. Chenopodium glaucum. 
@@ -4169,42 +4161,40 @@ date="1788">
     _ Lucidum. A folha reprezenta huma <pb n="223"/>substancia vitrea, isto he, quando a folha deixa passar a luz, ou por muitos poros. Hypericum perforatum.
     — Coloratum. A folha tem outra cór, que, naõ he a verde. Amaranthus tricolor. 
     49. b.) Nervosum. fig. 53. A folha constando de varios vasos simplices, como outras tantas veias continuadas desde a base até ao apice; deve pois o Botanico attender ao numero destas veias. Scorzonera bumilis. Plantago latifolia. 
-    — Trinerve. Constando taõ somente de tres veias  unidas na base da folha. Stachys annua.
+    — Trinerve. Constando taõ somente de tres veias unidas na base da folha. Stachys annua.
     — Triplinerve. Tres vasos da folha cada hum pelo seu apice se divide em outros tres.
     — Enerve. Folha destituida de veias apparentes. 
     — Lineatum. Mostrando a folha taõ somente linhas distintas, sem serem elevadas, nem profundas.
     — <s>Striatum. Sendo as linhas da folha <term lemma="longitudinal" orth="longitudinais" msd="plural">longitudinaes</term>, e algum tanto profundas, e parallelas. Aloe retusa.</s>
-    — Sulcatum, fig. 60. As estrias, ou linhas  superficiaes da folha saõ profundas, e excavadas. Gallium verum.
-    50. — c.) Venosum. fg. 52. Os vasos, ou veias se dividem em muitos ramos, que se unem, ou communicaõ entre si. Viburnum lantana. 
+    — Sulcatum, fig. 60. As estrias, ou linhas superficiaes da folha saõ profundas, e excavadas. Gallium verum.
+    50. — c.) Venosum. fg. 52. Os vasos, ou veias se dividem em muitos ramos, que se unem, ou communicaõ entre si. Viburnum lantana.
     <s>Venae, &amp; Nervi. As veias, ou nervos das folhas, saõ partes, ou ramificações do <term lemma="pecíolo">peciolo</term>. Lamium album.</s>
     — <s>Ragosum. fg. 51. As veias da folha se contrahem de tal sorte, que comprimindo o <term senseNumber="2">disco</term>, este sobresahe; isto he, eleva-se mais, que os mesmos lados da folha. Primula veris.</s>
     <pb n="224"/> 
     — <s>Bullatum. Sobresahindo de entre as rugas para parte do <term senseNumber="2">disco</term>, ou da superficies da folha, de figura conica pela parte superior, e concava pela inferior. Salvia: Ocymum basìlicum.</s>
-    — <s>Lacunosum. A folha, que tem varias excavaçoens, ou o <term senseNumber="2">disco</term> entre as veias está abaixado.  Lichen saxatilis.</s> 
+    — <s>Lacunosum. A folha, que tem varias excavaçoens, ou o <term senseNumber="2">disco</term> entre as veias está abaixado. Lichen saxatilis.</s> 
     — Avenium. Naõ tendo a folha vasos ramozos.
     51. d.) Punctatum. Sendo a superficie da folha chèa de pontos excavados. Alyssum montanum. Hypericum perforatum.
     — Papillosum. fig. 54. Sendo coberta de pontos vesiculares, e carnozos. Mesembryanthemum cristallinum.
     — Papulosum. Constando de tuberculos algumas vezes côrados, mas naõ carnozos, ou coberta de pontos á maneira de bexiga.
     — Viscidum. Estando a folha cuberta de hum humor naõ fluido, mas tenaz, e pegajozo. Senecio viscosus.
     52. — e.) Villosum. Mostrando a folha pela sua superficie muita pube formada de pellos molles. Prunus insititia. Hyosciamus niger.
-     — Tomentosum, fg. 48. Quando estes pellos superficiaes estaõ tecidos, e apenas se vêm; pelo que muitas vezes - apparece a folha esbranquiçada
-    como saõ algumas plantas marinas, e campestres, expostas aos ventos. Tussilago, Verbaseum, Cynoglossum officinale, Viburnum lantana.
+    — Tomentosum, fg. 48. Quando estes pellos superficiaes estaõ tecidos, e apenas se vêm; pelo que muitas vezes - apparece a folha esbranquiçada, como saõ algumas plantas marinas, e campestres, expostas aos ventos. Tussilago, Verbaseum, Cynoglossum officinale, Viburnum lantana.
     — Sericeum. Folha cuberta de pellos mollissimos; claros, e tecidos huns pelos outros, e perceptiveis.
     — Lanatum. Sendo a superficie da folha revestida de tantos pellos, que reprezentaõ á nossa <pb n="225"/>vista huma teia de aranha bem tecida. Salvia, Sideritis lanata, Altbaca. 
     — Barbatum. Quando estes pellos saõ parallelos; comprimidos, juntos entre si, reprezentando deste modo hum feixe, bem á semelhança das barbas das cabras. Asclepias vincetoxicum.
     — Pilosum fig. 47. A superficie da folha consta de pellos distinctos entre si, e comprimidos. Veronica teucrium, Hieracium pillosella.
-    — <s>Scabrum, s: asperum. Folha revestida e tuberculos algum tanto duros, espalhados pelo seu <term senseNumber="2">disco</term> ou superficie. Gallium aparine.</s>
+    — <s>Scabrum, s: asperum. Folha revestida de tuberculos algum tanto duros, espalhados pelo seu <term senseNumber="2">disco</term> ou superficie. Gallium aparine.</s>
     — <s>Hispidum. fig. 49. Havendo sedas de <term senseNumber="2">disco</term>, ou na superficie da folha, que sejaõ algum tanto duras, rijas, asperas, e quebradiças. Echium vulgare.</s> 
     — <s>Aculeatum. Estando o <term senseNumber="2">disco</term> cheio de espinhos rijos, e picantes. Gallium uliginosum. Solanum indicum.</s> 
     — Strigosum. Sendo a folha taõ aspera, que consta de pontas rijas em figura de lança. 
     — <s>Glandulosum. Sendo a folha chéa de <term lemma="glândula" orth="glândulas" msd="plural">glandulas</term>.</s>
     — Muricatum. Os espinhos naõ picantes. 
-    — Furcatum. Folha coberta de espinhos cada hum dividido em outros. V . Furcae. 
+    — Furcatum. Folha coberta de espinhos cada hum dividido em outros. V. Furcae. 
     — Urens. Quando estes espinhos saõ tão tenros, e flexives, que offendem taõ somente a parte nua de quem os toca. Urtica.
     — Bracteatum. He a folha floral distincta das outras pela sua côr, e figura. <s>Esta deve observar-se em quanto ao numero, côr, duraçaõ e outros mais attributos, em que pode desferir, vg. quando a <term lemma="bráctea" orth="bráctea">bractea</term> pela sua grandeza termina o caule exprimem-se os Botanicos pelo termo de folium connatum, e naõ bracteatum.</s>
     
-    <pb n="226"/>
-    
+    <pb n="226"/>    
     53. Considerada a folha em quanto á sua desenvoluçaõ, ou expençaõ.
     — Planum. Sendo huma, e outra superficie parallelas.
     — Canaliculatum. fig. 61. Constando de hum rego profundo, e excavado por todo o seu comprimento: ou quasi hum meio cylindro.

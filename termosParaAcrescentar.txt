@@ -1,0 +1,50 @@
+Ana Menegassi
+    semente
+    aurícula
+    concameração
+    cibário
+    mandíbula
+
+Dannielly
+    caule
+    raiz
+    folha
+    tronco
+    flor
+
+Matheus
+    papila
+    tubérculo
+    polpa
+    carúncula
+    cetáceo
+
+Raissa
+    Botânica (nome da ciência)
+    botânico (cientista)
+    planta
+    suculento (succulento)
+    cirro (cirrho)
+    
+Adriane
+    músculo
+    lúnula
+    escavação (excavaçaõ, excavaçoens)
+    tubérculo
+    íngue
+
+Bruno
+    pétala
+    ramo
+    árvore
+    desenvolução
+    lanceolado
+
+Protocolo de pesquisa dos termos:
+1. Marcar, com a tag <term>, as ocorrências do termo nos textos do córpus;
+    1.a. Se o termo estiver escrito com outra ortografia e/ou se estiver numa forma diferente da lematizada, incluir o atributo <term lemma="xxxx">;
+2. Procurar o significado do termo nos dicionários atuais e verificar se é o mesmo nos textos do córpus;
+3. Consultar a etimologia do termo nos dicionários atuais;
+4. Se for um termo de origem latina, consultar os dicionários de latim; se for de origem grega, consultar os dicionários de grego;
+5. Verificar (no Google Livros ou em outra base de dados) a existência prévia do termo em latim ou em outra língua;
+6. Reunir essas informações num texto único.
