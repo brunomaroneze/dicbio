@@ -209,7 +209,7 @@ server <- function(input, output, session) {
     includeMarkdown("Documentation.Rmd")
   })
   
-#rd 09.02
+#rd 09.02.2022
 output$slickr <- renderSlickR({
     imgs <- list.files("D:/git/dicbio/www/slideshow", pattern=".jpg", full.names = TRUE)
     slick <- slickR(imgs)
