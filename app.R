@@ -211,7 +211,7 @@ server <- function(input, output, session) {
   
 #rd 09.02
 output$slickr <- renderSlickR({
-    imgs <- list.files("D:/git/dicbio/www/slideshow", pattern=".jpg", full.names = TRUE)
+    imgs <- list.files("./www/slideshow", pattern=".jpg", full.names = TRUE)
     slick <- slickR(imgs)
     slick + settings(autoplay = TRUE, autoplaySpeed = 3000)
   })
