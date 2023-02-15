@@ -25,7 +25,7 @@ corpustotal <- paste("<corpus>", corpusVandelli, "\\n",
 
 
 # Lê a árvore XML do corpus total, extrai todos os termos e atributos
-CorpusXML <- read_xml(corpustotal, encoding = "UTF-8")
+CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
 #corpusRoot <- xml_root(CorpusXML)
 
 terms <- xml_find_all(CorpusXML, "//term")
