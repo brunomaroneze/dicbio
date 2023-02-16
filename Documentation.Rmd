@@ -101,13 +101,15 @@ Os dados e o código-fonte encontram-se disponíveis para *download* no reposit�
 Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
 - MARONEZE, Bruno. [A polissemia de "gema" em diacronia](https://seer.ufu.br/index.php/GTLex/article/view/67628/35542). **Revista GTLex**, v. 8, 2022/23.
 
+- BARBOSA, Kamila da Silva; MARONEZE, Bruno. [Teorias semânticas e a definição nos dicionários: uma análise das definições de termos referentes a aves em dois dicionários da língua portuguesa](https://www.letracapital.com.br/produto/estudos-do-lexico-diferentes-olhares-e-perspectivas/). In: DORES, Marcus; CORDEIRO, Maryelle (orgs.) **Estudos do léxico: diferentes olhares e perspectivas**. Rio de Janeiro: Letra Capital, 2022, pp. 64-77.
+
 - MARONEZE, Bruno. [A história da pétala: etimologia de um termo científico](https://www.revistas.usp.br/linhadagua/article/view/159835). **Linha D'Água**, v. 32, n. 3, 2019, pp. 159-176.
 
 - MARONEZE, Bruno. [Termos neológicos em sincronias pretéritas: um estudo do *Diccionario dos Termos Technicos de Historia Natural* de Vandelli](http://www.livrosabertos.sibi.usp.br/portaldelivrosUSP/catalog/view/389/341/1394). In: GIL, Beatriz Daruj *et al*. **Saberes lexicais**. São Paulo: FFLCH-USP, 2019, pp. 96-109.
 
 ## Equipe
 - **Bruno Oliveira Maroneze** (Professor Associado, Universidade Federal da Grande Dourados) - coordenação do projeto - desde 2017
-- **Rodrigo Daniel Castiglioni Aguero** (Técnico de Lab. Informática, Universidade Federal da Grande Dourados) - desenho do *website* - desde 2023
+- **Rodrigo Daniel Castiglioni Aguero** (Técnico de Informática, Universidade Federal da Grande Dourados) - desenho do *website* - desde 2023
 - **Matheus Stein Casarin** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2023
 - **Dannielly Victória Rodrigues da Silva** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2023
 - **Ana Carolina Menegassi Rocha** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2023
