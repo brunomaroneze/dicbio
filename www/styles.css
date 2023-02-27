@@ -1,0 +1,26 @@
+ @import url(https://fonts.bunny.net/css?family=alegreya-sc:400);
+ body {
+     background-color: #f8f4a6;
+     color: #6b2737;
+}
+ p, h1, h2, h3, li, a {
+     font-family: 'Alegreya-sc', serif;
+}
+ .shiny-input-container {
+     color: #474747;
+}
+ .navbar-default {
+     background-color: #e08e45;
+     font-family: 'Alegreya-sc', serif;
+}
+ .navbar-default .navbar-brand {
+     color: #f8f4a6;
+}
+ .navbar-default .navbar-nav>li>a {
+     color: #f8f4a6;
+    ;
+}
+ .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+     color: #6B2737;
+     background-color: #F8F4A6;
+}
