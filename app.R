@@ -57,6 +57,7 @@ for (n in 1:length(data$Headword)) {
 #                             TokTextDF$lemma, data$Headword)))
 
 ui <- fluidPage(
+  includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
     title = HTML("Dicionário Histórico de Termos da Biologia"),
@@ -83,19 +84,18 @@ ui <- fluidPage(
           width = 6,
           offset = 1,
           
-        #rd 09.02
         slickROutput("slickr", height ="auto", width = "auto"),
           ##
-          tags$hr(),
+          tags$br(),
           HTML(
             "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"creativecommons.png\" height=\"31px\"></a>"
           ),
+        tags$br(),
           HTML(
             "<p style='font-size:10px'>O <b>Dicionário Histórico de Termos da Biologia</b>
                                está licenciado sob a <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0
                                International</a></p>"
           ),
-          tags$br(),
           HTML(
             "<p style='font-size:10px'>The <b>Historical Dictionary of Biology Terms</b>
                                is licenced under a <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
@@ -209,7 +209,7 @@ server <- function(input, output, session) {
     includeMarkdown("Documentation.Rmd")
   })
   
-#rd 09.02
+#rd 09.02.2022
 output$slickr <- renderSlickR({
     imgs <- list.files("./www/slideshow", pattern=".jpg", full.names = TRUE)
     slick <- slickR(imgs)
