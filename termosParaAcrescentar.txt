@@ -1,8 +1,12 @@
 Ana Menegassi
     semente
+O que diz o Dicionário Houaiss:
+
+
     aurícula
+    
     concameração
-    cibário
+    cibário - este termo só está registrado no dicionário Michaelis. O étimo é provavelmente o adjetivo latino cibarius, a, um.
     mandíbula
 
 Dannielly
@@ -20,23 +24,24 @@ Matheus STEIN
     cetáceo
 
 Raissa
-    Botânica (nome da ciência)
+    Botânica (nome da ciência): significa 
     botânico (cientista)
     planta
     suculento (succulento)
     cirro (cirrho)
     
 Adriane
-    músculo
+    músculo - Substantivo masculino
+Definição: Órgão responsável por executar movimentos de várias partes do corpo dos animais, formado por fibras capazes de se contrair e se alongar.
+Etimológica: O étimo é o latim <i>muscŭlus</i>, que já apresentava o sentido de 'músculo' na Antiguidade, conforme atesta o  Oxford Latin Dictionary (com abonações de Celso, Lucrécio, Apuleio e outros). Como o sentido inicial da palavra seria ‘rato pequeno’, ratinho’ (por ser o diminutivo de <i>mus</i> no sentido de ‘rato’, ‘camundongo’), a mudança semântica ocorreu ainda na língua latina. Segundo o dicionário Houaiss, a mudança se deu pela semelhança que apresentam alguns músculos, ao se contraírem, com o movimento rápido do rato.<br>A palavra, ainda que de atestação bem recuada (século XIV, conforme o dicionário Houaiss), entrou na língua portuguesa por via erudita, como atesta o acento proparoxítono e a preservação do -l- intervocálico, por exemplo.
     lúnula
     escavação (excavaçaõ, excavaçoens)
-    tubérculo
     íngue
+    árvore
 
 Bruno
     pétala
     ramo
-    árvore
     desenvolução
     lanceolado
 
