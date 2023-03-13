@@ -57,6 +57,8 @@ for (n in 1:length(data$Headword)) {
 #                             TokTextDF$lemma, data$Headword)))
 
 ui <- fluidPage(
+  tags$body(HTML("<body data-spy = 'scroll' data-target = '.navbar' 
+    data-offset = '20'>")),
   includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
@@ -84,13 +86,13 @@ ui <- fluidPage(
           width = 6,
           offset = 1,
           
-        slickROutput("slickr", height ="auto", width = "auto"),
+          slickROutput("slickr", height ="auto", width = "auto"),
           ##
           tags$br(),
           HTML(
             "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"creativecommons.png\" height=\"31px\"></a>"
           ),
-        tags$br(),
+          tags$br(),
           HTML(
             "<p style='font-size:10px'>O <b>Dicionário Histórico de Termos da Biologia</b>
                                está licenciado sob a <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0
@@ -155,21 +157,57 @@ ui <- fluidPage(
                   ))
         
       )
-    )
-    ,
+    ),
+
     tabPanel(
       id = "Documentation",
       "Documentação",
       fluid = TRUE,
-      fluidRow(column(
-        width = 8,
-        offset = 1,
-        htmlOutput("ProjectDocumentation")
+      fluidRow(
+        column(
+          width = 5,
+          offset = 1,
+          htmlOutput("ProjectDocumentation"),
+        ),
+        column(
+          width = 5,
+          offset = 1,
+          tags$nav(
+            class = "navbar",
+            tags$ul(
+              class = "nav nav-pills nav-stacked",
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#prefacio", "Prefácio")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#objetivos", "Objetivos")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#corpus", "Córpus")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#critlex", "Critérios Lexicográficos")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#publicacoes", "Publicações")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#equipe", "Equipe")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#agradecimentos", "Agradecimentos")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#contato", "Contato")),
+            ))
+
+        )
       ))
-    )
+    
   )
-  
 )
+
 
 
 server <- function(input, output, session) {
@@ -199,7 +237,7 @@ server <- function(input, output, session) {
       
     }
   })
-
+  
   
   output$ProjectIntro <- renderText({
     includeMarkdown("ProjectIntro.Rmd")
@@ -209,8 +247,8 @@ server <- function(input, output, session) {
     includeMarkdown("Documentation.Rmd")
   })
   
-#rd 09.02.2022
-output$slickr <- renderSlickR({
+  #rd 09.02.2022
+  output$slickr <- renderSlickR({
     imgs <- list.files("./www/slideshow", pattern=".jpg", full.names = TRUE)
     slick <- slickR(imgs)
     slick + settings(autoplay = TRUE, autoplaySpeed = 3000)
