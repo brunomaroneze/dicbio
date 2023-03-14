@@ -16,9 +16,8 @@ Tendo ficado desagradado com a forma como a Flora Lusitanica foi publicada, come
 Société Philomatique; Société d'Histoira Naturalle de Paris; Physioographica Society de Lunden, Suécia; Sociedade de História Natural de Rostock; Academia Cesarea de Bona, e outras. Fernando Reis 
 Na sua obra Principios de Agricultura Philosophica analisa os problemas estruturais da agricultura portuguesa e suas implicações na Economia, e defende que a Agricultura devia ser orientada por princípios científicos, de forma a que cada país pudesse fornecer à sua população os produtos de que necessita.
 Bibliografia 
-FERNANDES, Abílio, "Relance sobre a vida e a obra de Félix de Avellar Brotero", Anuário da Soc. Broteriana, Coimbra, 1988, 54, 1988. PALHINHA; Ruy Telles, "Obra e Vida de 
-Felix de Avelar Brotero", sep. das Memorias, (classe de Ciências - Tomo V), Lisboa,  Academia das Ciências de Lisboa, 1949. SILVA, Inocencio da, ARANHA, Brito, 
-Diccionario Bibliographico Portuguez, Lisboa, Imprensa Nacional, T. II, pp. 259-264. 
+FERNANDES, Abílio, "Relance sobre a vida e a obra de Félix de Avellar Brotero", Anuário da Soc. Broteriana, Coimbra, 1988, 54, 1988. PALHINHA; Ruy Telles, "Obra e Vida de Felix de Avelar Brotero", sep. das Memorias, (classe de Ciências - Tomo V), Lisboa,  Academia das Ciências de Lisboa, 1949.
+SILVA, Inocencio da, ARANHA, Brito, Diccionario Bibliographico Portuguez, Lisboa, Imprensa Nacional, T. II, pp. 259-264. 
 VEIGA, Augusto da Costa, "Felix Avelar Brotero", sep. da Revista da Faculdade de Ciências da Universidade de Coimbra, Coimbra, Tip. Atlântida, 1945, vol. XIV. 
 FÉLIX da Silva Avelar Brotero: (1744-1828). [S. l.], 6 mar. 2023. Disponível em: Félix da 
-Silva Avelar Brotero (1744-1828). Acesso em: 6 mar. 2023. disponivel e Ciência em Portugal - Personagens (instituto-camoes.pt) 
+Silva Avelar Brotero (1744-1828). Acesso em: 6 mar. 2023. disponivel e Ciência em Portugal - Personagens (instituto-camoes.pt)
