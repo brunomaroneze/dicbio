@@ -17,6 +17,7 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 
 ### Atualizações
 
+- 26 março 2023 - Inclusão do verbete "desenvolução"; atualização visual do *website*
 - 06 março 2023 - Inclusão do verbete "músculo"
 - 28 janeiro 2023 - Atualização dos verbetes "bífido", "cartilagíneo", "diafragma", "conivente", "disco", "epiderme", "escamoso", "filamento", "lacínia", "medular", "túnica", "vilo"
 - 21 dezembro 2022 - Inclusão do verbete "pericarpo"
