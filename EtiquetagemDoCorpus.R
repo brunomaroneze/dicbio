@@ -25,7 +25,7 @@ corpustotal <- paste("<corpus>", corpusVandelli, "\\n",
 
 
 # Lê a árvore XML do corpus total, extrai todos os termos e atributos
-CorpusXML <- read_xml(corpustotal, encoding = "UTF-8")
+CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
 #corpusRoot <- xml_root(CorpusXML)
 
 terms <- xml_find_all(CorpusXML, "//term")
@@ -80,8 +80,8 @@ for(i in 1:length(terms)){
     
     currentPage[i] <- as.character(xml_find_first(terms[i],
                                      xpath = "string(./preceding-sibling::pb/@n)"))
-    previousPage[i] <- str_extract(as.character(first(tail(xml_find_all(terms[i],
-                                          xpath = "./preceding::pb/@n"), 2))),
+    previousPage[i] <- str_extract(as.character(head(tail(xml_find_all(terms[i],
+                                          xpath = "./preceding::pb/@n"), 2), n=1)),
                                    "(?<=\").+(?=\")")
 
     pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
@@ -92,8 +92,8 @@ for(i in 1:length(terms)){
     
     currentPage[i] <- as.character(xml_find_first(terms[i],
                                             xpath = "string(./following-sibling::pb/@n)"))
-    previousPage[i] <- str_extract(as.character(first(tail(xml_find_all(terms[i],
-                                      xpath = "./preceding::pb/@n"), 1))),
+    previousPage[i] <- str_extract(as.character(head(tail(xml_find_all(terms[i],
+                                      xpath = "./preceding::pb/@n"), 1), n=1)),
                                    "(?<=\").+(?=\")")
     pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
     
