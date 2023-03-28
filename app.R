@@ -6,7 +6,7 @@ library(DT)
 #library(collapsibleTree)
 library(markdown)
 library(stringr)
-library(slickR)
+#library(slickR) #Saindo fora porque não foi compatível com o servidor da USP
 
 
 # Lê a base de dados do dicionário
@@ -85,8 +85,14 @@ ui <- fluidPage(
         column(
           width = 6,
           offset = 1,
+
+# Estas duas linhas seguintes voltaram da versão antiga, porque o slideshow
+# não funcionou no servidor da USP
+          img(src = "VandelliTabXV.png", height = "500px"),
+          HTML("Tabela XV - Vandelli - <i>Diccionario de Termos Technicos de Historia Natural</i> (1788)"),
           
-          slickROutput("slickr", height ="auto", width = "auto"),
+# Esta linha está saindo fora porque não foi compatível com o servidor da USP
+#          slickROutput("slickr", height ="auto", width = "auto"),
           ##
           tags$br(),
           HTML(
