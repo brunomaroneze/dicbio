@@ -12,8 +12,9 @@ O que diz o Dicionário Houaiss:
 Dannielly
     caule
     raiz
-    Definição: A raiz é o órgão da planta de nutrição e fixação a terra. 
-Radix. A raiz segundo descreve Vandelli em seu dicionário da História Natural: “ Radix. Raiz he a parte da planta com que ella está pegada ao lugar de seu nascimento. A raiz he o principal instrumento de nutrição da planta: a raiz está na terra e cresce debaixo dela”.  Em concordância com Vandelli, Brotero em seu Compêndio de Botânica cita: “A Raiz  he hum organo nutritivo apegado a terra (a), ou ao corpo onde a planta, a que pertence nasceo ou pegou.” 
+    Definição: Órgão da planta que serve às funções de nutrição e fixação à terra. 
+É palavra herdada, cujo étimo é o latim <i>radicem</i> (nominativo <i>radix</i>), que já apresentava o sentido de "órgão de sustentação da planta" desde a Antiguidade (conforme informa o Oxford Latin Dictionary). Em português, é atestado desde o período medieval (conforme informa o Dicionário Houaiss).
+Vandelli define "raiz" como "a parte da planta com que ella está pegada ao lugar de seu nascimento. A raiz he o principal instrumento de nutrição da planta: a raiz está na terra e cresce debaixo dela".  Em concordância com Vandelli, Brotero em seu Compêndio de Botânica cita: “A Raiz  he hum organo nutritivo apegado a terra (a), ou ao corpo onde a planta, a que pertence nasceo ou pegou.” 
 A definição atual que se tem de raiz de acordo com o Herbário digital da Universidade de Coimbra: “Raiz (radix). Órgão geralmente subterrâneo através do qual são absorvidos sais minerais e água e que fixa a planta ao solo.”
 
     folha
