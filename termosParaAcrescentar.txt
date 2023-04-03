@@ -11,9 +11,16 @@ O que diz o Dicionário Houaiss:
 
 Dannielly
     caule
-    raiz
     folha
+    Definição: As folhas são os órgãos do movimento da planta além da principal via de entrada de substâncias nutritivas para a planta. 
+Nos textos do século 18 a palavra folha era definida como o órgão responsável pelo movimento da planta como pode ser visto no Dicionário de História Natural do Vandelli, onde segundo Vandelli  “FOLIA. As folhas saõ os orgaõs do movimento da planta.”  Eram feitas ainda, analogias com a pele dos animais para explicar a função desse constituinte da planta como consta no Compendio de Botânica de Brotero onde “As folhas absorbem como a pelle dos animaes, e em muitas plantas a maior parte da substancia nutritiva lhes entra pelas folhas ; segundo algunsv physiologistas os vegetaes em geral nutremse de dia pela via das folhas e de noyte pelas raízes , e no inverno aquellas plantas que nelle perdem inteiramente as suas folhas so se nutrem pela raiz.”
+Hoje em dia essa definição é bem diferente, sendo a folha descrita como apêndice principal ou órgão lateral pelo Glossário de Botânica da Universidade Federal de Santa Maria (UFMS) que diz: “apêndice principal ou órgão lateral que nasce no caule ou eixo. Quando completa apresenta: bainha, pecíolo e limbo e, na axila uma gema foliar, podendo ainda apresentar estípulas ou não em sua base.”
+
     tronco
+    Definição: Tronco também chamado de caule lenhoso é a parte da planta que se eleva imediatamente da raiz e carrega os frutos e folhas, se diferenciando do caule herbáceo das ervas. 
+Segundo trecho do Dicionário de História Natural de Vandelli a palavra tronco possuía a seguinte definição: “TRUNCUS. Parte da planta, que sahindo da terra levanta com sigo a fructificação, e juntamente as folhas”.  Brotero complementa ainda em seu Compêndio de Botânica: “... hoje a palavra tronco está adoptada por hum termo geral de que o caule he huma especie, de maneira que se pode dizer com igual propriedade de  termo, que o choupo tem hum caule lenhoso, como se pode dizer, que a alface tem hum caule herbáceo. 
+A definição atual que se tem da palavra Tronco no Herbário Digital da Univeridade de Coimbra: “Tronco (Truncus). Caule lenhoso principal das árvores (gimnospérmicas, Magniliidae e algumas Liliidae lenhosas).”
+
     flor
 
 Matheus STEIN
@@ -21,7 +28,7 @@ Matheus STEIN
     tubérculo
     polpa
     carúncula
-    cetáceo
+    setáceo
 
 Raissa
     Botânica (nome da ciência): significa 

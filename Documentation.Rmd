@@ -3,7 +3,7 @@ title: "Documentation"
 output: html_document
 ---
 
-<div id="prefacio">
+<div id="prefacio"></div>
 
 # Prefácio
 O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.
@@ -14,8 +14,8 @@ O desenvolvimento inicial deste dicionário foi possível graças ao estágio de
 
 Atualmente, o projeto conta com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
 
-</div>
-<div id="objetivos">
+
+<div id="objetivos"></div>
 
 ## Objetivos
 O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
@@ -26,8 +26,8 @@ Seus objetivos específicos são:
 - Descrever as estruturas morfológicas (sufixos, prefixos, radicais eruditos etc.) empregadas em cada época na formação de termos;
 - Descrever a etimologia dos termos e as mudanças de forma e significado pelas quais passaram ao longo do tempo.
 
-</div>
-<div id="corpus">
+
+<div id="corpus"></div>
 
 ## Córpus
 O **Dicionário Histórico de Termos da Biologia** é inteiramente baseado num córpus formado por textos científicos publicados em língua portuguesa. Esse córpus (assim como o próprio dicionário) está em contínua atualização (cf. "Política de disponibilização dos dados") e disponível integralmente (no repositório *GitHub*), por ser constituído apenas por textos em domínio público.
@@ -60,8 +60,8 @@ Os textos que compõem o córpus são etiquetados com o emprego das seguintes et
 - **pb** - Elemento vazio que indica quebra de página da obra; o número da página que se inicia a partir desta marca é indicada no atributo *n*;
 - **obs** - Elemento vazio empregado para a inserção de observações diversas no texto, como comentários sobre a transcrição.
 
-</div>
-<div id="critlex">
+
+<div id="critlex"></div>
 
 ## Critérios lexicográficos
 Descrevem-se aqui os critérios adotados na seleção das entradas e na elaboração dos verbetes.
@@ -106,8 +106,8 @@ Em cada verbete, registram-se a data da inserção e a data da última atualiza�
 
 Os dados e o código-fonte encontram-se disponíveis para *download* no repositório *GitHub* [neste *link*](https://github.com/brunomaroneze/dicbio).
 
-</div>
-<div id="publicacoes">
+
+<div id="publicacoes"></div>
 
 ## Publicações
 Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
@@ -119,8 +119,8 @@ Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicion�
 
 - MARONEZE, Bruno. [Termos neológicos em sincronias pretéritas: um estudo do *Diccionario dos Termos Technicos de Historia Natural* de Vandelli](http://www.livrosabertos.sibi.usp.br/portaldelivrosUSP/catalog/view/389/341/1394). In: GIL, Beatriz Daruj *et al*. **Saberes lexicais**. São Paulo: FFLCH-USP, 2019, pp. 96-109.
 
-</div>
-<div id="equipe">
+
+<div id="equipe"></div>
 
 ## Equipe
 - **Bruno Oliveira Maroneze** (Professor Associado, Universidade Federal da Grande Dourados) - coordenação do projeto - desde 2017
@@ -142,8 +142,8 @@ Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicion�
 - **Amarildo Braga de Oliveira** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017-2018
 - **Florival Dourado dos Reis Neto** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017
 
-</div>
-<div id="agradecimentos">
+
+<div id="agradecimentos"></div>
 
 ## Agradecimentos
 A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD e do CNPq.
@@ -158,9 +158,8 @@ Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientaçõ
 
 Agradecemos a **Gisele Cristina da Conceição** (Universidade do Porto) pelas valiosas sugestões e opiniões.
 
-</div>
-<div id="contato">
+
+<div id="contato"></div>
 
 ## Contato
 Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
-</div>
