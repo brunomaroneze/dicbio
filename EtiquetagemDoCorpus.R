@@ -111,7 +111,7 @@ rm(author, date, pageNumber, currentPage, previousPage)
 # Cria um dataframe único
 DataFrameTotalXML <- data.frame(
   token = tokenTerms,
-  lemma = token_lemma,
+  Headword = token_lemma,
   orth = token_orth,
   gram = token_gram,
   sensenumber = token_senseNumber,
@@ -123,19 +123,19 @@ DataFrameTotalXML <- data.frame(
 # Se o campo de atualização ortográfica está vazio, por defeito será
 # igual ao lema
 # Se o número da acepção está vazio, por defeito será 1
-for(x in 1:length(DataFrameTotalXML$lemma)){
-  if(is.na(DataFrameTotalXML$lemma[x])){
-    DataFrameTotalXML$lemma[x] <- DataFrameTotalXML$token[x]
+for(x in 1:length(DataFrameTotalXML$Headword)){
+  if(is.na(DataFrameTotalXML$Headword[x])){
+    DataFrameTotalXML$Headword[x] <- DataFrameTotalXML$token[x]
   }
   if(is.na(DataFrameTotalXML$orth[x])){
-    DataFrameTotalXML$orth[x] <- DataFrameTotalXML$lemma[x]
+    DataFrameTotalXML$orth[x] <- DataFrameTotalXML$Headword[x]
   }
   if(is.na(DataFrameTotalXML$sensenumber[x])){
     DataFrameTotalXML$sensenumber[x] <- "1"
   }
 }
 
-# Preenche a coluna "variantes" com informações do token, lemma e gram
+# Preenche a coluna "variantes" com informações do token, Headword e gram
 
 DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
                                      paste0(tolower(DataFrameTotalXML$token),
