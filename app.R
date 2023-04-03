@@ -25,7 +25,7 @@ TokTextDF <-
 # palavra-entrada e o número da acepção
 Contextos <- function(InputConsulta, SenseNumber) {
   ContextosTexto <-
-    as.list(TokTextDF$sentence[TokTextDF$lemma == InputConsulta &
+    as.list(TokTextDF$sentence[TokTextDF$Headword == InputConsulta &
                                  TokTextDF$sensenumber == SenseNumber])
   ContextosTextoFormatados <- NULL
   for (a in 1:length(ContextosTexto)) {
@@ -43,7 +43,7 @@ Contextos <- function(InputConsulta, SenseNumber) {
 for (n in 1:length(data$Headword)) {
   data$VariantSpellings[n] <- paste(sort(unique
                                          (TokTextDF$variants
-                                           [tolower(TokTextDF$lemma) == tolower(data$Headword)[n]])),
+                                           [tolower(TokTextDF$Headword) == tolower(data$Headword)[n]])),
                                     collapse = ", ")
   if (data$VariantSpellings[n] == data$Headword[n]) {
     data$VariantSpellings[n] <- NA
@@ -54,7 +54,7 @@ for (n in 1:length(data$Headword)) {
 # na versão futura para incluir a pesquisa com variantes
 # listatotal <- sort(unique(c(TokTextDF$token,
 #                             TokTextDF$orth,
-#                             TokTextDF$lemma, data$Headword)))
+#                             TokTextDF$Headword, data$Headword)))
 
 ui <- fluidPage(
   tags$body(HTML("<body data-spy = 'scroll' data-target = '.navbar' 
@@ -230,13 +230,13 @@ server <- function(input, output, session) {
       EntryData
       
     } else if (input$headword %in% TokTextDF$token) {
-      RealHeadword <- TokTextDF$lemma[TokTextDF$token
+      RealHeadword <- TokTextDF$Headword[TokTextDF$token
                                       == input$headword]
       EntryData <- as.list(data[data$Headword == RealHeadword, ])
       EntryData
       
     } else if (input$headword %in% TokTextDF$orth) {
-      RealHeadword <- TokTextDF$lemma[TokTextDF$orth
+      RealHeadword <- TokTextDF$Headword[TokTextDF$orth
                                       == input$headword]
       EntryData <- as.list(data[data$Headword == RealHeadword, ])
       EntryData
