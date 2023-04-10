@@ -52,6 +52,8 @@ Os textos que compõem o córpus são etiquetados com o emprego das seguintes et
 - **front** - Elemento obrigatório que contém o texto da folha de rosto de cada obra;
 - **body** - Elemento obrigatório que contém o texto principal de cada obra;
 - **back** - Elemento obrigatório que contém os textos que eventualmente se encontram ao final de cada obra, após o texto principal, como índices e tabelas;
+- **title** - Etiqueta que delimita títulos e subtítulos;
+- **p** - Etiqueta que delimita parágrafos;
 - **s** - Etiqueta que delimita sentenças ou contextos maiores, entendidos como mínimos para a exemplificação do emprego de algum termo;
 - **term** - Etiqueta que marca os termos que integram a nomenclatura do dicionário; pode vir acompanhada dos atributos *lemma* (lema), *orth* (forma ortográfica atualizada), *msd* (descrição morfossintática, como "plural" ou "feminino") e *senseNumber* (número da acepção);
 - **w** - Etiqueta empregada para o registro de informações (inseridas como atributos) sobre palavras diversas do texto, mas que não são termos e não constam da nomenclatura do dicionário;
