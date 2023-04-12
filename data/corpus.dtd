@@ -2,9 +2,12 @@
  <!ATTLIST text author CDATA #REQUIRED>
  <!ATTLIST text title CDATA #REQUIRED>
  <!ATTLIST text date CDATA #REQUIRED>
-<!ELEMENT front (#PCDATA|s|pb|note|obs|foreign)*>
-<!ELEMENT body (#PCDATA|s|pb|note|obs|foreign)*>
-<!ELEMENT back (#PCDATA|s|pb|note|obs|foreign)*>
+<!ELEMENT front (#PCDATA|title|p|s|pb|note|obs|foreign)*>
+<!ELEMENT body (#PCDATA|title|p|s|pb|note|obs|foreign)*>
+<!ELEMENT back (#PCDATA|p|s|pb|note|obs|foreign)*>
+<!ELEMENT title (#PCDATA|s|note|obs|pb|foreign)*>
+ <!ATTLIST title type (main|sub) #IMPLIED>
+<!ELEMENT p (#PCDATA|s|note|obs|pb|foreign)*>
 <!ELEMENT s (#PCDATA|w|term|note|obs|pb|foreign)*>
 <!ELEMENT w (#PCDATA)>
  <!ATTLIST w synonym CDATA #IMPLIED>
