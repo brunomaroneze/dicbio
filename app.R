@@ -96,7 +96,10 @@ ui <- fluidPage(
           ##
           tags$br(),
           HTML(
-            "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"creativecommons.png\" height=\"31px\"></a>"
+           # "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"creativecommons.png\" height=\"31px\"></a>",
+            "<p>Apoio:</p>",
+            "<a href=\"https://www.gov.br/cnpq/pt-br\"><img src=\"cnpq.png\" height=\"40px\"></a>",
+            "<a href=\"https://ufgd.edu.br\"><img src=\"ufgd.png\" height=\"70px\"></a>"
           ),
           tags$br(),
           HTML(
