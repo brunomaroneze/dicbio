@@ -99,7 +99,7 @@ ui <- fluidPage(
            # "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"creativecommons.png\" height=\"31px\"></a>",
             "<p>Apoio:</p>",
             "<a href=\"https://www.gov.br/cnpq/pt-br\"><img src=\"cnpq.png\" height=\"40px\"></a>",
-            "<a href=\"https://ufgd.edu.br\"><img src=\"ufgd.png\" height=\"70px\"></a>"
+            "<a href=\"https://portal.ufgd.edu.br\"><img src=\"ufgd.png\" height=\"70px\"></a>"
           ),
           tags$br(),
           HTML(
@@ -311,11 +311,11 @@ server <- function(input, output, session) {
     VariantSpellings <- EntryData()$VariantSpellings
     if (!is.na(VariantSpellings)) {
       paste0(
+        "<b>Variantes e formas flexionadas: </b>",
+        VariantSpellings, "<hr>",
         "<font color='steelblue'>",
         EntryData()$Headword,
-        "</font>, também grafado <font color='steelblue'>",
-        VariantSpellings,
-        "</font> (conferir os contextos), é atestado em <b>",
+        "</font> é atestado em <b>",
         FirstAttestationDate,
         "</b>: ",
         FirstAttestationExampleMD
