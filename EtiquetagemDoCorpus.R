@@ -106,7 +106,7 @@ for(i in 1:length(terms)){
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ", p. ", pageNumber[i], ")")
 }
-rm(author, date, pageNumber, currentPage, previousPage)
+rm(pageNumber, currentPage, previousPage)
 
 # Cria um dataframe único
 DataFrameTotalXML <- data.frame(
@@ -139,15 +139,22 @@ for(x in 1:length(DataFrameTotalXML$Headword)){
 
 DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
                                      paste0(tolower(DataFrameTotalXML$token),
-                                    " (", DataFrameTotalXML$gram, ")"),
-                                    paste0(tolower(DataFrameTotalXML$token)))
+                                    " (", DataFrameTotalXML$gram, ")"
+                                    #, " (", author, ", ", date, ")"
+                                    ),
+                                    paste0(tolower(DataFrameTotalXML$token)
+                                    #       , " (", author, ", ", date, ")")
+                                    # Tirar o comentário para incluir 
+                                    # autor e data na variante
+                                    )
+)
 
 
 # Salva o arquivo
 write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
 
 # Limpa a memória
-rm(x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
+rm(author, date, x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
    corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML)
 
