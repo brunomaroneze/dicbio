@@ -212,7 +212,20 @@ ui <- fluidPage(
             ))
 
         )
-      ))
+      )),
+# nova seção
+tabPanel(
+  id = "Curiosities",
+  "Curiosidades",
+  fluid = TRUE,
+  fluidRow(
+    column(
+      width = 4,
+      offset = 1,
+      htmlOutput("Curiosities"),
+    )))
+# ------------------
+
     
   )
 )
@@ -255,6 +268,11 @@ server <- function(input, output, session) {
   output$ProjectDocumentation <- renderText({
     includeMarkdown("Documentation.Rmd")
   })
+  
+  output$Curiosities <- renderText({
+    includeMarkdown("Curiosities.Rmd")
+  })
+  
   
   #rd 09.02.2022
   output$slickr <- renderSlickR({
