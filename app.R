@@ -56,6 +56,7 @@ for (n in 1:length(data$Headword)) {
 #                             TokTextDF$orth,
 #                             TokTextDF$Headword, data$Headword)))
 
+
 ui <- fluidPage(
   tags$body(HTML("<body data-spy = 'scroll' data-target = '.navbar' 
     data-offset = '20'>")),
