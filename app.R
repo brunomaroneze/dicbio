@@ -63,12 +63,9 @@ ui <- fluidPage(
   includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
-    title = HTML("Dicionário Histórico de Termos da Biologia"),
-    # Dá para fazer
-    # o título linkar
-    # para a página inicial assim:
-    # title=tags$a(href="https://dicbio.fflch.usp.br/"
-    
+    title = div(img(src="www/logo.jpeg"), 
+               HTML("Dicionário Histórico de Termos da Biologia")),
+
     windowTitle = "Dicionário Histórico de Termos da Biologia",
     collapsible = TRUE,
     inverse = FALSE,
