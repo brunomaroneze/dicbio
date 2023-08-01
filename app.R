@@ -63,7 +63,7 @@ ui <- fluidPage(
   includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
-    title = div(img(src="www/logo.jpeg"), 
+    title = div(img(src="logo.jpeg", height="40px", width="40px"), 
                HTML("Dicionário Histórico de Termos da Biologia")),
 
     windowTitle = "Dicionário Histórico de Termos da Biologia",
