@@ -63,7 +63,7 @@ ui <- fluidPage(
   includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
-    title = div(img(src="logo.jpeg", height="40px", width="40px"), 
+    title = div(img(src="logo.png", height="40px", width="40px"), 
                HTML("Dicionário Histórico de Termos da Biologia")),
 
     windowTitle = "Dicionário Histórico de Termos da Biologia",
@@ -218,7 +218,7 @@ tabPanel(
   fluid = TRUE,
   fluidRow(
     column(
-      width = 4,
+      width = 10,
       offset = 1,
       htmlOutput("Curiosities"),
     )))
