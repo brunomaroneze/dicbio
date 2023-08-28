@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
  body {
-     background-color: #f3e7d6;
-     color: #6b2737;
+     background-color: #dbe9ee;
+     color: #0d1821;
 }
 
 * {font-family: 'IM Fell English', serif !important;}
@@ -10,18 +10,19 @@
      color: #474747;
 }
  .navbar-default {
-     background-color: #acc46a;
+     background-color: #166088;
+    
 }
  .navbar-default .navbar-brand {
-     color: #f3e7d6;
+     color: #c0d6df;
 }
  .navbar-default .navbar-nav>li>a {
-     color: #f3e7d6;
+     color: #c0d6df;
      ;
 }
  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-     color: #6B2737;
-     background-color: #f3e7d6;
+     color: #0d1821;
+     background-color: #c0d6df;
 }
  ul.nav-pills {
      top: 100px;
