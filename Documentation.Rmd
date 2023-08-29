@@ -93,7 +93,7 @@ O campo das informações histórico-etimológicas traz uma discussão a respeit
 - HOUAISS, Antônio; VILLAR, Mauro de Salles. **Grande Dicionário Houaiss da Língua Portuguesa**. Disponível em: [https://houaiss.uol.com.br/](https://houaiss.uol.com.br/).
 - GRÉCO, Gérard (dir.) **Gaffiot 2016**. Disponível em: [https://gaffiot.fr/](https://gaffiot.fr/). Baseado em: GAFFIOT, Félix. **Dictionnaire Latin-Français**. Paris: Hachette, 1934.
 - LIDDELL, Henry George; SCOTT, Robert; JONES, Henry Stuart (eds.). **Greek-English Lexicon**. 9. ed. Oxford: Clarendon Press, 1940. Disponível em: [http://stephanus.tlg.uci.edu/lsj/#eid=1](http://stephanus.tlg.uci.edu/lsj/#eid=1).
-- MEYER-LÜBKE, Wilhelm (org). Romanisches Etymologisches Wörterbuch. Heidelberg: Carl Winter's Universitätsbuchhandlung, 1911. Disponível em: [https://archive.org/details/romanischesetymo00meyeuoft] (https://archive.org/details/romanischesetymo00meyeuoft).
+- MEYER-LÜBKE, Wilhelm (org). **Romanisches Etymologisches Wörterbuch**. Heidelberg: Carl Winter's Universitätsbuchhandlung, 1911. Disponível em: [https://archive.org/details/romanischesetymo00meyeuoft] (https://archive.org/details/romanischesetymo00meyeuoft).
 - OXFORD Latin Dictionary. Oxford: Clarendon Press, 1968.
 
 
@@ -114,6 +114,8 @@ Os dados e o código-fonte encontram-se disponíveis para *download* no reposit�
 
 ## Publicações
 Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
+- MARONEZE, Bruno; RIO-TORTO, Graça. [A elaboração de um dicionário terminológico histórico com recursos digitais](https://revistas.ufrj.br/index.php/lh/article/view/52387/32319). **Revista LaborHistórico**, v. 9, n. 1, e52387, 2023.
+
 - MARONEZE, Bruno. [A polissemia de "gema" em diacronia](https://seer.ufu.br/index.php/GTLex/article/view/67628/35542). **Revista GTLex**, v. 8, 2022/23.
 
 - BARBOSA, Kamila da Silva; MARONEZE, Bruno. [Teorias semânticas e a definição nos dicionários: uma análise das definições de termos referentes a aves em dois dicionários da língua portuguesa](https://www.letracapital.com.br/produto/estudos-do-lexico-diferentes-olhares-e-perspectivas/). In: DORES, Marcus; CORDEIRO, Maryelle (orgs.) **Estudos do léxico: diferentes olhares e perspectivas**. Rio de Janeiro: Letra Capital, 2022, pp. 64-77.
@@ -133,6 +135,7 @@ Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicion�
 - **Dannielly Victória Rodrigues da Silva** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2023
 - **Ana Carolina Menegassi Rocha** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2023
 - **Fabiani de Amorim Gonçalves** (estudante de pós-graduação, Universidade Federal da Grande Dourados) - preparação do córpus, compilação dos verbetes - desde 2022
+- **Luana Silva Borges** (estudante de pós-graduação, Universidade Federal de Mato Grosso do Sul) - preparação do córpus, compilação dos verbetes - desde 2022
 - **Kamila da Silva Barbosa** (estudante de pós-graduação, Universidade Federal de Mato Grosso do Sul) - preparação do córpus, compilação dos verbetes - desde 2021
 - **Adriane Maria de Oliveira Queiroz** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2022
 - **Raíssa Silveira Buss** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - desde 2022

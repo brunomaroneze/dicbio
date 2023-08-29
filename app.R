@@ -56,18 +56,16 @@ for (n in 1:length(data$Headword)) {
 #                             TokTextDF$orth,
 #                             TokTextDF$Headword, data$Headword)))
 
+
 ui <- fluidPage(
   tags$body(HTML("<body data-spy = 'scroll' data-target = '.navbar' 
     data-offset = '20'>")),
   includeCSS("www/styles.css"),
   navbarPage(
     id = "Dict",
-    title = HTML("Dicionário Histórico de Termos da Biologia"),
-    # Dá para fazer
-    # o título linkar
-    # para a página inicial assim:
-    # title=tags$a(href="https://dicbio.fflch.usp.br/"
-    
+    title = div(img(src="logo.png", height="40px", width="40px"), 
+               HTML("Dicionário Histórico de Termos da Biologia")),
+
     windowTitle = "Dicionário Histórico de Termos da Biologia",
     collapsible = TRUE,
     inverse = FALSE,
@@ -212,7 +210,20 @@ ui <- fluidPage(
             ))
 
         )
-      ))
+      )),
+# nova seção
+tabPanel(
+  id = "Curiosities",
+  "Curiosidades",
+  fluid = TRUE,
+  fluidRow(
+    column(
+      width = 10,
+      offset = 1,
+      htmlOutput("Curiosities"),
+    )))
+# ------------------
+
     
   )
 )
@@ -255,6 +266,11 @@ server <- function(input, output, session) {
   output$ProjectDocumentation <- renderText({
     includeMarkdown("Documentation.Rmd")
   })
+  
+  output$Curiosities <- renderText({
+    includeMarkdown("Curiosities.Rmd")
+  })
+  
   
   #rd 09.02.2022
   output$slickr <- renderSlickR({

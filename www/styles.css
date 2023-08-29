@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
  body {
-     background-color: #f8f4a6;
-     color: #6b2737;
+     background-color: #dbe9ee;
+     color: #0d1821;
 }
- p, h1, h2, h3, li, a {
-     font-family: 'Alegreya SC', serif;
-}
+
+* {font-family: 'IM Fell English', serif !important;}
+
  .shiny-input-container {
      color: #474747;
 }
  .navbar-default {
-     background-color: #e08e45;
-     font-family: 'Alegreya SC', serif;
+     background-color: #166088;
+    
 }
  .navbar-default .navbar-brand {
-     color: #f8f4a6;
+     color: #c0d6df;
 }
  .navbar-default .navbar-nav>li>a {
-     color: #f8f4a6;
+     color: #c0d6df;
      ;
 }
  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-     color: #6B2737;
-     background-color: #F8F4A6;
+     color: #0d1821;
+     background-color: #c0d6df;
 }
  ul.nav-pills {
      top: 100px;
