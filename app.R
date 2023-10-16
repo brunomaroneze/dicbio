@@ -133,7 +133,7 @@ ui <- fluidPage(
             inputId = "headword",
             list(label = "Selecione uma entrada "),
             choices = c(sort(as.character(data$Headword))),
-            selected = "antera",
+            selected = "angulado",
             multiple = FALSE,
             size = 10,
             selectize = FALSE
@@ -233,7 +233,7 @@ tabPanel(
 server <- function(input, output, session) {
   # Descobri que não precisa desse updateSelectizeInput porque o input não vai ficar mudando
   #  updateSelectizeInput(session, "headword", choices=c(sort(as.character(data$Headword))),
-  #                       selected="antera")
+  #                       selected="angulado")
   
   
   EntryData <- reactive({

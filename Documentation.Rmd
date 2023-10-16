@@ -114,6 +114,9 @@ Os dados e o código-fonte encontram-se disponíveis para *download* no reposit�
 
 ## Publicações
 Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
+
+- BORGES, Luana da Silva; MARONEZE, Bruno. [Estudo da integração da unidade lexical “placenta” ao léxico português](https://seer.ufu.br/index.php/GTLex/article/view/70509). **Revista GTLex**, v. 9, 2023.
+
 - MARONEZE, Bruno; RIO-TORTO, Graça. [A elaboração de um dicionário terminológico histórico com recursos digitais](https://revistas.ufrj.br/index.php/lh/article/view/52387/32319). **Revista LaborHistórico**, v. 9, n. 1, e52387, 2023.
 
 - MARONEZE, Bruno. [A polissemia de "gema" em diacronia](https://seer.ufu.br/index.php/GTLex/article/view/67628/35542). **Revista GTLex**, v. 8, 2022/23.
