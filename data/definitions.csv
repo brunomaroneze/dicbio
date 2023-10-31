@@ -78,6 +78,7 @@
 "81","raiz","1","Órgão da planta que serve às funções de nutrição e fixação à terra."
 "82","folha","1","Órgão do movimento da planta."
 "83","tronco","1","Parte da planta que se ergue da terra e sustenta os frutos e as folhas."
+"85","papila","1","Estrutura da pele responsável pela sensibilidade do tato."
 "86","tubérculo","1","Saliência encontrada na pele ou na superfície de certos órgãos dos animais."
 "87","polpa","1","Substância espessa presente em certas estruturas vegetais, como folhas e frutos."
 "89","setáceo","1","Semelhante à seda ou aos pelos do porco (diz-se de estrutura animal ou vegetal)."
@@ -111,3 +112,5 @@
 "130","tuberculado","1","Provido de tubérculos."
 "131","umbilicado","1","Que possui uma concavidade semelhante a um umbigo, no centro."
 "132","verticilado","1","Disposto em verticilo (diz-se de estruturas vegetais)."
+"133","papila","2","Mamilo, bico do peito."
+"134","papila","3","Protuberância que se projeta a partir de certos órgãos animais ou vegetais."
