@@ -115,6 +115,8 @@ Os dados e o código-fonte encontram-se disponíveis para *download* no reposit�
 ## Publicações
 Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
 
+- BARBOSA, Kamila da Silva. **[Termos neológicos formados pelo sufixo -ado na obra de Vandelli (1788)](https://repositorio.ufms.br/handle/123456789/6740)**. 2023. 100 p. Dissertação (mestrado em Estudos de Linguagens) - Faculdade de Artes, Letras e Comunicação, Universidade Federal de Mato Grosso do Sul, Campo Grande, 2023.
+
 - BORGES, Luana da Silva; MARONEZE, Bruno. [Estudo da integração da unidade lexical “placenta” ao léxico português](https://seer.ufu.br/index.php/GTLex/article/view/70509). **Revista GTLex**, v. 9, 2023.
 
 - MARONEZE, Bruno; RIO-TORTO, Graça. [A elaboração de um dicionário terminológico histórico com recursos digitais](https://revistas.ufrj.br/index.php/lh/article/view/52387/32319). **Revista LaborHistórico**, v. 9, n. 1, e52387, 2023.
