@@ -202,7 +202,7 @@ date="1788">
     NARES.  Narizes.
     - Bifidæ. Narizes ou ventas divididas.
     - Elatæ. Levantadas para sima.
-    - <s>Carunculatæ. Com <term lemma="tubérculo" orth="tubérculos" msd="plural">tuberculos</term>, ou carunculas. Sorex cristatus.</s>
+    - <s>Carunculatæ. Com <term lemma="tubérculo" orth="tubérculos" msd="plural">tuberculos</term>, ou <term lemma="carúncula" orth="carúnculas" msd="plural">carunculas</term>. Sorex cristatus.</s>
     - Cristatæ. Com crista. Erinaceus europæus.
     NASUS. Naso.
     - Infundibiliformis lanceolatus. A maneira de funil, e acaba em figura de lança. Vespertilio specirum.
@@ -328,7 +328,7 @@ date="1788">
     CAPUT. A cabeça das Aves ordinariamente he de figura oval.
     CARPUS. Saõ dous ossos breves immediatos ao cubito da aza.
     CARTILAGO. He uma substancia, que medéa entre a parte ossea, e tendinosa.
-    CARUNCULA. He huma substancia carnosa, nua, molle, que cobre, ou a cabeça, ou collo de algumas Aves, ou as sobrancelhas no Tretrao, Meleagris, Parra, e tambem no Gallo se observa a mesma caruncula, a que o povo erradamente dá o nome de Crista, quando naõ he se naõ pennacea. Phasianus Gallus.
+    <s>CARUNCULA. He huma substancia carnosa, nua, molle, que cobre, ou a cabeça, ou collo de algumas Aves, ou as sobrancelhas no Tretrao, Meleagris, Parra, e tambem no Gallo se observa a mesma <term lemma="carúncula" orth="carúncula">caruncula</term>, a que o povo erradamente dá o nome de Crista, quando naõ he se naõ pennacea. Phasianus Gallus.</s>
     - Compressa. Comprimida nos lados Phasianus Gallus.
     - Lobata. Com abas. Parra.
     - Membranacea. De substancia, que parece membranoza. Meleagris.
@@ -344,7 +344,7 @@ date="1788">
     - Macroura. He mais comprida, que os pés da Ave. Pavo.
     - Mediocris. Do comprimento dos pès.
     CERA. He huma membrana corada, que veste, ou cobre a baze da mandibula superior, como nos Papagaios, e outras Aves. Tab.III.fig.Ia.Tab.II.fig.2.a.
-    - Carunculata. Com carunculas. Columba tabelaria.
+    - <s>Carunculata. Com <term lemma="carúncula" orth="carúnculas" msd="plural">carunculas</term>. Columba tabelaria.</s>
     - Flava. De côr amarela mais clara.
     - Lutea. De côr amarela escura.
     - <s>Papillosa. Com <term lemma="papila" orth="papilas" senseNumber="3">papillas</term>. Columba turcica.</s>
@@ -2864,7 +2864,7 @@ date="1788">
     LAXI coni ventricosi in aorso disjecti supra mensam tinitantes. Como hum pião.
     LIGAMEN, ligamentum, vinculum. Saõ sinonimos. Os ligamentos nas bivalves saõ destinados para unir as valvas de maneira que se abraõ, e fechem por meio destes ligamentos.
     LIMBUS. Circumferencia das valvas da concha, ou margem da mesma.
-    LINGUA. He huma pequena caruncula branca, conica, negra na ponta, posta na parte posterior da mandibula de alguns molluscos. Limax Vid. Argenville.
+    <s>LINGUA. He huma pequena <term lemma="carúncula" orth="carúncula">caruncula</term> branca, conica, negra na ponta, posta na parte posterior da mandibula de alguns molluscos. Limax Vid. Argenville.</s>
     — Involuta. Envolvida.
     — Spiralis. Espiral, ou retorcida em espira. Triton.
     LINEAE. As linhas, algumas vezes, significaõ sómente a pintura, e as vezes strias prominentes, ou escavadas.
