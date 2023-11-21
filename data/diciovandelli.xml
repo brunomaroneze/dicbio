@@ -620,7 +620,7 @@ date="1788">
     ABDOMINALIS. Peixe que tem pinnas ou barbatanas do ventre postas no abdômen inferior ás do thorax, ou peito.
     ACULEI. Saõ ossículos nas barbatanas sempre simpleces, não divididos, como os raios, rijos, pungentes, sem serem articulados.
     ADIPOSUS. Entende-se das barbatanas do peixe, destituídas dos raios osseos. Murana, Salmo, Trutta.
-    ADDITAMENTUM. He toda parte que naõ constitue o principal, mas sim o accessorio, como saõ os cirros na cabeça do peixe, e nas pinnas do mesmo <pb n="32"/>huma porçaõ de membrana siliforme.
+    <s>ADDITAMENTUM. He toda parte que naõ constitue o principal, mas sim o accessorio, como saõ os <term lemma="cirro" msd="plural">cirros</term> na cabeça do peixe, e nas pinnas do mesmo <pb n="32"/>huma porçaõ de membrana siliforme.</s>
        Os appendices do tronco saõ as barbatanas espurias, os dedos, o escudo.
     ALEPIDOTUM, seu nudum. Sem escamas. Blennius. Gymnotus, Echeneis.
     ANALIS. Barbatana, que he immediata ao ano.
@@ -730,13 +730,13 @@ date="1788">
      
     <pb n="39"/> 
     - Papillosum. V. Papillosus. Gymnotus.
-    - Aculcatum. Superficie da cabeça armada de espinhos ou acúleos. Trigla algumas especies.
+    - Aculcatum. Superficie da cabeça armada de espinhos ou aculeos. Triglae algumas especies.
     - Tuberculatum. Com prominencias ou callosidades obtuzas, rijas. Cottus algumas especies.
     Pelos additamentos da cabeça.
     - Tentaculis, sive pinnulis destitutum. Sem tentaculos Spari, Labri, Perca, Exococtus, Cyprinus &amp;c.
     - Tentaculis ornatum. Com tentaculos, em algumas especies de Blenios.
-    - Cirrhis carens. Sem cirros. Spari, Labri &amp;c.
-    - Cirrhosum. Com cirros. Cyprini, Gadi &amp;c.
+    - <s>Cirrhis carens. Sem <term lemma="cirro" msd="plural">cirros</term>. Spari, Labri &amp;c.</s>
+    - <s>Cirrhosum. Com <term lemma="cirro" msd="plural">cirros</term>. Cyprini, Gadi &amp;c.</s>
     - Clypeatum. V. Clypeum. Echeneis.
     - <s>Inerme, seu laeve. Sem aculcos, e <term lemma="tubérculo" orth="tubérculos" msd="plural">tuberculos</term>. Pleuronectes, Exocoetus &amp;c.</s>
     - Aculeatum, pungens. Armada com aculeos. Triglae, &amp; Cotti muitas especies.
@@ -939,8 +939,8 @@ date="1788">
     Pelos additamentos, ou accrescentamentos.
     
     <pb n="50"/>
-    — Cirrhosæ. Com cirros. Silurus, Gadus. No queixo superior somente Gobius, no inferior Mullus.
-    — Utraque cirrhis carente. Ambos os queixos sem cirros Perca, Labrus, Sparus, e a maior parte dos peixes. 
+    — <s>Cirrhosæ. Com <term lemma="cirro" msd="plural">cirros</term>. Silurus, Gadus.</s> No queixo superior somente Gobius, no inferior Mullus.
+    — <s>Utraque cirrhis carente. Ambos os queixos sem <term lemma="cirro" msd="plural">cirros</term> Perca, Labrus, Sparus, e a maior parte dos peixes.</s>
     — Scabræ, asperæ. Asperas. Uranoscopus.
     — Vaginatæ. Quando hum dos dous queixos cobre o outro em todo, ou em parte. Cyprinus, Zeus.
     — Fornicatæ. Na guéla de alguns peixes vê-se huma membrana, cuja parte anterior, ou a extremidade anterior esta pegada ao comprido da borda anterior, e interna dos queixos, a outra esconde arbitrariamente o peixe. Vê-se huma membrana semelhante no queixo superior do Zeus. V. Labium Fornicatum. E em ambos os queixos em outra especie de Zeus. 
@@ -1224,7 +1224,7 @@ date="1788">
     — Didactylæ. Com dous raios somente. Blennius.
     — Multi-radiatæ. Com muitos raios; mas raras vezes mais de seis, em quasi todos os peixes.
     — Muticae. Rombas, nos peixes malacopterygios.
-    — Difformes Quando alem dos ossiculos tambem estaõ cirros. Ophidium.
+    — <s>Difformes Quando alem dos ossiculos tambem estaõ <term lemma="cirro" msd="plural">cirros</term>. Ophidium.</s>
     As barbatanas do ventre em qualquer lugar que sejaõ, abremse horizontalmente na agua formando hum angulo recto com o corpo. Esta expansaõ appresentando a agua maior superficie serve para equilibrar o corpo, e por isso fazem de algum modo officio de pés
     PINNÆ Spuriæ. As barbatanas espurias differem das verdadeiras, porque aquellas naõ saõ compostas, senaõ de huma pelle sem raios, ou aculeos, que ordinariamente sustentaõ as barbatanas verdadeiras. Estas estaõ sempre postas ao lado do corpo, <pb n="69"/>ao lado do ventre, e quasi sempre sobre o dorso. Amia, Scomber Thynnus.
     PINNATUS. He todo o peixe, que tem barbatana.
@@ -1278,7 +1278,7 @@ date="1788">
     — Minimæ. Muito pequenas. Ammodytes, Uranoscopus.
     SQUAMOSUM. O corpo cuberto de escamas, como he o maior numero dos peixes.
     T.
-    <s>TENTACULUM. Quando Linnéo dá o nome de tentaculo a certas partes dos peixes, como he no Gymnotus, deve-se entender por hum additamento <term lemma="setáceo">setaceo</term>, cutaneo, situado entre os olhos, e narizes, ou pela parte superior; movel á vontade do peixe: muitas vezes observa-se cortado, formando huma crista.</s> O uso deste tentaculo, he taõ incognito, como o dos cirros: Os Ichthyologos daõ-lhe muitas vezes o nome de pinnula.
+    <s>TENTACULUM. Quando Linnéo dá o nome de tentaculo a certas partes dos peixes, como he no Gymnotus, deve-se entender por hum additamento <term lemma="setáceo">setaceo</term>, cutaneo, situado entre os olhos, e narizes, ou pela parte superior; movel á vontade do peixe: muitas vezes observa-se cortado, formando huma crista.</s> <s>O uso deste tentaculo, he taõ incognito, como o dos <term lemma="cirro" msd="plural">cirros</term>: Os Ichthyologos daõ-lhe muitas vezes o nome de pinnula.</s>
     TERES, seu Cylindricum. Corpo do peixe sem angulos, quasi cylindrico. Muraena, Ammodytes.
     <s>TRIGONUM, tetragonum. Corpo com tres, ou quatro angulos <term lemma="longitudinal" orth="longitudinais" msd="plural">longitudinaes</term>, prominentes, estando os lados exactamente planos. Ostracion, Syngnathus.</s>
     TRIPTERYGIUS. Tendo tres pinnas no dorso.
@@ -2508,7 +2508,7 @@ date="1788">
     — Transversa. Atravessada.
     — Bifidus. Extremidade da concha, que se divide em duas.
     BIVALVIS. Diz-se da concha, que consta de duas valvas.
-    <s>BRACHIUM. Da-se este nome de braço, a huma especie de cirros grossos, e compridos, com que a Sepia, ou siba abraça, ou apanha alguns animaes, e por meio dos <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term> postos na parte interior dos mesmos cirros, chupa o humor dos animaes.</s>
+    <s>BRACHIUM. Da-se este nome de braço, a huma especie de <term lemma="cirro" msd="plural">cirros</term> grossos, e compridos, com que a Sepia, ou siba abraça, ou apanha alguns animaes, e por meio dos <term lemma="cotilédone" orth="cotilédones" msd="plural">cotyledones</term> postos na parte interior dos mesmos <term lemma="cirro" msd="plural">cirros</term>, chupa o humor dos animaes.</s>
     BRACHIATA. Com braços.
     <s>BYSSUS. He huma especie de <term lemma="filamento" msd="plural" senseNumber="2">filamentos</term>, que <pb n="128"/>sahem dos Molluscos, com que as conchas se pegaõ humas ás outras, ou aos rochedos. Pinna, Mytilus.</s>
     C.
@@ -2953,7 +2953,7 @@ date="1788">
     — Anticum. Na parte anterior. Sipunculus.
     — Attenuatum. Adelgaçado. Sipunculus.
     — Centrale. No meio do corpo Medusa, Asteria.
-    — Cirrosum. Com cirros. Mixine.
+    — <s>Cirrosum. Com <term lemma="cirro" msd="plural">cirros</term>. Mixine.</s>
     — Corneum. De substancia cornea. Sepia.
     — Cylindricum. De figura cylindrica. Sipunculus.
     — Edentulum. Sem dentes. Scyllaea.
@@ -4149,7 +4149,7 @@ date="1788">
     _ Acuminatum. fig. 42. Acabando em ponta mui fina, á maneira de sovela (40). Lamium album.
     _ Cuspidatum. He o mesmo que acuminatum, mas com a ponta alguma cousa mais rija, ou que acaba com o apice á maneira de seda. 
     _ Mucronatum. He huma especie do antecedente, mas com a ponta mais comprida, e picante, e algum tanto dura, ou que acaba com ponta sahida para fora. Gallium uliginosum. 
-    _ <s>Cirrhosum, cirrhatum. fig. 72. 73. Terminando em cirrhos no apice, isto he, em varios <term lemma="filamento" msd="plural">filamentos</term>, por meio dos quaes sobem por outros corpos. Lathyrus. Pisum sativum.</s>
+    _ <s>Cirrhosum, cirrhatum. fig. 72. 73. Terminando em <term lemma="cirro" orth="cirros" msd="plural" senseNumber="2">cirrhos</term> no apice, isto he, em varios <term lemma="filamento" msd="plural">filamentos</term>, por meio dos quaes sobem por outros corpos. Lathyrus. Pisum sativum.</s>
     48. Em quanto á superficie. 
     _ a) <s>Pagina superiore. He a superficie da <term>folha</term>, que esta virada para o cêo, por naõ ser a <term>folha</term> torta.</s>
     _ _ Inferiore s. prona. Que está virada para a terra. 
@@ -4265,8 +4265,8 @@ date="1788">
      
     <pb n="231"/>
     
-    — <s>Pinnatum, cirrhosum. fig. 72. 73. <term lemma="folha">Folha</term> pinnata, que acaba com cirrho, ou ello. Lathyrus.</s>
-    — <s>Pinnatum abruptum. fig. 69. He a <term>folha</term> pinnata acabando sem cirrho, ou ello, nem pequena <term>folha</term> na sua extremidade. Abrus precatarius.</s>
+    — <s>Pinnatum, cirrhosum. fig. 72. 73. <term lemma="folha">Folha</term> pinnata, que acaba com <term lemma="cirro" orth="cirro" senseNumber="2">cirrho</term>, ou ello. Lathyrus.</s>
+    — <s>Pinnatum abruptum. fig. 69. He a <term>folha</term> pinnata acabando sem <term lemma="cirro" orth="cirro" senseNumber="2">cirrho</term>, ou ello, nem pequena <term>folha</term> na sua extremidade. Abrus precatarius.</s>
     — <s>Pinnatum opposite. fig. 69. 69. As pequenas <term>folha</term> se achaõ oppostas em cada lado do <term lemma="pecíolo">peciolo</term>.</s> 
     — <s>Pinnatum alterne. fig. 70. As pequenas <term lemma="folha" msd="plural">folhas</term> se achaõ oppostas em quanto aos lados; porém humas superiores, outras algum tanto mais inferiores.</s> 
     — <s>Pinnatum interrupte. fig. 71. O <term lemma="pecíolo">peciolo</term> consta de pequenas <term lemma="folha" msd="plural">folhas</term> interrompidas com outras menores, que alternaõ as maiores.</s> 
@@ -4370,7 +4370,7 @@ date="1788">
     — Mediocres.
     — <s>Longae. Respectivamente ao <term lemma="pecíolo">peciolo</term>, ou á <term>folha</term>: ou ao <term lemma="pedúnculo">pedunculo</term>, faltando o <term lemma="pecíolo">peciolo</term>.</s> (64).
     76. Cirrhus. fig. 118.a. Ello he hum vinculo filiforme espiral, com que a planta se une a outro qualquer corpo. Vitis. Phaseolus, Bryonia, Pisum.
-    Capreoli, carbiculae, viticuli: O mesmo, que os cirrhos. Ou he o cirro.
+    <s>Capreoli, carbiculae, viticuli: O mesmo, que os <term lemma="cirro" orth="cirros" msd="plural" senseNumber="2">cirrhos</term>. Ou he o <term senseNumber="2">cirro</term>.</s>
     — a) <s>Axillaris. No angulo superior, que forma a <term>folha</term>, ou o ramo com caule.</s> (29)
     — <s>Foliaris. fig. 72. 73. Que nasce da mesma substancia da <term>folha</term>, e quasi sempre no seu apice.</s>
     — <s>Petiolaris. No <term lemma="pecíolo">peciolo</term>.</s>
@@ -4451,7 +4451,7 @@ date="1788">
     — Caulinus. Do caule. 
     — Rameus. Dos ramos.
     — <s>Petiolaris. Sahe do <term lemma="pecíolo">peciolo</term>. Hibiscus.</s>
-    — Cirrhiferus. Tendo cirrho, ou ello (76) Vitis, Cardiospermum. 
+    — <s>Cirrhiferus. Tendo <term lemma="cirro" orth="cirro" senseNumber="2">cirrho</term>, ou ello (76) Vitis, Cardiospermum.</s>
     — Terminalis. Que está na extremidade do caule, ou do ramo. 
     — <s>Axillaris. Que nasce entre o caule, e a <term>folha</term>, ou entre o caule, e o ramo.</s> (29)
     — <s>Oppositifolius. Opposto na situação á <term>folha</term>. Phytolacca, Solanum dulcamara, Vitis. Geranium, Ranunculus aquatilis.</s>
