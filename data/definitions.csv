@@ -77,19 +77,25 @@
 76,aurícula,1,Cavidade superior dos ventrículos do coração.
 77,concameração,1,Cavidade em forma de abóbada presente em estruturas animais e vegetais.
 78,cibário,1,Relativo à alimentação dos animais.
+79,utrículo,1,"Cada um dos vasos em forma de sacos ovais e esponjosos, situados transversalmente e que ocupam os intervalos dos vasos longitudinais, nos vegetais."
+80,utrículo,2,Espécie de glândula presente nos vegetais.
 81,raiz,1,Órgão da planta que serve às funções de nutrição e fixação à terra.
 82,folha,1,Órgão do movimento da planta.
 83,tronco,1,Parte da planta que se ergue da terra e sustenta os frutos e as folhas.
+84,membranoso,1,Feito de ou em forma de membrana.
 85,papila,1,Estrutura da pele responsável pela sensibilidade do tato.
 86,tubérculo,1,Saliência encontrada na pele ou na superfície de certos órgãos dos animais.
 87,polpa,1,"Substância espessa presente em certas estruturas vegetais, como folhas e frutos."
 88,carúncula,1,Protuberância existente no corpo de certos animais.
 89,setáceo,1,Semelhante à seda ou aos pelos do porco (diz-se de estrutura animal ou vegetal).
 90,Botânica,1,Parte da História Natural responsável pela descrição e estudo dos vegetais.
+91,bálano,1,Cabeça do membro viril.
 92,planta,1,Designação comum a todos os vegetais.
 93,suculento,1,Que contém muito suco; sucoso.
 94,cirro,1,Apêndice filiforme presente em certos animais como peixes e moluscos.
 95,músculo,1,"Órgão responsável por executar movimentos de várias partes do corpo dos animais, formado por fibras capazes de se contrair e se alongar."
+96,carpo,1,Punho.
+97,metacarpo,1,Parte da mão compreendida entre o carpo e os dedos.
 98,árvore,1,"Planta perene que apresenta um tronco em geral alto e grosso, com ramos."
 102,desenvolução,1,Ação de desenvolver; desenvolvimento.
 103,lanceolado,1,Que tem a forma semelhante à de lança.
@@ -126,3 +132,4 @@
 140,bile,1,Substância secretada pelo fígado que atua na digestão.
 141,cápsula,1,Membrana que envolve certas estruturas anatômicas.
 142,Zoologia,1,Ramo da História Natural que estuda os animais.
+,,,

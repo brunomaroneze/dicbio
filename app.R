@@ -133,7 +133,7 @@ ui <- fluidPage(
             inputId = "headword",
             list(label = "Selecione uma entrada "),
             choices = c(sort(as.character(data$Headword))),
-            selected = "angulado",
+#            selected = "angulado",
             multiple = FALSE,
             size = 10,
             selectize = FALSE
