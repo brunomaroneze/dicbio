@@ -431,10 +431,10 @@ Lombos.
 Nadegas, ou nates.
 Flexura do Cotovello.
 Antebraço.
-Collo da maõ, ou
-Carpo.
-Costa da maõ, ou
-metacarpo.
+<s>Collo da maõ, ou
+<term lemma="carpo">Carpo</term>.</s>
+<s>Costa da maõ, ou
+<term>metacarpo</term>.</s>
 Vola da maõ.
 Dedo polegar.
 Dedo mostrador.
@@ -569,16 +569,16 @@ I O corpo humano se divide em tronco, membros, ou artus.
 4 O tronco tem tres cavidades; a superior se chama cabeça, a media thorax, que he o vaõ do peito, a infima abdomen.
 5 A cabeça contèm o craneo, e o cerebro, e as duas membranas, que involvem o cerebro, às quaes os Gregos chamaõ meninges.
 6 <s>O thorax he aquella cavidade entre as claviculas, e o <term lemma="diafragma">diaphragma</term>, que contèm o coraçaõ, os bofes, o mediastino, e parte do <term lemma="esôfago">isophago</term>, e aspera arteria com os seus vasos.</s>
-7 <s>O abdomen he a cavidade, que principia desde o <term lemma="diafragma">diaphragma</term> até as partes pudendas, ou osso, que chamaõ pubes, e o osso a que chamaõ coccyx; comprehende o ventriculo, ou estomago, os intestinos, o figado, o baço, os rins, e outras partes.</s>
+7 <s>O abdomen he a cavidade, que <pb n="8" />principia desde o <term lemma="diafragma">diaphragma</term> até as partes pudendas, ou osso, que chamaõ pubes, e o osso a que chamaõ coccyx; comprehende o ventriculo, ou estomago, os intestinos, o figado, o baço, os rins, e outras partes.</s>
 8 A parte anterior da cabeça se chama rosto, ou cara; a parte superior desta he a testa, que em Latim se diz frons. <s>A parte superior da cabeça he a molleira, ou synciput, a posterior, e inferior he o toutiço, ou <term lemma="ócciput">occiput</term>.</s> As lateraes se chamaõ fontes, ou tempora. A parte, que està entre a cabeça, e o thorax, se chama pescoço, ou collum, a parte anterior do pescoço he a garganta, ou jugulum, a parte posterior cachaço, ou cervix. fig. 1. est. 1. letra f.
 9 A parte posterior do thorax chamamos costas, ou dorsum, a anterior peyto, as lateraes lados, ou ilhargas, e no meyo sobre a espinhela està o que em Latim se diz Scrobiculus cordis. fig 1. L.
-10 No abdomen se consideraõ tres regioens; a primeira, e suprema, se chama epigastrica, a qual acaba dous dedos pouco mais, ou menos sobre o embigo. A segunda, e media, se diz umbilical, que termina abaixo do embigo, dous dedos pouco mais, ou menos. <s>A terceira, e inferior às outras, he a que chamaõ <term lemma="hipogástrio" orth="Hipogástrio">Hypogastrio</term>.</s> fig. 1. 3.
+10 No abdomen se consideraõ tres regioens; a primeira, e suprema, se chama epigastrica, a qual acaba dous dedos pouco mais, ou menos sobre o embigo. A segunda, e media, se diz umbilical, que termina abaixo do <pb n="9" />embigo, dous dedos pouco mais, ou menos. <s>A terceira, e inferior às outras, he a que chamaõ <term lemma="hipogástrio" orth="Hipogástrio">Hypogastrio</term>.</s> fig. 1. 3.
 11 <s>As partes do <term lemma="epigástrio" orth="Epigástrio">Epigastrio</term> lateraes, e superiores, saõ os hypocondrios, ou vasios, hum da parte direita, e outro da parte esquerda.</s>
 12 <s>As partes lateraes superiores do <term lemma="hipogástrio" orth="Hipogástrio">Hypogastrio</term> saõ os vasios, que em Latim chamaõ Ilia; e em Portuguez tambem ilhargas.</s> fig. 1. n.
 13 As partes, que estaõ sobre as genitaes, e nos adultos se cobrem de lanugem, e cabellos, chamaõ os Latinos Pubis partes.
 14 As partes lateraes inferiores das mesmas genitaes chamaõ-se virilhas, ou inguina. fig 1. P.
 15 As partes posteriores do abdomen, humas são superiores, outras inferiores; as superiores se chamaõ lombos, as inferiores nadegas, ou nates. R.
-16 Os membros superiores se dividem em braços, e mãos. O braço em hombro, e cotovello. Entre este, e a maõ està o collo da mão, ou munheca, a que tambem chamaõ carpo, a que se segue a parte da mão atè os dedos, que os Gregos chamaõ metacarpo, a sua parte interior se chama palma da maõ, a exterior, costa da maõ. Os dedos saõ cinco. Polegar, index, ou mostrador, o do meyo, o anular, ou auricular, ou meminho, ou minimo.
+16 Os membros superiores se dividem em braços, e mãos. O braço em hombro, e cotovello. <s>Entre este, e a maõ està o collo da mão, ou munheca, a que tambem chamaõ <term>carpo</term>, a que se segue a parte da mão atè <pb n="10" />os dedos, que os Gregos chamaõ <term>metacarpo</term>, a sua parte interior se chama palma da maõ, a exterior, costa da maõ.</s> Os dedos saõ cinco. Polegar, index, ou mostrador, o do meyo, o anular, ou auricular, ou meminho, ou minimo.
 17  Os membros inferiores se dividem em coxas, pernas, e pès. A coxa he a parte superior do joelho para cima. Do joelho até o peito do pè he a perna, esta tem anteriormente a canella, e a parte posterior desta, que he a mais grossa, e carnosa, he a barriga da perna, que se chama em Latim Sura.
 18 A parte superior da perna, e anterior, se chama joelho, a posterior poplite, ou curva da perna; a perna pela parte inferior, junto ao peito do pè tem dous ossos, que se chamaõ Tornozellos, ou malleolos, hum interior, outro exterior.
 19 A terceira parte do membro inferior que he o pè, se divide em tarso, metatarso, e dedos.
@@ -707,6 +707,28 @@ A superficie interior da mesma tunica està cuberta de huma crusta, a qual tem c
    figado saõ do plexo kepatico, e dos intercostaes. Vill. cap. xxvii. de descript. nervi intercostal. pag. 147. 148.</note>
 11 Na parte concava do figado està hum vaso pequeno membranoso do tamanho de hum ovo pequenino, e tem a figura de pera, o qual vaso se chama bexiga do fel.<note>Bexiga do fel Est. 3. fig. 2.3.4.</note> O seu collo està voltado para as partes superiores, o fundo propende para o intestino colon, e essa bexiga muitas vezes communica huma cor loura, ou amarella ao mesmo intestino. Entende-se, que o collo da dita bexiga, tem particular sphincter, e este acaba na boca da mesma bexiga.<note>Sphincter da bexiga fellea. Communicaçaõ de ductos dà o figado para a bexiga nos boys, e nos homens.</note> Nos boys communica-se a bexiga por certos ductos particulares ao figado, e ao ducto hepatico; nos homens tambem isto he verosimil, mas naõ he certo.
 <note>A bexiga do fel tem tres tunicas.</note>12 Esta bexiga tem tres tunicas, a exterior deriva-se do Peritôneo, a media he carnosa, e he composta de duas ordens de fibras, das quaes humas vaõ direitas pelo
+
+<pb n="70" />lymphaticos, que dahi vaõ às glandulas das
+virilhas, e entende-se, que por elles se
+communica o mal gallico primeiramente às
+ditas glandulas.<note>Por onde se communica o mal gallico.</note>
+<note>Cano venoso.
+</note>15 Os corpos acima ditos nerveo-esponjosos, unidos entre si fazem duas cavidades, huma superior, pela qual vay hum
+cano venoso por cima do dorso, e comprimento do membro; outra inferior, pela
+qual vay o cano da uretra.<note>Cano da uretra. Est. 4. fig. 1. fig. 2. F.</note>
+<note>A uretra consta de duas membranas.</note>16 A uretra he um cano cylindrico,
+que principia do collo da bexiga atè o fim
+do membro, pela parte exterior. Consta
+de duas membranas, entre as quaes està
+huma substancia esponjosa da mesma natureza, que he a substancia do membro. A
+sua parte posterior por causa da sua figura
+he de alguns chamada Bulbo. <s>A parte
+anterior revoltada, e estendida compoem
+a glande, ou cabeça do membro, chamada
+<term lemma="bálano" orth="Bálano">Balano</term>.</s>
+<note>A glande fig. 1.4. Est. 4.</note>17 A glande, ou cabeça, he a ultima
+parte do membro, a qual pela parte anterior he mais aguda, pela posterior mais
+larga. Excede na circumferencia muy pouco aos corpos esponjosos, sobre os quaes
 
 <pb n="93" />33 Nas vacas, e outros animaes quadrupedes se acha, entre aquellas duas membranas, outra, que se chama Allantoydes. Esta he huma membrana tenue, que formando hum semicirculo, envolve o feto, e recebe a sua ourina, que pelo uraco vem da bexiga ourinaria, e a conserva atè o parto. Que esta membrana se ache tambem no feto humano, naõ se pode affirmar, porque naõ ha observaçaõ alguma certa.
 34 As membranas, que cobrem o feto se rompem no tempo do parto, pela força que faz o mesmo feto para sair a luz. E entaõ sahem aquelles humores, que se chamaõ agoa do parto, os quaes servem para humedecer os lados da bainha, para que esta se abra mais, e assim saya o feto com mais facilidade. Tambem fervem para outros usos, os quaes se pòdem ver em Mauriceau.
@@ -1068,7 +1090,7 @@ Supinaçaõ.</note>2 Promoçaõ se faz, quando a palma da maõ se vira para baix
 3 O primeiro dos Pronatores he o Redondo, chamado assim pela sua figura.Nasce da Apophisi interna do osso do braço com hum forte, e carnoso principio, e desce obliquamente, e termina na parte externa, e intermedia do Radio.
 <note>Redondo.
 Est. I7. fig.</note>
-4 O segundo he o Quadrado, que tem este nome pela sua figura quadrada; nasce da parte inferior externa do Cubito, perto ao Carpo, por baixo dos outros: o seu tendaõ, ou fim, he da mesma largura, que o principio, e acaba na parte inferior, e interna do Radio.
+4 <s>O segundo he o Quadrado, que tem este nome pela sua figura quadrada; nasce da parte inferior externa do Cubito, perto ao <term lemma="carpo">Carpo</term>, por baixo dos outros: o seu tendaõ, ou fim, he da mesma largura, que o principio, e acaba na parte inferior, e interna do Radio.</s>
 <note>O Quadrado.</note>
 5 Dos Supinadores, o primeiro he o Longo: nasce tres, ou quatro dedos acima da Apophisi exterior do braço; desce rectamente, e acaba na face externa da cabeça inferior do osso do Radio.
 <note>Longo Supinadores.</note>
@@ -1084,14 +1106,14 @@ Dos musculos da maõ, e primeiro dos musculos do Corpo.
 Carpo.</note>
 2 No metocarpo està a Palma, ou vola, e o Dorso, ou costa da maõ: os dedos saõ muitos, para com elles se fazerem melhor os movimentos, que saõ necessarios na maõ, e pela mesma razaõ saõ de diversa grandeza, grossura, e comprimento, e tem muitos musculos, que agora diremos.
 <note>Metacarpo.</note>
-3 Dous saõ os movimentos do Carpo hum he de flexaõ, outro de extensaõ. Dobra-se com os tres musculos, que saõ a Radiacal interno, cubital interno, e o Palmar.
+3 <s>Dous saõ os movimentos do <term lemma="carpo">Carpo</term> hum he de flexaõ, outro de extensaõ.</s> Dobra-se com os tres musculos, que saõ a Radiacal interno, cubital interno, e o Palmar.
 <note>Movimentos do Carpo.</note>
 
 <pb n="363"/>
 Estende-se com outros tres, Cubital externo, Longo, e Breve. Antes que expliquemos estes musculos, diremos alguma cousa do ligamento Annular.
 4 No Carpo para a parte da maõ, chamada munbeca, acha-se hum ligamento, o qual por cerca ao redor a dita parte, chama-se Annular. e este he muy forte, e une-se aos ossos do Cubito, e Radio, e aos ossos do dito Carpo, serve de fortificallos, e unillos entre si, e conter todos os tendoens dos musculos, que lhe passaõ por baixo, impedindo, que no seu movimento naõ sayaõ d seu lugar.
 <note>Ligamento annular do carpo.</note>
-5 O primeiro dos flexores he o Cubital interno; nasce do Condillo interno, e inferior do osso do braço, mas confunde o seu principio com o Palmar sublime, e profundo, e passando por cima da parte inferior, e anterior do osso do Cubito, e por baixo do ligamento Annular, acaba no quarto osso do Carpo, que he aquelle, que sustenta o osso do metacarpo, que se une ao dedo pequeno.
+5 <s>O primeiro dos flexores he o Cubital interno; nasce do Condillo interno, e inferior do osso do braço, mas confunde o seu principio com o Palmar sublime, e profundo, e passando por cima da parte inferior, e anterior do osso do Cubito, e por baixo do ligamento Annular, acaba no quarto osso do Carpo, que he aquelle, que sustenta o osso do <term>metacarpo</term>, que se une ao dedo pequeno.</s>
 <note>Cubital interno.</note>
 6 O segundo dos flexores, he o Radial interno, que nasce do interno condillo
 <note>Radial interno.</note>
@@ -1100,12 +1122,12 @@ Estende-se com outros tres, Cubital externo, Longo, e Breve. Antes que expliquem
 Do osso do hombro, e confunde seu principio com o redondo sublime, profundo; o passando por cima do radio, desce obliquamente, e vay por baixo do ligamento Annular, e termina no primeiro osso do Carpo, que sustenta o dedo Polegar.
 7 O terceiro musculo dos flexores he Palmar, assim dito, por estar na palma da maõ. Este musculo he hum daquelles dos flexores do Carpo, ainda que alguns querem que seja particular da maõ: nasce do interior, e interno Condillo do hombro, passa pelo comprimento do Cubito, e por cima do ligamento Annular, ao qual se apega com algumas fibras, e depois acaba na cutis da palma da maõ com o seu tendão muy delgado, e tenue.
 <note>Palmar.</note>
-8 O primeiro dos extensores he o Cubital externo; nasce da parte exterior do processo externo do osso do braço, desce externamente pelo comprimeto do osso do Cubito, passa por baixo do ligamento Annular, e termina na parte superior, e exterior daquelle osso do metacarpo, que sustenta o dedo annular, e às vezes no osso do metacarpo, que sustenta o dedo Auricular.
+8 <s>O primeiro dos extensores he o Cubital externo; nasce da parte exterior do processo externo do osso do braço, desce externamente pelo comprimeto do osso do Cubito, passa por baixo do ligamento Annular, e termina na parte superior, e exterior daquelle osso do <term>metacarpo</term>, que sustenta o dedo annular, e às vezes no osso do <term>metacarpo</term>, que sustenta o dedo Auricular.</s>
 <note>Cubital externo.</note>
 
 9 O segundo dos extensores he o Longo; nasce da parte inferior do osso do hombro, estende se pelo comprimento do Radio externamente, passa por baixo do ligamento Annular, e acaba com o seu tendaõ naquelle osso, que sustenta o dedo Podegar, e às vezes no osso que sustenta o dedo Index.
 <note>Longo.</note>
-10 O terceiro dos extensores he o Breve: nasce da parte inferior do hombro mais embaixo do longo, desce pelo comprimento do Radio, por baixo do ligamento annular, e termina naquelle osso do metacarpo, que sustenta o dedo do meyo.
+10 <s>O terceiro dos extensores he o Breve: nasce da parte inferior do hombro mais embaixo do longo, desce pelo comprimento do Radio, por baixo do ligamento annular, e termina naquelle osso do <term>metacarpo</term>, que sustenta o dedo do meyo.</s>
 <note>Breve.</note>
 11 Muitos Authores, querem estes dous musculos sejaõ só, e o chamaõ Radial externo, e outros o chamaõ Bicorne, por ter duas inferçoens; e nós por ter elle tambem dous principios, por isso o dividimos.
 <note>Bicorne.</note>
@@ -1133,9 +1155,9 @@ Est. 17, fig. a.</note>
 
 <pb n="369"/>
 Primeira ordem nas suas articulaçoens: servem estes musculos para mover os dedos para a parte do Polegar, que he movimento de adducçaõ.
-8 Servem tambem para o mesmo movimento de adducçaõ dos dedos. Os tres musculos chamados Interosseos internos; porque entre a vola da maõ, ou palma, occupaõ tres espaçoes, que estaõ entre os ossos do metacarpo; nascem da perte superior dos intersticios do dito metacarpo, e confundindo os seus tendoens com os tendoens do lumbricaes, terminaõ nos lados dos ossos dos dedos pela parte do Polegar, para onde puxaõ, movendo os mesmos dedos.
+8 Servem tambem para o mesmo movimento de adducçaõ dos dedos. <s>Os tres musculos chamados Interosseos internos; porque entre a vola da maõ, ou palma, occupaõ tres espaços, que estaõ entre os ossos do <term>metacarpo</term>; nascem da perte superior dos intersticios do dito <term>metacarpo</term>, e confundindo os seus tendoens com os tendoens do lumbricaes, terminaõ nos lados dos ossos dos dedos pela parte do Polegar, para onde puxaõ, movendo os mesmos dedos.</s>
 <note>Os interosseos internos.</note>
-9 Para afastar os dedos do Polegar, que he movimento de deducçaõ, servem tres musculos  Interosseos externos, que se chamaõ maõ assim, porque saõ collocados externamente, a faber: na Costa da maõ; nascem dos mesmos intersticios dos ossos do metacarpo, e acabaõ nos lados contratios dos internos, como, verbi gratia, nos lados, que olhaõ para os outros dedos; consfundem estes musculos os seus tendoens com 
+9 Para afastar os dedos do Polegar, que he movimento de deducçaõ, servem tres musculos Interosseos externos, que se chamaõ maõ assim, porque saõ collocados externamente, a saber: na Costa da maõ; nascem dos mesmos intersticios dos ossos do metacarpo, e acabaõ nos lados contrarios dos internos, como, verbi gratia, nos lados, que olhaõ para os outros dedos; confundem estes musculos os seus tendoens com 
 <note>Interosseos externos.</note>
 
 <pb n="370"/>
