@@ -9,6 +9,9 @@ Nesta seção, divulgaremos textos com fatos curiosos que descobrimos durante a 
 <div id="bioSantucci"></div>
 
 ## Resumo biográfico de Bernardo Santucci
+por Matheus Stein Casarin e Bruno Maroneze
+
+01 de novembro de 2024
 
 Segundo o [Dicionário de Cientistas, Engenheiros e Médicos em Portugal](https://dicionario.ciuhct.org/santucci-bernardo/), Bernardo Santucci, nascido por volta de 1701 em Cortona, no Grão-Ducado da Toscana, formou-se em Medicina pela Universidade de Bolonha e aprofundou o estudo de anatomia no Hospital de Santa Maria Nuova, em Florença. Seu desempenho o levou a ser nomeado médico da princesa Violante Beatriz da Baviera, e em 1730, com cartas de recomendação dela, partiu para Lisboa. Logo ao chegar, foi nomeado médico anatômico do rei D. João V e, dois anos depois, tornou-se professor de anatomia no Hospital Real de Todos os Santos.
 
