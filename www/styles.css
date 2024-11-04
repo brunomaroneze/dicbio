@@ -29,7 +29,8 @@
      position: fixed;
 }
  @media screen and (max-width: 810px) {
-     #prefacio, #objetivos, #corpus, #critlex, #publicacoes, #equipe, #agradecimentos, #contato {
+     #prefacio, #objetivos, #corpus, #critlex, #publicacoes,
+     #equipe, #agradecimentos, #contato, #bioSantucci, #BroteroBananeira {
          margin-left: 150px;
     }
 }

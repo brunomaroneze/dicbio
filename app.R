@@ -218,15 +218,32 @@ tabPanel(
   fluid = TRUE,
   fluidRow(
     column(
-      width = 10,
+      width = 5,
       offset = 1,
       htmlOutput("Curiosities"),
+    ),
+              column(
+          width = 5,
+          offset = 1,
+          tags$nav(
+            class = "navbar",
+            tags$ul(
+              class = "nav nav-pills nav-stacked",
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#bioSantucci", "Biografia de Santucci")),
+              tags$li(
+                class = "nav-item",
+                tags$a(class = "nav-link", href = "#BroteroBananeira", "Brotero e a Bananeira")),
+            ))
+
+        )
     )))
 # ------------------
 
     
   )
-)
+
 
 
 
