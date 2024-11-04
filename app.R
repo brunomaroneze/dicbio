@@ -221,6 +221,7 @@ tabPanel(
       width = 5,
       offset = 1,
       htmlOutput("Curiosities"),
+    ),
               column(
           width = 5,
           offset = 1,
