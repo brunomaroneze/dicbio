@@ -7,7 +7,7 @@ Este repositório contém o código-fonte desse dicionário (`app.R`) e os arqui
 .CSV que o alimentam.
 
 Também contém o código-fonte gerador do dataframe principal
-(`EtiquetagemDoCorpus.R`) e os arquivos .TXT que compõem o córpus.
+(`EtiquetagemDoCorpus.R`) e os arquivos .XML que compõem o córpus.
 
 Os dados são continuamente atualizados à medida que o dicionário também é
 atualizado.
