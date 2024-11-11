@@ -19,7 +19,7 @@
  <!ATTLIST term orth CDATA #IMPLIED>
  <!ATTLIST term msd CDATA #IMPLIED>
  <!ATTLIST term senseNumber CDATA #IMPLIED>
-<!ELEMENT note (#PCDATA|s|pb|obs|foreign)*>
+<!ELEMENT note (#PCDATA|s|p|pb|obs|foreign)*>
 <!ELEMENT foreign (#PCDATA)>
 <!ATTLIST foreign lang CDATA #REQUIRED>
 <!ELEMENT obs EMPTY>
