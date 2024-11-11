@@ -231,6 +231,9 @@ tabPanel(
               class = "nav nav-pills nav-stacked",
               tags$li(
                 class = "nav-item",
+                tags$a(class = "nav-link", href = "#ortografia", "A ortografia do século XVIII")),
+              tags$li(
+                class = "nav-item",
                 tags$a(class = "nav-link", href = "#bioSantucci", "Biografia de Santucci")),
               tags$li(
                 class = "nav-item",
