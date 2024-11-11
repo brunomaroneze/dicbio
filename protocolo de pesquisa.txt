@@ -1,28 +1,3 @@
-Ana Menegassi
-    mandíbula
-
-Dannielly
-    caule
-    flor
-
-Raissa
-    Botânica (nome da ciência): significa 
-    botânico (cientista)
-    planta
-    suculento (succulento)
-    cirro (cirrho)
-    
-Adriane
-    lúnula
-    escavação (excavaçaõ, excavaçoens)
-    íngue
-    árvore
-
-Bruno
-    pétala
-    ramo
-    lanceolado
-
 Protocolo de pesquisa dos termos:
 1. Marcar, com a tag <term>, as ocorrências do termo nos textos do córpus;
     1.a. Se o termo estiver escrito com outra ortografia e/ou se estiver numa forma diferente da lematizada, incluir o atributo <term lemma="xxxx">;
