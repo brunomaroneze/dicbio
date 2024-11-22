@@ -47,7 +47,7 @@ Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O có
 - VANDELLI, Domingos. [**Diccionario dos termos technicos de Historia Natural**](https://purl.pt/13958). Coimbra: na Real Officina da Universidade, 1788.
 
 ### Etiquetas XML empregadas no córpus
-Os textos que compõem o córpus são etiquetados com o emprego das seguintes etiquetas XML:
+Os textos que compõem o córpus são etiquetados com o emprego das seguintes etiquetas XML (inspiradas no padrão [Text Encoding Initiative](https://tei-c.org/)):
 - **text** - É o nó-raiz de cada texto; contém os metadados do texto, indicados pelos atributos "author" (*autor*), "title" (*título*) e "date" (*data*);
 - **front** - Elemento obrigatório que contém o texto da folha de rosto de cada obra;
 - **body** - Elemento obrigatório que contém o texto principal de cada obra;
