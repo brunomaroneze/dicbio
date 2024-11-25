@@ -31,7 +31,7 @@ CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
 terms <- xml_find_all(CorpusXML, "//term")
 tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
-token_orth <- xml_attr(terms, attr = "orth")
+token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
 token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 
