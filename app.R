@@ -280,15 +280,15 @@ server <- function(input, output, session) {
   
   
   output$ProjectIntro <- renderText({
-    includeMarkdown("ProjectIntro.Rmd")
+    includeMarkdown("ProjectIntro.md")
   })
   
   output$ProjectDocumentation <- renderText({
-    includeMarkdown("Documentation.Rmd")
+    includeMarkdown("Documentation.md")
   })
   
   output$Curiosities <- renderText({
-    includeMarkdown("Curiosities.Rmd")
+    includeMarkdown("Curiosities.md")
   })
   
   
