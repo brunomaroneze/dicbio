@@ -10,10 +10,9 @@
     "Definitions":[
       {"SenseNumber": 1,
       "Definition":"Parte da flor que contém o pólen.",
-      "Sentences":[
-        {"Sentence1":"Aqui entraria o conjunto das frases extraídas do arquivo XML",
-        "Sentence2":"Aqui entraria a segunda frase extraída do XML"}
-      ]}
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      }
     ],
     "DateOfCreation": "28 Feb 2022",
     "DateOfUpdate": "14 Jun 2022"
