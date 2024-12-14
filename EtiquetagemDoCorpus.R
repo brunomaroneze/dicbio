@@ -6,6 +6,8 @@ library(stringr)
 library(XML)
 library(xml2)
 library(stylo)
+library(jsonlite)
+
 
 # Lê os arquivos XML e junta todos num único:
 corpusVandelli <- readChar("data/diciovandelli.xml", file.info("data/diciovandelli.xml")$size)
@@ -33,7 +35,7 @@ tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
-token_senseNumber <- xml_attr(terms, attr = "senseNumber")
+token_senseNumber <- xml_attr(terms, attr = "sensenumber")
 
 # Este loop é necessário para extrair todas as sentenças equivalentes
 # No futuro, pretendo incluir aqui um código para negritar os termos
@@ -114,7 +116,7 @@ DataFrameTotalXML <- data.frame(
   Headword = token_lemma,
   orth = token_orth,
   gram = token_gram,
-  sensenumber = token_senseNumber,
+  sensenumber = as.integer(token_senseNumber),
   sentence = token_sentence
 )
 
@@ -131,7 +133,7 @@ for(x in 1:length(DataFrameTotalXML$Headword)){
     DataFrameTotalXML$orth[x] <- DataFrameTotalXML$Headword[x]
   }
   if(is.na(DataFrameTotalXML$sensenumber[x])){
-    DataFrameTotalXML$sensenumber[x] <- "1"
+    DataFrameTotalXML$sensenumber[x] <- 1
   }
 }
 
@@ -149,6 +151,30 @@ DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
                                     )
 )
 
+
+df1 <- subset(DataFrameTotalXML, select = c("Headword", "sensenumber","sentence"))
+Def <- nest_join(Definitions,df1, by = c("Headword", "sensenumber"))
+
+
+# Abre os arquivos .csv do dicionário e cria um dataframe unindo-os
+
+DadosDoDicionario <- read.csv("data/DadosDoDicionario.csv")
+Definitions <- read.csv("data/definitions.csv")
+Definitions$X <- NULL #remove a coluna desnecessária
+
+
+
+Dicionario <- nest_join(DadosDoDicionario,Definitions, by = "Headword")
+
+
+
+write(jsonlite::toJSON(Dicionario), file = "data/Dicionario.json")
+
+
+
+
+
+# Junta com o dataframe do dicionário
 
 # Salva o arquivo
 write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
