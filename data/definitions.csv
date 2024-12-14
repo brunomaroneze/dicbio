@@ -1,4 +1,4 @@
-,Headword,SenseNumber,Definition
+,Headword,sensenumber,Definition
 1,antera,1,Parte da flor que contém o pólen.
 2,bífido,1,"Dividido em duas partes, em geral na parte superior (diz-se de folhas, cirros e outras estruturas vegetais, bem como de palpos e outras estruturas dos insetos)."
 3,bráctea,1,"Folha anexa à flor da florada seguinte, que se diferencia, em certos aspectos, das demais folhas."
@@ -104,11 +104,11 @@
 105,vibrissa,1,"Cada um dos pelos rijos presentes na face de certos mamíferos, como os gatos, que servem de órgãos do tato."
 106,placenta,1,"Órgão formado durante a gestação, que une o feto ao útero materno."
 107,tubérculo,2,Saliência semelhante a verrugas presente em certas estruturas vegetais.
-108,angulado,1,Que possui ângulo; anguloso. 
-109,canaliculado,1,Provido de um pequeno canal..
+108,angulado,1,Que apresenta ângulo; anguloso. 
+109,canaliculado,1,Provido de um pequeno canal.
 110,ciliado,1,"Provido de, ou em forma de cílios."
 111,digitado,1,Cujo pecíolo reúne em seu ápice várias folhas menores (diz-se de folha composta).
-112,elongado,1,"Que se alonga, que é cumprido."
+112,elongado,1,"Que se alonga, que é comprido."
 113,emarginado,1,Que apresenta recorte (em sua maioria) curvo na ponta (diz-se de folha).        
 115,digitado,2,Com divisões semelhantes aos dedos da mão (diz-se de asa de inseto).
 117,enovelado,1,Enrolado ou emaranhado em forma de novelo.
@@ -117,7 +117,7 @@
 122,labiado,1,Cujas pétalas formam a aparência de lábios.
 123,ligulado,1,Provido de lígula.
 124,lobado,1, Que apresenta lobos (diz-se de folha).
-127,ocelado,1,Que possui olhos pequenos; possui ocelos.
+127,ocelado,1,Que possui olhos pequenos; que possui ocelos.
 128,pontoado,1,Que apresenta pontos (diz-se de estrutura animal ou vegetal).
 129,reticulado,1,Disposto em forma de rede.
 130,tuberculado,1,Provido de tubérculos.
@@ -134,3 +134,4 @@
 141,cápsula,1,Membrana que envolve certas estruturas anatômicas.
 142,Zoologia,1,Ramo da História Natural que estuda os animais.
 143,corólula,1,Corola pequena.
+144,dorsal,1,Relativo ao dorso.
