@@ -156,7 +156,7 @@
     "WClass": "adjetivo",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Apertado, restringido; cujas estruturas são muito próximas entre si.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -174,7 +174,7 @@
     "WClass": "adjetivo",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cujas extremidades se aproximam ou se tocam (diz-se de estruturas vegetais, como folhas, ou animais, como unhas).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -192,7 +192,7 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Folha que se forma no embrião de certas plantas e que serve para nutrir o desenvolvimento da planta.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -210,7 +210,7 @@
     "WClass": "substantivo feminino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Incisura perpendicular obtusa na margem de certas folhas.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -228,7 +228,7 @@
     "WClass": "substantivo feminino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Membrana que reveste a raiz das plantas, por cima da casca.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -246,7 +246,7 @@
     "WClass": "adjetivo",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Encurvado para a parte inferior (diz-se de ramo).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -264,7 +264,17 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura em forma de disco localizada no centro do receptáculo.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Parte central de certas folhas.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 3,
+      "Definition":"Parte central das valvas de certos moluscos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -282,7 +292,12 @@
     "WClass": "substantivo feminino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Camada de revestimento da raiz ou do caule de uma planta; cutícula.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Membrana que reveste as conchas de certos moluscos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -300,7 +315,7 @@
     "WClass": "adjetivo",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Coberto de escamas (diz-se de pele animal ou de raiz vegetal).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -318,7 +333,7 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura correspondente ao órgão masculino das flores, formado por um filamento que sustenta a antera, onde se localiza o pólen.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -336,7 +351,7 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte superior do pistilo, rica em uma substância líquida e pegajosa que capta os grãos de pólen para a fecundação.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -354,7 +369,7 @@
     "WClass": "substantivo feminino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Escama que nasce na base do pecíolo ou do pedúnculo.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -372,7 +387,7 @@
     "WClass": "adjetivo",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Provido de fibras.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -390,7 +405,12 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura que sustenta a antera e a une à planta.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Qualquer estrutura animal semelhante a um fio, como antenas ou bissos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -408,7 +428,7 @@
     "WClass": "substantivo masculino",
     "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Pequena flor.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -426,7 +446,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Semelhante a lâmina ou folha.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -444,7 +464,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura responsável pela reprodução vegetal, formada pelas flores e, posteriormente, pelos frutos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -462,7 +482,12 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Protuberância no caule ou ramos de uma planta, de onde se originam ramos, folhas ou outras estruturas; gomo.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Porção interna do ovo das aves.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -480,7 +505,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"O mesmo que gema.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -498,7 +523,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que apresenta os órgãos reprodutores de ambos os sexos no mesmo indivíduo (diz-se de flor).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -516,7 +541,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Jardim onde se cultivam plantas para fins de estudo, em geral aberto à visitação pública.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -534,7 +559,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Divisão semelhante a abas em uma estrutura vegetal (como folha, estigma ou corola) ou animal (como concha ou tentáculo).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -552,7 +577,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"No sentido do comprimento.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -570,7 +595,12 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Relativo à substância interna presente nos vegetais.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Relativo à medula óssea.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -588,7 +618,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Delgado, comprido, em formato de lâmina ou membrana.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -606,7 +636,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cujo diâmetro longitudinal excede o transversal (diz-se de folha ou de outras estruturas vegetais).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -624,7 +654,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Em forma de borboleta (diz-se de flor ou corola).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -642,7 +672,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que está preso a outra planta, e não diretamente à terra (diz-se de planta).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -660,7 +690,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Pequeno ramo que prende a folha ao ramo ou ao tronco.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -678,7 +708,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura semelhante a um ramo, que sustenta a inflorescência e a frutificação.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Haste que sustenta diversas estruturas dos insetos, como antenas, olhos ou o abdômen.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -696,7 +731,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que produz novas gemas e nova folhagem a cada ano (diz-se de planta).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -714,7 +749,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Coberto de estruturas semelhantes a pelos (diz-se de folha).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -732,7 +767,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Broto que nasce do caule ou da raiz de uma planta.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -750,7 +785,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte da flor, em geral entre as anteras, pela qual entra o pólen para a fecundação.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -768,7 +803,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Base da flor em que se prendem as partes da frutificação.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -786,7 +821,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que lança raízes que se estendem horizontalmente sobre a terra (diz-se de caule).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -804,7 +839,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Em forma de romboide, ou paralelogramo.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -822,7 +857,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Relativo à reprodução sexuada.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -840,7 +875,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Pericarpo de duas valvas, côncavo, cujo comprimento excede a largura, com sementes presas ao longo das suturas.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -858,7 +893,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cheio de suco.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -876,7 +911,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Membrana que reveste certas estruturas vegetais, como raízes ou sementes, ou animais, como olhos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -894,7 +929,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Excrescência do caule ou da folha semelhante a um pelo, formando uma espécie de buço.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Estrutura semelhante a pelos presente nas caudas ou nos pés de certos insetos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -912,7 +952,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Semelhante a uma verruga.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -930,7 +970,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Substância produzida por certas plantas, inflamável, insolúvel na água e solúvel no álcool.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -948,7 +988,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que produz resina (diz-se de planta).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -966,7 +1006,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte inferior do abdômen dos seres humanos, abaixo da região umbilical, iniciando-se um pouco abaixo do umbigo.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -984,7 +1024,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Região do abdômen situada abaixo do diafragma, terminando um pouco acima do umbigo.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1002,7 +1042,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Músculo em formato de abóbada que separa a região torácica do abdome.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Membrana que separa duas ou mais cavidades, em certos animais (como moluscos) e vegetais (como cavidades em frutos).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1020,7 +1065,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão que produz certas substâncias que são usadas em outras partes do organismo ou eliminadas.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1038,7 +1083,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão muscular, parte do tubo digestivo, que liga a faringe ao estômago.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1056,7 +1101,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Subárea da Anatomia que estuda os músculos e seus movimentos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1074,7 +1119,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Músculo usado na mastigação, responsável por mover a mandíbula.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1092,7 +1137,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cada uma das cavidades nos ossos da face onde se encontra o olho, o nervo ótico e demais estruturas relacionadas a estes.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1110,7 +1155,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Osso do crânio situado na parte inferoposterior da cabeça, próximo à nuca.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1128,7 +1173,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Animal invertebrado, com corpo segmentado, membros articulados e exoesqueleto, pertencente à classe dos insetos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1146,7 +1191,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Membrana que reveste o ovário da planta e que, com o amadurecimento, se torna o próprio fruto.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1164,7 +1209,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura de uma planta que se separa desta e da qual se desenvolve uma nova planta.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1182,7 +1227,17 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cavidade superior dos ventrículos do coração.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Orelha.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 3,
+      "Definition":"Estrutura anatômica em forma de orelha.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1200,7 +1255,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cavidade em forma de abóbada presente em estruturas animais e vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1218,7 +1273,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Relativo à alimentação dos animais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1236,7 +1291,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Feito de ou em forma de membrana.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1254,7 +1309,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cabeça do membro viril.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1272,7 +1327,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão da planta que serve às funções de nutrição e fixação à terra.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1290,7 +1345,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão do movimento da planta.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1308,7 +1363,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte da planta que se ergue da terra e sustenta os frutos e as folhas.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1326,7 +1381,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cada um dos vasos em forma de sacos ovais e esponjosos, situados transversalmente e que ocupam os intervalos dos vasos longitudinais, nos vegetais.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Espécie de glândula presente nos vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1344,7 +1404,17 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Estrutura da pele responsável pela sensibilidade do tato.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Mamilo, bico do peito.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 3,
+      "Definition":"Protuberância que se projeta a partir de certos órgãos animais ou vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1362,7 +1432,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Saliência encontrada na pele ou na superfície de certos órgãos dos animais.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Saliência semelhante a verrugas presente em certas estruturas vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1380,7 +1455,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Substância espessa presente em certas estruturas vegetais, como folhas e frutos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1398,7 +1473,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Protuberância existente no corpo de certos animais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1416,7 +1491,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Semelhante à seda ou aos pelos do porco (diz-se de estrutura animal ou vegetal).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1434,7 +1509,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte da História Natural responsável pela descrição e estudo dos vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1452,7 +1527,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Parte da mão compreendida entre o carpo e os dedos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1470,7 +1545,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Designação comum a todos os vegetais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1488,7 +1563,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que contém muito suco; sucoso.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1506,7 +1581,12 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Apêndice filiforme presente em certos animais como peixes e moluscos.",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Apêndice em espiral pelo qual a planta se une a outros corpos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1524,7 +1604,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão responsável por executar movimentos de várias partes do corpo dos animais, formado por fibras capazes de se contrair e se alongar.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1542,7 +1622,7 @@
     "WClass": "substantivo masculino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Punho.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1560,7 +1640,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que fecunda.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1578,7 +1658,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Planta perene que apresenta um tronco em geral alto e grosso, com ramos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1596,7 +1676,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Ação de desenvolver; desenvolvimento.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1614,7 +1694,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que tem a forma semelhante à de lança.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1632,7 +1712,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que tem a forma de foice.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1650,7 +1730,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cada um dos pelos rijos presentes na face de certos mamíferos, como os gatos, que servem de órgãos do tato.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1668,7 +1748,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Órgão formado durante a gestação, que une o feto ao útero materno.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1686,14 +1766,14 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que possui olhos pequenos; que possui ocelos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
     ],
 "Credits": "Kamila da Silva Barbosa",
     "DateOfCreation": "15 Sep 2023",
-    "DateOfUpdate": "15 Sep 2023"
+    "DateOfUpdate": "13 Dec 2024"
   },
   {
     "ID": 98,
@@ -1704,14 +1784,14 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que apresenta ângulo; anguloso.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
     ],
 "Credits": "Kamila da Silva Barbosa; Bruno Maroneze",
     "DateOfCreation": "15 Sep 2023",
-    "DateOfUpdate": "29 Sep 2023"
+    "DateOfUpdate": "13 Dec 2024"
   },
   {
     "ID": 99,
@@ -1722,7 +1802,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Provido de um pequeno canal.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1740,7 +1820,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Provido de, ou em forma de cílios.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1758,7 +1838,12 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cujo pecíolo reúne em seu ápice várias folhas menores (diz-se de folha composta).",
+      "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
+        "Aqui entraria a segunda frase extraída do XML"]
+      },
+      {"SenseNumber": 2,
+      "Definition":"Com divisões semelhantes aos dedos da mão (diz-se de asa de inseto).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1776,14 +1861,14 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que se alonga, que é comprido.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
     ],
 "Credits": "Kamila da Silva Barbosa; Bruno Maroneze",
     "DateOfCreation": "25 Sep 2023",
-    "DateOfUpdate": "01 Oct 2023"
+    "DateOfUpdate": "13 Dec 2024"
   },
   {
     "ID": 103,
@@ -1794,7 +1879,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que apresenta recorte (em sua maioria) curvo na ponta (diz-se de folha).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1812,7 +1897,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Enrolado ou emaranhado em forma de novelo.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1830,7 +1915,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que se entrecortou.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1848,7 +1933,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Com ramos dispostos em feixe de modo que termine em ponta (diz-se de plantas ou outras estruturas vegetais).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1866,7 +1951,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Cujas pétalas formam a aparência de lábios.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1884,7 +1969,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Provido de lígula.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1902,7 +1987,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que apresenta lobos (diz-se de folha).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1920,7 +2005,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que apresenta pontos (diz-se de estrutura animal ou vegetal).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1938,7 +2023,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Disposto em forma de rede.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1956,7 +2041,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Provido de tubérculos.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1974,7 +2059,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que possui uma concavidade semelhante a um umbigo, no centro.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -1992,7 +2077,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Disposto em verticilo (diz-se de estruturas vegetais).",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2010,7 +2095,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"O mesmo que Botânica.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2028,7 +2113,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Que contém gordura.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2046,7 +2131,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Substância secretada pelo fígado que atua na digestão.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2064,7 +2149,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Membrana que envolve certas estruturas anatômicas.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2082,7 +2167,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Ramo da História Natural que estuda os animais.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2100,7 +2185,7 @@
     "WClass": "adjetivo",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Relativo ao dorso.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
@@ -2118,7 +2203,7 @@
     "WClass": "substantivo feminino",
         "Definitions":[
       {"SenseNumber": 1,
-      "Definition":"Definição 1",
+      "Definition":"Corola pequena.",
       "Sentences":["Aqui entraria o conjunto das frases extraídas do arquivo XML",
         "Aqui entraria a segunda frase extraída do XML"]
       }
