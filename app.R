@@ -26,7 +26,7 @@ TokTextDF <-
 Contextos <- function(InputConsulta, SenseNumber) {
   ContextosTexto <-
     as.list(TokTextDF$sentence[TokTextDF$Headword == InputConsulta &
-                                 TokTextDF$sensenumber == SenseNumber])
+                                 TokTextDF$SenseNumber == SenseNumber])
   ContextosTextoFormatados <- NULL
   for (a in 1:length(ContextosTexto)) {
     ContextosTextoFormatados[a] <-
@@ -38,7 +38,7 @@ Contextos <- function(InputConsulta, SenseNumber) {
 }
 
 # Acrescenta a coluna das variantes gráficas a partir do dataframe
-
+# O código foi passado para o arquivo da etiquetagem do córpus
 
 for (n in 1:length(data$Headword)) {
   data$VariantSpellings[n] <- paste(sort(unique
