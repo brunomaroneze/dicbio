@@ -2,11 +2,12 @@
 #library(DT)
 #library(data.table)
 library(stringr)
-
 library(XML)
 library(xml2)
 library(stylo)
 library(jsonlite)
+library(dplyr)
+library(sqldf)
 
 
 # Lê os arquivos XML e junta todos num único:
@@ -35,7 +36,7 @@ tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
-token_senseNumber <- xml_attr(terms, attr = "sensenumber")
+token_senseNumber <- xml_attr(terms, attr = "senseNumber")
 
 # Este loop é necessário para extrair todas as sentenças equivalentes
 # No futuro, pretendo incluir aqui um código para negritar os termos
@@ -116,7 +117,7 @@ DataFrameTotalXML <- data.frame(
   Headword = token_lemma,
   orth = token_orth,
   gram = token_gram,
-  sensenumber = as.integer(token_senseNumber),
+  SenseNumber = as.integer(token_senseNumber),
   sentence = token_sentence
 )
 
@@ -132,8 +133,8 @@ for(x in 1:length(DataFrameTotalXML$Headword)){
   if(is.na(DataFrameTotalXML$orth[x])){
     DataFrameTotalXML$orth[x] <- DataFrameTotalXML$Headword[x]
   }
-  if(is.na(DataFrameTotalXML$sensenumber[x])){
-    DataFrameTotalXML$sensenumber[x] <- 1
+  if(is.na(DataFrameTotalXML$SenseNumber[x])){
+    DataFrameTotalXML$SenseNumber[x] <- 1
   }
 }
 
@@ -152,15 +153,41 @@ DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
 )
 
 
-df1 <- subset(DataFrameTotalXML, select = c("Headword", "sensenumber","sentence"))
-Def <- nest_join(Definitions,df1, by = c("Headword", "sensenumber"))
-
 
 # Abre os arquivos .csv do dicionário e cria um dataframe unindo-os
 
 DadosDoDicionario <- read.csv("data/DadosDoDicionario.csv")
 Definitions <- read.csv("data/definitions.csv")
-Definitions$X <- NULL #remove a coluna desnecessária
+Definitions$IDDef <- NULL #remove a coluna desnecessária
+
+# Acrescenta a coluna das variantes gráficas a partir do dataframe total
+
+for (n in 1:length(DadosDoDicionario$Headword)) {
+  DadosDoDicionario$VariantSpellings[n] <- paste(sort(unique
+                                         (DataFrameTotalXML$variants
+                                           [tolower(DataFrameTotalXML$Headword)
+                                             == tolower(DadosDoDicionario$Headword)[n]])),
+                                    collapse = ", ")
+  if (DadosDoDicionario$VariantSpellings[n] == DadosDoDicionario$Headword[n]) {
+    DadosDoDicionario$VariantSpellings[n] <- NA
+  }
+}
+# Reordena a coluna das variantes para depois da classe gramatical
+DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,10,7,8,9)]
+
+# Atribui a cada definição do Definitions um vetor com as sentenças correspondentes
+# 1. Cria uma coluna vazia no Definitions
+Definitions$Sentences <- NA
+
+# Deve haver uma forma de aplicar "lapply" em vez deste loop for, mas assim funcionou
+for (m in 1:length(Definitions$Headword)){
+  consulta <- paste0("SELECT sentence FROM DataFrameTotalXML WHERE Headword = '",
+                Definitions$Headword[m], "' AND SenseNumber = ",
+                Definitions$SenseNumber[m])
+  Definitions$Sentences[m] <- sqldf(consulta)
+
+}
+
 
 
 
