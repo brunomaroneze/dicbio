@@ -10,7 +10,7 @@ library(slickR) #Verificar se vai funcionar no servidor da USP
 
 
 # Lê a base de dados do dicionário
-data <- read.csv("./data/DadosDoDicionario.csv", encoding = "UTF-8")
+data <- read.csv("./data/DicionarioParaSite.csv", encoding = "UTF-8")
 
 # Lê o arquivo com as definições
 definitions <-
@@ -40,15 +40,15 @@ Contextos <- function(InputConsulta, SenseNumber) {
 # Acrescenta a coluna das variantes gráficas a partir do dataframe
 # O código foi passado para o arquivo da etiquetagem do córpus
 
-for (n in 1:length(data$Headword)) {
-  data$VariantSpellings[n] <- paste(sort(unique
-                                         (TokTextDF$variants
-                                           [tolower(TokTextDF$Headword) == tolower(data$Headword)[n]])),
-                                    collapse = ", ")
-  if (data$VariantSpellings[n] == data$Headword[n]) {
-    data$VariantSpellings[n] <- NA
-  }
-}
+#for (n in 1:length(data$Headword)) {
+#  data$VariantSpellings[n] <- paste(sort(unique
+#                                         (TokTextDF$variants
+#                                           [tolower(TokTextDF$Headword) == tolower(data$Headword)[n]])),
+#                                    collapse = ", ")
+#  if (data$VariantSpellings[n] == data$Headword[n]) {
+#    data$VariantSpellings[n] <- NA
+#  }
+#}
 
 # Cria uma lista com todas as variantes e lemas, a ser usada
 # na versão futura para incluir a pesquisa com variantes

@@ -192,6 +192,7 @@ for (m in 1:length(Definitions$Headword)){
 
 # Salva o arquivo
 write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
+write.csv(DadosDoDicionario, file = "./data/DicionarioParaSite.csv", fileEncoding = "UTF-8")
 
 # Junta os dados das definições no dataframe principal, reordena e salva em formato JSON
 DadosDoDicionario$Definitions <- lapply(DadosDoDicionario$Headword,
