@@ -179,6 +179,7 @@ DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,10,7,8,9)]
 # 1. Cria uma coluna vazia no Definitions
 Definitions$Sentences <- NA
 
+# 2. Atribui a cada célula Sentences uma lista de sentenças extraída do outro dataframe
 # Deve haver uma forma de aplicar "lapply" em vez deste loop for, mas assim funcionou
 for (m in 1:length(Definitions$Headword)){
   consulta <- paste0("SELECT sentence FROM DataFrameTotalXML WHERE Headword = '",
@@ -189,27 +190,23 @@ for (m in 1:length(Definitions$Headword)){
 }
 
 
-
-
-Dicionario <- nest_join(DadosDoDicionario,Definitions, by = "Headword")
-
-
-
-write(jsonlite::toJSON(Dicionario), file = "data/Dicionario.json")
-
-
-
-
-
-# Junta com o dataframe do dicionário
-
 # Salva o arquivo
 write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
+
+# Junta os dados das definições no dataframe principal, reordena e salva em formato JSON
+DadosDoDicionario$Definitions <- lapply(DadosDoDicionario$Headword,
+                                        function(x) Definitions[Definitions$Headword == x, ])
+
+DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,7,11,8,9,10)]
+
+write(jsonlite::toJSON(DadosDoDicionario), file = "data/DadosDoDicionario.json")
+
 
 # Limpa a memória
 rm(author, date, x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML)
+   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML,
+   m, n, consulta, DadosDoDicionario, Definitions)
 
 
 
