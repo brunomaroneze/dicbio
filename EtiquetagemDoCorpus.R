@@ -2,10 +2,13 @@
 #library(DT)
 #library(data.table)
 library(stringr)
-
 library(XML)
 library(xml2)
 library(stylo)
+library(jsonlite)
+library(dplyr)
+library(sqldf)
+
 
 # Lê os arquivos XML e junta todos num único:
 corpusVandelli <- readChar("data/diciovandelli.xml", file.info("data/diciovandelli.xml")$size)
@@ -114,7 +117,7 @@ DataFrameTotalXML <- data.frame(
   Headword = token_lemma,
   orth = token_orth,
   gram = token_gram,
-  sensenumber = token_senseNumber,
+  SenseNumber = as.integer(token_senseNumber),
   sentence = token_sentence
 )
 
@@ -130,8 +133,8 @@ for(x in 1:length(DataFrameTotalXML$Headword)){
   if(is.na(DataFrameTotalXML$orth[x])){
     DataFrameTotalXML$orth[x] <- DataFrameTotalXML$Headword[x]
   }
-  if(is.na(DataFrameTotalXML$sensenumber[x])){
-    DataFrameTotalXML$sensenumber[x] <- "1"
+  if(is.na(DataFrameTotalXML$SenseNumber[x])){
+    DataFrameTotalXML$SenseNumber[x] <- 1
   }
 }
 
@@ -150,13 +153,61 @@ DataFrameTotalXML$variants <- ifelse(is.na(DataFrameTotalXML$gram)==FALSE,
 )
 
 
+
+# Abre os arquivos .csv do dicionário e cria um dataframe unindo-os
+
+DadosDoDicionario <- read.csv("data/DadosDoDicionario.csv")
+Definitions <- read.csv("data/definitions.csv")
+Definitions$IDDef <- NULL #remove a coluna desnecessária
+
+# Acrescenta a coluna das variantes gráficas a partir do dataframe total
+
+for (n in 1:length(DadosDoDicionario$Headword)) {
+  DadosDoDicionario$VariantSpellings[n] <- paste(sort(unique
+                                         (DataFrameTotalXML$variants
+                                           [tolower(DataFrameTotalXML$Headword)
+                                             == tolower(DadosDoDicionario$Headword)[n]])),
+                                    collapse = ", ")
+  if (DadosDoDicionario$VariantSpellings[n] == DadosDoDicionario$Headword[n]) {
+    DadosDoDicionario$VariantSpellings[n] <- NA
+  }
+}
+# Reordena a coluna das variantes para depois da classe gramatical
+DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,10,7,8,9)]
+
+# Atribui a cada definição do Definitions um vetor com as sentenças correspondentes
+# 1. Cria uma coluna vazia no Definitions
+Definitions$Sentences <- NA
+
+# 2. Atribui a cada célula Sentences uma lista de sentenças extraída do outro dataframe
+# Deve haver uma forma de aplicar "lapply" em vez deste loop for, mas assim funcionou
+for (m in 1:length(Definitions$Headword)){
+  consulta <- paste0("SELECT sentence FROM DataFrameTotalXML WHERE Headword = '",
+                Definitions$Headword[m], "' AND SenseNumber = ",
+                Definitions$SenseNumber[m])
+  Definitions$Sentences[m] <- sqldf(consulta)
+
+}
+
+
 # Salva o arquivo
 write.csv(DataFrameTotalXML, file = "./data/DataframePrincipal.csv", fileEncoding = "UTF-8")
+write.csv(DadosDoDicionario, file = "./data/DicionarioParaSite.csv", fileEncoding = "UTF-8")
+
+# Junta os dados das definições no dataframe principal, reordena e salva em formato JSON
+DadosDoDicionario$Definitions <- lapply(DadosDoDicionario$Headword,
+                                        function(x) Definitions[Definitions$Headword == x, ])
+
+DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,7,11,8,9,10)]
+
+write(jsonlite::toJSON(DadosDoDicionario), file = "data/DadosDoDicionario.json")
+
 
 # Limpa a memória
 rm(author, date, x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML)
+   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML,
+   m, n, consulta, DadosDoDicionario, Definitions)
 
 
 
