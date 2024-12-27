@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-12-26T23:11:32Z. . 
+Schema generated from ODD source 2024-12-27T14:31:36Z. . 
 TEI Edition: P5 Version 4.8.1. Last updated on 1st November 2024, revision 0a2bff95a 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/ 
   
@@ -2845,6 +2845,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    </define>
    <define name="tei_dhtbmodel.divWrapper">
       <choice>
+         <ref name="tei_dhtbbyline"/>
          <ref name="tei_dhtbepigraph"/>
          <ref name="tei_dhtbdocAuthor"/>
          <ref name="tei_dhtbdocDate"/>
@@ -2867,6 +2868,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="tei_dhtbmodel.pLike.front">
       <choice>
          <ref name="tei_dhtbhead"/>
+         <ref name="tei_dhtbbyline"/>
          <ref name="tei_dhtbepigraph"/>
          <ref name="tei_dhtbdocTitle"/>
          <ref name="tei_dhtbtitlePart"/>
@@ -2991,13 +2993,6 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbtextLang"/>
          <ref name="tei_dhtbedition"/>
          <ref name="tei_dhtbavailability"/>
-      </choice>
-   </define>
-   <define name="tei_dhtbmodel.frontPart">
-      <choice>
-         <ref name="tei_dhtbmodel.frontPart.drama"/>
-         <ref name="tei_dhtblistBibl"/>
-         <ref name="tei_dhtbtitlePage"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.pPart.data">
@@ -5485,6 +5480,23 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          <empty/>
       </element>
    </define>
+   <define name="tei_dhtbbyline">
+      <element name="byline">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(byline) contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [4.2.2. Openers and Closers 4.5. Front Matter]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_dhtbmodel.gLike"/>
+               <ref name="tei_dhtbmodel.phrase"/>
+               <ref name="tei_dhtbdocAuthor"/>
+               <ref name="tei_dhtbmodel.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="tei_dhtbepigraph">
       <element name="epigraph">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(epigraph) contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [4.2.3. Arguments, Epigraphs, and Postscripts 4.2. Elements Common to All Divisions 4.6. Title Pages]</a:documentation>
@@ -6363,6 +6375,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
    <define name="tei_dhtbmodel.titlepagePart">
       <choice>
          <ref name="tei_dhtbgraphic"/>
+         <ref name="tei_dhtbbyline"/>
          <ref name="tei_dhtbepigraph"/>
          <ref name="tei_dhtbdocTitle"/>
          <ref name="tei_dhtbtitlePart"/>
@@ -6371,6 +6384,13 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_dhtbdocEdition"/>
          <ref name="tei_dhtbdocImprint"/>
          <ref name="tei_dhtbdocDate"/>
+      </choice>
+   </define>
+   <define name="tei_dhtbmodel.frontPart">
+      <choice>
+         <ref name="tei_dhtbmodel.frontPart.drama"/>
+         <ref name="tei_dhtblistBibl"/>
+         <ref name="tei_dhtbtitlePage"/>
       </choice>
    </define>
    <start>

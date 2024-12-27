@@ -10,7 +10,9 @@
 				<title>"Compendio de Botanica" de Brotero: Transcrição digital</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>Publicado como parte do projeto Dicionário Histórico de Termos da Biologia.</p>
+				<p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+					(https://dicbio.fflch.usp.br/),
+					coordenado pelo Prof. Dr. Bruno Oliveira Maroneze.</p>
 			</publicationStmt>
 			<sourceDesc>
 				<bibl><author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica</title>. <biblScope>Tomo
@@ -21,12 +23,23 @@
 		</fileDesc>
 	</teiHeader>
 	<text>
-		<front><pb n="página de rosto" /><title type="main">COMPENDIO DE BOTANICA</title> ou Noções
-			elementares d'esta sciencia segundo os melhores escriptores modernos expostas na Lingua
-			Portugueza Por Felix Avellar Brotero Tomo primeiro Nisi in ordines redigantur Plantae et
-			velut castrorum acies distribuantur in suas classes, omnia fluctuari necesse est.
-			Caesalp. Paris Vende-se em Lisboa em casa de Paulo Martim mercador de livros
-			<date when="1788">MDCCLXXXVIII</date></front>
+		<front>
+			<titlePage><docTitle>
+					<titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
+					<titlePart type="desc"> ou Noções
+						elementares d'esta sciencia segundo os melhores escriptores modernos
+						expostas na
+						Lingua Portugueza</titlePart>
+				</docTitle>
+						<byline>Por <docAuthor>Felix
+				Avellar Brotero</docAuthor>. Tomo primeiro.</byline>
+				<epigraph>Perfectio Botanices ab
+				individuorum singulorum inter se affinium, eorumque identicorum characterum
+					notitiâ
+					essentialiter pendet. Necker. Physiol. Muscor.</epigraph> <pubPlace>Paris</pubPlace>.
+				Vende-se em Lisboa, em caza de Paulo Martin, mercador de livros. <docDate
+					when="1788">M,DCC,LXXXVIII.</docDate></titlePage>
+		</front>
 
 		<body><pb n="iii" /> AO ILLUSTRISSIMO E EXCELLENTISSIMO SENHOR D. VICENTE DE SOUSA COUTINHO,
 			Do Conselho de S. Magestade Fidelissima, Seu Embaxador na Côrte de Versalhes, Senhor de
