@@ -7,7 +7,7 @@ library(xml2)
 library(stylo)
 library(jsonlite)
 library(dplyr)
-library(sqldf)
+#library(sqldf)
 
 
 # Lê os arquivos XML e junta todos num único:
@@ -177,17 +177,15 @@ DadosDoDicionario <- DadosDoDicionario[,c(1,2,3,4,5,6,10,7,8,9)]
 
 # Atribui a cada definição do Definitions um vetor com as sentenças correspondentes
 # 1. Cria uma coluna vazia no Definitions
-Definitions$Sentences <- NA
+#Definitions$Sentences <- NA
 
 # 2. Atribui a cada célula Sentences uma lista de sentenças extraída do outro dataframe
-# Deve haver uma forma de aplicar "lapply" em vez deste loop for, mas assim funcionou
-for (m in 1:length(Definitions$Headword)){
-  consulta <- paste0("SELECT sentence FROM DataFrameTotalXML WHERE Headword = '",
-                Definitions$Headword[m], "' AND SenseNumber = ",
-                Definitions$SenseNumber[m])
-  Definitions$Sentences[m] <- sqldf(consulta)
-
-}
+# Este código a seguir foi sugerido pelo ChatGPT
+Definitions <- Definitions %>%
+  left_join(DataFrameTotalXML %>%
+              group_by(Headword, SenseNumber) %>%
+              summarise(Sentences = list(sentence), .groups = "drop"),
+            by = c("Headword", "SenseNumber"))
 
 
 # Salva o arquivo
