@@ -32,7 +32,7 @@ CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
 #corpusRoot <- xml_root(CorpusXML)
 
 terms <- xml_find_all(CorpusXML, "//term")
-tokenTerms <- xml_text(terms)
+tokenTerms <- xml_text(terms) %>% str_squish()  # Remove quebras de linha e espaços extras
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
