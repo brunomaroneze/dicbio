@@ -37,8 +37,7 @@
             Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is
             generally appropriate for usages which treat TEI content as data or documentation. The
             BSD-2 licence is generally appropriate for usage of TEI content in a software
-            environment. For further information or clarification, please contact the <ref
-              target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
+            environment. For further information or clarification, please contact the <ref target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -52,7 +51,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    </encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-02-17T01:57:07.714Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -80,16 +79,13 @@
 
         <!-- required minimal header elements -->
         <moduleRef key="certainty"/>
-        <moduleRef key="header"
-          include="teiHeader fileDesc titleStmt publicationStmt sourceDesc availability biblFull authority editionStmt edition funder language langUsage keywords licence principal projectDesc profileDesc quotation segmentation sponsor tagUsage tagsDecl"/>
+        <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc availability biblFull authority editionStmt edition funder language langUsage keywords licence principal projectDesc profileDesc quotation segmentation sponsor tagUsage tagsDecl encodingDesc editorialDecl"/>
 
         <!-- required core elements (p and title for use in titleStmt) -->
-        <moduleRef key="core"
-          include="p title abbr add analytic author bibl biblScope biblStruct cb choice cit citedRange corr date del desc distinct ellipsis editor emph expan foreign gap gb gloss head graphic headItem headLabel hi imprint item label lb list listBibl measure mentioned monogr name note noteGrp num orig pb publisher pubPlace q quote reg resp respStmt sic soCalled teiCorpus term textLang time unclear unit"/>
+        <moduleRef key="core" include="p title abbr add analytic author bibl biblScope biblStruct cb choice cit citedRange corr date del desc distinct ellipsis editor emph expan foreign gap gb gloss head graphic headItem headLabel hi imprint item label lb list listBibl measure mentioned monogr name note noteGrp num orig pb publisher pubPlace q quote reg resp respStmt sic soCalled teiCorpus term textLang time unclear unit ref"/>
 
         <!-- required textstructure elements (TEI, text, and body) -->
-        <moduleRef key="textstructure"
-          include="TEI text body back div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur titlePage titlePart byline"/>
+        <moduleRef key="textstructure" include="TEI text body back div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur titlePage titlePart byline"/>
 
         <!-- required module tei instantiates lots of classes used for further expansion of this odd -->
         <moduleRef key="tei"/>
@@ -121,7 +117,7 @@
         <classRef key="model.formPart"/>
         <classRef key="model.titlepagePart"/>
         <classRef key="model.frontPart"/>
-      </schemaSpec>
+      <moduleRef key="tagdocs" include="att gi"/></schemaSpec>
     </body>
   </text>
 </TEI>
