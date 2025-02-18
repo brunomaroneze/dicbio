@@ -51,7 +51,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-02-17T01:57:07.714Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-02-17T20:58:51.664Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -101,7 +101,7 @@
         <classRef key="att.lexicographic.normalized"/>
         <classSpec ident="att.linguistic" type="atts" mode="change">
           <attList>
-            <attDef ident="senseNumber" ns="http://www.example.org/ns/tei_dhtb">
+            <attDef ident="senseNumber" ns="">
               <datatype>
                 <dataRef name="string"/>
               </datatype>
@@ -117,7 +117,7 @@
         <classRef key="model.formPart"/>
         <classRef key="model.titlepagePart"/>
         <classRef key="model.frontPart"/>
-      <moduleRef key="tagdocs" include="att gi"/></schemaSpec>
+      <moduleRef key="tagdocs" include="att gi"/><moduleRef key="figures" include="table row cell"/></schemaSpec>
     </body>
   </text>
 </TEI>

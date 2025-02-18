@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-02-17T01:57:16Z. . 
+Schema generated from ODD source 2025-02-17T20:59:51Z. . 
 TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
   
@@ -2554,29 +2554,41 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="tei_dhtbmodel.listLike">
       <choice>
          <ref name="tei_dhtblist"/>
+         <ref name="tei_dhtbtable"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.listLike_alternation">
       <choice>
          <ref name="tei_dhtblist"/>
+         <ref name="tei_dhtbtable"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.listLike_sequence">
       <ref name="tei_dhtblist"/>
+      <ref name="tei_dhtbtable"/>
    </define>
    <define name="tei_dhtbmodel.listLike_sequenceOptional">
       <optional>
          <ref name="tei_dhtblist"/>
+      </optional>
+      <optional>
+         <ref name="tei_dhtbtable"/>
       </optional>
    </define>
    <define name="tei_dhtbmodel.listLike_sequenceOptionalRepeatable">
       <zeroOrMore>
          <ref name="tei_dhtblist"/>
       </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_dhtbtable"/>
+      </zeroOrMore>
    </define>
    <define name="tei_dhtbmodel.listLike_sequenceRepeatable">
       <oneOrMore>
          <ref name="tei_dhtblist"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_dhtbtable"/>
       </oneOrMore>
    </define>
    <define name="tei_dhtbmodel.noteLike">
@@ -5697,7 +5709,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
    </define>
    <define name="tei_dhtbatt.linguistic.attribute.senseNumber">
       <optional>
-         <attribute name="senseNumber" ns="http://www.example.org/ns/tei_dhtb">
+         <attribute name="senseNumber" ns="">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <data type="string"/>
          </attribute>
@@ -6138,6 +6150,119 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
                </data>
             </attribute>
          </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbatt.tableDecoration.attributes">
+      <ref name="tei_dhtbatt.tableDecoration.attribute.role"/>
+      <ref name="tei_dhtbatt.tableDecoration.attribute.rows"/>
+      <ref name="tei_dhtbatt.tableDecoration.attribute.cols"/>
+   </define>
+   <define name="tei_dhtbatt.tableDecoration.attribute.role">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="role"
+                    a:defaultValue="data">
+            <a:documentation>(role) indicates the kind of information held in this cell or in each cell of this row.
+Suggested values include: 1] label; 2] data</a:documentation>
+            <choice>
+               <value>label</value>
+               <a:documentation>labelling or descriptive information only.</a:documentation>
+               <value>data</value>
+               <a:documentation>data values.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbatt.tableDecoration.attribute.rows">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="rows"
+                    a:defaultValue="1">
+            <a:documentation>(rows) indicates the number of rows occupied by this cell or row.</a:documentation>
+            <data type="nonNegativeInteger"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbatt.tableDecoration.attribute.cols">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="cols"
+                    a:defaultValue="1">
+            <a:documentation>(columns) indicates the number of columns occupied by this cell or row.</a:documentation>
+            <data type="nonNegativeInteger"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbtable">
+      <element name="table">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(table) contains text displayed in tabular form, in rows and columns. [15.1.1. TEI Tables]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_dhtbmodel.headLike"/>
+                  <ref name="tei_dhtbmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <choice>
+               <oneOrMore>
+                  <ref name="tei_dhtbrow"/>
+                  <zeroOrMore>
+                     <ref name="tei_dhtbmodel.global"/>
+                  </zeroOrMore>
+               </oneOrMore>
+               <oneOrMore>
+                  <ref name="tei_dhtbmodel.graphicLike"/>
+                  <zeroOrMore>
+                     <ref name="tei_dhtbmodel.global"/>
+                  </zeroOrMore>
+               </oneOrMore>
+            </choice>
+            <zeroOrMore>
+               <ref name="tei_dhtbmodel.divBottom"/>
+               <zeroOrMore>
+                  <ref name="tei_dhtbmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <ref name="tei_dhtbatt.typed.attributes"/>
+         <optional>
+            <attribute name="rows">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rows) indicates the number of rows in the table.</a:documentation>
+               <data type="nonNegativeInteger"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="cols">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(columns) indicates the number of columns in each row of the table.</a:documentation>
+               <data type="nonNegativeInteger"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbrow">
+      <element name="row">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(row) contains one row of a table. [15.1.1. TEI Tables]</a:documentation>
+         <oneOrMore>
+            <ref name="tei_dhtbcell"/>
+         </oneOrMore>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.tableDecoration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbcell">
+      <element name="cell">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cell) contains one cell of a table. [15.1.1. TEI Tables]</a:documentation>
+         <ref name="tei_dhtbmacro.specialPara"/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.tableDecoration.attributes"/>
          <empty/>
       </element>
    </define>
