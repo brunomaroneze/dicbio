@@ -178,21 +178,56 @@
                   </div>
                   <pb n="1"/>
                   <div type="parte"><head>CLASSE I MAMMAES</head>
-                        <div type="letra"><head>A.</head>
-                              <entry>ABRUPTUS. Roto, truncado, diz-se abrupta cauda no Ursus arctus,
-                                    que he muito pequena, e parece truncada.</entry> ACULEUS. Saõ os
-                              pellos unidos entre si formando espinhos. _ Explanatus. Aplainado, ou
-                              chato. _ Clavatus. Engrossado na extremidade. Hystrix macroura.
-                              ACULEATUS. Este termo exprime todo o animal, que he cuberto de
-                              espinhos. Erinaceus. AEGAGROPILA. Calculo formado de pellos, ou raizes
-                              conglutinadas, e cubertas com huma crusta calcarea. O primeiro se acha
-                              no ventriculo dos Bois, outro no da Capra Rupicapra. ANTAGONISTA.
-                              Qualquer parte do animal, que ocorre á outra, que lhe he
-                              diametralmente opposta. ARMA. As armas nos mammaes saõ as Unhas, os
-                              Dentes, as Pontas, com que se defendem, e accommettem ao seu inimigo.
-                              AURICULA. He a parte externa dos ouvidos: tambem se toma este termo
-                              pela cavidade superior dos ventriculos do coraçaõ. AURIS. Orelha. _
-                              Comosa. Com pellos compridos. _ Patula. Aberta.</div>
+                        <div type="letra">
+                              <head>A.</head>
+                              <entry>
+                                    <form>ABRUPTUS.</form>
+                                    <sense>Roto, truncado, diz-se abrupta cauda no Ursus arctus, que
+                                          he muito pequena, e parece truncada.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ACULEUS.</form>
+                                    <sense>Saõ os pellos unidos entre si formando espinhos.</sense>
+                                    <entry>
+                                          <form>_ Explanatus.</form>
+                                          <sense>Aplainado, ou chato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>_ Clavatus.</form>
+                                          <sense>Engrossado na extremidade. Hystrix
+                                                macroura.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>ACULEATUS.</form>
+                                    <sense>Este termo exprime todo o animal, que he cuberto de
+                                          espinhos. Erinaceus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>AEGAGROPILA.</form>
+                                    <sense>Calculo formado de pellos, ou raizes conglutinadas, e
+                                          cubertas com huma crusta calcarea. O primeiro se acha no
+                                          ventriculo dos Bois, outro no da Capra Rupicapra.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANTAGONISTA.</form>
+                                    <sense>Qualquer parte do animal, que ocorre á outra, que lhe he
+                                          diametralmente opposta.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ARMA.</form>
+                                    <sense>As armas nos mammaes saõ as Unhas, os Dentes, as Pontas,
+                                          com que se defendem, e accommettem ao seu inimigo.</sense>
+                              </entry>
+                              <entry>
+                                    <form>AURICULA.</form>
+                                    <sense>He a parte externa dos ouvidos: tambem se toma este termo
+                                          pela cavidade superior dos ventriculos do coraçaõ.</sense>
+                              </entry>
+                              <entry><form>AURIS.</form>
+                                    <sense>Orelha.</sense> _ Comosa. Com pellos compridos. _ Patula.
+                                    Aberta.</entry>
+                        </div>
                         <pb n="2"/> B. BARBA. He huma prominencia, que se observa logo abaixo da
                         bocca. Homo. _ Fastigiata. Com hum contorno agudo, ou contornada com pellos.
                               <s>BIAURITUS. Diz-se do coraçaõ, que tem duas <term lemma="aurícula"
