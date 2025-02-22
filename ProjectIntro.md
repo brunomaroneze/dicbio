@@ -17,6 +17,7 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 
 ### Atualizações
 
+- 22 fevereiro 2025 - Inclusão do verbete "cístico"
 - 06 fevereiro 2025 - Inclusão do verbete "caule"
 - 26 novembro 2024 - Inclusão do verbete "corólula"
 - 07 novembro 2024 - Inclusão da biografia de Bernardo Santucci
