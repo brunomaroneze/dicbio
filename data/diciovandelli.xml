@@ -423,44 +423,155 @@
                                     </entry>
                               </entry>
                         </div>
-                        <div type="letra"><head>D.</head>
-                              <s>DENTES. Os dentes, saõ os instrumentos <term lemma="cibário"
-                                          norm="cibários" msd="masculino plural"> cibarios</term>,
-                                    osseos, postos nas mandibulas.</s> - Lucisores. Saõ os primeiros
-                              dentes, que servem para cortar, e arrancar o alimento. Homo. Tab. I.
-                              fig.1.2.4.5.6.a - Laniarii. Estes saõ de huma figura conica, mais
-                              elevados, pontiagudos, que servem para dilacerar. Canis. Fig. 1.2.5.b.
-                              - Molares. Estes saõ obtuzos (ainda que nas feras tenhaõ suas pontas),
-                              e servem para triturarem o alimento. Bellue. Fere. Fig. 1.2.4.5.6.c.
-                              DENS. Dente. - Solitarius. Separado dos outros. Fig. 6. D - Serratus.
-                              Cortado na sua borda á maneira de serra. Delphinus Orca. -
-                              Spatiformis. A modo de espatula. Comelus. Fig. 6.a - Duplicatus. Com
-                              excavaçaõ, que parece hum dente duplicado. Lepus. - Recumbens. Como
-                              deitado. Erinaccus. - Cuspidato-conicus. Que acaba em ponta, de figura
-                              conica. - Approximatus. Aproximado a outros dentes. - Remotus.
-                              Distante dos outros dentes. - Porrectus. Sahido para fora. -
-                              Compressus. Chato. - <s>Sublobatus. Quasi <term> lobado</term>, ou com
-                                    pequenas prominencias na baze.</s> - Exertus. O mesmo que
-                              porrectus. - Inclusus. Dentro dos beiços. <pb n="5"/> - Lobatus. Com
-                              duas prominencias, ou lobos na baze. - Incurvatus. Curvado. - Intus
-                              excavatus. Excavado na parte interior. - Occursans. Que tem outro
-                              dente opposto na outra mandibula, com o qual comprime, ou corta. -
-                              Denticulatus. Que tem a sua borda cortada, formando como pequenos
-                              dentes. Didelphis. - Tricuspidatus. Com tres pontas. Fig. 2.c. - Terni
-                              dentes molares. A tres, a tres unidos em cada lado dos dois queixos.
-                              Félis. DIDACTYLUS. Animal, que só tem dois dedos. Myrmecophaga
-                              didactyla.</div>
-                        <div type="letra"><head>E.</head> EDENTULUS. Sem dentes. Fig. 3. ECAUDATUS.
-                              Sem cauda. EXERTUS. Diz-se daquela parte do animal, que sobresahe do
-                              seu lugar, isto he fora da periferia do corpo do mesmo animal.</div>
+                        <div type="letra">
+                              <head>D.</head>
+                              <entry>
+                                    <form>DENTES.</form>
+                                    <sense>Os dentes, saõ os instrumentos <term lemma="cibário"
+                                                norm="cibários" msd="masculino plural">
+                                                cibarios</term>, osseos, postos nas
+                                          mandibulas.</sense>
+                                    <entry>
+                                          <form>- Incisores.</form>
+                                          <sense>Saõ os primeiros dentes, que servem para cortar, e
+                                                arrancar o alimento. Homo. Tab. I.
+                                                fig.1.2.4.5.6.a</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Laniarii.</form>
+                                          <sense>Estes saõ de huma figura conica, mais elevados,
+                                                pontiagudos, que servem para dilacerar. Canis. Fig.
+                                                1.2.5.b.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Molares.</form>
+                                          <sense>Estes saõ obtuzos (ainda que nas feras tenhaõ suas
+                                                pontas), e servem para triturarem o alimento.
+                                                Bellue. Fere. Fig. 1.2.4.5.6.c.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>DENS.</form>
+                                    <sense>Dente.</sense>
+                                    <entry>
+                                          <form>- Solitarius.</form>
+                                          <sense>Separado dos outros. Fig. 6. d</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Serratus.</form>
+                                          <sense>Cortado na sua borda á maneira de serra. Delphinus
+                                                Orca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Spatiformis.</form>
+                                          <sense>A modo de espatula. Comelus. Fig. 6.a</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Duplicatus.</form>
+                                          <sense>Com excavaçaõ, que parece hum dente duplicado.
+                                                Lepus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recumbens.</form>
+                                          <sense>Como deitado. Erinaccus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cuspidato-conicus.</form>
+                                          <sense>Que acaba em ponta, de figura conica.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Approximatus.</form>
+                                          <sense>Aproximado a outros dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Remotus.</form>
+                                          <sense>Distante dos outros dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Porrectus.</form>
+                                          <sense>Sahido para fora.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Compressus.</form>
+                                          <sense>Chato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Sublobatus.</form>
+                                          <sense>Quasi <term> lobado</term>, ou com pequenas
+                                                prominencias na baze.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Exertus.</form>
+                                          <sense>O mesmo que porrectus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Inclusus.</form>
+                                          <sense>Dentro dos beiços.</sense>
+                                    </entry>
+                                    <pb n="5"/>
+                                    <entry>
+                                          <form>- Lobatus.</form>
+                                          <sense>Com duas prominencias, ou lobos na baze.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Incurvatus.</form>
+                                          <sense>Curvado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Intus excavatus.</form>
+                                          <sense>Excavado na parte interior.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Occursans.</form>
+                                          <sense>Que tem outro dente opposto na outra mandibula, com
+                                                o qual comprime, ou corta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Denticulatus.</form>
+                                          <sense>Que tem a sua borda cortada, formando como pequenos
+                                                dentes. Didelphis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Tricuspidatus.</form>
+                                          <sense>Com tres pontas. Fig. 2.c.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Terni dentes molares.</form>
+                                          <sense>A tres, a tres unidos em cada lado dos dois
+                                                queixos. Félis.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>DIDACTYLUS.</form>
+                                    <sense>Animal, que só tem dois dedos. Myrmecophaga
+                                          didactyla.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>E.</head>
+                              <entry>
+                                    <form>EDENTULUS.</form>
+                                    <sense>Sem dentes. Fig. 3.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ECAUDATUS.</form>
+                                    <sense>Sem cauda.</sense>
+                              </entry>
+                              <entry>
+                                    <form>EXERTUS.</form>
+                                    <sense>Diz-se daquela parte do animal, que sobresahe do seu
+                                          lugar, isto he fora da periferia do corpo do mesmo
+                                          animal.</sense>
+                              </entry>
+                        </div>
                         <div type="letra"><head>F.</head> FASCICULUS. Hum ajuntamento de pellos, ou
                               cabellos fora do natural. FISSUS PES. Pé com dedos divididos entre si.
                               FISTULA. Abertura, ou tubo constante na cabeça do animal, como se pode
                               observar na cabeça das Balêas, por meio do qual respiraõ, e lançaõ
-                              agua a grande altura. <s>FOLLICULUS. He uma cavidade, ou pequena
+                              agua a grande altura. FOLLICULUS. He uma cavidade, ou pequena
                                     bexiga nas <term lemma="glândula" norm="glândulas" msd="plural"
                                           >glandulas</term> entre as extremidades das arterias,
-                                    veias, e ductus excretorios.</s> - Abdominalis. No abdomen. <pb
+                                    veias, e ductus excretorios. - Abdominalis. No abdomen. <pb
                                     n="6"/> - Umbilicalis. No umbigo. Moschus. FRONS. Fronte. -
                               Fastigiata. Cercada de pellos, assim de algum modo aguda.</div>
                         <div type="letra"><head>G.</head> GLABER. Sem pellos, levigado.</div>
