@@ -177,7 +177,8 @@
                                     virtudes medicinaes, e uso na Tinturaria.</s></p>
                   </div>
                   <pb n="1"/>
-                  <div type="parte"><head>CLASSE I MAMMAES</head>
+                  <div type="parte">
+                        <head>CLASSE I MAMMAES</head>
                         <div type="letra">
                               <head>A.</head>
                               <entry>
@@ -224,193 +225,391 @@
                                     <sense>He a parte externa dos ouvidos: tambem se toma este termo
                                           pela cavidade superior dos ventriculos do coraçaõ.</sense>
                               </entry>
-                              <entry><form>AURIS.</form>
-                                    <sense>Orelha.</sense> _ Comosa. Com pellos compridos. _ Patula.
-                                    Aberta.</entry>
+                              <entry>
+                                    <form>AURIS.</form>
+                                    <sense>Orelha.</sense>
+                                    <entry>
+                                          <form>_ Comosa.</form>
+                                          <sense>Com pellos compridos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>_ Patula.</form>
+                                          <sense>Aberta.</sense>
+                                    </entry>
+                              </entry>
                         </div>
-                        <pb n="2"/> B. BARBA. He huma prominencia, que se observa logo abaixo da
-                        bocca. Homo. _ Fastigiata. Com hum contorno agudo, ou contornada com pellos.
-                              <s>BIAURITUS. Diz-se do coraçaõ, que tem duas <term lemma="aurícula"
-                                    norm="aurículas" msd="plural">auriculas</term>.</s>
-                        <s>BILOCULARIS. Quando ha duas <term lemma="concameração"
-                                    norm="concamerações" msd="plural">concameraçoens</term>, ou
-                              cavidades.</s> BUCCA. Bochecha. _ Nuda. Sem barba. Simia Maimon. _
-                        Barbata. Com barba. _ Subbarbata. Com pouca barba. C. CALLUM. Dureza; que se
-                        observa em qualquer parte da pelle dos animaes. Equus. Isto he qualquer
-                        dureza cutanea, ou seja carnoza, ou ossea, e isto tanto no estado natural,
-                        como fora do natural. CATAPHRACTUS. Animal, que he revestido, de huma
-                        substancia dura, á maneira de saia de malha. Dasypus. CAUDA. He a
-                        continuação das vertebras; porem esta he diversa em varios animaes, a saber.
-                        - Abbreviata. Quando naõ chega a coxa. Lepus. Elongata. Quando he mais
-                        comprida, que a coxa: Canis. - Nuda. Sendo destituida de pelos. Mus. -
-                              <s>Prehensilis. He uma cauda <term lemma="elongado"
-                                    msd="feminino singular"> elongada</term>, que serve muitas vezes
-                              como de terceira maõ ao animal para sua segurança. Simia.</s>
-                        <pb n="3"/> - Comosa. Sendo chêa de sedas, ou crinas. Equus. - Flocosa.
-                        Quando forma na ponta com os seus pelos hum globo á maneira de pincel. Leo.
-                        - Dysticha. He aquella cauda, que separa para hum, e outro lado as suas
-                        sedas, como se observa no Myrmecophaga. - Annulata. Com anneis formados de
-                        pellos corados. - Abrupta. Como cortada, e naõ continuada. Ursus. - Pinnata.
-                        Quase dysticha, cujos pelos estaõ somente nos dois lados agudos de huma
-                        cauda chata, como no Sciurus sagitta. - Fubata. Que tem crinas compridas.
-                        Bos grunniens. - Recurvata. Revirada. Canis domesticus. - Incurvata.
-                        Arqueada, ou torcida. Canis Lupus. - Deslexa. Dobrada para baixo. Canis
-                        Mexicanus. COLLARIS. Nos mammaes he hum circulo de pelos de huma côr
-                        diferente dos outros, ou mais compridos, que se acha no pescoço. COMA.
-                        Pellos compridos. - Dependens. Cahida abaixo, ou pendente. CORNUS. Ponta. -
-                        Acaulis. Sem tronco. Cervus Alces. - Contortus. Torcido. Capra Dorcas -
-                        Depressus. Deorsum pressus chato. Capra - Lunatus. Dobrado em arco, ou em
-                        figura de Lua. Ovis Aries. - Recurvatus. Retorcido, ou revirado. Cervus
-                        Dama. - Resupinatus. Revirado para traz. Bos bubalus. - Retrorsum versus.
-                        Recurvado para traz. Ovis. <s>CYSTIFERUS Umbilicus. Embigo que tem huma
-                              bexiga, ou cavidade, onde se conserva hum humor <pb n="4"/>particular
-                              separado de huma <term lemma="glândula"> glandula</term>. Sus
-                              porcus.</s> - Dorsus. No dorso, ou nas costas. Sus Tajacú. D.
+                        <pb n="2"/>
+                        <div type="letra">
+                              <head>B.</head>
+                              <entry>
+                                    <form>BARBA.</form>
+                                    <sense>He huma prominencia, que se observa logo abaixo da bocca.
+                                          Homo.</sense>
+                                    <entry>
+                                          <form>_ Fastigiata.</form>
+                                          <sense>Com hum contorno agudo, ou contornada com
+                                                pellos.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>BIAURITUS.</form>
+                                    <sense>Diz-se do coraçaõ, que tem duas <term lemma="aurícula"
+                                                norm="aurículas" msd="plural"
+                                          >auriculas</term>.</sense>
+                              </entry>
+                              <entry>
+                                    <form>BILOCULARIS.</form>
+                                    <sense>Quando ha duas <term lemma="concameração"
+                                                norm="concamerações" msd="plural"
+                                                >concameraçoens</term>, ou cavidades.</sense>
+                              </entry>
+                              <entry>
+                                    <form>BUCCA.</form>
+                                    <sense>Bochecha.</sense>
+                                    <entry>
+                                          <form>_ Nuda.</form>
+                                          <sense>Sem barba. Simia Maimon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>_ Barbata.</form>
+                                          <sense>Com barba.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>_ Subbarbata.</form>
+                                          <sense>Com pouca barba.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>C.</head>
+                              <entry>
+                                    <form>CALLUM.</form>
+                                    <sense>Dureza; que se observa em qualquer parte da pelle dos
+                                          animaes. Equus. Isto he qualquer dureza cutanea, ou seja
+                                          carnoza, ou ossea, e isto tanto no estado natural, como
+                                          fora do natural.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CATAPHRACTUS.</form>
+                                    <sense>Animal, que he revestido, de huma substancia dura, á
+                                          maneira de saia de malha. Dasypus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CAUDA.</form>
+                                    <sense>He a continuação das vertebras; porem esta he diversa em
+                                          varios animaes, a saber.</sense>
+                                    <entry>
+                                          <form>- Abbreviata.</form>
+                                          <sense>Quando naõ chega a coxa. Lepus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>Elongata.</form>
+                                          <sense>Quando he mais comprida, que a coxa: Canis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Nuda.</form>
+                                          <sense>Sendo destituida de pelos. Mus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Prehensilis.</form>
+                                          <sense>He uma cauda <term lemma="elongado"
+                                                  msd="feminino singular"> elongada</term>, que
+                                                serve muitas vezes como de terceira maõ ao animal
+                                                para sua segurança. Simia.</sense>
+                                    </entry>
+                                    <pb n="3"/>
+                                    <entry>
+                                          <form>- Comosa.</form>
+                                          <sense>Sendo chêa de sedas, ou crinas. Equus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Flocosa.</form>
+                                          <sense>Quando forma na ponta com os seus pelos hum globo á
+                                                maneira de pincel. Leo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Dysticha.</form>
+                                          <sense>He aquella cauda, que separa para hum, e outro lado
+                                                as suas sedas, como se observa no
+                                                Myrmecophaga.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Annulata.</form>
+                                          <sense>Com anneis formados de pellos corados.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Abrupta.</form>
+                                          <sense>Como cortada, e naõ continuada. Ursus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Pinnata.</form>
+                                          <sense>Quase dysticha, cujos pelos estaõ somente nos dois
+                                                lados agudos de huma cauda chata, como no Sciurus
+                                                sagitta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fubata.</form>
+                                          <sense>Que tem crinas compridas. Bos grunniens.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recurvata.</form>
+                                          <sense>Revirada. Canis domesticus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Incurvata.</form>
+                                          <sense>Arqueada, ou torcida. Canis Lupus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Deslexa.</form>
+                                          <sense>Dobrada para baixo. Canis Mexicanus.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>COLLARIS.</form>
+                                    <sense>Nos mammaes he hum circulo de pelos de huma côr diferente
+                                          dos outros, ou mais compridos, que se acha no
+                                          pescoço.</sense>
+                              </entry>
+                              <entry>
+                                    <form>COMA.</form>
+                                    <sense>Pellos compridos.</sense>
+                                    <entry>
+                                          <form>- Dependens.</form>
+                                          <sense>Cahida abaixo, ou pendente.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CORNUS.</form>
+                                    <sense>Ponta.</sense>
+                                    <entry>
+                                          <form>- Acaulis.</form>
+                                          <sense>Sem tronco. Cervus Alces.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Contortus.</form>
+                                          <sense>Torcido. Capra Dorcas</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Depressus. Deorsum pressus</form>
+                                          <sense>chato. Capra</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lunatus.</form>
+                                          <sense>Dobrado em arco, ou em figura de Lua. Ovis
+                                                Aries.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recurvatus.</form>
+                                          <sense>Retorcido, ou revirado. Cervus Dama.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Resupinatus.</form>
+                                          <sense>Revirado para traz. Bos bubalus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Retrorsum versus.</form>
+                                          <sense>Recurvado para traz. Ovis.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CYSTIFERUS Umbilicus.</form>
+                                    <sense>Embigo que tem huma bexiga, ou cavidade, onde se conserva
+                                          hum humor <pb n="4"/>particular separado de huma <term
+                                                lemma="glândula"> glandula</term>. Sus
+                                          porcus.</sense>
+                                    <entry>
+                                          <form>- Dorsus.</form>
+                                          <sense>No dorso, ou nas costas. Sus Tajacú.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra"><head>D.</head>
                               <s>DENTES. Os dentes, saõ os instrumentos <term lemma="cibário"
-                                    norm="cibários" msd="masculino plural"> cibarios</term>, osseos,
-                              postos nas mandibulas.</s> - Lucisores. Saõ os primeiros dentes, que
-                        servem para cortar, e arrancar o alimento. Homo. Tab. I. fig.1.2.4.5.6.a -
-                        Laniarii. Estes saõ de huma figura conica, mais elevados, pontiagudos, que
-                        servem para dilacerar. Canis. Fig. 1.2.5.b. - Molares. Estes saõ obtuzos
-                        (ainda que nas feras tenhaõ suas pontas), e servem para triturarem o
-                        alimento. Bellue. Fere. Fig. 1.2.4.5.6.c. DENS. Dente. - Solitarius.
-                        Separado dos outros. Fig. 6. D - Serratus. Cortado na sua borda á maneira de
-                        serra. Delphinus Orca. - Spatiformis. A modo de espatula. Comelus. Fig. 6.a
-                        - Duplicatus. Com excavaçaõ, que parece hum dente duplicado. Lepus. -
-                        Recumbens. Como deitado. Erinaccus. - Cuspidato-conicus. Que acaba em ponta,
-                        de figura conica. - Approximatus. Aproximado a outros dentes. - Remotus.
-                        Distante dos outros dentes. - Porrectus. Sahido para fora. - Compressus.
-                        Chato. - <s>Sublobatus. Quasi <term> lobado</term>, ou com pequenas
-                              prominencias na baze.</s> - Exertus. O mesmo que porrectus. -
-                        Inclusus. Dentro dos beiços. <pb n="5"/> - Lobatus. Com duas prominencias,
-                        ou lobos na baze. - Incurvatus. Curvado. - Intus excavatus. Excavado na
-                        parte interior. - Occursans. Que tem outro dente opposto na outra mandibula,
-                        com o qual comprime, ou corta. - Denticulatus. Que tem a sua borda cortada,
-                        formando como pequenos dentes. Didelphis. - Tricuspidatus. Com tres pontas.
-                        Fig. 2.c. - Terni dentes molares. A tres, a tres unidos em cada lado dos
-                        dois queixos. Félis. DIDACTYLUS. Animal, que só tem dois dedos. Myrmecophaga
-                        didactyla. E. EDENTULUS. Sem dentes. Fig. 3. ECAUDATUS. Sem cauda. EXERTUS.
-                        Diz-se daquela parte do animal, que sobresahe do seu lugar, isto he fora da
-                        periferia do corpo do mesmo animal. F. FASCICULUS. Hum ajuntamento de
-                        pellos, ou cabellos fora do natural. FISSUS PES. Pé com dedos divididos
-                        entre si. FISTULA. Abertura, ou tubo constante na cabeça do animal, como se
-                        pode observar na cabeça das Balêas, por meio do qual respiraõ, e lançaõ agua
-                        a grande altura. <s>FOLLICULUS. He uma cavidade, ou pequena bexiga nas <term
-                                    lemma="glândula" norm="glândulas" msd="plural">glandulas</term>
-                              entre as extremidades das arterias, veias, e ductus excretorios.</s> -
-                        Abdominalis. No abdomen. <pb n="6"/> - Umbilicalis. No umbigo. Moschus.
-                        FRONS. Fronte. - Fastigiata. Cercada de pellos, assim de algum modo aguda.
-                        G. GLABER. Sem pellos, levigado. H. HELVOLUS. Côr parda entre branca, e
-                        vermelha. Leo. HIANS. He aquella parte, que deixa algum espaço aberto,
-                        quando se fecha. HYPOCONDRIUM. O espaço inferior ás costéllas, que continua
-                        até ao principio da coxa da perna, chamado vulgarmente o vazio. I. IMPINNIS.
-                        Sem barbatana. Balaena mysticetus. JUBA. Saõ os cabellos postos na parte
-                        superior do pescoço, chamado Cervix, a que daõ o nome de crinas. Equus, Bos
-                        bonasus, bison. L. LABIUM. A parte carnosa, que cobre a mandibula, chamada
-                        beiço. - Lacunosum. Com excavaçaõ no beiço superior do homem. - Bifidum. O
-                        beiço superior dividido. Lepus. - Geminatum. Beiço duplicado. Trichechus. -
-                        Varicosum. Beiço superior grosso, ou turgido. Noctilio americ. <pb n="7"/>
-                        LACUNA. Excavaçaõ, que se acha no beiço superior do homem. LINGUA. Lingua. -
-                        Simplex. Simples. - <s>Denticulato-ciliata. Que tem na borda excavaçoes, e
-                              prominencias agudas, e alem disso <term lemma="papila" norm="papilas"
-                                    senseNumber="3">papillas</term>, ou fibras carnosas a modo de
-                              cilias.</s> - <s>Supra aculeata. Com aculeos, ou <term lemma="papila"
-                                    norm="papilas" senseNumber="3">papillas</term> rijas, e agudas
-                              na parte superior, como no Gato.</s> - Filiformis. Da mesma largura em
-                        todo o comprimento. - Teres. Redonda. - Extensilis. Que se alonga, e se
-                        contrahe a arbitrio do animal. - Subciliata. Que tem na sua borda algumas
-                        cilias, ou fibras paralelas carnosas a modo de pastanas. Didelphis. M.
-                        MACULA. Malha. - Virgata. Malha com linhas como vergas extendidas ao
-                        comprimento. - Triloba. Formada de três segmentos de circulo unidos.
-                        MANICATUS. Chama-se assim todo o animal, que tanto nas palmas das maõs, como
-                        nas plantas dos pés cria muito pello por meio do qual pode correr
-                        ligeiramente por entre os abrolhos. Lepus. MANULEATUS. He aquelle animal,
-                        cujas unhas saõ de figura oval. Homo, Simia. MAMMAE Pectorales Que estaõ no
-                        peito. - Abdominales. No abdomen. - Inguinales. Nas ingues, isto he, nas
-                        virilhas. MEMBRANA Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas
-                        vezes transparente, movel, posta debaixo da palpebra superior do olho, com a
-                        qual se cobre a pupilla de alguns animaes. Lepus, Homo Triglodytes.
-                        MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só femia.
-                        MUCRONATUS. A parte do animal, que acaba em ponta aguda. MUTICUS. Sem
-                        aculeos. Termo proprio aos animaes destituidos de unhas. <s>MYSTACES. Saõ
-                              aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou o Caõ, ao
-                              pè dos narizes, e assima da <term lemma="órbita">orbita</term> do
-                              olho, ou sobrancelha.</s> N. NARES. Narizes. - Bifidæ. Narizes ou
-                        ventas divididas. - Elatæ. Levantadas para sima. - <s>Carunculatæ. Com <term
-                                    lemma="tubérculo" norm="tubérculos" msd="plural">
-                                    tuberculos</term>, ou <term lemma="carúncula" norm="carúnculas"
-                                    msd="plural">carunculas</term>. Sorex cristatus.</s> - Cristatæ.
-                        Com crista. Erinaceus europæus. NASUS. Naso. - Infundibiliformis
-                        lanceolatus. A maneira de funil, e acaba em figura de lança. Vespertilio
-                        specirum. - <s>Foliatus planus acuminatus. Tem huma membrana ao redor a modo
-                              de folha, acaba em ponta. Vespertilio perspicillatus.</s> -
-                              <s>Foliato-obcerdatus. Foliato, ou a maneira de folha, com figura de
-                              coraçaõ inverso. Vespert: Spasma.</s> - Resimus. Narizes, ou ventas
-                        chatas com a extremidade revirada para sima. Linnéo serve-se deste termo
-                        para mostrar hum nariz chato, e como cortado. <pb n="9"/> P. PALEARIA. Saõ
-                        as pelles lassas, e pendentes debaixo da gûela em alguns animaes, aque se
-                        chama vulgarmente papada. Bos. PALMA. Palma da maõ. MANUS. Maõ. -
-                        Didactylis. Com dous dedos. - Tetradactylis. Com quatro dedos. - Fissa. Os
-                        dedos divididos sem membrana. - Palmata. Os dedos unidos entre si com
-                        membrana. PALPEBRA. Capellas dos olhos onde se achaõ postas as pestanas, que
-                        servem para cobrir o olho; e estas saõ os cabellos, que servem para desviar
-                        o pó do mesmo olho. PARALLELUS. Diz-se daquelas partes do animal, que sempre
-                        observaõ a mesma distancia entre si, sem que se possaõ encontrar, ainda que
-                        sejaõ produzidas. PEDES. Compedes. Nos Plagiuros, ou Cetaceos os pés
-                        posteriores formando huma pinna. PES. O pé. - Bisulcus. Pé dividido em dous,
-                        ou unhas fendidas. - Didactilus. Com dous dedos. - Fissus. Os dedos tem
-                        membrana. - Quadrilobus. Pés com 4 Prominencias, ou lobos na sua periferia.
-                        Hypopotamus. - Palmatus. Os dedos unidos por membrana. PILUS. Pello. -
-                        Reversus. Revirado para traz. - Fastigiatus. Que forma huma summidade aguda
-                        em torno de alguma parte. <pb n="10"/>- Erectus. Direito. - Perlucens.
-                        Resplandecente. - Patulus. Extendido. PINNA. Barbatana. - Adiposa. Pinna, ou
-                        barbatana formada dos tegumentos, entre os quaes se acha tella cellular com
-                        gordura. PINNATUS. Quando em lugar de braços tem barbatanas. PILEUM. Dá-se
-                        este nome a parte superior da cabeça, ou ao cabelo, que livra os Mammaes das
-                        injurias do tempo; isto he tomado restrictamente, todo o cabelo, que cobre a
-                        cabeça do animal. PROBOSCIS. Huma prolongação dos narizes, que se observa em
-                        alguns animaes. Elephas. PUPILLA. A menina do olho; as suas figuras saõ as
-                        seguintes. - Orbicularis. Sendo redonda, e neste caso he propria dos animaes
-                        diurnos. - Perpendicularis &amp; transversalis. Sendo a linha perpendicular,
-                        ou transversal, propria aos nocturnos. R RETRACTILIS. Diz-se da parte dos
-                        animaes, quando eles a podem voluntariamente recolher, e lançar fora, como
-                        se observa em varios v.g. as unhas do Gato. S SAGITTATUS. He todo aquelle
-                        corpo, que acaba em ponta de lança, ou setta. SCABER. Denota todo aquelle
-                        corpo, que he de superfície aspera ao nosso tacto. <pb n="11"/> SCUTUM. Isto
-                        mostra-nos em os Mammaes a uniaõ, que as escamas (feitas pela uniaõ dos
-                        pelos) formaõ entre si, cobrindo desta forma todo o corpo do animal, dentro
-                        de que ele se esconde, e se livra dos inimigos, e injurias do tempo.
-                        Dasypus. SEMICAUDATUS. Com meia cauda. SESSILIS. Qualquer parte do animal,
-                        que se une a outra, que lhe fica contigua, sem intermedio algum. SETA. Pello
-                        rijo como o do Porco. SOLITARIUS. He a parte do animal, que naõ tem outra,
-                        que a acompanhe, ou lhe corresponda da mesma parte. SQUAMA. Isto indica nos
-                        Mammaes huns pequenos escudos triangulares feitos pela uniaõ dos pelos,
-                        porem cada triangulo he distincto sobre si. Manis. STRIATUS. Escanelado, ou
-                        excavado muito superficialmente ao comprido. Simia maimon, genis striatis.
-                        SUB. Linnèo servio-se muitas vezes desta particula para significar quasi
-                        v.g. subbarbatus quasi barbado, ou com alguma barba. SUCCENTURIATUS.
-                        Derivado de Succedaneus diz-se de toda a parte, que imediatamente ocorre á
-                        falta de outra, como se observa nos escudos abdominaes das serpentes, e nas
-                        pequenas ungulas, que se observaõ acima do tarso no pé das pecoras Bos,
-                        Capra. SULCATUS. Superficie com excavaçoens ao comprido mais profundas, do
-                        que quando he Striatus. SUTURA. Tambem se aplica este termo a divizaõ dos
-                        pelos, quando eles se apartaõ huns com a direcçaõ opposta aos outros. <pb
-                              n="12"/> V <s>VERRUCA. Verruga, ou <term lemma="tubérculo"
-                                    >tuberculo</term> duro, que está na pelle.</s> - Setifera. Com
-                        pelos rijos, ou sedas como de porcos. VIBRISSA. Pellos ao redos das ventas.
-                              <s>VIBRISSATUS. Com <term lemma="vibrissa">vibrissas</term>, ou pelos
-                              rijos, os quaes existem em alguns Mammaes.</s> VILLOSUS. Cheio de
-                        pellos. UNGUIS. Unha. Saõ as unhas agudas, e penetrantes próprias das feras,
-                        com que naõ só dilaceraõ, mas ainda apanhaõ a preza. - Complanatus. Unha
-                        aplanada, ou chata. - Ovalis. De figura oval. - Retractatilis. Unha, que
-                        sahe, e se recolhe a arbitrio do animal, como no Gato. - Subulatus. Aguda na
-                        extremidade quase a modo de sovela. - Validus. Rija. UNGULA. Indica os
-                        cascos das Belluas, que naõ saõ divididos entre si. Equus. Porem se saõ
-                        dous, isto he, se se dividem em dous, entaõ denominaõ-se bisulcos.
-                        Aldrovandi. T TALUM. Significa o calcanhar nos Mammaes, o qual serve para
-                        eles se sustentarem em pé, como se vê no Homem, e no Urso. <pb n="13"/> Z
-                        ZOOLOGIA. Sciencia, que versa sobre o conhecimento dos animaes. ZOOLOGUS.
-                        Author, que escreveo da mesma Sciencia.</div>
+                                          norm="cibários" msd="masculino plural"> cibarios</term>,
+                                    osseos, postos nas mandibulas.</s> - Lucisores. Saõ os primeiros
+                              dentes, que servem para cortar, e arrancar o alimento. Homo. Tab. I.
+                              fig.1.2.4.5.6.a - Laniarii. Estes saõ de huma figura conica, mais
+                              elevados, pontiagudos, que servem para dilacerar. Canis. Fig. 1.2.5.b.
+                              - Molares. Estes saõ obtuzos (ainda que nas feras tenhaõ suas pontas),
+                              e servem para triturarem o alimento. Bellue. Fere. Fig. 1.2.4.5.6.c.
+                              DENS. Dente. - Solitarius. Separado dos outros. Fig. 6. D - Serratus.
+                              Cortado na sua borda á maneira de serra. Delphinus Orca. -
+                              Spatiformis. A modo de espatula. Comelus. Fig. 6.a - Duplicatus. Com
+                              excavaçaõ, que parece hum dente duplicado. Lepus. - Recumbens. Como
+                              deitado. Erinaccus. - Cuspidato-conicus. Que acaba em ponta, de figura
+                              conica. - Approximatus. Aproximado a outros dentes. - Remotus.
+                              Distante dos outros dentes. - Porrectus. Sahido para fora. -
+                              Compressus. Chato. - <s>Sublobatus. Quasi <term> lobado</term>, ou com
+                                    pequenas prominencias na baze.</s> - Exertus. O mesmo que
+                              porrectus. - Inclusus. Dentro dos beiços. <pb n="5"/> - Lobatus. Com
+                              duas prominencias, ou lobos na baze. - Incurvatus. Curvado. - Intus
+                              excavatus. Excavado na parte interior. - Occursans. Que tem outro
+                              dente opposto na outra mandibula, com o qual comprime, ou corta. -
+                              Denticulatus. Que tem a sua borda cortada, formando como pequenos
+                              dentes. Didelphis. - Tricuspidatus. Com tres pontas. Fig. 2.c. - Terni
+                              dentes molares. A tres, a tres unidos em cada lado dos dois queixos.
+                              Félis. DIDACTYLUS. Animal, que só tem dois dedos. Myrmecophaga
+                              didactyla.</div>
+                        <div type="letra"><head>E.</head> EDENTULUS. Sem dentes. Fig. 3. ECAUDATUS.
+                              Sem cauda. EXERTUS. Diz-se daquela parte do animal, que sobresahe do
+                              seu lugar, isto he fora da periferia do corpo do mesmo animal.</div>
+                        <div type="letra"><head>F.</head> FASCICULUS. Hum ajuntamento de pellos, ou
+                              cabellos fora do natural. FISSUS PES. Pé com dedos divididos entre si.
+                              FISTULA. Abertura, ou tubo constante na cabeça do animal, como se pode
+                              observar na cabeça das Balêas, por meio do qual respiraõ, e lançaõ
+                              agua a grande altura. <s>FOLLICULUS. He uma cavidade, ou pequena
+                                    bexiga nas <term lemma="glândula" norm="glândulas" msd="plural"
+                                          >glandulas</term> entre as extremidades das arterias,
+                                    veias, e ductus excretorios.</s> - Abdominalis. No abdomen. <pb
+                                    n="6"/> - Umbilicalis. No umbigo. Moschus. FRONS. Fronte. -
+                              Fastigiata. Cercada de pellos, assim de algum modo aguda.</div>
+                        <div type="letra"><head>G.</head> GLABER. Sem pellos, levigado.</div>
+                        <div type="letra"><head>H.</head> HELVOLUS. Côr parda entre branca, e
+                              vermelha. Leo. HIANS. He aquella parte, que deixa algum espaço aberto,
+                              quando se fecha. HYPOCONDRIUM. O espaço inferior ás costéllas, que
+                              continua até ao principio da coxa da perna, chamado vulgarmente o
+                              vazio.</div>
+                        <div type="letra"><head>I.</head> IMPINNIS. Sem barbatana. Balaena
+                              mysticetus. JUBA. Saõ os cabellos postos na parte superior do pescoço,
+                              chamado Cervix, a que daõ o nome de crinas. Equus, Bos bonasus,
+                              bison.</div>
+                        <div type="letra"><head>L.</head> LABIUM. A parte carnosa, que cobre a
+                              mandibula, chamada beiço. - Lacunosum. Com excavaçaõ no beiço superior
+                              do homem. - Bifidum. O beiço superior dividido. Lepus. - Geminatum.
+                              Beiço duplicado. Trichechus. - Varicosum. Beiço superior grosso, ou
+                              turgido. Noctilio americ. <pb n="7"/> LACUNA. Excavaçaõ, que se acha
+                              no beiço superior do homem. LINGUA. Lingua. - Simplex. Simples. -
+                                    <s>Denticulato-ciliata. Que tem na borda excavaçoes, e
+                                    prominencias agudas, e alem disso <term lemma="papila"
+                                          norm="papilas" senseNumber="3">papillas</term>, ou fibras
+                                    carnosas a modo de cilias.</s> - <s>Supra aculeata. Com aculeos,
+                                    ou <term lemma="papila" norm="papilas" senseNumber="3"
+                                          >papillas</term> rijas, e agudas na parte superior, como
+                                    no Gato.</s> - Filiformis. Da mesma largura em todo o
+                              comprimento. - Teres. Redonda. - Extensilis. Que se alonga, e se
+                              contrahe a arbitrio do animal. - Subciliata. Que tem na sua borda
+                              algumas cilias, ou fibras paralelas carnosas a modo de pastanas.
+                              Didelphis.</div>
+                        <div type="letra"><head>M.</head> MACULA. Malha. - Virgata. Malha com linhas
+                              como vergas extendidas ao comprimento. - Triloba. Formada de três
+                              segmentos de circulo unidos. MANICATUS. Chama-se assim todo o animal,
+                              que tanto nas palmas das maõs, como nas plantas dos pés cria muito
+                              pello por meio do qual pode correr ligeiramente por entre os abrolhos.
+                              Lepus. MANULEATUS. He aquelle animal, cujas unhas saõ de figura oval.
+                              Homo, Simia. MAMMAE Pectorales Que estaõ no peito. - Abdominales. No
+                              abdomen. - Inguinales. Nas ingues, isto he, nas virilhas. MEMBRANA
+                              Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas vezes
+                              transparente, movel, posta debaixo da palpebra superior do olho, com a
+                              qual se cobre a pupilla de alguns animaes. Lepus, Homo Triglodytes.
+                              MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só femia.
+                              MUCRONATUS. A parte do animal, que acaba em ponta aguda. MUTICUS. Sem
+                              aculeos. Termo proprio aos animaes destituidos de unhas. <s>MYSTACES.
+                                    Saõ aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou
+                                    o Caõ, ao pè dos narizes, e assima da <term lemma="órbita"
+                                          >orbita</term> do olho, ou sobrancelha.</s></div>
+                        <div type="letra"><head>N.</head> NARES. Narizes. - Bifidæ. Narizes ou
+                              ventas divididas. - Elatæ. Levantadas para sima. - <s>Carunculatæ. Com
+                                          <term lemma="tubérculo" norm="tubérculos" msd="plural">
+                                          tuberculos</term>, ou <term lemma="carúncula"
+                                          norm="carúnculas" msd="plural">carunculas</term>. Sorex
+                                    cristatus.</s> - Cristatæ. Com crista. Erinaceus europæus.
+                              NASUS. Naso. - Infundibiliformis lanceolatus. A maneira de funil, e
+                              acaba em figura de lança. Vespertilio specirum. - <s>Foliatus planus
+                                    acuminatus. Tem huma membrana ao redor a modo de folha, acaba em
+                                    ponta. Vespertilio perspicillatus.</s> - <s>Foliato-obcerdatus.
+                                    Foliato, ou a maneira de folha, com figura de coraçaõ inverso.
+                                    Vespert: Spasma.</s> - Resimus. Narizes, ou ventas chatas com a
+                              extremidade revirada para sima. Linnéo serve-se deste termo para
+                              mostrar hum nariz chato, e como cortado.</div>
+                        <pb n="9"/>
+                        <div type="letra"><head>P.</head> PALEARIA. Saõ as pelles lassas, e
+                              pendentes debaixo da gûela em alguns animaes, aque se chama
+                              vulgarmente papada. Bos. PALMA. Palma da maõ. MANUS. Maõ. -
+                              Didactylis. Com dous dedos. - Tetradactylis. Com quatro dedos. -
+                              Fissa. Os dedos divididos sem membrana. - Palmata. Os dedos unidos
+                              entre si com membrana. PALPEBRA. Capellas dos olhos onde se achaõ
+                              postas as pestanas, que servem para cobrir o olho; e estas saõ os
+                              cabellos, que servem para desviar o pó do mesmo olho. PARALLELUS.
+                              Diz-se daquelas partes do animal, que sempre observaõ a mesma
+                              distancia entre si, sem que se possaõ encontrar, ainda que sejaõ
+                              produzidas. PEDES. Compedes. Nos Plagiuros, ou Cetaceos os pés
+                              posteriores formando huma pinna. PES. O pé. - Bisulcus. Pé dividido em
+                              dous, ou unhas fendidas. - Didactilus. Com dous dedos. - Fissus. Os
+                              dedos tem membrana. - Quadrilobus. Pés com 4 Prominencias, ou lobos na
+                              sua periferia. Hypopotamus. - Palmatus. Os dedos unidos por membrana.
+                              PILUS. Pello. - Reversus. Revirado para traz. - Fastigiatus. Que forma
+                              huma summidade aguda em torno de alguma parte. <pb n="10"/>- Erectus.
+                              Direito. - Perlucens. Resplandecente. - Patulus. Extendido. PINNA.
+                              Barbatana. - Adiposa. Pinna, ou barbatana formada dos tegumentos,
+                              entre os quaes se acha tella cellular com gordura. PINNATUS. Quando em
+                              lugar de braços tem barbatanas. PILEUM. Dá-se este nome a parte
+                              superior da cabeça, ou ao cabelo, que livra os Mammaes das injurias do
+                              tempo; isto he tomado restrictamente, todo o cabelo, que cobre a
+                              cabeça do animal. PROBOSCIS. Huma prolongação dos narizes, que se
+                              observa em alguns animaes. Elephas. PUPILLA. A menina do olho; as suas
+                              figuras saõ as seguintes. - Orbicularis. Sendo redonda, e neste caso
+                              he propria dos animaes diurnos. - Perpendicularis &amp; transversalis.
+                              Sendo a linha perpendicular, ou transversal, propria aos
+                              nocturnos.</div>
+                        <div type="letra"><head>R.</head> RETRACTILIS. Diz-se da parte dos animaes,
+                              quando eles a podem voluntariamente recolher, e lançar fora, como se
+                              observa em varios v.g. as unhas do Gato.</div>
+                        <div type="letra"><head>S.</head> SAGITTATUS. He todo aquelle corpo, que
+                              acaba em ponta de lança, ou setta. SCABER. Denota todo aquelle corpo,
+                              que he de superfície aspera ao nosso tacto. <pb n="11"/> SCUTUM. Isto
+                              mostra-nos em os Mammaes a uniaõ, que as escamas (feitas pela uniaõ
+                              dos pelos) formaõ entre si, cobrindo desta forma todo o corpo do
+                              animal, dentro de que ele se esconde, e se livra dos inimigos, e
+                              injurias do tempo. Dasypus. SEMICAUDATUS. Com meia cauda. SESSILIS.
+                              Qualquer parte do animal, que se une a outra, que lhe fica contigua,
+                              sem intermedio algum. SETA. Pello rijo como o do Porco. SOLITARIUS. He
+                              a parte do animal, que naõ tem outra, que a acompanhe, ou lhe
+                              corresponda da mesma parte. SQUAMA. Isto indica nos Mammaes huns
+                              pequenos escudos triangulares feitos pela uniaõ dos pelos, porem cada
+                              triangulo he distincto sobre si. Manis. STRIATUS. Escanelado, ou
+                              excavado muito superficialmente ao comprido. Simia maimon, genis
+                              striatis. SUB. Linnèo servio-se muitas vezes desta particula para
+                              significar quasi v.g. subbarbatus quasi barbado, ou com alguma barba.
+                              SUCCENTURIATUS. Derivado de Succedaneus diz-se de toda a parte, que
+                              imediatamente ocorre á falta de outra, como se observa nos escudos
+                              abdominaes das serpentes, e nas pequenas ungulas, que se observaõ
+                              acima do tarso no pé das pecoras Bos, Capra. SULCATUS. Superficie com
+                              excavaçoens ao comprido mais profundas, do que quando he Striatus.
+                              SUTURA. Tambem se aplica este termo a divizaõ dos pelos, quando eles
+                              se apartaõ huns com a direcçaõ opposta aos outros.</div>
+                        <pb n="12"/>
+                        <div type="letra"><head>V.</head>
+                              <s>VERRUCA. Verruga, ou <term lemma="tubérculo">tuberculo</term> duro,
+                                    que está na pelle.</s> - Setifera. Com pelos rijos, ou sedas
+                              como de porcos. VIBRISSA. Pellos ao redos das ventas. <s>VIBRISSATUS.
+                                    Com <term lemma="vibrissa">vibrissas</term>, ou pelos rijos, os
+                                    quaes existem em alguns Mammaes.</s> VILLOSUS. Cheio de pellos.
+                              UNGUIS. Unha. Saõ as unhas agudas, e penetrantes próprias das feras,
+                              com que naõ só dilaceraõ, mas ainda apanhaõ a preza. - Complanatus.
+                              Unha aplanada, ou chata. - Ovalis. De figura oval. - Retractatilis.
+                              Unha, que sahe, e se recolhe a arbitrio do animal, como no Gato. -
+                              Subulatus. Aguda na extremidade quase a modo de sovela. - Validus.
+                              Rija. UNGULA. Indica os cascos das Belluas, que naõ saõ divididos
+                              entre si. Equus. Porem se saõ dous, isto he, se se dividem em dous,
+                              entaõ denominaõ-se bisulcos. Aldrovandi.</div>
+                        <div type="letra"><head>T.</head> TALUM. Significa o calcanhar nos Mammaes,
+                              o qual serve para eles se sustentarem em pé, como se vê no Homem, e no
+                              Urso. TOPHUS. Chama-se huma callozidade dura, e prominente, que se
+                              observa no dorso dos Camelos.</div>
+                        <pb n="13"/>
+                        <div type="letra">
+                              <head>Z.</head>
+                              <entry>
+                                    <form>ZOOLOGIA.</form>
+                                    <sense>Sciencia, que versa sobre o conhecimento dos
+                                          animaes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ZOOLOGUS.</form>
+                                    <sense>Author, que escreveo da mesma Sciencia.</sense>
+                              </entry>
+                        </div>
+                  </div>
                   <div type="parte"><head>CLASSE II AVES.</head> A ABDOMEN. He aquella parte, que
                         contem o canal intestinal, figado, lien, ou baço, pancreas, rins, bexiga da
                         urina, e partes da geraçaõ: alem disto he a parte molle inferior ao dorso, e
