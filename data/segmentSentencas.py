@@ -1,6 +1,8 @@
 """
 Este código usa spaCy para segmentar as sentenças que estão dentro
 de um elemento <p>. Foi escrito pelo Guilherme Mendes Vieira.
+O código precisa ser corrigido porque não está segmentando adequadamente
+quando dentro do parágrafo há outros elementos como <s> e <pb/>.
 """
 import spacy
 import xml.etree.ElementTree as ET
