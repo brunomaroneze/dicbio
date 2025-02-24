@@ -12,7 +12,7 @@ O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a par
 
 O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
 
-Atualmente, o projeto conta com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
 
 
 <div id="objetivos"></div>
