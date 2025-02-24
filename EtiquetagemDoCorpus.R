@@ -10,29 +10,22 @@ library(dplyr)
 #library(sqldf)
 
 
-# Lê os arquivos XML e junta todos num único:
-corpusVandelli <- readChar("data/diciovandelli.xml", file.info("data/diciovandelli.xml")$size)
-corpusVandelli <- gsub("^.+?\\n(.*)","\\1", corpusVandelli) #tira a primeira linha
-corpusVandelli <- gsub("^.+?\\n(.*)","\\1", corpusVandelli) #tira a segunda linha
+# Ler os arquivos XML
+xml_vandelli <- read_xml("data/diciovandelli.xml")
+xml_santucci <- read_xml("data/anatomiasantucci.xml")
+xml_brotero <- read_xml("data/compendio1brotero.xml")
 
-corpusSantucci <- readChar("data/anatomiasantucci.xml", file.info("data/anatomiasantucci.xml")$size)
-corpusSantucci <- gsub("^.+?\\n(.*)","\\1", corpusSantucci) #tira a primeira linha
-corpusSantucci <- gsub("^.+?\\n(.*)","\\1", corpusSantucci) #tira a segunda linha
+# Definir o namespace do TEI
+tei_ns <- c(tei = "http://www.tei-c.org/ns/1.0")
 
-corpusBrotero <- readChar("data/compendio1brotero.xml", file.info("data/compendio1brotero.xml")$size)
-corpusBrotero <- gsub("^.+?\\n(.*)","\\1", corpusBrotero) #tira a primeira linha
-corpusBrotero <- gsub("^.+?\\n(.*)","\\1", corpusBrotero) #tira a segunda linha
+# Combinar os arquivos em um único corpus
+corpus <- xml_new_root("corpus")
+xml_add_child(corpus, xml_vandelli)
+xml_add_child(corpus, xml_santucci)
+xml_add_child(corpus, xml_brotero)
 
-corpustotal <- paste("<corpus>", corpusVandelli, "\\n",
-                     corpusSantucci, "\\n", corpusBrotero, "</corpus>")
-
-
-# Lê a árvore XML do corpus total, extrai todos os termos e atributos
-CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
-#corpusRoot <- xml_root(CorpusXML)
-
-terms <- xml_find_all(CorpusXML, "//term")
-tokenTerms <- xml_text(terms) %>% str_squish()  # Remove quebras de linha e espaços extras
+terms <- xml_find_all(corpus, "//tei:term", tei_ns)
+tokenTerms <- xml_text(terms)
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
@@ -54,7 +47,7 @@ for(i in 1:length(terms)){
 
 # Extrai todas as sentenças e limpa as marcações
   token_sentence[i] <- as.character(xml_find_first(terms[i],
-                                                   xpath = "./ancestor::s"))
+                                                   xpath = "string(./ancestor::*[1])"))
   token_sentence[i] <- delete.markup(token_sentence[i], markup.type = "xml")
 
 # Substitui as marcas inseridas pelas marcas de negrito
@@ -65,47 +58,26 @@ for(i in 1:length(terms)){
   xml_text(terms[i]) <- gsub("\\[b\\]", "", xml_text(terms[i]))
   xml_text(terms[i]) <- gsub("\\[xb\\]", "", xml_text(terms[i]))
 
-#Insere autor e data
-  author[i] <- as.character(xml_find_first(terms[i],
-                                       xpath = "string(./ancestor::text/@author)"))
-  date[i] <- as.character(xml_find_first(terms[i],
-                                       xpath = "string(./ancestor::text/@date)"))
+#Insere autor e data - correção pelo DeepSeek
+  author_full <- xml_text(xml_find_first(terms[i],
+                                       xpath = ".//ancestor::tei:TEI//tei:author", tei_ns))
+  date[i] <- xml_text(xml_find_first(terms[i],
+                                       xpath = ".//ancestor::tei:TEI//tei:date", tei_ns))
+  # Extrair apenas o sobrenome (tudo antes da vírgula)
+  author[i] <- str_extract(author_full, "^[^,]+")
   
-# Insere números de páginas
-
-# Primeiro, testa para ver se dentro da sentença do termo tem alguma quebra
-  # de página
-  if(as.character(xml_find_first(terms[i],
-                      xpath = "string(./preceding-sibling::pb/@n)")) != ""){
- 
-  # Se tiver quebra de página, o número de página será a anterior mais a 
-    # seguinte, com um tracinho
-    
-    currentPage[i] <- as.character(xml_find_first(terms[i],
-                                     xpath = "string(./preceding-sibling::pb/@n)"))
-    previousPage[i] <- str_extract(as.character(head(tail(xml_find_all(terms[i],
-                                          xpath = "./preceding::pb/@n"), 2), n=1)),
-                                   "(?<=\").+(?=\")")
-
-    pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
-
-    
-  }else if(as.character(xml_find_first(terms[i],
-                               xpath = "string(./following-sibling::pb/@n)")) != ""){
-    
-    currentPage[i] <- as.character(xml_find_first(terms[i],
-                                            xpath = "string(./following-sibling::pb/@n)"))
-    previousPage[i] <- str_extract(as.character(head(tail(xml_find_all(terms[i],
-                                      xpath = "./preceding::pb/@n"), 1), n=1)),
-                                   "(?<=\").+(?=\")")
-    pageNumber[i] <- paste0(previousPage[i], "-", currentPage[i])
-    
-  }else{ # Se não tiver quebra de página, o número da página será o anterior
-    pageNumber[i] <- str_extract(as.character(tail(xml_find_all(terms[i],
-                                                    xpath = "./preceding::pb/@n"), 1)),
-                                 "(?<=\").+(?=\")")
+  # Verificar se há um <pb/> dentro do trecho de token_sentence
+  pb_current <- xml_find_first(terms[i], ".//tei:pb", tei_ns)
+  pb_preceding <- xml_find_first(terms[i], ".//preceding::tei:pb[1]", tei_ns)
+  
+  if (!is.na(pb_current)) {
+    # Se houver um <pb/> no trecho, usar o anterior e o atual
+    pageNumber[i] <- paste0(xml_attr(pb_preceding, "n"), "-", xml_attr(pb_current, "n"))
+  } else {
+    # Se não houver <pb/> no trecho, usar apenas o anterior
+    pageNumber[i] <- xml_attr(pb_preceding, "n")
   }
-
+  
   token_sentence[i] <- paste0(token_sentence[i], " (", author[i],
                               ", ", date[i], ", p. ", pageNumber[i], ")")
 }
@@ -202,44 +174,7 @@ write(jsonlite::toJSON(DadosDoDicionario), file = "data/DadosDoDicionario.json")
 
 
 # Limpa a memória
-rm(author, date, x, i, terms, CorpusXML, token_gram, token_lemma, token_orth,
-   token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML,
-   m, n, consulta, DadosDoDicionario, Definitions)
-
-
-
-#-------------------------------------------------------
-# Este código abaixo tenta incluir a tag <s></s> em todas as sentenças
-# do texto. Não funciona porque algumas das sentenças são aplicadas
-# dentro de outras, como sentenças curtas ("L" por exemplo)
-
-#Dataframeteste1 <- CriaDataframeDados("anatomiasantucci.xml")
-#listasentencas <- unique(Dataframeteste1$sentence)
-
-#for(c in 1:length(listasentencas)){
-#  if(str_detect(listasentencas[c], regex("^\\<.+\\>$"))){
-#    listasentencas[c] <- ""
-#  } else if(listasentencas[c] == "<!"){
-#    listasentencas[c] <- ""
-#  }else if(str_detect(listasentencas[c], "DOCTYPE")){
-#    listasentencas[c] <- ""
-#  }else if(str_detect(listasentencas[c], regex("^\\<s>"))){
-#    listasentencas[c] <- ""
-#  }
-#  listasentencas <- listasentencas[listasentencas != ""]
-#}
-
-#for(d in 1:length(listasentencas)){
-#    listasentencas[d] <- str_replace(listasentencas[d], regex("^<.+>"), "")
-  
-#}
-
-#for(e in 1:length(listasentencas)){
-#  teste2 <- str_replace(teste2, listasentencas[e],
-#                        paste0("<s>", listasentencas[e], "</s>"))
-#}  
-
-#arquivo <- file("arquivo.txt")
-#writeLines(teste2, arquivo)
-#-------------------------------------------------------
+rm(author, date, x, i, terms, corpus, token_gram, token_lemma, token_orth,
+   token_senseNumber, token_sentence, tokenTerms, DataFrameTotalXML,
+   n, DadosDoDicionario, Definitions, author_full,  xml_brotero, xml_santucci,
+   xml_vandelli, tei_ns, pb_current, pb_preceding)

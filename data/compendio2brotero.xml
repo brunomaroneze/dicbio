@@ -1,41 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE text SYSTEM "corpus.dtd">
-<text author="BROTERO, Felix Avellar" title="Compendio de Botanica" date="1788">
-    <front>COMPENDIO DE BOTANICA, OU NOÇOENS ELEMENTARES DESTA SCIENCIA, segundo os melhores
-        Escritores modernos, expostas na lingua Portugueza, Por FELIX AVELLAR BROTERO. TOMO SEGUNDO. <foreign
-            lang="latim">Nisi in ordines redigantur Plantae et velut castrorum acies destribuantur
-        in suas classes, omnia fluctuari necesse est. Caesalp.</foreign> PARIS. Vende-se em Lisboa,
-        em caza de PAULO MARTIN, Mercador de Livros. M,DCC,LXXXVIII.</front>
-    <body><pb n="3" /> EXPOSIÇAÕ DO SYSTEMA SEXUAL. CAPITULO I. Do Systema de Linneo, e das suas
-        Classes e Ordens em geral. <p>O engenhoso Systema de Linneo, cuja exposiçaõ deve occupar o
-        primeiro lugar deste Volume, he fundado nos organos sexuaes das flores, e dirigido a classar
-        todos os modos, com que elles podem existir nos vegetaes: esta foy a razaõ porque o seu
-        autor lhe deo o nome de Systema Sexual (Systema Sexuale). Cada hum destes differentes modos
-        reune hum certo numero de relaçoẽs geraes, gradativamente deduzidas da Florecencia, e nesta
-        reuniaõ he que foraõ estabelecidas as vinte e quatro classes, de que se compoem o dicto
-        Systema.</p> A Florecencia de todos os vegetaes conhecidos ou he bem destinctamente visivel
-        ou he clandestina. Na que he bem destinctamente visivel, os organos sexuaes saõ assaz
-        apparentes sem o soccorro do microscopio de maneira que ninguem os confundirà jamais nem com
-        as sementes nem com o tenro fructo. As <pb n="4" />plantas, cuja Florecencia he bem
-        destinctamente visivel, humas daõ na mesma especie flores todas hermaphroditas, outras daõ
-        flores masculinas e femininas taõbem na mesma especie: no primeiro cazo as flores
-        hermaphroditas ou tem os estames desapegados entre si e juntamente do pistillo<note>Naõ
-        saõ insertos ao pistillo, mas sim ao receptaculo, calys, ou corolla; e saõ soltos, isto he,
-        tem os filetes desadunados e igualmente as antheras.</note>, ou apegados entre si ou ao
-        pistillo<note>Isto he, insertos ao pistillo, ou parte equivalente a elle.</note> Se os
-        estames se achaõ desapegados, e saõ de comprimento inderterminado<note>Isto he, quando
-        dois delles naõ saõ sempre mais curtos nas flores de quatro e seis estames; e nas demais,
-        quando variaõ muito no comprimento na mesma especie ou individuo, sendo ora todos iguaes,
-        ora hum mais baxo, ora tres mais altos, &amp;c. e as vezes huns mais curtos outros mais altos
-        alternadamente como na Daphne.</note>, constituem as treze primeiras classes, que differem
-        humas das outras pelo numero dos dictos estames, e seu lugar de insersaõ<note>Isto he, pelo
-        apego da base do filete ao calys ou receptaculo.</note>. Na 1ª. classe ou Monandria<note>Os
-        que dezejarem saber as etymologias Gregas dos nomes das Classes e Ordens podem consultar o
-        Diccionario dos termos botanicos que ajuntei no fim deste Compendio.</note> as flores
-        constaõ de hum so estame, na 2ª. ou Diandria constaõ de dois, na 3ª. ou Triandria de tres,
-        na 4ª. ou Tetrandria de quatro, na 5ª. ou Pentrandria de cinco, na 6ª. ou Hexandria de seis,
-        na 7ª. ou Heptandria de sette, na 8ª. ou Octandria de oito, na 9ª. ou Enneandria de nove, na
-        10ª. ou Decandria de dez, na 11ª. ou Dodecandria de onze athe dezanove inclusivamente, na
-        12ª. ou Icosandria de vinte ou mais insertos ao calyz, na 13ª. ou Polyandria de numerosos </body>
-    <back></back>
-</text>
+<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Compendio de Botanica" de Brotero: Transcrição digital</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+                    (https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+                    Maroneze.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica</title>.
+                        <biblScope>Tomo segundo</biblScope>. <pubPlace>Paris</pubPlace>: Vende-se em
+                    Lisboa, em caza de Paulo Martin, mercador de livros, <date when="1788"
+                        >1788</date>. Disponível em:
+                    https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter
+                    as letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
+                <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
+                    rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
+                        <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+            </editorialDecl>
+            <projectDesc>
+                <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+                    Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+            </projectDesc>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
+                <titlePart type="desc">, OU NOÇOENS ELEMENTARES DESTA SCIENCIA, segundo os melhores
+                    Escritores modernos, expostas na lingua Portugueza,</titlePart>
+                <byline>Por <docAuthor>FELIX AVELLAR BROTERO</docAuthor>. TOMO SEGUNDO.</byline>
+                <epigraph>
+                    <p><foreign xml:lang="lat">Nisi in ordines redigantur Plantae et velut castrorum
+                            acies destribuantur in suas classes, omnia fluctuari necesse est.
+                            Caesalp.</foreign></p>
+                </epigraph>
+                <docImprint><pubPlace>PARIS</pubPlace>. Vende-se em Lisboa, em caza de PAULO MARTIN,
+                    Mercador de Livros. <docDate when="1788">M,DCC,LXXXVIII</docDate>.</docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="3"/>
+            <div type="Parte">
+                <head>EXPOSIÇAÕ DO SYSTEMA SEXUAL.</head>
+                <div type="chapter" n="1"><head>CAPITULO I. Do Systema de Linneo, e das suas Classes
+                        e Ordens em geral.</head>
+                    <p>O engenhoso Systema de Linneo, cuja exposiçaõ deve occupar o primeiro lugar
+                        deste Volume, he fundado nos organos sexuaes das flores, e dirigido a
+                        classar todos os modos, com que elles podem existir nos vegetaes: esta foy a
+                        razaõ porque o seu autor lhe deo o nome de Systema Sexual (Systema Sexuale).
+                        Cada hum destes differentes modos reune hum certo numero de relaçoẽs geraes,
+                        gradativamente deduzidas da Florecencia, e nesta reuniaõ he que foraõ
+                        estabelecidas as vinte e quatro classes, de que se compoem o dicto
+                        Systema.</p> <p>A Florecencia de todos os vegetaes conhecidos ou he bem
+                    destinctamente visivel ou he clandestina. Na que he bem destinctamente visivel,
+                    os organos sexuaes saõ assaz apparentes sem o soccorro do microscopio de maneira
+                    que ninguem os confundirà jamais nem com as sementes nem com o tenro fructo. As
+                        <pb n="4"/>plantas, cuja Florecencia he bem destinctamente visivel, humas
+                    daõ na mesma especie flores todas hermaphroditas, outras daõ flores masculinas e
+                    femininas taõbem na mesma especie: no primeiro cazo as flores hermaphroditas ou
+                    tem os estames desapegados entre si e juntamente do pistillo<note>Naõ saõ
+                        insertos ao pistillo, mas sim ao receptaculo, calys, ou corolla; e saõ
+                        soltos, isto he, tem os filetes desadunados e igualmente as
+                    antheras.</note>, ou apegados entre si ou ao pistillo<note>Isto he, insertos ao
+                        pistillo, ou parte equivalente a elle.</note> Se os estames se achaõ
+                    desapegados, e saõ de comprimento inderterminado<note>Isto he, quando dois
+                        delles naõ saõ sempre mais curtos nas flores de quatro e seis estames; e nas
+                        demais, quando variaõ muito no comprimento na mesma especie ou individuo,
+                        sendo ora todos iguaes, ora hum mais baxo, ora tres mais altos, &amp;c. e as
+                        vezes huns mais curtos outros mais altos alternadamente como na
+                        Daphne.</note>, constituem as treze primeiras classes, que differem humas
+                    das outras pelo numero dos dictos estames, e seu lugar de insersaõ<note>Isto he,
+                        pelo apego da base do filete ao calys ou receptaculo.</note>. Na 1ª. classe
+                    ou Monandria<note>Os que dezejarem saber as etymologias Gregas dos nomes das
+                        Classes e Ordens podem consultar o Diccionario dos termos botanicos que
+                        ajuntei no fim deste Compendio.</note> as flores constaõ de hum so estame,
+                    na 2ª. ou Diandria constaõ de dois, na 3ª. ou Triandria de tres, na 4ª. ou
+                    Tetrandria de quatro, na 5ª. ou Pentrandria de cinco, na 6ª. ou Hexandria de
+                    seis, na 7ª. ou Heptandria de sette, na 8ª. ou Octandria de oito, na 9ª. ou
+                    Enneandria de nove, na 10ª. ou Decandria de dez, na 11ª. ou Dodecandria de onze
+                    athe dezanove inclusivamente, na 12ª. ou Icosandria de vinte ou mais insertos ao
+                    calyz, na 13ª. ou Polyandria de numerosos </p></div>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>
