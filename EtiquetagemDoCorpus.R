@@ -24,21 +24,8 @@ xml_add_child(corpus, xml_vandelli)
 xml_add_child(corpus, xml_santucci)
 xml_add_child(corpus, xml_brotero)
 
-<<<<<<< HEAD
-corpustotal <- paste("<corpus>", corpusVandelli, "\\n",
-                     corpusSantucci, "\\n", corpusBrotero, "</corpus>")
-
-
-# Lê a árvore XML do corpus total, extrai todos os termos e atributos
-CorpusXML <- read_xml(corpustotal, encoding = "UTF-8", as_html = FALSE)
-#corpusRoot <- xml_root(CorpusXML)
-
-terms <- xml_find_all(CorpusXML, "//term")
-tokenTerms <- xml_text(terms) %>% str_squish()  # Remove quebras de linha e espaços extras
-=======
 terms <- xml_find_all(corpus, "//tei:term", tei_ns)
 tokenTerms <- xml_text(terms)
->>>>>>> TEI-XML
 token_lemma <- xml_attr(terms, attr = "lemma")
 token_orth <- xml_attr(terms, attr = "norm")
 token_gram <- xml_attr(terms, attr = "msd")
@@ -188,48 +175,7 @@ write(jsonlite::toJSON(DadosDoDicionario), file = "data/DadosDoDicionario.json")
 
 # Limpa a memória
 rm(author, date, x, i, terms, corpus, token_gram, token_lemma, token_orth,
-   token_senseNumber, token_sentence, tokenTerms, corpusVandelli,
-   corpusSantucci, corpusBrotero, corpustotal, DataFrameTotalXML,
-<<<<<<< HEAD
-   m, n, consulta, DadosDoDicionario, Definitions)
-
-
-
-#-------------------------------------------------------
-# Este código abaixo tenta incluir a tag <s></s> em todas as sentenças
-# do texto. Não funciona porque algumas das sentenças são aplicadas
-# dentro de outras, como sentenças curtas ("L" por exemplo)
-
-#Dataframeteste1 <- CriaDataframeDados("anatomiasantucci.xml")
-#listasentencas <- unique(Dataframeteste1$sentence)
-
-#for(c in 1:length(listasentencas)){
-#  if(str_detect(listasentencas[c], regex("^\\<.+\\>$"))){
-#    listasentencas[c] <- ""
-#  } else if(listasentencas[c] == "<!"){
-#    listasentencas[c] <- ""
-#  }else if(str_detect(listasentencas[c], "DOCTYPE")){
-#    listasentencas[c] <- ""
-#  }else if(str_detect(listasentencas[c], regex("^\\<s>"))){
-#    listasentencas[c] <- ""
-#  }
-#  listasentencas <- listasentencas[listasentencas != ""]
-#}
-
-#for(d in 1:length(listasentencas)){
-#    listasentencas[d] <- str_replace(listasentencas[d], regex("^<.+>"), "")
-  
-#}
-
-#for(e in 1:length(listasentencas)){
-#  teste2 <- str_replace(teste2, listasentencas[e],
-#                        paste0("<s>", listasentencas[e], "</s>"))
-#}  
-
-#arquivo <- file("arquivo.txt")
-#writeLines(teste2, arquivo)
-#-------------------------------------------------------
-=======
-   xml_brotero, xml_santucci, xml_vandelli, tei_ns, pb_current, pb_following, pb_preceding,
+   token_senseNumber, token_sentence, tokenTerms, DataFrameTotalXML,
+   n, DadosDoDicionario, Definitions, author_full,  xml_brotero, xml_santucci,
+   xml_vandelli, tei_ns, pb_current, pb_preceding,
    author_full)
->>>>>>> TEI-XML
