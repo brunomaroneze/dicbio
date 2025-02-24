@@ -45,17 +45,17 @@
 			<titlePage>
 				<docTitle>
 					<titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
-					<titlePart type="desc"> ou Noções elementares d'esta sciencia segundo os
-						melhores escriptores modernos expostas na Lingua Portugueza</titlePart>
+					<titlePart type="desc">, ou Noções elementares d'esta sciencia, segundo os
+						melhores escriptores modernos, expostas na Lingua Portugueza</titlePart>
 				</docTitle>
-				<byline>Por <docAuthor>Felix Avellar Brotero</docAuthor>. Tomo primeiro. </byline>
+				<byline>Por <docAuthor>FELIX AVELLAR BROTERO</docAuthor>. TOMO PRIMEIRO. </byline>
 				<epigraph>
-					<p>Perfectio Botanices ab individuorum singulorum inter se affinium, eorumque
-						identicorum characterum notitiâ essentialiter pendet. Necker. Physiol.
-						Muscor.</p>
+					<p><foreign xml:lang="lat">Perfectio Botanices ab individuorum singulorum inter
+							se affinium, eorumque identicorum characterum notitiâ essentialiter
+							pendet. Necker. Physiol. Muscor.</foreign></p>
 				</epigraph>
 				<docImprint>
-					<pubPlace>Paris</pubPlace>. Vende-se em Lisboa, em caza de Paulo Martin,
+					<pubPlace>PARIS</pubPlace>. Vende-se em Lisboa, em caza de Paulo Martin,
 					mercador de livros. <docDate when="1788">M,DCC,LXXXVIII.</docDate>
 				</docImprint>
 			</titlePage>

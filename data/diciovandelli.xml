@@ -46,14 +46,12 @@
                               <titlePart type="desc">EXTRAHIDOS Das Obras de Linnéo, com a sua
                                     explicaçaõ, e estampas abertas em cobre, para facilitar a
                                     intelligencia dos mesmos. E A MEMORIA SOBRE A UTILIDADE DOS
-                                          <term lemma="jardim botânico" norm="JARDINS BOTÂNICOS"
-                                          msd="plural">JARDINS BOTANICOS</term></titlePart>
+                                    JARDINS BOTANICOS</titlePart>
                         </docTitle>
                         <byline>QUE OFFERECE A RAYNHA D. MARIA I NOSSA SENHORA <docAuthor>DOMINGOS
-                                    VANDELLI</docAuthor> Director do Real <term
-                                    lemma="jardim botânico" norm="Jardim Botânico">Jardim
-                                    Botanico</term>, e Lente das Cadeiras de Chymica, e de Historia
-                              Natural na Universidade de Coimbra, &amp;c.</byline>
+                                    VANDELLI</docAuthor> Director do Real Jardim Botanico, e Lente
+                              das Cadeiras de Chymica, e de Historia Natural na Universidade de
+                              Coimbra, &amp;c.</byline>
                         <docImprint><pubPlace>COIMBRA</pubPlace> Na Real Officina da Universidade.
                                     <docDate when="1788">M DCC LXXXVIII</docDate>. Com licença da
                               Real Mesa da Cõmissaõ Geral sobre o Exame, e Censura dos Livros, Foi

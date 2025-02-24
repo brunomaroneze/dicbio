@@ -177,5 +177,4 @@ write(jsonlite::toJSON(DadosDoDicionario), file = "data/DadosDoDicionario.json")
 rm(author, date, x, i, terms, corpus, token_gram, token_lemma, token_orth,
    token_senseNumber, token_sentence, tokenTerms, DataFrameTotalXML,
    n, DadosDoDicionario, Definitions, author_full,  xml_brotero, xml_santucci,
-   xml_vandelli, tei_ns, pb_current, pb_preceding,
-   author_full)
+   xml_vandelli, tei_ns, pb_current, pb_preceding)
