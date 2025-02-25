@@ -563,43 +563,122 @@
                                           animal.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>F.</head> FASCICULUS. Hum ajuntamento de pellos, ou
-                              cabellos fora do natural. FISSUS PES. Pé com dedos divididos entre si.
-                              FISTULA. Abertura, ou tubo constante na cabeça do animal, como se pode
-                              observar na cabeça das Balêas, por meio do qual respiraõ, e lançaõ
-                              agua a grande altura. FOLLICULUS. He uma cavidade, ou pequena bexiga
-                              nas <term lemma="glândula" norm="glândulas" msd="plural"
-                                    >glandulas</term> entre as extremidades das arterias, veias, e
-                              ductus excretorios. - Abdominalis. No abdomen. <pb n="6"/> -
-                              Umbilicalis. No umbigo. Moschus. FRONS. Fronte. - Fastigiata. Cercada
-                              de pellos, assim de algum modo aguda.</div>
-                        <div type="letra"><head>G.</head> GLABER. Sem pellos, levigado.</div>
-                        <div type="letra"><head>H.</head> HELVOLUS. Côr parda entre branca, e
-                              vermelha. Leo. HIANS. He aquella parte, que deixa algum espaço aberto,
-                              quando se fecha. HYPOCONDRIUM. O espaço inferior ás costéllas, que
-                              continua até ao principio da coxa da perna, chamado vulgarmente o
-                              vazio.</div>
-                        <div type="letra"><head>I.</head> IMPINNIS. Sem barbatana. Balaena
-                              mysticetus. JUBA. Saõ os cabellos postos na parte superior do pescoço,
-                              chamado Cervix, a que daõ o nome de crinas. Equus, Bos bonasus,
-                              bison.</div>
-                        <div type="letra"><head>L.</head> LABIUM. A parte carnosa, que cobre a
-                              mandibula, chamada beiço. - Lacunosum. Com excavaçaõ no beiço superior
-                              do homem. - Bifidum. O beiço superior dividido. Lepus. - Geminatum.
-                              Beiço duplicado. Trichechus. - Varicosum. Beiço superior grosso, ou
-                              turgido. Noctilio americ. <pb n="7"/> LACUNA. Excavaçaõ, que se acha
-                              no beiço superior do homem. LINGUA. Lingua. - Simplex. Simples. -
-                                    <s>Denticulato-ciliata. Que tem na borda excavaçoes, e
-                                    prominencias agudas, e alem disso <term lemma="papila"
-                                          norm="papilas" senseNumber="3">papillas</term>, ou fibras
-                                    carnosas a modo de cilias.</s> - <s>Supra aculeata. Com aculeos,
-                                    ou <term lemma="papila" norm="papilas" senseNumber="3"
-                                          >papillas</term> rijas, e agudas na parte superior, como
-                                    no Gato.</s> - Filiformis. Da mesma largura em todo o
-                              comprimento. - Teres. Redonda. - Extensilis. Que se alonga, e se
-                              contrahe a arbitrio do animal. - Subciliata. Que tem na sua borda
-                              algumas cilias, ou fibras paralelas carnosas a modo de pastanas.
-                              Didelphis.</div>
+                        <div type="letra">
+                              <head>F.</head>
+                              <entry>
+                                    <form>FASCICULUS.</form>
+                                    <sense>Hum ajuntamento de pellos, ou cabellos fora do
+                                          natural.</sense>
+                              </entry>
+                              <entry>
+                                    <form>FISSUS PES.</form>
+                                    <sense>Pé com dedos divididos entre si.</sense>
+                              </entry>
+                              <entry>
+                                    <form>FISTULA.</form>
+                                    <sense>Abertura, ou tubo constante na cabeça do animal, como se
+                                          pode observar na cabeça das Balêas, por meio do qual
+                                          respiraõ, e lançaõ agua a grande altura.</sense>
+                              </entry>
+                              <entry>
+                                    <form>FOLLICULUS.</form>
+                                    <sense>He uma cavidade, ou pequena bexiga nas <term
+                                                lemma="glândula" norm="glândulas" msd="plural"
+                                                >glandulas</term> entre as extremidades das
+                                          arterias, veias, e ductus excretorios.</sense>
+                                    <entry>
+                                          <form>- Abdominalis.</form>
+                                          <sense>No abdomen</sense>
+                                    </entry>
+                                    <pb n="6"/>
+                                    <entry>
+                                          <form>- Umbilicalis.</form>
+                                          <sense>No umbigo. Moschus</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>FRONS.</form>
+                                    <sense>Fronte.</sense>
+                                    <entry>
+                                          <form>- Fastigiata.</form>
+                                          <sense>Cercada de pellos, assim de algum modo
+                                                aguda.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>G.</head>
+                              <entry>
+                                    <form>GLABER.</form>
+                                    <sense>Sem pellos, levigado.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>H.</head>
+                              <entry>
+                                    <form>HELVOLUS.</form>
+                                    <sense>Côr parda entre branca, e vermelha. Leo.</sense>
+                              </entry>
+                              <entry>
+                                    <form>HIANS.</form>
+                                    <sense>He aquella parte, que deixa algum espaço aberto, quando
+                                          se fecha.</sense>
+                              </entry>
+                              <entry>
+                                    <form>HYPOCONDRIUM.</form>
+                                    <sense>O espaço inferior ás costéllas, que continua até ao
+                                          principio da coxa da perna, chamado vulgarmente o
+                                          vazio.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>I.</head>
+                              <entry>
+                                    <form>IMPINNIS.</form>
+                                    <sense>Sem barbatana. Balaena mysticetus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>JUBA.</form>
+                                    <sense>Saõ os cabellos postos na parte superior do pescoço,
+                                          chamado Cervix, a que daõ o nome de crinas. Equus, Bos
+                                          bonasus, bison.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra"><head>L.</head>
+                              <entry>
+                                    <form>LABIUM.</form>
+                                    <sense>A parte carnosa, que cobre a mandibula, chamada
+                                          beiço.</sense>
+                                    <entry>
+                                          <form>- Lacunosum.</form>
+                                          <sense>Com excavaçaõ no beiço superior do homem.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Bifidum.</form>
+                                          <sense>O beiço superior dividido. Lepus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Geminatum.</form>
+                                          <sense>Beiço duplicado. Trichechus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Varicosum.</form>
+                                          <sense>Beiço superior grosso, ou turgido. Noctilio
+                                                americ.</sense>
+                                    </entry>
+                              </entry>
+                              <pb n="7"/>LACUNA. Excavaçaõ, que se acha no beiço superior do homem.
+                              LINGUA. Lingua. - Simplex. Simples. - <s>Denticulato-ciliata. Que tem
+                                    na borda excavaçoes, e prominencias agudas, e alem disso <term
+                                          lemma="papila" norm="papilas" senseNumber="3"
+                                          >papillas</term>, ou fibras carnosas a modo de cilias.</s>
+                              - <s>Supra aculeata. Com aculeos, ou <term lemma="papila"
+                                          norm="papilas" senseNumber="3">papillas</term> rijas, e
+                                    agudas na parte superior, como no Gato.</s> - Filiformis. Da
+                              mesma largura em todo o comprimento. - Teres. Redonda. - Extensilis.
+                              Que se alonga, e se contrahe a arbitrio do animal. - Subciliata. Que
+                              tem na sua borda algumas cilias, ou fibras paralelas carnosas a modo
+                              de pastanas. Didelphis.</div>
                         <div type="letra"><head>M.</head> MACULA. Malha. - Virgata. Malha com linhas
                               como vergas extendidas ao comprimento. - Triloba. Formada de três
                               segmentos de circulo unidos. MANICATUS. Chama-se assim todo o animal,

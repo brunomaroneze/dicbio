@@ -11,12 +11,13 @@ Atualmente, o dicionário contém 122 verbetes, com definições e informações
 
 A descrição do córpus, a equipe e outras informações relevantes encontram-se em "Documentação".
 
-Este projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte, e também conta com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+Este projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Também contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) no período de 2023 a 2024.
 
 Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
 
 ### Atualizações
 
+- 24 fevereiro 2025 - Inclusão do verbete "cóccix"
 - 22 fevereiro 2025 - Inclusão do verbete "cístico"
 - 06 fevereiro 2025 - Inclusão do verbete "caule"
 - 26 novembro 2024 - Inclusão do verbete "corólula"

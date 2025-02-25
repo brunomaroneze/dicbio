@@ -37,25 +37,6 @@ Contextos <- function(InputConsulta, SenseNumber) {
   return(ContextosTextoFormatados)
 }
 
-# Acrescenta a coluna das variantes gráficas a partir do dataframe
-# O código foi passado para o arquivo da etiquetagem do córpus
-
-#for (n in 1:length(data$Headword)) {
-#  data$VariantSpellings[n] <- paste(sort(unique
-#                                         (TokTextDF$variants
-#                                           [tolower(TokTextDF$Headword) == tolower(data$Headword)[n]])),
-#                                    collapse = ", ")
-#  if (data$VariantSpellings[n] == data$Headword[n]) {
-#    data$VariantSpellings[n] <- NA
-#  }
-#}
-
-# Cria uma lista com todas as variantes e lemas, a ser usada
-# na versão futura para incluir a pesquisa com variantes
-# listatotal <- sort(unique(c(TokTextDF$token,
-#                             TokTextDF$orth,
-#                             TokTextDF$Headword, data$Headword)))
-
 
 ui <- fluidPage(
   tags$body(HTML("<body data-spy = 'scroll' data-target = '.navbar' 
