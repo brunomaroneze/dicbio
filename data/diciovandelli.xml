@@ -644,7 +644,8 @@
                                           bonasus, bison.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>L.</head>
+                        <div type="letra">
+                              <head>L.</head>
                               <entry>
                                     <form>LABIUM.</form>
                                     <sense>A parte carnosa, que cobre a mandibula, chamada
@@ -667,35 +668,105 @@
                                                 americ.</sense>
                                     </entry>
                               </entry>
-                              <pb n="7"/>LACUNA. Excavaçaõ, que se acha no beiço superior do homem.
-                              LINGUA. Lingua. - Simplex. Simples. - <s>Denticulato-ciliata. Que tem
-                                    na borda excavaçoes, e prominencias agudas, e alem disso <term
-                                          lemma="papila" norm="papilas" senseNumber="3"
-                                          >papillas</term>, ou fibras carnosas a modo de cilias.</s>
-                              - <s>Supra aculeata. Com aculeos, ou <term lemma="papila"
-                                          norm="papilas" senseNumber="3">papillas</term> rijas, e
-                                    agudas na parte superior, como no Gato.</s> - Filiformis. Da
-                              mesma largura em todo o comprimento. - Teres. Redonda. - Extensilis.
-                              Que se alonga, e se contrahe a arbitrio do animal. - Subciliata. Que
-                              tem na sua borda algumas cilias, ou fibras paralelas carnosas a modo
-                              de pastanas. Didelphis.</div>
-                        <div type="letra"><head>M.</head> MACULA. Malha. - Virgata. Malha com linhas
-                              como vergas extendidas ao comprimento. - Triloba. Formada de três
-                              segmentos de circulo unidos. MANICATUS. Chama-se assim todo o animal,
-                              que tanto nas palmas das maõs, como nas plantas dos pés cria muito
-                              pello por meio do qual pode correr ligeiramente por entre os abrolhos.
-                              Lepus. MANULEATUS. He aquelle animal, cujas unhas saõ de figura oval.
-                              Homo, Simia. MAMMAE Pectorales Que estaõ no peito. - Abdominales. No
-                              abdomen. - Inguinales. Nas ingues, isto he, nas virilhas. MEMBRANA
-                              Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas vezes
-                              transparente, movel, posta debaixo da palpebra superior do olho, com a
-                              qual se cobre a pupilla de alguns animaes. Lepus, Homo Triglodytes.
-                              MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só femia.
-                              MUCRONATUS. A parte do animal, que acaba em ponta aguda. MUTICUS. Sem
-                              aculeos. Termo proprio aos animaes destituidos de unhas. <s>MYSTACES.
-                                    Saõ aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou
-                                    o Caõ, ao pè dos narizes, e assima da <term lemma="órbita"
-                                          >orbita</term> do olho, ou sobrancelha.</s></div>
+                              <pb n="7"/>
+                              <entry>
+                                    <form>LACUNA.</form>
+                                    <sense>Excavaçaõ, que se acha no beiço superior do
+                                          homem.</sense>
+                              </entry>
+                              <entry>
+                                    <form>LINGUA.</form>
+                                    <sense>Lingua.</sense>
+                                    <entry>
+                                          <form>- Simplex.</form>
+                                          <sense>Simples.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Denticulato-ciliata.</form>
+                                          <sense>Que tem na borda excavaçoes, e prominencias agudas,
+                                                e alem disso <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term>, ou fibras
+                                                carnosas a modo de cilias.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Supra aculeata.</form>
+                                          <sense>Com aculeos, ou <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term> rijas, e agudas na
+                                                parte superior, como no Gato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Filiformis.</form>
+                                          <sense>Da mesma largura em todo o comprimento.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Teres.</form>
+                                          <sense>Redonda.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Extensilis.</form>
+                                          <sense>Que se alonga, e se contrahe a arbitrio do
+                                                animal.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Subciliata.</form>
+                                          <sense>Que tem na sua borda algumas cilias, ou fibras
+                                                paralelas carnosas a modo de pastanas.
+                                                Didelphis.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra"><head>M.</head>
+                              <entry>
+                                    <form>MACULA.</form>
+                                    <sense>Malha.</sense>
+                                    <entry>
+                                          <form>- Virgata.</form>
+                                          <sense>Malha com linhas como vergas extendidas ao
+                                                comprimento.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Triloba.</form>
+                                          <sense>Formada de três segmentos de circulo
+                                                unidos.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>MANICATUS.</form>
+                                    <sense>Chama-se assim todo o animal, que tanto nas palmas das
+                                          maõs, como nas plantas dos pés cria muito pello por meio
+                                          do qual pode correr ligeiramente por entre os abrolhos.
+                                          Lepus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MANULEATUS.</form>
+                                    <sense>He aquelle animal, cujas unhas saõ de figura oval. Homo,
+                                          Simia.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MAMMAE Pectorales</form>
+                                    <sense>Que estaõ no peito.</sense>
+                                    <entry>
+                                          <form>- Abdominales.</form>
+                                          <sense>No abdomen.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Inguinales.</form>
+                                          <sense>Nas ingues, isto he, nas virilhas.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>MEMBRANA Nictitans.</form>
+                                    <sense>Membrana cartilaginosa, <pb n="8"/>muitas vezes
+                                          transparente, movel, posta debaixo da palpebra superior do
+                                          olho, com a qual se cobre a pupilla de alguns animaes.
+                                          Lepus, Homo Triglodytes.</sense>
+                              </entry> MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só
+                              femia. MUCRONATUS. A parte do animal, que acaba em ponta aguda.
+                              MUTICUS. Sem aculeos. Termo proprio aos animaes destituidos de unhas.
+                                    <s>MYSTACES. Saõ aquelles pellos compridos, e rijos, que tem
+                                    v.g. o Gato, ou o Caõ, ao pè dos narizes, e assima da <term
+                                          lemma="órbita">orbita</term> do olho, ou
+                              sobrancelha.</s></div>
                         <div type="letra"><head>N.</head> NARES. Narizes. - Bifidæ. Narizes ou
                               ventas divididas. - Elatæ. Levantadas para sima. - <s>Carunculatæ. Com
                                           <term lemma="tubérculo" norm="tubérculos" msd="plural">
