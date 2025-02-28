@@ -17,6 +17,7 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 
 ### Atualizações
 
+- 28 fevereiro 2025 - Inclusão do verbete "ensiforme"
 - 24 fevereiro 2025 - Inclusão do verbete "cóccix"
 - 22 fevereiro 2025 - Inclusão do verbete "cístico"
 - 06 fevereiro 2025 - Inclusão do verbete "caule"
