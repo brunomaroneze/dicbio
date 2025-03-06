@@ -6315,8 +6315,9 @@
 					<p>Celheada (ciliata), na arruda, e chagueira.</p>
 					<p>Glabra (glabra), se naõ tem pelos alguns (narcizo).</p>
 					<p>Denticulada de dois, tres, quatro, cinco dentes,
-						(bi-tri-quadri-quinquedentata), como saõ as corollulas das flores compostas,
-						v. g. as da alface, bonina, macella, gyrasol, &amp;c.</p>
+						(bi-tri-quadri-quinquedentata), como saõ as <term lemma="corólula"
+							norm="corólulas" msd="plural">corollulas</term> das flores compostas, v.
+						g. as da alface, bonina, macella, gyrasol, &amp;c.</p>
 					<p><s>Crenada ou crenulada (crenata, s crenulata), se tem na margem <term
 								lemma="crena" msd="plural">crenas</term> ou crenulas <note>
 								<s>As <term lemma="crena" msd="plural"> crenas</term> da corolla saõ
@@ -6485,8 +6486,9 @@
 							</note> em hum corpo cylindrico (o gyrasol, bonina, macella gallega, e
 							perpetua).</s></p>
 					<pb n="141"/>
-					<p><s>Corolla universal (universalis), he a totalidade das corollulas de muitos
-							flosculos relativos a huma umbrella universal (o coentro, salsa,
+					<p><s>Corolla universal (universalis), he a totalidade das <term
+								lemma="corólula" norm="corólulas" msd="plural">corollulas</term> de
+							muitos flosculos relativos a huma umbrella universal (o coentro, salsa,
 							canabraz, e canafrecha <note>
 								<s>Linneo da taõbem adequadamente o nome de corolla universal à
 									totalidade de algumas flores aggregadas, como às da scabiosa,

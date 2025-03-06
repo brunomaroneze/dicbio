@@ -29,6 +29,18 @@
                         <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento
                                     <gi>pb</gi> foi incluído antes da palavra, de modo a não
                               quebrá-la.</p>
+                        <p>Os verbetes do dicionário de Vandelli são por vezes muito longos,
+                              refletindo todas as possibilidades de classificação dos animais e
+                              plantas. Cada um está indicado com o elemento <gi>entry</gi>, com os
+                              elementos <gi>form</gi> e <gi>sense</gi> indicando, respectivamente, a
+                              cabeça do verbete em latim e a sua explicação em português. Quando há
+                              subentradas (em geral, nos casos das subclassificações animais e
+                              vegetais, cada uma marcada inicialmente com um travessão), também
+                              foram indicadas pelo elemento <gi>entry</gi>, com os respectivos
+                              elementos <gi>form</gi> e <gi>sense</gi>.</p>
+                        <p>Nos casos em que há quebra de parágrafo dentro do mesmo verbete, o
+                              segundo parágrafo está marcado como outro elemento <gi>sense</gi>,
+                              mesmo que não seja de fato uma segunda acepção.</p>
                   </editorialDecl>
                   <projectDesc>
                         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de
@@ -644,7 +656,8 @@
                                           bonasus, bison.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>L.</head>
+                        <div type="letra">
+                              <head>L.</head>
                               <entry>
                                     <form>LABIUM.</form>
                                     <sense>A parte carnosa, que cobre a mandibula, chamada
@@ -667,124 +680,474 @@
                                                 americ.</sense>
                                     </entry>
                               </entry>
-                              <pb n="7"/>LACUNA. Excavaçaõ, que se acha no beiço superior do homem.
-                              LINGUA. Lingua. - Simplex. Simples. - <s>Denticulato-ciliata. Que tem
-                                    na borda excavaçoes, e prominencias agudas, e alem disso <term
-                                          lemma="papila" norm="papilas" senseNumber="3"
-                                          >papillas</term>, ou fibras carnosas a modo de cilias.</s>
-                              - <s>Supra aculeata. Com aculeos, ou <term lemma="papila"
-                                          norm="papilas" senseNumber="3">papillas</term> rijas, e
-                                    agudas na parte superior, como no Gato.</s> - Filiformis. Da
-                              mesma largura em todo o comprimento. - Teres. Redonda. - Extensilis.
-                              Que se alonga, e se contrahe a arbitrio do animal. - Subciliata. Que
-                              tem na sua borda algumas cilias, ou fibras paralelas carnosas a modo
-                              de pastanas. Didelphis.</div>
-                        <div type="letra"><head>M.</head> MACULA. Malha. - Virgata. Malha com linhas
-                              como vergas extendidas ao comprimento. - Triloba. Formada de três
-                              segmentos de circulo unidos. MANICATUS. Chama-se assim todo o animal,
-                              que tanto nas palmas das maõs, como nas plantas dos pés cria muito
-                              pello por meio do qual pode correr ligeiramente por entre os abrolhos.
-                              Lepus. MANULEATUS. He aquelle animal, cujas unhas saõ de figura oval.
-                              Homo, Simia. MAMMAE Pectorales Que estaõ no peito. - Abdominales. No
-                              abdomen. - Inguinales. Nas ingues, isto he, nas virilhas. MEMBRANA
-                              Nictitans. Membrana cartilaginosa, <pb n="8"/>muitas vezes
-                              transparente, movel, posta debaixo da palpebra superior do olho, com a
-                              qual se cobre a pupilla de alguns animaes. Lepus, Homo Triglodytes.
-                              MONOGAMIA. Aquelles animaes, que conhecem taõ somente huma só femia.
-                              MUCRONATUS. A parte do animal, que acaba em ponta aguda. MUTICUS. Sem
-                              aculeos. Termo proprio aos animaes destituidos de unhas. <s>MYSTACES.
-                                    Saõ aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou
-                                    o Caõ, ao pè dos narizes, e assima da <term lemma="órbita"
-                                          >orbita</term> do olho, ou sobrancelha.</s></div>
-                        <div type="letra"><head>N.</head> NARES. Narizes. - Bifidæ. Narizes ou
-                              ventas divididas. - Elatæ. Levantadas para sima. - <s>Carunculatæ. Com
-                                          <term lemma="tubérculo" norm="tubérculos" msd="plural">
-                                          tuberculos</term>, ou <term lemma="carúncula"
-                                          norm="carúnculas" msd="plural">carunculas</term>. Sorex
-                                    cristatus.</s> - Cristatæ. Com crista. Erinaceus europæus.
-                              NASUS. Naso. - Infundibiliformis lanceolatus. A maneira de funil, e
-                              acaba em figura de lança. Vespertilio specirum. - <s>Foliatus planus
-                                    acuminatus. Tem huma membrana ao redor a modo de folha, acaba em
-                                    ponta. Vespertilio perspicillatus.</s> - <s>Foliato-obcerdatus.
-                                    Foliato, ou a maneira de folha, com figura de coraçaõ inverso.
-                                    Vespert: Spasma.</s> - Resimus. Narizes, ou ventas chatas com a
-                              extremidade revirada para sima. Linnéo serve-se deste termo para
-                              mostrar hum nariz chato, e como cortado.</div>
+                              <pb n="7"/>
+                              <entry>
+                                    <form>LACUNA.</form>
+                                    <sense>Excavaçaõ, que se acha no beiço superior do
+                                          homem.</sense>
+                              </entry>
+                              <entry>
+                                    <form>LINGUA.</form>
+                                    <sense>Lingua.</sense>
+                                    <entry>
+                                          <form>- Simplex.</form>
+                                          <sense>Simples.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Denticulato-ciliata.</form>
+                                          <sense>Que tem na borda excavaçoes, e prominencias agudas,
+                                                e alem disso <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term>, ou fibras
+                                                carnosas a modo de cilias.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Supra aculeata.</form>
+                                          <sense>Com aculeos, ou <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term> rijas, e agudas na
+                                                parte superior, como no Gato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Filiformis.</form>
+                                          <sense>Da mesma largura em todo o comprimento.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Teres.</form>
+                                          <sense>Redonda.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Extensilis.</form>
+                                          <sense>Que se alonga, e se contrahe a arbitrio do
+                                                animal.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Subciliata.</form>
+                                          <sense>Que tem na sua borda algumas cilias, ou fibras
+                                                paralelas carnosas a modo de pastanas.
+                                                Didelphis.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>M.</head>
+                              <entry>
+                                    <form>MACULA.</form>
+                                    <sense>Malha.</sense>
+                                    <entry>
+                                          <form>- Virgata.</form>
+                                          <sense>Malha com linhas como vergas extendidas ao
+                                                comprimento.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Triloba.</form>
+                                          <sense>Formada de três segmentos de circulo
+                                                unidos.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>MANICATUS.</form>
+                                    <sense>Chama-se assim todo o animal, que tanto nas palmas das
+                                          maõs, como nas plantas dos pés cria muito pello por meio
+                                          do qual pode correr ligeiramente por entre os abrolhos.
+                                          Lepus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MANULEATUS.</form>
+                                    <sense>He aquelle animal, cujas unhas saõ de figura oval. Homo,
+                                          Simia.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MAMMAE Pectorales</form>
+                                    <sense>Que estaõ no peito.</sense>
+                                    <entry>
+                                          <form>- Abdominales.</form>
+                                          <sense>No abdomen.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Inguinales.</form>
+                                          <sense>Nas ingues, isto he, nas virilhas.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>MEMBRANA Nictitans.</form>
+                                    <sense>Membrana cartilaginosa, <pb n="8"/>muitas vezes
+                                          transparente, movel, posta debaixo da palpebra superior do
+                                          olho, com a qual se cobre a pupilla de alguns animaes.
+                                          Lepus, Homo Triglodytes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MONOGAMIA.</form>
+                                    <sense>Aquelles animaes, que conhecem taõ somente huma só
+                                          femia.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MUCRONATUS.</form>
+                                    <sense>A parte do animal, que acaba em ponta aguda.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MUTICUS.</form>
+                                    <sense>Sem aculeos. Termo proprio aos animaes destituidos de
+                                          unhas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MYSTACES.</form>
+                                    <sense>Saõ aquelles pellos compridos, e rijos, que tem v.g. o
+                                          Gato, ou o Caõ, ao pè dos narizes, e assima da <term
+                                                lemma="órbita">orbita</term> do olho, ou
+                                          sobrancelha.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>N.</head>
+                              <entry>
+                                    <form>NARES.</form>
+                                    <sense>Narizes.</sense>
+                                    <entry>
+                                          <form>- Bifidæ.</form>
+                                          <sense>Narizes ou ventas divididas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Elatæ</form>
+                                          <sense>Levantadas para sima.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Carunculatæ.</form>
+                                          <sense>Com <term lemma="tubérculo" norm="tubérculos"
+                                                  msd="plural"> tuberculos</term>, ou <term
+                                                  lemma="carúncula" norm="carúnculas" msd="plural"
+                                                  >carunculas</term>. Sorex cristatus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cristatæ</form>
+                                          <sense>Com crista. Erinaceus europæus.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>NASUS.</form>
+                                    <sense>Naso.</sense>
+                                    <entry>
+                                          <form>- Infundibiliformis lanceolatus.</form>
+                                          <sense>A maneira de funil, e acaba em figura de lança.
+                                                Vespertilio specirum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Foliatus planus acuminatus.</form>
+                                          <sense>Tem huma membrana ao redor a modo de folha, acaba
+                                                em ponta. Vespertilio perspicillatus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Foliato-obcerdatus.</form>
+                                          <sense>Foliato, ou a maneira de folha, com figura de
+                                                coraçaõ inverso. Vespert: Spasma.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Resimus.</form>
+                                          <sense>Narizes, ou ventas chatas com a extremidade
+                                                revirada para sima. Linnéo serve-se deste termo para
+                                                mostrar hum nariz chato, e como cortado.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
                         <pb n="9"/>
-                        <div type="letra"><head>P.</head> PALEARIA. Saõ as pelles lassas, e
-                              pendentes debaixo da gûela em alguns animaes, aque se chama
-                              vulgarmente papada. Bos. PALMA. Palma da maõ. MANUS. Maõ. -
-                              Didactylis. Com dous dedos. - Tetradactylis. Com quatro dedos. -
-                              Fissa. Os dedos divididos sem membrana. - Palmata. Os dedos unidos
-                              entre si com membrana. PALPEBRA. Capellas dos olhos onde se achaõ
-                              postas as pestanas, que servem para cobrir o olho; e estas saõ os
-                              cabellos, que servem para desviar o pó do mesmo olho. PARALLELUS.
-                              Diz-se daquelas partes do animal, que sempre observaõ a mesma
-                              distancia entre si, sem que se possaõ encontrar, ainda que sejaõ
-                              produzidas. PEDES. Compedes. Nos Plagiuros, ou Cetaceos os pés
-                              posteriores formando huma pinna. PES. O pé. - Bisulcus. Pé dividido em
-                              dous, ou unhas fendidas. - Didactilus. Com dous dedos. - Fissus. Os
-                              dedos tem membrana. - Quadrilobus. Pés com 4 Prominencias, ou lobos na
-                              sua periferia. Hypopotamus. - Palmatus. Os dedos unidos por membrana.
-                              PILUS. Pello. - Reversus. Revirado para traz. - Fastigiatus. Que forma
-                              huma summidade aguda em torno de alguma parte. <pb n="10"/>- Erectus.
-                              Direito. - Perlucens. Resplandecente. - Patulus. Extendido. PINNA.
-                              Barbatana. - Adiposa. Pinna, ou barbatana formada dos tegumentos,
-                              entre os quaes se acha tella cellular com gordura. PINNATUS. Quando em
-                              lugar de braços tem barbatanas. PILEUM. Dá-se este nome a parte
-                              superior da cabeça, ou ao cabelo, que livra os Mammaes das injurias do
-                              tempo; isto he tomado restrictamente, todo o cabelo, que cobre a
-                              cabeça do animal. PROBOSCIS. Huma prolongação dos narizes, que se
-                              observa em alguns animaes. Elephas. PUPILLA. A menina do olho; as suas
-                              figuras saõ as seguintes. - Orbicularis. Sendo redonda, e neste caso
-                              he propria dos animaes diurnos. - Perpendicularis &amp; transversalis.
-                              Sendo a linha perpendicular, ou transversal, propria aos
-                              nocturnos.</div>
-                        <div type="letra"><head>R.</head> RETRACTILIS. Diz-se da parte dos animaes,
-                              quando eles a podem voluntariamente recolher, e lançar fora, como se
-                              observa em varios v.g. as unhas do Gato.</div>
-                        <div type="letra"><head>S.</head> SAGITTATUS. He todo aquelle corpo, que
-                              acaba em ponta de lança, ou setta. SCABER. Denota todo aquelle corpo,
-                              que he de superfície aspera ao nosso tacto. <pb n="11"/> SCUTUM. Isto
-                              mostra-nos em os Mammaes a uniaõ, que as escamas (feitas pela uniaõ
-                              dos pelos) formaõ entre si, cobrindo desta forma todo o corpo do
-                              animal, dentro de que ele se esconde, e se livra dos inimigos, e
-                              injurias do tempo. Dasypus. SEMICAUDATUS. Com meia cauda. SESSILIS.
-                              Qualquer parte do animal, que se une a outra, que lhe fica contigua,
-                              sem intermedio algum. SETA. Pello rijo como o do Porco. SOLITARIUS. He
-                              a parte do animal, que naõ tem outra, que a acompanhe, ou lhe
-                              corresponda da mesma parte. SQUAMA. Isto indica nos Mammaes huns
-                              pequenos escudos triangulares feitos pela uniaõ dos pelos, porem cada
-                              triangulo he distincto sobre si. Manis. STRIATUS. Escanelado, ou
-                              excavado muito superficialmente ao comprido. Simia maimon, genis
-                              striatis. SUB. Linnèo servio-se muitas vezes desta particula para
-                              significar quasi v.g. subbarbatus quasi barbado, ou com alguma barba.
-                              SUCCENTURIATUS. Derivado de Succedaneus diz-se de toda a parte, que
-                              imediatamente ocorre á falta de outra, como se observa nos escudos
-                              abdominaes das serpentes, e nas pequenas ungulas, que se observaõ
-                              acima do tarso no pé das pecoras Bos, Capra. SULCATUS. Superficie com
-                              excavaçoens ao comprido mais profundas, do que quando he Striatus.
-                              SUTURA. Tambem se aplica este termo a divizaõ dos pelos, quando eles
-                              se apartaõ huns com a direcçaõ opposta aos outros.</div>
+                        <div type="letra">
+                              <head>P.</head>
+                              <entry>
+                                    <form>PALEARIA.</form>
+                                    <sense>Saõ as pelles lassas, e pendentes debaixo da gûela em
+                                          alguns animaes, aque se chama vulgarmente papada.
+                                          Bos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PALMA.</form>
+                                    <sense>Palma da maõ.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MANUS.</form>
+                                    <sense>Maõ.</sense>
+                                    <entry>
+                                          <form>- Didactylis.</form>
+                                          <sense>Com dous dedos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Tetradactylis.</form>
+                                          <sense>Com quatro dedos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fissa.</form>
+                                          <sense>Os dedos divididos sem membrana.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Palmata.</form>
+                                          <sense>Os dedos unidos entre si com membrana.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PALPEBRA.</form>
+                                    <sense>Capellas dos olhos onde se achaõ postas as pestanas, que
+                                          servem para cobrir o olho; e estas saõ os cabellos, que
+                                          servem para desviar o pó do mesmo olho.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PARALLELUS.</form>
+                                    <sense>Diz-se daquelas partes do animal, que sempre observaõ a
+                                          mesma distancia entre si, sem que se possaõ encontrar,
+                                          ainda que sejaõ produzidas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PEDES Compedes.</form>
+                                    <sense>Nos Plagiuros, ou Cetaceos os pés posteriores formando
+                                          huma pinna.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PES.</form>
+                                    <sense>O pé.</sense>
+                                    <entry>
+                                          <form>- Bisulcus.</form>
+                                          <sense>Pé dividido em dous, ou unhas fendidas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Didactilus.</form>
+                                          <sense>Com dous dedos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fissus.</form>
+                                          <sense>Os dedos tem membrana.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Quadrilobus.</form>
+                                          <sense>Pés com 4 Prominencias, ou lobos na sua periferia.
+                                                Hypopotamus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Palmatus.</form>
+                                          <sense>Os dedos unidos por membrana.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PILUS.</form>
+                                    <sense>Pello.</sense>
+                                    <entry>
+                                          <form>- Reversus.</form>
+                                          <sense>Revirado para traz.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fastigiatus.</form>
+                                          <sense>Que forma huma summidade aguda em torno de alguma
+                                                parte.</sense>
+                                    </entry>
+                                    <pb n="10"/>
+                                    <entry>
+                                          <form>- Erectus.</form>
+                                          <sense>Direito.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Perlucens.</form>
+                                          <sense>Resplandecente.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Patulus.</form>
+                                          <sense>Extendido.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PINNA.</form>
+                                    <sense>Barbatana.</sense>
+                                    <entry>
+                                          <form>- Adiposa.</form>
+                                          <sense>Pinna, ou barbatana formada dos tegumentos, entre
+                                                os quaes se acha tella cellular com gordura.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PINNATUS.</form>
+                                    <sense>Quando em lugar de braços tem barbatanas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PILEUM.</form>
+                                    <sense>Dá-se este nome a parte superior da cabeça, ou ao cabelo,
+                                          que livra os Mammaes das injurias do tempo; isto he tomado
+                                          restrictamente, todo o cabelo, que cobre a cabeça do
+                                          animal.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PROBOSCIS.</form>
+                                    <sense>Huma prolongação dos narizes, que se observa em alguns
+                                          animaes. Elephas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PUPILLA.</form>
+                                    <sense>A menina do olho; as suas figuras saõ as
+                                          seguintes.</sense>
+                                    <entry>
+                                          <form>- Orbicularis.</form>
+                                          <sense>Sendo redonda, e neste caso he propria dos animaes
+                                                diurnos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Perpendicularis &amp; transversalis.</form>
+                                          <sense>Sendo a linha perpendicular, ou transversal,
+                                                propria aos nocturnos.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>R.</head>
+                              <entry>
+                                    <form>RETRACTILIS.</form>
+                                    <sense>Diz-se da parte dos animaes, quando eles a podem
+                                          voluntariamente recolher, e lançar fora, como se observa
+                                          em varios v.g. as unhas do Gato.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>S.</head>
+                              <entry>
+                                    <form>SAGITTATUS.</form>
+                                    <sense>He todo aquelle corpo, que acaba em ponta de lança, ou
+                                          setta.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SCABER.</form>
+                                    <sense>Denota todo aquelle corpo, que he de superfície aspera ao
+                                          nosso tacto.</sense>
+                              </entry>
+                              <pb n="11"/>
+                              <entry>
+                                    <form>SCUTUM.</form>
+                                    <sense>Isto mostra-nos em os Mammaes a uniaõ, que as escamas
+                                          (feitas pela uniaõ dos pelos) formaõ entre si, cobrindo
+                                          desta forma todo o corpo do animal, dentro de que ele se
+                                          esconde, e se livra dos inimigos, e injurias do tempo.
+                                          Dasypus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SEMICAUDATUS.</form>
+                                    <sense>Com meia cauda.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SESSILIS.</form>
+                                    <sense>Qualquer parte do animal, que se une a outra, que lhe
+                                          fica contigua, sem intermedio algum.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SETA.</form>
+                                    <sense>Pello rijo como o do Porco.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SOLITARIUS.</form>
+                                    <sense>He a parte do animal, que naõ tem outra, que a acompanhe,
+                                          ou lhe corresponda da mesma parte.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SQUAMA.</form>
+                                    <sense>Isto indica nos Mammaes huns pequenos escudos
+                                          triangulares feitos pela uniaõ dos pelos, porem cada
+                                          triangulo he distincto sobre si. Manis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>STRIATUS.</form>
+                                    <sense>Escanelado, ou excavado muito superficialmente ao
+                                          comprido. Simia maimon, genis striatis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SUB.</form>
+                                    <sense>Linnèo servio-se muitas vezes desta particula para
+                                          significar quasi v.g. subbarbatus quasi barbado, ou com
+                                          alguma barba.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SUCCENTURIATUS.</form>
+                                    <sense>Derivado de Succedaneus diz-se de toda a parte, que
+                                          imediatamente ocorre á falta de outra, como se observa nos
+                                          escudos abdominaes das serpentes, e nas pequenas ungulas,
+                                          que se observaõ acima do tarso no pé das pecoras Bos,
+                                          Capra.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SULCATUS.</form>
+                                    <sense>Superficie com excavaçoens ao comprido mais profundas, do
+                                          que quando he Striatus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SUTURA.</form>
+                                    <sense>Tambem se aplica este termo a divizaõ dos pelos, quando
+                                          eles se apartaõ huns com a direcçaõ opposta aos
+                                          outros.</sense>
+                              </entry>
+                        </div>
                         <pb n="12"/>
-                        <div type="letra"><head>V.</head>
-                              <s>VERRUCA. Verruga, ou <term lemma="tubérculo">tuberculo</term> duro,
-                                    que está na pelle.</s> - Setifera. Com pelos rijos, ou sedas
-                              como de porcos. VIBRISSA. Pellos ao redos das ventas. <s>VIBRISSATUS.
-                                    Com <term lemma="vibrissa">vibrissas</term>, ou pelos rijos, os
-                                    quaes existem em alguns Mammaes.</s> VILLOSUS. Cheio de pellos.
-                              UNGUIS. Unha. Saõ as unhas agudas, e penetrantes próprias das feras,
-                              com que naõ só dilaceraõ, mas ainda apanhaõ a preza. - Complanatus.
-                              Unha aplanada, ou chata. - Ovalis. De figura oval. - Retractatilis.
-                              Unha, que sahe, e se recolhe a arbitrio do animal, como no Gato. -
-                              Subulatus. Aguda na extremidade quase a modo de sovela. - Validus.
-                              Rija. UNGULA. Indica os cascos das Belluas, que naõ saõ divididos
-                              entre si. Equus. Porem se saõ dous, isto he, se se dividem em dous,
-                              entaõ denominaõ-se bisulcos. Aldrovandi.</div>
-                        <div type="letra"><head>T.</head> TALUM. Significa o calcanhar nos Mammaes,
-                              o qual serve para eles se sustentarem em pé, como se vê no Homem, e no
-                              Urso. TOPHUS. Chama-se huma callozidade dura, e prominente, que se
-                              observa no dorso dos Camelos.</div>
+                        <div type="letra">
+                              <head>V.</head>
+                              <entry>
+                                    <form>VERRUCA.</form>
+                                    <sense>Verruga, ou <term lemma="tubérculo">tuberculo</term>
+                                          duro, que está na pelle.</sense>
+                                    <entry>
+                                          <form>- Setifera.</form>
+                                          <sense>Com pelos rijos, ou sedas como de porcos.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>VIBRISSA.</form>
+                                    <sense>Pellos ao redos das ventas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>VIBRISSATUS.</form>
+                                    <sense>Com <term lemma="vibrissa">vibrissas</term>, ou pelos
+                                          rijos, os quaes existem em alguns Mammaes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>VILLOSUS.</form>
+                                    <sense>Cheio de pellos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>UNGUIS.</form>
+                                    <sense>Unha. Saõ as unhas agudas, e penetrantes próprias das
+                                          feras, com que naõ só dilaceraõ, mas ainda apanhaõ a
+                                          preza.</sense>
+                                    <entry>
+                                          <form>- Complanatus.</form>
+                                          <sense>Unha aplanada, ou chata.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Ovalis.</form>
+                                          <sense>De figura oval.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Retractatilis.</form>
+                                          <sense>Unha, que sahe, e se recolhe a arbitrio do animal,
+                                                como no Gato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Subulatus.</form>
+                                          <sense>Aguda na extremidade quase a modo de
+                                                sovela.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Validus.</form>
+                                          <sense>Rija.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>UNGULA.</form>
+                                    <sense>Indica os cascos das Belluas, que naõ saõ divididos entre
+                                          si. Equus. Porem se saõ dous, isto he, se se dividem em
+                                          dous, entaõ denominaõ-se bisulcos. Aldrovandi.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>T.</head>
+                              <entry>
+                                    <form>TALUM.</form>
+                                    <sense>Significa o calcanhar nos Mammaes, o qual serve para eles
+                                          se sustentarem em pé, como se vê no Homem, e no
+                                          Urso.</sense>
+                              </entry>
+                              <entry>
+                                    <form>TOPHUS.</form>
+                                    <sense>Chama-se huma callozidade dura, e prominente, que se
+                                          observa no dorso dos Camelos.</sense>
+                              </entry>
+                        </div>
                         <pb n="13"/>
                         <div type="letra">
                               <head>Z.</head>
@@ -799,408 +1162,1402 @@
                               </entry>
                         </div>
                   </div>
-                  <div type="parte"><head>CLASSE II AVES.</head> A ABDOMEN. He aquella parte, que
-                        contem o canal intestinal, figado, lien, ou baço, pancreas, rins, bexiga da
-                        urina, e partes da geraçaõ: alem disto he a parte molle inferior ao dorso, e
-                        que fica entre a ponta do sterno, e o ano. Tab.11.fig.2.i.k.l. ALAE.
-                        Naturalmente saõ duas em todas as Aves, fazem as vezes de pés anteriores, e
-                        servem para voar. p. ALULA. He huma pequena aza posta no pollex, que apenas
-                        consta de tres, ate sinco penas, onde muitas vezes existe huma espinha dura,
-                        com que se defendem a si, e mais á sua companhia, como se vê nas Parras, que
-                        naõ só se guardaõ a si, mas tambem as Gallinhas, que lhe saõ incumbidas a
-                        guardar. o. ANUS. Esta parte nas Aves, he commua tanto ás partes da geraçaõ,
-                        como aos excrementos. l. ARMA. Saõ as unhas, o bico, as espinhas postas <pb
-                              n="14"/>no pollex, e os esporoens. Parra, Phasianus. &amp;c.
-                              <s>ARMILLA. He hum circulo, ou annel corado, posto no fim da coxa da
-                              perna logo acima do joelho. Fulica. AURICULA. As aves naõ tem <term
-                                    lemma="aurícula" norm="aurículas" msd="plural" senseNumber="2"
-                                    >auriculas</term>, em seu lugar, tem algumas penas mais
-                              compridas, que cercaõ o buraco das orelhas.</s> ARTUS. Nas aves saõ as
-                        azas, os pés, e o uropigio. m. AXILLAE. Os lados do peito debaixo da baze
-                        das azas. B. BARBA. He composta de penas simplices, e he diferente, ou -
-                        Pectoris. No peito. Perũ. - Mystacces V. (Mammaes) - Vibrissae V. (Mammaes)
-                        BIFARIAM. Diz-se de qualquer parte do animal; que se divide em duas partes.
-                        BIPES. Animal, que tem dous pés, como se observa nas aves. BRACHIUM. He
-                        aquelle primeiro osso alongado, que se observa nas azas das Aves, onde naõ
-                        rezide pena alguma das Remiges. s. C. CALCARIA. Saõ humas unhas grossas, ou
-                        aculeos, que sahem da tibia na sua parte posterior, e que vulgarmente se
-                        chamaõ esporoens, com que tambem se defendem. Phasianus, Tetrao. CAPISTRUM.
-                        Margem da cabeça na baze do bico, que as vezes tem ao redor de si pelos
-                        rijos, revirados <pb n="15"/>para cima da baze do mesmo bico. Tab. III. Fig.
-                        2.a. Corvus. CAPUT. A cabeça das Aves ordinariamente he de figura oval.
-                        CARPUS. Saõ dous ossos breves immediatos ao cubito da aza. CARTILAGO. He uma
-                        substancia, que medéa entre a parte ossea, e tendinosa. <s>CARUNCULA. He
-                              huma substancia carnosa, nua, molle, que cobre, ou a cabeça, ou collo
-                              de algumas Aves, ou as sobrancelhas no Tretrao, Meleagris, Parra, e
-                              tambem no Gallo se observa a mesma <term lemma="carúncula"
-                                    norm="carúncula">caruncula</term>, a que o povo erradamente dá o
-                              nome de Crista, quando naõ he se naõ pennacea. Phasianus Gallus.</s> -
-                        Compressa. Comprimida nos lados Phasianus Gallus. - Lobata. Com abas. Parra.
-                        - Membranacea. De substancia, que parece membranoza. Meleagris. - In
-                        naribus. Ideo naribus carunculatis, nos narizes. Vultur Papa. - Spongiosa.
-                        Esponjoza. Meleagris. - Verticalis. No vertix, ou apice da cabeça. Vultur
-                        gryphus. CAUDA. Este termo he improprio nas Aves pela falta da continuação
-                        das vertebras, a cujo defeito suprem as penas, que estaõ postas no uropigio,
-                        as quaes lhe servem de leme, porem esta he diversa, a saber. Tab.II.fig.2.1.
-                        - Aequalis. O mesmo que integra. - Brachiura. He aquella cauda, que he mais
-                        breve, que os pés da Ave. Anas. - Cuneata. He aquella cauda, cujas pennas
-                        lateraes vaõ diminuindo pouco, a pouco a sua grandeza, <pb n="16"/>ficando
-                        assim menores, que as do meio. Anas. - Forficata. Sendo as pennas lateraes
-                        mais compridas, que as do meio. Falco Milvus. - Integra. Pela sua figura.
-                        Sendo as pennas todas iguaes. - Macroura. He mais comprida, que os pés da
-                        Ave. Pavo. - Mediocris. Do comprimento dos pès. CERA. He huma membrana
-                        corada, que veste, ou cobre a baze da mandibula superior, como nos
-                        Papagaios, e outras Aves. Tab.III.fig.Ia.Tab.II.fig.2.a. - <s>Carunculata.
-                              Com <term lemma="carúncula" norm="carúnculas" msd="plural"
-                                    >carunculas</term>. Columba tabelaria.</s> - Flava. De côr
-                        amarela mais clara. - Lutea. De côr amarela escura. - <s>Papillosa. Com
-                                    <term lemma="papila" norm="papilas" senseNumber="3"
-                                    >papillas</term>. Columba turcica.</s> - Viridis. Verde. CERVIX.
-                        V. Collum. CLAVICULA. Saõ dous ossos unidos entre si á maneira de forquilha,
-                        que se achaõ logo abaixo do jugolo, destinados para sustentarem as azas; o
-                        que tambem se observa no Homem, por serem as azas das Aves analogas aos
-                        braços do Homem. COLLUM. O pescoço: nas Aves he naturalmente alongado, e
-                        redondo desde o jugolo atè á cabeça; a parte superior deste chama-se cervix,
-                        b.d. a inferior gula. u.e. COMPEDES. Aves, que naõ podem caminhar, cujos
-                        fémores estaõ postos entre o tegumento do abdomen, ficando somente as
-                        tibias, e os dedos para a parte de fora. Alca. Colymbus. CORNUA. Saõ
-                        espinhos, ou aculeos da cabeça como na Palamedea e Meleagris satyra.
-                        CRYSSUM. He o lado inferior do uropigio, ou espaço, que está entre o ano, e
-                        o apice do <pb n="17"/>mesmo uropygio. Tab.II.fig.2.l.u. CRISTA. He a
-                        prolongação, que formaõ as pennas na cabeça da Aves, a qual tem varias
-                        figuras e direcçaõ. - Erecta. Levantada para sima. - Deflexa. Inclinada
-                        algum tanto para os lados. - Frontalis. Sendo posta na frente, ou testa. -
-                        Occipitalis. Na nuca. - Plicatilis. He aquella, que se abre, e fecha á
-                        maneira de leque. - Recurvata. He aquella, que sendo algum tanto curva,
-                        levanta a sua ponta para sima. - Verticalis. No meio da cabeça. - Complessa.
-                        Comprimida lateralmente. - Fasciculata. Em feixe, ou a maneira de pincel. -
-                        Globosa. Em forma de globo, como se vê em algumas galinhas. &amp;c. D
-                        DIGITI. Nas azas das Aves observaõ-se dous ossos delgados immediatos ao
-                        metacarpo, dos quaes sendo hum mais comprido tem duas articulaçoens, e o
-                        outro naõ tem articulaçaõ alguma. Estaõ pois os dedos dos pés dispostos de
-                        varios modos; ordinariamente três anteriores; por isto conforme o diferente
-                        modo, em que estaõ, formaõ varias especies de pés. V. Pes. DORSUM. He a
-                        parte superior do tronco, entre o pescoço, e a cauda. G.b. F FEMORA. Coxas.
-                        Saõ seminuas, ou naõ tem pennas na parte inferior, que fica assima dos
-                        joelhos. <pb n="18"/> FRONS. He aquella parte da cabeça das Aves, que
-                        principiando na base do bico continua até a parte superior da cabeça chamada
-                        vertex. V.Pileus.Tab.II.fig.2.u. G GENA. Em as Aves toma-se por aquelle
-                        espaço; que medea dos olhos á gûela. x. GIBBER Narium. Corcova nos narizes.
-                        Crax Globifena. GULA. A parte superior do pescoço, onde se une a cabeça. v.
-                        Collum, ou a parte externa, e inferior do pescoço, que corresponde á gûela,
-                        e ao ezofago. c.e. H HUMERI. À parte anterior das azas, que fica entre os
-                        ossos do braço, e a extremidade do cubito. i. HYPOCONDRIA. Os lados
-                        posteriores do peito, e do abdomen. I IMBRACATIM. As pennas dispostas a modo
-                        de telhas do telhado. IMPENNES. Saõ aquellas Aves, em que faltaõ as
-                        perfeitas remiges, como nas Aves do Oceano, Diomedaea exulante, e demersa,
-                        Phaetonte demerso, Alca impenni, em que as azas servem de pinnas peitoraes:
-                        e em outras, que sómente caminhaõ, como nas Emas. Struthio, Dido. INCUBATIO.
-                        Diz-se daquele tempo, em que as Aves cobrem os ovos, para extrahirem os
-                        fetos por meio do seu calor. INTERSCAPULIUM. Espaço do dorso anterior, que
-                        fica entre as azas. <pb n="19"/> J JUGULUM. A parte superior do pescoço onde
-                        este se une com o peito. e. L LINGUA. Termo bem conhecido que só precisa
-                        explicaçaõ, em quanto ás figuras differentes, que saõ as seguintes. - Acuta.
-                        Que acaba em ponta. - Bifida. Dividida na extremidade em duas partes.
-                        Vultur. - Brevissima. Muito mais pequena, que o bico. - Carnosa. De
-                        substancia carnosa, ou musculosa. Psittacus. - Cartilaginea. Formada de
-                        substancia cartilaginosa. - Ciliata. Quando tem nos seus lados, ou na margem
-                        prominencias miudas, e finas, parallelas. - Emarginata. Cuja extremidade tem
-                        huma excavaçaõ. - Filiformis. Que consta de dous fios unidos de modo que
-                        deixaõ hum tubo entre si. Trochilus. - Fissa. Cuja extremidade está hum
-                        pouco partida ou dividida. - Integra. Inteira, sem excavaçaõ nem divisaõ. -
-                        Lacera. Com a sua ponta dividida em muitas partes deziguaes. - Longissima.
-                        Mais comprida que o bico. - Lumbriciformis. De figura de minhoca. Yunx. -
-                        Obtusa. Cuja extremidade he obtuza. - Pennacea. Á maneira de huma pena.
-                        Ramphastos. - Plana. Cuja superfície he chata. - Teres. De figura
-                        cylindrica. - Truncata. Cuja ponta parece cortada. LORUM. Linha nua sem
-                        pennas que fica entre o angulo <pb n="20"/>anterior do olho ao bico, como se
-                        observa na Ardea e em outras Aves. y. M MACROURUS. Cauda mais comprida, que
-                        os pés. MEMBRANA Nictitans, V. nos Mammaes. MIGRATIO. He huma mudança que as
-                        Aves fazem de hum clima para outro a que vulgarmente se chama arribaçaõ.
-                        Turdus, Sturnus,Fringilla; <s>Destas arribaçoens succede muitas vezes termos
-                              varios peixes exoticos, e naõ menos plantas exoticas em os nossos
-                              paizes por cauza de as Aves naõ digerirem algumas <term
-                                    lemma="semente" msd="plural">sementes</term> e ovos.</s>
-                        <s>MYSTAX. He a barba ou pelos rijos ou <term lemma="vibrissa"
-                                    >vibrissas</term> reviradas para a parte da face, ou genas.
-                              Tab.III.fig.4.b.</s> N NARES. Os buracos das ventas estão no bico; ou
-                        mandibula superior, excepto porem no Ramfastro, e Bucero, que estaõ entre a
-                        frente e a baze do rostro. - Fornicatae. Arqueadas. - Lineares. Da mesma
-                        largura em todo o seu comprimento. Tab. III. Fig. 4. a. - Marginatae supra.
-                        Com margem na parte superior sahida para fora. Sturnus. - Oblongae.
-                        Compridas. - Ovatae. De figura oval. - Patulae. Bem abertas. Psophia. -
-                        Tubulosae. Com os tubos direitos. Cucullus. Com os tubos paralelos ao bico.
-                        Procellaria. <pb n="21"/>NUCHA. A parte superior do pescoço, onde este se
-                        une com a cabeça. Tab.II.fig.2.z. NUDA Cutis. Sem pennas nos dous lados do
-                        pescoço, da cabeça até ao interscapuleo, e dos sovacos, ou axillas das azas
-                        pelos lados do peito até as ingues, ou virilhas, e até aos femores
-                        posteriores. O <foreign lang="latim">OCCIPUT</foreign>. V. Pileus. ORBITA.
-                        He o espaço, que fica ao redor dos olhos. <s>OVUM. Ovo. Fig.I. e cavidade
-                              com ar. d. branco. b. <term senseNumber="2">gema</term>. a. punctum
-                              saliens, ou rudimento da Ave.</s> P PALEARE.V. Mammaes. Ardea
-                        pavonina. PALEARIA Curunculata. Numida. PALPEBRA. Capella dos olhos móvel, e
-                        ciliata, ou com pestanas. PECTUS. He a parte inferior do tronco, está
-                        cuberto com Iterno. PEDES aequilibres. Que servem para ter o corpo em
-                        equilibrio, á differença dos compedes, que naõ sustentaõ o corpo
-                        equilibrado. Diomedea exulans. <s>PEDICILLUM. He huma uniaõ de pellos, que
-                              cerca a <term lemma="glândula"> glandula</term>, ou poro oleifero, que
-                              está posto na parte superior do uropigio em as Aves.</s> m. <s>PENNA.
-                              Consta de huma base cylindrica, concava, que se extende pelo Rachis.
-                              (V. Rachis) arqueada para a parte inferior, liza superiormente, quasi
-                                    <term lemma="canaliculado" msd="feminino singular"
-                                    >canaliculada</term> na parte inferior, pinnata, com raios
-                              parallelos, cada hum dos quaes he quasi pinnato, e estaõ encostados,
-                              ou unidos entre si formando huma <pb n="22"/>figura convexa
-                              superiormente, e concava inferiormente, e o lado exterior mais
-                              apertado, o interior mais largo, o posterior pubescente, ou com
-                              lanugem, a parte anterior mais estreita.</s> - Lacera. Cujas pinnas
-                        estaõ divididas de tal modo, que parece despedaçada. Ardea grus. -
-                        Occellata. Assim como as penas rectrices do Pavaõ, que tem pintas de olhos.
-                        - Recurvata. Arqueada para sima. Anas galericulata. - Revoluta. Com as suas
-                        bordas reviradas. PES. Termo bem conhecido: só vamos a explicar as suas
-                        espécies, que saõ as seguintes. - Ambulatorius. Pé com três dedos anteriores
-                        desunidos totalmente, e hum posterior. Fig.10. - Cursorius. He aquelle, que
-                        tem taõ somente três dedos anteriores. Struthio Camelus. - Didactylus. O que
-                        só tem dous dedos anteriores. - Fissus. Chama-se aquelle pé, que tem os
-                        dedos livres, isto he, sem membrana. Motacilla. - Gressorius. He aquelle pé,
-                        cujo dedo do meio está algum tanto unido ao lateral, mas sem, membrana.
-                        Tab.II.fig.II. Phasianus. - Lobatus. Sendo a membrana dos pés das Aves
-                        dividida até á baze. Como saõ os dedos. Fig. 9. - Natatorius. Cujos dedos se
-                        unem huns aos outros por meio de huma membrana como nos Patos. Fig. 7. -
-                        Pinnatus. Quando a membrana está posta a cada huma articulação dos dedos de
-                        huma parte, e outra, bem como a figura de hum segmento de circulo. Fig 12. -
-                        Scansorius. He aquelle pé, que tem taõ somente <pb n="23"/>dous dedos para a
-                        parte anterior, e dous dedos para a posterior. Fig.8.Psittacus. Picus. -
-                        Semipalmatus. He quando a membrana liga taõ somente os dedos até ao meio. -
-                        Tridactylus. De três dedos. Picus tridactylus. PILEUS. He a parte superior
-                        da cabeça, ou o vértice dela superior ao rostro, aos olhos, e a nuca. A
-                        parte superior chama se Frons, a posterior Occiput, a que está no meio
-                        vertex. Tab.II. fig.2.A. PLUMA. Saõ pellos ramozos, cujos ramos saõ laxos,
-                        ou murchos, e estaõ espalhados sem ordem alguma. Ao redor de cada penna
-                        estaõ duas plumas. <s>PORUS Oleiferus. Da-se esta nome a huma <term
-                                    lemma="glândula">glandula</term>, que termina o dorso das Aves
-                              acima do uropigio, e que contem huma materia sebacea.</s> B. Q
-                              <s>QUINCUNX. Ordem com que as <term lemma="árvore" norm="árvores"
-                                    msd="plural">arvores</term> estaõ dispostas em certas distancia
-                              de maneira que por qualquer parte, que se olhe, sempre se vê o caminho
-                              recto, e as <term lemma="árvore" norm="árvores" msd="plural"
-                                    >arvores</term> em linha recta; deste modo tambem estaõ
-                              dispostas as penas nas aves, como se pode ver na Tab. II. Fig 2.
-                              C.</s> R RACHIS. He o eixo, ou raio solido, que passa pelo meio das
-                        penas das Aves, de cujos lados sahem outros tantos raios, que formando cada
-                        hum de per si huma penna, vem todos juntos entre si a formar hum só corpo, a
-                        que chamamos penna das Aves. <pb n="24"/> RECTRICES. Saõ as pennas da cauda
-                        pegadas em modo de pente, ou cilias ao uropygio; vulgarmente saõ doze, e
-                        contaõ-se da ultima até á do meio; em muitas Gallinhas, e Patos saõ mais de
-                        doze, em muitas Pegas saõ somente dez; que servem as Aves como leme, com que
-                        as mesmas Aves se propellem, e guiaõ o seu corpo. D. REMIGES Penne. Saõ
-                        pennas a modo de cilias ou pestanas inseridas no lado posterior das azas, e
-                        dispostas de tal modo que o lado de cada huma penna interiormente póde
-                        pôr-se debaixo da penna posterior de maneira, que fechada a aza, ficaõ as
-                        primeiras remiges debaixo das segundas. E. - Primores. Quase sempre saõ 10
-                        das quaes 4 saõ do dedo, e 6 do metacarpo. - Secundarie. Saõ 10 ate 20 e
-                        mais todas pegadas ao cúbito. As remiges primores quase sempre saõ mais
-                        apertadas, ou estreitas: As secundarias saõ mais largas e mais obtuzas.
-                        RICTUS. Abertura da boca ou do bico. ROSTRUM. O bico, cujas especies saõ as
-                        seguintes. - Aduncum. Encurvado na extremidade. Vultur. - Anceps. Agudo
-                        tanto na parte superior do bico como no inferior. Alca impennis. - Arcuatum.
-                        Arqueado. Tantalus. fig. 4. - Compressum. Comprimido dos lados. - Conicum.
-                        Que se vai adelgaçando pouco a pouco para a ponta. fig. 6 - Conico-ovatum.
-                        De figura conica oval. Lonia. - Cultratum. Representanto na parte superior o
-                        fio de huma faca. Picae. fig. 2. - Curvatum. Arqueado. Merops. <pb n="25"/>
-                        - Cylindricum. De figura de cylindro; porem naõ he totalmente cylindro,
-                        acabando em ponta. - Depressum. Chato tanto na parte superior, como na
-                        inferior. Anas. - Denticulatum. Com prominencias agudas na parte interior e
-                        nas margens de ambos os queixos, á maneira de dentes. Anas. - Emarginatum.
-                        Na margem do bico superior perto do ápice he excavado, ou tem sua margem
-                        cortada em hum pequeno segmento de circulo. Turdus. - Forsicatum. A maneira
-                        de tisoira; intrando o bico inferior na borda do superior. Loxia
-                        curvirosira. - Fornicatum. Com excavaçaõ no interior da mandibula superior.
-                        Phasianus. - Incurvatum. Alguma coiza encurvado. Trocbilus. - Incurvum.
-                        Quasi o mesmo que Incurvatum. - Infarctum. Como se fosse quebrado.
-                        Phoenicopterus. - Infarcto incurvatum. Como quebrado na extremidade,
-                        encurvado.Phoenicopterus. - Polyedrum. Que tem varios lados, e angulos.
-                        Picus. - Rectum. Quando as mandibulas naõ declinaõ para parte alguma. Sitta.
-                        - Recurvum. Com o bico virado para a parte superior. Mycteria. - Serratum.
-                        Quando os lados, ou margens de ambos os queixos estaõ cortados á maneira de
-                        serra.Ramphastos. - Simum. Com a extremidade chata, ou depressa. Anas
-                        tadorna. - Spatulatum. A maneira de espátula, ou chato e mais largo <pb
-                              n="26"/>na extremidade. Platalea. - Subcultratum.Quasi agudo á maneira
-                        do fio de huma faca.fig.2 . Paradisea. - Subulatum. Que acaba em ponta
-                        aguda, como huma sovela.fig4. Tanagra. Colymbus. - Teres. Redondo. -
-                        Uncinatum. Encurvado como hum anzol. Falco. - Uncinatum apice. Encurvado na
-                        extremidade bem como hum gancho. Palamedea. - Unguiculatum. Como se tivesse
-                        na extremidade huma unha, alguma coiza encurvada. fig. 3. Anas. -
-                        Ventricosum. Dilatado no meio, ou barrigudo. fig. 5. Cancroma. S SCAPUS
-                        Rectricum. V. Rachis. SPECULUM alarum. Malha ou pinta corada,
-                        resplandecente, pintada na superfície das tectrices, quando as azas estaõ
-                        fechadas, como se pode ver em algumas especies de Patos. SPINA Axillaris. O
-                        pollex na alula espúria tem hum bico, ou acúleo arqueado como em algumas
-                        aves. Palamedea, Parra, Struthio Camelus. E serve de arma alem do bico, e
-                        das unhas. STERNUM. He a parte mais elevada, que se observa no meio do peito
-                        das aves, imitando a figura de quilha. STRIGE. Muitas linhas irregulares
-                        coradas. Trogon Strigilatus. SUPERCILIUM. Linha superior á capella dos olhos
-                        totalmente diferente das outras linhas. T TEMPORA. Espaço entre os olhos, e
-                        as orelhas. Tab.III. fig.2 F. <pb n="27"/> TECTRICES. Da-se este nome
-                        áquellas pennas, que cobrem as azas, cauda, e uropígio, assim na parte
-                        superior, como na inferior; donde se dizem tectrices superiores e inferiores
-                        das azas, ou da cauda com duplicada ordem de pennas, que se cobrem entre si,
-                        porque aquellas, que saõ visinhas as remiges chamaõ-se ultime, e as
-                        superiores penultine. TIBIAE. Pernas r. estas naturalmente saõ redondas, nas
-                        aves aquaticas saõ compressas; nas Aguias, e em muitas aves nocturnas saõ
-                        cobertas de pennas. TRUNCUS. He de figura oval, e forma o corpo da Ave,
-                        d.e.b.l., contem o Dorsum, Interscapulium humeri, Pectus, Axillae,
-                        Hypocondria, Abdomen. V VERTEX. V. Pilens. VIBRISSE. Saõ huns cabelos postos
-                        em figura de pente nas fauces ou em outra parte. V. Barba. U. UNGUIS. As
-                        unhas na maior parte dos dedos saõ a modo de sovelas arqueadas, em outras
-                        aves saõ mais agudas, em algumas saõ marginadas na parte externa, ou tem a
-                        sua margem mais extendida; raras vezes saõ cortadas em modo de serra; os
-                        dedos raras saõ muticus, ou sem unhas. - Sessilis. Unhas sem dedos.
-                        Procellaria. UROPYGIUM. Rudimento da cauda, de figura subcordata, ou
-                        triangular, em que acaba o tronco, e que está posto assima do anus.
-                        B.m.u.</div>
+                  <div type="parte">
+                        <head>CLASSE II. AVES.</head>
+                        <div type="letra">
+                              <head>A.</head>
+                              <entry>
+                                    <form>ABDOMEN.</form>
+                                    <sense> He aquella parte, que contem o canal intestinal, figado,
+                                          lien, ou baço, pancreas, rins, bexiga da urina, e partes
+                                          da geraçaõ: alem disto he a parte molle inferior ao dorso,
+                                          e que fica entre a ponta do sterno, e o ano.
+                                          Tab.11.fig.2.i.k.l.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ALAE.</form>
+                                    <sense>Naturalmente saõ duas em todas as Aves, fazem as vezes de
+                                          pés anteriores, e servem para voar. p.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ALULA.</form>
+                                    <sense>He huma pequena aza posta no pollex, que apenas consta de
+                                          tres, ate sinco penas, onde muitas vezes existe huma
+                                          espinha dura, com que se defendem a si, e mais á sua
+                                          companhia, como se vê nas Parras, que naõ só se guardaõ a
+                                          si, mas tambem as Gallinhas, que lhe saõ incumbidas a
+                                          guardar. o.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANUS.</form>
+                                    <sense>Esta parte nas Aves, he commua tanto ás partes da
+                                          geraçaõ, como aos excrementos. l.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ARMA.</form>
+                                    <sense>Saõ as unhas, o bico, as espinhas postas <pb n="14"/>no
+                                          pollex, e os esporoens. Parra, Phasianus. &amp;c.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ARMILLA.</form>
+                                    <sense>He hum circulo, ou annel corado, posto no fim da coxa da
+                                          perna logo acima do joelho. Fulica. AURICULA. As aves naõ
+                                          tem <term lemma="aurícula" norm="aurículas" msd="plural"
+                                                senseNumber="2">auriculas</term>, em seu lugar, tem
+                                          algumas penas mais compridas, que cercaõ o buraco das
+                                          orelhas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ARTUS.</form>
+                                    <sense>Nas aves saõ as azas, os pés, e o uropigio. m.</sense>
+                              </entry>
+                              <entry>
+                                    <form>AXILLAE.</form>
+                                    <sense>Os lados do peito debaixo da baze das azas.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>B.</head>
+                              <entry>
+                                    <form>BARBA.</form>
+                                    <sense>He composta de penas simplices, e he diferente,
+                                          ou</sense>
+                                    <entry>
+                                          <form>- Pectoris.</form>
+                                          <sense>No peito. Perũ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Mystacces</form>
+                                          <sense>V. Mammaes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Vibrissae</form>
+                                          <sense>V. Mammaes.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>BIFARIAM.</form>
+                                    <sense>Diz-se de qualquer parte do animal; que se divide em duas
+                                          partes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>BIPES.</form>
+                                    <sense>Animal, que tem dous pés, como se observa nas
+                                          aves.</sense>
+                              </entry>
+                              <entry>
+                                    <form>BRACHIUM.</form>
+                                    <sense>He aquelle primeiro osso alongado, que se observa nas
+                                          azas das Aves, onde naõ rezide pena alguma das Remiges.
+                                          s.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>C.</head>
+                              <entry>
+                                    <form>CALCARIA.</form>
+                                    <sense>Saõ humas unhas grossas, ou aculeos, que sahem da tibia
+                                          na sua parte posterior, e que vulgarmente se chamaõ
+                                          esporoens, com que tambem se defendem. Phasianus,
+                                          Tetrao.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CAPISTRUM.</form>
+                                    <sense>Margem da cabeça na baze do bico, que as vezes tem ao
+                                          redor de si pelos rijos, revirados <pb n="15"/>para cima
+                                          da baze do mesmo bico. Tab. III. Fig. 2.a. Corvus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CAPUT.</form>
+                                    <sense>A cabeça das Aves ordinariamente he de figura
+                                          oval.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CARPUS.</form>
+                                    <sense>Saõ dous ossos breves immediatos ao cubito da
+                                          aza.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CARTILAGO.</form>
+                                    <sense>He uma substancia, que medéa entre a parte ossea, e
+                                          tendinosa.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CARUNCULA.</form>
+                                    <sense>He huma substancia carnosa, nua, molle, que cobre, ou a
+                                          cabeça, ou collo de algumas Aves, ou as sobrancelhas no
+                                          Tretrao, Meleagris, Parra, e tambem no Gallo se observa a
+                                          mesma <term lemma="carúncula" norm="carúncula"
+                                                >caruncula</term>, a que o povo erradamente dá o
+                                          nome de Crista, quando naõ he se naõ pennacea. Phasianus
+                                          Gallus.</sense>
+                                    <entry>
+                                          <form>- Compressa.</form>
+                                          <sense>Comprimida nos lados Phasianus Gallus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lobata.</form>
+                                          <sense>Com abas. Parra.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Membranacea.</form>
+                                          <sense>De substancia, que parece membranoza.
+                                                Meleagris.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- In naribus.</form>
+                                          <sense>Ideo naribus carunculatis, nos narizes. Vultur
+                                                Papa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Spongiosa.</form>
+                                          <sense>Esponjoza. Meleagris.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Verticalis.</form>
+                                          <sense>No vertix, ou apice da cabeça. Vultur
+                                                gryphus.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CAUDA.</form>
+                                    <sense>Este termo he improprio nas Aves pela falta da
+                                          continuação das vertebras, a cujo defeito suprem as penas,
+                                          que estaõ postas no uropigio, as quaes lhe servem de leme,
+                                          porem esta he diversa, a saber. Tab.II.fig.2.1.</sense>
+                                    <entry>
+                                          <form>- Aequalis.</form>
+                                          <sense>O mesmo que integra.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Brachiura.</form>
+                                          <sense>He aquella cauda, que he mais breve, que os pés da
+                                                Ave. Anas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cuneata.</form>
+                                          <sense>He aquella cauda, cujas pennas lateraes vaõ
+                                                diminuindo pouco, a pouco a sua grandeza, <pb n="16"
+                                                />ficando assim menores, que as do meio.
+                                                Anas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Forficata.</form>
+                                          <sense>Sendo as pennas lateraes mais compridas, que as do
+                                                meio. Falco Milvus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Integra.</form>
+                                          <sense>Pela sua figura. Sendo as pennas todas
+                                                iguaes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Macroura.</form>
+                                          <sense>He mais comprida, que os pés da Ave. Pavo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Mediocris.</form>
+                                          <sense>Do comprimento dos pès.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CERA.</form>
+                                    <sense>He huma membrana corada, que veste, ou cobre a baze da
+                                          mandibula superior, como nos Papagaios, e outras Aves.
+                                          Tab.III.fig.Ia.Tab.II.fig.2.a.</sense>
+                                    <entry>
+                                          <form>- Carunculata.</form>
+                                          <sense>Com <term lemma="carúncula" norm="carúnculas"
+                                                  msd="plural">carunculas</term>. Columba
+                                                tabelaria.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Flava.</form>
+                                          <sense>De côr amarela mais clara.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lutea.</form>
+                                          <sense>De côr amarela escura.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Papillosa.</form>
+                                          <sense>Com <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term>. Columba
+                                                turcica.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Viridis.</form>
+                                          <sense>Verde.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CERVIX.</form>
+                                    <sense>V. Collum.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CLAVICULA.</form>
+                                    <sense>Saõ dous ossos unidos entre si á maneira de forquilha,
+                                          que se achaõ logo abaixo do jugolo, destinados para
+                                          sustentarem as azas; o que tambem se observa no Homem, por
+                                          serem as azas das Aves analogas aos braços do
+                                          Homem.</sense>
+                              </entry>
+                              <entry>
+                                    <form>COLLUM.</form>
+                                    <sense>O pescoço: nas Aves he naturalmente alongado, e redondo
+                                          desde o jugolo atè á cabeça; a parte superior deste
+                                          chama-se cervix, b.d. a inferior gula. u.e.</sense>
+                              </entry>
+                              <entry>
+                                    <form>COMPEDES.</form>
+                                    <sense>Aves, que naõ podem caminhar, cujos fémores estaõ postos
+                                          entre o tegumento do abdomen, ficando somente as tibias, e
+                                          os dedos para a parte de fora. Alca. Colymbus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CORNUA.</form>
+                                    <sense>Saõ espinhos, ou aculeos da cabeça como na Palamedea e
+                                          Meleagris satyra.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CRYSSUM.</form>
+                                    <sense>He o lado inferior do uropigio, ou espaço, que está entre
+                                          o ano, e o apice do <pb n="17"/>mesmo uropygio.
+                                          Tab.II.fig.2.l.u.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CRISTA.</form>
+                                    <sense>He a prolongação, que formaõ as pennas na cabeça da Aves,
+                                          a qual tem varias figuras e direcçaõ.</sense>
+                                    <entry>
+                                          <form>- Erecta.</form>
+                                          <sense>Levantada para sima.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Deflexa.</form>
+                                          <sense>Inclinada algum tanto para os lados.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Frontalis.</form>
+                                          <sense>Sendo posta na frente, ou testa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Occipitalis.</form>
+                                          <sense>Na nuca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Plicatilis.</form>
+                                          <sense>He aquella, que se abre, e fecha á maneira de
+                                                leque.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recurvata.</form>
+                                          <sense>He aquella, que sendo algum tanto curva, levanta a
+                                                sua ponta para sima.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Verticalis.</form>
+                                          <sense>No meio da cabeça.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Complessa.</form>
+                                          <sense>Comprimida lateralmente.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fasciculata.</form>
+                                          <sense>Em feixe, ou a maneira de pincel.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Globosa.</form>
+                                          <sense>Em forma de globo, como se vê em algumas galinhas.
+                                                &amp;c.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>D.</head>
+                              <entry>
+                                    <form>DIGITI.</form>
+                                    <sense>Nas azas das Aves observaõ-se dous ossos delgados
+                                          immediatos ao metacarpo, dos quaes sendo hum mais comprido
+                                          tem duas articulaçoens, e o outro naõ tem articulaçaõ
+                                          alguma. Estaõ pois os dedos dos pés dispostos de varios
+                                          modos; ordinariamente três anteriores; por isto conforme o
+                                          diferente modo, em que estaõ, formaõ varias especies de
+                                          pés. V. Pes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>DORSUM.</form>
+                                    <sense>He a parte superior do tronco, entre o pescoço, e a
+                                          cauda. g.h.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>F.</head>
+                              <entry>
+                                    <form>FEMORA.</form>
+                                    <sense>Coxas. Saõ seminuas, ou naõ tem pennas na parte inferior,
+                                          que fica assima dos joelhos.</sense>
+                              </entry>
+                              <pb n="18"/>
+                              <entry>
+                                    <form>FRONS.</form>
+                                    <sense>He aquella parte da cabeça das Aves, que principiando na
+                                          base do bico continua até a parte superior da cabeça
+                                          chamada vertex. V.Pileus. Tab.II. fig.2.u.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>G.</head>
+                              <entry>
+                                    <form>GENA.</form>
+                                    <sense>Em as Aves toma-se por aquelle espaço; que medea dos
+                                          olhos á gûela. x.</sense>
+                              </entry>
+                              <entry>
+                                    <form>GIBBER Narium.</form>
+                                    <sense>Corcova nos narizes. Crax Globifena.</sense>
+                              </entry>
+                              <entry>
+                                    <form>GULA.</form>
+                                    <sense>A parte superior do pescoço, onde se une a cabeça. v.
+                                          Collum, ou a parte externa, e inferior do pescoço, que
+                                          corresponde á gûela, e ao ezofago. c.e.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>H.</head>
+                              <entry>
+                                    <form>HUMERI.</form>
+                                    <sense>À parte anterior das azas, que fica entre os ossos do
+                                          braço, e a extremidade do cubito. i.</sense>
+                              </entry>
+                              <entry>
+                                    <form>HYPOCONDRIA.</form>
+                                    <sense>Os lados posteriores do peito, e do abdomen.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>I.</head>
+                              <entry>
+                                    <form>IMBRACATIM.</form>
+                                    <sense>As pennas dispostas a modo de telhas do telhado.</sense>
+                              </entry>
+                              <entry>
+                                    <form>IMPENNES.</form>
+                                    <sense>Saõ aquellas Aves, em que faltaõ as perfeitas remiges,
+                                          como nas Aves do Oceano, Diomedaea exulante, e demersa,
+                                          Phaetonte demerso, Alca impenni, em que as azas servem de
+                                          pinnas peitoraes: e em outras, que sómente caminhaõ, como
+                                          nas Emas. Struthio, Dido.</sense>
+                              </entry>
+                              <entry>
+                                    <form>INCUBATIO.</form>
+                                    <sense>Diz-se daquele tempo, em que as Aves cobrem os ovos, para
+                                          extrahirem os fetos por meio do seu calor.</sense>
+                              </entry>
+                              <entry>
+                                    <form>INTERSCAPULIUM.</form>
+                                    <sense>Espaço do dorso anterior, que fica entre as azas.</sense>
+                              </entry>
+                              <pb n="19"/>
+                              <entry>
+                                    <form>JUGULUM.</form>
+                                    <sense>A parte superior do pescoço onde este se une com o peito.
+                                          e.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>L.</head>
+                              <entry>
+                                    <form>LINGUA.</form>
+                                    <sense>Termo bem conhecido que só precisa explicaçaõ, em quanto
+                                          ás figuras differentes, que saõ as seguintes.</sense>
+                                    <entry>
+                                          <form>- Acuta.</form>
+                                          <sense>Que acaba em ponta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Bifida.</form>
+                                          <sense>Dividida na extremidade em duas partes.
+                                                Vultur.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Brevissima.</form>
+                                          <sense>Muito mais pequena, que o bico.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Carnosa.</form>
+                                          <sense>De substancia carnosa, ou musculosa.
+                                                Psittacus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cartilaginea.</form>
+                                          <sense>Formada de substancia cartilaginosa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Ciliata.</form>
+                                          <sense>Quando tem nos seus lados, ou na margem
+                                                prominencias miudas, e finas, parallelas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Emarginata.</form>
+                                          <sense>Cuja extremidade tem huma excavaçaõ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Filiformis.</form>
+                                          <sense>Que consta de dous fios unidos de modo que deixaõ
+                                                hum tubo entre si. Trochilus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fissa.</form>
+                                          <sense>Cuja extremidade está hum pouco partida ou
+                                                dividida.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Integra.</form>
+                                          <sense>Inteira, sem excavaçaõ nem divisaõ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lacera.</form>
+                                          <sense>Com a sua ponta dividida em muitas partes
+                                                deziguaes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Longissima.</form>
+                                          <sense>Mais comprida que o bico.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lumbriciformis.</form>
+                                          <sense>De figura de minhoca. Yunx.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Obtusa.</form>
+                                          <sense>Cuja extremidade he obtuza.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Pennacea.</form>
+                                          <sense>Á maneira de huma pena. Ramphastos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Plana.</form>
+                                          <sense>Cuja superfície he chata.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Teres.</form>
+                                          <sense>De figura cylindrica.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Truncata.</form>
+                                          <sense>Cuja ponta parece cortada.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>LORUM.</form>
+                                    <sense>Linha nua sem pennas que fica entre o angulo <pb n="20"
+                                          />anterior do olho ao bico, como se observa na Ardea e em
+                                          outras Aves. y.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>M.</head>
+                              <entry>
+                                    <form>MACROURUS.</form>
+                                    <sense>Cauda mais comprida, que os pés.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MEMBRANA Nictitans.</form>
+                                    <sense>V. nos Mammaes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MIGRATIO.</form>
+                                    <sense>He huma mudança que as Aves fazem de hum clima para outro
+                                          a que vulgarmente se chama arribaçaõ. Turdus,
+                                          Sturnus,Fringilla; Destas arribaçoens succede muitas vezes
+                                          termos varios peixes exoticos, e naõ menos plantas
+                                          exoticas em os nossos paizes por cauza de as Aves naõ
+                                          digerirem algumas <term lemma="semente" msd="plural"
+                                                >sementes</term> e ovos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>MYSTAX.</form>
+                                    <sense>He a barba ou pelos rijos ou <term lemma="vibrissa"
+                                                >vibrissas</term> reviradas para a parte da face, ou
+                                          genas. Tab.III.fig.4.b.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>N.</head>
+                              <entry>
+                                    <form>NARES.</form>
+                                    <sense>Os buracos das ventas estão no bico; ou mandibula
+                                          superior, excepto porem no Ramfastro, e Bucero, que estaõ
+                                          entre a frente e a baze do rostro.</sense>
+                                    <entry>
+                                          <form>- Fornicatae.</form>
+                                          <sense>Arqueadas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lineares.</form>
+                                          <sense>Da mesma largura em todo o seu comprimento. Tab.
+                                                III. Fig. 4. a.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Marginatae supra.</form>
+                                          <sense>Com margem na parte superior sahida para fora.
+                                                Sturnus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Oblongae.</form>
+                                          <sense>Compridas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Ovatae.</form>
+                                          <sense>De figura oval.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Patulae.</form>
+                                          <sense>Bem abertas. Psophia.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Tubulosae.</form>
+                                          <sense>Com os tubos direitos. Cucullus. Com os tubos
+                                                paralelos ao bico. Procellaria.</sense>
+                                    </entry>
+                              </entry>
+                              <pb n="21"/>
+                              <entry>
+                                    <form>NUCHA.</form>
+                                    <sense>A parte superior do pescoço, onde este se une com a
+                                          cabeça. Tab.II.fig.2.z.</sense>
+                              </entry>
+                              <entry>
+                                    <form>NUDA Cutis.</form>
+                                    <sense>Sem pennas nos dous lados do pescoço, da cabeça até ao
+                                          interscapuleo, e dos sovacos, ou axillas das azas pelos
+                                          lados do peito até as ingues, ou virilhas, e até aos
+                                          femores posteriores.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>O.</head>
+                              <entry>
+                                    <form>OCCIPUT.</form>
+                                    <sense>V. Pileus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ORBITA.</form>
+                                    <sense>He o espaço, que fica ao redor dos olhos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>OVUM.</form>
+                                    <sense>Ovo. Fig.I. e cavidade com ar. d. branco. b. <term
+                                                senseNumber="2">gema</term>. a. punctum saliens, ou
+                                          rudimento da Ave.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>P.</head>
+                              <entry>
+                                    <form>PALEARE.</form>
+                                    <sense>V. Mammaes. Ardea pavonina.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PALEARIA Curunculata.</form>
+                                    <sense>Numida.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PALPEBRA.</form>
+                                    <sense>Capella dos olhos móvel, e ciliata, ou com
+                                          pestanas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PECTUS.</form>
+                                    <sense>He a parte inferior do tronco, está cuberto com
+                                          sterno.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PEDES aequilibres.</form>
+                                    <sense>Que servem para ter o corpo em equilibrio, á differença
+                                          dos compedes, que naõ sustentaõ o corpo equilibrado.
+                                          Diomedea exulans.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PEDICILLUM.</form>
+                                    <sense>He huma uniaõ de pellos, que cerca a <term
+                                                lemma="glândula"> glandula</term>, ou poro oleifero,
+                                          que está posto na parte superior do uropigio em as Aves.
+                                          m.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PENNA.</form>
+                                    <sense>Consta de huma base cylindrica, concava, que se extende
+                                          pelo Rachis. (V. Rachis) arqueada para a parte inferior,
+                                          liza superiormente, quasi <term lemma="canaliculado"
+                                                msd="feminino singular">canaliculada</term> na parte
+                                          inferior, pinnata, com raios parallelos, cada hum dos
+                                          quaes he quasi pinnato, e estaõ encostados, ou unidos
+                                          entre si formando huma <pb n="22"/>figura convexa
+                                          superiormente, e concava inferiormente, e o lado exterior
+                                          mais apertado, o interior mais largo, o posterior
+                                          pubescente, ou com lanugem, a parte anterior mais
+                                          estreita.</sense>
+                                    <entry>
+                                          <form>- Lacera.</form>
+                                          <sense>Cujas pinnas estaõ divididas de tal modo, que
+                                                parece despedaçada. Ardea grus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Occellata.</form>
+                                          <sense>Assim como as penas rectrices do Pavaõ, que tem
+                                                pintas de olhos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recurvata.</form>
+                                          <sense>Arqueada para sima. Anas galericulata.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Revoluta.</form>
+                                          <sense>Com as suas bordas reviradas.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PES.</form>
+                                    <sense>Termo bem conhecido: só vamos a explicar as suas
+                                          espécies, que saõ as seguintes.</sense>
+                                    <entry>
+                                          <form>- Ambulatorius.</form>
+                                          <sense>Pé com três dedos anteriores desunidos totalmente,
+                                                e hum posterior. Fig.10.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cursorius.</form>
+                                          <sense>He aquelle, que tem taõ somente três dedos
+                                                anteriores. Struthio Camelus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Didactylus.</form>
+                                          <sense>O que só tem dous dedos anteriores.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fissus.</form>
+                                          <sense>Chama-se aquelle pé, que tem os dedos livres, isto
+                                                he, sem membrana. Motacilla.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Gressorius.</form>
+                                          <sense>He aquelle pé, cujo dedo do meio está algum tanto
+                                                unido ao lateral, mas sem, membrana. Tab.II.fig.II.
+                                                Phasianus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lobatus.</form>
+                                          <sense>Sendo a membrana dos pés das Aves dividida até á
+                                                baze. Como saõ os dedos. Fig. 9.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Natatorius.</form>
+                                          <sense>Cujos dedos se unem huns aos outros por meio de
+                                                huma membrana como nos Patos. Fig. 7.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Pinnatus.</form>
+                                          <sense>Quando a membrana está posta a cada huma
+                                                articulação dos dedos de huma parte, e outra, bem
+                                                como a figura de hum segmento de circulo. Fig
+                                                12.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Scansorius.</form>
+                                          <sense>He aquelle pé, que tem taõ somente <pb n="23"/>dous
+                                                dedos para a parte anterior, e dous dedos para a
+                                                posterior. Fig.8.Psittacus. Picus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Semipalmatus.</form>
+                                          <sense>He quando a membrana liga taõ somente os dedos até
+                                                ao meio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Tridactylus.</form>
+                                          <sense>De três dedos. Picus tridactylus.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>PILEUS.</form>
+                                    <sense>He a parte superior da cabeça, ou o vértice dela superior
+                                          ao rostro, aos olhos, e a nuca.</sense>
+                                    <sense>A parte superior chama se Frons, a posterior Occiput, a
+                                          que está no meio vertex. Tab.II. fig.2.A.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PLUMA.</form>
+                                    <sense>Saõ pellos ramozos, cujos ramos saõ laxos, ou murchos, e
+                                          estaõ espalhados sem ordem alguma.</sense>
+                                    <sense>Ao redor de cada penna estaõ duas plumas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>PORUS Oleiferus.</form>
+                                    <sense>Da-se esta nome a huma <term lemma="glândula"
+                                                >glandula</term>, que termina o dorso das Aves acima
+                                          do uropigio, e que contem huma materia sebacea. B.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>Q.</head>
+                              <entry>
+                                    <form>QUINCUNX.</form>
+                                    <sense>Ordem com que as <term lemma="árvore" norm="árvores"
+                                                msd="plural">arvores</term> estaõ dispostas em
+                                          certas distancia de maneira que por qualquer parte, que se
+                                          olhe, sempre se vê o caminho recto, e as <term
+                                                lemma="árvore" norm="árvores" msd="plural"
+                                                >arvores</term> em linha recta; deste modo tambem
+                                          estaõ dispostas as penas nas aves, como se pode ver na
+                                          Tab. II. Fig 2. C.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>R.</head>
+                              <entry>
+                                    <form>RACHIS.</form>
+                                    <sense>He o eixo, ou raio solido, que passa pelo meio das penas
+                                          das Aves, de cujos lados sahem outros tantos raios, que
+                                          formando cada hum de per si huma penna, vem todos juntos
+                                          entre si a formar hum só corpo, a que chamamos penna das
+                                          Aves.</sense>
+                              </entry>
+                              <pb n="24"/>
+                              <entry>
+                                    <form>RECTRICES.</form>
+                                    <sense>Saõ as pennas da cauda pegadas em modo de pente, ou
+                                          cilias ao uropygio; vulgarmente saõ doze, e contaõ-se da
+                                          ultima até á do meio; em muitas Gallinhas, e Patos saõ
+                                          mais de doze, em muitas Pegas saõ somente dez; que servem
+                                          as Aves como leme, com que as mesmas Aves se propellem, e
+                                          guiaõ o seu corpo. D.</sense>
+                              </entry>
+                              <entry>
+                                    <form>REMIGES Pennae.</form>
+                                    <sense>Saõ pennas a modo de cilias ou pestanas inseridas no lado
+                                          posterior das azas, e dispostas de tal modo que o lado de
+                                          cada huma penna interiormente póde pôr-se debaixo da penna
+                                          posterior de maneira, que fechada a aza, ficaõ as
+                                          primeiras remiges debaixo das segundas. E.</sense>
+                                    <entry>
+                                          <form>- Primores.</form>
+                                          <sense>Quase sempre saõ 10 das quaes 4 saõ do dedo, e 6 do
+                                                metacarpo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Secundariae.</form>
+                                          <sense>Saõ 10 ate 20 e mais todas pegadas ao
+                                                cúbito.</sense>
+                                    </entry>
+                                    <sense>As remiges primores quase sempre saõ mais apertadas, ou
+                                          estreitas: As secundarias saõ mais largas e mais
+                                          obtuzas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>RICTUS.</form>
+                                    <sense>Abertura da boca ou do bico.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ROSTRUM.</form>
+                                    <sense>O bico, cujas especies saõ as seguintes.</sense>
+                                    <entry>
+                                          <form>- Aduncum.</form>
+                                          <sense>Encurvado na extremidade. Vultur. Tab. III. fig.
+                                                I.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Anceps.</form>
+                                          <sense>Agudo tanto na parte superior do bico como no
+                                                inferior. Alca impennis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Arcuatum.</form>
+                                          <sense>Arqueado. Tantalus. fig. 4.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Compressum.</form>
+                                          <sense>Comprimido dos lados.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Conicum.</form>
+                                          <sense>Que se vai adelgaçando pouco a pouco para a ponta.
+                                                fig. 6.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Conico-ovatum.</form>
+                                          <sense>De figura conica oval. Lonia.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cultratum.</form>
+                                          <sense>Representanto na parte superior o fio de huma faca.
+                                                Picae. fig. 2.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Curvatum.</form>
+                                          <sense>Arqueado. Merops.</sense>
+                                    </entry>
+                                    <pb n="25"/>
+                                    <entry>
+                                          <form>- Cylindricum.</form>
+                                          <sense>De figura de cylindro; porem naõ he totalmente
+                                                cylindro, acabando em ponta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Depressum.</form>
+                                          <sense>Chato tanto na parte superior, como na inferior.
+                                                Anas. fig. 3.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Denticulatum.</form>
+                                          <sense>Com prominencias agudas na parte interior e nas
+                                                margens de ambos os queixos, á maneira de dentes.
+                                                fig. 3. Anas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Emarginatum.</form>
+                                          <sense>Na margem do bico superior perto do ápice he
+                                                excavado, ou tem sua margem cortada em hum pequeno
+                                                segmento de circulo. Turdus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Forsicatum.</form>
+                                          <sense>A maneira de tisoira; intrando o bico inferior na
+                                                borda do superior. Loxia curvirostra.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Fornicatum.</form>
+                                          <sense>Com excavaçaõ no interior da mandibula superior.
+                                                Phasianus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Incurvatum.</form>
+                                          <sense>Alguma coiza encurvado. Trocbilus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Incurvum.</form>
+                                          <sense>Quasi o mesmo que Incurvatum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Infarctum.</form>
+                                          <sense>Como se fosse quebrado. Phoenicopterus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Infarcto incurvatum.</form>
+                                          <sense>Como quebrado na extremidade,
+                                                encurvado.Phoenicopterus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Polyedrum.</form>
+                                          <sense>Que tem varios lados, e angulos. Picus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Rectum.</form>
+                                          <sense>Quando as mandibulas naõ declinaõ para parte
+                                                alguma. Sitta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Recurvum.</form>
+                                          <sense>Com o bico virado para a parte superior.
+                                                Mycteria.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Serratum.</form>
+                                          <sense>Quando os lados, ou margens de ambos os queixos
+                                                estaõ cortados á maneira de
+                                                serra.Ramphastos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Simum.</form>
+                                          <sense>Com a extremidade chata, ou depressa. Anas
+                                                tadorna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Spatulatum.</form>
+                                          <sense>A maneira de espátula, ou chato e mais largo <pb
+                                                  n="26"/>na extremidade. Platalea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Subcultratum.</form>
+                                          <sense>Quasi agudo á maneira do fio de huma faca. fig.2.
+                                                Paradisea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Subulatum.</form>
+                                          <sense>Que acaba em ponta aguda, como huma sovela.fig. 4.
+                                                Tanagra. Colymbus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Teres.</form>
+                                          <sense>Redondo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Uncinatum.</form>
+                                          <sense>Encurvado como hum anzol. Falco.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Uncinatum apice.</form>
+                                          <sense>Encurvado na extremidade bem como hum gancho.
+                                                Palamedea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Unguiculatum.</form>
+                                          <sense>Como se tivesse na extremidade huma unha, alguma
+                                                coiza encurvada. fig. 3. Anas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Ventricosum.</form>
+                                          <sense>Dilatado no meio, ou barrigudo. fig. 5.
+                                                Cancroma.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>S.</head>
+                              <entry>
+                                    <form>SCAPUS Rectricum.</form>
+                                    <sense>V. Rachis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SPECULUM alarum.</form>
+                                    <sense>Malha ou pinta corada, resplandecente, pintada na
+                                          superfície das tectrices, quando as azas estaõ fechadas,
+                                          como se pode ver em algumas especies de Patos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SPINA Axillaris.</form>
+                                    <sense>O pollex na alula espúria tem hum bico, ou acúleo
+                                          arqueado como em algumas aves. Palamedea, Parra, Struthio
+                                          Camelus. E serve de arma alem do bico, e das
+                                          unhas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>STERNUM.</form>
+                                    <sense>He a parte mais elevada, que se observa no meio do peito
+                                          das aves, imitando a figura de quilha.</sense>
+                              </entry>
+                              <entry>
+                                    <form>STRIGAE.</form>
+                                    <sense>Muitas linhas irregulares coradas. Trogon
+                                          Strigilatus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SUPERCILIUM.</form>
+                                    <sense>Linha superior á capella dos olhos totalmente diferente
+                                          das outras linhas.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>T.</head>
+                              <entry>
+                                    <form>TEMPORA.</form>
+                                    <sense>Espaço entre os olhos, e as orelhas. Tab.III. fig.2
+                                          F.</sense>
+                              </entry>
+                              <pb n="27"/>
+                              <entry>
+                                    <form>TECTRICES.</form>
+                                    <sense>Da-se este nome áquellas pennas, que cobrem as azas,
+                                          cauda, e uropígio, assim na parte superior, como na
+                                          inferior; donde se dizem tectrices superiores e inferiores
+                                          das azas, ou da cauda com duplicada ordem de pennas, que
+                                          se cobrem entre si, porque aquellas, que saõ visinhas as
+                                          remiges chamaõ-se ultimae, e as superiores
+                                          penultimae.</sense>
+                              </entry>
+                              <entry>
+                                    <form>TIBIAE.</form>
+                                    <sense>Pernas r. estas naturalmente saõ redondas, nas aves
+                                          aquaticas saõ compressas; nas Aguias, e em muitas aves
+                                          nocturnas saõ cobertas de pennas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>TRUNCUS.</form>
+                                    <sense>He de figura oval, e forma o corpo da Ave, d.e.b.l.,
+                                          contem o Dorsum, Interscapulium humeri, Pectus, Axillae,
+                                          Hypocondria, Abdomen.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>V.</head>
+                              <entry>
+                                    <form>VERTEX.</form>
+                                    <sense>V. Pilens.</sense>
+                              </entry>
+                              <entry>
+                                    <form>VIBRISSAE.</form>
+                                    <sense>Saõ huns cabelos postos em figura de pente nas fauces ou
+                                          em outra parte. V. Barba.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>U.</head>
+                              <entry>
+                                    <form>UNGUIS.</form>
+                                    <sense>As unhas na maior parte dos dedos saõ a modo de sovelas
+                                          arqueadas, em outras aves saõ mais agudas, em algumas saõ
+                                          marginadas na parte externa, ou tem a sua margem mais
+                                          extendida; raras vezes saõ cortadas em modo de serra; os
+                                          dedos raras saõ muticus, ou sem unhas.</sense>
+                                    <entry>
+                                          <form>- Sessilis.</form>
+                                          <sense>Unhas sem dedos. Procellaria.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>UROPYGIUM.</form>
+                                    <sense>Rudimento da cauda, de figura subcordata, ou triangular,
+                                          em que acaba o tronco, e que está posto assima do anus.
+                                          B.m.u.</sense>
+                              </entry>
+                        </div>
+                  </div>
                   <pb n="28"/>
-                  <div type="parte"><head>CLASSE III. AMPHIBIOS.</head> A. ADACTYLUS. Pès sem dedos.
-                        APTERIGIUS. Sem pinna, ou barbatana. ALA. He huma membrana, que fahe do meio
-                        do Corpo, que tambem está pegada aos femores. ALEPIDOTUM. Corpo sem escamas.
-                        ANNULI. Anneis, que cercaõ o corpo em lugar de escamas. C CATHETOPLATEUS.
-                        Καθετος linha perpendicular. Πλατυς latus Tetrodon mola. CAUDA. -
-                        Verticillata. Cauda cujas escamas estaõ postas ao redor dela em forma de
-                        anneis. Lacerta Stellio. - Imbricata. Cujas escamas estaõ dispostas a modo
-                        de telhas. Lacerta Chamaleon. CIRRUS. V. nos Peixes. Acipenser Sturio.
-                        COLLARE. He huma, ou mais ordens de escamas ao redor do pescoço na parte
-                        inferior. Lacerta agilis. CREPITACULUM. He huma continuaçaõ das escamas
-                        articuladas postas na ponta da cauda, por meio das quaes a Cobra cascavel
-                        forma hum som, pelo qual os outros animaes se afugentaõ. <pb n="29"/>
-                        CRISTAGULE. Esta especie de crista forma-se da cute dobrada, e saida para
-                        fora na parte inferior do pescoço, ou gúela, e tem varias incisões á maneira
-                        de pequenos dentes. Lacerta iguana. Draco. HYEMARE. Diz-se do tempo, em que
-                        os Amphibios passaõ immoveis debaixo da terra sem terem respiração, nem
-                        movimento de sangue apparente. Este he pois o tempo em que naõ exercitaõ
-                        funçaõ alguma vital, e por esta razaõ passaõ sem comer. L LORICATUM. O corpo
-                        coberto, e defendido com hum tegumento ósseo, como de huma coiraça.
-                        Ostracion. M MURICATUM. A superfície do corpo, espinhas a maneira da Concha
-                        Murex. P PINNA. Barbatana. - Discreta. Separada de outra opposta. Squalus
-                        Stellaris. - Concreta. Unida com a outra. R RESPIRARE arbitrarie. He quando
-                        os amphibios respiraõ, ou deixaõ de respirar por algum tempo, e por isto
-                        podem habilitar na agua ou na terra. RICTUS. Abertura da boca e nos
-                        amphibios he taõ laxa, que engollen corpos como v.g. a cobra <pb n="30"
-                        />costuma engolir hum sapo inteiro, e a Giboia pode triturar hum Boi, e
-                        engulillo. RUGA. He quando estaõ rugas na pelle em lugar de escamas.
-                        Coecilia. S SCUTELLUM. He o scutum dividido em dous. SCUTUM. Quando as
-                        escamas se unem entre si formando hum corpo semicircular que cinge o abdômen
-                        e a cauda pela parte inferior de algumas cobras. SENECTAM exuere. He a
-                        mudança que as serpentes fazem anualmente da sua pelle, ou epidermide,
-                        ficando com a cor mudada. SPIRACULUM. Saõ aquelles buracos por onde os
-                        amphibios Nantes, ou aquaticos respiraõ, cujos buracos estaõ postos ao lado
-                        do pescoço, no Petromizon, Squalus; ou debaixo do collo na Raja, Chimara.
-                        SQUAMA. Nas cobras e Lagartos saõ á semelhança dos Peixes. - Reversa.
-                        Revirada para sima. Lacerta agama. T <s>TESTA. Concha óssea das
-                              Tartarugas.</s> TETRAPODUM. De quatro pés. V VITTA. Hum risco de
-                        figura de fita, mas pintado. Rana gibbosa.</div>
+                  <div type="parte">
+                        <head>CLASSE III. AMPHIBIOS.</head>
+                        <div type="letra">
+                              <head>A.</head>
+                              <entry>
+                                    <form>ADACTYLUS.</form>
+                                    <sense>Pès sem dedos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>APTERIGIUS.</form>
+                                    <sense>Sem pinna, ou barbatana.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ALA.</form>
+                                    <sense>He huma membrana, que sahe do meio do Corpo, que tambem
+                                          está pegada aos femores.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ALEPIDOTUM.</form>
+                                    <sense>Corpo sem escamas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANNULI.</form>
+                                    <sense>Anneis, que cercaõ o corpo em lugar de escamas.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>C.</head>
+                              <entry>
+                                    <form>CATHETOPLATEUS.</form>
+                                    <sense>Καθετος linha perpendicular. Πλατυς latus Tetrodon
+                                          mola.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CAUDA.</form>
+                                    <entry>
+                                          <form>- Verticillata.</form>
+                                          <sense>Cauda cujas escamas estaõ postas ao redor dela em
+                                                forma de anneis. Lacerta Stellio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Imbricata.</form>
+                                          <sense>Cujas escamas estaõ dispostas a modo de telhas.
+                                                Lacerta Chamaeleon.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>CIRRUS.</form>
+                                    <sense>V. nos Peixes. Acipenser Sturio.</sense>
+                              </entry>
+                              <entry>
+                                    <form>COLLARE.</form>
+                                    <sense>He huma, ou mais ordens de escamas ao redor do pescoço na
+                                          parte inferior. Lacerta agilis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>CREPITACULUM.</form>
+                                    <sense>He huma continuaçaõ das escamas articuladas postas na
+                                          ponta da cauda, por meio das quaes a Cobra cascavel forma
+                                          hum som, pelo qual os outros animaes se afugentaõ.</sense>
+                              </entry>
+                              <pb n="29"/>
+                              <entry>
+                                    <form>CRISTAGULAE.</form>
+                                    <sense>Esta especie de crista forma-se da cute dobrada, e saida
+                                          para fora na parte inferior do pescoço, ou gúela, e tem
+                                          varias incisões á maneira de pequenos dentes. Lacerta
+                                          iguana. Draco. Tab. IV. fig. 5. b.</sense>
+                              </entry>
+                              <entry>
+                                    <form>HYEMARE.</form>
+                                    <sense>Diz-se do tempo, em que os Amphibios passaõ immoveis
+                                          debaixo da terra sem terem respiração, nem movimento de
+                                          sangue apparente. Este he pois o tempo em que naõ
+                                          exercitaõ funçaõ alguma vital, e por esta razaõ passaõ sem
+                                          comer.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>L.</head>
+                              <entry>
+                                    <form>LORICATUM.</form>
+                                    <sense>O corpo coberto, e defendido com hum tegumento ósseo,
+                                          como de huma coiraça. Ostracion.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>M.</head>
+                              <entry>
+                                    <form>MURICATUM.</form>
+                                    <sense>A superfície do corpo, espinhas a maneira da Concha
+                                          Murex.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>P.</head>
+                              <entry>
+                                    <form>PINNA.</form>
+                                    <sense>Barbatana</sense>
+                                    <entry>
+                                          <form>- Discreta.</form>
+                                          <sense>Separada de outra opposta. Squalus
+                                                Stellaris.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Concreta.</form>
+                                          <sense>Unida com a outra.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>R.</head>
+                              <entry>
+                                    <form>RESPIRARE arbitrarie.</form>
+                                    <sense>He quando os amphibios respiraõ, ou deixaõ de respirar
+                                          por algum tempo, e por isto podem habilitar na agua ou na
+                                          terra.</sense>
+                              </entry>
+                              <entry>
+                                    <form>RICTUS.</form>
+                                    <sense>Abertura da boca e nos amphibios he taõ laxa, que
+                                          engollen corpos como v.g. a cobra <pb n="30"/>costuma
+                                          engolir hum sapo inteiro, e a Giboia pode triturar hum
+                                          Boi, e engulillo.</sense>
+                              </entry>
+                              <entry>
+                                    <form>RUGAE.</form>
+                                    <sense>He quando estaõ rugas na pelle em lugar de escamas.
+                                          Coecilia.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>S.</head>
+                              <entry>
+                                    <form>SCUTELLUM.</form>
+                                    <sense>He o scutum dividido em dous.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SCUTUM.</form>
+                                    <sense>Quando as escamas se unem entre si formando hum corpo
+                                          semicircular que cinge o abdômen e a cauda pela parte
+                                          inferior de algumas cobras.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SENECTAM exuere.</form>
+                                    <sense>He a mudança que as serpentes fazem anualmente da sua
+                                          pelle, ou epidermide, ficando com a cor mudada.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SPIRACULUM.</form>
+                                    <sense>Saõ aquelles buracos por onde os amphibios Nantes, ou
+                                          aquaticos respiraõ, cujos buracos estaõ postos ao lado do
+                                          pescoço, no Petromizon, Squalus; ou debaixo do collo na
+                                          Raja, Chimaera.</sense>
+                              </entry>
+                              <entry>
+                                    <form>SQUAMA.</form>
+                                    <sense>Nas cobras e Lagartos saõ á semelhança dos
+                                          Peixes.</sense>
+                                    <entry>
+                                          <form>- Reversa.</form>
+                                          <sense>Revirada para sima. Lacerta agama.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>T.</head>
+                              <entry>
+                                    <form>TESTA.</form>
+                                    <sense>Concha óssea das Tartarugas.</sense>
+                              </entry>
+                              <entry>
+                                    <form>TETRAPODUM.</form>
+                                    <sense>De quatro pés.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>V.</head>
+                              <entry>
+                                    <form>VITTA.</form>
+                                    <sense>Hum risco de figura de fita, mas pintado. Rana
+                                          gibbosa.</sense>
+                              </entry>
+                        </div>
+                  </div>
                   <pb n="31"/>
-                  <div type="parte"><head>CLASSE IV. PEIXES</head> A. ABDOMEN. O ventre he aquella
-                        parte inferior do corpo, que está posta entre a extremidade do thorax, e o
-                        principio da cauda. Tab. V. fig. 3. a. b. Chama-se. - Carinatum. Ou
-                        anguloso, ou em forma de quilha de navio; assim se acha o ventre de quase
-                        todos os peixes. - Serratum. He quando as escamas, que formaõ a quilha,
-                        estaõ separadas com as suas pontas formando assim huma espécie de serra.
-                        Clupea. - Planum. Chato, naõ tendo prominencia alguma, ou angolo.
-                        Syngnathus. Mugil. Sphirana. - Prominens, extuberans, tumidum. Inchado,
-                        protuberante. Uranoscopus. Scorpana, Blennius. ABDOMINALIS. Peixe que tem
-                        pinnas ou barbatanas do ventre postas no abdômen inferior ás do thorax, ou
-                        peito. ACULEI. Saõ ossículos nas barbatanas sempre simpleces, não divididos,
-                        como os raios, rijos, pungentes, sem serem articulados. ADIPOSUS. Entende-se
-                        das barbatanas do peixe, destituídas dos raios osseos. Murana, Salmo,
-                        Trutta. <s>ADDITAMENTUM. He toda parte que naõ constitue o principal, mas
-                              sim o accessorio, como saõ os <term lemma="cirro" msd="plural"
-                                    >cirros</term> na cabeça do peixe, e nas pinnas do mesmo <pb
-                                    n="32"/>huma porçaõ de membrana siliforme.</s> Os appendices do
-                        tronco saõ as barbatanas espurias, os dedos, o escudo. ALEPIDOTUM, seu
-                        nudum. Sem escamas. Blennius. Gymnotus, Echeneis. ANALIS. Barbatana, que he
-                        immediata ao ano. ANCEPS. O corpo do peixe, que consta de dous ângulos
-                        agudos, e oppostos, que corresponde ao terceiro ensiforme. ANGULATUS. He a
-                        parte do peixe que he chêa de angulos. ANNEXUS. Diz-se de qualquer parte do
-                        peixe que está unida entre si ou com outra. ANNULATUM. Quando o corpo he
-                        cercado de linhas prominentes ou elevadas em forma de anneis. ANUS. Ou
-                        extremidade do intestino recto, he varia pela sua situação. - Gularis.
-                        Debaixo da gûela, visinho aos opérculos das guelras. Gymnotbus. -
-                        Pectoralis. Peitoral, debaixo das guelras perto do peito. Trachinus,
-                        Pleuronectis, Rhombus. - Vicinus. Visinho da cabeça e muito longe da cauda.
-                        Uranoscopus. Ophidion. - Medius. No meio do corpo entre a cabeça e a cauda.
-                        Isto he o que se observa mais commummente. - Remotus. Longe da cabeça e
-                        muito perto da cauda. Cyprinus, Sparus. APERTURA branchiarum. Abertura das
-                        branchias, ou guelras, he huma abertura quasi sempre situada na parte
-                        posterior ou lateral da cabeça que se abre entre os operculos e o tronco.
-                        Ella acaba dentro da boca, contem as guelras, que saõ as partes interiores.
-                              <pb n="33"/>Pela situaçaõ. - Gularis. Na parte inferior da gûela, e
-                        naõ no lado da cabeça ou do torax. - Lateralis. Lateral no maior numero dos
-                        peixes. - Cervicalis. Cervical posta ao lado da cabeça mas superiormente ao
-                        collo. Murana, Conger. - Occipitalis. Occipital na parte posterior da cabeça
-                        ou na nuca. Callionymus Lira. Pela figura. - Arcuata. Arqueada em quasi
-                        todos os peixes. - Tubulosa, sistulosa. A modo tubo. Murana. - Repanda.
-                        Abertura sinuosa ou flexuosa ou chêa de voltas. Centriscus. - Ovata. Quando
-                        huma borda da dita abertura he mais aberta e mais larga doque a outra.
-                        Callionynmus. Pela proporçaõ. - Abnormis seu disproportionata minima.
-                        Desproporcionada muito pequena relativamente ao volume do corpo. Ostracion,
-                        Tetrodon, Diodon, Syngnatbus, Murana. - Mediocris, seu proportionalis.
-                        Proporcional ao corpo. Perca, Gadus. - Magna. Amplissima, relativamente á
-                        cabeça. Zeus. Pelos operculos. - Operculata. Cobertura de todo pelos
-                        operculos, o que se observa em todos os peixes. - Seminuda. Quando os
-                        operculos naõ cobrem senaõ ametade da abertura. Accipenser. APODES. Sem pés,
-                        ou pinnas ventraes. APTERA Cauda. Sem pinna ou barbatana. APTERYGIUM dorsum.
-                        Que naõ tem barbatana. APTERUS. Saõ os peixes destituidos de barbatanas
-                        ventraes. <pb n="34"/> ARTICULATUM. Quando o corpo he composto de laminas
-                        encadeadas humas ás outras. Syngnathus. ARTUS. Os membros nos peixes naõ saõ
-                        outra cousa mais que as barbatans que servem para os differentes movimentos
-                        dos peixes. Ellas saõ formadas de muitos ossículos que estaõ unidos e
-                        sustidos na dobradura de huma membrana que os reveste. Chamaõ-se Raios e
-                        outros Aculeos. ASSURGENS. Diz-se dos raios das barbatanas dorsaes, que saõ
-                        mais elevados, que a mesma membrana. B. BICOLORATUS. He aquelle peixe cujos
-                        lados he de huma cor e outro de outra. BIFIDUS. Parte do peixe que se divide
-                        entre si em duas. BINATUS. Diz-se dos peixes cujos olhos se fecham juntos
-                        ambos no mesmo lado. Pleuronectes. BRANCHIA. As branchias ou guelras saõ os
-                        primeiros orgaõs da respiraçaõ nos peixes. Estaõ postas entre a cabeça e o
-                        tronco. Para cada huma se ver he necessario levantar o operculo branchial e
-                        ter dobrada a membrana branchiostega; e na abertura branchiostega que entaõ
-                        fica aberta he que se vé o que propriamente se chama guelra. Desunindo-se
-                        humas das outras daõ postagem á agua que o peixe engulio e que quer deitar
-                        fora da sua gûela, avizinhando-se entre si e estando os operculos fechados,
-                        acha-se a agua retida e não pode sahir sem se dilatarem as guelras e sem se
-                        levantarem os opergulos. Saõ compostas de quatro pequenos ossículos
-                        arqueados paralelos, desiguaes, postos huns contra <pb n="35"/>os outros, e
-                        na parte exterior que he a convexa tem pequenos appendices ou túbulos moles,
-                        livres, dispostos somente em huma parte, como a barba de huma penna e quasi
-                        sempre de cor encarnada em hum animal saõ. Estes ossiculos na parte interior
-                        tem tubérculos. As guelras consideraõ-se como os bofes dos peixes. Variaõ
-                        pela situaçaõ e estrutura. Pela situação. - Vicina. Quando todas acabaõ na
-                        mesma abertura o que se observa em todos os verdadeiros peixes. -
-                        Operculata. Cubertas com operculos em todos os verdadeiros peixes. -
-                        Denudata. Nuas sem operculos. - Laterales. Lateraes, que estaõ postas em os
-                        lados nos peixes branchiostegos. - Occipitales. Estando no collo ou
-                        occipite. Callionymus, Murana. - Retro-acta. Profundadas estando postas
-                        longe da boca e mais perto da gûela. Uranoscopus, Murena. Callyonymus. Pela
-                        estrutura. - <s>Simplices. Da mesma natureza, guarnecidas ou de sedas, ou de
-                              tubulos carnosos, ou de <term lemma="tubérculo" norm="tubérculos"
-                                    msd="plural">tuberculos</term>.</s> - <s>Dissimiles, disformes,
-                              anomale. Dissimilhantes, quando humas tem pelos ou sedas no lado
-                              exterior e interior e as outras saõ <term lemma="tuberculado"
-                                    msd="feminino plural">tuberculadas</term>. Perca, Spari.</s> -
-                              <s>Tuberculatae. <term lemma="tuberculado" msd="feminino plural"
-                                    >Tuberculadas</term>, a parte arqueada concava do ossiculo he
-                              cuberta de <term lemma="tubérculo" norm="tubérculos" msd="plural"
-                                    >tuberculos</term>, cousa, que se observa em quasi todos os
-                              peixes.</s>
-                        <pb n="36"/> - Glabre, inermes. Sem tubérculos. Nos Nantes. Squalus. -
-                        Pectinata, ciliata. A maneira de pente, quan do a parte convexa do ossículo,
-                        que forma cada guelra he cercada em redondo de raios á maneira de barba, que
-                        imitaõ os dentes do pente. Estes raios ou barbas ordinariamente saõ
-                        encarnadas. <s>- Aculeata. Armadas de pontas ou aculeos, quando a parte
-                              concava do ossiculo em lugar de <term lemma="tubérculo"
-                                    norm="tubérculos" msd="plural"> tuberculos</term> tem bicos.</s>
-                        BRANCHIOSTEGA. He huma membrana que se acha debaixo dos operculos chêa de
-                        raios osseos, que serve para cobrir as guelras dilatando-se e contrahindo-se
-                        á vontade do peixe. C CAUDA. A cauda he solida formada das vertebras dos
+                  <div type="parte"><head>CLASSE IV. PEIXES</head>
+                        <div type="letra"><head>A.</head>
+                              <entry>
+                                    <form>ABDOMEN.</form>
+                                    <sense>O ventre he aquella parte inferior do corpo, que está
+                                          posta entre a extremidade do thorax, e o principio da
+                                          cauda. Tab. V. fig. 3. a. b. Chama-se.</sense>
+                                    <entry>
+                                          <form>- Carinatum.</form>
+                                          <sense>Ou anguloso, ou em forma de quilha de navio; assim
+                                                se acha o ventre de quase todos os peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Serratum.</form>
+                                          <sense>He quando as escamas, que formaõ a quilha, estaõ
+                                                separadas com as suas pontas formando assim huma
+                                                espécie de serra. Clupea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Planum.</form>
+                                          <sense>Chato, naõ tendo prominencia alguma, ou angolo.
+                                                Syngnathus. Mugil. Sphiraena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Prominens, extuberans, tumidum.</form>
+                                          <sense>Inchado, protuberante. Uranoscopus. Scorpaena,
+                                                Blennius.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>ABDOMINALIS.</form>
+                                    <sense>Peixe que tem pinnas ou barbatanas do ventre postas no
+                                          abdômen inferior ás do thorax, ou peito. fig. 3. a.
+                                          b.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ACULEI.</form>
+                                    <sense>Saõ ossículos nas barbatanas sempre simpleces, não
+                                          divididos, como os raios, rijos, pungentes, sem serem
+                                          articulados.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ADIPOSUS.</form>
+                                    <sense>Entende-se das barbatanas do peixe, destituídas dos raios
+                                          osseos. Muraena, Salmo, Trutta.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ADDITAMENTUM.</form>
+                                    <sense>He toda parte que naõ constitue o principal, mas sim o
+                                          accessorio, como saõ os <term lemma="cirro" msd="plural"
+                                                >cirros</term> na cabeça do peixe, e nas pinnas do
+                                          mesmo <pb n="32"/>huma porçaõ de membrana
+                                          siliforme.</sense>
+                                    <sense>Os appendices do tronco saõ as barbatanas espurias, os
+                                          dedos, o escudo.</sense>
+                              </entry>
+                              <entry>ALEPIDOTUM, seu nudum. Sem escamas. Blennius. Gymnotus,
+                                    Echeneis.</entry>
+                              <entry>ANALIS. Barbatana, que he immediata ao ano. fig. 2. a. fig. 3.
+                                    c. fig. 5. a.</entry>
+                              <entry>ANCEPS. O corpo do peixe, que consta de dous ângulos agudos, e
+                                    oppostos, que corresponde ao terceiro ensiforme.</entry>
+                              <entry>ANGULATUS. He a parte do peixe que he chêa de angulos.</entry>
+                              <entry>ANNEXUS. Diz-se de qualquer parte do peixe que está unida entre
+                                    si ou com outra.</entry>
+                              <entry>ANNULATUM. Quando o corpo he cercado de linhas prominentes ou
+                                    elevadas em forma de anneis.</entry>
+                              <entry>ANUS. Ou extremidade do intestino recto, he varia pela sua
+                                    situação. - Gularis. Debaixo da gûela, visinho aos opérculos das
+                                    guelras. Gymnotbus. - Pectoralis. Peitoral, debaixo das guelras
+                                    perto do peito. Trachinus, Pleuronectis, Rhombus. - Vicinus.
+                                    Visinho da cabeça e muito longe da cauda. Uranoscopus. Ophidion.
+                                    - Medius. No meio do corpo entre a cabeça e a cauda. Isto he o
+                                    que se observa mais commummente. - Remotus. Longe da cabeça e
+                                    muito perto da cauda. Cyprinus, Sparus.</entry> APERTURA
+                              branchiarum. Abertura das branchias, ou guelras, he huma abertura
+                              quasi sempre situada na parte posterior ou lateral da cabeça que se
+                              abre entre os operculos e o tronco. Ella acaba dentro da boca, contem
+                              as guelras, que saõ as partes interiores. <pb n="33"/>Pela situaçaõ. -
+                              Gularis. Na parte inferior da gûela, e naõ no lado da cabeça ou do
+                              torax. - Lateralis. Lateral no maior numero dos peixes. - Cervicalis.
+                              Cervical posta ao lado da cabeça mas superiormente ao collo. Murana,
+                              Conger. - Occipitalis. Occipital na parte posterior da cabeça ou na
+                              nuca. Callionymus Lira. Pela figura. - Arcuata. Arqueada em quasi
+                              todos os peixes. - Tubulosa, sistulosa. A modo tubo. Murana. -
+                              Repanda. Abertura sinuosa ou flexuosa ou chêa de voltas. Centriscus. -
+                              Ovata. Quando huma borda da dita abertura he mais aberta e mais larga
+                              doque a outra. Callionynmus. Pela proporçaõ. - Abnormis seu
+                              disproportionata minima. Desproporcionada muito pequena relativamente
+                              ao volume do corpo. Ostracion, Tetrodon, Diodon, Syngnatbus, Murana. -
+                              Mediocris, seu proportionalis. Proporcional ao corpo. Perca, Gadus. -
+                              Magna. Amplissima, relativamente á cabeça. Zeus. Pelos operculos. -
+                              Operculata. Cobertura de todo pelos operculos, o que se observa em
+                              todos os peixes. - Seminuda. Quando os operculos naõ cobrem senaõ
+                              ametade da abertura. Accipenser. APODES. Sem pés, ou pinnas ventraes.
+                              APTERA Cauda. Sem pinna ou barbatana. APTERYGIUM dorsum. Que naõ tem
+                              barbatana. APTERUS. Saõ os peixes destituidos de barbatanas ventraes.
+                                    <pb n="34"/> ARTICULATUM. Quando o corpo he composto de laminas
+                              encadeadas humas ás outras. Syngnathus. ARTUS. Os membros nos peixes
+                              naõ saõ outra cousa mais que as barbatans que servem para os
+                              differentes movimentos dos peixes. Ellas saõ formadas de muitos
+                              ossículos que estaõ unidos e sustidos na dobradura de huma membrana
+                              que os reveste. Chamaõ-se Raios e outros Aculeos. ASSURGENS. Diz-se
+                              dos raios das barbatanas dorsaes, que saõ mais elevados, que a mesma
+                              membrana.</div>
+                        <div type="letra"><head>B.</head> BICOLORATUS. He aquelle peixe cujos lados
+                              he de huma cor e outro de outra. BIFIDUS. Parte do peixe que se divide
+                              entre si em duas. BINATUS. Diz-se dos peixes cujos olhos se fecham
+                              juntos ambos no mesmo lado. Pleuronectes. BRANCHIA. As branchias ou
+                              guelras saõ os primeiros orgaõs da respiraçaõ nos peixes. Estaõ postas
+                              entre a cabeça e o tronco. Para cada huma se ver he necessario
+                              levantar o operculo branchial e ter dobrada a membrana branchiostega;
+                              e na abertura branchiostega que entaõ fica aberta he que se vé o que
+                              propriamente se chama guelra. Desunindo-se humas das outras daõ
+                              postagem á agua que o peixe engulio e que quer deitar fora da sua
+                              gûela, avizinhando-se entre si e estando os operculos fechados,
+                              acha-se a agua retida e não pode sahir sem se dilatarem as guelras e
+                              sem se levantarem os opergulos. Saõ compostas de quatro pequenos
+                              ossículos arqueados paralelos, desiguaes, postos huns contra <pb
+                                    n="35"/>os outros, e na parte exterior que he a convexa tem
+                              pequenos appendices ou túbulos moles, livres, dispostos somente em
+                              huma parte, como a barba de huma penna e quasi sempre de cor encarnada
+                              em hum animal saõ. Estes ossiculos na parte interior tem tubérculos.
+                              As guelras consideraõ-se como os bofes dos peixes. Variaõ pela
+                              situaçaõ e estrutura. Pela situação. - Vicinae. Quando todas acabaõ na
+                              mesma abertura o que se observa em todos os verdadeiros peixes. -
+                              Operculatae. Cubertas com operculos em todos os verdadeiros peixes. -
+                              Denudatae. Nuas sem operculos. - Laterales. Lateraes, que estaõ postas
+                              em os lados nos peixes branchiostegos. - Occipitales. Estando no collo
+                              ou occipite. Callionymus, Murana. - Retro-actae. Profundadas estando
+                              postas longe da boca e mais perto da gûela. Uranoscopus, Murena.
+                              Callyonymus. Pela estrutura. - <s>Simplices. Da mesma natureza,
+                                    guarnecidas ou de sedas, ou de tubulos carnosos, ou de <term
+                                          lemma="tubérculo" norm="tubérculos" msd="plural"
+                                          >tuberculos</term>.</s> - <s>Dissimiles, disformes,
+                                    anomale. Dissimilhantes, quando humas tem pelos ou sedas no lado
+                                    exterior e interior e as outras saõ <term lemma="tuberculado"
+                                          msd="feminino plural">tuberculadas</term>. Perca,
+                                    Spari.</s> - <s>Tuberculatae. <term lemma="tuberculado"
+                                          msd="feminino plural">Tuberculadas</term>, a parte
+                                    arqueada concava do ossiculo he cuberta de <term
+                                          lemma="tubérculo" norm="tubérculos" msd="plural"
+                                          >tuberculos</term>, cousa, que se observa em quasi todos
+                                    os peixes.</s>
+                              <pb n="36"/> - Glabre, inermes. Sem tubérculos. Nos Nantes. Squalus. -
+                              Pectinata, ciliata. A maneira de pente, quan do a parte convexa do
+                              ossículo, que forma cada guelra he cercada em redondo de raios á
+                              maneira de barba, que imitaõ os dentes do pente. Estes raios ou barbas
+                              ordinariamente saõ encarnadas. <s>- Aculeata. Armadas de pontas ou
+                                    aculeos, quando a parte concava do ossiculo em lugar de <term
+                                          lemma="tubérculo" norm="tubérculos" msd="plural">
+                                          tuberculos</term> tem bicos.</s> BRANCHIOSTEGA. He huma
+                              membrana que se acha debaixo dos operculos chêa de raios osseos, que
+                              serve para cobrir as guelras dilatando-se e contrahindo-se á vontade
+                              do peixe.</div> C CAUDA. A cauda he solida formada das vertebras dos
                         lombos, e fornecida de musculos; está posta na extremidade do dorso perto do
                         ano, e acaba o tronco. Chama-se - Teres, cylindrica. Redonda, cylindrica, em
                         alguns. - Tetragona. Quadrada, a quatro lados chatos em algumas especies de
@@ -1541,54 +2898,154 @@
                         dita membrana he aberta no meio, formando como hum annel, ou he cortada como
                         meia lua. Tetrodon. — <s>Nudi. Sem a dita membrana, ou cute, ou <term
                                     lemma="túnica">tunica</term>.</s>
-                        <s>OPERCULA Branchiarum. Operculo das guélras he hum corpo
-                                    <term>escamoso</term> posto na parte posterior dos queixos de
-                              cada parte da cabeça atrás dos olhos.</s> O seu uso, he de ter fechada
-                        a abertura das guélras, e defendellas dos corpos externos, e suster a
-                        membrana branchiostega. Tab. V. fig. 4. c. fig. 5. c. Os operculos variaõ em
-                        differentes peixes pela sua estructura, pelo movimento, pelo numero das
-                        peças, ou laminas, de que constaõ, pela proporçaõ, e superficie. Pela
-                        estructura. — Simplicia. Quando saõ de hum só pedaço. Uranoscopus,
-                        Syngnathus. <pb n="56"/>— Diphylla, triphylla, tetraphylla. De dous, de
-                        tres, de quatro pedaços. Sparus, Labrus. — Ossea. Que naõ saõ flexiveis, em
-                        quasi todos os peixes. — Mollia, flexilia. Molles, flexiveis. Syngnathus,
-                        Anguilla, Conger. — Carnosa. Cubertos de huma pélle grossa com gordura.
-                        Blennius. — Subarcuata. Em meio circulo, quando a abertura das guélras he
-                        circular, ou semicircular; a margem, ou borda posterior do operculo, que a
-                        cobre descreve huma curva. Xiphias. — Fistulosa. Quando a abertura das
-                        guélras mostra formar hum tubo na mesma substancia do operculo. Murena,
-                        Syngnathus. — Acuminata. Pontuda, se a lamina posterior do operculo se
-                        prolonga em huma ponta comprida. Gadus alguma especie. — Dimidiata. Quando o
-                        operculo naõ cobre mais que metade, ou duas terças partes da abertura das
-                        guélras. Acipenser. — <s>Ciliata. <term lemma="ciliado"
-                                    msd="feminino singular">Ciliada</term>, quando a margem
-                              posterior, ou todo o contorno he cortado como huma franja, ou ornado
-                              com appendices carnosos parallelos.</s> Pelo movimento. — Annexa,
-                        fraenata. Pegados ao corpo tanto acima como abaixo por meio de huma pélle,
-                        ou freio. Syngnathus, Muræna. — Mobilia, libera. Moveis, em quasi todos os
-                        peixes. Pelo numero. — Solitaria. Solitarios, havendo hum só operculo em
-                        cada lado, como em todos os peixes espinhosos, e naõ espinhosos. <pb n="57"
-                        /> — Nulla. Sem operculos, ficando descubertas as aPEIXES. berturas das
-                        guélras. Diodon, Tetraodon. Pela proporçaõ. — Proportionalia. Se o seu
-                        tamanho corresponde áquelle do corpo da cabeça. Gadus, Cyprinus. — Minima.
-                        Pequenos, que naõ correspondem ao tamanho da cabeça. Syngnathus. Esox. Pela
-                        superficie. — Glabra. Lisa. Mugil, Syngnathus. — Aspera, scabra, loricata.
-                        Aspera. Uranoscopus, algumas especies Triglae. — Striata. Striados, quando
-                        está cuberto de strias quasi parallelas. Uranoscopus, Trigla. — Radiata.
-                        Quando as strias partem de hum centro, e se espalhaõ pela circumferencia.
-                        Syngnathus. — Coelata. Se as strias saõ sem ordem, e naõ saõ parallelas,
-                        como em algumas especies de Triglæ. — Aculeata. Com aculeos, e neste caso
-                        huma das suas margens está acabada terminando-se em hum, dous, ou tres
-                        aculeos. Trigla, Scorpæna. — Serrata. Dentados á maneira de serra, quando
-                        huma, ou muitas Laminas, que formaõ o operculo estaõ cortadas na margem, ou
-                        em todo, á maneira de serra. Perca. Alguns Labri. — Nitida, Lucida.
-                        Luzidios, brilhantes, quando reflectem a luz, ou que parecem envernizados.
-                        Niphias, Argentina, Zei species. — Laevia. Polidos, mas sem serem luzidios.
-                        Cotus, Sciæna. Pelos tegumentos. — Nuda. Naõ estando cubertos, nem de pélle,
-                        nem de escamas, que estaõ na cabeça. Trigla, Uranoscopus. <pb n="58"/>—
-                        Alepidota. Cubertos de pélle, mas sem escamas. Mugil, Exocoetus. —
-                              <s>Squamosa. <term lemma="escamoso">Escamosos</term>, cubertos de
-                              escamas em lugar de pélle. Labrus, Sciæna, Sparus.</s>
+                        <entry><form>OPERCULA Branchiarum.</form>
+                              <sense><p>Operculo das guélras he hum corpo <term>escamoso</term>
+                                          posto na parte posterior dos queixos de cada parte da
+                                          cabeça atrás dos olhos. O seu uso, he de ter fechada a
+                                          abertura das guélras, e defendellas dos corpos externos, e
+                                          suster a membrana branchiostega. Tab. V. fig. 4. c. fig.
+                                          5. c.</p>
+                                    <p>Os operculos variaõ em differentes peixes pela sua
+                                          estructura, pelo movimento, pelo numero das peças, ou
+                                          laminas, de que constaõ, pela proporçaõ, e
+                                    superficie.</p></sense> Pela estructura. <entry>
+                                    <form>— Simplicia.</form>
+                                    <sense>Quando saõ de hum só pedaço. Uranoscopus,
+                                          Syngnathus.</sense>
+                              </entry>
+                              <pb n="56"/><entry>
+                                    <form>— Diphylla, triphylla, tetraphylla.</form>
+                                    <sense>De dous, de tres, de quatro pedaços. Sparus,
+                                          Labrus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Ossea.</form>
+                                    <sense>Que naõ saõ flexiveis, em quasi todos os peixes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Mollia, flexilia.</form>
+                                    <sense>Molles, flexiveis. Syngnathus, Anguilla, Conger.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Carnosa.</form>
+                                    <sense>Cubertos de huma pélle grossa com gordura.
+                                          Blennius.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Subarcuata.</form>
+                                    <sense>Em meio circulo, quando a abertura das guélras he
+                                          circular, ou semicircular; a margem, ou borda posterior do
+                                          operculo, que a cobre descreve huma curva.
+                                          Xiphias.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Fistulosa.</form>
+                                    <sense>Quando a abertura das guélras mostra formar hum tubo na
+                                          mesma substancia do operculo. Murena, Syngnathus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Acuminata.</form>
+                                    <sense>Pontuda, se a lamina posterior do operculo se prolonga em
+                                          huma ponta comprida. Gadus alguma especie.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Dimidiata.</form>
+                                    <sense>Quando o operculo naõ cobre mais que metade, ou duas
+                                          terças partes da abertura das guélras. Acipenser.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Ciliata.</form>
+                                    <sense><term lemma="ciliado" msd="feminino singular"
+                                                >Ciliada</term>, quando a margem posterior, ou todo
+                                          o contorno he cortado como huma franja, ou ornado com
+                                          appendices carnosos parallelos.</sense>
+                              </entry> Pelo movimento. <entry>
+                                    <form>— Annexa, fraenata.</form>
+                                    <sense>Pegados ao corpo tanto acima como abaixo por meio de huma
+                                          pélle, ou freio. Syngnathus, Muræna.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Mobilia, libera.</form>
+                                    <sense>Moveis, em quasi todos os peixes.</sense>
+                              </entry> Pelo numero. <entry>
+                                    <form>— Solitaria.</form>
+                                    <sense>Solitarios, havendo hum só operculo em cada lado, como em
+                                          todos os peixes espinhosos, e naõ espinhosos.</sense>
+                              </entry>
+                              <pb n="57"/>
+                              <entry>
+                                    <form>— Nulla.</form>
+                                    <sense>Sem operculos, ficando descubertas as aberturas das
+                                          guélras. Diodon, Tetraodon.</sense>
+                              </entry> Pela proporçaõ. <entry>
+                                    <form>— Proportionalia.</form>
+                                    <sense>Se o seu tamanho corresponde áquelle do corpo da cabeça.
+                                          Gadus, Cyprinus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Minima.</form>
+                                    <sense>Pequenos, que naõ correspondem ao tamanho da cabeça.
+                                          Syngnathus. Esox.</sense>
+                              </entry> Pela superficie. <entry>
+                                    <form>— Glabra.</form>
+                                    <sense>Lisa. Mugil, Syngnathus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Aspera, scabra, loricata.</form>
+                                    <sense>Aspera. Uranoscopus, algumas especies Triglae.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Striata.</form>
+                                    <sense>Striados, quando está cuberto de strias quasi parallelas.
+                                          Uranoscopus, Trigla.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Radiata.</form>
+                                    <sense>Quando as strias partem de hum centro, e se espalhaõ pela
+                                          circumferencia. Syngnathus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Coelata.</form>
+                                    <sense>Se as strias saõ sem ordem, e naõ saõ parallelas, como em
+                                          algumas especies de Triglæ.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Aculeata.</form>
+                                    <sense>Com aculeos, e neste caso huma das suas margens está
+                                          acabada terminando-se em hum, dous, ou tres aculeos.
+                                          Trigla, Scorpæna.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Serrata.</form>
+                                    <sense>Dentados á maneira de serra, quando huma, ou muitas
+                                          Laminas, que formaõ o operculo estaõ cortadas na margem,
+                                          ou em todo, á maneira de serra. Perca. Alguns
+                                          Labri.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Nitida, Lucida.</form>
+                                    <sense>Luzidios, brilhantes, quando reflectem a luz, ou que
+                                          parecem envernizados. Niphias, Argentina, Zei
+                                          species.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Laevia.</form>
+                                    <sense>Polidos, mas sem serem luzidios. Cotus, Sciæna.</sense>
+                              </entry> Pelos tegumentos. <entry>
+                                    <form>— Nuda.</form>
+                                    <sense>Naõ estando cubertos, nem de pélle, nem de escamas, que
+                                          estaõ na cabeça. Trigla, Uranoscopus.</sense>
+                              </entry>
+                              <pb n="58"/><entry>
+                                    <form>— Alepidota.</form>
+                                    <sense>Cubertos de pélle, mas sem escamas. Mugil,
+                                          Exocoetus.</sense>
+                              </entry>
+                              <entry>
+                                    <form>— Squamosa.</form>
+                                    <sense><term lemma="escamoso">Escamosos</term>, cubertos de
+                                          escamas em lugar de pélle. Labrus, Sciæna, Sparus.</sense>
+                              </entry></entry>
                         <s>ORBICULATUM. Hum peixe chato, cujo diametro <term> longitudinal</term>, e
                               transversal saõ iguaes. Rhombus aculeatus.</s> OS. A bocca he aquella
                         cavidade, que na parte anterior acaba em huma abertura, pelos lados em os
