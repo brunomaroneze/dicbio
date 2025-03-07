@@ -48,10 +48,11 @@ Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O có
 
 ### Formatação do córpus
 Os textos que compõem o córpus estão sendo etiquetados com o emprego de etiquetas XML que seguem o padrão [Text Encoding Initiative](https://tei-c.org/)). Os arquivos com a extensão .xml, bem como o arquivo RELAX-NG (*tei_dhtb.rng*) que contém as instruções para o emprego das etiquetas, estão disponíveis no repositório *GitHub* (cf. "Política de disponibilização dos dados").
-- **text** - É o nó-raiz de cada texto; contém os metadados do texto, indicados pelos atributos "author" (*autor*), "title" (*título*) e "date" (*data*);
-- **front** - Elemento obrigatório que contém o texto da folha de rosto de cada obra;
-- **body** - Elemento obrigatório que contém o texto principal de cada obra;
-- **back** - Elemento obrigatório que contém os textos que eventualmente se encontram ao final de cada obra, após o texto principal, como índices e tabelas;
+Dentro do elemento **TeiHeader** de cada arquivo estão descritos os critérios de transcrição e de uso dos elementos TEI-XML. Os principais elementos empregados são os seguintes:
+- **text** - Contém toda a parte textual de cada obra transcrita; é dividido em **front** (que contém a página de rosto e outros elementos pré-textuais), **body** (que contém o texto propriamente dito) e **back** (que contém índices e outros elementos pós-textuais);
+
+
+
 - **title** - Etiqueta que delimita títulos e subtítulos;
 - **p** - Etiqueta que delimita parágrafos;
 - **s** - Etiqueta que delimita sentenças ou contextos maiores, entendidos como mínimos para a exemplificação do emprego de algum termo;
@@ -60,7 +61,6 @@ Os textos que compõem o córpus estão sendo etiquetados com o emprego de etiqu
 - **note** - Etiqueta que delimita notas de rodapé ou de margem de página;
 - **foreign** - Indica que a palavra ou o trecho delimitado está numa língua diferente da do português; o atributo *lang* indica que língua é essa;
 - **pb** - Elemento vazio que indica quebra de página da obra; o número da página que se inicia a partir desta marca é indicada no atributo *n*;
-- **obs** - Elemento vazio empregado para a inserção de observações diversas no texto, como comentários sobre a transcrição.
 
 
 <div id="critlex"></div>
