@@ -41,6 +41,14 @@
                         <p>Nos casos em que há quebra de parágrafo dentro do mesmo verbete, o
                               segundo parágrafo está marcado como outro elemento <gi>sense</gi>,
                               mesmo que não seja de fato uma segunda acepção.</p>
+                        <p>Algumas subentradas são divididas em grupos (como é o caso, por exemplo,
+                              do verbete <ref target="#apertura-branchiarum">APERTURA
+                                    branchiarum</ref>), e esses grupos são marcados pelo critério de
+                              classificação: "pela situação", "pela abertura, "pela figura" etc.
+                              Nesses casos, os critérios de classificação foram indicados pelo
+                              elemento <gi>dictScrap</gi>. Como esse elemento não pode conter
+                              subentradas, não foi possível usá-lo para agrupar todas as subentradas
+                              correspondentes, mas apenas o nome do critério de classificação.</p>
                   </editorialDecl>
                   <projectDesc>
                         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de
@@ -2459,48 +2467,155 @@
                                     <sense>Os appendices do tronco saõ as barbatanas espurias, os
                                           dedos, o escudo.</sense>
                               </entry>
-                              <entry>ALEPIDOTUM, seu nudum. Sem escamas. Blennius. Gymnotus,
-                                    Echeneis.</entry>
-                              <entry>ANALIS. Barbatana, que he immediata ao ano. fig. 2. a. fig. 3.
-                                    c. fig. 5. a.</entry>
-                              <entry>ANCEPS. O corpo do peixe, que consta de dous ângulos agudos, e
-                                    oppostos, que corresponde ao terceiro ensiforme.</entry>
-                              <entry>ANGULATUS. He a parte do peixe que he chêa de angulos.</entry>
-                              <entry>ANNEXUS. Diz-se de qualquer parte do peixe que está unida entre
-                                    si ou com outra.</entry>
-                              <entry>ANNULATUM. Quando o corpo he cercado de linhas prominentes ou
-                                    elevadas em forma de anneis.</entry>
-                              <entry>ANUS. Ou extremidade do intestino recto, he varia pela sua
-                                    situação. - Gularis. Debaixo da gûela, visinho aos opérculos das
-                                    guelras. Gymnotbus. - Pectoralis. Peitoral, debaixo das guelras
-                                    perto do peito. Trachinus, Pleuronectis, Rhombus. - Vicinus.
-                                    Visinho da cabeça e muito longe da cauda. Uranoscopus. Ophidion.
-                                    - Medius. No meio do corpo entre a cabeça e a cauda. Isto he o
-                                    que se observa mais commummente. - Remotus. Longe da cabeça e
-                                    muito perto da cauda. Cyprinus, Sparus.</entry> APERTURA
-                              branchiarum. Abertura das branchias, ou guelras, he huma abertura
-                              quasi sempre situada na parte posterior ou lateral da cabeça que se
-                              abre entre os operculos e o tronco. Ella acaba dentro da boca, contem
-                              as guelras, que saõ as partes interiores. <pb n="33"/>Pela situaçaõ. -
-                              Gularis. Na parte inferior da gûela, e naõ no lado da cabeça ou do
-                              torax. - Lateralis. Lateral no maior numero dos peixes. - Cervicalis.
-                              Cervical posta ao lado da cabeça mas superiormente ao collo. Murana,
-                              Conger. - Occipitalis. Occipital na parte posterior da cabeça ou na
-                              nuca. Callionymus Lira. Pela figura. - Arcuata. Arqueada em quasi
-                              todos os peixes. - Tubulosa, sistulosa. A modo tubo. Murana. -
-                              Repanda. Abertura sinuosa ou flexuosa ou chêa de voltas. Centriscus. -
-                              Ovata. Quando huma borda da dita abertura he mais aberta e mais larga
-                              doque a outra. Callionynmus. Pela proporçaõ. - Abnormis seu
-                              disproportionata minima. Desproporcionada muito pequena relativamente
-                              ao volume do corpo. Ostracion, Tetrodon, Diodon, Syngnatbus, Murana. -
-                              Mediocris, seu proportionalis. Proporcional ao corpo. Perca, Gadus. -
-                              Magna. Amplissima, relativamente á cabeça. Zeus. Pelos operculos. -
-                              Operculata. Cobertura de todo pelos operculos, o que se observa em
-                              todos os peixes. - Seminuda. Quando os operculos naõ cobrem senaõ
-                              ametade da abertura. Accipenser. APODES. Sem pés, ou pinnas ventraes.
-                              APTERA Cauda. Sem pinna ou barbatana. APTERYGIUM dorsum. Que naõ tem
-                              barbatana. APTERUS. Saõ os peixes destituidos de barbatanas ventraes.
-                                    <pb n="34"/> ARTICULATUM. Quando o corpo he composto de laminas
+                              <entry>
+                                    <form>ALEPIDOTUM, seu nudum.</form>
+                                    <sense>Sem escamas. Blennius. Gymnotus, Echeneis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANALIS.</form>
+                                    <sense>Barbatana, que he immediata ao ano. fig. 2. a. fig. 3. c.
+                                          fig. 5. a.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANCEPS.</form>
+                                    <sense>O corpo do peixe, que consta de dous ângulos agudos, e
+                                          oppostos, que corresponde ao terceiro ensiforme.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANGULATUS.</form>
+                                    <sense>He a parte do peixe que he chêa de angulos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANNEXUS.</form>
+                                    <sense>Diz-se de qualquer parte do peixe que está unida entre si
+                                          ou com outra.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANNULATUM.</form>
+                                    <sense>Quando o corpo he cercado de linhas prominentes ou
+                                          elevadas em forma de anneis.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ANUS.</form>
+                                    <sense>Ou extremidade do intestino recto, he varia pela sua
+                                          situação.</sense>
+                                    <entry>
+                                          <form>- Gularis.</form>
+                                          <sense>Debaixo da gûela, visinho aos opérculos das
+                                                guelras. Gymnotbus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Pectoralis.</form>
+                                          <sense>Peitoral, debaixo das guelras perto do peito.
+                                                Trachinus, Pleuronectis, Rhombus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Vicinus.</form>
+                                          <sense>Visinho da cabeça e muito longe da cauda.
+                                                Uranoscopus. Ophidion.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Medius.</form>
+                                          <sense>No meio do corpo entre a cabeça e a cauda. Isto he
+                                                o que se observa mais commummente.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Remotus.</form>
+                                          <sense>Longe da cabeça e muito perto da cauda. Cyprinus,
+                                                Sparus.</sense>
+                                    </entry>
+                              </entry>
+                              <entry xml:id="apertura-branchiarum">
+                                    <form>APERTURA branchiarum.</form>
+                                    <sense>Abertura das branchias, ou guelras, he huma abertura
+                                          quasi sempre situada na parte posterior ou lateral da
+                                          cabeça que se abre entre os operculos e o tronco. Ella
+                                          acaba dentro da boca, contem as guelras, que saõ as partes
+                                          interiores.</sense>
+                                    <pb n="33"/>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>- Gularis.</form>
+                                          <sense>Na parte inferior da gûela, e naõ no lado da cabeça
+                                                ou do torax.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Lateralis.</form>
+                                          <sense>Lateral no maior numero dos peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Cervicalis.</form>
+                                          <sense>Cervical posta ao lado da cabeça mas superiormente
+                                                ao collo. Murana, Conger.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Occipitalis.</form>
+                                          <sense>Occipital na parte posterior da cabeça ou na nuca.
+                                                Callionymus Lira.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>- Arcuata.</form>
+                                          <sense>Arqueada em quasi todos os peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Tubulosa, sistulosa.</form>
+                                          <sense>A modo de tubo. Muraena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Repanda.</form>
+                                          <sense>Abertura sinuosa ou flexuosa ou chêa de voltas.
+                                                Centriscus</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Ovata.</form>
+                                          <sense>Quando huma borda da dita abertura he mais aberta e
+                                                mais larga doque a outra. Callionynmus.</sense>
+                                    </entry>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>- Abnormis seu disproportionata minima.</form>
+                                          <sense>Desproporcionada muito pequena relativamente ao
+                                                volume do corpo. Ostracion, Tetrodon, Diodon,
+                                                Syngnatbus, Muraena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Mediocris, seu proportionalis.</form>
+                                          <sense>Proporcional ao corpo. Perca, Gadus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Magna.</form>
+                                          <sense>Amplissima, relativamente á cabeça. Zeus.</sense>
+                                    </entry>
+                                    <dictScrap>Pelos operculos.</dictScrap>
+                                    <entry>
+                                          <form>- Operculata.</form>
+                                          <sense>Cobertura de todo pelos operculos, o que se observa
+                                                em todos os peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>- Seminuda.</form>
+                                          <sense>Quando os operculos naõ cobrem senaõ ametade da
+                                                abertura. Accipenser.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
+                                    <form>APODES.</form>
+                                    <sense>Sem pés, ou pinnas ventraes.</sense>
+                              </entry>
+                              <entry>
+                                    <form>APTERA Cauda.</form>
+                                    <sense>Sem pinna ou barbatana.</sense>
+                              </entry>
+                              <entry>
+                                    <form>APTERYGIUM dorsum.</form>
+                                    <sense>Que naõ tem barbatana.</sense>
+                              </entry>
+                              <entry>
+                                    <form>APTERUS.</form>
+                                    <sense>Saõ os peixes destituidos de barbatanas ventraes.</sense>
+                              </entry>
+                              <pb n="34"/> ARTICULATUM. Quando o corpo he composto de laminas
                               encadeadas humas ás outras. Syngnathus. ARTUS. Os membros nos peixes
                               naõ saõ outra cousa mais que as barbatans que servem para os
                               differentes movimentos dos peixes. Ellas saõ formadas de muitos
