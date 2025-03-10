@@ -28,6 +28,14 @@
                 <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
                     rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
                         <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+                <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
+                    digital da Universidade de Coimbra. O URL de cada imagem segue o padrão:
+                    <code>https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
+                    onde <code>XXXX</code> é um número sequencial e <code>PAGE</code> é o número da
+                    página, seja em romanos, seja em arábicos. Neste arquivo transcrito, cada
+                    elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
+                    <att>facs</att> com o endereço URL do arquivo da imagem correspondente à
+                    página em questão.</p>
             </editorialDecl>
             <projectDesc>
                 <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
