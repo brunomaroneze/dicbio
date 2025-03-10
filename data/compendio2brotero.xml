@@ -37,7 +37,8 @@
     </teiHeader>
     <text>
         <front>
-            <titlePage>
+            <titlePage
+                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0005_rosto_t24-C-R0120.jpg">
                 <titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
                 <titlePart type="desc">, OU NOÇOENS ELEMENTARES DESTA SCIENCIA, segundo os melhores
                     Escritores modernos, expostas na lingua Portugueza,</titlePart>
@@ -52,7 +53,8 @@
             </titlePage>
         </front>
         <body>
-            <pb n="3"/>
+            <pb n="3"
+                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0007_3_t24-C-R0120.jpg"/>
             <div type="Parte">
                 <head>EXPOSIÇAÕ DO SYSTEMA SEXUAL.</head>
                 <div type="chapter" n="1">
@@ -70,47 +72,50 @@
                         visivel ou he clandestina. Na que he bem destinctamente visivel, os organos
                         sexuaes saõ assaz apparentes sem o soccorro do microscopio de maneira que
                         ninguem os confundirà jamais nem com as sementes nem com o tenro fructo. As
-                            <pb n="4"/>plantas, cuja Florecencia he bem destinctamente visivel,
-                        humas daõ na mesma especie flores todas hermaphroditas, outras daõ flores
-                        masculinas e femininas taõbem na mesma especie: no primeiro cazo as flores
-                        hermaphroditas ou tem os estames desapegados entre si e juntamente do
-                            pistillo<note>Naõ saõ insertos ao pistillo, mas sim ao receptaculo,
-                            calys, ou corolla; e saõ soltos, isto he, tem os filetes desadunados e
-                            igualmente as antheras.</note>, ou apegados entre si ou ao
-                            pistillo<note>Isto he, insertos ao pistillo, ou parte equivalente a
-                            elle.</note> Se os estames se achaõ desapegados, e saõ de comprimento
-                            inderterminado<note>Isto he, quando dois delles naõ saõ sempre mais
-                            curtos nas flores de quatro e seis estames; e nas demais, quando variaõ
-                            muito no comprimento na mesma especie ou individuo, sendo ora todos
-                            iguaes, ora hum mais baxo, ora tres mais altos, &amp;c. e as vezes huns
-                            mais curtos outros mais altos alternadamente como na Daphne.</note>,
-                        constituem as treze primeiras classes, que differem humas das outras pelo
-                        numero dos dictos estames, e seu lugar de insersaõ<note>Isto he, pelo apego
-                            da base do filete ao calys ou receptaculo.</note>. Na 1ª. classe ou
-                            Monandria<note>Os que dezejarem saber as etymologias Gregas dos nomes
-                            das Classes e Ordens podem consultar o Diccionario dos termos botanicos
-                            que ajuntei no fim deste Compendio.</note> as flores constaõ de hum so
-                        estame, na 2ª. ou Diandria constaõ de dois, na 3ª. ou Triandria de tres, na
-                        4ª. ou Tetrandria de quatro, na 5ª. ou Pentrandria de cinco, na 6ª. ou
-                        Hexandria de seis, na 7ª. ou Heptandria de sette, na 8ª. ou Octandria de
-                        oito, na 9ª. ou Enneandria de nove, na 10ª. ou Decandria de dez, na 11ª. ou
-                        Dodecandria de onze athe dezanove inclusivamente, na 12ª. ou Icosandria de
-                        vinte ou mais insertos ao calyz, na 13ª. ou Polyandria de numerosos <pb
-                            n="5"/>estames<note>O seu numero pode ser de vinte athe mil ou mais,
-                            contanto que sejaõ insertos ao receptaculo.</note> insertos ao
-                        receptaculo. Se os estames das dictas flores hermaphroditas tem hum
-                        comprimento determinado, sendo dois mais altos e dois mais curtos,
-                        estabelecem a classe 14ª. ou Didynamia, e a 15ª. ou Tetradynamia, se dois
-                        saõ mais curtos e quatro mais altos. Porem se os estames das flores
-                        hermaphroditas estaõ apegados entre si pelos filetes em hum corpo formaõ a
-                        Monadelphia ou classe 16ª., a Diadelphia ou 17ª. classe se estaõ adunados em
-                        dois corpos, e a 18ª. ou Polyadelphia se acazo se achaõ adunados em muitos
-                        corpos ou phalanges; se estaõ somente<note>Nesta circumstancia os filetes
-                            estaõ desadunados.</note> apegados pelas antheras constituem a classe
-                        19ª. ou Syngenesia, e a 20ª. ou Gynandria quando somente estaõ apegados
-                        pelas suas bases ao pistillo<note>Nesta classe tanto as antheras como os
-                            filetes estaõ desadunados entre si, e somente a circumstancia de estarem
-                            insertos ao pistillo ou seu equivalente he que constitue o caracter da
+                            <pb n="4"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0008_4_t24-C-R0120.jpg"
+                        />plantas, cuja Florecencia he bem destinctamente visivel, humas daõ na
+                        mesma especie flores todas hermaphroditas, outras daõ flores masculinas e
+                        femininas taõbem na mesma especie: no primeiro cazo as flores hermaphroditas
+                        ou tem os estames desapegados entre si e juntamente do pistillo<note>Naõ saõ
+                            insertos ao pistillo, mas sim ao receptaculo, calys, ou corolla; e saõ
+                            soltos, isto he, tem os filetes desadunados e igualmente as
+                            antheras.</note>, ou apegados entre si ou ao pistillo<note>Isto he,
+                            insertos ao pistillo, ou parte equivalente a elle.</note> Se os estames
+                        se achaõ desapegados, e saõ de comprimento inderterminado<note>Isto he,
+                            quando dois delles naõ saõ sempre mais curtos nas flores de quatro e
+                            seis estames; e nas demais, quando variaõ muito no comprimento na mesma
+                            especie ou individuo, sendo ora todos iguaes, ora hum mais baxo, ora
+                            tres mais altos, &amp;c. e as vezes huns mais curtos outros mais altos
+                            alternadamente como na Daphne.</note>, constituem as treze primeiras
+                        classes, que differem humas das outras pelo numero dos dictos estames, e seu
+                        lugar de insersaõ<note>Isto he, pelo apego da base do filete ao calys ou
+                            receptaculo.</note>. Na 1ª. classe ou Monandria<note>Os que dezejarem
+                            saber as etymologias Gregas dos nomes das Classes e Ordens podem
+                            consultar o Diccionario dos termos botanicos que ajuntei no fim deste
+                            Compendio.</note> as flores constaõ de hum so estame, na 2ª. ou Diandria
+                        constaõ de dois, na 3ª. ou Triandria de tres, na 4ª. ou Tetrandria de
+                        quatro, na 5ª. ou Pentrandria de cinco, na 6ª. ou Hexandria de seis, na 7ª.
+                        ou Heptandria de sette, na 8ª. ou Octandria de oito, na 9ª. ou Enneandria de
+                        nove, na 10ª. ou Decandria de dez, na 11ª. ou Dodecandria de onze athe
+                        dezanove inclusivamente, na 12ª. ou Icosandria de vinte ou mais insertos ao
+                        calyz, na 13ª. ou Polyandria de numerosos <pb n="5"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0009_5_t24-C-R0120.jpg"
+                            />estames<note>O seu numero pode ser de vinte athe mil ou mais, contanto
+                            que sejaõ insertos ao receptaculo.</note> insertos ao receptaculo. Se os
+                        estames das dictas flores hermaphroditas tem hum comprimento determinado,
+                        sendo dois mais altos e dois mais curtos, estabelecem a classe 14ª. ou
+                        Didynamia, e a 15ª. ou Tetradynamia, se dois saõ mais curtos e quatro mais
+                        altos. Porem se os estames das flores hermaphroditas estaõ apegados entre si
+                        pelos filetes em hum corpo formaõ a Monadelphia ou classe 16ª., a Diadelphia
+                        ou 17ª. classe se estaõ adunados em dois corpos, e a 18ª. ou Polyadelphia se
+                        acazo se achaõ adunados em muitos corpos ou phalanges; se estaõ
+                            somente<note>Nesta circumstancia os filetes estaõ desadunados.</note>
+                        apegados pelas antheras constituem a classe 19ª. ou Syngenesia, e a 20ª. ou
+                        Gynandria quando somente estaõ apegados pelas suas bases ao
+                            pistillo<note>Nesta classe tanto as antheras como os filetes estaõ
+                            desadunados entre si, e somente a circumstancia de estarem insertos ao
+                            pistillo ou seu equivalente he que constitue o caracter da
                             classe.</note>. A florecencia pode ainda ser bem distinctamente visivel
                         nas plantas que daõ na mesma especie flores masculinas e femininas; nesta
                         circumstancia ou as dictas flores se achaõ no mesmo individo e constituem a
