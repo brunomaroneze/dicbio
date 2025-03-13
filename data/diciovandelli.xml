@@ -18,7 +18,7 @@
                                     Technicos de Historia Natural</title>.
                                     <pubPlace>Coimbra</pubPlace>: Na Real Officina da Universidade,
                                     <date when="1788">1788</date>. Disponível em:
-                              https://purl.pt/13958. </bibl>
+                              https://purl.pt/13958.</bibl>
                   </sourceDesc>
             </fileDesc>
             <encodingDesc>
@@ -516,7 +516,7 @@
                                     </entry>
                                     <entry>
                                           <form>- Sublobatus.</form>
-                                          <sense>Quasi <term> lobado</term>, ou com pequenas
+                                          <sense>Quasi <term>lobado</term>, ou com pequenas
                                                 prominencias na baze.</sense>
                                     </entry>
                                     <entry>
@@ -2654,33 +2654,39 @@
                                     guarnecidas ou de sedas, ou de tubulos carnosos, ou de <term
                                           lemma="tubérculo" norm="tubérculos" msd="plural"
                                           >tuberculos</term>.</s> - <s>Dissimiles, disformes,
-                                    anomale. Dissimilhantes, quando humas tem pelos ou sedas no lado
-                                    exterior e interior e as outras saõ <term lemma="tuberculado"
-                                          msd="feminino plural">tuberculadas</term>. Perca,
-                                    Spari.</s> - <s>Tuberculatae. <term lemma="tuberculado"
-                                          msd="feminino plural">Tuberculadas</term>, a parte
-                                    arqueada concava do ossiculo he cuberta de <term
-                                          lemma="tubérculo" norm="tubérculos" msd="plural"
-                                          >tuberculos</term>, cousa, que se observa em quasi todos
-                                    os peixes.</s>
-                              <pb n="36"/> - Glabre, inermes. Sem tubérculos. Nos Nantes. Squalus. -
-                              Pectinata, ciliata. A maneira de pente, quan do a parte convexa do
+                                    anomalae. Dissimilhantes, quando humas tem pelos ou sedas no
+                                    lado exterior e interior e as outras saõ <term
+                                          lemma="tuberculado" msd="feminino plural"
+                                          >tuberculadas</term>. Perca, Spari.</s>
+                              <entry>
+                                    <form>- Tuberculatae.</form>
+                                    <sense><term lemma="tuberculado" msd="feminino plural"
+                                                >Tuberculadas</term>, a parte arqueada concava do
+                                          ossiculo he cuberta de <term lemma="tubérculo"
+                                                norm="tubérculos" msd="plural">tuberculos</term>,
+                                          cousa, que se observa em quasi todos os peixes.</sense>
+                              </entry>
+                              <pb n="36"/> - Glabrae, inermes. Sem tubérculos. Nos Nantes. Squalus.
+                              - Pectinatae, ciliatae. A maneira de pente, quan do a parte convexa do
                               ossículo, que forma cada guelra he cercada em redondo de raios á
                               maneira de barba, que imitaõ os dentes do pente. Estes raios ou barbas
-                              ordinariamente saõ encarnadas. <s>- Aculeata. Armadas de pontas ou
-                                    aculeos, quando a parte concava do ossiculo em lugar de <term
-                                          lemma="tubérculo" norm="tubérculos" msd="plural">
-                                          tuberculos</term> tem bicos.</s> BRANCHIOSTEGA. He huma
-                              membrana que se acha debaixo dos operculos chêa de raios osseos, que
-                              serve para cobrir as guelras dilatando-se e contrahindo-se á vontade
-                              do peixe.</div> C CAUDA. A cauda he solida formada das vertebras dos
-                        lombos, e fornecida de musculos; está posta na extremidade do dorso perto do
-                        ano, e acaba o tronco. Chama-se - Teres, cylindrica. Redonda, cylindrica, em
-                        alguns. - Tetragona. Quadrada, a quatro lados chatos em algumas especies de
-                        Syngnatbi. - Carinata. A quilha com angulo, que fica prominente para baixo.
-                        Scomber, Chatodon. - Angulosa. Angulosa, quando a eminencia que forma a
-                        quilha está sobre os lados em lugar de estar abaixo. Scomber. - <s>Muricata.
-                              Com aculeos, ou <term lemma="tubérculo" norm="tubérculos" msd="plural"
+                              ordinariamente saõ encarnadas. <entry>
+                                    <form>- Aculeatae.</form>
+                                    <sense>Armadas de pontas ou aculeos, quando a parte concava do
+                                          ossiculo em lugar de <term lemma="tubérculo"
+                                                norm="tubérculos" msd="plural"> tuberculos</term>
+                                          tem bicos.</sense>
+                              </entry> BRANCHIOSTEGA. He huma membrana que se acha debaixo dos
+                              operculos chêa de raios osseos, que serve para cobrir as guelras
+                              dilatando-se e contrahindo-se á vontade do peixe.</div> C CAUDA. A
+                        cauda he solida formada das vertebras dos lombos, e fornecida de musculos;
+                        está posta na extremidade do dorso perto do ano, e acaba o tronco. Chama-se
+                        - Teres, cylindrica. Redonda, cylindrica, em alguns. - Tetragona. Quadrada,
+                        a quatro lados chatos em algumas especies de Syngnatbi. - Carinata. A quilha
+                        com angulo, que fica prominente para baixo. Scomber, Chatodon. - Angulosa.
+                        Angulosa, quando a eminencia que forma a quilha está sobre os lados em lugar
+                        de estar abaixo. Scomber. - <s>Muricata. Com aculeos, ou <term
+                                    lemma="tubérculo" norm="tubérculos" msd="plural"
                                     >tuberculos</term>. Scomber.</s> - Apterigia. Sem barbatana na
                         cauda. Trichiurus Syngnathus. <pb n="37"/>- Dipterigia. Com duas barbatanas,
                         quando a barbatana he dividida até a base em duas. - Pinnata. Quando a cauda
@@ -3411,21 +3417,22 @@
                         uniaõ ao corpo, como no maior numero dos peixes. Pela superficie. — Molles,
                         flexiles. Molles, flexiveis. Clupea. — Glabræ, inermes. Lisas, sem bicos.
                         Exocoetus, Cyprinus. — Striatæ. Striadas. Exocoetus, Perca, Mugil. — Asperæ,
-                        aculeatæ. Asperas, picantes. Gobius, Perca. — <s>Punctatæ. <term
-                                    lemma="pontoado" msd="feminino plural">Pontoadas</term>,
-                              cubertas de pontos. Scorpæna. Ciliatae.</s> — <s><term lemma="ciliado"
-                                    msd="feminino plural">Ciliadas</term>, cercadas de cilhas, ou
-                              pellos ao redor. Pleuronectes Solea, Rhombus.</s> — Serratæ. A modo de
-                        serra, recortadas na sua margem. Cottus. Pelo tamanho. — Amplæ, magnæ.
-                        Grandes. Exocoetus, Mugil, Mullus. — Pavæ, tenues, exiguae. Pequenas,
-                        miudas. Gymnotus, Atherina. <pb n="72"/> — Minimæ. Muito pequenas.
-                        Ammodytes, Uranoscopus. SQUAMOSUM. O corpo cuberto de escamas, como he o
-                        maior numero dos peixes. T. <s>TENTACULUM. Quando Linnéo dá o nome de
-                              tentaculo a certas partes dos peixes, como he no Gymnotus, deve-se
-                              entender por hum additamento <term lemma="setáceo">setaceo</term>,
-                              cutaneo, situado entre os olhos, e narizes, ou pela parte superior;
-                              movel á vontade do peixe: muitas vezes observa-se cortado, formando
-                              huma crista.</s>
+                        aculeatæ. Asperas, picantes. Gobius, Perca. <entry>
+                              <form>— Punctatæ.</form>
+                              <sense><term lemma="pontoado" msd="feminino plural">Pontoadas</term>,
+                                    cubertas de pontos. Scorpæna.</sense>
+                        </entry> — Ciliatae. <s><term lemma="ciliado" msd="feminino plural"
+                                    >Ciliadas</term>, cercadas de cilhas, ou pellos ao redor.
+                              Pleuronectes Solea, Rhombus.</s> — Serratæ. A modo de serra,
+                        recortadas na sua margem. Cottus. Pelo tamanho. — Amplæ, magnæ. Grandes.
+                        Exocoetus, Mugil, Mullus. — Pavæ, tenues, exiguae. Pequenas, miudas.
+                        Gymnotus, Atherina. <pb n="72"/> — Minimæ. Muito pequenas. Ammodytes,
+                        Uranoscopus. SQUAMOSUM. O corpo cuberto de escamas, como he o maior numero
+                        dos peixes. T. <s>TENTACULUM. Quando Linnéo dá o nome de tentaculo a certas
+                              partes dos peixes, como he no Gymnotus, deve-se entender por hum
+                              additamento <term lemma="setáceo">setaceo</term>, cutaneo, situado
+                              entre os olhos, e narizes, ou pela parte superior; movel á vontade do
+                              peixe: muitas vezes observa-se cortado, formando huma crista.</s>
                         <s>O uso deste tentaculo, he taõ incognito, como o dos <term lemma="cirro"
                                     msd="plural">cirros</term>: Os Ichthyologos daõ-lhe muitas vezes
                               o nome de pinnula.</s> TERES, seu Cylindricum. Corpo do peixe sem
@@ -3581,46 +3588,48 @@
                         escamas, mas com malhas nûas transparentes. Bombyx Atlas. — Concolores. Da
                         mesma côr na pagina, ou superficie superior, e inferior. Papilio. —
                         Ocellatæ. Com malhas de varias cores dispostas á maneira de circulo.
-                        Papilio. fig. I. s. s. — <s>Pupillatæ. São as mesmas <term lemma="ocelado"
-                                    msd="feminino plural">ocelladas</term>, ou com malhas á maneira
-                              de olho com hum ponto no meio da dita malha. Papilio.</s> — Cæcæ.
-                        Oppostas ás antecedentes. — Fasciatæ. Com linhas largas transversaes
-                        córadas. fig. I. t. u. u. — Strigatæ. Com linhas estreitas transversaes
-                        córadas. Phalaena. <pb n="81"/> — Tessellatæ. Com malhas quasi redondas
-                        coradas. Tipula hirta. Pela margem. — Crenatæ. Com cortaduras, ou incizoens
-                        muito pequenas. Sphinx, fig. 44. Bombyx. — Caudatæ. A margem posterior
-                        prolongada, ou extensa, e adelgaçada. Papilio, Truxalis — Emarginatæ. Com
-                        excavaçoens de segmento de circulo. Pyralis Emargana. — Erosæ. Com varias
-                        excavaçoens, ou sinuosidades despedaçadas. Noctua Libatrix. — Ciliatæ. Com
-                        pellos parallelos na margem. Phriganea, fig. 49. Musca. — Angulatæ. Com
-                        varias prominencias horizontaes angulares. Sphinx. Pelo apice. — Obtusæ.
-                        Obtusas. — Truncatæ. Como cortadas. Phryganea. — Acutæ. Agudas. Hyppobosca.
-                        fig. 72. — Acuminatæ. Alguma cousa agudas no apice. Bombyx atlas.
-                        ANASTOMOSIS. Quando os vasos, ou fibras se unem á maneira de rede. Cicada
-                        plebeia. <s>ANTENNÆ. As antennas saõ huns <term lemma="filamento"
-                                    msd="plural" senseNumber="2"> filamentos</term> articulados
-                              moveis, que servem de sensorio, e tem differentes nomes.</s> Tab. VI.
-                        fig. II. III. c. c. c.c. Pelo numero. — <s>Nullæ. Quando o <term
-                                    lemma="inseto"> insecto</term> as naõ tem. Aranea,
-                              Phalangium.</s> fig. 79. — <s>Duæ. Duas, na maior parte dos <term
-                                    lemma="inseto" norm="insetos" msd="plural">insectos</term>.</s>
-                        — Quatuor. Quatro. Oniscus. Pagurus. — Sex. Seis. Astacus. Pela situaçaõ. —
-                        In fronte. Na frente. Stratiomys. <pb n="82"/> — In cantho. oculorum. No
-                        angulo, ou canto dos olhos. Cimex, Cicada. fig. 35. — Supra oculos. Assima
-                        dos olhos. Ricinus. — Sub oculis. Abaixo dos olhos. Notonecta. fig. 36. Pela
-                        proporçaõ. — Corpore breviores. Mais breve, que o corpo. Scarabæus. —
-                        Corpore longiores. Mais compridas, que o corpo. Cerambix, Leptura. fig. 22.
-                        — Brevissimæ. Muito pequenas. Nepa, Laternaria. Pela figura. — Filiformes.
-                        Da mesma grossura em toda a parte. Elater. fig. 24. — Filatæ. O mesmo que
-                        filiforme sem fio lateral. Musca empis. — Clavatæ. Mais grossas para o fim.
-                        Papilio. — Attenuatae. Mais grossas no meio, que na base, e na summidade.
-                        Zygaena. — Setaceæ. Mais delgadas para o apice. Cerambix. — <s>Setariae. O
-                              mesmo que <term lemma="setáceo" norm="setácea" msd="feminino singular"
-                                    >setacea</term>. Musca.</s> — Subulatæ. Breves, agudas.
-                        Libellula. — Ensiformes. Largas, triangulares. Truxalis. — <s>Palmatæ.
-                              Divididas em <term lemma="lacínia" norm="lacínias" msd="plural"
-                                    >lacinias</term>. Nepa. fig. 37.</s> — Dichotomæ. Divididas em
-                        duas. — Heptaphylæ. Divididas em sete. Scarabæus nasicornis. —
+                        Papilio. fig. I. s. s. <entry>
+                              <form>— Pupillatæ.</form>
+                              <sense>São as mesmas <term lemma="ocelado" msd="feminino plural"
+                                          >ocelladas</term>, ou com malhas á maneira de olho com hum
+                                    ponto no meio da dita malha. Papilio.</sense>
+                        </entry> — Cæcæ. Oppostas ás antecedentes. — Fasciatæ. Com linhas largas
+                        transversaes córadas. fig. I. t. u. u. — Strigatæ. Com linhas estreitas
+                        transversaes córadas. Phalaena. <pb n="81"/> — Tessellatæ. Com malhas quasi
+                        redondas coradas. Tipula hirta. Pela margem. — Crenatæ. Com cortaduras, ou
+                        incizoens muito pequenas. Sphinx, fig. 44. Bombyx. — Caudatæ. A margem
+                        posterior prolongada, ou extensa, e adelgaçada. Papilio, Truxalis —
+                        Emarginatæ. Com excavaçoens de segmento de circulo. Pyralis Emargana. —
+                        Erosæ. Com varias excavaçoens, ou sinuosidades despedaçadas. Noctua
+                        Libatrix. — Ciliatæ. Com pellos parallelos na margem. Phriganea, fig. 49.
+                        Musca. — Angulatæ. Com varias prominencias horizontaes angulares. Sphinx.
+                        Pelo apice. — Obtusæ. Obtusas. — Truncatæ. Como cortadas. Phryganea. —
+                        Acutæ. Agudas. Hyppobosca. fig. 72. — Acuminatæ. Alguma cousa agudas no
+                        apice. Bombyx atlas. ANASTOMOSIS. Quando os vasos, ou fibras se unem á
+                        maneira de rede. Cicada plebeia. <s>ANTENNÆ. As antennas saõ huns <term
+                                    lemma="filamento" msd="plural" senseNumber="2">
+                                    filamentos</term> articulados moveis, que servem de sensorio, e
+                              tem differentes nomes.</s> Tab. VI. fig. II. III. c. c. c.c. Pelo
+                        numero. — <s>Nullæ. Quando o <term lemma="inseto"> insecto</term> as naõ
+                              tem. Aranea, Phalangium.</s> fig. 79. — <s>Duæ. Duas, na maior parte
+                              dos <term lemma="inseto" norm="insetos" msd="plural"
+                              >insectos</term>.</s> — Quatuor. Quatro. Oniscus. Pagurus. — Sex.
+                        Seis. Astacus. Pela situaçaõ. — In fronte. Na frente. Stratiomys. <pb n="82"
+                        /> — In cantho. oculorum. No angulo, ou canto dos olhos. Cimex, Cicada. fig.
+                        35. — Supra oculos. Assima dos olhos. Ricinus. — Sub oculis. Abaixo dos
+                        olhos. Notonecta. fig. 36. Pela proporçaõ. — Corpore breviores. Mais breve,
+                        que o corpo. Scarabæus. — Corpore longiores. Mais compridas, que o corpo.
+                        Cerambix, Leptura. fig. 22. — Brevissimæ. Muito pequenas. Nepa, Laternaria.
+                        Pela figura. — Filiformes. Da mesma grossura em toda a parte. Elater. fig.
+                        24. — Filatæ. O mesmo que filiforme sem fio lateral. Musca empis. — Clavatæ.
+                        Mais grossas para o fim. Papilio. — Attenuatae. Mais grossas no meio, que na
+                        base, e na summidade. Zygaena. — Setaceæ. Mais delgadas para o apice.
+                        Cerambix. — <s>Setariae. O mesmo que <term lemma="setáceo" norm="setácea"
+                                    msd="feminino singular">setacea</term>. Musca.</s> — Subulatæ.
+                        Breves, agudas. Libellula. — Ensiformes. Largas, triangulares. Truxalis. —
+                              <s>Palmatæ. Divididas em <term lemma="lacínia" norm="lacínias"
+                                    msd="plural">lacinias</term>. Nepa. fig. 37.</s> — Dichotomæ.
+                        Divididas em duas. — Heptaphylæ. Divididas em sete. Scarabæus nasicornis. —
                         Flabelliformes. Que estaõ abertas como hum leqre. Elater flabeiliformis. —
                         Belavatæ. Com o articulo do meio, e o ultimo mais grosso no apice. Cimex. —
                         Irregulares. Com alguns articulos irregulares, a maneira de barca. Cerocoma.
@@ -3791,15 +3800,18 @@
                         ás antecedentes. Pelo apice. — Rotundata. Que acabaõ em segmento de circulo.
                         Gryllus. <pb n="92"/> — Acuminata. Que acabaõ em huma ponta forte, e rija.
                         Tenebrio. — Truncata. Obtusos, ou como cortados posteriormente. Staphilinus.
-                        fig. 20. — <s>Fastigiata. Excavados, ou <term lemma="emarginado"
-                                    msd="masculino plural">emarginados</term> no apice. Leptura,
-                              Stenocorus..</s> — Mucronata. Excavados no apice, e no meio da
-                        emarginatura, ou a excavaçaõ, tem huma ponta. Buprestis. — Decollata. O
-                        mesmo que truncata. <s>ENTEMOLOGIA. Sciencia, que trata dos <term
-                                    lemma="inseto" norm="Insetos" msd="plural">Insectos</term>.</s>
-                        ENTOMOLOGUS. Author da mesma sciencia. <s>EPIGASTRIUM. A regiaõ epigastrica
-                              nos <term lemma="inseto" norm="insetos" msd="plural">insectos</term>
-                              he o espaço que fica na parte superior do ventre. Cantharis rufa.</s>
+                        fig. 20. <entry>
+                              <form>— Fastigiata.</form>
+                              <sense>Excavados, ou <term lemma="emarginado" msd="masculino plural"
+                                          >emarginados</term> no apice. Leptura,
+                                    Stenocorus..</sense>
+                        </entry> — Mucronata. Excavados no apice, e no meio da emarginatura, ou a
+                        excavaçaõ, tem huma ponta. Buprestis. — Decollata. O mesmo que truncata.
+                              <s>ENTEMOLOGIA. Sciencia, que trata dos <term lemma="inseto"
+                                    norm="Insetos" msd="plural">Insectos</term>.</s> ENTOMOLOGUS.
+                        Author da mesma sciencia. <s>EPIGASTRIUM. A regiaõ epigastrica nos <term
+                                    lemma="inseto" norm="insetos" msd="plural">insectos</term> he o
+                              espaço que fica na parte superior do ventre. Cantharis rufa.</s>
                         <s>EXCRETIO. Copia do humor, que o <term lemma="inseto">insecto</term> lança
                               quando se corta, ou tambem pela transpiraçaõ</s> F. FEMUR. Coixa, he o
                         nó superior, que pega o pé. Tab. VI. fig. II. y.y.y. Pela figura. —
@@ -6614,12 +6626,14 @@
                         que anceps hindo-se adelgaçando da base para a ponta. Iris pseudoacorus.
                         Gladiolus communis. — <s>Subulatum. fig. 8. <term lemma="folha"
                               >Folha</term>, que pela parte inferior he linear, redonda; mas para a
-                              ponta pouco, e pouco adelgaçada. Sedum rupestre.</s> —
-                              <s>Acinaciforme. fig. 56. <term>folha</term> carnosa <term
-                                    lemma="lanceolado" msd="feminino singular">lanceolada</term>,
-                              comprimida nos lados, com hum lado convexo, e apertado, e outro mais
-                              direito, e mais grosso á maneira de alfange. Mesymbryanthemum.</s> 57.
-                              <s>Considerada a <term>folha</term> em quanto á medida, que tem
+                              ponta pouco, e pouco adelgaçada. Sedum rupestre.</s>
+                        <entry>
+                              <form>— Acinaciforme.</form>
+                              <sense>fig. 56. <term>Folha</term> carnosa <term lemma="lanceolado"
+                                          msd="feminino singular">lanceolada</term>, comprimida nos
+                                    lados, com hum lado convexo, e apertado, e outro mais direito, e
+                                    mais grosso á maneira de alfange. Mesymbryanthemum.</sense>
+                        </entry> 57. <s>Considerada a <term>folha</term> em quanto á medida, que tem
                               relativamente ao caule.</s> Neste caso observa-se o comprimento maior,
                         ou menor, ou <pb n="229"/>absoluto, que tem com o mesmo caule; e assim se
                         diz. — Brevissimum. — Longissimum { Conforme a proporçaõ, que tem com o
@@ -6660,11 +6674,14 @@
                               pequena <term> folha</term> pinnata. V. Pinnatum. Lathyri Species.</s>
                         — <s>Digitatum. fig. 66. O <term lemma="pecíolo">peciolo</term> simples une
                               no seu apice muitas pequenas <term lemma="folha" msd="plural"
-                                    >folhas</term> distintas entre si. Ranunculus Sceleratus.</s> —
-                              <s>Binatum. fig. 63. He a <term>folha</term>
-                              <term lemma="digitado" msd="feminino singular"> digitada</term> com
-                              duas pequenas <term lemma="folha" msd="plural">folhas</term>
-                              somente.</s> — <s>Trinatum. Ternatum. Fig. 64. 65. com pequenas <term
+                                    >folhas</term> distintas entre si. Ranunculus Sceleratus.</s>
+                        <entry>
+                              <form>— Binatum.</form>
+                              <sense>fig. 63. He a <term>folha</term>
+                                    <term lemma="digitado" msd="feminino singular">digitada</term>
+                                    com duas pequenas <term lemma="folha" msd="plural">folhas</term>
+                                    somente.</sense>
+                        </entry> — <s>Trinatum. Ternatum. Fig. 64. 65. com pequenas <term
                                     lemma="folha" msd="plural">folhas</term>, postas na extremidade
                               do <term lemma="pecíolo">peciolo</term>. Jasminum azoricum.</s> —
                               <s>Quinatum. Com cinco: he o mesmo, que <term>digitado</term>, com
@@ -7058,16 +7075,19 @@
                                     lemma="folha" msd="plural">folhas</term> entre as flores.</s> —
                               <s>Nudum. Sem <term lemma="folha" msd="plural">folhas</term>, e
                               sedas.</s>
-                        <s>Fasciculus. São flores elevadas, parallelas, <term lemma="fastigiado"
-                                    msd="feminino plural">fastigiadas</term> (23), e muito visinhas.
-                              Dianthus barbatus.</s> 97. <s>Spica fig. 165. He formada de flores
-                              Sessiles, ou sem <term lemma="pedúnculo">pedunculo</term> commum
-                              simples.</s> Spicula. He huma pequena espiga, ou porçaõ da espiga
-                        maior das gramas, que outros chamaõ Locusta. — Secunda. Tendo as flores
-                        todas viradas para huma parte. — Disticha. As flores estaõ viradas para hum,
-                        e outro lado. a.) <s>Simplex. Flores solitarias estaõ pegadas em hum, e
-                              mesmo <term lemma="pedúnculo"> pedunculo</term>, e assim a espiga naõ
-                              está dividida.</s> — <s>Composita. Formada de muitas espigas pequenas
+                        <entry>
+                              <form>Fasciculus.</form>
+                              <sense>São flores elevadas, parallelas, <term lemma="fastigiado"
+                                          msd="feminino plural">fastigiadas</term> (23), e muito
+                                    visinhas. Dianthus barbatus.</sense>
+                        </entry> 97. <s>Spica fig. 165. He formada de flores Sessiles, ou sem <term
+                                    lemma="pedúnculo">pedunculo</term> commum simples.</s> Spicula.
+                        He huma pequena espiga, ou porçaõ da espiga maior das gramas, que outros
+                        chamaõ Locusta. — Secunda. Tendo as flores todas viradas para huma parte. —
+                        Disticha. As flores estaõ viradas para hum, e outro lado. a.) <s>Simplex.
+                              Flores solitarias estaõ pegadas em hum, e mesmo <term
+                                    lemma="pedúnculo"> pedunculo</term>, e assim a espiga naõ está
+                              dividida.</s> — <s>Composita. Formada de muitas espigas pequenas
                               pegadas por meio de hum pequeno <term lemma="pedúnculo"
                                     >pedunculo</term>
                               <pb n="246"/>ao <term lemma="pedúnculo">pedunculo</term> commum, que
@@ -7249,21 +7269,23 @@
                         <s>He de advertir, que nas plantas que naõ tem <term lemma="cálice"
                                     >caliz</term>, he a corolla mais grossa afim de suprir este
                               defeito para sustentar a <term lemma="frutificação"
-                                    >frutificaçaõ</term> .</s> 112. <s>Involucrum. fig. 135. Differe
-                              do <term lemma="cálice">caliz</term> periancio por se achar afastado
-                              da flor: he proprio das plantas umbelliferas, e falta nellas muitas
-                              vezes.</s>
-                        <s>He semelhante ás <term lemma="folha" msd="plural">folhas</term>, se acha
-                              na base das umbellas, e algumas vezes nas flores <term
-                                    lemma="verticilado" msd="feminino plural"
-                              >verticiladas</term>.</s> — a.) Universale. f. e. Quando inclue dentro
-                        em si a umbella tanto a universal, como a particular. Eryugium. Daucus. —
-                        Partiale. f. b. Estando debaixo da pequena umbella parcial. Scandix
-                        cerefolium. <pb n="253"/> — <s>Proprium. <term lemma="cálice" norm="Cálice"
-                                    >Caliz</term> particular de cada flor, ou que está em cada huma
-                              das umbellas parciaes.</s> — b.) <s>Mono &amp;c. polyphyllum. (106.
-                              107) De huma <term>folha</term>, de duas ou de muitas. Bupleurum.</s>
-                        — <s>Diphyllum. De duas <term lemma="folha" msd="plural">folhas</term>
+                                    >frutificaçaõ</term>.</s>
+                        <entry>
+                              <form>112. Involucrum. fig. 135.</form>
+                              <sense>Differe do <term lemma="cálice">caliz</term> periancio por se
+                                    achar afastado da flor: he proprio das plantas umbelliferas, e
+                                    falta nellas muitas vezes. He semelhante ás <term lemma="folha"
+                                          msd="plural">folhas</term>, se acha na base das umbellas,
+                                    e algumas vezes nas flores <term lemma="verticilado"
+                                          msd="feminino plural">verticiladas</term>.</sense>
+                        </entry> — a.) Universale. f. e. Quando inclue dentro em si a umbella tanto
+                        a universal, como a particular. Eryugium. Daucus. — Partiale. f. b. Estando
+                        debaixo da pequena umbella parcial. Scandix cerefolium. <pb n="253"/> —
+                              <s>Proprium. <term lemma="cálice" norm="Cálice">Caliz</term>
+                              particular de cada flor, ou que está em cada huma das umbellas
+                              parciaes.</s> — b.) <s>Mono &amp;c. polyphyllum. (106. 107) De huma
+                                    <term>folha</term>, de duas ou de muitas. Bupleurum.</s> —
+                              <s>Diphyllum. De duas <term lemma="folha" msd="plural">folhas</term>
                               Euphorbia.</s> — <s>Triphyllum. De tres <term lemma="folha"
                                     msd="plural">folhas</term>. Butomus.</s> — Tetraphyllum. De
                         quatro. Alisma. — Hexaphyllum. De seis. Daucus. 113.<s> Gluma. fig. 134. a.
@@ -7408,22 +7430,27 @@
                         unha muito peqena. — Malvacea. Como a flor da malva, cujos petalos estaõ
                         unidos na sua base. — Ringens. He a corolla irregular com o limbo dividido
                         em dous beiços. — Labiata. He o mesmo que ringens, como a bocca de hum
-                        animal estando aberta, a arreganhando elle os dentes. <s>Na corolla <term
-                                    lemma="labiado" msd="feminino singular">labiada</term>.</s>
-                        Rictus. He o espaço, ou abertura dos dous beiços. <s>Faux. He a abertura do
-                              tubo da corolla, onde o tubo acaba entre as <term lemma="lacínia"
-                                    norm="lacínias" msd="plural">lacinias</term>, os beiços da
-                              corolla; cujo tubo, ou he apertus abertos, ou nudus nú, clausus
-                              fechado, coronatus coroado com pellos, &amp;c. ou téctus cuberto.</s>
-                        Galea. He o beiço, ou labio superior. Palatum. Paladar he huma corcova, ou
-                        prominencia na fauce da corolla. Calcar. He o nectario formado da corolla
-                        extendida em figura conida. — Laciniata. O limbo da corolla cortado em
-                        varias partes, ou abas. — Urceolata. A’ maneira de pequeno jarro nos lados
-                        ençado, ou largo. — <s>Cyathiformis. Corolla cylindrica, que está dilatada
-                              para a parte superior, ou á maneira de hum copo de caliz.</s> —
-                              <s>Connivens. Quando os lobos, ou abas, ou <term lemma="lacínia"
-                                    norm="lacínias" msd="plural">lacinias</term> do limbo se
-                              avisinhaõ entre si com as suas extremidades.</s>
+                        animal estando aberta, a arreganhando elle os dentes. <dictScrap>Na corolla
+                                    <term lemma="labiado" msd="feminino singular"
+                              >labiada</term>.</dictScrap>
+                        <entry>
+                              <form>Rictus.</form>
+                              <sense>He o espaço, ou abertura dos dous beiços.</sense>
+                        </entry>
+                        <s>Faux. He a abertura do tubo da corolla, onde o tubo acaba entre as <term
+                                    lemma="lacínia" norm="lacínias" msd="plural">lacinias</term>, os
+                              beiços da corolla; cujo tubo, ou he apertus abertos, ou nudus nú,
+                              clausus fechado, coronatus coroado com pellos, &amp;c. ou téctus
+                              cuberto.</s> Galea. He o beiço, ou labio superior. Palatum. Paladar he
+                        huma corcova, ou prominencia na fauce da corolla. Calcar. He o nectario
+                        formado da corolla extendida em figura conida. — Laciniata. O limbo da
+                        corolla cortado em varias partes, ou abas. — Urceolata. A’ maneira de
+                        pequeno jarro nos lados ençado, ou largo. — <s>Cyathiformis. Corolla
+                              cylindrica, que está dilatada para a parte superior, ou á maneira de
+                              hum copo de caliz.</s> — <s>Connivens. Quando os lobos, ou abas, ou
+                                    <term lemma="lacínia" norm="lacínias" msd="plural"
+                                    >lacinias</term> do limbo se avisinhaõ entre si com as suas
+                              extremidades.</s>
                         <pb n="260"/> — Lacera. O limbo está cortado em muitas partes delgadas. —
                         Personata. Chama-se assim a corolla pela semelhança, que tem com a cabeça de
                         hum animal. Esta he a corolla ringens, ou labiata com os beiços, ou labios
@@ -7455,30 +7482,33 @@
                                     >flosculos</term> na parte exterior está extendido, e he mais
                               comprido, formando huma pequena correa.</s> — Tubulosa, seu flosculosa
                         de Tournefort. Cada huma das pequenas corollas saõ de feitio de canudo, e
-                        quasi iguaes. — <s>Radiata. As pequenas corollas do <term>disco</term> da
-                              flor commua, ou que estaõ no meio, saõ tubulosas, e as corollas, que
-                              estaõ na circunferencia saõ <term lemma="ligulado"
-                                    msd="feminino plural">liguladas</term>; e assim Tournefort chama
-                              a estas flores flores radiati. Aster. Jacobæa.</s> — Floribus
-                        tubulosis. A flor consta sómente destas flores tubulosas. Centaurea. —
-                              <s>Floribus subnudis. Quando os <term lemma="flósculo"
-                                    norm="flósculos" msd="plural">flosculos</term> da circunferencia
-                              estaõ quasi sem corolla. Artemisia.</s> — Undulata. (53) Gloriosa. —
-                        Plicata. (53) Convolvulus. — Torta. (170) Asclepias, Vinca. — <s>Revoluta.
-                              Estando o limbo, ou <term lemma="lacínia" norm="lacínias" msd="plural"
-                                    >lacinias</term> della reviradas para baixo, e retorcidas com os
-                              apices para cima.</s> Asparagus. <s>Considerada a corolla pela sua
-                              margem.</s> — Integra. Inteira. — Divisa. Dividida em algumas partes.
-                        — Serrata. Cortada á maneira de serra. Tilia. — Dentata. Com incisuras como
-                        dentes. Sideroxylon. <pb n="262"/> — Cremata. V. Folium crenatum. Linum. —
-                        Hirsuta. V. Folium. Hypericum. — Ciliata. V. Folium. Ruta. Tropeolum. Pela
-                        duracaõ. — Marcesens. Que se murcha sem cahir. Campanula. Orchis. Cucumis. —
-                        Caduca. Cahe quando a flor se abre. Thalictrum. — Persistens. Permanece até
-                        o fruto amadurecer. Nymphæa. — Decidua. Que cahe juntamente com a flor.
-                        Actaea. Observ. <s>Quando falta a corolla pelo ordinario o periancio, ou
-                                    <term lemma="cálice" norm="cálice">caliz</term> he corado com
-                              outra côr, que naõ he a côr verde da planta; e isso principalmente no
-                              tempo da florescencia. Ornithogalum. Persicaria. Poligonum.</s>
+                        quasi iguaes. <entry>
+                              <form>— Radiata.</form>
+                              <sense>As pequenas corollas do <term>disco</term> da flor commua, ou
+                                    que estaõ no meio, saõ tubulosas, e as corollas, que estaõ na
+                                    circunferencia saõ <term lemma="ligulado" msd="feminino plural"
+                                          >liguladas</term>; e assim Tournefort chama a estas flores
+                                    flores radiati. Aster. Jacobæa.</sense>
+                        </entry> — Floribus tubulosis. A flor consta sómente destas flores
+                        tubulosas. Centaurea. — <s>Floribus subnudis. Quando os <term
+                                    lemma="flósculo" norm="flósculos" msd="plural">flosculos</term>
+                              da circunferencia estaõ quasi sem corolla. Artemisia.</s> — Undulata.
+                        (53) Gloriosa. — Plicata. (53) Convolvulus. — Torta. (170) Asclepias, Vinca.
+                        — <s>Revoluta. Estando o limbo, ou <term lemma="lacínia" norm="lacínias"
+                                    msd="plural">lacinias</term> della reviradas para baixo, e
+                              retorcidas com os apices para cima.</s> Asparagus. <s>Considerada a
+                              corolla pela sua margem.</s> — Integra. Inteira. — Divisa. Dividida em
+                        algumas partes. — Serrata. Cortada á maneira de serra. Tilia. — Dentata. Com
+                        incisuras como dentes. Sideroxylon. <pb n="262"/> — Cremata. V. Folium
+                        crenatum. Linum. — Hirsuta. V. Folium. Hypericum. — Ciliata. V. Folium.
+                        Ruta. Tropeolum. Pela duracaõ. — Marcesens. Que se murcha sem cahir.
+                        Campanula. Orchis. Cucumis. — Caduca. Cahe quando a flor se abre.
+                        Thalictrum. — Persistens. Permanece até o fruto amadurecer. Nymphæa. —
+                        Decidua. Que cahe juntamente com a flor. Actaea. Observ. <s>Quando falta a
+                              corolla pelo ordinario o periancio, ou <term lemma="cálice"
+                                    norm="cálice">caliz</term> he corado com outra côr, que naõ he a
+                              côr verde da planta; e isso principalmente no tempo da florescencia.
+                              Ornithogalum. Persicaria. Poligonum.</s>
                         <s>Quando o <term lemma="cálice" norm="cálice">caliz</term>, e a corolla tem
                               menos côr, entaõ muitas vezes as <term lemma="folha" msd="plural"
                                     >folhas</term> tem outra côr alem da verde. Amaranthus
