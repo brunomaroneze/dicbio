@@ -2662,11 +2662,21 @@
                                     <sense>Quando o corpo he composto de laminas encadeadas
                                           humas ás outras. Syngnathus.</sense>
                               </entry>
-                        ARTUS. Os membros nos peixes naõ saõ outra cousa mais, que as barbatanas, que
-                        servem para os differentes movimentos dos peixes. Ellas saõ formadas de
-                        muitos ossículos que estaõ unidos e sustidos na dobradura de huma membrana
-                        que os reveste. Chamaõ-se Raios e outros Aculeos. ASSURGENS. Diz-se dos
-                        raios das barbatanas dorsaes, que saõ mais elevados, que a mesma membrana.</div>
+                              <entry>
+                                    <form>ARTUS.</form>
+                                    <sense>Os membros nos peixes naõ saõ outra cousa mais, que as
+                        barbatanas, que servem para os differentes movimentos dos peixes. Ellas
+                                          saõ formadas de muitos ossículos que estaõ unidos e
+                        sustidos na dobradura
+                                          de huma membrana que os reveste. Chamaõ-se Raios e outros
+                        Aculeos.</sense>
+                              </entry>
+                              <entry>
+                                    <form>ASSURGENS.</form>
+                                    <sense>Diz-se dos raios das barbatanas dorsaes, que saõ mais
+                        elevados, que a mesma membrana.</sense>
+                              </entry>
+                        </div>
                         <div
                               type="letra"><head>B.</head> BICOLORATUS. He aquelle peixe cujos lados
                         he de huma cor e outro de outra. BIFIDUS. Parte do peixe que se divide entre
@@ -2704,31 +2714,34 @@
                               <entry>
                                     <form>- Tuberculatae.</form>
                                     <sense><term lemma="tuberculado" msd="feminino plural"
-                                                >Tuberculadas</term>, a parte arqueada concava do
-                                          ossiculo he cuberta de <term lemma="tubérculo"
+                                          >
+                        Tuberculadas</term>, a parte arqueada concava do ossiculo he cuberta de <term
+                                                lemma="tubérculo"
                                                 norm="tubérculos" msd="plural">tuberculos</term>,
-                                          cousa, que se observa em quasi todos os peixes.</sense>
+                        cousa, que se observa em quasi todos os peixes.</sense>
                               </entry>
-                              <pb n="36"/> - Glabrae, inermes. Sem tubérculos. Nos Nantes. Squalus.
-                              - Pectinatae, ciliatae. A maneira de pente, quan do a parte convexa do
-                              ossículo, que forma cada guelra he cercada em redondo de raios á
-                              maneira de barba, que imitaõ os dentes do pente. Estes raios ou barbas
-                              ordinariamente saõ encarnadas. <entry>
+                              <pb
+                                    n="36" /> - Glabrae, inermes. Sem tubérculos. Nos Nantes.
+                        Squalus. - Pectinatae, ciliatae. A maneira de pente, quan do a parte convexa
+                        do ossículo, que forma cada guelra he cercada em redondo de raios á maneira
+                        de barba, que imitaõ os dentes do pente. Estes raios ou barbas
+                        ordinariamente saõ encarnadas. <entry>
                                     <form>- Aculeatae.</form>
                                     <sense>Armadas de pontas ou aculeos, quando a parte concava do
-                                          ossiculo em lugar de <term lemma="tubérculo"
+                        ossiculo em lugar de <term lemma="tubérculo"
                                                 norm="tubérculos" msd="plural"> tuberculos</term>
-                                          tem bicos.</sense>
-                              </entry> BRANCHIOSTEGA. He huma membrana que se acha debaixo dos
-                              operculos chêa de raios osseos, que serve para cobrir as guelras
-                              dilatando-se e contrahindo-se á vontade do peixe.</div> C CAUDA. A
-                        cauda he solida formada das vertebras dos lombos, e fornecida de musculos;
-                        está posta na extremidade do dorso perto do ano, e acaba o tronco. Chama-se
-                        - Teres, cylindrica. Redonda, cylindrica, em alguns. - Tetragona. Quadrada,
-                        a quatro lados chatos em algumas especies de Syngnatbi. - Carinata. A quilha
-                        com angulo, que fica prominente para baixo. Scomber, Chatodon. - Angulosa.
-                        Angulosa, quando a eminencia que forma a quilha está sobre os lados em lugar
-                        de estar abaixo. Scomber. - <s>Muricata. Com aculeos, ou <term
+                        tem bicos.</sense>
+                              </entry> BRANCHIOSTEGA. He
+                        huma membrana que se acha debaixo dos operculos chêa de raios osseos, que
+                        serve para cobrir as guelras dilatando-se e contrahindo-se á vontade do
+                        peixe.</div> C CAUDA. A cauda he solida formada das vertebras dos lombos, e
+                        fornecida de musculos; está posta na extremidade do dorso perto do ano, e
+                        acaba o tronco. Chama-se - Teres, cylindrica. Redonda, cylindrica, em
+                        alguns. - Tetragona. Quadrada, a quatro lados chatos em algumas especies de
+                        Syngnatbi. - Carinata. A quilha com angulo, que fica prominente para baixo.
+                        Scomber, Chatodon. - Angulosa. Angulosa, quando a eminencia que forma a
+                        quilha está sobre os lados em lugar de estar abaixo. Scomber. - <s>Muricata.
+                        Com aculeos, ou <term
                                     lemma="tubérculo" norm="tubérculos" msd="plural"
                               >tuberculos</term>.
                         Scomber.</s> - Apterigia. Sem barbatana na cauda. Trichiurus Syngnathus. <pb
@@ -3351,94 +3364,99 @@
                         para conservar o equilibrio, e suster-se na situaçaõ vertical. Pela
                         situaçaõ. — <s>Longitudinales. <term
                                     lemma="longitudinal" norm="Longitudinais" msd="plural"
-                                    >Longitudinaes</term>, quando se extendem desde a cabeça até a
-                              cauda, por todo o comprimento do corpo. Pleuronectes solea.</s> —
-                        Semilongitudinales. Quando naõ chegaõ senaõ a ametade do corpo. Occipitales.
-                        Occipitaes, quando estaõ postas sobre a nuca. — Scapulares. Escapulares,
-                        occupando o espaço do dorso, que fica entre a nuca, e o meio do dorso, entre
-                        as espadoas. — Æquilibres, librantes, mediæ. Ao meio, no ponto de
-                        equilibrio, quando o meio da barbatana se acha no meio do dorso. — Lumbares,
-                        remotae. Distantes, visinhas da cauda. Exocoetus. — Distinctae. Quando saõ
-                        muitas, e estas separadas humas das outras. Gadus, Perca. — Coalitae,
-                        adnatæ. Unidas, quando estaõ taõ <pb n="65"/>visinhas, que parecem formar
-                        huma só barbatana. Pelo numero. — Nullæ. Nenhuma. Apterygium, V. Gymnotus. —
-                        Solitariæ. Huma só no dorso. Monopterygius. — Bivæ, geminæ. Duas.
-                        Dipterygius. — Ternæ. Tres. Tripterygius. — Quaternæ. Quatro.
-                        Tetrapterygius. Pela sua natureza. — Radiatæ. Com raios, sem pontas.
-                        Malacopterygius. — Aculeatæ. Com ossiculos pungentes, ou aculeos.
-                        Acanthopterygius. — Asperæ. Asperas, com ossiculos inermes em forma de
-                        pequenos dentes. Silurus. Pela figura. — Æquales. Iguaes, sendo os ossiculos
-                        do mesmo comprimento. Biennius, Pleuronectes Solea. — Declinatæ. Declinadas,
-                        quando o primeiro ossiculo da parte da cabeça he mais comprido, e que os
-                        outros vaõ diminuindo sensivelmente até á cauda. Sparus, Labrus. —
-                        Interruptæ. Interrompidas, quando os ossiculos do meio saõ mais breves, que
-                        os do principio, e do fim. Sciaena. — Acuminatæ, triangulatæ. Pyramidaes na
-                        ponta, ou triangulares, quando os raios do meio saõ mais compridos, que os
-                        que estaõ da parte da cabeça, e da cauda, os quaes vaõ diminuindo
-                        sensivelmente de comprimento; mas sempre igualmente dos dous lados. Trigla,
-                        Clupea. Pela proporçaõ. — Exiguæ. Pequenas, quando tem pouca altura.
-                        Exocoetus, Mugil. Syngnathus. — Assurgentes, altissimae. Muito altas, quando
-                        se <pb n="66"/>levantaõ muito acima do dorso. Callionymus. Pelos tegumentos.
-                        — Carnosæ, adiposæ. Carnosas, cubertas de huma pelle grossa. Gadus, Labrus,
-                        Chaetodon. — Squamosæ. Cubertas de escamas. Chætodon. Pelos additamentos. —
-                        Ramentaceæ. Ramentum, raspadura, ou parte arrancada raspando. Assim nos
-                        peixes ramentum he hum pequeno appendix molle, filiforme, que se aclia na
-                        extremidade, e na borda posterior dos ossiculos. He huma prolongaçaõ da
-                        membrana, que cobre os ossiculos. Zeus, Labrus. PINNÆ Pectorales. As
-                        barbatanas peitoraes, ou do peito estaõ postas junto a abertura das guélras,
-                        ou aos dous lados do thorax: quasi sempre saõ duas huma em cada lado do
-                        corpo, e fazem o officio de braços. Em algumas especies servem de azas por
-                        meio das quaes o peixe se levanta fóra da agua, e tem algumas vezes hum
-                        movimento progressivo, que imita o voar das aves. fig. 1. d. Pela sua
-                        inserçaõ, ou pegamento. — Supremæ. Altas, quando occupaõ a parte mais alta
-                        perto das guélras. Exocoetus. — Mediæ. Medias, quasi junto ao meio do corpo,
-                        entre o dorso, e a quilha do ventre. — Imæ, infimæ, inferiores. Baixas,
-                        visinhas a quilha do ventre, e quasi abaixo do thorax. Argentina, Blennius,
-                        Clupea. Pelo numero. Nullæ. Nenhumas. Muræna. Solitariæ. Huma so em cada
-                        lado, quasi em todos os peixes. Geminatæ. Duas em cada lado. Pela <pb n="67"
-                        /> Pela proporçaõ. — Longissimæ, angustæ. Muito compridas, estreitas.
-                        Exocoetus, Xiphias. — Minimæ, brevissimæ. Muito pequenas. Ophidium,
-                        Blennius. — Proportionales. Proporcionaes ao tamanho do corpo. Sparus,
-                        Labrus, Sciæna, Chætodon. — Volatiles. Proprias para voar, taõ grandes, que
-                        podem suster o peixe fóra da agua. Trigla, Exocoetus. Pela figura. —
-                        Rotundatæ. Redondas, o que se entende somente na borda posterior. Blennius.
-                        — Acuminatæ. Que acabaõ em ponta. Exocoetus, Zeus. — Falcatæ, seu arcuatæ.
-                        Arqueadas. Xiphias. O uso das ditas barbatanas naõ he somente para voar, mas
-                        para equilibrar a cabeça com o de mais corpo. PINNÆ ventrales. Barbatanas do
-                        ventre, estaõ postas na parte inferior do ventre adiante do anus; algumas
-                        vezes se achaõ no pescoço, ou no thorax; fazem o officio de pés. Pela
-                        situaçaõ. — Jugulares. Proximas ou a guéla, ou ao pescoço, ou abaixo das
-                        guélras; esta situaçaõ faz a ordem dos Jugulares. — Thoracicæ. Postas no
-                        thorax, debaixo das peitoraes, constituem a ordem Thoracici. — Abdominales.
-                        Postas mais perto do ano; e constituem a ordem abdominales. — Anum
-                        ambientes. Que estaõ postas ao redor do ano. Nos Nantes Squalus — Vicinæ.
-                        Visinhas, e quasi postas ambas na quilha do ventre. Cyprinus. <pb n="68"/>—
-                        Remotæ. Muito distantes entre si. Algumas. especies. Cyprini, Spari. —
-                        Coadunatæ, coalite. Unidas por meio de huma membrana. Gobius. Pelo numero. —
-                        Nullæ. Nenhuma; e fórma a ordem Apodes. — Solitariæ. Huma só. Centriscus. —
-                        Binae. Duas, huma em cada lado, o que he commum em quasi todos os peixes.
-                        Pela proporçaõ. — Minimæ. Muito pequenas relativamente á grandeza do corpo;
-                        no maior numero dos peixes. — Proportionales. Proporcionaes ao corpo. Gadus,
-                        Uranoscopus. — Longissimæ. Muito compridas. Exocoetus. Pela estructura. —
-                        Didactylæ. Com dous raios somente. Blennius. — Multi-radiatæ. Com muitos
-                        raios; mas raras vezes mais de seis, em quasi todos os peixes. — Muticae.
-                        Rombas, nos peixes malacopterygios. — <s>Difformes Quando alem dos ossiculos
-                              tambem estaõ <term lemma="cirro" msd="plural">cirros</term>.
-                              Ophidium.</s> As barbatanas do ventre em qualquer lugar que sejaõ,
-                        abremse horizontalmente na agua formando hum angulo recto com o corpo. Esta
-                        expansaõ appresentando a agua maior superficie serve para equilibrar o
-                        corpo, e por isso fazem de algum modo officio de pés PINNÆ Spuriæ. As
-                        barbatanas espurias differem das verdadeiras, porque aquellas naõ saõ
-                        compostas, senaõ de huma pelle sem raios, ou aculeos, que ordinariamente
-                        sustentaõ as barbatanas verdadeiras. Estas estaõ sempre postas ao lado do
-                        corpo, <pb n="69"/>ao lado do ventre, e quasi sempre sobre o dorso. Amia,
-                        Scomber Thynnus. PINNATUS. He todo o peixe, que tem barbatana.
-                        PLAGIOPLATEUM. Dizse do corpo do peixe, cuja latitude horizontal excede a
-                        perpendicular. POLYACANTHUS. Peixe, que tem muitos raios espinhosos nas
-                        barbatanas. POLIGONUS. Toda a parte do peixe, que consta de varios angulos,
-                        ou lados. PUNCTATUS. Quando em lugar de linhas estaõ pontos corados
-                        dispostos de varios modos. Sparus. Labrus. PUPILLA. A menina do olho acha-se
-                        em quasi todos os peixes. <s>Ordinariamente he esferica, ou <term
+                              >
+                        Longitudinaes</term>, quando se extendem desde a cabeça até a cauda, por
+                        todo o comprimento do corpo. Pleuronectes solea.</s> — Semilongitudinales.
+                        Quando naõ chegaõ senaõ a ametade do corpo. Occipitales. Occipitaes, quando
+                        estaõ postas sobre a nuca. — Scapulares. Escapulares, occupando o espaço do
+                        dorso, que fica entre a nuca, e o meio do dorso, entre as espadoas. —
+                        Æquilibres, librantes, mediæ. Ao meio, no ponto de equilibrio, quando o meio
+                        da barbatana se acha no meio do dorso. — Lumbares, remotae. Distantes,
+                        visinhas da cauda. Exocoetus. — Distinctae. Quando saõ muitas, e estas
+                        separadas humas das outras. Gadus, Perca. — Coalitae, adnatæ. Unidas, quando
+                        estaõ taõ <pb n="65" />visinhas, que parecem formar huma só barbatana. Pelo
+                        numero. — Nullæ. Nenhuma. Apterygium, V. Gymnotus. — Solitariæ. Huma só no
+                        dorso. Monopterygius. — Bivæ, geminæ. Duas. Dipterygius. — Ternæ. Tres.
+                        Tripterygius. — Quaternæ. Quatro. Tetrapterygius. Pela sua natureza. —
+                        Radiatæ. Com raios, sem pontas. Malacopterygius. — Aculeatæ. Com ossiculos
+                        pungentes, ou aculeos. Acanthopterygius. — Asperæ. Asperas, com ossiculos
+                        inermes em forma de pequenos dentes. Silurus. Pela figura. — Æquales.
+                        Iguaes, sendo os ossiculos do mesmo comprimento. Biennius, Pleuronectes
+                        Solea. — Declinatæ. Declinadas, quando o primeiro ossiculo da parte da
+                        cabeça he mais comprido, e que os outros vaõ diminuindo sensivelmente até á
+                        cauda. Sparus, Labrus. — Interruptæ. Interrompidas, quando os ossiculos do
+                        meio saõ mais breves, que os do principio, e do fim. Sciaena. — Acuminatæ,
+                        triangulatæ. Pyramidaes na ponta, ou triangulares, quando os raios do meio
+                        saõ mais compridos, que os que estaõ da parte da cabeça, e da cauda, os
+                        quaes vaõ diminuindo sensivelmente de comprimento; mas sempre igualmente dos
+                        dous lados. Trigla, Clupea. Pela proporçaõ. — Exiguæ. Pequenas, quando tem
+                        pouca altura. Exocoetus, Mugil. Syngnathus. — Assurgentes, altissimae. Muito
+                        altas, quando se <pb n="66" />levantaõ muito acima do dorso. Callionymus.
+                        Pelos tegumentos. — Carnosæ, adiposæ. Carnosas, cubertas de huma pelle
+                        grossa. Gadus, Labrus, Chaetodon. — Squamosæ. Cubertas de escamas. Chætodon.
+                        Pelos additamentos. — Ramentaceæ. Ramentum, raspadura, ou parte arrancada
+                        raspando. Assim nos peixes ramentum he hum pequeno appendix molle,
+                        filiforme, que se aclia na extremidade, e na borda posterior dos ossiculos.
+                        He huma prolongaçaõ da membrana, que cobre os ossiculos. Zeus, Labrus. PINNÆ
+                        Pectorales. As barbatanas peitoraes, ou do peito estaõ postas junto a
+                        abertura das guélras, ou aos dous lados do thorax: quasi sempre saõ duas
+                        huma em cada lado do corpo, e fazem o officio de braços. Em algumas especies
+                        servem de azas por meio das quaes o peixe se levanta fóra da agua, e tem
+                        algumas vezes hum movimento progressivo, que imita o voar das aves. fig. 1.
+                        d. Pela sua inserçaõ, ou pegamento. — Supremæ. Altas, quando occupaõ a parte
+                        mais alta perto das guélras. Exocoetus. — Mediæ. Medias, quasi junto ao meio
+                        do corpo, entre o dorso, e a quilha do ventre. — Imæ, infimæ, inferiores.
+                        Baixas, visinhas a quilha do ventre, e quasi abaixo do thorax. Argentina,
+                        Blennius, Clupea. Pelo numero. Nullæ. Nenhumas. Muræna. Solitariæ. Huma so
+                        em cada lado, quasi em todos os peixes. Geminatæ. Duas em cada lado. Pela <pb
+                              n="67"
+                        /> Pela proporçaõ. — Longissimæ, angustæ. Muito compridas,
+                        estreitas. Exocoetus, Xiphias. — Minimæ, brevissimæ. Muito pequenas.
+                        Ophidium, Blennius. — Proportionales. Proporcionaes ao tamanho do corpo.
+                        Sparus, Labrus, Sciæna, Chætodon. — Volatiles. Proprias para voar, taõ
+                        grandes, que podem suster o peixe fóra da agua. Trigla, Exocoetus. Pela
+                        figura. — Rotundatæ. Redondas, o que se entende somente na borda posterior.
+                        Blennius. — Acuminatæ. Que acabaõ em ponta. Exocoetus, Zeus. — Falcatæ, seu
+                        arcuatæ. Arqueadas. Xiphias. O uso das ditas barbatanas naõ he somente para
+                        voar, mas para equilibrar a cabeça com o de mais corpo. PINNÆ ventrales.
+                        Barbatanas do ventre, estaõ postas na parte inferior do ventre adiante do
+                        anus; algumas vezes se achaõ no pescoço, ou no thorax; fazem o officio de
+                        pés. Pela situaçaõ. — Jugulares. Proximas ou a guéla, ou ao pescoço, ou
+                        abaixo das guélras; esta situaçaõ faz a ordem dos Jugulares. — Thoracicæ.
+                        Postas no thorax, debaixo das peitoraes, constituem a ordem Thoracici. —
+                        Abdominales. Postas mais perto do ano; e constituem a ordem abdominales. —
+                        Anum ambientes. Que estaõ postas ao redor do ano. Nos Nantes Squalus —
+                        Vicinæ. Visinhas, e quasi postas ambas na quilha do ventre. Cyprinus. <pb
+                              n="68" />— Remotæ. Muito distantes entre si. Algumas. especies.
+                        Cyprini, Spari. — Coadunatæ, coalite. Unidas por meio de huma membrana.
+                        Gobius. Pelo numero. — Nullæ. Nenhuma; e fórma a ordem Apodes. — Solitariæ.
+                        Huma só. Centriscus. — Binae. Duas, huma em cada lado, o que he commum em
+                        quasi todos os peixes. Pela proporçaõ. — Minimæ. Muito pequenas
+                        relativamente á grandeza do corpo; no maior numero dos peixes. —
+                        Proportionales. Proporcionaes ao corpo. Gadus, Uranoscopus. — Longissimæ.
+                        Muito compridas. Exocoetus. Pela estructura. — Didactylæ. Com dous raios
+                        somente. Blennius. — Multi-radiatæ. Com muitos raios; mas raras vezes mais
+                        de seis, em quasi todos os peixes. — Muticae. Rombas, nos peixes
+                        malacopterygios. — <s>Difformes Quando alem dos ossiculos tambem estaõ <term
+                                    lemma="cirro" msd="plural">cirros</term>. Ophidium.</s> As
+                        barbatanas do ventre em qualquer lugar que sejaõ, abremse horizontalmente na
+                        agua formando hum angulo recto com o corpo. Esta expansaõ appresentando a
+                        agua maior superficie serve para equilibrar o corpo, e por isso fazem de
+                        algum modo officio de pés PINNÆ Spuriæ. As barbatanas espurias differem das
+                        verdadeiras, porque aquellas naõ saõ compostas, senaõ de huma pelle sem
+                        raios, ou aculeos, que ordinariamente sustentaõ as barbatanas verdadeiras.
+                        Estas estaõ sempre postas ao lado do corpo, <pb n="69" />ao lado do ventre,
+                        e quasi sempre sobre o dorso. Amia, Scomber Thynnus. PINNATUS. He todo o
+                        peixe, que tem barbatana. PLAGIOPLATEUM. Dizse do corpo do peixe, cuja
+                        latitude horizontal excede a perpendicular. POLYACANTHUS. Peixe, que tem
+                        muitos raios espinhosos nas barbatanas. POLIGONUS. Toda a parte do peixe,
+                        que consta de varios angulos, ou lados. <entry>
+                              <form>PUNCTATUS.</form>
+                              <sense>Quando em lugar de linhas estaõ pontos corados
+                                    dispostos de varios modos. Sparus. Labrus.</sense>
+                        </entry>
+                        PUPILLA. A menina do olho acha-se em quasi todos os peixes. <s>Ordinariamente
+                        he esferica, ou <term
                                     lemma="oblongo" msd="feminino singular">oblonga</term>, em
                         alguns he oval.</s> R. RADIATUS. Diz-se das barbatanas, que constaõ de raios
                         osseos. RADII. Raios, saõ ossiculos articulados sem serem picantes, sempre
@@ -3650,18 +3668,23 @@
                         baixo. Noctua. — Falcatæ. Estreitas na ponta, e arqueadas. Bombyx Atlas. — <s>Striatæ.
                         Com veias prominentes <term
                                     lemma="longitudinal" norm="longitudinais" msd="plural"
-                                    >longitudinaes</term> distinctas.</s> — <s>Reticulatæ. Com veias
-                                    <term lemma="longitudinal" norm="longitudinais" msd="plural"
-                                    >longitudinaes</term>, e transversaes, que se unem, ou
-                              communicaõ entre si. Hemerobius. fig. 50.</s> — Clavatae. Engrossadas
-                        para a ponta. Panorpa. Pela superficie. — Squamatæ. Cubertas com pequenas
-                        laminas levantadas, córadas; Lepidoptera, aut Glossata de Fabricio. —
-                        Pilosæ. Com algumas sedas rijas distantes entre si. Musca, Tipula. — Nudae.
-                        Contrarias ás antecedentes. — Fenestratae. Saõ com laminas córadas, ou
-                        escamas, mas com malhas nûas transparentes. Bombyx Atlas. — Concolores. Da
-                        mesma côr na pagina, ou superficie superior, e inferior. Papilio. —
-                        Ocellatæ. Com malhas de varias cores dispostas á maneira de circulo.
-                        Papilio. fig. I. s. s. <entry>
+                              >
+                        longitudinaes</term> distinctas.</s> — <s>Reticulatæ. Com veias <term
+                                    lemma="longitudinal" norm="longitudinais" msd="plural"
+                              >
+                        longitudinaes</term>, e transversaes, que se unem, ou communicaõ entre si.
+                        Hemerobius. fig. 50.</s> — Clavatae. Engrossadas para a ponta. Panorpa. Pela
+                        superficie. — Squamatæ. Cubertas com pequenas laminas levantadas, córadas;
+                        Lepidoptera, aut Glossata de Fabricio. — Pilosæ. Com algumas sedas rijas
+                        distantes entre si. Musca, Tipula. — Nudae. Contrarias ás antecedentes. —
+                        Fenestratae. Saõ com laminas córadas, ou escamas, mas com malhas nûas
+                        transparentes. Bombyx Atlas. — Concolores. Da mesma côr na pagina, ou
+                        superficie superior, e inferior. Papilio. <entry>
+                              <form>—
+                                    Ocellatæ.</form>
+                              <sense>Com malhas de varias cores dispostas á maneira de circulo.
+                        Papilio. fig. I. s. s.</sense>
+                        </entry> <entry>
                               <form>— Pupillatæ.</form>
                               <sense>São as mesmas <term lemma="ocelado" msd="feminino plural"
                                     >
@@ -3778,16 +3801,16 @@
                         Julus. fig. 86. CAUDATIO. Toma-se pela situaçaõ, e figura da cauda, que
                         termina o abdomen. <s>CHELA. Diz se dos pès anteriores, que servem ao <term
                                     lemma="inseto">insecto</term> como de maõs, incrassados,
-                              divididos na ponta em duas partes, das quaes huma he movel, outra
-                              immovel. Scorpio, Cancer.</s> CLAVA. Quando o apice, ou extremidade da
-                        antenna he grossa. — Fissilis. — Perfoliata. V. Antennæ. CLYPEUS. Escudo, he
-                        huma parte da cabeça, horizontal, cornea, sahida para fóra, que cobre
-                        superiormente a bocca. Pela figura. — Rotundatus. Arredondado. Melolontha.
-                        Papilio — Quadratus. Quadrado. Cetonia, Raphidia. — Conicus. De figura
-                        conica. Bombyx, Notonecta. — Fornicatus. Arqueado. Panorpa. — Cylindricus.
-                        De figura cylindrica. Phryganea. — Subulatus. Em forma de sovela. Cimex,
-                        fig. 38. — Involvens. Sahido para fora cubrindo toda a bocca. Bombyx. <pb
-                              n="87"/> Pela superficie. — Annulatus. Ornado de anneis. Cimex. —
+                        divididos na ponta em duas partes, das quaes huma he movel, outra immovel.
+                        Scorpio, Cancer.</s> CLAVA. Quando o apice, ou extremidade da antenna he
+                        grossa. — Fissilis. — Perfoliata. V. Antennæ. CLYPEUS. Escudo, he huma parte
+                        da cabeça, horizontal, cornea, sahida para fóra, que cobre superiormente a
+                        bocca. Pela figura. — Rotundatus. Arredondado. Melolontha. Papilio —
+                        Quadratus. Quadrado. Cetonia, Raphidia. — Conicus. De figura conica. Bombyx,
+                        Notonecta. — Fornicatus. Arqueado. Panorpa. — Cylindricus. De figura
+                        cylindrica. Phryganea. — Subulatus. Em forma de sovela. Cimex, fig. 38. —
+                        Involvens. Sahido para fora cubrindo toda a bocca. Bombyx. <pb
+                              n="87" /> Pela superficie. — Annulatus. Ornado de anneis. Cimex. —
                         Carinatus. Com huma linha levantada no meio. Laternaria. — Canaliculatus.
                         Com linha excavada no meio. Scarabæus. — Cornutus. Com prominencias maiores
                         agudas. Scarabæus. — Scaber. Com pontos alguma cousa prominentes. —
@@ -3801,51 +3824,54 @@
                         Birrhus. — — brevior. Mais breve. Cicindela. fig. 25. — — aequalis. Igual ao
                         queixo. Attelabus. — Brevissimus. Muito pequeno. Papilio. — Longissimus.
                         Muito comprido. Cimex. COLEOPTERUM. He o mesmo, que elytrum. <s>COLOR. As
-                              cores, como sabiamente adverte Fabricio, saõ inconstantes
-                              principalmente nos <term lemma="inseto" norm="Insetos" msd="plural"
-                                    >Insectos</term> .</s> O verde v. g. varia muito, e tem muitos
-                        gráos; <pb n="88"/>e assim nas outras. Scopoli, e Poda trabalharaõ, e
-                        propuzeraõ o modo de imitar estas differentes cores com varias misturas;
-                        porém naõ sahem como elles asseveraõ. <s>Posto que de muitas cores naõ temos
-                              termos, que os possaõ exprimir para se fazer huma exacta idea dellas,
-                              com tudo procuraremos expollas com a maior <w norm="clareza"
-                                    >cla-reza</w> possivel.</s> COLOR. Côr. — Æneus. Côr de bronze.
-                        — Albidus. Esbranquiçado. — Ater. Escuro ou quasi negro. — Aurantius. Côr de
-                        Larania. — Aureus. Côr de oiro. — Azureus. Côr azul escura, ou azul ferrete.
-                        — Brunneus. Côr, que se avisinha ao preto. — Candidus. Candido, muito
-                        branco. — Canescens. Que se faz branco, ou he quasi branco. — Canus. Branco
-                        á semelhança dos cabêllos, que saõ brancos. — Castaneus. Côr de castanha. —
-                        Colybeus. Côr de aço. — Coccineus. Côr de escarlate. — Coeruleus. Azul, ou
-                        côr de anil. — Concolor. Da mesma côr. — Croceus. Côr de açafraõ. — Cupreus.
-                        Côr de cobre. — Cyaneus. Azul mais claro. — Ferrugineus. Côr de ocra. —
-                        Fuliginosus. Côr de ferrugem. — Fulvus. Loiro, ou ruivo. — Fucescens. Alguma
-                        cousa denegrido. — Fuscus. Fusco, ou escuro. — Glaucus. Côr verde de mar, ou
-                        verde claro. <pb n="89"/> — Griseus. Cinzento, ou de côr de cinza. —
-                        Helvolus. Côr de castanha clara. — Hyalinus. Côr de vidro. — Incarnatus. Côr
-                        de carne. — Lividus. Denegrido, ou tendente a côr de chumbo. — Luridus.
-                        Amarello, muito pallido. — Murinus. Côr de rato. — Nebulosus. Côr confuza,
-                        ou como ennevoada, e pouco distincta. — Nigricans. Que tira para negro. —
-                        Olivaceus. Côr de azeitona. — Piceus. Côr de pez, ou negro. — Plumbeus. Côr
-                        de chumbo. — Rubeus. Avermelhado. — Rufescens. Alguma cousa ruivo. — Rufo
-                        fuscus. De côr ruiva escura. — Rufus. Ruivo. — Sanguineus. Côr de sangue. —
-                        Spadiceus. Côr baia, ou de castanha clara. — Testaceus. Côr de tijolo. —
-                        Violaceus. Côr de violetas. E. EDENTULUM OS. Bocca sem dentes. Ephemera.
-                        ELYTRA. Saõ duas azas superiores crustaceas. Tab. VI. fig. 2. l. l. <s>Os
-                              elytros em alguns <term lemma="inseto" norm="insetos" msd="plural"
-                                    >insectos</term> estaõ conglutinados, e unidos entre si; e entaõ
-                              faltaõ as asas posteriores, e o scutello.</s> Pela proporçaõ —
-                        Abbreviata. Breves. Meloe, Leptura. — Mediocria. Medianas. Crysomela. fig.
-                        14. <pb n="90"/> — Elongata. Compridas. Gryllus, Blatta. fig. 31. Pela
-                        figura. — Linearia. Da mesma largura em todo o comprimento. Cicindela. fig.
-                        25. — Attenuata. Que se vaõ attenuando, ou estreitando posteriormente a
-                        pouco, e pouco. Leptura, Necidalis. — Plana. Da mesma altura em toda a
-                        parte. Blatta. — Deflexa. A margem interior mais alta. Gryllus. — Cruciata.
-                        Dobrados no meio, de maneira, que apparece a superficie interior. Cimex,
-                        Nepa. — Gibba. Muito levantados no meio. Chrysomela. — Flexilia. Que cedem á
-                        pressaõ sem se quebrarem; e assim saõ as que Linnéo chama bemilytra, ou
-                        semicrustaceas. Cantharis, Gryllus. — Mollia. Que conservaõ por muito tempo
-                        o signal da compressaõ. Meloe. — Rigida. Opposta ás antecedentes. Curculio.
-                        Pela superficie — Tomentosa. Com lanugem. Lagria. — Pilosa. Com pellos.
+                        cores, como sabiamente adverte Fabricio, saõ inconstantes principalmente nos <term
+                                    lemma="inseto" norm="Insetos" msd="plural"
+                              >Insectos</term> .</s>
+                        O verde v. g. varia muito, e tem muitos gráos; <pb n="88" />e assim nas
+                        outras. Scopoli, e Poda trabalharaõ, e propuzeraõ o modo de imitar estas
+                        differentes cores com varias misturas; porém naõ sahem como elles asseveraõ. <s>Posto
+                        que de muitas cores naõ temos termos, que os possaõ exprimir para se fazer
+                        huma exacta idea dellas, com tudo procuraremos expollas com a maior <w
+                                    norm="clareza"
+                              >cla-reza</w> possivel.</s> COLOR. Côr. — Æneus.
+                        Côr de bronze. — Albidus. Esbranquiçado. — Ater. Escuro ou quasi negro. —
+                        Aurantius. Côr de Larania. — Aureus. Côr de oiro. — Azureus. Côr azul
+                        escura, ou azul ferrete. — Brunneus. Côr, que se avisinha ao preto. —
+                        Candidus. Candido, muito branco. — Canescens. Que se faz branco, ou he quasi
+                        branco. — Canus. Branco á semelhança dos cabêllos, que saõ brancos. —
+                        Castaneus. Côr de castanha. — Colybeus. Côr de aço. — Coccineus. Côr de
+                        escarlate. — Coeruleus. Azul, ou côr de anil. — Concolor. Da mesma côr. —
+                        Croceus. Côr de açafraõ. — Cupreus. Côr de cobre. — Cyaneus. Azul mais
+                        claro. — Ferrugineus. Côr de ocra. — Fuliginosus. Côr de ferrugem. — Fulvus.
+                        Loiro, ou ruivo. — Fucescens. Alguma cousa denegrido. — Fuscus. Fusco, ou
+                        escuro. — Glaucus. Côr verde de mar, ou verde claro. <pb n="89" /> —
+                        Griseus. Cinzento, ou de côr de cinza. — Helvolus. Côr de castanha clara. —
+                        Hyalinus. Côr de vidro. — Incarnatus. Côr de carne. — Lividus. Denegrido, ou
+                        tendente a côr de chumbo. — Luridus. Amarello, muito pallido. — Murinus. Côr
+                        de rato. — Nebulosus. Côr confuza, ou como ennevoada, e pouco distincta. —
+                        Nigricans. Que tira para negro. — Olivaceus. Côr de azeitona. — Piceus. Côr
+                        de pez, ou negro. — Plumbeus. Côr de chumbo. — Rubeus. Avermelhado. —
+                        Rufescens. Alguma cousa ruivo. — Rufo fuscus. De côr ruiva escura. — Rufus.
+                        Ruivo. — Sanguineus. Côr de sangue. — Spadiceus. Côr baia, ou de castanha
+                        clara. — Testaceus. Côr de tijolo. — Violaceus. Côr de violetas. E.
+                        EDENTULUM OS. Bocca sem dentes. Ephemera. ELYTRA. Saõ duas azas superiores
+                        crustaceas. Tab. VI. fig. 2. l. l. <s>Os elytros em alguns <term
+                                    lemma="inseto" norm="insetos" msd="plural"
+                              >insectos</term> estaõ
+                        conglutinados, e unidos entre si; e entaõ faltaõ as asas posteriores, e o
+                        scutello.</s> Pela proporçaõ — Abbreviata. Breves. Meloe, Leptura. —
+                        Mediocria. Medianas. Crysomela. fig. 14. <pb n="90" /> — Elongata.
+                        Compridas. Gryllus, Blatta. fig. 31. Pela figura. — Linearia. Da mesma
+                        largura em todo o comprimento. Cicindela. fig. 25. — Attenuata. Que se vaõ
+                        attenuando, ou estreitando posteriormente a pouco, e pouco. Leptura,
+                        Necidalis. — Plana. Da mesma altura em toda a parte. Blatta. — Deflexa. A
+                        margem interior mais alta. Gryllus. — Cruciata. Dobrados no meio, de
+                        maneira, que apparece a superficie interior. Cimex, Nepa. — Gibba. Muito
+                        levantados no meio. Chrysomela. — Flexilia. Que cedem á pressaõ sem se
+                        quebrarem; e assim saõ as que Linnéo chama bemilytra, ou semicrustaceas.
+                        Cantharis, Gryllus. — Mollia. Que conservaõ por muito tempo o signal da
+                        compressaõ. Meloe. — Rigida. Opposta ás antecedentes. Curculio. Pela
+                        superficie — Tomentosa. Com lanugem. Lagria. — Pilosa. Com pellos.
                         Melolontha. — Fasciculata. Com pellos em feixes. Buprestis. fig. 26. —
                         Laevia. Lisos. Chrysomela. — Scabra. Com pontos prominentes, e distantes.
                         Cerambix. fig. 21. — <s>Tuberculata. Com <term lemma="tubérculo"
@@ -4335,31 +4361,40 @@
                         Carabus.</s> — Strumarius. Com os lados estendidos, e como inchados.
                         Gryllus. — Lunaris. Com os lados prominentes anteriormente. Acanthia. —
                         Retusus. Que acaba na parte anterior com huma excavaçaõ obtusa. Scarabaeus.
-                        — Acuminatus. Que acaba em ponta. Sepidium. — Lanceolatus. Sahido para fóra
-                        mais delgado. Curculio anchorago. — <s>Transversus. Cujo diametro
-                              transversal excede o <term>longitudinal</term>. Dytiscus.</s> —
-                        Planus. Chato, sendo as margens da mesma altura que o meio, ou a mais
-                        superficie. — Mucronatus. Que acaba com excavaçaõ obtusa, na qual está huma
-                        ponta. Scarabæus. — Testatus. Todo o corpo cuberto de cute calcaria. Cancer.
-                        Pela proporçaõ. — <s>Brevior. Mais breve, que o abdomen, o que se observa na
-                              maior parte dos <term lemma="inseto" norm="insetos" msd="plural"
-                                    >insectos</term>.</s> — Longior. Mais comprido que o abdomen.
-                        Curculio. — Abdominis longitudine. Do comprimento do abdomen. Mantis. <pb
-                              n="115"/> Pela superficie. — Tomentosus. Cuberto de velo, ou lanugem
+                        — Acuminatus. Que acaba em ponta. Sepidium. <entry>
+                              <form>— Lanceolatus.</form>
+                              <sense>Sahido para fóra
+                                    mais delgado. Curculio anchorago.</sense>
+                        </entry> <entry>
+                              <form>— Transversus.</form>
+                              <sense>Cujo diametro transversal excede o <term>longitudinal</term>.
+                        Dytiscus.</sense>
+                        </entry> — Planus. Chato, sendo as
+                        margens da mesma altura que o meio, ou a mais superficie. — Mucronatus. Que
+                        acaba com excavaçaõ obtusa, na qual está huma ponta. Scarabæus. — Testatus.
+                        Todo o corpo cuberto de cute calcaria. Cancer. Pela proporçaõ. — <s>Brevior.
+                        Mais breve, que o abdomen, o que se observa na maior parte dos <term
+                                    lemma="inseto" norm="insetos" msd="plural"
+                              >insectos</term>.</s> —
+                        Longior. Mais comprido que o abdomen. Curculio. — Abdominis longitudine. Do
+                        comprimento do abdomen. Mantis. <pb
+                              n="115" /> Pela superficie. — Tomentosus. Cuberto de velo, ou lanugem
                         imperceptivel. — Pilosus. Com pellos compridos. — Hispidus. Com sedas rijas.
-                        Musca. — Cristatus. Quando o seu dorso tem feixes de pellos. Bombyx, Noctua.
-                        — Tuberculatus. Com prominencias convexas, obtusas, desiguaes. Scarabæus.
-                        Gryllus — Aculeatus. Com aculeos rijos espalhados pela sua superficie.
-                        Cancer. Hispa. — Muricatus. Quasi o mesmo que aculcatus. Dermestes
-                        muricatus. — Cornutus. Com prominencias conpridas. Scarabaeus. Tab. VI. fig.
-                        II. h. h. — Glaber. Sem lanugem. — Levis. Liso, sem excavaçaó, ou
-                        prominencia dentada. — <s>Serratus. Com huma linha <term>longitudinal</term>
-                              levantada, aguda, lisa. Gryllus.</s> — <s>Canalliculatus. Com huma
-                              linha <term>longitudinal</term> excavada.</s> — <s>Carinatus. Com
-                              linha <term> longitudinal</term> levantada, lisa. Gryllus.</s> —
-                              <s>Striatus. Com linhas superficiaes, <term lemma="longitudinal"
-                                    norm="longitudinais" msd="plural">longitudinaes</term>.</s> —
-                              <s>Sulcatus. Com linhas <term lemma="longitudinal"
+                        Musca. — Cristatus. Quando o seu dorso tem feixes de pellos. Bombyx, Noctua. <entry>
+                              <form>— Tuberculatus.</form>
+                              <sense>Com prominencias convexas, obtusas, desiguaes. Scarabæus.
+                        Gryllus</sense>
+                        </entry> — Aculeatus. Com aculeos
+                        rijos espalhados pela sua superficie. Cancer. Hispa. — Muricatus. Quasi o
+                        mesmo que aculcatus. Dermestes muricatus. — Cornutus. Com prominencias
+                        conpridas. Scarabaeus. Tab. VI. fig. II. h. h. — Glaber. Sem lanugem. —
+                        Levis. Liso, sem excavaçaó, ou prominencia dentada. — <s>Serratus. Com huma
+                        linha <term>longitudinal</term> levantada, aguda, lisa. Gryllus.</s> — <s>Canalliculatus.
+                        Com huma linha <term>longitudinal</term> excavada.</s> — <s>Carinatus. Com
+                        linha <term> longitudinal</term> levantada, lisa. Gryllus.</s> — <s>Striatus.
+                        Com linhas superficiaes, <term lemma="longitudinal"
+                                    norm="longitudinais" msd="plural">longitudinaes</term>.</s> — <s>Sulcatus.
+                        Com linhas <term lemma="longitudinal"
                                     norm="longitudinais" msd="plural">longitudinaes</term> excavadas
                         mais profundamente.</s> — Punctatus. Com pequenos pontos excavados,
                         dispostos sem ordem. — Variolosus. Excavado com pontos maiores como
@@ -4778,32 +4813,35 @@
                         DENTES. Dentes. — Incurvi. Encurvados, ou arqueados. Actinia. DENTICULI. Saõ
                         humas pequenas eminencias á maneira de dentes postos nos lados da abertura
                         das conchas. DETRITA columella. Com o labio da columella quasi razo, chato.
-                        Buccinum harpa. &amp;c. — — Spira. Com a espira chata. Voluta tringa.
-                              <s>DIAPHRAGMA. Divizaõ das <term lemma="concameração" msd="plural"
-                                    >concamerações</term>, ou cellulas. Nautilus.</s> DICHOTOMUS.
-                        Dividido em dous. DIGITATUS. Recortaduras do labio exterior da concha, as
-                        quaes se prolongaõ á maneira de dedos. Strombus. <s>O labio dividido em
-                              abas, ou <term lemma="lacínia" norm="lacínias" msd="plural"
-                                    >lacinias</term> extendidas. Strombus.</s> DIGITUS. Huma, ou
-                        mais pontas rombas postas no labio exterior. Strombus. — Solutus. Separado
-                        por meio de huma excavaçaõ dos anfractos. — Fissus. Dividido quasi no meio
-                        por huma excavaçaõ linear. <pb n="138"/> — Integer. Contrario do fissus. —
-                        Mucronatus. Que acaba sómente em huma ponta. — Scrobiculato-canaliculatus.
-                        Com varices, ou prominencias, as quaes tem excavaçoens. DISCUS. He a parte
-                        do meio das valvas, ou aquella, que está entre os umbones. e o limbo, ou
-                        margem. DISSEPIMENTUM. V. Diaphragma. DORSUM. Nas univalves he a parte da
-                        orbita opposta á abertura da concha: no Nautilus, onde está a carina, e nas
-                        bivalves a parte mais elevada: Nas Patelas, e Haliotis he a parte superior
-                        convexa. — Coronatum. Coroado, ou cercado com alguma cousa. — Gibbere
-                        compresso. Corcova comprimida nos lados. — Marginatum. Com a margem sahida
-                        para fora. Strombus marginatus. — Rugosum. Com rugas. — Verrucosum.
-                        Escabroso, ou com verrugas. E EPIDERMIS. He huma membrana, ou pellicula
-                        exterior da concha, que se acha em algumas especies, a qual spontaneamente,
-                        cae sem algum prejuizo da superficie da concha. ELONGATUS conus basi
-                        rotundata, cylindro duplo longiore quam spira. A Concha Conus comprida, com
-                        a base arredondada com o cylindro duas vezes mais comprido que a espira.
-                              <s>EXESUS. Diz-se da concha cuja clavicula, espiras, <pb n="139"
-                              />canaliculaturas, linhas, pontos, e <term lemma="tubérculo"
+                        Buccinum harpa. &amp;c. — — Spira. Com a espira chata. Voluta tringa. <s>DIAPHRAGMA.
+                        Divizaõ das <term lemma="concameração" msd="plural"
+                              >concamerações</term>, ou
+                        cellulas. Nautilus.</s> DICHOTOMUS. Dividido em dous. DIGITATUS.
+                        Recortaduras do labio exterior da concha, as quaes se prolongaõ á maneira de
+                        dedos. Strombus. <s>O labio dividido em abas, ou <term lemma="lacínia"
+                                    norm="lacínias" msd="plural"
+                              >lacinias</term> extendidas.
+                        Strombus.</s> DIGITUS. Huma, ou mais pontas rombas postas no labio exterior.
+                        Strombus. — Solutus. Separado por meio de huma excavaçaõ dos anfractos. —
+                        Fissus. Dividido quasi no meio por huma excavaçaõ linear. <pb n="138" /> —
+                        Integer. Contrario do fissus. — Mucronatus. Que acaba sómente em huma ponta.
+                        — Scrobiculato-canaliculatus. Com varices, ou prominencias, as quaes tem
+                        excavaçoens. DISCUS. He a parte do meio das valvas, ou aquella, que está
+                        entre os umbones. e o limbo, ou margem. DISSEPIMENTUM. V. Diaphragma.
+                        DORSUM. Nas univalves he a parte da orbita opposta á abertura da concha: no
+                        Nautilus, onde está a carina, e nas bivalves a parte mais elevada: Nas
+                        Patelas, e Haliotis he a parte superior convexa. — Coronatum. Coroado, ou
+                        cercado com alguma cousa. — Gibbere compresso. Corcova comprimida nos lados.
+                        — Marginatum. Com a margem sahida para fora. Strombus marginatus. — Rugosum.
+                        Com rugas. — Verrucosum. Escabroso, ou com verrugas. E EPIDERMIS. He huma
+                        membrana, ou pellicula exterior da concha, que se acha em algumas especies,
+                        a qual spontaneamente, cae sem algum prejuizo da superficie da concha.
+                        ELONGATUS conus basi rotundata, cylindro duplo longiore quam spira. A Concha
+                        Conus comprida, com a base arredondada com o cylindro duas vezes mais
+                        comprido que a espira. <s>EXESUS. Diz-se da concha cuja clavicula, espiras, <pb
+                                    n="139"
+                              />canaliculaturas, linhas, pontos, e <term
+                                    lemma="tubérculo"
                                     norm="tubérculos" msd="plural">tuberculos</term> se naõ podem
                         observar, ou estaõ como safadas, pelas interrupções, que causa a sua
                         antiguidade.</s> F FALCATA columella. Columella á maneira de fouce. FASCIÆ.
@@ -4895,27 +4933,32 @@
                         vinculum. Saõ sinonimos. Os ligamentos nas bivalves saõ destinados para unir
                         as valvas de maneira que se abraõ, e fechem por meio destes ligamentos.
                         LIMBUS. Circumferencia das valvas da concha, ou margem da mesma. <s>LINGUA.
-                              He huma pequena <term lemma="carúncula" norm="carúncula"
-                                    >caruncula</term> branca, conica, negra na ponta, posta na parte
-                              posterior da mandibula de alguns molluscos. Limax Vid. Argenville.</s>
-                        — Involuta. Envolvida. — Spiralis. Espiral, ou retorcida em espira. Triton.
-                        LINEAE. As linhas, algumas vezes, significaõ sómente a pintura, e as vezes
-                        strias prominentes, ou escavadas. — Longitudinales. Que se extendem da base
-                        até ao apice. — Transversales. Que seguem os anfractos, ou giros. —
-                        Striatae. Com strias transversaes. LITHOPHYTA. Saõ animaes, ou vermes
-                        molluscos compostos, que constaõ de coral, e dos molluscos. Os Lithophitos,
-                        como observou Mr. Leysonel, saõ pequenos animaes, que separaõ, ou depoem a
-                        materia coralina, e servem-se della para as suas cellulas. E os vermes das
-                        medroporas postos assima das estrelas depozitando para baixo de si
-                        continuamente a materia de pedra, levantaõse, e acrescentaõ as suas
-                        habitações. Os vermes, que fabricaõ estas casas, saõ Nereis ? Medusa. Hydra.
-                              <pb n="145"/>
-                        <s>LOBATUS. Com abas, ou <term lemma="lacínia" norm="lacínias" msd="plural"
-                                    >lacinias</term>.</s> LOCULARIS. Cavidade. — Unilocularis. Com
-                        huma cavidade. — Bilocularis. Com duas. LONGITUDINALIS. Comprimento desde os
-                        nates até á margem, ou borda. LONGITUDO. O comprimento da concha se toma das
-                        nadegas até a margem superior. M. <s>MACULA tuberculata. Concha reticulada
-                              com <term lemma="tubérculo" norm="tubérculos" msd="plural">
+                        He huma pequena <term lemma="carúncula" norm="carúncula"
+                              >caruncula</term>
+                        branca, conica, negra na ponta, posta na parte posterior da mandibula de
+                        alguns molluscos. Limax Vid. Argenville.</s> — Involuta. Envolvida. —
+                        Spiralis. Espiral, ou retorcida em espira. Triton. LINEAE. As linhas,
+                        algumas vezes, significaõ sómente a pintura, e as vezes strias prominentes,
+                        ou escavadas. — Longitudinales. Que se extendem da base até ao apice. —
+                        Transversales. Que seguem os anfractos, ou giros. — Striatae. Com strias
+                        transversaes. LITHOPHYTA. Saõ animaes, ou vermes molluscos compostos, que
+                        constaõ de coral, e dos molluscos. Os Lithophitos, como observou Mr.
+                        Leysonel, saõ pequenos animaes, que separaõ, ou depoem a materia coralina, e
+                        servem-se della para as suas cellulas. E os vermes das medroporas postos
+                        assima das estrelas depozitando para baixo de si continuamente a materia de
+                        pedra, levantaõse, e acrescentaõ as suas habitações. Os vermes, que fabricaõ
+                        estas casas, saõ Nereis ? Medusa. Hydra. <pb n="145" />
+                        <entry>
+                              <form>LOBATUS.</form>
+                              <sense>Com abas, ou <term lemma="lacínia" norm="lacínias" msd="plural"
+                                    >
+                        lacinias</term>.</sense>
+                        </entry> LOCULARIS.
+                        Cavidade. — Unilocularis. Com huma cavidade. — Bilocularis. Com duas.
+                        LONGITUDINALIS. Comprimento desde os nates até á margem, ou borda.
+                        LONGITUDO. O comprimento da concha se toma das nadegas até a margem
+                        superior. M. <s>MACULA tuberculata. Concha reticulada com <term
+                                    lemma="tubérculo" norm="tubérculos" msd="plural">
                                     tuberculos</term> elevados na seçaõ das costas.</s> MARGO.
                         Margem, ou limbo. — <s>Canaliculatus. Rodeado na regiaõ do anus com huma
                         covinha quasi <term>longitudinal</term>.</s> — Cardinalis. Junto ao cardo,
@@ -6238,22 +6281,25 @@
                         d.) Virgatus. Dotado de muitos pequenos ramos desiguaes, debeis, flexiveis,
                         formando entre si varios feixes. Antirrhinum genistifolium. Betula alba.
                         _Paniculatus. Dividido em varios ramos e estes subdivididos em outros ramos
-                        mais pequenos. (103.) Panicula _ <s>Fastigiatus. Quando os ramos se levantaõ
-                              em feixe de tal forma, que ficaõ iguaes como se fossem cortados
-                              horizontalmente; e assim se chamaõ fastigiati flores, quando os <term
-                                    lemma="pecíolo" norm="pecíolos" msd="plural">peciolos</term>
-                              elevaõ as <term lemma="frutificação" norm="frutificações" msd="plural"
-                                    >fructificaçoens</term> em hum feixe. &amp;c.</s> e) _
-                              <s>Patens. Se muitos <term lemma="tronco" msd="plural">troncos</term>,
-                              que nascem da raiz se afastaõ entre si formando angulos agudos.</s> _
-                              <s>Divaricatus. Opposto ao <term>coarctado</term>, ou apertado, quando
-                              o <term>tronco</term> lança muitos caules perto da terra sendo muito
-                              distantes entre si, e formando com o <term>tronco</term> hum angulo
-                              obtuzo.</s> RAMI. Os ramos. <s>24. RAMIS, s. Brachiis. Os ramos saõ
-                              partes do <term>caule</term> .</s> a.) Structura caulis. Os ramos saõ
-                        da mesma figura, e estructura do caule. <s>Structura frondis. fig. 108. He
-                              huma especie de <term>tronco</term> formado do ramo, e da
-                                    <term>folha</term>, e muitas vezes contem a <term
+                        mais pequenos. (103.) Panicula <entry>
+                              <form>- Fastigiatus.</form>
+                              <sense>Quando os ramos se levantaõ em feixe de tal forma, que ficaõ
+                        iguaes como se fossem cortados horizontalmente; e assim se chamaõ fastigiati
+                        flores, quando os <term
+                                          lemma="pecíolo" norm="pecíolos" msd="plural">peciolos</term>
+                        elevaõ as <term lemma="frutificação" norm="frutificações" msd="plural">
+                        fructificaçoens</term> em hum feixe. &amp;c.</sense>
+                        </entry>
+                        e) _ <s>Patens. Se muitos <term
+                                    lemma="tronco" msd="plural">troncos</term>, que nascem da raiz
+                        se afastaõ entre si formando angulos agudos.</s> _ <s>Divaricatus. Opposto
+                        ao <term>coarctado</term>, ou apertado, quando o <term>tronco</term> lança
+                        muitos caules perto da terra sendo muito distantes entre si, e formando com
+                        o <term>tronco</term> hum angulo obtuzo.</s> RAMI. Os ramos. <s>24. RAMIS,
+                        s. Brachiis. Os ramos saõ partes do <term>caule</term> .</s> a.) Structura
+                        caulis. Os ramos saõ da mesma figura, e estructura do caule. <s>Structura
+                        frondis. fig. 108. He huma especie de <term>tronco</term> formado do ramo, e
+                        da <term>folha</term>, e muitas vezes contem a <term
                                     lemma="frutificação" norm="frutificação">fructificaçaõ</term>, e
                         he proprio <pb n="207" />dos Fetos, e das Palmeiras. Asplenium scolopendria.</s>
                         Palmites. As continuaçoens muito subtis dos ramos. Flagella. Da-se lhe este
@@ -7184,22 +7230,24 @@
                         Sahe do <term lemma="pecíolo">peciolo</term>. Hibiscus.</s> — <s>Cirrhiferus.
                         Tendo <term lemma="cirro" norm="cirro"
                                     senseNumber="2">cirrho</term>, ou ello (76) Vitis,
-                              Cardiospermum.</s> — Terminalis. Que está na extremidade do caule, ou
-                        do ramo. — <s>Axillaris. Que nasce entre o caule, e a <term>folha</term>, ou
-                              entre o caule, e o ramo.</s> (29) — <s>Oppositifolius. Opposto na
-                              situação á <term>folha</term>. Phytolacca, Solanum dulcamara, Vitis.
-                              Geranium, Ranunculus aquatilis.</s> — <s>Laterifolius, s. lateralis.
-                              Posto ao lado da base da <term> folha</term>. Asperifoliae como
-                              Symphitum, Pulmonaria.</s> — <s>Interfoliaceus. Estando posto
-                              alternadamente entre as <term lemma="folha" msd="plural">folhas</term>
-                              oppostas. Asclepias vincetoxicum.</s> — <s>Suprafoliaceus; s. Supinus.
-                              Acima da <term>folha</term>.</s> — <s>Extrafoliaceus. Fora da
-                                    <term>folha</term>.</s> 89. b.) Pela situaçaõ. — Alternus. Posto
-                        alternado (31) — Sparsus. Saõ muitos sem ordem alguma. — Oppositus. (32)
-                        Opposto. — Verticillatus. Quando saõ mais de dous, e que cercaõ o caule na
-                        mesma altura. Marrubium. 90. c.) Pelo número. — Solitarius. Hum só. Lilium
-                        candidum. — Geminatus. Dous no mesmo lugar. <pb n="242"/> — Multiplex.
-                        Muitos. Plumeria. — <s>Umbellula Sessilis. Muitos <term lemma="pedúnculo"
+                        Cardiospermum.</s> — Terminalis. Que está na extremidade do caule, ou do
+                        ramo. — <s>Axillaris. Que nasce entre o caule, e a <term>folha</term>, ou
+                        entre o caule, e o ramo.</s> (29) — <s>Oppositifolius. Opposto na situação á <term>
+                        folha</term>. Phytolacca, Solanum dulcamara, Vitis. Geranium, Ranunculus
+                        aquatilis.</s> — <s>Laterifolius, s. lateralis. Posto ao lado da base da <term>
+                        folha</term>. Asperifoliae como Symphitum, Pulmonaria.</s> — <s>Interfoliaceus.
+                        Estando posto alternadamente entre as <term lemma="folha" msd="plural">
+                        folhas</term> oppostas. Asclepias vincetoxicum.</s> — <s>Suprafoliaceus; s.
+                        Supinus. Acima da <term>folha</term>.</s> — <s>Extrafoliaceus. Fora da <term>
+                        folha</term>.</s> 89. b.) Pela situaçaõ. — Alternus. Posto alternado (31) —
+                        Sparsus. Saõ muitos sem ordem alguma. — Oppositus. (32) Opposto. <entry>
+                              <form>— Verticillatus.</form>
+                              <sense>Quando saõ mais de dous, e que cercaõ o caule na
+                                    mesma altura. Marrubium.</sense>
+                        </entry>
+                        90. c.) Pelo número. — Solitarius. Hum só. Lilium candidum. — Geminatus.
+                        Dous no mesmo lugar. <pb n="242" /> — Multiplex. Muitos. Plumeria. — <s>Umbellula
+                        Sessilis. Muitos <term lemma="pedúnculo"
                                     norm="pedúnculos" msd="plural">pedunculos</term> sahem do mesmo
                         ponto sem intermedio algum, e formaõ huma circunferencia igual.</s> (94) 91.
                         d. Pela direcçaõ. — Adpressus. (33) — <s>Coarctatus. Estando varios <term
@@ -7675,30 +7723,33 @@
                               />igualdade, quando o limbo, ou <term
                                     lemma="lacínia" norm="lacínias"
                                     msd="plural">lacinias</term> na corolla monopetala, e as laminas
-                              na corolla polipetala saõ iguaes no tamanho, e na figura. Lychnis.
-                              Aquilegia.</s> — Irregularis. Irregular, quando as partes do limbo, ou
-                        da lamina taõ differentes pela figura, grandeza, e proporçaõ. Echium
-                        vulgare. Aconitum. Lamium. — Inaequalis. Quando as ditas partes se
-                        correspondem naõ no tamanho, mas só na proporçaõ; demaneira, que se forma
-                        huma flor regular. Butomus. — Aequalis. Sendo as ditas partes iguaes na
-                        grandeza, e proporçaõ. 123. d.) Pela figura. — Globosa. Que reprezenta quasi
-                        a figura de hum globo. Hyacintbus bottyoides. Cucubalus. — Clavata. Mais
-                        grossa na parte superior. Silene. — Reflexa. Cujo limbo está revirado para
-                        traz. Asclepias. — Erecta. O Limbo elevado. Primula. Nicotiana. —
-                        Campanulata, campaniformis. fig. 132. Barriguda, sem tubo. Campanula,
-                        Tulipa. — Infundibiliformis. O limbo de figura de huma piramide conica
-                        inversa posta sobre hum tubo, como hum funil. Primula veris, Cynoglossum
-                        officinale. — Hipocrateriformis. fig. 142. Sendo o limbo chato posto acima
-                        de hum tubo. Myofotis. Vinca. Iasminum. — Rotata. Constando a corolla de hum
-                        limbo chato sem tudo, representando assim huma roda. Borrago. Anagallis.
-                        Lysimachia. — <s>Caryophillata. Quando os petalos sahem para <pb n="259"
-                              />fora do <term lemma="cálice" norm="cálice">caliz</term>, como de hum
-                              tuberculo. Caryophilli, Linum.</s> — Rosacea. À maneira de rosa com a
-                        unha muito peqena. — Malvacea. Como a flor da malva, cujos petalos estaõ
-                        unidos na sua base. — Ringens. He a corolla irregular com o limbo dividido
-                        em dous beiços. — Labiata. He o mesmo que ringens, como a bocca de hum
-                        animal estando aberta, a arreganhando elle os dentes. <dictScrap>Na corolla
-                                    <term lemma="labiado" msd="feminino singular"
+                        na corolla polipetala saõ iguaes no tamanho, e na figura. Lychnis.
+                        Aquilegia.</s> — Irregularis. Irregular, quando as partes do limbo, ou da
+                        lamina taõ differentes pela figura, grandeza, e proporçaõ. Echium vulgare.
+                        Aconitum. Lamium. — Inaequalis. Quando as ditas partes se correspondem naõ
+                        no tamanho, mas só na proporçaõ; demaneira, que se forma huma flor regular.
+                        Butomus. — Aequalis. Sendo as ditas partes iguaes na grandeza, e proporçaõ.
+                        123. d.) Pela figura. — Globosa. Que reprezenta quasi a figura de hum globo.
+                        Hyacintbus bottyoides. Cucubalus. — Clavata. Mais grossa na parte superior.
+                        Silene. — Reflexa. Cujo limbo está revirado para traz. Asclepias. — Erecta.
+                        O Limbo elevado. Primula. Nicotiana. — Campanulata, campaniformis. fig. 132.
+                        Barriguda, sem tubo. Campanula, Tulipa. — Infundibiliformis. O limbo de
+                        figura de huma piramide conica inversa posta sobre hum tubo, como hum funil.
+                        Primula veris, Cynoglossum officinale. — Hipocrateriformis. fig. 142. Sendo
+                        o limbo chato posto acima de hum tubo. Myofotis. Vinca. Iasminum. — Rotata.
+                        Constando a corolla de hum limbo chato sem tudo, representando assim huma
+                        roda. Borrago. Anagallis. Lysimachia. — <s>Caryophillata. Quando os petalos
+                        sahem para <pb n="259"
+                              />fora do <term lemma="cálice" norm="cálice">caliz</term>,
+                        como de hum tuberculo. Caryophilli, Linum.</s> — Rosacea. À maneira de rosa
+                        com a unha muito peqena. — Malvacea. Como a flor da malva, cujos petalos
+                        estaõ unidos na sua base. — Ringens. He a corolla irregular com o limbo
+                        dividido em dous beiços. <entry>
+                              <form>— Labiata.</form>
+                              <sense>He o mesmo que ringens, como a bocca de hum
+                                    animal estando aberta, a arreganhando elle os dentes.</sense>
+                        </entry> <dictScrap>Na
+                        corolla <term lemma="labiado" msd="feminino singular"
                               >labiada</term>.</dictScrap>
                         <entry>
                               <form>Rictus.</form>
@@ -8389,25 +8440,33 @@
                         esfera. Matricaria chamomilla. — Conicum. fig. 141. Com a superficie elevada
                         em figura conica. Anthemis. Bellis. — Concavum. Concavo. — Subulatum. (56) <entry>
                         158. <s>Compositus flos. <term lemma="receptáculo" norm="Receptáculo"
-                                    >Receptaculo</term> estendido, convexo, commum a muitas pequenas
-                              flores monopetatas, com as <term lemma="antera" norm="anteras"
-                                    msd="plural">antheras</term> unidas em cylindro.</s>
-                        <pb n="283"/> — 1. Ligulatus, aut semiflosculosus Tournefort. Todas as
-                        pequenas corollas saõ planas, e estendidas para a parte externa. — 2.
-                        Tubulosus, flosculosus Tournefort. Todas as pequenas corollas, saõ
-                        tubulosas, ou como canudos quasi iguaes. Eupatorium. — 3 <s>Radiatus. As
-                              pequenas corollas do <term> disco</term> saõ tubulosas, e as da
-                              circunferencia <term lemma="ligulado" msd="feminino plural"
-                                    >liguladas</term>, ou com o limbo desigual, e sahido muito para
-                              fora. Coreopsis, Achillæa, Tagetes.</s>
-                        <s>Compositus, radiatus flos. A flor composta radiada consta de
-                                    <term>disco</term> e raio.</s> Radius. O raio he formado de
-                        pequenas corollas irregulares postas na circunferencia. <s>Discus. A
-                              superficie, ou centro da flor, consta de pequenas corollas quasi
-                              sempre regulares: na flor composta he a parte do meio, que acaba, ou
-                              que vem cercada com a margem do <term lemma="cálice" norm="cálice"
-                                    >caliz</term>.</s>
-                        <s>Decompositus. Flor composta de flores compostas; contem em hum <term
+                                    >
+                        Receptaculo</term> estendido, convexo, commum a muitas pequenas flores
+                        monopetatas, com as <term lemma="antera" norm="anteras"
+                                          msd="plural">antheras</term> unidas em cylindro.</s>
+                        <pb
+                                    n="283" /> <entry>
+                                    <form>— 1. Ligulatus, aut semiflosculosus Tournefort.</form>
+                                    <sense>Todas as
+                                          pequenas corollas saõ planas, e estendidas para a parte
+                        externa.</sense>
+                              </entry> — 2. Tubulosus,
+                        flosculosus Tournefort. Todas as pequenas corollas, saõ tubulosas, ou como
+                        canudos quasi iguaes. Eupatorium. — 3 <s>Radiatus. As pequenas corollas do <term>
+                        disco</term> saõ tubulosas, e as da circunferencia <term lemma="ligulado"
+                                          msd="feminino plural"
+                                    >liguladas</term>, ou com o limbo
+                        desigual, e sahido muito para fora. Coreopsis, Achillæa, Tagetes.</s></entry>
+                        <s>Compositus,
+                        radiatus flos. A flor composta radiada consta de <term>disco</term> e raio.</s>
+                        Radius. O raio he formado de pequenas corollas irregulares postas na
+                        circunferencia. <s>Discus. A superficie, ou centro da flor, consta de
+                        pequenas corollas quasi sempre regulares: na flor composta he a parte do
+                        meio, que acaba, ou que vem cercada com a margem do <term lemma="cálice"
+                                    norm="cálice"
+                              >caliz</term>.</s>
+                        <s>Decompositus. Flor composta de
+                        flores compostas; contem em hum <term
                                     lemma="cálice" norm="cálice">caliz</term> commum <term
                                     lemma="cálice" norm="cálices" msd="plural">calices</term>
                         menores, que saõ communs a muitas flores. Sphaerantus.</s>
