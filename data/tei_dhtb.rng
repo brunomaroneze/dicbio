@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-02-21T13:25:08Z. . 
+Schema generated from ODD source 2025-03-09T22:15:32Z. . 
 TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
   
@@ -1265,6 +1265,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    </define>
    <define name="tei_dhtbatt.global.attributes">
       <ref name="tei_dhtbatt.global.analytic.attributes"/>
+      <ref name="tei_dhtbatt.global.facs.attributes"/>
       <ref name="tei_dhtbatt.global.linking.attributes"/>
       <ref name="tei_dhtbatt.global.rendition.attributes"/>
       <ref name="tei_dhtbatt.global.responsibility.attributes"/>
@@ -1647,6 +1648,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbgloss"/>
          <ref name="tei_dhtbterm"/>
          <ref name="tei_dhtbtitle"/>
+         <ref name="tei_dhtbcode"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.emphLike_alternation">
@@ -1659,6 +1661,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbgloss"/>
          <ref name="tei_dhtbterm"/>
          <ref name="tei_dhtbtitle"/>
+         <ref name="tei_dhtbcode"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.emphLike_sequence">
@@ -1670,6 +1673,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="tei_dhtbgloss"/>
       <ref name="tei_dhtbterm"/>
       <ref name="tei_dhtbtitle"/>
+      <ref name="tei_dhtbcode"/>
    </define>
    <define name="tei_dhtbmodel.emphLike_sequenceOptional">
       <optional>
@@ -1695,6 +1699,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </optional>
       <optional>
          <ref name="tei_dhtbtitle"/>
+      </optional>
+      <optional>
+         <ref name="tei_dhtbcode"/>
       </optional>
    </define>
    <define name="tei_dhtbmodel.emphLike_sequenceOptionalRepeatable">
@@ -1722,6 +1729,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <zeroOrMore>
          <ref name="tei_dhtbtitle"/>
       </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_dhtbcode"/>
+      </zeroOrMore>
    </define>
    <define name="tei_dhtbmodel.emphLike_sequenceRepeatable">
       <oneOrMore>
@@ -1747,6 +1757,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </oneOrMore>
       <oneOrMore>
          <ref name="tei_dhtbtitle"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_dhtbcode"/>
       </oneOrMore>
    </define>
    <define name="tei_dhtbmodel.highlighted">
@@ -2709,6 +2722,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbmodel.biblLike"/>
          <ref name="tei_dhtbcit"/>
          <ref name="tei_dhtbentry"/>
+         <ref name="tei_dhtbdictScrap"/>
          <ref name="tei_dhtbform"/>
          <ref name="tei_dhtbdef"/>
       </choice>
@@ -4679,6 +4693,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          <ref name="tei_dhtbatt.global.attribute.xmlbase"/>
          <ref name="tei_dhtbatt.global.attribute.xmlspace"/>
          <ref name="tei_dhtbatt.global.analytic.attribute.ana"/>
+         <ref name="tei_dhtbatt.global.facs.attribute.facs"/>
          <ref name="tei_dhtbatt.global.linking.attribute.corresp"/>
          <ref name="tei_dhtbatt.global.linking.attribute.synch"/>
          <ref name="tei_dhtbatt.global.linking.attribute.sameAs"/>
@@ -6054,7 +6069,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                   <ref name="tei_dhtbentry"/>
                </oneOrMore>
             </group>
-      
+            <ref name="tei_dhtbdictScrap"/>
          </choice>
          <ref name="tei_dhtbatt.global.attributes"/>
          <ref name="tei_dhtbatt.entryLike.attributes"/>
@@ -6123,6 +6138,24 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                <data type="nonNegativeInteger"/>
             </attribute>
          </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbdictScrap">
+      <element name="dictScrap">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(dictionary scrap) encloses a part of a dictionary entry in which other phrase-level dictionary elements are freely combined. [10.1. Dictionary Body and Overall Structure 10.2. The Structure of Dictionary Entries]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_dhtbmodel.gLike"/>
+               <ref name="tei_dhtbmodel.entryPart"/>
+               <ref name="tei_dhtbmodel.morphLike"/>
+               <ref name="tei_dhtbmodel.phrase"/>
+               <ref name="tei_dhtbmodel.inter"/>
+               <ref name="tei_dhtbmodel.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_dhtbatt.global.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6209,6 +6242,22 @@ Suggested values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] deriv
                        a:defaultValue="TEI">
                <a:documentation>(scheme) supplies an identifier for the scheme in which this name is defined.
 Sample values include: 1] TEI (Text Encoding Initiative); 2] DBK (Docbook); 3] XX (unknown); 4] imaginary (imaginary); 5] XHTML (XHTML); 6] XML (XML); 7] XI (XI)</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbcode">
+      <element name="code">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains literal code from some formal language such as a programming language. [23.1.1. Phrase Level Terms]</a:documentation>
+         <text/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <optional>
+            <attribute name="lang">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(formal language) a name identifying the formal language in which the code is expressed.</a:documentation>
                <data type="token">
                   <param name="pattern">[^\p{C}\p{Z}]+</param>
                </data>
@@ -6688,6 +6737,23 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       <optional>
          <attribute name="select">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">selects one or more alternants; if one alternant is selected, the ambiguity or uncertainty is marked as resolved. If more than one alternant is selected, the degree of ambiguity or uncertainty is marked as reduced by the number of alternants not selected.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbatt.global.facs.attributes">
+      <ref name="tei_dhtbatt.global.facs.attribute.facs"/>
+   </define>
+   <define name="tei_dhtbatt.global.facs.attribute.facs">
+      <optional>
+         <attribute name="facs">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(facsimile) points to one or more images, portions of an image, or surfaces which correspond to the current element.</a:documentation>
             <list>
                <oneOrMore>
                   <data type="anyURI">

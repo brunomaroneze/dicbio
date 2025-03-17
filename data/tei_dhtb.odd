@@ -51,7 +51,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-02-21T13:25:01.791Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-03-09T22:15:25.201Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -92,7 +92,7 @@
 
 
         <moduleRef key="analysis" include="c cl pc phr s span spanGrp w"/>
-        <moduleRef key="dictionaries" include="def entry entryFree superEntry sense form"/>
+        <moduleRef key="dictionaries" include="def entry entryFree superEntry sense form dictScrap"/>
         <elementSpec ident="term" mode="change">
           <classes mode="change">
             <memberOf key="att.linguistic"/>
@@ -117,7 +117,7 @@
         <classRef key="model.formPart"/>
         <classRef key="model.titlepagePart"/>
         <classRef key="model.frontPart"/>
-      <moduleRef key="tagdocs" include="att gi"/><moduleRef key="figures" include="table row cell"/><classRef key="att.global.linking"/><classSpec ident="model.formPart" type="model" mode="delete"/></schemaSpec>
+      <moduleRef key="tagdocs" include="att gi code"/><moduleRef key="figures" include="table row cell"/><classRef key="att.global.linking"/><classRef key="att.global.facs"/><classSpec ident="model.formPart" type="model" mode="delete"/></schemaSpec>
     </body>
   </text>
 </TEI>
