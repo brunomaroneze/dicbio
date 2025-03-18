@@ -2678,39 +2678,48 @@
                               </entry>
                         </div>
                         <div
-                              type="letra"><head>B.</head> BICOLORATUS. He aquelle peixe cujos lados
-                        he de huma cor e outro de outra. BIFIDUS. Parte do peixe que se divide entre
-                        si em duas. BINATUS. Diz-se dos peixes cujos olhos se fecham juntos ambos no
-                        mesmo lado. Pleuronectes. BRANCHIA. As branchias ou guelras saõ os primeiros
-                        orgaõs da respiraçaõ nos peixes. Estaõ postas entre a cabeça e o tronco.
-                        Para cada huma se ver he necessario levantar o operculo branchial e ter
-                        dobrada a membrana branchiostega; e na abertura branchiostega que entaõ fica
-                        aberta he que se vé o que propriamente se chama guelra. Desunindo-se humas
-                        das outras daõ postagem á agua que o peixe engulio e que quer deitar fora da
-                        sua gûela, avizinhando-se entre si e estando os operculos fechados, acha-se
-                        a agua retida e não pode sahir sem se dilatarem as guelras e sem se
-                        levantarem os opergulos. Saõ compostas de quatro pequenos ossículos
-                        arqueados paralelos, desiguaes, postos huns contra <pb
+                              type="letra"><head>B.</head> <entry>
+                                    <form>BICOLORATUS.</form>
+                                    <sense>He aquelle peixe cujos lados
+                                          he de huma cor e outro de outra.</sense>
+                              </entry> <entry>
+                                    <form>BIFIDUS.</form>
+                                    <sense>Parte do peixe que se divide entre si em duas.</sense>
+                              </entry> <entry>
+                                    <form>BINATUS.</form>
+                                    <sense>Diz-se dos peixes cujos olhos se fecham juntos ambos no
+                        mesmo lado. Pleuronectes.</sense>
+                              </entry>
+                        <entry><form>BRANCHIA.</form> <sense>As branchias ou guelras saõ os primeiros orgaõs da respiraçaõ nos
+                        peixes. Estaõ postas entre a cabeça e o tronco. Para cada huma se ver he
+                        necessario levantar o operculo branchial e ter dobrada a membrana
+                        branchiostega; e na abertura branchiostega que entaõ fica aberta he que se
+                        vé o que propriamente se chama guelra. Desunindo-se humas das outras daõ
+                        postagem á agua que o peixe engulio e que quer deitar fora da sua gûela,
+                        avizinhando-se entre si e estando os operculos fechados, acha-se a agua
+                        retida, e não pode sahir sem se dilatarem as guelras, e sem se levantarem os
+                        operculos.</sense> <sense>Saõ compostas de quatro pequenos ossiculos, arqueados paralelos,
+                        desiguaes, postos huns contra <pb
                                     n="35" />os outros, e na parte exterior que he a convexa tem
                         pequenos appendices ou túbulos moles, livres, dispostos somente em huma
                         parte, como a barba de huma penna e quasi sempre de cor encarnada em hum
-                        animal saõ. Estes ossiculos na parte interior tem tubérculos. As guelras
-                        consideraõ-se como os bofes dos peixes. Variaõ pela situaçaõ e estrutura.
-                        Pela situação. - Vicinae. Quando todas acabaõ na mesma abertura o que se
-                        observa em todos os verdadeiros peixes. - Operculatae. Cubertas com
-                        operculos em todos os verdadeiros peixes. - Denudatae. Nuas sem operculos. -
-                        Laterales. Lateraes, que estaõ postas em os lados nos peixes branchiostegos.
-                        - Occipitales. Estando no collo ou occipite. Callionymus, Murana. -
-                        Retro-actae. Profundadas estando postas longe da boca e mais perto da gûela.
-                        Uranoscopus, Murena. Callyonymus. Pela estrutura. - <s>Simplices. Da mesma
+                        animal saõ. Estes ossiculos na parte interior tem tuberculos. As guelras
+                        consideraõ-se como os bofes dos peixes. Tab. V. fig. 2. A.B.B.B. c.</sense> <sense>Variaõ pela situaçaõ, e estructura.</sense>
+                        <dictScrap>Pela situação.</dictScrap> <entry><form>- Vicinae.</form> <sense>Quando todas acabaõ na mesma abertura o que se
+                        observa em todos os verdadeiros peixes.</sense></entry> <entry><form>- Operculatae.</form> <sense>Cubertas com
+                        operculos em todos os verdadeiros peixes.</sense></entry> <entry><form>- Denudatae.</form> <sense>Nuas, sem operculos.</sense></entry> <entry><form>-
+                        Laterales.</form> <sense>Lateraes, que estaõ postas em os lados nos peixes branchiostegos.</sense></entry>
+                        <entry><form>- Occipitales.</form> <sense>Estando no collo ou occipite. Callionymus, Muraena.</sense></entry> <entry><form>- Occultae, inconspicuae.</form> <sense>Escondidas, estando o operculo pegado de modo, que se naõ pode levantar. Muraena, Callionymus.</sense></entry><entry><form>-
+                        Retro-actae.</form> <sense>Profundadas estando postas longe da boca e mais perto da gûela.
+                        Uranoscopus, Murena. Callyonymus.</sense></entry> <dictScrap>Pela estructura.</dictScrap> <entry>- Simplices. Da mesma
                         natureza, guarnecidas ou de sedas, ou de tubulos carnosos, ou de <term
                                           lemma="tubérculo" norm="tubérculos" msd="plural"
                                     >tuberculos</term>
-                        .</s> - <s>Dissimiles, disformes, anomalae. Dissimilhantes, quando humas tem
+                        .</entry> <entry>- Dissimiles, disformes, anomalae. Dissimilhantes, quando humas tem
                         pelos ou sedas no lado exterior e interior e as outras saõ <term
                                           lemma="tuberculado" msd="feminino plural"
                                     >tuberculadas</term>.
-                        Perca, Spari.</s>
+                        Perca, Spari.</entry>
                               <entry>
                                     <form>- Tuberculatae.</form>
                                     <sense><term lemma="tuberculado" msd="feminino plural"
@@ -2731,7 +2740,7 @@
                         ossiculo em lugar de <term lemma="tubérculo"
                                                 norm="tubérculos" msd="plural"> tuberculos</term>
                         tem bicos.</sense>
-                              </entry> BRANCHIOSTEGA. He
+                              </entry></entry> BRANCHIOSTEGA. He
                         huma membrana que se acha debaixo dos operculos chêa de raios osseos, que
                         serve para cobrir as guelras dilatando-se e contrahindo-se á vontade do
                         peixe.</div> C CAUDA. A cauda he solida formada das vertebras dos lombos, e
