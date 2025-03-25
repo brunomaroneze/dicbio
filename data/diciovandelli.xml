@@ -3207,172 +3207,256 @@
                                           figura de lança.</sense>
                               </entry>
                         </div>
-                        <div><head>
-                                    D.</head> <entry>
+                        <div>
+                              <head>
+                                    D.</head>
+                              <entry>
                                     <form>DECIDUUS.</form>
                                     <sense>Diz-se das escamas, que tem pouca adherencia ao corpo do
-                              peixe, por isso cahem facilmente. Gadus.</sense>
+                                          peixe, por isso cahem facilmente. Gadus.</sense>
                               </entry>
-                              <entry><form>
-                              DENTES.</form> <sense>Os dentes pela situaçaõ, proporçaõ, numero,
-                              movimento, e figura saõ differentes entre si.</sense> <dictScrap>Pela
-                              Situaçaõ.</dictScrap> <entry>
+                              <entry>
+                                    <form>
+                                          DENTES.</form>
+                                    <sense>Os dentes pela situaçaõ, proporçaõ, numero,
+                                          movimento, e figura saõ differentes entre si.</sense>
+                                    <dictScrap>Pela
+                                          Situaçaõ.</dictScrap>
+                                    <entry>
                                           <form>— In utraque maxilla.</form>
                                           <sense>Em ambos os queixos, como na maior parte dos
                                                 peixes.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— In maxillis, &amp; lingua.</form>
                                           <sense>Nos queixos, e na Lingua. Amia.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— In maxillis, lingua
                                                 palato, &amp; faucibus.</form>
                                           <sense>Nas mandibulas, na
                                                 lingoa, no ceo da bocca, e nas fauces. Salmo. Esox.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— In maxillis, faucibus.</form>
                                           <sense>Nas maxillas, e guêlas Pleuronrctes.
                                                 Rhombu. Solea.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— In maxillis, lingua
                                                 palato, &amp; faucibus.</form>
                                           <sense>Perca, Gadus, Cottus.</sense>
-                                    </entry> <dictScrap>Pela
-                              figura</dictScrap> <entry>
+                                    </entry>
+                                    <dictScrap>Pela
+                                          figura</dictScrap>
+                                    <entry>
                                           <form>— Granulosi.</form>
                                           <sense>Quando são redondos, pequenos, e
                                                 sobrepostos como pequenos gráos nos Nantes, Squali,
-                              Raiae.</sense>
-                                    </entry> <entry>
+                                                Raiae.</sense>
+                                    </entry>
+                                    <entry>
                                           <form>— Acuti.</form>
                                           <sense>Quando acabaõ em ponta aguda. Uranoscopus.
                                                 Muraenae.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>—
                                                 Obtusi.</form>
                                           <sense>A sua extremidade he obtusa; e entaõ elles differem
-                              dos granulosos por serem compridos, e agudos sem serem
+                                                dos granulosos por serem compridos, e agudos sem
+                                                serem
                                                 picantes. Cyprini.</sense>
                                     </entry>
-                              <entry>
+                                    <entry>
                                           <form>— Conici.</form>
                                           <sense>Quando tem a figura conica, isto he, larga na base,
-                              e que acaba em ponta.</sense>
-                                    </entry> <pb
-                                          n="42" /> <entry>
+                                                e que acaba em ponta.</sense>
+                                    </entry>
+                                    <pb
+                                          n="42" />
+                                    <entry>
                                           <form>— Plani.</form>
                                           <sense>Chatos. Gadus, Esox. Os dentes mollares
                                                 Sparus.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— Semisagittati.</form>
                                           <sense>Quando em hum lado tem hum gancho revirado
                                                 para baixo; Trichiurus.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>Subulati.</form>
                                           <sense>A maneira de sovéla, muitas especies
                                                 de Esox.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— Acerosi, lineares, tenues, acutissimi.</form>
                                           <sense>Quando saõ pequenos,
                                                 miudos, e muito pungentes. Ammodytes</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— Serrati.</form>
                                           <sense>Quando os dous lados
                                                 marginaes, saõ cortados á maneira de serra, e entaõ
-                              saõ quasi sempre triangulares: nos Nantes alguns Squali.</sense>
-                                    </entry> <entry>
+                                                saõ quasi sempre triangulares: nos Nantes alguns
+                                                Squali.</sense>
+                                    </entry>
+                                    <entry>
                                           <form>— Recti.</form>
                                           <sense>Quando naõ estaõ
                                                 virados nem para a parte anterior, nem posterior.
-                              Sphyræina, Esox, Argentina.</sense>
-                                    </entry> <entry>
+                                                Sphyræina, Esox, Argentina.</sense>
+                                    </entry>
+                                    <entry>
                                           <form>— Retroflexi.</form>
                                           <sense>Virados para a parte da gûela. Esox em
                                                 algumas especies.</sense>
                                     </entry>
-                              <entry>
+                                    <entry>
                                           <form>— Semiconici.</form>
                                           <sense>Quando hum lado he chato, e outro convexo. Nos
-                              Nantes Balistes, Squali.</sense>
-                                    </entry> <entry>
+                                                Nantes Balistes, Squali.</sense>
+                                    </entry>
+                                    <entry>
                                           <form>— Emarginati.</form>
                                           <sense>Fendidos, ou abertos alguma cousa na
                                                 ponta com excavaçaõ de segmento de circulo.</sense>
-                                    </entry> <dictScrap>Pela
-                              proporçaõ.</dictScrap> <entry>
+                                    </entry>
+                                    <dictScrap>Pela
+                                          proporçaõ.</dictScrap>
+                                    <entry>
                                           <form>— Inaequales inter se.</form>
                                           <sense>De differente
                                                 comprimento. Cottus.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— AEquales inter se.</form>
                                           <sense>Iguaes. Perca &amp;c.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— Minimi, minuti, exillissimi.</form>
                                           <sense>Respectivamente ao volume da cabeça.
                                                 Diodon, Tetrodon.</sense>
-                                    </entry> <entry>
+                                    </entry>
+                                    <entry>
                                           <form>— Mediocres, seu proportionales.</form>
                                           <sense>Proporcionaes á
                                                 cabeça. Cyprinus, Esox &amp;c.</sense>
                                     </entry>
-                              <entry>
+                                    <entry>
                                           <form>— Paralleli.</form>
                                           <sense>Do mesmo comprimento, figura, e postos no mesmo
-                              plano, e distancia. Blennius.</sense>
-                                    </entry> <entry>
+                                                plano, e distancia. Blennius.</sense>
+                                    </entry>
+                                    <entry>
                                           <form>— Divergentes</form>
                                           <sense>Quando as bases saõ parallelas;
                                                 porem nas summidades apartaõ-se huns dos outros.</sense>
                                     </entry>
-                              <entry>
+                                    <entry>
                                           <form>— Dissimiles.</form>
                                           <sense>Alguns saõ agudos, outros obtusos, tanto os
-                              incizores, como os molares.</sense>
-                                    </entry> <pb n="43" /> <entry>
+                                                incizores, como os molares.</sense>
+                                    </entry>
+                                    <pb n="43" />
+                                    <entry>
                                           <form>— Similes.</form>
                                           <sense>Do mesmo tamanho, e da mesma figura,
                                                 todos agudos, ou obtusos.</sense>
-                                    </entry> <dictScrap>Pelo
-                              numero.</dictScrap> — Nulli. E entaõ os queixos se chamaõ edentuli. —
-                              Ordinati. Quando ha huma só, ou muitas carreiras, ou ordens de dentes.
-                              — Confusi, conferti, Sparsi. Sem alguma ordem. Cottus. muitos Esox,
-                              Sphyraema. <dictScrap>Pelo
-                                          movimento.</dictScrap> — Immobiles. Sem movimento, no
-                              maior, numero dos peixes. Sparus, Labru &amp;c. — Mobiles. Moveis,
-                              isto raras vezes succede, excepto no Esox &amp;c.</entry> <entry>
+                                    </entry>
+                                    <dictScrap>Pelo
+                                          numero.</dictScrap>
+                                    <entry>
+                                          <form>— Nulli.</form>
+                                          <sense>E entaõ os queixos se chamaõ
+                                                edentuli.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>—
+                                                Ordinati.</form>
+                                          <sense>Quando ha huma só, ou muitas
+                                                carreiras, ou ordens de dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Confusi, conferti, Sparsi.</form>
+                                          <sense>Sem alguma
+                                                ordem. Cottus. muitos Esox, Sphyraena.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo
+                                          movimento.</dictScrap>
+                                    <entry>
+                                          <form>— Immobiles.</form>
+                                          <sense>Sem movimento, no maior, numero
+                                                dos peixes. Sparus, Labrus &amp;c.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Mobiles.</form>
+                                          <sense>Moveis, isto raras vezes succede,
+                                                excepto no Esox &amp;c.</sense>
+                                    </entry>
+                              </entry>
+                              <entry>
                                     <form>DIACANTHUM.</form>
                                     <sense>Peixe
                                           com duas espinhas, ou aculeos.</sense>
-                              </entry> <entry>
+                              </entry>
+                              <entry>
                                     <form>TRIACANTHUM.</form>
                                     <sense>Com tres. Cottus.</sense>
-                              </entry> <entry>
+                              </entry>
+                              <entry>
                                     <form>POLYACANTHUM.</form>
                                     <sense>Com quatro, cinco, ou mais.</sense>
-                              </entry> <entry>
+                              </entry>
+                              <entry>
                                     <form>DIDACTILÆ pinnæ.</form>
                                     <sense>Barbatanas divididas em duas
                                           partes.</sense>
-                              </entry> <entry>
+                              </entry>
+                              <entry>
                                     <form>DIGITI.</form>
                                     <sense>Saõ os appendices <term
                                                 lemma="setáceo" norm="setáceos"
                                                 msd="masculino plural"
                                           >
                                                 setaceos</term>, articulados livres, que se achaõ
-                              postos entre as barbatanas, do peito, e as do ventre. Trigla. fig. I.
-                              B. B.</sense>
-                              </entry> <entry>
+                                          postos entre as barbatanas, do peito, e as do ventre.
+                                          Trigla. fig. I. B. B.</sense>
+                              </entry>
+                              <entry>
                                     <form>DIPHYLLUS.</form>
                                     <sense>O
                                           que consta de duas partes.</sense>
-                              </entry> <entry>
+                              </entry>
+                              <entry>
                                     <form>DIPTERIGIUS.</form>
                                     <sense>Tendo duas barbatanas no dorso.</sense>
                               </entry>
-                              DORSUM. O espinhaço, ou costas, he a quella parte do corpo, que se
-                              extende superiormente desde a nuca até ao principio da cauda. fg. 5.
-                              d. e. Chama-se — Apterigium. Quando naõ tem barbatana alguma. —
-                              Monopterigium. Huma barbatana. fig. 5, f. — Dipterigium. Que tem duas.</div>
+                              <entry>
+                                    <form>DORSUM.</form>
+                                    <sense>O espinhaço, ou costas, he a quella parte do corpo, que
+                                          se
+                                          extende superiormente desde a nuca até ao principio da
+                                          cauda. fg. 5.
+                                          d. e.</sense>
+                                    <dictScrap>Chama-se</dictScrap>
+                                    <entry>
+                                          <form>— Apterigium.</form>
+                                          <sense>Quando naõ tem barbatana
+                                                alguma.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>—
+                                                Monopterigium.</form>
+                                          <sense>Huma barbatana. fig. 5. f.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Dipterigium.</form>
+                                          <sense>Que tem duas.</sense>
+                                    </entry>
+                              </entry>
+                        </div>
                         <pb n="44" />
                         <div
                               type="letra"><head>F.</head> FALCATUS. A parte curvada do peixe.
