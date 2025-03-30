@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-03-09T22:15:32Z. . 
+Schema generated from ODD source 2025-03-26T21:20:07Z. . 
 TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
   
@@ -2932,6 +2932,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <choice>
          <ref name="tei_dhtbbyline"/>
          <ref name="tei_dhtbepigraph"/>
+         <ref name="tei_dhtbsalute"/>
          <ref name="tei_dhtbdocAuthor"/>
          <ref name="tei_dhtbdocDate"/>
       </choice>
@@ -2939,6 +2940,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="tei_dhtbmodel.divTopPart">
       <choice>
          <ref name="tei_dhtbmodel.headLike"/>
+         <ref name="tei_dhtbsigned"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.divTop">
@@ -2964,7 +2966,10 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </choice>
    </define>
    <define name="tei_dhtbmodel.divBottomPart">
-      <notAllowed/>
+      <choice>
+         <ref name="tei_dhtbcloser"/>
+         <ref name="tei_dhtbsigned"/>
+      </choice>
    </define>
    <define name="tei_dhtbmodel.divBottom">
       <choice>
@@ -5481,6 +5486,46 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          </zeroOrMore>
          <ref name="tei_dhtbatt.global.attributes"/>
          <ref name="tei_dhtbatt.cmc.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbcloser">
+      <element name="closer">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(closer) groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_dhtbmodel.gLike"/>
+               <ref name="tei_dhtbsigned"/>
+        
+               <ref name="tei_dhtbsalute"/>
+               <ref name="tei_dhtbmodel.phrase"/>
+               <ref name="tei_dhtbmodel.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <ref name="tei_dhtbatt.written.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbsalute">
+      <element name="salute">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. Openers and Closers]</a:documentation>
+         <ref name="tei_dhtbmacro.paraContent"/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <ref name="tei_dhtbatt.written.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbsigned">
+      <element name="signed">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text. [4.2.2. Openers and Closers]</a:documentation>
+         <ref name="tei_dhtbmacro.paraContent"/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <ref name="tei_dhtbatt.written.attributes"/>
          <empty/>
       </element>
    </define>
