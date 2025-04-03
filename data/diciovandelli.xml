@@ -4041,122 +4041,138 @@
                               </entry>
                         </div>
                         <pb n="54"/>
-                        <div type="letra"><head>O.</head> OCULI. Os olhos sempre saõ dous, differem
-                              pela situaçaõ, figura, proporçaõ, e pelos tegumentos. Pela situaçaõ. <entry>
-                                    <form>— verticales.</form>
-                                    <sense> Que estaõ postos acima da cabeça, de maneira, que o
-                                          peixe naõ pode ver o que está de baixo delle, nem para os
-                                          lados. Uranoscopus, Callionymus.</sense>
+                        <div type="letra">
+                              <head>O.</head>
+                              <entry>
+                                    <form>OCULI.</form>
+                                    <sense>Os olhos sempre saõ dous, differem pela situaçaõ, figura,
+                                          proporçaõ, e pelos tegumentos.</sense>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Verticales.</form>
+                                          <sense> Que estaõ postos acima da cabeça, de maneira, que
+                                                o peixe naõ pode ver o que está de baixo delle, nem
+                                                para os lados. Uranoscopus, Callionymus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Supremi.</form>
+                                          <sense> Altos, elevados, postos na parte superior, mas
+                                                lateral; na maior parte dos peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Laterales, medii.</form>
+                                          <sense> Hum olho no meio de cada lado, o que se observa no
+                                                maior numero dos peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Binati.</form>
+                                          <sense>Ambos os olhos no mesmo lado. Solea,
+                                                Rhombus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Vicini.</form>
+                                          <sense> Quando estaõ na summidade da cabeça, ou elevados,
+                                                entaõ saõ visinhos hum ao outro. Scorpaena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Remoti.</form>
+                                          <sense> Quando estaõ no meio dos lados da cabeça,
+                                                necessariamente saõ distantes entre si. Esox,
+                                                Cyprinus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Marginales.</form>
+                                          <sense>No apice do rostro. Trachiurus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Vicini.</form>
+                                          <sense> Postos quasi entre o rostro, e a frente.
+                                                Mugil.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Posteri.</form>
+                                          <sense> Distantes do rostro, e mais visinhos á frente.
+                                                Trigla, Xiphias, Esox.</sense>
+                                          <dictScrap>Pela figura.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plani, seu depressi.</form>
+                                          <sense> Quando o globo do olho naõ excede a superficie da
+                                                cabeça, como na maior parte dos peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Convexi:</form>
+                                          <sense>Quando ao contrario a superficie excede a da
+                                                cabeça. Pleuronectes, Rhombus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Protuberantes.</form>
+                                          <sense> Se excedem muito a superficie da <pb n="55"
+                                                />cabeça, e que sejaõ alguma cousa mais, que
+                                                convexos. Scorpæna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Globosi, rotundi, orbiculati.</form>
+                                          <sense> Globosos, redondos. Cyprinus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Oblongi, ovales.</form>
+                                          <sense> Quando saõ alguma cousa allongados da parte da
+                                                cabeça, ou das guélras. Esox.</sense>
+                                          <dictScrap>Pela proporçaõ.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Magni.</form>
+                                          <sense>Grandes, respectivamente ao volume do
+                                                corpo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Proportionales, seu mediocres.</form>
+                                          <sense> Medianos. Sparus, Cyprinus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Abnormes, disproportionati, minimi:</form>
+                                          <sense>Desproposcionados, ou pela grandeza, ou pela
+                                                pequenez. Exocoetus.</sense>
+                                          <dictScrap>Pelos tegumentos.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tecti.</form>
+                                          <sense> Quando a pelle, ou membrana nictante cobre todo o
+                                                globo do olho. Gadus, Blennius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Semitecti.</form>
+                                          <sense> Quando a dita membrana he aberta no meio, formando
+                                                como hum annel, ou he cortada como meia lua.
+                                                Tetrodon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Nudi.</form>
+                                          <sense> Sem a dita membrana, ou cute, ou <term
+                                                  lemma="túnica">tunica</term>.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Supremi.</form>
-                                    <sense> Altos, elevados, postos na parte superior, mas lateral;
-                                          na maior parte dos peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Laterales, medii.</form>
-                                    <sense> Hum olho no meio de cada lado, o que se observa no maior
-                                          numero dos peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Binati.</form>
-                                    <sense>Ambos os olhos no mesmo lado. Solea, Rhombus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Vicini.</form>
-                                    <sense> Quando estaõ na summidade da cabeça, ou elevados, entaõ
-                                          saõ visinhos hum ao outro. Scorpaena.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Remoti.</form>
-                                    <sense> Quando estaõ no meio dos lados da cabeça,
-                                          necessariamente saõ distantes entre si. Esox,
-                                          Cyprinus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Marginales.</form>
-                                    <sense>No apice do rostro. Trachiurus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Vicini.</form>
-                                    <sense> Postos quasi entre o rostro, e a frente. Mugil.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Posteri.</form>
-                                    <sense> Distantes do rostro, e mais visinhos á frente. Trigla,
-                                          Xiphias, Esox. Pela figura.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plani, seu depressi.</form>
-                                    <sense> Quando o globo do olho naõ excede a superficie da
-                                          cabeça, como na maior parte dos peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Convexi: Quando ao contrario a superficie excede a da
-                                          cabeça.</form>
-                                    <sense> Pleuronectes, Rhombus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Protuberantes.</form>
-                                    <sense> Se excedem muito a superficie da <pb n="55"/>cabeça, e
-                                          que sejaõ alguma cousa mais, que convexos.
-                                          Scorpæna.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Globosi, rotundi, orbiculati.</form>
-                                    <sense> Globosos, redondos. Cyprinus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Oblongi, ovales.</form>
-                                    <sense> Quando saõ alguma cousa allongados da parte da cabeça,
-                                          ou das guélras. Esox. Pela proporçaõ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Magni.</form>
-                                    <sense>Grandes, respectivamente ao volume do corpo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Proportionales, seu mediocres.</form>
-                                    <sense> Medianos. Sparus, Cyprinus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Abnormes, disproportionati, minimi: Desproposcionados,
-                                          ou pela grandeza, ou pela pequenez.</form>
-                                    <sense> Exocoetus. Pelos tegumentos.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tecti.</form>
-                                    <sense> Quando a pelle, ou membrana nictante cobre todo o globo
-                                          do olho. Gadus, Blennius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Semitecti.</form>
-                                    <sense> Quando a dita membrana he aberta no meio, formando como
-                                          hum annel, ou he cortada como meia lua. Tetrodon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Nudi.</form>
-                                    <sense> Sem a dita membrana, ou cute, ou <term lemma="túnica"
-                                                >tunica</term>.</sense>
-                              </entry>
-                              <entry><form>OPERCULA Branchiarum.</form>
-                                    <sense>
-                                          <p>Operculo das guélras he hum corpo <term>escamoso</term>
-                                                posto na parte posterior dos queixos de cada parte
-                                                da cabeça atrás dos olhos. O seu uso, he de ter
-                                                fechada a abertura das guélras, e defendellas dos
-                                                corpos externos, e suster a membrana branchiostega.
-                                                Tab. V. fig. 4. c. fig. 5. c.</p>
-                                          <p>Os operculos variaõ em differentes peixes pela sua
-                                                estructura, pelo movimento, pelo numero das peças,
-                                                ou laminas, de que constaõ, pela proporçaõ, e
-                                                superficie.</p>
-                                    </sense> Pela estructura. <entry>
+                                    <form>OPERCULA Branchiarum.</form>
+                                    <sense> Operculo das guélras he hum corpo <term>escamoso</term>
+                                          posto na parte posterior dos queixos de cada parte da
+                                          cabeça atrás dos olhos. O seu uso, he de ter fechada a
+                                          abertura das guélras, e defendellas dos corpos externos, e
+                                          suster a membrana branchiostega. Tab. V. fig. 4. c. fig.
+                                          5. c. <sense>Os operculos variaõ em differentes peixes
+                                                pela sua estructura, pelo movimento, pelo numero das
+                                                peças, ou laminas, de que constaõ, pela proporçaõ, e
+                                                superficie.</sense>
+                                    </sense>
+                                    <dictScrap>Pela estructura.</dictScrap>
+                                    <entry>
                                           <form>— Simplicia.</form>
                                           <sense>Quando saõ de hum só pedaço. Uranoscopus,
                                                 Syngnathus.</sense>
                                     </entry>
-                                    <pb n="56"/><entry>
+                                    <pb n="56"/>
+                                    <entry>
                                           <form>— Diphylla, triphylla, tetraphylla.</form>
                                           <sense>De dous, de tres, de quatro pedaços. Sparus,
                                                 Labrus.</sense>
@@ -4207,7 +4223,9 @@
                                                   Ciliada</term>, quando a margem posterior, ou todo
                                                 o contorno he cortado como huma franja, ou ornado
                                                 com appendices carnosos parallelos.</sense>
-                                    </entry> Pelo movimento. <entry>
+                                    </entry>
+                                    <dictScrap>Pelo movimento.</dictScrap>
+                                    <entry>
                                           <form>— Annexa, fraenata.</form>
                                           <sense>Pegados ao corpo tanto acima como abaixo por meio
                                                 de huma pélle, ou freio. Syngnathus, Muræna.</sense>
@@ -4215,7 +4233,9 @@
                                     <entry>
                                           <form>— Mobilia, libera.</form>
                                           <sense>Moveis, em quasi todos os peixes.</sense>
-                                    </entry> Pelo numero. <entry>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
                                           <form>— Solitaria.</form>
                                           <sense>Solitarios, havendo hum só operculo em cada lado,
                                                 como em todos os peixes espinhosos, e naõ
@@ -4226,7 +4246,9 @@
                                           <form>— Nulla.</form>
                                           <sense>Sem operculos, ficando descubertas as aberturas das
                                                 guélras. Diodon, Tetraodon.</sense>
-                                    </entry> Pela proporçaõ. <entry>
+                                    </entry>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
                                           <form>— Proportionalia.</form>
                                           <sense>Se o seu tamanho corresponde áquelle do corpo da
                                                 cabeça. Gadus, Cyprinus.</sense>
@@ -4235,7 +4257,9 @@
                                           <form>— Minima.</form>
                                           <sense>Pequenos, que naõ correspondem ao tamanho da
                                                 cabeça. Syngnathus. Esox.</sense>
-                                    </entry> Pela superficie. <entry>
+                                    </entry>
+                                    <dictScrap>Pela superficie.</dictScrap>
+                                    <entry>
                                           <form>— Glabra.</form>
                                           <sense>Lisa. Mugil, Syngnathus.</sense>
                                     </entry>
@@ -4282,12 +4306,15 @@
                                           <form>— Laevia.</form>
                                           <sense>Polidos, mas sem serem luzidios. Cotus,
                                                 Sciæna.</sense>
-                                    </entry> Pelos tegumentos. <entry>
+                                    </entry>
+                                    <dictScrap>Pelos tegumentos.</dictScrap>
+                                    <entry>
                                           <form>— Nuda.</form>
                                           <sense>Naõ estando cubertos, nem de pélle, nem de escamas,
                                                 que estaõ na cabeça. Trigla, Uranoscopus.</sense>
                                     </entry>
-                                    <pb n="58"/><entry>
+                                    <pb n="58"/>
+                                    <entry>
                                           <form>— Alepidota.</form>
                                           <sense>Cubertos de pélle, mas sem escamas. Mugil,
                                                 Exocoetus.</sense>
@@ -4297,204 +4324,235 @@
                                           <sense><term lemma="escamoso">Escamosos</term>, cubertos
                                                 de escamas em lugar de pélle. Labrus, Sciæna,
                                                 Sparus.</sense>
-                                    </entry></entry>
+                                    </entry>
+                              </entry>
                               <entry>
                                     <form>ORBICULATUM.</form>
                                     <sense>Hum peixe chato, cujo diametro <term>
                                           longitudinal</term>, e transversal saõ iguaes. Rhombus
                                           aculeatus.</sense>
                               </entry>
-                              <entry>OS. A bocca he aquella cavidade, que na parte anterior acaba em
-                                    huma abertura, pelos lados em os operculos. V. Operculum; na
-                                    parte posterior termina se pela guéla, ou abertura do ezophago,
-                                    superior, e inferiormente pelo paladar. Contem os dentes, a
-                                    lingua, e os pequenos ossos do paladar.</entry> RICTUS. He a
-                              abertura da bocca, que he differente pela sua situaçaõ, direcçaõ, e
-                              proporçaõ. Pela situaçaõ, e direcçaõ. <entry>
-                                    <form>— Superus.</form>
-                                    <sense> Quando se acha na parte mais alta da cabeça.
-                                          Uranoscopus, Scorpæna.</sense>
+                              <entry>
+                                    <form>OS.</form>
+                                    <sense>A bocca he aquella cavidade, que na parte anterior acaba
+                                          em huma abertura, pelos lados em os operculos. V.
+                                          Operculum; na parte posterior termina se pela guéla, ou
+                                          abertura do ezophago, superior, e inferiormente pelo
+                                          paladar. Contem os dentes, a lingua, e os pequenos ossos
+                                          do paladar.</sense>
                               </entry>
                               <entry>
-                                    <form>— Verticalis.</form>
-                                    <sense> He quasi o mesmo que superior; mas a situaçaõ he
-                                          necessariamente perpendicular ao horizonte. Uranoscopus,
-                                          Ophidion.</sense>
+                                    <form>RICTUS</form>
+                                    <sense>He a abertura da bocca, que he differente pela sua
+                                          situaçaõ, direcçaõ, e proporçaõ.</sense>
+                                    <dictScrap>Pela situaçaõ, e direcçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Superus.</form>
+                                          <sense> Quando se acha na parte mais alta da cabeça.
+                                                Uranoscopus, Scorpæna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Verticalis.</form>
+                                          <sense> He quasi o mesmo que superior; mas a situaçaõ he
+                                                necessariamente perpendicular ao horizonte.
+                                                Uranoscopus, Ophidion.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Inferus.</form>
+                                          <sense> Quando fica na parte mais baixa da cabeça, ou pela
+                                                parte inferior da mesma. Xiphias, Acipenser.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Transversus, horisontalis.</form>
+                                          <sense> Quando a abertura corta horizontalmente, e em
+                                                angulo recto a situaçaõ do dorso, e ventre, o que
+                                                succede a quasi todos os peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Obliquus.</form>
+                                          <sense> Respectivamente à situaçaõ opposta, e
+                                                perpendicular do ventre. Syngnathus, Scorpæna. Pela
+                                                figura.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Arcuatus.</form>
+                                          <sense>Arqueado. Squalus Pristis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Linearis, seu rectus.</form>
+                                          <sense> Quando naõ descreve hum <pb n="59"/>segmento de
+                                                circulo, e forma exactamente huma linha recta. A
+                                                maior parte das Rajas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Circularis, annularis.</form>
+                                          <sense> Quando a redondeza da abertura he á maneira de
+                                                annel, como a Lamprêa, Petromyzon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Semicircularis.</form>
+                                          <sense> De figura de meio circulo. Pleuronectes,
+                                                Rhombus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tubulosus, fistulosus.</form>
+                                          <sense> A abertura estreita, redonda, e profunda.
+                                                Fistularia. Pela proporçaõ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Mediocris, idest proportionatus.</form>
+                                          <sense> Mediano em quanto ao corpo do peixe. Trachinus,
+                                                Scomber, Zeus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ingens.</form>
+                                          <sense>Ou desproporcionado pela sua grandeza.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Parvus, exiguus, minimus, angustus.</form>
+                                          <sense> Desproporcionado pela sua pequenez. Choetodon,
+                                                Ostracion.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Inferus.</form>
-                                    <sense> Quando fica na parte mais baixa da cabeça, ou pela parte
-                                          inferior da mesma. Xiphias, Acipenser.</sense>
+                                    <form>ROSTRUM.</form>
+                                    <sense>He a parte da cabeça anterior desde os olhos, e narizes
+                                          até á extremidade das mandibulas, ou queixos para diante.
+                                          Este varîa segundo a figura, e proporçaõ.</sense>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Obtusum.</form>
+                                          <sense> Obtuso, ou rombo. Gobius, Uranoscopus,
+                                                Atherina.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acutum.</form>
+                                          <sense> Que acaba em angulo agudo. Choetodon, Callionymus,
+                                                Scomber.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cuspidatum.</form>
+                                          <sense> Que acaba em huma ponta comprida, e <term
+                                                  lemma="setáceo" norm="setácea"
+                                                  msd="feminino singular">setacea</term>.
+                                                Pegasus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cylindricum, fistulosum.</form>
+                                          <sense> Internamente, tubulosum, ou como hum canudo.
+                                                Fistularia.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plagioplateum.</form>
+                                          <sense>V. Depressum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bifidum, Furcatum, Lobatum.</form>
+                                          <sense> Dividido em duas, ou mais partes. Triglæ em muitas
+                                                especies</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cathetoplateum.</form>
+                                          <sense> Com os lados compridos. Syngnathus,
+                                                Anguilla.</sense>
+                                    </entry>
+                                    <pb n="60"/>
+                                    <entry>
+                                          <form>— Anceps.</form>
+                                          <sense> Com dous angulos prominentes oppostos. Huma
+                                                especie de Syngnathi.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Triquetrum, tetraquetrum.</form>
+                                          <sense> O mesmo que trigonum, tetragonum; mas com os
+                                                lados, ou espaços intermedios perfeitamente planos.
+                                                Syngnathi, Sphyraena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Inflexum.</form>
+                                          <sense>Revirado para sima. Zeus; Choetodon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reflexum.</form>
+                                          <sense> Revirado para baixo, ou para a parte do
+                                                ventre.</sense>
+                                    </entry>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Breve.</form>
+                                          <sense> Quando he muito curto, ou breve respectivamente no
+                                                comprimento do corpo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longum, porrectum.</form>
+                                          <sense> Comprido, ou muito sahido para fora. Xiphias,
+                                                Trichiurus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Proportionale.</form>
+                                          <sense> Proporcionado ao comprimento do corpo. Argentina,
+                                                Sphyræna, Squalus, Pristis.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Transversus, horisontalis.</form>
-                                    <sense> Quando a abertura corta horizontalmente, e em angulo
-                                          recto a situaçaõ do dorso, e ventre, o que succede a quasi
-                                          todos os peixes.</sense>
+                                    <form>OSSICULA. Palati.</form>
+                                    <sense>Os pequenos ossos do paladar. Ordinariamente saõ quatro,
+                                          estaõ postos dous por cada parte lateral do véo do mesmo
+                                          paladar, Saõ chatos, ovaes com superficie aspera por causa
+                                          de muitos pequenos dentes visinlos entre si. A situaçaõ
+                                          delles respectivamente he tal, que a base de hum
+                                          corresponde á summidade de outro, e assim reciprocamente
+                                          as guélras estão pegadas a cada lado destes ossiculos por
+                                          meio de huma cartilagem.</sense>
                               </entry>
-                              <entry>
-                                    <form>— Obliquus.</form>
-                                    <sense> Respectivamente à situaçaõ opposta, e perpendicular do
-                                          ventre. Syngnathus, Scorpæna. Pela figura.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Arcuatus.</form>
-                                    <sense>Arqueado. Squalus Pristis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Linearis, seu rectus.</form>
-                                    <sense> Quando naõ descreve hum <pb n="59"/>segmento de circulo,
-                                          e forma exactamente huma linha recta. A maior parte das
-                                          Rajas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Circularis, annularis.</form>
-                                    <sense> Quando a redondeza da abertura he á maneira de annel,
-                                          como a Lamprêa, Petromyzon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Semicircularis.</form>
-                                    <sense> De figura de meio circulo. Pleuronectes,
-                                          Rhombus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tubulosus, fistulosus.</form>
-                                    <sense> A abertura estreita, redonda, e profunda. Fistularia.
-                                          Pela proporçaõ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Mediocris, idest proportionatus.</form>
-                                    <sense> Mediano em quanto ao corpo do peixe. Trachinus, Scomber,
-                                          Zeus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ingens.</form>
-                                    <sense>Ou desproporcionado pela sua grandeza.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Parvus, exiguus, minimus, angustus.</form>
-                                    <sense> Desproporcionado pela sua pequenez. Choetodon,
-                                          Ostracion. ROSTRUM. He a parte da cabeça anterior desde os
-                                          olhos, e narizes até á extremidade das mandibulas, ou
-                                          queixos para diante. Este varîa segundo a figura, e
-                                          proporçaõ. Pela figura.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Obtusum.</form>
-                                    <sense> Obtuso, ou rombo. Gobius, Uranoscopus, Atherina.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Acutum.</form>
-                                    <sense> Que acaba em angulo agudo. Choetodon, Callionymus,
-                                          Scomber.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cuspidatum.</form>
-                                    <sense> Que acaba em huma ponta comprida, e <term
-                                                lemma="setáceo" norm="setácea"
-                                                msd="feminino singular">setacea</term>.
-                                          Pegasus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cylindricum, fistulosum.</form>
-                                    <sense> Internamente, tubulosum, ou como hum canudo.
-                                          Fistularia.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plagioplateum.</form>
-                                    <sense>V. Depressum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Bifidum, Furcatum, Lobatum.</form>
-                                    <sense> Dividido em duas, ou mais partes. Triglæ em muitas
-                                          especies</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cathetoplateum.</form>
-                                    <sense> Com os lados compridos. Syngnathus, Anguilla.</sense>
-                              </entry>
-                              <pb n="60"/><entry>
-                                    <form>— Anceps.</form>
-                                    <sense> Com dous angulos prominentes oppostos. Huma especie de
-                                          Syngnathi.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Triquetrum, tetraquetrum.</form>
-                                    <sense> O mesmo que trigonum, tetragonum; mas com os lados, ou
-                                          espaços intermedios perfeitamente planos. Syngnathi,
-                                          Sphyraena.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Inflexum.</form>
-                                    <sense>Revirado para sima. Zeus; Choetodon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Reflexum.</form>
-                                    <sense> Revirado para baixo, ou para a parte do ventre. Pela
-                                          proporçaõ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Breve.</form>
-                                    <sense> Quando he muito curto, ou breve respectivamente no
-                                          comprimento do corpo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Longum, porrectum.</form>
-                                    <sense> Comprido, ou muito sahido para fora. Xiphias,
-                                          Trichiurus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Proportionale.</form>
-                                    <sense> Proporcionado ao comprimento do corpo. Argentina,
-                                          Sphyræna, Squalus, Pristis.</sense>
-                              </entry>
-                              <entry>OSSICULA. Palati. Os pequenos ossos do paladar. Ordinariamente
-                                    saõ quatro, estaõ postos dous por cada parte lateral do véo do
-                                    mesmo paladar, Saõ chatos, ovaes com superficie aspera por causa
-                                    de muitos pequenos dentes visinlos entre si. A situaçaõ delles
-                                    respectivamente he tal, que a base de hum corresponde á
-                                    summidade de outro, e assim reciprocamente as guélras estão
-                                    pegadas a cada lado destes ossiculos por meio de huma
-                                    cartilagem.</entry>
                               <entry>
                                     <form>OVATUM.</form>
                                     <sense>Corpo do peixe, em que o diametro transversal excede o
                                                 <term> longitudinal</term>, ou em que o peixe he
                                           mais comprido, que largo. Chuetodon, Sparus.</sense>
-                              </entry></div>
-                        <div type="letra"><head>P.</head> PALATUM. O paladar he a quella parte
-                              interior da bocca, que se comprehende entre a base dos <pb n="61"
-                              />queixos, e donde principia o ezofago: tambem pertence ao paladar a
-                              parte inferior da bocca, que se acha perto da base da lingua, e que se
-                              chama guéla. Pela superficie. <entry>
-                                    <form>— Glabrum.</form>
-                                    <sense> Liso, cuberto com pélle lisa : Blennius, Sparus, Clupea,
-                                          Argentina.</sense>
                               </entry>
+                        </div>
+                        <div type="letra"><head>P.</head>
                               <entry>
-                                    <form>— Asperum, scabrum.</form>
-                                    <sense> Aspero com cute rugoza. Xiphias, Cyprinus,
-                                          Echeneis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Denticulatum.</form>
-                                    <sense> Com muitos pequenos dentes. Mun raena, Pleuronectes,
-                                          Mullus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Edentulum.</form>
-                                    <sense>Sem dentes. Ammodytes, Xiphias.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tuberculatum.</form>
-                                    <sense> Se os ossiculos de que estaõ cubertos, saõ simplices,
-                                          redondos, e differentes dos dentes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Papillosum.</form>
-                                    <sense> Com <term lemma="papila" norm="papilas" senseNumber="3"
-                                                >papillas</term>; Nos Nantes, Squalus,
-                                          Pristis.</sense>
+                                    <form>PALATUM.</form>
+                                    <sense>O paladar he a quella parte interior da bocca, que se
+                                          comprehende entre a base dos <pb n="61"/>queixos, e donde
+                                          principia o <term lemma="esôfago" norm="esôfago"
+                                                >ezofago</term>: tambem pertence ao paladar a parte
+                                          inferior da bocca, que se acha perto da base da lingua, e
+                                          que se chama guéla.</sense>
+                                    <dictScrap>Pela superficie.</dictScrap>
+                                    <entry>
+                                          <form>— Glabrum.</form>
+                                          <sense> Liso, cuberto com pélle lisa : Blennius, Sparus,
+                                                Clupea, Argentina.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Asperum, scabrum.</form>
+                                          <sense> Aspero com cute rugoza. Xiphias, Cyprinus,
+                                                Echeneis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Denticulatum.</form>
+                                          <sense> Com muitos pequenos dentes. Mun raena,
+                                                Pleuronectes, Mullus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Edentulum.</form>
+                                          <sense>Sem dentes. Ammodytes, Xiphias.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tuberculatum.</form>
+                                          <sense> Se os ossiculos de que estaõ cubertos, saõ
+                                                simplices, redondos, e differentes dos
+                                                dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Papillosum.</form>
+                                          <sense> Com <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term>; Nos Nantes,
+                                                Squalus, Pristis.</sense>
+                                    </entry>
                               </entry>
                               <entry>
                                     <form>PALPEBRÆ.</form>
