@@ -17,6 +17,7 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 
 ### Atualizações
 
+- 04 abril 2025 - Atualização do verbete "filamento"
 - 25 março 2025 - Inclusão do verbete "excretório"
 - 14 março 2025 - Inclusão do verbete "escroto"
 - 28 fevereiro 2025 - Inclusão do verbete "ensiforme"

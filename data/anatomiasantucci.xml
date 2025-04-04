@@ -1287,8 +1287,9 @@
                               <pb n="15"/>
                               <p>9 <s>Nenhuma outra cousa saõ as unhas, senaõ muitos canosinhos,
                                           dispostos com certa ordem, pelos quaes, como por humas
-                                          bainhas, passaõ os filamentos das <term lemma="papila"
-                                                norm="papilas" msd="feminino plural">
+                                          bainhas, passaõ os <term lemma="filamento" msd="plural"
+                                                senseNumber="2">filamentos</term> das <term
+                                                lemma="papila" norm="papilas" msd="feminino plural">
                                                 papillas</term> cutaneas.</s> Estes canosinhos saõ
                                     de natureza cornea, dentro dos quaes está hum humor, o qual
                                     conglutinando-se, fazem que os mesmos canos fiquem muito
@@ -2449,8 +2450,9 @@
                                           como hum canosinho tecido de outras fibras menores, e
                                           assim se entenderá, que estas taes fibras, de que <pb
                                                 n="329"/>estaõ compostas as paredes de cada hum dos
-                                          canosinhos carnosos, saõ filamentos minimos dos
-                                          nervos.</s></p>
+                                          canosinhos carnosos, saõ <term lemma="filamento"
+                                                msd="plural" senseNumber="2">filamentos</term>
+                                          minimos dos nervos.</s></p>
                               <p>12 <s>A todas, e a cada huma destas fibrasinhas carnosas se seguem
                                           continuados huns ramos mayores, e nervosos, distribuidos
                                           por cada hum dos <term lemma="músculo" norm="músculos"
@@ -2474,17 +2476,21 @@
                                     ajuda destas fibrasinhas se fazem firmes no seu lugar as mesmas
                                     fibras carnosas, de sorte, que nem nos seus movimentos mais
                                     violentos se pódem tirar da parte onde estaõ.</p>
-                              <p>13 Pelos canosinhos carnosos livremente vay correndo o sangue antes
-                                    que passe das arterias para as veas; e em quanto corre, as
-                                    fibras se conservaõ extensas, e compridas, mas pelos filamentos
-                                    nervosos, que compoem as paredes dos canosinhos, correm os
-                                    espiritos animaes, que provém dos nervos. Com tudo naõ havemos
-                                    de conceber, que os mesmos espiritos correm por aquelles
-                                    filamentos, como por canos livres, e totalmente iguaes, mas como
-                                    por huns corpos esponjosos, e que tem varias cavidades
-                                    desiguaes; e ainda que tenhaõ communicaçaõ entre si, com tudo
-                                    pòdem ahi mesmo deter os espiritos, e impedir, que corraõ
-                                    livremente.</p>
+                              <p>13 <s>Pelos canosinhos carnosos livremente vay correndo o sangue
+                                          antes que passe das arterias para as veas; e em quanto
+                                          corre, as fibras se conservaõ extensas, e compridas, mas
+                                          pelos <term lemma="filamento" msd="plural" senseNumber="2"
+                                                >filamentos</term> nervosos, que compoem as paredes
+                                          dos canosinhos, correm os espiritos animaes, que provém
+                                          dos nervos.</s>
+                                    <s>Com tudo naõ havemos de conceber, que os mesmos espiritos
+                                          correm por aquelles <term lemma="filamento" msd="plural"
+                                                senseNumber="2">filamentos</term>, como por canos
+                                          livres, e totalmente iguaes, mas como por huns corpos
+                                          esponjosos, e que tem varias cavidades desiguaes; e ainda
+                                          que tenhaõ communicaçaõ entre si, com tudo pòdem ahi mesmo
+                                          deter os espiritos, e impedir, que corraõ
+                                    livremente.</s></p>
                               <p>14 Esta estructura facilmente se entenderá, trazendo à memoria o
                                     que dissemos em outra parte, e he, que qualquer fibrasinha, por
                                     minima que seja, está cheya de <pb n="331"/>innumeraveis
@@ -2513,7 +2519,7 @@
                                           conceber os segmentos, ou partes das fibras, que
                                           constituem os canosinhos carnosos, como huns minimos
                                           articulos, os quaes dispostos direitamente, compoem o
-                                          <term>filamento</term> inteiro.</s>
+                                                <term senseNumber="2">filamento</term> inteiro.</s>
                                     <s>Isto supposto he certo, que se estes arcos por alguma causa
                                           se estenderem muito, naõ ficaráõ curvos, como naturalmente
                                           devem ser em quanto os <term lemma="músculo"

@@ -4512,7 +4512,8 @@
                                           mais comprido, que largo. Chuetodon, Sparus.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>P.</head>
+                        <div type="letra">
+                              <head>P.</head>
                               <entry>
                                     <form>PALATUM.</form>
                                     <sense>O paladar he a quella parte interior da bocca, que se
@@ -4569,410 +4570,518 @@
                                                 norm="tubérculos" msd="plural">tuberculos</term>
                                           molles, cutaneos em lugar de escamas. Zeus.</sense>
                               </entry>
-                              <entry>PINNA Spuria: He a barbatana cutanea destituida de raios osseos
-                                    e tendinozos. Salmo.</entry> PINNÆ. Barbatanas. Pela situaçaõ. <entry>
-                                    <form>— Dorsales.</form>
-                                    <sense>Postas acima do dorso.</sense>
+                              <entry>
+                                    <form>PINNA Spuria:</form>
+                                    <sense>He a barbatana cutanea destituida de raios osseos e
+                                          tendinozos. Salmo.</sense>
                               </entry>
                               <entry>
-                                    <form>— Pectorales.</form>
-                                    <sense> Ao lado, perto da abertura das guélras. Estas raras
-                                          vezes faltaõ.</sense>
-                              </entry>
-                              <pb n="62"/><entry>
-                                    <form>— Ventralis.</form>
-                                    <sense> Na parte inferior do corpo abaixo G. da quilha do
-                                          ventre.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Analis.</form>
-                                    <sense>Perto do anus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Caudalis.</form>
-                                    <sense>Aquella que termina o corpo do peixe.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Branchialis, branchiostega.</form>
-                                    <sense> He a membrana branchiostega. V. Membrana branchiostega.
-                                          Pela estructura.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Simplices.</form>
-                                    <sense> Simplices, quando os ossiculos, que servem a sustellas
-                                          saõ da mesma natureza, ou todos molles, ou todos
-                                          espinhosos.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Compositae.</form>
-                                    <sense> Compostas, quando os ossiculos saõ de differente
-                                          natureza, huns molles, e outros espinhosos.</sense>
-                              </entry> PINNA Ani. A barbatana do ano occupa, ou em todo, ou em parte
-                              a regiaõ, que fica desde o ano até á cauda. Esta faz em baixo da
-                              quilha do ventre o mesmo officio, que aquella do dorso, serve a suster
-                              o peixe em huma situaçaõ direita, ou vertical. Pela situaçaõ. <entry>
-                                    <form>— Longitudinalis.</form>
-                                    <sense>
-                                          <term lemma="longitudinal"> Longitudinal</term>, occupando
-                                          todo o espaço entre o ano, e a extremidade da cauda.
-                                          Echeneis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Media.</form>
-                                    <sense> Quando principia longe da abertura do ano, e acaba antes
-                                          que a cauda.</sense>
+                                    <form>PINNÆ.</form>
+                                    <sense>Barbatanas.</sense>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Dorsales.</form>
+                                          <sense>Postas acima do dorso.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pectorales.</form>
+                                          <sense> Ao lado, perto da abertura das guélras. Estas
+                                                raras vezes faltaõ.</sense>
+                                    </entry>
+                                    <pb n="62"/>
+                                    <entry>
+                                          <form>— Ventralis.</form>
+                                          <sense> Na parte inferior do corpo abaixo G. da quilha do
+                                                ventre.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Analis.</form>
+                                          <sense>Perto do anus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Caudalis.</form>
+                                          <sense>Aquella que termina o corpo do peixe.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Branchialis, branchiostega.</form>
+                                          <sense> He a membrana branchiostega. V. Membrana
+                                                branchiostega.</sense>
+                                          <dictScrap>Pela estructura.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Simplices.</form>
+                                          <sense> Simplices, quando os ossiculos, que servem a
+                                                sustellas saõ da mesma natureza, ou todos molles, ou
+                                                todos espinhosos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Compositae.</form>
+                                          <sense> Compostas, quando os ossiculos saõ de differente
+                                                natureza, huns molles, e outros espinhosos.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Remota.</form>
-                                    <sense> Distante, principia longe do ano, e chega até á cauda.
-                                          Ostracion, Tetrodon.</sense>
+                                    <form>PINNA Ani.</form>
+                                    <sense>A barbatana do ano occupa, ou em todo, ou em parte a
+                                          regiaõ, que fica desde o ano até á cauda. Esta faz em
+                                          baixo da quilha do ventre o mesmo officio, que aquella do
+                                          dorso, serve a suster o peixe em huma situaçaõ direita, ou
+                                          vertical.</sense>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Longitudinalis.</form>
+                                          <sense>
+                                                <term lemma="longitudinal"> Longitudinal</term>,
+                                                occupando todo o espaço entre o ano, e a extremidade
+                                                da cauda. Echeneis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Media.</form>
+                                          <sense> Quando principia longe da abertura do ano, e acaba
+                                                antes que a cauda.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Remota.</form>
+                                          <sense> Distante, principia longe do ano, e chega até á
+                                                cauda. Ostracion, Tetrodon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Distincta.</form>
+                                          <sense> Separada da cauda, desunida da barbatana da
+                                                cauda.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Coalita.</form>
+                                          <sense>Unida á barbatana da cauda. Ophidion.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
+                                          <form>— Solitaria.</form>
+                                          <sense> Unica, no maior numero dos peixes espinhosos, e
+                                                naõ espinhosos.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Gemina.</form>
+                                          <sense> Dobrada, ou dupplicada, somente na especie
+                                                Cyprinus auratus.</sense>
+                                    </entry>
+                                    <pb n="63"/>
+                                    <dictScrap>Pela estructura.</dictScrap>
+                                    <entry>
+                                          <form>— Æqualis.</form>
+                                          <sense> Igual, com os raios todos iguaes. Blennii.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Declinata.</form>
+                                          <sense> Declinada, o primeiro raio he mais comprido. Gadi,
+                                                Spari.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Triangulata, pyramidata.</form>
+                                          <sense> Triangular, ou pyramidal, quando o raio do meio he
+                                                mais comprido, e os outros vaõ diminuindo
+                                                preporcionalmente.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Distincta.</form>
-                                    <sense> Separada da cauda, desunida da barbatana da
-                                          cauda.</sense>
+                                    <form>PINNA CAUDÆ.</form>
+                                    <sense>A barbatana da cauda he aquella, que está situada
+                                          verticalmente na extremidade do dorso, e termina o corpo,
+                                          serve-lhe de leme, e communicalhe o movimento para mudar
+                                          de direcçaõ.</sense>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— AEqualis, truncata.</form>
+                                          <sense> Igual, truncada, quando acaba em huma linha
+                                                transversal. Syngnathi.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rotunda.</form>
+                                          <sense> Redonda, ou circular na extremidade. Blennii,
+                                                Labri.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bifida.</form>
+                                          <sense> Dividida quasi em duas, quando os ossiculos do
+                                                meio saõ mais breves, que os lateraes.
+                                                Scomber.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Trifida, tricuspis.</form>
+                                          <sense>Dividida em tres. Cyprinus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cuspidata, lanceolata.</form>
+                                          <sense> Á maneira de frecha. Os ossiculos do meio saõ mais
+                                                compridos, que os lateraes Zeus, Muræna,
+                                                Ophidion.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Emarginata.</form>
+                                          <sense> Quando dous, ou tres ossiculos do meio saõ alguma
+                                                cousa mais breves, que os outros. Algumas
+                                                Triglæ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lobata.</form>
+                                          <sense>Dividida em partes desiguaes. Exoccetus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Arcuata.</form>
+                                          <sense> Arqueada, descrevendo hum segmento de circulo.
+                                                Scomber Thynnus.</sense>
+                                          <dictScrap>Pela connexaõ.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Distincta.</form>
+                                          <sense> Distincta, livre, naõ está pegada <pb n="64"
+                                                />áquella do dorso, nem do ano, em quasi todos os
+                                                peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Coalita, anexa, contigua.</form>
+                                          <sense> Quando os ultimos raios da barbatana do dorso, e
+                                                do ano se vem ajuntar aos da cauda para huma
+                                                membrana, de maneira, que parecem todos huma só
+                                                barbatana. Ophidion.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
+                                          <form>— Nulla.</form>
+                                          <sense> Nenhuma. Syngnathus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Solitaria.</form>
+                                          <sense> Huma só na maior parte dos peixes.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Coalita.</form>
-                                    <sense>Unida á barbatana da cauda. Ophidion.</sense>
-                              </entry> Pelo numero. <entry>
-                                    <form>— Solitaria.</form>
-                                    <sense> Unica, no maior numero dos peixes espinhosos, e naõ
-                                          espinhosos.</sense>
+                                    <form>PINNÆ Dorsales.</form>
+                                    <sense>Barbatanas do dorso. Estas tomaõ a sua denominaçaõ por
+                                          estarem na parte superior do corpo entre a cobeça, e a
+                                          cauda : ellas mms se extendem verticalmente. O. peixe
+                                          serve-se destas barbatanas para conservar o equilibrio, e
+                                          suster-se na situaçaõ vertical.</sense>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Longitudinales.</form>
+                                          <sense>
+                                                <term lemma="longitudinal" norm="Longitudinais"
+                                                  msd="plural"> Longitudinaes</term>, quando se
+                                                extendem desde a cabeça até a cauda, por todo o
+                                                comprimento do corpo. Pleuronectes solea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Semilongitudinales.</form>
+                                          <sense> Quando naõ chegaõ senaõ a ametade do corpo.
+                                                Occipitales. Occipitaes, quando estaõ postas sobre a
+                                                nuca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Scapulares.</form>
+                                          <sense> Escapulares, occupando o espaço do dorso, que fica
+                                                entre a nuca, e o meio do dorso, entre as
+                                                espadoas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Æquilibres, librantes, mediæ.</form>
+                                          <sense> Ao meio, no ponto de equilibrio, quando o meio da
+                                                barbatana se acha no meio do dorso.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lumbares, remotae.</form>
+                                          <sense> Distantes, visinhas da cauda. Exocoetus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Distinctae.</form>
+                                          <sense> Quando saõ muitas, e estas separadas humas das
+                                                outras. Gadus, Perca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Coalitae, adnatæ.</form>
+                                          <sense> Unidas, quando estaõ taõ <pb n="65"/>visinhas, que
+                                                parecem formar huma só barbatana.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
+                                          <form>— Nullæ.</form>
+                                          <sense>Nenhuma. Apterygium, V. Gymnotus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Solitariæ.</form>
+                                          <sense>Huma só no dorso. Monopterygius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bivæ, geminæ.</form>
+                                          <sense>Duas. Dipterygius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ternæ.</form>
+                                          <sense>Tres. Tripterygius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quaternæ.</form>
+                                          <sense>Quatro. Tetrapterygius.</sense>
+                                    </entry>
+                                    <dictScrap>Pela sua natureza.</dictScrap>
+                                    <entry>
+                                          <form>— Radiatæ.</form>
+                                          <sense> Com raios, sem pontas. Malacopterygius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Aculeatæ.</form>
+                                          <sense> Com ossiculos pungentes, ou aculeos.
+                                                Acanthopterygius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Asperæ.</form>
+                                          <sense> Asperas, com ossiculos inermes em forma de
+                                                pequenos dentes. Silurus.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Æquales.</form>
+                                          <sense> Iguaes, sendo os ossiculos do mesmo comprimento.
+                                                Biennius, Pleuronectes Solea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Declinatæ.</form>
+                                          <sense> Declinadas, quando o primeiro ossiculo da parte da
+                                                cabeça he mais comprido, e que os outros vaõ
+                                                diminuindo sensivelmente até á cauda. Sparus,
+                                                Labrus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Interruptæ.</form>
+                                          <sense> Interrompidas, quando os ossiculos do meio saõ
+                                                mais breves, que os do principio, e do fim.
+                                                Sciaena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acuminatæ, triangulatæ.</form>
+                                          <sense> Pyramidaes na ponta, ou triangulares, quando os
+                                                raios do meio saõ mais compridos, que os que estaõ
+                                                da parte da cabeça, e da cauda, os quaes vaõ
+                                                diminuindo sensivelmente de comprimento; mas sempre
+                                                igualmente dos dous lados. Trigla, Clupea.</sense>
+                                    </entry>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Exiguæ.</form>
+                                          <sense> Pequenas, quando tem pouca altura. Exocoetus,
+                                                Mugil. Syngnathus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Assurgentes, altissimae.</form>
+                                          <sense> Muito altas, quando se <pb n="66"/>levantaõ muito
+                                                acima do dorso. Callionymus.</sense>
+                                    </entry>
+                                    <dictScrap>Pelos tegumentos.</dictScrap>
+                                    <entry>
+                                          <form>— Carnosæ, adiposæ.</form>
+                                          <sense> Carnosas, cubertas de huma pelle grossa. Gadus,
+                                                Labrus, Chaetodon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Squamosæ.</form>
+                                          <sense>Cubertas de escamas. Chætodon.</sense>
+                                    </entry>
+                                    <dictScrap>Pelos additamentos.</dictScrap>
+                                    <entry>
+                                          <form>— Ramentaceæ.</form>
+                                          <sense> Ramentum, raspadura, ou parte arrancada raspando.
+                                                Assim nos peixes ramentum he hum pequeno appendix
+                                                molle, filiforme, que se aclia na extremidade, e na
+                                                borda posterior dos ossiculos. He huma prolongaçaõ
+                                                da membrana, que cobre os ossiculos. Zeus,
+                                                Labrus.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Gemina.</form>
-                                    <sense> Dobrada, ou dupplicada, somente na especie Cyprinus
-                                          auratus.</sense>
-                              </entry>
-                              <pb n="63"/> Pela estructura. <entry>
-                                    <form>— Æqualis.</form>
-                                    <sense> Igual, com os raios todos iguaes. Blennii.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Declinata.</form>
-                                    <sense> Declinada, o primeiro raio he mais comprido. Gadi,
-                                          Spari.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Triangulata, pyramidata.</form>
-                                    <sense> Triangular, ou pyramidal, quando o raio do meio he mais
-                                          comprido, e os outros vaõ diminuindo
-                                          preporcionalmente.</sense>
-                              </entry> PINNA CAUDÆ. A barbatana da cauda he aquella, que está
-                              situada verticalmente na extremidade do dorso, e termina o corpo,
-                              serve-lhe de leme, e communicalhe o movimento para mudar de direcçaõ.
-                              Pela figura. <entry>
-                                    <form>— AEqualis, truncata.</form>
-                                    <sense> Igual, truncada, quando acaba em huma linha transversal.
-                                          Syngnathi.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Rotunda.</form>
-                                    <sense> Redonda, ou circular na extremidade. Blennii,
-                                          Labri.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Bifida.</form>
-                                    <sense> Dividida quasi em duas, quando os ossiculos do meio saõ
-                                          mais breves, que os lateraes. Scomber.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Trifida, tricuspis.</form>
-                                    <sense>Dividida em tres. Cyprinus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cuspidata, lanceolata.</form>
-                                    <sense> Á maneira de frecha. Os ossiculos do meio saõ mais
-                                          compridos, que os lateraes Zeus, Muræna, Ophidion.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Emarginata.</form>
-                                    <sense> Quando dous, ou tres ossiculos do meio saõ alguma cousa
-                                          mais breves, que os outros. Algumas Triglæ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lobata.</form>
-                                    <sense>Dividida em partes desiguaes. Exoccetus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Arcuata.</form>
-                                    <sense> Arqueada, descrevendo hum segmento de circulo. Scomber
-                                          Thynnus. Pela connexaõ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Distincta.</form>
-                                    <sense> Distincta, livre, naõ está pegada <pb n="64"/>áquella do
-                                          dorso, nem do ano, em quasi todos os peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Coalita, anexa, contigua.</form>
-                                    <sense> Quando os ultimos raios da barbatana do dorso, e do ano
-                                          se vem ajuntar aos da cauda para huma membrana, de
-                                          maneira, que parecem todos huma só barbatana.
-                                          Ophidion.</sense>
-                              </entry> Pelo numero. <entry>
-                                    <form>— Nulla.</form>
-                                    <sense> Nenhuma. Syngnathus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Solitaria.</form>
-                                    <sense> Huma só na maior parte dos peixes.</sense>
-                              </entry> PINNÆ Dorsales. Barbatanas do dorso. Estas tomaõ a sua
-                              denominaçaõ por estarem na parte superior do corpo entre a cobeça, e a
-                              cauda : ellas mms se extendem verticalmente. O. peixe serve-se destas
-                              barbatanas para conservar o equilibrio, e suster-se na situaçaõ
-                              vertical. Pela situaçaõ. <entry>
-                                    <form>— Longitudinales.</form>
-                                    <sense>
-                                          <term lemma="longitudinal" norm="Longitudinais"
-                                                msd="plural"> Longitudinaes</term>, quando se
-                                          extendem desde a cabeça até a cauda, por todo o
-                                          comprimento do corpo. Pleuronectes solea.</sense>
+                                    <form>PINNÆ Pectorales.</form>
+                                    <sense>As barbatanas peitoraes, ou do peito estaõ postas junto a
+                                          abertura das guélras, ou aos dous lados do thorax: quasi
+                                          sempre saõ duas huma em cada lado do corpo, e fazem o
+                                          officio de braços. Em algumas especies servem de azas por
+                                          meio das quaes o peixe se levanta fóra da agua, e tem
+                                          algumas vezes hum movimento progressivo, que imita o voar
+                                          das aves. fig. 1. d.</sense>
+                                    <dictScrap>Pela sua inserçaõ, ou pegamento.</dictScrap>
+                                    <entry>
+                                          <form>— Supremæ.</form>
+                                          <sense> Altas, quando occupaõ a parte mais alta perto das
+                                                guélras. Exocoetus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Mediæ.</form>
+                                          <sense> Medias, quasi junto ao meio do corpo, entre o
+                                                dorso, e a quilha do ventre.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Imæ, infimæ, inferiores.</form>
+                                          <sense> Baixas, visinhas a quilha do ventre, e quasi
+                                                abaixo do thorax. Argentina, Blennius,
+                                                Clupea.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
+                                          <form>— Nullæ.</form>
+                                          <sense>Nenhumas. Muræna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Solitariæ.</form>
+                                          <sense>Huma so em cada lado, quasi em todos os
+                                                peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Geminatæ.</form>
+                                          <sense>Duas em cada lado.</sense>
+                                    </entry>
+                                    <pb n="67"/>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Longissimæ, angustæ.</form>
+                                          <sense> Muito compridas, estreitas. Exocoetus, Xiphias.
+                                          </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Minimæ, brevissimæ.</form>
+                                          <sense> Muito pequenas. Ophidium, Blennius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Proportionales.</form>
+                                          <sense> Proporcionaes ao tamanho do corpo. Sparus, Labrus,
+                                                Sciæna, Chætodon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Volatiles.</form>
+                                          <sense> Proprias para voar, taõ grandes, que podem suster
+                                                o peixe fóra da agua. Trigla, Exocoetus.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Rotundatæ.</form>
+                                          <sense> Redondas, o que se entende somente na borda
+                                                posterior. Blennius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acuminatæ.</form>
+                                          <sense>Que acabaõ em ponta. Exocoetus, Zeus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Falcatæ, seu arcuatæ.</form>
+                                          <sense> Arqueadas. Xiphias.</sense>
+                                    </entry>
+                                    <sense>O uso das ditas barbatanas naõ he somente para voar, mas
+                                          para equilibrar a cabeça com o de mais corpo.</sense>
                               </entry>
                               <entry>
-                                    <form>— Semilongitudinales.</form>
-                                    <sense> Quando naõ chegaõ senaõ a ametade do corpo. Occipitales.
-                                          Occipitaes, quando estaõ postas sobre a nuca.</sense>
+                                    <form>PINNÆ ventrales.</form>
+                                    <sense>Barbatanas do ventre, estaõ postas na parte inferior do
+                                          ventre adiante do anus; algumas vezes se achaõ no pescoço,
+                                          ou no thorax; fazem o officio de pés.</sense>
+                                    <dictScrap>Pela situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Jugulares.</form>
+                                          <sense> Proximas ou a guéla, ou ao pescoço, ou abaixo das
+                                                guélras; esta situaçaõ faz a ordem dos
+                                                Jugulares.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Thoracicæ.</form>
+                                          <sense> Postas no thorax, debaixo das peitoraes,
+                                                constituem a ordem Thoracici.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Abdominales.</form>
+                                          <sense> Postas mais perto do ano; e constituem a ordem
+                                                abdominales.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Anum ambientes.</form>
+                                          <sense> Que estaõ postas ao redor do ano. Nos Nantes
+                                                Squalus</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Vicinæ.</form>
+                                          <sense> Visinhas, e quasi postas ambas na quilha do
+                                                ventre. Cyprinus.</sense>
+                                    </entry>
+                                    <pb n="68"/>
+                                    <entry>
+                                          <form>— Remotæ.</form>
+                                          <sense> Muito distantes entre si. Algumas. especies.
+                                                Cyprini, Spari.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Coadunatæ, coalite.</form>
+                                          <sense> Unidas por meio de huma membrana. Gobius.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <entry>
+                                          <form>— Nullæ.</form>
+                                          <sense> Nenhuma; e fórma a ordem Apodes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Solitariæ.</form>
+                                          <sense>Huma só. Centriscus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Binae.</form>
+                                          <sense> Duas, huma em cada lado, o que he commum em quasi
+                                                todos os peixes.</sense>
+                                    </entry>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Minimæ.</form>
+                                          <sense> Muito pequenas relativamente á grandeza do corpo;
+                                                no maior numero dos peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Proportionales.</form>
+                                          <sense> Proporcionaes ao corpo. Gadus,
+                                                Uranoscopus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longissimæ.</form>
+                                          <sense> Muito compridas. Exocoetus.</sense>
+                                          <dictScrap>Pela estructura.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Didactylæ.</form>
+                                          <sense>Com dous raios somente. Blennius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Multi-radiatæ.</form>
+                                          <sense> Com muitos raios; mas raras vezes mais de seis, em
+                                                quasi todos os peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Muticae.</form>
+                                          <sense>Rombas, nos peixes malacopterygios.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Difformes</form>
+                                          <sense>Quando alem dos ossiculos tambem estaõ <term
+                                                  lemma="cirro" msd="plural">cirros</term>.
+                                                Ophidium.</sense>
+                                    </entry>
+                                    <sense>As barbatanas do ventre em qualquer lugar que sejaõ,
+                                          abremse horizontalmente na agua formando hum angulo recto
+                                          com o corpo. Esta expansaõ appresentando a agua maior
+                                          superficie serve para equilibrar o corpo, e por isso fazem
+                                          de algum modo officio de pés</sense>
                               </entry>
                               <entry>
-                                    <form>— Scapulares.</form>
-                                    <sense> Escapulares, occupando o espaço do dorso, que fica entre
-                                          a nuca, e o meio do dorso, entre as espadoas.</sense>
+                                    <form>PINNÆ Spuriæ.</form>
+                                    <sense>As barbatanas espurias differem das verdadeiras, porque
+                                          aquellas naõ saõ compostas, senaõ de huma pelle sem raios,
+                                          ou aculeos, que ordinariamente sustentaõ as barbatanas
+                                          verdadeiras. Estas estaõ sempre postas ao lado do corpo,
+                                                <pb n="69"/>ao lado do ventre, e quasi sempre sobre
+                                          o dorso. Amia, Scomber Thynnus.</sense>
                               </entry>
                               <entry>
-                                    <form>— Æquilibres, librantes, mediæ.</form>
-                                    <sense> Ao meio, no ponto de equilibrio, quando o meio da
-                                          barbatana se acha no meio do dorso.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lumbares, remotae.</form>
-                                    <sense> Distantes, visinhas da cauda. Exocoetus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Distinctae.</form>
-                                    <sense> Quando saõ muitas, e estas separadas humas das outras.
-                                          Gadus, Perca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Coalitae, adnatæ.</form>
-                                    <sense> Unidas, quando estaõ taõ <pb n="65"/>visinhas, que
-                                          parecem formar huma só barbatana.</sense>
-                              </entry> Pelo numero. <entry>
-                                    <form>— Nullæ.</form>
-                                    <sense>Nenhuma. Apterygium, V. Gymnotus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Solitariæ.</form>
-                                    <sense>Huma só no dorso. Monopterygius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Bivæ, geminæ.</form>
-                                    <sense>Duas. Dipterygius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ternæ.</form>
-                                    <sense>Tres. Tripterygius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Quaternæ.</form>
-                                    <sense>Quatro. Tetrapterygius.</sense>
-                              </entry> Pela sua natureza. <entry>
-                                    <form>— Radiatæ.</form>
-                                    <sense> Com raios, sem pontas. Malacopterygius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Aculeatæ.</form>
-                                    <sense> Com ossiculos pungentes, ou aculeos.
-                                          Acanthopterygius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Asperæ.</form>
-                                    <sense> Asperas, com ossiculos inermes em forma de pequenos
-                                          dentes. Silurus.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Æquales.</form>
-                                    <sense> Iguaes, sendo os ossiculos do mesmo comprimento.
-                                          Biennius, Pleuronectes Solea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Declinatæ.</form>
-                                    <sense> Declinadas, quando o primeiro ossiculo da parte da
-                                          cabeça he mais comprido, e que os outros vaõ diminuindo
-                                          sensivelmente até á cauda. Sparus, Labrus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Interruptæ.</form>
-                                    <sense> Interrompidas, quando os ossiculos do meio saõ mais
-                                          breves, que os do principio, e do fim. Sciaena.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Acuminatæ, triangulatæ.</form>
-                                    <sense> Pyramidaes na ponta, ou triangulares, quando os raios do
-                                          meio saõ mais compridos, que os que estaõ da parte da
-                                          cabeça, e da cauda, os quaes vaõ diminuindo sensivelmente
-                                          de comprimento; mas sempre igualmente dos dous lados.
-                                          Trigla, Clupea.</sense>
-                              </entry> Pela proporçaõ. <entry>
-                                    <form>— Exiguæ.</form>
-                                    <sense> Pequenas, quando tem pouca altura. Exocoetus, Mugil.
-                                          Syngnathus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Assurgentes, altissimae.</form>
-                                    <sense> Muito altas, quando se <pb n="66"/>levantaõ muito acima
-                                          do dorso. Callionymus.</sense>
-                              </entry> Pelos tegumentos. <entry>
-                                    <form>— Carnosæ, adiposæ.</form>
-                                    <sense> Carnosas, cubertas de huma pelle grossa. Gadus, Labrus,
-                                          Chaetodon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Squamosæ.</form>
-                                    <sense>Cubertas de escamas. Chætodon.</sense>
-                              </entry> Pelos additamentos. <entry>
-                                    <form>— Ramentaceæ.</form>
-                                    <sense> Ramentum, raspadura, ou parte arrancada raspando. Assim
-                                          nos peixes ramentum he hum pequeno appendix molle,
-                                          filiforme, que se aclia na extremidade, e na borda
-                                          posterior dos ossiculos. He huma prolongaçaõ da membrana,
-                                          que cobre os ossiculos. Zeus, Labrus.</sense>
-                              </entry> PINNÆ Pectorales. As barbatanas peitoraes, ou do peito estaõ
-                              postas junto a abertura das guélras, ou aos dous lados do thorax:
-                              quasi sempre saõ duas huma em cada lado do corpo, e fazem o officio de
-                              braços. Em algumas especies servem de azas por meio das quaes o peixe
-                              se levanta fóra da agua, e tem algumas vezes hum movimento
-                              progressivo, que imita o voar das aves. fig. 1. d. Pela sua inserçaõ,
-                              ou pegamento. <entry>
-                                    <form>— Supremæ.</form>
-                                    <sense> Altas, quando occupaõ a parte mais alta perto das
-                                          guélras. Exocoetus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Mediæ.</form>
-                                    <sense> Medias, quasi junto ao meio do corpo, entre o dorso, e a
-                                          quilha do ventre.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Imæ, infimæ, inferiores.</form>
-                                    <sense> Baixas, visinhas a quilha do ventre, e quasi abaixo do
-                                          thorax. Argentina, Blennius, Clupea.</sense>
-                              </entry> Pelo numero. Nullæ. Nenhumas. Muræna. Solitariæ. Huma so em
-                              cada lado, quasi em todos os peixes. Geminatæ. Duas em cada lado. Pela
-                                    <pb n="67"/> Pela proporçaõ. <entry>
-                                    <form>— Longissimæ, angustæ.</form>
-                                    <sense> Muito compridas, estreitas. Exocoetus, Xiphias. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Minimæ, brevissimæ.</form>
-                                    <sense> Muito pequenas. Ophidium, Blennius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Proportionales.</form>
-                                    <sense> Proporcionaes ao tamanho do corpo. Sparus, Labrus,
-                                          Sciæna, Chætodon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Volatiles.</form>
-                                    <sense> Proprias para voar, taõ grandes, que podem suster o
-                                          peixe fóra da agua. Trigla, Exocoetus.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Rotundatæ.</form>
-                                    <sense> Redondas, o que se entende somente na borda posterior.
-                                          Blennius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Acuminatæ.</form>
-                                    <sense>Que acabaõ em ponta. Exocoetus, Zeus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Falcatæ, seu arcuatæ.</form>
-                                    <sense> Arqueadas. Xiphias. O uso das ditas barbatanas naõ he
-                                          somente para voar, mas para equilibrar a cabeça com o de
-                                          mais corpo.</sense>
-                              </entry> PINNÆ ventrales. Barbatanas do ventre, estaõ postas na parte
-                              inferior do ventre adiante do anus; algumas vezes se achaõ no pescoço,
-                              ou no thorax; fazem o officio de pés. Pela situaçaõ. <entry>
-                                    <form>— Jugulares.</form>
-                                    <sense> Proximas ou a guéla, ou ao pescoço, ou abaixo das
-                                          guélras; esta situaçaõ faz a ordem dos Jugulares.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Thoracicæ.</form>
-                                    <sense> Postas no thorax, debaixo das peitoraes, constituem a
-                                          ordem Thoracici.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Abdominales.</form>
-                                    <sense> Postas mais perto do ano; e constituem a ordem
-                                          abdominales.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Anum ambientes.</form>
-                                    <sense> Que estaõ postas ao redor do ano. Nos Nantes
-                                          Squalus</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Vicinæ.</form>
-                                    <sense> Visinhas, e quasi postas ambas na quilha do ventre.
-                                          Cyprinus.</sense>
-                              </entry>
-                              <pb n="68"/><entry>
-                                    <form>— Remotæ.</form>
-                                    <sense> Muito distantes entre si. Algumas. especies. Cyprini,
-                                          Spari.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Coadunatæ, coalite.</form>
-                                    <sense> Unidas por meio de huma membrana. Gobius.</sense>
-                              </entry> Pelo numero. <entry>
-                                    <form>— Nullæ.</form>
-                                    <sense> Nenhuma; e fórma a ordem Apodes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Solitariæ.</form>
-                                    <sense>Huma só. Centriscus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Binae.</form>
-                                    <sense> Duas, huma em cada lado, o que he commum em quasi todos
-                                          os peixes.</sense>
-                              </entry> Pela proporçaõ. <entry>
-                                    <form>— Minimæ.</form>
-                                    <sense> Muito pequenas relativamente á grandeza do corpo; no
-                                          maior numero dos peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Proportionales.</form>
-                                    <sense> Proporcionaes ao corpo. Gadus, Uranoscopus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Longissimæ.</form>
-                                    <sense> Muito compridas. Exocoetus. Pela estructura.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Didactylæ.</form>
-                                    <sense>Com dous raios somente. Blennius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Multi-radiatæ.</form>
-                                    <sense> Com muitos raios; mas raras vezes mais de seis, em quasi
-                                          todos os peixes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Muticae.</form>
-                                    <sense>Rombas, nos peixes malacopterygios.</sense>
-                              </entry> — <s>Difformes Quando alem dos ossiculos tambem estaõ <term
-                                          lemma="cirro" msd="plural">cirros</term>. Ophidium.</s> As
-                              barbatanas do ventre em qualquer lugar que sejaõ, abremse
-                              horizontalmente na agua formando hum angulo recto com o corpo. Esta
-                              expansaõ appresentando a agua maior superficie serve para equilibrar o
-                              corpo, e por isso fazem de algum modo officio de pés PINNÆ Spuriæ. As
-                              barbatanas espurias differem das verdadeiras, porque aquellas naõ saõ
-                              compostas, senaõ de huma pelle sem raios, ou aculeos, que
-                              ordinariamente sustentaõ as barbatanas verdadeiras. Estas estaõ sempre
-                              postas ao lado do corpo, <pb n="69"/>ao lado do ventre, e quasi sempre
-                              sobre o dorso. Amia, Scomber Thynnus. <entry>
                                     <form>PINNATUS.</form>
                                     <sense>He todo o peixe, que tem barbatana.</sense>
                               </entry>
@@ -5002,7 +5111,8 @@
                                           Ordinariamente he esferica, ou <term lemma="oblongo"
                                                 msd="feminino singular">oblonga</term>, em alguns he
                                           oval.</sense>
-                              </entry></div>
+                              </entry>
+                        </div>
                         <div type="letra">
                               <head>R.</head>
                               <entry>
@@ -5037,7 +5147,8 @@
                                     <sense>V. Os Rictus, Rostrum.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>S.</head>
+                        <div type="letra">
+                              <head>S.</head>
                               <entry>
                                     <form>SCABER, tuberculatus.</form>
                                     <sense>A superficie com <pb n="70"/><term lemma="tubérculo"
@@ -5057,132 +5168,156 @@
                                     <form>SEMISAGITTATUS.</form>
                                     <sense>He aquella parte do peixe, que representa a figura de
                                           meia setta.</sense>
-                              </entry> SQUAMAE. Corpo pellucido corneo, que serve de tegumento aos
-                              peixes. Os tegumentos, que cobrem o tronco saõ, ou huma pelle simples,
-                              ou escamas. As escamas saõ corpos transparentes de natureza cornea, de
-                              que principalmente o corpo dos peixes está cuberto em parte, ou em
-                              todo. Os peixes naõ saõ os unicos, que tem escamas. Os lagartos, as
-                              cobras tambem tem escamas, que saõ da mesma natureza. Alguns peixes
-                              naõ tem escamas: a rijeza, e grossura que forma a pelle, serve para
-                              defender o corpo do peixe do contacto immediato da agua, e dos outros
-                              corpos estranhos. Pela Situaçaõ. <entry>
-                                    <form>— Imbricatae.</form>
-                                    <sense> Do mesmo modo, que se poem as telhas; de maneira, que a
-                                          extremidade de huma, cobre a base de outra, como as telhas
-                                          de hũ telhado. Perca, Sparus, Labrus, Cyprinus,
-                                          Mullus,</sense>
                               </entry>
                               <entry>
-                                    <form>— Remotæ.</form>
-                                    <sense>Distantes, ou separadas humas das outras. Anguilla.
-                                    </sense>
+                                    <form>SQUAMAE.</form>
+                                    <sense>Corpo pellucido corneo, que serve de tegumento aos
+                                          peixes.</sense>
+                                    <sense>Os tegumentos, que cobrem o tronco saõ, ou huma pelle
+                                          simples, ou escamas. As escamas saõ corpos transparentes
+                                          de natureza cornea, de que principalmente o corpo dos
+                                          peixes está cuberto em parte, ou em todo. Os peixes naõ
+                                          saõ os unicos, que tem escamas. Os lagartos, as cobras
+                                          tambem tem escamas, que saõ da mesma natureza.</sense>
+                                    <sense>Alguns peixes naõ tem escamas: a rijeza, e grossura que
+                                          forma a pelle, serve para defender o corpo do peixe do
+                                          contacto immediato da agua, e dos outros corpos
+                                          estranhos.</sense>
+                                    <dictScrap>Pela Situaçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Imbricatae.</form>
+                                          <sense> Do mesmo modo, que se poem as telhas; de maneira,
+                                                que a extremidade de huma, cobre a base de outra,
+                                                como as telhas de hũ telhado. Perca, Sparus, Labrus,
+                                                Cyprinus, Mullus,</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Remotæ.</form>
+                                          <sense>Distantes, ou separadas humas das outras. Anguilla.
+                                          </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— In capite, &amp; in corpore.</form>
+                                          <sense> Na cabeça, e no corpo. Sparus, Sciaena. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— In trunco tantum.</form>
+                                          <sense> Só no tronco, assim como na maior parte dos
+                                                peixes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— In pinnis.</form>
+                                          <sense>Nas barbatanas, raras vezes. Chaetodon.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo numero.</dictScrap>
+                                    <pb n="71"/>
+                                    <entry>
+                                          <form>— Nullae.</form>
+                                          <sense>Nenhuma escama. Ophidion.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Raræ.</form>
+                                          <sense> Raras, quando se achaõ separadas humas das outras.
+                                                Anguilla, Conger.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Densæ, innumeræe, confertæ.</form>
+                                          <sense> Sem numero, muito juntas humas ás outras de
+                                                maneira, que cada huma cobre mais de metade da
+                                                inferior; e esta he mais, que a metade cuberta da
+                                                superior. Mugil, Exocoetus.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Ovales.</form>
+                                          <sense> Quando huma extremidade he redonda, e mais larga,
+                                                que a outra. Gadus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Orbiculatæ, rotundæ.</form>
+                                          <sense> Redondas. Clupea. Pela connexaõ, ou uniaõ ao
+                                                corpo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Deciduæ, Laxæ.</form>
+                                          <sense> Caducas, que estaõ pouco adherentes ao corpo, e
+                                                cahem facilmente. Mullus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tenaces.</form>
+                                          <sense> Que tem mais uniaõ ao corpo, como no maior numero
+                                                dos peixes.</sense>
+                                    </entry>
+                                    <dictScrap>Pela superficie.</dictScrap>
+                                    <entry>
+                                          <form>— Molles, flexiles.</form>
+                                          <sense> Molles, flexiveis. Clupea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Glabræ, inermes.</form>
+                                          <sense> Lisas, sem bicos. Exocoetus, Cyprinus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Striatæ.</form>
+                                          <sense>Striadas. Exocoetus, Perca, Mugil.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Asperæ, aculeatæ.</form>
+                                          <sense>Asperas, picantes. Gobius, Perca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Punctatæ.</form>
+                                          <sense><term lemma="pontoado" msd="feminino plural"
+                                                  >Pontoadas</term>, cubertas de pontos.
+                                                Scorpæna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ciliatae.</form>
+                                          <sense>
+                                                <term lemma="ciliado" msd="feminino plural"
+                                                  >Ciliadas</term>, cercadas de cilhas, ou pellos ao
+                                                redor. Pleuronectes Solea, Rhombus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Serratæ.</form>
+                                          <sense> A modo de serra, recortadas na sua margem.
+                                                Cottus.</sense>
+                                    </entry>
+                                    <dictScrap>Pelo tamanho.</dictScrap>
+                                    <entry>
+                                          <form>— Amplæ, magnæ.</form>
+                                          <sense> Grandes. Exocoetus, Mugil, Mullus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pavæ, tenues, exiguae.</form>
+                                          <sense> Pequenas, miudas. Gymnotus, Atherina.</sense>
+                                    </entry>
+                                    <pb n="72"/>
+                                    <entry>
+                                          <form>— Minimæ.</form>
+                                          <sense>Muito pequenas. Ammodytes, Uranoscopus.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— In capite, &amp; in corpore.</form>
-                                    <sense> Na cabeça, e no corpo. Sparus, Sciaena. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— In trunco tantum.</form>
-                                    <sense> Só no tronco, assim como na maior parte dos
+                                    <form>SQUAMOSUM.</form>
+                                    <sense>O corpo cuberto de escamas, como he o maior numero dos
                                           peixes.</sense>
                               </entry>
-                              <entry>
-                                    <form>— In pinnis.</form>
-                                    <sense>Nas barbatanas, raras vezes. Chaetodon.</sense>
-                              </entry> Pelo numero. <pb n="71"/>
-                              <entry>
-                                    <form>— Nullae.</form>
-                                    <sense>Nenhuma escama. Ophidion.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Raræ.</form>
-                                    <sense> Raras, quando se achaõ separadas humas das outras.
-                                          Anguilla, Conger.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Densæ, innumeræe, confertæ.</form>
-                                    <sense> Sem numero, muito juntas humas ás outras de maneira, que
-                                          cada huma cobre mais de metade da inferior; e esta he
-                                          mais, que a metade cuberta da superior. Mugil,
-                                          Exocoetus.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Ovales.</form>
-                                    <sense> Quando huma extremidade he redonda, e mais larga, que a
-                                          outra. Gadus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Orbiculatæ, rotundæ.</form>
-                                    <sense> Redondas. Clupea. Pela connexaõ, ou uniaõ ao
-                                          corpo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Deciduæ, Laxæ.</form>
-                                    <sense> Caducas, que estaõ pouco adherentes ao corpo, e cahem
-                                          facilmente. Mullus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tenaces.</form>
-                                    <sense> Que tem mais uniaõ ao corpo, como no maior numero dos
-                                          peixes.</sense>
-                              </entry> Pela superficie. <entry>
-                                    <form>— Molles, flexiles.</form>
-                                    <sense> Molles, flexiveis. Clupea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Glabræ, inermes.</form>
-                                    <sense> Lisas, sem bicos. Exocoetus, Cyprinus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Striatæ.</form>
-                                    <sense>Striadas. Exocoetus, Perca, Mugil.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Asperæ, aculeatæ.</form>
-                                    <sense>Asperas, picantes. Gobius, Perca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Punctatæ.</form>
-                                    <sense><term lemma="pontoado" msd="feminino plural"
-                                                >Pontoadas</term>, cubertas de pontos.
-                                          Scorpæna.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ciliatae.</form>
-                                    <sense>
-                                          <term lemma="ciliado" msd="feminino plural"
-                                                >Ciliadas</term>, cercadas de cilhas, ou pellos ao
-                                          redor. Pleuronectes Solea, Rhombus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Serratæ.</form>
-                                    <sense> A modo de serra, recortadas na sua margem.
-                                          Cottus.</sense>
-                              </entry> Pelo tamanho. <entry>
-                                    <form>— Amplæ, magnæ.</form>
-                                    <sense> Grandes. Exocoetus, Mugil, Mullus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Pavæ, tenues, exiguae.</form>
-                                    <sense> Pequenas, miudas. Gymnotus, Atherina.</sense>
-                              </entry>
-                              <pb n="72"/>
-                              <entry>
-                                    <form>— Minimæ.</form>
-                                    <sense>Muito pequenas. Ammodytes, Uranoscopus.</sense>
-                              </entry>
-                              <entry>SQUAMOSUM. O corpo cuberto de escamas, como he o maior numero
-                                    dos peixes.</entry></div>
+                        </div>
                         <div type="letra">
                               <head>T.</head>
-                              <s>TENTACULUM. Quando Linnéo dá o nome de tentaculo a certas partes
-                                    dos peixes, como he no Gymnotus, deve-se entender por hum
-                                    additamento <term lemma="setáceo">setaceo</term>, cutaneo,
-                                    situado entre os olhos, e narizes, ou pela parte superior; movel
-                                    á vontade do peixe: muitas vezes observa-se cortado, formando
-                                    huma crista.</s>
-                              <s>O uso deste tentaculo, he taõ incognito, como o dos <term
-                                          lemma="cirro" msd="plural">cirros</term>: Os Ichthyologos
-                                    daõ-lhe muitas vezes o nome de pinnula.</s>
+                              <entry>
+                                    <form>TENTACULUM.</form>
+                                    <sense>Quando Linnéo dá o nome de tentaculo a certas partes dos
+                                          peixes, como he no Gymnotus, deve-se entender por hum
+                                          additamento <term lemma="setáceo">setaceo</term>, cutaneo,
+                                          situado entre os olhos, e narizes, ou pela parte superior;
+                                          movel á vontade do peixe: muitas vezes observa-se cortado,
+                                          formando huma crista. O uso deste tentaculo, he taõ
+                                          incognito, como o dos <term lemma="cirro" msd="plural"
+                                                >cirros</term>: Os Ichthyologos daõ-lhe muitas vezes
+                                          o nome de pinnula.</sense>
+                              </entry>
                               <entry>
                                     <form>TERES, seu Cylindricum.</form>
                                     <sense>Corpo do peixe sem angulos, quasi cylindrico. Muraena,
@@ -5229,315 +5364,365 @@
                                           dorso mais elevado. Zeus Faber.</sense>
                               </entry>
                         </div>
-                        <div type="letra"><head>V.</head> VARIEGATUS. Peixe de varias cores.
-                              VENTRICOSUM. Quando huma parte do ventre he mais levantada
-                              inferiormente. Ostracion, Diodon. <entry>
+                        <div type="letra">
+                              <head>V.</head>
+                              <entry>
+                                    <form>VARIEGATUS.</form>
+                                    <sense>Peixe de varias cores.</sense>
+                              </entry>
+                              <entry>
+                                    <form>VENTRICOSUM.</form>
+                                    <sense>Quando huma parte do ventre he mais levantada
+                                          inferiormente. Ostracion, Diodon.</sense>
+                              </entry>
+                              <entry>
                                     <form>VITTATUS.</form>
                                     <sense>Diz se do peixe, que he chêo lateralmente desde a cabeça
                                           até á cauda, de zonas <term lemma="longitudinal"
                                                 norm="longitudinais" msd="plural"
                                                 >longitudinaes</term>. Atherina, Spari,
                                           Labri.</sense>
-                              </entry> UNIRADIATA. Diz se da barbatana, que tem taõ somente hum
-                              raio, ou pungente, ou tendinozo.</div>
+                              </entry>
+                              <entry>
+                                    <form>UNIRADIATA.</form>
+                                    <sense>Diz se da barbatana, que tem taõ somente hum raio, ou
+                                          pungente, ou tendinozo.</sense>
+                              </entry>
+                        </div>
                   </div>
                   <pb n="74"/>
                   <div type="parte">
                         <head>CLASSE V. INSECTOS.</head>
                         <div type="letra"><head>A.</head>
-                              <s>ABDOMEN. O abdomen, ou ventre he formado de anneis, e lateralmente
-                                    entre cada annel estaõ huns pequenos buracos, que servem para a
-                                    respiraçaõ do <term lemma="inseto" norm="Inseto"
-                                    >Insecto</term>.</s> O abdomen está pegado ao thorax. A parte
-                              superior do abdomen chama-se dorso, a inferior chama se ventre, ou
-                              barriga. Tab. VI. fig. I. g. III. h. h. h. Pela proporçaõ. <entry>
-                                    <form>— Brevissimum.</form>
-                                    <sense>Muito breve, ou pequeno. Evania.</sense>
-                              </entry>
                               <entry>
-                                    <form>— Longissimum.</form>
-                                    <sense> Muito comprido. Julus, Scolopendra. Tab. VII. fig. 85.
-                                          86.</sense>
-                              </entry> Pela connexaõ, ou uniaõ com o thorax. <entry>
-                                    <form>— Sessile.</form>
-                                    <sense> Sendo o diametro da base igual ao do apice.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Petiolatum.</form>
-                                    <sense> Sendo o diametro da base, com que se une ao thorax muito
-                                          menor do que o diametro do apice, ou extremidade. Sphex.
-                                          fig. 57.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Adnatum.</form>
-                                    <sense> Pegado á parte inferior, e posterior do tronco sem
-                                          diminuiçaõ do seu diametro. Aranea. fig. 80.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Impositum.</form>
-                                    <sense> Pegado á parte superior da extremidade do tronco. Evania
-                                          appendigaster.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Depressum.</form>
-                                    <sense> Chato, cujo diametro transversal, excede o vertical.
-                                          Scolopendra. fig. 85.</sense>
-                              </entry>
-                              <pb n="75"/>
-                              <entry>
-                                    <form>— Rotundatum.</form>
-                                    <sense> Sendo o diametro transversal igual ao vertical. Julus.
-                                          fig. 86.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Compressum.</form>
-                                    <sense> Quando o diametro transversal cede ao vertical. Gryllus,
-                                          fig. 33. Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lineare.</form>
-                                    <sense> Em toda a parte da mesma grossura. Ichneumon. fig.
-                                          56.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ovatum.</form>
-                                    <sense> Cujo diametro transversal he menor, que o <term>
-                                                longitudinal</term>, a base forma hum segmento de
-                                          circulo, e o apice he mais estreito. Dytiscus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Orbiculatum.</form>
-                                    <sense> Quando o diametro transversal he igual ao
-                                                <term>longitudinal</term>. Aranea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cylindricum.</form>
-                                    <sense> Quando o diametro transversal he igual ao vertical, e
-                                          quando a base, e o apice acabaõ em segmento de circulo
-                                          igual. Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Conicum.</form>
-                                    <sense> Quando o diametro transversal he igual ao vertical, a
-                                          base forma hum segmento de circulo, e o apice he mais
-                                          estreito. Apis conica.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Clavatum.</form>
-                                    <sense> Quando o apice he mais grosso, redondo. Evania.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Falcatum, petiolatum, compressum, incurvum.</form>
-                                    <sense> Do feitio de foice V. Petiolatum. Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Hamosum.</form>
-                                    <sense>O apice obtuzo revirado. Myopa ferruginea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Reconditum.</form>
-                                    <sense> Escondido em huma excavaçaõ do peito. Cancer. Pelos
-                                          segmentos, ou anneis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Quatuor.</form>
-                                    <sense> Quatro segmentos. Scarabæus. Tab. VI. fig. III. h. h.
+                                    <form>ABDOMEN.</form>
+                                    <sense>O abdomen, ou ventre he formado de anneis, e lateralmente
+                                          entre cada annel estaõ huns pequenos buracos, que servem
+                                          para a respiraçaõ do <term lemma="inseto" norm="Inseto"
+                                                >Insecto</term>. O abdomen está pegado ao thorax. A
+                                          parte superior do abdomen chama-se dorso, a inferior chama
+                                          se ventre, ou barriga. Tab. VI. fig. I. g. III. h. h.
                                           h.</sense>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Brevissimum.</form>
+                                          <sense>Muito breve, ou pequeno. Evania.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longissimum.</form>
+                                          <sense> Muito comprido. Julus, Scolopendra. Tab. VII. fig.
+                                                85. 86.</sense>
+                                    </entry>
+                                    <dictScrap>Pela connexaõ, ou uniaõ com o thorax.</dictScrap>
+                                    <entry>
+                                          <form>— Sessile.</form>
+                                          <sense> Sendo o diametro da base igual ao do
+                                                apice.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Petiolatum.</form>
+                                          <sense> Sendo o diametro da base, com que se une ao thorax
+                                                muito menor do que o diametro do apice, ou
+                                                extremidade. Sphex. fig. 57.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Adnatum.</form>
+                                          <sense> Pegado á parte inferior, e posterior do tronco sem
+                                                diminuiçaõ do seu diametro. Aranea. fig. 80.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Impositum.</form>
+                                          <sense> Pegado á parte superior da extremidade do tronco.
+                                                Evania appendigaster.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Depressum.</form>
+                                          <sense> Chato, cujo diametro transversal, excede o
+                                                vertical. Scolopendra. fig. 85.</sense>
+                                    </entry>
+                                    <pb n="75"/>
+                                    <entry>
+                                          <form>— Rotundatum.</form>
+                                          <sense> Sendo o diametro transversal igual ao vertical.
+                                                Julus. fig. 86.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Compressum.</form>
+                                          <sense> Quando o diametro transversal cede ao vertical.
+                                                Gryllus, fig. 33. Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lineare.</form>
+                                          <sense> Em toda a parte da mesma grossura. Ichneumon. fig.
+                                                56.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ovatum.</form>
+                                          <sense> Cujo diametro transversal he menor, que o <term>
+                                                  longitudinal</term>, a base forma hum segmento de
+                                                circulo, e o apice he mais estreito.
+                                                Dytiscus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Orbiculatum.</form>
+                                          <sense> Quando o diametro transversal he igual ao
+                                                  <term>longitudinal</term>. Aranea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cylindricum.</form>
+                                          <sense> Quando o diametro transversal he igual ao
+                                                vertical, e quando a base, e o apice acabaõ em
+                                                segmento de circulo igual. Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Conicum.</form>
+                                          <sense> Quando o diametro transversal he igual ao
+                                                vertical, a base forma hum segmento de circulo, e o
+                                                apice he mais estreito. Apis conica.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Clavatum.</form>
+                                          <sense> Quando o apice he mais grosso, redondo.
+                                                Evania.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Falcatum, petiolatum, compressum, incurvum.</form>
+                                          <sense> Do feitio de foice V. Petiolatum.
+                                                Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Hamosum.</form>
+                                          <sense>O apice obtuzo revirado. Myopa ferruginea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reconditum.</form>
+                                          <sense> Escondido em huma excavaçaõ do peito.
+                                                Cancer.</sense>
+                                          <dictScrap>Pelos segmentos, ou anneis.</dictScrap>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quatuor.</form>
+                                          <sense> Quatro segmentos. Scarabæus. Tab. VI. fig. III. h.
+                                                h. h.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quinque.</form>
+                                          <sense>Cinco. Dytiscus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sex.</form>
+                                          <sense>Seis. Ichneumon. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plura.</form>
+                                          <sense>Muitos. Julus, Scolopendra.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Nulla.</form>
+                                          <sense>Sem segmentos perceptiveis. Aranea:</sense>
+                                    </entry>
+                                    <dictScrap>Pela superficie.</dictScrap>
+                                    <entry>
+                                          <form>— Glabrum.</form>
+                                          <sense>Lizo. Julus.</sense>
+                                    </entry>
+                                    <pb n="76"/>
+                                    <entry>
+                                          <form>— Tomentosum.</form>
+                                          <sense>Com tomento. Syrphus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pilosum, Com pellos.</form>
+                                          <sense>Musca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Fasciculatum.</form>
+                                          <sense> Á maneira de feixe. Buprestis. Tab. VII. fig.
+                                                26.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Canaliculatum.</form>
+                                          <sense>Com excavaçoens, ou regos. Libellula.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Carinatum.</form>
+                                          <sense>Formando como huma quilha. Libellula.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Punctatum.</form>
+                                          <sense>Com muitos pontos. Buprestis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pellucidum.</form>
+                                          <sense> Com os segmentos corneos transparentes. Lampyris,
+                                                Musca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Hirtum.</form>
+                                          <sense>Aspero, e com pellos. Sphinx, Phalaena.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Spinosum.</form>
+                                          <sense>Com espinhos. Gryllus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bicornis.</form>
+                                          <sense> Com duas prominencias cylindricas molles. Aphis.
+                                                fig. 39.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Testatum.</form>
+                                          <sense>Com cute dura calcarea. Astacus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Brachiatum.</form>
+                                          <sense> Com pequenos appendices para baixo á maneira de
+                                                pé. Astacus. fig. 82.</sense>
+                                    </entry>
+                                    <dictScrap>Pela margem, ou borda.</dictScrap>
+                                    <entry>
+                                          <form>— Integrum.</form>
+                                          <sense>Inteiro. Dermestes. fig. 3.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Serratum.</form>
+                                          <sense> Com angulos agudos imbricados, ou dispostos á
+                                                maneira de telha nos telhados. Naucoris.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lobatum.</form>
+                                          <sense> Com prominencias, ou dividido em varias partes, ou
+                                                abas. Pediculus. fig. 76.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plicatum.</form>
+                                          <sense>Com pregas transversaes profundas. Aphis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Foliatum.</form>
+                                          <sense> De ambos os lados sahido para fóra, e formando
+                                                sinuosidades, ou profundas excavaçoẽs. Mantis
+                                                gongylodes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Hastatum.</form>
+                                          <sense> O ventre com espinha aguda na parte anterior.
+                                                Cimex haemorrhoidalis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tentaculatum.</form>
+                                          <sense> Nos lados tem tentaculos molles, que deita fóra, e
+                                                recolhe. Malachius.</sense>
+                                    </entry>
+                                    <pb n="77"/>
+                                    <dictScrap>Pelo ano.</dictScrap>
+                                    <entry>
+                                          <form>— Acuminatum Agudo.</form>
+                                          <sense> Mordella, Trichius.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Stylatum.</form>
+                                          <sense> Acaba em huma prominencia cylindrica. Aphis,
+                                                Sirex. fig. 55.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Aculeatum.</form>
+                                          <sense> Com aculeo rijo pungente, que lança, e recolhe.
+                                                Apis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Dentatum.</form>
+                                          <sense> Com prominencias rijas, agudas, distantes entre
+                                                si. Chrysis, Apis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lamellatum.</form>
+                                          <sense> Com duas, ou quatro pequenas laminas compressas,
+                                                visinhas. Libellula. Aeshna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Foliaceum.</form>
+                                          <sense> Cuberto por sima, com laminas maiores chatas.
+                                                Astacus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Papillosum.</form>
+                                          <sense> Com <term lemma="papila" norm="papilas"
+                                                  senseNumber="3">papillas</term> prominentes para
+                                                teçer. Aranea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Barbatum.</form>
+                                          <sense> Barbado, cercado com lanugem comprida ao redor.
+                                                Zygaena, Sesia.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Obtusum.</form>
+                                          <sense>Obtuzo. Musca.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Quinque.</form>
-                                    <sense>Cinco. Dytiscus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Sex.</form>
-                                    <sense>Seis. Ichneumon. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plura.</form>
-                                    <sense>Muitos. Julus, Scolopendra.</sense>
-                              </entry> — Nulla. Sem segmentos perceptiveis. Aranea: Pela superficie. <entry>
-                                    <form>— Glabrum.</form>
-                                    <sense>Lizo. Julus.</sense>
-                              </entry>
-                              <pb n="76"/>
-                              <entry>
-                                    <form>— Tomentosum.</form>
-                                    <sense>Com tomento. Syrphus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Pilosum, Com pellos.</form>
-                                    <sense>Musca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Fasciculatum.</form>
-                                    <sense> Á maneira de feixe. Buprestis. Tab. VII. fig.
-                                          26.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Canaliculatum.</form>
-                                    <sense>Com excavaçoens, ou regos. Libellula.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Carinatum.</form>
-                                    <sense>Formando como huma quilha. Libellula.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Punctatum.</form>
-                                    <sense>Com muitos pontos. Buprestis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Pellucidum.</form>
-                                    <sense> Com os segmentos corneos transparentes. Lampyris,
-                                          Musca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Hirtum.</form>
-                                    <sense>Aspero, e com pellos. Sphinx, Phalaena.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Spinosum.</form>
-                                    <sense>Com espinhos. Gryllus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Bicornis.</form>
-                                    <sense> Com duas prominencias cylindricas molles. Aphis. fig.
-                                          39.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Testatum.</form>
-                                    <sense>Com cute dura calcarea. Astacus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Brachiatum.</form>
-                                    <sense> Com pequenos appendices para baixo á maneira de pé.
-                                          Astacus. fig. 82.</sense>
-                              </entry> Pela margem, ou borda. <entry>
-                                    <form>— Integrum.</form>
-                                    <sense>Inteiro. Dermestes. fig. 3.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Serratum.</form>
-                                    <sense> Com angulos agudos imbricados, ou dispostos á maneira de
-                                          telha nos telhados. Naucoris.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lobatum.</form>
-                                    <sense> Com prominencias, ou dividido em varias partes, ou abas.
-                                          Pediculus. fig. 76.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plicatum.</form>
-                                    <sense>Com pregas transversaes profundas. Aphis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Foliatum.</form>
-                                    <sense> De ambos os lados sahido para fóra, e formando
-                                          sinuosidades, ou profundas excavaçoẽs. Mantis
-                                          gongylodes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Hastatum.</form>
-                                    <sense> O ventre com espinha aguda na parte anterior. Cimex
-                                          haemorrhoidalis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tentaculatum.</form>
-                                    <sense> Nos lados tem tentaculos molles, que deita fóra, e
-                                          recolhe. Malachius.</sense>
-                              </entry>
-                              <pb n="77"/> Pelo ano. <entry>
-                                    <form>— Acuminatum Agudo.</form>
-                                    <sense> Mordella, Trichius.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Stylatum.</form>
-                                    <sense> Acaba em huma prominencia cylindrica. Aphis, Sirex. fig.
-                                          55.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Aculeatum.</form>
-                                    <sense> Com aculeo rijo pungente, que lança, e recolhe.
-                                          Apis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Dentatum.</form>
-                                    <sense> Com prominencias rijas, agudas, distantes entre si.
-                                          Chrysis, Apis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lamellatum.</form>
-                                    <sense> Com duas, ou quatro pequenas laminas compressas,
-                                          visinhas. Libellula. Aeshna.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Foliaceum.</form>
-                                    <sense> Cuberto por sima, com laminas maiores chatas.
-                                          Astacus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Papillosum.</form>
-                                    <sense> Com <term lemma="papila" norm="papilas" senseNumber="3"
-                                                >papillas</term> prominentes para teçer.
-                                          Aranea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Barbatum.</form>
-                                    <sense> Barbado, cercado com lanugem comprida ao redor. Zygaena,
-                                          Sesia.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Obtusum.</form>
-                                    <sense>Obtuzo. Musca.</sense>
-                              </entry>
-                              <s>ACULEUS. Aguilhaõ, que termina o abdomen, ou ventre de duas
-                                    valvulas, pelo qual o <term lemma="inseto">insecto</term> lança
-                                    fóra huma seta, ou aguilhaõ rijo, picante, e penetrante.</s>
-                              <s>Serve para defesa, para furar as plantas, e para depor nellas os
-                                    seus ovos, o que succede áquelles <term lemma="inseto"
-                                          norm="insetos" msd="plural">insectos</term>, que tem o
-                                    aguilhaõ sempre sahido.</s> Pela proporçaõ. <entry>
-                                    <form>— Obsoletus.</form>
-                                    <sense> Safado, ou que apenas apparece. Formica. fig.
-                                          61.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Abbreviatus.</form>
-                                    <sense>Muito pequeno. Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Mediocris.</form>
-                                    <sense>Mediano. Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Elongatus.</form>
-                                    <sense>Comprido.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Spiralis.</form>
-                                    <sense> Revirado debaixo do ventre. Cynips. fig. 53.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cylindricus.</form>
-                                    <sense>Redondo, linear, Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Compressus.</form>
-                                    <sense>Comprimido nos lados. Apis. Vespa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Reconditus.</form>
-                                    <sense>Que se recolhe no ventre. Apis, Vespa.</sense>
-                              </entry>
-                              <pb n="78"/>
-                              <entry>
-                                    <form>— Exsertus.</form>
-                                    <sense>Que está sempre sahido. Ichneumon.</sense>
-                              </entry> Pela margem. <entry>
-                                    <form>— Levis Sem cortadura alguma.</form>
-                                    <sense>Ichneumon.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Serratus.</form>
-                                    <sense> Com cortaduras iguaes imbricadas, em forma de dentes.
-                                          Tenthredo, Apis.</sense>
+                                    <form>ACULEUS.</form>
+                                    <sense>Aguilhaõ, que termina o abdomen, ou ventre de duas
+                                          valvulas, pelo qual o <term lemma="inseto">insecto</term>
+                                          lança fóra huma seta, ou aguilhaõ rijo, picante, e
+                                          penetrante. Serve para defesa, para furar as plantas, e
+                                          para depor nellas os seus ovos, o que succede áquelles
+                                                <term lemma="inseto" norm="insetos" msd="plural"
+                                                >insectos</term>, que tem o aguilhaõ sempre
+                                          sahido.</sense>
+                                    <dictScrap>Pela proporçaõ.</dictScrap>
+                                    <entry>
+                                          <form>— Obsoletus.</form>
+                                          <sense> Safado, ou que apenas apparece. Formica. fig.
+                                                61.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Abbreviatus.</form>
+                                          <sense>Muito pequeno. Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Mediocris.</form>
+                                          <sense>Mediano. Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Elongatus.</form>
+                                          <sense>Comprido.</sense>
+                                    </entry>
+                                    <dictScrap>Pela figura.</dictScrap>
+                                    <entry>
+                                          <form>— Spiralis.</form>
+                                          <sense> Revirado debaixo do ventre. Cynips. fig.
+                                                53.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cylindricus.</form>
+                                          <sense>Redondo, linear, Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Compressus.</form>
+                                          <sense>Comprimido nos lados. Apis. Vespa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reconditus.</form>
+                                          <sense>Que se recolhe no ventre. Apis, Vespa.</sense>
+                                    </entry>
+                                    <pb n="78"/>
+                                    <entry>
+                                          <form>— Exsertus.</form>
+                                          <sense>Que está sempre sahido. Ichneumon.</sense>
+                                    </entry>
+                                    <dictScrap>Pela margem.</dictScrap>
+                                    <entry>
+                                          <form>— Levis Sem cortadura alguma.</form>
+                                          <sense>Ichneumon.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Serratus.</form>
+                                          <sense> Com cortaduras iguaes imbricadas, em forma de
+                                                dentes. Tenthredo, Apis.</sense>
+                                    </entry>
                               </entry> ALÆ. As azas para fugir mais velozmente, estaõ pegadas ao
                               thorax. Elytra. Azas superiores crustaceas. Tab. VI. fig. 1. 2. fig.
                               II. l. l. <s>Hemelytra, semicrustaceas <term lemma="membranáceo"
@@ -5552,234 +5737,244 @@
                                           >Membranaceas</term>.</s> Com o Anus Inerme Neuroptera. 4.
                               com o aculeo. Hymenoptera. 5. Azas 2. Halteres em lugar das azas
                               posteriores. Diptera. 6. Aza nenhuma, ou sem Azas, e elytros, Aptera.
-                              7. ALAE Membranaceæ nervosæ. <s>As azas <term lemma="membranáceo"
-                                          norm="membranáceas" msd="feminino plural">
-                                          membranaceas</term> nervosas.</s> Nos Lepidopteros, ou
-                              Glossatos de Fabricio; as variedades das cores existem nas escamas.
-                              fig. I. IV. <pb n="79"/> Pelo numero. <entry>
-                                    <form>— Nullæ.</form>
-                                    <sense> Nenhuma. Cimex, Bombyx, Hippobosca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Duæ.</form>
-                                    <sense>Duas. Coccus, Ephemera.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Quatuor.</form>
-                                    <sense>Quatro. Sphinx, Libellula.</sense>
-                              </entry> Pela proporçaõ. <entry>
-                                    <form>— Rudimento brevi alarum.</form>
-                                    <sense> Somente o principio das azas. Gryllus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Anteriores longiores.</form>
-                                    <sense> As azas primeiras, ou anteriores mais compridas.
-                                          Ephemera. Tab. VII. fig. 47. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Æquales omnes.</form>
-                                    <sense>Todas iguaes. Gryllus, Panorpa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Longissimæ posteriores.</form>
-                                    <sense> As posteriores muito compridas. Coccinela, Panorpa. fig.
-                                          51.</sense>
-                              </entry> Pela figura. <entry>
-                                    <form>— Lineares.</form>
-                                    <sense> Lineares, ou da mesma largura desde a base até ao apice.
-                                          Panorpa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lanceolatæ.</form>
-                                    <sense> Estreitas na ponta. Noctua Verbasci, exoleta.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Rotundatæ.</form>
-                                    <sense>Quasi, que descrevem hum circulo. Papilio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Oblongæ.</form>
-                                    <sense>
-                                          <term lemma="oblongo" msd="feminino plural"
-                                                >Oblongas</term>, ou compridas. Papilio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Deltoideæ.</form>
-                                    <sense> Posteriormente muito obtuzas, e quasi rombas.
-                                          Pyralis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Laciniatæ, fissæ, digitatae.</form>
-                                    <sense> Rachadas, <term lemma="digitado" msd="feminino plural"
-                                                senseNumber="2">digitadas</term>, ou cortadas como
-                                          dedos. Pterophorus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Reversæ.</form>
-                                    <sense> Sendo prominente a margem exterior da aza posterior.
-                                          Bombyx.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Exsertæ.</form>
-                                    <sense>Prominentes de trás dos elytros. Forficula.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tectae.</form>
-                                    <sense>Escondidas debaixo dos elytros.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plicatæ.</form>
-                                    <sense> Apertadas por meio de linhas <term lemma="longitudinal"
-                                                norm="longitudinais" msd="plural">
-                                                longitudinaes</term>. Vespa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Convolutæ.</form>
-                                    <sense>Que cingem apertadamente o corpo. Tinea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Rhomboideæ.</form>
-                                    <sense> Mais compridas do angulo posterior ao apice, que do
-                                          mesmo angulo á base. Papilio. Tab. VI. fig. I.</sense>
-                              </entry>
-                              <pb n="80"/>
-                              <entry>
-                                    <form>— Incumbentes.</form>
-                                    <sense> Quando as azas superiores cobrem as inferiores.
-                                          Noctua.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Patentes.</form>
-                                    <sense>Todas estendidas. Bombyx, Phalæna.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Erectæ.</form>
-                                    <sense>Levantadas, e avisinhadas entre si. Papilio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Deflexae.</form>
-                                    <sense> Com a margem exterior virada para baixo. Noctua.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Falcatæ.</form>
-                                    <sense> Estreitas na ponta, e arqueadas. Bombyx Atlas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Striatæ.</form>
-                                    <sense> Com veias prominentes <term lemma="longitudinal"
-                                                norm="longitudinais" msd="plural">
-                                                longitudinaes</term> distinctas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Reticulatæ.</form>
-                                    <sense> Com veias <term lemma="longitudinal"
-                                                norm="longitudinais" msd="plural">
-                                                longitudinaes</term>, e transversaes, que se unem,
-                                          ou communicaõ entre si. Hemerobius. fig. 50.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Clavatae.</form>
-                                    <sense>Engrossadas para a ponta. Panorpa.</sense>
-                              </entry> Pela superficie. <entry>
-                                    <form>— Squamatæ.</form>
-                                    <sense> Cubertas com pequenas laminas levantadas, córadas;
-                                          Lepidoptera, aut Glossata de Fabricio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Pilosæ.</form>
-                                    <sense> Com algumas sedas rijas distantes entre si. Musca,
-                                          Tipula.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Nudae.</form>
-                                    <sense>Contrarias ás antecedentes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Fenestratae.</form>
-                                    <sense> Saõ com laminas córadas, ou escamas, mas com malhas nûas
-                                          transparentes. Bombyx Atlas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Concolores.</form>
-                                    <sense> Da mesma côr na pagina, ou superficie superior, e
-                                          inferior. Papilio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ocellatæ.</form>
-                                    <sense>Com malhas de varias cores dispostas á maneira de
-                                          circulo. Papilio. fig. I. s. s.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Pupillatæ.</form>
-                                    <sense>São as mesmas <term lemma="ocelado" msd="feminino plural"
-                                                > ocelladas</term>, ou com malhas á maneira de olho
-                                          com hum ponto no meio da dita malha. Papilio.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Cæcæ.</form>
-                                    <sense>Oppostas ás antecedentes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Fasciatæ.</form>
-                                    <sense> Com linhas largas transversaes córadas. fig. I. t. u.
-                                          u.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Strigatæ.</form>
-                                    <sense> Com linhas estreitas transversaes córadas.
-                                          Phalaena.</sense>
-                              </entry>
-                              <pb n="81"/>
-                              <entry>
-                                    <form>— Tessellatæ.</form>
-                                    <sense> Com malhas quasi redondas coradas. Tipula hirta.</sense>
-                              </entry> Pela margem. <entry>
-                                    <form>— Crenatæ.</form>
-                                    <sense> Com cortaduras, ou incizoens muito pequenas. Sphinx,
-                                          fig. 44. Bombyx.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Caudatæ.</form>
-                                    <sense> A margem posterior prolongada, ou extensa, e adelgaçada.
-                                          Papilio, Truxalis</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Emarginatæ.</form>
-                                    <sense> Com excavaçoens de segmento de circulo. Pyralis
-                                          Emargana. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Erosæ.</form>
-                                    <sense> Com varias excavaçoens, ou sinuosidades despedaçadas.
-                                          Noctua Libatrix.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Ciliatæ.</form>
-                                    <sense> Com pellos parallelos na margem. Phriganea, fig. 49.
-                                          Musca.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Angulatæ.</form>
-                                    <sense> Com varias prominencias horizontaes angulares.
-                                          Sphinx.</sense>
-                              </entry> Pelo apice. <entry>
-                                    <form>— Obtusæ.</form>
-                                    <sense>Obtusas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Truncatæ.</form>
-                                    <sense>Como cortadas. Phryganea.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Acutæ.</form>
-                                    <sense>Agudas. Hyppobosca. fig. 72.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Acuminatæ.</form>
-                                    <sense> Alguma cousa agudas no apice. Bombyx atlas.</sense>
-                              </entry> ANASTOMOSIS. Quando os vasos, ou fibras se unem á maneira de
-                              rede. Cicada plebeia. <s>ANTENNÆ. As antennas saõ huns <term
-                                          lemma="filamento" msd="plural" senseNumber="2">
+                              7. <entry>ALAE Membranaceæ nervosæ. <s>As azas <term
+                                                lemma="membranáceo" norm="membranáceas"
+                                                msd="feminino plural"> membranaceas</term>
+                                          nervosas.</s> Nos Lepidopteros, ou Glossatos de Fabricio;
+                                    as variedades das cores existem nas escamas. fig. I. IV. <pb
+                                          n="79"/> Pelo numero. <entry>
+                                          <form>— Nullæ.</form>
+                                          <sense> Nenhuma. Cimex, Bombyx, Hippobosca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Duæ.</form>
+                                          <sense>Duas. Coccus, Ephemera.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quatuor.</form>
+                                          <sense>Quatro. Sphinx, Libellula.</sense>
+                                    </entry> Pela proporçaõ. <entry>
+                                          <form>— Rudimento brevi alarum.</form>
+                                          <sense> Somente o principio das azas. Gryllus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Anteriores longiores.</form>
+                                          <sense> As azas primeiras, ou anteriores mais compridas.
+                                                Ephemera. Tab. VII. fig. 47. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Æquales omnes.</form>
+                                          <sense>Todas iguaes. Gryllus, Panorpa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longissimæ posteriores.</form>
+                                          <sense> As posteriores muito compridas. Coccinela,
+                                                Panorpa. fig. 51.</sense>
+                                    </entry> Pela figura. <entry>
+                                          <form>— Lineares.</form>
+                                          <sense> Lineares, ou da mesma largura desde a base até ao
+                                                apice. Panorpa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lanceolatæ.</form>
+                                          <sense> Estreitas na ponta. Noctua Verbasci,
+                                                exoleta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rotundatæ.</form>
+                                          <sense>Quasi, que descrevem hum circulo. Papilio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Oblongæ.</form>
+                                          <sense>
+                                                <term lemma="oblongo" msd="feminino plural"
+                                                  >Oblongas</term>, ou compridas. Papilio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Deltoideæ.</form>
+                                          <sense> Posteriormente muito obtuzas, e quasi rombas.
+                                                Pyralis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Laciniatæ, fissæ, digitatae.</form>
+                                          <sense> Rachadas, <term lemma="digitado"
+                                                  msd="feminino plural" senseNumber="2"
+                                                  >digitadas</term>, ou cortadas como dedos.
+                                                Pterophorus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reversæ.</form>
+                                          <sense> Sendo prominente a margem exterior da aza
+                                                posterior. Bombyx.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Exsertæ.</form>
+                                          <sense>Prominentes de trás dos elytros. Forficula.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tectae.</form>
+                                          <sense>Escondidas debaixo dos elytros.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plicatæ.</form>
+                                          <sense> Apertadas por meio de linhas <term
+                                                  lemma="longitudinal" norm="longitudinais"
+                                                  msd="plural"> longitudinaes</term>. Vespa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Convolutæ.</form>
+                                          <sense>Que cingem apertadamente o corpo. Tinea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rhomboideæ.</form>
+                                          <sense> Mais compridas do angulo posterior ao apice, que
+                                                do mesmo angulo á base. Papilio. Tab. VI. fig.
+                                                I.</sense>
+                                    </entry>
+                                    <pb n="80"/>
+                                    <entry>
+                                          <form>— Incumbentes.</form>
+                                          <sense> Quando as azas superiores cobrem as inferiores.
+                                                Noctua.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Patentes.</form>
+                                          <sense>Todas estendidas. Bombyx, Phalæna.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Erectæ.</form>
+                                          <sense>Levantadas, e avisinhadas entre si.
+                                                Papilio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Deflexae.</form>
+                                          <sense> Com a margem exterior virada para baixo.
+                                                Noctua.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Falcatæ.</form>
+                                          <sense> Estreitas na ponta, e arqueadas. Bombyx
+                                                Atlas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Striatæ.</form>
+                                          <sense> Com veias prominentes <term lemma="longitudinal"
+                                                  norm="longitudinais" msd="plural">
+                                                  longitudinaes</term> distinctas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reticulatæ.</form>
+                                          <sense> Com veias <term lemma="longitudinal"
+                                                  norm="longitudinais" msd="plural">
+                                                  longitudinaes</term>, e transversaes, que se unem,
+                                                ou communicaõ entre si. Hemerobius. fig. 50.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Clavatae.</form>
+                                          <sense>Engrossadas para a ponta. Panorpa.</sense>
+                                    </entry> Pela superficie. <entry>
+                                          <form>— Squamatæ.</form>
+                                          <sense> Cubertas com pequenas laminas levantadas, córadas;
+                                                Lepidoptera, aut Glossata de Fabricio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pilosæ.</form>
+                                          <sense> Com algumas sedas rijas distantes entre si. Musca,
+                                                Tipula.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Nudae.</form>
+                                          <sense>Contrarias ás antecedentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Fenestratae.</form>
+                                          <sense> Saõ com laminas córadas, ou escamas, mas com
+                                                malhas nûas transparentes. Bombyx Atlas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Concolores.</form>
+                                          <sense> Da mesma côr na pagina, ou superficie superior, e
+                                                inferior. Papilio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ocellatæ.</form>
+                                          <sense>Com malhas de varias cores dispostas á maneira de
+                                                circulo. Papilio. fig. I. s. s.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Pupillatæ.</form>
+                                          <sense>São as mesmas <term lemma="ocelado"
+                                                  msd="feminino plural"> ocelladas</term>, ou com
+                                                malhas á maneira de olho com hum ponto no meio da
+                                                dita malha. Papilio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Cæcæ.</form>
+                                          <sense>Oppostas ás antecedentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Fasciatæ.</form>
+                                          <sense> Com linhas largas transversaes córadas. fig. I. t.
+                                                u. u.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Strigatæ.</form>
+                                          <sense> Com linhas estreitas transversaes córadas.
+                                                Phalaena.</sense>
+                                    </entry>
+                                    <pb n="81"/>
+                                    <entry>
+                                          <form>— Tessellatæ.</form>
+                                          <sense> Com malhas quasi redondas coradas. Tipula
+                                                hirta.</sense>
+                                    </entry> Pela margem. <entry>
+                                          <form>— Crenatæ.</form>
+                                          <sense> Com cortaduras, ou incizoens muito pequenas.
+                                                Sphinx, fig. 44. Bombyx.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Caudatæ.</form>
+                                          <sense> A margem posterior prolongada, ou extensa, e
+                                                adelgaçada. Papilio, Truxalis</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Emarginatæ.</form>
+                                          <sense> Com excavaçoens de segmento de circulo. Pyralis
+                                                Emargana. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Erosæ.</form>
+                                          <sense> Com varias excavaçoens, ou sinuosidades
+                                                despedaçadas. Noctua Libatrix.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ciliatæ.</form>
+                                          <sense> Com pellos parallelos na margem. Phriganea, fig.
+                                                49. Musca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Angulatæ.</form>
+                                          <sense> Com varias prominencias horizontaes angulares.
+                                                Sphinx.</sense>
+                                    </entry> Pelo apice. <entry>
+                                          <form>— Obtusæ.</form>
+                                          <sense>Obtusas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Truncatæ.</form>
+                                          <sense>Como cortadas. Phryganea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acutæ.</form>
+                                          <sense>Agudas. Hyppobosca. fig. 72.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acuminatæ.</form>
+                                          <sense> Alguma cousa agudas no apice. Bombyx
+                                                atlas.</sense>
+                                    </entry></entry> ANASTOMOSIS. Quando os vasos, ou fibras se unem
+                              á maneira de rede. Cicada plebeia. <s>ANTENNÆ. As antennas saõ huns
+                                          <term lemma="filamento" msd="plural" senseNumber="2">
                                           filamentos</term> articulados moveis, que servem de
                                     sensorio, e tem differentes nomes.</s> Tab. VI. fig. II. III. c.
                               c. c.c. Pelo numero. <entry>
