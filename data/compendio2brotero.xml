@@ -30,11 +30,11 @@
                         <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
                 <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
                     digital da Universidade de Coimbra. O URL de cada imagem segue o padrão:
-                    <code>https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
+                        <code>https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
                     onde <code>XXXX</code> é um número sequencial e <code>PAGE</code> é o número da
                     página, seja em romanos, seja em arábicos. Neste arquivo transcrito, cada
                     elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
-                    <att>facs</att> com o endereço URL do arquivo da imagem correspondente à
+                        <att>facs</att> com o endereço URL do arquivo da imagem correspondente à
                     página em questão.</p>
             </editorialDecl>
             <projectDesc>
@@ -133,11 +133,94 @@
                         organos sexuaes saõ de huma forma singularizada, apparentemente confundidos,
                         e occultos á vista, precizando se de microscopio para se poderem reconhecer
                         e destinguir entre si, as plantas que assim florecem <pb n="6"
-                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0010_6_t24-C-R0120.jpg"
-                        />saõ classadas na Cryptogamia ou classe 24ª. e ultima
-                        do Systema. Eu fallarei depois mais circumstanciadamente de todas estas classes; por ora estas ideas
-                        geraes seraõ sufficientes para facilitar a intelligencia
-                        da Clave seguinte.</p>
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0010_6_t24-C-R0120.jpg"
+                        />saõ classadas na Cryptogamia ou classe 24ª. e ultima do Systema. Eu
+                        fallarei depois mais circumstanciadamente de todas estas classes; por ora
+                        estas ideas geraes seraõ sufficientes para facilitar a intelligencia da
+                        Clave seguinte.</p>
+                    <pb n="7"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0011_7_t24-C-R0120.jpg"/>
+                    <list>
+                        <head>CLAVE DO SISTEMA SEXUAL</head>
+                        <item>Florecencia <list>
+                                <item>bem visivel; ou organos sexuaes bem apparentes. <list>
+                                        <item>Estames com pistillo em todas as flores da mesma
+                                            especie. <list>
+                                                <item>Estames desapegados. entre si, e do pistillo. <list>
+                                                  <item>de comprimento indeterminado.<list>
+                                                  <item>I. Monandria</item>
+                                                  <item>II. Diandria</item>
+                                                  <item>III. Triandria</item>
+                                                  <item>IV. Tetrandria</item>
+                                                  <item>V. Pentandria</item>
+                                                  <item>VI. Hexandria</item>
+                                                  <item>VII. Heptandria</item>
+                                                  <item>VIII. Octandria</item>
+                                                  <item>IX. Enneandria</item>
+                                                  <item>X. Decandria</item>
+                                                  <item>XI. Dodecandria</item>
+                                                  <item>XII. Icosandria</item>
+                                                  <item>XIII. Polyandria</item>
+                                                  </list></item>
+                                                  <item>dois sempre mais curtos <list>
+                                                  <item>e dois mais altos ... XIV. Didynamia</item>
+                                                  <item>e quatro mais altos ... XV.
+                                                  Tetradynamia</item>
+                                                  </list></item>
+                                                  </list></item>
+                                                <item>apegados<list>
+                                                  <item>entre si<list>
+                                                  <item>pelos filetes<list>
+                                                  <item>em hum corpo ... XVI. Monadelphia</item>
+                                                  <item>em dois corpos ... XVII. Diadelphia</item>
+                                                  <item>em muitos corpos ... XVIII.
+                                                  Polyadelphia</item>
+                                                  </list></item>
+                                                  <item>pelas antheras ... XIX. Syngenesia</item>
+                                                  </list></item>
+                                                  <item>ao pistillo. ... XX. Gynandria</item>
+                                                  </list>
+                                                </item>
+                                            </list></item>
+                                        <item>Estames em humas flores, e o pistillo em outras na
+                                            mesma especie.<list>
+                                                <item>e no mesmo individuo ... XXI. Monoicia</item>
+                                                <item>mas em dois individuos. ... XXII.
+                                                  Dioicia</item>
+                                                <item>e alem dellas flores hermaphroditas no mesmo
+                                                  ou diverso individuo. ... XXIII. Polygamia</item>
+                                            </list></item>
+                                    </list></item>
+                                <item>Clandestina ... XXIV. Cryptogamia</item>
+                            </list>
+                        </item>
+                    </list>
+                    <pb n="8"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0012_8_t24-C-R0120.jpg"/>
+                    <p><s>As Ordens das treze primeiras classes, em que ha sempre flores
+                            hermaphroditas, saõ fundadas no numero de pistillos, que se contaõ
+                            sempre pelos estyletes considerados na sua base, ou pelos estigmas, no
+                            cazo que naõ hajaõ estyletes<note>Estas circumstancias tem por objecto
+                                evitar as equivocaçoens, que podiaõ haver quanto aos germes e
+                                estygmas estyleteados; porquanto algumas vezes hum so germe succede
+                                ter dois, tres, quatro, cinco ou mais estygmas rentes e este mesmo
+                                numero de estygmas, succede taõbem achar se às vezes na extremidade
+                                de hum so estylete.</note>.</s> A primeira Ordem das dictas classes
+                        he sempre denominada Monogynia (monogynia) e contem as plantas que daõ
+                        flores com hum so pistillo: a Digynia (digynia), que se segue depois della,
+                        contem flores de dois pistillos; a Trigynia (trigynia) flores de tres
+                        pistillos; a Tetragynia (tetragynia) de quatro pistillos; a Pentagynia
+                        (pentagynia) de cinco; a Hexagynia (hexagynia) de seis; a Heptagynia
+                        (heptagynia) de sette; a Decagynia (decagynia) de dez; a Dodecagynia
+                        (dodecagynia) de doze; e a Polygynia (polygynia) de muitos, isto he, hum
+                        maior numero de pistillos do que tem a penultima Ordem da mesma classe.</p>
+                    <p>Das duas Ordens da Classe Didynamia a primeira he chamada Gymnospermia
+                        (gymospermia) por conter plantas que daõ sementes sem pericarpo, e a segunda
+                        Angiospermia (angiospermia) em razaõ das sementes serem cobertas de hum
+                        pericarpo. Na Tetradynamia ha taõbem duas Ordens, denominadas as Siliculosas
+                        (siliculosae) ou plantas cujo pericarpo he uma Silicula, e as Siliquosas
+                        (Siliquosae) ou plantas que tem huma siliqua por pericarpo.</p>
+                    <p>Nas Classes seguintes, taes como a Monadelphia,</p>
                 </div>
             </div>
         </body>
