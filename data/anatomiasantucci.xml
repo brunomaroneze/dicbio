@@ -1450,10 +1450,13 @@
                                           furado o Peritôneo na parte anterior, para dar passagem
                                           aos vasos umbilicaes, e tem huns nervosinhos derivados
                                           daquelles dos <term lemma="músculo" norm="músculos"
-                                                msd="plural"> musculos</term> do abdomen.</s> Tambem
-                                    tem arterias derivadas das phrenicas, e das mammarias, e das
-                                    epigastricas, as suas veas tornaõ as phrenicas, e
-                                    epigastricas.</p>
+                                                msd="plural"> musculos</term> do abdomen.</s>
+                                    <s>Tambem tem arterias derivadas das <term lemma="frênico"
+                                                norm="frênicas" msd="feminino plural"
+                                                >phrenicas</term>, e das mammarias, e das
+                                          epigastricas, as suas veas tornaõ as <term lemma="frênico"
+                                                norm="frênicas" msd="feminino plural"
+                                                >phrenicas</term>, e epigastricas.</s></p>
                               <note>Uso do Perytôneo.</note>
                               <p>7 Serve o Peritôneo para conter as entranhas do abdomen, como se vê
                                     na figura primeira da estampa 2. e daqui nasce, que rompendo-se,
@@ -3572,9 +3575,11 @@
                               </note>
                               <p>21 <s>Note-se, que os vasos do <term lemma="diafragma"
                                                 norm="Diafragma">Diaphragma</term> alguns chamaõ
-                                          vasos Phrenicos, por causa do grande consentimento, que
-                                          tem os ditos vasos com a cabeça; e a observaçaõ declara,
-                                          que inflammado o <term lemma="diafragma" norm="Diafragma">
+                                          vasos <term lemma="frênico" norm="Frênicos"
+                                                msd="masculino plural">Phrenicos</term>, por causa
+                                          do grande consentimento, que tem os ditos vasos com a
+                                          cabeça; e a observaçaõ declara, que inflammado o <term
+                                                lemma="diafragma" norm="Diafragma">
                                                 Diaphragma</term>, logo os doentes cahem em
                                           furiosos, e continuos delirios.</s></p>
                               <p>22 Este musculo serve tambem, além do que temos atèqui explicado,
