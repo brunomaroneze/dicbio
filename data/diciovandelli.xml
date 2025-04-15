@@ -240,11 +240,11 @@
                                     <form>ACULEUS.</form>
                                     <sense>Saõ os pellos unidos entre si formando espinhos.</sense>
                                     <entry>
-                                          <form>_ Explanatus.</form>
+                                          <form>— Explanatus.</form>
                                           <sense>Aplainado, ou chato.</sense>
                                     </entry>
                                     <entry>
-                                          <form>_ Clavatus.</form>
+                                          <form>— Clavatus.</form>
                                           <sense>Engrossado na extremidade. Hystrix
                                                 macroura.</sense>
                                     </entry>
@@ -279,11 +279,11 @@
                                     <form>AURIS.</form>
                                     <sense>Orelha.</sense>
                                     <entry>
-                                          <form>_ Comosa.</form>
+                                          <form>— Comosa.</form>
                                           <sense>Com pellos compridos.</sense>
                                     </entry>
                                     <entry>
-                                          <form>_ Patula.</form>
+                                          <form>— Patula.</form>
                                           <sense>Aberta.</sense>
                                     </entry>
                               </entry>
@@ -296,7 +296,7 @@
                                     <sense>He huma prominencia, que se observa logo abaixo da bocca.
                                           Homo.</sense>
                                     <entry>
-                                          <form>_ Fastigiata.</form>
+                                          <form>— Fastigiata.</form>
                                           <sense>Com hum contorno agudo, ou contornada com
                                                 pellos.</sense>
                                     </entry>
@@ -317,15 +317,15 @@
                                     <form>BUCCA.</form>
                                     <sense>Bochecha.</sense>
                                     <entry>
-                                          <form>_ Nuda.</form>
+                                          <form>— Nuda.</form>
                                           <sense>Sem barba. Simia Maimon.</sense>
                                     </entry>
                                     <entry>
-                                          <form>_ Barbata.</form>
+                                          <form>— Barbata.</form>
                                           <sense>Com barba.</sense>
                                     </entry>
                                     <entry>
-                                          <form>_ Subbarbata.</form>
+                                          <form>— Subbarbata.</form>
                                           <sense>Com pouca barba.</sense>
                                     </entry>
                               </entry>
@@ -7222,8 +7222,8 @@
                                           <sense>Com lanugem. Melolontha.</sense>
                                     </entry>
                                     <entry>
-                                          <form>— Pilosa com pellos compridos, mais rijos.</form>
-                                          <sense>Phalaena.</sense>
+                                          <form>— Pilosa</form>
+                                          <sense>com pellos compridos, mais rijos. Phalaena.</sense>
                                     </entry>
                                     <entry>
                                           <form>— Hirta.</form>
@@ -8481,8 +8481,8 @@
                                     </entry>
                                     <entry>
                                           <form>— Geniculata.</form>
-                                          <sense> Nodosa. Conops. fig. 68. Pela cabeça, ao
-                                                capitulo.</sense>
+                                          <sense>Nodosa. Conops. fig. 68.</sense>
+                                          <dictScrap>Pela cabeça, ao capitulo.</dictScrap>
                                     </entry>
                                     <entry>
                                           <form>— Labiis integris.</form>
@@ -9386,7 +9386,8 @@
                   <pb n="118"/>
                   <div type="parte">
                         <head>CLASSE VI. VERMES.</head>
-                        <div type="letra"><head>A.</head>
+                        <div type="letra">
+                              <head>A.</head>
                               <entry>
                                     <form>ABRUPTA columella.</form>
                                     <sense>Buccinum spiratum. V. columella.</sense>
@@ -10044,62 +10045,65 @@
                                                 lævigatum.</sense>
                                     </entry>
                               </entry>
-                              <form>APEX.</form>
-                              <sense>Apice, ou cume da espira da concha.</sense>
                               <entry>
-                                    <form>— Cariosus.</form>
-                                    <sense> Como carunchoso, ou carcomido. Nerita
-                                          littoralis.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Decollattus.</form>
-                                    <sense> Cortado, ou como degollado. Helix. fig. 3.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Exquisitus.</form>
-                                    <sense>Inteiro, ou perfeito. Nerita lacustris.</sense>
-                              </entry>
-                              <pb n="126"/>
-                              <entry>
-                                    <form>— Octo-dentatus.</form>
-                                    <sense>Com oito dentes. Anomia farcta.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Perforatus.</form>
-                                    <sense>Furado.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Papillosus.</form>
-                                    <sense> Opposto ao agudo, sendo o apice semigloboso. Murex
-                                          granum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plicatus.</form>
-                                    <sense>Com dobras, ou pregas. Anomia lacunosa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Quadridentatus.</form>
-                                    <sense>Com quatro dentes. Anomia lacunosa. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Recurvus.</form>
-                                    <sense>Revirado.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Rotundatus.</form>
-                                    <sense>Arredondado.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subspirallis.</form>
-                                    <sense>Quasi spiral.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subumbillicatus.</form>
-                                    <sense> Quasi com embigo, ou excavaçaõ. Bulla lignaria.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Umbilicatus.</form>
-                                    <sense>Com embigo. Bulla hydatidis.</sense>
+                                    <form>APEX.</form>
+                                    <sense>Apice, ou cume da espira da concha.</sense>
+                                    <entry>
+                                          <form>— Cariosus.</form>
+                                          <sense> Como carunchoso, ou carcomido. Nerita
+                                                littoralis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Decollattus.</form>
+                                          <sense> Cortado, ou como degollado. Helix. fig. 3.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Exquisitus.</form>
+                                          <sense>Inteiro, ou perfeito. Nerita lacustris.</sense>
+                                    </entry>
+                                    <pb n="126"/>
+                                    <entry>
+                                          <form>— Octo-dentatus.</form>
+                                          <sense>Com oito dentes. Anomia farcta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Perforatus.</form>
+                                          <sense>Furado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Papillosus.</form>
+                                          <sense> Opposto ao agudo, sendo o apice semigloboso. Murex
+                                                granum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plicatus.</form>
+                                          <sense>Com dobras, ou pregas. Anomia lacunosa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quadridentatus.</form>
+                                          <sense>Com quatro dentes. Anomia lacunosa. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Recurvus.</form>
+                                          <sense>Revirado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rotundatus.</form>
+                                          <sense>Arredondado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subspirallis.</form>
+                                          <sense>Quasi spiral.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subumbillicatus.</form>
+                                          <sense> Quasi com embigo, ou excavaçaõ. Bulla
+                                                lignaria.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Umbilicatus.</form>
+                                          <sense>Com embigo. Bulla hydatidis.</sense>
+                                    </entry>
                               </entry>
                               <entry>
                                     <form>APPENDIX.</form>
@@ -10137,421 +10141,597 @@
                                     </entry>
                                     <form>— Torosus.</form>
                                     <sense>Grosso.</sense>
-                              </entry> ASPER. Quando a superficie da concha fica desagradavel ao
-                              nosso tacto, por causa das suas prominencias. <pb n="127"/> AURICULA.
-                              Nas univalves he a extensaõ do labio exterior; nas bivalves saõ humas
-                              extensões planas angulares do cardo, lateraes as Nadegas. Ostrea. Tab.
-                              XIII. fig. 4. c. <entry>
-                                    <form>— Ciliato-spinosa intus.</form>
-                                    <sense> Internamente com espinhas parallelas á maneira de
-                                          pestanas. Pectines.</sense>
-                              </entry> — Obliterata. Que apenas apparece, ou quasi apagada.
-                                    <entry>AURITA. Nas bivalves he quando tem <term lemma="aurícula"
-                                          senseNumber="3">auricula</term>. Ostrea Pectines. V.
-                                    Auricula.</entry></div>
-                        <div type="letra"><head>B.</head> BACILLIUS. Diz-se das pontas grossas, e
-                              compridas, que estaõ em alguns ouriços do mar. Echinus. <s>BASIS. Nas
-                                    conchas univalves conforme M. D, Argenville he a extremidade
-                                    opposta á parte mais elevada da concha, e segundo Linneo he <w
-                                          norm="aquela">a quella</w> parte do ventre visinha á
-                                    abertura nas univalves; e nas Bivalves he a regiaõ junta ao
-                                    cardo.</s> nas univalves ou hé <entry>
-                                    <form>— Emarginata.</form>
-                                    <sense> Com excavaçaõ na margem.</sense>
                               </entry>
                               <entry>
-                                    <form>— Subemarginata.</form>
-                                    <sense>Com muito pequena excavaçaõ. Conus betulinus. </sense>
+                                    <form>ASPER.</form>
+                                    <sense>Quando a superficie da concha fica desagradavel ao nosso
+                                          tacto, por causa das suas prominencias.</sense>
+                              </entry>
+                              <pb n="127"/>
+                              <entry>
+                                    <form>AURICULA.</form>
+                                    <sense>Nas univalves he a extensaõ do labio exterior; nas
+                                          bivalves saõ humas extensões planas angulares do cardo,
+                                          lateraes as Nadegas. Ostrea. Tab. XIII. fig. 4. c.</sense>
+                                    <entry>
+                                          <form>— Ciliato-spinosa intus.</form>
+                                          <sense> Internamente com espinhas parallelas á maneira de
+                                                pestanas. Pectines.</sense>
+                                    </entry>
+                                    <form>— Obliterata.</form>
+                                    <sense>Que apenas apparece, ou quasi apagada.</sense>
                               </entry>
                               <entry>
-                                    <form>— Striata.</form>
-                                    <sense>V. Striatus.</sense>
+                                    <form>AURITA.</form>
+                                    <sense>Nas bivalves he quando tem <term lemma="aurícula"
+                                                senseNumber="3">auricula</term>. Ostrea Pectines. V.
+                                          Auricula.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra">
+                              <head>B.</head>
+                              <entry>
+                                    <form>BACILLIUS.</form>
+                                    <sense>Diz-se das pontas grossas, e compridas, que estaõ em
+                                          alguns ouriços do mar. Echinus.</sense>
                               </entry>
                               <entry>
-                                    <form>— Transversa.</form>
-                                    <sense>Atravessada.</sense>
-                              </entry> — Bifidus. Extremidade da concha, que se divide em duas.
-                              BIVALVIS. Diz-se da concha, que consta de duas valvas.
-                                    <entry>BRACHIUM. Da-se este nome de braço, a huma especie de
-                                          <term lemma="cirro" msd="plural">cirros</term> grossos, e
-                                    compridos, com que a Sepia, ou siba abraça, ou apanha alguns
-                                    animaes, e por meio dos <term lemma="cotilédone"
-                                          norm="cotilédones" msd="plural">cotyledones</term> postos
-                                    na parte interior dos mesmos <term lemma="cirro" msd="plural"
-                                          >cirros</term>, chupa o humor dos animaes.</entry>
-                              BRACHIATA. Com braços. <s>BYSSUS. He huma especie de <term
-                                          lemma="filamento" msd="plural" senseNumber="2"
-                                          >filamentos</term>, que <pb n="128"/>sahem dos Molluscos,
-                                    com que as conchas se pegaõ humas ás outras, ou aos rochedos.
-                                    Pinna, Mytilus.</s></div>
-                        <div type="letra"><head>C.</head> CALLUM. Callo, ou callosidade em lugar de
-                              dentes. <entry>
-                                    <form>— Gibbum.</form>
-                                    <sense>Convexo. Chama. fig. 12.</sense>
+                                    <form>BASIS.</form>
+                                    <sense>Nas conchas univalves conforme M. D, Argenville he a
+                                          extremidade opposta á parte mais elevada da concha, e
+                                          segundo Linneo he <w norm="aquela">a quella</w> parte do
+                                          ventre visinha á abertura nas univalves; e nas Bivalves he
+                                          a regiaõ junta ao cardo. nas univalves ou hé</sense>
+                                    <entry>
+                                          <form>— Emarginata.</form>
+                                          <sense> Com excavaçaõ na margem.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subemarginata.</form>
+                                          <sense>Com muito pequena excavaçaõ. Conus betulinus.
+                                          </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Striata.</form>
+                                          <sense>V. Striatus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Transversa.</form>
+                                          <sense>Atravessada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bifidus.</form>
+                                          <sense>Extremidade da concha, que se divide em
+                                                duas.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Lineare.</form>
-                                    <sense> Da mesma largura em todo o seu comprimento. Anomia, fig.
-                                          13. b.</sense>
-                              </entry> — Sessile. Que está pegado, immediatamento á concha sem
-                              intermedio. Chama arcinella. CANALIS. He a columela, ou eixo da concha
-                              sahido para fora, excavado, formando hum canal; ou a continuaçaõ da
-                              abertura na cauda. Strombus. Tab. XII. fig. 15. c. fig. 17. b. fig.
-                              26. c. d. <entry>
-                                    <form>— Integer.</form>
-                                    <sense>Inteiro.</sense>
+                                    <form>BIVALVIS.</form>
+                                    <sense>Diz-se da concha, que consta de duas valvas.</sense>
                               </entry>
                               <entry>
-                                    <form>— Rectus seu subadscendens.</form>
-                                    <sense> Direito, ou que sobe algum tanto direitamente. Murex.
-                                          fig. 15. 26.</sense>
-                              </entry> — Sinister. Virado para a parte esquerda. Strombus. fig. 29.
-                              70. CANALICULUS. Saõ certos regos curvos em forma semicylindrica, que
-                              se observaõ em algumas conchas. Ostrea. <s>CANCELLI. He huma rede
-                                    grossa sobre a <term senseNumber="2">epiderme</term>, ou
-                                    periosteo de certas conchas.</s>
-                              <s>CARDO. He a parte mais grossa, onde se unem as valvas das bivalves,
-                                    que ordinariamente tem <w norm="vários">vaios</w> dentes tanto
-                                    na valva superior como na <w norm="inferior"> inferrior</w>, que
-                                    se introduzem reciprocamente nas cavidades de huma, e outra
-                                    valva.</s> Tab. XIII. fig. 4. até. 12. <entry>
-                                    <form>— Arcuatus.</form>
-                                    <sense> Arqueado. Arca nucleus.</sense>
+                                    <form>BRACHIUM.</form>
+                                    <sense>Da-se este nome de braço, a huma especie de <term
+                                                lemma="cirro" msd="plural">cirros</term> grossos, e
+                                          compridos, com que a Sepia, ou siba abraça, ou apanha
+                                          alguns animaes, e por meio dos <term lemma="cotilédone"
+                                                norm="cotilédones" msd="plural">cotyledones</term>
+                                          postos na parte interior dos mesmos <term lemma="cirro"
+                                                msd="plural">cirros</term>, chupa o humor dos
+                                          animaes.</sense>
                               </entry>
                               <entry>
-                                    <form>— Bidentatus.</form>
-                                    <sense>Com dous dentes.</sense>
-                              </entry> — Ciliaris. Os dentes parallelos e dispostos á maneira dos
-                              pellos das pestanas. Arca pella. <pb n="129"/>
-                              <entry>
-                                    <form>— Costa cardinis.</form>
-                                    <sense> He huma linha levantada á maneira de costela, que se
-                                          extende internamente desde o cardo até a margem
-                                          superior.</sense>
+                                    <form>BRACHIATA.</form>
+                                    <sense>Com braços.</sense>
                               </entry>
                               <entry>
-                                    <form>— Depressus.</form>
-                                    <sense> Com hum dente plano, que se extende verso a parte
-                                          anterior do Cardo.</sense>
+                                    <form>BYSSUS.</form>
+                                    <sense>He huma especie de <term lemma="filamento" msd="plural"
+                                                senseNumber="2">filamentos</term>, que <pb n="128"
+                                          />sahem dos Molluscos, com que as conchas se pegaõ humas
+                                          ás outras, ou aos rochedos. Pinna, Mytilus.</sense>
+                              </entry>
+                        </div>
+                        <div type="letra"><head>C.</head>
+                              <entry>
+                                    <form>CALLUM.</form>
+                                    <sense>Callo, ou callosidade em lugar de dentes.</sense>
+                                    <entry>
+                                          <form>— Gibbum.</form>
+                                          <sense>Convexo. Chama. fig. 12.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lineare.</form>
+                                          <sense> Da mesma largura em todo o seu comprimento.
+                                                Anomia, fig. 13. b.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sessile. </form>
+                                          <sense>Que está pegado, immediatamento á concha sem
+                                                intermedio. Chama arcinella.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Edentulus.</form>
-                                    <sense>Sem dentes. Ostrea.</sense>
+                                    <form>CANALIS.</form>
+                                    <sense>He a columela, ou eixo da concha sahido para fora,
+                                          excavado, formando hum canal; ou a continuaçaõ da abertura
+                                          na cauda. Strombus. Tab. XII. fig. 15. c. fig. 17. b. fig.
+                                          26. c. d.</sense>
+                                    <entry>
+                                          <form>— Integer.</form>
+                                          <sense>Inteiro.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rectus seu subadscendens.</form>
+                                          <sense> Direito, ou que sobe algum tanto direitamente.
+                                                Murex. fig. 15. 26.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sinister.</form>
+                                          <sense>Virado para a parte esquerda. Strombus. fig. 29.
+                                                70.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Excisus.</form>
-                                    <sense> Estando aberto internamente com huma Rima, ou fenda
-                                          transversal.</sense>
+                                    <form>CANALICULUS.</form>
+                                    <sense>Saõ certos regos curvos em forma semicylindrica, que se
+                                          observaõ em algumas conchas. Ostrea.</sense>
                               </entry>
                               <entry>
-                                    <form>— Lateralis.</form>
-                                    <sense>Extendido para outro lado.</sense>
+                                    <form>CANCELLI.</form>
+                                    <sense>He huma rede grossa sobre a <term senseNumber="2"
+                                                >epiderme</term>, ou periosteo de certas
+                                          conchas.</sense>
                               </entry>
                               <entry>
-                                    <form>— Longior.</form>
-                                    <sense> Mais comprido respectivamente ao tamanho da
-                                          concha.</sense>
+                                    <form>CARDO.</form>
+                                    <sense>He a parte mais grossa, onde se unem as valvas das
+                                          bivalves, que ordinariamente tem <w norm="vários"
+                                                >vaios</w> dentes tanto na valva superior como na <w
+                                                norm="inferior"> inferrior</w>, que se introduzem
+                                          reciprocamente nas cavidades de huma, e outra valva. Tab.
+                                          XIII. fig. 4. até. 12.</sense>
+                                    <entry>
+                                          <form>— Arcuatus.</form>
+                                          <sense> Arqueado. Arca nucleus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bidentatus.</form>
+                                          <sense>Com dous dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Ciliaris.</form>
+                                          <sense>Os dentes parallelos e dispostos á maneira dos
+                                                pellos das pestanas. Arca pella.</sense>
+                                    </entry>
+                                    <pb n="129"/>
+                                    <entry>
+                                          <form>— Costa cardinis.</form>
+                                          <sense> He huma linha levantada á maneira de costela, que
+                                                se extende internamente desde o cardo até a margem
+                                                superior.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Depressus.</form>
+                                          <sense> Com hum dente plano, que se extende verso a parte
+                                                anterior do Cardo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Edentulus.</form>
+                                          <sense>Sem dentes. Ostrea.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Excisus.</form>
+                                          <sense> Estando aberto internamente com huma Rima, ou
+                                                fenda transversal.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lateralis.</form>
+                                          <sense>Extendido para outro lado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longior.</form>
+                                          <sense> Mais comprido respectivamente ao tamanho da
+                                                concha.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Longitudinalis.</form>
+                                          <sense> Que se extende quasi por toda a longitude da
+                                                concha como na Arca.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Recurvatus.</form>
+                                          <sense>Encurvado. Pholas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Reflexus.</form>
+                                          <sense>Com a margem interior retorcida. Pholas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sublateralis.</form>
+                                          <sense>Quasi em hum lado.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sulcatus multoties.</form>
+                                          <sense> Com muitos regos. Ostrea Isogonum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tenuior.</form>
+                                          <sense>Mais delgado, que em outras conchas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Terminalis.</form>
+                                          <sense>Na extremidade da concha.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Truncatus.</form>
+                                          <sense>Mutilado Anomia truncata.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Unidentatus.</form>
+                                          <sense>Com hum dente.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Longitudinalis.</form>
-                                    <sense> Que se extende quasi por toda a longitude da concha como
-                                          na Arca.</sense>
+                                    <form>CARINA.</form>
+                                    <sense>Chama-se assim pela compressaõ dos lados lateraes, donde
+                                          sahe hum terceiro lado agudo á maneira de quilha. Arca
+                                          Noe, Nautilus papyraceus.</sense>
+                                    <entry>
+                                          <form>— Subdentata.</form>
+                                          <sense> Com pequenos dentes. Argonauta Argo. fig. 8.
+                                          </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rugosa.</form>
+                                          <sense>Com pregas, ou rugas. Argonauta Cymbium.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Recurvatus.</form>
-                                    <sense>Encurvado. Pholas.</sense>
+                                    <form>CARINATUS.</form>
+                                    <sense>Que tem prominencia aguda á maneira de quilha.</sense>
                               </entry>
                               <entry>
-                                    <form>— Reflexus.</form>
-                                    <sense>Com a margem interior retorcida. Pholas.</sense>
+                                    <form>CARTILAGO.</form>
+                                    <sense>He hum ligamento independente do animal, que só serve
+                                          para unir as duas valvas no Cardo.</sense>
+                              </entry>
+                              <pb n="130"/>
+                              <entry>
+                                    <form>CAUDA.</form>
+                                    <sense>He a base prolongada do ventre, e da Columella, ou he hum
+                                          canal prominente inferior, e posterior á abertura da
+                                          concha. fig. 18. d. 15. 26. d.</sense>
+                                    <entry>
+                                          <form>— Abbreviata.</form>
+                                          <sense> Abbreviada, ou pequena á proporçaõ do comprimento
+                                                da concha; ou com o giro inferior mais
+                                                breve.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Abrupta.</form>
+                                          <sense> Interrompida, ou naõ continuada. Buccinum
+                                                spiratum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Acuta.</form>
+                                          <sense>Aguda.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Bidentata postice.</form>
+                                          <sense> Com dous dentes na parte posterior. Turbo
+                                                bidens.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Brevis.</form>
+                                          <sense>Pequena á proporçaõ da concha.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Circundata spinis.</form>
+                                          <sense> Rodeada de espinhos. Murex brandaris. fig. 15.
+                                                d.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Clausa.</form>
+                                          <sense> Fechada, ou intimamente unida ao canal. Murices
+                                                caudigeri.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Curva.</form>
+                                          <sense>Encurvada. Bulla rapa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Elongata.</form>
+                                          <sense>Comprida, ou o inferior giro comprido.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Erecta.</form>
+                                          <sense>Levantada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Exerta.</form>
+                                          <sense>Sahida para fora. Murex.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Explanata postice.</form>
+                                          <sense> Applainada posteriormente. Turbo
+                                                marmoratus.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Falcata.</form>
+                                          <sense>Do feitio de fouce. Buccinum patulum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Flexuosa.</form>
+                                          <sense>Chêa de voltas. Murex lotorium.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Glaberrima.</form>
+                                          <sense>Muito lisa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Integra.</form>
+                                          <sense>Inteira.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Laevigata.</form>
+                                          <sense>Lisa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Lunata intus, seu subrotunda, segmento circuli
+                                                dempto.</form>
+                                          <sense> Em figura de Lua nova, ou quasi redonda, menos hum
+                                                segmento de circulo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Mediocris.</form>
+                                          <sense>Mediana.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Muricata.</form>
+                                          <sense>Com pequenos espinhos. Murex haustellum.</sense>
+                                    </entry>
+                                    <pb n="131"/>
+                                    <entry>
+                                          <form>— Patula.</form>
+                                          <sense>Estendida, larga. Murex granum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Perforata.</form>
+                                          <sense>Furada. Buccinum spiratum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plana.</form>
+                                          <sense>Plana, ou espalmada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Planiuscula.</form>
+                                          <sense>Alguma cousa plana.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Prominens.</form>
+                                          <sense> Mais elevada, que o corpo da concha. Buccinum
+                                                echinophorum.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Prominula.</form>
+                                          <sense>Alguma cousa mais elevada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Obtusa.</form>
+                                          <sense>Obtuza.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Recta.</form>
+                                          <sense>Direita.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Recurva. — Recurvata.</form>
+                                          <sense>Revirada, retorcida. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subadscendens.</form>
+                                          <sense>Quasi subindo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subulata.</form>
+                                          <sense>Á maneira de sovela.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Triloba.</form>
+                                          <sense> Com a margem dividida em tres abas. Strombus
+                                                pugilis.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Truncata.</form>
+                                          <sense>Cortada quasi transversalmente.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Sublateralis.</form>
-                                    <sense>Quasi em hum lado.</sense>
+                                    <form>CELLULA.</form>
+                                    <sense>Certas <term lemma="concameração" norm="concamerações"
+                                                msd="plural"> concameraçoens</term> divididas entre
+                                          si. Nautilus. fig. 16.</sense>
                               </entry>
                               <entry>
-                                    <form>— Sulcatus multoties.</form>
-                                    <sense> Com muitos regos. Ostrea Isogonum.</sense>
+                                    <form>CICATRIX.</form>
+                                    <sense>He qualquer cicatriz, que o animal faz, quando a sua
+                                          concha quebrou por accidente.</sense>
                               </entry>
                               <entry>
-                                    <form>— Tenuior.</form>
-                                    <sense>Mais delgado, que em outras conchas.</sense>
+                                    <form>CIRCUMFERENTIA.</form>
+                                    <sense>He o espaço da abertura da concha univalve; porém nas
+                                          bivalves he todo o circulo de cada valva.</sense>
                               </entry>
                               <entry>
-                                    <form>— Terminalis.</form>
-                                    <sense>Na extremidade da concha.</sense>
+                                    <form>CINGULUM.</form>
+                                    <sense>Cinto, ou banda, as vezes significa zona, ou costa, ou
+                                          huma cadêa de nós.</sense>
+                                    <entry>
+                                          <form>— Elevatum.</form>
+                                          <sense>Elevado. Bulla gibbosa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Muricatum.</form>
+                                          <sense>Com pequenos espinhos.</sense>
+                                    </entry>
                               </entry>
                               <entry>
-                                    <form>— Truncatus.</form>
-                                    <sense>Mutilado Anomia truncata.</sense>
-                              </entry> — Unidentatus. Com hum dente. CARINA. Chama-se assim pela
-                              compressaõ dos lados lateraes, donde sahe hum terceiro lado agudo á
-                              maneira de quilha. Arca Noe, Nautilus papyraceus. <entry>
-                                    <form>— Subdentata.</form>
-                                    <sense> Com pequenos dentes. Argonauta Argo. fig. 8. </sense>
-                              </entry> — Rugosa. Com pregas, ou rugas. Argonauta Cymbium. CARINATUS.
-                              Que tem prominencia aguda á maneira de quilha. CARTILAGO. He hum
-                              ligamento independente do animal, que só serve para unir as duas
-                              valvas no Cardo. <pb n="130"/> CAUDA. He a base prolongada do ventre,
-                              e da Columella, ou he hum canal prominente inferior, e posterior á
-                              abertura da concha. fig. 18. d. 15. 26. d. <entry>
-                                    <form>— Abbreviata.</form>
-                                    <sense> Abbreviada, ou pequena á proporçaõ do comprimento da
-                                          concha; ou com o giro inferior mais breve.</sense>
+                                    <form>CIRRI.</form>
+                                    <sense>Saõ os <term lemma="filamento" msd="plural"
+                                                senseNumber="2">filamentos</term> das conchas
+                                          multivalves. Lepas. Tab. XIII. fig. 2. d.</sense>
+                                    <sense>Ou tambem nos Molluscos saõ de algum modo semelhantes aos
+                                          dos peixes.</sense>
                               </entry>
                               <entry>
-                                    <form>— Abrupta.</form>
-                                    <sense> Interrompida, ou naõ continuada. Buccinum
-                                          spiratum.</sense>
+                                    <form>CIRROSUS.</form>
+                                    <sense>Cirrozo, ou filamentoso.</sense>
                               </entry>
                               <entry>
-                                    <form>— Acuta.</form>
-                                    <sense>Aguda.</sense>
+                                    <form>CLYPEUS.</form>
+                                    <sense>Escudo carnoso no dorso. Limax.</sense>
                               </entry>
-                              <entry>
-                                    <form>— Bidentata postice.</form>
-                                    <sense> Com dous dentes na parte posterior. Turbo
-                                          bidens.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Brevis.</form>
-                                    <sense>Pequena á proporçaõ da concha.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Circundata spinis.</form>
-                                    <sense> Rodeada de espinhos. Murex brandaris. fig. 15.
-                                          d.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Clausa.</form>
-                                    <sense> Fechada, ou intimamente unida ao canal. Murices
-                                          caudigeri.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Curva.</form>
-                                    <sense>Encurvada. Bulla rapa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Elongata.</form>
-                                    <sense>Comprida, ou o inferior giro comprido.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Erecta.</form>
-                                    <sense>Levantada.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Exerta.</form>
-                                    <sense>Sahida para fora. Murex.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Explanata postice.</form>
-                                    <sense> Applainada posteriormente. Turbo marmoratus.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Falcata.</form>
-                                    <sense>Do feitio de fouce. Buccinum patulum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Flexuosa.</form>
-                                    <sense>Chêa de voltas. Murex lotorium.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Glaberrima.</form>
-                                    <sense>Muito lisa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Integra.</form>
-                                    <sense>Inteira.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Laevigata.</form>
-                                    <sense>Lisa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Lunata intus, seu subrotunda, segmento circuli
-                                          dempto.</form>
-                                    <sense> Em figura de Lua nova, ou quasi redonda, menos hum
-                                          segmento de circulo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Mediocris.</form>
-                                    <sense>Mediana.</sense>
-                              </entry> — Muricata. Com pequenos espinhos. Murex haustellum. <pb
-                                    n="131"/>
-                              <entry>
-                                    <form>— Patula.</form>
-                                    <sense>Estendida, larga. Murex granum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Perforata.</form>
-                                    <sense>Furada. Buccinum spiratum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plana.</form>
-                                    <sense>Plana, ou espalmada.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Planiuscula.</form>
-                                    <sense>Alguma cousa plana.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Prominens.</form>
-                                    <sense> Mais elevada, que o corpo da concha. Buccinum
-                                          echinophorum.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Prominula.</form>
-                                    <sense>Alguma cousa mais elevada.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Obtusa.</form>
-                                    <sense>Obtuza.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Recta.</form>
-                                    <sense>Direita.</sense>
-                              </entry> — Recurva. <entry>
-                                    <form>— Recurvata.</form>
-                                    <sense>Revirada, retorcida. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subadscendens.</form>
-                                    <sense>Quasi subindo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subulata.</form>
-                                    <sense>Á maneira de sovela.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Triloba.</form>
-                                    <sense> Com a margem dividida em tres abas. Strombus
-                                          pugilis.</sense>
-                              </entry> — Truncata. Cortada quasi transversalmente. <s>CELLULA.
-                                    Certas <term lemma="concameração" norm="concamerações"
-                                          msd="plural"> concameraçoens</term> divididas entre si.
-                                    Nautilus. fig. 16.</s> CICATRIX. He qualquer cicatriz, que o
-                              animal faz, quando a sua concha quebrou por accidente. CIRCUMFERENTIA.
-                              He o espaço da abertura da concha univalve; porém nas bivalves he todo
-                              o circulo de cada valva. CINGULUM. Cinto, ou banda, as vezes significa
-                              zona, ou costa, ou huma cadêa de nós. <entry>
-                                    <form>— Elevatum.</form>
-                                    <sense>Elevado. Bulla gibbosa.</sense>
-                              </entry> — Muricatum. Com pequenos espinhos. <s>CIRRI. Saõ os <term
-                                          lemma="filamento" msd="plural" senseNumber="2"
-                                          >filamentos</term> das conchas multivalves. Lepas.</s>
-                              Tab. XIII. fig. 2. d. Ou tambem nos Molluscos saõ de algum modo
-                              semelhantes aos dos peixes. CIRROSUS. Cirrozo, ou filamentoso.
-                              CLYPEUS. Escudo carnoso no dorso. Limax. <pb n="132"/>
+                              <pb n="132"/>
                               <entry>
                                     <form>— Dorsalis.</form>
                                     <sense>No dorso, ou costas.</sense>
-                              </entry> — Membranaceus. De substancia membranoza. Laplysia. Tab. XI.
-                              fig. 4. COLUMELLA. He o eixo da concha univalve, ao redor do qual vaõ
-                              subindo os giros, ou anfractos ao travez da concha por toda a sua
-                              longitude. Esta muitas vezes he aberta pelo embigo. Ella naõ se vê se
-                              naõ no primeiro giro, que faz a sua primeira orbita junto á sua
-                              abertura. <entry>
-                                    <form>— Abrupta, seu Truncata.</form>
-                                    <sense>Na base quasi transversalmente cortada.</sense>
                               </entry>
                               <entry>
-                                    <form>— Caudata.</form>
-                                    <sense>Sahida mais fóra, que o ventre.</sense>
+                                    <form>— Membranaceus.</form>
+                                    <sense>De substancia membranoza. Laplysia. Tab. XI. fig.
+                                          4.</sense>
                               </entry>
                               <entry>
-                                    <form>— Dentata.</form>
-                                    <sense> Quando o labio interior tem varias prominencias á
-                                          maneira de dentes. Cipræa. Tab. XII. fig. 10. b.
-                                          b.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Denticulata.</form>
-                                    <sense>Com pequenos dentes espalhados.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Exerta.</form>
-                                    <sense>Sahida para fòra. Tab. XII. fig. 15. e.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Laevis.</form>
-                                    <sense>Lisa. Bulla.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Obliqua.</form>
-                                    <sense>Obliqua, ou de travez. Bulla.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Obliquata.</form>
-                                    <sense>Retorcida. Trochus. fig. 20.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Perforata.</form>
-                                    <sense>Furada. Voluta virgo, Trochi umbillicati.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plana.</form>
-                                    <sense>Com o beiço chato.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Plicata.</form>
-                                    <sense>Com pregas transversaes, ou dobras. Voluta.</sense>
-                              </entry> — Productiuscula. Prolongada, ou estendida alguma cousa.
-                              Quadriplicata. Com quatro pregas. Quinqueplicata. Quintuplicata. Com
-                              sinco pregas. — Recurvato-contorta. Curvada, e retorcida. Trochus
-                              dolabratus. <pb n="133"/>
-                              <entry>
-                                    <form>— Retusa.</form>
-                                    <sense>Com a sua summidade revirada.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Rugosa.</form>
-                                    <sense>Encrespada, ou chêa de rugas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Septemplicata.</form>
-                                    <sense>Com sete pregas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Sexplicata.</form>
-                                    <sense>Com seis pregas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Spiralis.</form>
-                                    <sense>Columella caudata, torcida em espira.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Striata oblique.</form>
-                                    <sense> Com strias, ou proninencias lineares obliquas.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subedentula.</form>
-                                    <sense>Quasi sem dentes.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subplicata.</form>
-                                    <sense>Quasi plicata. Voluta solidula.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subumbillicata.</form>
-                                    <sense> Que tem quasi huma cavidade, ou enbigo.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Subperforata.</form>
-                                    <sense>Quasi furada. Voluta reticulata. </sense>
-                              </entry>
-                              <entry>
-                                    <form>— Torta.</form>
-                                    <sense>Torcida. Bulla, Cypræa.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Tridentata.</form>
-                                    <sense>Com tres dentes. Voluta auris Judæ.</sense>
-                              </entry>
-                              <entry>
-                                    <form>— Triplicata.</form>
-                                    <sense>Com tres pregas. Voluta morio.</sense>
-                              </entry> — Truncata, abrupta. Na base transversalmente cortada. Bulla
-                              virginea. CONCAMERATIO. V. Thalamus. CONVALLIS. Plano entre algumas
+                                    <form>COLUMELLA.</form>
+                                    <sense>He o eixo da concha univalve, ao redor do qual vaõ
+                                          subindo os giros, ou anfractos ao travez da concha por
+                                          toda a sua longitude. Esta muitas vezes he aberta pelo
+                                          embigo.</sense>
+                                    <sense>Ella naõ se vê se naõ no primeiro giro, que faz a sua
+                                          primeira orbita junto á sua abertura.</sense>
+                                    <entry>
+                                          <form>— Abrupta, seu Truncata.</form>
+                                          <sense>Na base quasi transversalmente cortada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Caudata.</form>
+                                          <sense>Sahida mais fóra, que o ventre.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Dentata.</form>
+                                          <sense> Quando o labio interior tem varias prominencias á
+                                                maneira de dentes. Cipræa. Tab. XII. fig. 10. b.
+                                                b.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Denticulata.</form>
+                                          <sense>Com pequenos dentes espalhados.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Exerta.</form>
+                                          <sense>Sahida para fòra. Tab. XII. fig. 15. e.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Laevis.</form>
+                                          <sense>Lisa. Bulla.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Obliqua.</form>
+                                          <sense>Obliqua, ou de travez. Bulla.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Obliquata.</form>
+                                          <sense>Retorcida. Trochus. fig. 20.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Perforata.</form>
+                                          <sense>Furada. Voluta virgo, Trochi umbillicati.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plana.</form>
+                                          <sense>Com o beiço chato.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Plicata.</form>
+                                          <sense>Com pregas transversaes, ou dobras. Voluta.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Productiuscula.</form>
+                                          <sense>Prolongada, ou estendida alguma cousa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quadriplicata.</form>
+                                          <sense>Com quatro pregas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Quinqueplicata. — Quintuplicata.</form>
+                                          <sense>Com sinco pregas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Recurvato-contorta.</form>
+                                          <sense>Curvada, e retorcida. Trochus dolabratus.</sense>
+                                    </entry>
+                                    <pb n="133"/>
+                                    <entry>
+                                          <form>— Retusa.</form>
+                                          <sense>Com a sua summidade revirada.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Rugosa.</form>
+                                          <sense>Encrespada, ou chêa de rugas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Septemplicata.</form>
+                                          <sense>Com sete pregas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Sexplicata.</form>
+                                          <sense>Com seis pregas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Spiralis.</form>
+                                          <sense>Columella caudata, torcida em espira.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Striata oblique.</form>
+                                          <sense> Com strias, ou proninencias lineares
+                                                obliquas.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subedentula.</form>
+                                          <sense>Quasi sem dentes.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subplicata.</form>
+                                          <sense>Quasi plicata. Voluta solidula.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subumbillicata.</form>
+                                          <sense> Que tem quasi huma cavidade, ou enbigo.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Subperforata.</form>
+                                          <sense>Quasi furada. Voluta reticulata. </sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Torta.</form>
+                                          <sense>Torcida. Bulla, Cypræa.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Tridentata.</form>
+                                          <sense>Com tres dentes. Voluta auris Judæ.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Triplicata.</form>
+                                          <sense>Com tres pregas. Voluta morio.</sense>
+                                    </entry>
+                                    <entry>
+                                          <form>— Truncata, abrupta.</form>
+                                          <sense>Na base transversalmente cortada. Bulla
+                                                virginea.</sense>
+                                    </entry>
+                              </entry> CONCAMERATIO. V. Thalamus. CONVALLIS. Plano entre algumas
                               prominencias. — Longitudinalis. Ao comprido. Anomia retusa. COSTA. He
                               huma especie de carina maior desde o apice até a periferia, ou hum
                               raio muito levantado, quasi triangular. — Fornicata. Com escamas
@@ -10864,7 +11044,11 @@
                               <entry>
                                     <form>— Rugosum.</form>
                                     <sense>Com rugas.</sense>
-                              </entry> — Verrucosum. Escabroso, ou com verrugas.</div>
+                              </entry>
+                              <entry>
+                                    <form>— Verrucosum.</form>
+                                    <sense>Escabroso, ou com verrugas.</sense>
+                              </entry></div>
                         <div type="letra"><head>E</head> EPIDERMIS. He huma membrana, ou pellicula
                               exterior da concha, que se acha em algumas especies, a qual
                               spontaneamente, cae sem algum prejuizo da superficie da concha.
@@ -10899,11 +11083,14 @@
                               os genitaes. Lapsysia. FORAMINULUM. Pequeno buraco. <entry>
                                     <form>— Submembranaceum.</form>
                                     <sense>Quasi membranoso.</sense>
-                              </entry> — Urceolatum. Á maneira de pequeno jarro. Cellepora. FOSSULA,
-                              Foveola, Sinus, Scrobiculus. Se a <pb n="140"/>covinha estando chêa da
-                              cartilagem, que une as valvas, naõ recebe os dentes, entaõ esta
-                              cavidade se chama Scrobiculus, quando pois recebe os dentes
-                              Foveola.</div>
+                              </entry>
+                              <entry>
+                                    <form>— Urceolatum.</form>
+                                    <sense>Á maneira de pequeno jarro. Cellepora.</sense>
+                              </entry> FOSSULA, Foveola, Sinus, Scrobiculus. Se a <pb n="140"
+                              />covinha estando chêa da cartilagem, que une as valvas, naõ recebe os
+                              dentes, entaõ esta cavidade se chama Scrobiculus, quando pois recebe
+                              os dentes Foveola.</div>
                         <div type="letra"><head>G</head> GINGIVA. Exprime o paladar dentado da
                               abertura nas Neritas. GENICULUM. Nó produsido do aperto do anfracto,
                               que corresponde no disepimento interior no Nautilus beccarii: Isis
@@ -12590,7 +12777,7 @@
                               </entry>
                               <entry>
                                     <form>— Fusiformis.</form>
-                                    <sense> De figura de fuzo, ou medea entre a figura conica, e
+                                    <sense>De figura de fuzo, ou medea entre a figura conica, e
                                           oval, ou turrita, alguma cousa ventricosa. Voluta.</sense>
                               </entry> — Gibba. — Gibbosa. Convexa, ou corcovada. <pb n="165"/>
                               <entry>
@@ -13806,72 +13993,72 @@
                                           propaga todos os annos pela <term>semente</term>, a maior
                                           parte das gramas, e dos feijoens.</sense>
                               </entry>
-                              <pb n="194"/> _ Biennis. De dous annos. Vegeta no primeiro anno, e no
-                              segundo frutifica, e morre. Tragopogon, Secale. _ <s>Perennis. <term
+                              <pb n="194"/> — Biennis. De dous annos. Vegeta no primeiro anno, e no
+                              segundo frutifica, e morre. Tragopogon, Secale. — <s>Perennis. <term
                                           lemma="perene" norm="Perene">Perenne</term>, a qual com a
                                     producçaõ de novas <term lemma="gema" norm="gemas" msd="plural"
                                           >gemmas</term>, ou <term lemma="gomo" msd="plural"
                                           >gomos</term> em cada anno produz nova herva. Glechoma
-                                    hederacea, Viola odorata.</s> _ <s>Fruticosa, lignosa. A <term>
+                                    hederacea, Viola odorata.</s> — <s>Fruticosa, lignosa. A <term>
                                           raiz</term>, ou he de substancia carnosa, ou lignosa, ou
                                     tenra, ou rija, ou <term lemma="sucoso" msd="feminino singular"
-                                          >sucosa</term>, ou farinacea.</s> 3. Pela partiçaõ.
-                                    <s>_Simplex, fig. 129. b. Quando a <term>raiz</term> senaõ
-                                    divide em parte alguma. Scabiosa succisa.</s> _ <s>Fibrosa. fig.
-                                    130. b. A qual consta sómente de pequenas <term lemma="raiz"
-                                          >raizes</term>
+                                          >sucosa</term>, ou farinacea.</s> 3. Pela partiçaõ. <s>—
+                                    Simplex, fig. 129. b. Quando a <term>raiz</term> senaõ divide em
+                                    parte alguma. Scabiosa succisa.</s> — <s>Fibrosa. fig. 130. b. A
+                                    qual consta sómente de pequenas <term lemma="raiz">raizes</term>
                                     <term lemma="fibroso" msd="feminino plural">fibrosas</term>, ou
                                           <term lemma="filamento" msd="plural">filamentos</term>;
-                                    como nas Gramas, Malva &amp;c.</s> _ Ramosa. fig.130 a.
-                              Dividindo-se em ramos lateraes. Plantago psyllium. _ <s>Fusiformis.
+                                    como nas Gramas, Malva &amp;c.</s> — Ramosa. fig.130 a.
+                              Dividindo-se em ramos lateraes. Plantago psyllium. — <s>Fusiformis.
                                     fig, 129. b. De figura de hum fuso. <term lemma="oblongo"
                                           msd="feminino singular">Oblonga</term> crassa, e
-                                    adelgaçada para a sua ponta. Raphanus, Pastinaca, Daucus.</s> _
+                                    adelgaçada para a sua ponta. Raphanus, Pastinaca, Daucus.</s> —
                               Palmata, s. digitata. Dividida longitudinalmente em muitas partes
                               quase iguaes, como abas carnosas, que chegaõ até o principio, onde se
-                              unem entre si. Orchis latifolia, maculata. _ Præmorsa, truncata. Como
+                              unem entre si. Orchis latifolia, maculata. — Præmorsa, truncata. Como
                               cortada, quando acaba como cortada, e naõ em ponta adelgaçada.
-                              Valeriana, Scabiosa succisa, Plantago. _Articulata. Com nós espalhados
-                              pelo seu comprimento, como articulaçoens. Triticum repens. _ Dentata.
-                              Com eminencias agudas, direitas, pequenas, espalhadas pela raiz, e da
-                              mesma consistencia. _ Capillata. Á maneira de cabellos. <pb n="195"/>
-                              4. Pela situaçaõ. _ Repens. fig. 131. Quando a raiz ramosa de huma, e
-                              outra parte lança por baixo da terra varias raizes pequenas
-                              estendendo-se horizontalmente. Triticum repens. _ Perpendicularis.
-                              fig. 129. b. Quando a raiz desce perpendicularmente para baixo. Rapa.
-                              _ Horizontalis Quando a raiz conserva huma situaçaõ horizontal, ou
-                              atravessada debaixo da terra. Iris. _ Inclinata. Curvada. <s>Pegados á
-                                    raiz corpos, que contem germes, ou <term lemma="bulbo"
-                                          msd="plural">bulbos</term>.</s> 5. c.) - Globosa. fig 129.
-                              a. Arredondada, sendo quasi redonda com raizes lateraes. Ranunculus
-                              bulbosus. Chærophyllum. Brassica rapa. _ <s>Tuberosa. fig. 128. He
-                                    aquella <term> raiz</term>, que he formada de corpos redondos,
-                                    carnosos unidos entre si em feixe quasi por meio de hum fio.
-                                    Paeonia. Solanum tuberosum.</s> _ <s>Fascicularis, fasciculata.
-                                    Quando a <term>raiz</term> principal carnosa lança outros
-                                    pequenos fios, ou <term lemma="filamento" msd="plural">
-                                          filamentos</term> approximados, parallelos entre si.
-                                    Orchis abortiva. Ranunculus ficaria.</s> _ <s>Stolonifera. <term
-                                          lemma="raiz">Raiz</term> que tem <term lemma="pimpolho"
-                                          msd="plural"> pimpolhos</term>.</s> 6. d.) _ <s>Squamosa.
-                                    Chama-se <term lemma="escamoso">escamosa</term> sendo cuberta de
-                                    escamas. Lilium.</s> _ Duplicata. Sendo duplicada.. Fritilaria.
-                              _ Solida. Sendo solida. Tulipa. _ <s>Bulbosa. O <term lemma="bulbo"
-                                          >Bulbo</term>, quando a <term>raiz</term> he mais grossa,
-                                    que o <term>tronco</term>. fig 125; e a <term>raiz</term>
+                              Valeriana, Scabiosa succisa, Plantago. — Articulata. Com nós
+                              espalhados pelo seu comprimento, como articulaçoens. Triticum repens.
+                              — Dentata. Com eminencias agudas, direitas, pequenas, espalhadas pela
+                              raiz, e da mesma consistencia. — Capillata. Á maneira de cabellos. <pb
+                                    n="195"/> 4. Pela situaçaõ. — Repens. fig. 131. Quando a raiz
+                              ramosa de huma, e outra parte lança por baixo da terra varias raizes
+                              pequenas estendendo-se horizontalmente. Triticum repens. —
+                              Perpendicularis. fig. 129. b. Quando a raiz desce perpendicularmente
+                              para baixo. Rapa. — Horizontalis Quando a raiz conserva huma situaçaõ
+                              horizontal, ou atravessada debaixo da terra. Iris. — Inclinata.
+                              Curvada. <s>Pegados á raiz corpos, que contem germes, ou <term
+                                          lemma="bulbo" msd="plural">bulbos</term>.</s> 5. c.) -
+                              Globosa. fig 129. a. Arredondada, sendo quasi redonda com raizes
+                              lateraes. Ranunculus bulbosus. Chærophyllum. Brassica rapa. —
+                                    <s>Tuberosa. fig. 128. He aquella <term> raiz</term>, que he
+                                    formada de corpos redondos, carnosos unidos entre si em feixe
+                                    quasi por meio de hum fio. Paeonia. Solanum tuberosum.</s> —
+                                    <s>Fascicularis, fasciculata. Quando a <term>raiz</term>
+                                    principal carnosa lança outros pequenos fios, ou <term
+                                          lemma="filamento" msd="plural"> filamentos</term>
+                                    approximados, parallelos entre si. Orchis abortiva. Ranunculus
+                                    ficaria.</s> — <s>Stolonifera. <term lemma="raiz">Raiz</term>
+                                    que tem <term lemma="pimpolho" msd="plural">
+                                    pimpolhos</term>.</s> 6. d.) — <s>Squamosa. Chama-se <term
+                                          lemma="escamoso">escamosa</term> sendo cuberta de escamas.
+                                    Lilium.</s> — Duplicata. Sendo duplicada.. Fritilaria. — Solida.
+                              Sendo solida. Tulipa. — <s>Bulbosa. O <term lemma="bulbo"
+                                    >Bulbo</term>, quando a <term>raiz</term> he mais grossa, que o
+                                          <term>tronco</term>. fig 125; e a <term>raiz</term>
                                     <term lemma="bulboso" msd="feminino singular">bulbosa</term> he
                                     de huma substancia mais molle, <term lemma="sucoso"
                                           norm="sucosa" msd="feminino singular">succosa</term>; ou
                                     esta he tunicata. Allium sativum, ou <term lemma="escamoso"
                                           >escamosa</term>. Lilium. <pb n="196"/>dobrada.
-                                    Fritillaria, ou testiculata, Crypripedium calceolus.</s> _
+                                    Fritillaria, ou testiculata, Crypripedium calceolus.</s> —
                                     <s>Granulata. Constando de muitos grãos <term lemma="bulboso"
                                           msd="masculino plural">bulbosos</term>, ou de particulas
-                                    carnosas espalhadas. Saxifraga granulata.</s> _ <s>Tunicata.
+                                    carnosas espalhadas. Saxifraga granulata.</s> — <s>Tunicata.
                                     Quando a <term>raiz</term> está envolvida em membrana. Allium
-                                    sativum.</s> _ <s>Nuda. Destituida de <term lemma="túnica"
+                                    sativum.</s> — <s>Nuda. Destituida de <term lemma="túnica"
                                           >tunica</term>.</s>
-                              <s>_ Parasitica. Quando a <term>raiz</term> da planta senaõ serve da
+                              <s>— Parasitica. Quando a <term>raiz</term> da planta senaõ serve da
                                     terra para tirar o seu nutrimento, mas sim se une a outra
                                     planta, da qual se sustenta. Orobanche, Algæ.</s>
                               <s>Ala. Aza, ou 1: he o espaço entre o caule, e a
@@ -13913,12 +14100,12 @@
                                     quasi sempre com varios nós, he proprio das gramas, sustenta as
                                           <term lemma="folha" msd="plural">folhas</term>, e a <term
                                           lemma="frutificação" norm="frutificação"
-                                          >fructificaçaõ</term>. Briza. Poa.</s> _ Enodis. Sem nós.
-                              Triglochin palustre. _Integer. Inteiro. Triticum repens. _Ramosus. Com
-                              ramos. Scirpus. _ Aequalis. Igual. _ Articulatus. Com articulações.
-                              Festuca fluitans. _ Squamosus. Com escamas. Cynosurus. _ <s>Nudus. Sem
-                                          <term lemma="folha" msd="plural">folhas</term>. Briza
-                                    eragrostis.</s> _ <s>Foliatus. Com <term lemma="folha"
+                                          >fructificaçaõ</term>. Briza. Poa.</s> — Enodis. Sem nós.
+                              Triglochin palustre. — Integer. Inteiro. Triticum repens. — Ramosus.
+                              Com ramos. Scirpus. — Aequalis. Igual. — Articulatus. Com
+                              articulações. Festuca fluitans. — Squamosus. Com escamas. Cynosurus. —
+                                    <s>Nudus. Sem <term lemma="folha" msd="plural">folhas</term>.
+                                    Briza eragrostis.</s> — <s>Foliatus. Com <term lemma="folha"
                                           >folhas</term>. Poa annua.</s>
                               <s>Scapus. fig. 113. He hum <term>tronco</term> universal <term>
                                           sucoso</term>, que sustenta taõ sómente a <term
@@ -13927,7 +14114,7 @@
                               botryoides. <s> Stipes. Quando a <term>folha</term> sahe
                                     immediatamente da base da planta, ou he hum <term>caule</term>
                                     transmutado em <term lemma="folha" msd="plural">folhas</term>;
-                                    he proprio dos Fetos, e Cucumelos </s> 9. Pela duraçaõ. _
+                                    he proprio dos Fetos, e Cucumelos </s> 9. Pela duraçaõ. —
                               Herbaceus: Que morre todos os annos, ou a cada dous annos; he molle,
                               flexivel, e naõ de substancia de paó, ou lignosa. Asparagus
                               officinalis, Globularia vulgaris. <pb n="198"/> Herba annua. Que no
@@ -13937,11 +14124,11 @@
                                     >folhas</term>, sem nascerem outras. Viola.</s>
                               <s>Algumas ervas porem no inverno largaõ as <term lemma="folha"
                                           msd="plural">folhas</term>, mas da raiz pois novas
-                                    nascem.</s> _ <s>Suffruticosus, frutescens. Quando a planta
+                                    nascem.</s> — <s>Suffruticosus, frutescens. Quando a planta
                                     conserua o caule naõ muito alto no inverno sem <term
                                           lemma="gomo" msd="plural">gomos</term> ou <term
                                           lemma="gema" msd="plural">gemas</term>. Solanum
-                                    dulcamara.</s> _ <s> Fruticosus. <term lemma="perene"
+                                    dulcamara.</s> — <s> Fruticosus. <term lemma="perene"
                                           norm="Perene">Perenne</term>, sahindo da mesma
                                           <term>raiz</term> muitos <term lemma="caule" msd="plural"
                                           >caules</term> baixos, e rijos. Spartium scoparium, Echium
@@ -13953,104 +14140,104 @@
                                     Roseira.</s>
                               <s>Suffrutex. Planta <term lemma="perene">perenne</term>, rija,
                                     lignosa, mais baixa do frutice, e tem <term lemma="gomo"
-                                          msd="plural">gomos</term>. Tomilho, Alfazema.</s> _
+                                          msd="plural">gomos</term>. Tomilho, Alfazema.</s> —
                                     <s>Arboreus. Sendo hum só, e este alto <term lemma="perene"
                                           >perenne</term>, Alcea arborea.</s>
                               <s>Arbor. A <term lemma="árvore">arvore</term> he huma especie de
                                     planta <term lemma="perene">perenne</term>, com simples
-                                          <term>tronco</term>, alto, grosso, rijo, com ramos.</s> _
+                                          <term>tronco</term>, alto, grosso, rijo, com ramos.</s> —
                               Solidus. fig. 126. Que está chêo internamente; que consta de
-                              substancia macissa, e medulla compacta. Sambucus. Prunus. _ <s>Inanis.
+                              substancia macissa, e medulla compacta. Sambucus. Prunus. — <s>Inanis.
                                     Sem nenhuma substancia <term lemma="medular"> medullar</term> no
                                     meio, ou com huma substancia <term lemma="medular">
-                                          medullar</term> muito porosa, e chêa de cavidades.</s> _
+                                          medullar</term> muito porosa, e chêa de cavidades.</s> —
                               Fistulosus, cavus, canaliculatus. Que forma hum tubo, ou canudo
                               internamente, ou que tem huma cavidade cylindrica. Conium maculatum.
-                              Arundo. <pb n="199"/> _ Farctus. Todo chêo, sem cavidade alguma.
-                              Salix, Sambucus. _ <s>Alatus. Com azas, ou membrana <term
+                              Arundo. <pb n="199"/> — Farctus. Todo chêo, sem cavidade alguma.
+                              Salix, Sambucus. — <s>Alatus. Com azas, ou membrana <term
                                           lemma="foliáceo" norm="foliácea" msd="feminino singular"
                                           >foliacea</term>, que se extende pelo seu comprimento.
                                     Sigisbekia occidentalis.</s> Considerando o caule em quanto à
-                              sua medida. 10. Pela medida. _Linearis. <s>Tendo o comprimento de huma
-                                    linha de Pariz; isto he o comprimento da <term lemma="lúnula"
-                                          >lunula</term> da unha do dedo pollegar.</s> _
-                              Unguicularis. Sendo a sua longitude de seis linhas, ou meia pollegada.
-                              _ Polliearis. Sendo do comprimento da articulaçaõ exterior do dedo
-                              pollex, ou de huma pollegada. _Cubitalis caulis. Do comprimento de
-                              covado. Heracleum_sphondylium. _ Palmaris. Sendo o comprimento do
-                              diametro de quatro dedos attrevessados, parallellos, exceptuando o
-                              pollex, ou tres pollegadas. _Spithameus. Sendo da distancia que vai da
-                              ponta do dedo pollex ao index estendidos, ou de sete pollegadas. _
-                              Pedalis. Comprehende o espaço, que vai da articulaçaõ do cotovelo, até
-                              à base do pollex, ou doze pollegadas. Hieracium auricula. _
-                              Dodrantalis. Igual ao espaço, que ha entre a ponta do pollegar, e o
-                              dedo pequeno estendido, nove pollegadas. _ Orgyalis. Quando o caule
-                              sobe a altura de seis pés. Malva arborea. <s>PROPORTIO. Proporçaõ do
-                                    caule com as <term lemma="folha" msd="plural">folhas</term>, e
-                                    outras partes da planta.</s> b.) Pela grossura. Esta exprime-se
-                              por cousa muito <pb n="200"/>conhecida vg. coxa, pollegar, cabeça
-                              humana. &amp;c. 11.) Pela direcçaõ, ou situaçaõ. _ a.) erectus. fig.
-                              117. Quando o caule se eleva quasi perpendicularmente. Verbascum
-                              thapsus. _Strictus. Quando de nenhuma sorte se afasta da
-                              perpendicular. Alcea rosea. _ Laxus: Inclinando-se para algum dos
-                              lados, ou pela delicadeza da sua estructura, ou pelo pezo da sua
-                              ponta, formando huma curva. Juncus. _Rigidus. Que de nenhuma sorte he
-                              flexivel. Carex vulpina. _ Obliquus. Elevando-se obliquamente; em
-                              quanto ao mais, recto sem se afastar da linha perpendicular, ou
-                              horizontal. _ Adscendens. Constando o caule de ramos curvos virados
-                              para sima, ou apartando-se do horizonte para a parte superior,
-                              formando huma curvatura successiva. Vicia craca. _ Declinatus, seu
-                              inclinatus, reclinatus. He o que se eleva primeiro, depois se vira
-                              para a terra formando huma curva. Potentilla aurea. _ <s>Incurvatus,
-                                    inflexus. Elevando-se o <term>tronco</term> rectamente, depois
-                                    encurvando-se, ou inclinando-se para a parte interior.</s> _
-                              Nutans. Quando a ponta do caule revirando-se, se poem pendente a prumo
-                              Hieracium auricula, Salix Babylonica. _ Diffusus. Constando de ramos
-                              patentes ou abertos Fumaria officinalis. _Procumbens. Se extende
-                              horizontalmente pela superficie da terra. Anagallis arvensis. _
-                              Decumbens. Quando o caule se levanta <pb n="201"/>primeiramente algum
-                              tanto, e depois se extende pela mesma superficie da terra. Thymus
-                              serpyllum. _ <s>Stoloniferus. Diz-se daquelle <term> caule</term>,
-                                    cujos ramos, que tem <term lemma="gomo" msd="plural"
-                                          >gomos</term>, ou <term lemma="gema" msd="plural">
-                                          gemas</term>, descendo até á terra lançaõ nella novas
-                                          <term> raizes</term>, e destas nascem novas hastes. Ajuga
-                                    reptans, Viola odorata.</s> _ <s>Stolones. <term
+                              sua medida. 10. Pela medida. — Linearis. <s>Tendo o comprimento de
+                                    huma linha de Pariz; isto he o comprimento da <term
+                                          lemma="lúnula">lunula</term> da unha do dedo pollegar.</s>
+                              — Unguicularis. Sendo a sua longitude de seis linhas, ou meia
+                              pollegada. — Polliearis. Sendo do comprimento da articulaçaõ exterior
+                              do dedo pollex, ou de huma pollegada. — Cubitalis caulis. Do
+                              comprimento de covado. Heracleum sphondylium. — Palmaris. Sendo o
+                              comprimento do diametro de quatro dedos attrevessados, parallellos,
+                              exceptuando o pollex, ou tres pollegadas. — Spithameus. Sendo da
+                              distancia que vai da ponta do dedo pollex ao index estendidos, ou de
+                              sete pollegadas. — Pedalis. Comprehende o espaço, que vai da
+                              articulaçaõ do cotovelo, até à base do pollex, ou doze pollegadas.
+                              Hieracium auricula. — Dodrantalis. Igual ao espaço, que ha entre a
+                              ponta do pollegar, e o dedo pequeno estendido, nove pollegadas. —
+                              Orgyalis. Quando o caule sobe a altura de seis pés. Malva arborea.
+                                    <s>PROPORTIO. Proporçaõ do caule com as <term lemma="folha"
+                                          msd="plural">folhas</term>, e outras partes da planta.</s>
+                              b.) Pela grossura. Esta exprime-se por cousa muito <pb n="200"
+                              />conhecida vg. coxa, pollegar, cabeça humana. &amp;c. 11.) Pela
+                              direcçaõ, ou situaçaõ. — a.) erectus. fig. 117. Quando o caule se
+                              eleva quasi perpendicularmente. Verbascum thapsus. — Strictus. Quando
+                              de nenhuma sorte se afasta da perpendicular. Alcea rosea. — Laxus:
+                              Inclinando-se para algum dos lados, ou pela delicadeza da sua
+                              estructura, ou pelo pezo da sua ponta, formando huma curva. Juncus. —
+                              Rigidus. Que de nenhuma sorte he flexivel. Carex vulpina. — Obliquus.
+                              Elevando-se obliquamente; em quanto ao mais, recto sem se afastar da
+                              linha perpendicular, ou horizontal. — Adscendens. Constando o caule de
+                              ramos curvos virados para sima, ou apartando-se do horizonte para a
+                              parte superior, formando huma curvatura successiva. Vicia craca. —
+                              Declinatus, seu inclinatus, reclinatus. He o que se eleva primeiro,
+                              depois se vira para a terra formando huma curva. Potentilla aurea. —
+                                    <s>Incurvatus, inflexus. Elevando-se o <term>tronco</term>
+                                    rectamente, depois encurvando-se, ou inclinando-se para a parte
+                                    interior.</s> — Nutans. Quando a ponta do caule revirando-se, se
+                              poem pendente a prumo Hieracium auricula, Salix Babylonica. —
+                              Diffusus. Constando de ramos patentes ou abertos Fumaria officinalis.
+                              — Procumbens. Se extende horizontalmente pela superficie da terra.
+                              Anagallis arvensis. — Decumbens. Quando o caule se levanta <pb n="201"
+                              />primeiramente algum tanto, e depois se extende pela mesma superficie
+                              da terra. Thymus serpyllum. — <s>Stoloniferus. Diz-se daquelle <term>
+                                          caule</term>, cujos ramos, que tem <term lemma="gomo"
+                                          msd="plural">gomos</term>, ou <term lemma="gema"
+                                          msd="plural"> gemas</term>, descendo até á terra lançaõ
+                                    nella novas <term> raizes</term>, e destas nascem novas hastes.
+                                    Ajuga reptans, Viola odorata.</s> — <s>Stolones. <term
                                           lemma="pimpolho" msd="plural"> Pimpolhos</term>, que
                                     nascem do pé do <term>caule</term>, ou da raiz, que arrancados
-                                    se plantaõ. Cornus, Sorbus, Ficus.</s> 12._ b.) <s>Sarmentosus.
+                                    se plantaõ. Cornus, Sorbus, Ficus.</s> 12.— b.) <s>Sarmentosus.
                                     fig. 131. He hum caule quasi nú, <term>repente</term>, sem
                                     raizes lateraes, ou caule delgado, e de igual grossura, com nós,
                                     que lançaõ raizes. Vitis vinifera. Clematis vitalba.</s>
-                              <s>_ Radicans. fig. 112. Lançando dos ramos varias <term lemma="raiz"
+                              <s>— Radicans. fig. 112. Lançando dos ramos varias <term lemma="raiz"
                                           msd="plural">raizes</term>, com as quaes se eleva a grande
-                                    altura.</s> Hedera helix. <s>_ Repens. Caule, que lança varias
+                                    altura.</s> Hedera helix. <s>— Repens. Caule, que lança varias
                                           <term lemma="raiz">raizes</term> extendendo-se
                                     horizontalmente sobre a terra. Potentilla anserina. Lysimachia
-                                    nummularia.</s> 13. _ c.) Geniculatus. Chêo de nós, ou
-                              articulaçoens. Gramina. Galeopsis. _ <s>Flexuosus. Tendo articulaçoens
+                                    nummularia.</s> 13. — c.) Geniculatus. Chêo de nós, ou
+                              articulaçoens. Gramina. Galeopsis. — <s>Flexuosus. Tendo articulaçoens
                                     viradas ora para huma, ora para outra parte, ou virando-se de
                                           <term>gomo</term> em <term>gomo</term>. Solanum
-                                    dulcamara.</s> _ <s> Scandens. <term lemma="caule">Caule</term>
+                                    dulcamara.</s> — <s> Scandens. <term lemma="caule">Caule</term>
                                     que sobe pelos corpos vizinhos sustentado pelos seus <term
                                           lemma="capréolo" norm="capréolos" msd="plural"
-                                          >capreolos</term>, ou Elos. Clematis vitalba. Vitis.</s> _
+                                          >capreolos</term>, ou Elos. Clematis vitalba. Vitis.</s> —
                               Volubilis. fig. 115. Subindo espiralmente por outra qualquer planta.
-                              Bryonia dioica. _ Sinistrorsum (fig. 115. Envolvendo-se da parte
-                              esquerda para a direita. Lonicera periclymenum. Humulus lupulus. _
+                              Bryonia dioica. — Sinistrorsum (fig. 115. Envolvendo-se da parte
+                              esquerda para a direita. Lonicera periclymenum. Humulus lupulus. —
                               Dextrorsum.) Envolvendo-se contra o movimento do sol. Convolvulus,
                               Phaseolus. <pb n="202"/> 14. Pela figura. a.) Teres. Sem angulos, ou
-                              cylindrico. Ranunculus aconitifolius. _ Semiteres. Que avezinha a
-                              figura cylindrica. _ <s>Compressus. Sendo plano
+                              cylindrico. Ranunculus aconitifolius. — Semiteres. Que avezinha a
+                              figura cylindrica. — <s>Compressus. Sendo plano
                                           <term>longitudinal</term>, e lateralmente. Anagollis
-                                    latifolia, Potamogeton compressum.</s> _ Anceps. Tendo o caule
+                                    latifolia, Potamogeton compressum.</s> — Anceps. Tendo o caule
                               dous angulos oppostos alguma cousa agudos á maneira de huma faca de
                               dous fios, ou cortes. Medicago falcata. Convallaria polygonatum. 3. -
                               10. <s>Angulatus. Com mais de dous angulos excavados, ou profundos,
                                           <term lemma="longitudinal" norm="longitudinais"
                                           msd="plural"> longitudinaes</term>. Vaccinium, Myrtillus,
-                                    Campanula trachclium.</s> _ Acutangulus. Com angulos agudos.
-                              Scorphularia nodosa. _ Obtuso-angulatus. A margem com angulo obtuso.
+                                    Campanula trachclium.</s> — Acutangulus. Com angulos agudos.
+                              Scorphularia nodosa. — Obtuso-angulatus. A margem com angulo obtuso.
                               15. Com os lados planos entre os angulos. b.)
                                     <s>Di-tri-tetra-penta-hexa-polygonus, seu
                                     tri-quadr-quinq-sex-mult-angularis. Assim se chama o
@@ -14060,94 +14247,94 @@
                                     prominentes, e igualmente distantes, com os lados entre os
                                     angulos, convexos. Trigonus de tres angulos Ranunculus flammula.
                                     Tetragonus de quatro Mentha; polygonus de muitos angulos Cactus
-                                    heptagonus.</s> 16. Em quanto ao vestido. _ <s>Nudus. fig. 113.
+                                    heptagonus.</s> 16. Em quanto ao vestido. — <s>Nudus. fig. 113.
                                     Sendo destituido de <term lemma="folha" msd="plural"
                                           >folhas</term>, escamas, <term lemma="estípula"
                                           norm="estípulas" msd="plural">estipulas</term>, e outras
                                     excrecencias; porém isto naõ he absoluta, mas sim relativamente
-                                    a outra especie. Euphorbia, Cactus. Cuscuta europaea.</s>
-                                    _<s>Aphyllus. fig. 117. Sendo destituido de <term lemma="folha"
+                                    a outra especie. Euphorbia, Cactus. Cuscuta europaea.</s> —
+                                    <s>Aphyllus. fig. 117. Sendo destituido de <term lemma="folha"
                                           msd="plural"> folhas</term>.</s> Calendula. <pb n="203"/>
-                              _ <s>Foliatus. fig. 115. Sendo chêo de <term lemma="folha"
+                              — <s>Foliatus. fig. 115. Sendo chêo de <term lemma="folha"
                                           msd="plural">folhas</term>. Veronica beccabunga.</s>
-                              <s> _ Vaginatus. Quando as <term lemma="folha" msd="plural">
+                              <s> — Vaginatus. Quando as <term lemma="folha" msd="plural">
                                           folhas</term> inferiormente o envolvem dentro em si,
                                     formando como huma bainha, ou sendo cercado pelas bainhas das
                                           <term lemma="folha" msd="plural"> folhas</term>. Iris.
                                     Carex vulpina.</s>
                               <s>Vagina, &amp; vaginula, Bainha, estojo, ou pequena bainha, ou
-                                    cubertura de alguma <term>semente</term>.</s> _ <s>Squamosus fig
+                                    cubertura de alguma <term>semente</term>.</s> — <s>Squamosus fig
                                     111. Quando as pequenas <term lemma="folha" msd="plural">
                                           folhas</term>, que cobrem o caule, representaõ escamas.
-                                    Lilium.</s> _ <s>Imbricatus. fig. 115. As <term lemma="folha"
+                                    Lilium.</s> — <s>Imbricatus. fig. 115. As <term lemma="folha"
                                           msd="plural">folhas</term> vaõ cubrindo a base humas das
                                     outras a maneira das telhas no telhado. Tussilago farfara.</s>
-                              17 Pela superficie. _ <s>a.) Suberosus. A casca do <term>caule</term>
-                                    nos representa as qualidades de substancias de cortiça;</s> _
-                              Rimosus. Tendo a casca varias fendas, e profundas. _ Tunicatus. fig.
-                              127. Sendo revestido de algumas membranas. 18 _ b.) Levis. Sendo de
-                              huma superficie igual. Rannunculus aconitifolius. _ Striatus.
+                              17 Pela superficie. — <s>a.) Suberosus. A casca do <term>caule</term>
+                                    nos representa as qualidades de substancias de cortiça;</s> —
+                              Rimosus. Tendo a casca varias fendas, e profundas. — Tunicatus. fig.
+                              127. Sendo revestido de algumas membranas. 18 — b.) Levis. Sendo de
+                              huma superficie igual. Rannunculus aconitifolius. — Striatus.
                               Constando de regos tenues, e superficiaes, ou de elevaçoens distantes,
                               ou de linhas excavadas muito delgadas dispostas longitudin]almente.
-                              Rumex crispus. _ Sulcatus. Sendo os regos profundos, largos, e
+                              Rumex crispus. — Sulcatus. Sendo os regos profundos, largos, e
                               excavados. Achillaea millefolium. 19. c.) Glaber. De huma superficie
-                              núa, e polida. Ranunculus arvensis. _ Scaber. Constando de pontos
+                              núa, e polida. Ranunculus arvensis. — Scaber. Constando de pontos
                               algum tanto rijos, e sobresahidos. Gallium mollugo. Scariosus. De
-                              substancia seca. <pb n="204"/> _ Muricatus Fornecido de espinhos naõ
-                              picantes: Fagi sylvaticæ fructus. _ Tomentosus. Sendo cuberto de
+                              substancia seca. <pb n="204"/> — Muricatus Fornecido de espinhos naõ
+                              picantes: Fagi sylvaticæ fructus. — Tomentosus. Sendo cuberto de
                               cabellos entretecidos, apenas viziveis de maneira, que parece branco.
                               As plantas maritimas, e campestres postas aos ventos. Verbascum
-                              thapsus. _ Lanatus. Quando estes pellos se encurvaõ, e se unem entre
-                              si como as teas das aranhas. Verbascum, Hyoscyamus. _ Villosus. Quando
+                              thapsus. — Lanatus. Quando estes pellos se encurvaõ, e se unem entre
+                              si como as teas das aranhas. Verbascum, Hyoscyamus. — Villosus. Quando
                               estes pellos saõ molles, perceptiveis á nossa vista, formando assim
-                              huma especie de buço. Cerastium vulgatum. _Hirsutus. Constando de
-                              pellos rijos, e muito juntos. Silene nutans. _ Hirtus. Se os pellos do
-                              caule forem pequenos, e muito distantes. Daucus carota. _ Hispidus.
-                              Tendo sedas rijas, espalhadas. Echium vulgare. _ Aculcatus. fig. 123.
-                              Com bicos 84. que estaõ pegados á casca. Rosa. _ Pilosus. Cuberto de
-                              pellos prolongados simplices, e distinctos. Lamium purpureum. _
+                              huma especie de buço. Cerastium vulgatum. — Hirsutus. Constando de
+                              pellos rijos, e muito juntos. Silene nutans. — Hirtus. Se os pellos do
+                              caule forem pequenos, e muito distantes. Daucus carota. — Hispidus.
+                              Tendo sedas rijas, espalhadas. Echium vulgare. — Aculcatus. fig. 123.
+                              Com bicos 84. que estaõ pegados á casca. Rosa. — Pilosus. Cuberto de
+                              pellos prolongados simplices, e distinctos. Lamium purpureum. —
                               Spinosus. fig. 121. Armado de espinhos, que estaõ pegados ao ligno, ou
-                              paó. Prunus spinosa. _Urens. Sendo cuberto de humas arestas rijas, que
-                              parecem queimar, quando se tocaõ. Urtica. 20_ d.) <s>Stipulatus. fig.
-                                    118. b. Constando de <term lemma="estípula" norm="estípulas"
-                                          msd="plural">estipulas</term>. Papilionaceæ. V. Stipula.
-                                    (68)</s> _ <s>Membranatus. Sendo chato á maneira de huma <term>
-                                          folha</term>, e parece ter azas por causa das suas
-                                    membranas <term lemma="longitudinal" norm="longitudinais"
-                                          msd="plural"> longitudinaes</term>. Scrophularia
-                                    aquatica.</s> _ <s>Bulbiferus. Que contem corpos carnosos, isto
-                                    he, <term lemma="bulboso" msd="masculino plural"
-                                    >bulbosos</term>. Allium carinatum na umbella; Raninculus
+                              paó. Prunus spinosa. — Urens. Sendo cuberto de humas arestas rijas,
+                              que parecem queimar, quando se tocaõ. Urtica. 20 — d.) <s>Stipulatus.
+                                    fig. 118. b. Constando de <term lemma="estípula"
+                                          norm="estípulas" msd="plural">estipulas</term>.
+                                    Papilionaceæ. V. Stipula. (68)</s> — <s>Membranatus. Sendo chato
+                                    á maneira de huma <term> folha</term>, e parece ter azas por
+                                    causa das suas membranas <term lemma="longitudinal"
+                                          norm="longitudinais" msd="plural"> longitudinaes</term>.
+                                    Scrophularia aquatica.</s> — <s>Bulbiferus. Que contem corpos
+                                    carnosos, isto he, <term lemma="bulboso" msd="masculino plural"
+                                          >bulbosos</term>. Allium carinatum na umbella; Raninculus
                                     ficaria nas axillas, donde sahem os ramos.</s>
-                              <pb n="205"/> Pela composiçaõ. 21. _ a.) Enodis, aqualis. Destituido
-                              de articulações, ou nós. _ Simplex. Continuado com a mesma ordem até á
-                              sua ponta. Aquilegia vulgaris. _ Simplicissimus. Quando apenas
-                              apparecem alguns pequenos ramos. _ Integer. Naõ sendo dividido, ou
+                              <pb n="205"/> Pela composiçaõ. 21. — a.) Enodis, aqualis. Destituido
+                              de articulações, ou nós. — Simplex. Continuado com a mesma ordem até á
+                              sua ponta. Aquilegia vulgaris. — Simplicissimus. Quando apenas
+                              apparecem alguns pequenos ramos. — Integer. Naõ sendo dividido, ou
                               simplicissimo, apenas com alguns ramos estreitos. 22.<s> Compositus.
-                                          <term lemma="caule">Caule</term> dividido em ramos.</s> _
+                                          <term lemma="caule">Caule</term> dividido em ramos.</s> —
                               b.) Articulatus, geniculatus. fig. 114. Quando consta de
                               articulaçoens, que saõ os espaços das juncturas, ou nós. Oxalis.
                               Hibiscus. Piper. Articulatio. He a uniaõ das partes, que constaõ de
-                              nós. Internodium. He o espaço, que medêa entre os nós. _ Prolifer.
-                              Quando lança os ramos do seu apice. Pinus sylvestris. _ Dichotomus.
+                              nós. Internodium. He o espaço, que medêa entre os nós. — Prolifer.
+                              Quando lança os ramos do seu apice. Pinus sylvestris. — Dichotomus.
                               fig. 116. Dividindo-se sempre na sua continuaçaõ em dous. Valeriana
-                              locusta, Cerastium suffruticosum. _ Distichus. Com duas ordens de
-                              ramos. Rosæ pimpinelloides. _Subdivisus. Cada ramo dividido em outros,
-                              e estes em mais. Isatis tinctoria. _ Fulcratus. Se hum ramo sustenta
-                              quasi outro. Ficus indica. _ Brachiatus. fig. 117. Constando de ramos
-                              oppostos, e formando entre si como humas tantas cruzes. Mercurialis
-                              annua. <s>Brachia. Nas <term lemma="árvore" norm="árvores"
+                              locusta, Cerastium suffruticosum. — Distichus. Com duas ordens de
+                              ramos. Rosæ pimpinelloides. — Subdivisus. Cada ramo dividido em
+                              outros, e estes em mais. Isatis tinctoria. — Fulcratus. Se hum ramo
+                              sustenta quasi outro. Ficus indica. — Brachiatus. fig. 117. Constando
+                              de ramos oppostos, e formando entre si como humas tantas cruzes.
+                              Mercurialis annua. <s>Brachia. Nas <term lemma="árvore" norm="árvores"
                                           msd="plural">arvores</term> saõ os ramos mais grossos; nos
                                     quaes se divide o <term lemma="tronco">Tronco</term>, tomando-se
-                                    a similhança dos braços do Homem.</s> 23. _ c.) Subramosus.
+                                    a similhança dos braços do Homem.</s> 23. — c.) Subramosus.
                               Constando de poucos ramos <pb n="206"/>lateraes. Delphinium consolida.
-                              _ Ramosus. Com muitos ramos lateraes. Veronica beccabunga. _
+                              — Ramosus. Com muitos ramos lateraes. Veronica beccabunga. —
                               Ramosissimus, seu subdivisus. Sendo cheio de muitos ramos
-                              desordenados. Gallium saxatile. _ d.) Virgatus. Dotado de muitos
+                              desordenados. Gallium saxatile. — d.) Virgatus. Dotado de muitos
                               pequenos ramos desiguaes, debeis, flexiveis, formando entre si varios
-                              feixes. Antirrhinum genistifolium. Betula alba. _Paniculatus. Dividido
-                              em varios ramos e estes subdivididos em outros ramos mais pequenos.
-                              (103.) Panicula <entry>
+                              feixes. Antirrhinum genistifolium. Betula alba. — Paniculatus.
+                              Dividido em varios ramos e estes subdivididos em outros ramos mais
+                              pequenos. (103.) Panicula <entry>
                                     <form>- Fastigiatus.</form>
                                     <sense>Quando os ramos se levantaõ em feixe de tal forma, que
                                           ficaõ iguaes como se fossem cortados horizontalmente; e
@@ -14157,9 +14344,9 @@
                                                 lemma="frutificação" norm="frutificações"
                                                 msd="plural"> fructificaçoens</term> em hum feixe.
                                           &amp;c.</sense>
-                              </entry> e) _ <s>Patens. Se muitos <term lemma="tronco" msd="plural"
+                              </entry> e) — <s>Patens. Se muitos <term lemma="tronco" msd="plural"
                                           >troncos</term>, que nascem da raiz se afastaõ entre si
-                                    formando angulos agudos.</s> _ <s>Divaricatus. Opposto ao
+                                    formando angulos agudos.</s> — <s>Divaricatus. Opposto ao
                                           <term>coarctado</term>, ou apertado, quando o
                                           <term>tronco</term> lança muitos caules perto da terra
                                     sendo muito distantes entre si, e formando com o
@@ -14175,120 +14362,120 @@
                                     scolopendria.</s> Palmites. As continuaçoens muito subtis dos
                               ramos. Flagella. Da-se lhe este nome, quando saõ as ditas compridas.
                               Malleolus, surculus, germen. Da-se este nome a outros ramos, que sahem
-                              destes flagella no seguinte anno. 25. Pela situaçaõ dos Ramos. _ b.)
+                              destes flagella no seguinte anno. 25. Pela situaçaõ dos Ramos. — b.)
                               Alternis. Quando os ramos se seguem huns depois dos outros, formando
-                              assim a figura de huma escada. Herniaria glabra. _ <s>Distichis. He
+                              assim a figura de huma escada. Herniaria glabra. — <s>Distichis. He
                                     quando os ramos, que se sahem em qualquer parte do
                                           <term>tronco</term> estaõ virados somente para dous
-                                    lados.</s> _ Sparsis. Naõ conservando os ramos ordem regular. _
+                                    lados.</s> — Sparsis. Naõ conservando os ramos ordem regular. —
                               Confertis. Sendo os ramos tantos, que pareçem occultar o caule,
-                              deixando apenas hum pequeno espaço entre si. _ Oppositis. Quando os
+                              deixando apenas hum pequeno espaço entre si. — Oppositis. Quando os
                               ramos a dous, e dous, mas hum em cada lado, vem com os outros
-                              inferiores a formar como huma cruz. _ <s>Verticillatis. Quando muitos
+                              inferiores a formar como huma cruz. — <s>Verticillatis. Quando muitos
                                     ramos cercaõ o <term> tronco</term>, postos todos ao redor do
                                     mesmo <term>tronco</term> nas articulaçoens, e este saõ pelo
                                     numero terni, quaterni, quini, seni, septeni, octoni. Asperula
-                                    odorata, Gallium.</s> 26. A situaçaõ dos Ramos no caule. c.) _
+                                    odorata, Gallium.</s> 26. A situaçaõ dos Ramos no caule. c.) —
                                     <s>Erectis. Quando formaõ na sua base angulo agudo com o <term>
                                           tronco</term>, ou saõ quasi a perpendiculo. Delphinium
                                     consolida.</s>
-                              <pb n="208"/> _ <s>Coarctatis. Se encostaõ ao mesmo
+                              <pb n="208"/> — <s>Coarctatis. Se encostaõ ao mesmo
                                           <term>tronco</term> formando hum angulo muito agudo, e
-                                    continuando assim até á summidade da planta.</s> _
+                                    continuando assim até á summidade da planta.</s> —
                                     <s>Divergentibus. Formaõ com o <term>tronco</term> hum angulo
-                                    recto.</s> _ <s>Divaricatis. He quando os ramos formaõ sem ordem
+                                    recto.</s> — <s>Divaricatis. He quando os ramos formaõ sem ordem
                                     grandes angulos obtuzos apartando-se assim muito do
                                           <term>tronco</term>. Cucubalus bacciferus.</s> Em varios
-                              modos arqueados, e variados. _ <s>Deflexis. Encurvados, formando hum
-                                    arco da parte inferior do <term> tronco</term>.</s> _
+                              modos arqueados, e variados. — <s>Deflexis. Encurvados, formando hum
+                                    arco da parte inferior do <term> tronco</term>.</s> —
                                     <s>Reflexis, inflexis. Quando a ponta do ramo inclina para o
-                                          <term>tronco</term> pela parte superior.</s> _
+                                          <term>tronco</term> pela parte superior.</s> —
                               Retro-flexis. Sendo estendidos para a parte exterior, fazendo varias
-                              curvaturas, _ <s>Fulcratis. Sendo taõ <term lemma="deflexo"
+                              curvaturas, — <s>Fulcratis. Sendo taõ <term lemma="deflexo"
                                           msd="plural">deflexos</term>, que chegaõ a tocar a terra,
                                     e a raiz da mesma planta. Ficus. Gallium sylvaticum.</s> 27. d.)
                               Em quanto ao comprimento dos ramos regular-nos-hemos pelo comprimento
-                              do caule: _ Longis. Sendo mais compridos, que o caule. _ Brevibus.
-                              Sendo menores. _ Patentibus. Sahindo do caule, e formando angulo
+                              do caule: — Longis. Sendo mais compridos, que o caule. — Brevibus.
+                              Sendo menores. — Patentibus. Sahindo do caule, e formando angulo
                               recto.</div> FOLIA 28. <s>FOLIA. As <term lemma="folha">folhas</term>
                               saõ os orgaõs do movimento da planta.</s> 29. Em quanto á terminaçaõ.
                         Considera-se o lugar, situaçaõ, inserçaõ, ou direcçaõ. <s>Em quanto ao
                               lugar, no qual estaõ unidas as <term lemma="folha" msd="plural"
                                     >folhas</term>.</s>
-                        <pb n="209"/> _ 1.) <s>Radicalia, radicantia. Sahindo as <term lemma="folha"
+                        <pb n="209"/> — 1.) <s>Radicalia, radicantia. Sahindo as <term lemma="folha"
                                     msd="plural">folhas</term> immediatamente da <term>raiz</term>.
-                              Campanula rotundifolia.</s> _ 2.) Caulina. Do caule. _ 3.)<s> Ramea
+                              Campanula rotundifolia.</s> — 2.) Caulina. Do caule. — 3.)<s> Ramea
                               fig.90. Nascendo estas <term lemma="folha" msd="plural">folhas</term>
-                              pelos ramos.</s> _ 4.) <s>Axillaria. Nascendo a <term> folha</term>
+                              pelos ramos.</s> — 4.) <s>Axillaria. Nascendo a <term> folha</term>
                               entre o ramo, e o <term> caule</term>, ou no angulo, que forma o ramo
-                              com o caule.</s> _ Subaxillaria que nascem inferiormente ao ramo, ou
-                        angulo. Serratula. _ 5.) <s>Floralia. fig. 91. Nascendo donde sahe a
+                              com o caule.</s> — Subaxillaria que nascem inferiormente ao ramo, ou
+                        angulo. Serratula. — 5.) <s>Floralia. fig. 91. Nascendo donde sahe a
                                     <term>flor</term>, ou nos <term lemma="pedúnculo"
                                     norm="pedúnculos" msd="plural">pedunculos</term>, e por se
                               conservarem, he que differem das <term lemma="bráctea" norm="brácteas"
-                                    msd="plural">bracteas</term>, que cahem. Salvia.</s> _6.)
+                                    msd="plural">bracteas</term>, que cahem. Salvia.</s> — 6.)
                               <s>Seminalia. fig. 88. As primeiras <term lemma="folha">folhas</term>,
                               que sahem da <term> semente</term>, que dantes foraõ os <term
                                     lemma="cotilédone" norm="cotilédones" msd="plural">
                                     cotyledones</term>, e estas cahem. Brassica rapa.</s> 30.
                               <s>Consideradas em quanto ao numero. 1. 2. 3. poucas <term
                                     lemma="folha" msd="plural">folhas</term>, muitas, duas a duas,
-                              ou tres a tres &amp;c.</s> 31. Em quanto á sua situaçaõ. _ a.)
-                        Alterna. fig. 88. ad 90. 140. V. Ramo alterni. Borrago officinalis. _
-                        Bifaria. Sendo disticha. _ <s>Disticha. (25.) As <term lemma="folha"
+                              ou tres a tres &amp;c.</s> 31. Em quanto á sua situaçaõ. — a.)
+                        Alterna. fig. 88. ad 90. 140. V. Ramo alterni. Borrago officinalis. —
+                        Bifaria. Sendo disticha. — <s>Disticha. (25.) As <term lemma="folha"
                                     msd="plural">folhas</term> postas nos dous lados do ramo. Pinus,
-                              Abies.</s> _ <s>Sparsa. Naõ observando as <term lemma="folha"
+                              Abies.</s> — <s>Sparsa. Naõ observando as <term lemma="folha"
                                     msd="plural">folhas</term> ordem alguma. Epilobium
-                              angustifolium.</s> _ <s>Conferta. Quando saõ tantas, e taõ unidas
+                              angustifolium.</s> — <s>Conferta. Quando saõ tantas, e taõ unidas
                               entre si, que cobrem o <term>tronco</term>, ou caule donde sahem.</s>
-                        _ <s>Fasciculata. fig. 107. Nascendo muitas <term lemma="folha" msd="plural"
+                        — <s>Fasciculata. fig. 107. Nascendo muitas <term lemma="folha" msd="plural"
                                     >folhas</term>; <pb n="210"/>e distinctas do mesmo ponto. Pinus
-                              larix.</s> Pelo numero bina, terna, quaterna. _ Imbricata. fig. 106.
+                              larix.</s> Pelo numero bina, terna, quaterna. — Imbricata. fig. 106.
                         Folhas elevadas rectamente, e unidas de tal forma entresi, que humas cobrem
-                        a base ás outras; e muitas vezes até ao meio. Euphorbia paralias. _
+                        a base ás outras; e muitas vezes até ao meio. Euphorbia paralias. —
                               <s>Confluentia. Diz-se das <term lemma="folha" msd="plural"
                                     >folhas</term>, que saõ distinctas entre si, mas muito unidas na
-                              sua base, formando angulo agudo,</s> _<s> Coadunata. Unindo-se varias
+                              sua base, formando angulo agudo,</s> —<s> Coadunata. Unindo-se varias
                                     <term lemma="folha" msd="plural"> folhas</term>, que parece
-                              crescerem de huma base só.</s> _ Approximata. Deixando pequeno espaço
-                        entre as suas bases. _ <s>Remota. Sendo estas <term lemma="folha"
+                              crescerem de huma base só.</s> — Approximata. Deixando pequeno espaço
+                        entre as suas bases. — <s>Remota. Sendo estas <term lemma="folha"
                                     msd="plural">folhas</term> distantes humas das outras.
                               Polypodium fragile.</s> 32. b.) <s>Opposita. fig. 82. ad 86. 103.
                               Quando as <term lemma="folha" msd="plural">folhas</term> do caule se
                               achaõ duas e duas, porem dispostas em cada lado á maneira de cruz.
-                              Veronica teucrium.</s> _ <s>Decussata. Quando as <term lemma="folha"
+                              Veronica teucrium.</s> — <s>Decussata. Quando as <term lemma="folha"
                                     msd="plural">folhas</term> postas a quatro e quatro oppostas,
                               vendo-se a planta verticalmente mostraõ, ou parecem ser divididas
-                              entre quatro partes.</s> _ <s>Stellata. As <term lemma="folha"
+                              entre quatro partes.</s> — <s>Stellata. As <term lemma="folha"
                                     msd="plural">folhas</term> reprezentaõ a figura de estrela, com
                               6. <term lemma="folha" msd="plural">folhas</term>. Rubia
-                              tinctorum.</s> _ <s>Verticillata. fig. 101. 102. O caule he cercado
+                              tinctorum.</s> — <s>Verticillata. fig. 101. 102. O caule he cercado
                               por mais de duas <term lemma="folha" msd="plural">folhas</term>; e do
                               numero destas se diz terna, quaterna, quina, sena. Lilium martagon.
                               Asperula odorata.</s>
-                        <s>_ Squamosa. Sendo as <term lemma="folha" msd="plural">folhas</term>
+                        <s>— Squamosa. Sendo as <term lemma="folha" msd="plural">folhas</term>
                               mettidas no caule como outras tantas escamas</s>. 33. Em quanto á sua
-                        direcçaõ. _ a.) Erecta fig. 83. Formando com o caule hum angulo bem agudo,
-                        ou subindo quasi <pb n="211"/>pendicularmente. Colchicum autumnale. _
+                        direcçaõ. — a.) Erecta fig. 83. Formando com o caule hum angulo bem agudo,
+                        ou subindo quasi <pb n="211"/>pendicularmente. Colchicum autumnale. —
                         Stricta. Sendo inteiramente perpendicular com o caule. Tragopogom pratense.
-                        _ Rectissima. He o mesmo que stricta. _ Rigida. Sendo apenas flexiveis.
-                        Gallium uliginosum. _ <s>Adpressa. Quando o meio, ou <term senseNumber="2"
+                        — Rectissima. He o mesmo que stricta. — Rigida. Sendo apenas flexiveis.
+                        Gallium uliginosum. — <s>Adpressa. Quando o meio, ou <term senseNumber="2"
                                     >disco</term> da <term>folha</term> se approxima, ou se une ao
-                              mesmo caule. Thlaspi bursa pastoris.</s> _ <s>Patentia. fig. 84. He o
+                              mesmo caule. Thlaspi bursa pastoris.</s> — <s>Patentia. fig. 84. He o
                               contrario do termo adpressa, ou quando as <term lemma="folha"
                                     msd="plural">folhas</term> rectas formaõ com o caule angulo
-                              quasi reto. Sedum album.</s> _ Horizontalia. fig. 85. Apartando-se do
-                        caule em angulo recto. Lactuca virosa. _ Assurgentia. Encurvando-se na sua
-                        base, e elevando depois a sua ponta perpendicularmente. _ Inflexa-incurva.
-                        fig. 82. Encurvando-se superiormente para a parte do caule. _ Reclinata.
+                              quasi reto. Sedum album.</s> — Horizontalia. fig. 85. Apartando-se do
+                        caule em angulo recto. Lactuca virosa. — Assurgentia. Encurvando-se na sua
+                        base, e elevando depois a sua ponta perpendicularmente. — Inflexa-incurva.
+                        fig. 82. Encurvando-se superiormente para a parte do caule. — Reclinata.
                         fig. 86. Curvando-se para baixo, de tal sorte, que a ponta seja inferior á
-                        base. Hypericum. _ <s>Reflexa. Saõ as <term lemma="folha" msd="plural"
-                                    >folhas</term> oppostas ás inflexas.</s> _ Recurvata.
-                        Elevando-se para cima em linha curva. Plantago psyllium. _ Revoluta. fig.
+                        base. Hypericum. — <s>Reflexa. Saõ as <term lemma="folha" msd="plural"
+                                    >folhas</term> oppostas ás inflexas.</s> — Recurvata.
+                        Elevando-se para cima em linha curva. Plantago psyllium. — Revoluta. fig.
                         87. Recurvando-se para a parte superior á maneira de espira. Teucrium
-                        supinum. _ Dependentia. Tendo a ponta virada para á terra. Cichorium. _
-                        Declinata. Dobrando-se para baixo à maneira de quilha de barco. 34. _ b.)
-                        Obliqua. Quando a base vira para cima, e a ponta para baixo. Fritillaria. _
+                        supinum. — Dependentia. Tendo a ponta virada para á terra. Cichorium. —
+                        Declinata. Dobrando-se para baixo à maneira de quilha de barco. 34. — b.)
+                        Obliqua. Quando a base vira para cima, e a ponta para baixo. Fritillaria. —
                         Adversa. Folhas, que viraõ o lado ao meio dia. Amomum zingiber. <pb n="212"/>
                         <s>Verticalia, obversa. Diz-se das <term lemma="folha" msd="plural"
                                     >folhas</term>, cuja base he taõ estreita, que parece o apice; e
@@ -14296,132 +14483,132 @@
                               de feitio de coraçaõ.</s>
                         <s>Em lugar de obverse poem-se sómente ob, assim dizendo-se vg. obovata
                               entendese, que a base da figura oval he o apice da <term>folha</term>,
-                              e o apice da dita figura he a base da <term> folha</term>.</s> _
+                              e o apice da dita figura he a base da <term> folha</term>.</s> —
                               <s>Resupinata. Quando a parte interior, ou superior da
                                     <term>folha</term> vira para a terra, e a inferior para o
                               ceo.</s> 35. c.) <s>Submersa, seu demersa. Estando as <term
                                     lemma="folha" msd="plural">folhas</term> escondidas debaixo da
-                              superficie da agua. Ranunculus aquatilis.</s> _ <s>Natantia. Nadando
+                              superficie da agua. Ranunculus aquatilis.</s> — <s>Natantia. Nadando
                               as <term lemma="folha" msd="plural">folhas</term> pela superficie da
-                              agua. Nymphæa.</s> _ <s>Radicata. Quando as mesmas <term lemma="folha"
+                              agua. Nymphæa.</s> — <s>Radicata. Quando as mesmas <term lemma="folha"
                                     msd="plural">folhas</term> lançaõ no <term senseNumber="2"
-                                    >disco</term> inferior raizes como em algumas Algas.</s> _
+                                    >disco</term> inferior raizes como em algumas Algas.</s> —
                               <s>Radicantia. Sahindo raiz da extremidade, ou apice da <term>
                                     folha</term>. Saxifraga cotyledon.</s> 36. <s>Em quanto á
                               inserçaõ, ou uniaõ da <term>folha</term> com o <term lemma="pecíolo"
-                                    >peciolo</term> .</s> _ a.) <s>Petiolata. fig. 93. Tendo a
+                                    >peciolo</term> .</s> — a.) <s>Petiolata. fig. 93. Tendo a
                                     <term> folha</term> na margem da sua base hum <term
                                     lemma="pecíolo"> peciolo</term> (62), ou pé, por meio do qual se
-                              une ao <term>tronco</term>, ou ramo. Verbascum nigrum.</s> _
+                              une ao <term>tronco</term>, ou ramo. Verbascum nigrum.</s> —
                               <s>Peltata, seu umbilicata. fig. 92. Quando o <term lemma="pecíolo"
                                     >peciolo</term> se une ao meio da <term> folha</term>, e naõ á
                               margem, nem á base. Tropæolum majus.</s> 37. b.) <s>Sessilia. fig. 94.
                               Sendo distituidas de <term lemma="pecíolo">peciolo</term>; e por isto
-                              unidas immediatamente ao caule. Veronica teucrium.</s> _ Inserta.
-                        Pegadas ao caule. _ Adnata. fig. 94. Quando se unem ao caule com <pb n="213"
-                        />a parte mais ampla da superficie da base. _<s>Coadnata. Muitas <term
-                                    lemma="folha" msd="plural">folhas</term> se unem entre si.</s> _
+                              unidas immediatamente ao caule. Veronica teucrium.</s> — Inserta.
+                        Pegadas ao caule. — Adnata. fig. 94. Quando se unem ao caule com <pb n="213"
+                        />a parte mais ampla da superficie da base. —<s>Coadnata. Muitas <term
+                                    lemma="folha" msd="plural">folhas</term> se unem entre si.</s> —
                               <s>Connata. fig. 98. As <term lemma="folha" msd="plural">folhas</term>
                               oppostas (98) se unem pela sua base huma á outra. Lonicera. Dipsacus
-                              fullonum.</s> _ <s>Decurrentia. fig. 95. A <term>folha</term> se acha
+                              fullonum.</s> — <s>Decurrentia. fig. 95. A <term>folha</term> se acha
                               unida ao caule sem <term lemma="pecíolo">peciolo</term>, mas a sua
-                              base se estende pelo caule abaixo. Verbascum thapsus, Carduus.</s> _
+                              base se estende pelo caule abaixo. Verbascum thapsus, Carduus.</s> —
                               <s>Amplexicaulia, fig. 96. Quando a base da <term> folha</term> cerca
-                              trasversalmente ao caule. Salvia pratensis, Hyoscyamus niger.</s> _
-                        Semi, seu subamplexi-caulia. Quando cercaõ a metade do caule ao menos. _
+                              trasversalmente ao caule. Salvia pratensis, Hyoscyamus niger.</s> —
+                        Semi, seu subamplexi-caulia. Quando cercaõ a metade do caule ao menos. —
                               <s>Perfoliata. fig. 97. Se a base da <term> folha</term> cinge
                               transversalmente o caule por huma e outra parte. Bupleurum
-                              rotundifolium.</s> _ <s>Vaginantia. fig. 99. Quando a base da <term>
+                              rotundifolium.</s> — <s>Vaginantia. fig. 99. Quando a base da <term>
                                     folha</term> forma hum tubo, com que reveste o caule, sendo este
                               tubo de figura cylindrica. Gramina, Polygonum, Rumex.</s> 38. Pela
-                        estructura, e figura. _ a.) <s>Orbiculatum. fig. 1. Tendo o diametro <term>
+                        estructura, e figura. — a.) <s>Orbiculatum. fig. 1. Tendo o diametro <term>
                                     longitudinal</term> igual ao transversal, formando deste modo
-                              huma figura circular. Geranium sanguineum.</s> _ a.) Subrotundum, fig.
-                        2. Tendo a figura quasi orbicular. Ranunculus hederaceus. _ <s>Rotundum. A
+                              huma figura circular. Geranium sanguineum.</s> — a.) Subrotundum, fig.
+                        2. Tendo a figura quasi orbicular. Ranunculus hederaceus. — <s>Rotundum. A
                               circuferencia da <term>folha</term> he privada de angulos, ou
-                              excavaçoens. Polygala amara.</s> _ <s>Obverse-ovatum. Estando a parte
+                              excavaçoens. Polygala amara.</s> — <s>Obverse-ovatum. Estando a parte
                               mais estreita da <term> folha</term> pegada ao <term lemma="pecíolo"
-                                    >peciolo</term>.</s> _ <s>Ovatum. fig. 3. O diametro <pb n="214"
+                                    >peciolo</term>.</s> — <s>Ovatum. fig. 3. O diametro <pb n="214"
                                     /><term>longitudinal</term> excede o transversal, e a sua base
                               forma hum segmento circular, mas a <term>folha</term> he mais apertada
-                              na sua ponta. Scabiosa succisa.</s> _ <s>Ovale, seu ellipticum. fig.
+                              na sua ponta. Scabiosa succisa.</s> — <s>Ovale, seu ellipticum. fig.
                               4. He quando o diametro <term>longitudinal</term> excede o
                               transversal, sendo as extremidades apertadas, da mesma largura. Vicia
-                              sylvatica.</s> 39. _ b.) <s>Oblongum. fig. 5. O diametro
+                              sylvatica.</s> 39. — b.) <s>Oblongum. fig. 5. O diametro
                                     <term>longitudinal</term> da <term> folha</term> excede algumas
                               vezes o transversal, sendo huma, e outra extremidade mais estreita,
-                              que hum segmento de circulo. Salvia pratensis.</s> _ <s>Parabolicum.
+                              que hum segmento de circulo. Salvia pratensis.</s> — <s>Parabolicum.
                               fig 110. O diametro <term>longitudinal</term> da <term> folha</term>
                               excede o transversal; e desde a base subindo pelo apice se vai
-                              adelgaçando, e formando huma figura semi-oval. Amaryllis minor.</s> _
+                              adelgaçando, e formando huma figura semi-oval. Amaryllis minor.</s> —
                               <s>Ellypticum. Á maneira de lança com a largura da <term>folha</term>
-                              ovata.</s> _ <s>Cuneiforme fig. 45. Quando a <term>folha</term> se
+                              ovata.</s> — <s>Cuneiforme fig. 45. Quando a <term>folha</term> se
                               adelgaça pouco, e pouco para sua base, e o diametro
                                     <term>longitudinal</term> excede o transversal. Portulaca
-                              oleracea.</s> _ <s>Spathulatum. fig. 109. A base da <term>folha</term>
+                              oleracea.</s> — <s>Spathulatum. fig. 109. A base da <term>folha</term>
                               he alguma cousa apertada, ou linear, sendo redonda para a sua ponta, á
-                              maneira de espatula. Campanula americana.</s> _<s>Digitatum. A
+                              maneira de espatula. Campanula americana.</s> — <s>Digitatum. A
                                     <term>folha</term>, com as suas divisoens, reprezenta como
                               outros tantos dedos. Helleborus viridis. Eupatorium cannabinum.</s>
-                        <s>_ Auritum. Reprezenta a figura de huma <term lemma="aurícula"
+                        <s>— Auritum. Reprezenta a figura de huma <term lemma="aurícula"
                                     senseNumber="2">auricula</term>, ou orelha. Jungermania
-                              complanata.</s> _ <s>Pubescens. <term lemma="folha">Folha</term>
+                              complanata.</s> — <s>Pubescens. <term lemma="folha">Folha</term>
                               cuberta de certos <term lemma="vilo" norm="vilos" msd="plural"
                                     >villos</term> á maneira de buço. Plantago media.</s>
-                        <pb n="215"/> _ <s>Tesselatum. <term lemma="folha">Folha</term> pintada de
-                              malhas quadradas.</s> _ Acutum. Acabando em angulo. Scorzonera
+                        <pb n="215"/> — <s>Tesselatum. <term lemma="folha">Folha</term> pintada de
+                              malhas quadradas.</s> — Acutum. Acabando em angulo. Scorzonera
                         laciniata. 40. <s>As <term lemma="folha" msd="plural">folhas</term>
                               consideradas pelos seus angulos.</s> c.) <s>Rotundatum, sive rotundum.
-                              Sendo a <term>folha</term> privada de angulos. Lactuca sativa.</s> _
+                              Sendo a <term>folha</term> privada de angulos. Lactuca sativa.</s> —
                               <s>Lanceolatum fig. 6. Sendo a <term> folha</term> comprida,
                               adelgaçada de huma, e outra parte para as suas extremidades. Plantago
-                              lanceolata.</s> _ <s>Subulatum. fig. 8. <term lemma="folha"
+                              lanceolata.</s> — <s>Subulatum. fig. 8. <term lemma="folha"
                                     >Folha</term> linear inferiormente, que se vai adelgaçando para
-                              a ponta pouco, e pouco. Antirrhinum laucum.</s> _ Lincare. fig. 7.
+                              a ponta pouco, e pouco. Antirrhinum laucum.</s> — Lincare. fig. 7.
                         Sendo da mesma largura em todo o comprimento, mas ás vezes algum tanto
-                        estreita em ambas as extremidades. Gallium. verum. _ <s>Acerosum. fig. 105.
+                        estreita em ambas as extremidades. Gallium. verum. — <s>Acerosum. fig. 105.
                                     <term lemma="folha">Folha</term> linear de igual largura na
                               parte inferior, aspera, persistente, que dura por todo o anno. Pinnus,
-                              Juniperus.</s> _ <s>Glandulosum. Achaõ-se algumas <term
+                              Juniperus.</s> — <s>Glandulosum. Achaõ-se algumas <term
                                     lemma="glândula" norm="glândulas" msd="plural">glandulas</term>
                               nas suas excavaçoens, que saõ feitas á maneira de serra. Salix
                               persica.</s> 41. Em quanto aos seus angulos <s>ANGULI. Saõ partes
                               elevadas da <term>folha</term>; Sinus he huma excavaçaõ na margem da
-                                    <term>folha</term>.</s> _ <s>Integrum s. indivisum. Naõ se
+                                    <term>folha</term>.</s> — <s>Integrum s. indivisum. Naõ se
                               dividindo a <term>folha</term>, nem constando de angulos, ou
-                              excavaçoens algumas.</s> _ Integerrimum. Sem angulos; mas com
-                        excavaçoens. _ Triangulare. Com tres angulos, dous na base, e hum no apice.
-                        Atriplex hortensis. _ Quadrangulare. Constando de quatro angulos. _
-                        Quinquangulare. De cinco angulos. <pb n="216"/> _ Deltoideum, fig. 58. Por
+                              excavaçoens algumas.</s> — Integerrimum. Sem angulos; mas com
+                        excavaçoens. — Triangulare. Com tres angulos, dous na base, e hum no apice.
+                        Atriplex hortensis. — Quadrangulare. Constando de quatro angulos. —
+                        Quinquangulare. De cinco angulos. <pb n="216"/> — Deltoideum, fig. 58. Por
                         alguma semelhança; que tem com a letra grega Delta. <s> A <term>folha</term>
                               he <term>romboidal</term>, e os dous angulos lateraes menos se afastaõ
-                              da base da <term>folha</term>. Populus nigra.</s> _ <s>Rhombeum. Os
+                              da base da <term>folha</term>. Populus nigra.</s> — <s>Rhombeum. Os
                               quatro lados da <term>folha</term> saõ parallelos, e iguaes.
-                              Chenopodium vulvaria.</s> _ <s>Trapeziforme. Os lados da
+                              Chenopodium vulvaria.</s> — <s>Trapeziforme. Os lados da
                                     <term>folha</term> nem saõ iguaes, nem parallelos.</s> 42.
                         Consideradas em quanto ás excavaçoens da sua circuferencia. a.) <s>Cordatum
                               fig. 10. He huma <term>folha</term> oval (38); excavada na sua base,
                               destituida de angulos posteriores. Veronica teucrium.</s>
                         <s>Obverse-cordatum. Quando o cume, ou apice da figura do coraçaõ está
                               pegado ao <term lemma="pecíolo">peciolo</term>. Trifolium arvense.</s>
-                        _ <s>Reniforme fig. 9 <term lemma="folha">Folha</term> quasi redonda (38);
+                        — <s>Reniforme fig. 9 <term lemma="folha">Folha</term> quasi redonda (38);
                               excavada na sua base, e destituida de angulos posteriores. Campanula
-                              rotundifolia.</s> _ <s>Lunatum, lunulatum, fig. 11. <term
+                              rotundifolia.</s> — <s>Lunatum, lunulatum, fig. 11. <term
                                     lemma="folha">Folha</term> quasi redonda (38), excavada na base;
-                              porem com angulos posteriores encurvados. Sagittaria indica.</s> _
+                              porem com angulos posteriores encurvados. Sagittaria indica.</s> —
                               <s>Sagittatum. fig. 13. He <term> folha</term> triangular (41);
                               excavada na sua base, com angulos posteriores. Rumex acetosa.
-                              Convolvus arvensis.</s> _ Cordato-sagittatum, fig. 14. As Margens
+                              Convolvus arvensis.</s> — Cordato-sagittatum, fig. 14. As Margens
                         convexas como o sagittatum, exceptuando os lados mais elevados. Convolvulus
-                        Smilax. _ <s>Cordato-ovatum-ovale. A <term> folha</term> partecipa da figura
-                              de coraçaõ com a figura oval.</s> _ <s>Hastatum. fig. 15. <term>
+                        Smilax. — <s>Cordato-ovatum-ovale. A <term> folha</term> partecipa da figura
+                              de coraçaõ com a figura oval.</s> — <s>Hastatum. fig. 15. <term>
                                     folha</term> triangular (41) com <pb n="217"/>base, cujos lados
                               saõ excavados com angulos estendidos, e revirados abaixo, como huma
-                              lança. Solanum dulcamara.</s> _ Capillare. Delgada como os cabellos. _
-                        Setaccum. Com a figura de huma seda. Asparagus officinalis. _ <s>Runcinatum.
+                              lança. Solanum dulcamara.</s> — Capillare. Delgada como os cabellos. —
+                        Setaccum. Com a figura de huma seda. Asparagus officinalis. — <s>Runcinatum.
                               Constando a <term>folha</term> de excavaçoens elevadas, horizontaes,
                               convexas pela parte anterior, e transversas pela parte posteiror.
-                              Sisymbrium, Erysimum officinale.</s> _ <s>Panduriforme. He huma
+                              Sisymbrium, Erysimum officinale.</s> — <s>Panduriforme. He huma
                                     <term>folha</term>
                               <term lemma="oblongo" msd="feminino singular">oblonga</term> (39);
                               mais larga superiormente, com o apice, e a base elevada; o apice
@@ -14431,135 +14618,135 @@
                                     <term>folha</term> se dividem rectamente com incisuras iguaes na
                               largura, e pelo numero destas divizoens he que se diz bi, tri,
                               quatuor, multifidum conforme as divizoens. Multifidum. Aesculus
-                              hippocastanum. Trisidum. Reseda lutea.</s> _ <s>Bifidum. fig. 16. He a
+                              hippocastanum. Trisidum. Reseda lutea.</s> — <s>Bifidum. fig. 16. He a
                                     <term>folha</term> superiormente dividida em duas partes, ou
                                     <term lemma="lacínia" norm="lacínias" msd="plural"
-                                    >lacinias</term>, ficando as margens interiores rectas.</s> _
+                                    >lacinias</term>, ficando as margens interiores rectas.</s> —
                               <s>Lobatum. fig. 17. 19. A <term>folha</term> dividida até o meio em
                               tres partes distantes, com as margens convexas; do numero destas
                               excavaçoens se servem tambem os Botanicos, e assim se diz 2- 3- 4- 5-
-                              lobum.</s> _ <s>Lingulatum folium. <term lemma="folha">Folha</term> da
+                              lobum.</s> — <s>Lingulatum folium. <term lemma="folha">Folha</term> da
                               mesma largura em todo o comprimento, e na parte debaixo convexa.</s>
-                        <pb n="218"/> _ <s>Partitum. fig. 28. As divisoens da <term>folha</term>
+                        <pb n="218"/> — <s>Partitum. fig. 28. As divisoens da <term>folha</term>
                               chegaõ até á base da mesma. Dracocephalum. Austriacum, e pelo numero
                               destas divizoens se diz 2- 3- 4- 5- partitum, Multipartitum.
-                              Ranunculus polyanthemos, Aquilegia vulgaris.</s> _ <s>Divisum. Tendo
+                              Ranunculus polyanthemos, Aquilegia vulgaris.</s> — <s>Divisum. Tendo
                               profundas, e grandes <term lemma="lacínia" norm="lacínias"
                                     msd="plural">lacinias</term>, ou abas. Centaurea solstitia.</s>
-                        _ <s>Obsolete-lobatum. As excavaçoens da <term>folha</term> apenas
-                              apparecem.</s> _ <s>Palmatum, fig. 22. Dividindo-se a
+                        — <s>Obsolete-lobatum. As excavaçoens da <term>folha</term> apenas
+                              apparecem.</s> — <s>Palmatum, fig. 22. Dividindo-se a
                                     <term>folha</term> em muitas partes quasi iguaes, pelo seu
                               comprimento, mas em hum só corpo junto á base da mesma <term>
                                     folha</term>; isto he fazendo a <term>folha</term> varias
                               excavaçoens, que descem abaixo do meio da mesma <term>folha</term>.
-                              Vitis vinifera. Ranunculus sceleratus.</s> _ <s>Flabelliforme. A
-                                    <term>folha</term>, que forma a figura de leque.</s> _
+                              Vitis vinifera. Ranunculus sceleratus.</s> — <s>Flabelliforme. A
+                                    <term>folha</term>, que forma a figura de leque.</s> —
                               <s>Lyratum. fig. 76. Chama-se aquella <term> folha</term>, que sendo
                               dividida transversalmente, saõ maiores as divizoens superiores, e as
                               inferiores mais pequenas, e mais apartadas humas das outras. Geum
-                              urbanum, Sisymbrium arenosum.</s> _ <s>Pinnatisidum. fig. 23. <term
+                              urbanum, Sisymbrium arenosum.</s> — <s>Pinnatisidum. fig. 23. <term
                                     lemma="folha">Folha</term> dividida em divizoens compridas, e
                               horizontaes, ou <term lemma="lacínia" norm="lacínias" msd="plural">
-                                    lacinias</term>, ou abas compridas. Scabiosa arvensis.</s> _
+                                    lacinias</term>, ou abas compridas. Scabiosa arvensis.</s> —
                               <s>Sinuatum fig. 25. Os lados da <term> folha</term> tem excavaçoens
                               dilatadas, ou largas, mas naõ profundas, formando assim pequenas abas.
-                              Hyosciamus niger.</s> _ Sinuatum retrorsum fig. 27 As abas agudas saõ
-                        viradas para a base. _ Sinuato-sentatum. fig. 26. As abas lateraes saõ
-                        lineares, ou da mesma largura em todo o seu comprimento. <pb n="219"/> _
+                              Hyosciamus niger.</s> — Sinuatum retrorsum fig. 27 As abas agudas saõ
+                        viradas para a base. — Sinuato-sentatum. fig. 26. As abas lateraes saõ
+                        lineares, ou da mesma largura em todo o seu comprimento. <pb n="219"/> —
                         Dissectum, sive incisum. Que contem varias divizoens, ou incizoens.
-                        Ligusticum levisticum. _ <s>Laciniatum, fig. 24. Dividindo-se a
+                        Ligusticum levisticum. — <s>Laciniatum, fig. 24. Dividindo-se a
                                     <term>folha</term> de varios modos, ou em partes, cujas partes
                               divididas se tornaõ a dividir sem ordem alguma. Verbena
-                              officinalis.</s> _ <s>Squarrosum. As divizoens, da <term>folha</term>
+                              officinalis.</s> — <s>Squarrosum. As divizoens, da <term>folha</term>
                               se extendem por toda a parte, ou tambem se diz da <term>folha</term>
                               dividida em divizoens elevadas, que naõ saõ parallelas ao plano da
                               mesma <term>folha</term> .</s> 44. <s>Considerada a <term>folha</term>
                               em quanto á sua margem.</s>
                         <s>Por margem da <term>folha</term> entendem-se todos os lados exteriores,
-                              naõ fallando do <term senseNumber="2">disco</term>.</s> _ a.)
+                              naõ fallando do <term senseNumber="2">disco</term>.</s> — a.)
                               <s>Integerrimum fig. 42. <term lemma="folha">Folha</term> destituida
                               de incizuras, ou <term lemma="crena" msd="plural">crenas</term>, isto
                               he quando a margem da <term>folha</term> he linear, e de nenhuma sorte
-                              excavada. Lonicera xylosteum.</s> _ <s>Crenatum fig. 38. He a margem
+                              excavada. Lonicera xylosteum.</s> — <s>Crenatum fig. 38. He a margem
                               da <term> folha</term> recortada com angulos, que se naõ inclinaõ, nem
                               para huma, nem para outra parte. Ajuga reptans. Teucrium
-                              chamædrys.</s> _ Acute-crenatum fig.35. Sendo os angulos agudos. _
+                              chamædrys.</s> — Acute-crenatum fig.35. Sendo os angulos agudos. —
                         Obtuse-crenatum. fig. 36. Com os angulos obtusos. <s>Crenae. Saõ incisuras
                               perpendiculares na margem da <term>folha</term>, e obtusas; e sendo
-                              obliquas, e agudas se chama folium serratum.</s> _ Duplicate crenatum.
+                              obliquas, e agudas se chama folium serratum.</s> — Duplicate crenatum.
                         Nos ditos angulos, ou cortaduras se achaõ outras menores. Ranunculus
-                        auricomus. <pb n="220"/> _ <s>Incisum. Tendo a <term>folha</term> incisuras,
-                              e conforme estas diz-se.</s> _ Obtuse-Incisum. fig, 36. Sendo estes
-                        angulos obtuzos. _ Acute. fig. 35. Sendo agudos. _ Duplicate. fig. 33. Os
-                        mesmos angulos saõ recortados segunda vez. _ <s>Serratum. fig 31. Sendo a
+                        auricomus. <pb n="220"/> — <s>Incisum. Tendo a <term>folha</term> incisuras,
+                              e conforme estas diz-se.</s> — Obtuse-Incisum. fig, 36. Sendo estes
+                        angulos obtuzos. — Acute. fig. 35. Sendo agudos. — Duplicate. fig. 33. Os
+                        mesmos angulos saõ recortados segunda vez. — <s>Serratum. fig 31. Sendo a
                               margem da <term>folha</term> cortada por angulos agudos inclinando
                               estes á sua ponta huns sobre os outros, á maneira dos dentes de serra.
-                              Pyrus malus, Rhamnus alaternus.</s> _ Duplicato-serratum. Quando ha
-                        angulos menores dentro dos dentes maiores. _ Serratum retorsum. As pontas
-                        das incisuras estaõ viradas para a base. Marrubium. _ Obsolete-serratum. Com
-                        as pontas das incisuras obtusas, ou muito pequenas. _ <s>Ciliatum. fig. 50.
+                              Pyrus malus, Rhamnus alaternus.</s> — Duplicato-serratum. Quando ha
+                        angulos menores dentro dos dentes maiores. — Serratum retorsum. As pontas
+                        das incisuras estaõ viradas para a base. Marrubium. — Obsolete-serratum. Com
+                        as pontas das incisuras obtusas, ou muito pequenas. — <s>Ciliatum. fig. 50.
                               A margem da <term> folha</term> he chêa de sedas parallelas dispostas
                               longitudinalmente á maneira das pestanas. Erica tetralix. Sempervivum
-                              tectorum.</s> _ <s>Dentatum. fig. 30. As pontas horizontaes da <term>
+                              tectorum.</s> — <s>Dentatum. fig. 30. As pontas horizontaes da <term>
                                     folha</term> saõ consistentes sem se inclinarem nem para hum,
                               nem para outro lado, e pelo numero destas divizoens se diz bi, tri,
-                              quadri, multidentatum. Veronica camædrys.</s> _ Denticulatum. Folhas
+                              quadri, multidentatum. Veronica camædrys.</s> — Denticulatum. Folhas
                         com incisuras de dentes, ou de serra, mas estas mais agudas. Epilobium
-                        tetragonum. _ <s>Spinosum. Na margem, ou na superficie da <term>folha</term>
+                        tetragonum. — <s>Spinosum. Na margem, ou na superficie da <term>folha</term>
                               estaõ pontas rijas, e picantes, que se naõ podem arrancar sem romper a
                                     <term>folha</term>. Dracocephalum austriacum.</s>
-                        <pb n="221"/> _ Spinosum inerme. Tendo na margem pontas molles, que naõ
-                        picaõ. _ <s>Cartilagineum, fig. 34. Sendo a margem <term
+                        <pb n="221"/> — Spinosum inerme. Tendo na margem pontas molles, que naõ
+                        picaõ. — <s>Cartilagineum, fig. 34. Sendo a margem <term
                                     lemma="cartilagíneo" norm="cartilagínea" msd="feminino singular"
                                     > cartilaginea</term>, differente da substancia do <term
-                                    senseNumber="2">disco</term>, ou da superficie, Sedum.</s> 45. _
+                                    senseNumber="2">disco</term>, ou da superficie, Sedum.</s> 45. —
                         b) <s>Repandum, fig. 46. Sendo a margem da <term>folha</term> chêa de
                               voltas, e angulos; tendo estes varias excavaçoens, ou segmentos de
                               circulo, e com obtuzas curvaduras entre si afastadas. Chenopodium
-                              glaucum.</s> _ <s>Lacerum. fig. 24. <term lemma="folha">Folha</term>,
+                              glaucum.</s> — <s>Lacerum. fig. 24. <term lemma="folha">Folha</term>,
                               cuja margem está cortada de varios modos, e as suas <term
                                     lemma="lacínia" norm="lacínias" msd="plural">lacinias</term> saõ
-                              desiguaes. Crepis tectorum.</s> _ <s>Erosum. fig. 21. <term
+                              desiguaes. Crepis tectorum.</s> — <s>Erosum. fig. 21. <term
                                     lemma="folha">Folha</term> sinuatum, cujas excavaçoens contem
                               outras mui pequenas, e com <term lemma="lacínia" norm="lacínias"
                                     msd="plural">lacinias</term> desiguaes. Chenopodium album.</s>
-                        (43) _ <s>Dedaleum. Sendo a <term>folha</term> chêa de angulos nos quaes
+                        (43) — <s>Dedaleum. Sendo a <term>folha</term> chêa de angulos nos quaes
                               tambem ha varias excavaçoens, e estas divididas em muitas partes, e
                               participa das <term lemma="folha" msd="plural">folhas</term>.
                               Repandum, Flexuosum, &amp; Lacerum.</s> 46. <s>Considerando a
-                                    <term>folha</term> em quanto á sua ponta, ou extremidade.</s> _
+                                    <term>folha</term> em quanto á sua ponta, ou extremidade.</s> —
                         a) <s>Obtusum. fig. 40. Terminando a <term>folha</term> em angulo obtuzo, ou
-                              quasi em hum segmento de circulo. Sedum album.</s> _ <s>Obtusum cum
+                              quasi em hum segmento de circulo. Sedum album.</s> — <s>Obtusum cum
                               acumine. Sendo obtusa a <term>folha</term>, porém no meio acaba em
-                              ponta. Chenopodium vulvaria.</s> _ <s>Emarginatum. fig. 45. Quando
+                              ponta. Chenopodium vulvaria.</s> — <s>Emarginatum. fig. 45. Quando
                               acaba no apice em <term>crena</term>, ou pequena excavaçaõ. Acer
-                              campestre.</s> _ Obtuse-emarginatum. Com os lados da incisura obtusos.
-                        Sempervivum arboreum. _ Acute-emarginatum. Com os lado da incisura agudos. _
+                              campestre.</s> — Obtuse-emarginatum. Com os lados da incisura obtusos.
+                        Sempervivum arboreum. — Acute-emarginatum. Com os lado da incisura agudos. —
                         Retusum, fig. 46. Acabando em huma excavaçaõ obtuza. Vicia sativa. <pb
-                              n="222"/> _ Præmorsum. fig. 8. Acabando obtuzamente com incizoens
-                        desiguaes. Acer pensylvanicus. _ Truncatum. Acabando no apice em linha
-                        transversal. Convolvulus sepium. 47. _ b) Acutum fig. 41. Acabando em angulo
-                        agudo. Rumex crispus. _ Acuminatum. fig. 42. Acabando em ponta mui fina, á
-                        maneira de sovela (40). Lamium album. _ Cuspidatum. He o mesmo que
+                              n="222"/> — Præmorsum. fig. 8. Acabando obtuzamente com incizoens
+                        desiguaes. Acer pensylvanicus. — Truncatum. Acabando no apice em linha
+                        transversal. Convolvulus sepium. 47. — b) Acutum fig. 41. Acabando em angulo
+                        agudo. Rumex crispus. — Acuminatum. fig. 42. Acabando em ponta mui fina, á
+                        maneira de sovela (40). Lamium album. — Cuspidatum. He o mesmo que
                         acuminatum, mas com a ponta alguma cousa mais rija, ou que acaba com o apice
-                        á maneira de seda. _ Mucronatum. He huma especie do antecedente, mas com a
+                        á maneira de seda. — Mucronatum. He huma especie do antecedente, mas com a
                         ponta mais comprida, e picante, e algum tanto dura, ou que acaba com ponta
-                        sahida para fora. Gallium uliginosum. _ <s>Cirrhosum, cirrhatum. fig. 72.
+                        sahida para fora. Gallium uliginosum. — <s>Cirrhosum, cirrhatum. fig. 72.
                               73. Terminando em <term lemma="cirro" norm="cirros" msd="plural"
                                     senseNumber="2">cirrhos</term> no apice, isto he, em varios
                                     <term lemma="filamento" msd="plural">filamentos</term>, por meio
                               dos quaes sobem por outros corpos. Lathyrus. Pisum sativum.</s> 48. Em
-                        quanto á superficie. _ a) <s>Pagina superiore. He a superficie da
+                        quanto á superficie. — a) <s>Pagina superiore. He a superficie da
                                     <term>folha</term>, que esta virada para o cêo, por naõ ser a
-                                    <term>folha</term> torta.</s> _ _ Inferiore s. prona. Que está
-                        virada para a terra. _ <s>Nudum. Sendo a <term> folha</term> destituida de
+                                    <term>folha</term> torta.</s> — — Inferiore s. prona. Que está
+                        virada para a terra. — <s>Nudum. Sendo a <term> folha</term> destituida de
                               excrescencias <term lemma="piloso" msd="feminino plural"
-                                    >pilosas</term> , <term lemma="verrucoso" msd="feminino plural"
+                                    >pilosas</term>, <term lemma="verrucoso" msd="feminino plural"
                                     >verrucosas</term> &amp;c. Daphne cneorum, Mentha vulgaris.</s>
-                        _ <s>Nitidum. A <term>folha</term> he taõ liza, que resplandece á nossa
-                              vista. Angelica canadensis.</s> _ <s>Glabrum. A superficie da
+                        — <s>Nitidum. A <term>folha</term> he taõ liza, que resplandece á nossa
+                              vista. Angelica canadensis.</s> — <s>Glabrum. A superficie da
                                     <term>folha</term> he lubrica, e sem desigualdade alguma Primula
-                              auricula. Plantago major.</s> _ <s>Lucidum. A <term>folha</term>
+                              auricula. Plantago major.</s> — <s>Lucidum. A <term>folha</term>
                               reprezenta huma <pb n="223"/>substancia vitrea, isto he, quando a
                                     <term> folha</term> deixa passar a luz, ou por muitos poros.
                               Hypericum perforatum.</s>
