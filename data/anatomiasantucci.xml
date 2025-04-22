@@ -982,9 +982,31 @@
                         <p>Cabeça, ou larynx.</p>
                         <p>Tronco da Traca.</p>
                         <p>Ramos, ou brõchia.</p>
-
+                        <pb n="não numerada 60"/>
+                        <p>Figura terceira representa huma parte dos bofes de ovelha, inteira pela
+                              parte superior, e inferiormente descuberta das suas tunicas, onde
+                              apparecem os seus lobos pequenos.</p>
+                        <p>Orificio da vea pulmonar.</p>
+                        <p>Orificio da arteria pulmonar.</p>
+                        <p>Orificio do ramo da aspera arteria.</p>
+                        <p>Vasos lymphaticos, que apparecem por cima da superficie externa dos ditos
+                              bofes.</p>
+                        <p>Ramos menores da aspera arteria, aos quaes estaõ pegados os lobos
+                              pequenos a mnodo de uvas.</p>
+                        <p>Parte, ou lobo superior dos bofes.</p>
+                        <p>Figura quarta representa todas as cartilagens, de que se compoem a cabeça
+                              da aspera arteria.</p>
+                        <p>Cabeça, ou larynx cõ as suas cartilagens, e parte do tronco vista pela
+                              parte de diante.</p>
+                        <p>Cartilagem Epiglottis.</p>
+                        <p>Parte anterior da cartilagem scutiforme, ou thyroide.</p>
+                        <p>Dous processos da Thyroide.</p>
+                        <p>Parte anterior dos aneis cartilaginosos, que compoem o tronco da
+                              Traca.</p>
+                        <p>A cartilagẽ Cricoides, ou annular, vista pela parte anterior.</p>
+                        <p>A dita Cricoides vista pela parte posterior.</p>
                   </div>
-                  <pb n="não numerada 60 - Figura terceira representa"/>
+
                   <pb n="não numerada 61 - As duas cartilagens"/>
                   <pb n="não numerada 62" type="em_branco"/>
                   <pb n="não numerada 63" type="em_branco"/>
@@ -1738,9 +1760,8 @@
                         </div>
                         <div type="capítulo" n="8">
                               <head>CAPITULO VIII.</head>
-                              <pb n="51"/>
-                              <p>ventriculo, e acaba com a sua borda, ou extremidade aguda, e
-                                    desigual.</p>
+                              <p><pb n="51"/>ventriculo, e acaba com a sua borda, ou extremidade
+                                    aguda, e desigual.</p>
                               <note>Os ligamentos saõ tres. O primeiro largo dito suspensorio. O
                                     segundo do Peritôneo, dito da espinhela. O terceiro
                                     umbilical.</note>
