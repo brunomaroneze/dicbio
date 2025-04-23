@@ -982,9 +982,31 @@
                         <p>Cabeça, ou larynx.</p>
                         <p>Tronco da Traca.</p>
                         <p>Ramos, ou brõchia.</p>
-
+                        <pb n="não numerada 60"/>
+                        <p>Figura terceira representa huma parte dos bofes de ovelha, inteira pela
+                              parte superior, e inferiormente descuberta das suas tunicas, onde
+                              apparecem os seus lobos pequenos.</p>
+                        <p>Orificio da vea pulmonar.</p>
+                        <p>Orificio da arteria pulmonar.</p>
+                        <p>Orificio do ramo da aspera arteria.</p>
+                        <p>Vasos lymphaticos, que apparecem por cima da superficie externa dos ditos
+                              bofes.</p>
+                        <p>Ramos menores da aspera arteria, aos quaes estaõ pegados os lobos
+                              pequenos a mnodo de uvas.</p>
+                        <p>Parte, ou lobo superior dos bofes.</p>
+                        <p>Figura quarta representa todas as cartilagens, de que se compoem a cabeça
+                              da aspera arteria.</p>
+                        <p>Cabeça, ou larynx cõ as suas cartilagens, e parte do tronco vista pela
+                              parte de diante.</p>
+                        <p>Cartilagem Epiglottis.</p>
+                        <p>Parte anterior da cartilagem scutiforme, ou thyroide.</p>
+                        <p>Dous processos da Thyroide.</p>
+                        <p>Parte anterior dos aneis cartilaginosos, que compoem o tronco da
+                              Traca.</p>
+                        <p>A cartilagẽ Cricoides, ou annular, vista pela parte anterior.</p>
+                        <p>A dita Cricoides vista pela parte posterior.</p>
                   </div>
-                  <pb n="não numerada 60 - Figura terceira representa"/>
+
                   <pb n="não numerada 61 - As duas cartilagens"/>
                   <pb n="não numerada 62" type="em_branco"/>
                   <pb n="não numerada 63" type="em_branco"/>
@@ -1728,8 +1750,34 @@
                                     As veas, humas derivaõ das iliacas internas, e saõ chamadas veas
                                     emorrhoidaes externas, outras saõ da vea porta, e se chamaõ
                                     emorrhoidaes internas.</p>
+
+                              <pb n="36"/>
+                              <p>outros humores, que concorrem, e com o ar, as quaes cousas todas
+                                    mais attenuaõ, e desfazem a composiçaõ dos mesmos
+                                    mantimentos.</p>
+                              <note>Fim de todos estes artificios para a concocçaõ.</note>
+                              <p>36 <s>O fim de todo o artificio da concocçaõ do que se come, he,
+                                          que fique o mantimento desfeito de sorte, que a parte mais
+                                          pura, mais branda, e <term lemma="gelatinoso"
+                                                norm="gelatinosa" msd="feminino singular"
+                                                >jalatinosa</term>, e mais semelhante à nossa
+                                          substancia, se separe das outras mais crassas.</s></p>
+                              <note>O que succede aos mantimentos no ventriculo, e as causas, que
+                                    nelle concorrem para a concocçaõ.</note>
+                              <p>37 Da boca passa o comer pelo isophago para o ventriculo, ahi com a
+                                    saliva, e com o ar, que se mistura, e com o succo, que sahe das
+                                    glandulas da tunica do ventriculo, tambem com o que ficou do que
+                                    antecedentemente se comeo, e finalmente com o calor do estomago,
+                                    e das outras partes visinhas se desfaz muito mais, e se attenúa
+                                    o mantimento e se converte em humor, e se fermenta.</p>
+                              <p> 38 A tudo isto, que concorre para a concocçaõ, se ajunta o
+                                    movimento da tunica carnosa do ventriculo, e o movimento
+                                    alternado do diaphragma, dos musculos, que o cercaõ, e das
+                                    arterias, com que muito mais se desfaz, e se attenùa a materia,
+                                    que</p>
+                              <pb n="37"/>
                         </div>
-                        <!-- Faltam as páginas 35 a 51 -->
+                        <!-- Faltam as páginas 35, e 37 a 51 -->
                         <div type="capítulo" n="6">
                               <head>CAPITULO VI.</head>
                         </div>
@@ -1738,9 +1786,8 @@
                         </div>
                         <div type="capítulo" n="8">
                               <head>CAPITULO VIII.</head>
-                              <pb n="51"/>
-                              <p>ventriculo, e acaba com a sua borda, ou extremidade aguda, e
-                                    desigual.</p>
+                              <p><pb n="51"/>ventriculo, e acaba com a sua borda, ou extremidade
+                                    aguda, e desigual.</p>
                               <note>Os ligamentos saõ tres. O primeiro largo dito suspensorio. O
                                     segundo do Peritôneo, dito da espinhela. O terceiro
                                     umbilical.</note>
@@ -3556,6 +3603,9 @@
                                           dispostas a modo de arco, e assim fazem como hum
                                           Sphincter, que serve de constringir o orificio superior do
                                           ventriculo.</s></p>
+                              <note>
+                                    <s>Veas, e arterias, e nervos do <term lemma="diafragma"
+                                                norm="Diafragma"> Diaphragma</term>.</s></note>
                               <p>20 <s>Recebe o <term lemma="diafragma" norm="Diafragma"
                                                 >Diaphragma</term> os seus vasos da arteria, e vea
                                           Subclavia, e dos vasos lombares: os nervor sahem dos
@@ -3564,12 +3614,12 @@
                                     <s>Alguns Authores observaraõ no dito <term lemma="diafragma"
                                                 norm="Diafragma">Diaphragma</term> vasos
                                           lymphaticos.</s></p>
+
                               <note>
-                                    <s>Veas, e arterias, e nervos do <term lemma="diafragma"
-                                                norm="Diafragma"> Diaphragma</term>.</s>
                                     <s>Quando o <term lemma="diafragma" norm="Diafragma"
                                                 >Diaphragma</term> está inflamado, os doentes cahem
-                                          em delirios.</s>
+                                          em delirios.</s></note>
+                              <note>
                                     <s>Uso do <term lemma="diafragma" norm="Diafragma"
                                                 >Diaphragma</term>.</s>
                               </note>
@@ -3580,8 +3630,8 @@
                                           do grande consentimento, que tem os ditos vasos com a
                                           cabeça; e a observaçaõ declara, que inflammado o <term
                                                 lemma="diafragma" norm="Diafragma">
-                                                Diaphragma</term>, logo os doentes cahem em
-                                          furiosos, e continuos delirios.</s></p>
+                                                Diaphragma</term>, logo os doentes cahem em <pb
+                                                n="381"/>furiosos, e continuos delirios.</s></p>
                               <p>22 Este musculo serve tambem, além do que temos atèqui explicado,
                                     de ajudar com a sua compressaõ para aperfeiçoar a concocçaõ, e a
                                     passagem do Chilo, e para a circulaçaõ dos outros humores, e
