@@ -76,6 +76,9 @@
                         <p>Na seção dos termos da Mineralogia, cada verbete foi marcado com o
                               elemento <gi>entry</gi>; as subdivisões foram marcadas com o elemento <gi>
                               p</gi>.</p>
+                        <p>A lista de sinais químicos à p. 291 foi transcrita usando o elemento <gi>
+                              list</gi>. Os sinais não foram reproduzidos pela dificuldade de
+                              reproduzi-los usando a codificação UTF-8.</p>
                   </editorialDecl>
                   <projectDesc>
                         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de
@@ -17641,135 +17644,187 @@
                         </div>
                         <div type="subparte">
                               <head>INFLORESCENTIA. Florescentia.</head>
-                              <div type="item" n="94"><p>94. Inflorescentia. He o modo com que as
-                                    flores estaõ unidas á planta por meio do <term
+                              <div type="item" n="94">
+                                    <p>94. Inflorescentia. He o modo com que as flores estaõ unidas
+                                          á planta por meio do <term
                                                 lemma="pedúnculo">pedunculo</term>.</p>
-                                    <p>Flos.
-                                    Parte filamentosa, e <term lemma="membranáceo"
+                                    <p>Flos. Parte filamentosa, e <term lemma="membranáceo"
                                                 norm="membranácea" msd="feminino singular"
                                           >
-                                    membranacea</term>, primeira que o fruto, e conhecida pela
-                                    elegancia das suas cores. Consta de Calix, Corolla, <term
+                                          membranacea</term>, primeira que o fruto, e conhecida pela
+                                          elegancia das suas cores. Consta de Calix, Corolla, <term
                                                 lemma="estame" msd="plural">
                                                 Estames</term>, <term lemma="pistilo" norm="Pistilo"
                                           >
-                                    Pistillo</term>, <term lemma="pericarpo"
+                                          Pistillo</term>, <term lemma="pericarpo"
                                                 norm="Pericarpo">Pericarpio</term>, <term
                                                 lemma="semente">Semente</term>, <term
                                                 lemma="receptáculo" norm="Receptáculo"
                                           >Receptaculo</term>
-                                    .</p>
+                                          .</p>
                                     <p>A essencia da flor consiste na <term lemma="antera"
                                                 norm="Antera">Anthera</term>, e <term>estigma</term>
-                                    .</p>
+                                          .</p>
                                     <p>A essencia do fruto na <term>semente</term>.</p>
-                                    <p>A
-                                    essencia da <term lemma="frutificação" norm="frutificação"
+                                    <p>A essencia da <term lemma="frutificação" norm="frutificação"
                                           >
-                                    frutificaçaõ</term> consiste na flor, e fruto.</p>
-                                    <p>A essencia
-                                    dos vegetaes consiste na <term
+                                          frutificaçaõ</term> consiste na flor, e fruto.</p>
+                                    <p>A essencia dos vegetaes consiste na <term
                                                 lemma="frutificação" norm="frutificação"
                                           >frutificaçaõ</term>
-                                    .</p>
+                                          .</p>
                                     <p>A <term lemma="frutificação" norm="frutificação"
                                           >
-                                    frutificaçaõ</term> inclue-se na <term
+                                                frutificaçaõ</term> inclue-se na <term
                                                 lemma="antera" norm="Antera">Anthera</term>, <term>
-                                    Estigma</term>, e <term
+                                          Estigma</term>, e <term
                                                 lemma="semente">Semente</term>.</p>
                                     <pb n="244" />
-                                    I.Flores geralmente. — Terminales. (88) — Laterales. Pegadas ao
-                                    lado do caule. — Unilaterales, Secundi. Estaõ viradas para hum,
-                                    e mesmo lado. — Anomali. Sem ordem. Convallaria polygonatum. —
-                                    Sparsi. (89) <p>— Sessiles. Sem <term
-                                                lemma="pedúnculo">pedunculo</term>.</p> — Unicus.
-                                    Huma só flor distante das outras no mesmo caule. — Bini, termi
-                                    &amp;c. copiosi. Quando duas, tres, ou muitas flores estaõ
-                                    juntas na mesma ordem, e no mesmo lugar. Daphne Mezereum. —
-                                    Verticillati. Que cercaõ o caule. Verticillo denso com muitas
-                                    flores. Verticillo raro com poucas flores. — Erecti. Quasi
-                                    perpendiculares para o ceo. — Cernui. (61) Arqueadas para baixo.
-                                    — Nutantes. Estaõ mais viradas para a terra, que as cernuas. —
-                                    Verticales. Viradas perpendicularmente para a terra. —
-                                    Horisontales. Estão com o seu limbo parallelas ao horizontes.</div>
-                              <div type="item" n="95"><p>95. II. Especies dellas.</p> <p>Verticillus.
-                                    fig. 166. He formada de muitas flores quasi sesseis, ou quasi
-                                    sem <term
+                                    <p>I.Flores
+                                          geralmente.</p>
+                                    <p>— Terminales. (88)</p>
+                                    <p>— Laterales. Pegadas
+                                          ao
+                                          lado do caule.</p>
+                                    <p>— Unilaterales, Secundi. Estaõ
+                                          viradas para hum,
+                                          e mesmo lado.</p>
+                                    <p>— Anomali. Sem ordem. Convallaria
+                                          polygonatum.</p>
+                                    <p>—
+                                          Sparsi. (89)</p>
+                                    <p>— Sessiles. Sem <term
+                                                lemma="pedúnculo">pedunculo</term>.</p>
+                                    <p>— Unicus.
+                                          Huma só flor distante das outras no mesmo caule.</p>
+                                    <p>— Bini,
+                                          termi
+                                          &amp;c. copiosi. Quando duas, tres, ou muitas flores estaõ
+                                          juntas na mesma ordem, e no mesmo lugar. Daphne Mezereum.</p>
+                                    <p>—
+                                          Verticillati. Que cercaõ o caule.</p>
+                                    <p>Verticillo denso com
+                                          muitas
+                                          flores. Verticillo raro com poucas flores.</p>
+                                    <p>— Erecti.
+                                          Quasi perpendiculares para o ceo.</p>
+                                    <p>— Cernui. (61) Arqueadas
+                                          para
+                                          baixo.</p>
+                                    <p>— Nutantes. Estaõ mais viradas para a terra,
+                                          que as cernuas.</p>
+                                    <p>— Verticales. Viradas perpendicularmente para a
+                                          terra.</p>
+                                    <p>—
+                                          Horisontales. Estão com o seu limbo parallelas ao
+                                          horizontes.</p>
+                              </div>
+                              <div type="item" n="95">
+                                    <p>95. II. Especies dellas.</p>
+                                    <p>Verticillus. fig. 166. He formada de muitas flores quasi
+                                          sesseis, ou quasi sem <term
                                                 lemma="pedúnculo" norm="pedúnculos" msd="plural"
                                           >
-                                    pedunculos</term>: he huma coroa, que cerca o caule á maneira de
-                                    anel.</p> <p>— a.) Sessilis. Sendo as pequenas flores sem <term
+                                          pedunculos</term>: he huma coroa, que cerca o caule á
+                                          maneira de anel.</p>
+                                    <p>— a.) Sessilis. Sendo as pequenas flores sem <term
                                                 lemma="pedúnculo"
                                                 norm="pedúnculos" msd="plural">pedunculos</term>
-                                    visiveis. (94)</p> <p>— Pedunculatus. Tendo as flores <term
+                                          visiveis. (94)</p>
+                                    <p>— Pedunculatus. Tendo as flores <term
                                                 lemma="pedúnculo" norm="pedúnculos"
-                                                msd="plural">pedunculos</term>.</p> <p>— b.) Nudus.
-                                    Sem involucros: ou <term lemma="bráctea" norm="brácteas"
-                                                msd="plural">bracteas</term>. &amp;c.</p> <p>—
-                                    Bracteatus. Com <term lemma="bráctea" norm="brácteas"
-                                                msd="plural">bracteas</term>.</p> (81) <pb n="245"
-                                    /> —
-                                    c.) Involucratus. Com involucro. (112) <p>— Confertus. Formado
-                                    de muitas pequenas flore espessas, e muito unidas, ou com <term
+                                                msd="plural">pedunculos</term>.</p>
+                                    <p>— b.) Nudus. Sem involucros: ou <term lemma="bráctea"
+                                                norm="brácteas"
+                                                msd="plural">bracteas</term>. &amp;c.</p>
+                                    <p>— Bracteatus. Com <term lemma="bráctea" norm="brácteas"
+                                                msd="plural">bracteas</term>. (81)</p>
+                                    <pb n="245"
+                                    />
+                                    <p>— c.) Involucratus. Com involucro. (112)</p>
+                                    <p>— Confertus. Formado de muitas pequenas flore espessas, e
+                                          muito unidas, ou com <term
                                                 lemma="pedúnculo" norm="pedúnculos"
-                                                msd="plural">pedunculos</term> muito visinhos.</p> <p>—
-                                    Distans. Com os <term lemma="pedúnculo"
+                                                msd="plural">pedunculos</term> muito visinhos.</p>
+                                    <p>— Distans. Com os <term lemma="pedúnculo"
                                                 norm="pedúnculos" msd="plural">pedunculos</term>
-                                    distantes.</p></div>
-                              <div type="item" n="96"><p>96. Capitulum. Formado de muitas flores
-                                    dispostas á maneira de globo. Trifolium.</p> a.) Subrotundum.
-                                    Que se avisinha a figura esferica, ou quasi globosa. — Globosum.
-                                    Igual a huma esfera. — Dimidiatum. Representa a metade de hum
-                                    capitulo, ou he redondo em huma parte, e chato em outra. <p>—
-                                    b.) Foliosum. Cercado de pequenas <term lemma="folha"
+                                          distantes.</p>
+                              </div>
+                              <div type="item" n="96">
+                                    <p>96. Capitulum. Formado de muitas flores
+                                          dispostas á maneira de globo. Trifolium.</p>
+                                    <p>a.) Subrotundum.
+                                          Que se avisinha a figura esferica, ou quasi globosa.</p>
+                                    <p>— Globosum.
+                                          Igual a huma esfera.</p>
+                                    <p>— Dimidiatum. Representa a metade de hum
+                                          capitulo, ou he redondo em huma parte, e chato em outra.</p>
+                                    <p>— b.) Foliosum. Cercado de pequenas <term lemma="folha"
                                                 msd="plural">folhas</term>, ou estando as <term
                                                 lemma="folha" msd="plural">folhas</term> entre as
-                                    flores</p>
+                                          flores</p>
                                     <p>— Nudum. Sem <term lemma="folha" msd="plural">
-                                    folhas</term>, e sedas.</p>
-                                    <p>Fasciculus. São flores elevadas,
-                                    parallelas, <term
+                                                folhas</term>, e sedas.</p>
+                                    <p>Fasciculus. São flores elevadas, parallelas, <term
                                                 lemma="fastigiado" msd="feminino plural"
                                           >
                                                 fastigiadas</term> (23), e muito visinhas. Dianthus
-                                    barbatus.</p></div>
-                              <div type="item" n="97"><p>97. Spica fig. 165. He formada de flores
-                                    Sessiles, ou sem <term lemma="pedúnculo">pedunculo</term> commum
-                                    simples.</p> Spicula. He huma pequena espiga, ou porçaõ da
-                                    espiga maior das gramas, que outros chamaõ Locusta. — Secunda.
-                                    Tendo as flores todas viradas para huma parte. — Disticha. As
-                                    flores estaõ viradas para hum, e outro lado. <p>a.) Simplex.
-                                    Flores solitarias estaõ pegadas em hum, e mesmo <term
+                                          barbatus.</p>
+                              </div>
+                              <div type="item" n="97">
+                                    <p>97. Spica fig. 165. He formada de flores Sessiles, ou sem <term
+                                                lemma="pedúnculo">pedunculo</term> commum simples.</p>
+                                    <p>Spicula. He huma pequena espiga, ou porçaõ da
+                                          espiga maior das gramas, que outros chamaõ Locusta.</p>
+                                    <p>—
+                                          Secunda.
+                                          Tendo as flores todas viradas para huma parte.</p>
+                                    <p>—
+                                          Disticha. As
+                                          flores estaõ viradas para hum, e outro lado.</p>
+                                    <p>a.) Simplex. Flores solitarias estaõ pegadas em hum, e mesmo <term
                                                 lemma="pedúnculo"> pedunculo</term>, e assim a
-                                    espiga naõ está dividida.</p>
-                                    <p>— Composita. Formada de muitas
-                                    espigas pequenas pegadas por meio de hum pequeno <term
+                                          espiga naõ está dividida.</p>
+                                    <p>— Composita. Formada de muitas espigas pequenas pegadas por
+                                          meio de hum pequeno <term
                                                 lemma="pedúnculo"
                                           >pedunculo</term>
                                           <pb n="246" />ao <term
                                                 lemma="pedúnculo">pedunculo</term> commum, que está
-                                    dividido em varias partes.</p> — Unica. Huma só no caule. —
-                                    Multae. Muitas no mesmo caule.</div>
-                              <div type="item" n="98"><p>98. — b.) Ovata. Que se avisinha á figura
-                                          de
-                                          hum ovo. (38)</p> — Ventricosa. Estreita em huma, e em
-                                    outra extremidade, e dilatada no meio, ou arqueada nos lados. —
-                                    Cylindrica. Sendo redonda por todo o comprimento, e da mesma
-                                    grossura. — Interrupta. Alternadamente sem flores, ou muito
-                                    estreita de espaço em espaço, (59) ou com espigas menores
-                                    alternadas distantes.</div>
-                              <div type="item" n="99"><p>99. c) Imbricata. As pequenas flores
-                                    encostadas para hum lado se cobrem em parte entre si.</p> —
-                                    Articulata. (22) — Ramosa. Dividida em varios ramos. — Linearis.
-                                    He comprimida, e de igual largura em todo o seu comprimento. —
-                                    Ciliata. A sua margem está cercada de pellos; ou sedas
-                                    parallelas dispostas longitudinalmente (79). <p>— Foliacea. Com
-                                    pequenas <term lemma="folha" msd="plural">folhas</term>
-                                    interpostas.</p>
-                                    <p>— Comosa. Que acaba com huma coma, ou com
-                                    pequenas <term
-                                                lemma="folha" msd="plural">folhas</term> juntas.</p></div>
+                                          dividido em varias partes.</p>
+                                    <p>— Unica. Huma só no caule.</p>
+                                    <p>— Multae. Muitas no mesmo caule.</p>
+                              </div>
+                              <div type="item" n="98">
+                                    <p>98. — b.) Ovata. Que se avisinha á figura
+                                          de hum ovo. (38)</p>
+                                    <p>— Ventricosa. Estreita em huma, e em
+                                          outra extremidade, e dilatada no meio, ou arqueada nos
+                                          lados.</p>
+                                    <p>—
+                                          Cylindrica. Sendo redonda por todo o comprimento, e da
+                                          mesma
+                                          grossura.</p>
+                                    <p>— Interrupta. Alternadamente sem flores, ou muito
+                                          estreita de espaço em espaço, (59) ou com espigas menores
+                                          alternadas distantes.</p>
+                              </div>
+                              <div type="item" n="99">
+                                    <p>99. c) Imbricata. As pequenas flores
+                                          encostadas para hum lado se cobrem em parte entre si.</p>
+                                    <p>—
+                                          Articulata. (22)</p>
+                                    <p>— Linearis.
+                                          He comprimida, e de igual largura em todo o seu
+                                          comprimento.</p>
+                                    <p>—
+                                          Ciliata. A sua margem está cercada de pellos; ou sedas
+                                          parallelas dispostas longitudinalmente (79).</p>
+                                    <p>— Foliacea. Com pequenas <term lemma="folha" msd="plural">
+                                          folhas</term> interpostas.</p>
+                                    <p>— Comosa. Que acaba com huma coma, ou com pequenas <term
+                                                lemma="folha" msd="plural">folhas</term> juntas.</p>
+                              </div>
                               <div type="item" n="100">
                                     <p>100. Corymbus. fig. 163. Faz-se da espiga, quando cada huma
                                           das flores tem <term lemma="pedúnculo" norm="pedúnculos"
@@ -17793,196 +17848,258 @@
                                           >folhas</term>
                                           .</p>
                               </div>
-                              <div type="item" n="102"><p>102. Racemus. fig. 164. Cacho, he formado
-                                    de hum <term lemma="pedúnculo">pedunculo</term>, que tem ramos
-                                    lateraes pequenos. Vitis, Ribes Rubrum, Pbytolacca.</p> <p>— a.)
-                                    Simplex. Com o <term
+                              <div type="item" n="102">
+                                    <p>102. Racemus. fig. 164. Cacho, he formado de hum <term
+                                                lemma="pedúnculo">pedunculo</term>, que tem ramos
+                                          lateraes pequenos. Vitis, Ribes Rubrum, Pbytolacca.</p>
+                                    <p>— a.) Simplex. Com o <term
                                                 lemma="pedúnculo">pedunculo</term>, e os ramos, que
-                                    naõ estaõ divididos.</p>
+                                          naõ estaõ divididos.</p>
                                     <p>— Compositus. Com o <term
                                                 lemma="pedúnculo">
                                                 pedunculo</term>, e os ramos divididos em muitas
-                                    partes. Chenopodium viride. Vitis vinifera.</p> <p>— b.)
-                                    Unilateralis. Com os pequenos <term lemma="pedúnculo"
+                                          partes. Chenopodium viride. Vitis vinifera.</p>
+                                    <p>— b.) Unilateralis. Com os pequenos <term lemma="pedúnculo"
                                                 norm="pedúnculos" msd="plural"> pedunculos</term>,
-                                    ou com as flores pegadas sómente em hum lado</p>
-                                    <p>— Secundus.
-                                    Os pesinhos, pedicelli, ou pequenos <term
+                                          ou com as flores pegadas sómente em hum lado</p>
+                                    <p>— Secundus. Os pesinhos, pedicelli, ou pequenos <term
                                                 lemma="pedúnculo" norm="pedúnculos" msd="plural">
-                                    pedunculos</term> revirados todos para hum lado.</p>
-                                    <p>—
-                                    Pedatus. <term lemma="pedúnculo" norm="Pedúnculo"
+                                          pedunculos</term> revirados todos para hum lado.</p>
+                                    <p>— Pedatus. <term lemma="pedúnculo" norm="Pedúnculo"
                                           >Pedunculo</term>
-                                    commum sustenta racemos pequenos como o folium pedatum. (59)</p>
-                                    — Conjugatus. (59) — c.) Erectus. Elevado. (26) — Laxus. Froxo.
-                                    — Flacidus. Como se fosse murcho. — Dependens, pendulus.
-                                    Contrario ao erectus. <p>— d.) Nudus. Sem <term lemma="folha"
+                                          commum sustenta racemos pequenos como o folium pedatum.
+                                          (59)</p>
+                                    <p>— Conjugatus. (59)</p>
+                                    <p>— c.) Erectus. Elevado. (26)</p>
+                                    <p>— Laxus. Froxo.</p>
+                                    <p>— Flacidus. Como se fosse murcho.</p>
+                                    <p>— Dependens, pendulus.
+                                          Contrario ao erectus.</p>
+                                    <p>— d.) Nudus. Sem <term lemma="folha"
                                                 msd="plural"
                                           >folhas</term>.</p>
                                     <p>— Foliatus. Com <term
                                                 lemma="folha" msd="plural"
-                                          >folhas</term>.</p></div>
-                              <div type="item" n="103"><p>103. Panicula. fig. 167. As flores
-                                    espalhadas em <term lemma="pedúnculo" norm="pedúnculos"
+                                          >folhas</term>.</p>
+                              </div>
+                              <div type="item" n="103">
+                                    <p>103. Panicula. fig. 167. As flores espalhadas em <term
+                                                lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural">pedunculos</term> divididos em varias
-                                    partes.</p> <p>Na maior parte das gramas como Panicum, Milium.</p> <p>—
-                                    Diffusa. Os pedicellos ou pequenos ramos do <term
+                                          partes.</p>
+                                    <p>Na maior parte das gramas como Panicum, Milium.</p>
+                                    <p>— Diffusa. Os pedicellos ou pequenos ramos do <term
                                                 lemma="pedúnculo">pedunculo</term> se afastaõ muito
-                                    entre si.</p>
-                                    <pb n="248" /> — Coarctata. Os pedicellos, ou
-                                    pequenos ramos estaõ quasi parallelos entre si.</div>
+                                          entre si.</p>
+                                    <pb n="248" />
+                                    <p>— Coarctata. Os pedicellos, ou
+                                          pequenos ramos estaõ quasi parallelos entre si.</p>
+                              </div>
                         </div>
                         <div type="subparte">
                               <head>FRUCTIFICATIO <term lemma="frutificação" norm="frutificação"
                                     >
                                     Frutificaçaõ</term>.</head>
-                              <div type="item" n="104"><p>104. Fructificatio. He a parte dos
-                                    vegetaes,
+                              <div type="item" n="104">
+                                    <p>104. Fructificatio. He a parte dos
+                                          vegetaes,
                                           que dura certo tempo, que acaba o antigo, e principia hum
-                                    novo
-                                          estado.</p> Fructus. He a parte da planta annual unida á
-                                    flor, e que succede á mesma, que em chegando ao seu estado de
-                                    perfeiçaõ se despega espontaneamente da planta, e recebida na
-                                    terra dá principio a huma nova planta. <p>Fructescentia. He o
-                                    tempo, em que as <term lemma="semente" msd="plural">sementes</term>
-                                    amadurecem.</p>
+                                          novo
+                                          estado.</p>
+                                    <p>Fructus. He a parte da planta annual unida á
+                                          flor, e que succede á mesma, que em chegando ao seu estado
+                                          de
+                                          perfeiçaõ se despega espontaneamente da planta, e recebida
+                                          na
+                                          terra dá principio a huma nova planta.</p>
+                                    <p>Fructescentia. He o tempo, em que as <term lemma="semente"
+                                                msd="plural">sementes</term> amadurecem.</p>
                                     <p>Pelta. He huma <term lemma="frutificação"
                                                 norm="frutificação"
                                           >fructificaçaõ</term> chata,
-                                    ordinariamente pegada na margem da <term>folha</term>.</p>
-                                    <p>Tuberculum.
-                                    He huma <term lemma="frutificação"
+                                          ordinariamente pegada na margem da <term>folha</term>.</p>
+                                    <p>Tuberculum. He huma <term lemma="frutificação"
                                                 norm="frutificação">fructificaçaõ</term> formada de
-                                    pontos asperos, e estes quasi formados de pós. Lichen.</p>
-                                    <p>Scutellum.
-                                    He a <term lemma="frutificação"
+                                          pontos asperos, e estes quasi formados de pós. Lichen.</p>
+                                    <p>Scutellum. He a <term lemma="frutificação"
                                                 norm="frutificação"> fructificaçaõ</term> com
-                                    articulaçoens, concava, e com a margem elevada. Lichen.</p>
+                                          articulaçoens, concava, e com a margem elevada. Lichen.</p>
                                     <p>A <term
                                                 lemma="frutificação" norm="frutificação">
-                                    fructificaçaõ</term> differe em cada huma das suas partes pelo
-                                    numero, pela figura, proporçaõ, e situaçaõ.</p>
-                                    <p>Conhece-se
-                                    pela <term lemma="antera" norm="Antera">Anthera</term>, pelo <term>
-                                    Estigma</term>, e pela <term lemma="semente"
-                                          >Semente</term>,</p>
-                                    <p>Acinus.
-                                    He a <term>semente</term> das uvas, ou o <term>gomo</term> do
-                                    fruto do Sabugeiro &amp;c.</p>
+                                          fructificaçaõ</term> differe em cada huma das suas partes
+                                          pelo numero, pela figura, proporçaõ, e situaçaõ.</p>
+                                    <p>Conhece-se pela <term lemma="antera" norm="Antera">Anthera</term>,
+                                          pelo <term>
+                                                Estigma</term>, e pela <term lemma="semente"
+                                          >Semente</term>
+                                          ,</p>
+                                    <p>Acinus. He a <term>semente</term> das uvas, ou o <term>gomo</term>
+                                          do fruto do Sabugeiro &amp;c.</p>
                                     <p>Simplex. Constando a <term
                                                 lemma="frutificação"
                                                 norm="frutificação">fructificaçaõ</term> de poucas
-                                    flores, e estas desunidas.</p>
-                                    <p>Composita, aggregata. Consta de
-                                    muitas pequenas flores de figura particular, postas na mesma <pb
+                                          flores, e estas desunidas.</p>
+                                    <p>Composita, aggregata. Consta de muitas pequenas flores de
+                                          figura particular, postas na mesma <pb
                                                 n="249" />base, ou <term lemma="receptáculo">
-                                    receptaculo</term>. Syngenesia.</p>
+                                          receptaculo</term>. Syngenesia.</p>
                                     <p>— Partes. As partes da <term
                                                 lemma="frutificação"
                                                 norm="frutificação"> fructificaçaõ</term> saõ sete.
-                                    Calyx (105), Corolla (120), Stamen (127), Pistillum (133),
-                                    Pericarpium (139), Semen (148), Receptaculum. (155)</p></div>
-                              <div type="item" n="105"><p>105. Calix. He a casca da planta, que se
-                                    apresenta na <term lemma="frutificação"
+                                          Calyx (105), Corolla (120), Stamen (127), Pistillum (133),
+                                          Pericarpium (139), Semen (148), Receptaculum. (155)</p>
+                              </div>
+                              <div type="item" n="105">
+                                    <p>105. Calix. He a casca da planta, que se apresenta na <term
+                                                lemma="frutificação"
                                                 norm="frutificação">fructificaçaõ</term>, ou he a
-                                    externa membrana da flor, de côr quasi sempre verde, que cerca
-                                    juntamente a corolla, o <term> estame</term>, e o <term>pistilo</term>
-                                    .</p>
+                                          externa membrana da flor, de côr quasi sempre verde, que
+                                          cerca juntamente a corolla, o <term> estame</term>, e o <term>
+                                          pistilo</term> .</p>
                                     <p>O <term lemma="cálice" norm="cálice">caliz</term> pela
-                                    duraçaõ he.</p> — Caducus. Que cahe, quando a flor principia a
-                                    abrir-se Papaver, Epimedium. — Deciduus. Cahindo juntamente a
-                                    corolla. Tetradynamia. Berberis. — Persistens. Conserva-se até
-                                    amadurecer perfeitamente o fruto. Didynamia. Berberis. <p>—
-                                    Geminus. Quando saõ dous <term lemma="cálice"
-                                                norm="cálices" msd="plural">calices</term>.</p> —
-                                    Nullus. Nenhum. Tulipa, Llilium. — Simplex. Simples. Primula. —
-                                    Duplex, geminus. Duplicado. Malva. Hibiscus. — Triplex. Tres. <p>—
-                                    Perianthium, Derivado do vocabulo grego. Περι ανθος isto é he
-                                    junto á flor. Algumas vezes se considera a <term
+                                          duraçaõ he.</p>
+                                    <p>— Caducus. Que cahe, quando a flor principia a
+                                          abrir-se Papaver, Epimedium.</p>
+                                    <p>— Deciduus. Cahindo
+                                          juntamente
+                                          a corolla. Tetradynamia. Berberis.</p>
+                                    <p>— Persistens.
+                                          Conserva-se até
+                                          amadurecer perfeitamente o fruto. Didynamia.</p>
+                                    <p>— Geminus. Quando saõ dous <term lemma="cálice"
+                                                norm="cálices" msd="plural">calices</term>.</p>
+                                    <p>—
+                                          Nullus. Nenhum. Tulipa, Lilium.</p>
+                                    <p>— Simplex. Simples.
+                                          Primula.</p>
+                                    <p>—
+                                          Duplex, geminus. Duplicado. Malva. Hibiscus.</p>
+                                    <p>—
+                                          Triplex. Tres.</p>
+                                    <p>— Perianthium, Derivado do vocabulo grego. Περι ανθος isto é
+                                          he junto á flor. Algumas vezes se considera a <term
                                                 lemma="bráctea" norm="bráctea">bractea</term> como
-                                    periancio, como no Helleboro, Nigella hepatica.</p> <p>— a.)
-                                    Fructificationis. Incluindo <term lemma="estame"
-                                                msd="plural">estames</term>, e germen.</p> <p>— b.)
-                                    Floris. Contendo somente <term lemma="estame"
-                                                msd="plural">estames</term>. (127).</p> — y.)
-                                    Fructus. Incluindo somente o fruto. (133) <p>O periancio differe
-                                    da <term lemma="bráctea" norm="bráctea">bractea</term>, porque
-                                    aquelle apodrece em o fruto sendo maduro, se naõ he dantes, o
-                                    que naõ succede ás <term lemma="bráctea"
+                                          periancio, como no Helleboro, Nigella hepatica.</p>
+                                    <p>— a.) Fructificationis. Incluindo <term lemma="estame"
+                                                msd="plural">estames</term>, e germen.</p>
+                                    <p>— b.) Floris. Contendo somente <term lemma="estame"
+                                                msd="plural">estames</term>. (127).</p>
+                                    <p>— y.)
+                                          Fructus. Incluindo somente o fruto. (133)</p>
+                                    <p>O periancio differe da <term lemma="bráctea" norm="bráctea">
+                                          bractea</term>, porque aquelle apodrece em o fruto sendo
+                                          maduro, se naõ he dantes, o que naõ succede ás <term
+                                                lemma="bráctea"
                                                 norm="brácteas" msd="plural">bracteas</term>, ou <term
-                                                lemma="folha" msd="plural">folhas</term> floraes.</p></div>
-                              <div type="item" n="106"><p>106. I. Proprium. Incluindo só huma flor.</p> <p>—
-                                    a.) Monophyllum. Constando de huma só <term> folha</term>, <pb
+                                                lemma="folha" msd="plural">folhas</term> floraes.</p>
+                              </div>
+                              <div type="item" n="106">
+                                    <p>106. I. Proprium. Incluindo só huma flor.</p>
+                                    <p>— a.) Monophyllum. Constando de huma só <term> folha</term>, <pb
                                                 n="250" />que se inteira na base, posto que o limbo
-                                    seja muitas vezes dividido. Datura, Primula.</p> —
-                                    Diphyllum.Constando de duas. Papaver. <p>E assim se diz bi, tri,
-                                    tetra, penta, bexaphyllum conforme o numero, isto he dividindo
-                                    estas partes até á base do mesmo <term
-                                                lemma="cálice" norm="cálice">caliz</term>.</p> <p>—
-                                    Polyphyllum. Incisoens do <term lemma="cálice"
+                                          seja muitas vezes dividido. Datura, Primula.</p>
+                                    <p>—
+                                          Diphyllum. Constando de duas. Papaver.</p>
+                                    <p>E assim se diz bi, tri, tetra, penta, bexaphyllum conforme o
+                                          numero, isto he dividindo estas partes até á base do mesmo <term
+                                                lemma="cálice" norm="cálice">caliz</term>.</p>
+                                    <p>— Polyphyllum. Incisoens do <term lemma="cálice"
                                                 norm="cálice">caliz</term>, que chegaõ á base do
-                                    mesmo, em excedendo, o numero de doze.</p></div>
-                              <div type="item" n="107"><p>107. b.) Fissum. Em quanto ás incisoens he
-                                    hum periancio monophyllo (106), mais, ou menos dividido até a
+                                          mesmo, em excedendo, o numero de doze.</p>
+                              </div>
+                              <div type="item" n="107">
+                                    <p>107. b.) Fissum. Em quanto ás incisoens he
+                                          hum periancio monophyllo (106), mais, ou menos dividido
+                                          até a
                                           sua metade com incisoens lineares, e as margens rectas.</p>
-                                    Bi, tri, quadri, quinque fidum, &amp;c. multifidum segundo o
-                                    numero das incisoens; da mesma especie he bi, tri, &amp;c.
-                                    multidentatum. <p>— Partitum. He monophyllo, dividido como o
-                                    fissum, mas as incisoens passaõ do meio, e muitas veses chegaõ
-                                    até á base; porem as <term
+                                    <p>Bi,
+                                          tri, quadri, quinque fidum, &amp;c. multifidum segundo o
+                                          numero das incisoens; da mesma especie he bi, tri, &amp;c.
+                                          multidentatum.</p>
+                                    <p>— Partitum. He monophyllo, dividido como o fissum, mas as
+                                          incisoens passaõ do meio, e muitas veses chegaõ até á
+                                          base; porem as <term
                                                 lemma="lacínia" norm="lacínias"
                                                 msd="plural">lacinias</term> estaõ juntas na base,
-                                    formando hum só corpo. Bi, tri, multi-partitum, dividido em
-                                    duas, tres, ou muitas partes.</p> — Integrum. he monophyllo sem
-                                    divisaõ alguma. <p>— Serratum, dentatum. As incisoens do <term
+                                          formando hum só corpo. Bi, tri, multi-partitum, dividido
+                                          em duas, tres, ou muitas partes.</p>
+                                    <p>— Integrum. he monophyllo
+                                          sem
+                                          divisaõ alguma.</p>
+                                    <p>— Serratum, dentatum. As incisoens do <term
                                                 lemma="cálice" norm="cálice"
                                           >caliz</term> saõ muito
-                                    breves, de maneira que representaõ dentes Hypericum.</p> —
-                                    Ciliatum. Com pellos parallelos nas margens. Centaurea. Em
-                                    quanto á figura.</div>
-                              <div type="item" n="108"><p>108. c.) Tubulosum. De figura quasi
-                                    cylindrica.</p> <p>— Patens. Sendo o limbo do mesmo <term
+                                          breves, de maneira que representaõ dentes Hypericum.</p>
+                                    <p>—
+                                          Ciliatum. Com pellos parallelos nas margens. Centaurea.</p>
+                                    <p>Em
+                                          quanto á figura.</p>
+                              </div>
+                              <div type="item" n="108">
+                                    <p>108. c.) Tubulosum. De figura quasi
+                                          cylindrica.</p>
+                                    <p>— Patens. Sendo o limbo do mesmo <term
                                                 lemma="cálice" norm="cálice">caliz</term>, ou suas
-                                    lacinias mais amplas, ou as <term lemma="lacínia"
+                                          lacinias mais amplas, ou as <term lemma="lacínia"
                                                 norm="lacínias" msd="plural">lacinias</term>, e
-                                    divisoens, saõ divergentes.</p>
+                                          divisoens, saõ divergentes.</p>
                                     <p>— Reflexum. Com o limbo, ou <term
                                                 lemma="lacínia"
                                                 norm="lacínias" msd="plural">lacinias</term>
-                                    voltadas ou viradas para traz.</p>
+                                          voltadas ou viradas para traz.</p>
                                     <pb n="251" />
                                     <p>— Inflatum. <term
                                                 lemma="cálice" norm="Cálice">Caliz</term> concavo á
-                                    maneira de huma bexiga inchada.</p> — Aequale, inaequale,
-                                    globosum. A’ maneira de globo. — Clavatum. Mais grosso para a
-                                    ponta. — Erctum. Elevado, ou direito. — Integrum. Inteiro. —
-                                    Serratum. Cortado no limbo á maneira de serra. — Acutum. Acaba
-                                    em ponta aguda. — Truncatum. Como cortado.</div>
+                                          maneira de huma bexiga inchada.</p>
+                                    <p>— Aequale, inaequale,
+                                          globosum. A’ maneira de globo.</p>
+                                    <p>— Clavatum. Mais grosso
+                                          para a
+                                          ponta.</p>
+                                    <p>— Erectum. Elevado, ou direito.</p>
+                                    <p>—
+                                          Integrum. Inteiro.</p>
+                                    <p>— Serratum. Cortado no limbo á maneira de
+                                          serra.</p>
+                                    <p>— Acutum. Acaba em ponta aguda.</p>
+                                    <p>— Truncatum. Como
+                                          cortado.</p>
+                              </div>
                               <div type="item" n="109">
                                     <p>109. d.) Abbeviatum, longum. Quando naõ
                                           chega, ou excede o tubo, ou as unhas da corolla.</p>
                               </div>
-                              <div type="item" n="110"><p>110. e.) Obtusum. Obtuso na base (46.)
-                                    Nymphaea.</p> — Acatum. Agudo na base (47) Primula. — Acuminatum
-                                    apice. Delgado na ponta. Hyosciamus. — Spinosum. Com espinhos.
-                                    (85) Pela duraçaõ. — Persistens. Que fica depois do fruto estar
-                                    maduro. — Deciduus. Que cahe com a flor. — Caducus. Que cahe com
-                                    o fruto. <p>— Superum. Existindo o germe, ou o principio da <term
+                              <div type="item" n="110">
+                                    <p>110. e.) Obtusum. Obtuso na base (46.)
+                                          Nymphaea.</p>
+                                    <p>— Acutum. Agudo na base (47) Primula.</p>
+                                    <p>— Acuminatum
+                                          apice. Delgado na ponta. Hyosciamus.</p>
+                                    <p>— Spinosum. Com espinhos.
+                                          (85)</p>
+                                    <p>Pela duraçaõ.</p>
+                                    <p>— Persistens. Que fica depois do fruto estar
+                                          maduro.</p>
+                                    <p>— Deciduus. Que cahe com a flor.</p>
+                                    <p>— Caducus. Que cahe com
+                                          o fruto.</p>
+                                    <p>— Superum. Existindo o germe, ou o principio da <term
                                                 lemma="frutificação" norm="frutificação"
                                           >frutificaçaõ</term>
-                                    abaixo do <term
-                                                lemma="receptáculo">receptaculo</term>.</p> <p>—
-                                    Inferum. Quando o germe se acha acima do <term
-                                                lemma="receptáculo">receptaculo</term>.</p> Alem do
-                                    periancio simples, tambem se considera o composto. <p>—
-                                    Compositum. Constando de mais, do que duas ordens de <term
+                                          abaixo do <term
+                                                lemma="receptáculo">receptaculo</term>.</p>
+                                    <p>— Inferum. Quando o germe se acha acima do <term
+                                                lemma="receptáculo">receptaculo</term>.</p>
+                                    <p>Alem do
+                                          periancio simples, tambem se considera o composto.</p>
+                                    <p>— Compositum. Constando de mais, do que duas ordens de <term
                                                 lemma="folha"
                                                 msd="plural"> folhas</term>.</p>
-                                    <p>Squamosum. Sendo
-                                    o <term lemma="cálice"> caliz</term> cuberto de outras tantas
-                                    pequenas <term lemma="folha" msd="plural"
-                                          >folhas</term> á maneira
-                                    de escamas.</p></div>
+                                    <p>Squamosum. Sendo o <term lemma="cálice"> caliz</term> cuberto
+                                          de outras tantas pequenas <term lemma="folha" msd="plural"
+                                          >
+                                          folhas</term> á maneira de escamas.</p>
+                              </div>
                               <pb n="252" />
                               <div type="item" n="111">
                                     <p>111. II. Commune. Contem muitas pequenas
@@ -18046,82 +18163,112 @@
                                     <p>— Tetraphyllum. De quatro. Alisma.</p>
                                     <p>— Hexaphyllum. De seis. Daucus.</p>
                               </div>
-                              <div type="item" n="113"><p>113. Gluma. fig. 134. a. <term
+                              <div type="item" n="113">
+                                    <p>113. Gluma. fig. 134. a. <term
                                                 lemma="cálice" norm="Cálice">Caliz</term> proprio
-                                    das gramas: elle, he formado de pequenas <term
+                                          das gramas: elle, he formado de pequenas <term
                                                 lemma="folha" msd="plural">folhas</term> concavas,
-                                    que se unem. Pelo numero das valvas se diz uni, bi, tri, valvis,
-                                    e apenas consta de seis.</p> Valvae. Saõ laminas seccas, que
-                                    resistem à chuva, tem a rigeza de papel, e quasi sempre saõ
-                                    compridas.</div>
-                              <div type="item" n="114"><p>— 114. a.) Uniflora. Que contem huma só
-                                    flor, e esta, ou he perfeita com <term lemma="estame"
+                                          que se unem. Pelo numero das valvas se diz uni, bi, tri,
+                                          valvis, e apenas consta de seis.</p>
+                                    <p>Valvae. Saõ laminas seccas, que
+                                          resistem à chuva, tem a rigeza de papel, e quasi sempre
+                                          saõ
+                                          compridas.</p>
+                              </div>
+                              <div type="item" n="114">
+                                    <p>— 114. a.) Uniflora. Que contem huma só flor, e esta, ou he
+                                          perfeita com <term lemma="estame"
                                                 msd="plural">estames</term>, e <term lemma="pistilo"
                                           >
-                                    pistillo</term>, ou sòmente tem <term
+                                          pistillo</term>, ou sòmente tem <term
                                                 lemma="estame" msd="plural"> estames</term>, ou tem <term
                                                 lemma="pistilo">pistillo</term>. Panicum, Phalaris.</p>
-                                    <p>—
-                                    Biflora. Contendo dous <term lemma="flósculo"
+                                    <p>— Biflora. Contendo dous <term lemma="flósculo"
                                                 norm="flósculos" msd="plural">flosculos</term>.</p>
-                                    <p>—
-                                    Multiflora. Tendo mais, que dous <term lemma="flósculo"
+                                    <p>— Multiflora. Tendo mais, que dous <term lemma="flósculo"
                                                 norm="flósculos" msd="plural">flosculos</term>.
-                                    Triticum.</p> — b.) Univalvis. Se a flor alem das valvas, que
-                                    servem de corolla, vem cuberta com huma só valva, ou escama. —
-                                    Bi-multi-valvis. A flor tem duas &amp;c. escamas, ou valvas, ou
-                                    muitas; seis Hordeum. — c.) Colorata. De outra côr, que naõ seja
-                                    a côr verde herbacea. — Glabra. (48) — Hispida. (52)</div>
-                              <div type="item" n="115"><p>115. Arista. fig. 134. b. Pragana, he a
-                                    ponta
+                                          Triticum.</p>
+                                    <p>— b.) Univalvis. Se a flor alem das valvas, que
+                                          servem de corolla, vem cuberta com huma só valva, ou
+                                          escama.</p>
+                                    <p>—
+                                          Bi-multi-valvis. A flor tem duas &amp;c. escamas, ou
+                                          valvas, ou
+                                          muitas; seis Hordeum.</p>
+                                    <p>— c.) Colorata. De outra côr, que naõ seja
+                                          a côr verde herbacea.</p>
+                                    <p>— Glabra. (48)</p>
+                                    <p>— Hispida. (52)</p>
+                              </div>
+                              <div type="item" n="115">
+                                    <p>115. Arista. fig. 134. b. Pragana, he a
+                                          ponta
                                           feita á maneira de sovella, que está posta acima da gluma.
-                                    Avena.</p> <pb n="254" /> — a.) Mutica. he a gluma, que naõ tem
-                                    arista, ou pragana. — Terminalis. A arista sahe do apice da
-                                    valva. — Dorsalis. A pragana está pegada na parte externa, e
-                                    convexa, ou dorso da valva, ou no lado exterior da gluma. Avena.
-                                    — b. Recta. Quando he extende perpendicularmente. — Tortilis.
-                                    Como huma corda torcida, ou em espira. — Flexa. Arista, que tem
-                                    no meio hum nó torcido. Avena. — Geniculata, articulata. Com
-                                    nós, ou articulaçoens. Stipa Plumosa. — Recurvata. Arqueada para
-                                    a parte exterior.</div>
-                              <div type="item" n="116"><p>116. Amentum. fig. 137. He hum <term
+                                          Avena.</p>
+                                    <pb n="254" />
+                                    <p>— a.) Mutica. he a gluma, que naõ tem
+                                          arista, ou pragana.</p>
+                                    <p>— Terminalis. A arista sahe do apice da
+                                          valva.</p>
+                                    <p>— Dorsalis. A pragana está pegada na parte externa, e
+                                          convexa, ou dorso da valva, ou no lado exterior da gluma.
+                                          Avena.</p>
+                                    <p>— b. Recta. Quando he extende perpendicularmente.</p>
+                                    <p>— Tortilis.
+                                          Como huma corda torcida, ou em espira.</p>
+                                    <p>— Flexa. Arista, que tem
+                                          no meio hum nó torcido. Avena.</p>
+                                    <p>— Geniculata, articulata. Com
+                                          nós, ou articulaçoens. Stipa plumosa.</p>
+                                    <p>— Recurvata. Arqueada para
+                                          a parte exterior.</p>
+                              </div>
+                              <div type="item" n="116">
+                                    <p>116. Amentum. fig. 137. He hum <term
                                                 lemma="cálice" norm="cálice">caliz</term> produzido
-                                    do <term lemma="receptáculo">receptaculo</term> commum,
-                                    filiforme, paleaceo, gemmaceo, ou com <term lemma="gomo"
-                                                msd="plural">gomos</term>. Juglans.</p> <p>—
-                                    Squamosum. Quando os <term lemma="flósculo"
+                                          do <term lemma="receptáculo">receptaculo</term> commum,
+                                          filiforme, paleaceo, gemmaceo, ou com <term lemma="gomo"
+                                                msd="plural">gomos</term>. Juglans.</p>
+                                    <p>— Squamosum. Quando os <term lemma="flósculo"
                                                 norm="flósculos" msd="plural">flosculos</term> estaõ
-                                    guarnecidos de escamas. Carpinus.</p> — Nudum. Sem escamas.
-                                    Pericarpium. Fruto, que sahe do amento, que representa huma
-                                    figura conica. Strobilus. De figura conica. <p>— Arista. Estando
-                                    a corolla pegada ao <term lemma="cálice"
+                                          guarnecidos de escamas. Carpinus.</p>
+                                    <p>— Nudum. Sem escamas.</p>
+                                    <p>Pericarpium. Fruto, que sahe do amento, que representa huma
+                                          figura conica.</p>
+                                    <p>Strobilus. De figura conica.</p>
+                                    <p>— Arista. Estando a corolla pegada ao <term lemma="cálice"
                                                 norm="cálice">caliz</term> com pequeno <term
                                                 lemma="pedúnculo">pedunculo</term>.</p>
-                                    <p>Rachis. He
-                                    o <term lemma="receptáculo"> receptaculo</term> filiforme nos
-                                    amentos.</p></div>
-                              <div type="item" n="117"><p>117. Spatha. fig. 132. 133. Nos Liliaceos,
-                                    he o <term lemma="cálice" norm="cálice">caliz</term> do Spadix.
-                                    (164) aberto, ou quebrado pelo seu comprimento, ou huma bainha
-                                    fendida, ou aberta, longitudinalmente, <term
+                                    <p>Rachis. He o <term lemma="receptáculo"> receptaculo</term>
+                                          filiforme nos amentos.</p>
+                              </div>
+                              <div type="item" n="117">
+                                    <p>117. Spatha. fig. 132. 133. Nos Liliaceos, he o <term
+                                                lemma="cálice" norm="cálice">caliz</term> do Spadix.
+                                          (164) aberto, ou quebrado pelo seu comprimento, ou huma
+                                          bainha fendida, ou aberta, longitudinalmente, <term
                                                 lemma="membranáceo" norm="membranácea"
                                                 msd="feminino singular">membranacea</term>, rugosa,
-                                    e quasi sempre secca. Narcissus. Palmas.</p> <p>— Univalvis. fig.
-                                    132. Consta de huma só <term>folha</term>
-                                          <pb n="255" />fendida,
-                                    ou rachada longitudinalmente, ou que se abre em hum lado. Arum.
-                                    Narcissus, Lencojum.</p> <p>— Bivalvis. fig. 133. Huma bainha
-                                    dividida quasi até á base em duas <term lemma="lacínia"
+                                          e quasi sempre secca. Narcissus. Palmas.</p>
+                                    <p>— Univalvis. fig. 132. Consta de huma só <term>folha</term>
+                                          <pb
+                                                n="255" />fendida, ou rachada longitudinalmente, ou
+                                          que se abre em hum lado. Arum. Narcissus, Lencojum.</p>
+                                    <p>— Bivalvis. fig. 133. Huma bainha dividida quasi até á base
+                                          em duas <term lemma="lacínia"
                                                 norm="lacínias"
                                                 msd="plural">lacinias</term>, ou em duas partes.</p>
-                                    — Dimidiata. Consta de huma só valva aberta desde a base até ao
-                                    apice á maneira de hum ovo cortado longitudinalmente ao meio. <p>—
-                                    Monophylla. De huma só <term>folha</term>. Narcissus.</p>
-                                    <p>—
-                                    Diphylla. De duas <term lemma="folha" msd="plural"
+                                    <p>— Dimidiata. Consta de huma só valva aberta desde a base até
+                                          ao
+                                          apice á maneira de hum ovo cortado longitudinalmente ao
+                                          meio.</p>
+                                    <p>— Monophylla. De huma só <term>folha</term>. Narcissus.</p>
+                                    <p>— Diphylla. De duas <term lemma="folha" msd="plural"
                                           >folhas</term>.
-                                    Stratiotes imbricata. Musa.</p> — Imbricata. Com escamas
-                                    dispostas á maneira de telhas. Musa.</div>
+                                          Stratiotes imbricata. Musa.</p>
+                                    <p>— Imbricata. Com escamas
+                                          dispostas á maneira de telhas. Musa.</p>
+                              </div>
                               <div type="item" n="118">
                                     <p>118. Calyptra. fig. 136. <term
                                                 lemma="cálice" norm="Cálice">Caliz</term> proprio
@@ -18138,109 +18285,171 @@
                                           >caliz</term> calyptra posto
                                           obliquamente, ou virado para algum lado.</p>
                               </div>
-                              <div type="item" n="119"><p>119. Volva. fig. 139. b. Chama-se
-                                    impropriamente <term lemma="cálice" norm="cálice"
-                                          >caliz</term>:
-                                    elle he huma membrana (para assim me explicar) que une a
-                                    periferia do pileo (vid. infr.) dos cucumellos antes da
-                                    expançaõ, depois da qual se dilacera perdendo a semilhança do <term
+                              <div type="item" n="119">
+                                    <p>119. Volva. fig. 139. b. Chama-se impropriamente <term
+                                                lemma="cálice" norm="cálice"
+                                          >caliz</term>: elle he
+                                          huma membrana (para assim me explicar) que une a periferia
+                                          do pileo (vid. infr.) dos cucumellos antes da expançaõ,
+                                          depois da qual se dilacera perdendo a semilhança do <term
                                                 lemma="cálice"
-                                                norm="cálice">caliz</term>.</p> — Aproximata. fig.
-                                    139. a. Sendo contigua ao pileo, ou á cabeça. — Remota. Distante
-                                    do pileo. — Remotissima. Muito mais distante.</div>
-                              <div type="item" n="120"><p>120 Corolla. He o libro da planta, que se
-                                    acha extendido na flor, ou he huma membrana interna da flor, ou
-                                    huma <term>folha</term>, ou pequenas <term
+                                                norm="cálice">caliz</term>.</p>
+                                    <p>— Aproximata. fig.
+                                          139. a. Sendo contigua ao pileo, ou á cabeça.</p>
+                                    <p>— Remota. Distante
+                                          do pileo.</p>
+                                    <p>— Remotissima. Muito mais distante.</p>
+                              </div>
+                              <div type="item" n="120">
+                                    <p>120 Corolla. He o libro da planta, que se acha extendido na
+                                          flor, ou he huma membrana interna da flor, ou huma <term>
+                                          folha</term>, ou pequenas <term
                                                 lemma="folha" msd="plural">folhas</term>, de
-                                    substancia mais tenra, sempre linda, e differente da cór do <term
+                                          substancia mais tenra, sempre linda, e differente da cór
+                                          do <term
                                                 lemma="cálice" norm="cálice">caliz</term>.</p>
-                                    <p>A
-                                    corolla se distingue do Periancio, porque a quella, pela
-                                    situaçaõ, alterna com os <term lemma="estame" msd="plural"
+                                    <p>A corolla se distingue do Periancio, porque a quella, pela
+                                          situaçaõ, alterna com os <term lemma="estame" msd="plural"
                                           >
-                                    estames</term>, e este está opposto aos mesmos.</p>
+                                          estames</term>, e este está opposto aos mesmos.</p>
                                     <pb n="256" />
-                                    — Aequalis. As partes da corolla naõ saõ iguaes pela figura,
-                                    tamanho, e proporçaõ. — Inaequalis. As partes da corolla naõ saõ
-                                    iguaes no tamanho, mas com a proporcaõ dellas, formaõ huma flor
-                                    regular. a.) As partes da corolla. <p>Petalum, e Nectarium.</p>
-                                    <p>Petalum.
-                                    He um tegumento corallaceo da flor, ou a parte da corolla
-                                    dividida em muitas partes. <s>Usa-se deste
+                                    <p>—
+                                          Aequalis. As partes da corolla naõ saõ iguaes pela figura,
+                                          tamanho, e proporçaõ.</p>
+                                    <p>— Inaequalis. As partes da corolla
+                                          naõ saõ
+                                          iguaes no tamanho, mas com a proporcaõ dellas, formaõ huma
+                                          flor
+                                          regular.</p>
+                                    <p>a.) As partes da corolla.</p>
+                                    <p>Petalum, e
+                                          Nectarium.</p>
+                                    <p>Petalum. He um tegumento corallaceo da flor, ou a parte da
+                                          corolla dividida em muitas partes. <s>Usa-se deste
                                                 termo commummente, quando a corolla he composta de
-                                    pequenas folhas, ou laminas desunidas entre si, e que
-                                                tambem estaõ desunidas na base.</s></p> Partes. As
-                                    partes do petalo saõ. Tubus. fig. 142. a. He a base inferior de
-                                    figura cylindrica. A parte inferior da corolla monopetala feita
-                                    á maneira de canudo. Primala veris, Crocus. Tubi orificium. A
-                                    abertura superior do canudo, ou abertura no meio da corolla.
-                                    Tubus perforatus. Aberto em ambas as extremidades. — Caecus.
-                                    Fechado em huma extremidade; e sendo comprido entaõ chama-se
-                                    calcar, e pertence ao nectario. <p>Unguis. fig. 144. a. He a
-                                    parte inferior do petalo, que se pega ao <term
+                                          pequenas folhas, ou laminas desunidas entre si, e
+                                                que
+                                                tambem estaõ desunidas na base.</s></p>
+                                    <p>Partes. As
+                                          partes do petalo saõ.</p>
+                                    <p>Tubus. fig. 142. a. He a base
+                                          inferior de
+                                          figura cylindrica. A parte inferior da corolla monopetala
+                                          feita
+                                          á maneira de canudo. Primala veris, Crocus.</p>
+                                    <p>Tubi
+                                          orificium. A
+                                          abertura superior do canudo, ou abertura no meio da
+                                          corolla.</p>
+                                    <p>Tubus perforatus. Aberto em ambas as
+                                          extremidades.</p>
+                                    <p>— Caecus.
+                                          Fechado em huma extremidade; e sendo comprido entaõ
+                                          chama-se
+                                          calcar, e pertence ao nectario.</p>
+                                    <p>Unguis. fig. 144. a. He a parte inferior do petalo, que se
+                                          pega ao <term
                                                 lemma="receptáculo">receptaculo</term>, ou á base da
-                                    flor, que consta de muitos petalos.</p> Limbus. fig. I42. b. He
-                                    a parte superior extendida da corolla monopetala. Este ou he
-                                    integer inteiro sem alguma divisaõ, ou he laciniatus dividido em
-                                    varias partes, ou abas. — Fissus. Naõ chega a divisaõ até ao
-                                    meio. Lacinia. Saõ partes da corolla, em que está dividido o
-                                    limbo. Laciniae duae. Alfine, Circea; tres <pb n="257"
-                                    />Holosteum.
-                                    quatuor, Lichnis. Quinque, Reseda. Lamina. fig. 144. b. He a
-                                    parte superior, extendida da corolla polypetala, ou de muitos
-                                    petalos, que forma hum angulo com o ungue. Veronica austriaca.</div>
-                              <div type="item" n="121"><p>121. b. Monopetala. Corolla, que consta de
-                                    hum só petalo. Anagalis. Convolvulus, Primula.</p> — Dipetala.
-                                    De dous petalos. Circaea. Tripetala de tres Alisma, Sagittaria,
-                                    tetrapetala, de quatro as plantas da classe da Tetradynamia.
-                                    Pentapetala de cinco, as umbelliferas. Hexapetala de seis
-                                    Tulipa, Lilium. Enncapetala de nove. Liriodendrum. — Polypetala.
-                                    (106) Mais de nove petalos, os quaes se contaõ no lugar onde
-                                    estaõ pegados. Hepatica. — Apetala: sem petalos. — 2-3-4-
-                                    Multidentata. Com dous, tres, ou muitos dentes, ou incisuras
-                                    agudas, e pequenas. — Fissa. 2-12- Multifida. (107) — Partita.
-                                    2-Multipartita. (107) — Bifida. Dividida em dous com divisoens
-                                    pouco profundas Utricularia. trifida, em tres, Alisma.
-                                    quadrifida, em quatro Rinanthus, quinquefida em cinco Nicotiana.
-                                    Sexfida Pavia Oectofidas, em oito Tormentilla. decemdida,
-                                    Potentilla, Fragaria. duodecenfida, Lytbrum. <p><s>Corolla
-                                    universalis. Nas flores agregadas como Globularia, Scabiosa,
-                                    &amp;c. que constaõ de muitos <term
+                                          flor, que consta de muitos petalos.</p>
+                                    <p>Limbus. fig. I42. b. He
+                                          a parte superior extendida da corolla monopetala. Este ou
+                                          he
+                                          integer inteiro sem alguma divisaõ, ou he laciniatus
+                                          dividido em
+                                          varias partes, ou abas.</p>
+                                    <p>— Fissus. Naõ chega a divisaõ até ao
+                                          meio.</p>
+                                    <p>Lacinia. Saõ partes da corolla, em que está dividido o limbo.
+                                          Laciniae duae. Alfine, Circea; tres <pb n="257"
+                                          />Holosteum.
+                                          quatuor, Lichnis. Quinque, Reseda.</p>
+                                    <p>Lamina. fig. 144. b. He a
+                                          parte superior, extendida da corolla polypetala, ou de
+                                          muitos
+                                          petalos, que forma hum angulo com o ungue. Veronica
+                                          austriaca.</p>
+                              </div>
+                              <div type="item" n="121">
+                                    <p>121. b. Monopetala. Corolla, que consta de
+                                          hum só petalo. Anagalis. Convolvulus, Primula.</p>
+                                    <p>— Dipetala.
+                                          De dous petalos. Circaea. Tripetala de tres Alisma,
+                                          Sagittaria,
+                                          tetrapetala, de quatro as plantas da classe da
+                                          Tetradynamia.
+                                          Pentapetala de cinco, as umbelliferas. Hexapetala de seis
+                                          Tulipa, Lilium. Enncapetala de nove. Liriodendrum.</p>
+                                    <p>— Polypetala.
+                                          (106) Mais de nove petalos, os quaes se contaõ no lugar
+                                          onde
+                                          estaõ pegados. Hepatica.</p>
+                                    <p>— Apetala: sem petalos.</p>
+                                    <p>— 2-3-4-
+                                          Multidentata. Com dous, tres, ou muitos dentes, ou
+                                          incisuras
+                                          agudas, e pequenas.</p>
+                                    <p>— Fissa. 2-12- Multifida. (107)</p>
+                                    <p>— Partita.
+                                          2-Multipartita. (107)</p>
+                                    <p>— Bifida. Dividida em dous com divisoens
+                                          pouco profundas Utricularia. trifida, em tres, Alisma.
+                                          quadrifida, em quatro Rinanthus, quinquefida em cinco
+                                          Nicotiana.
+                                          Sexfida Pavia Oectofidas, em oito Tormentilla. decemdida,
+                                          Potentilla, Fragaria. duodecenfida, Lythrum.</p>
+                                    <p><s>Corolla universalis. Nas flores agregadas como Globularia,
+                                          Scabiosa, &amp;c. que constaõ de muitos <term
                                                       lemma="flósculo" norm="flósculos" msd="plural"
                                                 >
-                                    flosculos</term> postos em hum <term lemma="cálice"
+                                          flosculos</term> postos em hum <term lemma="cálice"
                                                       norm="cálice">caliz</term> commum.</s>
-                                    Entende-se por corolla universal todo este ajuntamento de
-                                    flores.</p></div>
-                              <div type="item" n="122"><p>122. c.) Regularis aequalitate. Corolla
-                                    regular na <pb n="258" />igualdade, quando o limbo, ou <term
+                                          Entende-se por corolla universal todo este ajuntamento de
+                                          flores.</p>
+                              </div>
+                              <div type="item" n="122">
+                                    <p>122. c.) Regularis aequalitate. Corolla regular na <pb
+                                                n="258" />igualdade, quando o limbo, ou <term
                                                 lemma="lacínia" norm="lacínias" msd="plural"
                                           >lacinias</term>
-                                    na corolla monopetala, e as laminas na corolla polipetala saõ
-                                    iguaes no tamanho, e na figura. Lychnis. Aquilegia.</p> —
-                                    Irregularis. Irregular, quando as partes do limbo, ou da lamina
-                                    taõ differentes pela figura, grandeza, e proporçaõ. Echium
-                                    vulgare. Aconitum. Lamium. — Inaequalis. Quando as ditas partes
-                                    se correspondem naõ no tamanho, mas só na proporçaõ; demaneira,
-                                    que se forma huma flor regular. Butomus. — Aequalis. Sendo as
-                                    ditas partes iguaes na grandeza, e proporçaõ.</div>
+                                          na corolla monopetala, e as laminas na corolla polipetala
+                                          saõ iguaes no tamanho, e na figura. Lychnis. Aquilegia.</p>
+                                    <p>—
+                                          Irregularis. Irregular, quando as partes do limbo, ou da
+                                          lamina
+                                          taõ differentes pela figura, grandeza, e proporçaõ. Echium
+                                          vulgare. Aconitum. Lamium.</p>
+                                    <p>— Inaequalis. Quando as ditas partes
+                                          se correspondem naõ no tamanho, mas só na proporçaõ;
+                                          demaneira,
+                                          que se forma huma flor regular. Butomus.</p>
+                                    <p>— Aequalis. Sendo as
+                                          ditas partes iguaes na grandeza, e proporçaõ.</p>
+                              </div>
                               <div type="item" n="123"><p>123. d.) Pela figura.</p>
                                     <p>— Globosa. Que
                                     reprezenta quasi a
                                           figura de hum globo.
                                           Hyacintbus bottyoides. Cucubalus.</p>
                                     <p>— Clavata. Mais
-                                    grossa na parte superior. Silene.</p> — Reflexa. Cujo limbo está
-                                    revirado para traz. Asclepias. — Erecta. O Limbo elevado.
-                                    Primula. Nicotiana. — Campanulata, campaniformis. fig. 132.
-                                    Barriguda, sem tubo. Campanula, Tulipa. — Infundibiliformis. O
-                                    limbo de figura de huma piramide conica inversa posta sobre hum
-                                    tubo, como hum funil. Primula veris, Cynoglossum officinale. —
-                                    Hipocrateriformis. fig. 142. Sendo o limbo chato posto acima de
-                                    hum tubo. Myofotis. Vinca. Iasminum. — Rotata. Constando a
-                                    corolla de hum limbo chato sem tudo, representando assim huma
-                                    roda. Borrago. Anagallis. Lysimachia. <p>— Caryophillata. Quando
-                                    os petalos sahem para <pb
+                                    grossa na parte superior. Silene.</p> <p>— Reflexa. Cujo limbo
+                                    está
+                                          revirado para traz. Asclepias.</p> <p>— Erecta. O Limbo
+                                    elevado.
+                                          Primula. Nicotiana.</p> <p>— Campanulata, campaniformis.
+                                    fig. 132.
+                                          Barriguda, sem tubo. Campanula, Tulipa.</p> <p>—
+                                    Infundibiliformis. O
+                                          limbo de figura de huma piramide conica inversa posta
+                                          sobre hum
+                                          tubo, como hum funil. Primula veris, Cynoglossum
+                                    officinale.</p> <p>—
+                                          Hipocrateriformis. fig. 142. Sendo o limbo chato posto
+                                    acima de
+                                          hum tubo. Myosotis. Vinca. Iasminum.</p> <p>— Rotata.
+                                    Constando a
+                                          corolla de hum limbo chato sem tudo, representando assim
+                                    huma roda. Borrago. Anagallis. Lysimachia.</p> <p>—
+                                    Caryophillata. Quando os petalos sahem para <pb
                                                 n="259" />fora do <term lemma="cálice" norm="cálice"
                                           >
                                     caliz</term>, como de hum tuberculo. Caryophilli, Linum.</p>
@@ -18268,43 +18477,56 @@
                                     cujo tubo, ou he apertus abertos, ou nudus nú, clausus fechado,
                                     coronatus coroado com pellos, &amp;c. ou téctus cuberto.</p>
                                     <p>Galea.
-                                    He o beiço, ou labio superior.</p> Palatum. Paladar he huma
-                                    corcova, ou prominencia na fauce da corolla. Calcar. He o
-                                    nectario formado da corolla extendida em figura conida. —
-                                    Laciniata. O limbo da corolla cortado em varias partes, ou abas.
-                                    — Urceolata. A’ maneira de pequeno jarro nos lados ençado, ou
-                                    largo. <p>— Cyathiformis. Corolla cylindrica, que está dilatada
-                                    para a parte superior, ou á maneira de hum copo de
+                                    He o beiço, ou labio superior.</p> <p>Palatum. Paladar he huma
+                                    corcova, ou prominencia na fauce da corolla.</p> <p>Calcar. He o
+                                    nectario formado da corolla extendida em figura conica.</p> <p>—
+                                    Laciniata. O limbo da corolla cortado em varias partes, ou abas.</p>
+                                    <p>—
+                                    Urceolata. A’ maneira de pequeno jarro nos lados ençado, ou
+                                    largo.</p> <p>— Cyathiformis. Corolla cylindrica, que está
+                                    dilatada
+                                          para a parte superior, ou á maneira de hum copo de
                                           caliz.</p>
                                     <p>— Connivens. Quando os lobos, ou abas, ou <term
                                                 lemma="lacínia" norm="lacínias" msd="plural"
                                           >lacinias</term>
                                     do limbo se avisinhaõ entre si com as suas extremidades.</p>
                                     <pb
-                                          n="260" /> — Lacera. O limbo está cortado em muitas partes
-                                    delgadas. — Personata. Chama-se assim a corolla pela semelhança,
-                                    que tem com a cabeça de hum animal. Esta he a corolla ringens,
-                                    ou labiata com os beiços, ou labios compridos, e fechados, de
-                                    maneira, que naõ aparece o paladar. Antirrhinum linaria.
-                                    Euphrasia. — Cruciata. fig. 144. Corolla de quatro petalos,
-                                    regular, com os petalos iguaes, dispostos á maneira de cruz.
-                                    Brassica. Cheiranthus cheiri. — Tetra, pentapetala. Corolla
-                                    irregular de quatro, cinco petalos. — Concava. Concava no limbo,
-                                    ou nas laminas. — Patens. Com o limbo, ou laminas estendidas
-                                    horizontalmente. — Patentissima. Com o limbo horizontal. —
-                                    Papillionacea. Á semelhança quasi de borboleta: esta corolla
-                                    consta de quatro petalos irregulares, ou desiguaes. Pisum.
-                                    Lathyrus. Carina, concha. He o petalo inferior do feitio de
-                                    barco. Alis. Saõ os petalos lateraes hum em cada lado da flor. <p>Vexillo.
-                                    He o petalo superior quasi sempre dividido em duas partes na
-                                    base, ou na unha, que inclue os <term
+                                          n="260" /> <p>— Lacera. O limbo está cortado em muitas
+                                    partes
+                                          delgadas.</p> <p>— Personata. Chama-se assim a corolla pela
+                                    semelhança,
+                                          que tem com a cabeça de hum animal. Esta he a corolla
+                                    ringens,
+                                          ou labiata com os beiços, ou labios compridos, e fechados,
+                                    de
+                                          maneira, que naõ aparece o paladar. Antirrhinum linaria.
+                                    Euphrasia.</p> <p>— Cruciata. fig. 144. Corolla de quatro
+                                          petalos,
+                                          regular, com os petalos iguaes, dispostos á maneira de
+                                    cruz.
+                                          Brassica. Cheiranthus cheiri.</p> <p>— Tetra, pentapetala.
+                                    Corolla
+                                          irregular de quatro, cinco petalos.</p> <p>— Concava.
+                                    Concava no limbo,
+                                          ou nas laminas.</p> <p>— Patens. Com o limbo, ou laminas
+                                    estendidas
+                                          horizontalmente.</p> <p>— Patentissima. Com o limbo
+                                    horizontal.</p> <p>—
+                                          Papillionacea. Á semelhança quasi de borboleta: esta
+                                    corolla
+                                          consta de quatro petalos irregulares, ou desiguaes. Pisum.
+                                    Lathyrus.</p> <p>Carina, concha. He o petalo inferior do feitio
+                                    de barco.</p> <p>Alis. Saõ os petalos lateraes hum em cada
+                                    lado da flor.</p> <p>Vexillo. He o petalo superior quasi sempre
+                                    dividido em duas partes na base, ou na unha, que inclue os <term
                                                 lemma="estame" msd="plural">estames</term>, e o <term
-                                                lemma="pistilo">pistillo</term>.</p> — Rosacea.
+                                                lemma="pistilo">pistillo</term>.</p> <p>— Rosacea.
                                     Sendo regular, e de cinco petalos, como nas umbelliferas; quando
                                     consta de muitos petalos dispostos em circulo. Rosa, Ranunculus.
                                     Sendo seis petalos d e, chama-se planta Liliacea. Tulipa,
-                                    Asphodelus. — Anomala. Corolla, de muitos ineguaes petalos com
-                                    nectario. Tropaeolum indicum. 124. e.)</div>
+                                    Asphodelus.</p> <p>— Anomala. Corolla, de muitos ineguaes petalos com
+                                    nectario. Tropaeolum indicum.</p></div>
                               <pb n="261" />
                               <div type="item" n="124"><p>124. e.) Composita. Chama-se corolla
                                     composta, quando estaõ muitas pequenas flores em huma base, ou <term
@@ -18320,16 +18542,16 @@
                                     pequenas corollas dos <term lemma="flósculo"
                                                 norm="flósculos" msd="plural">flosculos</term> na
                                     parte exterior está extendido, e he mais comprido, formando huma
-                                    pequena correa.</p> — Tubulosa, seu flosculosa de Tournefort.
+                                    pequena correa.</p> <p>— Tubulosa, seu flosculosa de Tournefort.
                                     Cada huma das pequenas corollas saõ de feitio de canudo, e quasi
-                                    iguaes. <p>— Radiata. As pequenas corollas do <term>disco</term>
+                                    iguaes.</p> <p>— Radiata. As pequenas corollas do <term>disco</term>
                                     da flor commua, ou que estaõ no meio, saõ tubulosas, e as
                                     corollas, que estaõ na circunferencia saõ <term
                                                 lemma="ligulado" msd="feminino plural"
                                           >
                                                 liguladas</term>; e assim Tournefort chama a estas
-                                    flores flores radiati. Aster. Jacobæa.</p> — Floribus tubulosis.
-                                    A flor consta sómente destas flores tubulosas. Centaurea. <p>—
+                                    flores flores radiati. Aster. Jacobæa.</p> <p>— Floribus tubulosis.
+                                    A flor consta sómente destas flores tubulosas. Centaurea.</p> <p>—
                                     Floribus subnudis. Quando os <term
                                                 lemma="flósculo" norm="flósculos" msd="plural"
                                           >
@@ -19123,64 +19345,78 @@
                                     irregularidade.</p> Pela superficie. <p>— Nudum. fig. 140. Sem
                                     pellos, sedas, <term lemma="vilo" norm="vilos"
                                                 msd="plural">villos</term>, palhas &amp;c.
-                                    Leontodon. Taraxacum.</p> — Punctatum. fig. 140. Cuberto de
+                                    Leontodon. Taraxacum.</p> <p>— Punctatum. fig. 140. Cuberto de
                                     pontos excavados, e nû em quanto ao mais. Leontodon, Taraxacum.
-                                    Chrysanthemum. — Alveolatum. Excavado á maneira dos favos das
-                                    abelhas. Onopordon. <p>— Villosum. Cuberto de <term
+                                    Chrysanthemum.</p> <p>— Alveolatum. Excavado á maneira dos favos
+                                    das
+                                          abelhas. Onopordon.</p> <p>— Villosum. Cuberto de <term
                                                 lemma="vilo" norm="vilos" msd="plural">villos</term>
-                                    (79). Artemisia. Absynthium. Carduus.</p> — Pilosum. Com pellos
-                                    (79). Carthamus. — Setosum. Cercado de sedas (80). Arctium.
-                                    Lappa, Centaurea, Cyanus. <p>— Paleaceum, fig. 141. b. Com
-                                    palhas, ou lamellas postas perpendicularmente, que dividem os <term
-                                                lemma="flósculo" norm="flósculos"
+                                    (79). Artemisia. Absynthium. Carduus.</p> <p>— Pilosum. Com
+                                          pellos
+                                          (79). Carthamus.</p> <p>— Setosum. Cercado de sedas (80).
+                                    Arctium.
+                                          Lappa, Centaurea, Cyanus.</p> <p>— Paleaceum, fig. 141. b.
+                                    Com palhas, ou lamellas postas perpendicularmente, que dividem
+                                    os <term lemma="flósculo" norm="flósculos"
                                                 msd="plural">flosculos</term> entre si.</p></div>
-                              <div type="item" n="157"><p>157. b. Pela figura.</p> — Planum. Plano,
-                                    ou espalmado na superficie. Achillæa millefolium. — Convexum.
-                                    Com a superficie elevada, formando hum segmento de esfera.
-                                    Matricaria chamomilla. — Conicum. fig. 141. Com a superficie
-                                    elevada em figura conica. Anthemis. Bellis. — Concavum. Concavo.
-                                    — Subulatum. (56)</div>
-                              <div type="item" n="158"><p>158. Compositus flos. <term
+                              <div type="item" n="157">
+                                    <p>157. b. Pela figura.</p>
+                                    <p>— Planum. Plano,
+                                          ou espalmado na superficie. Achillæa millefolium.</p>
+                                    <p>— Convexum.
+                                          Com a superficie elevada, formando hum segmento de esfera.
+                                          Matricaria chamomilla.</p>
+                                    <p>— Conicum. fig. 141. Com a superficie
+                                          elevada em figura conica. Anthemis. Bellis.</p>
+                                    <p>— Concavum. Concavo.</p>
+                                    <p>— Subulatum. (56)</p>
+                              </div>
+                              <div type="item" n="158">
+                                    <p>158. Compositus flos. <term
                                                 lemma="receptáculo" norm="Receptáculo">
                                                 Receptaculo</term> estendido, convexo, commum a
-                                    muitas pequenas flores monopetatas, com as <term
+                                          muitas pequenas flores monopetatas, com as <term
                                                 lemma="antera" norm="anteras" msd="plural"
                                           >antheras</term>
-                                    unidas em cylindro.</p>
-                                    <pb n="283" /> — 1. Ligulatus, aut
-                                    semiflosculosus Tournefort. Todas as pequenas corollas saõ
-                                    planas, e estendidas para a parte externa. — 2. Tubulosus,
-                                    flosculosus Tournefort. Todas as pequenas corollas, saõ
-                                    tubulosas, ou como canudos quasi iguaes. Eupatorium. <p>— 3
-                                    Radiatus. As pequenas corollas do <term>
+                                          unidas em cylindro.</p>
+                                    <pb n="283" />
+                                    <p>— 1. Ligulatus, aut
+                                          semiflosculosus Tournefort. Todas as pequenas corollas saõ
+                                          planas, e estendidas para a parte externa.</p>
+                                    <p>— 2. Tubulosus,
+                                          flosculosus Tournefort. Todas as pequenas corollas, saõ
+                                          tubulosas, ou como canudos quasi iguaes. Eupatorium.</p>
+                                    <p>— 3 Radiatus. As pequenas corollas do <term>
                                                 disco</term> saõ tubulosas, e as da circunferencia <term
                                                 lemma="ligulado" msd="feminino plural"
                                           >liguladas</term>,
-                                    ou com o limbo desigual, e sahido muito para fora. Coreopsis,
-                                    Achillæa, Tagetes.</p>
-                                    <p>Compositus, radiatus flos. A flor
-                                    composta radiada consta de <term>disco</term> e raio.</p>
-                                    Radius. O raio he formado de pequenas corollas irregulares
-                                    postas na circunferencia. <p>Discus. A superficie, ou centro da
-                                    flor, consta de pequenas corollas quasi sempre regulares: na
-                                    flor composta he a parte do meio, que acaba, ou que vem cercada
-                                    com a margem do <term lemma="cálice" norm="cálice"
+                                          ou com o limbo desigual, e sahido muito para fora.
+                                          Coreopsis, Achillæa, Tagetes.</p>
+                                    <p>Compositus, radiatus flos. A flor composta radiada consta de <term>
+                                          disco</term> e raio.</p>
+                                    <p>Radius. O raio he formado de pequenas corollas irregulares
+                                          postas na circunferencia.</p>
+                                    <p>Discus. A superficie, ou centro da flor, consta de pequenas
+                                          corollas quasi sempre regulares: na flor composta he a
+                                          parte do meio, que acaba, ou que vem cercada com a margem
+                                          do <term lemma="cálice" norm="cálice"
                                           >caliz</term>.</p>
-                                    <p>Decompositus.
-                                    Flor composta de flores compostas; contem em hum <term
+                                    <p>Decompositus. Flor composta de flores compostas; contem em
+                                          hum <term
                                                 lemma="cálice" norm="cálice">caliz</term> commum <term
                                                 lemma="cálice" norm="cálices" msd="plural"
                                           >calices</term>
-                                    menores, que saõ communs a muitas flores. Sphaerantus.</p>
-                                    <p>Completus
-                                    flos. Flor completa, ou perfeita, consta de corolla, e <term
+                                          menores, que saõ communs a muitas flores. Sphaerantus.</p>
+                                    <p>Completus flos. Flor completa, ou perfeita, consta de
+                                          corolla, e <term
                                                 lemma="cálice" norm="cálice"
                                           >caliz</term>.</p>
-                                    <p>Incompletus.
-                                    Faltando na flor a corolla, ou o <term
+                                    <p>Incompletus. Faltando na flor a corolla, ou o <term
                                                 lemma="cálice" norm="cálice">caliz</term>.</p>
-                                    Apetalus flos. Flor sem corolla, <p>Nudus. Flor sem <term
-                                                lemma="cálice" norm="cálice">caliz</term>.</p></div>
+                                    <p>Apetalus flos. Flor sem corolla,</p>
+                                    <p>Nudus. Flor sem <term
+                                                lemma="cálice" norm="cálice">caliz</term>.</p>
+                              </div>
                               <div type="item" n="159">
                                     <p>159. Aggregatus flos. Flor, cujo <term
                                                 lemma="receptáculo">receptaculo</term>, ou base
@@ -19205,123 +19441,160 @@
                                                 lemma="receptáculo"> receptaculo</term> está dentro
                                           da Spata, e he commum a muitas pequenas flores. Arum.</p>
                               </div>
-                              <div type="item" n="160"><p>160. Umbella. As flores dispostas em forma
-                                    de umbella, o que succede, quando todos os <term
+                              <div type="item" n="160">
+                                    <p>160. Umbella. As flores dispostas em forma de umbella, o que
+                                          succede, quando todos os <term
                                                 lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural"
                                           >
                                                 pedunculos</term> das flores sahem do mesmo centro
-                                    fazendo assim huma circunferencia igual. Pastinaca, Cuminum.</p>
+                                          fazendo assim huma circunferencia igual. Pastinaca,
+                                          Cuminum.</p>
                                     <p>
                                           <s>Umbellatus flos. fig. 135. Hum <term
                                                       lemma="receptáculo"
                                                 >receptaculo</term>, ou base
-                                    commua dividida, e allongada, ou estendida em <term
+                                                commua dividida, e allongada, ou estendida em <term
                                                       lemma="pedúnculo"
                                                       norm="pedúnculos" msd="plural">pedunculos</term>
-                                    á maneira de fios proporcionaes, os quaes todos sahem do mesmo
-                                    centro, ou que sahindo todos do mesmo ponto formaõ huma
-                                    circunferencia igual.</s>
+                                                á maneira de fios proporcionaes, os quaes todos
+                                                sahem do mesmo centro, ou que sahindo todos do mesmo
+                                                ponto formaõ huma circunferencia igual.</s>
                                           <s>Cada flor contém cinco <term
                                                       lemma="estame" msd="plural"
                                                 >estames</term>
-                                    desunidos, que cahem depois de fecundado o germe, o qual está
-                                    posto debaixo da corolla: o <term lemma="pistilo">pistillo</term>
-                                    he <term
+                                                desunidos, que cahem depois de fecundado o germe, o
+                                                qual está posto debaixo da corolla: o <term
+                                                      lemma="pistilo">pistillo</term> he <term
                                                       lemma="bífido" norm="bífido">bifido</term>, as <term
                                                       lemma="semente" msd="plural"> sementes</term>
-                                    saõ duas, unidas entre si pela summidade. Astrantia, Sanicula.</s>
+                                                saõ duas, unidas entre si pela summidade. Astrantia,
+                                                Sanicula.</s>
                                     </p>
-                                    Spuria umbella. He huma flor aggregada, na qual os peclunculos
-                                    sahem de hum ponto commum, mas depois dividem-se irregularmente
-                                    em ramos. a.) Pela divisaõ. <p>— Simplex. He simples, quando o <term
+                                    <p>Spuria umbella. He huma flor aggregada, na qual os
+                                          peclunculos
+                                          sahem de hum ponto commum, mas depois dividem-se
+                                          irregularmente
+                                          em ramos.</p>
+                                    <p>a.) Pela divisaõ.</p>
+                                    <p>— Simplex. He simples, quando o <term
                                                 lemma="receptáculo"
                                           >receptaculo</term> he dividido em <term
                                                 lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural"
                                           >
                                                 pedunculos</term> huma só vez. Sanicula. Eryngium.</p>
-                                    <p>—
-                                    Composita. Todos os <term lemma="pedúnculo"
+                                    <p>— Composita. Todos os <term lemma="pedúnculo"
                                                 norm="pedúnculos" msd="plural">pedunculos</term> se
-                                    subdividem no apice em outros pequenos <term
+                                          subdividem no apice em outros pequenos <term
                                                 lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural">
                                                 pedunculos</term>, ou em pequenas umbellas. Daucus,
-                                    Cicuta, Euphorbia Esula.</p>
-                                    <pb n="285" /><p>Universalis umbella
-                                    fig. 135. a. Umbella universal, consta de <term
+                                          Cicuta, Euphorbia Esula.</p>
+                                    <pb n="285" />
+                                    <p>Universalis umbella fig. 135. a. Umbella universal, consta de <term
                                                 lemma="pedúnculo"
                                                 norm="pedúnculos" msd="plural">pedunculos</term>
-                                    elevados (90), os quaes sustentaõ no apice outras pequenas
-                                    umbellas. Scandix chaerophyllum.</p>
-                                    <p>Partialis umbella. fig.
-                                    135. b. A pequena umbella, que está posta sobre o apice do <term
+                                          elevados (90), os quaes sustentaõ no apice outras pequenas
+                                          umbellas. Scandix chaerophyllum.</p>
+                                    <p>Partialis umbella. fig. 135. b. A pequena umbella, que está
+                                          posta sobre o apice do <term
                                                 lemma="pedúnculo"
                                           >pedunculo</term> universal, ou
-                                    primario.</p>
+                                          primario.</p>
                                     <p>Prolifera. Em huma umbella simples hum ou outro <term
                                                 lemma="pedúnculo"> pedunculo</term> sahe sostendo
-                                    outra pequena umbella.</p></div>
-                              <div type="item" n="161"><p>161. b. Pela figura.</p> <p>— Concava. O <term>
-                                    disco</term> ou a superficie he comprimida nos lados de maneira,
-                                    que fica o meio concavo.</p> — Fastigiata. Sendo elevada, mas
-                                    ficando a superficie muito plana, e parallela com o horizonte
-                                    (23). <p>— Convexa. Sendo o <term>disco</term>, ou a superficie
-                                    elevada, formando hum segmento de esfera.</p>
+                                          outra pequena umbella.</p>
+                              </div>
+                              <div type="item" n="161">
+                                    <p>161. b. Pela figura.</p>
+                                    <p>— Concava. O <term>
+                                                disco</term> ou a superficie he comprimida nos lados
+                                          de maneira, que fica o meio concavo.</p>
+                                    <p>— Fastigiata. Sendo elevada, mas
+                                          ficando a superficie muito plana, e parallela com o
+                                          horizonte (23).</p>
+                                    <p>— Convexa. Sendo o <term>disco</term>, ou a superficie
+                                          elevada, formando hum segmento de esfera.</p>
                                     <p>— Plana. Cujo <term>
-                                    disco</term>, ou superficie he plana.</p> — Radiata. Sendo os
-                                    petalos das flores, que estaõ postos na circunferencia da
-                                    umbella, desiguaes, ou maiores.</div>
-                              <div type="item" n="162"><p>162. c.) Pella direcçaõ.</p> — Erecta.
-                                    Cuja superficie está elevada para o céo. — Nutans. Contraria á
-                                    precedente. Solenum nigrum. — Cernua. He entre a erecta, e a
-                                    nutans declinada alguma cousa para hum lado. Chærophyllum
-                                    tremulum.</div>
-                              <div type="item" n="163"><p>163. Cyma, flos cymosus. He hum <term
+                                                disco</term>, ou superficie he plana.</p>
+                                    <p>— Radiata. Sendo os
+                                          petalos das flores, que estaõ postos na circunferencia da
+                                          umbella, desiguaes, ou maiores.</p>
+                              </div>
+                              <div type="item" n="162">
+                                    <p>162. c.) Pella direcçaõ.</p>
+                                    <p>— Erecta.
+                                          Cuja superficie está elevada para o céo.</p>
+                                    <p>— Nutans. Contraria á
+                                          precedente. Solanum nigrum.</p>
+                                    <p>— Cernua. He entre a erecta, e a
+                                          nutans declinada alguma cousa para hum lado. Chærophyllum
+                                          tremulum.</p>
+                              </div>
+                              <div type="item" n="163">
+                                    <p>163. Cyma, flos cymosus. He hum <term
                                                 lemma="receptáculo">receptaculo</term>, ou huma base
-                                    dividida em <term lemma="pedúnculo" norm="pedúnculos"
+                                          dividida em <term lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural">pedunculos</term>, dos quaes todos os
-                                    primeiros sahem como na umbella da o mesmo centro; mas os
-                                    segundos, ou os mais pequenos naõ sahem do mesmo centro, mas <pb
+                                          primeiros sahem como na umbella da o mesmo centro; mas os
+                                          segundos, ou os mais pequenos naõ sahem do mesmo centro,
+                                          mas <pb
                                                 n="286" />sahem sem ordem. Sambucus nigra, Sambucus
-                                    ebulus, Solanum dulcamara.</p>
+                                          ebulus, Solanum dulcamara.</p>
                                     <p>— Nuda. Sem involucro, ou <term
                                                 lemma="bráctea"
                                                 norm="brácteas" msd="plural">bracteas</term>. Cornus
-                                    sanguineus.</p> <p>— Bracteata. Com <term lemma="bráctea"
+                                          sanguineus.</p>
+                                    <p>— Bracteata. Com <term lemma="bráctea"
                                                 norm="brácteas" msd="plural"> bracteas</term>. (87)</p>
-                                    — Ramosa. Dividida em ramos. Sedum album. — Trifida Dividida em
-                                    tres até ao meio. Sedum acre. — Tripartita. Dividida até á base
-                                    em tres. Sambucus Ebulus. — Quinquepartita. Em cinco partes.
-                                    Sambucus nigra.</div>
-                              <div type="item" n="164"><p>164. Spadix. fig. 133. de o <term
+                                    <p>— Ramosa. Dividida em ramos. Sedum album.</p>
+                                    <p>— Trifida Dividida em
+                                          tres até ao meio. Sedum acre.</p>
+                                    <p>— Tripartita. Dividida até á base
+                                          em tres. Sambucus Ebulus.</p>
+                                    <p>— Quinquepartita. Em cinco partes.
+                                          Sambucus nigra.</p>
+                              </div>
+                              <div type="item" n="164">
+                                    <p>164. Spadix. fig. 133. de o <term
                                                 lemma="receptáculo">receptaculo</term> da palmeira,
-                                    que está nascido na spata (117), dividido em pequenos ramos, que
-                                    sustentaõ a <term lemma="frutificação"
+                                          que está nascido na spata (117), dividido em pequenos
+                                          ramos, que sustentaõ a <term lemma="frutificação"
                                                 norm="frutificação"> frutificaçaõ</term>; contem
-                                    huma colunna florifera, quando a corolla por meio de compridos <term
+                                          huma colunna florifera, quando a corolla por meio de
+                                          compridos <term
                                                 lemma="pedúnculo" norm="pedúnculos"
                                                 msd="plural">pedunculos</term> está pegada no <term
                                                 lemma="receptáculo">receptaculo</term> commum
-                                    filiforme, o qual quasi sempre he dividido em ramos.</p> a.)
-                                    Uniflorus, biflorus, multiflorus. Pelo numero das flores, que
-                                    sustenta. — b.) Simplex. Naõ dividido. — Ramosus. fig. 133.
-                                    Dividido em ramos. <p>Spadiceus flos. He huma flor aggregada,
-                                    cujo <term lemma="receptáculo">receptaculo</term> commum das
-                                    flores está incluido em huma bainha, ou spata.</p>
-                                    <p>Rachis. He
-                                    o <term lemma="receptáculo">receptaculo</term> comprido da mesma
-                                    largura em todo o comprimento, o qual pelo seu comprimento
-                                    sustenta as flores em forma de espiga.</p></div>
+                                          filiforme, o qual quasi sempre he dividido em ramos.</p>
+                                    <p>a.)
+                                          Uniflorus, biflorus, multiflorus. Pelo numero das flores,
+                                          que
+                                          sustenta.</p>
+                                    <p>— b.) Simplex. Naõ dividido.</p>
+                                    <p>— Ramosus. fig. 133.
+                                          Dividido em ramos.</p>
+                                    <p>Spadiceus flos. He huma flor aggregada, cujo <term
+                                                lemma="receptáculo">receptaculo</term> commum das
+                                          flores está incluido em huma bainha, ou spata.</p>
+                                    <p>Rachis. He o <term lemma="receptáculo">receptaculo</term>
+                                          comprido da mesma largura em todo o comprimento, o qual
+                                          pelo seu comprimento sustenta as flores em forma de
+                                          espiga.</p>
+                              </div>
                         </div>
                   </div>
                   <pb n="287" />
-                  <div type="parte"><head>MINERALOGIA. Termos da Arte.</head> <p>Pela figura.</p> <entry>
+                  <div type="parte">
+                        <head>MINERALOGIA. Termos da Arte.</head>
+                        <p>Pela figura.</p>
+                        <entry>
                               <form>
                                     Amorphum.</form>
                               <sense>Corpo que naõ tem figura conflitante, e determinada.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Cristallinum.</form>
                               <sense>Crystallizado, ou com figura regular. V. Linne. Syft.
@@ -19331,135 +19604,171 @@
                               <form>Tessellatum.</form>
                               <sense>Feito de
                                     particulas quadradas.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Prisma.</form>
                               <sense>He a colunna, ou a
                                     parte mais comprida do Crystal.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Pyramis.</form>
                               <sense>He o
                                     apice, ou summidade do Crystal, que acaba em figura pyramidal.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Lentiforme.</form>
                               <sense>He hum corpo de figura redonda, ou do circulo, com os
                                     dous lados convexos.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Nodulosum.</form>
                               <sense>Com eminencias arredondadas, e espalhadas pela superficie
                                     do corpo.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Reniforme.</form>
                               <sense>Convexo, arredondado, e muitas vezes
                                     nodulosum.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Planum.</form>
                               <sense>Com a superficie horizontal.</sense>
-                        </entry> <p>Pela
-                        casca.</p> <entry>
+                        </entry>
+                        <p>Pela
+                              casca.</p>
+                        <entry>
                               <form>
                                     Crustosum.</form>
                               <sense>Corpo, quasi cuberto de tunicas exteriormente.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Corticosum.</form>
                               <sense>Quando a substancia externa do corpo he differente da
                                     intrior.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Concentricum.</form>
                               <sense>Sendo ao redor do centro
                                     de varias côres dispostas á maneira de ondas.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Embryo.</form>
                               <sense>O miolo, ou nucleo, que está no centro do corpo; ou qualquer
-                        cousa, que está
+                                    cousa, que está
                                     no meio do corpo.</sense>
-                        </entry> <p>Pela
-                        superficie.</p> <pb n="288" /><entry>
+                        </entry>
+                        <p>Pela
+                              superficie.</p>
+                        <pb n="288" />
+                        <entry>
                               <form>Superficiale.</form>
                               <sense>Corpo
                                     estendido subtilmente sobre a superficie de outro corpo, como se
-                        este último
+                                    este último
                                     fosse untado do primeiro.</sense>
                         </entry>
                         <entry>
                               <form>Scabrum.</form>
                               <sense>Se a sua
                                     superficie raspa o dedo, esfregando-se com elle.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Laeve.</form>
                               <sense>Com superficie lisa.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Nitidum.</form>
                               <sense>Com superficie
                                     polída.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Micans.</form>
                               <sense>Achando-se espalhados pelo corpo
                                     alguns pontos luzidios.</sense>
-                        </entry> <p>Pela
-                        mistura.</p> <entry>
+                        </entry>
+                        <p>Pela
+                              mistura.</p>
+                        <entry>
                               <form>Nudum.</form>
                               <sense>Sem mistura alguma; assim se chama o metal nativo.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Mineralisatum.</form>
                               <sense>Quando o metal está escondido pela mistura do enxofre
                                     ou arsenico.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Lapidosum.</form>
                               <sense>O metal está misturado em
                                     particulas minimas imperceptiveis em huma pedra.</sense>
-                        </entry> <p>Pelas
-                        particulas.</p> <entry>
+                        </entry>
+                        <p>Pelas
+                              particulas.</p>
+                        <entry>
                               <form>Compactum.</form>
                               <sense>Cujas particulas estaõ
                                     totalmente ajuntadas e unidas.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Impalpabile.</form>
                               <sense>As
                                     suas particulas como pó.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Arenosum.</form>
                               <sense>As particulas
                                     como de arêa.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Granulatum.</form>
                               <sense>As particulas quasi redondas em figura de <term
                                           lemma="semente" msd="plural"
                                     >sementes</term>.</sense>
-                        </entry> <p>Pelas
-                        fibras.</p> <entry>
+                        </entry>
+                        <p>Pelas
+                              fibras.</p>
+                        <entry>
                               <form>Acerosum.</form>
                               <sense>Com particulas lineares desiguaes.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Decussatum.</form>
                               <sense>Com particulas espalhadas diferentemente em varias
                                     partes, ou postas coma a letra X.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Fibrosum.</form>
                               <sense>Com particulas parallelas da mesma grossura em todo seu
-                        comprimento.</sense>
-                        </entry> <entry>
+                                    comprimento.</sense>
+                        </entry>
+                        <entry>
                               <form>
                                     Squamosum.</form>
                               <sense>Composto de particulas planas, ou chatas.</sense>
-                        </entry> <p>Pela
-                        contextura.</p><entry>
+                        </entry>
+                        <p>Pela
+                              contextura.</p>
+                        <entry>
                               <form>Membranaceum.</form>
                               <sense>Como formato de laminas, ou
                                     planos, muitos delgados, transparentes.</sense>
-                        </entry> <pb
-                              n="289" /> <entry>
+                        </entry>
+                        <pb
+                              n="289" />
+                        <entry>
                               <form>
                                     Fissile.</form>
                               <sense>Que se divide em pequenas laminas, que saõ parallelas.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Concentratum.</form>
                               <sense>Cujas partes se unem ao centro.</sense>
@@ -19468,31 +19777,38 @@
                               <form>
                                     Fragmentis.</form>
                               <sense>Fragmento, ou pedaço de cousa quebrada.</sense>
-                        </entry> <p>Pela
-                        rijeza.</p>
+                        </entry>
+                        <p>Pela
+                              rijeza.</p>
                         <entry>
                               <form>Scintillans.</form>
                               <sense>Corpo que batendo-se-lhe com aço
                                     dá faiscas de fogo.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Rasile.</form>
                               <sense>Corpo que quasi se
                                     corta com a faca.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Durum.</form>
                               <sense>Que se naõ póde quebrar
                                     senaõ com o martello.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Fragile.</form>
                               <sense>Corpo que se
                                     divide em pequenos pedaços quando se dobra.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Sectile.</form>
                               <sense>Que se divide com a faca em pequenas laminas.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Friabile.</form>
                               <sense>Que quasi se faz em farinha entre os dedos.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Rigidum.</form>
                               <sense>Que se naõ póde dobrar.</sense>
                         </entry>
@@ -19500,23 +19816,25 @@
                               <form>Flexile.</form>
                               <sense>Que se naõ
                                     quebra facilmente, dobrando-se.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Maleabile.</form>
                               <sense>Que se
                                     extende, quando se lhe bate com o martello.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Inquinans.</form>
                               <sense>Que tinge os dedos quando se lhe toca.</sense>
                               <entry>
                                     <form>— Scriptura.</form>
                                     <sense>Quando se esfrega um corpo com outro mais solido de modo
-                        que faça risco.</sense>
+                                          que faça risco.</sense>
                               </entry>
                               <entry>
                                     <form>—
                                           Tritura.</form>
                                     <sense>Raspadura de um corpo feita por meio de hum ferro com
-                        agua.</sense>
+                                          agua.</sense>
                               </entry>
                               <entry>
                                     <form>—
@@ -19532,21 +19850,27 @@
                                     <sense>Raspadura de
                                           côr preta.</sense>
                               </entry>
-                        </entry> <p>Pela
-                        soluçaõ.</p> <entry>
+                        </entry>
+                        <p>Pela
+                              soluçaõ.</p>
+                        <entry>
                               <form>Bibulum.</form>
                               <sense>Corpo que absorve a agua.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Effervescens.</form>
                               <sense>Que faz bolhas ou escuma com a agua forte.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Solubile.</form>
                               <sense>Que se dissolve com a agua forte.</sense>
-                        </entry> <pb
+                        </entry>
+                        <pb
                               n="290"
-                        /><entry>
+                        />
+                        <entry>
                               <form>Fixum.</form>
                               <sense>Que nem se resolve, nem produz
                                     escuma com a agua forte.</sense>
@@ -19555,10 +19879,12 @@
                               <form>Apyrum.</form>
                               <sense>Que resiste ao
                                     fogo sem se vitrificar facilmente.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Vitrescens.</form>
                               <sense>Que se vitrifica no fogo, ou se cobre de huma crusta vitrea.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Calcarium.</form>
                               <sense>Que faz escuma com a agua forte, ou que posto no fogo se
@@ -19573,25 +19899,34 @@
                               <form>
                                     Retractorium.</form>
                               <sense>O que vem atrahido do magnete.</sense>
-                        </entry> <entry>
-                        Intractabile. <sense>Que naõ vem
-                                    atrahido do magnete.</sense></entry> <p>Pela
-                              côr.</p> <entry>
+                        </entry>
+                        <entry>
+                              <form>Intractabile.</form>
+                              <sense>Que naõ vem
+                                    atrahido do magnete.</sense>
+                        </entry>
+                        <p>Pela
+                              côr.</p>
+                        <entry>
                               <form>Opacum.</form>
                               <sense>Que não da passagem á luz.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Diaphanum.</form>
                               <sense>Que transmitte alguma cousa a luz.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Pellucidum.</form>
                               <sense>Perfeitamente transparente.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Hyalinum.</form>
                               <sense>Côr de agua, ou de vidro.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Tinctum.</form>
                               <sense>Côrado por
                                     alguma côr que naõ seja a bialina.</sense>
@@ -19600,11 +19935,14 @@
                               <form>
                                     Reflexio.</form>
                               <sense>Reflete os raios da luz.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Refractio.</form>
                               <sense>Refrange os raios de luz.</sense>
-                        </entry> <p>Pelo
-                        lugar.</p> <entry>
+                        </entry>
+                        <p>Pelo
+                              lugar.</p>
+                        <entry>
                               <form>Rupestre.</form>
                               <sense>Corpo que está unido á pedra,
                                     ou rochedo.</sense>
@@ -19613,19 +19951,44 @@
                               <form>Vagum.</form>
                               <sense>Que se acha espalhado sem ser
                                     pegado a rochedo.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>Aggregatum.</form>
                               <sense>Pedra que consta de
                                     muitas outras menores unidas; ou conglutinadas entre si.</sense>
-                        </entry> <entry>
+                        </entry>
+                        <entry>
                               <form>
                                     Solitarium.</form>
                               <sense>He opposto ao aggregado, e ao rupestre.</sense>
-                        </entry> <pb
-                              n="291" /> Os sinais Chymicos para os metaes; semimetaes, e saes.
-                        Ouro. Arsenico. Prata. Pirite. Cobre. Vitriolo. Ferro. Natro. Chumbo. Nitro.
-                        Estanho. Sal marino. Antimonio. Alumen ou pedra hume. Azougue. Agua regia.
-                        Vismuto. Agua forte. Zinco.</div>
+                        </entry>
+                        <pb
+                              n="291" />
+                        <list type="sinais">
+                              <head>Os sinais Chymicos para os metaes,
+                                    semimetaes, e saes.</head>
+                              <item>Ouro.</item>
+                              <item>Arsenico.</item>
+                              <item>Prata.</item>
+                              <item>Pirite.</item>
+                              <item>Cobre.</item>
+                              <item>Vitriolo.</item>
+                              <item>Ferro.</item>
+                              <item>Natro.</item>
+                              <item>Chumbo.</item>
+                              <item>Nitro.</item>
+                              <item>Estanho.</item>
+                              <item>Sal marino.</item>
+                              <item>Antimonio.</item>
+                              <item>Alumen, ou pedra
+                                    hume.</item>
+                              <item>Azougue.</item>
+                              <item>Agua regia.</item>
+                              <item>Vismuto.</item>
+                              <item>Agua forte.</item>
+                              <item>Zinco.</item>
+                        </list>
+                  </div>
                   <pb n="292" />
                   <!--
                   Página em branco -->
@@ -19987,75 +20350,198 @@
                                     <cell>Comelus</cell>
                                     <cell>Camelos.</cell>
                               </row>
-                              <row>Pag.
-                                    5. lin. 2 Fronte Frente.</row>
-                              <row>Pag.
-                                    9. lin. 32
-                                    em torno ao redor.</row>
-                              <row>Pag. 21. lin. 22 Pelecillum.
-                                    Penecillum.</row>
-                              <row>Pag. 27. lin. 22 muticus. muticos.</row>
-                              <row>Pag.
-                                    57. lin 10.
-                                    Lisa. Lizas.</row>
-                              <row>Pag. 57. lin. 11. Aspera. Asperas.</row>
-                              <row>Pag.
-                                    57. lin. 12.
-                                    esta. estaõ.</row>
-                              <row>Pag. 57. lin. 20. esta acabada
-                                    terminando-se acaba</row>
-                              <row>Pag. 58. lin. 26 horisontalis.
-                                    horizontalis.</row>
-                              <row>Pag.
-                                    60. lin. 7 sima. cima.</row>
-                              <row>Pag. 82. lin 29. Bclavatae.
-                                    Biclavatae.</row>
-                              <row>Pag. 83. lin. 23 sahidos. sahidas.</row>
-                              <row>Pag.
-                                    83. lin. 33.
-                                    dividido. em dous. dividido em doas;</row>
-                              <row>Pag. 90. lin. 31.
-                                    Carabu.
-                                    Carabus.</row>
-                              <row>Pag. 91. lin. 16. aos as.</row>
-                              <row>Pag. 91.
-                                    lin. 25. cortados.
-                                    cortadas.</row>
-                              <row>Pag. 92. lin. 3. obtusos. obtusas.</row>
-                              <row>Pag. 92. lin.
-                                    3. cortados. cortadas.</row>
-                              <row>Pag. 92. lin. 5. emarginados. emarginadas.</row>
-                              <row>Pag.
-                                    92. lin. 7. excavados, excavadas.</row>
-                              <row>Pag. 109. lin. 14. quato. quatro.
+                              <row>
+                                    <cell>Pag. 5. lin. 2.</cell>
+                                    <cell>Fronte</cell>
+                                    <cell>Frente.</cell>
                               </row>
-                              <row>Pag. 127. lin. 23. bifidus. Bifidus.</row>
-                              <row>Pag. 128. lin. 27. vaios. varios.
+                              <row>
+                                    <cell>Pag. 9. lin. 32.</cell>
+                                    <cell>em torno</cell>
+                                    <cell>ao redor.</cell>
                               </row>
-                              <row>Pag. 134. lin. 17. Sepia. Sepia. Tab: XI. fig. 11.</row>
-                              <row>Pag. 134. lin. 21.
-                                    gfi. fig.</row>
-                              <row>Pag. 135. lin. 2. Aphrodita. Aphrodita. fig. 19.</row>
-                              <row>Pag. 141.
-                                    lin. 27. Autisum. Anticum.</row>
-                              <row>Pag. 143. lin. 34. laciniosus. Laciniosus.
+                              <row>
+                                    <cell>Pag. 21. lin. 22.</cell>
+                                    <cell>Pelecillum.</cell>
+                                    <cell>Penecillum.</cell>
                               </row>
-                              <row>Pag. 144. lin. 1. lacuna. Lacuna.</row>
-                              <row>Pag. 144. lin. 4. aorso. dorso.</row>
-                              <row>Pag.
-                                    148. lin. 1. Chama-sa Chama-se.</row>
-                              <row>Pag. 148. lin. 21. Sipunculus.
-                                    Sipunculus. fig. 3.</row>
-                              <row>Pag. 149. lin. 2. Doris. Doris. fig. 5.</row>
-                              <row>Pag. 149.
-                                    lin. 4. Nereis. Nereis. fig. 6.</row>
-                              <row>Pag. 150. lin. 11. Conchas maritimas.
-                                    Conchas maritimas, ou parte que circumda a vulva.</row>
-                              <row>Pag. 156. lin. 1.
-                                    Cananicullata. Canaliculata.</row>
-                              <row>Pag. 157. lin. 10. simpleces simplices.
+                              <row>
+                                    <cell>Pag. 27. lin. 22.</cell>
+                                    <cell>muticus.</cell>
+                                    <cell>muticos.</cell>
                               </row>
-                              <row>Pag. 158. lin. 2. fig. 8. 1. fig. 18.</row>
+                              <row>
+                                    <cell>Pag. 57. lin 10.</cell>
+                                    <cell>Lisa.</cell>
+                                    <cell>Lizas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 57. lin. 11.</cell>
+                                    <cell>Aspera.</cell>
+                                    <cell>Asperas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 57. lin. 12.</cell>
+                                    <cell>esta.</cell>
+                                    <cell>estaõ.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 57. lin. 20.</cell>
+                                    <cell>esta acabada terminando-se</cell>
+                                    <cell>acaba</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 58. lin. 26.</cell>
+                                    <cell>horisontalis.</cell>
+                                    <cell>horizontalis.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 60. lin. 7.</cell>
+                                    <cell>sima.</cell>
+                                    <cell>cima.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 82. lin 29.</cell>
+                                    <cell>Bclavatae.</cell>
+                                    <cell>Biclavatae.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 83. lin. 23.</cell>
+                                    <cell>sahidos.</cell>
+                                    <cell>sahidas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 83. lin. 33.</cell>
+                                    <cell>dividido. em dous.</cell>
+                                    <cell>dividido em
+                                          doas;</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 90. lin. 31.</cell>
+                                    <cell>Carabu.</cell>
+                                    <cell>Carabus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 91. lin. 16.</cell>
+                                    <cell>aos</cell>
+                                    <cell>as.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 91. lin. 25.</cell>
+                                    <cell>cortados.</cell>
+                                    <cell>cortadas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 92. lin. 3.</cell>
+                                    <cell>obtusos.</cell>
+                                    <cell>obtusas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 92. lin. 3.</cell>
+                                    <cell>cortados.</cell>
+                                    <cell>cortadas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 92. lin. 5.</cell>
+                                    <cell>emarginados.</cell>
+                                    <cell>emarginadas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 92. lin. 7.</cell>
+                                    <cell>excavados,</cell>
+                                    <cell>excavadas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 109. lin. 14.</cell>
+                                    <cell>quato.</cell>
+                                    <cell>quatro.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 127. lin. 23.</cell>
+                                    <cell>-bifidus.</cell>
+                                    <cell>Bifidus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 128. lin. 27.</cell>
+                                    <cell>vaios.</cell>
+                                    <cell>varios.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 134. lin. 17.</cell>
+                                    <cell>Sepia.</cell>
+                                    <cell>Sepia. Tab. XI. fig. 11.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 134. lin. 21.</cell>
+                                    <cell>gfi.</cell>
+                                    <cell>fig.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 135. lin. 2.</cell>
+                                    <cell>Aphrodita.</cell>
+                                    <cell>Aphrodita. fig. 19.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 141. lin. 27.</cell>
+                                    <cell>Autisum.</cell>
+                                    <cell>Anticum.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 143. lin. 34.</cell>
+                                    <cell>-laciniosus.</cell>
+                                    <cell>Laciniosus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 144. lin. 1.</cell>
+                                    <cell>-lacuna.</cell>
+                                    <cell>Lacuna.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 144. lin. 4.</cell>
+                                    <cell>aorso.</cell>
+                                    <cell>dorso.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 148. lin. 1.</cell>
+                                    <cell>Chama-sa</cell>
+                                    <cell>Chama-se.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 148. lin. 21.</cell>
+                                    <cell>Sipunculus.</cell>
+                                    <cell>Sipunculus. fig. 3.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 149. lin. 2.</cell>
+                                    <cell>Doris.</cell>
+                                    <cell>Doris. fig. 5.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 149. lin. 4.</cell>
+                                    <cell>Nereis.</cell>
+                                    <cell>Nereis. fig. 6.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 150. lin. 11.</cell>
+                                    <cell>Conchas maritimas.</cell>
+                                    <cell>Conchas
+                                          maritimas, ou parte que circumda a vulva.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 156. lin. 1.</cell>
+                                    <cell>Cananicullata.</cell>
+                                    <cell>Canaliculata.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 157. lin. 10.</cell>
+                                    <cell>simpleces</cell>
+                                    <cell>simplices.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 158. lin. 2.</cell>
+                                    <cell>fig. 8. 1,</cell>
+                                    <cell>fig. 18.</cell>
+                              </row>
                               <pb
                                     n="303" />
                               <row>
@@ -20073,29 +20559,76 @@
                                     <cell>eseamosa.</cell>
                                     <cell>escamosa.</cell>
                               </row>
-                              <row><cell>Pag. 173.
-                                    lin. 3.</cell> Ermes. Vermes.</row>
-                              <row>Pag. 199. lin. 13. Polliearis. Pollicaris.</row>
-                              <row>Pag.
-                                    200. lin. 16. peciolos. pedunculos.</row>
-                              <row>Pag. 205. lin. 12. laucum.
-                                    glaucum.</row>
-                              <row>Pag. 215. lin. 13. lincare. lineare.</row>
-                              <row>Pag. 216. lin. 27.
-                                    Convolvus. Convolvulus.</row>
-                              <row>Pag. 226. lin. 2. expençaõ. expançaõ.</row>
-                              <row>Pag.
-                                    236. lin. 21. Stipitata. Stipitata com pezinho.</row>
-                              <row>Pag. 257. lin. 25.
-                                    octosidas. octosida.</row>
-                              <row>Pag. 276. lin. 12. Hellebrus. Helleborus.</row>
-                              <row>Pag.
-                                    278. lin. 18. antas. plantas.</row>
-                              <row>Pag. 178. lin. 22. Polycotyleon.
-                                    Polycotyledon.</row>
-                              <row>Pag. 282. lin. 2. Hyoseimus. Hyesciamus.</row>
-                              <row>Pag. 296. lin.
-                                    29. Martinica. Ilha de S. Thomé; e das Molucas.</row>
+                              <row>
+                                    <cell>Pag. 173. lin. 3.</cell>
+                                    <cell>Ermes.</cell>
+                                    <cell>Vermes.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 199. lin. 13.</cell>
+                                    <cell>Polliearis.</cell>
+                                    <cell>Pollicaris.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 200. lin. 16.</cell>
+                                    <cell>peciolos.</cell>
+                                    <cell>pedunculos.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 205. lin. 12.</cell>
+                                    <cell>laucum.</cell>
+                                    <cell>glaucum.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 215. lin. 13.</cell>
+                                    <cell>lincare.</cell>
+                                    <cell>lineare.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 216. lin. 27.</cell>
+                                    <cell>Convolvus.</cell>
+                                    <cell>Convolvulus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 226. lin. 2.</cell>
+                                    <cell>expençaõ.</cell>
+                                    <cell>expançaõ.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 236. lin. 21.</cell>
+                                    <cell>Stipitata.</cell>
+                                    <cell>Stipitata com pezinho.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 257. lin. 25.</cell>
+                                    <cell>octosidas.</cell>
+                                    <cell>octosida.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 276. lin. 12.</cell>
+                                    <cell>Hellebrus.</cell>
+                                    <cell>Helleborus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 278. lin. 18.</cell>
+                                    <cell>antas.</cell>
+                                    <cell>plantas.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 178. lin. 22.</cell>
+                                    <cell>Polycotyleon.</cell>
+                                    <cell>Polycotyledon.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 282. lin. 2.</cell>
+                                    <cell>Hyoscimus.</cell>
+                                    <cell>Hyosciamus.</cell>
+                              </row>
+                              <row>
+                                    <cell>Pag. 296. lin. 29.</cell>
+                                    <cell>Martinica.</cell>
+                                    <cell>Ilha de S. Thomé, e das Molucas.</cell>
+                              </row>
                         </table>
                         <pb
                               n="304" />
