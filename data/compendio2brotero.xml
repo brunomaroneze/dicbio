@@ -16,7 +16,7 @@
                     <author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica</title>.
                         <biblScope>Tomo segundo</biblScope>. <pubPlace>Paris</pubPlace>: Vende-se em
                     Lisboa, em caza de Paulo Martin, mercador de livros, <date when="1788"
-                        >1788</date>. Disponível em:
+                        >1788</date> . Disponível em:
                     https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html.
                 </bibl>
             </sourceDesc>
@@ -26,15 +26,15 @@
                 <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter
                     as letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
                 <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
-                    rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
-                        <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+                    rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento <gi>
+                        pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
                 <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
-                    digital da Universidade de Coimbra. O URL de cada imagem segue o padrão:
-                        <code>https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
+                    digital da Universidade de Coimbra. O URL de cada imagem segue o padrão: <code>
+                        https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
                     onde <code>XXXX</code> é um número sequencial e <code>PAGE</code> é o número da
                     página, seja em romanos, seja em arábicos. Neste arquivo transcrito, cada
                     elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
-                        <att>facs</att> com o endereço URL do arquivo da imagem correspondente à
+                        <att> facs</att> com o endereço URL do arquivo da imagem correspondente à
                     página em questão.</p>
             </editorialDecl>
             <projectDesc>
@@ -52,9 +52,11 @@
                     Escritores modernos, expostas na lingua Portugueza,</titlePart>
                 <byline>Por <docAuthor>FELIX AVELLAR BROTERO</docAuthor>. TOMO SEGUNDO.</byline>
                 <epigraph>
-                    <p><foreign xml:lang="lat">Nisi in ordines redigantur Plantae et velut castrorum
-                            acies destribuantur in suas classes, omnia fluctuari necesse est.
-                            Caesalp.</foreign></p>
+                    <p>
+                        <foreign xml:lang="lat">Nisi in ordines redigantur Plantae et velut
+                            castrorum acies destribuantur in suas classes, omnia fluctuari necesse
+                            est. Caesalp.</foreign>
+                    </p>
                 </epigraph>
                 <docImprint><pubPlace>PARIS</pubPlace>. Vende-se em Lisboa, em caza de PAULO MARTIN,
                     Mercador de Livros. <docDate when="1788">M,DCC,LXXXVIII</docDate>.</docImprint>
@@ -109,7 +111,7 @@
                         dezanove inclusivamente, na 12ª. ou Icosandria de vinte ou mais insertos ao
                         calyz, na 13ª. ou Polyandria de numerosos <pb n="5"
                             facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0009_5_t24-C-R0120.jpg"
-                            />estames<note>O seu numero pode ser de vinte athe mil ou mais, contanto
+                        /> estames<note>O seu numero pode ser de vinte athe mil ou mais, contanto
                             que sejaõ insertos ao receptaculo.</note> insertos ao receptaculo. Se os
                         estames das dictas flores hermaphroditas tem hum comprimento determinado,
                         sendo dois mais altos e dois mais curtos, estabelecem a classe 14ª. ou
@@ -229,17 +231,19 @@
                         hum sò estame, a Diandria de dois, a Triandria de tres, a Tetrandia de
                         quatro, a Pentandria de cinco, a Hexandria de seis, a Heptandria de sette, a
                         Octandria de oito, a Enneandria de nove, a Decandria de dez, a Endecandria
-                        (endecandria) de onze<note><p>Este termo naõ foy dado a alguma das primeiras
-                                treze classes do systema pela razaõ de serem as flores de onze
-                                estames desadunados muito raras, e as que ha serem comprehendidas na
-                                classe Dodecandria.</p></note>, a Dodecandria de doze athe desanove,
-                        a Icosandria de vinte, e a Polyandria de muitos, isto he, hum maior numero
-                        de estames do que tem a penultima ordem da mesma classe. As classes Monoicia
-                        e Dioicia tem ainda, alem d'alguma das predictas ordens, a Monadelphia,
-                        Syngenesia e Gynandria; na primeira destas tres ordens os estames das flores
-                        masculinas estaõ todos apegados pelos filetes em hum corpo, na ordem
-                        Syngenesia os estames das dictas flores tem as antheras adunadas, e na ordem
-                        Gynandria estaõ apegados ao pistillo.</p>
+                        (endecandria) de onze<note>
+                            <p>Este termo naõ foy dado a alguma das primeiras treze classes do
+                                systema pela razaõ de serem as flores de onze estames desadunados
+                                muito raras, e as que ha serem comprehendidas na classe
+                                Dodecandria.</p>
+                        </note>, a Dodecandria de doze athe desanove, a Icosandria de vinte, e a
+                        Polyandria de muitos, isto he, hum maior numero de estames do que tem a
+                        penultima ordem da mesma classe. As classes Monoicia e Dioicia tem ainda,
+                        alem d'alguma das predictas ordens, a Monadelphia, Syngenesia e Gynandria;
+                        na primeira destas tres ordens os estames das flores masculinas estaõ todos
+                        apegados pelos filetes em hum corpo, na ordem Syngenesia os estames das
+                        dictas flores tem as antheras adunadas, e na ordem Gynandria estaõ apegados
+                        ao pistillo.</p>
                     <p>Na classe Syngenesia a primeira Ordem he chamada Polygamia igual (polygamia
                         æqualis) e nella todos os flosculos da flor composta saõ hermaphroditos
                         tanto no disco como no rayo; na Polygamia superflua (polygamia superflua) os
@@ -251,19 +255,84 @@
                         (polygamia necessaria) os flosculos do disco saõ masculinos ou
                         hermaphroditos estereis, e os do raio femininos ferteis; na Polygamia
                         segregada (polygamia segregata) o calys commum comprehende em si muitos
-                        calyces parciaes unifloros ou ainda de maior numero de flosculos<note><p>Os
-                                calyces parciaes procedem do calys commum, e naõ estaõ sobrepostos
-                                aos germes.</p></note>; na Monogamia (monogamia) as flores saõ
-                        simplices, e naõ compostas como nas ordens precedentes. Na classe Polygamia
-                        ha tres Ordens, a saber, a Monoicia, em que as flores hermaphroditas e
-                        unisexuaes, que constituem a Polygamia, estaõ em hum so individuo; a
-                        Dioicia, em que a Polygamia se acha em dois individuos; e a Trioicia
-                        (triœcia) em que a Polygamia esta em tres individuos, hum produzindo flores
-                        masculinas, outro femininas, e o terceiro hermaphroditas.</p>
+                        calyces parciaes unifloros ou ainda de maior numero de flosculos<note>
+                            <p>Os calyces parciaes procedem do calys commum, e naõ estaõ sobrepostos
+                                aos germes.</p>
+                        </note>; na Monogamia (monogamia) as flores saõ simplices, e naõ compostas
+                        como nas ordens precedentes. Na classe Polygamia ha tres Ordens, a saber, a
+                        Monoicia, em que as flores hermaphroditas e unisexuaes, que constituem a
+                        Polygamia, estaõ em hum so individuo; a Dioicia, em que a Polygamia se acha
+                        em dois individuos; e a Trioicia (triœcia) em que a Polygamia esta em tres
+                        individuos, hum produzindo flores masculinas, outro femininas, e o terceiro
+                        hermaphroditas.</p>
                     <p>Na Cryptogamia ha quatro Ordens denominadas, os Fetos, Musgos, Algas, e
                         Fungos; como a exposiçaõ dos seus caracteres requer mais extensaõ do que me
                         parece ser propria deste capitulo, reservala-hei para quando tractar da
                         classe, a que dizem respeito.</p>
+                    <pb n="11"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0015_11_t24-C-R0120.jpg"/>
+                    <table>
+                        <head>CLASSES com as suas ORDENS respectivas.</head>
+                        <row role="label">
+                            <cell>CLASSES.</cell>
+                            <cell>ORDENS.</cell>
+                        </row>
+                        <row>
+                            <cell>I. MONANDRIA.</cell>
+                            <cell>Monogynia, Digynia.</cell>
+                        </row>
+                        <row>
+                            <cell>II. DIANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia.</cell>
+                        </row>
+                        <row>
+                            <cell>III. TRIANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia.</cell>
+                        </row>
+                        <row>
+                            <cell>IV. TETRANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Tetragynia.</cell>
+                        </row>
+                        <row>
+                            <cell>V. PENTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia,
+                                Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VI. HEXANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VII. HEPTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Tetragynia, Heptagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VIII. OCTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia.</cell>
+                        </row>
+                        <row>
+                            <cell>IX. ENNEANDRIA.</cell>
+                            <cell>Monogynia, Trigynia, Hexagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>X. DECANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Decagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XI. DODECANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Dodecagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XII. ICOSANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XIII. POLYANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Hexagynia,
+                                Polygynia.</cell>
+                        </row>
+
+                    </table>
                 </div>
             </div>
         </body>

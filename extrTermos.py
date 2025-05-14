@@ -39,7 +39,7 @@ def process_tei_file(file_path):
 
         author_surname = author.upper()
 
-        # Data
+        # Data (como string) – agora também gravada em coluna separada
         date_el = term.xpath('.//ancestor::tei:TEI//tei:date', namespaces=ns)
         date = date_el[0].text.strip() if date_el else 's.d.'
 
@@ -55,7 +55,17 @@ def process_tei_file(file_path):
             page = pb_before_el[0].get('n') if pb_before_el else ''
 
         full_sentence = f'{sentence_text} ({author}, {date}, p. {page})'
-        rows.append([token, headword, orth, gram, sense_number, full_sentence, author_surname])
+
+        rows.append([
+            token,
+            headword,
+            orth,
+            gram,
+            sense_number,
+            full_sentence,
+            author_surname,
+            date  # <- nova coluna separada
+        ])
 
     return rows
 
@@ -68,7 +78,10 @@ for file in xml_files:
 output_file = "data/termos_extraidos.csv"
 with open(output_file, mode='w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(["token", "Headword", "orth", "gram", "SenseNumber", "sentence", "author_surname"])
+    writer.writerow([
+        "token", "Headword", "orth", "gram", "SenseNumber",
+        "sentence", "author_surname", "date"
+    ])
     writer.writerows(all_rows)
 
 print(f"CSV gerado com sucesso: {output_file}")
