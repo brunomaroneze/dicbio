@@ -7,7 +7,7 @@ output: html_document
 
 O Dicionário Histórico de Termos da Biologia, em elaboração, traz definições e informações histórico-etimológicas para termos da Biologia extraídos de textos científicos do século XVIII.
 
-Atualmente, o dicionário contém 127 verbetes, com definições e informações histórico-etimológicas; também contém exemplos extraídos do córpus, formado por obras do século XVIII disponíveis online.
+Atualmente, o dicionário contém 128 verbetes, com definições e informações histórico-etimológicas; também contém exemplos extraídos do córpus, formado por obras do século XVIII disponíveis online.
 
 A descrição do córpus, a equipe e outras informações relevantes encontram-se em "Documentação".
 
@@ -17,6 +17,7 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 
 ### Atualizações
 
+- 13 maio 2025 - Inclusão do verbete "litalgia"
 - 01 maio 2025 - Inclusão do verbete "lúnula"
 - 22 abril 2025 - Inclusão do verbete "gelatinoso"
 - 14 abril 2025 - Inclusão do verbete "frênico"
