@@ -13,3 +13,5 @@ tests/portuguese*
 tests/anotacaoUDPipe.csv
 CorpusAppBruno
 CorpusAppBruno.zip
+*.pyc
+__pycache__/
