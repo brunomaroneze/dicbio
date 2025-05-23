@@ -1,8 +1,3 @@
----
-title: "ProjectIntro"
-output: html_document
----
-
 # Sobre este dicionário
 
 O Dicionário Histórico de Termos da Biologia, em elaboração, traz definições e informações histórico-etimológicas para termos da Biologia extraídos de textos científicos do século XVIII.
@@ -56,5 +51,3 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 - 20 junho 2022 - Inclusão do verbete "hipogástrio"
 - 24 maio 2022 - Inclusão dos verbetes "resina" e "resinoso"
 - 13 maio 2022 - Inclusão do verbete "verrucoso"
-
-O *template* deste dicionário baseia-se em LUGLI, L. et al. 2019-2022. [A Visual Dictionary and Thesaurus of Buddhist Sanskrit](https://mangalamresearch.shinyapps.io/VisualDictionaryOfBuddhistSanskrit/). Quaisquer dicionários que reutilizarem esse *template Shiny* devem citar L. et al. 2019-2022 como parte do código-fonte, e estarem cientes de que este dicionário e seu código são licenciados sob uma licença internacional ``Creative Commons Share Alike 4``.

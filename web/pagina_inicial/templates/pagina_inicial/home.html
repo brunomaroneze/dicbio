@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+    <div class="markdown-content">
+        {{ conteudo_md|safe }}
+    </div>
+{% endblock %}
