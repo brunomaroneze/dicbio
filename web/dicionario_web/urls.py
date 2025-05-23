@@ -19,5 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pagina_inicial.urls')),  # Página inicial na raiz
+    path('', include('pagina_inicial.urls')),
+    path('documentacao/', include('documentacao.urls')),
+    path('consulta/', include('verbetes.urls')),
+    path('corpus/', include('corpus_digital.urls')),
 ]

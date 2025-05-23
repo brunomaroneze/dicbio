@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Dicionário Histórico de Termos da Biologia{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #005599;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #eeeeee;
+            text-align: center;
+            padding: 1em;
+            font-size: 0.9em;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dicionário Histórico de Termos da Biologia</h1>
+    </header>
+
+    <nav>
+        <a href="{% url 'home' %}">Página inicial</a>
+        <a href="{% url 'documentacao' %}">Documentação</a>
+        <a href="{% url 'consulta' %}">Consulta</a>
+        <a href="{% url 'corpus' %}">Corpus</a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 — Dicionário Histórico de Termos da Biologia / UFGD</p>
+        <p>
+            O Dicionário Histórico de Termos da Biologia está licenciado sob a
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+                Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+            </a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>

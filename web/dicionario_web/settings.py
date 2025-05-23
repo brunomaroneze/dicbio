@@ -59,7 +59,7 @@ ROOT_URLCONF = 'dicionario_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], # Inclusão da pasta templates compartilhada
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
