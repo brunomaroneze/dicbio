@@ -66,9 +66,15 @@
 </head>
 
 <body>
-    <header>
-        <h1>Dicionário Histórico de Termos da Biologia</h1>
+    <header style="background-color: #003366; color: white; padding: 2em 1em; text-align: center;">
+        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário" style="height: 100px; margin-bottom: 1em;">
+        <h1 style="margin: 0; font-size: 2em;">
+            Dicionário Histórico de Termos da Biologia
+        </h1>
     </header>
+
+
+
 
     <nav>
         <a href="{% url 'home' %}">Página inicial</a>
@@ -82,15 +88,24 @@
         {% endblock %}
     </main>
 
-    <footer>
-        <p>&copy; 2025 — Dicionário Histórico de Termos da Biologia / UFGD</p>
-        <p>
+    <footer style="background-color: #eeeeee; text-align: center; padding: 2em 1em; font-size: 0.9em; color: #444;">
+        <p><strong>Realização:</strong></p>
+        <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" style="height: 70px; margin: 0.5em;">
+
+        <p><strong>Apoio:</strong></p>
+        <img src="{% static 'img/cnpq.png' %}" alt="CNPq" style="height: 40px; margin: 0.5em;">
+        <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="height: 40px; margin: 0.5em;">
+
+        <p style="margin-top: 1em;">
+            <img src="{% static 'img/creativecommons.png' %}" alt="Creative Commons"
+                style="height: 20px; vertical-align: middle;">
             O Dicionário Histórico de Termos da Biologia está licenciado sob a
             <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
                 Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
             </a>.
         </p>
     </footer>
+
 
 </body>
 
