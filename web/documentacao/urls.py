@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='documentacao'),
+    path('', views.texto, name='documentacao'),
+    path('<str:nome_arquivo>/', views.texto, name='texto_documentacao'),
 ]

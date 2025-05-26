@@ -1,8 +1,3 @@
----
-title: "Curiosities"
-output: html_document
----
-
 # Curiosidades
 Nesta seção, divulgaremos textos com fatos curiosos que descobrimos durante a elaboração deste dicionário.
 

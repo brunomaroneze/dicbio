@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Documentação{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 d-none d-md-block bg-light sidebar p-3">
+        <h5>Textos</h5>
+        <ul class="nav flex-column">
+            {% for item in arquivos %}
+            {% if item.slug %}
+            <li class="nav-item">
+                <a href="{% url 'texto_documentacao' item.slug %}"
+                    class="nav-link {% if item.slug == ativo %}fw-bold text-primary{% endif %}">
+                    {{ item.titulo }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="col-md-9">
+        <div class="markdown-content">
+            {{ conteudo|safe }}
+        </div>
+    </div>
+</div>
+
+<!-- Botão visível só em telas pequenas -->
+<div class="d-md-none text-center mt-4">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMobile">
+        Mostrar textos
+    </button>
+    <div class="collapse mt-2" id="sidebarMobile">
+        <ul class="list-group">
+            {% for arquivo in arquivos %}
+            <li class="list-group-item">
+                <a href="{% url 'texto_documentacao' arquivo %}">
+                    {{ arquivo|capfirst }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

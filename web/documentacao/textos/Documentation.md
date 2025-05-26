@@ -1,10 +1,3 @@
----
-title: "Documentation"
-output: html_document
----
-
-<div id="prefacio"></div>
-
 # Prefácio
 O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.
 
