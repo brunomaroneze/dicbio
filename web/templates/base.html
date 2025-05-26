@@ -1,112 +1,107 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %}Dicionário Histórico de Termos da Biologia{% endblock %}</title>
+
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Estilo personalizado -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
         header {
-            background-color: #003366;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #005599;
-            padding: 0.5em;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 2em;
+            background-color: #fdd6d6;
         }
 
         footer {
-            background-color: #eeeeee;
-            text-align: center;
-            padding: 1em;
-            font-size: 0.9em;
-            color: #444;
+            background-color: #fdd6d6;
+            font-size: 0.9rem;
         }
 
-        .markdown-content h1,
-        .markdown-content h2 {
-            color: #003366;
-            margin-top: 1.5em;
-        }
-
-        .markdown-content p {
-            line-height: 1.6;
-            margin-bottom: 1em;
-        }
-
-        .markdown-content ul {
-            margin-left: 2em;
+        .logo {
+            max-width: 300px;
+            height: auto;
         }
     </style>
+
+    {% block extra_head %}{% endblock %}
 </head>
 
 <body>
-    <header style="background-color: #003366; color: white; padding: 2em 1em; text-align: center;">
-        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário" style="height: 100px; margin-bottom: 1em;">
-        <h1 style="margin: 0; font-size: 2em;">
-            Dicionário Histórico de Termos da Biologia
-        </h1>
+
+    <!-- Cabeçalho -->
+    <header class="py-2 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="{% url 'home' %}" class="text-dark text-decoration-none">
+                <strong>Dicionário Histórico de Termos da Biologia</strong>
+            </a>
+            <nav>
+                <a href="{% url 'consulta' %}" class="me-3 text-dark text-decoration-none">Consulta</a>
+                <a href="{% url 'corpus' %}" class="me-3 text-dark text-decoration-none">Córpus</a>
+                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Documentação</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- Logo central (opcional) -->
+    <div class="container text-center my-4">
+        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário" class="logo">
+    </div>
 
-
-
-    <nav>
-        <a href="{% url 'home' %}">Página inicial</a>
-        <a href="{% url 'documentacao' %}">Documentação</a>
-        <a href="{% url 'consulta' %}">Consulta</a>
-        <a href="{% url 'corpus' %}">Corpus</a>
-    </nav>
-
-    <main>
+    <!-- Conteúdo principal -->
+    <main class="container mb-5">
         {% block content %}
+        <!-- Conteúdo específico de cada página -->
         {% endblock %}
     </main>
 
-    <footer style="background-color: #eeeeee; text-align: center; padding: 2em 1em; font-size: 0.9em; color: #444;">
-        <p><strong>Realização:</strong></p>
-        <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" style="height: 70px; margin: 0.5em;">
-
-        <p><strong>Apoio:</strong></p>
-        <img src="{% static 'img/cnpq.png' %}" alt="CNPq" style="height: 40px; margin: 0.5em;">
-        <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="height: 40px; margin: 0.5em;">
-
-        <p style="margin-top: 1em;">
-            <img src="{% static 'img/creativecommons.png' %}" alt="Creative Commons"
-                style="height: 20px; vertical-align: middle;">
-            O Dicionário Histórico de Termos da Biologia está licenciado sob a
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
-                Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-            </a>.
-        </p>
+    <!-- Rodapé -->
+    <footer class="pt-4 pb-3 mt-auto border-top">
+        <div class="container d-flex flex-wrap justify-content-between">
+            <div>
+                <strong>Dicionário Histórico de Termos da Biologia</strong><br>
+                <a href="https://www.instagram.com/dicbio" target="_blank" class="text-decoration-none text-dark">
+                    <i class="bi bi-instagram"></i> Siga-nos no Instagram<br><small>@dicbio</small>
+                </a>
+            </div>
+            <div>
+                <strong>Sobre</strong><br>
+                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Equipe</a><br>
+                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
+                <a href="{% url 'corpus' %}" class="text-dark text-decoration-none">Córpus</a>
+            </div>
+            <div class="d-flex flex-column align-items-start">
+                <strong>Apoio</strong>
+                <img src="{% static 'img/cnpq.png' %}" alt="CNPq" style="max-height: 40px; margin-bottom: 8px;">
+                <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD"
+                    style="max-height: 40px; margin-bottom: 8px;">
+                <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="max-height: 40px;">
+            </div>
+            <div>
+                <strong>Licença</strong><br>
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                    class="text-dark text-decoration-none d-inline-block" style="max-width: 180px;">
+                    <img src="{% static 'img/creativecommons.png' %}" alt="Licença Creative Commons"
+                        style="height: 30px;"><br>
+                    <span class="small">
+                        Este conteúdo está licenciado sob a Licença CC BY-NC-SA 4.0 Internacional
+                    </span>
+                </a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS (opcional, mas útil para componentes interativos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    {% block extra_scripts %}{% endblock %}
 </body>
 
 </html>
