@@ -3,6 +3,38 @@
 {% block title %}Consulta{% endblock %}
 
 {% block content %}
-<h2>Bem-vindo à Consulta</h2>
-<p>Em breve, você encontrará aqui a consulta ao dicionário.</p>
+<div class="container mt-4">
+    <!-- Caixa de busca -->
+    <form method="get" action="" class="mb-3">
+        <input type="text" name="q" placeholder="Buscar verbete..." class="form-control" value="{{ request.GET.q }}">
+    </form>
+
+    <!-- Conteúdo em colunas -->
+    <div class="row">
+        <!-- Lista de verbetes -->
+        <aside class="col-md-3 border-end">
+            <h5>Verbetes</h5>
+            <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
+                {% for v in verbetes %}
+                    <li>
+                        <a href="{% url 'verbetes_detalhe' v.slug %}" class="{% if v.slug == ativo %}fw-bold text-primary{% endif %}">
+                            {{ v.titulo }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <!-- Texto do verbete -->
+        <section class="col-md-9 ps-4">
+            {% if verbete %}
+                <h2>{{ verbete.titulo }}</h2>
+                <div>{{ verbete.texto|safe }}</div>
+            {% else %}
+                <p>Selecione um verbete na lista ao lado ou use a busca.</p>
+            {% endif %}
+        </section>
+    </div>
+</div>
+
 {% endblock %}
