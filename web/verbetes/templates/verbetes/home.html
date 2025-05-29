@@ -1,40 +1,51 @@
 {% extends 'base.html' %}
-
-{% block title %}Consulta{% endblock %}
+{% load verbetes_extras %}
+{% block title %}{{ verbete.termo }}{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
-    <!-- Caixa de busca -->
-    <form method="get" action="" class="mb-3">
-        <input type="text" name="q" placeholder="Buscar verbete..." class="form-control" value="{{ request.GET.q }}">
-    </form>
 
-    <!-- Conteúdo em colunas -->
-    <div class="row">
-        <!-- Lista de verbetes -->
-        <aside class="col-md-3 border-end">
-            <h5>Verbetes</h5>
-            <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
-                {% for v in verbetes %}
-                    <li>
-                        <a href="{% url 'verbetes_detalhe' v.slug %}" class="{% if v.slug == ativo %}fw-bold text-primary{% endif %}">
-                            {{ v.titulo }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </aside>
-
-        <!-- Texto do verbete -->
-        <section class="col-md-9 ps-4">
-            {% if verbete %}
-                <h2>{{ verbete.titulo }}</h2>
-                <div>{{ verbete.texto|safe }}</div>
-            {% else %}
-                <p>Selecione um verbete na lista ao lado ou use a busca.</p>
-            {% endif %}
-        </section>
+    <div class="verbete-header mb-4">
+        <h1>{{ verbete.termo }}</h1>
+        <p class="text-muted">{{ verbete.classe_gramatical }}</p>
     </div>
-</div>
 
+    <div class="etymology-section mb-4">
+        <h2>Discussão histórico-etimológica</h2>
+        <p>{{ verbete.etimologia|linebreaks }}</p>
+    </div>
+
+    <div class="definitions-section mb-5">
+        <h2>Definições</h2>
+
+        {% for d in definicoes %}
+            <div class="definition-block mb-4">
+                <p><strong>{{ d.sensenumber }}.</strong> {{ d.definition }}</p>
+
+                {% with d.sensenumber|stringformat:"s" as chave %}
+                    {% with exemplos_por_sense|get_item:chave as exemplos_sense %}
+                        {% if exemplos_sense %}
+                            {% for gram, autores in exemplos_sense.items %}
+                                {% for autor, exemplos in autores.items %}
+                                    {% for exemplo in exemplos|slice:":1" %}
+                                        <div class="example ps-3">
+                                            <p><strong>{{ exemplo.token }}</strong>{% if exemplo.gram %} ({{ exemplo.gram }}){% endif %}</p>
+                                            <p>{{ exemplo.sentence|safe }}</p>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                {% endwith %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="verbete-footer mt-5 border-top pt-3">
+        <p>Autor(es) do verbete: {{ verbete.autores }}</p>
+        <p>Este verbete foi incluído em {{ verbete.criado_em|date:"d M Y" }}{% if verbete.atualizado_em != verbete.criado_em %} e atualizado em {{ verbete.atualizado_em|date:"d M Y" }}{% endif %}</p>
+    </div>
+
+</div>
 {% endblock %}
