@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Compendio de Botanica" de Brotero: Transcrição digital</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+                    (https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+                    Maroneze.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica.
+                        Tomo segundo</title>. <pubPlace>Paris</pubPlace>: Vende-se em
+                    Lisboa, em caza de Paulo Martin, mercador de livros, <date when="1788"
+                        >1788</date>. Disponível em:
+                    https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter
+                    as letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
+                <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
+                    rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento <gi>
+                        pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+                <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
+                    digital da Universidade de Coimbra. O URL de cada imagem segue o padrão: <code>
+                        https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_XXXX_PAGE_t24-C-R0120.jpg</code>,
+                    onde <code>XXXX</code> é um número sequencial e <code>PAGE</code> é o número da
+                    página, seja em romanos, seja em arábicos. Neste arquivo transcrito, cada
+                    elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
+                        <att> facs</att> com o endereço URL do arquivo da imagem correspondente à
+                    página em questão.</p>
+            </editorialDecl>
+            <projectDesc>
+                <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+                    Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+            </projectDesc>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage
+                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0005_rosto_t24-C-R0120.jpg">
+                <titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
+                <titlePart type="desc">, OU NOÇOENS ELEMENTARES DESTA SCIENCIA, segundo os melhores
+                    Escritores modernos, expostas na lingua Portugueza,</titlePart>
+                <byline>Por <docAuthor>FELIX AVELLAR BROTERO</docAuthor>. TOMO SEGUNDO.</byline>
+                <epigraph>
+                    <p>
+                        <foreign xml:lang="lat">Nisi in ordines redigantur Plantae et velut
+                            castrorum acies destribuantur in suas classes, omnia fluctuari necesse
+                            est. Caesalp.</foreign>
+                    </p>
+                </epigraph>
+                <docImprint><pubPlace>PARIS</pubPlace>. Vende-se em Lisboa, em caza de PAULO MARTIN,
+                    Mercador de Livros. <docDate when="1788">M,DCC,LXXXVIII</docDate>.</docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="3"
+                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0007_3_t24-C-R0120.jpg"/>
+            <div type="Parte">
+                <head>EXPOSIÇAÕ DO SYSTEMA SEXUAL.</head>
+                <div type="chapter" n="1">
+                    <head>CAPITULO I. Do Systema de Linneo, e das suas Classes e Ordens em
+                        geral.</head>
+                    <p>O engenhoso Systema de Linneo, cuja exposiçaõ deve occupar o primeiro lugar
+                        deste Volume, he fundado nos organos sexuaes das flores, e dirigido a
+                        classar todos os modos, com que elles podem existir nos vegetaes: esta foy a
+                        razaõ porque o seu autor lhe deo o nome de Systema Sexual (Systema Sexuale).
+                        Cada hum destes differentes modos reune hum certo numero de relaçoẽs geraes,
+                        gradativamente deduzidas da Florecencia, e nesta reuniaõ he que foraõ
+                        estabelecidas as vinte e quatro classes, de que se compoem o dicto
+                        Systema.</p>
+                    <p>A Florecencia de todos os vegetaes conhecidos ou he bem destinctamente
+                        visivel ou he clandestina. Na que he bem destinctamente visivel, os organos
+                        sexuaes saõ assaz apparentes sem o soccorro do microscopio de maneira que
+                        ninguem os confundirà jamais nem com as sementes nem com o tenro fructo. As
+                            <pb n="4"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0008_4_t24-C-R0120.jpg"
+                        />plantas, cuja Florecencia he bem destinctamente visivel, humas daõ na
+                        mesma especie flores todas hermaphroditas, outras daõ flores masculinas e
+                        femininas taõbem na mesma especie: no primeiro cazo as flores hermaphroditas
+                        ou tem os estames desapegados entre si e juntamente do pistillo<note>Naõ saõ
+                            insertos ao pistillo, mas sim ao receptaculo, calys, ou corolla; e saõ
+                            soltos, isto he, tem os filetes desadunados e igualmente as
+                            antheras.</note>, ou apegados entre si ou ao pistillo<note>Isto he,
+                            insertos ao pistillo, ou parte equivalente a elle.</note> Se os estames
+                        se achaõ desapegados, e saõ de comprimento inderterminado<note>Isto he,
+                            quando dois delles naõ saõ sempre mais curtos nas flores de quatro e
+                            seis estames; e nas demais, quando variaõ muito no comprimento na mesma
+                            especie ou individuo, sendo ora todos iguaes, ora hum mais baxo, ora
+                            tres mais altos, &amp;c. e as vezes huns mais curtos outros mais altos
+                            alternadamente como na Daphne.</note>, constituem as treze primeiras
+                        classes, que differem humas das outras pelo numero dos dictos estames, e seu
+                        lugar de insersaõ<note>Isto he, pelo apego da base do filete ao calys ou
+                            receptaculo.</note>. Na 1ª. classe ou Monandria<note>Os que dezejarem
+                            saber as etymologias Gregas dos nomes das Classes e Ordens podem
+                            consultar o Diccionario dos termos botanicos que ajuntei no fim deste
+                            Compendio.</note> as flores constaõ de hum so estame, na 2ª. ou Diandria
+                        constaõ de dois, na 3ª. ou Triandria de tres, na 4ª. ou Tetrandria de
+                        quatro, na 5ª. ou Pentrandria de cinco, na 6ª. ou Hexandria de seis, na 7ª.
+                        ou Heptandria de sette, na 8ª. ou Octandria de oito, na 9ª. ou Enneandria de
+                        nove, na 10ª. ou Decandria de dez, na 11ª. ou Dodecandria de onze athe
+                        dezanove inclusivamente, na 12ª. ou Icosandria de vinte ou mais insertos ao
+                        calyz, na 13ª. ou Polyandria de numerosos <pb n="5"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0009_5_t24-C-R0120.jpg"
+                        /> estames<note>O seu numero pode ser de vinte athe mil ou mais, contanto
+                            que sejaõ insertos ao receptaculo.</note> insertos ao receptaculo. Se os
+                        estames das dictas flores hermaphroditas tem hum comprimento determinado,
+                        sendo dois mais altos e dois mais curtos, estabelecem a classe 14ª. ou
+                        Didynamia, e a 15ª. ou Tetradynamia, se dois saõ mais curtos e quatro mais
+                        altos. Porem se os estames das flores hermaphroditas estaõ apegados entre si
+                        pelos filetes em hum corpo formaõ a Monadelphia ou classe 16ª., a Diadelphia
+                        ou 17ª. classe se estaõ adunados em dois corpos, e a 18ª. ou Polyadelphia se
+                        acazo se achaõ adunados em muitos corpos ou phalanges; se estaõ
+                            somente<note>Nesta circumstancia os filetes estaõ desadunados.</note>
+                        apegados pelas antheras constituem a classe 19ª. ou Syngenesia, e a 20ª. ou
+                        Gynandria quando somente estaõ apegados pelas suas bases ao
+                            pistillo<note>Nesta classe tanto as antheras como os filetes estaõ
+                            desadunados entre si, e somente a circumstancia de estarem insertos ao
+                            pistillo ou seu equivalente he que constitue o caracter da
+                            classe.</note>. A florecencia pode ainda ser bem distinctamente visivel
+                        nas plantas que daõ na mesma especie flores masculinas e femininas; nesta
+                        circumstancia ou as dictas flores se achaõ no mesmo individo e constituem a
+                        Monoicia ou classe 21ª., ou em dois individuos e estabelecem a classe 22ª.
+                        ou Dioicia, ou mistas com hermaphroditas e formaõ a classe 23ª. ou
+                        Polygamia. Em fim quando a florecencia he clandestina, isto he, quando os
+                        organos sexuaes saõ de huma forma singularizada, apparentemente confundidos,
+                        e occultos á vista, precizando se de microscopio para se poderem reconhecer
+                        e destinguir entre si, as plantas que assim florecem <pb n="6"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0010_6_t24-C-R0120.jpg"
+                        />saõ classadas na Cryptogamia ou classe 24ª. e ultima do Systema. Eu
+                        fallarei depois mais circumstanciadamente de todas estas classes; por ora
+                        estas ideas geraes seraõ sufficientes para facilitar a intelligencia da
+                        Clave seguinte.</p>
+                    <pb n="7"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0011_7_t24-C-R0120.jpg"/>
+                    <list>
+                        <head>CLAVE DO SISTEMA SEXUAL</head>
+                        <item>Florecencia <list>
+                                <item>bem visivel; ou organos sexuaes bem apparentes. <list>
+                                        <item>Estames com pistillo em todas as flores da mesma
+                                            especie. <list>
+                                                <item>Estames desapegados. entre si, e do pistillo. <list>
+                                                  <item>de comprimento indeterminado.<list>
+                                                  <item>I. Monandria</item>
+                                                  <item>II. Diandria</item>
+                                                  <item>III. Triandria</item>
+                                                  <item>IV. Tetrandria</item>
+                                                  <item>V. Pentandria</item>
+                                                  <item>VI. Hexandria</item>
+                                                  <item>VII. Heptandria</item>
+                                                  <item>VIII. Octandria</item>
+                                                  <item>IX. Enneandria</item>
+                                                  <item>X. Decandria</item>
+                                                  <item>XI. Dodecandria</item>
+                                                  <item>XII. Icosandria</item>
+                                                  <item>XIII. Polyandria</item>
+                                                  </list></item>
+                                                  <item>dois sempre mais curtos <list>
+                                                  <item>e dois mais altos ... XIV. Didynamia</item>
+                                                  <item>e quatro mais altos ... XV.
+                                                  Tetradynamia</item>
+                                                  </list></item>
+                                                  </list></item>
+                                                <item>apegados<list>
+                                                  <item>entre si<list>
+                                                  <item>pelos filetes<list>
+                                                  <item>em hum corpo ... XVI. Monadelphia</item>
+                                                  <item>em dois corpos ... XVII. Diadelphia</item>
+                                                  <item>em muitos corpos ... XVIII.
+                                                  Polyadelphia</item>
+                                                  </list></item>
+                                                  <item>pelas antheras ... XIX. Syngenesia</item>
+                                                  </list></item>
+                                                  <item>ao pistillo. ... XX. Gynandria</item>
+                                                  </list>
+                                                </item>
+                                            </list></item>
+                                        <item>Estames em humas flores, e o pistillo em outras na
+                                            mesma especie.<list>
+                                                <item>e no mesmo individuo ... XXI. Monoicia</item>
+                                                <item>mas em dois individuos. ... XXII.
+                                                  Dioicia</item>
+                                                <item>e alem dellas flores hermaphroditas no mesmo
+                                                  ou diverso individuo. ... XXIII. Polygamia</item>
+                                            </list></item>
+                                    </list></item>
+                                <item>Clandestina ... XXIV. Cryptogamia</item>
+                            </list>
+                        </item>
+                    </list>
+                    <pb n="8"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0012_8_t24-C-R0120.jpg"/>
+                    <p><s>As Ordens das treze primeiras classes, em que ha sempre flores
+                            hermaphroditas, saõ fundadas no numero de pistillos, que se contaõ
+                            sempre pelos estyletes considerados na sua base, ou pelos estigmas, no
+                            cazo que naõ hajaõ estyletes<note>Estas circumstancias tem por objecto
+                                evitar as equivocaçoens, que podiaõ haver quanto aos germes e
+                                estygmas estyleteados; porquanto algumas vezes hum so germe succede
+                                ter dois, tres, quatro, cinco ou mais estygmas rentes e este mesmo
+                                numero de estygmas, succede taõbem achar se às vezes na extremidade
+                                de hum so estylete.</note>.</s> A primeira Ordem das dictas classes
+                        he sempre denominada Monogynia (monogynia) e contem as plantas que daõ
+                        flores com hum so pistillo: a Digynia (digynia), que se segue depois della,
+                        contem flores de dois pistillos; a Trigynia (trigynia) flores de tres
+                        pistillos; a Tetragynia (tetragynia) de quatro pistillos; a Pentagynia
+                        (pentagynia) de cinco; a Hexagynia (hexagynia) de seis; a Heptagynia
+                        (heptagynia) de sette; a Decagynia (decagynia) de dez; a Dodecagynia
+                        (dodecagynia) de doze; e a Polygynia (polygynia) de muitos, isto he, hum
+                        maior numero de pistillos do que tem a penultima Ordem da mesma classe.</p>
+                    <p>Das duas Ordens da Classe Didynamia a primeira he chamada Gymnospermia
+                        (gymospermia) por conter plantas que daõ sementes sem pericarpo, e a segunda
+                        Angiospermia (angiospermia) em razaõ das sementes serem cobertas de hum
+                        pericarpo. Na Tetradynamia ha taõbem duas Ordens, denominadas as Siliculosas
+                        (siliculosae) ou plantas cujo pericarpo he uma Silicula, e as Siliquosas
+                        (Siliquosae) ou plantas que tem huma siliqua por pericarpo.</p>
+                    <p>Nas Classes seguintes, taes como a Monadelphia, <pb n="9"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0013_9_t24-C-R0120.jpg"
+                        />Diadelphia, Polyadelphia, Monoicia, Dioicia, e Gynandria, as Ordens saõ
+                        ordinariamente deduzidas do numero dos estames e tem por conseguinte os
+                        mesmos nomes, que se daõ às primeiras trezes classes do systema que saõ
+                        fundadas no dicto numero; assim a Ordem chamada Monandria contem flores de
+                        hum sò estame, a Diandria de dois, a Triandria de tres, a Tetrandia de
+                        quatro, a Pentandria de cinco, a Hexandria de seis, a Heptandria de sette, a
+                        Octandria de oito, a Enneandria de nove, a Decandria de dez, a Endecandria
+                        (endecandria) de onze<note>
+                            <p>Este termo naõ foy dado a alguma das primeiras treze classes do
+                                systema pela razaõ de serem as flores de onze estames desadunados
+                                muito raras, e as que ha serem comprehendidas na classe
+                                Dodecandria.</p>
+                        </note>, a Dodecandria de doze athe desanove, a Icosandria de vinte, e a
+                        Polyandria de muitos, isto he, hum maior numero de estames do que tem a
+                        penultima ordem da mesma classe. As classes Monoicia e Dioicia tem ainda,
+                        alem d'alguma das predictas ordens, a Monadelphia, Syngenesia e Gynandria;
+                        na primeira destas tres ordens os estames das flores masculinas estaõ todos
+                        apegados pelos filetes em hum corpo, na ordem Syngenesia os estames das
+                        dictas flores tem as antheras adunadas, e na ordem Gynandria estaõ apegados
+                        ao pistillo.</p>
+                    <p>Na classe Syngenesia a primeira Ordem he chamada Polygamia igual (polygamia
+                        æqualis) e nella todos os flosculos da flor composta saõ hermaphroditos
+                        tanto no disco como no rayo; na Polygamia superflua (polygamia superflua) os
+                        flosculos do disco saõ hermaphroditos, os do rayo femininos, e huns e outros
+                        saõ ferteis; na Polygamia frustrada (polygamia frustranea) os flosculos
+                        hermaphroditos do disco saõ <pb n="10"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0014_10_t24-C-R0120.jpg"
+                        /> ferteis, e os femininos do rayo saõ estereis; na Polygamia necessaria
+                        (polygamia necessaria) os flosculos do disco saõ masculinos ou
+                        hermaphroditos estereis, e os do raio femininos ferteis; na Polygamia
+                        segregada (polygamia segregata) o calys commum comprehende em si muitos
+                        calyces parciaes unifloros ou ainda de maior numero de flosculos<note>
+                            <p>Os calyces parciaes procedem do calys commum, e naõ estaõ sobrepostos
+                                aos germes.</p>
+                        </note>; na Monogamia (monogamia) as flores saõ simplices, e naõ compostas
+                        como nas ordens precedentes. Na classe Polygamia ha tres Ordens, a saber, a
+                        Monoicia, em que as flores hermaphroditas e unisexuaes, que constituem a
+                        Polygamia, estaõ em hum so individuo; a Dioicia, em que a Polygamia se acha
+                        em dois individuos; e a Trioicia (triœcia) em que a Polygamia esta em tres
+                        individuos, hum produzindo flores masculinas, outro femininas, e o terceiro
+                        hermaphroditas.</p>
+                    <p>Na Cryptogamia ha quatro Ordens denominadas, os Fetos, Musgos, Algas, e
+                        Fungos; como a exposiçaõ dos seus caracteres requer mais extensaõ do que me
+                        parece ser propria deste capitulo, reservala-hei para quando tractar da
+                        classe, a que dizem respeito.</p>
+                    <pb n="11"
+                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0015_11_t24-C-R0120.jpg"/>
+                    <table>
+                        <head>CLASSES com as suas ORDENS respectivas.</head>
+                        <row role="label">
+                            <cell>CLASSES.</cell>
+                            <cell>ORDENS.</cell>
+                        </row>
+                        <row>
+                            <cell>I. MONANDRIA.</cell>
+                            <cell>Monogynia, Digynia.</cell>
+                        </row>
+                        <row>
+                            <cell>II. DIANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia.</cell>
+                        </row>
+                        <row>
+                            <cell>III. TRIANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia.</cell>
+                        </row>
+                        <row>
+                            <cell>IV. TETRANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Tetragynia.</cell>
+                        </row>
+                        <row>
+                            <cell>V. PENTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia,
+                                Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VI. HEXANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VII. HEPTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Tetragynia, Heptagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>VIII. OCTANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia.</cell>
+                        </row>
+                        <row>
+                            <cell>IX. ENNEANDRIA.</cell>
+                            <cell>Monogynia, Trigynia, Hexagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>X. DECANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Decagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XI. DODECANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Dodecagynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XII. ICOSANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Pentagynia, Polygynia.</cell>
+                        </row>
+                        <row>
+                            <cell>XIII. POLYANDRIA.</cell>
+                            <cell>Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Hexagynia,
+                                Polygynia.</cell>
+                        </row>
+                        <pb n="12"
+                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0016_12_t24-C-R0120.jpg"/>
+                        <row>
+                            <cell>XIV. DIDYNAMIA</cell>
+                            <cell>Gymnospermia, Angiospermia.</cell>
+                        </row>
+                        <row>
+                            <cell>XV. TETRADYNAMIA</cell>
+                            <cell>Siliculosas, Siliquosas.</cell>
+                        </row>
+                        <row>
+                            <cell>XVI. MONADELPHIA</cell>
+                            <cell>Triandria, Heptandria, Octandria, Enneandria, Decandria,
+                                Endecandria, Dodecandria, Polyandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XVII. DIADELPHIA</cell>
+                            <cell>Pentandria, Hexandria, Octandria, Decandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XVIII. POLYADELPHIA</cell>
+                            <cell>Pentandria, Dodecandria, Icosandria, Polyandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XIX. SYNGENESIA</cell>
+                            <cell>Polygamia igual, Polygam. superflua, Polyg. frustrada, Polyg.
+                                necessaria, Polyg. segregada, Monogamia.</cell>
+                        </row>
+                        <row>
+                            <cell>XX. GYNANDRIA</cell>
+                            <cell>Diandria, Triandria, Tetrandria, Pentandria, Hexandria, Octandria,
+                                Decandria, Dodecandria, Polyandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XXI. MONOICIA</cell>
+                            <cell>Monandria, Diandria, Triandria, Tetrandria, Pentandria, Hexandria,
+                                Heptandria, Polyandria, Monadelphia, Syngenesia, Gynandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XXII. DIOICIA</cell>
+                            <cell>Monandria, Diandria, Triandria, Tetrandria, Pentandria, Hexandria,
+                                Octandria, Enneandria, Decandria, Dodecandria, Polyandria,
+                                Monadelphia, Syngenesia, Gyandria.</cell>
+                        </row>
+                        <row>
+                            <cell>XXIII. POLYGAMIA</cell>
+                            <cell>Monoicia, Dioicia, Trioicia.</cell>
+                        </row>
+                        <row>
+                            <cell>XXIV. CRYPTOGAMIA</cell>
+                            <cell>Fetos, Musgos, Algas, Fungos.</cell>
+                        </row>
+                    </table>
+                </div>
+                <pb n="13"
+                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0017_13_t24-C-R0120.jpg"/>
+                <div type="chapter" n="2">
+                    <head>CAPITULO II. Das Classes e Ordens do Systema de Linneo em
+                        particular.</head>
+                    <div type="subchapter">
+                        <head>§. Classe I.</head>
+                        <p>Monandria (monandria; esta classe comprehende as plantas que daõ flores
+                            hermaphroditas com hum so estame, como v. g. o costo d'Arabia, a canna
+                            da India, o açafraõ da India &amp;c.; tem duas Ordens, na 1ª. ou
+                            Monogynia saõ comprehendidas as plantas que alem do procedente caracter
+                            classico tem demais disso hum so pistillo nas suas flores; contem athe
+                            ao prezente treze generos, dos quaes dez daõ fructos guarnecidos de
+                            pericarpo, a saber, a Renealmia, Amomum, Curcuma, Thalia, Maranta,
+                            Myrosma, Kaempferia, Canna, Alpinia, e Costus, e tres daõ fructos sem
+                            pericarpo, e monospermos, como saõ a Boerhaavia<note>O Leitor vera (nos
+                                Tractados dos Generos e Especies de plantas publicados pelo Dr.
+                                Linneo) alguns generos desta classe com especies que pertencem a
+                                outras, como na Salicornia, Boerhaavia, Corispermum, e Callitriche,
+                                pelo contrario observará que na valeriana da classe Triandria ha
+                                algumas especies que pertencem á classe Monandria: este
+                                inconveniente, que tem lugar em muitos generos de differentes
+                                classes e Ordens do systema sexual, procede dos dictos generos terem
+                                sido formados mais para servir a hum Methodo natural do que
+                                artificial; podia-se contudo obviar de algum modo, se acazo, nas
+                                chaves de cada classe e ordem se posessem os nomes das especies, que
+                                lhes</note>, Hippuris, e Salicornia.</p>
+
+                    </div>
+                </div>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>
