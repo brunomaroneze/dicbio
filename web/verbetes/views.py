@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Verbete, Definition, OcorrenciaCorpus
 from collections import defaultdict
+from django.utils.timezone import now
 import unicodedata
 
 def remover_acentos(texto):
@@ -47,6 +48,7 @@ def verbete_detalhe(request, slug):
         'definicoes': definicoes,
         'exemplos_por_sense': exemplos_por_sense,
         'lista_verbetes': lista_verbetes,
+        'now': now(),
     }
     return render(request, 'verbetes/home.html', context)
 

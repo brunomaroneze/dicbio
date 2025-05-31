@@ -16,12 +16,12 @@
             <h5>Verbetes</h5>
             <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
                 {% for v in lista_verbetes %}
-                    <li>
-                        <a href="{% url 'verbetes_detalhe' v.slug %}"
-                           class="{% if v.slug == verbete.slug %}fw-bold text-primary{% endif %}">
-                            {{ v.termo }}
-                        </a>
-                    </li>
+                <li>
+                    <a href="{% url 'verbetes_detalhe' v.slug %}"
+                        class="{% if v.slug == verbete.slug %}fw-bold text-primary{% endif %}">
+                        {{ v.termo }}
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
         </aside>
@@ -29,53 +29,72 @@
         <!-- Conteúdo do verbete -->
         <section class="col-md-9">
             {% if verbete %}
-                <div class="verbete-header mb-4">
-                    <h1>{{ verbete.termo }}</h1>
-                    <p class="text-muted">{{ verbete.classe_gramatical }}</p>
-                </div>
+            <div class="verbete-header mb-4">
+                <h1>{{ verbete.termo }}</h1>
+                <p class="text-muted">{{ verbete.classe_gramatical }}</p>
+            </div>
 
-                <div class="etymology-section mb-4">
-                    <h2>Discussão histórico-etimológica</h2>
-                    <p>{{ verbete.etimologia|linebreaks }}</p>
-                </div>
+            <div class="etymology-section mb-4">
+                <h2>Discussão histórico-etimológica</h2>
+                <p>{{ verbete.etimologia|safe }}</p>
+            </div>
 
-                <div class="definitions-section mb-5">
-                    <h2>Definições</h2>
+            <div class="definitions-section mb-5">
+                <h2>Definições</h2>
 
-                    {% for d in definicoes %}
-                        <div class="definition-block mb-4">
-                            <p><strong>{{ d.sensenumber }}.</strong> {{ d.definition }}</p>
+                {% for d in definicoes %}
+                <div class="definition-block mb-4">
+                    <p><strong>{{ d.sensenumber }}.</strong> {{ d.definition }}</p>
 
-                            {% with d.sensenumber|stringformat:"s" as chave %}
-                                {% with exemplos_por_sense|get_item:chave as exemplos_sense %}
-                                    {% if exemplos_sense %}
-                                        {% for gram, autores in exemplos_sense.items %}
-                                            {% for autor, exemplos in autores.items %}
-                                                {% for exemplo in exemplos|slice:":1" %}
-                                                    <div class="example ps-3">
-                                                        <p><strong>{{ exemplo.token }}</strong>{% if exemplo.gram %} ({{ exemplo.gram }}){% endif %}</p>
-                                                        <p>{{ exemplo.sentence|safe }}</p>
-                                                    </div>
-                                                {% endfor %}
-                                            {% endfor %}
-                                        {% endfor %}
-                                    {% endif %}
-                                {% endwith %}
-                            {% endwith %}
-                        </div>
+                    {% with d.sensenumber|stringformat:"s" as chave %}
+                    {% with exemplos_por_sense|get_item:chave as exemplos_sense %}
+                    {% if exemplos_sense %}
+                    {% for gram, autores in exemplos_sense.items %}
+                    {% for autor, exemplos in autores.items %}
+                    {% for exemplo in exemplos|slice:":1" %}
+                    <div class="example ps-3">
+                        {% with gram=exemplo.gram|stringformat:"s" %}
+                        <p>
+                            <strong>{{ exemplo.token }}</strong>
+                            {% if gram and gram|lower != 'nan' %}
+                            ({{ gram }})
+                            {% endif %}
+                        </p>
+                        {% endwith %}
+                        <p>{{ exemplo.sentence|safe }}</p>
+                    </div>
                     {% endfor %}
+                    {% endfor %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                    {% endwith %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="verbete-footer mt-5 border-top pt-3">
+                <p>Autor(es) do verbete: {{ verbete.autores }}</p>
+                <p>Este verbete foi incluído em {{ verbete.criado_em|date:"d M Y" }}
+                    {% if verbete.atualizado_em != verbete.criado_em %}
+                    e atualizado em {{ verbete.atualizado_em|date:"d M Y" }}
+                    {% endif %}
+                </p>
+                <!-- Citação sugerida -->
+                <div class="mt-3">
+                    <p><strong>Como citar este verbete:</strong></p>
+                    {% with autores=verbete.autores|formatar_autores %}
+                    {% with ano=verbete.atualizado_em|default:verbete.criado_em|date:"Y" %}
+                    <p>{{ autores }}. {{ verbete.termo }}. In: MARONEZE, Bruno (coord.) <em>Dicionário Histórico de
+                            Termos da Biologia</em>. {{ ano }}. Disponível em: {{ request.build_absolute_uri }}. Acesso
+                        em: {{ now|date:"d M Y" }}.</p>
+                    {% endwith %}
+                    {% endwith %}
                 </div>
 
-                <div class="verbete-footer mt-5 border-top pt-3">
-                    <p>Autor(es) do verbete: {{ verbete.autores }}</p>
-                    <p>Este verbete foi incluído em {{ verbete.criado_em|date:"d M Y" }}
-                        {% if verbete.atualizado_em != verbete.criado_em %}
-                            e atualizado em {{ verbete.atualizado_em|date:"d M Y" }}
-                        {% endif %}
-                    </p>
-                </div>
+            </div>
             {% else %}
-                <p>Selecione um verbete na lista ao lado ou use a busca.</p>
+            <p>Selecione um verbete na lista ao lado ou use a busca.</p>
             {% endif %}
         </section>
     </div>
