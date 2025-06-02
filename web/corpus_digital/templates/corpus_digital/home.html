@@ -1,8 +1,48 @@
 {% extends 'base.html' %}
-
-{% block title %}Corpus{% endblock %}
+{% block title %}Córpus Digital{% endblock %}
 
 {% block content %}
-<h2>Bem-vindo Ao corpus digital</h2>
-<p>Em breve, você encontrará aqui a consulta ao corpus do dicionário.</p>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Conteúdo principal -->
+        <div class="col-md-9">
+
+            {% if obra_atual %}
+                <div class="mb-4 border-bottom pb-2">
+                    <h2 class="mb-0">{{ obra_atual.titulo }}</h2>
+                    <p class="text-muted mb-0">{{ obra_atual.autor }}</p>
+                </div>
+            {% endif %}
+
+            {% if conteudo_html %}
+                <div class="obra-texto">
+                    {{ conteudo_html|safe }}
+                </div>
+            {% elif obra_atual %}
+                <p><em>Esta obra não possui conteúdo visível.</em></p>
+            {% else %}
+                <p><em>Selecione uma obra na lista ao lado para visualizar o conteúdo.</em></p>
+            {% endif %}
+        </div>
+
+        <!-- Lista lateral -->
+        <aside class="col-md-3 border-start">
+            <h5>Obras</h5>
+            {% if obras %}
+                <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
+                    {% for o in obras %}
+                        <li>
+                            <a href="{% url 'obra_detalhe' o.slug %}"
+                               class="{% if obra_atual and o.slug == obra_atual.slug %}fw-bold text-primary{% endif %}">
+                                {{ o.autor }} — {{ o.titulo }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p><em>Nenhuma obra cadastrada.</em></p>
+            {% endif %}
+        </aside>
+    </div>
+</div>
 {% endblock %}

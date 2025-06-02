@@ -45,7 +45,10 @@ class OcorrenciaCorpus(models.Model):
     gram = models.CharField(max_length=100, blank=True)
     frase = models.TextField()
     autor = models.CharField(max_length=100, blank=True)
+    titulo_obra = models.CharField(max_length=200, blank=True)
+    slug_obra = models.SlugField(max_length=150, blank=True)
     data = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return f"{self.token} em {self.verbete.termo}"
+

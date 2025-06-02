@@ -30,7 +30,9 @@ for _, row in df.iterrows():
         gram=row.get('gram', ''),
         frase=row['sentence'],
         autor=row.get('author_surname', ''),
-        data=row.get('date', '')
+        data=row.get('date', ''),
+        titulo_obra=row.get('title', ''),
+        slug_obra=row.get('slug_obra', ''),
     )
 
     print(f"✔️ Ocorrência salva para: {verbete.termo} ({sense_number})")

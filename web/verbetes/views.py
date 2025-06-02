@@ -3,6 +3,7 @@ from .models import Verbete, Definition, OcorrenciaCorpus
 from collections import defaultdict
 from django.utils.timezone import now
 import unicodedata
+from django.urls import reverse
 
 def remover_acentos(texto):
     return ''.join(
@@ -22,12 +23,27 @@ def verbete_detalhe(request, slug):
         sense = o.definicao.sensenumber if o.definicao else '0'
         gram = o.gram.strip()
         autor = o.autor.strip().upper()
-        exemplos_tmp[str(sense)][gram][autor].append({
-            'token': o.token,
+
+        exemplo = {
+           'token': o.token,
             'gram': gram,
             'sentence': o.frase,
             'autor': autor,
-        })
+            'titulo_obra': o.titulo_obra,
+            'slug_obra': o.slug_obra,
+        }
+
+        # Usamos a chave do sentido e da gramática para selecionar exemplos
+        grupo = exemplos_tmp[str(sense)][gram][autor]
+
+        # Substitui o exemplo anterior se este for mais adequado
+        tam = len(o.frase)
+        if 100 <= tam <= 300:
+            # Preferimos esse e colocamos como primeiro da lista
+            grupo.insert(0, exemplo)
+        else:
+            grupo.append(exemplo)
+
 
     # Agora convertemos exemplos_tmp para dict normal (para o template)
     exemplos_por_sense = {
