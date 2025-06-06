@@ -79,9 +79,10 @@ def home(request):
     if termo_busca:
         try:
             verbete = Verbete.objects.get(termo__iexact=termo_busca)
-            return redirect('verbetes_detalhe', slug=verbete.slug)
+            return redirect('verbetes:detalhe', slug=verbete.slug)
         except Verbete.DoesNotExist:
             verbete = None
+            mensagem_busca = f"Nenhum verbete encontrado para '{termo_busca}'."
             definicoes = []
             exemplos_por_sense = {}
     else:
@@ -94,4 +95,5 @@ def home(request):
         'definicoes': definicoes,
         'exemplos_por_sense': exemplos_por_sense,
         'lista_verbetes': lista_verbetes,
+        'mensagem_busca': mensagem_busca if 'mensagem_busca' in locals() else None,
     })

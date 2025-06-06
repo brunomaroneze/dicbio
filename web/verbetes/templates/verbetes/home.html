@@ -6,8 +6,16 @@
 <div class="container mt-4">
 
     <!-- Caixa de busca -->
-    <form method="get" action="{% url 'consulta' %}" class="mb-4">
-        <input type="text" name="q" placeholder="Buscar verbete..." class="form-control" value="{{ request.GET.q }}">
+    <form method="get" action="{% url 'verbetes:consulta' %}" class="mb-4">
+        <div class="col-md-6 mx-auto">
+            <div class="input-group input-group-sm">
+                <input type="text" name="q" placeholder="Buscar verbete..." class="form-control"
+                    value="{{ request.GET.q }}" aria-label="Campo de busca de verbetes">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">
+                    <i class="bi bi-search"></i> {# Ícone de lupa do Bootstrap Icons #}
+                </button>
+            </div>
+        </div>
     </form>
 
     <div class="row">
@@ -17,7 +25,7 @@
             <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
                 {% for v in lista_verbetes %}
                 <li>
-                    <a href="{% url 'verbetes_detalhe' v.slug %}"
+                    <a href="{% url 'verbetes:detalhe' v.slug %}"
                         class="{% if v.slug == verbete.slug %}fw-bold text-primary{% endif %}">
                         {{ v.termo }}
                     </a>
@@ -28,6 +36,11 @@
 
         <!-- Conteúdo do verbete -->
         <section class="col-md-9">
+            {% if mensagem_busca %}
+            <div class="alert alert-warning" role="alert">
+                {{ mensagem_busca }}
+            </div>
+            {% endif %}
             {% if verbete %}
             <div class="verbete-header mb-4">
                 <h1>{{ verbete.termo }}</h1>
@@ -93,7 +106,7 @@
                 </div>
 
             </div>
-            {% else %}
+            {% elif not mensagem_busca %}
             <p>Selecione um verbete na lista ao lado ou use a busca.</p>
             {% endif %}
         </section>

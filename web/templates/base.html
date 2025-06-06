@@ -39,13 +39,13 @@
     <!-- Cabeçalho -->
     <header class="py-2 border-bottom">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="{% url 'home' %}" class="text-dark text-decoration-none">
+            <a href="{% url 'pagina_inicial:home' %}" class="text-dark text-decoration-none">
                 <strong>Dicionário Histórico de Termos da Biologia</strong>
             </a>
             <nav>
-                <a href="{% url 'consulta' %}" class="me-3 text-dark text-decoration-none">Consulta</a>
-                <a href="{% url 'corpus' %}" class="me-3 text-dark text-decoration-none">Córpus</a>
-                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Documentação</a>
+                <a href="{% url 'verbetes:consulta' %}" class="me-3 text-dark text-decoration-none">Consulta</a>
+                <a href="{% url 'corpus_digital:corpus' %}" class="me-3 text-dark text-decoration-none">Córpus</a>
+                <a href="{% url 'documentacao:documentacao' %}" class="text-dark text-decoration-none">Documentação</a>
             </nav>
         </div>
     </header>
@@ -73,9 +73,9 @@
             </div>
             <div>
                 <strong>Sobre</strong><br>
-                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Equipe</a><br>
-                <a href="{% url 'documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
-                <a href="{% url 'corpus' %}" class="text-dark text-decoration-none">Córpus</a>
+                <a href="{% url 'documentacao:documentacao' %}" class="text-dark text-decoration-none">Equipe</a><br>
+                <a href="{% url 'documentacao:documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
+                <a href="{% url 'corpus_digital:corpus' %}" class="text-dark text-decoration-none">Córpus</a>
             </div>
             <div class="d-flex flex-column align-items-start">
                 <strong>Apoio</strong>

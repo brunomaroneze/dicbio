@@ -10,7 +10,7 @@
             {% for item in arquivos %}
             {% if item.slug %}
             <li class="nav-item">
-                <a href="{% url 'texto_documentacao' item.slug %}"
+                <a href="{% url 'documentacao:texto_documentacao' item.slug %}"
                     class="nav-link {% if item.slug == ativo %}fw-bold text-primary{% endif %}">
                     {{ item.titulo }}
                 </a>
@@ -38,7 +38,7 @@
         <ul class="list-group">
             {% for arquivo in arquivos %}
             <li class="list-group-item">
-                <a href="{% url 'texto_documentacao' arquivo %}">
+                <a href="{% url 'documentacao:texto_documentacao' arquivo %}">
                     {{ arquivo|capfirst }}
                 </a>
             </li>
