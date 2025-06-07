@@ -36,8 +36,8 @@ def texto(request, nome_arquivo=None):
 
     with open(caminho, encoding='utf-8') as f:
         conteudo = markdown.markdown(f.read(), extensions=['extra', 'smarty'])
-
-    return render(request, 'documentacao/texto.html', {
+        
+    return render(request, 'documentacao/home.html', {
         'conteudo': conteudo,
         'arquivos': arquivos,
         'ativo': nome_arquivo,
