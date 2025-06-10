@@ -1,4 +1,7 @@
 # Félix da Silva Avelar Brotero (1744-1828)
+por Bruno Maroneze
+
+09 de junho de 2025
 
 ![Retrato de Brotero](/static/documentacao/img/Brotero01.jpg)
 

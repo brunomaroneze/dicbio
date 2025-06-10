@@ -1,5 +1,5 @@
-# Publicações
-Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
+# Publicações científicas
+Incluem-se aqui as publicações científicas dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
 
 - BORGES, Luana da Silva. **[Termos neológicos na obra de Brotero (1788)](https://repositorio.ufms.br/handle/123456789/9290)**. 2024. 53 p. Dissertação (mestrado em Estudos de Linguagens) - Faculdade de Artes, Letras e Comunicação, Universidade Federal de Mato Grosso do Sul, Campo Grande, 2024.
 
