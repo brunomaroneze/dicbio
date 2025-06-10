@@ -51,3 +51,24 @@ Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](b
 - 20 junho 2022 - Inclusão do verbete "hipogástrio"
 - 24 maio 2022 - Inclusão dos verbetes "resina" e "resinoso"
 - 13 maio 2022 - Inclusão do verbete "verrucoso"
+
+# Prefácio
+O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.
+
+O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a participação de estudantes de graduação e pós-graduação da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS). É um projeto filiado ao [Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte.
+
+O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
+
+No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
+
+
+<div id="objetivos"></div>
+
+## Objetivos
+O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
+
+Seus objetivos específicos são:
+- Compilar um córpus histórico-diacrônico com textos sobre as ciências biológicas (cf. "Córpus");
+- Identificar as ocorrências dos termos em épocas anteriores;
+- Descrever as estruturas morfológicas (sufixos, prefixos, radicais eruditos etc.) empregadas em cada época na formação de termos;
+- Descrever a etimologia dos termos e as mudanças de forma e significado pelas quais passaram ao longo do tempo.

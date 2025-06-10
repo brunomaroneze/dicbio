@@ -1,34 +1,9 @@
-# Prefácio
-O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.
-
-O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a participação de estudantes de graduação e pós-graduação da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS). É um projeto filiado ao [Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte.
-
-O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
-
-No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
-
-
-<div id="objetivos"></div>
-
-## Objetivos
-O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
-
-Seus objetivos específicos são:
-- Compilar um córpus histórico-diacrônico com textos sobre as ciências biológicas (cf. "Córpus");
-- Identificar as ocorrências dos termos em épocas anteriores;
-- Descrever as estruturas morfológicas (sufixos, prefixos, radicais eruditos etc.) empregadas em cada época na formação de termos;
-- Descrever a etimologia dos termos e as mudanças de forma e significado pelas quais passaram ao longo do tempo.
-
-
-<div id="corpus"></div>
-
-## Córpus
+# Córpus
 O **Dicionário Histórico de Termos da Biologia** é inteiramente baseado num córpus formado por textos científicos publicados em língua portuguesa. Esse córpus (assim como o próprio dicionário) está em contínua atualização (cf. "Política de disponibilização dos dados") e disponível integralmente (no repositório *GitHub*), por ser constituído apenas por textos em domínio público.
 
 Optou-se por, inicialmente, incluir no córpus apenas textos do século XVIII (por ser este um momento histórico altamente significativo no desenvolvimento da Ciência, especialmente em língua portuguesa); posteriormente, pretende-se incluir outros períodos históricos (tanto anteriores quanto posteriores).
 
 Os textos que compõem o córpus (cf. "Textos que compõem o córpus", abaixo) estão disponibilizados em formato .xml (cf. "Política de disponibilização dos dados"), com as etiquetas descritas abaixo; o *script* que extrai as informações dos textos (cf. "Estrutura computacional") também disponível no repositório *GitHub*.
-
 
 ### Textos que compõem o córpus:
 Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O córpus transcrito em formato .xml está disponível no repositório *GitHub* (cf. "Política de disponibilização dos dados").
@@ -54,7 +29,6 @@ Dentro do elemento **TeiHeader** de cada arquivo estão descritos os critérios 
 - **pb** - Elemento vazio que indica quebra de página da obra; o número da página que se inicia a partir desta marca é indicado no atributo *n*;
 
 
-<div id="critlex"></div>
 
 ## Critérios lexicográficos
 Descrevem-se aqui os critérios adotados na seleção das entradas e na elaboração dos verbetes.
@@ -101,60 +75,6 @@ Em cada verbete, registram-se a data da inserção e a data da última atualiza�
 Os dados e o código-fonte encontram-se disponíveis para *download* no repositório *GitHub* [neste *link*](https://github.com/brunomaroneze/dicbio).
 
 
-<div id="publicacoes"></div>
-
-## Publicações
-Incluem-se aqui as publicações dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
-
-- BORGES, Luana da Silva. **[Termos neológicos na obra de Brotero (1788)](https://repositorio.ufms.br/handle/123456789/9290)**. 2024. 53 p. Dissertação (mestrado em Estudos de Linguagens) - Faculdade de Artes, Letras e Comunicação, Universidade Federal de Mato Grosso do Sul, Campo Grande, 2024.
-
-- BARBOSA, Kamila da Silva. **[Termos neológicos formados pelo sufixo -ado na obra de Vandelli (1788)](https://repositorio.ufms.br/handle/123456789/6740)**. 2023. 100 p. Dissertação (mestrado em Estudos de Linguagens) - Faculdade de Artes, Letras e Comunicação, Universidade Federal de Mato Grosso do Sul, Campo Grande, 2023.
-
-- BORGES, Luana da Silva; MARONEZE, Bruno. [Estudo da integração da unidade lexical “placenta” ao léxico português](https://seer.ufu.br/index.php/GTLex/article/view/70509). **Revista GTLex**, v. 9, 2023.
-
-- MARONEZE, Bruno; RIO-TORTO, Graça. [A elaboração de um dicionário terminológico histórico com recursos digitais](https://revistas.ufrj.br/index.php/lh/article/view/52387/32319). **Revista LaborHistórico**, v. 9, n. 1, e52387, 2023.
-
-- MARONEZE, Bruno. [A polissemia de "gema" em diacronia](https://seer.ufu.br/index.php/GTLex/article/view/67628/35542). **Revista GTLex**, v. 8, 2022/23.
-
-- BARBOSA, Kamila da Silva; MARONEZE, Bruno. [Teorias semânticas e a definição nos dicionários: uma análise das definições de termos referentes a aves em dois dicionários da língua portuguesa](https://www.letracapital.com.br/produto/estudos-do-lexico-diferentes-olhares-e-perspectivas/). In: DORES, Marcus; CORDEIRO, Maryelle (orgs.) **Estudos do léxico: diferentes olhares e perspectivas**. Rio de Janeiro: Letra Capital, 2022, pp. 64-77.
-
-- MARONEZE, Bruno. [A história da pétala: etimologia de um termo científico](https://www.revistas.usp.br/linhadagua/article/view/159835). **Linha D'Água**, v. 32, n. 3, 2019, pp. 159-176.
-
-- MARONEZE, Bruno. [Termos neológicos em sincronias pretéritas: um estudo do *Diccionario dos Termos Technicos de Historia Natural* de Vandelli](http://www.livrosabertos.sibi.usp.br/portaldelivrosUSP/catalog/view/389/341/1394). In: GIL, Beatriz Daruj *et al*. **Saberes lexicais**. São Paulo: FFLCH-USP, 2019, pp. 96-109.
-
-
-<div id="equipe"></div>
-
-## Equipe
-- **Bruno Oliveira Maroneze** (Professor Associado, Universidade Federal da Grande Dourados) - coordenação do projeto - desde 2017
-- **Sammara Valim Luz** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
-- **Ana Cristina Gouvêa Lopes** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
-- **Vitória Fernandes Pereira** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
-- **Sammara Valim Luz** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
-- **Guilherme Ferreira Mendes Vieira** (estudante de graduação, Universidade Federal da Grande Dourados) - desenho do *website*, programação do código e automação de tarefas - desde 2024
-- **Marimeire Almeida Barros** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - 2024
-- **Rodrigo Daniel Castiglioni Aguero** (Técnico de Informática, Universidade Federal da Grande Dourados) - desenho do *website* - 2023-2024
-- **Fabio Gustavo Mercado Urquieta** (estudante de graduação, Universidade Federal da Grande Dourados) - programação do código e automação de tarefas - 2023-2024
-- **Matheus Stein Casarin** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2023-2024
-- **Ana Carolina Menegassi Rocha** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2023-2024
-- **Luana Silva Borges** (estudante de pós-graduação, Universidade Federal de Mato Grosso do Sul) - preparação do córpus, compilação dos verbetes - 2022-2024
-- **Kamila da Silva Barbosa** (estudante de pós-graduação, Universidade Federal de Mato Grosso do Sul) - preparação do córpus, compilação dos verbetes - desde 2021
-- **Fabiani de Amorim Gonçalves** (estudante de pós-graduação, Universidade Federal da Grande Dourados) - preparação do córpus, compilação dos verbetes - 2022-2023
-- **Dannielly Victória Rodrigues da Silva** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2023-2024
-- **Adriane Maria de Oliveira Queiroz** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2022-2023
-- **Raíssa Silveira Buss** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2022-2023
-- **Rafaela Lima Domingos** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus -  2021-2022
-- **Letícia Tranquile da Silva** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, compilação dos verbetes - 2020-2022
-- **Fabiana Ferreira de Melo da Silva Sales** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2020-2021
-- **Bruno Leonardo Campanholi Gilbert** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2020
-- **Daniela Martim do Nascimento** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2020
-- **Cinddy Daniela Lima Tragueta** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2020
-- **Amarildo Braga de Oliveira** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017-2018
-- **Florival Dourado dos Reis Neto** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017
-
-
-<div id="agradecimentos"></div>
-
 ## Agradecimentos
 A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD e do CNPq.
 
@@ -169,7 +89,5 @@ Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientaçõ
 Agradecemos a **Gisele Cristina da Conceição** (Universidade do Porto) pelas valiosas sugestões e opiniões.
 
 
-<div id="contato"></div>
-
 ## Contato
-Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
+Para comentários, críticas, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
