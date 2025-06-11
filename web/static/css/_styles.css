@@ -9,8 +9,8 @@ footer {
 }
 
 /* Estilo para o logo grande da página inicial */
-.logo-main-page {
-    max-width: 400px; /* Ou o tamanho que preferir para o logo central */
+.main-page-logo {
+    max-width: 500px; /* Ou o tamanho que preferir para o logo central */
     height: auto;
     margin-bottom: 2rem; /* Espaçamento abaixo do logo */
 }
@@ -70,11 +70,18 @@ footer {
 /* Estilo para o corpo da página */
 body {
     background-color: #ebf0ce;
+    /* --- NOVAS REGRAS PARA O STICKY FOOTER --- */
+    min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Coloca os filhos (header, main, footer) em uma coluna */
 }
 
 /* Estilos para as imagens de apoio no rodapé */
-.footer-support-logo {
+.support-logo {
     max-height: 40px;
+    min-height: 30px;
+    width: auto;
+
     /* Considere adicionar margem aqui se for consistente */
     /* margin-bottom: 8px; */
 }
@@ -88,4 +95,18 @@ body {
 /* Estilo para a imagem da licença no rodapé */
 .footer-license-logo {
     height: 30px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    flex-grow: 1; /* Faz com que o elemento <main> se expanda para preencher o espaço disponível */
+}
+
+.card-img-teaser {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.apoio-img {
+    max-height: 40px;
 }

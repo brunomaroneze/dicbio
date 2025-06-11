@@ -9,11 +9,9 @@
 <div class="container text-center my-4">
     <!-- Logo Grande Centralizado para a Página Inicial -->
     <div class="mb-4"> {# Adiciona um espaçamento abaixo do logo #}
-        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário Histórico de Termos da Biologia" class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário Histórico de Termos da Biologia" class="main-page-logo">
     </div>
 </div>
-
-
 
 <div class="container mb-5">
     <!-- Barra de Busca -->
@@ -41,8 +39,7 @@
             <div class="card h-100">
                 {% if palavra_do_dia %}
                 {# Imagem para a Palavra do Dia - visível apenas se houver uma palavra sorteada #}
-                <img src="{% static 'img/VandelliTabXV.png' %}" class="card-img-top" alt="Ilustração da Palavra do Dia"
-                    style="max-height: 150px; object-fit: cover;">
+                <img src="{% static 'img/VandelliTabXV.png' %}" class="card-img-top card-img-teaser" alt="Ilustração da Palavra do Dia">
                 <div class="card-body">
                     <h5 class="card-title">Palavra do Dia</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ palavra_do_dia.termo }}</h6>
@@ -71,8 +68,7 @@
             <div class="card h-100">
                 {% if texto_diverso_1 %}
                 {% if texto_diverso_1.imagem_url %}
-                <img src="{{ texto_diverso_1.imagem_url }}" class="card-img-top" alt="{{ texto_diverso_1.titulo }}"
-                    style="max-height: 150px; object-fit: cover;">
+                <img src="{{ texto_diverso_1.imagem_url }}" class="card-img-top card-img-teaser" alt="{{ texto_diverso_1.titulo }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Curiosidade</h5>
@@ -94,8 +90,7 @@
             <div class="card h-100">
                 {% if texto_diverso_2 %}
                 {% if texto_diverso_2.imagem_url %}
-                <img src="{{ texto_diverso_2.imagem_url }}" class="card-img-top" alt="{{ texto_diverso_2.titulo }}"
-                    style="max-height: 150px; object-fit: cover;">
+                <img src="{{ texto_diverso_2.imagem_url }}" class="card-img-top card-img-teaser" alt="{{ texto_diverso_2.titulo }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Curiosidade</h5>
@@ -151,11 +146,9 @@
             <div class="card h-100">
                 <div class="card-body text-center">
                     <h5 class="card-title">Apoio</h5>
-                    <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2" style="max-height: 40px;">
-                    <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2"
-                        style="max-height: 40px;">
-                    <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP"
-                        style="max-height: 40px;">
+                    <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2 support-logo">
+                    <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2 support-logo">
+                    <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" class="support-logo">
                 </div>
             </div>
         </div>
