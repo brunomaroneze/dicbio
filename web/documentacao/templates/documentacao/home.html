@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Documentação{% endblock %}
+
+{% block extra_head_css %}
+    <link rel="stylesheet" href="{% static 'documentacao/css/documentacao.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="row">

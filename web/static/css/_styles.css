@@ -1,5 +1,3 @@
-/* web/static/css/_styles.css */
-
 /* Estilos do Cabeçalho e Rodapé */
 header {
     background-color: #fdd6d6;
@@ -67,4 +65,27 @@ footer {
     .d-md-block.sidebar { /* Desabilita a sidebar em telas pequenas por padrão */
         display: none !important;
     }
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #ebf0ce;
+}
+
+/* Estilos para as imagens de apoio no rodapé */
+.footer-support-logo {
+    max-height: 40px;
+    /* Considere adicionar margem aqui se for consistente */
+    /* margin-bottom: 8px; */
+}
+
+/* Estilo para o link da licença no rodapé */
+.footer-license-link {
+    max-width: 180px;
+    display: inline-block; /* Mantém o display que estava no inline */
+}
+
+/* Estilo para a imagem da licença no rodapé */
+.footer-license-logo {
+    height: 30px;
 }

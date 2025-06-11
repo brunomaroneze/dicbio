@@ -1,0 +1,24 @@
+.corpus-sidebar {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    padding-right: 5px; /* Para a barra de scroll */
+}
+
+#texto-obra-container {
+    overflow-y: auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+#imagem-pagina-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    text-align: center;
+}
+
+#imagem-pagina-ativa {
+    max-height: 85vh;
+    object-fit: contain;
+}

@@ -17,10 +17,12 @@
     <!-- Estilo personalizado (agora de um arquivo externo) -->
     <link rel="stylesheet" href="{% static 'css/_styles.css' %}">
 
+    {% block extra_head_css %}{% endblock %}
+    
     {% block extra_head %}{% endblock %}
 </head>
 
-<body style="background-color: #ebf0ce;">
+<body>
 
     <!-- Cabeçalho -->
     <header class="py-2 border-bottom">
@@ -71,16 +73,16 @@
             </div>
             <div class="d-flex flex-column align-items-start">
                 <strong>Apoio</strong>
-                <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2" style="max-height: 40px;">
-                <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2" style="max-height: 40px;">
-                <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="max-height: 40px;">
+                <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2 footer-support-logo">
+                <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2 footer-support-logo">
+                <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" class="footer-support-logo">
             </div>
             <div>
                 <strong>Licença</strong><br>
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                    class="text-dark text-decoration-none d-inline-block" style="max-width: 180px;">
+                    class="text-dark text-decoration-none d-inline-block footer-license-link">
                     <img src="{% static 'img/creativecommons.png' %}" alt="Licença Creative Commons"
-                        style="height: 30px;"><br>
+                        class="footer-license-logo"><br>
                     <span class="small">
                         Este conteúdo está licenciado sob a Licença CC BY-NC-SA 4.0 Internacional
                     </span>

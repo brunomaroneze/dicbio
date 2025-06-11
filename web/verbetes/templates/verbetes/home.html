@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load verbetes_extras %}
 {% block title %}{{ verbete.termo|default:"Consulta" }}{% endblock %}
+
+{% block extra_head_css %}
+    <link rel="stylesheet" href="{% static 'verbetes/css/verbetes.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
@@ -22,7 +27,7 @@
         <!-- Coluna lateral com lista de verbetes -->
         <aside class="col-md-3 border-end">
             <h5>Verbetes</h5>
-            <ul class="list-unstyled" style="max-height: 70vh; overflow-y: auto;">
+            <ul class="list-unstyled verbetes-sidebar">
                 {% for v in lista_verbetes %}
                 <li>
                     <a href="{% url 'verbetes:detalhe' v.slug %}"
