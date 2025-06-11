@@ -22,3 +22,14 @@
     max-height: 85vh;
     object-fit: contain;
 }
+
+.nota-tei {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    border-left: 2px solid #ccc;
+    background-color: #f8f8f8; /* Opcional: para destacá-las um pouco mais */
+    color: #555; /* Opcional: cor do texto para notas */
+    /* Você pode adicionar um estilo de fonte diferente aqui se quiser */
+}

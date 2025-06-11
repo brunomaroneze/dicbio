@@ -59,17 +59,7 @@ def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
 
         elif tag == f'{ns_tei_com_chaves}note': # Verifica se é um <tei:note>
             el.tag = 'div'
-            el.set('class', 'nota-tei') # Use uma classe para estilização via CSS externo
-            # Removendo estilos inline para manter o HTML mais limpo e CSS mais gerenciável.
-            # el.set('style', 'font-size: 0.9em; margin-top: 0.5em; margin-bottom: 0.5em; padding-left: 1em; border-left: 2px solid #ccc;')
-            # O estilo acima deve ir para seu arquivo CSS:
-            # .nota-tei {
-            #   font-size: 0.9em;
-            #   margin-top: 0.5em;
-            #   margin-bottom: 0.5em;
-            #   padding-left: 1em;
-            #   border-left: 2px solid #ccc;
-            # }
+            el.set('class', 'nota-tei') 
 
         # Você pode adicionar mais cláusulas 'elif' aqui para outras tags TEI
         # elif tag == f'{ns_tei_com_chaves}outraTagTEI':
