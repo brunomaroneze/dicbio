@@ -14,22 +14,8 @@
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <!-- Estilo personalizado -->
-    <style>
-        header {
-            background-color: #fdd6d6;
-        }
-
-        footer {
-            background-color: #fdd6d6;
-            font-size: 0.9rem;
-        }
-
-        .logo {
-            max-width: 300px;
-            height: auto;
-        }
-    </style>
+    <!-- Estilo personalizado (agora de um arquivo externo) -->
+    <link rel="stylesheet" href="{% static 'css/_styles.css' %}">
 
     {% block extra_head %}{% endblock %}
 </head>
@@ -39,21 +25,22 @@
     <!-- Cabeçalho -->
     <header class="py-2 border-bottom">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="{% url 'pagina_inicial:home' %}" class="text-dark text-decoration-none">
-                <strong>Dicionário Histórico de Termos da Biologia</strong>
-            </a>
+            {# Logo menor para todas as páginas (exceto a inicial se você a esconde lá) #}
+            {# A página inicial pode esconder este bloco usando um block aninhado se quiser um cabeçalho diferente #}
+            {% block header_logo %}
+                <a href="{% url 'pagina_inicial:home' %}" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="{% static 'img/logo.png' %}" alt="Logo Dicionário" class="header-logo">
+                    <strong>Dicionário Histórico de Termos da Biologia</strong>
+                </a>
+            {% endblock header_logo %}
+
             <nav>
                 <a href="{% url 'verbetes:consulta' %}" class="me-3 text-dark text-decoration-none">Consulta</a>
                 <a href="{% url 'corpus_digital:corpus' %}" class="me-3 text-dark text-decoration-none">Córpus</a>
-                <a href="{% url 'documentacao:documentacao' %}" class="text-dark text-decoration-none">Documentação</a>
+                <a href="{% url 'documentacao:home_documentacao' %}" class="text-dark text-decoration-none">Documentação</a>
             </nav>
         </div>
     </header>
-
-    <!-- Logo central (opcional) -->
-    <div class="container text-center my-4" style="background-color: #e6f5e6;">
-        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário" class="logo">
-    </div>
 
     <!-- Conteúdo principal -->
     <main class="container mb-5">
@@ -73,15 +60,19 @@
             </div>
             <div>
                 <strong>Sobre</strong><br>
+                {# Link para o texto específico 'equipe.md' #}
                 <a href="{% url 'documentacao:texto_documentacao' 'equipe' %}" class="text-dark text-decoration-none">Equipe</a><br>
-                <a href="{% url 'documentacao:documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
+
+                {# Link para a página principal da documentação (que mostrará prefacio.md por padrão) #}
+                <a href="{% url 'documentacao:home_documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
+
+                {# Link para a página principal do corpus digital #}
                 <a href="{% url 'corpus_digital:corpus' %}" class="text-dark text-decoration-none">Córpus</a>
             </div>
             <div class="d-flex flex-column align-items-start">
                 <strong>Apoio</strong>
-                <img src="{% static 'img/cnpq.png' %}" alt="CNPq" style="max-height: 40px; margin-bottom: 8px;">
-                <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD"
-                    style="max-height: 40px; margin-bottom: 8px;">
+                <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2" style="max-height: 40px;">
+                <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2" style="max-height: 40px;">
                 <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="max-height: 40px;">
             </div>
             <div>

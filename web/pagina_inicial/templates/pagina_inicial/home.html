@@ -1,10 +1,141 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Página Inicial{% endblock %}
+{% block title %}Página Inicial - Dicionário Histórico de Termos da Biologia{% endblock %}
+
+{% block header_logo %}{% endblock header_logo %} {# Esconde o logo do cabeçalho do base.html #}
 
 {% block content %}
-    <div class="markdown-content">
-        {{ conteudo_md|safe }}
+<div class="container text-center my-4">
+    <!-- Logo Grande Centralizado para a Página Inicial -->
+    <div class="mb-4"> {# Adiciona um espaçamento abaixo do logo #}
+        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário Histórico de Termos da Biologia" class="logo">
     </div>
+</div>
+
+    
+
+<div class="container mb-5">
+    <!-- Barra de Busca -->
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-8 col-lg-6">
+            <form method="get" action="{% url 'verbetes:consulta' %}" class="input-group input-group-lg">
+                <input type="text" name="q" placeholder="Buscar verbete..." class="form-control" aria-label="Buscar verbete">
+                <button class="btn btn-primary" type="submit">
+                    <i class="bi bi-search"></i> Buscar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Título do Projeto (Opcional - se quiser um título adicional aqui) -->
+    <div class="text-center mb-5">
+        {# <h2>Dicionário Histórico de Termos da Biologia</h2> #}
+    </div>
+
+    <!-- Grid de Conteúdo -->
+    <div class="row g-4">
+        <!-- Palavra do Dia -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Palavra do Dia</h5>
+                    {% if palavra_do_dia %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{ palavra_do_dia.termo }}</h6>
+                        <p class="card-text">
+                            {{ palavra_do_dia.definicoes_carregadas|truncatewords:20|safe }}
+                        </p>
+                        <a href="{% url 'verbetes:detalhe' palavra_do_dia.slug %}" class="btn btn-sm btn-outline-primary">Leia mais</a>
+                    {% else %}
+                        <p class="card-text">Nenhuma palavra do dia disponível.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Textos Diversos (Slot 1) -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                {% if texto_diverso_1 %}
+                    {% if texto_diverso_1.imagem_url %}
+                        <img src="{{ texto_diverso_1.imagem_url }}" class="card-img-top" alt="{{ texto_diverso_1.titulo }}" style="max-height: 150px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">Curiosidade</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ texto_diverso_1.titulo }}</h6>
+                        {# <p class="card-text">Pequena descrição ou teaser do texto...</p> #}
+                        <a href="{% url 'documentacao:texto_documentacao' texto_diverso_1.slug %}" class="btn btn-sm btn-outline-primary">Leia mais</a>
+                    </div>
+                {% else %}
+                    <div class="card-body"><p>Nenhuma curiosidade disponível.</p></div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Textos Diversos (Slot 2) -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                {% if texto_diverso_2 %}
+                     {% if texto_diverso_2.imagem_url %}
+                        <img src="{{ texto_diverso_2.imagem_url }}" class="card-img-top" alt="{{ texto_diverso_2.titulo }}" style="max-height: 150px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">Curiosidade</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ texto_diverso_2.titulo }}</h6>
+                        {# <p class="card-text">Pequena descrição ou teaser do texto...</p> #}
+                        <a href="{% url 'documentacao:texto_documentacao' texto_diverso_2.slug %}" class="btn btn-sm btn-outline-primary">Leia mais</a>
+                    </div>
+                {% else %}
+                     <div class="card-body"><p>Nenhuma curiosidade disponível.</p></div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Sobre o Dicionário -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre o Dicionário</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'documentacao:texto_documentacao' 'equipe' %}">Equipe</a></li>
+                        <li><a href="{% url 'documentacao:texto_documentacao' 'metodologia' %}">Metodologia</a></li>
+                        <li><a href="{% url 'documentacao:home_documentacao' %}">Documentação Completa</a></li> {# Corrigido #}
+                        <li><a href="{% url 'corpus_digital:corpus' %}">Córpus Digital</a></li> {# Corrigido #}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Últimos Verbetes -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Últimos Verbetes</h5>
+                    {% if ultimos_verbetes %}
+                        <ul class="list-unstyled">
+                            {% for verbete_recente in ultimos_verbetes %}
+                                <li><a href="{% url 'verbetes:detalhe' verbete_recente.slug %}" class="text-dark text-decoration-none">{{ verbete_recente.termo }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p class="card-text">Nenhum verbete recente para mostrar.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Apoio -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Apoio</h5>
+                    <img src="{% static 'img/cnpq.png' %}" alt="CNPq" class="img-fluid my-2" style="max-height: 40px;">
+                    <img src="{% static 'img/logotipo-ufgd.png' %}" alt="UFGD" class="img-fluid my-2" style="max-height: 40px;">
+                    <img src="{% static 'img/02_logo_fflch_horizontal.png' %}" alt="FFLCH-USP" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 {% endblock %}

@@ -1,0 +1,70 @@
+/* web/static/css/_styles.css */
+
+/* Estilos do Cabeçalho e Rodapé */
+header {
+    background-color: #fdd6d6;
+}
+
+footer {
+    background-color: #fdd6d6;
+    font-size: 0.9rem;
+}
+
+/* Estilo para o logo grande da página inicial */
+.logo-main-page {
+    max-width: 400px; /* Ou o tamanho que preferir para o logo central */
+    height: auto;
+    margin-bottom: 2rem; /* Espaçamento abaixo do logo */
+}
+
+/* Estilo para o logo menor no cabeçalho (outras páginas) */
+.header-logo {
+    max-height: 50px; /* Altura do logo no cabeçalho */
+    width: auto;
+    margin-right: 15px; /* Espaçamento à direita do logo */
+}
+
+/* Estilos para o texto markdown renderizado */
+.markdown-content img {
+    max-width: 100%; /* Garante que imagens no markdown não saiam do contêiner */
+    height: auto;
+    display: block;
+    margin: 1rem auto; /* Centraliza a imagem */
+}
+
+/* Estilos de bordas para seções */
+.border-top-section {
+    border-top: 1px solid #dee2e6; /* Cor da borda Bootstrap */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Estilo para a lista de verbetes/documentos com scroll */
+.scrollable-list {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 5px; /* Espaçamento para a barra de scroll */
+}
+
+/* Estilo para o container de texto do corpus digital */
+#texto-obra-container {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Estilo para a imagem da página do corpus digital */
+#imagem-pagina-ativa {
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+/* Ajustes para a sidebar em telas pequenas */
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        height: auto; /* Permite que a sidebar se ajuste ao conteúdo */
+    }
+    .d-md-block.sidebar { /* Desabilita a sidebar em telas pequenas por padrão */
+        display: none !important;
+    }
+}

@@ -136,3 +136,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Caminho para a pasta raiz onde os arquivos XML do corpus estão armazenados
 CORPUS_XML_ROOT = BASE_DIR / 'corpus_digital' / 'obras'
 
+# --- Configuração de Cache ---
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake', # Um identificador único para este cache
+        'TIMEOUT': 86400, # Tempo padrão em segundos (86400 segundos = 24 horas)
+    }
+}
+# ------------------------------
