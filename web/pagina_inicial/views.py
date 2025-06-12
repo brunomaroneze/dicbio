@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from verbetes.models import Verbete, Definition # Para Palavra do Dia e Últimos Verbetes
-from documentacao.views import extrair_titulo # Reutilizar a função se os textos da documentação forem lidos aqui
+from documentacao.views import extrair_metadados_texto_md # Reutilizar a função se os textos da documentação forem lidos aqui
 from pathlib import Path
 import random
 import re # Para extrair imagens do Markdown
@@ -82,51 +82,57 @@ def pagina_inicial_view(request):
 
     # 2. Textos Diversos / Curiosidades
     #    Lógica similar à view de documentacao, mas para sortear e pegar imagens.
-    textos_curiosidades = []
+    textos_curiosidades_para_exibir = []
     try:
-        # Caminho para os textos de documentacao (ajuste se for diferente)
-        # Esta parte é um pouco redundante com a view de documentacao.
-        # O ideal seria ter uma forma mais centralizada de listar os "documentos" se for comum.
-        base_path_doc = Path(__file__).resolve().parent.parent / 'documentacao' / 'textos'
-        todos_arquivos_md_paths = list(base_path_doc.glob('*.md'))
+        # Caminho para a pasta ESPECÍFICA de curiosidades
+        # base_path_doc é a pasta 'documentacao/textos'
+        # Então, a pasta das curiosidades é base_path_doc / 'curiosidades'
+        curiosidades_folder_path = Path(__file__).resolve().parent.parent / 'documentacao' / 'textos' / 'curiosidades'
+        
+        # Garante que a pasta existe antes de tentar ler
+        if not curiosidades_folder_path.exists():
+            print(f"AVISO: Pasta de curiosidades não encontrada em: {curiosidades_folder_path}")
+            # Deixe a lista vazia e a view continua sem erro
+            pass 
 
-        # Remover 'prefacio.md', 'equipe.md', 'metodologia.md' da lista de curiosidades, se desejar
-        slugs_excluir = ['prefacio', 'equipe', 'metodologia'] # adicione outros slugs a excluir
-        arquivos_md_curiosidades_paths = [
-            p for p in todos_arquivos_md_paths if p.stem not in slugs_excluir
-        ]
+        # Lista todos os arquivos Markdown na pasta de curiosidades
+        # Não precisa mais de slugs_excluir aqui, pois já estamos na pasta certa
+        arquivos_md_curiosidades_paths = list(curiosidades_folder_path.glob('*.md'))
 
+        # Seleciona 1 ou 2 curiosidades aleatoriamente
         if len(arquivos_md_curiosidades_paths) >= 2:
             textos_sorteados_paths = random.sample(arquivos_md_curiosidades_paths, 2)
-        elif arquivos_md_curiosidades_paths: # Se tiver apenas 1
+        elif arquivos_md_curiosidades_paths: # Se tiver apenas 1 curiosidade
             textos_sorteados_paths = random.sample(arquivos_md_curiosidades_paths, 1)
-        else:
+        else: # Nenhuma curiosidade na pasta
             textos_sorteados_paths = []
 
         for path_md in textos_sorteados_paths:
-            slug = path_md.stem
-            titulo = extrair_titulo(path_md) # Reutiliza a função de documentacao.views
+            slug = path_md.stem # O slug é o nome do arquivo sem extensão
+            metadados = extrair_metadados_texto_md(path_md)
+            titulo = metadados['titulo']
             
             imagem_url = None
             try:
                 with open(path_md, 'r', encoding='utf-8') as f_md:
                     conteudo_md = f_md.read()
                     imagem_url = extrair_primeira_imagem_md(conteudo_md)
-            except Exception:
+            except Exception as e:
+                print(f"Erro ao ler ou extrair imagem de {path_md.name}: {e}")
                 pass # Falha ao ler ou extrair imagem
 
-            textos_curiosidades.append({
+            textos_curiosidades_para_exibir.append({
                 'slug': slug,
                 'titulo': titulo,
                 'imagem_url': imagem_url
             })
     except Exception as e:
-        print(f"Erro ao carregar textos de curiosidades: {e}") # Para debug
+        print(f"Erro geral ao carregar textos de curiosidades: {e}") # Para debug
         pass # Permite que a página carregue mesmo se esta seção falhar
 
-    context['texto_diverso_1'] = textos_curiosidades[0] if len(textos_curiosidades) > 0 else None
-    context['texto_diverso_2'] = textos_curiosidades[1] if len(textos_curiosidades) > 1 else None
-
+    # Atribui as curiosidades sorteadas ao contexto
+    context['texto_diverso_1'] = textos_curiosidades_para_exibir[0] if len(textos_curiosidades_para_exibir) > 0 else None
+    context['texto_diverso_2'] = textos_curiosidades_para_exibir[1] if len(textos_curiosidades_para_exibir) > 1 else None
 
     # 3. Últimos Verbetes Adicionados/Atualizados
     try:

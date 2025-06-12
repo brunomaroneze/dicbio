@@ -1,74 +1,56 @@
 # Sobre este dicionário
 
-O Dicionário Histórico de Termos da Biologia, em elaboração, traz definições e informações histórico-etimológicas para termos da Biologia extraídos de textos científicos do século XVIII.
-
-Atualmente, o dicionário contém 128 verbetes, com definições e informações histórico-etimológicas; também contém exemplos extraídos do córpus, formado por obras do século XVIII disponíveis online.
-
-A descrição do córpus, a equipe e outras informações relevantes encontram-se em "Documentação".
-
-Este projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Também contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) no período de 2023 a 2024.
-
-Para comentários, perguntas e sugestões, contate [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br)
-
-### Atualizações
-
-- 13 maio 2025 - Inclusão do verbete "litalgia"
-- 01 maio 2025 - Inclusão do verbete "lúnula"
-- 22 abril 2025 - Inclusão do verbete "gelatinoso"
-- 14 abril 2025 - Inclusão do verbete "frênico"
-- 04 abril 2025 - Atualização do verbete "filamento"
-- 25 março 2025 - Inclusão do verbete "excretório"
-- 14 março 2025 - Inclusão do verbete "escroto"
-- 28 fevereiro 2025 - Inclusão do verbete "ensiforme"
-- 24 fevereiro 2025 - Inclusão do verbete "cóccix"
-- 22 fevereiro 2025 - Inclusão do verbete "cístico"
-- 06 fevereiro 2025 - Inclusão do verbete "caule"
-- 26 novembro 2024 - Inclusão do verbete "corólula"
-- 07 novembro 2024 - Inclusão da biografia de Bernardo Santucci
-- 07 outubro 2024 - Inclusão dos verbetes "dorsal", "utrículo", "bálano", "carpo" e "metacarpo"
-- 10 maio 2024 - Inclusão dos verbetes "adiposo", "bile" e "cápsula"
-- 05 dezembro 2023 - Inclusão do verbete "Fitologia"
-- 27 novembro 2023 - Inclusão do verbete "aurícula"
-- 20 novembro 2023 - Inclusão do verbete "cirro"
-- 14 novembro 2023 - Inclusão do verbete "carúncula"
-- 06 novembro 2023 - Inclusão do verbete "concameração"
-- 30 outubro 2023 - Inclusão do verbete "papila"
-- 22 outubro 2023 - Inclusão do verbete "semente"
-- 14 outubro 2023 - Inclusão dos verbetes de particípios em -ado
-- 15 setembro 2023 - Inclusão dos verbetes "planta" e "suculento"
-- 28 agosto 2023 - Inclusão dos verbetes "tronco" e "placenta"; inclusão da seção "Curiosidades"
-- 19 maio 2023 - Inclusão do verbete "cibário"
-- 15 maio 2023 - Inclusão do verbete "vibrissa"
-- 09 abril 2023 - Inclusão do verbete "folha"
-- 03 abril 2023 - Inclusão do verbete "raiz"
-- 26 março 2023 - Inclusão do verbete "desenvolução"; atualização visual do *website*
-- 06 março 2023 - Inclusão do verbete "músculo"
-- 28 janeiro 2023 - Atualização dos verbetes "bífido", "cartilagíneo", "diafragma", "conivente", "disco", "epiderme", "escamoso", "filamento", "lacínia", "medular", "túnica", "vilo"
-- 21 dezembro 2022 - Inclusão do verbete "pericarpo"
-- 21 novembro 2022 - Inclusão do verbete "inseto"
-- 23 agosto 2022 - Inclusão dos verbetes "masseter", "miologia", "ócciput" e "órbita"
-- 27 julho 2022 - Inclusão dos verbetes "diafragma", "epigástrio", "esôfago" e "glândula"
-- 20 junho 2022 - Inclusão do verbete "hipogástrio"
-- 24 maio 2022 - Inclusão dos verbetes "resina" e "resinoso"
-- 13 maio 2022 - Inclusão do verbete "verrucoso"
-
-# Prefácio
 O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.
 
-O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a participação de estudantes de graduação e pós-graduação da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS). É um projeto filiado ao [Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte.
+O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a participação de estudantes de graduação e pós-graduação da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS).
 
 O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
 
 No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
 
-
-<div id="objetivos"></div>
+O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Também contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) no período de 2023 a 2024.
 
 ## Objetivos
 O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
 
 Seus objetivos específicos são:
+
 - Compilar um córpus histórico-diacrônico com textos sobre as ciências biológicas (cf. "Córpus");
+
 - Identificar as ocorrências dos termos em épocas anteriores;
+
 - Descrever as estruturas morfológicas (sufixos, prefixos, radicais eruditos etc.) empregadas em cada época na formação de termos;
+
 - Descrever a etimologia dos termos e as mudanças de forma e significado pelas quais passaram ao longo do tempo.
+
+## Organização do *site*
+Os verbetes do dicionário podem ser consultados na aba **Consulta**. Os textos que compõem o córpus deste dicionário podem ser consultados em **Córpus**, ao lado das imagens das obras e com *links* para os verbetes no próprio texto. A descrição detalhada do córpus são encontradas [aqui](../corpus/).
+
+Em **Documentação** encontram-se diversos textos de apoio a respeito do Dicionário.
+
+## Política de disponibilização dos dados
+Este **Dicionário** encontra-se em permanente atualização. Para dar mais agilidade à divulgação, optou-se por disponibilizar os verbetes à medida que vão sendo elaborados.
+
+Em cada verbete, registram-se a data da inserção e a data da última atualização. Para facilitar aos pesquisadores que desejam referir-se aos dados, inclui-se também uma proposta de como citar o verbete.
+
+Os dados e o código-fonte encontram-se disponíveis para *download* no repositório *GitHub* [neste *link*](https://github.com/brunomaroneze/dicbio).
+
+## Estrutura computacional
+O **Dicionário** apresenta uma interface computacional escrita em Python e Django, em parte com o auxílio de ferramentas de Inteligência Artificial. Os dados que "alimentam" o dicionário, bem como o código-fonte, estão disponíveis para *download* no repositório [*GitHub*](https://github.com/brunomaroneze/dicbio).
+
+## Agradecimentos
+A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD e do CNPq.
+
+O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pró-Humanidades 2022, sob a forma de bolsas de Iniciação Científica e de Apoio Técnico, no período de 2023-2024.
+
+A redação dos primeiros verbetes e a criação da parte computacional do dicionário foram possíveis graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. **Graça Rio-Torto**.
+
+A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio do técnico **Thiago Gomes Veríssimo**.
+
+Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico online.
+
+Agradecemos a **Gisele Cristina da Conceição** (Universidade do Porto) pelas valiosas sugestões e opiniões.
+
+
+## Contato
+Para comentários, críticas, perguntas e sugestões, contate o coordenador do projeto em [brunomaroneze@ufgd.edu.br](brunomaroneze@ufgd.edu.br).
