@@ -6,52 +6,56 @@ import re
 from datetime import datetime
 
 def extrair_metadados_texto_md(caminho_arquivo):
+    """
+    Lê o arquivo Markdown e extrai metadados usando a extensão 'meta'.
+    Espera um bloco de metadados no início do arquivo (ex: --- \n key: value \n ---).
+    """
     titulo = caminho_arquivo.stem # Fallback padrão
     autores = "Autor(es) não especificado(s)"
     ano_publicacao = None
     
     try:
         with open(caminho_arquivo, encoding='utf-8') as f:
-            lines = f.readlines()
+            md_content = f.read()
             
-            found_title = False
+            # Cria uma instância Markdown com a extensão 'meta'
+            md = markdown.Markdown(extensions=['meta'])
             
-            for i, line in enumerate(lines):
-                stripped_line = line.strip()
-
-                if not found_title and stripped_line.startswith('# '):
-                    titulo = stripped_line[2:].strip()
-                    found_title = True
-                    # Não continue aqui, pois a próxima linha pode ser os autores
+            # Processa o conteúdo. Os metadados serão preenchidos em md.Meta
+            md.convert(md_content) 
+            
+            # Extrai os metadados
+            if md.Meta:
+                # O processador 'meta' retorna uma lista de strings para cada valor.
+                # Pegamos o primeiro item da lista para cada chave.
+                if 'titulo' in md.Meta and md.Meta['titulo']:
+                    titulo = md.Meta['titulo'][0].strip()
                 
-                # Procura autores na linha seguinte ao título (ou qualquer linha após o título)
-                # MUDANÇA AQUI: .lower() para ser insensível a maiúsculas/minúsculas
-                if found_title and stripped_line.lower().startswith('por '):
-                    autores = stripped_line[4:].strip() # Remove "Por " ou "por "
-                    # Se você quer garantir que só pega a primeira linha 'Por', pode adicionar um 'break' aqui,
-                    # mas para este caso, o loop continua e a variável 'autores' é sobrescrita se encontrar mais.
+                if 'autores' in md.Meta and md.Meta['autores']:
+                    # Juntar os autores em uma única string (ex: 'Nome1; Nome2')
+                    # Eles vêm como ['Nome1', 'Nome2'] se houver várias linhas 'autores:'
+                    # ou ['Nome1; Nome2'] se for uma única linha com ;
+                    autores_raw = md.Meta['autores'][0].strip()
+                    # Substituímos ';' por ' / ' para usar no filtro formatar_autores se ele espera isso
+                    # Ou podemos passar a lista de autores para o filtro
                     
-                    # Tenta extrair o ano (que agora deve vir da linha da data)
-                    if i + 1 < len(lines): # A linha da data é a próxima
-                        data_line_for_year = lines[i+1].strip()
-                        match_year = re.search(r'\b(\d{4})\b', data_line_for_year)
-                        if match_year:
-                            found_year_str = match_year.group(1)
-                            try:
-                                found_year_int = int(found_year_str)
-                                if found_year_int > 2022:
-                                    ano_publicacao = found_year_str
-                                    # Se a data e os autores estão sempre juntos, podemos sair do loop aqui
-                                    break # Sai do loop principal for i, line
-                            except ValueError:
-                                pass
+                    # Vamos formatar os autores aqui já no padrão "SOBRENOME, Nome"
+                    # A função formatar_autores será adaptada para receber uma string "Nome Sobrenome; Nome Sobrenome"
+                    # ou uma lista ['Nome Sobrenome', 'Nome Sobrenome']
+                    autores = autores_raw # Passamos o string cru para ser processado pelo filtro
 
+                if 'ano_publicacao' in md.Meta and md.Meta['ano_publicacao']:
+                    ano_publicacao = md.Meta['ano_publicacao'][0].strip()
+                    # Opcional: validar que é um ano de 4 dígitos e > 2022
+                    if not (ano_publicacao.isdigit() and int(ano_publicacao) > 2022):
+                        ano_publicacao = None # Invalidar se não for o formato esperado
+            
     except Exception as e:
-        print(f"Erro ao extrair metadados de {caminho_arquivo}: {e}")
+        print(f"Erro ao extrair metadados com extensão 'meta' de {caminho_arquivo}: {e}")
 
     return {
         'titulo': titulo,
-        'autores': autores,
+        'autores': autores, # String no formato 'Nome1; Nome2' ou 'Nome1 / Nome2'
         'ano_publicacao': ano_publicacao,
     }
 
@@ -140,7 +144,7 @@ def texto(request, nome_arquivo=None):
         return render(request, 'documentacao/404.html', {'mensagem_erro': mensagem, 'arquivos': todos_arquivos_disponiveis}, status=404)
 
     with open(caminho_md_selecionado, encoding='utf-8') as f:
-        conteudo_html = markdown.markdown(f.read(), extensions=['extra', 'smarty'])
+        conteudo_html = markdown.markdown(f.read(), extensions=['extra', 'smarty', 'meta'])
 
     context = {
         'conteudo': conteudo_html,

@@ -1,3 +1,6 @@
+---
+titulo: Sobre este dicionário
+---
 # Sobre este dicionário
 
 O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa.

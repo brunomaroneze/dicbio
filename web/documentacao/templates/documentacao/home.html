@@ -3,11 +3,11 @@
 {% load verbetes_extras %} {# Para o filtro formatar_autores #}
 
 {% block title %}
-    {% if info_do_arquivo_ativo %}{{ info_do_arquivo_ativo.titulo }} - {% endif %}Documentação
+{% if info_do_arquivo_ativo %}{{ info_do_arquivo_ativo.titulo }} - {% endif %}Documentação
 {% endblock %}
 
 {% block extra_head_css %}
-    <link rel="stylesheet" href="{% static 'documentacao/css/documentacao.css' %}">
+<link rel="stylesheet" href="{% static 'documentacao/css/documentacao.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -67,9 +67,10 @@
                 <p><strong>Como citar este texto:</strong></p>
                 {# O filtro formatar_autores espera uma string de autores #}
                 {% with autores_citacao=info_do_arquivo_ativo.autores|formatar_autores %}
-                {# Aqui usamos o ano_publicacao diretamente, que já é uma string ou None #}
-                <p>{{ autores_citacao }}. {{ info_do_arquivo_ativo.titulo }}. In: MARONEZE, Bruno (org.). <em>Dicionário Histórico de
-                        Termos da Biologia</em>. {{ info_do_arquivo_ativo.ano_publicacao|default:"[s.d.]" }}. Disponível em: {{ request.build_absolute_uri }}. Acesso
+                <p>{{ autores_citacao }}. {{ info_do_arquivo_ativo.titulo }}. In: MARONEZE, Bruno (org.). <em>Dicionário
+                        Histórico de
+                        Termos da Biologia</em>. {{ info_do_arquivo_ativo.ano_publicacao|default:"[s.d.]" }}. Disponível
+                    em: {{ request.build_absolute_uri }}. Acesso
                     em: {{ now|date:"d M Y" }}.</p>
                 {% endwith %}
             </div>

@@ -1,3 +1,9 @@
+---
+titulo: Félix da Silva Avelar Brotero (1744-1828)
+autores: Bruno Maroneze
+ano_publicacao: 2025
+---
+
 # Félix da Silva Avelar Brotero (1744-1828)
 por Bruno Maroneze
 

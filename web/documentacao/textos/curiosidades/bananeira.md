@@ -1,3 +1,9 @@
+---
+titulo: Brotero e a bananeira: reflexões sobre o fazer científico no século XVIII
+autores: Bruno Maroneze; Dannielly Victória Rodrigues da Silva
+ano_publicacao: 2023
+---
+
 # Brotero e a bananeira: reflexões sobre o fazer científico no século XVIII
 Por Bruno Maroneze e Dannielly Victória Rodrigues da Silva
 

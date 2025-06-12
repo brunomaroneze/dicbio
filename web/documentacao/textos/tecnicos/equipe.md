@@ -1,3 +1,7 @@
+---
+titulo: Equipe
+---
+
 # Equipe
 - **Bruno Oliveira Maroneze** (Professor Associado, Universidade Federal da Grande Dourados) - coordenação do projeto - desde 2017
 - **Sammara Valim Luz** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024

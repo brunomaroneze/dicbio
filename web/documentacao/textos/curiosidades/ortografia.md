@@ -1,3 +1,9 @@
+---
+titulo: A ortografia do século XVIII
+autores: Ana Cristina Gouvêa Lopes
+ano_publicacao: 2024
+---
+
 # A ortografia do século XVIII
 Por Ana Cristina Gouvêa Lopes
 

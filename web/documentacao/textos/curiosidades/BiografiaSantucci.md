@@ -1,3 +1,9 @@
+---
+titulo: Bernardo Santucci (1701-1764)
+autores: Matheus Stein Casarin; Bruno Maroneze
+ano_publicacao: 2024
+---
+
 # Bernardo Santucci (1701-1764)
 por Matheus Stein Casarin e Bruno Maroneze
 

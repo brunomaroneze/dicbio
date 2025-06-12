@@ -1,3 +1,7 @@
+---
+titulo: Publicações científicas
+---
+
 # Publicações científicas
 Incluem-se aqui as publicações científicas dos membros da equipe relacionadas ao **Dicionário Histórico de Termos da Biologia**.
 

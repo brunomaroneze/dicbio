@@ -1,3 +1,7 @@
+---
+titulo: Critérios lexicográficos
+---
+
 # Critérios lexicográficos
 Descrevem-se aqui os critérios adotados na seleção das entradas e na elaboração dos verbetes.
 
