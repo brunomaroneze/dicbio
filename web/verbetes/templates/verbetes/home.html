@@ -79,11 +79,37 @@
                             {% endif %}
                         </p>
                         {% endwith %}
-                        <p>{{ exemplo.sentence|safe }}</p>
+                        <p>{{ exemplo.frase|process_sentence_display|safe }}</p>
+
+                        {# --- ADICIONADO: Link para a obra no córpus digital com formatação --- #}
                         <p class="small text-muted text-end mt-1">
-                            {# Verifica se slug_obra e titulo_obra existem #}
                             {% if exemplo.slug_obra and exemplo.titulo_obra %}
-                                (Fonte: <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">{{ exemplo.titulo_obra }}</a>)
+                                (Fonte: 
+                                {% comment %}
+                                    Lógica para formatar: AUTOR, ANO, TÍTULO, p. PÁGINA
+                                {% endcomment %}
+
+                                {# AUTOR: Sempre tentar exibir #}
+                                {% if exemplo.autor and exemplo.autor != 'N/A' %}
+                                    {{ exemplo.autor|capfirst }}
+                                {% else %}
+                                    Autor Desconhecido
+                                {% endif %}
+
+                                {# ANO (DATA): Adiciona vírgula APENAS se o ano existir #}
+                                {% if exemplo.data and exemplo.data != 's.d.' %}
+                                    , {{ exemplo.data }}
+                                {% endif %}
+
+                                {# TÍTULO DA OBRA: Sempre exibir, e já faz parte do link #}
+                                , <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">
+                                    {{ exemplo.titulo_obra }}
+                                    {# PÁGINA: Adiciona ", p. XX" APENAS se a página existir. Sem vírgula antes se `titulo_obra` já tiver formatado. #}
+                                    {% if exemplo.pagina_obra %}
+                                        , p. {{ exemplo.pagina_obra }}{% comment %} Usar   para espaço inseparável {% endcomment %}
+                                    {% endif %}
+                                </a>
+                                )
                             {% endif %}
                         </p>
                     </div>

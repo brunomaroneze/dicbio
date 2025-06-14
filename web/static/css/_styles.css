@@ -69,7 +69,7 @@ footer {
 
 /* Estilo para o corpo da página */
 body {
-    background-color: #ebf0ce;
+    background-color:rgb(255, 255, 255);
     /* --- NOVAS REGRAS PARA O STICKY FOOTER --- */
     min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da viewport */
     display: flex;

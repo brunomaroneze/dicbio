@@ -6,8 +6,7 @@ import codecs
 
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-# from corpus_digital.models import Obra # Não precisa mais aqui, Obra será importado por outro comando
-# from django.utils.text import slugify # Não precisa mais aqui se Obra foi movido
+# Não precisamos importar Obra ou slugify aqui, pois este comando apenas gera CSV.
 
 class Command(BaseCommand):
     help = 'Extrai termos e metadados de arquivos XML TEI e gera termos_extraidos.csv.'
@@ -45,154 +44,145 @@ class Command(BaseCommand):
 
         if output_csv_path.exists() and not force_regen:
             self.stdout.write(self.style.NOTICE(f'Arquivo CSV {output_csv_path.name} já existe. Use --force-regen para forçar regeneração.'))
-            return # Sai do comando se não for para regenerar
-
-        self.stdout.write(self.style.HTTP_INFO('Iniciando extração de termos de XMLs para CSV...'))
-
-        all_rows = []
-        
-        for file_path in xml_files:
-            rows_for_current_file = [] 
-            try:
-                self.stdout.write(f'  Processando: {file_path.name}')
-                
+            return
+        else:
+            all_rows = []
+            for file_path in xml_files:
+                rows_for_current_file = [] 
                 try:
-                    tree = etree.parse(str(file_path)) 
-                except etree.ParseError as e:
-                    xml_string_content_raw = None
+                    self.stdout.write(f'  Processando: {file_path.name}')
+                    
+                    # --- Lógica de parsing XML (robusta contra problemas de codificação/PIs) ---
                     try:
-                        with codecs.open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                            xml_string_content_raw = f.read()
-                    except Exception as e_read_initial:
+                        tree = etree.parse(str(file_path)) 
+                    except etree.ParseError as e:
+                        xml_string_content_raw = None
                         try:
-                            with codecs.open(file_path, 'r', encoding='latin-1', errors='ignore') as f:
+                            with codecs.open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                                 xml_string_content_raw = f.read()
-                        except Exception as e_read_latin:
-                            raise CommandError(f'Falha ao ler XML {file_path.name} com qualquer codificação: {e_read_latin}')
-                    
-                    if not xml_string_content_raw:
-                        raise CommandError(f"Arquivo XML {file_path.name} vazio ou ilegível.")
+                        except Exception as e_read_initial:
+                            try:
+                                with codecs.open(file_path, 'r', encoding='latin-1', errors='ignore') as f:
+                                    xml_string_content_raw = f.read()
+                            except Exception as e_read_latin:
+                                raise CommandError(f'Falha ao ler XML {file_path.name} com qualquer codificação: {e_read_latin}')
+                        
+                        if not xml_string_content_raw:
+                            raise CommandError(f"Arquivo XML {file_path.name} vazio ou ilegível.")
 
-                    try:
-                        tree = etree.fromstring(xml_string_content_raw.encode('utf-8'))
-                    except Exception as e_fromstring:
-                        raise CommandError(f'Falha ao parsear XML {file_path.name} após decodificação: {e_fromstring}')
-                except Exception as e:
-                    raise CommandError(f'Erro inesperado ao abrir ou parsear XML {file_path.name}: {e}')
+                        try:
+                            tree = etree.fromstring(xml_string_content_raw.encode('utf-8'))
+                        except Exception as e_fromstring:
+                            raise CommandError(f'Falha ao parsear XML {file_path.name} após decodificação: {e_fromstring}')
+                    except Exception as e:
+                        raise CommandError(f'Erro inesperado ao abrir ou parsear XML {file_path.name}: {e}')
 
-                # Remover PIs e comentários da árvore
-                root = tree.getroot()
-                for node in list(root.xpath('./node()')):
-                    if isinstance(node, etree._ProcessingInstruction) and not node.tag.startswith('xml'):
-                        root.remove(node)
-                    if isinstance(node, etree._Comment):
-                        root.remove(node)
-                for el in root.iter():
-                     for child in list(el.xpath('./node()')):
-                        if isinstance(child, etree._ProcessingInstruction) and not child.tag.startswith('xml'):
-                            el.remove(child)
-                        if isinstance(child, etree._Comment):
-                            el.remove(child)
+                    # Remover PIs e comentários da árvore (para um XML mais limpo)
+                    root = tree.getroot()
+                    for node in list(root.xpath('./node()')):
+                        if isinstance(node, etree._ProcessingInstruction) and not node.tag.startswith('xml'):
+                            root.remove(node)
+                        if isinstance(node, etree._Comment):
+                            root.remove(node)
+                    for el in root.iter():
+                         for child in list(el.xpath('./node()')):
+                            if isinstance(child, etree._ProcessingInstruction) and not child.tag.startswith('xml'):
+                                el.remove(child)
+                            if isinstance(child, etree._Comment):
+                                el.remove(child)
+                    # --- Fim da lógica de parsing XML ---
 
-                # Extrair título limpo
-                title_el = tree.find('.//tei:teiHeader//tei:sourceDesc//tei:bibl/tei:title', namespaces=ns)
-                raw_title = title_el.text if title_el is not None else '(Sem título)'
-                title = re.sub(r'\s+', ' ', raw_title).strip()
 
-                slug_obra = file_path.stem.lower()
+                    # Extrair título e slug da obra (metadados da obra atual)
+                    title_el = tree.find('.//tei:teiHeader//tei:sourceDesc//tei:bibl/tei:title', namespaces=ns)
+                    raw_title = title_el.text if title_el is not None else '(Sem título)'
+                    title = re.sub(r'\s+', ' ', raw_title).strip()
+                    slug_obra = file_path.stem.lower()
 
-                terms = tree.xpath('//tei:term', namespaces=ns)
-                if not terms:
-                    self.stdout.write(self.style.WARNING(f'    Nenhum <term> encontrado em {file_path.name}.'))
-                    continue
+                    terms = tree.xpath('//tei:term', namespaces=ns)
+                    if not terms:
+                        self.stdout.write(self.style.WARNING(f'    Nenhum <term> encontrado em {file_path.name}.'))
+                        continue # Pula para o próximo arquivo se não houver termos
 
-                for term in terms:
-                    token = (term.text or '').strip()
-                    headword = term.get('lemma', token)
-                    orth = term.get('norm', headword)
-                    gram = term.get('msd', '')
-                    sense_number = term.get('senseNumber', '1')
+                    for term in terms:
+                        token = (term.text or '').strip()
+                        headword = term.get('lemma', token)
+                        orth = term.get('norm', headword)
+                        gram = term.get('msd', '')
+                        sense_number = term.get('senseNumber', '1')
 
-                    parent = term.getparent()
-                    if parent is None:
-                        self.stderr.write(self.style.WARNING(f"    Termo '{token}' sem pai em {file_path.name}. Pulando sentença."))
-                        continue
-                    
-                    # --- RECUPERANDO A SENTENÇA COM DESTAQUE NO TOKEN ---
-                    # Para garantir que pegamos o texto *literal* do parent, incluindo a posição do termo,
-                    # e que substituímos apenas o token.
-                    sentence_text_raw = ''.join(parent.itertext(with_tail=True)).strip()
+                        parent = term.getparent()
+                        if parent is None:
+                            self.stderr.write(self.style.WARNING(f"    Termo '{token}' sem pai em {file_path.name}. Pulando sentença."))
+                            continue
+                        
+                        # --- INÍCIO DA LÓGICA DE GERAÇÃO DA SENTENÇA PARA O CSV ---
+                        # Página da ocorrência (primeiro, para ser usada na sentença e coluna)
+                        nearest_pb_el = term.xpath('./preceding::tei:pb[1]', namespaces=ns)
+                        page = nearest_pb_el[0].get('n', '?') if nearest_pb_el else '?'
 
-                    highlighted_token = f"[[b]]{token}[[/b]]"
-                    sentence_with_highlight = sentence_text_raw.replace(token, highlighted_token, 1)
-
-                    anchor_url = f"/corpus/{slug_obra}#pagina_{page}"
-                    # O texto do link da obra na citação (ex: Anatomia do Corpo Humano, p. 55)
-                    # Lembre-se que 'title' é o título da obra, 'page' é o número da página
-                    citation_text = f"{title}, p. {page}"
-
-                    final_sentence_for_csv = sentence_with_highlight
-
-                
-                    # Autor
-                    author_el = term.xpath('.//ancestor::tei:TEI//tei:author', namespaces=ns)
-                    if author_el and author_el[0].text:
-                        author_raw = author_el[0].text.strip()
-                        if ',' in author_raw:
-                            author_surname = author_raw.split(',')[0].upper()
+                        # Sentença com destaque do token usando marcação intermediária [[b]]
+                        sentence_text_raw = ''.join(parent.itertext(with_tail=True)).strip()
+                        highlighted_token = f"[[b]]{token}[[/b]]"
+                        # Substitui apenas a primeira ocorrência do token na sentença para destaque
+                        sentence_with_highlight = sentence_text_raw.replace(token, highlighted_token, 1)
+                        # --- FIM DA LÓGICA DE GERAÇÃO DA SENTENÇA PARA O CSV ---
+                        
+                        # Autor
+                        author_el = term.xpath('.//ancestor::tei:TEI//tei:author', namespaces=ns)
+                        if author_el and author_el[0].text:
+                            author_raw = author_el[0].text.strip()
+                            if ',' in author_raw:
+                                author_surname = author_raw.split(',')[0].upper()
+                            else:
+                                author_surname = author_raw.split()[-1].upper()
                         else:
-                            author_surname = author_raw.split()[-1].upper()
-                    else:
-                        author_surname = 'AUTOR_DESCONHECIDO'
+                            author_surname = 'AUTOR_DESCONHECIDO'
 
-                    # Data
-                    date_el = term.xpath('.//ancestor::tei:TEI//tei:date', namespaces=ns)
-                    date = date_el[0].text.strip() if date_el and date_el[0].text else 's.d.'
+                        # Data
+                        date_el = term.xpath('.//ancestor::tei:TEI//tei:date', namespaces=ns)
+                        date = date_el[0].text.strip() if date_el and date_el[0].text else 's.d.'
 
-                    # Página
-                    nearest_pb_el = term.xpath('./preceding::tei:pb[1]', namespaces=ns)
-                    page = nearest_pb_el[0].get('n', '?') if nearest_pb_el else '?'
-                    
-                    full_sentence = f'{sentence_text} ({author_surname}, {date}, {title}, p. {page})'
+                        # Adiciona todos os dados relevantes para o CSV
+                        rows_for_current_file.append([
+                            token,
+                            headword,
+                            orth,
+                            gram,
+                            sense_number,
+                            sentence_with_highlight, # Coluna 'sentence' com a marcação [[b]]
+                            author_surname,
+                            date,
+                            title,       # Título da Obra
+                            slug_obra,   # Slug da Obra
+                            page         # Número da Página (para a coluna 'page_num')
+                        ])
 
-                    rows_for_current_file.append([
-                        token,
-                        headword,
-                        orth,
-                        gram,
-                        sense_number,
-                        final_sentence_for_csv,
-                        author_surname,
-                        date,
-                        title,
-                        page,
-                        slug_obra
-                    ])
+                    all_rows.extend(rows_for_current_file)
 
-                all_rows.extend(rows_for_current_file)
+                except etree.ParseError as e:
+                    self.stderr.write(self.style.ERROR(f'Erro ao parsear XML {file_path.name}: {e}'))
+                except Exception as e:
+                    self.stderr.write(self.style.ERROR(f'Erro inesperado ao processar {file_path.name}: {e}'))
+                    import traceback; traceback.print_exc()
 
-            except etree.ParseError as e:
-                self.stderr.write(self.style.ERROR(f'Erro ao parsear XML {file_path.name}: {e}'))
-            except Exception as e:
-                self.stderr.write(self.style.ERROR(f'Erro inesperado ao processar {file_path.name}: {e}'))
-                import traceback; traceback.print_exc()
+            if not all_rows:
+                self.stdout.write(self.style.WARNING('Nenhum termo extraído para gerar o CSV. O arquivo de saída pode estar vazio.'))
+            else:
+                output_csv_path.parent.mkdir(parents=True, exist_ok=True) 
 
-        if not all_rows:
-            self.stdout.write(self.style.WARNING('Nenhum termo extraído para gerar o CSV. O arquivo de saída pode estar vazio.'))
-        else: # <<< ESTE É O ELSE CORRIGIDO! Alinhado com o 'if not all_rows:'
-            output_csv_path.parent.mkdir(parents=True, exist_ok=True) 
-
-            try:
-                with open(output_csv_path, mode='w', encoding='utf-8', newline='') as f:
-                    writer = csv.writer(f)
-                    writer.writerow([
-                        "token", "Headword", "orth", "gram", "SenseNumber",
-                        "sentence", "author_surname", "date", "title", "page", "slug_obra"
-                    ])
-                    writer.writerows(all_rows)
-                self.stdout.write(self.style.SUCCESS(f'✔️ CSV gerado com sucesso: {output_csv_path}'))
-            except Exception as e:
-                self.stderr.write(self.style.ERROR(f'Erro ao escrever termos_extraidos.csv: {e}'))
-        # REMOVIDO: else: que estava aqui antes. A indentação estava errada.
+                try:
+                    with open(output_csv_path, mode='w', encoding='utf-8', newline='') as f:
+                        writer = csv.writer(f)
+                        writer.writerow([
+                            "token", "Headword", "orth", "gram", "SenseNumber",
+                            "sentence", "author_surname", "date", "title", "slug_obra", "page_num" # Header do CSV
+                        ])
+                        writer.writerows(all_rows)
+                    self.stdout.write(self.style.SUCCESS(f'✔️ CSV gerado com sucesso: {output_csv_path}'))
+                except Exception as e:
+                    self.stderr.write(self.style.ERROR(f'Erro ao escrever termos_extraidos.csv: {e}'))
+        #else:
+         #   self.stdout.write(self.style.NOTICE(f'Geração de termos_extraidos.csv pulada (--skip-regen).'))
 
         self.stdout.write(self.style.SUCCESS('Comando extract_corpus_terms concluído.'))

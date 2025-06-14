@@ -160,7 +160,7 @@ class Command(BaseCommand):
                     except Definition.DoesNotExist:
                         self.stdout.write(self.style.NOTICE(f"  Definição {sense_number} para {headword} não encontrada. Ocorrência será vinculada sem definição específica."))
                     
-                    OcorrenciaCorpus.objects.create(
+                    ocorrencia = OcorrenciaCorpus.objects.create(
                         verbete=verbete,
                         definicao=definicao,
                         token=row['token'],
@@ -171,6 +171,7 @@ class Command(BaseCommand):
                         data=row.get('date', ''),
                         titulo_obra=row.get('title', ''),
                         slug_obra=row.get('slug_obra', ''),
+                        pagina_obra=row.get('page_num', ''),
                     )
                     self.stdout.write(self.style.SUCCESS(f"✔️ Salvo Ocorrência: {verbete.termo} ({sense_number}) na linha {index}"))
                 except Verbete.DoesNotExist:

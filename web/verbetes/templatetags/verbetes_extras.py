@@ -1,5 +1,6 @@
 from django import template
 import re
+from django.utils.safestring import mark_safe
 
 register = template.Library()
 
@@ -36,3 +37,19 @@ def formatar_autores(autores_str):
             autores_formatados.append(autor_completo.upper()) # Se só tem um nome, capitaliza
 
     return "; ".join(autores_formatados)
+
+@register.filter
+def process_sentence_display(text_with_markup):
+    """
+    Substitui marcações intermediárias [[b]]...[[/b]] e [[cite_link:...]]...[[/cite_link]]
+    por HTML <b> e <a>, respectivamente.
+    Recebe o dicionário 'ocorrencia_obj' para construir a URL do corpus.
+    """
+    if not text_with_markup:
+        return ""
+
+    
+    # 1. Substituir negrito: [[b]]token[[/b]] -> <b>token</b>
+    final_text = re.sub(r'\[\[b\]\](.*?)\[\[/b\]\]', r'<b>\1</b>', text_with_markup)
+    
+    return mark_safe(final_text) # Marcar como seguro, pois injetamos HTML
