@@ -9,51 +9,40 @@ from django.urls import reverse
 def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
     """
     Substitui tags TEI por equivalentes HTML adequados e processa <pb> e <titlePage>.
-    'element' é o elemento raiz a ser processado (agora pode ser <text>).
-    'ns_tei_url_sem_chaves' é a string do namespace TEI, ex: 'http://www.tei-c.org/ns/1.0'.
+    Cria <span> com id e classes para os marcadores de página.
     """
     ns_tei_com_chaves = f'{{{ns_tei_url_sem_chaves}}}'
 
-    # --- NOVO BLOCO: Processar <tei:titlePage> para extrair imagem e criar marcador ---
+    # --- Processar <tei:titlePage> ---
     title_pages = list(element.xpath(f'.//tei:titlePage', namespaces={'tei': ns_tei_url_sem_chaves}))
     for tp_el in title_pages:
-        url_imagem = tp_el.get('facs') # Pega o atributo facs da titlePage
+        url_imagem = tp_el.get('facs')
         if url_imagem:
-            # Gerar um ID único para o marcador. 'titlePage' é um bom descritivo
-            # Podemos tentar pegar 'n' se existir na titlePage, ou usar um nome fixo
-            page_id = f"pagina_titlepage_{tp_el.get('n', '0')}" # Adiciona 'n' se existir, ou '0'
-            display_num = tp_el.get('n', 'Título') # Para exibir na legenda, usa 'n' ou 'Título'
+            # Gerar um ID único para o marcador da titlePage (ex: pagina_titlepage_0)
+            page_id = f"pagina_titlepage_{tp_el.get('n', '0')}" 
+            display_num = tp_el.get('n', 'Título') # Para a legenda
 
             marcador = etree.Element('span')
             marcador.set('id', page_id)
-            marcador.set('class', 'marcador-pagina marcador-titlepage') # Adiciona uma classe específica para estilizar
-            marcador.text = f'[Pág. {display_num}] ' # Texto que aparece no documento
+            marcador.set('class', 'marcador-pagina marcador-titlepage') # ESSENCIAL: 'marcador-pagina' e 'marcador-titlepage'
+            marcador.text = f'[Pág. {display_num}] '
             marcador.set('data-facs', url_imagem)
             marcador.set('data-pagina-numero', display_num)
 
-            # Inserir o marcador ANTES do elemento <titlePage> no HTML
-            # Isso faz com que a imagem apareça antes do texto da página de título.
             parent = tp_el.getparent()
             if parent is not None:
                 tp_el.addprevious(marcador)
 
-        # Opcional: Transformar <titlePage> em um <div> comum e adicionar uma classe para estilização
-        # (se você quiser que o texto da titlePage tenha um estilo específico no HTML)
-        # tp_el.tag = 'div'
-        # tp_el.set('class', 'tei-titlepage-content')
 
-
-    # Processar <pb> (page breaks)
-    # A lógica existente para <pb> permanece a mesma e pode vir aqui ou antes, dependendo da ordem desejada
-    # para os marcadores de página. Geralmente, não há sobreposição de lógica entre titlePage e pb.
+    # --- Processar <tei:pb> (page breaks) ---
     page_breaks = list(element.xpath(f'.//tei:pb', namespaces={'tei': ns_tei_url_sem_chaves}))
     for pb_el in page_breaks:
         num_pagina = pb_el.get('n', '?')
         url_imagem = pb_el.get('facs')
 
         marcador = etree.Element('span')
-        marcador.set('id', f'pagina_{num_pagina}')
-        marcador.set('class', 'marcador-pagina') # Para JS e estilo
+        marcador.set('id', f'pagina_{num_pagina}') # ESSENCIAL: id="pagina_N"
+        marcador.set('class', 'marcador-pagina')  # ESSENCIAL: class="marcador-pagina"
         marcador.text = f'[p. {num_pagina}] '
         if url_imagem:
             marcador.set('data-facs', url_imagem)

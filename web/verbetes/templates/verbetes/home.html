@@ -80,6 +80,12 @@
                         </p>
                         {% endwith %}
                         <p>{{ exemplo.sentence|safe }}</p>
+                        <p class="small text-muted text-end mt-1">
+                            {# Verifica se slug_obra e titulo_obra existem #}
+                            {% if exemplo.slug_obra and exemplo.titulo_obra %}
+                                (Fonte: <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">{{ exemplo.titulo_obra }}</a>)
+                            {% endif %}
+                        </p>
                     </div>
                     {% endfor %}
                     {% endfor %}
