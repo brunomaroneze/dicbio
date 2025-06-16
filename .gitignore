@@ -15,3 +15,4 @@ CorpusAppBruno
 CorpusAppBruno.zip
 *.pyc
 __pycache__/
+web/dicionario_web/__pycache__/
