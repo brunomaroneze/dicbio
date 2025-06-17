@@ -1,5 +1,6 @@
 ---
 titulo: Córpus
+autores: Bruno Maroneze
 ---
 
 # Córpus

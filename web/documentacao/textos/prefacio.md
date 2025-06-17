@@ -1,5 +1,6 @@
 ---
 titulo: Sobre este dicionário
+autores: Bruno Maroneze
 ---
 # Sobre este dicionário
 

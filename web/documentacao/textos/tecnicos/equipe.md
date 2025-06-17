@@ -1,5 +1,6 @@
 ---
 titulo: Equipe
+autores: Bruno Maroneze
 ---
 
 # Equipe

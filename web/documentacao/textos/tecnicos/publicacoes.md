@@ -1,5 +1,6 @@
 ---
 titulo: Publicações científicas
+autores: Bruno Maroneze
 ---
 
 # Publicações científicas

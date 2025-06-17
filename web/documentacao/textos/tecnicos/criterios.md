@@ -1,5 +1,6 @@
 ---
 titulo: Critérios lexicográficos
+autores: Bruno Maroneze
 ---
 
 # Critérios lexicográficos
