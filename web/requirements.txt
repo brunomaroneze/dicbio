@@ -1,0 +1,17 @@
+asgiref==3.8.1
+bleach==6.2.0
+Django==5.2.1
+django-markdownify==0.9.5
+lxml==5.4.0
+Markdown==3.8
+mysqlclient==2.2.7
+numpy==2.2.6
+pandas==2.2.3
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+pytz==2025.2
+six==1.17.0
+sqlparse==0.5.3
+tinycss2==1.4.0
+tzdata==2025.2
+webencodings==0.5.1
