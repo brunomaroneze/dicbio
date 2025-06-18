@@ -64,58 +64,56 @@
                 <div class="definition-block mb-4">
                     <p><strong>{{ d.sensenumber }}.</strong> {{ d.definition }}</p>
 
-                    {% with d.sensenumber|stringformat:"s" as chave %}
-                    {% with exemplos_por_sense|get_item:chave as exemplos_sense %}
-                    {% if exemplos_sense %}
-                    {% for gram, autores in exemplos_sense.items %}
-                    {% for autor, exemplos in autores.items %}
-                    {% for exemplo in exemplos|slice:":1" %}
-                    <div class="example ps-3">
-                        {% with gram=exemplo.gram|stringformat:"s" %}
-                        <p>
-                            <strong>{{ exemplo.token }}</strong>
-                            {% if gram and gram|lower != 'nan' %}
-                            ({{ gram }})
-                            {% endif %}
-                        </p>
-                        {% endwith %}
-                        <p>{{ exemplo.frase|process_sentence_display|safe }}</p>
+                    {% comment %} Loop pelos sentidos (chaves) {% endcomment %}
+                    {% with d.sensenumber|stringformat:"s" as sense_key %}
+                    {% with exemplos_por_sense|get_item:sense_key as exemplos_for_sense %}
+                    {% if exemplos_for_sense %}
+                        {# --- NOVO LOOP AQUI: Loop por token (variante ortográfica) --- #}
+                        {% for token_val, token_examples_dict in exemplos_for_sense.items %}
+                        <div class="token-group mb-3 ms-3 border-start ps-3"> {# Nova div para agrupar por token #}
+                            
+                            {% for gram, autores in token_examples_dict.items %}
+                            {% for autor, exemplos in autores.items %}
+                            {% for exemplo in exemplos|slice:":1" %} {# Ainda pegando 1 exemplo por grupo gram/autor #}
+                                <div class="example ps-3">
+                                    {% with gram=exemplo.gram|stringformat:"s" %}
+                                    <p>
+                                        <strong>{{ exemplo.token }}</strong>
+                                        {% if gram and gram|lower != 'nan' %}
+                                        ({{ gram }})
+                                        {% endif %}
+                                    </p>
+                                    {% endwith %}
+                                    <p>{{ exemplo.frase|process_sentence_display|safe }}</p>
 
-                        {# --- ADICIONADO: Link para a obra no córpus digital com formatação --- #}
-                        <p class="small text-muted text-end mt-1">
-                            {% if exemplo.slug_obra and exemplo.titulo_obra %}
-                                (Fonte: 
-                                {% comment %}
-                                    Lógica para formatar: AUTOR, ANO, TÍTULO, p. PÁGINA
-                                {% endcomment %}
-
-                                {# AUTOR: Sempre tentar exibir #}
-                                {% if exemplo.autor and exemplo.autor != 'N/A' %}
-                                    {{ exemplo.autor|capfirst }}
-                                {% else %}
-                                    Autor Desconhecido
-                                {% endif %}
-
-                                {# ANO (DATA): Adiciona vírgula APENAS se o ano existir #}
-                                {% if exemplo.data and exemplo.data != 's.d.' %}
-                                    , {{ exemplo.data }}
-                                {% endif %}
-
-                                {# TÍTULO DA OBRA: Sempre exibir, e já faz parte do link #}
-                                , <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">
-                                    {{ exemplo.titulo_obra }}
-                                    {# PÁGINA: Adiciona ", p. XX" APENAS se a página existir. Sem vírgula antes se `titulo_obra` já tiver formatado. #}
-                                    {% if exemplo.pagina_obra %}
-                                        , p. {{ exemplo.pagina_obra }}{% comment %} Usar   para espaço inseparável {% endcomment %}
-                                    {% endif %}
-                                </a>
-                                )
-                            {% endif %}
-                        </p>
-                    </div>
-                    {% endfor %}
-                    {% endfor %}
-                    {% endfor %}
+                                    <p class="small text-muted text-end mt-1">
+                                        {% if exemplo.slug_obra and exemplo.titulo_obra %}
+                                            (Fonte: 
+                                            {% if exemplo.autor and exemplo.autor != 'N/A' %}
+                                                {{ exemplo.autor|capfirst }}
+                                            {% else %}
+                                                Autor Desconhecido
+                                            {% endif %}
+                                            , 
+                                            {% if exemplo.data and exemplo.data != 's.d.' %}
+                                                {{ exemplo.data }}
+                                            {% endif %}
+                                            , 
+                                            <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">
+                                                {{ exemplo.titulo_obra }}
+                                                {% if exemplo.pagina_obra %}
+                                                    , p. {{ exemplo.pagina_obra }}
+                                                {% endif %}
+                                            </a>
+                                            )
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            {% endfor %}
+                            {% endfor %}
+                            {% endfor %}
+                        </div> {# Fim da div token-group #}
+                        {% endfor %} {# Fim do loop token_val #}
                     {% endif %}
                     {% endwith %}
                     {% endwith %}

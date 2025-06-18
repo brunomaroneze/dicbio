@@ -25,7 +25,7 @@ def verbete_detalhe(request, slug):
     # Prefetch todas as ocorrências de uma vez, mas filtrando pelo verbete
     ocorrencias = OcorrenciaCorpus.objects.filter(verbete=verbete).select_related('definicao') # Usa select_related para a definicao
 
-    exemplos_tmp = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    exemplos_tmp = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))
 
     # Preencher estrutura com dados do banco
     for o in ocorrencias:
@@ -37,6 +37,7 @@ def verbete_detalhe(request, slug):
         # Certifique-se que 'gram' e 'autor' não são strings vazias que causem problemas de chave
         gram = o.gram.strip() or 'N/A' # Fallback se gram for vazio
         autor = o.autor.strip().upper() or 'N/A' # Fallback se autor for vazio
+        token_ocorrencia = o.token.strip() # Pega o token da ocorrência
 
         exemplo = {
            'token': o.token,
@@ -49,8 +50,10 @@ def verbete_detalhe(request, slug):
             'pagina_obra': o.pagina_obra,
         }
 
-        # Usamos a chave do sentido e da gramática para selecionar exemplos
-        grupo = exemplos_tmp[str(sense)][gram][autor]
+        # --- MUDANÇA AQUI: Acessando o 'grupo' agora por token também ---
+        # A ordem das chaves define a hierarquia no dicionário
+        grupo = exemplos_tmp[str(sense)][token_ocorrencia][gram][autor]
+        # --- FIM DA MUDANÇA ---
 
         # Substitui o exemplo anterior se este for mais adequado (lógica existente)
         tam = len(o.frase) # Usa 'o.frase'
@@ -61,12 +64,16 @@ def verbete_detalhe(request, slug):
 
 
     # Agora convertemos exemplos_tmp para dict normal (para o template)
+    # Precisa refletir a nova hierarquia: sentido -> token -> gramática -> autor
     exemplos_por_sense = {
         sense: {
-            gram: dict(autores)
-            for gram, autores in gram_dict.items()
+            token_val: { # Nova camada para o token
+                gram: dict(autores)
+                for gram, autores in gram_dict.items()
+            }
+            for token_val, gram_dict in token_dict.items() # Itera na camada de token
         }
-        for sense, gram_dict in exemplos_tmp.items()
+        for sense, token_dict in exemplos_tmp.items() # Itera na camada de sentido
     }
 
     lista_verbetes = sorted(
