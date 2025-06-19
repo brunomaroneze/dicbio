@@ -13,10 +13,9 @@
 			</publicationStmt>
 			<sourceDesc>
 				<bibl>
-					<author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica.
-						Tomo primeiro</title>. <pubPlace>Paris</pubPlace>: Vende-se
-					em Lisboa, em caza de Paulo Martin, mercador de livros, <date when="1788"
-						>1788</date>. Disponível em:
+					<author>BROTERO, Felix Avellar</author>. <title>Compendio de Botanica. Tomo
+						primeiro</title>. <pubPlace>Paris</pubPlace>: Vende-se em Lisboa, em caza de
+					Paulo Martin, mercador de livros, <date when="1788">1788</date>. Disponível em:
 					https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html.
 				</bibl>
 			</sourceDesc>
@@ -1299,16 +1298,19 @@
 						outras, e a difficuldade que entam se reconheceo em o perfeiçoar o fez
 						immediatamente cahir em desprezo: Magnol mesmo parece ter sido pouco
 						contente delle, e em razam disso cuidou de compor depois outro Methodo
-						fundado principalmente no calys <note>Este segundo Methodo de Magnol foy
-							impresso depois da sua morte em 1720: consta de 15 Classes fundadas nos
-							caracteres do calys combinados com os corolla, e subdivididas em 55
-							secçoens relativamente ao lugar de nascimento, disposiçam das flores,
-							sexo, calys, corolla, e fructo. M. Adanson estranha com razam que Magnol
-							depois de ter imaginado hum Methodo razoavel composesse este, que lhe he
-							na verdade inferior e no qual parece querer evitar as familias ou
-							Classes naturaes, buscando por toda a parte hum calys athe chegar a dar
-							este nome aos tegumentos das sementes, quando lhe era precizo hum calys
-							para satisfazer às suas ideas systematicas</note>.</s>
+						fundado principalmente no <term lemma="cálice">calys</term>
+						<note>Este segundo Methodo de Magnol foy impresso depois da sua morte em
+							1720: consta de 15 Classes fundadas nos caracteres do <term
+								lemma="cálice">calys</term> combinados com os corolla, e
+							subdivididas em 55 secçoens relativamente ao lugar de nascimento,
+							disposiçam das flores, sexo, <term lemma="cálice">calys</term>, corolla,
+							e fructo. M. Adanson estranha com razam que Magnol depois de ter
+							imaginado hum Methodo razoavel composesse este, que lhe he na verdade
+							inferior e no qual parece querer evitar as familias ou Classes naturaes,
+							buscando por toda a parte hum <term lemma="cálice">calys</term> athe
+							chegar a dar este nome aos tegumentos das sementes, quando lhe era
+							precizo hum <term lemma="cálice">calys</term> para satisfazer às suas
+							ideas systematicas</note>.</s>
 				</p>
 				<p>Paulo Herman, professor de Botanica em Leyde, seguio as ideas do Cesalpino debaxo
 					de huma nova forma, e dividio as 5600 plantas, de que tractou em 2J Classes
@@ -1320,26 +1322,27 @@
 					hum Methodo mais facil e mais conforme aos principios systematicos do que nenhum
 					dos seus predecessores. Elle dividio o pequeno numero de plantas, que conhecia,
 					em 18 classes fundadas principalmente nas relaçoens da corolla, e subdivididas
-					em 91 secçoens relativamente ao fructo, figura do calys e corolla, situaçam, e
-					disposiçam ou falta das flores. Este Methodo publicado pouco a pouco desde o
-					anno de 1690 athe 1696, nam he tam regular, como alguns pensaram; porquanto
-					vemos que o seu Autor considerou na clave das suas Classes nam so a regularidade
-					e irregularidade da corolla e numero das suas petalas, mas ainda a perfeiçam das
-					flores, e a sua disposiçam. <s>Elle foy contudo durante alguns annos o mais
-						seguido em Allemanha; Koenig, Welsch, Heucher, Gemeinhart, Hebenstreit, e
-						Hecher o adoptaram nos seus tractados de plantas; Kramer, Christiano Knaut
-							<note>Ludwig no anno de 1737 ajuntou duas classes demais ao Methodo de
-							Rivino, deduzidas da presença ou falta da corolla, e Wedel e Boehmer o
-							seguiram neste estado de reforma; no anno de 1747 aperfeiçoou segunda
-							vez o dicto Methodo, reunindolhe demais a relaçam dos sexos das flores,
-							e foy a melhor emenda que delle se publicou.</note>, Ruppio, e Ludwig
-							<note>Christiano Knaut foy hum dos Botanicos, cujos paradoxos tem
-							impedido o progresso da Botanica; elle seguio que havia tantos generos
-							como especies, que a corolla era a parte essensial da flor, e que nam
-							haviam sementes nuas.</note> tractaram de o emendar, e lhe deram huma
-						nova forma, com que elle ficou ou mais resumido e troncado, ou mais extenso
-						e complicado.</s> Siegesbeck publicou tambent hum plano de o emendar melhor
-					do que os Autores precedentes, mas nam o poz em execuçam, da mesma sorte que nam
+					em 91 secçoens relativamente ao fructo, figura do <term lemma="cálice"
+						>calys</term> e corolla, situaçam, e disposiçam ou falta das flores. Este
+					Methodo publicado pouco a pouco desde o anno de 1690 athe 1696, nam he tam
+					regular, como alguns pensaram; porquanto vemos que o seu Autor considerou na
+					clave das suas Classes nam so a regularidade e irregularidade da corolla e
+					numero das suas petalas, mas ainda a perfeiçam das flores, e a sua disposiçam.
+						<s>Elle foy contudo durante alguns annos o mais seguido em Allemanha;
+						Koenig, Welsch, Heucher, Gemeinhart, Hebenstreit, e Hecher o adoptaram nos
+						seus tractados de plantas; Kramer, Christiano Knaut <note>Ludwig no anno de
+							1737 ajuntou duas classes demais ao Methodo de Rivino, deduzidas da
+							presença ou falta da corolla, e Wedel e Boehmer o seguiram neste estado
+							de reforma; no anno de 1747 aperfeiçoou segunda vez o dicto Methodo,
+							reunindolhe demais a relaçam dos sexos das flores, e foy a melhor emenda
+							que delle se publicou.</note>, Ruppio, e Ludwig <note>Christiano Knaut
+							foy hum dos Botanicos, cujos paradoxos tem impedido o progresso da
+							Botanica; elle seguio que havia tantos generos como especies, que a
+							corolla era a parte essensial da flor, e que nam haviam sementes
+							nuas.</note> tractaram de o emendar, e lhe deram huma nova forma, com
+						que elle ficou ou mais resumido e troncado, ou mais extenso e
+						complicado.</s> Siegesbeck publicou tambent hum plano de o emendar melhor do
+					que os Autores precedentes, mas nam o poz em execuçam, da mesma sorte que nam
 					executou ainda outro que ideou sobre o fructo. </p>
 				<p>José Pitton Tournefort, que tam destinctamente orna o numero dos grandes
 					Botanicos da França, foy de todos os seus contemporaneos e predecessores o que
@@ -1366,13 +1369,13 @@
 								affinidades, ou melhor se conformou com a marcha da natureza.</s>
 						</note>.</s> As secçoens foram estabelecidas relativamente à situaçam do
 					fructo e flores, ao numero das cellulas do fructo e sua substancia, à figura da
-					corolla e sementes, à presença e nullidade do calys, e às folhas. Os seus
-					gêneros foram fundados em caracteres tirados das partes da fructificaçam, nam
-					privativamente, porque elle pensava que se podiam áamittir outros, nem
-					extensamente, porque julgou acertado de nam multiplicar notas caracteristicas
-					sem necessidade. Elle definio o genero ser: "hum aggregado de varias especies,
-					que convinham em todas as partes da fructificaçam ou nas mais essensiaes". No
-					seu parecer os generos <pb n="xl"
+					corolla e sementes, à presença e nullidade do <term lemma="cálice">calys</term>,
+					e às folhas. Os seus gêneros foram fundados em caracteres tirados das partes da
+					fructificaçam, nam privativamente, porque elle pensava que se podiam áamittir
+					outros, nem extensamente, porque julgou acertado de nam multiplicar notas
+					caracteristicas sem necessidade. Elle definio o genero ser: "hum aggregado de
+					varias especies, que convinham em todas as partes da fructificaçam ou nas mais
+					essensiaes". No seu parecer os generos <pb n="xl"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0044_XL_t24-C-R0120.jpg"
 					/> podem ser destinguidos em primarios e secundarios; quanto aos primarios
 					estabeleceo as regras seguintes: 1°. que sò as partes da fructificaçam deviam
@@ -1465,12 +1468,13 @@
 					Medicina, publicou em Leyde no anno de 1710 huma divisam de seis mil plantas em
 					84 Classes, considerando-as relativamente à sua grandeza, duraçam,
 					fructificaçam, e habito externo: subdividio as dictas classes em 104 secçoens ou
-					ordens fundadas na substancia e figura das folhas, do calys, corolla, sementes,
-					e tronco, no numero das petalas, capsulas e sementes; na situaçam das flores e
-					germe; e em fim nos organos sexuaes das flores, que elle empregou tambem algumas
-					vezes para caracterizar os generos. <s>O seu Methodo foy huma combinaçam dos
-						systemas de Cesalpino, Rai, Herman, e Tournefort, e por ser muito difficil e
-						complicado foy apenas seguido na sua escola e por Emsting e Morandi <note>
+					ordens fundadas na substancia e figura das folhas, do <term lemma="cálice"
+						>calys</term>, corolla, sementes, e tronco, no numero das petalas, capsulas
+					e sementes; na situaçam das flores e germe; e em fim nos organos sexuaes das
+					flores, que elle empregou tambem algumas vezes para caracterizar os generos.
+						<s>O seu Methodo foy huma combinaçam dos systemas de Cesalpino, Rai, Herman,
+						e Tournefort, e por ser muito difficil e complicado foy apenas seguido na
+						sua escola e por Emsting e Morandi <note>
 							<s>Morandi no seu Tractado das plantas medicinaes, publicado em 1744,
 								reunio as <term lemma="árvore" norm="árvores" msd="plural"
 									>arvores</term> com as hervas, e em quasi tudo o mais seguio o
@@ -1651,8 +1655,9 @@
 						differentes Ordens deduzidas do numero dos pistillos, do numero, adunaçam e
 						situaçam dos estames, e da figura do fructo <note>
 							<s>As Ordens do Systema sexual sam algumas vezes subdivididas em
-								secçoens entremedias, fundadas em diversas relaçoens do calys,
-								corolla e outras partes da fructificaçam.</s>
+								secçoens entremedias, fundadas em diversas relaçoens do <term
+									lemma="cálice">calys</term>, corolla e outras partes da
+								fructificaçam.</s>
 							<s>M. Adanson diz (Pref. p. XX.) que as subdivisoens das classes deste
 								systema sam algumas vezes fundadas tambem em notas do habito
 								externo; eu penso que elle falla das Ordens da Classe Cryptogamia,
@@ -1813,9 +1818,9 @@
 				<p>
 					<s>No anno de 1738 Linneo publicou outro plano systematico, ao qual deo o nome
 						de Methodo Calycino, por ser destribuido em 18 Classes deduzidas
-						principalmente das relaçoens do calys; mas elle nam completou a execuçam
-						deste Methodo por lhe ter preferido o primeiro fundado nos organos
-						sexuaes.</s>
+						principalmente das relaçoens do <term lemma="cálice">calys</term>; mas elle
+						nam completou a execuçam deste Methodo por lhe ter preferido o primeiro
+						fundado nos organos sexuaes.</s>
 				</p>
 				<p>
 					<s>No mesmo anno publicou huma terceira destribuiçam dos vegetaes, com o titulo
@@ -2083,26 +2088,27 @@
 					algumas relaçoens geraes e invariaveis capazes de servir de base para
 					estabelecela, reduzio as do seu Methodo (que considerou como naturaes) a huma
 					clave de 14 Classes fundadas principalmente na privaçam ou numero das
-					cotyledones das sementes, e no mediato ou immediato apego dos estames ao calys,
-					receptaculo, ou pistillo. <s>Mas esta clave tem algumas imperfeiçoens e he muito
-						diffcil na practica: o titulo de acotylédones (ou sem cotyledones) dado a
-						todas as Cryptogamicas, às Nayades e Parasitas he improprio e desmentido
-						pela natureza; nestas duas ultimas familias ha algumas plantas <note>Como
-							saõ por ex. o Myriophyllum, e Ceratophyllum.</note>, que sam
-						reconhecidas por alguns botanicos como dicotyledones; no mesmo genero
-							<note>Como por ex. no Cactus, no qual algumas especies saõ
-							monocotyledones e outras dicotyledones.</note> podem haver especies de
-						diverso numero de cotyledones; a insersam dos estames nam he menciodada na
-						primeira Classe, e nalguns generos o ponto de apego dos estames he muito
-						ambiguo e quasi impossivel de se poder determinar com exactidam: os
-						destinctivos tirados da corolla, e que contribuem para caracterizar algumas
-						classes, sam sujeitos a variar; tem-se visto plantas, que costumam dar
-						flores petaleadas, dalas monopetalas, e ainda mesmo sem petalas, ou corolla
-						alguma: estas excepçoens sam sufficientes para fazer a clave defeituosa.</s>
-					Algumas familias tem generos pouco uniformes de maneira que mal merecem o titulo
-					de naturaes, e as suas transiçoens sam às vezes estabelecidas tam
-					arbitrariamente como o seu numero. Este Methodo por conseguinte nam he puramente
-					natural; mas sem embargo disso nam se pode negar que elle <pb n="lxii"
+					cotyledones das sementes, e no mediato ou immediato apego dos estames ao <term
+						lemma="cálice">calys</term>, receptaculo, ou pistillo. <s>Mas esta clave tem
+						algumas imperfeiçoens e he muito diffcil na practica: o titulo de
+						acotylédones (ou sem cotyledones) dado a todas as Cryptogamicas, às Nayades
+						e Parasitas he improprio e desmentido pela natureza; nestas duas ultimas
+						familias ha algumas plantas <note>Como saõ por ex. o Myriophyllum, e
+							Ceratophyllum.</note>, que sam reconhecidas por alguns botanicos como
+						dicotyledones; no mesmo genero <note>Como por ex. no Cactus, no qual algumas
+							especies saõ monocotyledones e outras dicotyledones.</note> podem haver
+						especies de diverso numero de cotyledones; a insersam dos estames nam he
+						menciodada na primeira Classe, e nalguns generos o ponto de apego dos
+						estames he muito ambiguo e quasi impossivel de se poder determinar com
+						exactidam: os destinctivos tirados da corolla, e que contribuem para
+						caracterizar algumas classes, sam sujeitos a variar; tem-se visto plantas,
+						que costumam dar flores petaleadas, dalas monopetalas, e ainda mesmo sem
+						petalas, ou corolla alguma: estas excepçoens sam sufficientes para fazer a
+						clave defeituosa.</s> Algumas familias tem generos pouco uniformes de
+					maneira que mal merecem o titulo de naturaes, e as suas transiçoens sam às vezes
+					estabelecidas tam arbitrariamente como o seu numero. Este Methodo por
+					conseguinte nam he puramente natural; mas sem embargo disso nam se pode negar
+					que elle <pb n="lxii"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0066_LXII_t24-C-R0120.jpg"
 					/> presenta os seus Fragmentos mais adequada e completamente do que qualquer
 					outro athe agora publicado; os seus defeitos sam resarcidos pelo grande numero
@@ -2855,9 +2861,10 @@
 					perfeitas, as observãçoẽs dos modernos descobriraõ em suas flores hum coito
 					summamente analogo ao dos animaes, e reconheceraõ que nellas haviaõ genitaes de
 					dois sexos, envoltos em certos tegumentos, a que daõ ordinariamente o nome de
-					calyz ou corolla segundo as circumstancias. Os genitaes masculinos saõ chamados
-					estames, e os femininos pistillo, o qual se acha ordinariamente no centro da
-					flor, como se observa bem destinctamente <pb n="9"
+						<term lemma="cálice">calyz</term> ou corolla segundo as circumstancias. Os
+					genitaes masculinos saõ chamados estames, e os femininos pistillo, o qual se
+					acha ordinariamente no centro da flor, como se observa bem destinctamente <pb
+						n="9"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0089_9_t24-C-R0120.jpg"
 					/> em huma açucena. <s>Cada estame he composto de duas partes inferior e
 						superior, a primeira tem o nome de filete, e a segunda ou superior que
@@ -2962,9 +2969,9 @@
 						<s>A sua substancia ou he herbacea (herbacea) se diz respeito a huma planta
 							de tronco herbaceo, e tem a consistencia delle, como a chicoria,
 							centeio, alface, hera terreste, &amp;c. ou lenhoza (lignosa) quando
-							pertence a huma <term lemma="árvore"> arvore</term>, arbusto, ou
-							qualquer planta, cujo tronco dura na terra mais de dois annos, em summa,
-							quando he vivace e tem huma consistencia <pb n="13"
+							pertence a huma <term lemma="árvore">arvore</term>, arbusto, ou qualquer
+							planta, cujo tronco dura na terra mais de dois annos, em summa, quando
+							he vivace e tem huma consistencia <pb n="13"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0093_13_t24-C-R0120.jpg"
 							/> semelhante á do páo <note>
 								<s>Nas <term lemma="raiz" msd="plural">raizes</term> lenhosas ha
@@ -3328,7 +3335,8 @@
 							</note>, como v. g. a dos narcisos e junquilhos.</s>
 						<s>As plantas, cujo tronco he huma hastea, tem ordinariamente <term
 								lemma="folha" msd="plural"> folhas</term> radicaes.</s>
-						<s>A hastea pode ter escamas, estipulas, e bracteas; mas naõ <term
+						<s>A hastea pode ter escamas, estipulas, e <term lemma="bráctea"
+								norm="brácteas" msd="plural">bracteas</term>; mas naõ <term
 								lemma="folha" msd="plural">folhas</term>, alias seria hum caule.</s>
 						<s>Ella he simplez ou sem ramos na pilosella e junquilhos, e ramosa na
 							Hypochaeris radicata, e Anthericum ramosum.</s>
@@ -3351,12 +3359,12 @@
 									lineares, pontudas, flexiveis, em forma de fitta, compostas de
 									fibras parallelas, e ordinariamente envaginantes; os tegumentos
 									dos organos sexuaes, chamados casulos, saõ certas escamas
-									paleaceas denominadas valvulas, o calyx tem duas ordinariamente,
-									e raras vezes huma, tres ou mais; a corolla tem ordinariamente
-									duas valvulas, das quas a interior he menor, e raras vezes tem
-									huma so; o fructo he huma <term> semente</term> sem pericarpo
-									(excepto o esparto, segundo Linneo), e a sua substancia he
-									farinhosa.</s>
+									paleaceas denominadas valvulas, o <term lemma="cálice"
+										>calyx</term> tem duas ordinariamente, e raras vezes huma,
+									tres ou mais; a corolla tem ordinariamente duas valvulas, das
+									quas a interior he menor, e raras vezes tem huma so; o fructo he
+									huma <term> semente</term> sem pericarpo (excepto o esparto,
+									segundo Linneo), e a sua substancia he farinhosa.</s>
 							</note>.</s>
 					</p>
 					<pb n="23"
@@ -3401,7 +3409,7 @@
 						<s>Arbusteo ou arbustivo (fruticosus), quando pertence a huma
 								<term>raiz</term> lenhosa, da qual todos os annos brotaõ muitos
 							troncos, que senaõ secçaõ nem morrem annualmente nem se elevaõ a altura
-							das <term lemma="árvore" norm="árvores" msd="plural"> arvores</term>
+							das <term lemma="árvore" norm="árvores" msd="plural">arvores</term>
 							ordinarias <note>
 								<s>He difficil de dar huma boa definicaõ dos arbustos e <term
 										lemma="árvore" norm="árvores" msd="plural">arvores</term>,
@@ -4011,7 +4019,8 @@
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0124_44_t24-C-R0120.jpg"
 							/> tem o seu ponto de apego na axilla inferior, ou no angulo inferior
 							que forma o tronco com o ramo (o murriaõ, e murujem.)</p>
-						<p>Floraes (floralia), saõ a mesma coiza que bractéas persistentes (o
+						<p>Floraes (floralia), saõ a mesma coiza que <term lemma="bráctea"
+								norm="brácteas" msd="plural">bractéas</term> persistentes (o
 							ouregaõ).</p>
 						<p>Pecioladas (petiolata), quando tem hum peciolo (a salva, e pereira);
 							rentes (sessilia), se o naõ tem, como acima disse (a alface, e
@@ -4774,10 +4783,10 @@
 								anteuphorbium <note>
 									<s>Este termo ora he usado para significar hum disco plano sem
 										convexidade nem concavidade, como no geranium betulinum, ora
-										indica hum disco delgado (ainda que seja <term>
-											canaliculado</term>) como o das especies de Anthericum,
-										etc. e neste sentido he opposto ao disco carnudo, ou
-										cylindrico.</s>
+										indica hum disco delgado (ainda que seja
+											<term>canaliculado</term>) como o das especies de
+										Anthericum, etc. e neste sentido he opposto ao disco
+										carnudo, ou cylindrico.</s>
 								</note>.</s>
 							<s>Alguns daõ lhes taõbem o nome de <pb n="67"
 									facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0147_67_t24-C-R0120.jpg"
@@ -4839,7 +4848,7 @@
 						<p>
 							<s>Escariosas (scariosa) saõ aridas, esbranquiçadas, sonoras ao tacto, e
 								comparadas á epiderme fina que se despega da casca de algumas <term
-									lemma="árvore" norm="árvores" msd="plural"> arvores</term>.</s>
+									lemma="árvore" norm="árvores" msd="plural">arvores</term>.</s>
 						</p>
 						<p>Bojudas (gibba, s. gibbosa), quando tem ambas as suas superficies
 							convexas, em razaõ de huma grande quantidade de subtancia polposa (sedum
@@ -5372,7 +5381,8 @@
 									no seu tractado dos termos Botanicos estendeo taõbem o nome de
 									esteios aos peciolos e pedunculos.</s>
 							</note> o nome de esteios (fulcra) saõ as estipulas, gavinhas,
-							glandulas, pêlos e sedas, armas, e bractéas.</s>
+							glandulas, pêlos e sedas, armas, e <term lemma="bráctea" norm="brácteas"
+								msd="plural">bractéas</term>.</s>
 						<s>Estas producçoẽs servem a ornar, soster, e proteger as plantas, a algumas
 							secreçoẽs, e he raro que os vegetaes pereçaõ, quando dellas
 							violentamente saõ privados.</s>
@@ -5546,9 +5556,10 @@
 							<s>As glandulas dizem-se: peciolares (petiolares), quando se daõ no
 								peciolo da <term>folha</term> (o martyrio e noveleiro); estipulares
 								(stipulares), quando se daõ nas estipulas; bracteares (bracteares),
-								se nas bracteas; pedunculares (pedunculares), se nos pedunculos;
-								capillares (capillares), se nascem dos pelos, ou estaõ unidas a
-								elles <note>
+								se nas <term lemma="bráctea" norm="brácteas" msd="plural"
+									>bracteas</term>; pedunculares (pedunculares), se nos
+								pedunculos; capillares (capillares), se nascem dos pelos, ou estaõ
+								unidas a elles <note>
 									<s>Ellas taõbem se achaõ nos estames e <term lemma="antera"
 											norm="anteras" msd="plural">antheras</term>; e nesta
 										circumstancia podiaõ ser chamadas: estaminares, e
@@ -5656,7 +5667,8 @@
 						<p>
 							<s>Pegamaços (hami) saõ arestas, praganas curtas, ou sedas simplez, que
 								tem hum so gancho na ponta, ou que terminaõ em huma ponta aguda e
-								curvada (o fructo da agrimonia, o calyz da bardana).</s>
+								curvada (o fructo da agrimonia, o <term lemma="cálice">calyz</term>
+								da bardana).</s>
 							<s>Algumas vezes as sedas ou arestas terminaõ em duas, em tres, ou mais
 								pontas curvadas, e susceptiveis de se pegarem aos vestidos como os
 								pegamaços; estes ganchos ou denticulos curvados saõ por alguns
@@ -5724,8 +5736,8 @@
 								parte donde nascem; daõ-se no tronco e ramos, como se vê no
 								pirliteiro, restaboi, limoeiro, e abrunheiro bravo; nas <term
 									lemma="folha" msd="plural">folhas</term>, como no zimbro,
-								alcaxofas, e cardos; no calyz, como no cardo sancto; nos fructos,
-								como no abrolho, e datura ferox.</s>
+								alcaxofas, e cardos; no <term lemma="cálice">calyz</term>, como no
+								cardo sancto; nos fructos, como no abrolho, e datura ferox.</s>
 						</p>
 						<p>Quando os aculeos, ou ainda mesmo os espinhos do lenho se dividem na base
 							ou acima della em duas ou tres pontas, daõlhes o nome de garfins
@@ -5738,23 +5750,26 @@
 							<s>Os espinhos dizem-se ser: terminaes (terminales), quando se achaõ nas
 								pontas dos ramos, <term lemma="folha" msd="plural">folhas</term>,
 								&amp;c.; axillares (axillares), se nascem nas axillas; calycinos
-								(calicinae), quando se daõ no calyz, nos seus foliolos ou lacinias;
-								folheares (foliares), se nascem nas <term lemma="folha" msd="plural"
-									>folhas</term>; simplices (simplices), se naõ saõ divididos;
-								ramosos ou divididos (divisae, s. ramosae), se acazo se ramificaõ,
-								principalmente na sua parte superior.</s>
+								(calicinae), quando se daõ no <term lemma="cálice">calyz</term>, nos
+								seus foliolos ou lacinias; folheares (foliares), se nascem nas <term
+									lemma="folha" msd="plural">folhas</term>; simplices (simplices),
+								se naõ saõ divididos; ramosos ou divididos (divisae, s. ramosae), se
+								acazo se ramificaõ, principalmente na sua parte superior.</s>
 						</p>
 					</div>
 					<pb n="95"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0175_95_t24-C-R0120.jpg"/>
 					<div type="subchapter">
-						<head>Bractéas.</head>
-						<p><s>As bractéas (bracteae); saõ pequenas <term lemma="folha" msd="plural"
+						<head><term lemma="bráctea" norm="Brácteas" msd="plural"
+							>Bractéas</term>.</head>
+						<p><s>As <term lemma="bráctea" norm="brácteas" msd="plural">bractéas</term>
+								(bracteae); saõ pequenas <term lemma="folha" msd="plural"
 									>folhas</term>, proximas ás flores, differentes das mais <term
 									lemma="folha" msd="plural">folhas</term> da planta pela sua
 								figura e as vezes taõbem pela sua cor (o til ou tilha, o rosmaninho,
 								a coroa imperial, &amp;c.).</s> Algumas flores ou pedunculos saõ
-							guarnecidos de huma so bractéa, outros saõ acompanhados de muitas.</p>
+							guarnecidos de huma so <term lemma="bráctea">bractéa</term>, outros saõ
+							acompanhados de muitas.</p>
 						<p>Dizem-se: grandes ou pequenas (magna aut parvae), segundo saõ maiores ou
 							menores do que as flores ou seus pedunculos.</p>
 						<p>Còradas (coloratae), se tem huma cor differente da verde (salvia
@@ -5767,12 +5782,14 @@
 						<p>Comosas (comosae, s. coma) quando saõ bastas, numerosas, e estaõ situadas
 							acima das flores na ponta do tronco ou ramos (acoroa imperial, os
 							ananazes, a alfazema, rosmaninho, salvia horminum, e fritillaria regia).
-							Nalgumas destas plantas as bractéas saõ bastantemente grandes e
+							Nalgumas destas plantas as <term lemma="bráctea" norm="brácteas"
+								msd="plural">bractéas</term> saõ bastantemente grandes e
 							copadas.</p>
 						<p>
-							<s>As bractéas tem ainda muitas outras denominaçoẽs em tudo semelhantes
-								ás das <term lemma="folha" msd="plural">folhas</term>, com as quaes
-									<pb n="96"
+							<s>As <term lemma="bráctea" norm="brácteas" msd="plural">bractéas</term>
+								tem ainda muitas outras denominaçoẽs em tudo semelhantes ás das
+									<term lemma="folha" msd="plural">folhas</term>, com as quaes <pb
+									n="96"
 									facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0176_96_t24-C-R0120.jpg"
 								/> tem huma intima analogia, e porisso as omitto aqui.</s>
 						</p>
@@ -5933,16 +5950,16 @@
 					<p>Filiformes (filiformes), saõ delgados e de igual grossura, semelhantes a hum
 						fio de linhas ordinario.</p>
 					<p>Adelgaçados (attenuati, s. acuminati), quando se adelgaçaõ, para a ponta.</p>
-					<p>Engrossados (incrassati), quando engrossaõ para a ponta ou junto do caliz da
-						flor: se junto da flor engrossaõ á maneira de huma massa, dizem-se:
-						aclavados (clavati).</p>
+					<p>Engrossados (incrassati), quando engrossaõ para a ponta ou junto do <term
+							lemma="cálice">caliz</term> da flor: se junto da flor engrossaõ á
+						maneira de huma massa, dizem-se: aclavados (clavati).</p>
 					<p>Articulados (articulati), se tem huma junta ou ainda mais geniculados ou
 						nodosos (geniculati), se as juntas saõ tumidas á maneira de nòs.</p>
 					<p>
-						<s>Bracteados (bracteati), se saõ guarnecidos de bracteas: folhosos
-							(foliati), se saõ guarnecidos de <term lemma="folha" msd="plural"
-								>folhas</term>: escamosos (squamosi), se tem escamas: segundo as <pb
-								n="102"
+						<s>Bracteados (bracteati), se saõ guarnecidos de <term lemma="bráctea"
+								norm="brácteas" msd="plural">bracteas</term>: folhosos (foliati), se
+							saõ guarnecidos de <term lemma="folha" msd="plural">folhas</term>:
+							escamosos (squamosi), se tem escamas: segundo as <pb n="102"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0182_102_t24-C-R0120.jpg"
 							/> producçoẽs que os guarnecem dizem-se ainda: espinhosos, aculeados,
 							escabrosos, hispidos, cerdosos, peludos, felpudos, lanudos,
@@ -5957,8 +5974,9 @@
 					</p>
 					<p>
 						<s>Nûs (nudi), se naõ tem <term lemma="folha" msd="plural">folhas</term>,
-							bracteas, escamas, membranas, nem pelos alguns: inermes (inermes), se
-							naõ tem sorte alguma de armas ou espinhos.</s>
+								<term lemma="bráctea" norm="brácteas" msd="plural">bracteas</term>,
+							escamas, membranas, nem pelos alguns: inermes (inermes), se naõ tem
+							sorte alguma de armas ou espinhos.</s>
 					</p>
 					<p>Alguns os denominaõ ainda: estereis (steriles); se sostem flores abortivas,
 						que naõ daõ fructo: ferteis ou fecundos (fertiles), se estas daõ fructo.</p>
@@ -6015,12 +6033,13 @@
 							marroyo branco, e hortelaan.</s> O verticillo diz-se: rente (sessilis),
 						se as flores que o formaõ naõ tem pedunculo; pedunculado (pedunculatus), se
 						ellas saõ pedunculadas: involucrado (involucratus), se tem hum involucro:
-						bracteado (bracteatus), se he acompanhado de alguma bractea: nu (nudas), se
-						naõ tem involucro nem bractea alguma: basto (confertus), se os flosculos que
-						o compoem estaõ, approximados densamente: raleado (distans), se os seus
-						flosculos estaõ hum tanto distantes entre si: semicircular (dimidiatus),
-						quando, os seus flosculos naõ formaõ á roda do tronco hum annel completo,
-						mas somente metade delle.</p>
+						bracteado (bracteatus), se he acompanhado de alguma <term lemma="bráctea"
+							>bractea</term>: nu (nudas), se naõ tem involucro nem <term
+							lemma="bráctea">bractea</term> alguma: basto (confertus), se os
+						flosculos que o compoem estaõ, approximados densamente: raleado (distans),
+						se os seus flosculos estaõ hum tanto distantes entre si: semicircular
+						(dimidiatus), quando, os seus flosculos naõ formaõ á roda do tronco hum
+						annel completo, mas somente metade delle.</p>
 					<p>Flor capitosa (capitatus), he a que representa huma especie de cabeça, ou que
 						se acha conglomerada em cabeça (capitulum); esta consta de muitos flosculos
 						densamente conchegados em huma forma mais ou menos globular. <s>A cabeça de
@@ -6030,8 +6049,10 @@
 							cabeça, ou huma forma hemispherica, sendo bojuda de huma banda e plana
 							da outra: folhosa (foliosum), se he acompanhada de <term lemma="folha"
 								msd="plural">folhas</term>: bracteada (bracteatum), se he guarnecida
-							de bracteas: nua (nudum), se naõ tem <term lemma="folha" msd="plural"
-								>folhas</term> nem bracteas.</s></p>
+							de <term lemma="bráctea" norm="brácteas" msd="plural">bracteas</term>:
+							nua (nudum), se naõ tem <term lemma="folha" msd="plural">folhas</term>
+							nem <term lemma="bráctea" norm="brácteas" msd="plural"
+							>bracteas</term>.</s></p>
 					<pb n="105"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0185_105_t24-C-R0120.jpg"/>
 					<p>Flor espigosa (spicatus), consta de muitos flosculos dispostos em espiga. A
@@ -6041,21 +6062,22 @@
 						(rachis), como se vê na tanchagem, cevada, trigo, milho, e muitos outros
 						grames. A flor casulosa (flos glumosus), he verdadeiramente huma especie de
 						flor espigosa propria das gramineas, e he assim denominado pela razaõ de ser
-						hum casulo o caliz commum ou particular dos seus flosculos. A espiga-diz se
-						ser: simplez (simplex), quando consta de flores solitarias, e o seu
-						receptaculo commum naõ se divide em pedunculos nem receptaculos menores, que
-						formem pequenas espigas, (a tanchagem). Composta (composita), quando o
-						receptaculo commum se divide e lança pequenas espiguettas (spiculae, s.
-						spicillae), como se vê no joyo. Conglomerada (glomerata), quando he composta
-						ou recomposta, e que as suas espiguettas estaõ muito apertadas e variamente
-						amontoadas (a alpista, e dactylis glomerata). Disticada (disticha), se os
-						seus flosculos ou espiguettas estaõ em dois renques oppostos (o bolebole).
-						Segundina (secunda), quando os seus flosculos estaõ apegados, e virados
-						todos para shuma so e mesma banda (nardus stricta). Ovada (ovata), se tem
-						huma figura ovada (o bolebole). Bojuda (ventricosa), se he tumida no meyo, e
-						estreita nas duas extremidades superior e inferior. Cylindrica (cylindrica),
-						se tem a forma roliça em todo o seu comprimento. Interrompida (interrupta),
-						quando o pedunculo commum ou receptaculo commum tem <pb n="106"
+						hum casulo o <term lemma="cálice">caliz</term> commum ou particular dos seus
+						flosculos. A espiga-diz se ser: simplez (simplex), quando consta de flores
+						solitarias, e o seu receptaculo commum naõ se divide em pedunculos nem
+						receptaculos menores, que formem pequenas espigas, (a tanchagem). Composta
+						(composita), quando o receptaculo commum se divide e lança pequenas
+						espiguettas (spiculae, s. spicillae), como se vê no joyo. Conglomerada
+						(glomerata), quando he composta ou recomposta, e que as suas espiguettas
+						estaõ muito apertadas e variamente amontoadas (a alpista, e dactylis
+						glomerata). Disticada (disticha), se os seus flosculos ou espiguettas estaõ
+						em dois renques oppostos (o bolebole). Segundina (secunda), quando os seus
+						flosculos estaõ apegados, e virados todos para shuma so e mesma banda
+						(nardus stricta). Ovada (ovata), se tem huma figura ovada (o bolebole).
+						Bojuda (ventricosa), se he tumida no meyo, e estreita nas duas extremidades
+						superior e inferior. Cylindrica (cylindrica), se tem a forma roliça em todo
+						o seu comprimento. Interrompida (interrupta), quando o pedunculo commum ou
+						receptaculo commum tem <pb n="106"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0186_106_t24-C-R0120.jpg"
 						/>alternativamente alguns intervallos calvos de flosculos ou espiguettas (a
 						alfazema). <s>Imbricada (imbricata), se os seus flosculos saõ imbricados
@@ -6067,10 +6089,11 @@
 						longitudinalmente he calva, e do outro toda guarnecida de flosculos ou
 						espiguettas. Linear (linearis) he comprimida e de igual largura
 						longitudinalmente, Folhosa (foliacea), se he guarnecida de alguns fofiolos
-						dispersos. Comosa (comosa), se he terminada por bracteas comosas (o
-						rosmaninho). Revolutosa (revoluta, s. scorpioides), se tem a ponta enroscada
-						como cauda de alacráo (myosotis scorpioides, heliotro vium europaeum, e
-						muitas outras asperifolias). <s>
+						dispersos. Comosa (comosa), se he terminada por <term lemma="bráctea"
+							norm="brácteas" msd="plural">bracteas</term> comosas (o rosmaninho).
+						Revolutosa (revoluta, s. scorpioides), se tem a ponta enroscada como cauda
+						de alacráo (myosotis scorpioides, heliotro vium europaeum, e muitas outras
+						asperifolias). <s>
 							<term lemma="digitado" msd="feminino singular">Digitada</term>
 							(digitata), se juntamente com outras do mesmo comprimento se acha no
 							topo de hum pedunculo commum como em umbrella ou figurando dedos de aves
@@ -6125,7 +6148,9 @@
 						compridos (syringa vulgarìs, aesculus hippocastanum, tussilago petasites).
 							<s>O thyrso diz-se ser o folhoso (foliatus), se he acompanhado de <term
 								lemma="folha" msd="plural">folhas</term>; bracteado (bracteatus), se
-							tem bracteas; nu (nudus), se naõ tem foliolos nem bracteas.</s></p>
+							tem <term lemma="bráctea" norm="brácteas" msd="plural">bracteas</term>;
+							nu (nudus), se naõ tem foliolos nem <term lemma="bráctea"
+								norm="brácteas" msd="plural">bracteas</term>.</s></p>
 					<p>Flores racimosas (flores racemosi), saõ disposta em racimo. O racimo ou cacho
 						(racemus), he huma disposiçaõ de flores com pedunculos curtos, penden tes, e
 						ordinariamente apegados a hum axe ou pedunculo commum (a videira, azereiro,
@@ -6230,8 +6255,10 @@
 						cymeira diz-se: ramosa (ramosa), quando os seus pedunculos se ramificaõ
 						muito; tripartida (tripartita, trifida), se consta de tres pedunculos
 						primarios (sambucus ebulus); de cinco pedunculos primarios (quinquepartita)
-						no sabugueiro; bracteada (bracteata), se he guarnecida de bracteas; nua
-						(nuda) se naõ tem bracteas nem ivolucro algum, como na cerejeira brava.</p>
+						no sabugueiro; bracteada (bracteata), se he guarnecida de <term
+							lemma="bráctea" norm="brácteas" msd="plural">bracteas</term>; nua (nuda)
+						se naõ tem <term lemma="bráctea" norm="brácteas" msd="plural"
+							>bracteas</term> nem ivolucro algum, como na cerejeira brava.</p>
 				</div>
 				<div type="chapter" n="VIII">
 					<head>CAPITULO VIII. Do tempo da florecencia, e véla das flores.</head>
@@ -6347,108 +6374,125 @@
 									semente</term>.</s>
 						</note>.</s> O fructo he huma parte da fructificaçaõ que succede á flor, e
 					consta ao menos de huma semente, na qual consiste a sua essensia. As partes da
-					flor segundo Linneo saõ o calyz, corolla, nectario, estame, e pistillo; as do
-					fructo saõ o pericarpo, semente, e receptaculo. Eu tractarei de todas estas
-					partes segundo a ordem que seguio o predicto Botânico, e começarei prezentemente
-					pelas que saõ relativas á flor.</p>
+					flor segundo Linneo saõ o <term lemma="cálice">calyz</term>, corolla, nectario,
+					estame, e pistillo; as do fructo saõ o pericarpo, semente, e receptaculo. Eu
+					tractarei de todas estas partes segundo a ordem que seguio o predicto Botânico,
+					e começarei prezentemente pelas que saõ relativas á flor.</p>
 				<pb n="118"
 					facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0198_118_t24-C-R0120.jpg"/>
 				<div type="chapter" n="IX">
-					<head>CAPITULO IX. Do Calyz e Corolla em geral.</head>
-					<p>O CALYZ e corolla saõ os tegumentos dos organos sexuaes, ou para me explicar
-						segundo o modo de alguns sexualistas, o calyz he o thalamo nupcial das
-						flores, e a corolla a rica armaçaõ delle. Cesalpino pensava que o calyz era
-						hum prolongamento da casca e a corlla huma prodcçaõ do livrilho ou
-						alburno.</p>
+					<head>CAPITULO IX. Do <term lemma="cálice">Calyz</term> e Corolla em
+						geral.</head>
+					<p>O <term lemma="cálice" norm="CÁLICE">CALYZ</term> e corolla saõ os tegumentos
+						dos organos sexuaes, ou para me explicar segundo o modo de alguns
+						sexualistas, o <term lemma="cálice">calyz</term> he o thalamo nupcial das
+						flores, e a corolla a rica armaçaõ delle. Cesalpino pensava que o <term
+							lemma="cálice">calyz</term> era hum prolongamento da casca e a corlla
+						huma prodcçaõ do livrilho ou alburno.</p>
 					<p>
 						<s>As flores nem sempre saõ acompanhadas destes tegumentos; quando huma flor
-							tem calyz e corolla hé chamada completa (flos completus) e incompleta
-							(incompletus) se lhe falta algum dos dictos <note>
+							tem <term lemma="cálice">calyz</term> e corolla hé chamada completa
+							(flos completus) e incompleta (incompletus) se lhe falta algum dos
+							dictos <note>
 								<s>Alguns daõ taõbem o nome de perfeita (perfectus) á completa e o
 									de imperfeita (imperfectus) á incompleta; porem o melhor sera
 									reservar o nome de flor imperfeita para as cryptogamicas, e o de
 									perfeita para as das outras classes.</s>
-							</note> dois tegumentos; descalycina (acalyx), senaõ tem calyz;
-							descorollada ou despetaleada (apetalus), senão tem corolla; nua (nudus),
-							senaõ tem calyz nem corolla; e as vezes mesmo lhe daõ este nome quando
-							he descalycina, tendo corolla sem calyz.</s>
+							</note> dois tegumentos; descalycina (acalyx), senaõ tem <term
+								lemma="cálice">calyz</term>; descorollada ou despetaleada
+							(apetalus), senão tem corolla; nua (nudus), senaõ tem <term
+								lemma="cálice">calyz</term> nem corolla; e as vezes mesmo lhe daõ
+							este nome quando he descalycina, tendo corolla sem <term lemma="cálice"
+								>calyz</term>.</s>
 					</p>
-					<p>A natureza naõ poz limites certos entre o calyz e corolla, e daqui procede
-						que os Botanicos tem differentes opinioes relativamente á denominaçaõ destes
-						tegumentos; huns querem que o tegumento immediato aos organos sexuaes deva
-						ser chamado corolla em todas as circumstancias, e por conseguinte todas as
-						vezes que a flor tem hum so tegumento <pb n="119"
+					<p>A natureza naõ poz limites certos entre o <term lemma="cálice">calyz</term> e
+						corolla, e daqui procede que os Botanicos tem differentes opinioes
+						relativamente á denominaçaõ destes tegumentos; huns querem que o tegumento
+						immediato aos organos sexuaes deva ser chamado corolla em todas as
+						circumstancias, e por conseguinte todas as vezes que a flor tem hum so
+						tegumento <pb n="119"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0199_119_t24-C-R0120.jpg"
 						/> daõ-lhe o nome de corolla; outros seguem em parte este parecer, e em
 						parte a cor, á qual daõ a preferencia. <s>Linneo vendo que algumas corollas
-							se tornaõ verdes, e alguns calyces saõ bastantemente corados,
-							estabeleceo a differença entre o calyz, e corolla na posiçaõ dos
-							estames, dizendo que estes nas flores descalycinas e muitas completas
-							saõ alternos com as petalas ou lacinias da corolla ficando situados
-							entre as suas aberturas, que nas descorolladas pelo contrario saõ
-							fronteiros aos foliolos ou segmentos do calyz, ficando encostados ou
-							postos defronte delles, como se pode observar no cardo penteador,
-							cerejeira brava, coentro, sabugueiro, consolda maior, alchemilla,
-							potamogeton, e muitas outras plantas das classes Terandria e Pentrandria <note>
+							se tornaõ verdes, e alguns <term lemma="cálice" norm="cálices"
+								msd="plural">calyces</term> saõ bastantemente corados, estabeleceo a
+							differença entre o <term lemma="cálice">calyz</term>, e corolla na
+							posiçaõ dos estames, dizendo que estes nas flores descalycinas e muitas
+							completas saõ alternos com as petalas ou lacinias da corolla ficando
+							situados entre as suas aberturas, que nas descorolladas pelo contrario
+							saõ fronteiros aos foliolos ou segmentos do <term lemma="cálice"
+								>calyz</term>, ficando encostados ou postos defronte delles, como se
+							pode observar no cardo penteador, cerejeira brava, coentro, sabugueiro,
+							consolda maior, alchemilla, potamogeton, e muitas outras plantas das
+							classes Terandria e Pentrandria <note>
 								<s>Sem embargo destas condiçoẽs naõ deixa as vezes de haver
 									difficuldade na decisaõ do nome destes tegumentos, e Linneo o dà
-									a entender quando diz: calyz a naõ chamar-lhe corolla; corolla a
-									naõ charmar lhe calyz; corolla calycina; calyz acorollado: cujos
-									exemplos se vem no loireiro, garidella, commelina, monotropa,
-									tetragonia, &amp;c.</s>
+									a entender quando diz: <term lemma="cálice">calyz</term> a naõ
+									chamar-lhe corolla; corolla a naõ charmar lhe <term
+										lemma="cálice">calyz</term>; corolla calycina; <term
+										lemma="cálice">calyz</term> acorollado: cujos exemplos se
+									vem no loireiro, garidella, commelina, monotropa, tetragonia,
+									&amp;c.</s>
 							</note>.</s></p>
 				</div>
 				<div type="chapter" n="X">
-					<head>CAPITULO X. Do Calyz.</head>
-					<p>O CALYZ (calyx), no maior numero de flores heo tegumento externo dos organos
-						sexuaes, de cor verde ou menos corado do que a corolla (o jasmim, cravo, e
-						goivo). <s>Deraõ-lhe este nome por se assemelhar n'algumas flores a hum
-							copo, como se vê nas labiadas, leguminosas e muitas outras.</s></p>
-					<p><s>Linneo admittio sette especies de calyz, a saber, <pb n="120"
+					<head>CAPITULO X. Do <term lemma="cálice">Calyz</term>.</head>
+					<p>O <term lemma="cálice" norm="CÁLICE">CALYZ</term> (calyx), no maior numero de
+						flores heo tegumento externo dos organos sexuaes, de cor verde ou menos
+						corado do que a corolla (o jasmim, cravo, e goivo). <s>Deraõ-lhe este nome
+							por se assemelhar n'algumas flores a hum copo, como se vê nas labiadas,
+							leguminosas e muitas outras.</s></p>
+					<p><s>Linneo admittio sette especies de <term lemma="cálice">calyz</term>, a
+							saber, <pb n="120"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0200_120_t24-C-R0120.jpg"
 							/> perianthio, involûcro, casûlo, amentilho, espatha, trunfa, e
-							volva.</s> Antigamente so o primeiro tinha o nome de calyz, e com
-						effeito os mais mereciaõ antes ser chamados calyces bastardos (calyces
-						spurii).</p>
-					<p><s>O PERIANTHIO (perianthium) he huma especie de calyz immediatamente
-							contiguo à corolla ou aos organos sexuaes (o alecrim, cravo, <term
-								lemma="árvore">arvore</term> do paraiso, &amp;c.)</s> O perianthio
-						pode ser taõbem contiguo a outro (como na malva), a huma corolla ou a
-						muitas, como no gyrasol; quando elle recobre muitos flosculos, estes ou saõ
-						rentes ou quasi rentes, Nas flores casulosas e amentilhosas o calyz
-						ordinariamente naõ he circular; a estructura escamosa, paleacea e outras
-						circumstancias relativas à sua forma poderaõ contribuir a destinguilo do
-						perianthio. <s>Os foliolos do perianthio quando muito so aturaõ athe à
-							madureza do fructo, e isto poderà contribuir a fazelos destinguir das
-							bracteas, que ordinariamente duraõ mais tempo, e as vezes mesmo se
-							convertem em <term lemma="folha" msd="plural">folhas</term>.</s> Nas
-						flores compostas os foliolos saõ ordinariamente chamados escamas (squamae),
-						principalmente se saõ imbricados, como nas perpetuas. Se na flor naõ ha
-						perianthio, como na tulipa e açucena, daõ lhe o nome de nullo (nullum).</p>
+							volva.</s> Antigamente so o primeiro tinha o nome de <term
+							lemma="cálice">calyz</term>, e com effeito os mais mereciaõ antes ser
+						chamados <term lemma="cálice" norm="cálices" msd="plural">calyces</term>
+						bastardos (calyces spurii).</p>
+					<p><s>O PERIANTHIO (perianthium) he huma especie de <term lemma="cálice"
+								>calyz</term> immediatamente contiguo à corolla ou aos organos
+							sexuaes (o alecrim, cravo, <term lemma="árvore">arvore</term> do
+							paraiso, &amp;c.)</s> O perianthio pode ser taõbem contiguo a outro
+						(como na malva), a huma corolla ou a muitas, como no gyrasol; quando elle
+						recobre muitos flosculos, estes ou saõ rentes ou quasi rentes, Nas flores
+						casulosas e amentilhosas o <term lemma="cálice">calyz</term> ordinariamente
+						naõ he circular; a estructura escamosa, paleacea e outras circumstancias
+						relativas à sua forma poderaõ contribuir a destinguilo do perianthio. <s>Os
+							foliolos do perianthio quando muito so aturaõ athe à madureza do fructo,
+							e isto poderà contribuir a fazelos destinguir das <term lemma="bráctea"
+								norm="brácteas" msd="plural">bracteas</term>, que ordinariamente
+							duraõ mais tempo, e as vezes mesmo se convertem em <term lemma="folha"
+								msd="plural">folhas</term>.</s> Nas flores compostas os foliolos saõ
+						ordinariamente chamados escamas (squamae), principalmente se saõ imbricados,
+						como nas perpetuas. Se na flor naõ ha perianthio, como na tulipa e açucena,
+						daõ lhe o nome de nullo (nullum).</p>
 					<p>Diz-se: perianthio da fructificaçaõ (perianthium fructificationis), quando
 						contem ou enserra os estames e o germe; nesta circumstancia sempre esta
 						immediatamente sottoposto ao germe (a sylva, peonia, morangueiro, masva,
 						jasmineiro craveiro, faveira, &amp;e.) <s>Perianthio da flor (perianthium
 							floris), se em si contem os estames sem germe <note>
-								<s>Este calyz tem o seu ponto de apego sobre o germe ou fructo
-									tenrinho, no cazo que o haja; os calyces das flores masculas
-									aindaque naõ saõ apegados ao topo do germe (porque o naõ ha),
-									devem contudo ser considerados como perianthios da flor, por
-									conterem estames e naõ germe algum, como saõ os da amoreira,
-									mercurial, amaranthos, &amp;c.</s>
+								<s>Este <term lemma="cálice">calyz</term> tem o seu ponto de apego
+									sobre o germe ou fructo tenrinho, no cazo que o haja; os <term
+										lemma="cálice" norm="cálices" msd="plural">calyces</term>
+									das flores masculas aindaque naõ saõ apegados ao topo do germe
+									(porque o naõ ha), devem contudo ser considerados como
+									perianthios da flor, por conterem estames e naõ germe algum,
+									como saõ os da amoreira, mercurial, amaranthos, &amp;c.</s>
 							</note> (a murta, <pb n="121"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0201_121_t24-C-R0120.jpg"
 							/> morina, linnaea, campanula, romeira, pereira, &amp;c.)</s>
 						<s>Perianthio do fructo (perianthium fructûs), contem o germe sem estames <note>
-								<s>O calyz neste cazo esta sottoposto ao germe; às vezes ha huma
-									corolla sobreposta ou outro calyz sobreposto ao germe, o que naõ
+								<s>O <term lemma="cálice">calyz</term> neste cazo esta sottoposto ao
+									germe; às vezes ha huma corolla sobreposta ou outro <term
+										lemma="cálice">calyz</term> sobreposto ao germe, o que naõ
 									tem lugar no cazo do perianthio da fructificaçaõ, em que o germe
 									naõ fica situado immediatamente debaxo da corolla, nem entre o
-									calyz e corolla, como succede no prezente; no perianthio da
-									fructificaçaõ os estames naõ estaõ apegados ao germe, mas sim ao
-									receptaculo que Sostem a base do germe, ou ao dicto perianthio,
-									ou a huma corolla ou nectario que naõ tem o ponto de apego no
-									germe.</s>
+										<term lemma="cálice">calyz</term> e corolla, como succede no
+									prezente; no perianthio da fructificaçaõ os estames naõ estaõ
+									apegados ao germe, mas sim ao receptaculo que Sostem a base do
+									germe, ou ao dicto perianthio, ou a huma corolla ou nectario que
+									naõ tem o ponto de apego no germe.</s>
 								<s>Ha flores que tem o periantio do fructo diverso do da flor como a
 									Linnæa e Morina, ha outras que tem perianthio do fructo e naõ da
 									flor, como as femininas da aveleira, poterium, &amp;c, outras
@@ -6469,8 +6513,8 @@
 						<s>Commum (commune) <note>
 								<s>As vezes das lhe taõbem o nome de composto ou universal
 									(compositum, s. universale).</s>
-								<s>Segundo Linneo este calyz pode ser dobrado como se vê no
-									micropus.</s>
+								<s>Segundo Linneo este <term lemma="cálice">calyz</term> pode ser
+									dobrado como se vê no micropus.</s>
 							</note>, he o que inclue muitos flosculos congregados (a saudade, e o
 							gyrasol).</s>
 					</p>
@@ -6487,22 +6531,24 @@
 					<p>
 						<s>Calyculado (auctum, s. calyculatum), quando tem na sua base huma serie de
 							escamas ou foliolos curtos, differentes delle, e que constituem quasi
-							hum segundo calyz menor ou calyculo (calyculus) <note>Da-se taõbem o
-								nome de calyculos a alguns perianthios parciaes, como aos da
-								saudade, pela razaõ de serem pequenos ou menores do que o
-								commum.</note> como se ve no cravo, dente de leaõ, tásneira,
-							tasneirinha, crepis, coreopsis, &amp;c.</s>
+							hum segundo <term lemma="cálice">calyz</term> menor ou calyculo
+							(calyculus) <note>Da-se taõbem o nome de calyculos a alguns perianthios
+								parciaes, como aos da saudade, pela razaõ de serem pequenos ou
+								menores do que o commum.</note> como se ve no cravo, dente de leaõ,
+							tásneira, tasneirinha, crepis, coreopsis, &amp;c.</s>
 					</p>
 					<p>Unico (unicum), quando a flor tem hum so, como v. g. o alecrim: simplez
 						(simplex) he unico, naõ calyculado, nem dobrado nem triplicado (sida). Este
 						termo parece ser synonymo do precedente; Linneo contudo deo-lhe mais extensa
-						significaçaõ, e o applicou ainda para denotar hum calyz quasi inteiro, de
-						foliolos naõ imbricados, quasi do mesmo comprimento, ou adunados na base,
-						como o da tagetes, bellis, e o calyz interior da crepis.</p>
+						significaçaõ, e o applicou ainda para denotar hum <term lemma="cálice"
+							>calyz</term> quasi inteiro, de foliolos naõ imbricados, quasi do mesmo
+						comprimento, ou adunados na base, como o da tagetes, bellis, e o <term
+							lemma="cálice">calyz</term> interior da crepis.</p>
 					<p>
 						<s>Dobrado ou triplicado (duplex, geminum, triplex), quando <note>Estes
-								calyces saõ ordinariamente differentes no numero, e forma de suas
-								partes; encontraõ se tanto nas flores simplez, como nas compostas e
+									<term lemma="cálice" norm="cálices" msd="plural">calyces</term>
+								saõ ordinariamente differentes no numero, e forma de suas partes;
+								encontraõ se tanto nas flores simplez, como nas compostas e
 								aggregadas; as vezes estaõ dois approximados, ou apegados hum ao
 								outro debaxo do germe, ou no topo outras vezes saõ remotos, estando
 								hum na base outro no topo do germe, outras vezes emfim hum commum na
@@ -6589,12 +6635,15 @@
 					<p>Turbinado (turbinatum), se he verticalmente conico tendo a forma de hum piaõ
 						bailando (moluccella)</p>
 					<p>
-						<s>Involucro (involucrum), he huma especie de calyz remoto da flor <note>He
-								hum calyz bastardo, proprio naõ so das flores umbrelladas mas de
-								muitas outras; naõ se rasga ao alto como as espathas, e o estar mais
-								ou menos distante da flor contribue a fazelo distinguir das outras
-								especies de calyz; ordinariamente parece ser hum composto de
-								bracteas.</note>, como se ve na cenoira, bisnaga, e pulsatilla.</s>
+						<s>Involucro (involucrum), he huma especie de <term lemma="cálice"
+								>calyz</term> remoto da flor <note>He hum <term lemma="cálice"
+									>calyz</term> bastardo, proprio naõ so das flores umbrelladas
+								mas de muitas outras; naõ se rasga ao alto como as espathas, e o
+								estar mais ou menos distante da flor contribue a fazelo distinguir
+								das outras especies de <term lemma="cálice">calyz</term>;
+								ordinariamente parece ser hum composto de <term lemma="bráctea"
+									norm="brácteas" msd="plural">bracteas</term>.</note>, como se ve
+							na cenoira, bisnaga, e pulsatilla.</s>
 					</p>
 					<p>Diz-se ser; universal (universale), se esta situado na, base dos rayos de
 						huma umbrella univeroal (a cenoira, bisnaga, e cardo, corredor): parcial
@@ -6614,14 +6663,14 @@
 						(di-tri-tetra-penta-hexaphyllum, etc.) como se ve nas euphorbias e
 						umbrelladas.</p>
 					<p>
-						<s>Casulo (gluma), he huma especie de calyz <note>O nome de casûlo he taõbem
-								dado a corolla das gramas; mas aqui so se deve entender o casulo
-								externo, porque do interno fallarei quando tractar da corolla.
-								Alguns para os distinguir chamaõ-lhes casulo calycino, casulo
-								corollino; talvez melhor fora dar somente ao calyz o nome de
-								casulo.</note> paleaceo ou valvuloso, apegado lateralmente a hum
-							carolim, e proprio das gramas (o joyo, trigo, cevada, milho, avea,
-							&amp;c.)</s>
+						<s>Casulo (gluma), he huma especie de <term lemma="cálice">calyz</term>
+							<note>O nome de casûlo he taõbem dado a corolla das gramas; mas aqui so
+								se deve entender o casulo externo, porque do interno fallarei quando
+								tractar da corolla. Alguns para os distinguir chamaõ-lhes casulo
+								calycino, casulo corollino; talvez melhor fora dar somente ao <term
+									lemma="cálice">calyz</term> o nome de casulo.</note> paleaceo ou
+							valvuloso, apegado lateralmente a hum carolim, e proprio das gramas (o
+							joyo, trigo, cevada, milho, avea, &amp;c.)</s>
 					</p>
 					<p>As escamas ou folhiços paleaceos, de que consta o casûlo, saõ chamados
 						valvulas (valvulae, s. valvae); ellas saõ de varia forma e estructura,
@@ -6668,22 +6717,24 @@
 							corda, de que temos exemplo na avea, balanco, &amp;c: articulada ou
 							geniculada (articulata, s. geniculata), se tem alguma articulaçaõ ou nó
 							(stipa).</s></p>
-					<p>Amentilho (amentum), segundo Linneo he hum calyz formado do receptaculo
-						commum ou carolim filiforme, guarnecido de escamas paleaceas, e originario
-						de hum gomo. <s>Eu ja fallei do amentilho como huma especie de espiga
-								<note>O amentilho rigorosamente he huma especie de espiga simplez,
-								que consta de flores unisexuaes; o nome de calyz sò pode competir às
-								suas escamas, mas algumas vezes o amentilho he nu e sem escamas, e
-								neste cazo seremos obrigados a chamar calyz a hum receptaculo, o que
-								me parece assaz improprio, a naõ querer chamar amentilho somente às
-								escamas do gomo.</note>, e me remetto ao dicto lugar.</s></p>
+					<p>Amentilho (amentum), segundo Linneo he hum <term lemma="cálice">calyz</term>
+						formado do receptaculo commum ou carolim filiforme, guarnecido de escamas
+						paleaceas, e originario de hum gomo. <s>Eu ja fallei do amentilho como huma
+							especie de espiga <note>O amentilho rigorosamente he huma especie de
+								espiga simplez, que consta de flores unisexuaes; o nome de <term
+									lemma="cálice">calyz</term> sò pode competir às suas escamas,
+								mas algumas vezes o amentilho he nu e sem escamas, e neste cazo
+								seremos obrigados a chamar <term lemma="cálice">calyz</term> a hum
+								receptaculo, o que me parece assaz improprio, a naõ querer chamar
+								amentilho somente às escamas do gomo.</note>, e me remetto ao dicto
+							lugar.</s></p>
 					<p>
-						<s>Espatha (spatha), he huma especie de calyz que se rasga ao alto
-							indeterminadamente; de ordinario he <term lemma="membranoso"
-								msd="feminino singular">membranosa</term>, rugoza, arida, e contem
-							flores pedunculadas, ou flores espadiceas, ou ainda mesmo huma so
-							corolla de tubo longo, (a cebola, alho narcizo, pè de bezerro, açafraõ,
-							e palmeiras).</s>
+						<s>Espatha (spatha), he huma especie de <term lemma="cálice">calyz</term>
+							que se rasga ao alto indeterminadamente; de ordinario he <term
+								lemma="membranoso" msd="feminino singular">membranosa</term>,
+							rugoza, arida, e contem flores pedunculadas, ou flores espadiceas, ou
+							ainda mesmo huma so corolla de tubo longo, (a cebola, alho narcizo, pè
+							de bezerro, açafraõ, e palmeiras).</s>
 					</p>
 					<p>He univalve ou monophylla (univalvis, s. monophylla), quando consta de huma
 						so peça que se raaga de ilharga (o narcizo, e pe de bezerro): bivalve ou
@@ -6694,13 +6745,14 @@
 						/> alto, e guarnece a fructificaçaõ somente com a parte inferior: imbricada
 						(imbricata), como nas bananeiras.</p>
 					<p>
-						<s>Trunfa (calyptra), he huma especie de calyz <term> membranoso</term>,
-							acapellado, posto immediatamente sobre a fructificaçaõ dos musgos
-							chamada anthera, urna, ou capsula (o polytrichum, e bryum) <note>
+						<s>Trunfa (calyptra), he huma especie de <term lemma="cálice">calyz</term>
+							<term>membranoso</term>, acapellado, posto immediatamente sobre a
+							fructificaçaõ dos musgos chamada anthera, urna, ou capsula (o
+							polytrichum, e bryum) <note>
 								<s>Hedwigio e alguns outros Botanicos, que seguem que a corolla he o
 									tegumento immediato dos organos sexuaes, consideraõ a trunfa dos
-									musgos como huma corolla, e so daõ o nome de calyz ao
-									perichecio.</s>
+									musgos como huma corolla, e so daõ o nome de <term
+										lemma="cálice">calyz</term> ao perichecio.</s>
 							</note>: segundo a direcçaõ vertical ou esguelhada, quetem a sua ponta
 							sobre a anthera diz-se ser: direita ou obliqua (recta, vel obliqua).</s>
 					</p>
@@ -6742,8 +6794,8 @@
 						immediatamente contiguo a elles, e de ordinario mais corado e mais delicado
 							<pb n="131"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0211_131_t24-C-R0120.jpg"
-						/> do que o calyz; tal he por ex. a do jasmim, açucena, rosa, cravo,
-						&amp;c.</p>
+						/> do que o <term lemma="cálice">calyz</term>; tal he por ex. a do jasmim,
+						açucena, rosa, cravo, &amp;c.</p>
 					<p>Quando a flor naõ tem corolla diz,se despetaleada ou descorollada, como já
 						expuz, e nesta circumstancia a corolla he denominada nulla (nulla); como v.
 						g. nas flores femininas dos carvalhos e aveleiras.</p>
@@ -6825,14 +6877,15 @@
 					<pb n="134"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0214_134_t24-C-R0120.jpg"/>
 					<p>3º Quanto ao ponto de apego.</p>
-					<p>A corolla ou he apegada ao calyz (calyci inserta), como na roseira e romeira,
-						ou ao receptaculo (recentaculo inserta), como na papoila, cravo e
-						rainunculo.</p>
+					<p>A corolla ou he apegada ao <term lemma="cálice">calyz</term> (calyci
+						inserta), como na roseira e romeira, ou ao receptaculo (recentaculo
+						inserta), como na papoila, cravo e rainunculo.</p>
 					<p>Sottoposta ou inferior (infera), quando se acha posta debaxo do germe, como
 						na açucena, e cebola: sobreposta ou superior (supera), se esta apegada á
 						parte superior do germe, como no narcizo.</p>
-					<p>Innata ao calyz (calyci adnata), se està pela sua face inferior intimamente
-						adunada ao calya (a abobara, pepino, e outras cucurbitaceas.)</p>
+					<p>Innata ao <term lemma="cálice">calyz</term> (calyci adnata), se està pela sua
+						face inferior intimamente adunada ao <term lemma="cálice">calyz</term> (a
+						abobara, pepino, e outras cucurbitaceas.)</p>
 					<p>4º. Quanto à superficie, e margem diz-se ser:</p>
 					<p>Lanuda (lanata), se tem lanugem (hyacinthus lanatus).</p>
 					<p>Felpuda (villosa), se tem felpa (menyanthes).</p>
@@ -6896,12 +6949,13 @@
 					<p>Irregular (irregularis), se as suas petalas, labios, ou lacinias saõ de
 						differente forma e juntamente de diversa grandeza (o geranium papilionaceum,
 						o amor perfeito, aconito, salva, orchideas, labiadas, e leguminosas.</p>
-					<p>A corolla he taõbem comparada com o calyz, e na falta deste com o pistillo ou
-						estames, e se diz ser: curta, mediocre, comprida, pequena, grande, &amp;c;
-						mas por evitar equivocaçoẽs, o melhor será declarar sempre as partes
-						comparadas, e dizer v. g.: corolla mais comprida do que o calyz, igual ao
-						calyz, mais curta do que o calyz, mais comprida do que os estames,
-						&amp;c.</p>
+					<p>A corolla he taõbem comparada com o <term lemma="cálice">calyz</term>, e na
+						falta deste com o pistillo ou estames, e se diz ser: curta, mediocre,
+						comprida, pequena, grande, &amp;c; mas por evitar equivocaçoẽs, o melhor
+						será declarar sempre as partes comparadas, e dizer v. g.: corolla mais
+						comprida do que o <term lemma="cálice">calyz</term>, igual ao <term
+							lemma="cálice">calyz</term>, mais curta do que o <term lemma="cálice"
+							>calyz</term>, mais comprida do que os estames, &amp;c.</p>
 					<p>5º. Quanto à forma a corolla diz-se ser:</p>
 					<p>Rodada ou arosettada (rotata), figura quasi huma roda ou rosetta de espora;
 						he monopetala, sem tubo notavel, partida em lacinias planas, e muito abertas
@@ -6960,17 +7014,19 @@
 							nas especies de utricularia e antirrhinum <note>O palato parece sò ser
 								proprio das corollas mascarinas.</note>.</s> 6º <s>O esporaõ
 							(calcar) <note>O esporaõ acha se taõbem em outras especies de corollas
-								como se vè nas esporas, e ainda mesmo no calyz, como nas chagas:
-								algumas corollas em lugar de esporaõ tem huma especie de capello ou
-								sacco (cucullus, s. saccus), como a impatiens, e alguns generos das
-								orchideas.</note>, que se observa as vezes nas corollas <term
-								lemma="labiado" msd="feminino plural">labiadas</term>, he huma
-							producçaõ tubulosa de forma conica, a que Linneo deo o nome de nectario
-							(as especies dos dois generos citados no numero precedente.)</s></p>
+								como se vè nas esporas, e ainda mesmo no <term lemma="cálice"
+									>calyz</term>, como nas chagas: algumas corollas em lugar de
+								esporaõ tem huma especie de capello ou sacco (cucullus, s. saccus),
+								como a impatiens, e alguns generos das orchideas.</note>, que se
+							observa as vezes nas corollas <term lemma="labiado"
+								msd="feminino plural">labiadas</term>, he huma producçaõ tubulosa de
+							forma conica, a que Linneo deo o nome de nectario (as especies dos dois
+							generos citados no numero precedente.)</s></p>
 					<pb n="139"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0219_139_t24-C-R0120.jpg"/>
 					<p>Rosacea (rosacea), tem cinco petalas regulares concavas, com unhas
-						curtissimas apegadas ao calyz (as roseiras bravas, pereira, e sylva).</p>
+						curtissimas apegadas ao <term lemma="cálice">calyz</term> (as roseiras
+						bravas, pereira, e sylva).</p>
 					<p>Malvacea (malvacea), tem cinco petalas cordiformes com as unhas adunadas (a
 						malva, althea, &amp; outras malvaceas.)</p>
 					<p>Liliacea (liliacea), tem seis petalas regulares, como a tulipa, açucena,
@@ -7002,13 +7058,14 @@
 					<p>Globosa (globosa), tem huma forma quasi espherica (o lirio dos valles, e a
 						escrophularia).</p>
 					<p>6º. Quanto à composiçaõ diz-se ser:</p>
-					<p>Simplez (simplea), se pertence a huma flor simplez. A flor simplez (flos
-						simplex), he rigorosamente a que dentro de hum calyz naõ contem muitos flos
-						culos (o meimendro, a salva, e o jasmim). Os floristas chamaõ flor simplez
-						ou singella à que tem sò huma ordem de petalas, e a oppoem à dobrada e
-						polypetala, mas os Botanicos so chamaõ flor simplez aquella, cujo calyz,
-						corolla ou receptaculo naõ saõ communs a muitos flosculos, e Linneo a oppoem
-						à flor composta, aggregada, umbrellada, cymosa, amentilhosa, casulosa, e
+					<p>Simplez (simplex), se pertence a huma flor simplez. A flor simplez (flos
+						simplex), he rigorosamente a que dentro de hum <term lemma="cálice"
+							>calyz</term> naõ contem muitos flosculos (o meimendro, a salva, e o
+						jasmim). Os floristas chamaõ flor simplez ou singella à que tem sò huma
+						ordem de petalas, e a oppoem à dobrada e polypetala, mas os Botanicos so
+						chamaõ flor simplez aquella, cujo <term lemma="cálice">calyz</term>, corolla
+						ou receptaculo naõ saõ communs a muitos flosculos, e Linneo a oppoem à flor
+						composta, aggregada, umbrellada, cymosa, amentilhosa, casulosa, e
 						espadicea.</p>
 					<p>
 						<s>Corolla composta (composita), he a totalidade das corolullas de muitos
@@ -7163,7 +7220,7 @@
 								ao seu numero, posiçaõ, e ponto de apego.</s>
 						</p>
 						<p>O nectario diz-se ser: calycino (calycinum), quando he relativo ou
-							appenso ao calyz, como na chagueira.</p>
+							appenso ao <term lemma="cálice">calyz</term>, como na chagueira.</p>
 						<p>Corollino ou petalino (corollinum, s. petalinum), se he adunado ou
 							relativo à corolla ou suas petalas, como na linaria, violetta,
 							rainunculo, narcizo, coroa imperial, açucena, orchideas, &amp;c.</p>
@@ -7191,16 +7248,17 @@
 				</div>
 				<div type="chapter" n="XII">
 					<head>CAPITULO XII. Dos Estames.</head>
-					<p>O calyz e corolla de que tractei nos dois capitulos precedentes saõ meramente
-						tegumentos, e ornato dosorganos essensiaes às flores, isto he, dos estames e
-						pistillo. Os modernos persuadidos por experiencias repetidas de que estes
-						delicados organos eraõ destinados aos amores das plantas consideraraõ huns
-						como genitaes masculinos, e outros como femininos. <s>Os estames (stamina) a
-							que elles chamaõ genitaes masculinos saõ verdadeiramente huma viscera
-							destinada à preparaçaõ do pó <term> fecundante</term>, e da aura seminal
-							nelle contido.</s> Na situaçaõ mais natural os estames estaõ postos
-						entre a corolla e o pistillo, como se observa bem claramente numa açucena. A
-						sua origem he supposta em geral ser a mesma que a <pb n="147"
+					<p>O <term lemma="cálice">calyz</term> e corolla de que tractei nos dois
+						capitulos precedentes saõ meramente tegumentos, e ornato dosorganos
+						essensiaes às flores, isto he, dos estames e pistillo. Os modernos
+						persuadidos por experiencias repetidas de que estes delicados organos eraõ
+						destinados aos amores das plantas consideraraõ huns como genitaes
+						masculinos, e outros como femininos. <s>Os estames (stamina) a que elles
+							chamaõ genitaes masculinos saõ verdadeiramente huma viscera destinada à
+							preparaçaõ do pó <term> fecundante</term>, e da aura seminal nelle
+							contido.</s> Na situaçaõ mais natural os estames estaõ postos entre a
+						corolla e o pistillo, como se observa bem claramente numa açucena. A sua
+						origem he supposta em geral ser a mesma que a <pb n="147"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0227_147_t24-C-R0120.jpg"
 						/> da corolla. Podem ser considerados ou como completos ou como incompletos;
 						no maior numero de flores saõ completos, isto he, constaõ de duas partes
@@ -7277,9 +7335,10 @@
 								Africa; oito nas chagas e semprenoiva; nove no loireiro; dez na
 								olaya, arruda e cravos; doze ou mais no sayaõ, euphorbia e
 								beldroega; dezaseis na tormentilla; vinte emco ou mais na amexieira;
-								trinta ou mais na gingeira; numerosos apegados ao calyz na romeira e
-								sylva; numerosos apegados ao receptaculo nos rainunculos, e peonia,
-								na qual se tem contado athe trezentos.</s></p>
+								trinta ou mais na gingeira; numerosos apegados ao <term
+									lemma="cálice">calyz</term> na romeira e sylva; numerosos
+								apegados ao receptaculo nos rainunculos, e peonia, na qual se tem
+								contado athe trezentos.</s></p>
 						<p>2º. Quanto a superficie, forma, e direcçaõ, dizem-se ser:</p>
 						<p>Capillares (capillaria), se saõ delgados como hum cabello em todo seu
 							comprimento (como no trigo).</p>
@@ -7324,17 +7383,17 @@
 									melanthium, e nas corollas cravinosas muitas vezes estaõ
 									apegados às unhas das petalas. No eriocaulon os filetes por huma
 									singusaridade da natureza tem o seu apego sobre o germe, ao
-									mesmo tempo que a corolla e calyz estaõ sottopostos a
-									elle.</note>.</s>
+									mesmo tempo que a corolla e <term lemma="cálice">calyz</term>
+									estaõ sottopostos a elle.</note>.</s>
 						</p>
-						<p>Apegados ao calyz (calyci inserta), como na pereira, gingeira, sylva,
-							salicaria, e muitas outras da classe Icosandria, e da ordem natural, a
-							que Linneo chama Calycanthemas.</p>
+						<p>Apegados ao <term lemma="cálice">calyz</term> (calyci inserta), como na
+							pereira, gingeira, sylva, salicaria, e muitas outras da classe
+							Icosandria, e da ordem natural, a que Linneo chama Calycanthemas.</p>
 						<p>
 							<s>Apegados ao receptaculo (receptaculo inserta), he o mais ordinario
 								nas flores <note>
-									<s>O calyz e corolla commumente saõ taõbem apegados ao
-										receptaculo.</s>
+									<s>O <term lemma="cálice">calyz</term> e corolla commumente saõ
+										taõbem apegados ao receptaculo.</s>
 								</note>, como v. g. na papoila, rainunculos, &amp;c.</s>
 						</p>
 						<p>Apegados ao pistillo (pistillo inserta), como nas orchideas e algumas da
@@ -7347,17 +7406,18 @@
 									outras os estames verdadeiramente estaõ apegados a hum
 									receptaculo continuado ou pedicello, e naõ ao
 								pistillo.</note>.</s></p>
-						<p>Dizem-se: fronteiros ou oppostos ao calyz (calyci opposita), quando se
-							achaõ postos defronte das lacinias ou foliolos do calyz, como na
-							ortiga.</p>
+						<p>Dizem-se: fronteiros ou oppostos ao <term lemma="cálice">calyz</term>
+							(calyci opposita), quando se achaõ postos defronte das lacinias ou
+							foliolos do <term lemma="cálice">calyz</term>, como na ortiga.</p>
 						<p>4º. Quanto à proporçaõ dizem se ser:</p>
 						<p>Iguaes (aequalia), se todos tem o mesmo <pb n="152"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0232_152_t24-C-R0120.jpg"
 							/> comprimento; desiguaes (inaequalia), se huns saõ mais compridos do
 							que outros.</p>
 						<p>Compridissimos (longissima), se excedem bastantemente no comprimento a
-							corolla (ou o calyz, se ella falta); curtissimos (brevissima), se sãõ
-							bastantemente mais curtos do que a corolla (ou do que o calyz nas
+							corolla (ou o <term lemma="cálice">calyz</term>, se ella falta);
+							curtissimos (brevissima), se sãõ bastantemente mais curtos do que a
+							corolla (ou do que o <term lemma="cálice">calyz</term> nas
 							despetaleadas).</p>
 						<p>
 							<s>Reclusos (inclusa), quando naõ sahem fora da fauce do tubo da
@@ -7404,13 +7464,13 @@
 								sexualistas.</s>
 						</p>
 						<p>
-							<s>A capsula da anthera he simplez e univalve em hum grande numero de
-								flores por conter huma so cellula (loculas); isto naõ obstante ha
-								muitas que saõ compostas de duas, tres, quatro e muitas cellulas
-								separadas por hum partimento assaz vizivel
-								(bi-tri-quadri-multiloculares); na ortiga, na leontice e epimedium
-								saõ bivalves e de duas cellulas; no colchico quadrivalves; e no
-								milho, chagas, e tulipa tem quatro cellulas.</s>
+							<s>A capsula da <term lemma="antera">anthera</term> he simplez e
+								univalve em hum grande numero de flores por conter huma so cellula
+								(loculas); isto naõ obstante ha muitas que saõ compostas de duas,
+								tres, quatro e muitas cellulas separadas por hum partimento assaz
+								vizivel (bi-tri-quadri-multiloculares); na ortiga, na leontice e
+								epimedium saõ bivalves e de duas cellulas; no colchico quadrivalves;
+								e no milho, chagas, e tulipa tem quatro cellulas.</s>
 							<s>Estas capsulas differem no modo de abertura (apertura, s.
 								dehiscencia); ordinariamente rasgaõ-se por huma ilharga, as vezes
 								debaxo para cima, como no epimedium e leontice, outras vezes pela
@@ -7500,12 +7560,12 @@
 						<p>O germe tem recebido hum grande numero de denominaçoẽs que saõ, quasi as
 							mesmas que as do pericarpo ou fructo, e porisso as omittirei aqui. Dizse
 							ser: sobreposto (superum), quando se acha situado sobre o receptaculo da
-							fructificaçaõ e incluido na corolla, ou calyz (a açucena, e carvalho);
-							sottoposto (inferum), se esta situado debaxo do receptaculo da flor ou
-							posto debaxo da corolla, como no narcizo, asarabacca, e melaõ;
-							pediculado (stipitatum, s. pedicellatum), se està posto sobre hum
-							pequeno esteio ou receptaculo continuado no centro da flor, como na
-							alcaparra, e martyrio.</p>
+							fructificaçaõ e incluido na corolla, ou <term lemma="cálice"
+								>calyz</term> (a açucena, e carvalho); sottoposto (inferum), se esta
+							situado debaxo do receptaculo da flor ou posto debaxo da corolla, como
+							no narcizo, asarabacca, e melaõ; pediculado (stipitatum, s.
+							pedicellatum), se està posto sobre hum pequeno esteio ou receptaculo
+							continuado no centro da flor, como na alcaparra, e martyrio.</p>
 					</div>
 					<div type="subchapter">
 						<head>Estylete.</head>
@@ -7842,7 +7902,7 @@
 									respeito das drupas, e bagas.</note> he hum tegumento grosso,
 									<term lemma="suculento"> succulento</term> e alteravel que
 								contem hum segundo pericarpo ou capsula, na qual se achaõ reclusas
-								as cementes, como se vê nas peras, e maçaans; na romaan dentro das
+								as sementes, como se vê nas peras, e maçaans; na romaan dentro das
 								cellulas do pomo ha hum grande numero de acinos ou bagas
 								monospermas, as quaes todas saõ verdadeiros pericarpos còrados <note>
 									<s>Cada hum destes tegumentos accessivos, e <term
@@ -7861,8 +7921,8 @@
 								na salva, alface, e outras compostas e labiadas, naõ se deve de
 								sorte alguma dar o nome de pericarpo aos dictos tegumentos ainda que
 								a natureza os empregue para fazerem as vezes de pericarpo, e se dirà
-								taõ somente que o calyz ou corolla fomenta as sementes no seu
-								seyo.</s>
+								taõ somente que o <term lemma="cálice">calyz</term> ou corolla
+								fomenta as sementes no seu seyo.</s>
 						</p>
 						<pb n="169"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0249_169_t24-C-R0120.jpg"/>
@@ -7873,48 +7933,54 @@
 							ingenuamente que restaõ ainda a este respeito algumas difficuldades, que
 							so hum genio feliz e ajudado de mais observaçoẽs, do que temos athe ão
 							prezente, poderà vencer.</p>
-						<p>As especies de pericarpo, segundo Linneo, saõ oito, a saber, capsula,
-							siliqua, vagem, follilho, drupa, pomo, baga, e pinha, mas esta ultima
-							especie so se deve contar no numero dos pericarpos bastardos, porque as
-							escamas de que consta saõ humaespecie de calyz persistente, e naõ foraõ
-							jamais parte do germe do pistillo.</p>
-						<p>A capsula (capsula), he huma especie de pericarpo concavo, que se costuma
-							abrir por partes certas e determinadas, como v. g. a da campanula,
-							reseda, meimendro, cravo, tulipa e açucena. <s>Nalgumas plantas he
-								molle, ou <term lemma="suculento" norm="suculenta"
-									msd="feminino singular">succulenta</term>, noutras he dura, as
-								vezes he grossa outras vezes delgada.</s> Ha fructos que constaõ de
-							huma so capsula, outros constaõ de duas, tres, quatro, cinco, ou muitas,
-							de que temos exemplos nas esporas, peonia, estaphisagria, rhodiola,
-							aquilegia, e sayaõ.</p>
-						<p>Ha capsulas em que se podem destinguir quatro partes, a saber, valvulas,
-							cellulas, partimento, e pilar; as valvulas (valvulae), saõ as<note>Ellas
-								estaõ conchegadas antes da madureza do fructo, mas logo que este
-								amadureceo, desviaõ-se para deixar cahir as sementes; e as vezes
-								ficaõ retorcidas depois de terem vibrado as sementes com
+						<p>As especies de pericarpo, segundo Linneo, saõ oito, a saber, <term
+								lemma="cápsula" senseNumber="2">capsula</term>, siliqua, vagem,
+							follilho, drupa, pomo, baga, e pinha, mas esta ultima especie so se deve
+							contar no numero dos pericarpos bastardos, porque as escamas de que
+							consta saõ humaespecie de <term lemma="cálice">calyz</term> persistente,
+							e naõ foraõ jamais parte do germe do pistillo.</p>
+						<p>A <term lemma="cápsula" senseNumber="2">capsula</term> (capsula), he huma
+							especie de pericarpo concavo, que se costuma abrir por partes certas e
+							determinadas, como v. g. a da campanula, reseda, meimendro, cravo,
+							tulipa e açucena. <s>Nalgumas plantas he molle, ou <term
+									lemma="suculento" norm="suculenta" msd="feminino singular"
+									>succulenta</term>, noutras he dura, as vezes he grossa outras
+								vezes delgada.</s> Ha fructos que constaõ de huma so <term
+								lemma="cápsula" senseNumber="2">capsula</term>, outros constaõ de
+							duas, tres, quatro, cinco, ou muitas, de que temos exemplos nas esporas,
+							peonia, estaphisagria, rhodiola, aquilegia, e sayaõ.</p>
+						<p>Ha <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2"
+								>capsulas</term> em que se podem destinguir quatro partes, a saber,
+							valvulas, cellulas, partimento, e pilar; as valvulas (valvulae), saõ
+								as<note>Ellas estaõ conchegadas antes da madureza do fructo, mas
+								logo que este amadureceo, desviaõ-se para deixar cahir as sementes;
+								e as vezes ficaõ retorcidas depois de terem vibrado as sementes com
 								elasticidade, como as da impatiens noli me tangere.</note> partes
 							que <pb n="170"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0250_170_t24-C-R0120.jpg"
-							/>formaõ as paredes externas da capsula reunidas por suturas
-							longitudinaes, da mesma sorte que as aduellas formaõ as paredes de huma
-							vasilha; cellulas (loculi, s. loculamenta), saõ os espaços que se achaõ
-							entre as valvulas e partimentos; o partimento (dissepimentum, s.
-							septum), he hum tapigo<note>Ha taõbem partimentos bastardos ou
-								incompletos (spuria), que saõ os que naõ chegaõ athe ao pilar, e
-								ficaõ em meyo caminho; as cellulas neste cazo saõ taõbem bastardas,
-								e se communicaõ entre si.</note> ou parede interna que vay das
-							valvulas athe ao pilar, e separa as cellulas; o pilar (columella), he o
-							axe ou pequena coluna que se acha no centro da capsula, e onde se reunem
-							todos os partimentos (a tulipa, e açucena).</p>
-						<p>A capsula diz-se ser: univalve (univalyis), se consta de huma so valvula,
-							e se abre na sua madureza, ou so por huma sutura lateral como nas
-							esporas, ou por furos abertos nos lados ou extremidades (pori), como na
-							campanula, e papoila, ou pelo topo como na reseda: bivalve (bivalvis),
-							se consta de duas valvulas como na genciana; trivalve (trivalvis), na
-							tulipa e violetta; quadrivalve (quadrivalvis), na panaea; de cinco
-							valvulas (quinquevalvis), no evonymus americanus; de seis valvulas
-							(sexvalvis), na stellaria; de muitas valvulas (multivalvis), se tem mais
-							de seis valvulas.</p>
+							/>formaõ as paredes externas da <term lemma="cápsula" senseNumber="2"
+								>capsula</term> reunidas por suturas longitudinaes, da mesma sorte
+							que as aduellas formaõ as paredes de huma vasilha; cellulas (loculi, s.
+							loculamenta), saõ os espaços que se achaõ entre as valvulas e
+							partimentos; o partimento (dissepimentum, s. septum), he hum
+								tapigo<note>Ha taõbem partimentos bastardos ou incompletos (spuria),
+								que saõ os que naõ chegaõ athe ao pilar, e ficaõ em meyo caminho; as
+								cellulas neste cazo saõ taõbem bastardas, e se communicaõ entre
+								si.</note> ou parede interna que vay das valvulas athe ao pilar, e
+							separa as cellulas; o pilar (columella), he o axe ou pequena coluna que
+							se acha no centro da <term lemma="cápsula" senseNumber="2"
+								>capsula</term>, e onde se reunem todos os partimentos (a tulipa, e
+							açucena).</p>
+						<p>A <term lemma="cápsula" senseNumber="2">capsula</term> diz-se ser:
+							univalve (univalvis), se consta de huma so valvula, e se abre na sua
+							madureza, ou so por huma sutura lateral como nas esporas, ou por furos
+							abertos nos lados ou extremidades (pori), como na campanula, e papoila,
+							ou pelo topo como na reseda: bivalve (bivalvis), se consta de duas
+							valvulas como na genciana; trivalve (trivalvis), na tulipa e violetta;
+							quadrivalve (quadrivalvis), na panaea; de cinco valvulas
+							(quinquevalvis), no evonymus americanus; de seis valvulas (sexvalvis),
+							na stellaria; de muitas valvulas (multivalvis), se tem mais de seis
+							valvulas.</p>
 						<p>Diz-se ser: de huma so cellula (unilocularis), se naõ tem interiormente
 							partimento algum ainda que conste de valvulas, como no cravo, esporas,
 							quejadilho, e violetta; de duas cellulas (bilocularis), no <pb n="171"
@@ -7933,9 +7999,10 @@
 							<s>Didyma ou bilobada (didyma), se tem duas protuberancias semelhantes a
 								duas ginjas apegadas huma à outra (veronica biloba, e outras
 								congeneres) <note>
-									<s>Ordinariamente este termo he usado como synonymo da capsula
-										dicocca, mas nesta so ha duas sementes, e na dydima ha
-										sempre mais de duas, o que basta para as destinguir.</s>
+									<s>Ordinariamente este termo he usado como synonymo da <term
+											lemma="cápsula" senseNumber="2">capsula</term> dicocca,
+										mas nesta so ha duas sementes, e na dydima ha sempre mais de
+										duas, o que basta para as destinguir.</s>
 								</note>.</s>
 						</p>
 						<p>Circumcidada (circumcisa), quando tem huma sutura circular e horizontal,
@@ -7951,17 +8018,21 @@
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0252_172_t24-C-R0120.jpg"
 							/> parte do espaço interno destas capsûlas naõ he occupado pelas
 							sementes.</p>
-						<p>N. B. As capsulas que foraõ calyz ou corolla so devem ser consideradas
-							como bastardas; taes saõ por ex. os ouriços, do castanheiro.</p>
+						<p>N. B. As <term lemma="cápsula" norm="cápsulas" msd="plural"
+								senseNumber="2">capsulas</term> que foraõ <term lemma="cálice"
+								>calyz</term> ou corolla so devem ser consideradas como bastardas;
+							taes saõ por ex. os ouriços, do castanheiro.</p>
 						<p><s>Siliqua (siliqua), he huma especie de pericarpo oblongo, bivalve <note>
 									<s>O Dr. Oeder considera as siliquas, siliculas e vagens como
-										especies de capsula, as duas primeiras como proprias das
+										especies de <term lemma="cápsula" senseNumber="2"
+											>capsula</term>, as duas primeiras como proprias das
 										plantas cruciferas, e a ultima como natural às
 										leguminosas.</s>
-									<s>Com effeito se reflectirmos em que as sementes nas capsulas
-										estaõ apegadas naõ sò à base, topo e meyo, mas ainda algumas
-										vezes às valvulas e suturas, esta assersaõ parece assaz
-										conforme á natureza.</s>
+									<s>Com effeito se reflectirmos em que as sementes nas <term
+											lemma="cápsula" norm="cápsulas" msd="plural"
+											senseNumber="2">capsulas</term> estaõ apegadas naõ sò à
+										base, topo e meyo, mas ainda algumas vezes às valvulas e
+										suturas, esta assersaõ parece assaz conforme á natureza.</s>
 								</note> concavo, com duas suturas <note>
 									<s>As suturas (suturae), saõ as linhas em que se reunem as
 										valvulas.</s>
@@ -8056,15 +8127,15 @@
 								secca (sicca), se no tempo da madureza naõ contem succo notavel, ou
 								parece como chupada (a amendoeira, e coqueiro).</s>
 						</p>
-						<p>Pomo (pomum), he huma especie de pericarpo. sem valvulas, polposo, e que
+						<p>Pomo (pomum), he huma especie de pericarpo sem valvulas, polposo, e que
 							contem no centro, ou interior huma capsula (a pera, maçaan, e melaõ). O
 							pomo he taõbem chamado fructo de pevide, mas esta denominaçaõ he vaga,
 							por convir taõbem a al gumas bagas. <s>Diz-se ser: turbinado
 								(turpinatum), na pera; globoso (globosum), na maçaan; <term>
 									umbilicado</term> (umbilicatum), quando tem no topo hum embigo
 								(umbilicus fructûs), isto he, huma cavidade que foy receptaculo da
-								flor, e he ordinariamente guarnecida do calyz persistente, como na
-								maçaan e pera.</s>
+								flor, e he ordinariamente guarnecida do <term lemma="cálice"
+									>calyz</term> persistente, como na maçaan e pera.</s>
 							<s>A capsula interna differe, segundo os diversos generos de plantas, no
 								numero de suas cellulas; no pepino consta de tres, na pera tem
 								cinco, e na romaan nove <note>
@@ -8101,12 +8172,13 @@
 							<s>
 								<term lemma="umbilicado" msd="feminino singular">Umbilicada</term>
 								(umbilicata), quando he guarnecida no tempo da sua madureza pelo
-								calyz persistente, como os murtinhos e bagas da madresylva; torosa
-								(torosa), se tem torulos ou protuberancias (o tomate), secca (sicca)
-								se na madureza das sementes fica exsucca e dura, como no xanthium;
-								occa (cava), se naõ tem bagulho, como no pimentaõ; composta
-								(composita), se consta de muitos acinos, ou bagos monospermos
-								aggregados, como as amoras de sylva.</s></p>
+									<term lemma="cálice">calyz</term> persistente, como os murtinhos
+								e bagas da madresylva; torosa (torosa), se tem torulos ou
+								protuberancias (o tomate), secca (sicca) se na madureza das sementes
+								fica exsucca e dura, como no xanthium; occa (cava), se naõ tem
+								bagulho, como no pimentaõ; composta (composita), se consta de muitos
+								acinos, ou bagos monospermos aggregados, como as amoras de
+								sylva.</s></p>
 						<pb n="177"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0257_177_t24-C-R0120.jpg"/>
 						<p><s>Linneo fallando das bagas em geral diz, que humas saõ proprias, outras
@@ -8115,26 +8187,28 @@
 								bastarda podia ser qualquer outra parte do fructo; depois dá por
 								exemplo das bagas improprias humas <term lemma="suculento"
 									norm="suculentas" msd="feminino plural">succulentas</term>,
-								outras seccas, formadas pelo calyz, corolla, receptaculo, sementes,
-								arillo, nectario, capsulas, follilhos, vagens, e pinhas <note>Vej.
-									Phil. Botan. pag. 75.</note>. </s> Elle reformou depois huma
-							grande parte destas ideas, mas naõ evitou inteiramente as ambiguidades
-							dos seus predecessores a regpeito da accepcaõ do termo baga,
-							empregando-o muitas vezes bem contrariamante à definiçaõ que della tinha
-							dado. A autoridade que este sabio tem em Botanica, e a precisaõ que ha
-							de nos servirmos do seu tractado dos Generos dos vegetaes, me obrigaraõ
-							a expor aqui os seus sentimentos; naõ posso contudo deixar de advertir
-							que a qua theoria he nesta parte insufficiente, e o naõ seria sem
-							duvida, se elle tivera abolido os termos de bagas seccas, e fixado
-							melhor as ideas sobre a propriedade e impropriedade das bagas. <s>Huma
-								baga propria (propria) <note>Eu considero aqui a baga no tempo da
-									sua madureza; para fixar as ideas sobre os fructos em geral, e
-									em particular, he precizo attender ao seu estado de fecundaçaõ,
-									madureza, e germinaçaõ, e em quanto os botanicos naõ seguirem
-									este parecer, sempre daraõ delles nocoẽs indeterminadas.</note>
-								he huma especie de pericarpo <term lemma="suculento"
-									>succulento</term>, sem valvulas nem indicio algum de suturas na
-								superficie, e contem ou huma so semente sem tegumento lenhoso <note>
+								outras seccas, formadas pelo <term lemma="cálice">calyz</term>,
+								corolla, receptaculo, sementes, arillo, nectario, <term
+									lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2"
+									>capsulas</term>, follilhos, vagens, e pinhas <note>Vej. Phil.
+									Botan. pag. 75.</note>. </s> Elle reformou depois huma grande
+							parte destas ideas, mas naõ evitou inteiramente as ambiguidades dos seus
+							predecessores a regpeito da accepcaõ do termo baga, empregando-o muitas
+							vezes bem contrariamante à definiçaõ que della tinha dado. A autoridade
+							que este sabio tem em Botanica, e a precisaõ que ha de nos servirmos do
+							seu tractado dos Generos dos vegetaes, me obrigaraõ a expor aqui os seus
+							sentimentos; naõ posso contudo deixar de advertir que a qua theoria he
+							nesta parte insufficiente, e o naõ seria sem duvida, se elle tivera
+							abolido os termos de bagas seccas, e fixado melhor as ideas sobre a
+							propriedade e impropriedade das bagas. <s>Huma baga propria (propria)
+									<note>Eu considero aqui a baga no tempo da sua madureza; para
+									fixar as ideas sobre os fructos em geral, e em particular, he
+									precizo attender ao seu estado de fecundaçaõ, madureza, e
+									germinaçaõ, e em quanto os botanicos naõ seguirem este parecer,
+									sempre daraõ delles nocoẽs indeterminadas.</note> he huma
+								especie de pericarpo <term lemma="suculento">succulento</term>, sem
+								valvulas nem indicio algum de suturas na superficie, e contem ou
+								huma so semente sem tegumento lenhoso <note>
 									<s>Osseo; isto a fará destinguir da drupa, que contem huma so
 										semente com o dicto tegumento lenhoso e durissimo.</s>
 									<s>Linneo admitte algumas vezes drupas de mais de huma semente,
@@ -8159,8 +8233,9 @@
 								tempo da madureza das sementes.</s>
 							<s>A baga impropria ou bastarda (impropria, s. spuria), he hum pericarpo
 								bastardo, <term lemma="suculento">succulento</term>, e fechado no
-								tempo da madureza das sementes, o qual tinha dantes sido ou calyz ou
-								corolla da flor, como v. g. he a das roseiras e basella.</s>
+								tempo da madureza das sementes, o qual tinha dantes sido ou <term
+									lemma="cálice">calyz</term> ou corolla da flor, como v. g. he a
+								das roseiras e basella.</s>
 							<s>Os receptaculos que representaõ huma baga em razaõ da sua succulencia
 								e figura, como v. g.; os dos morangos e figos, devem conservar
 								sempre o nome de receptaculo, e so se lhes pode ajuntar os termos de
@@ -8168,9 +8243,11 @@
 								(succulentum, baccatum, s. bacciforme).</s>
 							<s>Todos os pericarpos, cujas suturas se virem exteriormente bem
 								assinaladas, ou cujo lugar determinado de abertura for reconhecido,
-								como saõ v. g.; as capsulas do evonymus, e nymphæa, devem conservar
-								os seus nomes proprios, ainda que pela razaõ da succulencia tardem a
-								abrir-se algum tempo depois da madureza das <pb n="179"
+								como saõ v. g.; as <term lemma="cápsula" norm="cápsulas"
+									msd="plural" senseNumber="2">capsulas</term> do evonymus, e
+								nymphæa, devem conservar os seus nomes proprios, ainda que pela
+								razaõ da succulencia tardem a abrir-se algum tempo depois da
+								madureza das <pb n="179"
 									facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0259_179_t24-C-R0120.jpg"
 								/> sementes, e somente se lhes pode ajuntar o termo de <term
 									lemma="suculento" norm="suculentos" msd="masculino plural"
@@ -8192,7 +8269,8 @@
 									<s>A analogia, que tem o prasium com as labiadas gymnospermas,
 										mostra claramente que o tegumento externo dos seus fructos
 										he hum tegumento proprio de sementes nuas, e naõ accessivo:
-										no evonymus alem da capsula as sementes tem duas laminas ou
+										no evonymus alem da <term lemma="cápsula" senseNumber="2"
+											>capsula</term> as sementes tem duas laminas ou
 										tegumentos proprios, dos quaes o exterior he mais grosso e
 											<term lemma="suculento">succulento</term>, como muitas
 										vezes tenho observado.</s>
@@ -8223,19 +8301,21 @@
 									tegumentos, segundo a sua particular theoria.</note> (scrinum,
 								s. scrinulum) todas as bagas seccas, drupas seccas, e ainda mesmo
 								algumas nozes, a que Linneo chama pericarpos e naõ sementes
-									<note>Segundo Linneo as nozes reclusas dentro de huma capsula,
-									baga, ou drupa saõ sementes; outras vezes sem serem reclusas em
-									pericarpo naõ deixaõ de ser sementes, como as avellaans e
-									bolotas; outras vezes emfim constituem hum pericarpo, como no
-									esparto e ambrosia.</note>; o escrino seria pois ou proprio, ou
-								bastardo; o primeiro seria huma especie de pericarpo sem valvulas,
-								fechado e secco no tempo da madureza das sementes, o qual se podesse
-								abrir sem lesaõ da semente ou sementes internas nem impedir ou
-								causar danno à sua vegetaçaõ, como o do xanthium e coqueiro; o
-								escrino bastardo seria hum pericarpo improprio, sem valvulas,
-								fechado e secco no tempo da madureza das sementes, tendo dantes sido
-								ou calyz, ou corolla, ou nectario da flor, como v. g. o da
-								agrimonia, coix, poterium, mirabilis, &amp;c.</s></p>
+									<note>Segundo Linneo as nozes reclusas dentro de huma <term
+										lemma="cápsula" senseNumber="2">capsula</term>, baga, ou
+									drupa saõ sementes; outras vezes sem serem reclusas em pericarpo
+									naõ deixaõ de ser sementes, como as avellaans e bolotas; outras
+									vezes emfim constituem hum pericarpo, como no esparto e
+									ambrosia.</note>; o escrino seria pois ou proprio, ou bastardo;
+								o primeiro seria huma especie de pericarpo sem valvulas, fechado e
+								secco no tempo da madureza das sementes, o qual se podesse abrir sem
+								lesaõ da semente ou sementes internas nem impedir ou causar danno à
+								sua vegetaçaõ, como o do xanthium e coqueiro; o escrino bastardo
+								seria hum pericarpo improprio, sem valvulas, fechado e secco no
+								tempo da madureza das sementes, tendo dantes sido ou <term
+									lemma="cálice">calyz</term>, ou corolla, ou nectario da flor,
+								como v. g. o da agrimonia, coix, poterium, mirabilis,
+							&amp;c.</s></p>
 						<p>
 							<s>Pinha (strobilus) <note>Daõ-lhe taõbem o nome de conus; mas este
 									termo he applicado pomente às pinhas de escamas grossas, e
@@ -8962,15 +9042,17 @@
 								ligusticum, goiveiro, &amp;c.</s>
 						</p>
 						<p>O numero das sementes varia muito, e não se sabe muitas vezes qual he o
-							que mais naturalmente daõ algumas bagas, drupas, pomos, e capsulas:
-							contudo quando a maior parte das bagas e outros pericarpos de huma
-							especie ou genero he observada dar hum numero determinado de huma, duas,
-							tres, quatro sementes, &amp;c. ou quando geralmente as dictas bagas e
-							quaesquer outros pericarpos daõ muitas, naõ se deve jamais omittir esta
-							circumstancia na sua descripçaõ. O mesmo deve entender-se a respeito das
-							sementes nuas; nas labiadas e asperifolias por ex. como na hortelaan,
-							alecrim, pulmonaria, cynoglossa, &amp;c seria defeituoso deixar de fazer
-							mençaõ das quatro sementes, que ellas tem ordinariamente.</p>
+							que mais naturalmente daõ algumas bagas, drupas, pomos, e <term
+								lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2"
+								>capsulas</term>: contudo quando a maior parte das bagas e outros
+							pericarpos de huma especie ou genero he observada dar hum numero
+							determinado de huma, duas, tres, quatro sementes, &amp;c. ou quando
+							geralmente as dictas bagas e quaesquer outros pericarpos daõ muitas, naõ
+							se deve jamais omittir esta circumstancia na sua descripçaõ. O mesmo
+							deve entender-se a respeito das sementes nuas; nas labiadas e
+							asperifolias por ex. como na hortelaan, alecrim, pulmonaria, cynoglossa,
+							&amp;c seria defeituoso deixar de fazer mençaõ das quatro sementes, que
+							ellas tem ordinariamente.</p>
 						<p>Raramente costuma fazer-se mençaõ da grandeza das sementes, contudo
 							comparaõ-se ás vezes com a flor ou pericarpo, e se dizem summamente
 							grandes (maxima), como no coqueiro; muito pequenas ou muito miudas
@@ -9071,15 +9153,17 @@
 					<p>A naturalidade ou estructura natural das flores (structura naturalis), he
 						segundo Linneo a que se observa na maior parte dellas, e he opposta a
 						estructura singularizada. As flores de huma estructura naturalissima tem o
-						calyz, e corolla divididos em igual numero de lacinias (ordinariamente
-						cinco); o seu calyz he menos aberto, exterior, menor do que a corolla, e
-						involve o receptaculo, ao qual ella está innata; cada hum dos seus filetes
-						he guarnecido na ponta de huma anthera, postos entre a corolla e o pistillo,
-						levantados, e iguaes no comprimento ao pistillo, quando os tegumentos da
-						flor saõ levantados. O pistillo está posto no centro, o germe tem no topo,
-						hum ou mais estyletes levantados, e terminados por estigmas. Cahidos os
-						organos sexuaes, o germe torna-se em hum pericarpo sostido pelo calyz. O
-						receptaculo he acompanhado do calyz, e inferior ou sottoposto ao germe.</p>
+							<term lemma="cálice">calyz</term>, e corolla divididos em igual numero
+						de lacinias (ordinariamente cinco); o seu <term lemma="cálice">calyz</term>
+						he menos aberto, exterior, menor do que a corolla, e involve o receptaculo,
+						ao qual ella está innata; cada hum dos seus filetes he guarnecido na ponta
+						de huma anthera, postos entre a corolla e o pistillo, levantados, e iguaes
+						no comprimento ao pistillo, quando os tegumentos da flor saõ levantados. O
+						pistillo está posto no centro, o germe tem no topo, hum ou mais estyletes
+						levantados, e terminados por estigmas. Cahidos os organos sexuaes, o germe
+						torna-se em hum pericarpo sostido pelo <term lemma="cálice">calyz</term>. O
+						receptaculo he acompanhado do <term lemma="cálice">calyz</term>, e inferior
+						ou sottoposto ao germe.</p>
 					<p>A estructura singularizada (structura singularis), he a que se observa em
 						muito poucos generos de flores, como he por ex. a do pé de bezerro, a da
 						salva, adoxa, eriocaulon, magnolia, &amp;c.<note>Taõbem se podem chamar
@@ -9095,23 +9179,23 @@
 						susceptiveis de quatro destinçoẽs principaes, a saber, de hermaphroditas,
 						masculas, femininas, e neutras. <s>As flores hermaphroditas (hermaphroditi),
 							a que alguns chamaõ taõbem bissexuaes <note>Por terem os dois sexos
-								dentro da corolla ou calyz, e saõ oppostas ás unisexuaes (ou
-								relativas) que dentro delles tem organos somente masculos, ou
-								somente femininos.</note> e outros absolutas, tem estames e pistillo
-							dentro dos seus tegumentos, como he a açucena, jasmim, pereira, e a
-							maior parte das flores <note>Segundo os sexualistas o Autor da natureza
-								fez a maior parte das flores hermaphroditas por naõ poderem mudar de
-								lugar, e ir buscar o seu consorte; e se nas dioicas estaõ os sexos
-								separados, distaõ contudo muito pouco espaço.</note>.</s> As flores
-						masculas (masculi), saõ aquellas em que somente se achaõ estames sem
-						pistillo algum (donde alguns lhes chamaraõ estaminosas), como as que
-						terminaõ o colmo do milho, as dos amentilhos da nogueira, e algumas do
-						melaõ, pepino, abobara, aroeira, legacaõ, linho, canamo, gilbarbeira,
-						&amp;c. <s>As flores femininas (faeminei), saõ as que tem somente pistillo
-							sem estames alguns, donde lhes chamaraõ taõbem pistillosas <note>O Lord
-								Bute no seu excellente tractado dos Generos das plantas da Gr.
-								Bretanha, que imprimio para divertimento das Fidalgas de Inglaterra,
-								tractou de evitar como delicado cortezaõ os termos de
+								dentro da corolla ou <term lemma="cálice">calyz</term>, e saõ
+								oppostas ás unisexuaes (ou relativas) que dentro delles tem organos
+								somente masculos, ou somente femininos.</note> e outros absolutas,
+							tem estames e pistillo dentro dos seus tegumentos, como he a açucena,
+							jasmim, pereira, e a maior parte das flores <note>Segundo os sexualistas
+								o Autor da natureza fez a maior parte das flores hermaphroditas por
+								naõ poderem mudar de lugar, e ir buscar o seu consorte; e se nas
+								dioicas estaõ os sexos separados, distaõ contudo muito pouco
+								espaço.</note>.</s> As flores masculas (masculi), saõ aquellas em
+						que somente se achaõ estames sem pistillo algum (donde alguns lhes chamaraõ
+						estaminosas), como as que terminaõ o colmo do milho, as dos amentilhos da
+						nogueira, e algumas do melaõ, pepino, abobara, aroeira, legacaõ, linho,
+						canamo, gilbarbeira, &amp;c. <s>As flores femininas (faeminei), saõ as que
+							tem somente pistillo sem estames alguns, donde lhes chamaraõ taõbem
+							pistillosas <note>O Lord Bute no seu excellente tractado dos Generos das
+								plantas da Gr. Bretanha, que imprimio para divertimento das Fidalgas
+								de Inglaterra, tractou de evitar como delicado cortezaõ os termos de
 								hermaphroditas, masculas e femininas, e em lugar delles substituio
 								os nomes de completadas, estaminosas e pistillosas.</note>, taes saõ
 							por ex. as que se achaõ <pb n="207"
@@ -9178,8 +9262,9 @@
 						naõ falta, contudo como em razaõ dos succos abundantes vem a ser maior do
 						que naturalmente devera ser, como se observa na galeopsis, prunella, Etc.
 						semelhantes flores devem porisso ser contadas no numero das viçadas
-						modicamente. No mesmo numero se devem taõbem contar as que tem hum calyz
-						còrado fora do costume natural, como succede às vezes no quejadilho.</p>
+						modicamente. No mesmo numero se devem taõbem contar as que tem hum <term
+							lemma="cálice">calyz</term> còrado fora do costume natural, como succede
+						às vezes no quejadilho.</p>
 					<p>
 						<s>As flores, a que chamaõ verdadeiramente viçadas, saõ de tres sortes, a
 							saber, semidobradas, dobradas, e proliferas <note>
@@ -9192,25 +9277,28 @@
 						corolla tem mais ordens de petalas ou maior numero de lacinias do que
 						costuma ter naturalmente, conserva o pistillo e alguns estames, e dá algumas
 						sementes fecundas. <s>O perianthio e involucro rarissimamente degeneraõ de
-							modo que cheguem a constituir huma flor semidobrada, e ainda que o calyz
-							contra o natural costume possa mudar de cor <note>
-								<s>Nesta circumstancia o calyz pode fazer parecer a corolla
-									semidobrada, e porisso deve haver grande cuidado de o naõ
-									confundir com ella, nem por conseguinte dar erradamente à flor o
-									nome de emidobrada.</s>
+							modo que cheguem a constituir huma flor semidobrada, e ainda que o <term
+								lemma="cálice">calyz</term> contra o natural costume possa mudar de
+							cor <note>
+								<s>Nesta circumstancia o <term lemma="cálice">calyz</term> pode
+									fazer parecer a corolla semidobrada, e porisso deve haver grande
+									cuidado de o naõ confundir com ella, nem por conseguinte dar
+									erradamente à flor o nome de emidobrada.</s>
 							</note>, como succede ás vezes no quejadilho, <pb n="210"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0290_210_t24-C-R0120.jpg"
 							/> isto so deve ser considerado como hum pequeno viço <note>
-								<s>Naõ deixaõ contudo de haver exemplos de calyces consideravelmente
-									viçados: as escamas do calyz dos cravos augmentaõ as vezes de
-									tal modo, que formaõ huma espiga de figura particular; na
-									festuca ovina, e algumas gramas das montanhas alpinas o casulo
-									das flores degenera em <term lemma="folha" msd="plural"
-										>folhas</term>; na plantago maior a espiga degenera as vezes
-									em <term lemma="folha" msd="plural">folhas</term> floraes de tal
-									sorte que as flores ficaõ inteiramente suffocadas, o que succede
-									taõbem ás escamas do amentilho nalgumas especies de salgueiro,
-									quando os insectos estragaõ os organos sexuaes.</s>
+								<s>Naõ deixaõ contudo de haver exemplos de <term lemma="cálice"
+										norm="cálices" msd="plural">calyces</term> consideravelmente
+									viçados: as escamas do <term lemma="cálice">calyz</term> dos
+									cravos augmentaõ as vezes de tal modo, que formaõ huma espiga de
+									figura particular; na festuca ovina, e algumas gramas das
+									montanhas alpinas o casulo das flores degenera em <term
+										lemma="folha" msd="plural">folhas</term>; na plantago maior
+									a espiga degenera as vezes em <term lemma="folha" msd="plural"
+										>folhas</term> floraes de tal sorte que as flores ficaõ
+									inteiramente suffocadas, o que succede taõbem ás escamas do
+									amentilho nalgumas especies de salgueiro, quando os insectos
+									estragaõ os organos sexuaes.</s>
 							</note>.</s> As flores petaleadas saõ as que mais ordinariamente vem a
 						ser semidobradas, como por ex. as da nigella, papoila, dormideira,
 						pessegueiro, anemone, hepatica, &amp;c. contudo naõ deixaõ de haver taõbem
@@ -9303,8 +9391,9 @@
 							flores compostas.</s>
 						<s>A da peloria taõbem he bastantemente notavel; esta planta da-se
 							ordinariamente entre as linarias, e se assemelha intimamente a ellas no
-							habito externo, no calyz, cor da corolla, e germe do pistillo de suas
-							flores; estas circumstancias e o naõ dar sementes fecundas <note>
+							habito externo, no <term lemma="cálice">calyz</term>, cor da corolla, e
+							germe do pistillo de suas flores; estas circumstancias e o naõ dar
+							sementes fecundas <note>
 								<s>Wiggers diz ter observado sementes fecundas nesta planta, e senaõ
 									houve engano, este facto favorece o parecer dos que pensaõ que
 									ella deve constituir hum genero á parte.</s>
@@ -9344,8 +9433,9 @@
 						conhece, e se distingue do estado natural pela razaõ de que os estigmas se
 						alongaõ muito, os germes <pb n="215"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0295_215_t24-C-R0120.jpg"
-						/>augmentaõ, saõ mais compridos do que o calyz e divergem, como se tem
-						observado na escorcioneira, lapsana communis, e tragopogon pratense.</p>
+						/>augmentaõ, saõ mais compridos do que o <term lemma="cálice">calyz</term> e
+						divergem, como se tem observado na escorcioneira, lapsana communis, e
+						tragopogon pratense.</p>
 					<p><s>Huma flor composta radiada no estado de dobrez naõ deve ser confundida com
 							as inteiramente ligulosas naturaes, como saõ a serralha, dente de leaõ,
 							&amp;c; estas flores tem todos os seus flosculos hermaphroditos, nas
@@ -9389,17 +9479,17 @@
 						originaria do centro ou dos lados; na do centro o pistillo brota de si outra
 						flor para cima posta sobre hum pedunculo, e tem lugar algumas vezes nas
 						flores simplez, como nos cravos, ranunculus tuberosus, anemone hortensis,
-						geum urbanam, rosa gallica, &amp;c; na dos lados, o calyz commum brota de si
-						muitas outras flores pedunculadas, e tem lugar nas flores compostas e
-						aggregadas, como na bonina, calendula officinalis, saudade, e no hieracium
-						falcatum proliferum de Gaspar Bauhino. <s>As flores proliferas de foliolos
-							saõ raras, observaõ-se contudo algumas vezes nas rozeiras e anemones
-								<note>Na scrophularia aquatica algumas vezes os organos sexuaes saõ
-								transformados em fasciculos de foliolos e o mesmo se tem visto no
-								dipsacus sylvestris, &amp;c. Ha fructos que taõbem saõ proliferos de
-								foliolos, como as peras, uvas, &amp;c; elles ficaõ nesta
-								circumstancia sem sementes, por causa destas se terem convertido em
-								foliolos.</note>.</s></p>
+						geum urbanam, rosa gallica, &amp;c; na dos lados, o <term lemma="cálice"
+							>calyz</term> commum brota de si muitas outras flores pedunculadas, e
+						tem lugar nas flores compostas e aggregadas, como na bonina, calendula
+						officinalis, saudade, e no hieracium falcatum proliferum de Gaspar Bauhino.
+							<s>As flores proliferas de foliolos saõ raras, observaõ-se contudo
+							algumas vezes nas rozeiras e anemones <note>Na scrophularia aquatica
+								algumas vezes os organos sexuaes saõ transformados em fasciculos de
+								foliolos e o mesmo se tem visto no dipsacus sylvestris, &amp;c. Ha
+								fructos que taõbem saõ proliferos de foliolos, como as peras, uvas,
+								&amp;c; elles ficaõ nesta circumstancia sem sementes, por causa
+								destas se terem convertido em foliolos.</note>.</s></p>
 					<pb n="217"
 						facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0297_217_t24-C-R0120.jpg"/>
 					<p>A prolificaçaõ (prolificatio) naõ so tem lugar nas flores, mas ainda nas
@@ -11007,8 +11097,8 @@
 						corollas.</p>
 					<p>Verde (viridis); verde cor de alho porro (prasinus); verdemar (thalassinus);
 						verdenegro (atroviridis). <s>A cor verde he propria da maior parte das <term
-								lemma="folha" msd="plural"> folhas</term> e do calyz; mas he
-							rarissima na corolla.</s></p>
+								lemma="folha" msd="plural"> folhas</term> e do <term lemma="cálice"
+								>calyz</term>; mas he rarissima na corolla.</s></p>
 					<p>Garço (glaucus, glaucinus, caesius); a cor garça participa da verde e da
 						azulada, e porisso muitos a <pb n="270"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0350_270_t24-C-R0120.jpg"
@@ -11750,8 +11840,9 @@
 							dos vegetaes, porque todas contribuiaõ a fazelos reconhecer com mais
 							certeza; que a theoria da fructificaçaõ desprezadora do habito externo <note>
 								<s>O habito externo neste sentido indica todas as partes de hum
-									vegetal que naõ pertencem à flor e fructo; de modo que as
-									bractéas e pedunculos fazem já parte do habito externo.</s>
+									vegetal que naõ pertencem à flor e fructo; de modo que as <term
+										lemma="bráctea" norm="brácteas" msd="plural">bractéas</term>
+									e pedunculos fazem já parte do habito externo.</s>
 							</note> se oppunha ao progresso da Botanica, que tinha por fim o
 							descobrimento de hum bom methodo natural; que no habito externo a
 							natureza esconde hum rico thesoiro de caracteres, o qual nos revelaria
@@ -11778,14 +11869,15 @@
 								lemma="folha" msd="plural"> folhas</term> brotaõ enganchadas, saõ
 							oppostas e simplez, naõ tem estipulas, e que as suas flores saõ oppostas
 							ou em verticillo, &amp;c. he ajudar os caracteres da fructificaçaõ desta
-							familia, os quaes nos indicaõ que nella ha hum caliz tubuloso, huma
-							corolla monopetala irregular de dois labios, apegada ao receptaculo, com
-							quatro estames de que dois saõ mais curtos, o germe quadripartido e
-							tornado emfim em quatro sementes nuas reclusas no fundo do calyz, o
-							estylete terminado em dois estigmas, &amp;c; de maneira que com a
-							reuniaõ de todos estes destinctivos tirados de todas as partes das
-							plantas daremos sempre hum mais seguro conhecimento dos generos, que he
-							hum dos mais proveitosos trabalhos em Botanica.</s>
+							familia, os quaes nos indicaõ que nella ha hum <term lemma="cálice"
+								>caliz</term> tubuloso, huma corolla monopetala irregular de dois
+							labios, apegada ao receptaculo, com quatro estames de que dois saõ mais
+							curtos, o germe quadripartido e tornado emfim em quatro sementes nuas
+							reclusas no fundo do <term lemma="cálice">calyz</term>, o estylete
+							terminado em dois estigmas, &amp;c; de maneira que com a reuniaõ de
+							todos estes destinctivos tirados de todas as partes das plantas daremos
+							sempre hum mais seguro conhecimento dos generos, que he hum dos mais
+							proveitosos trabalhos em Botanica.</s>
 						<s>Estas consideraçoẽs naõ tem dobrado os defensores da theoria da
 							fructificaçaõ; elles repondem ordinariamente, que a Botanica tendo muito
 							mais especies que descrever e classar do que a <term lemma="Zoologia"
@@ -11817,12 +11909,13 @@
 							e emfim que o numero das cotylédones e situaçaõ do corculo, como
 							relativos a semente, rigorosamente pertenciaõ à fructificaçaõ, e o mesmo
 							eraõ os caracteres tirados das umbrellas nas umbrelladas, dos
-							amentilhos, e espadices em razaõ destas partes dizerem relaçaõ ao calyz,
-							que se considera em geral como pertencente á fructificaçaõ.</s> Esta
-						resposta naõ tem parecido justa, nem convincente aos da primeira opimiaõ, e
-						com effeito ainda que se devaõ sempre preferir as partes da fructificaçaõ a
-						quaesquer outras do habito externo, e consultalas em <w norm="primeiro"
-							>primerio</w> lugar relativamente às <pb n="300"
+							amentilhos, e espadices em razaõ destas partes dizerem relaçaõ ao <term
+								lemma="cálice">calyz</term>, que se considera em geral como
+							pertencente á fructificaçaõ.</s> Esta resposta naõ tem parecido justa,
+						nem convincente aos da primeira opimiaõ, e com effeito ainda que se devaõ
+						sempre preferir as partes da fructificaçaõ a quaesquer outras do habito
+						externo, e consultalas em <w norm="primeiro">primerio</w> lugar
+						relativamente às <pb n="300"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0380_300_t24-C-R0120.jpg"
 						/>affinidades, e formaçaõ dos generos, como sendo as mais essensiaes, parece
 						que senaõ deve desprezar em todos os cazos o uso das notas destinctivas tira
@@ -11900,25 +11993,26 @@
 						/>vemos nesta ou naquella familia hum certo numero de especies terem huma
 						nota constante e essensial isto naõ he regra certa para sempre as reunir
 						debaxo do mesmo genero; as especies de epilobium e de anothera por ex. tem
-						todas hum calyz de tubo longo, e isso naõ obstante pertencem na opiniaõ de
-						Linneo a dois generos;, as do sayaõ, conchello, e sedum tem todas nectarios
-						apagados à base do pistillo, e pertencem contudo a tres generos no parecer
-						do mesmo Botanico; pelo contrario as especies de betula, e alnus que elle a
-						principio pensava se deviaõ separar em dois generos foraõ por elle emfim
-						reunidas em hum por terem em cada escama do amentilho tres flosculos, e pela
-						mesma razaõ huma leve differença no apego dos estames das especies de aloe e
-						agave, o persuadio em fim a formar com ellas dois generos, apezar do habito
-						externo dantes lhe ter indicado o contrario; por huma leve semelhança nos
-						estames, esteve quasi persuadido a fazer do alecrim huma especie de
-							salva<note>Vej. as primeiras ediçoẽs do seu Genera plantarum, aonde
-							consulta os Botanicos a respeito da reuniaõ das especies destes e outros
+						todas hum <term lemma="cálice">calyz</term> de tubo longo, e isso naõ
+						obstante pertencem na opiniaõ de Linneo a dois generos;, as do sayaõ,
+						conchello, e sedum tem todas nectarios apagados à base do pistillo, e
+						pertencem contudo a tres generos no parecer do mesmo Botanico; pelo
+						contrario as especies de betula, e alnus que elle a principio pensava se
+						deviaõ separar em dois generos foraõ por elle emfim reunidas em hum por
+						terem em cada escama do amentilho tres flosculos, e pela mesma razaõ huma
+						leve differença no apego dos estames das especies de aloe e agave, o
+						persuadio em fim a formar com ellas dois generos, apezar do habito externo
+						dantes lhe ter indicado o contrario; por huma leve semelhança nos estames,
+						esteve quasi persuadido a fazer do alecrim huma especie de salva<note>Vej.
+							as primeiras ediçoẽs do seu Genera plantarum, aonde consulta os
+							Botanicos a respeito da reuniaõ das especies destes e outros
 							generos.</note>; a analogia intima da fructificaçaõ e habito externo das
 						especies de potentilla e tormentilla naõ foy sufficiente para inteiramente o
-						convencer a reunilas em hum so genero, a differença de caliz o moveo a polas
-						em dois generos, ao mesmo tempo que esta mesma differença naõ bastou para
-						que separasse a ficaria do ranunculas. Isto bastarà para mostrar que os
-						generos, que este celebre Botanico formou, naõ saõ naturaes nem geralmente
-						proprios <pb n="304"
+						convencer a reunilas em hum so genero, a differença de <term lemma="cálice"
+							>caliz</term> o moveo a polas em dois generos, ao mesmo tempo que esta
+						mesma differença naõ bastou para que separasse a ficaria do ranunculas. Isto
+						bastarà para mostrar que os generos, que este celebre Botanico formou, naõ
+						saõ naturaes nem geralmente proprios <pb n="304"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0384_304_t24-C-R0120.jpg"
 						/>para servir a qualquer methodo, como elle pensava; demais disso todos os
 						Botanicos de hoje sabem que muitos delles tem sido mudados tanto na vida
@@ -11996,12 +12090,13 @@
 						singulares, e por meyo de huma breve idea faz destinguir hum genero de todos
 						os mais da mesma divisaõ, e as vezes ainda mesmo de todos os generos
 						conhecidos, como he o caracter deduzido do nectario no martyrio, e
-						rainunculo, o do appendiculo escodellado do calyz da seutellaria, &amp;c. O
-						caracter natural he fundado em hum aggregado de notas tiradas de todas as
-						partes da fruetificaçaõ, proprio para fazer destinguir hum genero de todos
-						os demais ja conhecidos no reyno vegetal: como o mais exteriso inclue as
-						notas dos outros caracteres menores e resumidos como saõ o facticio e
-						essensial, e alem disso algumas que saõ commuas <pb n="307"
+						rainunculo, o do appendiculo escodellado do <term lemma="cálice"
+							>calyz</term> da seutellaria, &amp;c. O caracter natural he fundado em
+						hum aggregado de notas tiradas de todas as partes da fruetificaçaõ, proprio
+						para fazer destinguir hum genero de todos os demais ja conhecidos no reyno
+						vegetal: como o mais exteriso inclue as notas dos outros caracteres menores
+						e resumidos como saõ o facticio e essensial, e alem disso algumas que saõ
+						commuas <pb n="307"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0387_307_t24-C-R0120.jpg"
 						/> a outros generos cuja reuniaõ o constitue naturalmente proprio de hum so
 						genero. <s>Elle he empregado nos generos dos methodos naturaes ou mixtos, e
@@ -12025,7 +12120,7 @@
 									genio me offereceo.</s>
 							</note>.</s>
 					</p>
-					<p>Calyz. Nullo.</p>
+					<p><term lemma="cálice" norm="Cálice">Calyz</term>. Nullo.</p>
 					<p>Corolla. De seis petalas, campanulada, e estreitada na parte inferior.
 						Pecalas levantadas, encostadas humas as outras, com huma quilha obtusa no
 						dorso, mais largas e mais patentes na parte superior as suas pontas saõ
@@ -12167,13 +12262,14 @@
 					<p>As flores viçadas, monstruosas, e mutiladas naõ devem jamais ser fundamento
 						de caracteres genericos, que sò devem ser tirados das flores naturaes. A
 						prole, no cazo de prolificaçaõ, nos fara reconhecer o estado de viço; o
-						calyz, e ultima ordem de petalas podem contribuir para dar-nos idea do
-						estado de huma flor viçada, mas para melhor o reconhecer-mos sera precizo
-						semear ou transplantar a planta viçada no seu terreno natural ou em hum chaõ
-						magro. O calyz he menos sujeito a viço do que os estames e corolla, e os
-						estames menos sujeitos a elle do que as petalas. O nectario, aindaque em
-						algumas flores he sujeito a viçar, naõ deixa contudo de ser hum bom
-						fundamento de caracteres genericos.</p>
+							<term lemma="cálice">calyz</term>, e ultima ordem de petalas podem
+						contribuir para dar-nos idea do estado de huma flor viçada, mas para melhor
+						o reconhecer-mos sera precizo semear ou transplantar a planta viçada no seu
+						terreno natural ou em hum chaõ magro. O <term lemma="cálice">calyz</term> he
+						menos sujeito a viço do que os estames e corolla, e os estames menos
+						sujeitos a elle do que as petalas. O nectario, aindaque em algumas flores he
+						sujeito a viçar, naõ deixa contudo de ser hum bom fundamento de caracteres
+						genericos.</p>
 					<p>Pode haver huma nota singular commua a muitas especies, mas nem porisso se
 						segue que devaõ sempre pertencer a hum so genero; pelo contrario, pode haver
 						na maior parte das espocies de hum genero huma nota singular, que falte nas
@@ -12563,8 +12659,8 @@
 							dos troncos, ramos, pedunculos, peciolos, e principalmente das <term
 								lemma="folha" msd="plural">folhas</term>, as quaes fornecem
 							ordinariamente as mais bellas, e naturaes differenças.</s> Os gomos,
-						bolbilhos sobreradicaes, as armas, bracteas, estipulas, glandulas, e a <pb
-							n="328"
+						bolbilhos sobreradicaes, as armas, <term lemma="bráctea" norm="brácteas"
+							msd="plural">bracteas</term>, estipulas, glandulas, e a <pb n="328"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0408_328_t24-C-R0120.jpg"
 						/> inflorescencia ou disposiçaõ das flores podem taõbem dar-nos muitas vezes
 						excellentes sinaes destinctivos. <s>O cotanilho, felpa e pêlos saõ
@@ -13357,15 +13453,17 @@
 							curto do que a <term>folha</term>.</s>
 					</p>
 					<p>Inflorecencia <note>
-							<s>As bracteas e pedunculos, como partes as mais chegadas ás flores, e
-								fundamento da sua diversa disposiçaõ, saõ com propriedade postos
-								aqui debaxo da divisaõ da Inflorecencia.</s>
+							<s>As <term lemma="bráctea" norm="brácteas" msd="plural">bracteas</term>
+								e pedunculos, como partes as mais chegadas ás flores, e fundamento
+								da sua diversa disposiçaõ, saõ com propriedade postos aqui debaxo da
+								divisaõ da Inflorecencia.</s>
 						</note>.</p>
 					<p>
-						<s>Bracteas <term lemma="lanceolado" msd="feminino plural">
-								lanceoladas</term>, hum tanto obtusas, esbranquiçadas, integerrimas,
-							cada huma adunada ao pedunculo commum desde o meyo athe a base, e igual
-							no seu comprimento ao dicto pedunculo.</s>
+						<s><term lemma="bráctea" norm="Brácteas" msd="plural">Bracteas</term>
+							<term lemma="lanceolado" msd="feminino plural"> lanceoladas</term>, hum
+							tanto obtusas, esbranquiçadas, integerrimas, cada huma adunada ao
+							pedunculo commum desde o meyo athe a base, e igual no seu comprimento ao
+							dicto pedunculo.</s>
 					</p>
 					<p>
 						<s>Pedunculos solitarios, laterifolios, mais compridos do que o pecioso,
@@ -13380,8 +13478,9 @@
 					</p>
 					<p>Flores racimosas, e elevadas quasi á mesma altura.</p>
 					<p>Fructificaçaõ.</p>
-					<p>Calys. Perianthio partido em cinco lacinias concavas, de cor aloirada, quasi
-						da grandeza das petalas, e decadentes.</p>
+					<p><term lemma="cálice" norm="Cálice">Calys</term>. Perianthio partido em cinco
+						lacinias concavas, de cor aloirada, quasi da grandeza das petalas, e
+						decadentes.</p>
 					<p>Corolla. De cinco petalas oblongas, obtusas, pallidas, e crenadas no
 						cume.</p>
 					<p>Estames. Filetes numerosos, de trinta athe quarenta, assovelados, do
@@ -13616,7 +13715,8 @@
 							ao lado se ajuntará o retracto da planta inteira em pequeno vulto (como
 							fez o Dr. Oeder na sua Flora Dinamarqueza).</s>
 						<s>He precizo representar o ambito, <term>polpa</term>, substancia,
-							superficie, e ainda mesmo as mais miûdas partes, como v.g. as bractéas,
+							superficie, e ainda mesmo as mais miûdas partes, como v.g. as <term
+								lemma="bráctea" norm="brácteas" msd="plural">bractéas</term>,
 							estipulas, pelos, glandulas e quaesquer outros minimos corpusculos
 							organicos, que se achaõ na superficie.</s> Naõ serà desacertado que
 						algumas vezes o artifice use de huma lente ou microscopio para amplificar
@@ -13710,8 +13810,9 @@
 						<p>Pedunculos axillares, alternos, solitarios, curvados, unifloros,
 							engrossados, e estipulosos.</p>
 						<p>FRUCTIFICAÇAÕ.</p>
-						<p>CALYZ. Perianthio monophyllo, muito pequeno, plano, partido em cinco
-							lacinias obtusas, redondeadas, e persistentes.</p>
+						<p><term lemma="cálice" norm="CÁLICE">CALYZ</term>. Perianthio monophyllo,
+							muito pequeno, plano, partido em cinco lacinias obtusas, redondeadas, e
+							persistentes.</p>
 						<pb n="364"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0444_364_t24-C-R0120.jpg"/>
 						<p>
@@ -13743,7 +13844,7 @@
 									contara mais de 280 estames.</note>, e mais curtos do que a
 								corolla.</s>
 							<s>
-								<term lemma="antera" norm="Anteras" msd="plural"> Anthéras</term>
+								<term lemma="antera" norm="Anteras" msd="plural">Anthéras</term>
 								cordiformes, e bicellulares <note>
 									<s>Kempfer descreve as <term lemma="antera" norm="anteras"
 											msd="plural">antheras</term> como simples.</s>
@@ -13934,7 +14035,8 @@
 									fallando da Camellia conta o facto seguinte: "Num mercado
 									comprei a hum cego hum pe desta planta com lindas flores brancas
 									e vermelhas. Mas tendo-a depois observado em minha caza, achei
-									que as flores tinhaõ sido tiradas de outra planta; os calyces
+									que as flores tinhaõ sido tiradas de outra planta; os <term
+										lemma="cálice" norm="cálices" msd="plural">calyces</term>
 									das flores falsas tinhaõ sido taõ astutamente embutidos nos da
 									Camellia, que me teria sido difficil de descobrir o engano, se
 									as flores naõ tivessem começado a murchar-se. Este exemplo me
@@ -16314,8 +16416,8 @@
 								msd="plural">antheras</term>: ha algumas em que se deve separar a
 							corolla do calvz, visto que a sua principas virtude reside na corolla,
 							como são por ex. as rosas, cravos, violettas, &amp;c. mas nas labiadas
-							deve sempre conservar-se o calyz junto com a corolla, porque nelle
-							reside principalmente a virtude aromatica.</s>
+							deve sempre conservar-se o <term lemma="cálice">calyz</term> junto com a
+							corolla, porque nelle reside principalmente a virtude aromatica.</s>
 						<s>As <term lemma="antera" norm="anteras" msd="plural">antheras</term> devem
 							ser colhidas antes da vibraçaõ do seu pò.</s>
 					</p>
@@ -16415,12 +16517,12 @@
 						destruirlhes a cor, e he pouco favoravel à sua conservaçaõ.</p>
 					<p>As flores costumaõ perder ordinariamente as suas cores na dessiccaçaõ, e para
 						melhor lhas conservar he precizo, embrulhalas em papel e polas assim a
-						seccar; deve-se-lhes conservar o calys, e arrancalo somente depois de
-						passada a dessiccaçaõ, quando assim for necessario como nas violettas; os
-						cravos, e rosas vermelhas parecem ser huma excepçaõ desta regra, porquanto
-						so se costumaõ seccar as suas petalas, e ainda estas mesmas saõ antes
-						privadas das unhas. Os fructos ordinariamente costumaõ por-se a seccar naõ
-						muito maduros.</p>
+						seccar; deve-se-lhes conservar o <term lemma="cálice">calys</term>, e
+						arrancalo somente depois de passada a dessiccaçaõ, quando assim for
+						necessario como nas violettas; os cravos, e rosas vermelhas parecem ser huma
+						excepçaõ desta regra, porquanto so se costumaõ seccar as suas petalas, e
+						ainda estas mesmas saõ antes privadas das unhas. Os fructos ordinariamente
+						costumaõ por-se a seccar naõ muito maduros.</p>
 					<p>As sementes consideradas relativamente aos principios, e consistencia das
 						suas cotylédones podem ser divididas em oleosas, farinhosas e resinosas; as
 						oleosas propriamente saõ aquellas de que se pode tirar oleo por expressaõ,
