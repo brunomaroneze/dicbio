@@ -3,11 +3,10 @@
 O *Dicionário Histórico de Termos da Biologia* é consultável neste link:
 https://dicbio.fflch.usp.br
 
-Este repositório contém o código-fonte desse dicionário (`app.R`) e os arquivos
-.CSV que o alimentam.
+Este repositório contém o código-fonte desse dicionário (em Python e Django) e os arquivos .CSV que o alimentam.
 
-Também contém o código-fonte gerador do dataframe principal
-(`EtiquetagemDoCorpus.R`) e os arquivos .XML que compõem o córpus.
+Também contém os arquivos .XML que compõem o córpus e os scripts que extraem
+as informações dessas obras.
 
 Os dados são continuamente atualizados à medida que o dicionário também é
 atualizado.
