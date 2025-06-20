@@ -4,20 +4,64 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Obra de João Curvo Semmedo</title>
+        <title>"Observações Médicas Doutrinais" de Semedo: transcrição digital</title>
       </titleStmt>
       <publicationStmt>
-        <p>Publicação digital</p>
+        <p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+          (https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira Maroneze, a
+          partir da versão transcrita originalmente para o projeto "Corpus Histórico da Linguagem da
+          Medicina em Português"
+          (https://sites.google.com/view/projeto38597/observa%C3%A7oens-medicas-1707).</p>
       </publicationStmt>
       <sourceDesc>
         <bibl>
           <author>SEMEDO, João Curvo</author>. <title>Observaçoens medicas doutrinaes</title>.
             <pubPlace>Lisboa</pubPlace>: Na Officina de Antonio Pedrozo Galram, <date when="1707"
-            >1707</date>. Disponível em: https://archive.org/details/bub_gb_qCVH54Hs2i0C. </bibl>
+            >1707</date>. Disponível em: https://archive.org/details/bub_gb_qCVH54Hs2i0C.</bibl>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
+          letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
+        <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento <gi> pb</gi> foi
+          incluído antes da palavra, de modo a não quebrá-la.</p>
+
+        <p>O texto original também pode ser acessado pelo Internet Archive:
+          https://archive.org/details/bub_gb_qCVH54Hs2i0C/</p>
+        <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital
+          Internet Archive. O URL de cada imagem segue o padrão:
+            <code>https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_XXXX.jp2&amp;id=bub_gb_qCVH54Hs2i0C</code>,
+          onde <code>XXXX</code> é um número sequencial (a página de rosto é 0000). Neste arquivo
+          transcrito, cada elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o
+          atributo <att>facs</att> com o endereço URL do arquivo da imagem correspondente à página
+          em questão. No entanto, é importante notar que, para a correta validação deste arquivo
+          XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
+          funcionamento correto dos URLs.</p>
+      </editorialDecl>
+      <projectDesc>
+        <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+          Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+      </projectDesc>
+    </encodingDesc>
   </teiHeader>
   <text>
+    <front>
+      <titlePage
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0000.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
+        <docTitle>
+          <titlePart type="main">OBSERVAÇOENS MEDICAS DOUTRINAES</titlePart>
+          <titlePart type="desc">De cem Casos gravissimos</titlePart>
+        </docTitle>
+        <byline>, Que em serviço da Patria, &amp; das Nações estranhas escreve em lingua Portugueza,
+          &amp; Latina <docAuthor>JOAM CURVO SEMMEDO</docAuthor>, Cavalleiro professo da Ordem de
+          Christo, Familiar do Santo Officio, &amp; Medico da Casa Real; OFFERECIDAS AO
+          ILLUSTRISSIMO SENHOR RUY DE MOURA TELLES, Arcebispo de Braga Primàz das
+          Hespanhas.</byline>
+        <docImprint><pubPlace>LISBOA</pubPlace>, Na Officina de ANTONIO PEDROZO GALRAM. <docDate
+            when="1707">Anno M DCCVII</docDate>.</docImprint>
+      </titlePage>
+    </front>
     <body>
       <div type="chapter" n="1">
         <head>OBsERVAÇAM I.</head>
