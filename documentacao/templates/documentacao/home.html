@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load verbetes_extras %} {# Para o filtro formatar_autores #}
+
+{% block title %}
+{% if info_do_arquivo_ativo %}{{ info_do_arquivo_ativo.titulo }} - {% endif %}Documentação
+{% endblock %}
+
+{% block extra_head_css %}
+<link rel="stylesheet" href="{% static 'documentacao/css/documentacao.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 d-none d-md-block bg-light sidebar documentacao-sidebar">
+            <h5>Textos</h5>
+            <ul class="nav flex-column">
+                {# Prefácio (sempre primeiro, se existir) #}
+                {% if prefacio %}
+                <li class="nav-item">
+                    <a href="{% url 'documentacao:texto_documentacao' prefacio.slug %}"
+                        class="nav-link {% if prefacio.slug == ativo %}fw-bold text-primary{% endif %}">
+                        {{ prefacio.titulo }}
+                    </a>
+                </li>
+                {% endif %}
+
+                {# Textos Técnicos #}
+                {% if textos_tecnicos %}
+                <li class="nav-item mt-3"><strong>Textos de apoio</strong></li>
+                {% for item in textos_tecnicos %}
+                <li class="nav-item">
+                    <a href="{% url 'documentacao:texto_documentacao' item.slug %}"
+                        class="nav-link {% if item.slug == ativo %}fw-bold text-primary{% endif %}">
+                        <small>{{ item.titulo }}</small>
+                    </a>
+                </li>
+                {% endfor %}
+                {% endif %}
+
+                {# Curiosidades #}
+                {% if textos_curiosidades %}
+                <li class="nav-item mt-3"><strong>Curiosidades</strong></li>
+                {% for item in textos_curiosidades %}
+                <li class="nav-item">
+                    <a href="{% url 'documentacao:texto_documentacao' item.slug %}"
+                        class="nav-link {% if item.slug == ativo %}fw-bold text-primary{% endif %}">
+                        <small>{{ item.titulo }}</small>
+                    </a>
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <div class="col-md-9">
+            <div class="markdown-content">
+                {{ conteudo|safe }}
+            </div>
+
+            {# --- SEÇÃO DE CITAÇÃO PARA O TEXTO ATIVO --- #}
+            {% if info_do_arquivo_ativo %}
+            <div class="citation-section mt-5 border-top pt-3">
+                <p><strong>Como citar este texto:</strong></p>
+                {# O filtro formatar_autores espera uma string de autores #}
+                {% with autores_citacao=info_do_arquivo_ativo.autores|formatar_autores %}
+                <p>{{ autores_citacao }}. {{ info_do_arquivo_ativo.titulo }}. In: MARONEZE, Bruno (org.). <em>Dicionário
+                        Histórico de
+                        Termos da Biologia</em>. {{ info_do_arquivo_ativo.ano_publicacao|default:"[s.d.]" }}. Disponível
+                    em: {{ request.build_absolute_uri }}. Acesso
+                    em: {{ now|date:"d M Y" }}.</p>
+                {% endwith %}
+            </div>
+            {% endif %}
+            {# --- FIM DA SEÇÃO DE CITAÇÃO --- #}
+
+        </div>
+    </div>
+
+    <!-- Botão visível só em telas pequenas -->
+    <div class="d-md-none text-center mt-4">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMobile">
+            Mostrar textos
+        </button>
+        <div class="collapse mt-2" id="sidebarMobile">
+            <ul class="list-group">
+                {% if prefacio %}
+                <li class="list-group-item">
+                    <a href="{% url 'documentacao:texto_documentacao' prefacio.slug %}">
+                        {{ prefacio.titulo }}
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if textos_tecnicos %}
+                <li class="list-group-item disabled"><strong>Técnicos</strong></li>
+                {% for item in textos_tecnicos %}
+                <li class="list-group-item">
+                    <a href="{% url 'documentacao:texto_documentacao' item.slug %}">
+                        {{ item.titulo }}
+                    </a>
+                </li>
+                {% endfor %}
+                {% endif %}
+
+                {% if textos_curiosidades %}
+                <li class="list-group-item disabled"><strong>Curiosidades</strong></li>
+                {% for item in textos_curiosidades %}
+                <li class="list-group-item">
+                    <a href="{% url 'documentacao:texto_documentacao' item.slug %}">
+                        {{ item.titulo }}
+                    </a>
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

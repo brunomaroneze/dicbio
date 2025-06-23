@@ -1,0 +1,16 @@
+/* Estilos para a sidebar de documentação, se for diferente da do corpus */
+.documentacao-sidebar {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Estilo para os títulos de categoria na sidebar */
+.nav-item.mt-3 strong {
+    color: #333; /* Cor mais escura para os títulos */
+    padding-left: 0.5rem; /* Um pouco de indentação */
+}
+
+/* Ou, se o estilo da sidebar for igual ao do corpus, você pode usar uma classe compartilhada
+   definida em _styles.css (ex: .scrollable-sidebar) e não precisar desta. */

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{% if obra_atual %}{{ obra_atual.titulo }} - {% endif %}Córpus Digital
+{% endblock %}
+
+{% block extra_head_css %}
+<link rel="stylesheet" href="{% static 'corpus_digital/css/corpus_digital.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4"> {# Use container-fluid para ocupar mais largura se desejar #}
+    <div class="row">
+        <!-- Coluna da Lista de Obras -->
+        <aside class="col-lg-2 col-md-3 border-end vh-100 corpus-sidebar">
+            <h5>Obras</h5>
+            {% if obras %}
+            <ul class="list-unstyled">
+                {% for o in obras %}
+                <li>
+                    <a href="{% url 'corpus_digital:obra_detalhe' o.slug %}"
+                        class="text-decoration-none {% if obra_atual and o.slug == obra_atual.slug %}fw-bold text-primary{% else %}text-dark{% endif %}">
+                        <small>{{ o.autor }} — {{ o.titulo }}</small>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p><em>Nenhuma obra cadastrada.</em></p>
+            {% endif %}
+        </aside>
+
+        <!-- Coluna do Texto da Obra -->
+        <div class="col-lg-6 col-md-5 vh-100" id="texto-obra-container">
+            {% if obra_atual %}
+            <div class="mb-4 border-bottom pb-2">
+                <h2 class="mb-0 h4">{{ obra_atual.titulo }}</h2>
+                <p class="text-muted mb-0 small">{{ obra_atual.autor }}</p>
+            </div>
+            {% endif %}
+
+            {% if conteudo_html %}
+            <div class="obra-texto">
+                {{ conteudo_html|safe }}
+            </div>
+            {% elif obra_atual %}
+            <p><em>O conteúdo desta obra ainda não foi processado ou não está disponível.</em></p>
+            {% else %}
+            <p class="text-center mt-5"><em>Selecione uma obra na lista ao lado para visualizar o conteúdo.</em></p>
+            {% endif %}
+        </div>
+
+        <!-- Coluna da Imagem da Página -->
+        <div class="col-lg-4 col-md-4 vh-100" id="imagem-pagina-container"
+            style="position: sticky; top: 0; overflow-y: auto; text-align: center;">
+            {% if obra_atual %}
+            <figure class="figure mt-3">
+                <img id="imagem-pagina-ativa" src="" alt="Imagem da página"
+                    class="figure-img img-fluid rounded shadow-sm">
+                <figcaption id="legenda-pagina-ativa" class="figure-caption text-center mt-2">Página: -</figcaption>
+            </figure>
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-outline-secondary btn-sm me-2" id="prev-page-btn">
+                    <i class="bi bi-arrow-left"></i> Página Anterior
+                </button>
+                <button class="btn btn-outline-secondary btn-sm" id="next-page-btn">
+                    Próxima Página <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            {% else %}
+            {# Placeholder ou mensagem #}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{# Passando dados do Django para o JavaScript #}
+<script id="django-vars" type="application/json">
+    {
+        "obraAtualExiste": {% if obra_atual %}true{% else %}false{% endif %}
+    }
+</script>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{% static 'corpus_digital/js/corpus_image_sync.js' %}"></script>
+{% endblock %}

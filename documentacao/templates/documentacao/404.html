@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Página não encontrada{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4 text-danger">404</h1>
+    <p class="lead">O texto solicitado não foi encontrado.</p>
+    <a href="{% url 'documentacao:documentacao' %}" class="btn btn-primary mt-3">Voltar para a documentação</a>
+</div>
+{% endblock %}

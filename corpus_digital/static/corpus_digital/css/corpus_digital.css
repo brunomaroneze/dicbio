@@ -1,0 +1,35 @@
+.corpus-sidebar {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    padding-right: 5px; /* Para a barra de scroll */
+}
+
+#texto-obra-container {
+    overflow-y: auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+#imagem-pagina-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    text-align: center;
+}
+
+#imagem-pagina-ativa {
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.nota-tei {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    border-left: 2px solid #ccc;
+    background-color: #f8f8f8; /* Opcional: para destacá-las um pouco mais */
+    color: #555; /* Opcional: cor do texto para notas */
+    /* Você pode adicionar um estilo de fonte diferente aqui se quiser */
+}

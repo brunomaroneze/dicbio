@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load verbetes_extras %}
+{% block title %}{{ verbete.termo|default:"Consulta" }}{% endblock %}
+
+{% block extra_head_css %}
+    <link rel="stylesheet" href="{% static 'verbetes/css/verbetes.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <!-- Caixa de busca -->
+    <form method="get" action="{% url 'verbetes:consulta' %}" class="mb-4">
+        <div class="col-md-6 mx-auto">
+            <div class="input-group input-group-sm">
+                <input type="text" name="q" placeholder="Buscar verbete..." class="form-control"
+                    value="{{ request.GET.q }}" aria-label="Campo de busca de verbetes">
+                <button class="btn btn-primary" type="submit" id="button-addon2">
+                    <i class="bi bi-search"></i> {# Ícone de lupa do Bootstrap Icons #}
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <!-- Coluna lateral com lista de verbetes -->
+        <aside class="col-md-3 border-end">
+            <h5>Verbetes</h5>
+            <ul class="list-unstyled verbetes-sidebar">
+                {% for v in lista_verbetes %}
+                <li>
+                    <a href="{% url 'verbetes:detalhe' v.slug %}"
+                        class="{% if v.slug == verbete.slug %}fw-bold text-primary{% endif %}">
+                        {{ v.termo }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <!-- Conteúdo do verbete -->
+        <section class="col-md-9">
+            {% if mensagem_busca %}
+            <div class="alert alert-warning" role="alert">
+                {{ mensagem_busca }}
+            </div>
+            {% endif %}
+            {% if verbete %}
+            <div class="verbete-header mb-4">
+                <h1>{{ verbete.termo }}</h1>
+                <p class="text-muted">{{ verbete.classe_gramatical }}</p>
+            </div>
+
+            <div class="etymology-section mb-4">
+                <h2>Discussão histórico-etimológica</h2>
+                <p>{{ verbete.etimologia|safe }}</p>
+            </div>
+
+            <div class="definitions-section mb-5">
+                <h2>Definições</h2>
+
+                {% for d in definicoes %}
+                <div class="definition-block mb-4">
+                    <p><strong>{{ d.sensenumber }}.</strong> {{ d.definition }}</p>
+
+                    {% comment %} Loop pelos sentidos (chaves) {% endcomment %}
+                    {% with d.sensenumber|stringformat:"s" as sense_key %}
+                    {% with exemplos_por_sense|get_item:sense_key as exemplos_for_sense %}
+                    {% if exemplos_for_sense %}
+                        {# --- NOVO LOOP AQUI: Loop por token (variante ortográfica) --- #}
+                        {% for token_val, token_examples_dict in exemplos_for_sense.items %}
+                        <div class="token-group mb-3 ms-3 border-start ps-3"> {# Nova div para agrupar por token #}
+                            
+                            {% for gram, autores in token_examples_dict.items %}
+                            {% for autor, exemplos in autores.items %}
+                            {% for exemplo in exemplos|slice:":1" %} {# Ainda pegando 1 exemplo por grupo gram/autor #}
+                                <div class="example ps-3">
+                                    {% with gram=exemplo.gram|stringformat:"s" %}
+                                    <p>
+                                        <strong>{{ exemplo.token }}</strong>
+                                        {% if gram and gram|lower != 'nan' %}
+                                        ({{ gram }})
+                                        {% endif %}
+                                    </p>
+                                    {% endwith %}
+                                    <p>{{ exemplo.frase|process_sentence_display|safe }}</p>
+
+                                    <p class="small text-muted text-end mt-1">
+                                        {% if exemplo.slug_obra and exemplo.titulo_obra %}
+                                            (Fonte: 
+                                            {% if exemplo.autor and exemplo.autor != 'N/A' %}
+                                                {{ exemplo.autor|capfirst }}
+                                            {% else %}
+                                                Autor Desconhecido
+                                            {% endif %}
+                                            , 
+                                            {% if exemplo.data and exemplo.data != 's.d.' %}
+                                                {{ exemplo.data }}
+                                            {% endif %}
+                                            , 
+                                            <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}" class="text-decoration-none text-dark">
+                                                {{ exemplo.titulo_obra }}
+                                                {% if exemplo.pagina_obra %}
+                                                    , p. {{ exemplo.pagina_obra }}
+                                                {% endif %}
+                                            </a>
+                                            )
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            {% endfor %}
+                            {% endfor %}
+                            {% endfor %}
+                        </div> {# Fim da div token-group #}
+                        {% endfor %} {# Fim do loop token_val #}
+                    {% endif %}
+                    {% endwith %}
+                    {% endwith %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="verbete-footer mt-5 border-top pt-3">
+                <p>Autor(es) do verbete: {{ verbete.autores }}</p>
+                <p>Este verbete foi incluído em {{ verbete.criado_em|date:"d M Y" }}
+                    {% if verbete.atualizado_em != verbete.criado_em %}
+                    e atualizado em {{ verbete.atualizado_em|date:"d M Y" }}
+                    {% endif %}
+                </p>
+                <!-- Citação sugerida -->
+                <div class="mt-3">
+                    <p><strong>Como citar este verbete:</strong></p>
+                    {% with autores=verbete.autores|formatar_autores %}
+                    {% with ano=verbete.atualizado_em|default:verbete.criado_em|date:"Y" %}
+                    <p>{{ autores }}. {{ verbete.termo }}. In: MARONEZE, Bruno (coord.) <em>Dicionário Histórico de
+                            Termos da Biologia</em>. {{ ano }}. Disponível em: {{ request.build_absolute_uri }}. Acesso
+                        em: {{ now|date:"d M Y" }}.</p>
+                    {% endwith %}
+                    {% endwith %}
+                </div>
+
+            </div>
+            {% elif not mensagem_busca %}
+            <p>Selecione um verbete na lista ao lado ou use a busca.</p>
+            {% endif %}
+        </section>
+    </div>
+
+</div>
+{% endblock %}
