@@ -14,10 +14,11 @@ tests/anotacaoUDPipe.csv
 CorpusAppBruno
 CorpusAppBruno.zip
 *.pyc
+*.py[cod]
 __pycache__/
-web/dicionario_web/__pycache__/
+dicionario_web/__pycache__/
 .env
-web/db.sqlite3
+db.sqlite3
 *.sqlite3
 venv/
 staticfiles/
