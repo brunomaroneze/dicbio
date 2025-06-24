@@ -91,22 +91,34 @@ def converter_tei_para_html_para_comando(tree):
 
     # 1. Transformar tei:term em <a>
     for term_el in text_element.xpath('.//tei:term', namespaces=ns_map):
-        lemma = term_el.get('lemma') or (term_el.text or '').strip()
-        slug = slugify(lemma)
-        token = term_el.text or lemma
+        lemma = term_el.get('lemma') or (term_el.text or '').strip() # Pega o @lemma
+        slug_do_lemma = slugify(lemma) # Slug gerado a partir do lema
+        token_superficie = term_el.text or lemma # O texto que aparece no link
 
         term_el.tag = 'a'
         try:
-            url_consulta = reverse('verbetes:detalhe', args=[slug])
+            # A URL deve apontar para o verbete usando o slug do lema
+            url_consulta = reverse('verbetes:detalhe', args=[slug_do_lemma])
             term_el.set('href', url_consulta)
         except Exception as e:
-            print(f"AVISO: Falha ao gerar URL para o termo '{lemma}' (slug: '{slug}'). Erro: {e}. Usando caminho relativo hardcoded.")
-            term_el.set('href', f"/consulta/{slug}/")
+            # Se reverse falhar, você pode querer um aviso ou um href placeholder
+            # print(f"AVISO: Falha ao gerar URL para o termo '{lemma}' (slug: '{slug_do_lemma}'). Erro: {e}.")
+            term_el.set('href', f"/verbetes/{slug_do_lemma}/") # Exemplo de fallback
 
-        term_el.text = token
+        term_el.text = token_superficie # O texto visível do link é o token original
+
+        # Adicionar o lema como um atributo de dados
+        if lemma:
+            term_el.set('data-lemma', lemma) # <-- ADICIONADO AQUI
+
+        # Limpar atributos desnecessários do TEI
         for attr_name in list(term_el.attrib.keys()):
-            if attr_name not in ['href', 'class', 'id', 'style', 'title']:
-                if attr_name in ['lemma', 'norm', 'msd', 'senseNumber', 'type', 'ana', 'corresp', 'ref']:
+            # Mantenha href, data-lemma, e atributos HTML padrão (class, id, style, title)
+            # Remova os atributos específicos do TEI que não são mais relevantes no <a>
+            if attr_name not in ['href', 'class', 'id', 'style', 'title', 'data-lemma']:
+                # Lista de atributos TEI a serem removidos explicitamente, se presentes
+                tei_attrs_to_remove = ['lemma', 'norm', 'msd', 'senseNumber', 'type', 'ana', 'corresp', 'ref']
+                if attr_name in tei_attrs_to_remove or '}' in attr_name: # Remove atributos com namespace também
                     del term_el.attrib[attr_name]
 
 
