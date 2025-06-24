@@ -24,3 +24,4 @@ venv/
 staticfiles/
 media/
 nltk_data_storage/
+data/temporalidade_palavras_com_lemas.csv
