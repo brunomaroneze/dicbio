@@ -5,7 +5,7 @@ from lxml import etree
 from pathlib import Path
 
 # Caminho da pasta onde estão os arquivos XML
-base_dir = Path('../web/corpus_digital/obras')
+base_dir = Path('../corpus_digital/obras')
 print(f"🔍 Caminho absoluto da pasta: {base_dir.resolve()}")
 
 xml_files = list(base_dir.glob('*.xml'))
@@ -101,7 +101,7 @@ for file in xml_files:
 
 print(f"📊 Total geral de linhas extraídas: {len(all_rows)}")
 
-output_file = "../web/data/termos_extraidos.csv"
+output_file = "../data/termos_extraidos.csv"
 with open(output_file, mode='w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow([

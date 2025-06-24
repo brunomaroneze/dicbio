@@ -5,7 +5,7 @@ from django.utils.text import slugify
 import re
 
 # Caminho da pasta onde estão os arquivos TEI
-base_path = Path('web/corpus_digital/obras')
+base_path = Path('corpus_digital/obras')
 xml_files = list(base_path.glob('*.xml'))
 
 ns = {'tei': 'http://www.tei-c.org/ns/1.0'}

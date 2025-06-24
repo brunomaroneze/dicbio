@@ -1,4 +1,4 @@
-# web/corpus_digital/admin.py
+# corpus_digital/admin.py
 
 from django.contrib import admin, messages
 from django.core.management import call_command

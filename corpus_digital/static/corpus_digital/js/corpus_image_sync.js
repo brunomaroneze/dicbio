@@ -1,4 +1,4 @@
-// web/corpus_digital/static/corpus_digital/js/corpus_image_sync.js
+// corpus_digital/static/corpus_digital/js/corpus_image_sync.js
 
 document.addEventListener('DOMContentLoaded', function () {
     const djangoVarsElement = document.getElementById('django-vars');
