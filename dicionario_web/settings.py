@@ -4,6 +4,7 @@ Django settings for dicionario_web project.
 
 from pathlib import Path
 import os
+import nltk
 from dotenv import load_dotenv # Importe as bibliotecas necessárias
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -14,7 +15,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Carrega as variáveis do arquivo .env localizado na BASE_DIR (.env)
 dotenv_path = BASE_DIR / '.env'
 load_dotenv(dotenv_path=dotenv_path)
+
 # -----------------------------------------------
+
+# --- NLTK Data Path Configuration ---
+NLTK_DATA_DIR = BASE_DIR / 'nltk_data_storage' # BASE_DIR aponta para Dicio_Biologia/
+
+# Cria o diretório se ele não existir
+if not NLTK_DATA_DIR.exists():
+    try:
+        NLTK_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        print(f"INFO: Diretório NLTK_DATA_DIR criado em {NLTK_DATA_DIR}")
+    except Exception as e:
+        print(f"AVISO: Não foi possível criar o diretório NLTK_DATA_DIR: {e}")
+
+# Adiciona este diretório ao path de busca do NLTK se ele existir e não estiver lá
+# Isso garante que o NLTK procurará dados aqui PRIMEIRO ou com alta prioridade.
+if NLTK_DATA_DIR.exists() and str(NLTK_DATA_DIR) not in nltk.data.path:
+    nltk.data.path.insert(0, str(NLTK_DATA_DIR)) # Insere no início para prioridade
+    print(f"INFO: Adicionado {NLTK_DATA_DIR} ao nltk.data.path")
+
+# (Opcional, mas pode ajudar) Definir a variável de ambiente para NLTK
+# Isso pode ser útil se alguma parte do NLTK ou bibliotecas dependentes
+# verificarem essa variável de ambiente diretamente.
+os.environ['NLTK_DATA'] = str(NLTK_DATA_DIR)
+# --- Fim da Configuração NLTK Data Path ---
 
 
 # --- CONFIGURAÇÕES DE SEGURANÇA E AMBIENTE ---
