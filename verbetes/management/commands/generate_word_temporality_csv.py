@@ -60,7 +60,15 @@ class Command(BaseCommand):
         
         custom_stopwords = {
             'q', 'qs', 'huma', 'hum', 'deste', 'desta', 'neste', 'nesta', 
-            'nao', 'dos', 'das', 'pello', 'pella', 'se', 'ser', 'haver', 'ter' # Adicionei verbos comuns como exemplo
+            'naõ', 'dos', 'das', 'pello', 'pella', 'se', 'ser', 'haver',
+            'ter', 'athe', 'delle', 'he', 'saõ', 'porque', 'taõ', 'tres',
+            'duas', 'fig', 'todos', 'muitos', 'cada', 'tal', 'assim',
+            'quasi', 'dous', 'algumas', 'alguns', 'sobre', 'bem',
+            'quatro', 'outro', 'outros', 'muito', 'mais', 'tudo', 'pois',
+            'meya', 'algum', 'ha', 'quaes', 'si', 'elle', 'cinco',
+            'sempre', 'toda', 'destas', 'qualquer', 'humas', 'foy',
+            'taes', 'so', 'elles', 'tão', 'porèm', 'ella', 'taõbem',
+            'della', 'delles', 'todas', 'tanto'
         }
         all_stopwords = portuguese_stopwords.union(custom_stopwords)
         
