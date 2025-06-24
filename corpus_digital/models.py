@@ -18,7 +18,6 @@ class Obra(models.Model):
         help_text="Opcional: para ordenação customizada na listagem de obras."
     )
 
-    # --- NOVO CAMPO ---
     conteudo_html_processado = models.TextField(
         blank=True,    # Permite que o campo seja vazio no formulário do admin
         null=True,     # Permite que o valor no banco de dados seja NULL
@@ -26,7 +25,13 @@ class Obra(models.Model):
                        # já que é preenchido por um script.
         help_text="Conteúdo HTML gerado a partir do arquivo TEI-XML. Preenchido automaticamente."
     )
-    # ------------------
+
+    data_referencia = models.CharField(
+        max_length=100, 
+        blank=True, 
+        null=True, 
+        help_text="Data/ano de referência da obra (ex: 1750, c. 1800, Século XVIII)."
+    )
 
     class Meta:
         ordering = ['ordem', 'autor', 'titulo'] # Define uma ordem padrão para consultas
@@ -36,7 +41,7 @@ class Obra(models.Model):
 
     def save(self, *args, **kwargs):
         # Gerar slug automaticamente se estiver vazio e o título existir
-        if not self.slug and self.titulo:
+        if not self.slug and self.titulo and self.autor:
             base_slug = slugify(f"{self.autor} {self.titulo}")
             slug_candidato = base_slug
             num = 1
