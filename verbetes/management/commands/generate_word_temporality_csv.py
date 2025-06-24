@@ -75,7 +75,7 @@ class Command(BaseCommand):
             return
 
         for obra in obras:
-            self.stdout.write(f'Processando obra: {obra.titulo} ({obra.ano_publicacao or "Sem Data"})')
+            self.stdout.write(f'Processando obra: {obra.titulo} ({obra.data_referencia or "Sem Data"})')
             
             html_content = obra.conteudo_html_processado
             soup = BeautifulSoup(html_content, 'html.parser')
@@ -116,7 +116,7 @@ class Command(BaseCommand):
                             'palavra_analisada': cleaned_token, # Esta é a palavra que vai para o CSV (lema ou token limpo)
                             'token_original': word_info['text'] if not word_info['is_term'] else token, # Para referência
                             'titulo_obra': obra.titulo,
-                            'data_publicacao': obra.ano_publicacao or 'N/A',
+                            'data_publicacao': obra.data_referencia or 'N/A',
                             'slug_obra': obra.slug,
                             'eh_termo_dicionario': word_info['is_term']
                         })
