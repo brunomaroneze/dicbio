@@ -7,11 +7,11 @@ import os
 from dotenv import load_dotenv # Importe as bibliotecas necessárias
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-# BASE_DIR aponta para a pasta 'web'
+# BASE_DIR aponta para a pasta 'Dicio_Biologia'
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # --- CARREGAMENTO DAS VARIÁVEIS DE AMBIENTE ---
-# Carrega as variáveis do arquivo .env localizado na BASE_DIR (web/.env)
+# Carrega as variáveis do arquivo .env localizado na BASE_DIR (Dicio_Biologia/.env)
 dotenv_path = BASE_DIR / '.env'
 load_dotenv(dotenv_path=dotenv_path)
 # -----------------------------------------------
