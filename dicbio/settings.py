@@ -88,10 +88,20 @@ WSGI_APPLICATION = 'dicbio.wsgi.application'
 
 
 # --- CONFIGURAÇÃO DO BANCO DE DADOS (DINÂMICA) ---
-DJANGO_ENV = os.environ.get('DJANGO_ENV', 'development') # Padrão para 'development'
+DJANGO_ENV = os.environ.get('DJANGO_ENV', 'development')
 
-if DJANGO_ENV == 'production':
-    # Configuração para MariaDB/MySQL (para o servidor de produção)
+# Verifica se estamos em produção E se as variáveis MySQL estão configuradas
+# Adicionamos uma verificação para MYSQL_HOST para decidir se usamos MySQL
+# ou fazemos fallback para SQLite mesmo em "production" no PythonAnywhere (plano gratuito)
+USE_MYSQL_IN_PRODUCTION = (
+    DJANGO_ENV == 'production' and
+    os.environ.get('MYSQL_HOST') is not None and
+    os.environ.get('MYSQL_NAME') is not None and
+    os.environ.get('MYSQL_USER') is not None
+)
+
+if USE_MYSQL_IN_PRODUCTION:
+    # Configuração para MariaDB/MySQL (para o servidor de produção com MySQL configurado)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -99,7 +109,7 @@ if DJANGO_ENV == 'production':
             'USER': os.environ.get('MYSQL_USER'),
             'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
             'HOST': os.environ.get('MYSQL_HOST'),
-            'PORT': os.environ.get('MYSQL_PORT'),
+            'PORT': os.environ.get('MYSQL_PORT', '3306'), # Adiciona um default para PORTA
             'OPTIONS': {
                 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
                 'charset': 'utf8mb4',
@@ -107,11 +117,15 @@ if DJANGO_ENV == 'production':
         }
     }
 else:
-    # Configuração para SQLite (para desenvolvimento local)
+    # Configuração para SQLite (para desenvolvimento local OU produção no PythonAnywhere sem MySQL configurado)
+    print("DJANGO_ENV:", DJANGO_ENV) # Para debug, pode remover depois
+    print("MYSQL_HOST:", os.environ.get('MYSQL_HOST')) # Para debug
+    if DJANGO_ENV == 'production':
+        print("INFO: Usando SQLite em ambiente de produção (PythonAnywhere) pois variáveis MySQL não estão completas.")
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3', # Ele criará este arquivo se não existir
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
 # -----------------------------------------------------------------
