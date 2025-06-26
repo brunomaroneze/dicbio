@@ -1,10 +1,10 @@
 /* Estilos do Cabeçalho e Rodapé */
 header {
-    background-color: #fdd6d6;
+    background-color: #0e509b;
 }
 
 footer {
-    background-color: #fdd6d6;
+    background-color: #0e509b;
     font-size: 0.9rem;
 }
 
@@ -69,7 +69,7 @@ footer {
 
 /* Estilo para o corpo da página */
 body {
-    background-color:rgb(255, 255, 255);
+    background-color:#dbe9ee;
     /* --- NOVAS REGRAS PARA O STICKY FOOTER --- */
     min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da viewport */
     display: flex;
