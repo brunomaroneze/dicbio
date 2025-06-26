@@ -49,6 +49,8 @@ O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pr
 
 A redação dos primeiros verbetes e a criação da parte computacional do dicionário foram possíveis graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. **Graça Rio-Torto**.
 
+A parceria com o projeto [**Corpus Histórico da Linguagem da Medicina em Português (Século XVIII)**](https://sites.google.com/view/projeto38597/p%C3%A1gina-inicial), coordenado pela Profa. Dra. **Maria José Bocorny Finatto**, tem possibilitado uma importante troca de materiais de pesquisa, em especial o texto das "Observações Médicas" de Semedo.
+
 A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio do técnico **Thiago Gomes Veríssimo**.
 
 Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico online.

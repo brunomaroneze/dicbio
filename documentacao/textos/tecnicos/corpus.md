@@ -17,6 +17,8 @@ Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O có
 
 - SANTUCCI, Bernardo. [**Anatomia do corpo humano**](https://books.google.com.br/books/about/Anatomia_do_corpo_humano.html?id=D83JL7ybBeUC&redir_esc=y). Lisboa: na Officina de Antonio Pedrozo Galram, 1739.
 
+- SEMEDO, João Curvo. [**Observaçoens Medicas Doutrinaes**](https://archive.org/details/bub_gb_qCVH54Hs2i0C/page/n1/mode/2up). Lisboa: na Officina de Antonio Pedrozo Galram, 1707.
+
 - VANDELLI, Domingos. [**Diccionario dos termos technicos de Historia Natural**](https://purl.pt/13958). Coimbra: na Real Officina da Universidade, 1788.
 
 ### Formatação do córpus
