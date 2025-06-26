@@ -126,14 +126,14 @@
                 <p>Este verbete foi incluído em {{ verbete.criado_em|date:"d M Y" }}
                     {% if verbete.atualizado_em != verbete.criado_em %}
                     e atualizado em {{ verbete.atualizado_em|date:"d M Y" }}
-                    {% endif %}
+                    {% endif %}.
                 </p>
                 <!-- Citação sugerida -->
                 <div class="mt-3">
                     <p><strong>Como citar este verbete:</strong></p>
                     {% with autores=verbete.autores|formatar_autores %}
                     {% with ano=verbete.atualizado_em|default:verbete.criado_em|date:"Y" %}
-                    <p>{{ autores }}. {{ verbete.termo }}. In: MARONEZE, Bruno (coord.) <em>Dicionário Histórico de
+                    <p>{{ autores }}. {{ verbete.termo|capfirst }}. In: MARONEZE, Bruno (coord.) <em>Dicionário Histórico de
                             Termos da Biologia</em>. {{ ano }}. Disponível em: {{ request.build_absolute_uri }}. Acesso
                         em: {{ now|date:"d M Y" }}.</p>
                     {% endwith %}
