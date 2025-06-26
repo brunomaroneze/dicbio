@@ -1,10 +1,10 @@
 /* Estilos do Cabeçalho e Rodapé */
 header {
-    background-color: #0e509b;
+    background-color: #12751f;
 }
 
 footer {
-    background-color: #0e509b;
+    background-color: #12751f;
     font-size: 0.9rem;
     color: white; /* Define a cor padrão do texto para branco para o footer e seus filhos (como <strong>) */
 }
