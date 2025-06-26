@@ -111,11 +111,21 @@ main {
     max-height: 40px;
 }
 
+/* Para o título principal/logo */
+.header-main-title {
+    color: white !important; /* Aplica ao <a> e será herdado pelo <strong> */
+}
+
 /* Este seletor assume que a <nav> é filha direta do <div class="container..."> */
 .container > nav > a {
   color: white !important;
 }
 
-.container > nav > a:hover {
-  color: #f0f0f0 !important;
+/* Opcional: Estilo de hover para o título, se desejar */
+.header-main-title:hover {
+    color: #f0f0f0 !important; /* Ou outra cor de destaque */
+}
+
+.header-nav-links a:hover {
+    color: #f0f0f0 !important;
 }
