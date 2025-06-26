@@ -30,7 +30,7 @@
             {# Logo menor para todas as páginas (exceto a inicial se você a esconde lá) #}
             {# A página inicial pode esconder este bloco usando um block aninhado se quiser um cabeçalho diferente #}
             {% block header_logo %}
-                <a href="{% url 'pagina_inicial:home' %}" class="d-flex align-items-center text-decoration-none header-main-title"">
+                <a href="{% url 'pagina_inicial:home' %}" class="d-flex align-items-center text-decoration-none header-main-title">
                     <img src="{% static 'img/logo.png' %}" alt="Logo Dicionário" class="header-logo">
                     <strong>Dicionário Histórico de Termos da Biologia</strong>
                 </a>
