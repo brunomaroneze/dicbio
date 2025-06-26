@@ -6,6 +6,24 @@ header {
 footer {
     background-color: #0e509b;
     font-size: 0.9rem;
+    color: white; /* Define a cor padrão do texto para branco para o footer e seus filhos (como <strong>) */
+}
+
+footer a {
+    color: white; /* Garante que os links também sejam brancos */
+}
+
+/* Opcional, mas recomendado: estilo para hover e focus nos links do rodapé */
+footer a:hover,
+footer a:focus {
+    color: #e0e0e0; /* Um branco levemente diferente ou a cor de destaque do seu tema */
+    /* Se você quiser sublinhado no hover: */
+    /* text-decoration: underline; */
+}
+
+/* Se os ícones (como o do Instagram) não pegarem a cor branca automaticamente: */
+footer .bi { /* Supondo que você use Bootstrap Icons */
+    color: white;
 }
 
 /* Estilo para o logo grande da página inicial */

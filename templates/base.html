@@ -56,20 +56,20 @@
         <div class="container d-flex flex-wrap justify-content-between">
             <div>
                 <strong>Dicionário Histórico de Termos da Biologia</strong><br>
-                <a href="https://www.instagram.com/dicbio" target="_blank" class="text-decoration-none text-dark">
+                <a href="https://www.instagram.com/dicbio" target="_blank" class="text-decoration-none">
                     <i class="bi bi-instagram"></i> Siga-nos no Instagram<br><small>@dicbio</small>
                 </a>
             </div>
             <div>
                 <strong>Sobre</strong><br>
                 {# Link para o texto específico 'equipe.md' #}
-                <a href="{% url 'documentacao:texto_documentacao' 'equipe' %}" class="text-dark text-decoration-none">Equipe</a><br>
+                <a href="{% url 'documentacao:texto_documentacao' 'equipe' %}" class="text-decoration-none">Equipe</a><br>
 
                 {# Link para a página principal da documentação (que mostrará prefacio.md por padrão) #}
-                <a href="{% url 'documentacao:home_documentacao' %}" class="text-dark text-decoration-none">Documentação</a><br>
+                <a href="{% url 'documentacao:home_documentacao' %}" class="text-decoration-none">Documentação</a><br>
 
                 {# Link para a página principal do corpus digital #}
-                <a href="{% url 'corpus_digital:corpus' %}" class="text-dark text-decoration-none">Córpus</a>
+                <a href="{% url 'corpus_digital:corpus' %}" class="text-decoration-none">Córpus</a>
             </div>
             <div class="d-flex flex-column align-items-start">
                 <strong>Apoio</strong>
@@ -80,7 +80,7 @@
             <div>
                 <strong>Licença</strong><br>
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                    class="text-dark text-decoration-none d-inline-block footer-license-link">
+                    class="text-decoration-none d-inline-block footer-license-link">
                     <img src="{% static 'img/creativecommons.png' %}" alt="Licença Creative Commons"
                         class="footer-license-logo"><br>
                     <span class="small">
