@@ -7,13 +7,14 @@ ano_publicacao: 2025
 # Félix da Silva Avelar Brotero (1744-1828)
 por Bruno Maroneze
 
-09 de junho de 2025
+09 de junho de 2025, atualizado em 29 de junho de 2025
 
+Retrato de Brotero, por autor desconhecido - fonte: Wikipedia
 ![Retrato de Brotero](/static/documentacao/img/Brotero01.jpg)
 
 Félix da Silva Avelar nasceu em Santo Antão do Tojal a 25 de Novembro de 1744, filho do médico José da Silva Pereira e Avelar e de dona Maria René da Encarnação Frazão. Ficou órfão pelo falecimento do pai, quando tinha 2 anos de idade, e a sua mãe, em decorrência disso, teve perturbações mentais foi internada; inicialmente, ele atuou como capelão cantor para angariar sua subsistência. Como à época era permitido formar-se na universidade apenas com a realização de exames (sem frequência às aulas), por três anos seguidos ele foi a Coimbra para fazer os exames, não tendo conseguido se formar devido à reforma universitária de 1772, que proibiu os exames sem frequência.
 
-Em 1778, como redator das *Gazetas de Lisboa*, as suas ideias filosóficas e a amizade que o ligava a Francisco Manuel do Nascimento - Filinto Elísio (1734-1819) -, tornaram-no suspeito ao Santo Ofício,, de modo que ele decidiu se exilar, fugindo para Paris juntamente com seu amigo. Lá, adotou o apelido de Brotero (amante dos mortais), tendo permanecido por 12 anos. Nesse período, frequentou as aulas e institutos de ciências naturais, assistiu ao Curso de História Natural que Valmont de Bomare abriu em Paris em 1781, e às lições de Botânica de Brisson na Académie de Pharmacie. Concluídos os principais estudos de História Natural, doutorou-se na Escola de Medicina de Reims, mas decidiu deixar a medicina e dedicar-se exclusivamente ao estudo da Botânica. Deixou Paris depois de haver presenciado os acontecimentos iniciais da Revolução Francesa e retornou a Lisboa em 1790, na companhia de Filinto Elísio.
+Em 1778, como redator das *Gazetas de Lisboa*, as suas ideias filosóficas e a amizade que o ligava a Francisco Manuel do Nascimento - Filinto Elísio (1734-1819) -, tornaram-no suspeito ao Santo Ofício, de modo que ele decidiu se exilar, fugindo para Paris juntamente com seu amigo. Lá, adotou o apelido de Brotero (amante dos mortais), tendo permanecido por 12 anos. Nesse período, frequentou as aulas e institutos de ciências naturais, assistiu ao Curso de História Natural que Valmont de Bomare abriu em Paris em 1781, e às lições de Botânica de Brisson na Académie de Pharmacie. Concluídos os principais estudos de História Natural, doutorou-se na Escola de Medicina de Reims, mas decidiu deixar a medicina e dedicar-se exclusivamente ao estudo da Botânica. Deixou Paris depois de haver presenciado os acontecimentos iniciais da Revolução Francesa e retornou a Lisboa em 1790, na companhia de Filinto Elísio.
 
 Em 1788, um pouco antes de voltar a Portugal, havia publicado em Paris o *Compêndio de Botânica*. Pela reputação e conhecimentos, foi nomeado lente de Botânica e Agricultura na Universidade de Coimbra. Logo após, iniciou a primeira escola prática de Botânica, reorganizando o jardim, que fora principiado sob a direção do antigo lente, Domingos Vandelli (1730-1816).
 

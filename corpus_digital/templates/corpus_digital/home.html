@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-{% if obra_atual %}{{ obra_atual.titulo }} - {% endif %}Córpus Digital
+{% if obra_atual %}{{ obra_atual.titulo }} - {% endif %}Córpus Digital - {{ block.super }}
 {% endblock %}
 
 {% block extra_head_css %}

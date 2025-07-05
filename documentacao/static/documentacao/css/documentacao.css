@@ -14,3 +14,33 @@
 
 /* Ou, se o estilo da sidebar for igual ao do corpus, você pode usar uma classe compartilhada
    definida em _styles.css (ex: .scrollable-sidebar) e não precisar desta. */
+
+
+blockquote {
+    /* Estilo de borda à esquerda */
+    border-left: 4px solid #ccc; /* Uma linha cinza clara */
+    
+    /* Espaçamento interno à esquerda */
+    padding-left: 15px; 
+    
+    /* Cor do texto (opcional, mas pode ajudar a destacar) */
+    color: #555; 
+    
+    /* Estilo da fonte (opcional, itálico é comum para citações) */
+    font-style: italic;
+    
+    /* Margens superior e inferior para separar de outros elementos */
+    margin: 1.5em 0; 
+    
+    /* Um leve background para contraste (opcional) */
+    background-color: #f9f9f9; 
+    
+    /* Arredondar cantos (opcional) */
+    border-radius: 3px;
+}
+
+/* Se você quiser ajustar o parágrafo dentro do blockquote */
+blockquote p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

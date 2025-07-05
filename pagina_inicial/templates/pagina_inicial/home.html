@@ -8,7 +8,8 @@
 {% block content %}
 <div class="container text-center my-4">
     <!-- Logo Grande Centralizado para a Página Inicial -->
-        <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário Histórico de Termos da Biologia" class="main-page-logo">
+    <img src="{% static 'img/logo.png' %}" alt="Logo do Dicionário Histórico de Termos da Biologia"
+        class="main-page-logo">
 </div>
 
 <div class="container mb-5">
@@ -37,13 +38,15 @@
             <div class="card h-100">
                 {% if palavra_do_dia %}
                 {# Imagem para a Palavra do Dia - visível apenas se houver uma palavra sorteada #}
-                <img src="{% static 'img/VandelliTabXV.png' %}" class="card-img-top card-img-teaser" alt="Ilustração da Palavra do Dia">
+                <img src="{% static 'img/VandelliTabXV.png' %}" class="card-img-top card-img-teaser"
+                    alt="Ilustração da Palavra do Dia">
                 <div class="card-body">
                     <h5 class="card-title">Palavra do Dia</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ palavra_do_dia.termo }}</h6>
                     <p class="card-text">
-                        {% if palavra_do_dia.definicoes_carregadas %}
-                        {{ palavra_do_dia.definicoes_carregadas.0.definition|truncatewords:20|safe }}
+                        {# Usamos .definicoes.first para pegar a primeira definição de forma segura #}
+                        {% if palavra_do_dia.definicoes.first %}
+                        {{ palavra_do_dia.definicoes.first.definition|truncatewords:20|safe }}
                         {% else %}
                         Sem definição disponível.
                         {% endif %}
@@ -66,7 +69,8 @@
             <div class="card h-100">
                 {% if texto_diverso_1 %}
                 {% if texto_diverso_1.imagem_url %}
-                <img src="{{ texto_diverso_1.imagem_url }}" class="card-img-top card-img-teaser" alt="{{ texto_diverso_1.titulo }}">
+                <img src="{{ texto_diverso_1.imagem_url }}" class="card-img-top card-img-teaser"
+                    alt="{{ texto_diverso_1.titulo }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Curiosidade</h5>
@@ -88,7 +92,8 @@
             <div class="card h-100">
                 {% if texto_diverso_2 %}
                 {% if texto_diverso_2.imagem_url %}
-                <img src="{{ texto_diverso_2.imagem_url }}" class="card-img-top card-img-teaser" alt="{{ texto_diverso_2.titulo }}">
+                <img src="{{ texto_diverso_2.imagem_url }}" class="card-img-top card-img-teaser"
+                    alt="{{ texto_diverso_2.titulo }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Curiosidade</h5>

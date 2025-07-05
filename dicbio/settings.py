@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS_STRING.split(',') if hos
 
 # Application definition
 INSTALLED_APPS = [
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -77,7 +77,7 @@ TEMPLATES = [
             ],
             # Adicionando a biblioteca de templatetags customizadas
             'libraries': {
-                'custom_filters': 'verbetes.templatetags.custom_filters',
+                'custom_filters': 'verbetes.templatetags.verbetes_extras',
                 'doc_filters': 'documentacao.templatetags.doc_filters',
             }
         },

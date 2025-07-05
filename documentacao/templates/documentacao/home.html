@@ -3,7 +3,7 @@
 {% load verbetes_extras %} {# Para o filtro formatar_autores #}
 
 {% block title %}
-{% if info_do_arquivo_ativo %}{{ info_do_arquivo_ativo.titulo }} - {% endif %}Documentação
+{% if info_do_arquivo_ativo %}{{ info_do_arquivo_ativo.titulo }} - {% endif %}Documentação - {{ block.super }}
 {% endblock %}
 
 {% block extra_head_css %}
@@ -96,7 +96,7 @@
                 {% endif %}
 
                 {% if textos_tecnicos %}
-                <li class="list-group-item disabled"><strong>Apoio</strong></li>
+                <li class="list-group-item disabled"><strong>Textos de apoio</strong></li>
                 {% for item in textos_tecnicos %}
                 <li class="list-group-item">
                     <a href="{% url 'documentacao:texto_documentacao' item.slug %}">

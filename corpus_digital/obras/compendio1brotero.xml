@@ -41,6 +41,12 @@
 						<att>facs</att> com o endereço URL do arquivo da imagem correspondente à
 					página em questão.</p>
 			</editorialDecl>
+			<charDecl>
+				<char xml:id="turn">
+					<mapping type="unicode">U+1D197</mapping>
+					<desc>Símbolo musical de "volta" ("turn").</desc>
+				</char>
+			</charDecl>
 			<projectDesc>
 				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
 					Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
@@ -3111,9 +3117,10 @@
 										<term>raiz</term>, laxas e distantes, he huma verdadeira
 										<term>raiz</term> escamosa, e a Oxalis acetosella que se dà
 									por exemplo, o demostra evidentemente: assim como as escamas
-									pontudas dos caules senaõ chamaõ dentes, do mesmo modo devem ser
-									as das <term lemma="raiz" msd="plural"> raizes</term>, e este he
-									o meyo de evitar termos desnecessarios.</s>
+									pontudas dos <term lemma="caule" msd="plural">caules</term>
+									senaõ chamaõ dentes, do mesmo modo devem ser as das <term
+										lemma="raiz" msd="plural"> raizes</term>, e este he o meyo
+									de evitar termos desnecessarios.</s>
 							</note>.</s>
 					</p>
 					<pb n="17"
@@ -3159,12 +3166,13 @@
 							bastardos, taes saõ por ex. as <term lemma="raiz" msd="plural"
 								>raizes</term> dos ranunculos, e muitas orchideas.</s>
 						<s>Huns saõ radicaes, isto he, encravados na terra, sendo o resto da base do
-							antigo caule e das <term lemma="folha" msd="plural">folhas</term>
-							radicaes, como os das cebolas e alhos, outros saõ caulinos (caulini),
-							nascendo ou nas axillas que formaõ as <term lemma="folha" msd="plural"
-								>folhas</term> com o tronco, como saõ os que se vêm na bistorta, e
-							ranunculus ficaria (os quaes saõ bolbos bastardos), ou entre as flores
-							como no polygonum viviparum e algumas especies de alho.</s>
+							antigo <term>caule</term> e das <term lemma="folha" msd="plural"
+								>folhas</term> radicaes, como os das cebolas e alhos, outros saõ
+							caulinos (caulini), nascendo ou nas axillas que formaõ as <term
+								lemma="folha" msd="plural">folhas</term> com o tronco, como saõ os
+							que se vêm na bistorta, e ranunculus ficaria (os quaes saõ bolbos
+							bastardos), ou entre as flores como no polygonum viviparum e algumas
+							especies de alho.</s>
 						<s>Os bolbos radicaes dizem-se ser entunicados (tunicati bulbi), quando saõ
 							compostos de cascos concentricos como na cebola, alhos, cebolla
 							alvarran, &amp;c; escamosos (squamosi) se constaõ de escamas imbricadas
@@ -3249,11 +3257,12 @@
 					</p>
 					<p>
 						<s>Os antigos davaõ o nome de <term>tronco</term> (truncus) ao troço
-							ascendente das plantas lenhosas, e o de caule ou talo (caulis) ao das
-							herbaceas; mas hoje a palavra <term>tronco</term> está adoptada por hum
-							termo geral de que o caule he huma especie, de maneira que se pode dizer
-							com igual propriedade de termo, que o choupo tem hum caule lenhoso, como
-							se pode dizer, que a alface tem hum caule herbaceo.</s>
+							ascendente das plantas lenhosas, e o de <term>caule</term> ou talo
+							(caulis) ao das herbaceas; mas hoje a palavra <term>tronco</term> está
+							adoptada por hum termo geral de que o <term>caule</term> he huma
+							especie, de maneira que se pode dizer com igual propriedade de termo,
+							que o choupo tem hum <term>caule</term> lenhoso, como se pode dizer, que
+							a alface tem hum <term>caule</term> herbaceo.</s>
 					</p>
 					<p>
 						<s>Em hum grande numero de troncos ha, como nas <term lemma="raiz"
@@ -3265,7 +3274,8 @@
 							materno.</s>
 					</p>
 					<p>
-						<s>As especies de tronco saõ: caule, hastea, colmo, espique, e surculo <note>
+						<s>As especies de tronco saõ: <term>caule</term>, hastea, colmo, espique, e
+							surculo <note>
 								<p>
 									<s>Linneo admitte taõbem como especies de tronco os peciolos das
 											<term lemma="folha" msd="plural">folhas</term>, os
@@ -3291,27 +3301,28 @@
 							</note>.</s>
 					</p>
 					<p>
-						<s>O caule (caulis) he huma especie de tronco ordinariamente guarnecido de
-								<term lemma="folha" msd="plural">folhas</term>
+						<s>O <term>caule</term> (caulis) he huma especie de tronco ordinariamente
+							guarnecido de <term lemma="folha" msd="plural">folhas</term>
 							<note>
 								<p>
-									<s>Quando o caule pertence a hum subarbusto, arbusto, ou <term
-											lemma="árvore"> arvore</term>, quando elle he herbaceo
-										postrado ou reptante, algumas vezes fructifica sem ter <term
-											lemma="folha" msd="plural">folhas</term> algumas, mas
-										nem porisso deve ser chamado hastea (como se collige da
-										definiçaõ que della dou); taes saõ algumas especies de
-										Euphorbia, Cactus, Ephedra, Stapelia, Asparagus e Cuscuta.
-									</s>
+									<s>Quando o <term>caule</term> pertence a hum subarbusto,
+										arbusto, ou <term lemma="árvore"> arvore</term>, quando elle
+										he herbaceo postrado ou reptante, algumas vezes fructifica
+										sem ter <term lemma="folha" msd="plural">folhas</term>
+										algumas, mas nem porisso deve ser chamado hastea (como se
+										collige da definiçaõ que della dou); taes saõ algumas
+										especies de Euphorbia, Cactus, Ephedra, Stapelia, Asparagus
+										e Cuscuta. </s>
 								</p>
 							</note>, que eleva huma fructificaçaõ a qual naõ he nem musgosa nem
 							graminea nem analoga á dos grames (como o da pereira e açucena).</s>
 						<s>As verdascas e estolhos de que fallei no capitulo precedente saõ especies
-							de caules herbaceos sem articulaçoẽs nodosas, e os sarmentos (sarmenta)
-							saõ caules lenhosos ou herbaceos, de <term lemma="folha" msd="plural"
-								>folhas</term> hum tanto remotas, geniculado, lançando <term
-								lemma="raiz" msd="plural">raizes</term> nas articulaçoes nodozas,
-							como saõ os da videira e escalracho.</s>
+							de <term lemma="caule" msd="plural">caules</term> herbaceos sem
+							articulaçoẽs nodosas, e os sarmentos (sarmenta) saõ <term lemma="caule"
+								msd="plural">caules</term> lenhosos ou herbaceos, de <term
+								lemma="folha" msd="plural">folhas</term> hum tanto remotas,
+							geniculado, lançando <term lemma="raiz" msd="plural">raizes</term> nas
+							articulaçoes nodozas, como saõ os da videira e escalracho.</s>
 					</p>
 					<p>
 						<s>A hastea (scapus) he huma especie de tronco herbaceo ou levantado ou
@@ -3322,16 +3333,18 @@
 								<s>A hastea pode terminar em huma ou muitas flores, em espigas,
 									racimos e paniculas, e por conseguinte ser ramosa.</s>
 								<s>Lê-se nalgumas descripçoẽs de plantas herbaceas e levantadas:
-									caule sem <term lemma="folha" msd="plural"> folhas</term>, ou nu
-									de <term lemma="folha" msd="plural">folhas</term> (caulis
-									aphyllus, s. nudus) hastea bifolia, hastea folhosa; mas estes
-									termos saõ ambiguos e improprios, porque no primeiro cazo o
-									tronco he huma hastea, e no segundo he hum caule.</s>
+										<term>caule</term> sem <term lemma="folha" msd="plural">
+										folhas</term>, ou nu de <term lemma="folha" msd="plural"
+										>folhas</term> (caulis aphyllus, s. nudus) hastea bifolia,
+									hastea folhosa; mas estes termos saõ ambiguos e improprios,
+									porque no primeiro cazo o tronco he huma hastea, e no segundo he
+									hum <term>caule</term>.</s>
 								<s>Pela mesma razaõ me parece taõbem ser desnecessario dizer: hastea
 									sem <term lemma="folha" msd="plural">folhas</term> (scapus
 									aphyllus).</s>
-								<s>Ha plantas que podem ter duas sortes de troncos, isto he, caule e
-									hastea como a pilosella e morangueiro.</s>
+								<s>Ha plantas que podem ter duas sortes de troncos, isto he,
+										<term>caule</term> e hastea como a pilosella e
+									morangueiro.</s>
 								<s>Algumas especies de Osmunda tem hastea e espique ao mesmo tempo,
 									segundo alguns autores, mas como neste cazo a <term>folha</term>
 									naõ fructifica, parece que se deve conservar o nome de peciolo
@@ -3343,7 +3356,8 @@
 								lemma="folha" msd="plural"> folhas</term> radicaes.</s>
 						<s>A hastea pode ter escamas, estipulas, e <term lemma="bráctea"
 								norm="brácteas" msd="plural">bracteas</term>; mas naõ <term
-								lemma="folha" msd="plural">folhas</term>, alias seria hum caule.</s>
+								lemma="folha" msd="plural">folhas</term>, alias seria hum
+								<term>caule</term>.</s>
 						<s>Ella he simplez ou sem ramos na pilosella e junquilhos, e ramosa na
 							Hypochaeris radicata, e Anthericum ramosum.</s>
 					</p>
@@ -3353,19 +3367,20 @@
 							humas plantas he occo, em outras esponjoso, ou geniculado ou sem nos,
 							com <term lemma="folha" msd="plural"> folhas</term> ou sem ellas,
 							ramoso, ou simplicissimo, herbaceo ou arbustivo; em huma palavra, he
-							huma hastea ou caule a que os Botanicos quizeraõ dar o nome de colmo por
-							ser hum tronco dos grames, e plantas que lhes saõ naturalmente analogas <note>
+							huma hastea ou <term>caule</term> a que os Botanicos quizeraõ dar o nome
+							de colmo por ser hum tronco dos grames, e plantas que lhes saõ
+							naturalmente analogas <note>
 								<s>Donde resulta que para naõ errarmos nas descripçoẽs que fizermos,
-									dando o nome de caule ou hastea a huma planta que tem colmo, he
-									precizo termos ideas claras dos caracteres principaes que
-									constituem a familia natural dos gramineos; ainda que naõ he
-									este o proprio lugar de fallar nesta materia, direi contudo de
-									passagem que os principaes caractéres desta familia consistem
-									nas <term lemma="folha" msd="plural"> folhas</term> planas,
-									lineares, pontudas, flexiveis, em forma de fitta, compostas de
-									fibras parallelas, e ordinariamente envaginantes; os tegumentos
-									dos organos sexuaes, chamados casulos, saõ certas escamas
-									paleaceas denominadas valvulas, o <term lemma="cálice"
+									dando o nome de <term>caule</term> ou hastea a huma planta que
+									tem colmo, he precizo termos ideas claras dos caracteres
+									principaes que constituem a familia natural dos gramineos; ainda
+									que naõ he este o proprio lugar de fallar nesta materia, direi
+									contudo de passagem que os principaes caractéres desta familia
+									consistem nas <term lemma="folha" msd="plural"> folhas</term>
+									planas, lineares, pontudas, flexiveis, em forma de fitta,
+									compostas de fibras parallelas, e ordinariamente envaginantes;
+									os tegumentos dos organos sexuaes, chamados casulos, saõ certas
+									escamas paleaceas denominadas valvulas, o <term lemma="cálice"
 										>calyx</term> tem duas ordinariamente, e raras vezes huma,
 									tres ou mais; a corolla tem ordinariamente duas valvulas, das
 									quas a interior he menor, e raras vezes tem huma so; o fructo he
@@ -3384,8 +3399,8 @@
 									como ellos naõ elevaõ de modo algum a fructificaçaõ destes
 									vegetaes, alguns modernos naõ admittem nellas esta especie de
 									tronco, e conservaraõ o nome de peciolo aos seus pés, dando o
-									nome de caule simplez ao troço, que se eleva sobre a terra,
-									terminado no cume por <term lemma="folha" msd="plural"
+									nome de <term>caule</term> simplez ao troço, que se eleva sobre
+									a terra, terminado no cume por <term lemma="folha" msd="plural"
 										>folhas</term> e fructificaçaõ em espadice.</s>
 							</note>, mas a singularidade com que elevaõ a fructificaçaõ e as
 							circumstancias desta fizeraõ adoptar este nome em lugar do de peciolo,
@@ -3489,7 +3504,8 @@
 					<p>Direito (rectus, strictus), quando he impertigado, sem tortuosidades algumas,
 						e forma com o plano da terra hum angulo recto (o junco, e o helianthus
 						altissimus). He hum tronco perfeitamente levantado, e alem disso he opposto
-						ao caule tortuoso, fraco, e a quaesquer outros que tem curvaturas.</p>
+						ao <term>caule</term> tortuoso, fraco, e a quaesquer outros que tem
+						curvaturas.</p>
 					<p>Fraco (laxus, flaccidus, debilis), quando por ser delgado ou de flexivel
 						contextura bambolea, e abana facilmente em varias direcçoẽs.</p>
 					<pb n="27"
@@ -3506,8 +3522,8 @@
 					<p>Reclinado (reclinatus, declinatus, inclinatus), quando levantando-se
 						primeiramente hum tanto de es guelha começa a descahir para a terra,
 						prolongando-se em arco, ou formando huma curva assaz aberta; mas a sua ponta
-						fica levantada de maneira que figura quasi hum postrado 𝆗 (convolvulus
-						tricolor, potentilla aurea).</p>
+						fica levantada de maneira que figura quasi hum postrado <g ref="#turn"/>
+						(convolvulus tricolor, potentilla aurea).</p>
 					<p>Incurvado (incurvatus, inflexus), quando se levanta direito e arquea na parte
 						superior (juncus inflexus).</p>
 					<p>Acenoso (nutans), quando tem a ponta dobrada para baxo, ou dependurada
@@ -3529,27 +3545,28 @@
 						pelas suas juntas (a videira, legacam, e clematis vitalba).</p>
 					<p>Reptante ou serpentante (reptans, repens) quando he postrado, longo, mais ou
 						menos ramoso, e lança amiudo sobre a terra varias radiculas (a potentilla, e
-						a lysimachia nummularia). <s>Se este mesmo caule em lugar de ser estirado
-							sobre a terra trepa, e engatinha pelas <term lemma="árvore"
+						a lysimachia nummularia). <s>Se este mesmo <term>caule</term> em lugar de
+							ser estirado sobre a terra trepa, e engatinha pelas <term lemma="árvore"
 								norm="árvores" msd="plural">arvores</term>, paredes, ou rochas
 							altas, aferrando-se a ellas por meyo das suas numerosas raigotas
-							lateraes, daõ-lhe o nome de raigotoso (radicans) taes saõ os caules da
-							bignonìa radicans, cissus quinquefolius, &amp;c.</s> A hera humas vezes
-						he reptante, outras raigotosa; donde resulta que estes dois termos indicaõ a
-						mesma coiza em differentes lugares.</p>
+							lateraes, daõ-lhe o nome de raigotoso (radicans) taes saõ os <term
+								lemma="caule" msd="plural">caules</term> da bignonìa radicans,
+							cissus quinquefolius, &amp;c.</s> A hera humas vezes he reptante, outras
+						raigotosa; donde resulta que estes dois termos indicaõ a mesma coiza em
+						differentes lugares.</p>
 					<p><s>Articulado (articulatus), quando tem juntas destribuidas de distancia em
 							distancia <note>Este termo toma-se ás vezes taõbem por geniculado, mas o
-								melhor he applicalo somente aos caules que tem juntas sem serem
-								nodosas, e taõbem quando so dependem do tacto para se reconhecerem,
-								(como as do juncus articulatus, e cyperus articulatus). As juntas
-								saõ chamadas articulationes, articuli, juncturae, e quando, saõ
-								nodosas genicula, nodi. Linneo da ordinariamente o nome de articulus
-								ás entrejuntas, mas hum grande numero de Botanicos antigos e
-								modernos daõ a este termo a significaçaõ de junta.</note>, (a
-							cavallinha, a genista sagittalis, e o cactus ficus indica).</s> Se estas
-						juntas saõ nodosas ou como huma especie de tornosellos, o tronco nesta
-						circumstancia he chamado nodoso ou geniculado (geniculatus, s. nodosus),
-						como he <pb n="29"
+								melhor he applicalo somente aos <term lemma="caule" msd="plural"
+									>caules</term> que tem juntas sem serem nodosas, e taõbem quando
+								so dependem do tacto para se reconhecerem, (como as do juncus
+								articulatus, e cyperus articulatus). As juntas saõ chamadas
+								articulationes, articuli, juncturae, e quando, saõ nodosas genicula,
+								nodi. Linneo da ordinariamente o nome de articulus ás entrejuntas,
+								mas hum grande numero de Botanicos antigos e modernos daõ a este
+								termo a significaçaõ de junta.</note>, (a cavallinha, a genista
+							sagittalis, e o cactus ficus indica).</s> Se estas juntas saõ nodosas ou
+						como huma especie de tornosellos, o tronco nesta circumstancia he chamado
+						nodoso ou geniculado (geniculatus, s. nodosus), como he <pb n="29"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0109_29_t24-C-R0120.jpg"
 						/> o colmo da cevada e de hum grande numero de grames. O espaço que medea
 						entre as juntas ou nos he chamado entrejunta, entreno (interjunctura,
@@ -3597,11 +3614,11 @@
 								trigonus - polygonus tem ordinariamente huma accepçaõ synonyma de
 								triangularis - multangularis; mas alguns botanicos usaõ dos
 								primeiros para significar angulos hum tanto embotados.</note>, ou
-							taõbem tri- tetra- penta- hexa- poly- gonus.</s> O caule de dois angulos
-						he o bigumeo; taõbem se encontraõ troncos de hum so angulo (uniangulatus),
-						como o do iris foetidissima. Quando tem angulos agudos, diz-se acutangulo
-						(scrophularia nodosa), e obtusangulo (obtusangulus) se tem angulos mal
-						assinalados, ou obtusos.</p>
+							taõbem tri- tetra- penta- hexa- poly- gonus.</s> O <term>caule</term> de
+						dois angulos he o bigumeo; taõbem se encontraõ troncos de hum so angulo
+						(uniangulatus), como o do iris foetidissima. Quando tem angulos agudos,
+						diz-se acutangulo (scrophularia nodosa), e obtusangulo (obtusangulus) se tem
+						angulos mal assinalados, ou obtusos.</p>
 					<p>Segundo o numero dos lados planos que tem, diz-se ser: de tres, quatro, cinco
 						lados, &amp;c. <pb n="31"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0111_31_t24-C-R0120.jpg"
@@ -3693,10 +3710,10 @@
 								os principiantes, e porisso os naõ distingui aqui.</note>, quando
 							tem pelos compridos naõ entrelaçados huns com os outros, mas bem
 							visivelmente desunidos; saõ mais ou menos distantes, mais ou menos
-							rijos, mas naõ quebraõ, como as finas sedas do caule hispido; e variaõ
-							muito quanto ao seu comprimento (a cenoira).</s> Quando saõ poucos e
-						bastantemente distantes entre si, o tronco diz-se ser: empubescido
-						(pubescens).</p>
+							rijos, mas naõ quebraõ, como as finas sedas do <term>caule</term>
+							hispido; e variaõ muito quanto ao seu comprimento (a cenoira).</s>
+						Quando saõ poucos e bastantemente distantes entre si, o tronco diz-se ser:
+						empubescido (pubescens).</p>
 					<p>Felpudo ou aveludado (villosus), quando tem pelos bastos, approximados,
 						macios ao tacto, naõ entrelaçados, e assaz bem visiveis sem lente (o
 						çumagre.)</p>
@@ -5335,10 +5352,10 @@
 					<p>Quanto á grandeza absoluta (vej. pag. 23, art. 2º)</p>
 					<p>3º. Considerado relativamente ao seu apego, diz-se ser:</p>
 					<p>
-						<s>Inserido ou conjuntado (insertus), quando se apega ao caule como por huma
-							articulaçaõ, e ordinariamente forma angulos muito abertos com os ramos
-							(as <term lemma="árvore" norm="árvores" msd="plural"
-							>arvores</term>).</s>
+						<s>Inserido ou conjuntado (insertus), quando se apega ao <term>caule</term>
+							como por huma articulaçaõ, e ordinariamente forma angulos muito abertos
+							com os ramos (as <term lemma="árvore" norm="árvores" msd="plural"
+								>arvores</term>).</s>
 					</p>
 					<p>Innato (adnatus), tem a base larga, e se apega taõ fortemente ao tronco ou
 						ramos, que parece confundir-se com a sua substancia; naõ se pode arrancar
@@ -5719,8 +5736,8 @@
 								grossas, rijas, e duras do que as sedas, e cerdas, agudas, picantes
 								com effusaõ de sangue, apegadas á casca da planta e naõ ao lenho,
 								podendo-se arrancar ordinariamente sem grande estrago da parte da
-								planta a que jazem afferradas; taes gaõ os que se achaõ no caule das
-								sylvas e roseiras <note>
+								planta a que jazem afferradas; taes gaõ os que se achaõ no
+									<term>caule</term> das sylvas e roseiras <note>
 									<s>Nas especies de cactus, euphorbia, e solanum alguns Botanicos
 										chamaõ aculeos ao que outros chamaõ espinhos ou abrolhos;
 										mas deve-se observar que os verdadeiros abrolhos passaõ a
@@ -5820,7 +5837,7 @@
 								>folhas</term>, e ordinariamente uniflòros; saõ a mesma coiza que
 							hasteas simplices ou simplicissimas.</s>
 					</p>
-					<p>Caulinos (caulini), quando nascem do caule.</p>
+					<p>Caulinos (caulini), quando nascem do <term>caule</term>.</p>
 					<p>Rameos (ramei), se nascem dos ramos.</p>
 					<p>Peciolares (petiolares), se nascem dos peciolos (o hibiscus moscheutos, e
 						algumas especies de turnera). <pb n="97"
@@ -10833,11 +10850,11 @@
 								<s>Basta muitas vezes cortar o tronco pela base para fazer huma
 									planta cespitosa.</s>
 							</note>; ou se ellas vem a seu fittaceas (fasciatae), isto he, se os
-							seus caules se coadunaõ, ou nascem adunados de modo que formaõ hum so,
-							comprido, largo, e chato como huma fitta, este phenomeno tem lugar
-							algumas vezes no rainunculo, acelga, espargo, chicoria, celosia,
-							escorcioneira, tragopogon, &amp;c. e pode ser occasionado
-							artificialmente.</s>
+							seus <term lemma="caule" msd="plural">caules</term> se coadunaõ, ou
+							nascem adunados de modo que formaõ hum so, comprido, largo, e chato como
+							huma fitta, este phenomeno tem lugar algumas vezes no rainunculo,
+							acelga, espargo, chicoria, celosia, escorcioneira, tragopogon, &amp;c. e
+							pode ser occasionado artificialmente.</s>
 						<s>O viço faz <pb n="260"
 								facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0340_260_t24-C-R0120.jpg"
 							/> taõbem que algumas <term lemma="árvore" norm="árvores" msd="plural">
@@ -12563,25 +12580,26 @@
 							dois em hum; o que quando muito daria quatorze termos, sette adjectivos
 							e sette substantivos, e ainda estes ultimos em razaõ de serem repetidos
 							algumas vezes fariaõ diminuir o numero, como se pode ver no ex.
-							seguinte: 50 caule lenhoso; 25 <term lemma="folha" msd="plural"
-								>folhas</term> oppostas; 13 <term lemma="folha" msd="plural"
-								>folhas</term> pinnuladas; 7 foliolos serreados; 3 foliolos ovaes; 2
-							pedunculos unifloros; 1 pedunculos bracteados; onde se vê que sem
-							embargo de haverem quatorze termos, se podem contudo reduzir a onze, naõ
-							repetindo os termos <term lemma="folha" msd="plural">folhas</term>,
-							foliolos e pedunculos, e deste modo o caracter synoptico seria enunciado
-							(N.. .) <note>(N...) lugar do nome generico.</note> de caule lenhoso;
-							com <term lemma="folha" msd="plural">folhas</term> oppostas, e
-							pinnuladas; foliolos serreados, e ovaes; pedunculos uniflores e
-							bracteados.</s> O caracter natural de huma especie he a descripçaõ de
-						todas as suas partes consideradas desde o estado de germinaçaõ e radicaçaõ
-						athe a fructificaçaõ inclusivamente; elle inclue todas as notas, pelas quaes
-						ella convem e desconvem com as mais plantas do reyno vegetal, he immutavel,
-						em todos os systemas, e ainda no cazo que se descubraõ milhares de plantas
-						novas jamais sera alterado, se huma vez foy delineado bem ao natural, e
-						ficou sendo hum perfeitissimo retracto da planta a que so compete; elle
-						envolve em si, pela sua grande extensaõ, as notas fundamentaes dos outros
-						caracteres naõ so especificos <pb n="325"
+							seguinte: 50 <term>caule</term> lenhoso; 25 <term lemma="folha"
+								msd="plural">folhas</term> oppostas; 13 <term lemma="folha"
+								msd="plural">folhas</term> pinnuladas; 7 foliolos serreados; 3
+							foliolos ovaes; 2 pedunculos unifloros; 1 pedunculos bracteados; onde se
+							vê que sem embargo de haverem quatorze termos, se podem contudo reduzir
+							a onze, naõ repetindo os termos <term lemma="folha" msd="plural"
+								>folhas</term>, foliolos e pedunculos, e deste modo o caracter
+							synoptico seria enunciado (N.. .) <note>(N...) lugar do nome
+								generico.</note> de <term>caule</term> lenhoso; com <term
+								lemma="folha" msd="plural">folhas</term> oppostas, e pinnuladas;
+							foliolos serreados, e ovaes; pedunculos uniflores e bracteados.</s> O
+						caracter natural de huma especie he a descripçaõ de todas as suas partes
+						consideradas desde o estado de germinaçaõ e radicaçaõ athe a fructificaçaõ
+						inclusivamente; elle inclue todas as notas, pelas quaes ella convem e
+						desconvem com as mais plantas do reyno vegetal, he immutavel, em todos os
+						systemas, e ainda no cazo que se descubraõ milhares de plantas novas jamais
+						sera alterado, se huma vez foy delineado bem ao natural, e ficou sendo hum
+						perfeitissimo retracto da planta a que so compete; elle envolve em si, pela
+						sua grande extensaõ, as notas fundamentaes dos outros caracteres naõ so
+						especificos <pb n="325"
 							facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0405_325_t24-C-R0120.jpg"
 						/>mas ainda genericos, e no meu sentimento huma obra que contivesse os
 						exactos caracteres naturaes de todas as plantas conhecidas seria o mais
@@ -12849,8 +12867,9 @@
 							flores, de pequenas flores; e emfim todos aquelles que saõ acompanhados
 							dos adverbios mais, menos, muito ou pouco, como v. g. de <term
 								lemma="folha" msd="plural">folhas</term> mais largas, de <term
-								lemma="folha" msd="plural">folhas</term> mais estreitas, de caule
-							menos grosso, de caule muito alto, de caule pouco alto, &amp;c.</s>
+								lemma="folha" msd="plural">folhas</term> mais estreitas, de
+								<term>caule</term> menos grosso, de <term>caule</term> muito alto,
+							de <term>caule</term> pouco alto, &amp;c.</s>
 						<s>Donde se collige taõbem que todos os graos de comparaçaõ de huma especie
 							com outra em qualquer relaçaõ, que for da sua estructura naõ devem ser
 							usados nos caracteres especificos, como v. g. se dissessemos <term
@@ -13323,21 +13342,22 @@
 							Murriaõ dos alqueives (Anagallis arvensis) se poderá dizer:</s>
 					</p>
 					<p>M. dos alqueives. Com <term lemma="folha" msd="plural">folhas</term>
-						indivisas; caule estirado. Varia nas flores, sendo as suas corollas ora
-						escarlatas, ora azues, e algumas vezes tambem variegadas de branco e
-						purpureo.</p>
+						indivisas; <term>caule</term> estirado. Varia nas flores, sendo as suas
+						corollas ora escarlatas, ora azues, e algumas vezes tambem variegadas de
+						branco e purpureo.</p>
 					<p>Em lugar de dizer:</p>
 					<p>
 						<s>M. dos alqueives, com <term lemma="folha" msd="plural">folhas</term>
-							indivisas; caule estirado; flores azues.</s>
+							indivisas; <term>caule</term> estirado; flores azues.</s>
 					</p>
 					<p>
 						<s>M. dos alqueives, com <term lemma="folha" msd="plural">folhas</term>
-							indivisas; caule estirado; flores escarlatas.</s>
+							indivisas; <term>caule</term> estirado; flores escarlatas.</s>
 					</p>
 					<p>
 						<s>M. dos alqueives, com <term lemma="folha" msd="plural">folhas</term>
-							indivisas; caule estirado; flores variegadas de branco e purpureo.</s>
+							indivisas; <term>caule</term> estirado; flores variegadas de branco e
+							purpureo.</s>
 					</p>
 					<p>Donde se vê que às notas variaveis devem ser pospostas ás especificas, no
 						cazo que dellas se haja de fazer mençaõ. Os nomes que exprimem estas notas
@@ -13418,11 +13438,12 @@
 					<p>Radicaçam. <s><term lemma="raiz">Raiz</term> lenhosa, ramosissima, tortuosa,
 							e de epiderme decadente; ramos cylindricos, terminados em radiculas
 							capillares, tortuosas, e com algumas ramificaçoẽs.</s></p>
-					<p>Tronqueadura. <s>Caule arboreo, cylindrico, ramosissimo, de casca grossa,
-							porossa, coberta de huma epiderme estriada e gretada no troço annoso,
-							mas glabra e liza no troço tenro; ramos patentes cylindricos, tortuosos
-							de huma <term>folha</term> para à outra junto das extremidades, e
-							salpicados de alguns pontos espalhados sem ordem.</s></p>
+					<p>Tronqueadura. <s><term>caule</term> arboreo, cylindrico, ramosissimo, de
+							casca grossa, porossa, coberta de huma epiderme estriada e gretada no
+							troço annoso, mas glabra e liza no troço tenro; ramos patentes
+							cylindricos, tortuosos de huma <term>folha</term> para à outra junto das
+							extremidades, e salpicados de alguns pontos espalhados sem
+						ordem.</s></p>
 					<p>Gomoscencia. Gomos alternos, covados, estipularesfolheares, formados de
 						quatro ou cinco escamas ovadas, obtusas, levemente enroladas para dentro, e
 						hum tanto carnudas na base; as duas externas saõ menores e desiguaes.</p>
@@ -13789,7 +13810,8 @@
 											>arvores</term> do Chá, que naõ tinhaõ de alto mais do
 										que huma vara ou ana Ingleza.</s> Voyage to China, vol. 1
 									pag. 247. Vej. taõbem Ekberg's account of the Chinese husbandry,
-									vol. II p. 303. </note>: Caule lenhoso, arboreo, <pb n="363"
+									vol. II p. 303. </note>: <term>caule</term> lenhoso, arboreo,
+									<pb n="363"
 									facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0443_363_t24-C-R0120.jpg"
 								/> cylindrico, e ramoso: ramos alternos, vagos ou dispostos sem
 								ordem regular, hum tanto rijos, de cor hum tanto cinzenta, e

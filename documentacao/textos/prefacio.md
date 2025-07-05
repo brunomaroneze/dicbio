@@ -51,9 +51,9 @@ A redação dos primeiros verbetes e a criação da parte computacional do dicio
 
 A parceria com o projeto [**Corpus Histórico da Linguagem da Medicina em Português (Século XVIII)**](https://sites.google.com/view/projeto38597/p%C3%A1gina-inicial), coordenado pela Profa. Dra. **Maria José Bocorny Finatto**, tem possibilitado uma importante troca de materiais de pesquisa, em especial o texto das "Observações Médicas" de Semedo.
 
-A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio do técnico **Thiago Gomes Veríssimo**.
+A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio dos técnicos **Thiago Gomes Veríssimo** e **Ricardo Fontoura**.
 
-Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico online.
+Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico *online*.
 
 Agradecemos a **Gisele Cristina da Conceição** (Universidade do Porto) pelas valiosas sugestões e opiniões.
 

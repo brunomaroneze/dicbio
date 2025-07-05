@@ -152,6 +152,60 @@ def converter_tei_para_html_para_comando(tree):
              del el_latim.attrib[xml_lang_attr_qname] # Remove o xml:lang original
     # --------------------------------------------------------------------
 
+# --- NOVO PASSO: Processar tags <g> com referências ---
+    # Este loop deve rodar ANTES da limpeza final de namespaces TEI,
+    # mas depois que outras transformações de tag já aconteceram.
+
+    # Primeiro, vamos construir um mapa das definições de caracteres do <charDecl>
+    char_map = {}
+    for char_el in tree.xpath('.//tei:charDecl/tei:char', namespaces=ns_map):
+        char_id = char_el.get('{http://www.w3.org/XML/1998/namespace}id')
+        if char_id:
+            mapping_el = char_el.find('tei:mapping[@type="unicode"]', namespaces=ns_map)
+            desc_el = char_el.find('tei:desc', namespaces=ns_map)
+            unicode_val = mapping_el.text.replace('U+', '') if mapping_el is not None and mapping_el.text else None
+            desc_val = desc_el.text if desc_el is not None and desc_el.text else char_id
+            char_map[f"#{char_id}"] = {'unicode': unicode_val, 'desc': desc_val}
+
+    # Agora, encontre todas as tags <g> com um atributo ref e processe-as
+    for g_el in text_element.xpath('.//tei:g[@ref]', namespaces=ns_map):
+        ref = g_el.get('ref')
+        
+        # Opcional: manter o texto original do <g> se houver, para fallback
+        # original_text = g_el.text or ""
+        
+        # Substituir por uma Entidade Numérica HTML
+        if ref in char_map and char_map[ref]['unicode']:
+            unicode_hex = char_map[ref]['unicode']
+            html_entity = f"&#x{unicode_hex};" # Ex: 톗
+            
+            # Criar um novo elemento <span> para conter a entidade
+            # Usar etree.fromstring para parsear a entidade corretamente.
+            # O texto da tag será a entidade, que os navegadores renderizarão como o símbolo.
+            # Para que o lxml não escape a entidade, precisamos de um truque.
+            # Vamos criar um span e definir seu 'tail' para a entidade,
+            # então o nó <g> vazio será substituído pelo span, e o tail será inserido.
+            
+            span_substituto = etree.Element('span')
+            span_substituto.set('class', 'special-char') # Para estilização opcional
+            span_substituto.set('title', char_map[ref]['desc']) # Tooltip com a descrição
+            
+            # Adicionar a entidade como 'tail' do elemento que vem ANTES de <g>
+            # ou como 'text' do elemento PAI se for o primeiro filho.
+            # A forma mais segura é substituir <g> por um nó de texto contendo a entidade.
+            # Mas lxml escapa o '&'. A solução é usar um nó de comentário e depois
+            # substituir na string final.
+            placeholder = f"__CHAR_ENTITY_{unicode_hex}__"
+            g_el.tag = 'span' # Transforma <g> em <span>
+            g_el.text = placeholder
+            g_el.set('class', 'special-char')
+            g_el.set('title', char_map[ref]['desc'])
+            # Limpar atributos antigos
+            del g_el.attrib['ref']
+     
+        # --------------------------------------------------
+
+
     # 3. Limpeza final de namespaces TEI (manter namespaces de outros como HTML 'lang')
     for el in text_element.iter('*'):
         # Remover namespace TEI da tag
@@ -170,6 +224,14 @@ def converter_tei_para_html_para_comando(tree):
 
 
     html_string = etree.tostring(text_element, method='html', encoding='unicode', pretty_print=True)
+
+    # Passo final para substituir os placeholders de entidades por entidades reais
+    for ref_id, char_data in char_map.items():
+        if char_data['unicode']:
+            placeholder = f"__CHAR_ENTITY_{char_data['unicode']}__"
+            html_entity = f"&#x{char_data['unicode']};"
+            html_string = html_string.replace(placeholder, html_entity)
+            
     return html_string
 
 

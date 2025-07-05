@@ -1,37 +1,82 @@
+/* --- ESTILOS PADRÃO (PARA TELAS PEQUENAS/MOBILE FIRST) --- */
+
+/* Por padrão, nenhum elemento é sticky. 
+   Deixamos o fluxo natural de empilhamento do Bootstrap funcionar. */
 .corpus-sidebar {
-    position: sticky;
-    top: 0;
+    /* Não defina 'position: sticky' aqui. */
+    /* Você pode definir um max-height para a lista de obras não ser gigante no celular */
+    max-height: 40vh; /* Ex: limita a altura a 40% da tela */
     overflow-y: auto;
-    padding-right: 5px; /* Para a barra de scroll */
+    padding-right: 5px;
+    margin-bottom: 1.5rem; /* Adiciona um espaço abaixo da lista no mobile */
 }
 
 #texto-obra-container {
-    overflow-y: auto;
+    overflow-y: auto; /* 'auto' está ok, mas pode não ser necessário no mobile */
     font-size: 1.1em;
     line-height: 1.7;
 }
 
 #imagem-pagina-container {
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
+    /* Não defina 'position: sticky' aqui. */
     text-align: center;
+    /* A imagem pode ficar oculta no mobile por padrão para economizar espaço,
+       ou você pode decidir mostrá-la abaixo do texto. */
+    display: none; /* Sugestão: ocultar a coluna de imagem em telas pequenas */
 }
 
 #imagem-pagina-ativa {
-    max-height: 85vh;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
     object-fit: contain;
 }
 
+
+/* --- ESTILOS PARA TELAS GRANDES (DESKTOP) USANDO MEDIA QUERY --- */
+
+/* O breakpoint 'md' do Bootstrap 5 é 768px. 
+   Usaremos 'min-width: 768px' para aplicar estes estilos em telas de tamanho médio ou maiores. */
+@media (min-width: 768px) {
+    
+    .corpus-sidebar {
+        /* APLICAR O STICKY APENAS AQUI */
+        position: sticky;
+        top: 0;
+        /* Definir uma altura para o scroll funcionar corretamente com sticky */
+        height: 90vh; /* Ex: 90% da altura da viewport */
+        overflow-y: auto;
+        margin-bottom: 0; /* Remover a margem que adicionamos para mobile */
+    }
+
+    #imagem-pagina-container {
+        /* APLICAR O STICKY APENAS AQUI */
+        position: sticky;
+        top: 0;
+        height: 90vh; /* Mesma altura que o sidebar para alinhamento */
+        overflow-y: auto;
+        display: block; /* Mostra a coluna de imagem novamente */
+    }
+
+    #imagem-pagina-ativa {
+        max-height: 85vh; /* A regra que você já tinha */
+    }
+
+    #texto-obra-container {
+        /* Dar uma altura para o scroll do texto ser independente */
+        height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+/* O resto do seu CSS (nota-tei, texto-latim) permanece o mesmo,
+   pois não depende do tamanho da tela. */
 .nota-tei {
     font-size: 0.9em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding-left: 1em;
     border-left: 2px solid #ccc;
-    background-color: #f8f8f8; /* Opcional: para destacá-las um pouco mais */
-    color: #555; /* Opcional: cor do texto para notas */
-    /* Você pode adicionar um estilo de fonte diferente aqui se quiser */
+    background-color: #f8f8f8;
+    color: #555;
 }
 
 .texto-latim {

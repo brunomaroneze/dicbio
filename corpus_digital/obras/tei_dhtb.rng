@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns:xlink="http://www.w3.org/1999/xlink"
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
          xmlns:teix="http://www.tei-c.org/ns/Examples"
-         xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-03-26T21:20:07Z. . 
+Schema generated from ODD source 2025-06-26T21:26:00Z. . 
 TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
   
@@ -192,13 +192,13 @@ Suggested values include: 1] human; 2] template; 3] system; 4] bot; 5] unspecifi
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.cmc-generatedBy-CMC_generatedBy_within_post-constraint-rule-1">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@generatedBy]">
-            <sch:assert test="ancestor-or-self::tei:post">The @generatedBy attribute is for use within a &lt;post&gt; element.</sch:assert>
-          </sch:rule>
+         <sch:assert test="ancestor-or-self::tei:post">The @generatedBy attribute is for use within a &lt;post&gt; element.</sch:assert>
+      </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.datable.w3c.attributes">
       <ref name="tei_dhtbatt.datable.w3c.attribute.when"/>
@@ -294,32 +294,32 @@ Suggested values include: 1] human; 2] template; 3] system; 4] bot; 5] unspecifi
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.datable.w3c-att-datable-w3c-when-constraint-rule-2">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@when]">
-        <sch:report role="nonfatal" test="@notBefore|@notAfter|@from|@to">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
+         <sch:report role="nonfatal" test="@notBefore|@notAfter|@from|@to">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.datable.w3c-att-datable-w3c-from-constraint-rule-3">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@from]">
-        <sch:report role="nonfatal" test="@notBefore">The @from and @notBefore attributes cannot be used together.</sch:report>
+         <sch:report role="nonfatal" test="@notBefore">The @from and @notBefore attributes cannot be used together.</sch:report>
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.datable.w3c-att-datable-w3c-to-constraint-rule-4">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@to]">
-        <sch:report role="nonfatal" test="@notAfter">The @to and @notAfter attributes cannot be used together.</sch:report>
+         <sch:report role="nonfatal" test="@notAfter">The @to and @notAfter attributes cannot be used together.</sch:report>
       </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.datcat.attributes">
@@ -576,7 +576,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(certainty) signifies the degree of certainty associated with the intervention or interpretation.</a:documentation>
             <choice>
                <data type="double">
-                  <param name="minInclusive">0</param> 
+                  <param name="minInclusive">0</param>
                   <param name="maxInclusive">1</param>
                </data>
                <choice>
@@ -626,18 +626,18 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.global.source-source-only_1_ODD_source-constraint-rule-5">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@source]">
-            <sch:let name="srcs" value="tokenize( normalize-space(@source),' ')"/>
-            <sch:report test="(   self::tei:classRef                                 | self::tei:dataRef                                 | self::tei:elementRef                                 | self::tei:macroRef                                 | self::tei:moduleRef                                 | self::tei:schemaSpec )                                   and                                   $srcs[2]">
+         <sch:let name="srcs" value="tokenize( normalize-space(@source),' ')"/>
+         <sch:report test="(   self::tei:classRef                                 | self::tei:dataRef                                 | self::tei:elementRef                                 | self::tei:macroRef                                 | self::tei:moduleRef                                 | self::tei:schemaSpec )                                   and                                   $srcs[2]">
               When used on a schema description element (like
               <sch:value-of select="name(.)"/>), the @source attribute
               should have only 1 value. (This one has <sch:value-of select="count($srcs)"/>.)
             </sch:report>
-          </sch:rule>
+      </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.internetMedia.attributes">
       <ref name="tei_dhtbatt.internetMedia.attribute.mimeType"/>
@@ -795,12 +795,12 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.measurement-att-measurement-unitRef-constraint-rule-6">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@unitRef]">
-        <sch:report role="info" test="@unit">The @unit attribute may be unnecessary when @unitRef is present.</sch:report>
+         <sch:report role="info" test="@unit">The @unit attribute may be unnecessary when @unitRef is present.</sch:report>
       </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.notated.attributes">
@@ -884,13 +884,13 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.pointing-targetLang-targetLang-constraint-rule-7">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
-            <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
-          </sch:rule>
+         <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
+      </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.pointing.attribute.target">
       <optional>
@@ -991,7 +991,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
                      xmlns:rng="http://relaxng.org/ns/structure/1.0">@min</code> and <code xmlns="http://www.w3.org/1999/xhtml"
                      xmlns:rng="http://relaxng.org/ns/structure/1.0">@max</code>, or the proportion of observed values that fall within that range.</a:documentation>
             <data type="double">
-               <param name="minInclusive">0</param> 
+               <param name="minInclusive">0</param>
                <param name="maxInclusive">1</param>
             </data>
          </attribute>
@@ -1085,15 +1085,15 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.spanning-spanTo-spanTo-points-to-following-constraint-rule-8">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[ starts-with( @spanTo, '#') ]">
-            <sch:assert test="id( substring( @spanTo, 2 ) ) &gt;&gt; .">
+         <sch:assert test="id( substring( @spanTo, 2 ) ) &gt;&gt; .">
 	      The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current <sch:name/> element 
             </sch:assert>
-          </sch:rule>
+      </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.typed.attributes">
       <ref name="tei_dhtbatt.typed.attribute.type"/>
@@ -1121,12 +1121,12 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.typed-subtypeTyped-constraint-rule-9">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@subtype]">
-        <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
+         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
    </pattern>
    <define name="tei_dhtbatt.written.attributes">
@@ -2355,7 +2355,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </oneOrMore>
    </define>
    <define name="tei_dhtbmodel.gLike">
-      <notAllowed/>
+      <choice>
+         <ref name="tei_dhtbg"/>
+      </choice>
    </define>
    <define name="tei_dhtbmodel.oddDecl">
       <notAllowed/>
@@ -3232,6 +3234,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbprojectDesc"/>
          <ref name="tei_dhtbeditorialDecl"/>
          <ref name="tei_dhtbtagsDecl"/>
+         <ref name="tei_dhtbcharDecl"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.editorialDeclPart">
@@ -3305,15 +3308,15 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="tei_dhtb-att.calendarSystem-calendar-calendar_attr_on_empty_element-constraint-rule-10">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns="http://www.tei-c.org/ns/1.0"
                 context="tei:*[@calendar]">
-            <sch:assert test="string-length( normalize-space(.) ) gt 0"> @calendar indicates one or more
+         <sch:assert test="string-length( normalize-space(.) ) gt 0"> @calendar indicates one or more
               systems or calendars to which the date represented by the content of this element belongs,
               but this <sch:name/> element has no textual content.</sch:assert>
-          </sch:rule>
+      </sch:rule>
    </pattern>
    <define name="tei_dhtbp">
       <element name="p">
@@ -3322,8 +3325,8 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-11">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:p">
                <sch:report test="(ancestor::tei:ab or ancestor::tei:p) and                        not( ancestor::tei:floatingText                           | parent::tei:exemplum                           | parent::tei:item                           | parent::tei:note                           | parent::tei:q                           | parent::tei:quote                           | parent::tei:remarks                           | parent::tei:said                           | parent::tei:sp                           | parent::tei:stage                           | parent::tei:cell                           | parent::tei:figure )">
           Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
@@ -3333,8 +3336,8 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-p-abstractModel-structure-p-in-l-constraint-rule-12">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:p">
                <sch:assert test="ancestor::tei:floatingText | parent::tei:figure | parent::tei:note">
           Abstract model violation: Metrical lines may not contain higher-level structural elements such as div, p, or ab, unless p is a child of figure or note, or is a descendant of floatingText.
@@ -3511,8 +3514,8 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-desc-deprecationInfo-only-in-deprecated-constraint-rule-13">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:desc[ @type eq 'deprecationInfo']">
                <sch:assert test="../@validUntil">Information about a
         deprecation should only be present in a specification element
@@ -3942,8 +3945,8 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-ref-refAtts-constraint-rule-14">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ref">
                <sch:report test="@target and @cRef">Only one of the attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
             </sch:rule>
@@ -3964,12 +3967,11 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <group>
             <zeroOrMore>
                <choice>
-          
                   <ref name="tei_dhtbmodel.divTop"/>
                   <ref name="tei_dhtbmodel.global"/>
                   <zeroOrMore>
                      <ref name="tei_dhtbdesc"/>
-                  </zeroOrMore>          
+                  </zeroOrMore>
                </choice>
             </zeroOrMore>
             <choice>
@@ -4008,10 +4010,10 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-list-gloss-list-must-have-labels-constraint-rule-15">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:list[@type='gloss']">
-	              <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
+               <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_dhtbatt.global.attributes"/>
@@ -4070,7 +4072,6 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          <zeroOrMore>
             <choice>
                <text/>
-        
                <ref name="tei_dhtbmodel.gLike"/>
                <ref name="tei_dhtbmodel.phrase"/>
                <ref name="tei_dhtbmodel.inter"/>
@@ -4223,7 +4224,6 @@ Elements]</a:documentation>
                <ref name="tei_dhtbmodel.ptrLike"/>
                <ref name="tei_dhtbdate"/>
                <ref name="tei_dhtbtextLang"/>
-        
                <ref name="tei_dhtbavailability"/>
             </choice>
          </zeroOrMore>
@@ -4241,14 +4241,12 @@ Elements]</a:documentation>
                      <choice>
                         <ref name="tei_dhtbauthor"/>
                         <ref name="tei_dhtbeditor"/>
-              
                         <ref name="tei_dhtbrespStmt"/>
                      </choice>
                      <zeroOrMore>
                         <choice>
                            <ref name="tei_dhtbauthor"/>
                            <ref name="tei_dhtbeditor"/>
-                
                            <ref name="tei_dhtbrespStmt"/>
                         </choice>
                      </zeroOrMore>
@@ -4258,7 +4256,6 @@ Elements]</a:documentation>
                      <zeroOrMore>
                         <choice>
                            <ref name="tei_dhtbmodel.ptrLike"/>
-                
                            <ref name="tei_dhtbtextLang"/>
                            <ref name="tei_dhtbeditor"/>
                            <ref name="tei_dhtbrespStmt"/>
@@ -4270,7 +4267,6 @@ Elements]</a:documentation>
                         <choice>
                            <ref name="tei_dhtbtitle"/>
                            <ref name="tei_dhtbmodel.ptrLike"/>
-                
                         </choice>
                      </oneOrMore>
                      <zeroOrMore>
@@ -4278,7 +4274,6 @@ Elements]</a:documentation>
                            <ref name="tei_dhtbtextLang"/>
                            <ref name="tei_dhtbauthor"/>
                            <ref name="tei_dhtbeditor"/>
-                
                            <ref name="tei_dhtbrespStmt"/>
                         </choice>
                      </zeroOrMore>
@@ -4296,7 +4291,6 @@ Elements]</a:documentation>
                <ref name="tei_dhtbedition"/>
                <zeroOrMore>
                   <choice>
-            
                      <ref name="tei_dhtbmodel.ptrLike"/>
                      <ref name="tei_dhtbeditor"/>
                      <ref name="tei_dhtbsponsor"/>
@@ -4309,7 +4303,6 @@ Elements]</a:documentation>
             <zeroOrMore>
                <choice>
                   <ref name="tei_dhtbimprint"/>
-          
                   <ref name="tei_dhtbbiblScope"/>
                </choice>
             </zeroOrMore>
@@ -4426,14 +4419,8 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             </zeroOrMore>
             <oneOrMore>
                <choice>
-          
-            
                   <ref name="tei_dhtbmodel.imprintPart"/>
-          
-          
-            
                   <ref name="tei_dhtbmodel.dateLike"/>
-          
                </choice>
                <zeroOrMore>
                   <ref name="tei_dhtbrespStmt"/>
@@ -4524,7 +4511,6 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                <choice>
                   <ref name="tei_dhtbmodel.noteLike"/>
                   <ref name="tei_dhtbmodel.ptrLike"/>
-        
                   <ref name="tei_dhtbcitedRange"/>
                </choice>
             </zeroOrMore>
@@ -4552,8 +4538,6 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <zeroOrMore>
                <choice>
                   <ref name="tei_dhtbmodel.milestoneLike"/>
-        
-        
                </choice>
             </zeroOrMore>
             <oneOrMore>
@@ -4563,8 +4547,6 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                <zeroOrMore>
                   <choice>
                      <ref name="tei_dhtbmodel.milestoneLike"/>
-          
-          
                   </choice>
                </zeroOrMore>
             </oneOrMore>
@@ -4783,7 +4765,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the degree of confidence assigned to the aspect of the markup named by the <code xmlns="http://www.w3.org/1999/xhtml"
                         xmlns:rng="http://relaxng.org/ns/structure/1.0">@locus</code> attribute.</a:documentation>
                <data type="double">
-                  <param name="minInclusive">0</param> 
+                  <param name="minInclusive">0</param>
                   <param name="maxInclusive">1</param>
                </data>
             </attribute>
@@ -4905,11 +4887,9 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       <element name="editionStmt">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(edition statement) groups information relating to one edition of a text. [2.2.2. The Edition Statement 2.2. The File Description]</a:documentation>
          <choice>
-      
             <oneOrMore>
                <ref name="tei_dhtbmodel.pLike"/>
             </oneOrMore>
-      
             <group>
                <ref name="tei_dhtbedition"/>
                <zeroOrMore>
@@ -4933,19 +4913,15 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       <element name="publicationStmt">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(publication statement) groups information concerning the publication or distribution of an electronic or other text. [2.2.4. Publication, Distribution, Licensing, etc. 2.2. The File Description]</a:documentation>
          <choice>
-      
-	           <oneOrMore>
+            <oneOrMore>
                <ref name="tei_dhtbmodel.publicationStmtPart.agency"/>
                <zeroOrMore>
                   <ref name="tei_dhtbmodel.publicationStmtPart.detail"/>
                </zeroOrMore>
             </oneOrMore>
-      
-      
-	           <oneOrMore>
+            <oneOrMore>
                <ref name="tei_dhtbmodel.pLike"/>
             </oneOrMore>
-      
          </choice>
          <ref name="tei_dhtbatt.global.attributes"/>
          <empty/>
@@ -5094,9 +5070,9 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-quotation-quotationContents-constraint-rule-16">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
-                      xmlns="http://www.tei-c.org/ns/1.0"
                       context="tei:quotation">
                <sch:report test="not( @marks )  and  not( tei:p )">
           On <sch:name/>, either the @marks attribute should be used, or a paragraph of description provided
@@ -5161,16 +5137,12 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       <element name="langUsage">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [2.4.2. Language Usage 2.4. The Profile Description 16.3.2. Declarable Elements]</a:documentation>
          <choice>
-        
             <oneOrMore>
                <ref name="tei_dhtbmodel.pLike"/>
             </oneOrMore>
-         
-          
             <oneOrMore>
                <ref name="tei_dhtblanguage"/>
             </oneOrMore>
-        
          </choice>
          <ref name="tei_dhtbatt.global.attributes"/>
          <ref name="tei_dhtbatt.declarable.attributes"/>
@@ -5257,7 +5229,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
             </rng:optional>
             <choice>
                <ref name="tei_dhtbbody"/>
-        
             </choice>
             <zeroOrMore>
                <ref name="tei_dhtbmodel.global"/>
@@ -5290,7 +5261,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                   <rng:ref name="tei_dhtbmodel.divTop"/>
                   <rng:zeroOrMore>
                      <rng:choice>
-                        <rng:ref name="tei_dhtbmodel.global"/> 
+                        <rng:ref name="tei_dhtbmodel.global"/>
                         <rng:ref name="tei_dhtbmodel.divTop"/>
                      </rng:choice>
                   </rng:zeroOrMore>
@@ -5301,14 +5272,13 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                   <rng:ref name="tei_dhtbmodel.divGenLike"/>
                   <rng:zeroOrMore>
                      <rng:choice>
-                        <rng:ref name="tei_dhtbmodel.global"/> 
+                        <rng:ref name="tei_dhtbmodel.global"/>
                         <rng:ref name="tei_dhtbmodel.divGenLike"/>
                      </rng:choice>
                   </rng:zeroOrMore>
                </rng:group>
             </rng:optional>
             <choice>
-                  
                <oneOrMore>
                   <ref name="tei_dhtbmodel.divLike"/>
                   <zeroOrMore>
@@ -5318,7 +5288,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                      </choice>
                   </zeroOrMore>
                </oneOrMore>
-        
                <oneOrMore>
                   <ref name="tei_dhtbmodel.div1Like"/>
                   <zeroOrMore>
@@ -5328,11 +5297,9 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                      </choice>
                   </zeroOrMore>
                </oneOrMore>
-        
                <group>
                   <oneOrMore>
                      <choice>
-              
                         <ref name="tei_dhtbmodel.common"/>
                      </choice>
                      <zeroOrMore>
@@ -5341,7 +5308,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                   </oneOrMore>
                   <optional>
                      <choice>
-            
                         <oneOrMore>
                            <ref name="tei_dhtbmodel.divLike"/>
                            <zeroOrMore>
@@ -5351,7 +5317,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                               </choice>
                            </zeroOrMore>
                         </oneOrMore>
-            
                         <oneOrMore>
                            <ref name="tei_dhtbmodel.div1Like"/>
                            <zeroOrMore>
@@ -5384,7 +5349,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
             <zeroOrMore>
                <choice>
                   <ref name="tei_dhtbmodel.divTop"/>
-        
                   <ref name="tei_dhtbmodel.global"/>
                </choice>
             </zeroOrMore>
@@ -5393,13 +5357,13 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                   <rng:choice>
                      <oneOrMore>
                         <rng:choice>
-                           <rng:ref name="tei_dhtbmodel.divLike"/> 
+                           <rng:ref name="tei_dhtbmodel.divLike"/>
                            <rng:ref name="tei_dhtbmodel.divGenLike"/>
                         </rng:choice>
                         <rng:zeroOrMore>
                            <rng:ref name="tei_dhtbmodel.global"/>
                         </rng:zeroOrMore>
-                     </oneOrMore> 
+                     </oneOrMore>
                      <group>
                         <oneOrMore>
                            <rng:ref name="tei_dhtbmodel.common"/>
@@ -5409,7 +5373,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                         </oneOrMore>
                         <rng:zeroOrMore>
                            <rng:choice>
-                              <rng:ref name="tei_dhtbmodel.divLike"/> 
+                              <rng:ref name="tei_dhtbmodel.divLike"/>
                               <rng:ref name="tei_dhtbmodel.divGenLike"/>
                            </rng:choice>
                            <rng:zeroOrMore>
@@ -5430,8 +5394,8 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-div-abstractModel-structure-div-in-l-constraint-rule-17">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:div">
                <sch:assert test="ancestor::tei:floatingText">
           Abstract model violation: Metrical lines may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
@@ -5441,8 +5405,8 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-18">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div">
                <sch:report test="(ancestor::tei:p or ancestor::tei:ab) and not(ancestor::tei:floatingText)">
           Abstract model violation: p and ab may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
@@ -5497,7 +5461,6 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
                <text/>
                <ref name="tei_dhtbmodel.gLike"/>
                <ref name="tei_dhtbsigned"/>
-        
                <ref name="tei_dhtbsalute"/>
                <ref name="tei_dhtbmodel.phrase"/>
                <ref name="tei_dhtbmodel.global"/>
@@ -5539,8 +5502,8 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
             <ref name="tei_dhtbmodel.titlepagePart"/>
             <zeroOrMore>
                <choice>
-	                 <ref name="tei_dhtbmodel.titlepagePart"/>
-	                 <ref name="tei_dhtbmodel.global"/>
+                  <ref name="tei_dhtbmodel.titlepagePart"/>
+                  <ref name="tei_dhtbmodel.global"/>
                </choice>
             </zeroOrMore>
          </group>
@@ -5682,18 +5645,18 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                         <rng:ref name="tei_dhtbmodel.div1Like"/>
                         <rng:zeroOrMore>
                            <rng:choice>
-                              <rng:ref name="tei_dhtbmodel.div1Like"/> 
-                              <rng:ref name="tei_dhtbmodel.frontPart"/> 
+                              <rng:ref name="tei_dhtbmodel.div1Like"/>
+                              <rng:ref name="tei_dhtbmodel.frontPart"/>
                               <rng:ref name="tei_dhtbmodel.global"/>
                            </rng:choice>
                         </rng:zeroOrMore>
-                     </group> 
+                     </group>
                      <group>
                         <rng:ref name="tei_dhtbmodel.divLike"/>
                         <rng:zeroOrMore>
                            <rng:choice>
-                              <rng:ref name="tei_dhtbmodel.divLike"/> 
-                              <rng:ref name="tei_dhtbmodel.frontPart"/> 
+                              <rng:ref name="tei_dhtbmodel.divLike"/>
+                              <rng:ref name="tei_dhtbmodel.frontPart"/>
                               <rng:ref name="tei_dhtbmodel.global"/>
                            </rng:choice>
                         </rng:zeroOrMore>
@@ -5703,7 +5666,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                      <rng:ref name="tei_dhtbmodel.divBottom"/>
                      <rng:zeroOrMore>
                         <rng:choice>
-                           <rng:ref name="tei_dhtbmodel.divBottom"/> 
+                           <rng:ref name="tei_dhtbmodel.divBottom"/>
                            <rng:ref name="tei_dhtbmodel.global"/>
                         </rng:choice>
                      </rng:zeroOrMore>
@@ -5758,7 +5721,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                   <rng:ref name="tei_dhtbmodel.divBottomPart"/>
                   <rng:zeroOrMore>
                      <rng:choice>
-                        <rng:ref name="tei_dhtbmodel.divBottomPart"/> 
+                        <rng:ref name="tei_dhtbmodel.divBottomPart"/>
                         <rng:ref name="tei_dhtbmodel.global"/>
                      </rng:choice>
                   </rng:zeroOrMore>
@@ -5869,8 +5832,8 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-s-noNestedS-constraint-rule-19">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:s">
                <sch:report test="tei:s">You may not nest one s element within another: use seg instead</sch:report>
             </sch:rule>
@@ -5914,9 +5877,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
             <choice>
                <text/>
                <ref name="tei_dhtbmodel.gLike"/>
-      
                <ref name="tei_dhtbw"/>
-      
                <ref name="tei_dhtbc"/>
                <ref name="tei_dhtbpc"/>
                <ref name="tei_dhtbmodel.global"/>
@@ -5999,8 +5960,8 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-span-target-from-constraint-rule-20">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@from and @target">
           Only one of the attributes @target and @from may be supplied on <sch:name/>
@@ -6010,8 +5971,8 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-span-targetto-constraint-rule-21">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@to and @target">
           Only one of the attributes @target and @to may be supplied on <sch:name/>
@@ -6021,8 +5982,8 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-span-tonotfrom-constraint-rule-22">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@to and not(@from)">
           If @to is supplied on <sch:name/>, @from must be supplied as well
@@ -6032,8 +5993,8 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_dhtb-span-tofrom-constraint-rule-23">
-            <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns="http://www.tei-c.org/ns/1.0"
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
           The attributes @to and @from on <sch:name/> may each contain only a single value
@@ -6127,7 +6088,6 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(entry) contains a single structured entry in any kind of lexical resource, such as a dictionary or lexicon. [10.1. Dictionary Body and Overall Structure 10.2. The Structure of Dictionary Entries]</a:documentation>
          <oneOrMore>
             <choice>
-      
                <ref name="tei_dhtbsense"/>
                <ref name="tei_dhtbpc"/>
                <ref name="tei_dhtbmodel.entryPart.top"/>
@@ -6213,7 +6173,6 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                <ref name="tei_dhtbmodel.gLike"/>
                <ref name="tei_dhtbmodel.phrase"/>
                <ref name="tei_dhtbmodel.inter"/>
-        
                <ref name="tei_dhtbmodel.global"/>
             </choice>
          </zeroOrMore>
@@ -6271,7 +6230,6 @@ Suggested values include: 1] simple; 2] lemma; 3] variant; 4] compound; 5] deriv
                <data type="dateTime">
                   <param name="pattern">(19[789][0-9]|[2-9][0-9]{3}).*</param>
                </data>
-      
             </choice>
          </attribute>
       </optional>
@@ -6440,6 +6398,612 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <ref name="tei_dhtbmacro.specialPara"/>
          <ref name="tei_dhtbatt.global.attributes"/>
          <ref name="tei_dhtbatt.tableDecoration.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbatt.gaijiProp.attribute.version">
+      <optional>
+         <attribute name="version">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the version number of the Unicode Standard in which this property name is defined.
+Suggested values include: 1] 1.0.1; 2] 1.1; 3] 2.0; 4] 2.1; 5] 3.0; 6] 3.1; 7] 3.2; 8] 4.0; 9] 4.1; 10] 5.0; 11] 5.1; 12] 5.2; 13] 6.0; 14] 6.1; 15] 6.2; 16] 6.3; 17] 7.0; 18] 8.0; 19] 9.0; 20] 10.0; 21] 11.0; 22] 12.0; 23] 12.1; 24] 13.0; 25] 14.0; 26] 15.0; 27] unassigned</a:documentation>
+            <choice>
+               <value>1.0.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>1.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>2.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>2.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>3.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>3.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>3.2</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>4.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>4.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>5.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>5.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>5.2</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6.2</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6.3</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>7.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>8.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>9.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>10.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>11.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>12.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>12.1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>13.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>14.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>15.0</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>unassigned</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbatt.gaijiProp.attribute.scheme">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="scheme"
+                    a:defaultValue="Unicode">
+            <a:documentation>supplies the name of the character set system from which this property is drawn.
+Sample values include: 1] Unicode (Unicode); 2] Bridwell (E. Nelson Bridwell); 3] Brewer (Georg Brewer); 4] Doyle (Darren Doyle); 5] Schreyer (Christine Schreyer)</a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_dhtbg">
+      <element name="g">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character or glyph) represents a glyph, or a non-standard character. [5. Characters, Glyphs, and Writing Modes]</a:documentation>
+         <text/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.typed.attributes"/>
+         <optional>
+            <attribute name="ref">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a description of the character or glyph intended.</a:documentation>
+               <data type="anyURI">
+                  <param name="pattern">\S+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbcharDecl">
+      <element name="charDecl">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character declarations) provides information about nonstandard characters and glyphs. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
+         <group>
+            <optional>
+               <ref name="tei_dhtbdesc"/>
+            </optional>
+            <oneOrMore>
+               <choice>
+                  <ref name="tei_dhtbchar"/>
+               </choice>
+            </oneOrMore>
+         </group>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbchar">
+      <element name="char">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) provides descriptive information about a character. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_dhtbunicodeProp"/>
+               <ref name="tei_dhtbmapping"/>
+               <ref name="tei_dhtbmodel.graphicLike"/>
+               <ref name="tei_dhtbmodel.noteLike"/>
+               <ref name="tei_dhtbmodel.descLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbmapping">
+      <element name="mapping">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@type</code> attribute. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
+         <ref name="tei_dhtbmacro.xtext"/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.datable.attributes"/>
+         <ref name="tei_dhtbatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_dhtbunicodeProp">
+      <element name="unicodeProp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unicode property) provides a Unicode property for a character (or glyph). [5.2.1. Character Properties]</a:documentation>
+         <empty/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.gaijiProp.attribute.version"/>
+         <ref name="tei_dhtbatt.gaijiProp.attribute.scheme"/>
+         <ref name="tei_dhtbatt.datable.attribute.period"/>
+         <ref name="tei_dhtbatt.datable.w3c.attribute.when"/>
+         <ref name="tei_dhtbatt.datable.w3c.attribute.notBefore"/>
+         <ref name="tei_dhtbatt.datable.w3c.attribute.notAfter"/>
+         <ref name="tei_dhtbatt.datable.w3c.attribute.from"/>
+         <ref name="tei_dhtbatt.datable.w3c.attribute.to"/>
+         <attribute name="name">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the normalized name of a Unicode property.</a:documentation>
+            <choice>
+               <value>Age</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>AHex</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alpha</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alphabetic</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ASCII_Hex_Digit</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_C</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Class</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Control</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_M</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Mirrored</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Mirroring_Glyph</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Paired_Bracket</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Bidi_Paired_Bracket_Type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>blk</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Block</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bmg</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bpb</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bpt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Canonical_Combining_Class</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Case_Folding</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Case_Ignorable</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Cased</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ccc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CE</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>cf</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_Casefolded</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_Casemapped</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_Lowercased</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_NFKC_Casefolded</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_Titlecased</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Changes_When_Uppercased</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Comp_Ex</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Composition_Exclusion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWCF</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWCM</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWKCF</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWL</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWT</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>CWU</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Dash</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Decomposition_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Decomposition_Type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Default_Ignorable_Code_Point</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Dep</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Deprecated</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>DI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Dia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Diacritic</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dm</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ea</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>East_Asian_Width</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>EqUIdeo</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Equivalent_Unified_Ideograph</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Expands_On_NFC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Expands_On_NFD</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Expands_On_NFKC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Expands_On_NFKD</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ext</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Extender</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>FC_NFKC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>FC_NFKC_Closure</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Full_Composition_Exclusion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>gc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>GCB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>General_Category</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Gr_Base</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Gr_Ext</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Gr_Link</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Grapheme_Base</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Grapheme_Cluster_Break</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Grapheme_Extend</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Grapheme_Link</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hangul_Syllable_Type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hex</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hex_Digit</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>hst</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hyphen</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ID_Continue</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ID_Start</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ideo</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ideographic</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDS</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDS_Binary_Operator</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDS_Trinary_Operator</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDSB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>IDST</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Indic_Positional_Category</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Indic_Syllabic_Category</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>InPC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>InSC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>isc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ISO_Comment</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Jamo_Short_Name</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>jg</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Join_C</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Join_Control</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Joining_Group</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Joining_Type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>JSN</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>jt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kAccountingNumeric</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kCompatibilityVariant</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIICore</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_GSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_HSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_JSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_KPSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_KSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_MSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_TSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_USource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kIRG_VSource</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kOtherNumeric</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kPrimaryNumeric</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>kRSUnicode</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>lb</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>lc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Line_Break</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>LOE</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Logical_Order_Exception</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Lower</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Lowercase</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Lowercase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Math</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>na</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>na1</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Name</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Name_Alias</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NChar</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFC_QC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFC_Quick_Check</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFD_QC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFD_Quick_Check</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKC_Casefold</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKC_CF</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKC_QC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKC_Quick_Check</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKD_QC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>NFKD_Quick_Check</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Noncharacter_Code_Point</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>nt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Numeric_Type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Numeric_Value</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>nv</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OAlpha</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ODI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OGr_Ext</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OIDC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OIDS</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OLower</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OMath</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Alphabetic</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Default_Ignorable_Code_Point</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Grapheme_Extend</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_ID_Continue</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_ID_Start</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Lowercase</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Math</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Other_Uppercase</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>OUpper</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Pat_Syn</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Pat_WS</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Pattern_Syntax</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Pattern_White_Space</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>PCM</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Prepended_Concatenation_Mark</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>QMark</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Quotation_Mark</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Radical</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Regional_Indicator</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>RI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>SB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scf</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Script</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Script_Extensions</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scx</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>SD</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Sentence_Break</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Sentence_Terminal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Simple_Case_Folding</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Simple_Lowercase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Simple_Titlecase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Simple_Uppercase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>slc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Soft_Dotted</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>stc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>STerm</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>suc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>tc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Term</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Terminal_Punctuation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Titlecase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>uc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>UIdeo</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Unicode_1_Name</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Unified_Ideograph</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Upper</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Uppercase</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Uppercase_Mapping</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Variation_Selector</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Vertical_Orientation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>vo</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>VS</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>WB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>White_Space</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Word_Break</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>WSpace</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XID_Continue</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XID_Start</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XIDC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XIDS</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XO_NFC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XO_NFD</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XO_NFKC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>XO_NFKD</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <attribute name="value">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the value of a named Unicode property.</a:documentation>
+            <data type="string"/>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -6814,34 +7378,34 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_dhtbTEI"/>
       </choice>
    </start>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="tei"
            uri="http://www.tei-c.org/ns/1.0"/>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="xs"
            uri="http://www.w3.org/2001/XMLSchema"/>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="rng"
            uri="http://relaxng.org/ns/structure/1.0"/>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="rna"
            uri="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="sch"
            uri="http://purl.oclc.org/dsdl/schematron"/>
-   <sch:ns xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns="http://www.tei-c.org/ns/1.0"
            prefix="sch1x"
            uri="http://www.ascc.net/xml/schematron"/>
 </grammar>

@@ -1,13 +1,22 @@
+# verbetes/templatetags/verbetes_extras.py
+
 from django import template
 import re
 from django.utils.safestring import mark_safe
 
 register = template.Library()
 
+#====================================================================
+# Filtro: get_item (do seu arquivo original)
+#====================================================================
 @register.filter
 def get_item(dictionary, key):
+    """Permite acessar itens de dicionário com chaves variáveis no template."""
     return dictionary.get(key)
 
+#====================================================================
+# Filtro: formatar_autores (do seu arquivo original)
+#====================================================================
 @register.filter
 def formatar_autores(autores_str):
     """
@@ -18,9 +27,7 @@ def formatar_autores(autores_str):
     if not autores_str:
         return "Autor(es) não especificado(s)"
 
-    # Divide a string de autores por ';' ou 'e' ou ' and '
-    # O re.split permite dividir por múltiplos delimitadores
-    partes_autores = re.split(r';| e | and ', autores_str, flags=re.IGNORECASE)
+    partes_autores = re.split(r';| e | and ', str(autores_str), flags=re.IGNORECASE)
     
     autores_formatados = []
     for autor_completo in partes_autores:
@@ -30,26 +37,37 @@ def formatar_autores(autores_str):
 
         partes_nome = autor_completo.split(' ')
         if len(partes_nome) > 1:
-            sobrenome = partes_nome[-1].upper() # Última parte é o sobrenome
-            nome_restante = " ".join(partes_nome[:-1]) # O restante é o nome
+            sobrenome = partes_nome[-1].upper()
+            nome_restante = " ".join(partes_nome[:-1])
             autores_formatados.append(f"{sobrenome}, {nome_restante}")
         else:
-            autores_formatados.append(autor_completo.upper()) # Se só tem um nome, capitaliza
+            autores_formatados.append(autor_completo.upper())
 
-    return "; ".join(autores_formatados)
+    return "; ".join(autores_formatados) + "."
 
-@register.filter
-def process_sentence_display(text_with_markup):
+#====================================================================
+# Filtro: process_sentence_display (VERSÃO ATUALIZADA E CORRETA)
+#====================================================================
+# Pré-compila a regex para melhor performance
+highlight_pattern = re.compile(r'\[\[b\]\](.*?)\[\[/b\]\]', re.DOTALL)
+
+def replacement_func_bold(match):
+    """Função de substituição para a regex de negrito."""
+    content = match.group(1)
+    # Mantém o conteúdo interno exatamente como está (com quebras de linha, etc.)
+    return f'<b>{content}</b>'
+
+@register.filter(name='process_sentence_display')
+def process_sentence_display(sentence_text):
     """
-    Substitui marcações intermediárias [[b]]...[[/b]] e [[cite_link:...]]...[[/cite_link]]
-    por HTML <b> e <a>, respectivamente.
-    Recebe o dicionário 'ocorrencia_obj' para construir a URL do corpus.
+    Usa expressões regulares para converter a marcação [[b]]...[[/b]] 
+    para <b>...</b>, lidando corretamente com quebras de linha.
     """
-    if not text_with_markup:
+    if not sentence_text:
         return ""
-
     
-    # 1. Substituir negrito: [[b]]token[[/b]] -> <b>token</b>
-    final_text = re.sub(r'\[\[b\]\](.*?)\[\[/b\]\]', r'<b>\1</b>', text_with_markup)
+    # Aplica a substituição usando a regex
+    processed_text = highlight_pattern.sub(replacement_func_bold, sentence_text)
     
-    return mark_safe(final_text) # Marcar como seguro, pois injetamos HTML
+    return mark_safe(processed_text)
+#====================================================================

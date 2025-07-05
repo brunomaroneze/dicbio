@@ -6,6 +6,7 @@ import random
 import re # Para extrair imagens do Markdown
 from django.core.cache import cache # Importar o módulo de cache
 from django.db.models import Prefetch
+import datetime # Para sortear a palavra do dia
 
 
 # Função para extrair a primeira imagem Markdown
@@ -25,57 +26,40 @@ def extrair_primeira_imagem_md(markdown_content):
 def pagina_inicial_view(request):
     context = {}
 
-    # 1. Palavra do Dia (com cache)
-    cache_key = 'palavra_do_dia_slug' # Chave para armazenar no cache
-    palavra_do_dia_slug = cache.get(cache_key) # Tenta pegar o slug do cache
-
+    # 1. Palavra do Dia (Lógica corrigida para ser a mesma o dia todo)
     palavra_do_dia_obj = None
+    try:
+        # Obter todos os IDs de verbetes que têm pelo menos uma definição
+        verbetes_elegiveis_ids = Verbete.objects.filter(definicoes__isnull=False).distinct().values_list('id', flat=True)
+        
+        if verbetes_elegiveis_ids:
+            # Contar o número total de verbetes elegíveis
+            count = len(verbetes_elegiveis_ids)
 
-    if palavra_do_dia_slug:
-        # Se encontrou no cache, tenta buscar o verbete pelo slug
-        try:
-            # Usa Prefetch para carregar as definições de uma vez (otimização)
-            palavra_do_dia_obj = Verbete.objects.prefetch_related(
-                Prefetch('definicoes', queryset=Definition.objects.order_by('sensenumber'), to_attr='definicoes_carregadas')
-            ).get(slug=palavra_do_dia_slug)
+            # Usar a data de hoje como semente para o gerador de números aleatórios.
+            # Isso garante que o mesmo número "aleatório" seja gerado para o mesmo dia.
+            # Usamos .toordinal() para converter a data em um número inteiro simples.
+            semente_diaria = datetime.date.today().toordinal()
+            random.seed(semente_diaria)
             
-            # Ajusta para o template acessar .definicoes.first.definition
-#            if hasattr(palavra_do_dia_obj, 'definicoes_carregadas'):
-#                palavra_do_dia_obj.definicoes = palavra_do_dia_obj.definicoes_carregadas
+            # Escolher um índice aleatório (mas determinístico para o dia)
+            indice_aleatorio = random.randint(0, count - 1)
+            
+            # Obter o ID do verbete sorteado
+            id_sorteado = verbetes_elegiveis_ids[indice_aleatorio]
+            
+            # Buscar o objeto Verbete completo pelo ID sorteado
+            # Usamos prefetch_related para otimizar o acesso às definições no template
+            palavra_do_dia_obj = Verbete.objects.prefetch_related(
+                Prefetch('definicoes', queryset=Definition.objects.order_by('sensenumber'))
+            ).get(id=id_sorteado)
+        else:
+            # Caso de fallback se não houver verbetes com definições
+            palavra_do_dia_obj = Verbete.objects.order_by('titulo').first()
 
-        except Verbete.DoesNotExist:
-            # O slug estava no cache, mas o verbete não existe mais (dados inconsistentes)
-            # Limpa o cache para forçar um novo sorteio
-            cache.delete(cache_key)
-            palavra_do_dia_slug = None # Força a lógica de sorteio abaixo
-        except Exception as e:
-            print(f"Erro ao carregar palavra do dia do cache: {e}")
-            cache.delete(cache_key) # Limpa o cache em caso de erro
-            palavra_do_dia_slug = None
-
-    if not palavra_do_dia_slug: # Se não estava no cache ou deu erro, sorteia uma nova
-        try:
-            # Prefetch das definições para evitar N+1 queries ao acessar definicoes no template
-            verbete_candidato = Verbete.objects.prefetch_related(
-                Prefetch('definicoes', queryset=Definition.objects.order_by('sensenumber'), to_attr='definicoes_carregadas')
-            ).filter(definicoes__isnull=False).distinct().order_by('?').first()
-
-            if verbete_candidato:
-                palavra_do_dia_obj = verbete_candidato
-                # Ajusta para o template acessar .definicoes.first.definition
-#                if hasattr(palavra_do_dia_obj, 'definicoes_carregadas'):
-#                    palavra_do_dia_obj.definicoes = palavra_do_dia_obj.definicoes_carregadas
-
-                # Armazena o slug no cache por 24 horas (ou o tempo de TIMEOUT padrão)
-                cache.set(cache_key, palavra_do_dia_obj.slug)
-            else:
-                # Fallback se nenhum verbete com definição for encontrado
-                # Pode pegar um verbete sem definição, se permitido
-                palavra_do_dia_obj = Verbete.objects.order_by('?').first()
-
-        except Exception as e:
-            print(f"Erro ao sortear palavra do dia: {e}")
-            palavra_do_dia_obj = None
+    except Exception as e:
+        print(f"Erro ao selecionar a palavra do dia: {e}")
+        palavra_do_dia_obj = None # Garante que a página não quebre se houver um erro
 
     context['palavra_do_dia'] = palavra_do_dia_obj
 
