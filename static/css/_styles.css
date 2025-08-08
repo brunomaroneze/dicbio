@@ -1,0 +1,149 @@
+/* Estilos do Cabeçalho e Rodapé */
+header {
+    background-color: #12751f;
+}
+
+footer {
+    background-color: #12751f;
+    font-size: 0.9rem;
+    color: white; /* Define a cor padrão do texto para branco para o footer e seus filhos (como <strong>) */
+}
+
+footer a {
+    color: white; /* Garante que os links também sejam brancos */
+}
+
+/* Opcional, mas recomendado: estilo para hover e focus nos links do rodapé */
+footer a:hover,
+footer a:focus {
+    color: #e0e0e0; /* Um branco levemente diferente ou a cor de destaque do seu tema */
+    /* Se você quiser sublinhado no hover: */
+    /* text-decoration: underline; */
+}
+
+/* Se os ícones (como o do Instagram) não pegarem a cor branca automaticamente: */
+footer .bi { /* Supondo que você use Bootstrap Icons */
+    color: white;
+}
+
+/* Estilo para o logo grande da página inicial */
+.main-page-logo {
+    max-width: 500px; /* Ou o tamanho que preferir para o logo central */
+    height: auto;
+    margin-bottom: 2rem; /* Espaçamento abaixo do logo */
+}
+
+/* Estilo para o logo menor no cabeçalho (outras páginas) */
+.header-logo {
+    max-height: 50px; /* Altura do logo no cabeçalho */
+    width: auto;
+    margin-right: 15px; /* Espaçamento à direita do logo */
+}
+
+/* Estilos para o texto markdown renderizado */
+.markdown-content img {
+    max-width: 100%; /* Garante que imagens no markdown não saiam do contêiner */
+    height: auto;
+    display: block;
+    margin: 1rem auto; /* Centraliza a imagem */
+}
+
+/* Estilos de bordas para seções */
+.border-top-section {
+    border-top: 1px solid #dee2e6; /* Cor da borda Bootstrap */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Estilo para a lista de verbetes/documentos com scroll */
+.scrollable-list {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 5px; /* Espaçamento para a barra de scroll */
+}
+
+/* Estilo para o container de texto do corpus digital */
+#texto-obra-container {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Estilo para a imagem da página do corpus digital */
+#imagem-pagina-ativa {
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+/* Ajustes para a sidebar em telas pequenas */
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        height: auto; /* Permite que a sidebar se ajuste ao conteúdo */
+    }
+    .d-md-block.sidebar { /* Desabilita a sidebar em telas pequenas por padrão */
+        display: none !important;
+    }
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color:#dbe9ee;
+    /* --- NOVAS REGRAS PARA O STICKY FOOTER --- */
+    min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Coloca os filhos (header, main, footer) em uma coluna */
+}
+
+/* Estilos para as imagens de apoio no rodapé */
+.support-logo {
+    max-height: 40px;
+    min-height: 30px;
+    width: auto;
+
+    /* Considere adicionar margem aqui se for consistente */
+    /* margin-bottom: 8px; */
+}
+
+/* Estilo para o link da licença no rodapé */
+.footer-license-link {
+    max-width: 180px;
+    display: inline-block; /* Mantém o display que estava no inline */
+}
+
+/* Estilo para a imagem da licença no rodapé */
+.footer-license-logo {
+    height: 30px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    flex-grow: 1; /* Faz com que o elemento <main> se expanda para preencher o espaço disponível */
+}
+
+.card-img-teaser {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.apoio-img {
+    max-height: 40px;
+}
+
+/* Para o título principal/logo */
+.header-main-title {
+    color: white !important; /* Aplica ao <a> e será herdado pelo <strong> */
+}
+
+/* Este seletor assume que a <nav> é filha direta do <div class="container..."> */
+.container > nav > a {
+  color: white !important;
+}
+
+/* Opcional: Estilo de hover para o título, se desejar */
+.header-main-title:hover {
+    color: #f0f0f0 !important; /* Ou outra cor de destaque */
+}
+
+.header-nav-links a:hover {
+    color: #f0f0f0 !important;
+}
