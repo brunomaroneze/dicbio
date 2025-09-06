@@ -33,6 +33,13 @@ class Obra(models.Model):
         help_text="Data/ano de referência da obra (ex: 1750, c. 1800, Século XVIII)."
     )
 
+    # Termos extraídos para tooltips (formato: [{"token": "forma atual", "orth": "forma original"}])
+    termos_extraidos = models.JSONField(
+        null=True,
+        blank=True,
+        help_text="Termos linguísticos extraídos para tooltips"
+    )
+
     class Meta:
         ordering = ['ordem', 'autor', 'titulo'] # Define uma ordem padrão para consultas
 
