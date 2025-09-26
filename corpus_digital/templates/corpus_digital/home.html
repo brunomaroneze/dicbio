@@ -85,4 +85,14 @@
 
 {% block extra_scripts %}
 <script src="{% static 'corpus_digital/js/corpus_image_sync.js' %}"></script>
+
+<script>
+// Inicialização simples dos tooltips
+document.addEventListener('DOMContentLoaded', function() {
+    var tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltips.forEach(function(el) {
+        new bootstrap.Tooltip(el);
+    });
+});
+</script>
 {% endblock %}
