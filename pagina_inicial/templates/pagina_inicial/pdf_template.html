@@ -26,7 +26,7 @@
         h1, h2, h3, h4 {
             font-family: sans-serif;
             color: #333;
-            break-after: avoid; /* Evita quebra de página logo após um título */
+            break-after: avoid;
         }
         
         h1#titulo-principal {
@@ -37,7 +37,7 @@
 
         .verbete-bloco {
             margin-bottom: 1.5em;
-            break-inside: avoid; /* Tenta manter um verbete inteiro na mesma página, se couber */
+            break-inside: avoid;
         }
         
         .verbete-termo {
@@ -54,6 +54,32 @@
             margin-left: 20px;
             margin-top: 0.5em;
         }
+
+        /* --- CSS PARA OS EXEMPLOS --- */
+        .exemplos-container {
+            margin-top: 0.8em;
+            margin-left: 10px;
+        }
+
+        .exemplo-bloco {
+            margin-bottom: 0.8em;
+            margin-left: 15px;
+            border-left: 2px solid #eee;
+            padding-left: 10px;
+            color: #444;
+            font-size: 0.95em;
+        }
+
+        .exemplo-fragmento {
+            font-style: italic;
+            margin-bottom: 0.2em;
+        }
+
+        .exemplo-referencia {
+            font-size: 0.9em;
+            color: #777;
+        }
+        /* --- FIM NOVO CSS --- */
 
         b {
             font-weight: bold;
@@ -85,7 +111,37 @@
                 <h4>Definições:</h4>
                 {% for definicao in verbete.definicoes.all %}
                     <div class="definicao-bloco">
-                        <p><strong>{{ definicao.sensenumber }}.</strong> {{ definicao.definition }}</p>
+                        <p><strong>{{ definicao.sensenumber }}.</strong> {{ definicao.definition|safe }}</p>
+
+                        {# --- BLOCO PARA AS OCORRÊNCIAS/EXEMPLOS --- #}
+                        {# O related_name do ForeignKey de OcorrenciaCorpus para Definition é 'ocorrencias' #}
+                        {% if definicao.ocorrencias.all %}
+                            <div class="exemplos-container">
+                                {% for ocorrencia in definicao.ocorrencias.all %}
+                                    <div class="exemplo-bloco">
+                                        {# Usando o campo 'frase' do modelo OcorrenciaCorpus #}
+                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|safe }}"</p>
+                                        <p class="exemplo-referencia">
+                                            (Em:
+                                            {% if ocorrencia.autor %}
+                                                {{ ocorrencia.autor|capfirst }}
+                                                {% if ocorrencia.data and ocorrencia.data != 's.d.' %}, {{ ocorrencia.data }}{% endif %}
+                                                ,
+                                            {% elif ocorrencia.data and ocorrencia.data != 's.d.' %} {# Se não tem autor mas tem data, mostra só a data antes do título #}
+                                                {{ ocorrencia.data }},
+                                            {% endif %}
+                                            {{ ocorrencia.titulo_obra }}
+                                            {% if ocorrencia.pagina_obra %}
+                                                , p. {{ ocorrencia.pagina_obra }}
+                                            {% endif %}
+                                            )
+                                        </p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        {# --- FIM DO BLOCO DE OCORRÊNCIAS --- #}
+
                     </div>
                 {% endfor %}
             {% endif %}
