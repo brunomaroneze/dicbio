@@ -180,3 +180,9 @@ MARKDOWNIFY = {
 }
 # ----------------------------------------------------
 
+# ... (outras configurações) ...
+
+# Configuração para arquivos de Mídia (uploads de usuários ou arquivos gerados)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'mediafiles' # Cria uma pasta 'mediafiles' na raiz do projeto
+

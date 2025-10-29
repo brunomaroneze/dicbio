@@ -4,6 +4,8 @@ from pathlib import Path
 import markdown
 import re
 from datetime import datetime
+from django.conf import settings
+import os # Importar os para manipulação de caminhos
 
 def extrair_metadados_texto_md(caminho_arquivo):
     """
@@ -145,6 +147,15 @@ def texto(request, nome_arquivo=None):
 
     with open(caminho_md_selecionado, encoding='utf-8') as f:
         conteudo_html = markdown.markdown(f.read(), extensions=['extra', 'smarty', 'meta'])
+    
+    # --- NOVA LÓGICA PARA VERIFICAR A EXISTÊNCIA DO PDF ---
+    pdf_filename = 'dicionario_completo.pdf'
+    # Constrói o caminho completo para o arquivo PDF dentro do MEDIA_ROOT
+    pdf_filepath = os.path.join(settings.MEDIA_ROOT, pdf_filename)
+    
+    # Verifica se o arquivo existe no sistema de arquivos
+    pdf_disponivel = os.path.exists(pdf_filepath)
+    # --- FIM DA NOVA LÓGICA ---
 
     context = {
         'conteudo': conteudo_html,
@@ -154,5 +165,6 @@ def texto(request, nome_arquivo=None):
         'ativo': slug_do_arquivo_a_exibir,
         'info_do_arquivo_ativo': info_do_arquivo_ativo,
         'now': datetime.now().date(), # Para a data de acesso no template
+        'pdf_disponivel': pdf_disponivel,
     }
     return render(request, 'documentacao/home.html', context)
