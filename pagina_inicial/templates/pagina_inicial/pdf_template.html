@@ -1,4 +1,5 @@
 {# pagina_inicial/templates/pagina_inicial/pdf_template.html #}
+{% load verbetes_extras %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -120,27 +121,12 @@
                     <div class="definicao-bloco">
                         <p><strong>{{ definicao_data.sensenumber }}.</strong> {{ definicao_data.definition|safe }}</p>
 
-                        {# DEBUG: Mostrar o conteúdo bruto de 'exemplos_agrupados' #}
-                        {# <p class="debug-message">DEBUG: Exemplos agrupados ({{ definicao_data.sensenumber }}): {{ definicao_data.exemplos_agrupados }}</p> #}
-
                         {% if definicao_data.exemplos_agrupados %}
                             <div class="exemplos-container">
-                                {# DEBUG: Quantidade de tokens agrupados #}
-                                {# <p class="debug-message">DEBUG: Total de tokens agrupados: {{ definicao_data.exemplos_agrupados|length }}</p> #}
-
                                 {% for token_val, token_examples_dict in definicao_data.exemplos_agrupados.items %}
                                     <div class="token-group mb-3 ms-3 border-start ps-3">
-                                        {# DEBUG: Token atual #}
-                                        {# <p class="debug-message">DEBUG: Token: {{ token_val }}</p> #}
-
                                         {% for gram_val, autores_dict in token_examples_dict.items %}
-                                            {# DEBUG: Gramática atual #}
-                                            {# <p class="debug-message">DEBUG: Gram: {{ gram_val }}</p> #}
-
                                             {% for autor_val, lista_ocorrencias in autores_dict.items %}
-                                                {# DEBUG: Autor atual e quantidade de ocorrências antes do slice #}
-                                                {# <p class="debug-message">DEBUG: Autor: {{ autor_val }}, Ocorrências: {{ lista_ocorrencias|length }}</p> #}
-
                                                 {% for ocorrencia in lista_ocorrencias|slice:":1" %}
                                                     <div class="exemplo-bloco">
                                                         <p>
@@ -151,19 +137,7 @@
                                                         </p>
                                                         <p class="exemplo-fragmento">"{{ ocorrencia.frase|safe }}"</p>
                                                         <p class="exemplo-referencia">
-                                                            (Em:
-                                                            {% if ocorrencia.autor and ocorrencia.autor != 'N/A' %}
-                                                                {{ ocorrencia.autor|capfirst }}
-                                                                {% if ocorrencia.data and ocorrencia.data != 's.d.' %}, {{ ocorrencia.data }}{% endif %}
-                                                                ,
-                                                            {% elif ocorrencia.data and ocorrencia.data != 's.d.' %}
-                                                                {{ ocorrencia.data }},
-                                                            {% endif %}
-                                                            {{ ocorrencia.titulo_obra }}
-                                                            {% if ocorrencia.pagina_obra %}
-                                                                , p. {{ ocorrencia.pagina_obra }}
-                                                            {% endif %}
-                                                            )
+                                                            (Em: {{ ocorrencia|format_citation }}) {# <--- USE O FILTRO AQUI #}
                                                         </p>
                                                     </div>
                                                 {% endfor %}

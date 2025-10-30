@@ -71,3 +71,41 @@ def process_sentence_display(sentence_text):
     
     return mark_safe(processed_text)
 #====================================================================
+
+# verbetes/templatetags/citation_filters.py
+
+from django import template
+
+register = template.Library()
+
+@register.filter
+def format_citation(ocorrencia):
+    """
+    Formata as informações de citação de uma OcorrenciaCorpus em uma única string.
+    Ordem: Autor, Título da Obra, Data, Página.
+    """
+    parts = []
+
+    # 1. Autor
+    if ocorrencia.autor and ocorrencia.autor.strip() and ocorrencia.autor.strip().lower() != 'n/a':
+        parts.append(ocorrencia.autor.capitalize()) 
+
+    # 2. Título da Obra
+    if ocorrencia.titulo_obra and ocorrencia.titulo_obra.strip():
+        parts.append(ocorrencia.titulo_obra)
+
+    # 3. Data
+    if ocorrencia.data and ocorrencia.data.strip() and ocorrencia.data.strip().lower() != 's.d.':
+        parts.append(ocorrencia.data)
+
+    # 4. Página
+    # Usamos ocorrencia.pagina_obra como campo único
+    if ocorrencia.pagina_obra and ocorrencia.pagina_obra.strip():
+        parts.append(f"p. {ocorrencia.pagina_obra}")
+
+    citation_string = ", ".join(parts)
+    
+    if not citation_string:
+        return "informações da obra não disponíveis"
+    
+    return citation_string
