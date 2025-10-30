@@ -84,63 +84,97 @@
         b {
             font-weight: bold;
         }
+
+        .debug-message {
+            color: red;
+            font-size: 0.8em;
+            margin-left: 5px;
+            background-color: #ffeeee;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
     <h1 id="titulo-principal">Dicionário Histórico de Termos da Biologia</h1>
 
-    {# Você pode adicionar os textos de documentação aqui se quiser #}
-
     <hr>
 
-    {# Loop através de todos os verbetes, ordenados alfabeticamente #}
-    {% for verbete in todos_os_verbetes %}
+    {# Loop através de todos os verbetes, agora usando a estrutura pré-processada #}
+    {% for verbete_data in todos_os_verbetes %}
         <div class="verbete-bloco">
             <p>
-                <span class="verbete-termo">{{ verbete.termo }}</span>
-                {% if verbete.classe_gramatical %}
-                    <span class="verbete-classe"> ({{ verbete.classe_gramatical }})</span>
+                <span class="verbete-termo">{{ verbete_data.termo }}</span>
+                {% if verbete_data.classe_gramatical %}
+                    <span class="verbete-classe"> ({{ verbete_data.classe_gramatical }})</span>
                 {% endif %}
             </p>
             
-            {% if verbete.etimologia %}
-                <p><strong>Etimologia:</strong> {{ verbete.etimologia|safe }}</p>
+            {% if verbete_data.etimologia %}
+                <p><strong>Discussão histórico-etimológica:</strong> {{ verbete_data.etimologia|safe }}</p>
             {% endif %}
 
-            {% if verbete.definicoes.all %}
+            {% if verbete_data.definicoes %}
                 <h4>Definições:</h4>
-                {% for definicao in verbete.definicoes.all %}
+                {% for definicao_data in verbete_data.definicoes %}
                     <div class="definicao-bloco">
-                        <p><strong>{{ definicao.sensenumber }}.</strong> {{ definicao.definition|safe }}</p>
+                        <p><strong>{{ definicao_data.sensenumber }}.</strong> {{ definicao_data.definition|safe }}</p>
 
-                        {# --- BLOCO PARA AS OCORRÊNCIAS/EXEMPLOS --- #}
-                        {# O related_name do ForeignKey de OcorrenciaCorpus para Definition é 'ocorrencias' #}
-                        {% if definicao.ocorrencias.all %}
+                        {# DEBUG: Mostrar o conteúdo bruto de 'exemplos_agrupados' #}
+                        {# <p class="debug-message">DEBUG: Exemplos agrupados ({{ definicao_data.sensenumber }}): {{ definicao_data.exemplos_agrupados }}</p> #}
+
+                        {% if definicao_data.exemplos_agrupados %}
                             <div class="exemplos-container">
-                                {% for ocorrencia in definicao.ocorrencias.all %}
-                                    <div class="exemplo-bloco">
-                                        {# Usando o campo 'frase' do modelo OcorrenciaCorpus #}
-                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|safe }}"</p>
-                                        <p class="exemplo-referencia">
-                                            (Em:
-                                            {% if ocorrencia.autor %}
-                                                {{ ocorrencia.autor|capfirst }}
-                                                {% if ocorrencia.data and ocorrencia.data != 's.d.' %}, {{ ocorrencia.data }}{% endif %}
-                                                ,
-                                            {% elif ocorrencia.data and ocorrencia.data != 's.d.' %} {# Se não tem autor mas tem data, mostra só a data antes do título #}
-                                                {{ ocorrencia.data }},
-                                            {% endif %}
-                                            {{ ocorrencia.titulo_obra }}
-                                            {% if ocorrencia.pagina_obra %}
-                                                , p. {{ ocorrencia.pagina_obra }}
-                                            {% endif %}
-                                            )
-                                        </p>
+                                {# DEBUG: Quantidade de tokens agrupados #}
+                                {# <p class="debug-message">DEBUG: Total de tokens agrupados: {{ definicao_data.exemplos_agrupados|length }}</p> #}
+
+                                {% for token_val, token_examples_dict in definicao_data.exemplos_agrupados.items %}
+                                    <div class="token-group mb-3 ms-3 border-start ps-3">
+                                        {# DEBUG: Token atual #}
+                                        {# <p class="debug-message">DEBUG: Token: {{ token_val }}</p> #}
+
+                                        {% for gram_val, autores_dict in token_examples_dict.items %}
+                                            {# DEBUG: Gramática atual #}
+                                            {# <p class="debug-message">DEBUG: Gram: {{ gram_val }}</p> #}
+
+                                            {% for autor_val, lista_ocorrencias in autores_dict.items %}
+                                                {# DEBUG: Autor atual e quantidade de ocorrências antes do slice #}
+                                                {# <p class="debug-message">DEBUG: Autor: {{ autor_val }}, Ocorrências: {{ lista_ocorrencias|length }}</p> #}
+
+                                                {% for ocorrencia in lista_ocorrencias|slice:":1" %}
+                                                    <div class="exemplo-bloco">
+                                                        <p>
+                                                            <strong>{{ ocorrencia.token }}</strong>
+                                                            {% if ocorrencia.gram and ocorrencia.gram|lower != 'nan' %}
+                                                                ({{ ocorrencia.gram }})
+                                                            {% endif %}
+                                                        </p>
+                                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|safe }}"</p>
+                                                        <p class="exemplo-referencia">
+                                                            (Em:
+                                                            {% if ocorrencia.autor and ocorrencia.autor != 'N/A' %}
+                                                                {{ ocorrencia.autor|capfirst }}
+                                                                {% if ocorrencia.data and ocorrencia.data != 's.d.' %}, {{ ocorrencia.data }}{% endif %}
+                                                                ,
+                                                            {% elif ocorrencia.data and ocorrencia.data != 's.d.' %}
+                                                                {{ ocorrencia.data }},
+                                                            {% endif %}
+                                                            {{ ocorrencia.titulo_obra }}
+                                                            {% if ocorrencia.pagina_obra %}
+                                                                , p. {{ ocorrencia.pagina_obra }}
+                                                            {% endif %}
+                                                            )
+                                                        </p>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endfor %}
+                                        {% endfor %}
                                     </div>
                                 {% endfor %}
                             </div>
+                        {% else %}
+                            {# <p class="debug-message">DEBUG: Nenhum exemplo agrupado para esta definição ({{ definicao_data.sensenumber }}).</p> #}
                         {% endif %}
-                        {# --- FIM DO BLOCO DE OCORRÊNCIAS --- #}
 
                     </div>
                 {% endfor %}
