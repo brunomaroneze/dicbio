@@ -26,7 +26,7 @@ footer .bi { /* Supondo que você use Bootstrap Icons */
 
 /* Estilo para o logo grande da página inicial */
 .main-page-logo {
-    max-width: 500px; /* Ou o tamanho que preferir para o logo central */
+    max-width: 100%; /* Fica do tamanho do arquivo de imagem e reduz em telas pequenas */
     height: auto;
     margin-bottom: 2rem; /* Espaçamento abaixo do logo */
 }
