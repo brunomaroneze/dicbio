@@ -101,7 +101,8 @@ def format_citation(ocorrencia):
     # 4. Página
     # Usamos ocorrencia.pagina_obra como campo único
     if ocorrencia.pagina_obra and ocorrencia.pagina_obra.strip():
-        parts.append(f"p. {ocorrencia.pagina_obra}")
+        display_pagina_obra = ocorrencia.pagina_obra.replace("_", " ") 
+        parts.append(f"p. {display_pagina_obra}")
 
     citation_string = ", ".join(parts)
     
