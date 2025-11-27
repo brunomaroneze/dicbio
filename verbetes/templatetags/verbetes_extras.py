@@ -74,10 +74,6 @@ def process_sentence_display(sentence_text):
 
 # verbetes/templatetags/citation_filters.py
 
-from django import template
-
-register = template.Library()
-
 @register.filter
 def format_citation(ocorrencia):
     """
@@ -110,3 +106,19 @@ def format_citation(ocorrencia):
         return "informações da obra não disponíveis"
     
     return citation_string
+
+@register.filter
+def replace_chars(value, arg):
+    """
+    Substitui todas as ocorrências de uma substring por outra.
+    Uso: {{ value|replace_chars:"old_string,new_string" }}
+    """
+    if not isinstance(value, str) or not isinstance(arg, str):
+        return value # Retorna o valor original se não for string ou argumento inválido
+
+    try:
+        old_string, new_string = arg.split(',', 1) # Divide o argumento em duas partes
+    except ValueError:
+        return value # Se o argumento não estiver no formato "a,b", retorna o valor original
+
+    return value.replace(old_string, new_string)
