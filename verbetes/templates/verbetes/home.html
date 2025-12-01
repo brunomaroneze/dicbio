@@ -119,7 +119,7 @@
                                         class="text-decoration-none text-dark">
                                         {{ exemplo.titulo_obra }}
                                         {% if exemplo.pagina_obra %}
-                                        , p. {{ exemplo.pagina_obra }}
+                                        , p. {{ exemplo.pagina_obra|replace_chars:"_, " }}
                                         {% endif %}
                                     </a>
                                     )

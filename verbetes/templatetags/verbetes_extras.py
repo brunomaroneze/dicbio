@@ -71,3 +71,54 @@ def process_sentence_display(sentence_text):
     
     return mark_safe(processed_text)
 #====================================================================
+
+# verbetes/templatetags/citation_filters.py
+
+@register.filter
+def format_citation(ocorrencia):
+    """
+    Formata as informações de citação de uma OcorrenciaCorpus em uma única string.
+    Ordem: Autor, Título da Obra, Data, Página.
+    """
+    parts = []
+
+    # 1. Autor
+    if ocorrencia.autor and ocorrencia.autor.strip() and ocorrencia.autor.strip().lower() != 'n/a':
+        parts.append(ocorrencia.autor.capitalize()) 
+
+    # 2. Título da Obra
+    if ocorrencia.titulo_obra and ocorrencia.titulo_obra.strip():
+        parts.append(ocorrencia.titulo_obra)
+
+    # 3. Data
+    if ocorrencia.data and ocorrencia.data.strip() and ocorrencia.data.strip().lower() != 's.d.':
+        parts.append(ocorrencia.data)
+
+    # 4. Página
+    # Usamos ocorrencia.pagina_obra como campo único
+    if ocorrencia.pagina_obra and ocorrencia.pagina_obra.strip():
+        display_pagina_obra = ocorrencia.pagina_obra.replace("_", " ") 
+        parts.append(f"p. {display_pagina_obra}")
+
+    citation_string = ", ".join(parts)
+    
+    if not citation_string:
+        return "informações da obra não disponíveis"
+    
+    return citation_string
+
+@register.filter
+def replace_chars(value, arg):
+    """
+    Substitui todas as ocorrências de uma substring por outra.
+    Uso: {{ value|replace_chars:"old_string,new_string" }}
+    """
+    if not isinstance(value, str) or not isinstance(arg, str):
+        return value # Retorna o valor original se não for string ou argumento inválido
+
+    try:
+        old_string, new_string = arg.split(',', 1) # Divide o argumento em duas partes
+    except ValueError:
+        return value # Se o argumento não estiver no formato "a,b", retorna o valor original
+
+    return value.replace(old_string, new_string)

@@ -1,3 +1,5 @@
+# extract_corpus_terms.py
+
 import csv
 import re
 from pathlib import Path
@@ -6,7 +8,6 @@ import codecs
 
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-# Não precisamos importar Obra ou slugify aqui, pois este comando apenas gera CSV.
 
 class Command(BaseCommand):
     help = 'Extrai termos e metadados de arquivos XML TEI e gera termos_extraidos.csv.'
@@ -20,7 +21,7 @@ class Command(BaseCommand):
         parser.add_argument(
             '--output-dir',
             type=str,
-            default='data', # Pasta padrão para o CSV de saída
+            default='data', 
             help='Diretório de saída para o CSV, relativo à raiz do projeto Django.',
         )
 
@@ -119,7 +120,12 @@ class Command(BaseCommand):
                         # --- INÍCIO DA LÓGICA DE GERAÇÃO DA SENTENÇA PARA O CSV ---
                         # Página da ocorrência (primeiro, para ser usada na sentença e coluna)
                         nearest_pb_el = term.xpath('./preceding::tei:pb[1]', namespaces=ns)
-                        page = nearest_pb_el[0].get('n', '?') if nearest_pb_el else '?'
+                        page_raw = nearest_pb_el[0].get('n', '?') if nearest_pb_el else '?'
+                        
+                        # --- AQUI ESTÁ A MUDANÇA ---
+                        # Formata o número da página para substituir espaços por underscores
+                        page = page_raw.replace(" ", "_")
+                        # --- FIM DA MUDANÇA ---
 
                         # Sentença com destaque do token usando marcação intermediária [[b]]
                         sentence_text_raw = ''.join(parent.itertext(with_tail=True)).strip()
@@ -155,7 +161,7 @@ class Command(BaseCommand):
                             date,
                             title,       # Título da Obra
                             slug_obra,   # Slug da Obra
-                            page         # Número da Página (para a coluna 'page_num')
+                            page         # Número da Página (para a coluna 'page_num') - AGORA COM UNDERSCORES
                         ])
 
                     all_rows.extend(rows_for_current_file)
@@ -182,7 +188,5 @@ class Command(BaseCommand):
                     self.stdout.write(self.style.SUCCESS(f'✔️ CSV gerado com sucesso: {output_csv_path}'))
                 except Exception as e:
                     self.stderr.write(self.style.ERROR(f'Erro ao escrever termos_extraidos.csv: {e}'))
-        #else:
-         #   self.stdout.write(self.style.NOTICE(f'Geração de termos_extraidos.csv pulada (--skip-regen).'))
 
         self.stdout.write(self.style.SUCCESS('Comando extract_corpus_terms concluído.'))

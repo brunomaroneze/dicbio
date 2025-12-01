@@ -37,6 +37,8 @@
           em questão. No entanto, é importante notar que, para a correta validação deste arquivo
           XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
           funcionamento correto dos URLs.</p>
+        <p>O sumário foi indicado com o elemento <gi>list</gi>, com cada item do sumário marcado com
+            <gi>item</gi>.</p>
       </editorialDecl>
       <projectDesc>
         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -1050,7 +1052,49 @@
         <l>Tu nulli cedens Medicina, vivere cunctis</l>
         <l>Lumine das, nobis maior Apollo tuo.</l>
       </div>
+      <pb n="não numerada 22"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0025.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <div type="sumário">
+        <head>INDICE DAS OBSERVAÇOENS, Que se contem neste livro.</head>
+        <list type="toc">
+          <item>OBSERVAÇAÕ I. De huma colica Nephritica, pag. 1.</item>
+          <item>OBSERV. II. De huma tosse vehementissima, à qual sobreveyo hum fluxo de sangue pela
+            boca, pag. 11.</item>
+          <item>OBSERV. III. De huma febre, &amp; suor continuo com tosse, &amp; estillicidio, pag.
+            20.</item>
+          <item>OBSERV. IV. De huma pontada no lado esquerdo no tempo da conjunçaõ mensal, pag.
+            27.</item>
+          <item>OBSERV. V. De humas dores, &amp; ardores do estomago, complicadas com azedumes taõ
+            rebeldes, que desprezàraõ a muitos remedios especificos, &amp; só obedeceraõ às minhas
+            pilulas antacidas absorbentes, pag. 34.</item>
+          <item>OBSERV. VI. De humas camaras de sangue procedidas de hũa gonorrhea purulenta
+            supprimida, &amp; de hum bubaõ recolhido, &amp; depois de mil remedios baldados, as
+            curei com mercurios, &amp; antidotos da qualidade gallica, pag. 41.</item>
+          <item>OBSERV. VII. De hũas alporcas que certo fidalgo padeceo muitos annos, &amp; estando
+            já deixado por incuravel, &amp; resoluto a ir a França, esperando o seu remedio da
+            bençaõ daquelle Monarca, com as minhas pilulas antisirumaticas sarou radicalmente, pag.
+            48.</item>
+          <item>OBSERV. VIII. De humas intercadencias de pulsos taõ repentinas, que fizeraõ
+            desconfiar a certo Medico de tal sorte, que mandou logo ungir ao doente; &amp;
+            visitando-o eu, o animei muito, dizendolhe que no seguinte dia estaria saõ, porque
+            aquelles sinaes eraõ proprios da sua muita idade, principalmente avendo feito naquelle
+            dia mais de sessenta cursos: &amp; naõ me enganou o pensamento; porque sarou como lhe
+            tinha dito, pag. 55.</item>
+          <item>OBSERV. IX. De huma lepra bastarda procedida de alimentos grosseiros, &amp; vida
+            sedentaria, &amp; penitente, pag. 61.</item>
+          <item>OBSERV. X. De hum continuo fluxo de sangue das almorreimas causado de excessivo
+            trabalho, &amp; quentura, pag. 70.</item>
+          <item>OBSERV. XI. De huma excessiva dor, &amp; ardor de ourina, padecida tres dias cada
+            mes, pag. 75.</item>
+          <item>OBSERV. XII. De huma suppressaõ alta de ourina, que depois de dezanove dias, sem que
+            remedio algum lhe aproveitasse, se curou com sangrias dos braços, pelas quaes sahio
+            muita quantidade de ourina, pag. 82.</item>
+          <item>OBSERV. XIII. De hũ rebelde fluxo de sangue pelos narizes, pag. 87.</item>
+          <item>OBSERV. XlV. De humas ancias de coraçaõ procedidas dos vapores venenosos de rosalgar
+            fervido com vinagre, com que certa mulher lavou</item>
+        </list>
 
+      </div>
     </front>
     <body>
       <pb n="1"/>
