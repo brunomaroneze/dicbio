@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dicbio:entry_Botânica a ontolex:LexicalEntry ;
-    dcterms:created "16 Feb 2023"^^xsd:string ;
+    dcterms:created "2023-02-16"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Raissa Silveira Buss" ;
     etym:etymology dicbio:etym_Botânica ;
@@ -21,7 +21,7 @@ dicbio:entry_Botânica a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_Botânica_1 .
 
 dicbio:entry_Fitologia a ontolex:LexicalEntry ;
-    dcterms:created "5 Dec 2023"^^xsd:string ;
+    dcterms:created "2023-12-05"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Dannielly Victória Rodrigues da Silva" ;
     etym:etymology dicbio:etym_Fitologia ;
@@ -31,7 +31,7 @@ dicbio:entry_Fitologia a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_Fitologia_1 .
 
 dicbio:entry_Miologia a ontolex:LexicalEntry ;
-    dcterms:created "23 Aug 2022"^^xsd:string ;
+    dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Rafaela Lima Domingos" ;
     etym:etymology dicbio:etym_Miologia ;
@@ -41,7 +41,7 @@ dicbio:entry_Miologia a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_Miologia_1 .
 
 dicbio:entry_Zoologia a ontolex:LexicalEntry ;
-    dcterms:created "15 Aug 2024"^^xsd:string ;
+    dcterms:created "2024-08-15"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Luana da Silva Borges" ;
     etym:etymology dicbio:etym_Zoologia ;
@@ -984,7 +984,7 @@ dicbio:entry_mamário a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_mamário_1 .
 
 dicbio:entry_masseter a ontolex:LexicalEntry ;
-    dcterms:created "23 Aug 2022"^^xsd:string ;
+    dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Rafaela Lima Domingos" ;
     etym:etymology dicbio:etym_masseter ;
@@ -1576,7 +1576,7 @@ dicbio:entry_árvore a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_árvore_1 .
 
 dicbio:entry_ócciput a ontolex:LexicalEntry ;
-    dcterms:created "23 Aug 2022"^^xsd:string ;
+    dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Rafaela Lima Domingos" ;
     etym:etymology dicbio:etym_ócciput ;
@@ -1587,7 +1587,7 @@ dicbio:entry_ócciput a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_ócciput_1 .
 
 dicbio:entry_órbita a ontolex:LexicalEntry ;
-    dcterms:created "23 Aug 2022"^^xsd:string ;
+    dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator "Bruno Maroneze",
         "Rafaela Lima Domingos" ;
     etym:etymology dicbio:etym_órbita ;
