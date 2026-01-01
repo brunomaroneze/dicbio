@@ -6,7 +6,9 @@ from rdflib.namespace import RDF, RDFS, XSD, DCTERMS, SKOS
 DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
 ONTOLEX = Namespace("http://www.w3.org/ns/lemon/ontolex#")
 LEXINFO = Namespace("http://www.lexinfo.net/ontology/2.0/lexinfo#")
-ETYM = Namespace("http://purl.org/net/lemon-etym#")
+ETYM = Namespace("http://lari-datasets.ilc.cnr.it/lemonEty#")
+AUTHOR = Namespace("http://dicbio.fflch.usp.br/autor/")
+FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 
 def converter_arquivos_locais(caminho_dados, caminho_defs, caminho_termos, arquivo_saida):
     g = Graph()
@@ -16,6 +18,8 @@ def converter_arquivos_locais(caminho_dados, caminho_defs, caminho_termos, arqui
     g.bind("etym", ETYM)
     g.bind("dcterms", DCTERMS)
     g.bind("skos", SKOS)
+    g.bind("foaf", FOAF)
+    g.bind("author", AUTHOR)
 
     map_pos = {
         "adjetivo": LEXINFO.adjective,

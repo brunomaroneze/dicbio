@@ -7,11 +7,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix author: <http://dicbio.fflch.usp.br/autor/> .
+
 
 dicbio:entry_Botânica a ontolex:LexicalEntry ;
     dcterms:created "2023-02-16"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_Botânica ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_Botânica ;
@@ -22,8 +27,8 @@ dicbio:entry_Botânica a ontolex:LexicalEntry ;
 
 dicbio:entry_Fitologia a ontolex:LexicalEntry ;
     dcterms:created "2023-12-05"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Dannielly Victória Rodrigues da Silva" ;
+    dcterms:creator author:bruno_maroneze,
+        author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_Fitologia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_Fitologia ;
@@ -32,8 +37,8 @@ dicbio:entry_Fitologia a ontolex:LexicalEntry ;
 
 dicbio:entry_Miologia a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Rafaela Lima Domingos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:rafaela_domingos ;
     etym:etymology dicbio:etym_Miologia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_Miologia ;
@@ -42,8 +47,8 @@ dicbio:entry_Miologia a ontolex:LexicalEntry ;
 
 dicbio:entry_Zoologia a ontolex:LexicalEntry ;
     dcterms:created "2024-08-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Luana da Silva Borges" ;
+    dcterms:creator author:bruno_maroneze,
+        author:luana_borges ;
     etym:etymology dicbio:etym_Zoologia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_Zoologia ;
@@ -51,8 +56,8 @@ dicbio:entry_Zoologia a ontolex:LexicalEntry ;
 
 dicbio:entry_adiposo a ontolex:LexicalEntry ;
     dcterms:created "2024-05-04"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_adiposo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_adiposo ;
@@ -63,8 +68,8 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
 
 dicbio:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_angulado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_angulado ;
@@ -76,7 +81,7 @@ dicbio:entry_angulado a ontolex:LexicalEntry ;
 
 dicbio:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_antera ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_antera ;
@@ -91,8 +96,8 @@ dicbio:entry_antera a ontolex:LexicalEntry ;
 
 dicbio:entry_aurícula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
-    dcterms:creator "Ana Carolina Menegassi Rocha",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_menegassi_rocha,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_aurícula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_aurícula ;
@@ -104,8 +109,8 @@ dicbio:entry_aurícula a ontolex:LexicalEntry ;
 
 dicbio:entry_bile a ontolex:LexicalEntry ;
     dcterms:created "2024-05-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_bile ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bile ;
@@ -113,8 +118,8 @@ dicbio:entry_bile a ontolex:LexicalEntry ;
 
 dicbio:entry_branquióstego a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_branquióstego ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_branquióstego ;
@@ -125,7 +130,7 @@ dicbio:entry_branquióstego a ontolex:LexicalEntry ;
 
 dicbio:entry_bráctea a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bráctea ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bráctea ;
@@ -139,8 +144,8 @@ dicbio:entry_bráctea a ontolex:LexicalEntry ;
 
 dicbio:entry_brânquia a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_brânquia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_brânquia ;
@@ -149,7 +154,7 @@ dicbio:entry_brânquia a ontolex:LexicalEntry ;
 
 dicbio:entry_bulbo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bulbo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bulbo ;
@@ -159,7 +164,7 @@ dicbio:entry_bulbo a ontolex:LexicalEntry ;
 
 dicbio:entry_bulboso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bulboso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bulboso ;
@@ -170,8 +175,8 @@ dicbio:entry_bulboso a ontolex:LexicalEntry ;
 
 dicbio:entry_bálano a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Marilizi Arruda Tarifa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:marilizi_tarifa ;
     etym:etymology dicbio:etym_bálano ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bálano ;
@@ -180,7 +185,7 @@ dicbio:entry_bálano a ontolex:LexicalEntry ;
 
 dicbio:entry_bífido a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bífido ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bífido ;
@@ -190,8 +195,8 @@ dicbio:entry_bífido a ontolex:LexicalEntry ;
 
 dicbio:entry_canaliculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-22"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_canaliculado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_canaliculado ;
@@ -202,7 +207,7 @@ dicbio:entry_canaliculado a ontolex:LexicalEntry ;
 
 dicbio:entry_capréolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_capréolo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_capréolo ;
@@ -211,7 +216,7 @@ dicbio:entry_capréolo a ontolex:LexicalEntry ;
 
 dicbio:entry_carpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_carpo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_carpo ;
@@ -219,7 +224,7 @@ dicbio:entry_carpo a ontolex:LexicalEntry ;
 
 dicbio:entry_cartilagíneo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cartilagíneo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cartilagíneo ;
@@ -229,8 +234,8 @@ dicbio:entry_cartilagíneo a ontolex:LexicalEntry ;
 
 dicbio:entry_carótida a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
-    dcterms:creator "Ana Cristina Gouvêa Lopes",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_cristina_lopes,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_carótida ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_carótida ;
@@ -241,8 +246,8 @@ dicbio:entry_carótida a ontolex:LexicalEntry ;
 
 dicbio:entry_carúncula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-13"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Matheus Stein Casarin" ;
+    dcterms:creator author:bruno_maroneze,
+        author:matheus_casarin ;
     etym:etymology dicbio:etym_carúncula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_carúncula ;
@@ -255,8 +260,8 @@ dicbio:entry_carúncula a ontolex:LexicalEntry ;
 
 dicbio:entry_caule a ontolex:LexicalEntry ;
     dcterms:created "2025-02-06"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Vitória Fernandes Pereira" ;
+    dcterms:creator author:bruno_maroneze,
+        author:vitoria_pereira ;
     etym:etymology dicbio:etym_caule ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_caule ;
@@ -265,8 +270,8 @@ dicbio:entry_caule a ontolex:LexicalEntry ;
 
 dicbio:entry_cibário a ontolex:LexicalEntry ;
     dcterms:created "2023-05-19"^^xsd:date ;
-    dcterms:creator "Ana Carolina Menegassi Rocha",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_menegassi_rocha,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_cibário ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cibário ;
@@ -275,8 +280,8 @@ dicbio:entry_cibário a ontolex:LexicalEntry ;
 
 dicbio:entry_ciliado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_ciliado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ciliado ;
@@ -288,7 +293,7 @@ dicbio:entry_ciliado a ontolex:LexicalEntry ;
 
 dicbio:entry_cirro a ontolex:LexicalEntry ;
     dcterms:created "2023-11-20"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cirro ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cirro ;
@@ -300,8 +305,8 @@ dicbio:entry_cirro a ontolex:LexicalEntry ;
 
 dicbio:entry_clitóris a ontolex:LexicalEntry ;
     dcterms:created "2025-06-16"^^xsd:date ;
-    dcterms:creator "Ana Cristina Gouvêa Lopes",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_cristina_lopes,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_clitóris ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_clitóris ;
@@ -312,7 +317,7 @@ dicbio:entry_clitóris a ontolex:LexicalEntry ;
 
 dicbio:entry_coarctado a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_coarctado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_coarctado ;
@@ -320,8 +325,8 @@ dicbio:entry_coarctado a ontolex:LexicalEntry ;
 
 dicbio:entry_concameração a ontolex:LexicalEntry ;
     dcterms:created "2023-11-06"^^xsd:date ;
-    dcterms:creator "Ana Carolina Menegassi Rocha",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_menegassi_rocha,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_concameração ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_concameração ;
@@ -332,7 +337,7 @@ dicbio:entry_concameração a ontolex:LexicalEntry ;
 
 dicbio:entry_conivente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_conivente ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_conivente ;
@@ -342,8 +347,8 @@ dicbio:entry_conivente a ontolex:LexicalEntry ;
 
 dicbio:entry_coronário a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
-    dcterms:creator "Ana Cristina Gouvêa Lopes",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_cristina_lopes,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_coronário ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_coronário ;
@@ -354,7 +359,7 @@ dicbio:entry_coronário a ontolex:LexicalEntry ;
 
 dicbio:entry_corólula a ontolex:LexicalEntry ;
     dcterms:created "2024-11-26"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_corólula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_corólula ;
@@ -363,7 +368,7 @@ dicbio:entry_corólula a ontolex:LexicalEntry ;
 
 dicbio:entry_cotilédone a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cotilédone ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cotilédone ;
@@ -375,7 +380,7 @@ dicbio:entry_cotilédone a ontolex:LexicalEntry ;
 
 dicbio:entry_crena a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_crena ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_crena ;
@@ -384,7 +389,7 @@ dicbio:entry_crena a ontolex:LexicalEntry ;
 
 dicbio:entry_cutícula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cutícula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cutícula ;
@@ -393,7 +398,7 @@ dicbio:entry_cutícula a ontolex:LexicalEntry ;
 
 dicbio:entry_cálice a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cálice ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cálice ;
@@ -412,8 +417,8 @@ dicbio:entry_cálice a ontolex:LexicalEntry ;
 
 dicbio:entry_cápsula a ontolex:LexicalEntry ;
     dcterms:created "2024-05-10"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_cápsula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cápsula ;
@@ -425,8 +430,8 @@ dicbio:entry_cápsula a ontolex:LexicalEntry ;
 
 dicbio:entry_cístico a ontolex:LexicalEntry ;
     dcterms:created "2025-02-22"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_cístico ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cístico ;
@@ -435,8 +440,8 @@ dicbio:entry_cístico a ontolex:LexicalEntry ;
 
 dicbio:entry_cóccix a ontolex:LexicalEntry ;
     dcterms:created "2025-02-24"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_cóccix ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cóccix ;
@@ -445,7 +450,7 @@ dicbio:entry_cóccix a ontolex:LexicalEntry ;
 
 dicbio:entry_deflexo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_deflexo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_deflexo ;
@@ -454,8 +459,8 @@ dicbio:entry_deflexo a ontolex:LexicalEntry ;
 
 dicbio:entry_deltoide a ontolex:LexicalEntry ;
     dcterms:created "2025-09-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Geovanna Salvino de Lima" ;
+    dcterms:creator author:bruno_maroneze,
+        author:geovanna_lima ;
     etym:etymology dicbio:etym_deltoide ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_deltoide ;
@@ -465,7 +470,7 @@ dicbio:entry_deltoide a ontolex:LexicalEntry ;
 
 dicbio:entry_desenvolução a ontolex:LexicalEntry ;
     dcterms:created "2025-03-26"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_desenvolução ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_desenvolução ;
@@ -474,8 +479,8 @@ dicbio:entry_desenvolução a ontolex:LexicalEntry ;
 
 dicbio:entry_diafragma a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_diafragma ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_diafragma ;
@@ -487,8 +492,8 @@ dicbio:entry_diafragma a ontolex:LexicalEntry ;
 
 dicbio:entry_digitado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_digitado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_digitado ;
@@ -502,7 +507,7 @@ dicbio:entry_digitado a ontolex:LexicalEntry ;
 
 dicbio:entry_disco a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_disco ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_disco ;
@@ -512,8 +517,8 @@ dicbio:entry_disco a ontolex:LexicalEntry ;
 
 dicbio:entry_dorsal a ontolex:LexicalEntry ;
     dcterms:created "2024-09-27"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Marimeire Almeida Barros" ;
+    dcterms:creator author:bruno_maroneze,
+        author:marimeire_barros ;
     etym:etymology dicbio:etym_dorsal ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_dorsal ;
@@ -521,8 +526,8 @@ dicbio:entry_dorsal a ontolex:LexicalEntry ;
 
 dicbio:entry_elongado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_elongado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_elongado ;
@@ -531,8 +536,8 @@ dicbio:entry_elongado a ontolex:LexicalEntry ;
 
 dicbio:entry_emarginado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_emarginado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_emarginado ;
@@ -541,8 +546,8 @@ dicbio:entry_emarginado a ontolex:LexicalEntry ;
 
 dicbio:entry_enovelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_enovelado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_enovelado ;
@@ -553,8 +558,8 @@ dicbio:entry_enovelado a ontolex:LexicalEntry ;
 
 dicbio:entry_ensiforme a ontolex:LexicalEntry ;
     dcterms:created "2025-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_ensiforme ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ensiforme ;
@@ -562,8 +567,8 @@ dicbio:entry_ensiforme a ontolex:LexicalEntry ;
 
 dicbio:entry_entrecortado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_entrecortado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_entrecortado ;
@@ -572,7 +577,7 @@ dicbio:entry_entrecortado a ontolex:LexicalEntry ;
 
 dicbio:entry_epiderme a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_epiderme ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_epiderme ;
@@ -581,8 +586,8 @@ dicbio:entry_epiderme a ontolex:LexicalEntry ;
 
 dicbio:entry_epigástrio a ontolex:LexicalEntry ;
     dcterms:created "2022-07-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_epigástrio ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_epigástrio ;
@@ -592,7 +597,7 @@ dicbio:entry_epigástrio a ontolex:LexicalEntry ;
 
 dicbio:entry_escamoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_escamoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_escamoso ;
@@ -603,8 +608,8 @@ dicbio:entry_escamoso a ontolex:LexicalEntry ;
 
 dicbio:entry_escroto a ontolex:LexicalEntry ;
     dcterms:created "2025-03-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_escroto ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_escroto ;
@@ -613,7 +618,7 @@ dicbio:entry_escroto a ontolex:LexicalEntry ;
 
 dicbio:entry_estame a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estame ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_estame ;
@@ -623,7 +628,7 @@ dicbio:entry_estame a ontolex:LexicalEntry ;
 
 dicbio:entry_estigma a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estigma ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_estigma ;
@@ -632,7 +637,7 @@ dicbio:entry_estigma a ontolex:LexicalEntry ;
 
 dicbio:entry_estípula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estípula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_estípula ;
@@ -641,8 +646,8 @@ dicbio:entry_estípula a ontolex:LexicalEntry ;
 
 dicbio:entry_esôfago a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_esôfago ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_esôfago ;
@@ -653,8 +658,8 @@ dicbio:entry_esôfago a ontolex:LexicalEntry ;
 
 dicbio:entry_excretório a ontolex:LexicalEntry ;
     dcterms:created "2025-03-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_excretório ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_excretório ;
@@ -663,7 +668,7 @@ dicbio:entry_excretório a ontolex:LexicalEntry ;
 
 dicbio:entry_falcado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Kamila da Silva Barbosa" ;
+    dcterms:creator author:kamila_barbosa ;
     etym:etymology dicbio:etym_falcado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_falcado ;
@@ -672,8 +677,8 @@ dicbio:entry_falcado a ontolex:LexicalEntry ;
 
 dicbio:entry_fastigiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_fastigiado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fastigiado ;
@@ -682,8 +687,8 @@ dicbio:entry_fastigiado a ontolex:LexicalEntry ;
 
 dicbio:entry_fecundante a ontolex:LexicalEntry ;
     dcterms:created "2024-10-10"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Luana da Silva Borges" ;
+    dcterms:creator author:bruno_maroneze,
+        author:luana_borges ;
     etym:etymology dicbio:etym_fecundante ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fecundante ;
@@ -691,7 +696,7 @@ dicbio:entry_fecundante a ontolex:LexicalEntry ;
 
 dicbio:entry_fibroso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_fibroso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fibroso ;
@@ -700,8 +705,8 @@ dicbio:entry_fibroso a ontolex:LexicalEntry ;
 
 dicbio:entry_filamento a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_filamento ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_filamento ;
@@ -711,7 +716,7 @@ dicbio:entry_filamento a ontolex:LexicalEntry ;
 
 dicbio:entry_flósculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_flósculo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_flósculo ;
@@ -720,8 +725,8 @@ dicbio:entry_flósculo a ontolex:LexicalEntry ;
 
 dicbio:entry_folha a ontolex:LexicalEntry ;
     dcterms:created "2025-04-09"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Dannielly Victória Rodrigues da Silva" ;
+    dcterms:creator author:bruno_maroneze,
+        author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_folha ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_folha ;
@@ -731,7 +736,7 @@ dicbio:entry_folha a ontolex:LexicalEntry ;
 
 dicbio:entry_foliáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_foliáceo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_foliáceo ;
@@ -741,7 +746,7 @@ dicbio:entry_foliáceo a ontolex:LexicalEntry ;
 
 dicbio:entry_frutificação a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_frutificação ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_frutificação ;
@@ -755,8 +760,8 @@ dicbio:entry_frutificação a ontolex:LexicalEntry ;
 
 dicbio:entry_frênico a ontolex:LexicalEntry ;
     dcterms:created "2025-04-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_frênico ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_frênico ;
@@ -766,8 +771,8 @@ dicbio:entry_frênico a ontolex:LexicalEntry ;
 
 dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-04-22"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_gelatinoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_gelatinoso ;
@@ -776,7 +781,7 @@ dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
 
 dicbio:entry_gema a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_gema ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_gema ;
@@ -787,8 +792,8 @@ dicbio:entry_gema a ontolex:LexicalEntry ;
 
 dicbio:entry_glândula a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_glândula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_glândula ;
@@ -799,7 +804,7 @@ dicbio:entry_glândula a ontolex:LexicalEntry ;
 
 dicbio:entry_gomo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_gomo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_gomo ;
@@ -808,7 +813,7 @@ dicbio:entry_gomo a ontolex:LexicalEntry ;
 
 dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_hermafrodita ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_hermafrodita ;
@@ -819,8 +824,8 @@ dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
 
 dicbio:entry_hipogástrio a ontolex:LexicalEntry ;
     dcterms:created "2022-06-20"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_hipogástrio ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_hipogástrio ;
@@ -829,8 +834,8 @@ dicbio:entry_hipogástrio a ontolex:LexicalEntry ;
 
 dicbio:entry_hímen a ontolex:LexicalEntry ;
     dcterms:created "2025-09-13"^^xsd:date ;
-    dcterms:creator "Ana Cristina Gouvêa Lopes",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_cristina_lopes,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_hímen ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_hímen ;
@@ -839,7 +844,7 @@ dicbio:entry_hímen a ontolex:LexicalEntry ;
 
 dicbio:entry_inseto a ontolex:LexicalEntry ;
     dcterms:created "2022-11-21"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_inseto ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_inseto ;
@@ -851,7 +856,7 @@ dicbio:entry_inseto a ontolex:LexicalEntry ;
 
 dicbio:entry_jardim_botânico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_jardim_botânico ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_jardim_botânico ;
@@ -864,8 +869,8 @@ dicbio:entry_jardim_botânico a ontolex:LexicalEntry ;
 
 dicbio:entry_labiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_labiado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_labiado ;
@@ -876,7 +881,7 @@ dicbio:entry_labiado a ontolex:LexicalEntry ;
 
 dicbio:entry_lacínia a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_lacínia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lacínia ;
@@ -886,7 +891,7 @@ dicbio:entry_lacínia a ontolex:LexicalEntry ;
 
 dicbio:entry_lanceolado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Kamila da Silva Barbosa" ;
+    dcterms:creator author:kamila_barbosa ;
     etym:etymology dicbio:etym_lanceolado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lanceolado ;
@@ -897,8 +902,8 @@ dicbio:entry_lanceolado a ontolex:LexicalEntry ;
 
 dicbio:entry_ligulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_ligulado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ligulado ;
@@ -907,7 +912,7 @@ dicbio:entry_ligulado a ontolex:LexicalEntry ;
 
 dicbio:entry_litalgia a ontolex:LexicalEntry ;
     dcterms:created "2025-05-13"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_litalgia ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_litalgia ;
@@ -916,8 +921,8 @@ dicbio:entry_litalgia a ontolex:LexicalEntry ;
 
 dicbio:entry_lobado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_lobado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lobado ;
@@ -928,7 +933,7 @@ dicbio:entry_lobado a ontolex:LexicalEntry ;
 
 dicbio:entry_longitudinal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_longitudinal ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_longitudinal ;
@@ -938,8 +943,8 @@ dicbio:entry_longitudinal a ontolex:LexicalEntry ;
 
 dicbio:entry_lúnula a ontolex:LexicalEntry ;
     dcterms:created "2025-05-01"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_lúnula ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lúnula ;
@@ -949,8 +954,8 @@ dicbio:entry_lúnula a ontolex:LexicalEntry ;
 
 dicbio:entry_maléolo a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_maléolo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_maléolo ;
@@ -960,8 +965,8 @@ dicbio:entry_maléolo a ontolex:LexicalEntry ;
 
 dicbio:entry_mamais a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_mamais ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mamais ;
@@ -972,8 +977,8 @@ dicbio:entry_mamais a ontolex:LexicalEntry ;
 
 dicbio:entry_mamário a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_mamário ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mamário ;
@@ -984,8 +989,8 @@ dicbio:entry_mamário a ontolex:LexicalEntry ;
 
 dicbio:entry_masseter a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Rafaela Lima Domingos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:rafaela_domingos ;
     etym:etymology dicbio:etym_masseter ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_masseter ;
@@ -993,7 +998,7 @@ dicbio:entry_masseter a ontolex:LexicalEntry ;
 
 dicbio:entry_medular a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_medular ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_medular ;
@@ -1003,8 +1008,8 @@ dicbio:entry_medular a ontolex:LexicalEntry ;
 
 dicbio:entry_membrana_branquióstega a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_membrana_branquióstega ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_membrana_branquióstega ;
@@ -1015,8 +1020,8 @@ dicbio:entry_membrana_branquióstega a ontolex:LexicalEntry ;
 
 dicbio:entry_membranoso a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Luana da Silva Borges" ;
+    dcterms:creator author:bruno_maroneze,
+        author:luana_borges ;
     etym:etymology dicbio:etym_membranoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_membranoso ;
@@ -1027,7 +1032,7 @@ dicbio:entry_membranoso a ontolex:LexicalEntry ;
 
 dicbio:entry_membranáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_membranáceo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_membranáceo ;
@@ -1042,8 +1047,8 @@ dicbio:entry_membranáceo a ontolex:LexicalEntry ;
 
 dicbio:entry_mesentérico a ontolex:LexicalEntry ;
     dcterms:created "2025-11-27"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_mesentérico ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mesentérico ;
@@ -1053,8 +1058,8 @@ dicbio:entry_mesentérico a ontolex:LexicalEntry ;
 
 dicbio:entry_mesocólon a ontolex:LexicalEntry ;
     dcterms:created "2025-12-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Fabiani de Amorim Gonçalves" ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
     etym:etymology dicbio:etym_mesocólon ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mesocólon ;
@@ -1063,8 +1068,8 @@ dicbio:entry_mesocólon a ontolex:LexicalEntry ;
 
 dicbio:entry_metacarpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator "Ana Cristina Gouvêa Lopes",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_cristina_lopes,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_metacarpo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_metacarpo ;
@@ -1072,8 +1077,8 @@ dicbio:entry_metacarpo a ontolex:LexicalEntry ;
 
 dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Geovanna Salvino de Lima" ;
+    dcterms:creator author:bruno_maroneze,
+        author:geovanna_lima ;
     etym:etymology dicbio:etym_mucilaginoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mucilaginoso ;
@@ -1082,8 +1087,8 @@ dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
 
 dicbio:entry_músculo a ontolex:LexicalEntry ;
     dcterms:created "2025-03-06"^^xsd:date ;
-    dcterms:creator "Adriane Maria de Oliveira Queiroz",
-        "Bruno Maroneze" ;
+    dcterms:creator author:adriane_queiroz,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_músculo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_músculo ;
@@ -1094,7 +1099,7 @@ dicbio:entry_músculo a ontolex:LexicalEntry ;
 
 dicbio:entry_oblongo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_oblongo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_oblongo ;
@@ -1106,7 +1111,7 @@ dicbio:entry_oblongo a ontolex:LexicalEntry ;
 
 dicbio:entry_ocelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Kamila da Silva Barbosa" ;
+    dcterms:creator author:kamila_barbosa ;
     etym:etymology dicbio:etym_ocelado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ocelado ;
@@ -1115,8 +1120,8 @@ dicbio:entry_ocelado a ontolex:LexicalEntry ;
 
 dicbio:entry_papila a ontolex:LexicalEntry ;
     dcterms:created "2023-10-30"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Matheus Stein Casarin" ;
+    dcterms:creator author:bruno_maroneze,
+        author:matheus_casarin ;
     etym:etymology dicbio:etym_papila ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_papila ;
@@ -1127,7 +1132,7 @@ dicbio:entry_papila a ontolex:LexicalEntry ;
 
 dicbio:entry_papilionáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_papilionáceo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_papilionáceo ;
@@ -1136,7 +1141,7 @@ dicbio:entry_papilionáceo a ontolex:LexicalEntry ;
 
 dicbio:entry_parasítico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_parasítico ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_parasítico ;
@@ -1145,7 +1150,7 @@ dicbio:entry_parasítico a ontolex:LexicalEntry ;
 
 dicbio:entry_pecíolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pecíolo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pecíolo ;
@@ -1155,7 +1160,7 @@ dicbio:entry_pecíolo a ontolex:LexicalEntry ;
 
 dicbio:entry_pedúnculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pedúnculo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pedúnculo ;
@@ -1167,8 +1172,8 @@ dicbio:entry_pedúnculo a ontolex:LexicalEntry ;
 
 dicbio:entry_pelve a ontolex:LexicalEntry ;
     dcterms:created "2025-07-06"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Geovanna Salvino de Lima" ;
+    dcterms:creator author:bruno_maroneze,
+        author:geovanna_lima ;
     etym:etymology dicbio:etym_pelve ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pelve ;
@@ -1177,7 +1182,7 @@ dicbio:entry_pelve a ontolex:LexicalEntry ;
 
 dicbio:entry_perene a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_perene ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_perene ;
@@ -1187,8 +1192,8 @@ dicbio:entry_perene a ontolex:LexicalEntry ;
 
 dicbio:entry_pericarpo a ontolex:LexicalEntry ;
     dcterms:created "2022-12-20"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_pericarpo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pericarpo ;
@@ -1198,7 +1203,7 @@ dicbio:entry_pericarpo a ontolex:LexicalEntry ;
 
 dicbio:entry_piloso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_piloso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_piloso ;
@@ -1208,7 +1213,7 @@ dicbio:entry_piloso a ontolex:LexicalEntry ;
 
 dicbio:entry_pimpolho a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pimpolho ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pimpolho ;
@@ -1218,7 +1223,7 @@ dicbio:entry_pimpolho a ontolex:LexicalEntry ;
 
 dicbio:entry_pistilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pistilo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pistilo ;
@@ -1230,8 +1235,8 @@ dicbio:entry_pistilo a ontolex:LexicalEntry ;
 
 dicbio:entry_placenta a ontolex:LexicalEntry ;
     dcterms:created "2023-08-21"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Luana da Silva Borges" ;
+    dcterms:creator author:bruno_maroneze,
+        author:luana_borges ;
     etym:etymology dicbio:etym_placenta ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_placenta ;
@@ -1240,8 +1245,8 @@ dicbio:entry_placenta a ontolex:LexicalEntry ;
 
 dicbio:entry_planta a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_planta ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_planta ;
@@ -1250,9 +1255,9 @@ dicbio:entry_planta a ontolex:LexicalEntry ;
 
 dicbio:entry_polpa a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
-    dcterms:creator "Adriane Maria de Oliveira Queiroz",
-        "Bruno Maroneze",
-        "Matheus Stein Casarin" ;
+    dcterms:creator author:adriane_queiroz,
+        author:bruno_maroneze,
+        author:matheus_casarin ;
     etym:etymology dicbio:etym_polpa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_polpa ;
@@ -1260,8 +1265,8 @@ dicbio:entry_polpa a ontolex:LexicalEntry ;
 
 dicbio:entry_pontoado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_pontoado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pontoado ;
@@ -1271,8 +1276,8 @@ dicbio:entry_pontoado a ontolex:LexicalEntry ;
 
 dicbio:entry_raiz a ontolex:LexicalEntry ;
     dcterms:created "2023-04-03"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Dannielly Victória Rodrigues da Silva" ;
+    dcterms:creator author:bruno_maroneze,
+        author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_raiz ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_raiz ;
@@ -1282,7 +1287,7 @@ dicbio:entry_raiz a ontolex:LexicalEntry ;
 
 dicbio:entry_receptáculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_receptáculo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_receptáculo ;
@@ -1292,7 +1297,7 @@ dicbio:entry_receptáculo a ontolex:LexicalEntry ;
 
 dicbio:entry_repente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_repente ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_repente ;
@@ -1300,7 +1305,7 @@ dicbio:entry_repente a ontolex:LexicalEntry ;
 
 dicbio:entry_resina a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_resina ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_resina ;
@@ -1309,7 +1314,7 @@ dicbio:entry_resina a ontolex:LexicalEntry ;
 
 dicbio:entry_resinoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_resinoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_resinoso ;
@@ -1318,8 +1323,8 @@ dicbio:entry_resinoso a ontolex:LexicalEntry ;
 
 dicbio:entry_reticulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_reticulado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_reticulado ;
@@ -1328,7 +1333,7 @@ dicbio:entry_reticulado a ontolex:LexicalEntry ;
 
 dicbio:entry_romboidal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_romboidal ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_romboidal ;
@@ -1336,8 +1341,8 @@ dicbio:entry_romboidal a ontolex:LexicalEntry ;
 
 dicbio:entry_semente a ontolex:LexicalEntry ;
     dcterms:created "2023-10-22"^^xsd:date ;
-    dcterms:creator "Ana Carolina Menegassi Rocha",
-        "Bruno Maroneze" ;
+    dcterms:creator author:ana_menegassi_rocha,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_semente ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_semente ;
@@ -1347,9 +1352,9 @@ dicbio:entry_semente a ontolex:LexicalEntry ;
 
 dicbio:entry_setáceo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
-    dcterms:creator "Adriane Maria de Oliveira Queiroz",
-        "Bruno Maroneze",
-        "Matheus Stein Casarin" ;
+    dcterms:creator author:adriane_queiroz,
+        author:bruno_maroneze,
+        author:matheus_casarin ;
     etym:etymology dicbio:etym_setáceo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_setáceo ;
@@ -1363,7 +1368,7 @@ dicbio:entry_setáceo a ontolex:LexicalEntry ;
 
 dicbio:entry_sexual a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_sexual ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sexual ;
@@ -1371,8 +1376,8 @@ dicbio:entry_sexual a ontolex:LexicalEntry ;
 
 dicbio:entry_sexualismo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-11"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Vitória Fernandes Pereira" ;
+    dcterms:creator author:bruno_maroneze,
+        author:vitoria_pereira ;
     etym:etymology dicbio:etym_sexualismo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sexualismo ;
@@ -1380,7 +1385,7 @@ dicbio:entry_sexualismo a ontolex:LexicalEntry ;
 
 dicbio:entry_sucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_sucoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sucoso ;
@@ -1390,8 +1395,8 @@ dicbio:entry_sucoso a ontolex:LexicalEntry ;
 
 dicbio:entry_suculento a ontolex:LexicalEntry ;
     dcterms:created "2023-09-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Raissa Silveira Buss" ;
+    dcterms:creator author:bruno_maroneze,
+        author:raissa_buss ;
     etym:etymology dicbio:etym_suculento ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_suculento ;
@@ -1404,7 +1409,7 @@ dicbio:entry_suculento a ontolex:LexicalEntry ;
 
 dicbio:entry_síliqua a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_síliqua ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_síliqua ;
@@ -1414,8 +1419,8 @@ dicbio:entry_síliqua a ontolex:LexicalEntry ;
 
 dicbio:entry_tendinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Geovanna Salvino de Lima" ;
+    dcterms:creator author:bruno_maroneze,
+        author:geovanna_lima ;
     etym:etymology dicbio:etym_tendinoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tendinoso ;
@@ -1426,8 +1431,8 @@ dicbio:entry_tendinoso a ontolex:LexicalEntry ;
 
 dicbio:entry_tronco a ontolex:LexicalEntry ;
     dcterms:created "2023-06-14"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Dannielly Victória Rodrigues da Silva" ;
+    dcterms:creator author:bruno_maroneze,
+        author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_tronco ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tronco ;
@@ -1436,8 +1441,8 @@ dicbio:entry_tronco a ontolex:LexicalEntry ;
 
 dicbio:entry_tuberculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_tuberculado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tuberculado ;
@@ -1448,9 +1453,9 @@ dicbio:entry_tuberculado a ontolex:LexicalEntry ;
 
 dicbio:entry_tubérculo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator "Adriane Maria de Oliveira Queiroz",
-        "Bruno Maroneze",
-        "Matheus Stein Casarin" ;
+    dcterms:creator author:adriane_queiroz,
+        author:bruno_maroneze,
+        author:matheus_casarin ;
     etym:etymology dicbio:etym_tubérculo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tubérculo ;
@@ -1463,8 +1468,8 @@ dicbio:entry_tubérculo a ontolex:LexicalEntry ;
 
 dicbio:entry_túbulo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_túbulo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_túbulo ;
@@ -1473,7 +1478,7 @@ dicbio:entry_túbulo a ontolex:LexicalEntry ;
 
 dicbio:entry_túnica a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_túnica ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_túnica ;
@@ -1483,8 +1488,8 @@ dicbio:entry_túnica a ontolex:LexicalEntry ;
 
 dicbio:entry_umbilicado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_umbilicado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_umbilicado ;
@@ -1494,8 +1499,8 @@ dicbio:entry_umbilicado a ontolex:LexicalEntry ;
 
 dicbio:entry_uropígio a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Sammara Valim Luz dos Santos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:sammara_valim_santos ;
     etym:etymology dicbio:etym_uropígio ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_uropígio ;
@@ -1505,8 +1510,8 @@ dicbio:entry_uropígio a ontolex:LexicalEntry ;
 
 dicbio:entry_utrículo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-03"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Luana da Silva Borges" ;
+    dcterms:creator author:bruno_maroneze,
+        author:luana_borges ;
     etym:etymology dicbio:etym_utrículo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_utrículo ;
@@ -1517,7 +1522,7 @@ dicbio:entry_utrículo a ontolex:LexicalEntry ;
 
 dicbio:entry_verrucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-13"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_verrucoso ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_verrucoso ;
@@ -1526,8 +1531,8 @@ dicbio:entry_verrucoso a ontolex:LexicalEntry ;
 
 dicbio:entry_verticilado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Kamila da Silva Barbosa" ;
+    dcterms:creator author:bruno_maroneze,
+        author:kamila_barbosa ;
     etym:etymology dicbio:etym_verticilado ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_verticilado ;
@@ -1541,7 +1546,7 @@ dicbio:entry_verticilado a ontolex:LexicalEntry ;
 
 dicbio:entry_vibrissa a ontolex:LexicalEntry ;
     dcterms:created "2023-05-15"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_vibrissa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_vibrissa ;
@@ -1550,7 +1555,7 @@ dicbio:entry_vibrissa a ontolex:LexicalEntry ;
 
 dicbio:entry_vilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze" ;
+    dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_vilo ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_vilo ;
@@ -1561,8 +1566,8 @@ dicbio:entry_vilo a ontolex:LexicalEntry ;
 
 dicbio:entry_árvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
-    dcterms:creator "Adriane Maria de Oliveira Queiroz",
-        "Bruno Maroneze" ;
+    dcterms:creator author:adriane_queiroz,
+        author:bruno_maroneze ;
     etym:etymology dicbio:etym_árvore ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_árvore ;
@@ -1574,8 +1579,8 @@ dicbio:entry_árvore a ontolex:LexicalEntry ;
 
 dicbio:entry_ócciput a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Rafaela Lima Domingos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:rafaela_domingos ;
     etym:etymology dicbio:etym_ócciput ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ócciput ;
@@ -1585,8 +1590,8 @@ dicbio:entry_ócciput a ontolex:LexicalEntry ;
 
 dicbio:entry_órbita a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator "Bruno Maroneze",
-        "Rafaela Lima Domingos" ;
+    dcterms:creator author:bruno_maroneze,
+        author:rafaela_domingos ;
     etym:etymology dicbio:etym_órbita ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_órbita ;
@@ -37090,3 +37095,72 @@ dicbio:usage_órbita_237 a ontolex:UsageExample ;
     dcterms:date "1739" ;
     rdf:value "Os segundos ditos myrtiformes nascem da [[b]]Orbita[[/b]] junto à raiz do mesmo nariz, e acabaõ ao redor das azas."@pt .
 
+### REGISTRO DOS COLABORADORES ###
+
+author:adriane_queiroz a foaf:Person ;
+    foaf:name "Adriane Maria de Oliveira Queiroz" ;
+    owl:sameAs <https://orcid.org/0009-0003-3281-5247> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9688350818351425> .
+
+author:ana_menegassi_rocha a foaf:Person ;
+    foaf:name "Ana Carolina Menegassi Rocha" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3118171481670217> .
+
+author:ana_cristina_lopes a foaf:Person ;
+    foaf:name "Ana Cristina Gouvêa Lopes" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/6091690669901066> .
+
+author:bruno_maroneze a foaf:Person ;
+    foaf:name "Bruno Oliveira Maroneze" ;
+    owl:sameAs <https://orcid.org/0000-0002-2821-9448> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/2386581098769105> .
+
+author:dannielly_rodrigues_silva a foaf:Person ;
+    foaf:name "Dannielly Victória Rodrigues da Silva" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/8693099469156427> .
+
+author:fabiani_goncalves a foaf:Person ;
+    foaf:name "Fabiani de Amorim Gonçalves" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5556839544035822> .
+
+author:geovanna_lima a foaf:Person ;
+    foaf:name "Geovanna Salvino de Lima" ;
+    owl:sameAs <https://orcid.org/0009-0000-3764-9477> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1383229230978249> .
+
+author:kamila_barbosa a foaf:Person ;
+    foaf:name "Kamila da Silva Barbosa" ;
+    owl:sameAs <https://orcid.org/0000-0003-2632-0734> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0824015704100767> .
+
+author:luana_borges a foaf:Person ;
+    foaf:name "Luana da Silva Borges" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0983397069003665> .
+
+author:marilizi_tarifa a foaf:Person ;
+    foaf:name "Marilizi Arruda Tarifa" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/4376662733752083> .
+
+author:marimeire_barros a foaf:Person ;
+    foaf:name "Marimeire Almeida Barros" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3951171920995304> .
+
+author:matheus_casarin a foaf:Person ;
+    foaf:name "Matheus Stein Casarin" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9927626991207276> .
+
+author:rafaela_domingos a foaf:Person ;
+    foaf:name "Rafaela Lima Domingos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1269123121808893> .
+
+author:raissa_buss a foaf:Person ;
+    foaf:name "Raissa Silveira Buss" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5067931665456928> .
+
+author:sammara_valim_santos a foaf:Person ;
+    foaf:name "Sammara Valim Luz dos Santos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3505243267193578> .
+
+author:vitoria_pereira a foaf:Person ;
+    foaf:name "Vitória Fernandes Pereira" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9858754186832086> .
