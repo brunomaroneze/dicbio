@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="verbete">
+    <header>
+        <h1 style="color: darkgreen;">{{ verbete.lemma }}</h1>
+        <p><i>{{ verbete.pos }}</i></p>
+    </header>
+
+    <section class="definicao">
+        <h3>Definição</h3>
+        <p>{{ verbete.definition }}</p>
+    </section>
+
+    <hr>
+
+    <section class="etimologia">
+        <h3>Discussão Histórico-Etimológica</h3>
+        <div class="texto-etimologico">
+            {# O filtro 'safe' é necessário se o seu texto tiver tags <i> do CSV original #}
+            {{ verbete.etymology|safe }}
+        </div>
+    </section>
+
+    <footer style="margin-top: 30px; font-size: 0.8em; color: gray;">
+        <p>Dados extraídos da Base de Conhecimento (OntoLex-Lemon).</p>
+    </footer>
+</article>
+{% endblock %}

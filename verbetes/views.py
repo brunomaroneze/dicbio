@@ -109,3 +109,71 @@ def home(request):
     # Se nenhuma busca foi feita, mostra a página inicial com a lista.
     # Se uma busca foi feita e nada foi encontrado, mostra a mensagem de erro.
     return render(request, 'verbetes/home.html', context)
+
+# Nova view para exibir verbete a partir do arquivo Turtle
+
+import rdflib
+from django.shortcuts import render
+from rdflib.namespace import RDF, RDFS, SKOS
+
+def verbete_pelo_turtle(request, lema):
+    # 1. Caminho para o seu arquivo Turtle (ajuste para o seu caminho real)
+    path_to_ttl = "data/DicionarioBiologia.ttl"
+    
+    # 2. Inicializa o Grafo e carrega o arquivo
+    g = rdflib.Graph()
+    g.parse(path_to_ttl, format="turtle")
+    
+    # 3. Define os Namespaces para a consulta SPARQL
+    # (Devem ser os mesmos que usamos no script de conversão)
+    namespaces = {
+        "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "etym": "http://lari-datasets.ilc.cnr.it/lemonEty#",
+        "lexinfo": "http://www.lexinfo.net/ontology/2.0/lexinfo#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dicbio": "http://dicbio.fflch.usp.br/recurso/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "author": "http://dicbio.fflch.usp.br/autor/"
+
+    }
+
+    # 4. Consulta SPARQL para pegar os dados do verbete
+    # Filtramos pelo lemma (writtenRep)
+    query = """
+    SELECT ?lemma ?pos ?definition ?etymComment WHERE {
+        ?entry ontolex:canonicalForm [ ontolex:writtenRep ?lemma ] .
+        
+        OPTIONAL { ?entry lexinfo:partOfSpeech ?pos . }
+        OPTIONAL { ?entry ontolex:sense [ skos:definition ?definition ] . }
+        OPTIONAL { ?entry etym:etymology [ rdfs:comment ?etymComment ] . }
+        
+        FILTER(STR(?lemma) = "%s")
+    }
+    """ % lema
+
+    results = g.query(query, initNs=namespaces)
+
+    # 5. Organiza os dados para o template
+    # (Como SPARQL retorna uma lista de tuplas, pegamos a primeira)
+    verbete_data = {}
+    for row in results:
+        verbete_data = {
+            'lemma': row.lemma,
+            # Simplificamos a URL do LexInfo para mostrar apenas 'adjective' ou 'noun'
+            'pos': str(row.pos).split('#')[-1] if row.pos else "",
+            'definition': row.definition,
+            'etymology': row.etymComment,
+        }
+        break # Pegamos o primeiro resultado encontrado
+
+    if not verbete_data:
+        # Tratar caso o verbete não exista no Turtle
+        return render(request, '404_verbete.html', {'lema': lema})
+
+    return render(request, 'verbetes/verbete_turtle.html', {'verbete': verbete_data})
