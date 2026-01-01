@@ -12,48 +12,150 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix author: <http://dicbio.fflch.usp.br/autor/> .
 
-
+# 1 Botânica
 dicbio:entry_Botânica a ontolex:LexicalEntry ;
     dcterms:created "2023-02-16"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_Botânica ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gende lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Botânica ;
     ontolex:otherForm dicbio:form_BOTANICA,
         dicbio:form_Botanica,
         dicbio:form_botanica ;
     ontolex:sense dicbio:sense_Botânica_1 .
 
+dicbio:etym_Botânica a etym:Etymology ;
+    etym:etymon dicbio:etymon_Botanica ;
+    rdfs:comment "O étimo é, certamente, o latim científico <i>Botanica</i>, já empregado com o sentido de \"ciência dos vegetais\" desde o século XVII (cf., por exemplo, a obra \"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\").<br>O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (<i>botanikós</i>) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."@pt .
+
+dicbio:etymon_Botanica a etym:Etymon ;
+    dcterms:language "latim científico" ;
+    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
+    ontolex:writtenRep "Botanica" .
+
+dicbio:form_Botânica a ontolex:Form ;
+    ontolex:writtenRep "Botânica"@pt .
+
+dicbio:form_BOTANICA a ontolex:Form ;
+    ontolex:writtenRep "BOTANICA"@pt .
+
+dicbio:form_Botanica a ontolex:Form ;
+    ontolex:writtenRep "Botanica"@pt .
+
+dicbio:form_botanica a ontolex:Form ;
+    ontolex:writtenRep "botanica"@pt .
+
+dicbio:sense_Botânica_1 a ontolex:LexicalSense ;
+    skos:definition "Parte da História Natural responsável pela descrição e estudo dos vegetais."@pt ;
+    ontolex:usage dicbio:usage_Botânica_1904,
+        dicbio:usage_Botânica_2977,
+        dicbio:usage_Botânica_2994,
+        dicbio:usage_Botânica_337,
+        dicbio:usage_Botânica_363 .
+
+dicbio:usage_Botânica_363 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 2 (Ref: compendio1brotero)" ;
+    dcterms:creator "BROTERO" ;
+    dcterms:date "1788" ;
+    rdf:value """Quando so se emprega na consideraçaõ dos mineraes tem o nome de Mineralogia;
+						se so tracta dos vegetaes he chamada Phytologia ou [[b]]Botanica[[/b]] ( Phytologia, seu Botanica), mas este segundo nome
+						he o mais usado."""@pt .
+
+dicbio:usage_Botânica_2977 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 294 (Ref: diciovandelli)" ;
+    dcterms:creator "VANDELLI" ;
+    dcterms:date "1788" ;
+    rdf:value """O primeiro conhecimento adquire-se com o estudo da [[b]]Botanica[[/b]], o segundo com experiencias e reflexões fisicas, o terceiro, e quarto
+            com hum jardim botanico, no
+            qual he necessario cultivar os vegetaes de todos os climas, e terrenos."""@pt .
+
+dicbio:usage_Botânica_337 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. xxvii (Ref: compendio1brotero)" ;
+    dcterms:creator "BROTERO" ;
+    dcterms:date "1788" ;
+    rdf:value """Desde o seculo XII, em que os Arabes foram quasi inteiramente expulsos das
+						Hespanhas, athe ao XV houveram alguns autores de nome obscuro Myrepso,
+							Quiricio, Bosco, Hildegarde, Sylvatico, Dondis, Suardo, Villanova,
+							Plateario, &c., os quaes nam conservaram melhor a [[b]]botanica[[/b]] dos antigos do que os
+						Arabes."""@pt .
+
+dicbio:usage_Botânica_2994 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Observaçoens medicas doutrinaes, p. 6 (Ref: observsemmedo)" ;
+    dcterms:creator "SEMEDO" ;
+    dcterms:date "1707" ;
+    rdf:value """Eu entendo que se o tempo, que alguns gastaõ em especular
+            questões infrutuosas, o applicassem ao estudo da Chymica, da Anatomia, & da [[b]]botanica[[/b]], a Medicina fertilissima de remedios
+            mais pela preparação, & mais suaves pela pouca, escusando nos doentes os enjoos dos
+            almudes & canada de bebidas que lhes damos."""@pt .
+
+dicbio:usage_Botânica_1904 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 193 (Ref: diciovandelli)" ;
+    dcterms:creator "VANDELLI" ;
+    dcterms:date "1788" ;
+    rdf:value "TERMINOLOGIA DA [[b]]BOTANICA[[/b]]."@pt .
+
+# 2 Fitologia
 dicbio:entry_Fitologia a ontolex:LexicalEntry ;
     dcterms:created "2023-12-05"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_Fitologia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Fitologia ;
     ontolex:otherForm dicbio:form_Phytologia ;
     ontolex:sense dicbio:sense_Fitologia_1 .
 
+dicbio:etym_Fitologia a etym:Etymology ;
+    etym:etymon dicbio:etymon_phytologia ;
+    rdfs:comment "O étimo é o latim científico <i>phytologia</i>, empregado já no século XVII (como, por exemplo, na obra “Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ). Em latim, é formada pelos elementos de origem grega <i>phyto-</i> (planta) e <i>-logia</i> (discurso). O fato de não ser atestado nos dicionários de latim e grego referentes ao período da Antiguidade revela tratar-se de uma inovação do latim científico, a partir do qual passou ao português.<br>Em português, não é tão usada quanto o seu sinônimo “Botânica”."@pt .
+
+dicbio:form_Fitologia a ontolex:Form ;
+    ontolex:writtenRep "Fitologia"@pt .
+
+dicbio:sense_Fitologia_1 a ontolex:LexicalSense ;
+    skos:definition "O mesmo que Botânica."@pt ;
+    ontolex:usage dicbio:usage_Fitologia_362 .
+
+dicbio:usage_Fitologia_362 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 2 (Ref: compendio1brotero)" ;
+    dcterms:creator "BROTERO" ;
+    dcterms:date "1788" ;
+    rdf:value """Quando so se emprega na consideraçaõ dos mineraes tem o nome de Mineralogia;
+						se so tracta dos vegetaes he chamada [[b]]Phytologia[[/b]] ou Botanica ( Phytologia, seu Botanica), mas este segundo nome
+						he o mais usado."""@pt .
+
+dicbio:etymon_phytologia a etym:Etymon ;
+    dcterms:language "latim científico" ;
+    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" ;
+    ontolex:writtenRep "phytologia" .
+
+#3 Miologia
 dicbio:entry_Miologia a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:rafaela_domingos ;
     etym:etymology dicbio:etym_Miologia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Miologia ;
     ontolex:otherForm dicbio:form_MYOLOGIA ;
     ontolex:sense dicbio:sense_Miologia_1 .
 
+# 4 Zoologia
 dicbio:entry_Zoologia a ontolex:LexicalEntry ;
     dcterms:created "2024-08-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:luana_borges ;
     etym:etymology dicbio:etym_Zoologia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Zoologia ;
     ontolex:sense dicbio:sense_Zoologia_1 .
 
+# 5 adiposo
 dicbio:entry_adiposo a ontolex:LexicalEntry ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -66,6 +168,7 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
         dicbio:form_adiposos ;
     ontolex:sense dicbio:sense_adiposo_1 .
 
+# 6 angulado
 dicbio:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -79,11 +182,13 @@ dicbio:entry_angulado a ontolex:LexicalEntry ;
         dicbio:form_angulados ;
     ontolex:sense dicbio:sense_angulado_1 .
 
+# 7 antera
 dicbio:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_antera ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_antera ;
     ontolex:otherForm dicbio:form_Anthera,
         dicbio:form_Antheras,
@@ -94,12 +199,14 @@ dicbio:entry_antera a ontolex:LexicalEntry ;
         dicbio:form_anthéra ;
     ontolex:sense dicbio:sense_antera_1 .
 
+# 8 aurícula
 dicbio:entry_aurícula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
     dcterms:creator author:ana_menegassi_rocha,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_aurícula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_aurícula ;
     ontolex:otherForm dicbio:form_auricula,
         dicbio:form_auriculas ;
@@ -107,15 +214,18 @@ dicbio:entry_aurícula a ontolex:LexicalEntry ;
         dicbio:sense_aurícula_2,
         dicbio:sense_aurícula_3 .
 
+# 9 bile
 dicbio:entry_bile a ontolex:LexicalEntry ;
     dcterms:created "2024-05-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_bile ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_bile ;
     ontolex:sense dicbio:sense_bile_1 .
 
+# 10 branquióstego
 dicbio:entry_branquióstego a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -128,11 +238,13 @@ dicbio:entry_branquióstego a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_branquióstego_1,
         dicbio:sense_branquióstego_2 .
 
+# 11 bráctea
 dicbio:entry_bráctea a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bráctea ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_bráctea ;
     ontolex:otherForm dicbio:form_Bracteas,
         dicbio:form_Bractéas,
@@ -142,26 +254,31 @@ dicbio:entry_bráctea a ontolex:LexicalEntry ;
         dicbio:form_bractéas ;
     ontolex:sense dicbio:sense_bráctea_1 .
 
+# 12 brânquia
 dicbio:entry_brânquia a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:sammara_valim_santos ;
     etym:etymology dicbio:etym_brânquia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_brânquia ;
     ontolex:otherForm dicbio:form_branchias ;
     ontolex:sense dicbio:sense_brânquia_1 .
 
+# 13 bulbo
 dicbio:entry_bulbo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_bulbo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_bulbo ;
     ontolex:otherForm dicbio:form_bulbos ;
     ontolex:sense dicbio:sense_bulbo_1,
         dicbio:sense_bulbo_2 .
 
+# 14 bulboso
 dicbio:entry_bulboso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -173,16 +290,19 @@ dicbio:entry_bulboso a ontolex:LexicalEntry ;
         dicbio:form_bulbosos ;
     ontolex:sense dicbio:sense_bulboso_1 .
 
+# 15 bálano
 dicbio:entry_bálano a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:marilizi_tarifa ;
     etym:etymology dicbio:etym_bálano ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_bálano ;
     ontolex:otherForm dicbio:form_Balano ;
     ontolex:sense dicbio:sense_bálano_1 .
 
+# 16 bífido
 dicbio:entry_bífido a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -193,6 +313,7 @@ dicbio:entry_bífido a ontolex:LexicalEntry ;
         dicbio:form_bifidos ;
     ontolex:sense dicbio:sense_bífido_1 .
 
+# 17 canaliculado
 dicbio:entry_canaliculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-22"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -205,23 +326,28 @@ dicbio:entry_canaliculado a ontolex:LexicalEntry ;
         dicbio:form_canaliculada ;
     ontolex:sense dicbio:sense_canaliculado_1 .
 
+# 18 capréolo
 dicbio:entry_capréolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_capréolo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_capréolo ;
     ontolex:otherForm dicbio:form_capreolos ;
     ontolex:sense dicbio:sense_capréolo_1 .
 
+# 19 carpo
 dicbio:entry_carpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_carpo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_carpo ;
     ontolex:sense dicbio:sense_carpo_1 .
 
+#20 cartilagíneo
 dicbio:entry_cartilagíneo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -232,24 +358,28 @@ dicbio:entry_cartilagíneo a ontolex:LexicalEntry ;
         dicbio:form_cartilagineas ;
     ontolex:sense dicbio:sense_cartilagíneo_1 .
 
+# 21 carótida
 dicbio:entry_carótida a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
     dcterms:creator author:ana_cristina_lopes,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_carótida ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_carótida ;
     ontolex:otherForm dicbio:form_Carotida,
         dicbio:form_Carotidas,
         dicbio:form_carotidas ;
     ontolex:sense dicbio:sense_carótida_1 .
 
+#22 carúncula
 dicbio:entry_carúncula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-13"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:matheus_casarin ;
     etym:etymology dicbio:etym_carúncula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_carúncula ;
     ontolex:otherForm dicbio:form_Carunculas,
         dicbio:form_caruncula,
@@ -258,16 +388,19 @@ dicbio:entry_carúncula a ontolex:LexicalEntry ;
         dicbio:sense_carúncula_2,
         dicbio:sense_carúncula_3 .
 
+# 23 caule
 dicbio:entry_caule a ontolex:LexicalEntry ;
     dcterms:created "2025-02-06"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:vitoria_pereira ;
     etym:etymology dicbio:etym_caule ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_caule ;
     ontolex:otherForm dicbio:form_caules ;
     ontolex:sense dicbio:sense_caule_1 .
 
+#24 cibário
 dicbio:entry_cibário a ontolex:LexicalEntry ;
     dcterms:created "2023-05-19"^^xsd:date ;
     dcterms:creator author:ana_menegassi_rocha,
@@ -278,6 +411,7 @@ dicbio:entry_cibário a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_cibarios ;
     ontolex:sense dicbio:sense_cibário_1 .
 
+#25 ciliado
 dicbio:entry_ciliado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -291,11 +425,13 @@ dicbio:entry_ciliado a ontolex:LexicalEntry ;
         dicbio:form_ciliados ;
     ontolex:sense dicbio:sense_ciliado_1 .
 
+#26 cirro
 dicbio:entry_cirro a ontolex:LexicalEntry ;
     dcterms:created "2023-11-20"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cirro ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_cirro ;
     ontolex:otherForm dicbio:form_cirrho,
         dicbio:form_cirrhos,
@@ -303,18 +439,21 @@ dicbio:entry_cirro a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_cirro_1,
         dicbio:sense_cirro_2 .
 
+#27 clitóris
 dicbio:entry_clitóris a ontolex:LexicalEntry ;
     dcterms:created "2025-06-16"^^xsd:date ;
     dcterms:creator author:ana_cristina_lopes,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_clitóris ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_clitóris ;
     ontolex:otherForm dicbio:form_Clitoris,
         dicbio:form_clitoris,
         dicbio:form_clytoris ;
     ontolex:sense dicbio:sense_clitóris_1 .
 
+#28 coarctado
 dicbio:entry_coarctado a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -323,18 +462,21 @@ dicbio:entry_coarctado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_coarctado ;
     ontolex:sense dicbio:sense_coarctado_1 .
 
+#29 concameração
 dicbio:entry_concameração a ontolex:LexicalEntry ;
     dcterms:created "2023-11-06"^^xsd:date ;
     dcterms:creator author:ana_menegassi_rocha,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_concameração ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_concameração ;
     ontolex:otherForm dicbio:form_concameraçaõ,
         dicbio:form_concameraçoens,
         dicbio:form_concamerações ;
     ontolex:sense dicbio:sense_concameração_1 .
 
+#30 conivente
 dicbio:entry_conivente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -345,6 +487,7 @@ dicbio:entry_conivente a ontolex:LexicalEntry ;
         dicbio:form_conniventes ;
     ontolex:sense dicbio:sense_conivente_1 .
 
+#31 coronário
 dicbio:entry_coronário a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
     dcterms:creator author:ana_cristina_lopes,
@@ -357,20 +500,24 @@ dicbio:entry_coronário a ontolex:LexicalEntry ;
         dicbio:form_coronarios ;
     ontolex:sense dicbio:sense_coronário_1 .
 
+#32 corólula
 dicbio:entry_corólula a ontolex:LexicalEntry ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_corólula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_corólula ;
     ontolex:otherForm dicbio:form_corollulas ;
     ontolex:sense dicbio:sense_corólula_1 .
 
+#33 cotilédone
 dicbio:entry_cotilédone a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cotilédone ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_cotilédone ;
     ontolex:otherForm dicbio:form_cotyledon,
         dicbio:form_cotyledones,
@@ -378,29 +525,35 @@ dicbio:entry_cotilédone a ontolex:LexicalEntry ;
         dicbio:form_cotylédones ;
     ontolex:sense dicbio:sense_cotilédone_1 .
 
+#34 crena
 dicbio:entry_crena a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_crena ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_crena ;
     ontolex:otherForm dicbio:form_crenas ;
     ontolex:sense dicbio:sense_crena_1 .
 
+#35 cutícula
 dicbio:entry_cutícula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cutícula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_cutícula ;
     ontolex:otherForm dicbio:form_cuticula ;
     ontolex:sense dicbio:sense_cutícula_1 .
 
+#36 cálice
 dicbio:entry_cálice a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_cálice ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_cálice ;
     ontolex:otherForm dicbio:form_CALYZ,
         dicbio:form_Caliz,
@@ -415,12 +568,14 @@ dicbio:entry_cálice a ontolex:LexicalEntry ;
         dicbio:form_calyz ;
     ontolex:sense dicbio:sense_cálice_1 .
 
+# 37 cápsula
 dicbio:entry_cápsula a ontolex:LexicalEntry ;
     dcterms:created "2024-05-10"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_cápsula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_cápsula ;
     ontolex:otherForm dicbio:form_Capsula,
         dicbio:form_capsula,
@@ -428,6 +583,7 @@ dicbio:entry_cápsula a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_cápsula_1,
         dicbio:sense_cápsula_2 .
 
+# 38 cístico
 dicbio:entry_cístico a ontolex:LexicalEntry ;
     dcterms:created "2025-02-22"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -438,16 +594,19 @@ dicbio:entry_cístico a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_cistica ;
     ontolex:sense dicbio:sense_cístico_1 .
 
+# 39 cóccix
 dicbio:entry_cóccix a ontolex:LexicalEntry ;
     dcterms:created "2025-02-24"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_cóccix ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_cóccix ;
     ontolex:otherForm dicbio:form_coccyx ;
     ontolex:sense dicbio:sense_cóccix_1 .
 
+# 40 deflexo
 dicbio:entry_deflexo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -457,32 +616,38 @@ dicbio:entry_deflexo a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_deflexos ;
     ontolex:sense dicbio:sense_deflexo_1 .
 
+# 41 deltoide
 dicbio:entry_deltoide a ontolex:LexicalEntry ;
     dcterms:created "2025-09-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:geovanna_lima ;
     etym:etymology dicbio:etym_deltoide ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_deltoide ;
     ontolex:otherForm dicbio:form_Deltoides,
         dicbio:form_Deltoydes ;
     ontolex:sense dicbio:sense_deltoide_1 .
 
+# 42 desenvolução
 dicbio:entry_desenvolução a ontolex:LexicalEntry ;
     dcterms:created "2025-03-26"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_desenvolução ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_desenvolução ;
     ontolex:otherForm dicbio:form_desenvoluçaõ ;
     ontolex:sense dicbio:sense_desenvolução_1 .
 
+# 43 diafragma
 dicbio:entry_diafragma a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_diafragma ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_diafragma ;
     ontolex:otherForm dicbio:form_Diaphragma,
         dicbio:form_diafragmas,
@@ -490,6 +655,7 @@ dicbio:entry_diafragma a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_diafragma_1,
         dicbio:sense_diafragma_2 .
 
+# 44 digitado
 dicbio:entry_digitado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -505,16 +671,19 @@ dicbio:entry_digitado a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_digitado_1,
         dicbio:sense_digitado_2 .
 
+# 45 disco
 dicbio:entry_disco a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_disco ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_disco ;
     ontolex:sense dicbio:sense_disco_1,
         dicbio:sense_disco_2,
         dicbio:sense_disco_3 .
 
+# 46 dorsal
 dicbio:entry_dorsal a ontolex:LexicalEntry ;
     dcterms:created "2024-09-27"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -524,6 +693,7 @@ dicbio:entry_dorsal a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_dorsal ;
     ontolex:sense dicbio:sense_dorsal_1 .
 
+# 47 elongado
 dicbio:entry_elongado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -534,6 +704,7 @@ dicbio:entry_elongado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_elongada ;
     ontolex:sense dicbio:sense_elongado_1 .
 
+# 48 emarginado
 dicbio:entry_emarginado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -544,6 +715,7 @@ dicbio:entry_emarginado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_emarginados ;
     ontolex:sense dicbio:sense_emarginado_1 .
 
+# 49 enovelado
 dicbio:entry_enovelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -556,6 +728,7 @@ dicbio:entry_enovelado a ontolex:LexicalEntry ;
         dicbio:form_ennoveladas ;
     ontolex:sense dicbio:sense_enovelado_1 .
 
+# 50 ensiforme
 dicbio:entry_ensiforme a ontolex:LexicalEntry ;
     dcterms:created "2025-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -565,6 +738,7 @@ dicbio:entry_ensiforme a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_ensiforme ;
     ontolex:sense dicbio:sense_ensiforme_1 .
 
+# 51 entrecortado
 dicbio:entry_entrecortado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -575,26 +749,31 @@ dicbio:entry_entrecortado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_entrecortadas ;
     ontolex:sense dicbio:sense_entrecortado_1 .
 
+# 52 epiderme
 dicbio:entry_epiderme a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_epiderme ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_epiderme ;
     ontolex:sense dicbio:sense_epiderme_1,
         dicbio:sense_epiderme_2 .
 
+# 53 epigástrio
 dicbio:entry_epigástrio a ontolex:LexicalEntry ;
     dcterms:created "2022-07-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_epigástrio ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_epigástrio ;
     ontolex:otherForm dicbio:form_Epigastrio,
         dicbio:form_epigastrio ;
     ontolex:sense dicbio:sense_epigástrio_1 .
 
+#54 escamoso
 dicbio:entry_escamoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -606,56 +785,67 @@ dicbio:entry_escamoso a ontolex:LexicalEntry ;
         dicbio:form_escamosa ;
     ontolex:sense dicbio:sense_escamoso_1 .
 
+# 55 escroto
 dicbio:entry_escroto a ontolex:LexicalEntry ;
     dcterms:created "2025-03-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_escroto ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_escroto ;
     ontolex:otherForm dicbio:form_scroto ;
     ontolex:sense dicbio:sense_escroto_1 .
 
+# 56 estame
 dicbio:entry_estame a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estame ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_estame ;
     ontolex:otherForm dicbio:form_Estames,
         dicbio:form_estames ;
     ontolex:sense dicbio:sense_estame_1 .
 
+# 57 estigma
 dicbio:entry_estigma a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estigma ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_estigma ;
     ontolex:otherForm dicbio:form_estigmas ;
     ontolex:sense dicbio:sense_estigma_1 .
 
+# 58 estípula
 dicbio:entry_estípula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_estípula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_estípula ;
     ontolex:otherForm dicbio:form_estipulas ;
     ontolex:sense dicbio:sense_estípula_1 .
 
+# 59 esôfago
 dicbio:entry_esôfago a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_esôfago ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_esôfago ;
     ontolex:otherForm dicbio:form_Isophago,
         dicbio:form_ezofago,
         dicbio:form_isophago ;
     ontolex:sense dicbio:sense_esôfago_1 .
 
+# 60 excretório
 dicbio:entry_excretório a ontolex:LexicalEntry ;
     dcterms:created "2025-03-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -666,6 +856,7 @@ dicbio:entry_excretório a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_excretorios ;
     ontolex:sense dicbio:sense_excretório_1 .
 
+# 61 falcado
 dicbio:entry_falcado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:kamila_barbosa ;
@@ -675,6 +866,7 @@ dicbio:entry_falcado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_falcada ;
     ontolex:sense dicbio:sense_falcado_1 .
 
+# 62 fastigiado
 dicbio:entry_fastigiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -685,6 +877,7 @@ dicbio:entry_fastigiado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_fastigiadas ;
     ontolex:sense dicbio:sense_fastigiado_1 .
 
+# 63 fecundante
 dicbio:entry_fecundante a ontolex:LexicalEntry ;
     dcterms:created "2024-10-10"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -694,6 +887,7 @@ dicbio:entry_fecundante a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_fecundante ;
     ontolex:sense dicbio:sense_fecundante_1 .
 
+# 64 fibroso
 dicbio:entry_fibroso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -703,37 +897,44 @@ dicbio:entry_fibroso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_fibrosas ;
     ontolex:sense dicbio:sense_fibroso_1 .
 
+# 65 filamento
 dicbio:entry_filamento a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_filamento ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_filamento ;
     ontolex:otherForm dicbio:form_filamentos ;
     ontolex:sense dicbio:sense_filamento_1,
         dicbio:sense_filamento_2 .
 
+# 66 flósculo
 dicbio:entry_flósculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_flósculo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_flósculo ;
     ontolex:otherForm dicbio:form_flosculos ;
     ontolex:sense dicbio:sense_flósculo_1 .
 
+# 67 folha
 dicbio:entry_folha a ontolex:LexicalEntry ;
     dcterms:created "2025-04-09"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_folha ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_folha ;
     ontolex:otherForm dicbio:form_Folhas,
         dicbio:form_folhas ;
     ontolex:sense dicbio:sense_folha_1 .
 
+# 68 foliáceo
 dicbio:entry_foliáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -744,11 +945,13 @@ dicbio:entry_foliáceo a ontolex:LexicalEntry ;
         dicbio:form_foliaceas ;
     ontolex:sense dicbio:sense_foliáceo_1 .
 
+# 69 frutificação
 dicbio:entry_frutificação a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_frutificação ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_frutificação ;
     ontolex:otherForm dicbio:form_Frutificaçaõ,
         dicbio:form_fructificaçaõ,
@@ -758,6 +961,7 @@ dicbio:entry_frutificação a ontolex:LexicalEntry ;
         dicbio:form_frutificações ;
     ontolex:sense dicbio:sense_frutificação_1 .
 
+# 70 frênico
 dicbio:entry_frênico a ontolex:LexicalEntry ;
     dcterms:created "2025-04-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -769,6 +973,7 @@ dicbio:entry_frênico a ontolex:LexicalEntry ;
         dicbio:form_phrenicas ;
     ontolex:sense dicbio:sense_frênico_1 .
 
+# 71 gelatinoso
 dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-04-22"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -779,38 +984,45 @@ dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_jalatinosa ;
     ontolex:sense dicbio:sense_gelatinoso_1 .
 
+# 72 gema
 dicbio:entry_gema a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_gema ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_gema ;
     ontolex:otherForm dicbio:form_gemas,
         dicbio:form_gemmas ;
     ontolex:sense dicbio:sense_gema_1,
         dicbio:sense_gema_2 .
 
+# 73 glândula
 dicbio:entry_glândula a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_glândula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_glândula ;
     ontolex:otherForm dicbio:form_Glandulas,
         dicbio:form_glandula,
         dicbio:form_glandulas ;
     ontolex:sense dicbio:sense_glândula_1 .
 
+# 74 gomo
 dicbio:entry_gomo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_gomo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_gomo ;
     ontolex:otherForm dicbio:form_gomos ;
     ontolex:sense dicbio:sense_gomo_1 .
 
+# 75 hermafrodita
 dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -822,31 +1034,37 @@ dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
         dicbio:form_hermophroditas ;
     ontolex:sense dicbio:sense_hermafrodita_1 .
 
+# 76 hipogástrio
 dicbio:entry_hipogástrio a ontolex:LexicalEntry ;
     dcterms:created "2022-06-20"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_hipogástrio ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_hipogástrio ;
     ontolex:otherForm dicbio:form_Hypogastrio ;
     ontolex:sense dicbio:sense_hipogástrio_1 .
 
+# 77 hímen
 dicbio:entry_hímen a ontolex:LexicalEntry ;
     dcterms:created "2025-09-13"^^xsd:date ;
     dcterms:creator author:ana_cristina_lopes,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_hímen ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_hímen ;
     ontolex:otherForm dicbio:form_Hymen ;
     ontolex:sense dicbio:sense_hímen_1 .
 
+# 78 inseto
 dicbio:entry_inseto a ontolex:LexicalEntry ;
     dcterms:created "2022-11-21"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_inseto ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_inseto ;
     ontolex:otherForm dicbio:form_Insecto,
         dicbio:form_Insectos,
@@ -854,19 +1072,21 @@ dicbio:entry_inseto a ontolex:LexicalEntry ;
         dicbio:form_insectos ;
     ontolex:sense dicbio:sense_inseto_1 .
 
+# 79 jardim botânico
 dicbio:entry_jardim_botânico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_jardim_botânico ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_jardim_botânico ;
     ontolex:otherForm dicbio:form_JARDINS_BOTANICOS,
         dicbio:form_Jardim_Botanico,
-        <http://dicbio.fflch.usp.br/recurso/form_Jardins_Botanicos>,
         dicbio:form_Jardins_Botanicos,
         dicbio:form_jardim_botanico ;
     ontolex:sense dicbio:sense_jardim_botânico_1 .
 
+# 80 labiado
 dicbio:entry_labiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -879,16 +1099,19 @@ dicbio:entry_labiado a ontolex:LexicalEntry ;
         dicbio:form_labiadas ;
     ontolex:sense dicbio:sense_labiado_1 .
 
+# 81 lacínia
 dicbio:entry_lacínia a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_lacínia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_lacínia ;
     ontolex:otherForm dicbio:form_lacinia,
         dicbio:form_lacinias ;
     ontolex:sense dicbio:sense_lacínia_1 .
 
+# 82 lanceolado
 dicbio:entry_lanceolado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:kamila_barbosa ;
@@ -900,6 +1123,7 @@ dicbio:entry_lanceolado a ontolex:LexicalEntry ;
         dicbio:form_lanceoladas ;
     ontolex:sense dicbio:sense_lanceolado_1 .
 
+# 83 ligulado
 dicbio:entry_ligulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -910,15 +1134,18 @@ dicbio:entry_ligulado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_liguladas ;
     ontolex:sense dicbio:sense_ligulado_1 .
 
+# 84 litalgia
 dicbio:entry_litalgia a ontolex:LexicalEntry ;
     dcterms:created "2025-05-13"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_litalgia ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_litalgia ;
     ontolex:otherForm dicbio:form_lithalgia ;
     ontolex:sense dicbio:sense_litalgia_1 .
 
+# 85 lobado
 dicbio:entry_lobado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -931,6 +1158,7 @@ dicbio:entry_lobado a ontolex:LexicalEntry ;
         dicbio:form_lobadas ;
     ontolex:sense dicbio:sense_lobado_1 .
 
+# 86 longitudinal
 dicbio:entry_longitudinal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -941,40 +1169,48 @@ dicbio:entry_longitudinal a ontolex:LexicalEntry ;
         dicbio:form_longitudinaes ;
     ontolex:sense dicbio:sense_longitudinal_1 .
 
+# 87 lúnula
 dicbio:entry_lúnula a ontolex:LexicalEntry ;
     dcterms:created "2025-05-01"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_lúnula ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_lúnula ;
     ontolex:otherForm dicbio:form_Lunula,
         dicbio:form_lunula ;
     ontolex:sense dicbio:sense_lúnula_1 .
 
+# 88 maléolo
 dicbio:entry_maléolo a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_maléolo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_maléolo ;
     ontolex:otherForm dicbio:form_malleolo,
         dicbio:form_malleolos ;
     ontolex:sense dicbio:sense_maléolo_1 .
 
+# 89 mamais
 dicbio:entry_mamais a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:sammara_valim_santos ;
     etym:etymology dicbio:etym_mamais ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:number lexinfo:plural;
     ontolex:canonicalForm dicbio:form_mamais ;
     ontolex:otherForm dicbio:form_MAMMAES,
         dicbio:form_Mammaes,
         dicbio:form_mammaes ;
     ontolex:sense dicbio:sense_mamais_1 .
 
+# 90 mamário
 dicbio:entry_mamário a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -987,12 +1223,14 @@ dicbio:entry_mamário a ontolex:LexicalEntry ;
         dicbio:form_mammarios ;
     ontolex:sense dicbio:sense_mamário_1 .
 
+# 91 masseter
 dicbio:entry_masseter a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:rafaela_domingos ;
     etym:etymology dicbio:etym_masseter ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_masseter ;
     ontolex:sense dicbio:sense_masseter_1 .
 
@@ -1006,18 +1244,20 @@ dicbio:entry_medular a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_medular_1,
         dicbio:sense_medular_2 .
 
+# 93 membrana branquióstega
 dicbio:entry_membrana_branquióstega a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:sammara_valim_santos ;
     etym:etymology dicbio:etym_membrana_branquióstega ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_membrana_branquióstega ;
-    ontolex:otherForm <http://dicbio.fflch.usp.br/recurso/form_membrana_branchiostega>,
-        <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega>,
+    ontolex:otherForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega>,
         dicbio:form_membrana_branchiostega ;
     ontolex:sense dicbio:sense_membrana_branquióstega_1 .
 
+# 94 membranoso
 dicbio:entry_membranoso a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1030,6 +1270,7 @@ dicbio:entry_membranoso a ontolex:LexicalEntry ;
         dicbio:form_membranosas ;
     ontolex:sense dicbio:sense_membranoso_1 .
 
+# 95 membranáceo
 dicbio:entry_membranáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1045,6 +1286,7 @@ dicbio:entry_membranáceo a ontolex:LexicalEntry ;
         dicbio:form_membranaceos ;
     ontolex:sense dicbio:sense_membranáceo_1 .
 
+# 96 mesentérico
 dicbio:entry_mesentérico a ontolex:LexicalEntry ;
     dcterms:created "2025-11-27"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1056,25 +1298,30 @@ dicbio:entry_mesentérico a ontolex:LexicalEntry ;
         dicbio:form_mesentericos ;
     ontolex:sense dicbio:sense_mesentérico_1 .
 
+# 97 mesocólon
 dicbio:entry_mesocólon a ontolex:LexicalEntry ;
     dcterms:created "2025-12-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:fabiani_goncalves ;
     etym:etymology dicbio:etym_mesocólon ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_mesocólon ;
     ontolex:otherForm dicbio:form_mesocolon ;
     ontolex:sense dicbio:sense_mesocólon_1 .
 
+# 98 metacarpo
 dicbio:entry_metacarpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator author:ana_cristina_lopes,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_metacarpo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_metacarpo ;
     ontolex:sense dicbio:sense_metacarpo_1 .
 
+# 99 mucilaginoso
 dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1085,18 +1332,21 @@ dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_mucilaginosas ;
     ontolex:sense dicbio:sense_mucilaginoso_1 .
 
+# 100 músculo
 dicbio:entry_músculo a ontolex:LexicalEntry ;
     dcterms:created "2025-03-06"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_músculo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_músculo ;
     ontolex:otherForm dicbio:form_MUSCULO,
         dicbio:form_musculo,
         dicbio:form_musculos ;
     ontolex:sense dicbio:sense_músculo_1 .
 
+# 101 oblongo
 dicbio:entry_oblongo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1109,6 +1359,7 @@ dicbio:entry_oblongo a ontolex:LexicalEntry ;
         dicbio:form_oblonga ;
     ontolex:sense dicbio:sense_oblongo_1 .
 
+# 102 ocelado
 dicbio:entry_ocelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:kamila_barbosa ;
@@ -1118,18 +1369,21 @@ dicbio:entry_ocelado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_ocelladas ;
     ontolex:sense dicbio:sense_ocelado_1 .
 
+# 103 papila
 dicbio:entry_papila a ontolex:LexicalEntry ;
     dcterms:created "2023-10-30"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:matheus_casarin ;
     etym:etymology dicbio:etym_papila ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_papila ;
     ontolex:otherForm dicbio:form_papillas ;
     ontolex:sense dicbio:sense_papila_1,
         dicbio:sense_papila_2,
         dicbio:sense_papila_3 .
 
+# 104 papilionáceo
 dicbio:entry_papilionáceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1139,6 +1393,7 @@ dicbio:entry_papilionáceo a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_papilionaceas ;
     ontolex:sense dicbio:sense_papilionáceo_1 .
 
+# 105 parasítico
 dicbio:entry_parasítico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1148,21 +1403,25 @@ dicbio:entry_parasítico a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_parasitica ;
     ontolex:sense dicbio:sense_parasítico_1 .
 
+# 106 pecíolo
 dicbio:entry_pecíolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pecíolo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_pecíolo ;
     ontolex:otherForm dicbio:form_peciolo,
         dicbio:form_peciolos ;
     ontolex:sense dicbio:sense_pecíolo_1 .
 
+# 107 pedúnculo
 dicbio:entry_pedúnculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pedúnculo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_pedúnculo ;
     ontolex:otherForm dicbio:form_Pedunculo,
         dicbio:form_pedunculo,
@@ -1170,16 +1429,19 @@ dicbio:entry_pedúnculo a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_pedúnculo_1,
         dicbio:sense_pedúnculo_2 .
 
+# 108 pelve
 dicbio:entry_pelve a ontolex:LexicalEntry ;
     dcterms:created "2025-07-06"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:geovanna_lima ;
     etym:etymology dicbio:etym_pelve ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_pelve ;
     ontolex:sense dicbio:sense_pelve_1,
         dicbio:sense_pelve_2 .
 
+# 109 perene
 dicbio:entry_perene a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1190,17 +1452,20 @@ dicbio:entry_perene a ontolex:LexicalEntry ;
         dicbio:form_perenne ;
     ontolex:sense dicbio:sense_perene_1 .
 
+# 110 pericarpo
 dicbio:entry_pericarpo a ontolex:LexicalEntry ;
     dcterms:created "2022-12-20"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_pericarpo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_pericarpo ;
     ontolex:otherForm dicbio:form_Pericarpio,
         dicbio:form_pericarpio ;
     ontolex:sense dicbio:sense_pericarpo_1 .
 
+# 111 piloso
 dicbio:entry_piloso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1211,21 +1476,25 @@ dicbio:entry_piloso a ontolex:LexicalEntry ;
         dicbio:form_pilosas ;
     ontolex:sense dicbio:sense_piloso_1 .
 
+# 112 pimpolho
 dicbio:entry_pimpolho a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pimpolho ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_pimpolho ;
     ontolex:otherForm dicbio:form_Pimpolhos,
         dicbio:form_pimpolhos ;
     ontolex:sense dicbio:sense_pimpolho_1 .
 
+# 113 pistilo
 dicbio:entry_pistilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_pistilo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_pistilo ;
     ontolex:otherForm dicbio:form_Pistillo,
         dicbio:form_pistillo,
@@ -1233,36 +1502,43 @@ dicbio:entry_pistilo a ontolex:LexicalEntry ;
         dicbio:form_pistilos ;
     ontolex:sense dicbio:sense_pistilo_1 .
 
+# 114 placenta
 dicbio:entry_placenta a ontolex:LexicalEntry ;
     dcterms:created "2023-08-21"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:luana_borges ;
     etym:etymology dicbio:etym_placenta ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_placenta ;
     ontolex:otherForm dicbio:form_placentas ;
     ontolex:sense dicbio:sense_placenta_1 .
 
+# 115 planta
 dicbio:entry_planta a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:raissa_buss ;
     etym:etymology dicbio:etym_planta ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_planta ;
     ontolex:otherForm dicbio:form_plantas ;
     ontolex:sense dicbio:sense_planta_1 .
 
+# 116 polpa
 dicbio:entry_polpa a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
         author:bruno_maroneze,
         author:matheus_casarin ;
     etym:etymology dicbio:etym_polpa ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_polpa ;
     ontolex:sense dicbio:sense_polpa_1 .
 
+# 117 pontoado
 dicbio:entry_pontoado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1274,27 +1550,32 @@ dicbio:entry_pontoado a ontolex:LexicalEntry ;
         dicbio:form_Pontoadas ;
     ontolex:sense dicbio:sense_pontoado_1 .
 
+# 118 raiz
 dicbio:entry_raiz a ontolex:LexicalEntry ;
     dcterms:created "2023-04-03"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_raiz ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_raiz ;
     ontolex:otherForm dicbio:form_raizes,
         dicbio:form_raízes ;
     ontolex:sense dicbio:sense_raiz_1 .
 
+# 119 receptáculo
 dicbio:entry_receptáculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_receptáculo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_receptáculo ;
     ontolex:otherForm dicbio:form_Receptaculo,
         dicbio:form_receptaculo ;
     ontolex:sense dicbio:sense_receptáculo_1 .
 
+# 120 repente
 dicbio:entry_repente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1303,15 +1584,18 @@ dicbio:entry_repente a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_repente ;
     ontolex:sense dicbio:sense_repente_1 .
 
+# 121 resina
 dicbio:entry_resina a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_resina ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_resina ;
     ontolex:otherForm dicbio:form_rezina ;
     ontolex:sense dicbio:sense_resina_1 .
 
+# 122 resinoso
 dicbio:entry_resinoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1321,6 +1605,7 @@ dicbio:entry_resinoso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_rezinosas ;
     ontolex:sense dicbio:sense_resinoso_1 .
 
+# 123 reticulado
 dicbio:entry_reticulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1331,6 +1616,7 @@ dicbio:entry_reticulado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_reticuladas ;
     ontolex:sense dicbio:sense_reticulado_1 .
 
+# 124 romboidal
 dicbio:entry_romboidal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1339,17 +1625,20 @@ dicbio:entry_romboidal a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_romboidal ;
     ontolex:sense dicbio:sense_romboidal_1 .
 
+# 125 semente
 dicbio:entry_semente a ontolex:LexicalEntry ;
     dcterms:created "2023-10-22"^^xsd:date ;
     dcterms:creator author:ana_menegassi_rocha,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_semente ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_semente ;
     ontolex:otherForm dicbio:form_Sementes,
         dicbio:form_sementes ;
     ontolex:sense dicbio:sense_semente_1 .
 
+# 126 setáceo
 dicbio:entry_setáceo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
@@ -1366,6 +1655,7 @@ dicbio:entry_setáceo a ontolex:LexicalEntry ;
         dicbio:form_setaceos ;
     ontolex:sense dicbio:sense_setáceo_1 .
 
+# 127 sexual
 dicbio:entry_sexual a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1374,15 +1664,18 @@ dicbio:entry_sexual a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_sexual ;
     ontolex:sense dicbio:sense_sexual_1 .
 
+# 128 sexualismo
 dicbio:entry_sexualismo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-11"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:vitoria_pereira ;
     etym:etymology dicbio:etym_sexualismo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_sexualismo ;
     ontolex:sense dicbio:sense_sexualismo_1 .
 
+# 129 sucoso
 dicbio:entry_sucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1393,6 +1686,7 @@ dicbio:entry_sucoso a ontolex:LexicalEntry ;
         dicbio:form_sucosa ;
     ontolex:sense dicbio:sense_sucoso_1 .
 
+# 130 suculento
 dicbio:entry_suculento a ontolex:LexicalEntry ;
     dcterms:created "2023-09-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1407,16 +1701,19 @@ dicbio:entry_suculento a ontolex:LexicalEntry ;
         dicbio:form_succulentos ;
     ontolex:sense dicbio:sense_suculento_1 .
 
+# 131 síliqua
 dicbio:entry_síliqua a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_síliqua ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_síliqua ;
     ontolex:otherForm dicbio:form_siliqua,
         dicbio:form_siliquas ;
     ontolex:sense dicbio:sense_síliqua_1 .
 
+# 132 tendinoso
 dicbio:entry_tendinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1429,16 +1726,19 @@ dicbio:entry_tendinoso a ontolex:LexicalEntry ;
         dicbio:form_tendinosos ;
     ontolex:sense dicbio:sense_tendinoso_1 .
 
+# 133 tronco
 dicbio:entry_tronco a ontolex:LexicalEntry ;
     dcterms:created "2023-06-14"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:ana_cristina_lopes ;
     etym:etymology dicbio:etym_tronco ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_tronco ;
     ontolex:otherForm dicbio:form_troncos ;
     ontolex:sense dicbio:sense_tronco_1 .
 
+# 134 tuberculado
 dicbio:entry_tuberculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1451,13 +1751,15 @@ dicbio:entry_tuberculado a ontolex:LexicalEntry ;
         dicbio:form_tuberculados ;
     ontolex:sense dicbio:sense_tuberculado_1 .
 
+# 135 tubérculo
 dicbio:entry_tubérculo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
         author:bruno_maroneze,
         author:matheus_casarin ;
     etym:etymology dicbio:etym_tubérculo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_tubérculo ;
     ontolex:otherForm dicbio:form_Tuberculo,
         dicbio:form_Tuberculos,
@@ -1466,26 +1768,31 @@ dicbio:entry_tubérculo a ontolex:LexicalEntry ;
     ontolex:sense dicbio:sense_tubérculo_1,
         dicbio:sense_tubérculo_2 .
 
+# 136 túbulo
 dicbio:entry_túbulo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:sammara_valim_santos ;
     etym:etymology dicbio:etym_túbulo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_túbulo ;
     ontolex:otherForm dicbio:form_tubulos ;
     ontolex:sense dicbio:sense_túbulo_1 .
 
+# 137 túnica
 dicbio:entry_túnica a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_túnica ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_túnica ;
     ontolex:otherForm dicbio:form_tunica,
         dicbio:form_tunicas ;
     ontolex:sense dicbio:sense_túnica_1 .
 
+# 138 umbilicado
 dicbio:entry_umbilicado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1497,29 +1804,34 @@ dicbio:entry_umbilicado a ontolex:LexicalEntry ;
         dicbio:form_umbilicadas ;
     ontolex:sense dicbio:sense_umbilicado_1 .
 
+# 139 uropígio
 dicbio:entry_uropígio a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:sammara_valim_santos ;
     etym:etymology dicbio:etym_uropígio ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_uropígio ;
     ontolex:otherForm dicbio:form_uropigio,
         dicbio:form_uropygio ;
     ontolex:sense dicbio:sense_uropígio_1 .
 
+# 140 utrículo
 dicbio:entry_utrículo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-03"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:luana_borges ;
     etym:etymology dicbio:etym_utrículo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_utrículo ;
     ontolex:otherForm dicbio:form_Utriculos,
         dicbio:form_utriculos ;
     ontolex:sense dicbio:sense_utrículo_1,
         dicbio:sense_utrículo_2 .
 
+# 141 verrucoso
 dicbio:entry_verrucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-13"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
@@ -1529,6 +1841,7 @@ dicbio:entry_verrucoso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_verrucosas ;
     ontolex:sense dicbio:sense_verrucoso_1 .
 
+# 142 verticilado
 dicbio:entry_verticilado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
@@ -1544,32 +1857,38 @@ dicbio:entry_verticilado a ontolex:LexicalEntry ;
         dicbio:form_verticillados ;
     ontolex:sense dicbio:sense_verticilado_1 .
 
+# 143 vibrissa
 dicbio:entry_vibrissa a ontolex:LexicalEntry ;
     dcterms:created "2023-05-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_vibrissa ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_vibrissa ;
     ontolex:otherForm dicbio:form_vibrissas ;
     ontolex:sense dicbio:sense_vibrissa_1 .
 
+# 144 vilo
 dicbio:entry_vilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     etym:etymology dicbio:etym_vilo ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_vilo ;
     ontolex:otherForm dicbio:form_Villo,
         dicbio:form_villos ;
     ontolex:sense dicbio:sense_vilo_1,
         dicbio:sense_vilo_2 .
 
+# 145 árvore
 dicbio:entry_árvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
         author:bruno_maroneze ;
     etym:etymology dicbio:etym_árvore ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_árvore ;
     ontolex:otherForm dicbio:form_Arvore,
         dicbio:form_Arvores,
@@ -1577,36 +1896,32 @@ dicbio:entry_árvore a ontolex:LexicalEntry ;
         dicbio:form_arvores ;
     ontolex:sense dicbio:sense_árvore_1 .
 
+# 146 ócciput
 dicbio:entry_ócciput a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:rafaela_domingos ;
     etym:etymology dicbio:etym_ócciput ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dicbio:form_ócciput ;
     ontolex:otherForm dicbio:form_Occiput,
         dicbio:form_occiput ;
     ontolex:sense dicbio:sense_ócciput_1 .
 
+# 147 órbita
 dicbio:entry_órbita a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:rafaela_domingos ;
     etym:etymology dicbio:etym_órbita ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_órbita ;
     ontolex:otherForm dicbio:form_Orbita,
         dicbio:form_orbita,
         dicbio:form_orbitas ;
     ontolex:sense dicbio:sense_órbita_1 .
-
-dicbio:etym_Botânica a etym:Etymology ;
-    etym:etymon dicbio:etymon_Botanica ;
-    rdfs:comment "O étimo é, certamente, o latim científico <i>Botanica</i>, já empregado com o sentido de \"ciência dos vegetais\" desde o século XVII (cf., por exemplo, a obra \"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\").<br>O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (<i>botanikós</i>) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."@pt .
-
-dicbio:etym_Fitologia a etym:Etymology ;
-    etym:etymon dicbio:etymon_phytologia ;
-    rdfs:comment "O étimo é o latim científico <i>phytologia</i>, empregado já no século XVII (como, por exemplo, na obra “Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ). Em latim, é formada pelos elementos de origem grega <i>phyto-</i> (planta) e <i>-logia</i> (discurso). O fato de não ser atestado nos dicionários de latim e grego referentes ao período da Antiguidade revela tratar-se de uma inovação do latim científico, a partir do qual passou ao português.<br>Em português, não é tão usada quanto o seu sinônimo “Botânica”."@pt .
 
 dicbio:etym_Miologia a etym:Etymology ;
     etym:etymon dicbio:etymon_myologia ;
@@ -2192,11 +2507,6 @@ dicbio:etym_órbita a etym:Etymology ;
     etym:etymon dicbio:etymon_orbita ;
     rdfs:comment "O étimo parece ser o latim científico “orbita”, já empregado com o sentido de “cavidade dos olhos” no século XVI (por exemplo, na obra de Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C). Na Antiguidade, conforme informa o dicionário OLD, o latim “orbita” tem apenas as acepções de “caminho traçado por uma roda”, “movimento dos astros” e “prática regular, rotina”. A acepção da Anatomia, até onde foi possível identificar, surge no período do Renascimento."@pt .
 
-dicbio:etymon_Botanica a etym:Etymon ;
-    dcterms:language "latim científico" ;
-    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
-    ontolex:writtenRep "Botanica" .
-
 dicbio:etymon_adiposus a etym:Etymon ;
     dcterms:language "latim científico" ;
     dcterms:source "“panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C)" ;
@@ -2742,11 +3052,6 @@ dicbio:etymon_phrenicus a etym:Etymon ;
     dcterms:source "\"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC" ;
     ontolex:writtenRep "phrenicus" .
 
-dicbio:etymon_phytologia a etym:Etymon ;
-    dcterms:language "latim científico" ;
-    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" ;
-    ontolex:writtenRep "phytologia" .
-
 dicbio:etymon_pilosus a etym:Etymon ;
     dcterms:language "latim científico" ;
     dcterms:source "Vandelli" ;
@@ -2977,17 +3282,8 @@ dicbio:form_Arvores a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "Arvores"@pt .
 
-dicbio:form_BOTANICA a ontolex:Form ;
-    ontolex:writtenRep "BOTANICA"@pt .
-
 dicbio:form_Balano a ontolex:Form ;
     ontolex:writtenRep "Balano"@pt .
-
-dicbio:form_Botanica a ontolex:Form ;
-    ontolex:writtenRep "Botanica"@pt .
-
-dicbio:form_Botânica a ontolex:Form ;
-    ontolex:writtenRep "Botânica"@pt .
 
 dicbio:form_Bracteas a ontolex:Form ;
     rdfs:label "plural"@pt ;
@@ -3092,9 +3388,6 @@ dicbio:form_Estames a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "Estames"@pt .
 
-dicbio:form_Fitologia a ontolex:Form ;
-    ontolex:writtenRep "Fitologia"@pt .
-
 dicbio:form_Folhas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "Folhas"@pt .
@@ -3128,11 +3421,6 @@ dicbio:form_JARDINS_BOTANICOS a ontolex:Form ;
 
 dicbio:form_Jardim_Botanico a ontolex:Form ;
     ontolex:writtenRep "Jardim Botanico"@pt .
-
-<http://dicbio.fflch.usp.br/recurso/form_Jardins_Botanicos> a ontolex:Form ;
-    rdfs:label "plural"@pt ;
-    ontolex:writtenRep """Jardins
-              Botanicos"""@pt .
 
 dicbio:form_Jardins_Botanicos a ontolex:Form ;
     rdfs:label "plural"@pt ;
@@ -3356,9 +3644,6 @@ dicbio:form_bifidos a ontolex:Form ;
 
 dicbio:form_bile a ontolex:Form ;
     ontolex:writtenRep "bile"@pt .
-
-dicbio:form_botanica a ontolex:Form ;
-    ontolex:writtenRep "botanica"@pt .
 
 dicbio:form_bractea a ontolex:Form ;
     ontolex:writtenRep "bractea"@pt .
@@ -4032,10 +4317,6 @@ dicbio:form_medular a ontolex:Form ;
 dicbio:form_medullar a ontolex:Form ;
     ontolex:writtenRep "medullar"@pt .
 
-<http://dicbio.fflch.usp.br/recurso/form_membrana_branchiostega> a ontolex:Form ;
-    ontolex:writtenRep """membrana
-                branchiostega"""@pt .
-
 <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega> a ontolex:Form ;
     ontolex:writtenRep """membrana, ou pinna
                 branchiostega"""@pt .
@@ -4485,33 +4766,6 @@ dicbio:form_ócciput a ontolex:Form ;
 
 dicbio:form_órbita a ontolex:Form ;
     ontolex:writtenRep "órbita"@pt .
-
-dicbio:sense_Botânica_1 a ontolex:LexicalSense ;
-    skos:definition "Parte da História Natural responsável pela descrição e estudo dos vegetais."@pt ;
-    ontolex:usage dicbio:usage_Botânica_1513,
-        dicbio:usage_Botânica_1517,
-        dicbio:usage_Botânica_1519,
-        dicbio:usage_Botânica_1521,
-        dicbio:usage_Botânica_1743,
-        dicbio:usage_Botânica_1770,
-        dicbio:usage_Botânica_1904,
-        dicbio:usage_Botânica_2977,
-        dicbio:usage_Botânica_2986,
-        dicbio:usage_Botânica_2994,
-        dicbio:usage_Botânica_318,
-        dicbio:usage_Botânica_319,
-        dicbio:usage_Botânica_320,
-        dicbio:usage_Botânica_321,
-        dicbio:usage_Botânica_335,
-        dicbio:usage_Botânica_337,
-        dicbio:usage_Botânica_363 .
-
-dicbio:sense_Fitologia_1 a ontolex:LexicalSense ;
-    skos:definition "O mesmo que Botânica."@pt ;
-    ontolex:usage dicbio:usage_Fitologia_322,
-        dicbio:usage_Fitologia_341,
-        dicbio:usage_Fitologia_342,
-        dicbio:usage_Fitologia_362 .
 
 dicbio:sense_Miologia_1 a ontolex:LexicalSense ;
     skos:definition "Subárea da Anatomia que estuda os músculos e seus movimentos."@pt ;
@@ -7990,189 +8244,6 @@ dicbio:sense_órbita_1 a ontolex:LexicalSense ;
         dicbio:usage_órbita_226,
         dicbio:usage_órbita_228,
         dicbio:usage_órbita_237 .
-
-dicbio:usage_Botânica_1513 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. II (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value """A Anatomia, Medicina, Economia, e muitas Artes saõ ramos dessa
-            vasta sciencia, que se divide em Zoologia, [[b]]Botanica[[/b]], e
-            Mineralogia."""@pt .
-
-dicbio:usage_Botânica_1517 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. V (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value "Esta obra divide-se em Terminologia 1. dos Mammaes. 2. das Aves. 3. dos Peixes 4. dos Amphibios. 5. dos Insectos. 6. dos Vermes. 7. da [[b]]Botanica[[/b]]. 8.e da Mineralogia."@pt .
-
-dicbio:usage_Botânica_1519 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. V (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value """As obras de Fabricio, Gouvaõ, e Reuss serviraõ para os Insectos, Peixes, e pela 
-              [[b]]Botanica[[/b]]."""@pt .
-
-dicbio:usage_Botânica_1521 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. VI (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value """A unica obra de [[b]]Botanica[[/b]], que temos
-                de Portugal, he o Viridarium Lusitanicum do Grysley, da qual obra assim me escreveo
-                o Cel. Linnéo "Postquam tota Europa calcata est Botanicorum
-                  pedibus, restat etiamnum sola Lusitania, quae India Europaea dicenda, &
-                  felicissima Terra. Habemus tantum Grysley Viridarium Lusitanicum, miserrimum opus,
-                  cujus Plantas Oedipus sit, qui intelligat. Alit Ista Terra quamplurimas rarissimas
-                  plantas, uti constat ex numerosis istis Tournefortii Lusitanicis in
-                  Institutionibus R. Herbariae nominatis, sed nullibi descriptis, aut delineatis,
-                  adeoque etiamnum novis, quam nemo, nisi alter Oedipus intelligat." Lin.
-                Epist. 10. an. 1765."""@pt .
-
-dicbio:usage_Botânica_1743 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 120 (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value "Com nós que tem incisuras. V. Crenatum na [[b]]Botanica[[/b]]."@pt .
-
-dicbio:usage_Botânica_1770 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 140 (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value "Com pésinho, ou pedunculo. V. na [[b]]Botanica[[/b]]."@pt .
-
-dicbio:usage_Botânica_1904 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 193 (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value "TERMINOLOGIA DA [[b]]BOTANICA[[/b]]."@pt .
-
-dicbio:usage_Botânica_2977 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 294 (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value """O primeiro conhecimento adquire-se com o estudo da [[b]]Botanica[[/b]], o segundo com experiencias e reflexões fisicas, o terceiro, e quarto
-            com hum jardim botanico, no
-            qual he necessario cultivar os vegetaes de todos os climas, e terrenos."""@pt .
-
-dicbio:usage_Botânica_2986 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 298 (Ref: diciovandelli)" ;
-    dcterms:creator "VANDELLI" ;
-    dcterms:date "1788" ;
-    rdf:value """A outra summa utilidade, que se tira da [[b]]Botanica[[/b]], e dos
-            Jardins he saber quaes plantas uteis na Economia &c. se podem cultivar nos diversos
-            climas, e terrenos, de modo que dos terrenos incultos, e commummente tidos por estereis
-            se possa tirar grande proveito."""@pt .
-
-dicbio:usage_Botânica_2994 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Observaçoens medicas doutrinaes, p. 6 (Ref: observsemmedo)" ;
-    dcterms:creator "SEMEDO" ;
-    dcterms:date "1707" ;
-    rdf:value """Eu entendo que se o tempo, que alguns gastaõ em especular
-            questões infrutuosas, o applicassem ao estudo da Chymica, da Anatomia, & da [[b]]botanica[[/b]], a Medicina fertilissima de remedios
-            mais pela preparação, & mais suaves pela pouca, escusando nos doentes os enjoos dos
-            almudes & canada de bebidas que lhes damos."""@pt .
-
-dicbio:usage_Botânica_318 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. v (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """A [[b]]Botanica[[/b]] como todas as mais partes de
-						Historia natural sam hoje em toda a Europa summamente cultivadas pelo muito
-						que sam uteis ao progresso dos conhecimentos humanos, e às commodidades da
-						vida social."""@pt .
-
-dicbio:usage_Botânica_319 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. v (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Conhecemos hoje mais da metade das plantas do globo terrestre, e temos
-						prezentemente muitos methodos ou systemas, e muitas obras elementares de
-							[[b]]Botanica[[/b]] tanto em latim, como em quasi
-						todas as linguas modernas da Europa."""@pt .
-
-dicbio:usage_Botânica_320 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. vi (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Dezejando pois obviar este obstaculo, e facilitar geralmente o estudo dos
-						vegetaes entre nos, cuidei de escrever o prezente Compendio fundado nos
-						tractados dos melhores Botanicos modernos e nas minhas proprias
-						observacoens, o qual, segundo me parece, poderà ser util nam so aos que
-						ignoram a lingua latina, mas ainda aos que a sabem e tem ja alguns
-						conhecimentos em [[b]]Botanica[[/b]]."""@pt .
-
-dicbio:usage_Botânica_321 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. vi (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """No principio do primeiro Volume tracto da origem, progresso, e estado actual
-						da [[b]]Botanica[[/b]], e dou humas breves noçoens da
-						physiologia e anatomia dos vegetaes."""@pt .
-
-dicbio:usage_Botânica_335 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. xxv (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """No tempo dos antigos Romanos, à [[b]]Botanica[[/b]] fez
-						muito pouco progresso."""@pt .
-
-dicbio:usage_Botânica_337 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. xxvii (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Desde o seculo XII, em que os Arabes foram quasi inteiramente expulsos das
-						Hespanhas, athe ao XV houveram alguns autores de nome obscuro Myrepso,
-							Quiricio, Bosco, Hildegarde, Sylvatico, Dondis, Suardo, Villanova,
-							Plateario, &c., os quaes nam conservaram melhor a [[b]]botanica[[/b]] dos antigos do que os
-						Arabes."""@pt .
-
-dicbio:usage_Botânica_363 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 2 (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Quando so se emprega na consideraçaõ dos mineraes tem o nome de Mineralogia;
-						se so tracta dos vegetaes he chamada Phytologia ou [[b]]Botanica[[/b]] ( Phytologia, seu Botanica), mas este segundo nome
-						he o mais usado."""@pt .
-
-dicbio:usage_Fitologia_322 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. vii (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Nam posso contudo deixar de confessar que este plano nam he o que mais me
-						agrada, e espero algum dia de o mudar, se poder chegar a publicar os
-						Elementos de [[b]]Phytologia[[/b]], que preparo em
-						latim."""@pt .
-
-dicbio:usage_Fitologia_341 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. xxxvi (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Boerhaave, e Linneo foram do mesmo parecer, e este ultimo tornou a
-								pôr a Botanica na Historia natural; mas o prejuizo de a considerar
-								meramente como huma parte da Medicina tem prevalecido de sorte, que
-								ainda hoje por toda a parte os Medicos e Boticarios sam
-								privativamente os professores de [[b]]Phytologia[[/b]], como senaõ houvesse outra Phytologia mais do que a applicada a
-								usos medicinaes, nem outras pessoas capazes de a ensinar senam
-								Medicos e Boticarios."""@pt .
-
-dicbio:usage_Fitologia_342 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. xxxvi (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Boerhaave, e Linneo foram do mesmo parecer, e este ultimo tornou a
-								pôr a Botanica na Historia natural; mas o prejuizo de a considerar
-								meramente como huma parte da Medicina tem prevalecido de sorte, que
-								ainda hoje por toda a parte os Medicos e Boticarios sam
-								privativamente os professores de [[b]]Phytologia[[/b]], como senaõ houvesse outra Phytologia mais do que a applicada a
-								usos medicinaes, nem outras pessoas capazes de a ensinar senam
-								Medicos e Boticarios."""@pt .
-
-dicbio:usage_Fitologia_362 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 2 (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Quando so se emprega na consideraçaõ dos mineraes tem o nome de Mineralogia;
-						se so tracta dos vegetaes he chamada [[b]]Phytologia[[/b]] ou Botanica ( Phytologia, seu Botanica), mas este segundo nome
-						he o mais usado."""@pt .
 
 dicbio:usage_Miologia_153 a ontolex:UsageExample ;
     dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 323 (Ref: anatomiasantucci)" ;
