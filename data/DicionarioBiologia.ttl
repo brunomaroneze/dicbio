@@ -144,6 +144,27 @@ dicbio:entry_Miologia a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_MYOLOGIA ;
     ontolex:sense dicbio:sense_Miologia_1 .
 
+dicbio:etym_Miologia a etym:Etymology ;
+    etym:etymon dicbio:etymon_myologia ;
+    rdfs:comment "Trata-se de um cultismo formado pelos elementos de composição de origem grega <i>mi(o)-</i> (do grego <i>mûs, muós</i> - μῦς, μυός -, “rato”, “músculo”) e <i>-logia</i> (indicativo de “ciência”, “arte”, “tratado”). A forma “myologia” é atestada em latim científico desde pelo menos o século XVII (como se observa na obra de Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC). A palavra provavelmente se disseminou a partir do latim científico para as demais línguas europeias."@pt .
+
+dicbio:form_Miologia a ontolex:Form ;
+    ontolex:writtenRep "Miologia"@pt .
+
+dicbio:form_MYOLOGIA a ontolex:Form ;
+    ontolex:writtenRep "MYOLOGIA"@pt .
+
+dicbio:sense_Miologia_1 a ontolex:LexicalSense ;
+    skos:definition "Subárea da Anatomia que estuda os músculos e seus movimentos."@pt ;
+    ontolex:usage dicbio:usage_Miologia_153 .
+
+dicbio:usage_Miologia_153 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 323 (Ref: anatomiasantucci)" ;
+    dcterms:creator "SANTUCCI" ;
+    dcterms:date "1739" ;
+    rdf:value """LIVRO TERCEIRO DA [[b]]MYOLOGIA[[/b]], OU DOS
+          MUSCULOS, e dos movimentos, ou acçaõ dos musculos."""@pt .
+
 # 4 Zoologia
 dicbio:entry_Zoologia a ontolex:LexicalEntry ;
     dcterms:created "2024-08-15"^^xsd:date ;
@@ -154,6 +175,60 @@ dicbio:entry_Zoologia a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Zoologia ;
     ontolex:sense dicbio:sense_Zoologia_1 .
+
+dicbio:etym_Zoologia a etym:Etymology ;
+    etym:etymon dicbio:etymon_zoologia ;
+    rdfs:comment "O étimo é o latim científico <i>zoologia</i>, já atestado no século XVII (como se percebe no próprio título da obra \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ). Dessa forma, junção dos elementos de origem grega <i>zoo-</i> e <i>-logia</i> ocorreu já no latim científico, e não em português, como está implícito na descrição etimológica do dicionário Houaiss."@pt .
+
+dicbio:form_Zoologia a ontolex:Form ;
+    ontolex:writtenRep "Zoologia"@pt .
+
+dicbio:sense_Zoologia_1 a ontolex:LexicalSense ;
+    skos:definition "Ramo da História Natural que estuda os animais."@pt ;
+    ontolex:usage dicbio:usage_Zoologia_1235,
+        dicbio:usage_Zoologia_361 .
+
+dicbio:usage_Zoologia_1235 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 298 (Ref: compendio1brotero)" ;
+    dcterms:creator "BROTERO" ;
+    dcterms:date "1788" ;
+    rdf:value """Estas consideraçoẽs naõ tem dobrado os defensores da theoria da
+							fructificaçaõ; elles repondem ordinariamente, que a Botanica tendo muito
+							mais especies que descrever e classar do que a [[b]]zoologia[[/b]], e sendo os organos de que esta deduz os caracteres
+							genericos muito mais numerosos do que os daquella devem ambas seguir
+							diversas leys methodicas; que nos animaes os ventriculos do coraçaõ e
+							outros organos relativos ao movimento, sensibilidade, digestaõ e
+							respiraçaõ saõ mais proprios para dar extensos resultados communs do que
+							saõ os genitaes, o que succede pelo contrario nos vegetaes, em que os
+							dictos organos subministraõ vastos destinctivos geraes e uniformes,
+							tanto pelo seu numero, e pela infinidade  de formas, como pela sua posiçaõ e apego; que os caracteres,
+							deduzidos do habito somente, serão sempre insufficientes para fundar
+							nelles hum methodo, ou nunca poderaõ ser fundamentaes e primarios; que
+							os fundamentaes so sè podem tirar da fructificacaõ, e que os tirados do
+							habito saõ accessivos e presuppoem a existencia dos precedentes; que
+							pode succeder que na inflorecencia, nas folhas, e outras partes do habito se achem notas uniformes,
+							capazes de ajudar a caracterizar hum genero ou familia, mas que estas
+							notas por si so seraõ insufficientes; que pelo contrario na
+							fructificaçaõ se achaõ sempre notas sufficientes para caracterizar
+							qualquer sorte de generos sem depender das notas do habito externo, como
+							se prova pelo systema de Linneo em que todos os generos saõ fundados em
+							notas tiradas somente da fructificaçaõ; que por conseguinte ainda que
+							seja acertado consultar o habito externo na formaçaõ dos generos, naõ ha
+							necessidade de lhes ajuntar o caracter habitual, mas basta o que he
+							fundado nas notas da fructificaçaõ para os fazer reconhecer com certeza;
+							e emfim que o numero das cotylédones e situaçaõ do corculo, como
+							relativos a semente, rigorosamente pertenciaõ à fructificaçaõ, e o mesmo
+							eraõ os caracteres tirados das umbrellas nas umbrelladas, dos
+							amentilhos, e espadices em razaõ destas partes dizerem relaçaõ ao calyz, que se considera em geral como
+							pertencente á fructificaçaõ."""@pt .
+
+dicbio:usage_Zoologia_361 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. lxxv (Ref: compendio1brotero)" ;
+    dcterms:creator "BROTERO" ;
+    dcterms:date "1788" ;
+    rdf:value """Este sabio restabeleceo naõ so a Botanica em Portugal, mas ainda a
+									 [[b]]Zoologia[[/b]], Mineralogia, e Chimica de que foy
+								igualmente nomeado professor pelo Senhor D. Joseph I."""@pt .
 
 # 5 adiposo
 dicbio:entry_adiposo a ontolex:LexicalEntry ;
@@ -167,6 +242,54 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
         dicbio:form_adiposas,
         dicbio:form_adiposos ;
     ontolex:sense dicbio:sense_adiposo_1 .
+
+dicbio:etym_adiposo a etym:Etymology ;
+    etym:etymon dicbio:etymon_adiposus ;
+    rdfs:comment "O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>. No entanto, a forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."@pt .
+
+dicbio:etymon_adiposus a etym:Etymon ;
+    dcterms:language "latim científico" ;
+    dcterms:source "“panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C)" ;
+    ontolex:writtenRep "adiposus" .
+
+dicbio:form_adiposas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "adiposas"@pt .
+
+dicbio:form_adiposo a ontolex:Form ;
+    ontolex:writtenRep "adiposo"@pt .
+
+dicbio:form_adiposos a ontolex:Form ;
+    rdfs:label "masculino plural"@pt ;
+    ontolex:writtenRep "adiposos"@pt .
+
+dicbio:sense_adiposo_1 a ontolex:LexicalSense ;
+    skos:definition "Que contém gordura."@pt ;
+    ontolex:usage dicbio:usage_adiposo_164,
+        dicbio:usage_adiposo_43,
+        dicbio:usage_adiposo_68 .
+
+dicbio:usage_adiposo_164 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 324 (Ref: anatomiasantucci)" ;
+    dcterms:creator "SANTUCCI" ;
+    dcterms:date "1739" ;
+    rdf:value """As glandulas
+              [[b]]adiposas[[/b]], e mucilaginosas, e os vasos
+              lymphaticos administraõ, huma materia untuosa às fibras, com que se facilíta mais mais o movimento do musculo."""@pt .
+
+dicbio:usage_adiposo_43 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 12 (Ref: anatomiasantucci)" ;
+    dcterms:creator "SANTUCCI" ;
+    dcterms:date "1739" ;
+    rdf:value "Tres saõ as partes, que servem de cubrir todo o corpo, a cuticula, a , ou pelle, e a membrana, que chamaõ [[b]]Adiposa[[/b]] ."@pt .
+
+dicbio:usage_adiposo_68 a ontolex:UsageExample ;
+    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 24 (Ref: anatomiasantucci)" ;
+    dcterms:creator "SANTUCCI" ;
+    dcterms:date "1739" ;
+    rdf:value """Além destes vasos, pareceo a Malpighio ter achado outros, que estaõ entre os saquinhos acima ditos, aos
+              quaes chama [[b]]adiposos[[/b]]; mas isto
+              deixou em duvida na sua Obra posthuma."""@pt .
 
 # 6 angulado
 dicbio:entry_angulado a ontolex:LexicalEntry ;
@@ -1923,18 +2046,6 @@ dicbio:entry_órbita a ontolex:LexicalEntry ;
         dicbio:form_orbitas ;
     ontolex:sense dicbio:sense_órbita_1 .
 
-dicbio:etym_Miologia a etym:Etymology ;
-    etym:etymon dicbio:etymon_myologia ;
-    rdfs:comment "Trata-se de um cultismo formado pelos elementos de composição de origem grega <i>mi(o)-</i> (do grego <i>mûs, muós</i> - μῦς, μυός -, “rato”, “músculo”) e <i>-logia</i> (indicativo de “ciência”, “arte”, “tratado”). A forma “myologia” é atestada em latim científico desde pelo menos o século XVII (como se observa na obra de Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC). A palavra provavelmente se disseminou a partir do latim científico para as demais línguas europeias."@pt .
-
-dicbio:etym_Zoologia a etym:Etymology ;
-    etym:etymon dicbio:etymon_zoologia ;
-    rdfs:comment "O étimo é o latim científico <i>zoologia</i>, já atestado no século XVII (como se percebe no próprio título da obra \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ). Dessa forma, junção dos elementos de origem grega <i>zoo-</i> e <i>-logia</i> ocorreu já no latim científico, e não em português, como está implícito na descrição etimológica do dicionário Houaiss."@pt .
-
-dicbio:etym_adiposo a etym:Etymology ;
-    etym:etymon dicbio:etymon_adiposus ;
-    rdfs:comment "O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>. No entanto, a forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."@pt .
-
 dicbio:etym_angulado a etym:Etymology ;
     etym:etymon dicbio:etymon_angulatus ;
     rdfs:comment "Duas são as possibilidades de descrição do étimo: 1 - <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina; ou 2 - <i>angulado</i> pode ser analisado como derivado do substantivo <i>ângulo</i> com o sufixo -<i>ado</i>, visto que o substantivo <i>ângulo</i> teve, segundo o Dicionário Houaiss, sua primeira atestação no século XIV; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
@@ -2506,11 +2617,6 @@ dicbio:etym_ócciput a etym:Etymology ;
 dicbio:etym_órbita a etym:Etymology ;
     etym:etymon dicbio:etymon_orbita ;
     rdfs:comment "O étimo parece ser o latim científico “orbita”, já empregado com o sentido de “cavidade dos olhos” no século XVI (por exemplo, na obra de Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C). Na Antiguidade, conforme informa o dicionário OLD, o latim “orbita” tem apenas as acepções de “caminho traçado por uma roda”, “movimento dos astros” e “prática regular, rotina”. A acepção da Anatomia, até onde foi possível identificar, surge no período do Renascimento."@pt .
-
-dicbio:etymon_adiposus a etym:Etymon ;
-    dcterms:language "latim científico" ;
-    dcterms:source "“panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C)" ;
-    ontolex:writtenRep "adiposus" .
 
 dicbio:etymon_angulatus a etym:Etymon ;
     dcterms:language "latim" ;
@@ -3451,9 +3557,6 @@ dicbio:form_MAMMAES a ontolex:Form ;
 dicbio:form_MUSCULO a ontolex:Form ;
     ontolex:writtenRep "MUSCULO"@pt .
 
-dicbio:form_MYOLOGIA a ontolex:Form ;
-    ontolex:writtenRep "MYOLOGIA"@pt .
-
 dicbio:form_Mammaes a ontolex:Form ;
     ontolex:writtenRep "Mammaes"@pt .
 
@@ -3471,9 +3574,6 @@ dicbio:form_Membranaceo a ontolex:Form ;
 dicbio:form_Membranosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "Membranosas"@pt .
-
-dicbio:form_Miologia a ontolex:Form ;
-    ontolex:writtenRep "Miologia"@pt .
 
 dicbio:form_Oblonga a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
@@ -3575,20 +3675,6 @@ dicbio:form_Verticillados a ontolex:Form ;
 
 dicbio:form_Villo a ontolex:Form ;
     ontolex:writtenRep "Villo"@pt .
-
-dicbio:form_Zoologia a ontolex:Form ;
-    ontolex:writtenRep "Zoologia"@pt .
-
-dicbio:form_adiposas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
-    ontolex:writtenRep "adiposas"@pt .
-
-dicbio:form_adiposo a ontolex:Form ;
-    ontolex:writtenRep "adiposo"@pt .
-
-dicbio:form_adiposos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
-    ontolex:writtenRep "adiposos"@pt .
 
 dicbio:form_angulada a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
@@ -4766,23 +4852,6 @@ dicbio:form_ócciput a ontolex:Form ;
 
 dicbio:form_órbita a ontolex:Form ;
     ontolex:writtenRep "órbita"@pt .
-
-dicbio:sense_Miologia_1 a ontolex:LexicalSense ;
-    skos:definition "Subárea da Anatomia que estuda os músculos e seus movimentos."@pt ;
-    ontolex:usage dicbio:usage_Miologia_153 .
-
-dicbio:sense_Zoologia_1 a ontolex:LexicalSense ;
-    skos:definition "Ramo da História Natural que estuda os animais."@pt ;
-    ontolex:usage dicbio:usage_Zoologia_1235,
-        dicbio:usage_Zoologia_361,
-        dicbio:usage_Zoologia_364 .
-
-dicbio:sense_adiposo_1 a ontolex:LexicalSense ;
-    skos:definition "Que contém gordura."@pt ;
-    ontolex:usage dicbio:usage_adiposo_159,
-        dicbio:usage_adiposo_164,
-        dicbio:usage_adiposo_43,
-        dicbio:usage_adiposo_68 .
 
 dicbio:sense_angulado_1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta ângulo; anguloso. "@pt ;
@@ -8244,91 +8313,6 @@ dicbio:sense_órbita_1 a ontolex:LexicalSense ;
         dicbio:usage_órbita_226,
         dicbio:usage_órbita_228,
         dicbio:usage_órbita_237 .
-
-dicbio:usage_Miologia_153 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 323 (Ref: anatomiasantucci)" ;
-    dcterms:creator "SANTUCCI" ;
-    dcterms:date "1739" ;
-    rdf:value """LIVRO TERCEIRO DA [[b]]MYOLOGIA[[/b]], OU DOS
-          MUSCULOS, e dos movimentos, ou acçaõ dos musculos."""@pt .
-
-dicbio:usage_Zoologia_1235 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 298 (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Estas consideraçoẽs naõ tem dobrado os defensores da theoria da
-							fructificaçaõ; elles repondem ordinariamente, que a Botanica tendo muito
-							mais especies que descrever e classar do que a [[b]]zoologia[[/b]], e sendo os organos de que esta deduz os caracteres
-							genericos muito mais numerosos do que os daquella devem ambas seguir
-							diversas leys methodicas; que nos animaes os ventriculos do coraçaõ e
-							outros organos relativos ao movimento, sensibilidade, digestaõ e
-							respiraçaõ saõ mais proprios para dar extensos resultados communs do que
-							saõ os genitaes, o que succede pelo contrario nos vegetaes, em que os
-							dictos organos subministraõ vastos destinctivos geraes e uniformes,
-							tanto pelo seu numero, e pela infinidade  de formas, como pela sua posiçaõ e apego; que os caracteres,
-							deduzidos do habito somente, serão sempre insufficientes para fundar
-							nelles hum methodo, ou nunca poderaõ ser fundamentaes e primarios; que
-							os fundamentaes so sè podem tirar da fructificacaõ, e que os tirados do
-							habito saõ accessivos e presuppoem a existencia dos precedentes; que
-							pode succeder que na inflorecencia, nas folhas, e outras partes do habito se achem notas uniformes,
-							capazes de ajudar a caracterizar hum genero ou familia, mas que estas
-							notas por si so seraõ insufficientes; que pelo contrario na
-							fructificaçaõ se achaõ sempre notas sufficientes para caracterizar
-							qualquer sorte de generos sem depender das notas do habito externo, como
-							se prova pelo systema de Linneo em que todos os generos saõ fundados em
-							notas tiradas somente da fructificaçaõ; que por conseguinte ainda que
-							seja acertado consultar o habito externo na formaçaõ dos generos, naõ ha
-							necessidade de lhes ajuntar o caracter habitual, mas basta o que he
-							fundado nas notas da fructificaçaõ para os fazer reconhecer com certeza;
-							e emfim que o numero das cotylédones e situaçaõ do corculo, como
-							relativos a semente, rigorosamente pertenciaõ à fructificaçaõ, e o mesmo
-							eraõ os caracteres tirados das umbrellas nas umbrelladas, dos
-							amentilhos, e espadices em razaõ destas partes dizerem relaçaõ ao calyz, que se considera em geral como
-							pertencente á fructificaçaõ."""@pt .
-
-dicbio:usage_Zoologia_361 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. lxxv (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value """Este sabio restabeleceo naõ so a Botanica em Portugal, mas ainda a
-									 [[b]]Zoologia[[/b]], Mineralogia, e Chimica de que foy
-								igualmente nomeado professor pelo Senhor D. Joseph I."""@pt .
-
-dicbio:usage_Zoologia_364 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Compendio de Botanica. Tomo primeiro, p. 2 (Ref: compendio1brotero)" ;
-    dcterms:creator "BROTERO" ;
-    dcterms:date "1788" ;
-    rdf:value "Em fim quando somente tracta dos animaes he chamada  [[b]]Zoologia[[/b]]."@pt .
-
-dicbio:usage_adiposo_159 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 324 (Ref: anatomiasantucci)" ;
-    dcterms:creator "SANTUCCI" ;
-    dcterms:date "1739" ;
-    rdf:value """A estas partes se pódem ajuntar as glandulas
-              [[b]]adiposas[[/b]], e mucilaginosas, e os vasos
-              lymphaticos."""@pt .
-
-dicbio:usage_adiposo_164 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 324 (Ref: anatomiasantucci)" ;
-    dcterms:creator "SANTUCCI" ;
-    dcterms:date "1739" ;
-    rdf:value """As glandulas
-              [[b]]adiposas[[/b]], e mucilaginosas, e os vasos
-              lymphaticos administraõ, huma materia untuosa às fibras, com que se facilíta mais mais o movimento do musculo."""@pt .
-
-dicbio:usage_adiposo_43 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 12 (Ref: anatomiasantucci)" ;
-    dcterms:creator "SANTUCCI" ;
-    dcterms:date "1739" ;
-    rdf:value "Tres saõ as partes, que servem de cubrir todo o corpo, a cuticula, a , ou pelle, e a membrana, que chamaõ [[b]]Adiposa[[/b]] ."@pt .
-
-dicbio:usage_adiposo_68 a ontolex:UsageExample ;
-    dcterms:bibliographicCitation "Anatomia do Corpo Humano, p. 24 (Ref: anatomiasantucci)" ;
-    dcterms:creator "SANTUCCI" ;
-    dcterms:date "1739" ;
-    rdf:value """Além destes vasos, pareceo a Malpighio ter achado outros, que estaõ entre os saquinhos acima ditos, aos
-              quaes chama [[b]]adiposos[[/b]]; mas isto
-              deixou em duvida na sua Obra posthuma."""@pt .
 
 dicbio:usage_angulado_1746 a ontolex:UsageExample ;
     dcterms:bibliographicCitation "Diccionario dos Termos Technicos de Historia Natural, p. 121 (Ref: diciovandelli)" ;
