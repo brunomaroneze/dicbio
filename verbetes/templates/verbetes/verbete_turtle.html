@@ -8,8 +8,14 @@
     </header>
 
     <section class="definicao">
-        <h3>Definição</h3>
-        <p>{{ verbete.definition }}</p>
+        <h3>Definições</h3>
+        <ol>
+            {% for def in verbete.definitions %}
+                <li style="margin-bottom: 10px;">{{ def }}</li>
+            {% empty %}
+                <li>Nenhuma definição encontrada.</li>
+            {% endfor %}
+        </ol>
     </section>
 
     <hr>

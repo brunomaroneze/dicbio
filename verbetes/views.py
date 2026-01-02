@@ -161,19 +161,23 @@ def verbete_pelo_turtle(request, lema):
 
     # 5. Organiza os dados para o template
     # (Como SPARQL retorna uma lista de tuplas, pegamos a primeira)
-    verbete_data = {}
-    for row in results:
-        verbete_data = {
-            'lemma': row.lemma,
-            # Simplificamos a URL do LexInfo para mostrar apenas 'adjective' ou 'noun'
-            'pos': str(row.pos).split('#')[-1] if row.pos else "",
-            'definition': row.definition,
-            'etymology': row.etymComment,
+    verbete_data = {
+        'lemma': lema,
+        'pos': '',
+        'etymology': '',
+        'definitions': [] # Lista para guardar as várias definições
         }
-        break # Pegamos o primeiro resultado encontrado
+    for row in results:
+        # Preenche os dados fixos (só precisa fazer uma vez)
+        if not verbete_data['etymology']:
+            verbete_data['etymology'] = row.etymComment
+            verbete_data['pos'] = str(row.pos).split('#')[-1] if row.pos else ""
 
-    if not verbete_data:
-        # Tratar caso o verbete não exista no Turtle
+        # Adiciona a definição à lista se ela existir e ainda não estiver lá
+        if row.definition and str(row.definition) not in verbete_data['definitions']:
+            verbete_data['definitions'].append(str(row.definition))
+
+    if not verbete_data['definitions'] and not verbete_data['etymology']:
         return render(request, '404_verbete.html', {'lema': lema})
 
     return render(request, 'verbetes/verbete_turtle.html', {'verbete': verbete_data})
