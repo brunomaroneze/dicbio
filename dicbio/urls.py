@@ -29,11 +29,12 @@ urlpatterns = [
     path('corpus/', include('corpus_digital.urls', namespace='corpus_digital')),
 ]
 
-urlpatterns += [
-    re_path(r'static/(?P<path>.*)$', serve, {
-        'document_root': settings.STATIC_ROOT
-    })
-]
+# Comentei para verificar se é esta a fonte do erro de servir arquivos estáticos
+#urlpatterns += [
+#    re_path(r'static/(?P<path>.*)$', serve, {
+#        'document_root': settings.STATIC_ROOT
+#    })
+#]
 
 if settings.DEBUG:
     # Serve arquivos de mídia (como o PDF gerado) durante o desenvolvimento
