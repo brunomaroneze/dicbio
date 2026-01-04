@@ -10,8 +10,8 @@
         @page {
             size: A4;
             margin: 2.5cm;
-            @bottom-center {
-                content: "Página " counter(page);
+            @bottom-right {
+                content: counter(page);
                 color: #666;
                 font-size: 9pt;
             }
@@ -19,7 +19,7 @@
 
         /* Página de Capa: Remove numeração */
         @page:first {
-            @bottom-center {
+            @bottom-right {
                 content: none;
             }
         }
