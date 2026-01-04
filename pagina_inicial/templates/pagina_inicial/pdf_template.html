@@ -4,46 +4,121 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Dicionário Histórico de Termos da Biologia - Versão Completa</title>
+    <title>Dicionário Histórico de Termos da Biologia</title>
     <style>
-        /* CSS para impressão, otimizado para WeasyPrint */
+        /* Configurações de Página e Numeração */
         @page {
             size: A4;
-            margin: 2cm;
-
+            margin: 2.5cm;
             @bottom-center {
                 content: "Página " counter(page);
-                color: #888;
-                font-size: 0.9em;
+                color: #666;
+                font-size: 9pt;
             }
+        }
+
+        /* Página de Capa: Remove numeração */
+        @page:first {
+            @bottom-center {
+                content: none;
+            }
+        }
+
+        /* Forçar quebra de página antes de seções principais */
+        .quebra-pagina {
+            page-break-before: always;
         }
 
         body {
             font-family: serif;
-            line-height: 1.5;
+            line-height: 1.6;
             font-size: 11pt;
+            text-align: justify; /* ALINHAMENTO JUSTIFICADO */
+            orphans: 3;
+            widows: 3;
         }
 
         h1, h2, h3, h4 {
             font-family: sans-serif;
-            color: #333;
+            color: #222;
             break-after: avoid;
+            text-align: left; /* Títulos geralmente ficam melhor à esquerda */
+        }
+
+        /* --- ESTILO DA CAPA --- */
+        #capa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Ocupa a página toda */
+            text-align: center;
+            page-break-after: always;
+        }
+
+        #capa h1 {
+            font-size: 32pt;
+            margin-top: 5cm;
+            text-align: center;
+        }
+
+        #capa .organizador {
+            font-size: 14pt;
+            margin-top: 2cm;
+            font-style: italic;
+        }
+
+        /* --- ESTILO DO SUMÁRIO --- */
+        #sumario h2 {
+            text-align: center;
+            margin-bottom: 1cm;
+        }
+
+        .sumario-lista {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sumario-item a {
+            text-decoration: none;
+            color: black;
+            display: grid;
+            grid-template-columns: auto max-content;
+            align-items: end;
+            gap: 10px;
+        }
+
+        /* Líderes (pontinhos) no sumário usando CSS moderno */
+        .sumario-item a::after {
+            content: target-counter(attr(href), page);
+            float: right;
+        }
+
+        .sumario-item {
+            margin-bottom: 5px;
         }
         
-        h1#titulo-principal {
-            text-align: center;
-            font-size: 24pt;
+        .sumario-item.nivel-verbete {
+            margin-left: 20px;
+            font-size: 0.95em;
+        }
+
+        /* --- CONTEÚDO --- */
+        .texto-apoio {
             margin-bottom: 2cm;
         }
 
         .verbete-bloco {
             margin-bottom: 1.5em;
-            break-inside: avoid;
+            break-inside: avoid; /* Evita que o título do verbete fique sozinho no fim da página */
+            border-bottom: 0.5px solid #eee;
+            padding-bottom: 1em;
         }
         
         .verbete-termo {
             font-size: 16pt;
             font-weight: bold;
+            color: #b30000; /* Destaque para o termo */
         }
 
         .verbete-classe {
@@ -52,108 +127,113 @@
         }
 
         .definicao-bloco {
-            margin-left: 20px;
+            margin-left: 15px;
             margin-top: 0.5em;
         }
 
-        /* --- CSS PARA OS EXEMPLOS --- */
-        .exemplos-container {
-            margin-top: 0.8em;
-            margin-left: 10px;
-        }
-
         .exemplo-bloco {
-            margin-bottom: 0.8em;
-            margin-left: 15px;
-            border-left: 2px solid #eee;
+            margin: 0.8em 0 0.8em 15px;
+            border-left: 2px solid #ddd;
             padding-left: 10px;
             color: #444;
             font-size: 0.95em;
+            font-style: normal;
         }
 
         .exemplo-fragmento {
             font-style: italic;
-            margin-bottom: 0.2em;
         }
 
-        .exemplo-referencia {
-            font-size: 0.9em;
-            color: #777;
-        }
-        /* --- FIM NOVO CSS --- */
-
-        b {
-            font-weight: bold;
+        /* Ajuste para que o safe do markdown não quebre o layout */
+        .texto-apoio p {
+            margin-bottom: 1em;
         }
 
-        .debug-message {
-            color: red;
-            font-size: 0.8em;
-            margin-left: 5px;
-            background-color: #ffeeee;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
     </style>
 </head>
 <body>
-    <h1 id="titulo-principal">Dicionário Histórico de Termos da Biologia</h1>
 
-    <hr>
+    <!-- 1. CAPA -->
+    <section id="capa">
+        <h1>Dicionário Histórico de Termos da Biologia</h1>
+        <p class="organizador">organizado por {{ organizador_nome|default:"Bruno Maroneze" }}</p>
+    </section>
 
-    {# Loop através de todos os verbetes, agora usando a estrutura pré-processada #}
-    {% for verbete_data in todos_os_verbetes %}
-        <div class="verbete-bloco">
-            <p>
-                <span class="verbete-termo">{{ verbete_data.termo }}</span>
-                {% if verbete_data.classe_gramatical %}
-                    <span class="verbete-classe"> ({{ verbete_data.classe_gramatical }})</span>
-                {% endif %}
-            </p>
+    <!-- 2. SUMÁRIO -->
+    <section id="sumario" class="quebra-pagina">
+        <h2>Sumário</h2>
+        <ul class="sumario-lista">
+            {% for texto in textos_apoio %}
+                <li class="sumario-item">
+                    <a href="#apoio-{{ forloop.counter }}">{{ texto.titulo }}</a>
+                </li>
+            {% endfor %}
             
-            {% if verbete_data.etimologia %}
-                <p><strong>Discussão histórico-etimológica:</strong> {{ verbete_data.etimologia|safe }}</p>
-            {% endif %}
+            <li class="sumario-item" style="font-weight: bold; margin-top: 10px;">Verbetes</li>
+            {% for verbete_data in todos_os_verbetes %}
+                <li class="sumario-item nivel-verbete">
+                    <a href="#verbete-{{ verbete_data.slug }}">{{ verbete_data.termo }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
 
-            {% if verbete_data.definicoes %}
-                <h4>Definições:</h4>
-                {% for definicao_data in verbete_data.definicoes %}
-                    <div class="definicao-bloco">
-                        <p><strong>{{ definicao_data.sensenumber }}.</strong> {{ definicao_data.definition|safe }}</p>
+    <!-- 3. TEXTOS DE APOIO -->
+    {% for texto in textos_apoio %}
+        <section id="apoio-{{ forloop.counter }}" class="texto-apoio quebra-pagina">
+            <h1>{{ texto.titulo }}</h1>
+            <div class="conteudo-markdown">
+                {{ texto.conteudo_html|safe }}
+            </div>
+        </section>
+    {% endfor %}
 
-                        {% if definicao_data.exemplos_agrupados %}
-                            <div class="exemplos-container">
-                                {% for token_val, token_examples_dict in definicao_data.exemplos_agrupados.items %}
-                                    <div class="token-group mb-3 ms-3 border-start ps-3">
+    <!-- 4. VERBETES -->
+    <section class="quebra-pagina">
+        <h1>Verbetes</h1>
+        {% for verbete_data in todos_os_verbetes %}
+            <div class="verbete-bloco" id="verbete-{{ verbete_data.slug }}">
+                <p>
+                    <span class="verbete-termo">{{ verbete_data.termo }}</span>
+                    {% if verbete_data.classe_gramatical %}
+                        <span class="verbete-classe"> ({{ verbete_data.classe_gramatical }})</span>
+                    {% endif %}
+                </p>
+                
+                {% if verbete_data.etimologia %}
+                    <p><strong>Discussão histórico-etimológica:</strong> {{ verbete_data.etimologia|safe }}</p>
+                {% endif %}
+
+                {% if verbete_data.definicoes %}
+                    <h4>Definições:</h4>
+                    {% for definicao_data in verbete_data.definicoes %}
+                        <div class="definicao-bloco">
+                            <p><strong>{{ definicao_data.sensenumber }}.</strong> {{ definicao_data.definition|safe }}</p>
+
+                            {% if definicao_data.exemplos_agrupados %}
+                                <div class="exemplos-container">
+                                    {% for token_val, token_examples_dict in definicao_data.exemplos_agrupados.items %}
                                         {% for gram_val, autores_dict in token_examples_dict.items %}
                                             {% for autor_val, lista_ocorrencias in autores_dict.items %}
                                                 {% for ocorrencia in lista_ocorrencias|slice:":1" %}
                                                     <div class="exemplo-bloco">
-                                                        <p>
-                                                            <strong>{{ ocorrencia.token }}</strong>
-                                                            {% if ocorrencia.gram and ocorrencia.gram|lower != 'nan' %}
-                                                                ({{ ocorrencia.gram }})
-                                                            {% endif %}
-                                                        </p>
-                                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|safe }}"</p>
+                                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|process_sentence_display|safe }}"</p>
                                                         <p class="exemplo-referencia">
-                                                            (Em: {{ ocorrencia|format_citation }}) {# <--- USE O FILTRO AQUI #}
+                                                            (Em: {{ ocorrencia|format_citation }})
                                                         </p>
                                                     </div>
                                                 {% endfor %}
                                             {% endfor %}
                                         {% endfor %}
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                            {# <p class="debug-message">DEBUG: Nenhum exemplo agrupado para esta definição ({{ definicao_data.sensenumber }}).</p> #}
-                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </section>
 
-                    </div>
-                {% endfor %}
-            {% endif %}
-        </div>
-    {% endfor %}
 </body>
 </html>
