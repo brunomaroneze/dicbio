@@ -10,6 +10,11 @@ from django.conf import settings
 from verbetes.models import Verbete
 from weasyprint import HTML
 from django.db.models.functions import Lower
+import logging
+
+# Configura o log para mostrar erros do WeasyPrint no terminal
+logger = logging.getLogger('weasyprint')
+logger.addHandler(logging.StreamHandler())
 
 # Função auxiliar para converter defaultdict recursivamente para dict
 def convert_defaultdict_to_dict_recursive(d):
@@ -31,7 +36,6 @@ class Command(BaseCommand):
         textos_apoio = []
 
         def processar_arquivo_md(caminho, categoria):
-            """Lê o MD e retorna um dicionário com título e conteúdo HTML."""
             if not caminho.exists():
                 return None
             with open(caminho, encoding='utf-8') as f:
@@ -39,9 +43,30 @@ class Command(BaseCommand):
                 md = markdown.Markdown(extensions=['extra', 'smarty', 'meta'])
                 html_content = md.convert(raw_content)
                 
-                # Tenta pegar título dos metadados, senão usa o nome do arquivo limpo
-                titulo = md.Meta.get('titulo', [caminho.stem.replace('_', ' ').title()])[0]
+                # --- DEBUG DE IMAGENS ---
+                import re
+                # Procurar todos os src="/static/..."
+                imgs = re.findall(r'src="/static/([^"]+)"', html_content)
                 
+                for img_path in imgs:
+                    # Tente construir o caminho usando STATICFILES_DIRS ou BASE_DIR
+                    # Se o seu projeto segue o padrão, a imagem física está em:
+                    caminho_absoluto_img = settings.BASE_DIR / 'documentacao' / 'static' / img_path
+                    
+                    print(f"\n[DEBUG] Tentando localizar imagem:")
+                    print(f"   - URL no Markdown: /static/{img_path}")
+                    print(f"   - Caminho no Disco: {caminho_absoluto_img}")
+                    
+                    if caminho_absoluto_img.exists():
+                        print(f"   - [OK] Arquivo encontrado no disco!")
+                        # Para o WeasyPrint, o prefixo file:// é o mais seguro para caminhos absolutos
+                        caminho_final = caminho_absoluto_img.as_uri() # Transforma em file:///C:/...
+                        html_content = html_content.replace(f'src="/static/{img_path}"', f'src="{caminho_final}"')
+                    else:
+                        print(f"   - [ERRO] Arquivo NÃO encontrado no disco!")
+                # ------------------------
+
+                titulo = md.Meta.get('title', [caminho.stem.replace('_', ' ').title()])[0]
                 return {
                     'titulo': titulo,
                     'conteudo_html': html_content,
