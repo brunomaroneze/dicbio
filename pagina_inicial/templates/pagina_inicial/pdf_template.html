@@ -172,7 +172,7 @@
         <ul class="sumario-lista">
             {% for texto in textos_apoio %}
                 <li class="sumario-item">
-                    <a href="#apoio-{{ forloop.counter }}">{{ texto.titulo }}</a>
+                    <a href="#apoio-{{ texto.slug }}">{{ texto.titulo }}</a>
                 </li>
             {% endfor %}
             
@@ -187,8 +187,8 @@
 
     <!-- 3. TEXTOS DE APOIO -->
     {% for texto in textos_apoio %}
-        <section id="apoio-{{ forloop.counter }}" class="texto-apoio quebra-pagina">
-            <h1>{{ texto.titulo }}</h1>
+        <section id="apoio-{{ texto.slug }}" class="texto-apoio quebra-pagina">
+            <!-- <h1>{{ texto.titulo }}</h1> Desativei porque cada arquivo MarkDown já tem o título na primeira linha -->
             <div class="conteudo-markdown">
                 {{ texto.conteudo_html|safe }}
             </div>

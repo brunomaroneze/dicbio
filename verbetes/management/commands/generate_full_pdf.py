@@ -1,11 +1,13 @@
 # verbetes/management/commands/generate_full_pdf.py
 
 import os
+import markdown
+from pathlib import Path
 from collections import defaultdict
 from django.core.management.base import BaseCommand
 from django.template.loader import render_to_string
 from django.conf import settings
-from verbetes.models import Verbete, Definition, OcorrenciaCorpus 
+from verbetes.models import Verbete
 from weasyprint import HTML
 from django.db.models.functions import Lower
 
@@ -16,75 +18,110 @@ def convert_defaultdict_to_dict_recursive(d):
     return d
 
 class Command(BaseCommand):
-    help = 'Gera um único arquivo PDF com todos os verbetes do dicionário.'
+    help = 'Gera um único arquivo PDF com capa, textos de apoio e verbetes.'
 
     def handle(self, *args, **options):
-        self.stdout.write("Iniciando a geração do PDF completo do dicionário...")
+        self.stdout.write("Iniciando a geração do PDF completo...")
 
+        # --- 1. COLETA DOS TEXTOS DE APOIO (MARKDOWN) ---
+        # Defina aqui o caminho base onde estão suas pastas de .md
+        # Ajuste 'documentacao' para o nome real da sua pasta de arquivos md
+        base_path = Path(settings.BASE_DIR) / 'documentacao' / 'textos'
+        
+        textos_apoio = []
+
+        def processar_arquivo_md(caminho, categoria):
+            """Lê o MD e retorna um dicionário com título e conteúdo HTML."""
+            if not caminho.exists():
+                return None
+            with open(caminho, encoding='utf-8') as f:
+                raw_content = f.read()
+                md = markdown.Markdown(extensions=['extra', 'smarty', 'meta'])
+                html_content = md.convert(raw_content)
+                
+                # Tenta pegar título dos metadados, senão usa o nome do arquivo limpo
+                titulo = md.Meta.get('titulo', [caminho.stem.replace('_', ' ').title()])[0]
+                
+                return {
+                    'titulo': titulo,
+                    'conteudo_html': html_content,
+                    'slug': caminho.stem,
+                    'categoria': categoria
+                }
+
+        # 1. Prefácio (Geralmente fica na raiz de /textos/)
+        path_prefacio = base_path / 'prefacio.md'
+        prefacio_data = processar_arquivo_md(path_prefacio, 'Prefácio')
+        if prefacio_data:
+            textos_apoio.append(prefacio_data)
+
+        # 2. Técnicos (Verifique se a pasta tem acento no nome real do Windows/Linux)
+        # Se a pasta tiver acento, use 'técnicos'. Se não tiver, use 'tecnicos'.
+        tecnicos_path = base_path / 'tecnicos' # ou 'técnicos'
+        if tecnicos_path.exists():
+            for path in sorted(tecnicos_path.glob('*.md')):
+                text_data = processar_arquivo_md(path, 'Texto Técnico')
+                if text_data:
+                    textos_apoio.append(text_data)
+
+        # 3. Curiosidades
+        curiosidades_path = base_path / 'curiosidades'
+        if curiosidades_path.exists():
+            for path in sorted(curiosidades_path.glob('*.md')):
+                text_data = processar_arquivo_md(path, 'Curiosidade')
+                if text_data:
+                    textos_apoio.append(text_data)
+
+        # --- 2. COLETA E PROCESSAMENTO DOS VERBETES ---
         all_verbetes = Verbete.objects.all().prefetch_related(
             'definicoes',                  
             'definicoes__ocorrencias',     
         ).order_by(Lower('termo')) 
-        
-        if not all_verbetes:
-            self.stdout.write(self.style.WARNING("Nenhum verbete encontrado. PDF não gerado."))
-            return
-
-        self.stdout.write(f"Encontrados {all_verbetes.count()} verbetes para incluir no PDF.")
 
         processed_verbetes_for_pdf = []
-
         for verbete in all_verbetes:
             verbete_data = {
                 'termo': verbete.termo,
                 'slug': verbete.slug,
                 'classe_gramatical': verbete.classe_gramatical,
                 'etimologia': verbete.etimologia,
-                'autores': verbete.autores,
-                'criado_em': verbete.criado_em,
-                'atualizado_em': verbete.atualizado_em,
                 'definicoes': [] 
             }
 
             for definicao in verbete.definicoes.all():
-                definicao_data = {
+                def_data = {
                     'sensenumber': definicao.sensenumber,
                     'definition': definicao.definition,
                     'exemplos_agrupados': defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
                 }
-
-                raw_ocorrencias_for_def = list(definicao.ocorrencias.all())
                 
-                for ocorrencia in raw_ocorrencias_for_def:
-                    token_val = ocorrencia.token or 'N/A'
-                    gram_val = ocorrencia.gram or '' 
-                    autor_val = ocorrencia.autor or 'N/A'
-                    
-                    definicao_data['exemplos_agrupados'][token_val][gram_val][autor_val].append(ocorrencia)
+                for oco in definicao.ocorrencias.all():
+                    token = oco.token or 'N/A'
+                    gram = oco.gram or '' 
+                    autor = oco.autor or 'N/A'
+                    def_data['exemplos_agrupados'][token][gram][autor].append(oco)
                 
-                # --- NOVA LINHA CHAVE AQUI ---
-                # Converter a estrutura defaultdict para dicts normais antes de adicionar
-                definicao_data['exemplos_agrupados'] = convert_defaultdict_to_dict_recursive(definicao_data['exemplos_agrupados'])
-                # --- FIM DA NOVA LINHA ---
-
-                verbete_data['definicoes'].append(definicao_data)
+                def_data['exemplos_agrupados'] = convert_defaultdict_to_dict_recursive(def_data['exemplos_agrupados'])
+                verbete_data['definicoes'].append(def_data)
+            
             processed_verbetes_for_pdf.append(verbete_data)
 
+        # --- 3. RENDERIZAÇÃO ---
         context = {
-            'todos_os_verbetes': processed_verbetes_for_pdf
+            'textos_apoio': textos_apoio,
+            'todos_os_verbetes': processed_verbetes_for_pdf,
+            'organizador_nome': "Bruno Maroneze",
         }
+        
         html_string = render_to_string('pagina_inicial/pdf_template.html', context)
 
-        output_filename = 'dicionario_completo.pdf'
-        output_path = os.path.join(settings.MEDIA_ROOT, output_filename)
-        
+        output_path = os.path.join(settings.MEDIA_ROOT, 'dicionario_completo.pdf')
         os.makedirs(settings.MEDIA_ROOT, exist_ok=True)
 
-        self.stdout.write(f"Renderizando HTML e gerando PDF em {output_path}...")
-
+        self.stdout.write("Gerando PDF com WeasyPrint...")
         try:
+            # base_url permite que o WeasyPrint encontre imagens ou CSS estáticos
             HTML(string=html_string, base_url=settings.BASE_DIR).write_pdf(output_path)
-            self.stdout.write(self.style.SUCCESS(f"PDF gerado com sucesso: {output_path}"))
+            self.stdout.write(self.style.SUCCESS(f"Sucesso! PDF gerado em: {output_path}"))
         except Exception as e:
-            self.stderr.write(self.style.ERROR(f"Ocorreu um erro ao gerar o PDF: {e}"))
-            self.stderr.write(self.style.NOTICE("Verifique se as dependências do WeasyPrint (Pango, Cairo, etc.) estão instaladas corretamente."))
+            self.stderr.write(self.style.ERROR(f"Erro: {e}"))
