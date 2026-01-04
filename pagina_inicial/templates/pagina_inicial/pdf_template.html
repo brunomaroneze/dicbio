@@ -1,0 +1,264 @@
+{# pagina_inicial/templates/pagina_inicial/pdf_template.html #}
+{% load verbetes_extras %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dicionário Histórico de Termos da Biologia</title>
+    <style>
+        /* Configurações de Página e Numeração */
+        @page {
+            size: A4;
+            margin: 2.5cm;
+            @bottom-right {
+                content: counter(page);
+                color: #666;
+                font-size: 9pt;
+            }
+        }
+
+        /* Página de Capa: Remove numeração */
+        @page:first {
+            @bottom-right {
+                content: none;
+            }
+        }
+
+        /* Forçar quebra de página antes de seções principais */
+        .quebra-pagina {
+            page-break-before: always;
+        }
+
+        body {
+            font-family: serif;
+            line-height: 1.6;
+            font-size: 11pt;
+            text-align: justify; /* ALINHAMENTO JUSTIFICADO */
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: sans-serif;
+            color: #222;
+            break-after: avoid;
+            text-align: left; /* Títulos geralmente ficam melhor à esquerda */
+        }
+
+        /* 3. Evite que títulos de seções fiquem sozinhos no fim da página */
+        h4 {
+            break-after: avoid;
+            break-before: avoid;
+        }
+
+        /* --- ESTILO DA CAPA --- */
+        #capa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Ocupa a página toda */
+            text-align: center;
+            page-break-after: always;
+        }
+
+        #capa h1 {
+            font-size: 32pt;
+            margin-top: 5cm;
+            text-align: center;
+        }
+
+        #capa .organizador {
+            font-size: 14pt;
+            margin-top: 2cm;
+            font-style: italic;
+        }
+
+        /* --- ESTILO DO SUMÁRIO --- */
+        #sumario h2 {
+            text-align: center;
+            margin-bottom: 1cm;
+        }
+
+        .sumario-lista {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sumario-item a {
+            text-decoration: none;
+            color: black;
+            display: grid;
+            grid-template-columns: auto max-content;
+            align-items: end;
+            gap: 10px;
+        }
+
+        /* Líderes (pontinhos) no sumário usando CSS moderno */
+        .sumario-item a::after {
+            content: target-counter(attr(href), page);
+            float: right;
+        }
+
+        .sumario-item {
+            margin-bottom: 5px;
+        }
+        
+        .sumario-item.nivel-verbete {
+            margin-left: 20px;
+            font-size: 0.95em;
+        }
+
+        /* --- CONTEÚDO --- */
+        .texto-apoio {
+            margin-bottom: 2cm;
+        }
+
+        .verbete-bloco {
+            margin-bottom: 1.5em;
+            /*break-inside: avoid;  Evita que o título do verbete fique sozinho no fim da página */
+            border-bottom: 0.5px solid #eee;
+            padding-bottom: 1em;
+        }
+        
+        .verbete-termo {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #b30000; /* Destaque para o termo */
+            break-after: avoid;
+        }
+
+        .verbete-classe {
+            font-style: italic;
+            color: #555;
+        }
+
+        .definicao-bloco {
+            margin-left: 15px;
+            margin-top: 0.5em;
+        }
+
+        .exemplo-bloco {
+            margin: 0.8em 0 0.8em 15px;
+            border-left: 2px solid #ddd;
+            padding-left: 10px;
+            color: #444;
+            font-size: 0.95em;
+            font-style: normal;
+        }
+
+        .exemplo-fragmento {
+            font-style: italic;
+        }
+
+        /* Ajuste para que o safe do markdown não quebre o layout */
+        .texto-apoio p {
+            margin-bottom: 1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto; /* Centraliza a imagem e dá margem em cima/baixo */
+            page-break-inside: avoid; /* Evita que a imagem seja cortada entre duas páginas */
+        }
+
+        /* Estilo para a legenda (não deu certo, então desativei por enquanto) 
+        em {
+            display: block;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: -0.5em;
+            margin-bottom: 1.5em;
+        }*/
+
+    </style>
+</head>
+<body>
+
+    <!-- 1. CAPA -->
+    <section id="capa">
+        <h1>Dicionário Histórico de Termos da Biologia</h1>
+        <p class="organizador">organizado por {{ organizador_nome|default:"Bruno Maroneze" }}</p>
+    </section>
+
+    <!-- 2. SUMÁRIO -->
+    <section id="sumario" class="quebra-pagina">
+        <h2>Sumário</h2>
+        <ul class="sumario-lista">
+            {% for texto in textos_apoio %}
+                <li class="sumario-item">
+                    <a href="#apoio-{{ texto.slug }}">{{ texto.titulo }}</a>
+                </li>
+            {% endfor %}
+            
+            <li class="sumario-item" style="font-weight: bold; margin-top: 10px;">Verbetes</li>
+            {% for verbete_data in todos_os_verbetes %}
+                <li class="sumario-item nivel-verbete">
+                    <a href="#verbete-{{ verbete_data.slug }}">{{ verbete_data.termo }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- 3. TEXTOS DE APOIO -->
+    {% for texto in textos_apoio %}
+        <section id="apoio-{{ texto.slug }}" class="texto-apoio quebra-pagina">
+            <!-- <h1>{{ texto.titulo }}</h1> Desativei porque cada arquivo MarkDown já tem o título na primeira linha -->
+            <div class="conteudo-markdown">
+                {{ texto.conteudo_html|safe }}
+            </div>
+        </section>
+    {% endfor %}
+
+    <!-- 4. VERBETES -->
+    <section class="quebra-pagina">
+        <h1>Verbetes</h1>
+        {% for verbete_data in todos_os_verbetes %}
+            <div class="verbete-bloco" id="verbete-{{ verbete_data.slug }}">
+                <p>
+                    <span class="verbete-termo">{{ verbete_data.termo }}</span>
+                    {% if verbete_data.classe_gramatical %}
+                        <span class="verbete-classe"> ({{ verbete_data.classe_gramatical }})</span>
+                    {% endif %}
+                </p>
+                
+                {% if verbete_data.etimologia %}
+                    <p><strong>Discussão histórico-etimológica:</strong> {{ verbete_data.etimologia|safe }}</p>
+                {% endif %}
+
+                {% if verbete_data.definicoes %}
+                    <h4>Definições:</h4>
+                    {% for definicao_data in verbete_data.definicoes %}
+                        <div class="definicao-bloco">
+                            <p><strong>{{ definicao_data.sensenumber }}.</strong> {{ definicao_data.definition|safe }}</p>
+
+                            {% if definicao_data.exemplos_agrupados %}
+                                <div class="exemplos-container">
+                                    {% for token_val, token_examples_dict in definicao_data.exemplos_agrupados.items %}
+                                        {% for gram_val, autores_dict in token_examples_dict.items %}
+                                            {% for autor_val, lista_ocorrencias in autores_dict.items %}
+                                                {% for ocorrencia in lista_ocorrencias|slice:":1" %}
+                                                    <div class="exemplo-bloco">
+                                                        <p class="exemplo-fragmento">{{ ocorrencia.frase|process_sentence_display|safe }}</p>
+                                                        <p class="exemplo-referencia">
+                                                            (Em: {{ ocorrencia|format_citation }})
+                                                        </p>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endfor %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </section>
+
+</body>
+</html>

@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', # Para acessar a pasta /media/
             ],
             # Adicionando a biblioteca de templatetags customizadas
             'libraries': {
@@ -179,4 +180,10 @@ MARKDOWNIFY = {
    }
 }
 # ----------------------------------------------------
+
+# ... (outras configurações) ...
+
+# Configuração para arquivos de Mídia (uploads de usuários ou arquivos gerados)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'mediafiles' # Cria uma pasta 'mediafiles' na raiz do projeto
 

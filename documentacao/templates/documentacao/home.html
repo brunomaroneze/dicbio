@@ -53,6 +53,15 @@
                 </li>
                 {% endfor %}
                 {% endif %}
+
+                {% if pdf_disponivel %}
+                <li class="nav-item mt-4 border-top pt-3"> {# Adicionado espaçamento e separador #}
+                    <a href="{{ MEDIA_URL }}dicionario_completo.pdf" download class="nav-link">
+                        <i class="bi bi-file-earmark-pdf-fill"></i> Baixar Dicionário Completo em PDF
+                    </a>
+                </li>
+                {% endif %}
+
             </ul>
         </nav>
 
@@ -116,6 +125,14 @@
                     </a>
                 </li>
                 {% endfor %}
+                {% endif %}
+
+                {% if pdf_disponivel %}
+                <li class="list-group-item">
+                    <a href="{{ MEDIA_URL }}dicionario_completo.pdf" download>
+                        <i class="bi bi-file-earmark-pdf-fill"></i> Baixar Dicionário Completo em PDF
+                    </a>
+                </li>
                 {% endif %}
             </ul>
         </div>

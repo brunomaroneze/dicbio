@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django.views.static import serve
 from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,8 +29,13 @@ urlpatterns = [
     path('corpus/', include('corpus_digital.urls', namespace='corpus_digital')),
 ]
 
-urlpatterns += [
-    re_path(r'static/(?P<path>.*)$', serve, {
-        'document_root': settings.STATIC_ROOT
-    })
-]
+# Comentei para verificar se é esta a fonte do erro de servir arquivos estáticos
+#urlpatterns += [
+#    re_path(r'static/(?P<path>.*)$', serve, {
+#        'document_root': settings.STATIC_ROOT
+#    })
+#]
+
+if settings.DEBUG:
+    # Serve arquivos de mídia (como o PDF gerado) durante o desenvolvimento
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
