@@ -45,6 +45,12 @@
             text-align: left; /* Títulos geralmente ficam melhor à esquerda */
         }
 
+        /* 3. Evite que títulos de seções fiquem sozinhos no fim da página */
+        h4 {
+            break-after: avoid;
+            break-before: avoid;
+        }
+
         /* --- ESTILO DA CAPA --- */
         #capa {
             display: flex;
@@ -110,7 +116,7 @@
 
         .verbete-bloco {
             margin-bottom: 1.5em;
-            break-inside: avoid; /* Evita que o título do verbete fique sozinho no fim da página */
+            /*break-inside: avoid;  Evita que o título do verbete fique sozinho no fim da página */
             border-bottom: 0.5px solid #eee;
             padding-bottom: 1em;
         }
@@ -119,6 +125,7 @@
             font-size: 16pt;
             font-weight: bold;
             color: #b30000; /* Destaque para o termo */
+            break-after: avoid;
         }
 
         .verbete-classe {
@@ -217,7 +224,7 @@
                                             {% for autor_val, lista_ocorrencias in autores_dict.items %}
                                                 {% for ocorrencia in lista_ocorrencias|slice:":1" %}
                                                     <div class="exemplo-bloco">
-                                                        <p class="exemplo-fragmento">"{{ ocorrencia.frase|process_sentence_display|safe }}"</p>
+                                                        <p class="exemplo-fragmento">{{ ocorrencia.frase|process_sentence_display|safe }}</p>
                                                         <p class="exemplo-referencia">
                                                             (Em: {{ ocorrencia|format_citation }})
                                                         </p>
