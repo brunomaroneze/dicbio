@@ -18,7 +18,7 @@ dicbio:entry_Botânica a ontolex:LexicalEntry ;
         author:raissa_buss ;
     etym:etymology dicbio:etym_Botânica ;
     lexinfo:partOfSpeech lexinfo:noun ;
-    lexinfo:gende lexinfo:feminine ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dicbio:form_Botânica ;
     ontolex:otherForm dicbio:form_BOTANICA,
         dicbio:form_Botanica,
