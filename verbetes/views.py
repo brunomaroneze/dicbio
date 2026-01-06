@@ -8,6 +8,8 @@ from collections import defaultdict
 from django.utils.timezone import now
 import unicodedata
 from django.contrib import messages
+from django.http import JsonResponse
+from django.template.loader import render_to_string
 
 def remover_acentos(texto):
     return ''.join(
@@ -109,3 +111,17 @@ def home(request):
     # Se nenhuma busca foi feita, mostra a página inicial com a lista.
     # Se uma busca foi feita e nada foi encontrado, mostra a mensagem de erro.
     return render(request, 'verbetes/home.html', context)
+
+# Função para fazer o concordanciador
+def concordancia_por_definicao(request, def_id):
+    definicao = get_object_or_404(Definition, id=def_id)
+    # Pegamos todas as ocorrências, sem o limite de 1 que usamos no detalhe
+    ocorrencias = OcorrenciaCorpus.objects.filter(definicao=definicao).order_by('data')
+    
+    # Renderizamos um pequeno template apenas com a lista de exemplos
+    html = render_to_string('verbetes/includes/lista_concordancia.html', {
+        'ocorrencias': ocorrencias,
+        'termo': definicao.verbete.termo
+    })
+    
+    return JsonResponse({'html': html, 'total': ocorrencias.count()})

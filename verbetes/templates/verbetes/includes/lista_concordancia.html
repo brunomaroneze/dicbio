@@ -1,0 +1,16 @@
+{% load verbetes_extras %}
+
+<ul class="list-group list-group-flush">
+    {% for o in ocorrencias %}
+    <li class="list-group-item py-3">
+        <p class="mb-1">{{ o.frase|process_sentence_display|safe }}</p>
+        <div class="small text-muted d-flex justify-content-between">
+            <span><strong>{{ o.autor }}</strong> ({{ o.data }})</span>
+            <a href="{% url 'corpus_digital:obra_detalhe' o.slug_obra %}#pagina_{{ o.pagina_obra|replace_chars:' ,_' }}" 
+               target="_blank" class="btn btn-sm btn-link p-0">
+                {{ o.titulo_obra }}, p. {{ o.pagina_obra }} <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

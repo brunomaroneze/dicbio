@@ -131,6 +131,14 @@
                             {% endfor %}
                         </div> {# Fim da div token-group #}
                         {% endfor %} {# Fim do loop token_val #}
+                        <div class="text-start mt-2">
+                            <button class="btn btn-sm btn-outline-primary btn-concordancia" 
+                                    data-def-id="{{ d.id }}" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalConcordancia">
+                                <i class="bi bi-search"></i> Visualizar todas as ocorrências ({{ d.ocorrencias.count }})
+                            </button>
+                        </div>
                         {% endif %}
                         {% endwith %}
                         {% endwith %}
@@ -169,6 +177,24 @@
         </section>
     </div>
 
+</div>
+
+<!-- Modal de Concordância -->
+<div class="modal fade" id="modalConcordancia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Concordanciador: <span id="modal-termo-titulo"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-body-concordancia" class="modal-body">
+                <!-- O conteúdo será carregado aqui via AJAX -->
+                <div class="text-center">
+                    <div class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
 
@@ -238,4 +264,49 @@
 
 <script src="{% static 'verbetes/js/verbetes_scroll.js' %}"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const modalBody = document.getElementById('modal-body-concordancia');
+    const modalTitulo = document.getElementById('modal-termo-titulo');
+
+    // 1. Verificar se os elementos do modal existem na página
+    if (!modalBody || !modalTitulo) {
+        console.error("ERRO: Elementos do modal não foram encontrados no HTML!");
+        return;
+    }
+
+    document.querySelectorAll('.btn-concordancia').forEach(button => {
+        button.addEventListener('click', function() {
+            const defId = this.getAttribute('data-def-id');
+            
+            // 2. Tentar gerar a URL correta dinamicamente
+            // Se o seu app está em /consulta/, o Django deve gerar /consulta/concordancia/ID/
+            // Caso a tag url falhe aqui, vamos usar o caminho que funcionou no seu browser
+            const url = `/consulta/concordancia/${defId}/`;
+
+            console.log("Botão clicado! Carregando ID:", defId);
+            console.log("Chamando URL:", url);
+            
+            modalBody.innerHTML = '<div class="text-center"><div class="spinner-border text-primary"></div></div>';
+            
+            fetch(url)
+                .then(response => {
+                    console.log("Status da resposta:", response.status);
+                    if (!response.ok) throw new Error("Erro HTTP: " + response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("JSON recebido com sucesso!");
+                    // Inserir o HTML que você viu no browser dentro do modal
+                    modalBody.innerHTML = data.html;
+                    modalTitulo.innerText = "Todas as ocorrências";
+                })
+                .catch(error => {
+                    console.error("Erro na requisição AJAX:", error);
+                    modalBody.innerHTML = '<div class="alert alert-danger">Erro ao carregar: ' + error.message + '</div>';
+                });
+        });
+    });
+});
+</script>
 {% endblock %}
