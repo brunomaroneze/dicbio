@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'corpus_digital',
 
     # Apps de terceiros que adicionamos
-    'markdownify.apps.MarkdownifyConfig', # Vamos precisar para o futuro
+    #'markdownify.apps.MarkdownifyConfig', # Não funcionou quando trocamos o computador
 ]
 
 MIDDLEWARE = [
