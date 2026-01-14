@@ -23,7 +23,7 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_adiposa,
         dicbio:form_adiposas,
         dicbio:form_adiposos ;
-    ontolex:sense dicbio:sense_adiposo_1 .
+    ontolex:sense dicbio:entry_adiposo#sense1 .
 
 dicbio:etym_adiposo a etym:Etymology ;
     etym:etymon dicbio:etymon_adiposus ;
@@ -55,7 +55,7 @@ dicbio:form_adiposos a ontolex:Form ;
     lexinfo:number lexinfo:plural ;
     lexinfo:gender lexinfo:masculine .
 
-dicbio:sense_adiposo_1 a ontolex:LexicalSense ;
+dicbio:entry_adiposo#sense1 a ontolex:LexicalSense ;
     skos:definition "Que contém gordura."@pt ;
     etym:etymology dicbio:etym_adiposo .
 
@@ -73,7 +73,7 @@ dicbio:entry_angulado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_angulada,
         dicbio:form_anguladas,
         dicbio:form_angulados ;
-    ontolex:sense dicbio:sense_angulado_1 .
+    ontolex:sense dicbio:entry_angulado#sense1 .
 
 dicbio:etym_angulado a etym:Etymology ;
     etym:etymon dicbio:etymon_angulatus ;
@@ -100,7 +100,7 @@ dicbio:form_angulados a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "angulados"@pt .
 
-dicbio:sense_angulado_1 a ontolex:LexicalSense ;
+dicbio:entry_angulado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta ângulo; anguloso."@pt .
 
 #------------------------------------------------------------
@@ -117,7 +117,7 @@ dicbio:entry_antera a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_anteras,
         dicbio:form_anthera,
         dicbio:form_antheras ;
-    ontolex:sense dicbio:sense_antera_1 .
+    ontolex:sense dicbio:entry_antera#sense1 .
 
 dicbio:etym_antera a etym:Etymology ;
     etym:etymon dicbio:etymon_anthera ;
@@ -146,7 +146,7 @@ dicbio:form_antheras a ontolex:Form ;
         "Anthéras"@pt,
         "antheras"@pt .
 
-dicbio:sense_antera_1 a ontolex:LexicalSense ;
+dicbio:entry_antera#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que contém o pólen."@pt .
 
 #------------------------------------------------------------
@@ -163,7 +163,7 @@ dicbio:entry_arvore a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_arvore ;
     ontolex:otherForm dicbio:form_arvore,
         dicbio:form_arvores ;
-    ontolex:sense dicbio:sense_arvore_1 .
+    ontolex:sense dicbio:entry_arvore#sense1 .
 
 dicbio:etym_arvore a etym:Etymology ;
     etym:etymon dicbio:etymon_arborem ;
@@ -184,7 +184,7 @@ dicbio:form_arvores a ontolex:Form ;
     ontolex:writtenRep "Arvores"@pt,
         "arvores"@pt .
 
-dicbio:sense_arvore_1 a ontolex:LexicalSense ;
+dicbio:entry_arvore#sense1 a ontolex:LexicalSense ;
     skos:definition "Planta perene que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 
 #------------------------------------------------------------
@@ -201,9 +201,9 @@ dicbio:entry_auricula a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_auricula ;
     ontolex:otherForm dicbio:form_auricula,
         dicbio:form_auriculas ;
-    ontolex:sense dicbio:sense_auricula_1,
-        dicbio:sense_auricula_2,
-        dicbio:sense_auricula_3 .
+    ontolex:sense dicbio:entry_auricula#sense1,
+        dicbio:entry_auricula#sense2,
+        dicbio:entry_auricula#sense3 .
 
 dicbio:etym_auricula a etym:Etymology ;
     etym:etymon dicbio:etymon_auricula,
@@ -228,13 +228,13 @@ dicbio:form_auriculas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "auriculas"@pt .
 
-dicbio:sense_auricula_1 a ontolex:LexicalSense ;
+dicbio:entry_auricula#sense1 a ontolex:LexicalSense ;
     skos:definition "Cavidade superior dos ventrículos do coração."@pt .
 
-dicbio:sense_auricula_2 a ontolex:LexicalSense ;
+dicbio:entry_auricula#sense2 a ontolex:LexicalSense ;
     skos:definition "Orelha. "@pt .
 
-dicbio:sense_auricula_3 a ontolex:LexicalSense ;
+dicbio:entry_auricula#sense3 a ontolex:LexicalSense ;
     skos:definition "Estrutura anatômica em forma de orelha."@pt .
 
 #------------------------------------------------------------
@@ -250,7 +250,7 @@ dicbio:entry_balano a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_balano ;
     ontolex:otherForm dicbio:form_balano ;
-    ontolex:sense dicbio:sense_balano_1 .
+    ontolex:sense dicbio:entry_balano#sense1 .
 
 dicbio:etym_balano a etym:Etymology ;
     etym:etymon dicbio:etymon_balanus ;
@@ -265,7 +265,7 @@ dicbio:form_balano a ontolex:Form ;
     ontolex:writtenRep "Balano"@pt,
         "bálano"@pt .
 
-dicbio:sense_balano_1 a ontolex:LexicalSense ;
+dicbio:entry_balano#sense1 a ontolex:LexicalSense ;
     skos:definition "Cabeça do membro viril."@pt .
 
 #------------------------------------------------------------
@@ -280,7 +280,7 @@ dicbio:entry_bifido a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_bifido ;
     ontolex:otherForm dicbio:form_bifido,
         dicbio:form_bifidos ;
-    ontolex:sense dicbio:sense_bifido_1 .
+    ontolex:sense dicbio:entry_bifido#sense1 .
 
 dicbio:etym_bifido a etym:Etymology ;
     etym:etymon dicbio:etymon_bifidus ;
@@ -299,7 +299,7 @@ dicbio:form_bifidos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "bifidos"@pt .
 
-dicbio:sense_bifido_1 a ontolex:LexicalSense ;
+dicbio:entry_bifido#sense1 a ontolex:LexicalSense ;
     skos:definition "Dividido em duas partes, em geral na parte superior (diz-se de folhas, cirros e outras estruturas vegetais, bem como de palpos e outras estruturas dos insetos)."@pt .
 
 #------------------------------------------------------------
@@ -314,7 +314,7 @@ dicbio:entry_bile a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_bile ;
-    ontolex:sense dicbio:sense_bile_1 .
+    ontolex:sense dicbio:entry_bile#sense1 .
 
 dicbio:etym_bile a etym:Etymology ;
     etym:etymon dicbio:etymon_bilis ;
@@ -328,7 +328,7 @@ dicbio:etymon_bilis a etym:Etymon ;
 dicbio:form_bile a ontolex:Form ;
     ontolex:writtenRep "bile"@pt .
 
-dicbio:sense_bile_1 a ontolex:LexicalSense ;
+dicbio:entry_bile#sense1 a ontolex:LexicalSense ;
     skos:definition "Substância secretada pelo fígado que atua na digestão."@pt .
 
 #------------------------------------------------------------
@@ -344,7 +344,7 @@ dicbio:entry_botanica a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_botanica ;
     ontolex:otherForm dicbio:form_botanica ;
-    ontolex:sense dicbio:sense_botanica_1 .
+    ontolex:sense dicbio:entry_botanica#sense1 .
 
 dicbio:etym_botanica a etym:Etymology ;
     etym:etymon dicbio:etymon_botanica ;
@@ -361,7 +361,7 @@ dicbio:form_botanica a ontolex:Form ;
         "Botânica"@pt,
         "botanica"@pt .
 
-dicbio:sense_botanica_1 a ontolex:LexicalSense ;
+dicbio:entry_botanica#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da História Natural responsável pela descrição e estudo dos vegetais."@pt .
 
 #------------------------------------------------------------
@@ -377,7 +377,7 @@ dicbio:entry_bractea a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_bractea ;
     ontolex:otherForm dicbio:form_bractea,
         dicbio:form_bracteas ;
-    ontolex:sense dicbio:sense_bractea_1 .
+    ontolex:sense dicbio:entry_bractea#sense1 .
 
 dicbio:etym_bractea a etym:Etymology ;
     etym:etymon dicbio:etymon_bractea ;
@@ -400,7 +400,7 @@ dicbio:form_bracteas a ontolex:Form ;
         "bracteas"@pt,
         "bractéas"@pt .
 
-dicbio:sense_bractea_1 a ontolex:LexicalSense ;
+dicbio:entry_bractea#sense1 a ontolex:LexicalSense ;
     skos:definition "Folha anexa à flor da florada seguinte, que se diferencia, em certos aspectos, das demais folhas."@pt .
 
 #------------------------------------------------------------
@@ -416,7 +416,7 @@ dicbio:entry_branquia a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_branquia ;
     ontolex:otherForm dicbio:form_branchias ;
-    ontolex:sense dicbio:sense_branquia_1 .
+    ontolex:sense dicbio:entry_branquia#sense1 .
 
 dicbio:etym_branquia a etym:Etymology ;
     etym:etymon dicbio:etymon_branchia ;
@@ -434,7 +434,7 @@ dicbio:form_branchias a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "branchias"@pt .
 
-dicbio:sense_branquia_1 a ontolex:LexicalSense ;
+dicbio:entry_branquia#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão responsável pela respiração nos peixes e outros animais aquáticos; guelra."@pt .
 
 #------------------------------------------------------------
@@ -450,8 +450,8 @@ dicbio:entry_branquiostego a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_branquiostego ;
     ontolex:otherForm dicbio:form_branchiostega,
         dicbio:form_branchiostegos ;
-    ontolex:sense dicbio:sense_branquiostego_1,
-        dicbio:sense_branquiostego_2 .
+    ontolex:sense dicbio:entry_branquiostego#sense1,
+        dicbio:entry_branquiostego#sense2 .
 
 dicbio:etym_branquiostego a etym:Etymology ;
     etym:etymon dicbio:etymon_branchiostegus ;
@@ -473,10 +473,10 @@ dicbio:form_branchiostegos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "branchiostegos"@pt .
 
-dicbio:sense_branquiostego_1 a ontolex:LexicalSense ;
+dicbio:entry_branquiostego#sense1 a ontolex:LexicalSense ;
     skos:definition "Diz-se de certo grupo de peixes (o sentido exato é obscuro)."@pt .
 
-dicbio:sense_branquiostego_2 a ontolex:LexicalSense ;
+dicbio:entry_branquiostego#sense2 a ontolex:LexicalSense ;
     skos:definition "Relativo à abertura das brânquias."@pt .
 
 #------------------------------------------------------------
@@ -491,8 +491,8 @@ dicbio:entry_bulbo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_bulbo ;
     ontolex:otherForm dicbio:form_bulbos ;
-    ontolex:sense dicbio:sense_bulbo_1,
-        dicbio:sense_bulbo_2 .
+    ontolex:sense dicbio:entry_bulbo#sense1,
+        dicbio:entry_bulbo#sense2 .
 
 dicbio:etym_bulbo a etym:Etymology ;
     etym:etymon dicbio:etymon_bulbo_\(1\),
@@ -516,10 +516,10 @@ dicbio:form_bulbos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "bulbos"@pt .
 
-dicbio:sense_bulbo_1 a ontolex:LexicalSense ;
+dicbio:entry_bulbo#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão vegetal presente em certas plantas, que armazena nutrientes para a planta utilizar em época desfavorável."@pt .
 
-dicbio:sense_bulbo_2 a ontolex:LexicalSense ;
+dicbio:entry_bulbo#sense2 a ontolex:LexicalSense ;
     skos:definition "Estrutura anatômica semelhante a um bulbo (1), como o olho."@pt .
 
 #------------------------------------------------------------
@@ -535,7 +535,7 @@ dicbio:entry_bulboso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_bulbosa,
         dicbio:form_bulbosas,
         dicbio:form_bulbosos ;
-    ontolex:sense dicbio:sense_bulboso_1 .
+    ontolex:sense dicbio:entry_bulboso#sense1 .
 
 dicbio:etym_bulboso a etym:Etymology ;
     etym:etymon dicbio:etymon_bulbosus ;
@@ -561,7 +561,7 @@ dicbio:form_bulbosos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "bulbosos"@pt .
 
-dicbio:sense_bulboso_1 a ontolex:LexicalSense ;
+dicbio:entry_bulboso#sense1 a ontolex:LexicalSense ;
     skos:definition "Que tem forma de bulbo."@pt .
 
 #------------------------------------------------------------
@@ -582,7 +582,7 @@ dicbio:entry_calice a ontolex:LexicalEntry ;
         dicbio:form_calys,
         dicbio:form_calyx,
         dicbio:form_calyz ;
-    ontolex:sense dicbio:sense_calice_1 .
+    ontolex:sense dicbio:entry_calice#sense1 .
 
 dicbio:etym_calice a etym:Etymology ;
     etym:etymon dicbio:etymon_calyx ;
@@ -624,7 +624,7 @@ dicbio:form_calyz a ontolex:Form ;
         "Calyz"@pt,
         "calyz"@pt .
 
-dicbio:sense_calice_1 a ontolex:LexicalSense ;
+dicbio:entry_calice#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que cerca a corola, o estame e o pistilo, formado pelas sépalas, e em geral de cor verde."@pt .
 
 #------------------------------------------------------------
@@ -640,7 +640,7 @@ dicbio:entry_canaliculado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_canaliculado ;
     ontolex:otherForm dicbio:form_canaliculada,
         dicbio:form_canaliculadas ;
-    ontolex:sense dicbio:sense_canaliculado_1 .
+    ontolex:sense dicbio:entry_canaliculado#sense1 .
 
 dicbio:etym_canaliculado a etym:Etymology ;
     etym:etymon dicbio:etymon_canaliculatus ;
@@ -663,7 +663,7 @@ dicbio:form_canaliculadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "Canaliculadas"@pt .
 
-dicbio:sense_canaliculado_1 a ontolex:LexicalSense ;
+dicbio:entry_canaliculado#sense1 a ontolex:LexicalSense ;
     skos:definition "Provido de um pequeno canal."@pt .
 
 #------------------------------------------------------------
@@ -678,7 +678,7 @@ dicbio:entry_capreolo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_capreolo ;
     ontolex:otherForm dicbio:form_capreolos ;
-    ontolex:sense dicbio:sense_capreolo_1 .
+    ontolex:sense dicbio:entry_capreolo#sense1 .
 
 dicbio:etym_capreolo a etym:Etymology ;
     etym:etymon dicbio:etymon_capreolus ;
@@ -696,7 +696,7 @@ dicbio:form_capreolos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "capreolos"@pt .
 
-dicbio:sense_capreolo_1 a ontolex:LexicalSense ;
+dicbio:entry_capreolo#sense1 a ontolex:LexicalSense ;
     skos:definition "O mesmo que cirro (acepção 2)."@pt .
 
 #------------------------------------------------------------
@@ -713,8 +713,8 @@ dicbio:entry_capsula a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_capsula ;
     ontolex:otherForm dicbio:form_capsula,
         dicbio:form_capsulas ;
-    ontolex:sense dicbio:sense_capsula_1,
-        dicbio:sense_capsula_2 .
+    ontolex:sense dicbio:entry_capsula#sense1,
+        dicbio:entry_capsula#sense2 .
 
 dicbio:etym_capsula a etym:Etymology ;
     etym:etymon dicbio:etymon_capsula ;
@@ -734,10 +734,10 @@ dicbio:form_capsulas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "capsulas"@pt .
 
-dicbio:sense_capsula_1 a ontolex:LexicalSense ;
+dicbio:entry_capsula#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana que envolve certas estruturas anatômicas."@pt .
 
-dicbio:sense_capsula_2 a ontolex:LexicalSense ;
+dicbio:entry_capsula#sense2 a ontolex:LexicalSense ;
     skos:definition "Espécie de pericarpo côncavo."@pt .
 
 #------------------------------------------------------------
@@ -754,7 +754,7 @@ dicbio:entry_carotida a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_carotida ;
     ontolex:otherForm dicbio:form_carotida,
         dicbio:form_carotidas ;
-    ontolex:sense dicbio:sense_carotida_1 .
+    ontolex:sense dicbio:entry_carotida#sense1 .
 
 dicbio:etym_carotida a etym:Etymology ;
     etym:etymon dicbio:etymon_carotides ;
@@ -776,7 +776,7 @@ dicbio:form_carotidas a ontolex:Form ;
     ontolex:writtenRep "Carotidas"@pt,
         "carotidas"@pt .
 
-dicbio:sense_carotida_1 a ontolex:LexicalSense ;
+dicbio:entry_carotida#sense1 a ontolex:LexicalSense ;
     skos:definition "Cada uma das artérias que conduzem o sangue ao cérebro."@pt .
 
 #------------------------------------------------------------
@@ -790,7 +790,7 @@ dicbio:entry_carpo a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_carpo ;
-    ontolex:sense dicbio:sense_carpo_1 .
+    ontolex:sense dicbio:entry_carpo#sense1 .
 
 dicbio:etym_carpo a etym:Etymology ;
     etym:etymon dicbio:etymon_carpus ;
@@ -804,7 +804,7 @@ dicbio:etymon_carpus a etym:Etymon ;
 dicbio:form_carpo a ontolex:Form ;
     ontolex:writtenRep "carpo"@pt .
 
-dicbio:sense_carpo_1 a ontolex:LexicalSense ;
+dicbio:entry_carpo#sense1 a ontolex:LexicalSense ;
     skos:definition "Punho."@pt .
 
 #------------------------------------------------------------
@@ -819,7 +819,7 @@ dicbio:entry_cartilagineo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_cartilagineo ;
     ontolex:otherForm dicbio:form_cartilaginea,
         dicbio:form_cartilagineas ;
-    ontolex:sense dicbio:sense_cartilagineo_1 .
+    ontolex:sense dicbio:entry_cartilagineo#sense1 .
 
 dicbio:etym_cartilagineo a etym:Etymology ;
     etym:etymon dicbio:etymon_cartilagineus ;
@@ -841,7 +841,7 @@ dicbio:form_cartilagineas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "cartilagineas"@pt .
 
-dicbio:sense_cartilagineo_1 a ontolex:LexicalSense ;
+dicbio:entry_cartilagineo#sense1 a ontolex:LexicalSense ;
     skos:definition "Semelhante a uma cartilagem (diz-se de estrutura vegetal ou animal)."@pt .
 
 #------------------------------------------------------------
@@ -858,9 +858,9 @@ dicbio:entry_caruncula a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_caruncula ;
     ontolex:otherForm dicbio:form_caruncula,
         dicbio:form_carunculas ;
-    ontolex:sense dicbio:sense_caruncula_1,
-        dicbio:sense_caruncula_2,
-        dicbio:sense_caruncula_3 .
+    ontolex:sense dicbio:entry_caruncula#sense1,
+        dicbio:entry_caruncula#sense2,
+        dicbio:entry_caruncula#sense3 .
 
 dicbio:etym_caruncula a etym:Etymology ;
     etym:etymon dicbio:etymon_caruncula,
@@ -886,13 +886,13 @@ dicbio:form_carunculas a ontolex:Form ;
     ontolex:writtenRep "Carunculas"@pt,
         "carunculas"@pt .
 
-dicbio:sense_caruncula_1 a ontolex:LexicalSense ;
+dicbio:entry_caruncula#sense1 a ontolex:LexicalSense ;
     skos:definition "Protuberância existente no corpo de certos animais."@pt .
 
-dicbio:sense_caruncula_2 a ontolex:LexicalSense ;
+dicbio:entry_caruncula#sense2 a ontolex:LexicalSense ;
     skos:definition "Redução de \"carúncula seminal\"."@pt .
 
-dicbio:sense_caruncula_3 a ontolex:LexicalSense ;
+dicbio:entry_caruncula#sense3 a ontolex:LexicalSense ;
     skos:definition "O mesmo que \"papila renal\" ou \"papila dos rins\"."@pt .
 
 #------------------------------------------------------------
@@ -908,7 +908,7 @@ dicbio:entry_caule a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_caule ;
     ontolex:otherForm dicbio:form_caules ;
-    ontolex:sense dicbio:sense_caule_1 .
+    ontolex:sense dicbio:entry_caule#sense1 .
 
 dicbio:etym_caule a etym:Etymology ;
     etym:etymon dicbio:etymon_caulis ;
@@ -926,7 +926,7 @@ dicbio:form_caules a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "caules"@pt .
 
-dicbio:sense_caule_1 a ontolex:LexicalSense ;
+dicbio:entry_caule#sense1 a ontolex:LexicalSense ;
     skos:definition "Tronco das plantas herbáceas e similares."@pt .
 
 #------------------------------------------------------------
@@ -941,7 +941,7 @@ dicbio:entry_cibario a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cibario ;
     ontolex:otherForm dicbio:form_cibarios ;
-    ontolex:sense dicbio:sense_cibario_1 .
+    ontolex:sense dicbio:entry_cibario#sense1 .
 
 dicbio:etym_cibario a etym:Etymology ;
     etym:etymon dicbio:etymon_cibarius ;
@@ -959,7 +959,7 @@ dicbio:form_cibarios a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "cibarios"@pt .
 
-dicbio:sense_cibario_1 a ontolex:LexicalSense ;
+dicbio:entry_cibario#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo à alimentação dos animais."@pt .
 
 #------------------------------------------------------------
@@ -976,7 +976,7 @@ dicbio:entry_ciliado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_ciliada,
         dicbio:form_ciliadas,
         dicbio:form_ciliados ;
-    ontolex:sense dicbio:sense_ciliado_1 .
+    ontolex:sense dicbio:entry_ciliado#sense1 .
 
 dicbio:etym_ciliado a etym:Etymology ;
     etym:etymon dicbio:etymon_ciliatus ;
@@ -1003,7 +1003,7 @@ dicbio:form_ciliados a ontolex:Form ;
     ontolex:writtenRep "Ciliados"@pt,
         "ciliados"@pt .
 
-dicbio:sense_ciliado_1 a ontolex:LexicalSense ;
+dicbio:entry_ciliado#sense1 a ontolex:LexicalSense ;
     skos:definition "Provido de, ou em forma de cílios."@pt .
 
 #------------------------------------------------------------
@@ -1020,8 +1020,8 @@ dicbio:entry_cirro a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_cirrho,
         dicbio:form_cirrhos,
         dicbio:form_cirros ;
-    ontolex:sense dicbio:sense_cirro_1,
-        dicbio:sense_cirro_2 .
+    ontolex:sense dicbio:entry_cirro#sense1,
+        dicbio:entry_cirro#sense2 .
 
 dicbio:etym_cirro a etym:Etymology ;
     etym:etymon dicbio:etymon_cirrus ;
@@ -1046,10 +1046,10 @@ dicbio:form_cirros a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "cirros"@pt .
 
-dicbio:sense_cirro_1 a ontolex:LexicalSense ;
+dicbio:entry_cirro#sense1 a ontolex:LexicalSense ;
     skos:definition "Apêndice filiforme presente em certos animais como peixes e moluscos."@pt .
 
-dicbio:sense_cirro_2 a ontolex:LexicalSense ;
+dicbio:entry_cirro#sense2 a ontolex:LexicalSense ;
     skos:definition "Apêndice em espiral pelo qual a planta se une a outros corpos."@pt .
 
 #------------------------------------------------------------
@@ -1064,7 +1064,7 @@ dicbio:entry_cistico a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cistico ;
     ontolex:otherForm dicbio:form_cistica ;
-    ontolex:sense dicbio:sense_cistico_1 .
+    ontolex:sense dicbio:entry_cistico#sense1 .
 
 dicbio:etym_cistico a etym:Etymology ;
     etym:etymon dicbio:etymon_cysticus ;
@@ -1082,7 +1082,7 @@ dicbio:form_cistica a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "cistica"@pt .
 
-dicbio:sense_cistico_1 a ontolex:LexicalSense ;
+dicbio:entry_cistico#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo a cisto (diz-se de bile)."@pt .
 
 #------------------------------------------------------------
@@ -1099,7 +1099,7 @@ dicbio:entry_clitoris a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_clitoris ;
     ontolex:otherForm dicbio:form_clitoris,
         dicbio:form_clytoris ;
-    ontolex:sense dicbio:sense_clitoris_1 .
+    ontolex:sense dicbio:entry_clitoris#sense1 .
 
 dicbio:etym_clitoris a etym:Etymology ;
     etym:etymon dicbio:etymon_clitoris ;
@@ -1118,7 +1118,7 @@ dicbio:form_clitoris a ontolex:Form ;
 dicbio:form_clytoris a ontolex:Form ;
     ontolex:writtenRep "clytoris"@pt .
 
-dicbio:sense_clitoris_1 a ontolex:LexicalSense ;
+dicbio:entry_clitoris#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão de formato roliço presente na parte superior das pudendas da mulher."@pt .
 
 #------------------------------------------------------------
@@ -1131,7 +1131,7 @@ dicbio:entry_coarctado a ontolex:LexicalEntry ;
     dcterms:creator author:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_coarctado ;
-    ontolex:sense dicbio:sense_coarctado_1 .
+    ontolex:sense dicbio:entry_coarctado#sense1 .
 
 dicbio:etym_coarctado a etym:Etymology ;
     etym:etymon dicbio:etymon_coarctatus ;
@@ -1145,7 +1145,7 @@ dicbio:etymon_coarctatus a etym:Etymon ;
 dicbio:form_coarctado a ontolex:Form ;
     ontolex:writtenRep "coarctado"@pt .
 
-dicbio:sense_coarctado_1 a ontolex:LexicalSense ;
+dicbio:entry_coarctado#sense1 a ontolex:LexicalSense ;
     skos:definition "Apertado, restringido; cujas estruturas são muito próximas entre si."@pt .
 
 #------------------------------------------------------------
@@ -1161,7 +1161,7 @@ dicbio:entry_coccix a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_coccix ;
     ontolex:otherForm dicbio:form_coccyx ;
-    ontolex:sense dicbio:sense_coccix_1 .
+    ontolex:sense dicbio:entry_coccix#sense1 .
 
 dicbio:etym_coccix a etym:Etymology ;
     etym:etymon dicbio:etymon_coccyx ;
@@ -1178,7 +1178,7 @@ dicbio:form_coccix a ontolex:Form ;
 dicbio:form_coccyx a ontolex:Form ;
     ontolex:writtenRep "coccyx"@pt .
 
-dicbio:sense_coccix_1 a ontolex:LexicalSense ;
+dicbio:entry_coccix#sense1 a ontolex:LexicalSense ;
     skos:definition "Pequeno osso triangular localizado na base da coluna vertebral."@pt .
 
 #------------------------------------------------------------
@@ -1196,7 +1196,7 @@ dicbio:entry_concameracao a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_concameracao,
         dicbio:form_concameracoens,
         dicbio:form_concameracoes ;
-    ontolex:sense dicbio:sense_concameracao_1 .
+    ontolex:sense dicbio:entry_concameracao#sense1 .
 
 dicbio:etym_concameracao a etym:Etymology ;
     etym:etymon dicbio:etymon_concameratio ;
@@ -1219,7 +1219,7 @@ dicbio:form_concameracoes a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "concamerações"@pt .
 
-dicbio:sense_concameracao_1 a ontolex:LexicalSense ;
+dicbio:entry_concameracao#sense1 a ontolex:LexicalSense ;
     skos:definition "Cavidade em forma de abóbada presente em estruturas animais e vegetais."@pt .
 
 #------------------------------------------------------------
@@ -1234,7 +1234,7 @@ dicbio:entry_conivente a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_conivente ;
     ontolex:otherForm dicbio:form_connivente,
         dicbio:form_conniventes ;
-    ontolex:sense dicbio:sense_conivente_1 .
+    ontolex:sense dicbio:entry_conivente#sense1 .
 
 dicbio:etym_conivente a etym:Etymology ;
     etym:etymon dicbio:etymon_connivens ;
@@ -1255,7 +1255,7 @@ dicbio:form_conniventes a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "conniventes"@pt .
 
-dicbio:sense_conivente_1 a ontolex:LexicalSense ;
+dicbio:entry_conivente#sense1 a ontolex:LexicalSense ;
     skos:definition "Cujas extremidades se aproximam ou se tocam (diz-se de estruturas vegetais, como folhas, ou animais, como unhas)."@pt .
 
 #------------------------------------------------------------
@@ -1270,7 +1270,7 @@ dicbio:entry_corolula a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_corolula ;
     ontolex:otherForm dicbio:form_corollulas ;
-    ontolex:sense dicbio:sense_corolula_1 .
+    ontolex:sense dicbio:entry_corolula#sense1 .
 
 dicbio:etym_corolula a etym:Etymology ;
     etym:etymon dicbio:etymon_corollula ;
@@ -1288,7 +1288,7 @@ dicbio:form_corollulas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "corollulas"@pt .
 
-dicbio:sense_corolula_1 a ontolex:LexicalSense ;
+dicbio:entry_corolula#sense1 a ontolex:LexicalSense ;
     skos:definition "Corola pequena."@pt .
 
 #------------------------------------------------------------
@@ -1304,7 +1304,7 @@ dicbio:entry_coronario a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_coronario ;
     ontolex:otherForm dicbio:form_coronarias,
         dicbio:form_coronarios ;
-    ontolex:sense dicbio:sense_coronario_1 .
+    ontolex:sense dicbio:entry_coronario#sense1 .
 
 dicbio:etym_coronario a etym:Etymology ;
     etym:etymon dicbio:etymon_coronarius ;
@@ -1327,7 +1327,7 @@ dicbio:form_coronarios a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "coronarios"@pt .
 
-dicbio:sense_coronario_1 a ontolex:LexicalSense ;
+dicbio:entry_coronario#sense1 a ontolex:LexicalSense ;
     skos:definition "Que se dispõe em forma de coroa sobre o coração (diz-se de vasos sanguíneos)."@pt .
 
 #------------------------------------------------------------
@@ -1344,7 +1344,7 @@ dicbio:entry_cotiledone a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_cotyledon,
         dicbio:form_cotyledone,
         dicbio:form_cotyledones ;
-    ontolex:sense dicbio:sense_cotiledone_1 .
+    ontolex:sense dicbio:entry_cotiledone#sense1 .
 
 dicbio:etym_cotiledone a etym:Etymology ;
     etym:etymon dicbio:etymon_cotyledon ;
@@ -1369,7 +1369,7 @@ dicbio:form_cotyledones a ontolex:Form ;
     ontolex:writtenRep "cotyledones"@pt,
         "cotylédones"@pt .
 
-dicbio:sense_cotiledone_1 a ontolex:LexicalSense ;
+dicbio:entry_cotiledone#sense1 a ontolex:LexicalSense ;
     skos:definition "Folha que se forma no embrião de certas plantas e que serve para nutrir o desenvolvimento da planta."@pt .
 
 #------------------------------------------------------------
@@ -1384,7 +1384,7 @@ dicbio:entry_crena a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_crena ;
     ontolex:otherForm dicbio:form_crenas ;
-    ontolex:sense dicbio:sense_crena_1 .
+    ontolex:sense dicbio:entry_crena#sense1 .
 
 dicbio:etym_crena a etym:Etymology ;
     etym:etymon dicbio:etymon_crena ;
@@ -1402,7 +1402,7 @@ dicbio:form_crenas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "crenas"@pt .
 
-dicbio:sense_crena_1 a ontolex:LexicalSense ;
+dicbio:entry_crena#sense1 a ontolex:LexicalSense ;
     skos:definition "Incisura perpendicular obtusa na margem de certas folhas."@pt .
 
 #------------------------------------------------------------
@@ -1417,7 +1417,7 @@ dicbio:entry_cuticula a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_cuticula ;
     ontolex:otherForm dicbio:form_cuticula ;
-    ontolex:sense dicbio:sense_cuticula_1 .
+    ontolex:sense dicbio:entry_cuticula#sense1 .
 
 dicbio:etym_cuticula a etym:Etymology ;
     etym:etymon dicbio:etymon_cuticula ;
@@ -1432,7 +1432,7 @@ dicbio:form_cuticula a ontolex:Form ;
     ontolex:writtenRep "cuticula"@pt,
         "cutícula"@pt .
 
-dicbio:sense_cuticula_1 a ontolex:LexicalSense ;
+dicbio:entry_cuticula#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana que reveste a raiz das plantas, por cima da casca."@pt .
 
 #------------------------------------------------------------
@@ -1446,7 +1446,7 @@ dicbio:entry_deflexo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_deflexo ;
     ontolex:otherForm dicbio:form_deflexos ;
-    ontolex:sense dicbio:sense_deflexo_1 .
+    ontolex:sense dicbio:entry_deflexo#sense1 .
 
 dicbio:etym_deflexo a etym:Etymology ;
     etym:etymon dicbio:etymon_deflexus ;
@@ -1464,7 +1464,7 @@ dicbio:form_deflexos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "deflexos"@pt .
 
-dicbio:sense_deflexo_1 a ontolex:LexicalSense ;
+dicbio:entry_deflexo#sense1 a ontolex:LexicalSense ;
     skos:definition "Encurvado para a parte inferior (diz-se de ramo)."@pt .
 
 #------------------------------------------------------------
@@ -1481,7 +1481,7 @@ dicbio:entry_deltoide a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_deltoide ;
     ontolex:otherForm dicbio:form_deltoides,
         dicbio:form_deltoydes ;
-    ontolex:sense dicbio:sense_deltoide_1 .
+    ontolex:sense dicbio:entry_deltoide#sense1 .
 
 dicbio:etym_deltoide a etym:Etymology ;
     etym:etymon dicbio:etymon_deltoides ;
@@ -1502,7 +1502,7 @@ dicbio:form_deltoides a ontolex:Form ;
 dicbio:form_deltoydes a ontolex:Form ;
     ontolex:writtenRep "Deltoydes"@pt .
 
-dicbio:sense_deltoide_1 a ontolex:LexicalSense ;
+dicbio:entry_deltoide#sense1 a ontolex:LexicalSense ;
     skos:definition "Músculo em forma de triângulo situado no ombro."@pt .
 
 #------------------------------------------------------------
@@ -1517,7 +1517,7 @@ dicbio:entry_desenvolucao a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_desenvolucao ;
     ontolex:otherForm dicbio:form_desenvolucao ;
-    ontolex:sense dicbio:sense_desenvolucao_1 .
+    ontolex:sense dicbio:entry_desenvolucao#sense1 .
 
 dicbio:etym_desenvolucao a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_desenvolver_+_-cao> ;
@@ -1532,7 +1532,7 @@ dicbio:form_desenvolucao a ontolex:Form ;
     ontolex:writtenRep "desenvoluçaõ"@pt,
         "desenvolução"@pt .
 
-dicbio:sense_desenvolucao_1 a ontolex:LexicalSense ;
+dicbio:entry_desenvolucao#sense1 a ontolex:LexicalSense ;
     skos:definition "Ação de desenvolver; desenvolvimento."@pt .
 
 #------------------------------------------------------------
@@ -1549,8 +1549,8 @@ dicbio:entry_diafragma a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_diafragma ;
     ontolex:otherForm dicbio:form_diafragmas,
         dicbio:form_diaphragma ;
-    ontolex:sense dicbio:sense_diafragma_1,
-        dicbio:sense_diafragma_2 .
+    ontolex:sense dicbio:entry_diafragma#sense1,
+        dicbio:entry_diafragma#sense2 .
 
 dicbio:etym_diafragma a etym:Etymology ;
     etym:etymon dicbio:etymon_diaphragma ;
@@ -1572,10 +1572,10 @@ dicbio:form_diaphragma a ontolex:Form ;
     ontolex:writtenRep "Diaphragma"@pt,
         "diaphragma"@pt .
 
-dicbio:sense_diafragma_1 a ontolex:LexicalSense ;
+dicbio:entry_diafragma#sense1 a ontolex:LexicalSense ;
     skos:definition "Músculo em formato de abóbada que separa a região torácica do abdome."@pt .
 
-dicbio:sense_diafragma_2 a ontolex:LexicalSense ;
+dicbio:entry_diafragma#sense2 a ontolex:LexicalSense ;
     skos:definition "Membrana que separa duas ou mais cavidades, em certos animais (como moluscos) e vegetais (como cavidades em frutos)."@pt .
 
 #------------------------------------------------------------
@@ -1592,8 +1592,8 @@ dicbio:entry_digitado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_digitada,
         dicbio:form_digitadas,
         dicbio:form_digitados ;
-    ontolex:sense dicbio:sense_digitado_1,
-        dicbio:sense_digitado_2 .
+    ontolex:sense dicbio:entry_digitado#sense1,
+        dicbio:entry_digitado#sense2 .
 
 dicbio:etym_digitado a etym:Etymology ;
     etym:etymon dicbio:etymon_digitatus ;
@@ -1621,10 +1621,10 @@ dicbio:form_digitados a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "digitados"@pt .
 
-dicbio:sense_digitado_1 a ontolex:LexicalSense ;
+dicbio:entry_digitado#sense1 a ontolex:LexicalSense ;
     skos:definition "Cujo pecíolo reúne em seu ápice várias folhas menores (diz-se de folha composta)."@pt .
 
-dicbio:sense_digitado_2 a ontolex:LexicalSense ;
+dicbio:entry_digitado#sense2 a ontolex:LexicalSense ;
     skos:definition "Com divisões semelhantes aos dedos da mão (diz-se de asa de inseto)."@pt .
 
 #------------------------------------------------------------
@@ -1638,9 +1638,9 @@ dicbio:entry_disco a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_disco ;
-    ontolex:sense dicbio:sense_disco_1,
-        dicbio:sense_disco_2,
-        dicbio:sense_disco_3 .
+    ontolex:sense dicbio:entry_disco#sense1,
+        dicbio:entry_disco#sense2,
+        dicbio:entry_disco#sense3 .
 
 dicbio:etym_disco a etym:Etymology ;
     etym:etymon dicbio:etymon_discus ;
@@ -1654,13 +1654,13 @@ dicbio:etymon_discus a etym:Etymon ;
 dicbio:form_disco a ontolex:Form ;
     ontolex:writtenRep "disco"@pt .
 
-dicbio:sense_disco_1 a ontolex:LexicalSense ;
+dicbio:entry_disco#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura em forma de disco localizada no centro do receptáculo."@pt .
 
-dicbio:sense_disco_2 a ontolex:LexicalSense ;
+dicbio:entry_disco#sense2 a ontolex:LexicalSense ;
     skos:definition "Parte central de certas folhas."@pt .
 
-dicbio:sense_disco_3 a ontolex:LexicalSense ;
+dicbio:entry_disco#sense3 a ontolex:LexicalSense ;
     skos:definition "Parte central das valvas de certos moluscos."@pt .
 
 #------------------------------------------------------------
@@ -1674,7 +1674,7 @@ dicbio:entry_dorsal a ontolex:LexicalEntry ;
         author:marimeire_barros ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_dorsal ;
-    ontolex:sense dicbio:sense_dorsal_1 .
+    ontolex:sense dicbio:entry_dorsal#sense1 .
 
 dicbio:etym_dorsal a etym:Etymology ;
     etym:etymon dicbio:etymon_dorsalis ;
@@ -1688,7 +1688,7 @@ dicbio:etymon_dorsalis a etym:Etymon ;
 dicbio:form_dorsal a ontolex:Form ;
     ontolex:writtenRep "dorsal"@pt .
 
-dicbio:sense_dorsal_1 a ontolex:LexicalSense ;
+dicbio:entry_dorsal#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo ao dorso."@pt .
 
 #------------------------------------------------------------
@@ -1703,7 +1703,7 @@ dicbio:entry_elongado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_elongado ;
     ontolex:otherForm dicbio:form_elongada ;
-    ontolex:sense dicbio:sense_elongado_1 .
+    ontolex:sense dicbio:entry_elongado#sense1 .
 
 dicbio:etym_elongado a etym:Etymology ;
     etym:etymon dicbio:etymon_elongatus ;
@@ -1721,7 +1721,7 @@ dicbio:form_elongada a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "elongada"@pt .
 
-dicbio:sense_elongado_1 a ontolex:LexicalSense ;
+dicbio:entry_elongado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que se alonga, que é comprido."@pt .
 
 #------------------------------------------------------------
@@ -1736,7 +1736,7 @@ dicbio:entry_emarginado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_emarginado ;
     ontolex:otherForm dicbio:form_emarginados ;
-    ontolex:sense dicbio:sense_emarginado_1 .
+    ontolex:sense dicbio:entry_emarginado#sense1 .
 
 dicbio:etym_emarginado a etym:Etymology ;
     etym:etymon dicbio:etymon_emarginatus ;
@@ -1754,7 +1754,7 @@ dicbio:form_emarginados a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "emarginados"@pt .
 
-dicbio:sense_emarginado_1 a ontolex:LexicalSense ;
+dicbio:entry_emarginado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta recorte (em sua maioria) curvo na ponta (diz-se de folha).        "@pt .
 
 #------------------------------------------------------------
@@ -1771,7 +1771,7 @@ dicbio:entry_enovelado a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_ennovelada,
         dicbio:form_ennoveladas,
         dicbio:form_ennovellada ;
-    ontolex:sense dicbio:sense_enovelado_1 .
+    ontolex:sense dicbio:entry_enovelado#sense1 .
 
 dicbio:etym_enovelado a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> ;
@@ -1797,7 +1797,7 @@ dicbio:form_ennovellada a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "Ennovellada"@pt .
 
-dicbio:sense_enovelado_1 a ontolex:LexicalSense ;
+dicbio:entry_enovelado#sense1 a ontolex:LexicalSense ;
     skos:definition "Enrolado ou emaranhado em forma de novelo."@pt .
 
 #------------------------------------------------------------
@@ -1811,7 +1811,7 @@ dicbio:entry_ensiforme a ontolex:LexicalEntry ;
         author:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ensiforme ;
-    ontolex:sense dicbio:sense_ensiforme_1 .
+    ontolex:sense dicbio:entry_ensiforme#sense1 .
 
 dicbio:etym_ensiforme a etym:Etymology ;
     etym:etymon dicbio:etymon_ensiformis ;
@@ -1825,7 +1825,7 @@ dicbio:etymon_ensiformis a etym:Etymon ;
 dicbio:form_ensiforme a ontolex:Form ;
     ontolex:writtenRep "ensiforme"@pt .
 
-dicbio:sense_ensiforme_1 a ontolex:LexicalSense ;
+dicbio:entry_ensiforme#sense1 a ontolex:LexicalSense ;
     skos:definition "Em forma de espada."@pt .
 
 #------------------------------------------------------------
@@ -1840,7 +1840,7 @@ dicbio:entry_entrecortado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_entrecortado ;
     ontolex:otherForm dicbio:form_entrecortadas ;
-    ontolex:sense dicbio:sense_entrecortado_1 .
+    ontolex:sense dicbio:entry_entrecortado#sense1 .
 
 dicbio:etym_entrecortado a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_entrecortar_+_-ado> ;
@@ -1858,7 +1858,7 @@ dicbio:form_entrecortadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "entrecortadas"@pt .
 
-dicbio:sense_entrecortado_1 a ontolex:LexicalSense ;
+dicbio:entry_entrecortado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que se entrecortou."@pt .
 
 #------------------------------------------------------------
@@ -1872,8 +1872,8 @@ dicbio:entry_epiderme a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_epiderme ;
-    ontolex:sense dicbio:sense_epiderme_1,
-        dicbio:sense_epiderme_2 .
+    ontolex:sense dicbio:entry_epiderme#sense1,
+        dicbio:entry_epiderme#sense2 .
 
 dicbio:etym_epiderme a etym:Etymology ;
     etym:etymon dicbio:etymon_epidermis ;
@@ -1887,10 +1887,10 @@ dicbio:etymon_epidermis a etym:Etymon ;
 dicbio:form_epiderme a ontolex:Form ;
     ontolex:writtenRep "epiderme"@pt .
 
-dicbio:sense_epiderme_1 a ontolex:LexicalSense ;
+dicbio:entry_epiderme#sense1 a ontolex:LexicalSense ;
     skos:definition "Camada de revestimento da raiz ou do caule de uma planta; cutícula."@pt .
 
-dicbio:sense_epiderme_2 a ontolex:LexicalSense ;
+dicbio:entry_epiderme#sense2 a ontolex:LexicalSense ;
     skos:definition "Membrana que reveste as conchas de certos moluscos."@pt .
 
 #------------------------------------------------------------
@@ -1906,7 +1906,7 @@ dicbio:entry_epigastrio a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_epigastrio ;
     ontolex:otherForm dicbio:form_epigastrio ;
-    ontolex:sense dicbio:sense_epigastrio_1 .
+    ontolex:sense dicbio:entry_epigastrio#sense1 .
 
 dicbio:etym_epigastrio a etym:Etymology ;
     etym:etymon dicbio:etymon_epigastrium ;
@@ -1922,7 +1922,7 @@ dicbio:form_epigastrio a ontolex:Form ;
         "epigastrio"@pt,
         "epigástrio"@pt .
 
-dicbio:sense_epigastrio_1 a ontolex:LexicalSense ;
+dicbio:entry_epigastrio#sense1 a ontolex:LexicalSense ;
     skos:definition "Região do abdômen situada abaixo do diafragma, terminando um pouco acima do umbigo."@pt .
 
 #------------------------------------------------------------
@@ -1937,7 +1937,7 @@ dicbio:entry_escamoso a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_escamoso ;
     ontolex:otherForm dicbio:form_escamosa,
         dicbio:form_escamosos ;
-    ontolex:sense dicbio:sense_escamoso_1 .
+    ontolex:sense dicbio:entry_escamoso#sense1 .
 
 dicbio:etym_escamoso a etym:Etymology ;
     etym:etymon dicbio:etymon_squamosus ;
@@ -1959,7 +1959,7 @@ dicbio:form_escamosa a ontolex:Form ;
 dicbio:form_escamosos a ontolex:Form ;
     ontolex:writtenRep "Escamosos"@pt .
 
-dicbio:sense_escamoso_1 a ontolex:LexicalSense ;
+dicbio:entry_escamoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Coberto de escamas (diz-se de pele animal ou de raiz vegetal)."@pt .
 
 #------------------------------------------------------------
@@ -1975,7 +1975,7 @@ dicbio:entry_escroto a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_escroto ;
     ontolex:otherForm dicbio:form_scroto ;
-    ontolex:sense dicbio:sense_escroto_1 .
+    ontolex:sense dicbio:entry_escroto#sense1 .
 
 dicbio:etym_escroto a etym:Etymology ;
     etym:etymon dicbio:etymon_scrotum ;
@@ -1992,7 +1992,7 @@ dicbio:form_escroto a ontolex:Form ;
 dicbio:form_scroto a ontolex:Form ;
     ontolex:writtenRep "scroto"@pt .
 
-dicbio:sense_escroto_1 a ontolex:LexicalSense ;
+dicbio:entry_escroto#sense1 a ontolex:LexicalSense ;
     skos:definition "Saco localizado abaixo do pênis, que contém os testículos."@pt .
 
 #------------------------------------------------------------
@@ -2009,7 +2009,7 @@ dicbio:entry_esofago a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_esofago ;
     ontolex:otherForm dicbio:form_ezofago,
         dicbio:form_isophago ;
-    ontolex:sense dicbio:sense_esofago_1 .
+    ontolex:sense dicbio:entry_esofago#sense1 .
 
 dicbio:etym_esofago a etym:Etymology ;
     etym:etymon dicbio:etymon_oesophagus ;
@@ -2030,7 +2030,7 @@ dicbio:form_isophago a ontolex:Form ;
     ontolex:writtenRep "Isophago"@pt,
         "isophago"@pt .
 
-dicbio:sense_esofago_1 a ontolex:LexicalSense ;
+dicbio:entry_esofago#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão muscular, parte do tubo digestivo, que liga a faringe ao estômago."@pt .
 
 #------------------------------------------------------------
@@ -2045,7 +2045,7 @@ dicbio:entry_estame a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estame ;
     ontolex:otherForm dicbio:form_estames ;
-    ontolex:sense dicbio:sense_estame_1 .
+    ontolex:sense dicbio:entry_estame#sense1 .
 
 dicbio:etym_estame a etym:Etymology ;
     etym:etymon dicbio:etymon_stamen ;
@@ -2064,7 +2064,7 @@ dicbio:form_estames a ontolex:Form ;
     ontolex:writtenRep "Estames"@pt,
         "estames"@pt .
 
-dicbio:sense_estame_1 a ontolex:LexicalSense ;
+dicbio:entry_estame#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura correspondente ao órgão masculino das flores, formado por um filamento que sustenta a antera, onde se localiza o pólen."@pt .
 
 #------------------------------------------------------------
@@ -2079,7 +2079,7 @@ dicbio:entry_estigma a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estigma ;
     ontolex:otherForm dicbio:form_estigmas ;
-    ontolex:sense dicbio:sense_estigma_1 .
+    ontolex:sense dicbio:entry_estigma#sense1 .
 
 dicbio:etym_estigma a etym:Etymology ;
     etym:etymon dicbio:etymon_stigma ;
@@ -2097,7 +2097,7 @@ dicbio:form_estigmas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "estigmas"@pt .
 
-dicbio:sense_estigma_1 a ontolex:LexicalSense ;
+dicbio:entry_estigma#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte superior do pistilo, rica em uma substância líquida e pegajosa que capta os grãos de pólen para a fecundação."@pt .
 
 #------------------------------------------------------------
@@ -2112,7 +2112,7 @@ dicbio:entry_estipula a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estipula ;
     ontolex:otherForm dicbio:form_estipulas ;
-    ontolex:sense dicbio:sense_estipula_1 .
+    ontolex:sense dicbio:entry_estipula#sense1 .
 
 dicbio:etym_estipula a etym:Etymology ;
     etym:etymon dicbio:etymon_stipula ;
@@ -2130,7 +2130,7 @@ dicbio:form_estipulas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "estipulas"@pt .
 
-dicbio:sense_estipula_1 a ontolex:LexicalSense ;
+dicbio:entry_estipula#sense1 a ontolex:LexicalSense ;
     skos:definition "Escama que nasce na base do pecíolo ou do pedúnculo."@pt .
 
 #------------------------------------------------------------
@@ -2145,7 +2145,7 @@ dicbio:entry_excretorio a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_excretorio ;
     ontolex:otherForm dicbio:form_excretorios ;
-    ontolex:sense dicbio:sense_excretorio_1 .
+    ontolex:sense dicbio:entry_excretorio#sense1 .
 
 dicbio:etym_excretorio a etym:Etymology ;
     etym:etymon dicbio:etymon_excretorius ;
@@ -2163,7 +2163,7 @@ dicbio:form_excretorios a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "excretorios"@pt .
 
-dicbio:sense_excretorio_1 a ontolex:LexicalSense ;
+dicbio:entry_excretorio#sense1 a ontolex:LexicalSense ;
     skos:definition "Que excreta."@pt .
 
 #------------------------------------------------------------
@@ -2177,7 +2177,7 @@ dicbio:entry_falcado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_falcado ;
     ontolex:otherForm dicbio:form_falcada ;
-    ontolex:sense dicbio:sense_falcado_1 .
+    ontolex:sense dicbio:entry_falcado#sense1 .
 
 dicbio:etym_falcado a etym:Etymology ;
     etym:etymon dicbio:etymon_falcatus ;
@@ -2195,7 +2195,7 @@ dicbio:form_falcada a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "falcada"@pt .
 
-dicbio:sense_falcado_1 a ontolex:LexicalSense ;
+dicbio:entry_falcado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que tem a forma de foice."@pt .
 
 #------------------------------------------------------------
@@ -2210,7 +2210,7 @@ dicbio:entry_fastigiado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fastigiado ;
     ontolex:otherForm dicbio:form_fastigiadas ;
-    ontolex:sense dicbio:sense_fastigiado_1 .
+    ontolex:sense dicbio:entry_fastigiado#sense1 .
 
 dicbio:etym_fastigiado a etym:Etymology ;
     etym:etymon dicbio:etymon_fastigiatus ;
@@ -2228,7 +2228,7 @@ dicbio:form_fastigiadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "fastigiadas"@pt .
 
-dicbio:sense_fastigiado_1 a ontolex:LexicalSense ;
+dicbio:entry_fastigiado#sense1 a ontolex:LexicalSense ;
     skos:definition "Com ramos dispostos em feixe de modo que termine em ponta (diz-se de plantas ou outras estruturas vegetais)."@pt .
 
 #------------------------------------------------------------
@@ -2242,7 +2242,7 @@ dicbio:entry_fecundante a ontolex:LexicalEntry ;
         author:luana_borges ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fecundante ;
-    ontolex:sense dicbio:sense_fecundante_1 .
+    ontolex:sense dicbio:entry_fecundante#sense1 .
 
 dicbio:etym_fecundante a etym:Etymology ;
     etym:etymon dicbio:etymon_fecundans ;
@@ -2256,7 +2256,7 @@ dicbio:etymon_fecundans a etym:Etymon ;
 dicbio:form_fecundante a ontolex:Form ;
     ontolex:writtenRep "fecundante"@pt .
 
-dicbio:sense_fecundante_1 a ontolex:LexicalSense ;
+dicbio:entry_fecundante#sense1 a ontolex:LexicalSense ;
     skos:definition "Que fecunda."@pt .
 
 #------------------------------------------------------------
@@ -2270,7 +2270,7 @@ dicbio:entry_fibroso a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fibroso ;
     ontolex:otherForm dicbio:form_fibrosas ;
-    ontolex:sense dicbio:sense_fibroso_1 .
+    ontolex:sense dicbio:entry_fibroso#sense1 .
 
 dicbio:etym_fibroso a etym:Etymology ;
     etym:etymon dicbio:etymon_fibrosus ;
@@ -2288,7 +2288,7 @@ dicbio:form_fibrosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "fibrosas"@pt .
 
-dicbio:sense_fibroso_1 a ontolex:LexicalSense ;
+dicbio:entry_fibroso#sense1 a ontolex:LexicalSense ;
     skos:definition "Provido de fibras."@pt .
 
 #------------------------------------------------------------
@@ -2304,8 +2304,8 @@ dicbio:entry_filamento a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_filamento ;
     ontolex:otherForm dicbio:form_filamentos ;
-    ontolex:sense dicbio:sense_filamento_1,
-        dicbio:sense_filamento_2 .
+    ontolex:sense dicbio:entry_filamento#sense1,
+        dicbio:entry_filamento#sense2 .
 
 dicbio:etym_filamento a etym:Etymology ;
     etym:etymon dicbio:etymon_filamentum ;
@@ -2323,10 +2323,10 @@ dicbio:form_filamentos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "filamentos"@pt .
 
-dicbio:sense_filamento_1 a ontolex:LexicalSense ;
+dicbio:entry_filamento#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura que sustenta a antera e a une à planta."@pt .
 
-dicbio:sense_filamento_2 a ontolex:LexicalSense ;
+dicbio:entry_filamento#sense2 a ontolex:LexicalSense ;
     skos:definition "Qualquer estrutura animal semelhante a um fio, como antenas ou bissos."@pt .
 
 #------------------------------------------------------------
@@ -2342,7 +2342,7 @@ dicbio:entry_fitologia a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_fitologia ;
     ontolex:otherForm dicbio:form_phytologia ;
-    ontolex:sense dicbio:sense_fitologia_1 .
+    ontolex:sense dicbio:entry_fitologia#sense1 .
 
 dicbio:etym_fitologia a etym:Etymology ;
     etym:etymon dicbio:etymon_phytologia ;
@@ -2359,7 +2359,7 @@ dicbio:form_fitologia a ontolex:Form ;
 dicbio:form_phytologia a ontolex:Form ;
     ontolex:writtenRep "Phytologia"@pt .
 
-dicbio:sense_fitologia_1 a ontolex:LexicalSense ;
+dicbio:entry_fitologia#sense1 a ontolex:LexicalSense ;
     skos:definition "O mesmo que Botânica."@pt .
 
 #------------------------------------------------------------
@@ -2374,7 +2374,7 @@ dicbio:entry_flosculo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_flosculo ;
     ontolex:otherForm dicbio:form_flosculos ;
-    ontolex:sense dicbio:sense_flosculo_1 .
+    ontolex:sense dicbio:entry_flosculo#sense1 .
 
 dicbio:etym_flosculo a etym:Etymology ;
     etym:etymon dicbio:etymon_flosculus ;
@@ -2392,7 +2392,7 @@ dicbio:form_flosculos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "flosculos"@pt .
 
-dicbio:sense_flosculo_1 a ontolex:LexicalSense ;
+dicbio:entry_flosculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Pequena flor."@pt .
 
 #------------------------------------------------------------
@@ -2408,7 +2408,7 @@ dicbio:entry_folha a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_folha ;
     ontolex:otherForm dicbio:form_folhas ;
-    ontolex:sense dicbio:sense_folha_1 .
+    ontolex:sense dicbio:entry_folha#sense1 .
 
 dicbio:etym_folha a etym:Etymology ;
     etym:etymon dicbio:etymon_folia ;
@@ -2427,7 +2427,7 @@ dicbio:form_folhas a ontolex:Form ;
     ontolex:writtenRep "Folhas"@pt,
         "folhas"@pt .
 
-dicbio:sense_folha_1 a ontolex:LexicalSense ;
+dicbio:entry_folha#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão do movimento da planta."@pt .
 
 #------------------------------------------------------------
@@ -2442,7 +2442,7 @@ dicbio:entry_foliaceo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_foliaceo ;
     ontolex:otherForm dicbio:form_foliacea,
         dicbio:form_foliaceas ;
-    ontolex:sense dicbio:sense_foliaceo_1 .
+    ontolex:sense dicbio:entry_foliaceo#sense1 .
 
 dicbio:etym_foliaceo a etym:Etymology ;
     etym:etymon dicbio:etymon_foliaceus ;
@@ -2464,7 +2464,7 @@ dicbio:form_foliaceas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "foliaceas"@pt .
 
-dicbio:sense_foliaceo_1 a ontolex:LexicalSense ;
+dicbio:entry_foliaceo#sense1 a ontolex:LexicalSense ;
     skos:definition "Semelhante a lâmina ou folha."@pt .
 
 #------------------------------------------------------------
@@ -2480,7 +2480,7 @@ dicbio:entry_frenico a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_frenico ;
     ontolex:otherForm dicbio:form_phrenicas,
         dicbio:form_phrenicos ;
-    ontolex:sense dicbio:sense_frenico_1 .
+    ontolex:sense dicbio:entry_frenico#sense1 .
 
 dicbio:etym_frenico a etym:Etymology ;
     etym:etymon dicbio:etymon_phrenicus ;
@@ -2502,7 +2502,7 @@ dicbio:form_phrenicos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "Phrenicos"@pt .
 
-dicbio:sense_frenico_1 a ontolex:LexicalSense ;
+dicbio:entry_frenico#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo ao diafragma (acepção 1)."@pt .
 
 #------------------------------------------------------------
@@ -2521,7 +2521,7 @@ dicbio:entry_frutificacao a ontolex:LexicalEntry ;
         dicbio:form_frutificacao,
         dicbio:form_frutificacoens,
         dicbio:form_frutificacoes ;
-    ontolex:sense dicbio:sense_frutificacao_1 .
+    ontolex:sense dicbio:entry_frutificacao#sense1 .
 
 dicbio:etym_frutificacao a etym:Etymology ;
     etym:etymon dicbio:etymon_fructificatio ;
@@ -2552,7 +2552,7 @@ dicbio:form_frutificacoes a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "frutificações"@pt .
 
-dicbio:sense_frutificacao_1 a ontolex:LexicalSense ;
+dicbio:entry_frutificacao#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura responsável pela reprodução vegetal, formada pelas flores e, posteriormente, pelos frutos."@pt .
 
 #------------------------------------------------------------
@@ -2567,7 +2567,7 @@ dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_gelatinoso ;
     ontolex:otherForm dicbio:form_jalatinosa ;
-    ontolex:sense dicbio:sense_gelatinoso_1 .
+    ontolex:sense dicbio:entry_gelatinoso#sense1 .
 
 dicbio:etym_gelatinoso a etym:Etymology ;
     etym:etymon dicbio:etymon_gelatinosus ;
@@ -2585,7 +2585,7 @@ dicbio:form_jalatinosa a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "jalatinosa"@pt .
 
-dicbio:sense_gelatinoso_1 a ontolex:LexicalSense ;
+dicbio:entry_gelatinoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Que tem consistência de gelatina."@pt .
 
 #------------------------------------------------------------
@@ -2601,8 +2601,8 @@ dicbio:entry_gema a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_gema ;
     ontolex:otherForm dicbio:form_gemas,
         dicbio:form_gemmas ;
-    ontolex:sense dicbio:sense_gema_1,
-        dicbio:sense_gema_2 .
+    ontolex:sense dicbio:entry_gema#sense1,
+        dicbio:entry_gema#sense2 .
 
 dicbio:etym_gema a etym:Etymology ;
     etym:etymon dicbio:etymon_gema_\(1\),
@@ -2630,10 +2630,10 @@ dicbio:form_gemmas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "gemmas"@pt .
 
-dicbio:sense_gema_1 a ontolex:LexicalSense ;
+dicbio:entry_gema#sense1 a ontolex:LexicalSense ;
     skos:definition "Protuberância no caule ou ramos de uma planta, de onde se originam ramos, folhas ou outras estruturas; gomo."@pt .
 
-dicbio:sense_gema_2 a ontolex:LexicalSense ;
+dicbio:entry_gema#sense2 a ontolex:LexicalSense ;
     skos:definition "Porção interna do ovo das aves."@pt .
 
 #------------------------------------------------------------
@@ -2650,7 +2650,7 @@ dicbio:entry_glandula a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_glandula ;
     ontolex:otherForm dicbio:form_glandula,
         dicbio:form_glandulas ;
-    ontolex:sense dicbio:sense_glandula_1 .
+    ontolex:sense dicbio:entry_glandula#sense1 .
 
 dicbio:etym_glandula a etym:Etymology ;
     etym:etymon dicbio:etymon_glandula ;
@@ -2670,7 +2670,7 @@ dicbio:form_glandulas a ontolex:Form ;
     ontolex:writtenRep "Glandulas"@pt,
         "glandulas"@pt .
 
-dicbio:sense_glandula_1 a ontolex:LexicalSense ;
+dicbio:entry_glandula#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão que produz certas substâncias que são usadas em outras partes do organismo ou eliminadas."@pt .
 
 #------------------------------------------------------------
@@ -2685,7 +2685,7 @@ dicbio:entry_gomo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_gomo ;
     ontolex:otherForm dicbio:form_gomos ;
-    ontolex:sense dicbio:sense_gomo_1 .
+    ontolex:sense dicbio:entry_gomo#sense1 .
 
 dicbio:etym_gomo a etym:Etymology ;
     etym:etymon dicbio:etymon_obscuro ;
@@ -2703,7 +2703,7 @@ dicbio:form_gomos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "gomos"@pt .
 
-dicbio:sense_gomo_1 a ontolex:LexicalSense ;
+dicbio:entry_gomo#sense1 a ontolex:LexicalSense ;
     skos:definition "O mesmo que gema."@pt .
 
 #------------------------------------------------------------
@@ -2719,7 +2719,7 @@ dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_hermaphroditas,
         dicbio:form_hermaphroditos,
         dicbio:form_hermophroditas ;
-    ontolex:sense dicbio:sense_hermafrodita_1 .
+    ontolex:sense dicbio:entry_hermafrodita#sense1 .
 
 dicbio:etym_hermafrodita a etym:Etymology ;
     etym:etymon dicbio:etymon_hermaphroditus ;
@@ -2745,7 +2745,7 @@ dicbio:form_hermophroditas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "hermophroditas"@pt .
 
-dicbio:sense_hermafrodita_1 a ontolex:LexicalSense ;
+dicbio:entry_hermafrodita#sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta os órgãos reprodutores de ambos os sexos no mesmo indivíduo (diz-se de flor)."@pt .
 
 #------------------------------------------------------------
@@ -2761,7 +2761,7 @@ dicbio:entry_himen a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_himen ;
     ontolex:otherForm dicbio:form_hymen ;
-    ontolex:sense dicbio:sense_himen_1 .
+    ontolex:sense dicbio:entry_himen#sense1 .
 
 dicbio:etym_himen a etym:Etymology ;
     etym:etymon dicbio:etymon_hymen ;
@@ -2778,7 +2778,7 @@ dicbio:form_himen a ontolex:Form ;
 dicbio:form_hymen a ontolex:Form ;
     ontolex:writtenRep "Hymen"@pt .
 
-dicbio:sense_himen_1 a ontolex:LexicalSense ;
+dicbio:entry_himen#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana que fecha parcialmente o orifício externo da vagina."@pt .
 
 #------------------------------------------------------------
@@ -2794,7 +2794,7 @@ dicbio:entry_hipogastrio a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_hipogastrio ;
     ontolex:otherForm dicbio:form_hypogastrio ;
-    ontolex:sense dicbio:sense_hipogastrio_1 .
+    ontolex:sense dicbio:entry_hipogastrio#sense1 .
 
 dicbio:etym_hipogastrio a etym:Etymology ;
     etym:etymon dicbio:etymon_hypogastrium ;
@@ -2811,7 +2811,7 @@ dicbio:form_hipogastrio a ontolex:Form ;
 dicbio:form_hypogastrio a ontolex:Form ;
     ontolex:writtenRep "Hypogastrio"@pt .
 
-dicbio:sense_hipogastrio_1 a ontolex:LexicalSense ;
+dicbio:entry_hipogastrio#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte inferior do abdômen dos seres humanos, abaixo da região umbilical, iniciando-se um pouco abaixo do umbigo."@pt .
 
 #------------------------------------------------------------
@@ -2827,7 +2827,7 @@ dicbio:entry_inseto a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_inseto ;
     ontolex:otherForm dicbio:form_insecto,
         dicbio:form_insectos ;
-    ontolex:sense dicbio:sense_inseto_1 .
+    ontolex:sense dicbio:entry_inseto#sense1 .
 
 dicbio:etym_inseto a etym:Etymology ;
     etym:etymon dicbio:etymon_insectum ;
@@ -2850,7 +2850,7 @@ dicbio:form_insectos a ontolex:Form ;
     ontolex:writtenRep "Insectos"@pt,
         "insectos"@pt .
 
-dicbio:sense_inseto_1 a ontolex:LexicalSense ;
+dicbio:entry_inseto#sense1 a ontolex:LexicalSense ;
     skos:definition "Animal invertebrado, com corpo segmentado, membros articulados e exoesqueleto, pertencente à classe dos insetos."@pt .
 
 #------------------------------------------------------------
@@ -2866,7 +2866,7 @@ dicbio:entry_jardim_botanico a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_jardim_botanico ;
     ontolex:otherForm dicbio:form_jardim_botanico,
         dicbio:form_jardins_botanicos ;
-    ontolex:sense dicbio:sense_jardim_botanico_1 .
+    ontolex:sense dicbio:entry_jardim_botanico#sense1 .
 
 dicbio:etym_jardim_botanico a etym:Etymology ;
     etym:etymon dicbio:etymon_nao_se_aplica ;
@@ -2892,7 +2892,7 @@ dicbio:form_jardins_botanicos a ontolex:Form ;
         "JARDINS BOTANICOS"@pt,
         "Jardins Botanicos"@pt .
 
-dicbio:sense_jardim_botanico_1 a ontolex:LexicalSense ;
+dicbio:entry_jardim_botanico#sense1 a ontolex:LexicalSense ;
     skos:definition "Jardim onde se cultivam plantas para fins de estudo, em geral aberto à visitação pública."@pt .
 
 #------------------------------------------------------------
@@ -2908,7 +2908,7 @@ dicbio:entry_labiado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_labiado ;
     ontolex:otherForm dicbio:form_labiada,
         dicbio:form_labiadas ;
-    ontolex:sense dicbio:sense_labiado_1 .
+    ontolex:sense dicbio:entry_labiado#sense1 .
 
 dicbio:etym_labiado a etym:Etymology ;
     etym:etymon dicbio:etymon_labiatus ;
@@ -2931,7 +2931,7 @@ dicbio:form_labiadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "labiadas"@pt .
 
-dicbio:sense_labiado_1 a ontolex:LexicalSense ;
+dicbio:entry_labiado#sense1 a ontolex:LexicalSense ;
     skos:definition "Cujas pétalas formam a aparência de lábios."@pt .
 
 #------------------------------------------------------------
@@ -2947,7 +2947,7 @@ dicbio:entry_lacinia a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_lacinia ;
     ontolex:otherForm dicbio:form_lacinia,
         dicbio:form_lacinias ;
-    ontolex:sense dicbio:sense_lacinia_1 .
+    ontolex:sense dicbio:entry_lacinia#sense1 .
 
 dicbio:etym_lacinia a etym:Etymology ;
     etym:etymon dicbio:etymon_lacinia ;
@@ -2966,7 +2966,7 @@ dicbio:form_lacinias a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "lacinias"@pt .
 
-dicbio:sense_lacinia_1 a ontolex:LexicalSense ;
+dicbio:entry_lacinia#sense1 a ontolex:LexicalSense ;
     skos:definition "Divisão semelhante a abas em uma estrutura vegetal (como folha, estigma ou corola) ou animal (como concha ou tentáculo)."@pt .
 
 #------------------------------------------------------------
@@ -2981,7 +2981,7 @@ dicbio:entry_lanceolado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_lanceolado ;
     ontolex:otherForm dicbio:form_lanceolada,
         dicbio:form_lanceoladas ;
-    ontolex:sense dicbio:sense_lanceolado_1 .
+    ontolex:sense dicbio:entry_lanceolado#sense1 .
 
 dicbio:etym_lanceolado a etym:Etymology ;
     etym:etymon dicbio:etymon_lanceolatus ;
@@ -3004,7 +3004,7 @@ dicbio:form_lanceoladas a ontolex:Form ;
     ontolex:writtenRep "Lanceoladas"@pt,
         "lanceoladas"@pt .
 
-dicbio:sense_lanceolado_1 a ontolex:LexicalSense ;
+dicbio:entry_lanceolado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que tem a forma semelhante à de lança."@pt .
 
 #------------------------------------------------------------
@@ -3019,7 +3019,7 @@ dicbio:entry_ligulado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ligulado ;
     ontolex:otherForm dicbio:form_liguladas ;
-    ontolex:sense dicbio:sense_ligulado_1 .
+    ontolex:sense dicbio:entry_ligulado#sense1 .
 
 dicbio:etym_ligulado a etym:Etymology ;
     etym:etymon dicbio:etymon_ligulatus ;
@@ -3037,7 +3037,7 @@ dicbio:form_liguladas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "liguladas"@pt .
 
-dicbio:sense_ligulado_1 a ontolex:LexicalSense ;
+dicbio:entry_ligulado#sense1 a ontolex:LexicalSense ;
     skos:definition "Provido de lígula."@pt .
 
 #------------------------------------------------------------
@@ -3052,7 +3052,7 @@ dicbio:entry_litalgia a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_litalgia ;
     ontolex:otherForm dicbio:form_lithalgia ;
-    ontolex:sense dicbio:sense_litalgia_1 .
+    ontolex:sense dicbio:entry_litalgia#sense1 .
 
 dicbio:etym_litalgia a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_lit(o)-_+_-algia> ;
@@ -3069,7 +3069,7 @@ dicbio:form_litalgia a ontolex:Form ;
 dicbio:form_lithalgia a ontolex:Form ;
     ontolex:writtenRep "lithalgia"@pt .
 
-dicbio:sense_litalgia_1 a ontolex:LexicalSense ;
+dicbio:entry_litalgia#sense1 a ontolex:LexicalSense ;
     skos:definition "Dor causada pela presença de pedras nos rins."@pt .
 
 #------------------------------------------------------------
@@ -3085,7 +3085,7 @@ dicbio:entry_lobado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_lobado ;
     ontolex:otherForm dicbio:form_lobada,
         dicbio:form_lobadas ;
-    ontolex:sense dicbio:sense_lobado_1 .
+    ontolex:sense dicbio:entry_lobado#sense1 .
 
 dicbio:etym_lobado a etym:Etymology ;
     etym:etymon dicbio:etymon_lobatus ;
@@ -3108,7 +3108,7 @@ dicbio:form_lobadas a ontolex:Form ;
     ontolex:writtenRep "Lobadas"@pt,
         "lobadas"@pt .
 
-dicbio:sense_lobado_1 a ontolex:LexicalSense ;
+dicbio:entry_lobado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta lobos (diz-se de folha)."@pt .
 
 #------------------------------------------------------------
@@ -3122,7 +3122,7 @@ dicbio:entry_longitudinal a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_longitudinal ;
     ontolex:otherForm dicbio:form_longitudinaes ;
-    ontolex:sense dicbio:sense_longitudinal_1 .
+    ontolex:sense dicbio:entry_longitudinal#sense1 .
 
 dicbio:etym_longitudinal a etym:Etymology ;
     etym:etymon dicbio:etymon_longitudinalis ;
@@ -3141,7 +3141,7 @@ dicbio:form_longitudinaes a ontolex:Form ;
     ontolex:writtenRep "Longitudinaes"@pt,
         "longitudinaes"@pt .
 
-dicbio:sense_longitudinal_1 a ontolex:LexicalSense ;
+dicbio:entry_longitudinal#sense1 a ontolex:LexicalSense ;
     skos:definition "No sentido do comprimento."@pt .
 
 #------------------------------------------------------------
@@ -3157,7 +3157,7 @@ dicbio:entry_lunula a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_lunula ;
     ontolex:otherForm dicbio:form_lunula ;
-    ontolex:sense dicbio:sense_lunula_1 .
+    ontolex:sense dicbio:entry_lunula#sense1 .
 
 dicbio:etym_lunula a etym:Etymology ;
     etym:etymon dicbio:etymon_lunula ;
@@ -3173,7 +3173,7 @@ dicbio:form_lunula a ontolex:Form ;
         "lunula"@pt,
         "lúnula"@pt .
 
-dicbio:sense_lunula_1 a ontolex:LexicalSense ;
+dicbio:entry_lunula#sense1 a ontolex:LexicalSense ;
     skos:definition "Mancha clara em formato de meia-lua presente na raiz das unhas."@pt .
 
 #------------------------------------------------------------
@@ -3190,7 +3190,7 @@ dicbio:entry_maleolo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_maleolo ;
     ontolex:otherForm dicbio:form_malleolo,
         dicbio:form_malleolos ;
-    ontolex:sense dicbio:sense_maleolo_1 .
+    ontolex:sense dicbio:entry_maleolo#sense1 .
 
 dicbio:etym_maleolo a etym:Etymology ;
     etym:etymon dicbio:etymon_malleolus ;
@@ -3211,7 +3211,7 @@ dicbio:form_malleolos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "malleolos"@pt .
 
-dicbio:sense_maleolo_1 a ontolex:LexicalSense ;
+dicbio:entry_maleolo#sense1 a ontolex:LexicalSense ;
     skos:definition "Proeminência óssea da articulação do tornozelo."@pt .
 
 #------------------------------------------------------------
@@ -3228,7 +3228,7 @@ dicbio:entry_mamais a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_mamais ;
     ontolex:otherForm dicbio:form_mammaes ;
-    ontolex:sense dicbio:sense_mamais_1 .
+    ontolex:sense dicbio:entry_mamais#sense1 .
 
 dicbio:etym_mamais a etym:Etymology ;
     etym:etymon dicbio:etymon_mammalia ;
@@ -3247,7 +3247,7 @@ dicbio:form_mammaes a ontolex:Form ;
         "Mammaes"@pt,
         "mammaes"@pt .
 
-dicbio:sense_mamais_1 a ontolex:LexicalSense ;
+dicbio:entry_mamais#sense1 a ontolex:LexicalSense ;
     skos:definition "Animais que têm mamas."@pt .
 
 #------------------------------------------------------------
@@ -3264,7 +3264,7 @@ dicbio:entry_mamario a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_mamarias,
         dicbio:form_mammarias,
         dicbio:form_mammarios ;
-    ontolex:sense dicbio:sense_mamario_1 .
+    ontolex:sense dicbio:entry_mamario#sense1 .
 
 dicbio:etym_mamario a etym:Etymology ;
     etym:etymon dicbio:etymon_mammarius ;
@@ -3290,7 +3290,7 @@ dicbio:form_mammarios a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "mammarios"@pt .
 
-dicbio:sense_mamario_1 a ontolex:LexicalSense ;
+dicbio:entry_mamario#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo às mamas."@pt .
 
 #------------------------------------------------------------
@@ -3305,7 +3305,7 @@ dicbio:entry_masseter a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_masseter ;
-    ontolex:sense dicbio:sense_masseter_1 .
+    ontolex:sense dicbio:entry_masseter#sense1 .
 
 dicbio:etym_masseter a etym:Etymology ;
     etym:etymon dicbio:etymon_masseter ;
@@ -3319,7 +3319,7 @@ dicbio:etymon_masseter a etym:Etymon ;
 dicbio:form_masseter a ontolex:Form ;
     ontolex:writtenRep "masseter"@pt .
 
-dicbio:sense_masseter_1 a ontolex:LexicalSense ;
+dicbio:entry_masseter#sense1 a ontolex:LexicalSense ;
     skos:definition "Músculo usado na mastigação, responsável por mover a mandíbula."@pt .
 
 #------------------------------------------------------------
@@ -3333,8 +3333,8 @@ dicbio:entry_medular a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_medular ;
     ontolex:otherForm dicbio:form_medullar ;
-    ontolex:sense dicbio:sense_medular_1,
-        dicbio:sense_medular_2 .
+    ontolex:sense dicbio:entry_medular#sense1,
+        dicbio:entry_medular#sense2 .
 
 dicbio:etym_medular a etym:Etymology ;
     etym:etymon dicbio:etymon_medullaris ;
@@ -3351,10 +3351,10 @@ dicbio:form_medular a ontolex:Form ;
 dicbio:form_medullar a ontolex:Form ;
     ontolex:writtenRep "medullar"@pt .
 
-dicbio:sense_medular_1 a ontolex:LexicalSense ;
+dicbio:entry_medular#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo à substância interna presente nos vegetais."@pt .
 
-dicbio:sense_medular_2 a ontolex:LexicalSense ;
+dicbio:entry_medular#sense2 a ontolex:LexicalSense ;
     skos:definition "Relativo à medula óssea."@pt .
 
 #------------------------------------------------------------
@@ -3371,7 +3371,7 @@ dicbio:entry_membrana_branquiostega a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_membrana_branquiostega ;
     ontolex:otherForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega>,
         dicbio:form_membrana_branchiostega ;
-    ontolex:sense dicbio:sense_membrana_branquiostega_1 .
+    ontolex:sense dicbio:entry_membrana_branquiostega#sense1 .
 
 dicbio:etym_membrana_branquiostega a etym:Etymology ;
     etym:etymon dicbio:etymon_membrana_branchiostega ;
@@ -3395,7 +3395,7 @@ dicbio:form_membrana_branchiostega a ontolex:Form ;
     ontolex:writtenRep "branchiostega"@pt,
         "membrana branchiostega"@pt .
 
-dicbio:sense_membrana_branquiostega_1 a ontolex:LexicalSense ;
+dicbio:entry_membrana_branquiostega#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana situada abaixo dos pérculos, que reveste as guelras dos peixes."@pt .
 
 #------------------------------------------------------------
@@ -3412,7 +3412,7 @@ dicbio:entry_membranaceo a ontolex:LexicalEntry ;
         dicbio:form_membranaceas,
         dicbio:form_membranaceo,
         dicbio:form_membranaceos ;
-    ontolex:sense dicbio:sense_membranaceo_1 .
+    ontolex:sense dicbio:entry_membranaceo#sense1 .
 
 dicbio:etym_membranaceo a etym:Etymology ;
     etym:etymon dicbio:etymon_membranaceus ;
@@ -3442,7 +3442,7 @@ dicbio:form_membranaceos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "membranaceos"@pt .
 
-dicbio:sense_membranaceo_1 a ontolex:LexicalSense ;
+dicbio:entry_membranaceo#sense1 a ontolex:LexicalSense ;
     skos:definition "Delgado, comprido, em formato de lâmina ou membrana."@pt .
 
 #------------------------------------------------------------
@@ -3458,7 +3458,7 @@ dicbio:entry_membranoso a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_membranoso ;
     ontolex:otherForm dicbio:form_membranosa,
         dicbio:form_membranosas ;
-    ontolex:sense dicbio:sense_membranoso_1 .
+    ontolex:sense dicbio:entry_membranoso#sense1 .
 
 dicbio:etym_membranoso a etym:Etymology ;
     etym:etymon dicbio:etymon_membranosus ;
@@ -3481,7 +3481,7 @@ dicbio:form_membranosas a ontolex:Form ;
     ontolex:writtenRep "Membranosas"@pt,
         "membranosas"@pt .
 
-dicbio:sense_membranoso_1 a ontolex:LexicalSense ;
+dicbio:entry_membranoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Feito de ou em forma de membrana."@pt .
 
 #------------------------------------------------------------
@@ -3497,7 +3497,7 @@ dicbio:entry_mesenterico a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_mesenterico ;
     ontolex:otherForm dicbio:form_mesentericas,
         dicbio:form_mesentericos ;
-    ontolex:sense dicbio:sense_mesenterico_1 .
+    ontolex:sense dicbio:entry_mesenterico#sense1 .
 
 dicbio:etym_mesenterico a etym:Etymology ;
     etym:etymon dicbio:etymon_mesentericus ;
@@ -3519,7 +3519,7 @@ dicbio:form_mesentericos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "mesentericos"@pt .
 
-dicbio:sense_mesenterico_1 a ontolex:LexicalSense ;
+dicbio:entry_mesenterico#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo ao mesentério."@pt .
 
 #------------------------------------------------------------
@@ -3535,7 +3535,7 @@ dicbio:entry_mesocolon a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_mesocolon ;
     ontolex:otherForm dicbio:form_mesocolon ;
-    ontolex:sense dicbio:sense_mesocolon_1 .
+    ontolex:sense dicbio:entry_mesocolon#sense1 .
 
 dicbio:etym_mesocolon a etym:Etymology ;
     etym:etymon dicbio:etymon_mesocolon ;
@@ -3550,7 +3550,7 @@ dicbio:form_mesocolon a ontolex:Form ;
     ontolex:writtenRep "mesocolon"@pt,
         "mesocólon"@pt .
 
-dicbio:sense_mesocolon_1 a ontolex:LexicalSense ;
+dicbio:entry_mesocolon#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte do mesentério que está unida ao intestino grosso."@pt .
 
 #------------------------------------------------------------
@@ -3565,7 +3565,7 @@ dicbio:entry_metacarpo a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_metacarpo ;
-    ontolex:sense dicbio:sense_metacarpo_1 .
+    ontolex:sense dicbio:entry_metacarpo#sense1 .
 
 dicbio:etym_metacarpo a etym:Etymology ;
     etym:etymon dicbio:etymon_metacarpus ;
@@ -3579,7 +3579,7 @@ dicbio:etymon_metacarpus a etym:Etymon ;
 dicbio:form_metacarpo a ontolex:Form ;
     ontolex:writtenRep "metacarpo"@pt .
 
-dicbio:sense_metacarpo_1 a ontolex:LexicalSense ;
+dicbio:entry_metacarpo#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da mão compreendida entre o carpo e os dedos."@pt .
 
 #------------------------------------------------------------
@@ -3595,7 +3595,7 @@ dicbio:entry_miologia a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_miologia ;
     ontolex:otherForm dicbio:form_myologia ;
-    ontolex:sense dicbio:sense_miologia_1 .
+    ontolex:sense dicbio:entry_miologia#sense1 .
 
 dicbio:etym_miologia a etym:Etymology ;
     etym:etymon dicbio:etymon_myologia ;
@@ -3612,7 +3612,7 @@ dicbio:form_miologia a ontolex:Form ;
 dicbio:form_myologia a ontolex:Form ;
     ontolex:writtenRep "MYOLOGIA"@pt .
 
-dicbio:sense_miologia_1 a ontolex:LexicalSense ;
+dicbio:entry_miologia#sense1 a ontolex:LexicalSense ;
     skos:definition "Subárea da Anatomia que estuda os músculos e seus movimentos."@pt .
 
 #------------------------------------------------------------
@@ -3627,7 +3627,7 @@ dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mucilaginoso ;
     ontolex:otherForm dicbio:form_mucilaginosas ;
-    ontolex:sense dicbio:sense_mucilaginoso_1 .
+    ontolex:sense dicbio:entry_mucilaginoso#sense1 .
 
 dicbio:etym_mucilaginoso a etym:Etymology ;
     etym:etymon dicbio:etymon_mucilaginosus ;
@@ -3645,7 +3645,7 @@ dicbio:form_mucilaginosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "mucilaginosas"@pt .
 
-dicbio:sense_mucilaginoso_1 a ontolex:LexicalSense ;
+dicbio:entry_mucilaginoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Com consistência de mucilagem."@pt .
 
 #------------------------------------------------------------
@@ -3662,7 +3662,7 @@ dicbio:entry_musculo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_musculo ;
     ontolex:otherForm dicbio:form_musculo,
         dicbio:form_musculos ;
-    ontolex:sense dicbio:sense_musculo_1 .
+    ontolex:sense dicbio:entry_musculo#sense1 .
 
 dicbio:etym_musculo a etym:Etymology ;
     etym:etymon dicbio:etymon_musculus ;
@@ -3682,7 +3682,7 @@ dicbio:form_musculos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "musculos"@pt .
 
-dicbio:sense_musculo_1 a ontolex:LexicalSense ;
+dicbio:entry_musculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão responsável por executar movimentos de várias partes do corpo dos animais, formado por fibras capazes de se contrair e se alongar."@pt .
 
 #------------------------------------------------------------
@@ -3698,7 +3698,7 @@ dicbio:entry_oblongo a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_oblonga,
         dicbio:form_oblongas,
         dicbio:form_oblongos ;
-    ontolex:sense dicbio:sense_oblongo_1 .
+    ontolex:sense dicbio:entry_oblongo#sense1 .
 
 dicbio:etym_oblongo a etym:Etymology ;
     etym:etymon dicbio:etymon_oblongus ;
@@ -3725,7 +3725,7 @@ dicbio:form_oblongos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "Oblongos"@pt .
 
-dicbio:sense_oblongo_1 a ontolex:LexicalSense ;
+dicbio:entry_oblongo#sense1 a ontolex:LexicalSense ;
     skos:definition "Cujo diâmetro longitudinal excede o transversal (diz-se de folha ou de outras estruturas vegetais)."@pt .
 
 #------------------------------------------------------------
@@ -3741,7 +3741,7 @@ dicbio:entry_occiput a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_occiput ;
     ontolex:otherForm dicbio:form_occiput ;
-    ontolex:sense dicbio:sense_occiput_1 .
+    ontolex:sense dicbio:entry_occiput#sense1 .
 
 dicbio:etym_occiput a etym:Etymology ;
     etym:etymon dicbio:etymon_occiput ;
@@ -3757,7 +3757,7 @@ dicbio:form_occiput a ontolex:Form ;
         "occiput"@pt,
         "ócciput"@pt .
 
-dicbio:sense_occiput_1 a ontolex:LexicalSense ;
+dicbio:entry_occiput#sense1 a ontolex:LexicalSense ;
     skos:definition "Osso do crânio situado na parte inferoposterior da cabeça, próximo à nuca."@pt .
 
 #------------------------------------------------------------
@@ -3771,7 +3771,7 @@ dicbio:entry_ocelado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ocelado ;
     ontolex:otherForm dicbio:form_ocelladas ;
-    ontolex:sense dicbio:sense_ocelado_1 .
+    ontolex:sense dicbio:entry_ocelado#sense1 .
 
 dicbio:etym_ocelado a etym:Etymology ;
     etym:etymon dicbio:etymon_ocellatus ;
@@ -3789,7 +3789,7 @@ dicbio:form_ocelladas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "ocelladas"@pt .
 
-dicbio:sense_ocelado_1 a ontolex:LexicalSense ;
+dicbio:entry_ocelado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que possui olhos pequenos; que possui ocelos."@pt .
 
 #------------------------------------------------------------
@@ -3806,7 +3806,7 @@ dicbio:entry_orbita a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_orbita ;
     ontolex:otherForm dicbio:form_orbita,
         dicbio:form_orbitas ;
-    ontolex:sense dicbio:sense_orbita_1 .
+    ontolex:sense dicbio:entry_orbita#sense1 .
 
 dicbio:etym_orbita a etym:Etymology ;
     etym:etymon dicbio:etymon_orbita ;
@@ -3825,7 +3825,7 @@ dicbio:form_orbita a ontolex:Form ;
 dicbio:form_orbitas a ontolex:Form ;
     ontolex:writtenRep "orbitas"@pt .
 
-dicbio:sense_orbita_1 a ontolex:LexicalSense ;
+dicbio:entry_orbita#sense1 a ontolex:LexicalSense ;
     skos:definition "Cada uma das cavidades nos ossos da face onde se encontra o olho, o nervo ótico e demais estruturas relacionadas a estes."@pt .
 
 #------------------------------------------------------------
@@ -3841,9 +3841,9 @@ dicbio:entry_papila a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_papila ;
     ontolex:otherForm dicbio:form_papillas ;
-    ontolex:sense dicbio:sense_papila_1,
-        dicbio:sense_papila_2,
-        dicbio:sense_papila_3 .
+    ontolex:sense dicbio:entry_papila#sense1,
+        dicbio:entry_papila#sense2,
+        dicbio:entry_papila#sense3 .
 
 dicbio:etym_papila a etym:Etymology ;
     etym:etymon dicbio:etymon_papilla ;
@@ -3861,13 +3861,13 @@ dicbio:form_papillas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "papillas"@pt .
 
-dicbio:sense_papila_1 a ontolex:LexicalSense ;
+dicbio:entry_papila#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura da pele responsável pela sensibilidade do tato."@pt .
 
-dicbio:sense_papila_2 a ontolex:LexicalSense ;
+dicbio:entry_papila#sense2 a ontolex:LexicalSense ;
     skos:definition "Mamilo, bico do peito."@pt .
 
-dicbio:sense_papila_3 a ontolex:LexicalSense ;
+dicbio:entry_papila#sense3 a ontolex:LexicalSense ;
     skos:definition "Protuberância que se projeta a partir de certos órgãos animais ou vegetais."@pt .
 
 #------------------------------------------------------------
@@ -3881,7 +3881,7 @@ dicbio:entry_papilionaceo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_papilionaceo ;
     ontolex:otherForm dicbio:form_papilionaceas ;
-    ontolex:sense dicbio:sense_papilionaceo_1 .
+    ontolex:sense dicbio:entry_papilionaceo#sense1 .
 
 dicbio:etym_papilionaceo a etym:Etymology ;
     etym:etymon dicbio:etymon_papilionaceus ;
@@ -3899,7 +3899,7 @@ dicbio:form_papilionaceas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "papilionaceas"@pt .
 
-dicbio:sense_papilionaceo_1 a ontolex:LexicalSense ;
+dicbio:entry_papilionaceo#sense1 a ontolex:LexicalSense ;
     skos:definition "Em forma de borboleta (diz-se de flor ou corola)."@pt .
 
 #------------------------------------------------------------
@@ -3913,7 +3913,7 @@ dicbio:entry_parasitico a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_parasitico ;
     ontolex:otherForm dicbio:form_parasitica ;
-    ontolex:sense dicbio:sense_parasitico_1 .
+    ontolex:sense dicbio:entry_parasitico#sense1 .
 
 dicbio:etym_parasitico a etym:Etymology ;
     etym:etymon dicbio:etymon_parasiticus ;
@@ -3931,7 +3931,7 @@ dicbio:form_parasitica a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "parasitica"@pt .
 
-dicbio:sense_parasitico_1 a ontolex:LexicalSense ;
+dicbio:entry_parasitico#sense1 a ontolex:LexicalSense ;
     skos:definition "Que está preso a outra planta, e não diretamente à terra (diz-se de planta)."@pt .
 
 #------------------------------------------------------------
@@ -3947,7 +3947,7 @@ dicbio:entry_peciolo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_peciolo ;
     ontolex:otherForm dicbio:form_peciolo,
         dicbio:form_peciolos ;
-    ontolex:sense dicbio:sense_peciolo_1 .
+    ontolex:sense dicbio:entry_peciolo#sense1 .
 
 dicbio:etym_peciolo a etym:Etymology ;
     etym:etymon dicbio:etymon_petiolus ;
@@ -3966,7 +3966,7 @@ dicbio:form_peciolos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "peciolos"@pt .
 
-dicbio:sense_peciolo_1 a ontolex:LexicalSense ;
+dicbio:entry_peciolo#sense1 a ontolex:LexicalSense ;
     skos:definition "Pequeno ramo que prende a folha ao ramo ou ao tronco."@pt .
 
 #------------------------------------------------------------
@@ -3982,8 +3982,8 @@ dicbio:entry_pedunculo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_pedunculo ;
     ontolex:otherForm dicbio:form_pedunculo,
         dicbio:form_pedunculos ;
-    ontolex:sense dicbio:sense_pedunculo_1,
-        dicbio:sense_pedunculo_2 .
+    ontolex:sense dicbio:entry_pedunculo#sense1,
+        dicbio:entry_pedunculo#sense2 .
 
 dicbio:etym_pedunculo a etym:Etymology ;
     etym:etymon dicbio:etymon_pedunculus ;
@@ -4003,10 +4003,10 @@ dicbio:form_pedunculos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "pedunculos"@pt .
 
-dicbio:sense_pedunculo_1 a ontolex:LexicalSense ;
+dicbio:entry_pedunculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura semelhante a um ramo, que sustenta a inflorescência e a frutificação."@pt .
 
-dicbio:sense_pedunculo_2 a ontolex:LexicalSense ;
+dicbio:entry_pedunculo#sense2 a ontolex:LexicalSense ;
     skos:definition "Haste que sustenta diversas estruturas dos insetos, como antenas, olhos ou o abdômen."@pt .
 
 #------------------------------------------------------------
@@ -4021,8 +4021,8 @@ dicbio:entry_pelve a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pelve ;
-    ontolex:sense dicbio:sense_pelve_1,
-        dicbio:sense_pelve_2 .
+    ontolex:sense dicbio:entry_pelve#sense1,
+        dicbio:entry_pelve#sense2 .
 
 dicbio:etym_pelve a etym:Etymology ;
     etym:etymon dicbio:etymon_pelvis ;
@@ -4036,10 +4036,10 @@ dicbio:etymon_pelvis a etym:Etymon ;
 dicbio:form_pelve a ontolex:Form ;
     ontolex:writtenRep "pelve"@pt .
 
-dicbio:sense_pelve_1 a ontolex:LexicalSense ;
+dicbio:entry_pelve#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura óssea em formato de bacia presente nos quadris."@pt .
 
-dicbio:sense_pelve_2 a ontolex:LexicalSense ;
+dicbio:entry_pelve#sense2 a ontolex:LexicalSense ;
     skos:definition "Cavidade em formato de bacia presente nos rins."@pt .
 
 #------------------------------------------------------------
@@ -4053,7 +4053,7 @@ dicbio:entry_perene a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_perene ;
     ontolex:otherForm dicbio:form_perenne ;
-    ontolex:sense dicbio:sense_perene_1 .
+    ontolex:sense dicbio:entry_perene#sense1 .
 
 dicbio:etym_perene a etym:Etymology ;
     etym:etymon dicbio:etymon_perennis ;
@@ -4071,7 +4071,7 @@ dicbio:form_perenne a ontolex:Form ;
     ontolex:writtenRep "Perenne"@pt,
         "perenne"@pt .
 
-dicbio:sense_perene_1 a ontolex:LexicalSense ;
+dicbio:entry_perene#sense1 a ontolex:LexicalSense ;
     skos:definition "Que produz novas gemas e nova folhagem a cada ano (diz-se de planta)."@pt .
 
 #------------------------------------------------------------
@@ -4087,7 +4087,7 @@ dicbio:entry_pericarpo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pericarpo ;
     ontolex:otherForm dicbio:form_pericarpio ;
-    ontolex:sense dicbio:sense_pericarpo_1 .
+    ontolex:sense dicbio:entry_pericarpo#sense1 .
 
 dicbio:etym_pericarpo a etym:Etymology ;
     etym:etymon dicbio:etymon_pericarpum ;
@@ -4105,7 +4105,7 @@ dicbio:form_pericarpio a ontolex:Form ;
     ontolex:writtenRep "Pericarpio"@pt,
         "pericarpio"@pt .
 
-dicbio:sense_pericarpo_1 a ontolex:LexicalSense ;
+dicbio:entry_pericarpo#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana que reveste o ovário da planta e que, com o amadurecimento, se torna o próprio fruto."@pt .
 
 #------------------------------------------------------------
@@ -4120,7 +4120,7 @@ dicbio:entry_piloso a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_piloso ;
     ontolex:otherForm dicbio:form_pillosa,
         dicbio:form_pilosas ;
-    ontolex:sense dicbio:sense_piloso_1 .
+    ontolex:sense dicbio:entry_piloso#sense1 .
 
 dicbio:etym_piloso a etym:Etymology ;
     etym:etymon dicbio:etymon_pilosus ;
@@ -4142,7 +4142,7 @@ dicbio:form_pilosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "pilosas"@pt .
 
-dicbio:sense_piloso_1 a ontolex:LexicalSense ;
+dicbio:entry_piloso#sense1 a ontolex:LexicalSense ;
     skos:definition "Coberto de estruturas semelhantes a pelos (diz-se de folha)."@pt .
 
 #------------------------------------------------------------
@@ -4157,7 +4157,7 @@ dicbio:entry_pimpolho a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pimpolho ;
     ontolex:otherForm dicbio:form_pimpolhos ;
-    ontolex:sense dicbio:sense_pimpolho_1 .
+    ontolex:sense dicbio:entry_pimpolho#sense1 .
 
 dicbio:etym_pimpolho a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_pino_+_pollo> ;
@@ -4176,7 +4176,7 @@ dicbio:form_pimpolhos a ontolex:Form ;
     ontolex:writtenRep "Pimpolhos"@pt,
         "pimpolhos"@pt .
 
-dicbio:sense_pimpolho_1 a ontolex:LexicalSense ;
+dicbio:entry_pimpolho#sense1 a ontolex:LexicalSense ;
     skos:definition "Broto que nasce do caule ou da raiz de uma planta."@pt .
 
 #------------------------------------------------------------
@@ -4193,7 +4193,7 @@ dicbio:entry_pistilo a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_pistillo,
         dicbio:form_pistillos,
         dicbio:form_pistilos ;
-    ontolex:sense dicbio:sense_pistilo_1 .
+    ontolex:sense dicbio:entry_pistilo#sense1 .
 
 dicbio:etym_pistilo a etym:Etymology ;
     etym:etymon dicbio:etymon_pistillum ;
@@ -4218,7 +4218,7 @@ dicbio:form_pistillos a ontolex:Form ;
 dicbio:form_pistilos a ontolex:Form ;
     ontolex:writtenRep "pistilos"@pt .
 
-dicbio:sense_pistilo_1 a ontolex:LexicalSense ;
+dicbio:entry_pistilo#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor, em geral entre as anteras, pela qual entra o pólen para a fecundação."@pt .
 
 #------------------------------------------------------------
@@ -4234,7 +4234,7 @@ dicbio:entry_placenta a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_placenta ;
     ontolex:otherForm dicbio:form_placentas ;
-    ontolex:sense dicbio:sense_placenta_1 .
+    ontolex:sense dicbio:entry_placenta#sense1 .
 
 dicbio:etym_placenta a etym:Etymology ;
     etym:etymon dicbio:etymon_placenta ;
@@ -4251,7 +4251,7 @@ dicbio:form_placenta a ontolex:Form ;
 dicbio:form_placentas a ontolex:Form ;
     ontolex:writtenRep "placentas"@pt .
 
-dicbio:sense_placenta_1 a ontolex:LexicalSense ;
+dicbio:entry_placenta#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão formado durante a gestação, que une o feto ao útero materno."@pt .
 
 #------------------------------------------------------------
@@ -4267,7 +4267,7 @@ dicbio:entry_planta a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_planta ;
     ontolex:otherForm dicbio:form_plantas ;
-    ontolex:sense dicbio:sense_planta_1 .
+    ontolex:sense dicbio:entry_planta#sense1 .
 
 dicbio:etym_planta a etym:Etymology ;
     etym:etymon dicbio:etymon_planta ;
@@ -4284,7 +4284,7 @@ dicbio:form_planta a ontolex:Form ;
 dicbio:form_plantas a ontolex:Form ;
     ontolex:writtenRep "plantas"@pt .
 
-dicbio:sense_planta_1 a ontolex:LexicalSense ;
+dicbio:entry_planta#sense1 a ontolex:LexicalSense ;
     skos:definition "Designação comum a todos os vegetais."@pt .
 
 #------------------------------------------------------------
@@ -4300,7 +4300,7 @@ dicbio:entry_polpa a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_polpa ;
-    ontolex:sense dicbio:sense_polpa_1 .
+    ontolex:sense dicbio:entry_polpa#sense1 .
 
 dicbio:etym_polpa a etym:Etymology ;
     etym:etymon dicbio:etymon_pulpa ;
@@ -4314,7 +4314,7 @@ dicbio:etymon_pulpa a etym:Etymon ;
 dicbio:form_polpa a ontolex:Form ;
     ontolex:writtenRep "polpa"@pt .
 
-dicbio:sense_polpa_1 a ontolex:LexicalSense ;
+dicbio:entry_polpa#sense1 a ontolex:LexicalSense ;
     skos:definition "Substância espessa presente em certas estruturas vegetais, como folhas e frutos."@pt .
 
 #------------------------------------------------------------
@@ -4330,7 +4330,7 @@ dicbio:entry_pontoado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_pontoado ;
     ontolex:otherForm dicbio:form_pontoada,
         dicbio:form_pontoadas ;
-    ontolex:sense dicbio:sense_pontoado_1 .
+    ontolex:sense dicbio:entry_pontoado#sense1 .
 
 dicbio:etym_pontoado a etym:Etymology ;
     etym:etymon <http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> ;
@@ -4352,7 +4352,7 @@ dicbio:form_pontoadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "Pontoadas"@pt .
 
-dicbio:sense_pontoado_1 a ontolex:LexicalSense ;
+dicbio:entry_pontoado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta pontos (diz-se de estrutura animal ou vegetal)."@pt .
 
 #------------------------------------------------------------
@@ -4368,7 +4368,7 @@ dicbio:entry_raiz a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_raiz ;
     ontolex:otherForm dicbio:form_raizes ;
-    ontolex:sense dicbio:sense_raiz_1 .
+    ontolex:sense dicbio:entry_raiz#sense1 .
 
 dicbio:etym_raiz a etym:Etymology ;
     etym:etymon dicbio:etymon_radicem ;
@@ -4387,7 +4387,7 @@ dicbio:form_raizes a ontolex:Form ;
     ontolex:writtenRep "raizes"@pt,
         "raízes"@pt .
 
-dicbio:sense_raiz_1 a ontolex:LexicalSense ;
+dicbio:entry_raiz#sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão da planta que serve às funções de nutrição e fixação à terra."@pt .
 
 #------------------------------------------------------------
@@ -4402,7 +4402,7 @@ dicbio:entry_receptaculo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_receptaculo ;
     ontolex:otherForm dicbio:form_receptaculo ;
-    ontolex:sense dicbio:sense_receptaculo_1 .
+    ontolex:sense dicbio:entry_receptaculo#sense1 .
 
 dicbio:etym_receptaculo a etym:Etymology ;
     etym:etymon dicbio:etymon_receptaculum ;
@@ -4418,7 +4418,7 @@ dicbio:form_receptaculo a ontolex:Form ;
         "receptaculo"@pt,
         "receptáculo"@pt .
 
-dicbio:sense_receptaculo_1 a ontolex:LexicalSense ;
+dicbio:entry_receptaculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Base da flor em que se prendem as partes da frutificação."@pt .
 
 #------------------------------------------------------------
@@ -4431,7 +4431,7 @@ dicbio:entry_repente a ontolex:LexicalEntry ;
     dcterms:creator author:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_repente ;
-    ontolex:sense dicbio:sense_repente_1 .
+    ontolex:sense dicbio:entry_repente#sense1 .
 
 dicbio:etym_repente a etym:Etymology ;
     etym:etymon dicbio:etymon_repens ;
@@ -4445,7 +4445,7 @@ dicbio:etymon_repens a etym:Etymon ;
 dicbio:form_repente a ontolex:Form ;
     ontolex:writtenRep "repente"@pt .
 
-dicbio:sense_repente_1 a ontolex:LexicalSense ;
+dicbio:entry_repente#sense1 a ontolex:LexicalSense ;
     skos:definition "Que lança raízes que se estendem horizontalmente sobre a terra (diz-se de caule)."@pt .
 
 #------------------------------------------------------------
@@ -4460,7 +4460,7 @@ dicbio:entry_resina a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_resina ;
     ontolex:otherForm dicbio:form_rezina ;
-    ontolex:sense dicbio:sense_resina_1 .
+    ontolex:sense dicbio:entry_resina#sense1 .
 
 dicbio:etym_resina a etym:Etymology ;
     etym:etymon dicbio:etymon_resina ;
@@ -4477,7 +4477,7 @@ dicbio:form_resina a ontolex:Form ;
 dicbio:form_rezina a ontolex:Form ;
     ontolex:writtenRep "rezina"@pt .
 
-dicbio:sense_resina_1 a ontolex:LexicalSense ;
+dicbio:entry_resina#sense1 a ontolex:LexicalSense ;
     skos:definition "Substância produzida por certas plantas, inflamável, insolúvel na água e solúvel no álcool."@pt .
 
 #------------------------------------------------------------
@@ -4491,7 +4491,7 @@ dicbio:entry_resinoso a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_resinoso ;
     ontolex:otherForm dicbio:form_rezinosas ;
-    ontolex:sense dicbio:sense_resinoso_1 .
+    ontolex:sense dicbio:entry_resinoso#sense1 .
 
 dicbio:etym_resinoso a etym:Etymology ;
     etym:etymon dicbio:etymon_resinosus ;
@@ -4509,7 +4509,7 @@ dicbio:form_rezinosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "rezinosas"@pt .
 
-dicbio:sense_resinoso_1 a ontolex:LexicalSense ;
+dicbio:entry_resinoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Que produz resina (diz-se de planta)."@pt .
 
 #------------------------------------------------------------
@@ -4524,7 +4524,7 @@ dicbio:entry_reticulado a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_reticulado ;
     ontolex:otherForm dicbio:form_reticuladas ;
-    ontolex:sense dicbio:sense_reticulado_1 .
+    ontolex:sense dicbio:entry_reticulado#sense1 .
 
 dicbio:etym_reticulado a etym:Etymology ;
     etym:etymon dicbio:etymon_reticulatus ;
@@ -4542,7 +4542,7 @@ dicbio:form_reticuladas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "reticuladas"@pt .
 
-dicbio:sense_reticulado_1 a ontolex:LexicalSense ;
+dicbio:entry_reticulado#sense1 a ontolex:LexicalSense ;
     skos:definition "Disposto em forma de rede."@pt .
 
 #------------------------------------------------------------
@@ -4555,7 +4555,7 @@ dicbio:entry_romboidal a ontolex:LexicalEntry ;
     dcterms:creator author:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_romboidal ;
-    ontolex:sense dicbio:sense_romboidal_1 .
+    ontolex:sense dicbio:entry_romboidal#sense1 .
 
 dicbio:etym_romboidal a etym:Etymology ;
     etym:etymon dicbio:etymon_rhomboidalis ;
@@ -4569,7 +4569,7 @@ dicbio:etymon_rhomboidalis a etym:Etymon ;
 dicbio:form_romboidal a ontolex:Form ;
     ontolex:writtenRep "romboidal"@pt .
 
-dicbio:sense_romboidal_1 a ontolex:LexicalSense .
+dicbio:entry_romboidal#sense1 a ontolex:LexicalSense .
 
 #------------------------------------------------------------
 
@@ -4584,7 +4584,7 @@ dicbio:entry_semente a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_semente ;
     ontolex:otherForm dicbio:form_sementes ;
-    ontolex:sense dicbio:sense_semente_1 .
+    ontolex:sense dicbio:entry_semente#sense1 .
 
 dicbio:etym_semente a etym:Etymology ;
     etym:etymon dicbio:etymon_sementem ;
@@ -4603,7 +4603,7 @@ dicbio:form_sementes a ontolex:Form ;
     ontolex:writtenRep "Sementes"@pt,
         "sementes"@pt .
 
-dicbio:sense_semente_1 a ontolex:LexicalSense ;
+dicbio:entry_semente#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura de uma planta que se separa desta e da qual se desenvolve uma nova planta."@pt .
 
 #------------------------------------------------------------
@@ -4622,7 +4622,7 @@ dicbio:entry_setaceo a ontolex:LexicalEntry ;
         dicbio:form_setaceas,
         dicbio:form_setaceo,
         dicbio:form_setaceos ;
-    ontolex:sense dicbio:sense_setaceo_1 .
+    ontolex:sense dicbio:entry_setaceo#sense1 .
 
 dicbio:etym_setaceo a etym:Etymology ;
     etym:etymon dicbio:etymon_setaceus ;
@@ -4651,7 +4651,7 @@ dicbio:form_setaceos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "setaceos"@pt .
 
-dicbio:sense_setaceo_1 a ontolex:LexicalSense ;
+dicbio:entry_setaceo#sense1 a ontolex:LexicalSense ;
     skos:definition "Semelhante à seda ou aos pelos do porco (diz-se de estrutura animal ou vegetal)."@pt .
 
 #------------------------------------------------------------
@@ -4664,7 +4664,7 @@ dicbio:entry_sexual a ontolex:LexicalEntry ;
     dcterms:creator author:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sexual ;
-    ontolex:sense dicbio:sense_sexual_1 .
+    ontolex:sense dicbio:entry_sexual#sense1 .
 
 dicbio:etym_sexual a etym:Etymology ;
     etym:etymon dicbio:etymon_sexualis ;
@@ -4678,7 +4678,7 @@ dicbio:etymon_sexualis a etym:Etymon ;
 dicbio:form_sexual a ontolex:Form ;
     ontolex:writtenRep "sexual"@pt .
 
-dicbio:sense_sexual_1 a ontolex:LexicalSense ;
+dicbio:entry_sexual#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo à reprodução sexuada."@pt .
 
 #------------------------------------------------------------
@@ -4693,7 +4693,7 @@ dicbio:entry_sexualismo a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_sexualismo ;
-    ontolex:sense dicbio:sense_sexualismo_1 .
+    ontolex:sense dicbio:entry_sexualismo#sense1 .
 
 dicbio:etym_sexualismo a etym:Etymology ;
     etym:etymon dicbio:etymon_sexualismus ;
@@ -4707,7 +4707,7 @@ dicbio:etymon_sexualismus a etym:Etymon ;
 dicbio:form_sexualismo a ontolex:Form ;
     ontolex:writtenRep "sexualismo"@pt .
 
-dicbio:sense_sexualismo_1 a ontolex:LexicalSense ;
+dicbio:entry_sexualismo#sense1 a ontolex:LexicalSense ;
     skos:definition "Condição de um ser vivo que apresenta divisão em dois sexos."@pt .
 
 #------------------------------------------------------------
@@ -4723,7 +4723,7 @@ dicbio:entry_siliqua a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_siliqua ;
     ontolex:otherForm dicbio:form_siliqua,
         dicbio:form_siliquas ;
-    ontolex:sense dicbio:sense_siliqua_1 .
+    ontolex:sense dicbio:entry_siliqua#sense1 .
 
 dicbio:etym_siliqua a etym:Etymology ;
     etym:etymon dicbio:etymon_siliqua ;
@@ -4742,7 +4742,7 @@ dicbio:form_siliquas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "siliquas"@pt .
 
-dicbio:sense_siliqua_1 a ontolex:LexicalSense ;
+dicbio:entry_siliqua#sense1 a ontolex:LexicalSense ;
     skos:definition "Pericarpo de duas valvas, côncavo, cujo comprimento excede a largura, com sementes presas ao longo das suturas."@pt .
 
 #------------------------------------------------------------
@@ -4757,7 +4757,7 @@ dicbio:entry_sucoso a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_sucoso ;
     ontolex:otherForm dicbio:form_succosa,
         dicbio:form_sucosa ;
-    ontolex:sense dicbio:sense_sucoso_1 .
+    ontolex:sense dicbio:entry_sucoso#sense1 .
 
 dicbio:etym_sucoso a etym:Etymology ;
     etym:etymon dicbio:etymon_sucosus ;
@@ -4779,7 +4779,7 @@ dicbio:form_sucosa a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
     ontolex:writtenRep "sucosa"@pt .
 
-dicbio:sense_sucoso_1 a ontolex:LexicalSense ;
+dicbio:entry_sucoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Cheio de suco."@pt .
 
 #------------------------------------------------------------
@@ -4797,7 +4797,7 @@ dicbio:entry_suculento a ontolex:LexicalEntry ;
         dicbio:form_succulentas,
         dicbio:form_succulento,
         dicbio:form_succulentos ;
-    ontolex:sense dicbio:sense_suculento_1 .
+    ontolex:sense dicbio:entry_suculento#sense1 .
 
 dicbio:etym_suculento a etym:Etymology ;
     etym:etymon dicbio:etymon_suculentus ;
@@ -4827,7 +4827,7 @@ dicbio:form_succulentos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "succulentos"@pt .
 
-dicbio:sense_suculento_1 a ontolex:LexicalSense ;
+dicbio:entry_suculento#sense1 a ontolex:LexicalSense ;
     skos:definition "Que contém muito suco; sucoso."@pt .
 
 #------------------------------------------------------------
@@ -4844,7 +4844,7 @@ dicbio:entry_tendinoso a ontolex:LexicalEntry ;
     ontolex:otherForm dicbio:form_tendinosa,
         dicbio:form_tendinosas,
         dicbio:form_tendinosos ;
-    ontolex:sense dicbio:sense_tendinoso_1 .
+    ontolex:sense dicbio:entry_tendinoso#sense1 .
 
 dicbio:etym_tendinoso a etym:Etymology ;
     etym:etymon dicbio:etymon_tendinosus ;
@@ -4870,7 +4870,7 @@ dicbio:form_tendinosos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "tendinosos"@pt .
 
-dicbio:sense_tendinoso_1 a ontolex:LexicalSense ;
+dicbio:entry_tendinoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Relativo aos tendões."@pt .
 
 #------------------------------------------------------------
@@ -4886,7 +4886,7 @@ dicbio:entry_tronco a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tronco ;
     ontolex:otherForm dicbio:form_troncos ;
-    ontolex:sense dicbio:sense_tronco_1 .
+    ontolex:sense dicbio:entry_tronco#sense1 .
 
 dicbio:etym_tronco a etym:Etymology ;
     etym:etymon dicbio:etymon_truncum ;
@@ -4904,7 +4904,7 @@ dicbio:form_troncos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "troncos"@pt .
 
-dicbio:sense_tronco_1 a ontolex:LexicalSense ;
+dicbio:entry_tronco#sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da planta que se ergue da terra e sustenta os frutos e as folhas."@pt .
 
 #------------------------------------------------------------
@@ -4920,7 +4920,7 @@ dicbio:entry_tuberculado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_tuberculado ;
     ontolex:otherForm dicbio:form_tuberculadas,
         dicbio:form_tuberculados ;
-    ontolex:sense dicbio:sense_tuberculado_1 .
+    ontolex:sense dicbio:entry_tuberculado#sense1 .
 
 dicbio:etym_tuberculado a etym:Etymology ;
     etym:etymon dicbio:etymon_tuberculatus ;
@@ -4943,7 +4943,7 @@ dicbio:form_tuberculados a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
     ontolex:writtenRep "tuberculados"@pt .
 
-dicbio:sense_tuberculado_1 a ontolex:LexicalSense ;
+dicbio:entry_tuberculado#sense1 a ontolex:LexicalSense ;
     skos:definition "Provido de tubérculos."@pt .
 
 #------------------------------------------------------------
@@ -4961,8 +4961,8 @@ dicbio:entry_tuberculo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_tuberculo ;
     ontolex:otherForm dicbio:form_tuberculo,
         dicbio:form_tuberculos ;
-    ontolex:sense dicbio:sense_tuberculo_1,
-        dicbio:sense_tuberculo_2 .
+    ontolex:sense dicbio:entry_tuberculo#sense1,
+        dicbio:entry_tuberculo#sense2 .
 
 dicbio:etym_tuberculo a etym:Etymology ;
     etym:etymon dicbio:etymon_tuberculum ;
@@ -4983,10 +4983,10 @@ dicbio:form_tuberculos a ontolex:Form ;
     ontolex:writtenRep "Tuberculos"@pt,
         "tuberculos"@pt .
 
-dicbio:sense_tuberculo_1 a ontolex:LexicalSense ;
+dicbio:entry_tuberculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Saliência encontrada na pele ou na superfície de certos órgãos dos animais."@pt .
 
-dicbio:sense_tuberculo_2 a ontolex:LexicalSense ;
+dicbio:entry_tuberculo#sense2 a ontolex:LexicalSense ;
     skos:definition "Saliência semelhante a verrugas presente em certas estruturas vegetais."@pt .
 
 #------------------------------------------------------------
@@ -5002,7 +5002,7 @@ dicbio:entry_tubulo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tubulo ;
     ontolex:otherForm dicbio:form_tubulos ;
-    ontolex:sense dicbio:sense_tubulo_1 .
+    ontolex:sense dicbio:entry_tubulo#sense1 .
 
 dicbio:etym_tubulo a etym:Etymology ;
     etym:etymon dicbio:etymon_tubulus ;
@@ -5020,7 +5020,7 @@ dicbio:form_tubulos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "tubulos"@pt .
 
-dicbio:sense_tubulo_1 a ontolex:LexicalSense ;
+dicbio:entry_tubulo#sense1 a ontolex:LexicalSense ;
     skos:definition "Estrutura tubular presente nas brânquias dos peixes."@pt .
 
 #------------------------------------------------------------
@@ -5036,7 +5036,7 @@ dicbio:entry_tunica a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_tunica ;
     ontolex:otherForm dicbio:form_tunica,
         dicbio:form_tunicas ;
-    ontolex:sense dicbio:sense_tunica_1 .
+    ontolex:sense dicbio:entry_tunica#sense1 .
 
 dicbio:etym_tunica a etym:Etymology ;
     etym:etymon dicbio:etymon_tunica ;
@@ -5055,7 +5055,7 @@ dicbio:form_tunicas a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "tunicas"@pt .
 
-dicbio:sense_tunica_1 a ontolex:LexicalSense ;
+dicbio:entry_tunica#sense1 a ontolex:LexicalSense ;
     skos:definition "Membrana que reveste certas estruturas vegetais, como raízes ou sementes, ou animais, como olhos."@pt .
 
 #------------------------------------------------------------
@@ -5071,7 +5071,7 @@ dicbio:entry_umbilicado a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_umbilicado ;
     ontolex:otherForm dicbio:form_umbilicada,
         dicbio:form_umbilicadas ;
-    ontolex:sense dicbio:sense_umbilicado_1 .
+    ontolex:sense dicbio:entry_umbilicado#sense1 .
 
 dicbio:etym_umbilicado a etym:Etymology ;
     etym:etymon dicbio:etymon_umbilicatus ;
@@ -5093,7 +5093,7 @@ dicbio:form_umbilicadas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "umbilicadas"@pt .
 
-dicbio:sense_umbilicado_1 a ontolex:LexicalSense ;
+dicbio:entry_umbilicado#sense1 a ontolex:LexicalSense ;
     skos:definition "Que possui uma concavidade semelhante a um umbigo, no centro."@pt .
 
 #------------------------------------------------------------
@@ -5110,7 +5110,7 @@ dicbio:entry_uropigio a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_uropigio ;
     ontolex:otherForm dicbio:form_uropigio,
         dicbio:form_uropygio ;
-    ontolex:sense dicbio:sense_uropigio_1 .
+    ontolex:sense dicbio:entry_uropigio#sense1 .
 
 dicbio:etym_uropigio a etym:Etymology ;
     etym:etymon dicbio:etymon_uropygium ;
@@ -5128,7 +5128,7 @@ dicbio:form_uropigio a ontolex:Form ;
 dicbio:form_uropygio a ontolex:Form ;
     ontolex:writtenRep "uropygio"@pt .
 
-dicbio:sense_uropigio_1 a ontolex:LexicalSense ;
+dicbio:entry_uropigio#sense1 a ontolex:LexicalSense ;
     skos:definition "Apêndice situado na parte traseira das aves, que equivale à cauda; sobrecu."@pt .
 
 #------------------------------------------------------------
@@ -5144,8 +5144,8 @@ dicbio:entry_utriculo a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_utriculo ;
     ontolex:otherForm dicbio:form_utriculos ;
-    ontolex:sense dicbio:sense_utriculo_1,
-        dicbio:sense_utriculo_2 .
+    ontolex:sense dicbio:entry_utriculo#sense1,
+        dicbio:entry_utriculo#sense2 .
 
 dicbio:etym_utriculo a etym:Etymology ;
     etym:etymon dicbio:etymon_utriculus ;
@@ -5164,10 +5164,10 @@ dicbio:form_utriculos a ontolex:Form ;
     ontolex:writtenRep "Utriculos"@pt,
         "utriculos"@pt .
 
-dicbio:sense_utriculo_1 a ontolex:LexicalSense ;
+dicbio:entry_utriculo#sense1 a ontolex:LexicalSense ;
     skos:definition "Cada um dos vasos em forma de sacos ovais e esponjosos, situados transversalmente e que ocupam os intervalos dos vasos longitudinais, nos vegetais."@pt .
 
-dicbio:sense_utriculo_2 a ontolex:LexicalSense ;
+dicbio:entry_utriculo#sense2 a ontolex:LexicalSense ;
     skos:definition "Espécie de glândula presente nos vegetais."@pt .
 
 #------------------------------------------------------------
@@ -5181,7 +5181,7 @@ dicbio:entry_verrucoso a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_verrucoso ;
     ontolex:otherForm dicbio:form_verrucosas ;
-    ontolex:sense dicbio:sense_verrucoso_1 .
+    ontolex:sense dicbio:entry_verrucoso#sense1 .
 
 dicbio:etym_verrucoso a etym:Etymology ;
     etym:etymon dicbio:etymon_verrucosus ;
@@ -5199,7 +5199,7 @@ dicbio:form_verrucosas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
     ontolex:writtenRep "verrucosas"@pt .
 
-dicbio:sense_verrucoso_1 a ontolex:LexicalSense ;
+dicbio:entry_verrucoso#sense1 a ontolex:LexicalSense ;
     skos:definition "Semelhante a uma verruga."@pt .
 
 #------------------------------------------------------------
@@ -5217,7 +5217,7 @@ dicbio:entry_verticilado a ontolex:LexicalEntry ;
         dicbio:form_verticillada,
         dicbio:form_verticilladas,
         dicbio:form_verticillados ;
-    ontolex:sense dicbio:sense_verticilado_1 .
+    ontolex:sense dicbio:entry_verticilado#sense1 .
 
 dicbio:etym_verticilado a etym:Etymology ;
     etym:etymon dicbio:etymon_verficillatus ;
@@ -5249,7 +5249,7 @@ dicbio:form_verticillados a ontolex:Form ;
     ontolex:writtenRep "Verticillados"@pt,
         "verticillados"@pt .
 
-dicbio:sense_verticilado_1 a ontolex:LexicalSense ;
+dicbio:entry_verticilado#sense1 a ontolex:LexicalSense ;
     skos:definition "Disposto em verticilo (diz-se de estruturas vegetais)."@pt .
 
 #------------------------------------------------------------
@@ -5264,7 +5264,7 @@ dicbio:entry_vibrissa a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_vibrissa ;
     ontolex:otherForm dicbio:form_vibrissas ;
-    ontolex:sense dicbio:sense_vibrissa_1 .
+    ontolex:sense dicbio:entry_vibrissa#sense1 .
 
 dicbio:etym_vibrissa a etym:Etymology ;
     etym:etymon dicbio:etymon_vibrissae ;
@@ -5281,7 +5281,7 @@ dicbio:form_vibrissa a ontolex:Form ;
 dicbio:form_vibrissas a ontolex:Form ;
     ontolex:writtenRep "vibrissas"@pt .
 
-dicbio:sense_vibrissa_1 a ontolex:LexicalSense ;
+dicbio:entry_vibrissa#sense1 a ontolex:LexicalSense ;
     skos:definition "Cada um dos pelos rijos presentes na face de certos mamíferos, como os gatos, que servem de órgãos do tato."@pt .
 
 #------------------------------------------------------------
@@ -5297,8 +5297,8 @@ dicbio:entry_vilo a ontolex:LexicalEntry ;
     ontolex:canonicalForm dicbio:form_vilo ;
     ontolex:otherForm dicbio:form_villo,
         dicbio:form_villos ;
-    ontolex:sense dicbio:sense_vilo_1,
-        dicbio:sense_vilo_2 .
+    ontolex:sense dicbio:entry_vilo#sense1,
+        dicbio:entry_vilo#sense2 .
 
 dicbio:etym_vilo a etym:Etymology ;
     etym:etymon dicbio:etymon_villus ;
@@ -5319,10 +5319,10 @@ dicbio:form_villos a ontolex:Form ;
     rdfs:label "plural"@pt ;
     ontolex:writtenRep "villos"@pt .
 
-dicbio:sense_vilo_1 a ontolex:LexicalSense ;
+dicbio:entry_vilo#sense1 a ontolex:LexicalSense ;
     skos:definition "Excrescência do caule ou da folha semelhante a um pelo, formando uma espécie de buço."@pt .
 
-dicbio:sense_vilo_2 a ontolex:LexicalSense ;
+dicbio:entry_vilo#sense2 a ontolex:LexicalSense ;
     skos:definition "Estrutura semelhante a pelos presente nas caudas ou nos pés de certos insetos."@pt .
 
 #------------------------------------------------------------
@@ -5337,7 +5337,7 @@ dicbio:entry_zoologia a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_zoologia ;
-    ontolex:sense dicbio:sense_zoologia_1 .
+    ontolex:sense dicbio:entry_zoologia#sense1 .
 
 dicbio:etym_zoologia a etym:Etymology ;
     etym:etymon dicbio:etymon_zoologia ;
@@ -5351,7 +5351,7 @@ dicbio:etymon_zoologia a etym:Etymon ;
 dicbio:form_zoologia a ontolex:Form ;
     ontolex:writtenRep "Zoologia"@pt .
 
-dicbio:sense_zoologia_1 a ontolex:LexicalSense ;
+dicbio:entry_zoologia#sense1 a ontolex:LexicalSense ;
     skos:definition "Ramo da História Natural que estuda os animais."@pt .
 
 #------------------------------------------------------------
