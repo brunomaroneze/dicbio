@@ -66,7 +66,6 @@ dicbio:entry_adiposo_sense1 a ontolex:LexicalSense ;
 ### --- VERBETE: ANGULADO ---
 
 dicbio:entry_angulado a ontolex:LexicalEntry ;
-    etym:etymology dicbio:etym_angulado ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator author:bruno_maroneze,
         author:kamila_barbosa ;
@@ -103,14 +102,14 @@ dicbio:form_angulados a ontolex:Form ;
     ontolex:writtenRep "angulados"@pt .
 
 dicbio:entry_angulado_sense1 a ontolex:LexicalSense ;
-    skos:definition "Que apresenta ângulo; anguloso."@pt .
+    skos:definition "Que apresenta ângulo; anguloso."@pt ;
+        etym:etymology dicbio:etym_angulado .
 
 #------------------------------------------------------------
 
 ### --- VERBETE: ANTERA ---
 
 dicbio:entry_antera a ontolex:LexicalEntry ;
-    etym:etymology dicbio:etym_antera ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator author:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -149,14 +148,14 @@ dicbio:form_antheras a ontolex:Form ;
         "antheras"@pt .
 
 dicbio:entry_antera_sense1 a ontolex:LexicalSense ;
-    skos:definition "Parte da flor que contém o pólen."@pt .
+    skos:definition "Parte da flor que contém o pólen."@pt ;
+        etym:etymology dicbio:etym_antera .
 
 #------------------------------------------------------------
 
 ### --- VERBETE: ARVORE ---
 
 dicbio:entry_arvore a ontolex:LexicalEntry ;
-    etym:etymology dicbio:etym_arvore ;
     dcterms:created "2023-09-18"^^xsd:date ;
     dcterms:creator author:adriane_queiroz,
         author:bruno_maroneze ;
@@ -187,7 +186,8 @@ dicbio:form_arvores a ontolex:Form ;
         "arvores"@pt .
 
 dicbio:entry_arvore_sense1 a ontolex:LexicalSense ;
-    skos:definition "Planta perene que apresenta um tronco em geral alto e grosso, com ramos."@pt .
+    skos:definition "Planta perene que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
+    etym:etymology dicbio:etym_arvore .
 
 #------------------------------------------------------------
 

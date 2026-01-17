@@ -10,6 +10,7 @@ import unicodedata
 from django.contrib import messages
 from django.http import JsonResponse
 from django.template.loader import render_to_string
+from django.conf import settings
 
 def remover_acentos(texto):
     return ''.join(
@@ -130,72 +131,148 @@ def concordancia_por_definicao(request, def_id):
 
 import rdflib
 from django.shortcuts import render
-from rdflib.namespace import RDF, RDFS, SKOS
 from rdflib import Namespace, Literal
+from django.http import HttpResponse
+import os
+from lxml import etree
 
-# 1. Carregue o grafo FORA da função para ele ficar na memória (Singleton)
-# No futuro, você pode colocar isso no apps.py para ser mais elegante
+def buscar_contexto_no_xml(xml_id):
+    # 1. Identifica a obra pelo ID (ex: p_santucci_0001 -> santucci)
+    try:
+        partes = xml_id.split('_')
+        obra_slug = partes[1]
+    except IndexError:
+        return "Erro no formato do ID"
+
+    # 2. Mapeia o slug para o nome real do arquivo (ajuste os nomes conforme necessário)
+    mapa_arquivos = {
+        "santucci": "anatomiasantucci.xml",
+        "brotero1": "compendio1brotero.xml",
+        "brotero2": "compendio2brotero.xml",
+        "vandelli": "diciovandelli.xml",
+        "semmedo": "observSemmedo.xml"
+    }
+
+    nome_arquivo = mapa_arquivos.get(obra_slug)
+    if not nome_arquivo:
+        return f"[Obra '{obra_slug}' não mapeada no dicionário de arquivos]"
+
+    # 2. Constrói o caminho correto apontando para corpus_digital/obras_convertidas
+    caminho_xml = os.path.join(settings.BASE_DIR, "corpus_digital", "obras_convertidas", nome_arquivo)
+
+    # Debug para você ver no console se o caminho está batendo
+    print(f"Tentando abrir: {caminho_xml}")
+
+    if not os.path.exists(caminho_xml):
+        return f"[Arquivo não encontrado: {caminho_xml}]"
+
+    # 3. Abre o XML e busca o elemento pelo ID
+    try:
+        parser = etree.XMLParser(remove_blank_text=True)
+        tree = etree.parse(caminho_xml, parser)
+        
+        # Definimos o namespace 'xml' explicitamente para o XPath
+        ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
+        
+        # A consulta XPath agora usa o prefixo 'xml:' que acabamos de definir
+        busca_id = f"//*[@xml:id='{xml_id}']"
+        elementos = tree.xpath(busca_id, namespaces=ns)
+
+        if elementos:
+            # Pega o texto de todo o nó (incluindo o que estiver dentro de <term>, <i>, etc.)
+            texto = "".join(elementos[0].itertext()).strip()
+            # Limpa espaços e quebras de linha excessivas
+            return " ".join(texto.split())
+        else:
+            return f"[ID {xml_id} não localizado no arquivo {nome_arquivo}]"
+
+    except Exception as e:
+        return f"[Erro ao processar XML: {str(e)}]"
+
+# Carregamos os dois grafos (Dicionário e Índice de Exemplos)
 G = rdflib.Graph()
 G.parse("data/DicionarioBiologia.ttl", format="turtle")
+G.parse("data/corpus_index.ttl", format="turtle") # <--- Novo arquivo de índice NIF
 
 def verbete_pelo_turtle(request, lema):
-    # Definimos os Namespaces
+    # 1. Verifique se o grafo carregou (Debug simples)
+    if len(G) == 0:
+        return HttpResponse("Erro: O arquivo Turtle não foi carregado corretamente.")
+
+    # 2. Monte a URI da entrada usando o lema que vem da URL (que já é um slug)
+    # Ex: se a URL é /botanica, vira dicbio:entry_botanica
+    uri_entrada = rdflib.URIRef(f"http://dicbio.fflch.usp.br/recurso/entry_{lema}")
+
     ns = {
         "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "etym": "http://lari-datasets.ilc.cnr.it/lemonEty#",
         "lexinfo": "http://www.lexinfo.net/ontology/2.0/lexinfo#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "itsrdf": "http://www.w3.org/2005/11/its/rdf#", # <--- Para o link do corpus
+        "nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#", # <--- Para o corpus
     }
 
-    # AJUSTE NA QUERY: Agora buscamos a etimologia DENTRO do sense
+    # QUERY SIMPLIFICADA: Buscamos direto pela URI da entrada
     query = """
-    SELECT ?pos ?definition ?etymComment WHERE {
-        # Busca a entrada pelo writtenRep (lema)
-        ?entry ontolex:canonicalForm [ ontolex:writtenRep ?lemma ] .
+    SELECT ?lemmaText ?pos ?definition ?etymComment ?anchor ?contextID WHERE {
+        # Usamos a URI da entrada que passamos via bind
+        ?entry_uri a ontolex:LexicalEntry .
         
-        # Pega a classe gramatical (opcional)
-        OPTIONAL { ?entry lexinfo:partOfSpeech ?pos . }
+        # Pega o lema original (com acento) para exibir no título
+        ?entry_uri ontolex:canonicalForm [ ontolex:writtenRep ?lemmaText ] .
         
-        # Busca o sentido (obrigatório para ter definição)
-        ?entry ontolex:sense ?sense .
+        OPTIONAL { ?entry_uri lexinfo:partOfSpeech ?pos . }
         
-        # Pega a definição do sentido
+        ?entry_uri ontolex:sense ?sense .
         OPTIONAL { ?sense skos:definition ?definition . }
-        
-        # Pega a etimologia ligada ao SENTIDO (como mudamos agora)
         OPTIONAL { ?sense etym:etymology [ rdfs:comment ?etymComment ] . }
         
-        # Filtro para bater o lema exato (sensível a maiúsculas/minúsculas)
-        FILTER(STR(?lemma) = ?targetLema)
+        OPTIONAL {
+            ?occurrence itsrdf:taIdentRef ?sense ;
+                        nif:anchorOf ?anchor ;
+                        nif:referenceContext ?contextURI .
+            BIND(STRAFTER(STR(?contextURI), "recurso/") AS ?contextID)
+        }
     }
     """
 
-    # Executa a query passando o parâmetro targetLema de forma segura
-    results = G.query(query, initNs=ns, initBindings={'targetLema': Literal(lema, lang="pt")})
+
+    results = G.query(query, initNs=ns, initBindings={'entry_uri': uri_entrada})
 
     verbete_data = {
         'lemma': lema,
         'pos': '',
         'definitions': [], 
-        'etymology_list': [] # Criamos uma lista caso sentidos diferentes tenham etimologias diferentes
+        'etymology_list': [],
+        'exemplos': [] # Nova lista para os exemplos do Santucci/Vandelli
     }
 
     for row in results:
-        # Preenche o POS (Classe gramatical)
+        # Preenche POS
         if not verbete_data['pos'] and row.pos:
             verbete_data['pos'] = str(row.pos).split('#')[-1]
 
-        # Adiciona a definição
-        if row.definition:
+        # Adiciona definição (evitando duplicatas)
+        if row.definition and str(row.definition) not in verbete_data['definitions']:
             verbete_data['definitions'].append(str(row.definition))
 
-        # Adiciona o comentário etimológico (se existir e não for repetido)
+        # Adiciona etimologia
         if row.etymComment and str(row.etymComment) not in verbete_data['etymology_list']:
             verbete_data['etymology_list'].append(str(row.etymComment))
 
-    # Se não achou nada, 404
+        # Adiciona exemplos do corpus
+        if row.anchor:
+            xml_id_contexto = str(row.contextID)
+            exemplo = {
+                'termo': str(row.anchor),
+                'xml_id': xml_id_contexto,
+                # BUSCA O TEXTO COMPLETO AQUI:
+                'contexto_completo': buscar_contexto_no_xml(xml_id_contexto)
+            }
+            if exemplo not in verbete_data['exemplos']:
+                verbete_data['exemplos'].append(exemplo)
+
     if not verbete_data['definitions'] and not verbete_data['etymology_list']:
-        return render(request, '404_verbete.html', {'lema': lema}, status=404)
+        return render(request, 'verbetes/404_verbete.html', {'lema': lema}, status=404)
 
     return render(request, 'verbetes/verbete_turtle.html', {'verbete': verbete_data})

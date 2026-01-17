@@ -32,6 +32,23 @@
         </div>
     </section>
 
+    <section class="exemplos">
+        <h3>Atestações no Córpus Histórico</h3>
+        <ul class="lista-exemplos">
+            {% for ex in verbete.exemplos %}
+                <li style="margin-bottom: 15px; line-height: 1.5;">
+                    "{{ ex.contexto_completo }}" 
+                    <br>
+                    <small class="text-muted">
+                        (Termo: <strong>{{ ex.termo }}</strong> | Ref: {{ ex.xml_id }})
+                    </small>
+                </li>
+            {% empty %}
+                <li>Nenhuma atestação encontrada nos textos transcritos.</li>
+            {% endfor %}
+        </ul>
+    </section>
+    
     <footer style="margin-top: 30px; font-size: 0.8em; color: gray;">
         <p>Dados extraídos da Base de Conhecimento (OntoLex-Lemon).</p>
     </footer>

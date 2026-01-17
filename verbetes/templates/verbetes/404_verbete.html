@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="alert alert-warning">
+    <h1>Verbete não encontrado</h1>
+    <p>O termo <strong>"{{ lema }}"</strong> ainda não foi incluído no dicionário ou a URL está incorreta.</p>
+    <a href="/">Voltar para a busca</a>
+</div>
+{% endblock %}
