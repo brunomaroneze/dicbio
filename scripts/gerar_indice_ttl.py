@@ -47,9 +47,9 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
                 uri_acepcao = URIRef(ref)
             else:
                 # Se não tem ref, monta a URI baseada no lema e no senseNumber
-                # Ex: entry_disco#sense2
+                # Ex: entry_disco_sense2
                 slug_lema = slugify(lema)
-                uri_acepcao = DICBIO[f"entry_{slug_lema}#sense{sense_num}"]
+                uri_acepcao = DICBIO[f"entry_{slug_lema}_sense{sense_num}"]
 
             # Cria a URI da ocorrência (token)
             uri_token = DICBIO[xml_id]

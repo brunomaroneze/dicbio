@@ -644,7 +644,7 @@
         <p xml:id="p_santucci_0265">Caruncula seminal, ou Verumontano com dous buracos por onde sahe o semen.</p>
         <p xml:id="p_santucci_0266">Producçaõ aguda da caruncula seminal.</p>
         <p xml:id="p_santucci_0267">Glandulas Prostratas.</p>
-        <p xml:id="p_santucci_0268">Ductos pequeninos das glandulas, que apparecem aos lados da <term lemma="carúncula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula#sense2" xml:id="t_santucci_0012">caruncula</term>.</p>
+        <p xml:id="p_santucci_0268">Ductos pequeninos das glandulas, que apparecem aos lados da <term lemma="carúncula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula_sense2" xml:id="t_santucci_0012">caruncula</term>.</p>
         <p xml:id="p_santucci_0269">Musculos acceleradores.</p>
         <p xml:id="p_santucci_0270">Glandulas conglomeradas, cujos ductos escorrem pelo cano da uretra.</p>
         <p xml:id="p_santucci_0271">Outros ductos, ou canos pequeninos, que entraõ na uretra.</p>
@@ -653,9 +653,9 @@
         <p xml:id="p_santucci_0273">Glande do membro, aberta pelo meyo.</p>
         <p xml:id="p_santucci_0274">Outros dous canosinhos, que apparecem na uretra perto do seu fim.</p>
         <p xml:id="p_santucci_0275">Orificios dos vasos ureteres, que entraõ para a cavidade da bexiga ourinaria.</p>
-        <p xml:id="p_santucci_0276">Figura terceira mostra hũ rim aberto pelo meyo, onde se vê as <term lemma="carúncula" norm="carúnculas" msd="plural" senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula#sense3" xml:id="t_santucci_0013">carunculas</term>, e a pelvi.</p>
+        <p xml:id="p_santucci_0276">Figura terceira mostra hũ rim aberto pelo meyo, onde se vê as <term lemma="carúncula" norm="carúnculas" msd="plural" senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula_sense3" xml:id="t_santucci_0013">carunculas</term>, e a pelvi.</p>
         <p xml:id="p_santucci_0277">Substancia do rim.</p>
-        <p xml:id="p_santucci_0278"><term lemma="carúncula" norm="Carúnculas" msd="plural" senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula#sense3" xml:id="t_santucci_0014">Carunculas</term>,
+        <p xml:id="p_santucci_0278"><term lemma="carúncula" norm="Carúnculas" msd="plural" senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_caruncula_sense3" xml:id="t_santucci_0014">Carunculas</term>,
           ou papillas dos rins.</p>
         <p xml:id="p_santucci_0279">Vaso ourinario, ou pelvi.</p>
         <p xml:id="p_santucci_0280">Orificios de alguns vasos ourinarios.</p>
@@ -1265,7 +1265,7 @@
               pegada à cuticula, donde nascem.</s></p>
           <pb n="15" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0135.jp2&amp;id=anatomiadocorpoh01sant"/>
           <p xml:id="p_santucci_0636">9 <s xml:id="s_santucci_0017">Nenhuma outra cousa saõ as unhas, senaõ muitos canosinhos, dispostos com certa
-              ordem, pelos quaes, como por humas bainhas, passaõ os <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento#sense2" xml:id="t_santucci_0050">filamentos</term> das <term lemma="papila" norm="papilas" msd="feminino plural" xml:id="t_santucci_0051"> papillas</term> cutaneas.</s> Estes canosinhos
+              ordem, pelos quaes, como por humas bainhas, passaõ os <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2" xml:id="t_santucci_0050">filamentos</term> das <term lemma="papila" norm="papilas" msd="feminino plural" xml:id="t_santucci_0051"> papillas</term> cutaneas.</s> Estes canosinhos
             saõ de natureza cornea, dentro dos quaes está hum humor, o qual conglutinando-se, fazem
             que os mesmos canos fiquem muito endurecidos.</p>
           <note xml:id="n_santucci_0011">
@@ -1678,15 +1678,15 @@
           <pb n="60" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0180.jp2&amp;id=anatomiadocorpoh01sant"/>
           <pb n="61" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0181.jp2&amp;id=anatomiadocorpoh01sant"/>
           <p xml:id="p_santucci_0705">3 Entre os rins ha humas fistulas, que saõ como canosinhos, as quaes recebem em si
-            estas papillas, que saindo da <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense2" xml:id="t_santucci_0105">pelve</term> para os rins, lançaõ
+            estas papillas, que saindo da <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense2" xml:id="t_santucci_0105">pelve</term> para os rins, lançaõ
             humas fibrasinhas por toda a parte, que vaõ aquelles molhos sobreditos, e aos vasos de
             sangue, talvez para que mais facilmente corraõ os fluidos.</p>
           <note xml:id="n_santucci_0035">Tem humas fistulas.</note>
-          <p xml:id="p_santucci_0706">4 A <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense2" xml:id="t_santucci_0106">pelve</term> he a cavidade, que està junto ao concavo dos
+          <p xml:id="p_santucci_0706">4 A <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense2" xml:id="t_santucci_0106">pelve</term> he a cavidade, que està junto ao concavo dos
             rins, a qual resulta da dilataçaõ dos vasos ureteres, nella pòde caber hum dedo
             polegar.</p>
-          <note xml:id="n_santucci_0036">Os rins tem huma <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense2" xml:id="t_santucci_0107">pelve</term>. Est 4 fig. 3. c. c.</note>
-          <p xml:id="p_santucci_0707">5 Os vasos ureteres saõ dous canos que sabem dos rins, continuados pela mesma <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense2" xml:id="t_santucci_0108">pelve</term>, e descem obliquamente em fórma da letra S pela regiaõ
+          <note xml:id="n_santucci_0036">Os rins tem huma <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense2" xml:id="t_santucci_0107">pelve</term>. Est 4 fig. 3. c. c.</note>
+          <p xml:id="p_santucci_0707">5 Os vasos ureteres saõ dous canos que sabem dos rins, continuados pela mesma <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense2" xml:id="t_santucci_0108">pelve</term>, e descem obliquamente em fórma da letra S pela regiaõ
             lombar à bexiga, na qual se metem junto à parte posterior do seu collo, e dahi passando
             obliquamente entre as suas membranas, se abrem quando chegaõ à cavidade interior da
             mesma bexiga; com esta mecanica estaõ dispostos de sorte, que naõ possa a ourina
@@ -1698,7 +1698,7 @@
           <p xml:id="p_santucci_0708">6 Estes canos saõ redondos, da grossura de huma penna de escrever; a sua cavi-</p>
           <pb n="62" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0182.jp2&amp;id=anatomiadocorpoh01sant"/>
           <pb n="63" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0183.jp2&amp;id=anatomiadocorpoh01sant"/>
-          <p xml:id="p_santucci_0709">8 A bexiga ourinaria està na cavidade do hypogastrio, que se chama <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense1" xml:id="t_santucci_0109">pelve</term>: a sua parte superior, e mais larga, se chama fundo, do
+          <p xml:id="p_santucci_0709">8 A bexiga ourinaria està na cavidade do hypogastrio, que se chama <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense1" xml:id="t_santucci_0109">pelve</term>: a sua parte superior, e mais larga, se chama fundo, do
             qual sabe o uracho, e vay para o embigo, e nos adultos o dito uracho serve de ligamento.
             A parte inferior da bexiga, e mais estreita, se chama collo; nos homens se une com o
             intestino recto, nas mulheres se une com a bainha do utero.</p>
@@ -1737,11 +1737,11 @@
             Emulgente esquerda. Estas veas indo tortuosamente, e juntas com mutua anastomôsi, fórmaõ
             o corpo, que se chama Pampiniforme, e pyramidal. Alèm dos ditos vasos, vaõ huns ramos
             pequenos dos Hypogastricos, e das partes pudendas aos Testiculos, e ao Escroto. Os
-            nervos tambem, que vaõ aos testiculos, e ao Escroto, sahem dos plexos da <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense1" xml:id="t_santucci_0110">pelve</term>, e dos Lombares.</p>
+            nervos tambem, que vaõ aos testiculos, e ao Escroto, sahem dos plexos da <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense1" xml:id="t_santucci_0110">pelve</term>, e dos Lombares.</p>
           <note xml:id="n_santucci_0047">Vasos espermaticos hh ii</note>
           <note xml:id="n_santucci_0048">Anastomose entre as veas.</note>
           <note xml:id="n_santucci_0049">Corpo Pampiniforme, e pyramidal. K</note>
-          <note xml:id="n_santucci_0050">Os nervos saõ do plexo da <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense1" xml:id="t_santucci_0111">pelve</term>, e dos lombares.</note>
+          <note xml:id="n_santucci_0050">Os nervos saõ do plexo da <term senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense1" xml:id="t_santucci_0111">pelve</term>, e dos lombares.</note>
           <p xml:id="p_santucci_0714">8 As bexigas seminaes saõ humas bolsinhas membranosas, que tem de comprimento tres
             dedos, e de largura hum só. Estaõ estas bexigas pegadas por meyo de membranas aos lados
             do collo da bexiga ouri-</p>
@@ -1761,7 +1761,7 @@
           <p xml:id="p_santucci_0717">16 A uretra he um cano cylindrico, que principia do collo da bexiga atè o fim do
             membro, pela parte exterior. Consta de duas membranas, entre as quaes està huma
             substancia esponjosa da mesma natureza, que he a substancia do membro. A sua parte
-            posterior por causa da sua figura he de alguns chamada <term lemma="bulbo" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_bulbo#sense2" xml:id="t_santucci_0112">Bulbo</term>. <s xml:id="s_santucci_0054">A parte anterior revoltada, e estendida compoem a
+            posterior por causa da sua figura he de alguns chamada <term lemma="bulbo" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_bulbo_sense2" xml:id="t_santucci_0112">Bulbo</term>. <s xml:id="s_santucci_0054">A parte anterior revoltada, e estendida compoem a
               glande, ou cabeça do membro, chamada <term lemma="bálano" norm="Bálano" xml:id="t_santucci_0113">Balano</term>.</s></p>
           <note xml:id="n_santucci_0056">A glande fig. 1.4. Est. 4.</note>
           <p xml:id="p_santucci_0718">17 A glande, ou cabeça, he a ultima parte do membro, a qual pela parte anterior he mais
@@ -2166,7 +2166,7 @@
             medulla, que he hum humor que os enche.</p>
           <p xml:id="p_santucci_0752">8 A substancia da medulla he certamente oleosa, não muito differente da gordura, porém
             he quasi liquida, e està em muitos saquinhos membranosos. <s xml:id="s_santucci_0062">Desta substancia oleosa, e
-                <term lemma="medular" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_medular#sense2" xml:id="t_santucci_0131"> medullar</term> necessitaõ os ossos, porque
+                <term lemma="medular" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_medular_sense2" xml:id="t_santucci_0131"> medullar</term> necessitaõ os ossos, porque
               saindo dos seus pòros, tempéra com sua untuosidade as particulas do sangue, que devem
               nutrir os mesmos ossos, e tambem serve para os conservar no seu temperamento,
               lubrificando, e impedindo, que pela muita sequidaõ não se quebrem facilmente.</s>
@@ -2358,7 +2358,7 @@
           <note xml:id="n_santucci_0106">Seus processos. Apophisi recurva, ou osso Zigomatico ou Jugal. Mastoideo, mamillar
             Styloides</note>
           <p xml:id="p_santucci_0794">17 <s xml:id="s_santucci_0071">Qualquer destes ossos das fontes exteriormente tem hum processo chamado
-              mastoideo, ou mamillar, por causa de ser semelhante às <term lemma="papila" norm="papilas" msd="feminino plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_papila#sense2" xml:id="t_santucci_0142">papillas</term> das tetas das
+              mastoideo, ou mamillar, por causa de ser semelhante às <term lemma="papila" norm="papilas" msd="feminino plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense2" xml:id="t_santucci_0142">papillas</term> das tetas das
               vacas.</s> Tem tambem outro appendix, algum tanto comprido, agudo, e delgado, cuja
             figura he semelhante à de hum ferro pontiagudo, que os Latinos chamaõ stylo, e por isso
             o dito appendix se chama styloides, o qual appendix nas crianças he de cartilagem, nos
@@ -2452,12 +2452,12 @@
             espinha, e articular os ossos innominados.</p>
           <note xml:id="n_santucci_0111">Osso Sacro he composto de cinco ossos.</note>
           <note xml:id="n_santucci_0112">Sua figura.</note>
-          <note xml:id="n_santucci_0113">Cavidade <term lemma="pelve" senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense1" xml:id="t_santucci_0150">Pelve</term>. Est. 15 fig 1.</note>
+          <note xml:id="n_santucci_0113">Cavidade <term lemma="pelve" senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense1" xml:id="t_santucci_0150">Pelve</term>. Est. 15 fig 1.</note>
           <p xml:id="p_santucci_0806">11 A figura do osso Sacro he triangular, a base he larga, ou dilatada na parte do meyo,
             com a qual se articulaõ as ultimas vertebras dos lombos, corresponde na grandeza à base
             das mesmas vertebras; tem estes ossos processos, e estes saõ compridos, grossos, e
             largos, mediante os quaes se une o osso Sacro aos ossos do Ilion. Internamente he
-            concavo, e com isto ajuda a formar aquella cavidade chamada <term lemma="pelve" senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve#sense1" xml:id="t_santucci_0151">Pelve</term>, e <pb n="280" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0400.jp2&amp;id=anatomiadocorpoh01sant"/>serve tambem para que naõ se offendaõ as partes, que ahi se contém.</p>
+            concavo, e com isto ajuda a formar aquella cavidade chamada <term lemma="pelve" senseNumber="1" ref="http://dicbio.fflch.usp.br/recurso/entry_pelve_sense1" xml:id="t_santucci_0151">Pelve</term>, e <pb n="280" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0400.jp2&amp;id=anatomiadocorpoh01sant"/>serve tambem para que naõ se offendaõ as partes, que ahi se contém.</p>
           <pb n="281" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0401.jp2&amp;id=anatomiadocorpoh01sant"/>
         </div>
         <pb n="282" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0402.jp2&amp;id=anatomiadocorpoh01sant"/>
@@ -2624,7 +2624,7 @@
           <p xml:id="p_santucci_0826">11 <s xml:id="s_santucci_0095">Isto supposto, conceba-se qualquer fibra de hum <term lemma="músculo" xml:id="t_santucci_0193">musculo</term>, a qual seja mais perceptivel, como hum mòlho de muitas fibras
               carnosas, reduzidas a huma membrana muy tenue; conceba-se tambem cada huma destas
               fibras, que compoem a mayor acima dita, como hum canosinho tecido de outras fibras
-              menores, e assim se entenderá, que estas taes fibras, de que <pb n="329" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0449.jp2&amp;id=anatomiadocorpoh01sant"/>estaõ compostas as paredes de cada hum dos canosinhos carnosos, saõ <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento#sense2" xml:id="t_santucci_0194">filamentos</term> minimos dos
+              menores, e assim se entenderá, que estas taes fibras, de que <pb n="329" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0449.jp2&amp;id=anatomiadocorpoh01sant"/>estaõ compostas as paredes de cada hum dos canosinhos carnosos, saõ <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2" xml:id="t_santucci_0194">filamentos</term> minimos dos
               nervos.</s></p>
           <p xml:id="p_santucci_0827">12 <s xml:id="s_santucci_0096">A todas, e a cada huma destas fibrasinhas carnosas se seguem continuados huns
               ramos mayores, e nervosos, distribuidos por cada hum dos <term lemma="músculo" norm="músculos" msd="plural" xml:id="t_santucci_0195">musculos</term> (como acima temos dito) e
@@ -2641,10 +2641,10 @@
             nem nos seus movimentos mais violentos se pódem tirar da parte onde estaõ.</p>
           <p xml:id="p_santucci_0828">13 <s xml:id="s_santucci_0098">Pelos canosinhos carnosos livremente vay correndo o sangue antes que passe das
               arterias para as veas; e em quanto corre, as fibras se conservaõ extensas, e
-              compridas, mas pelos <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento#sense2" xml:id="t_santucci_0199">
+              compridas, mas pelos <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2" xml:id="t_santucci_0199">
                 filamentos</term> nervosos, que compoem as paredes dos canosinhos, correm os
               espiritos animaes, que provém dos nervos.</s>
-            <s xml:id="s_santucci_0099">Com tudo naõ havemos de conceber, que os mesmos espiritos correm por aquelles <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento#sense2" xml:id="t_santucci_0200">filamentos</term>, como por canos
+            <s xml:id="s_santucci_0099">Com tudo naõ havemos de conceber, que os mesmos espiritos correm por aquelles <term lemma="filamento" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2" xml:id="t_santucci_0200">filamentos</term>, como por canos
               livres, e totalmente iguaes, mas como por huns corpos esponjosos, e que tem varias
               cavidades desiguaes; e ainda que tenhaõ communicaçaõ entre si, com tudo pòdem ahi
               mesmo deter os espiritos, e impedir, que corraõ livremente.</s></p>
@@ -2665,7 +2665,7 @@
           <pb n="332" facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0452.jp2&amp;id=anatomiadocorpoh01sant"/>
           <p xml:id="p_santucci_0831">16 <s xml:id="s_santucci_0101">Para se entender mais facilmente esta contracçaõ, e relaxaçaõ do <term lemma="músculo" xml:id="t_santucci_0202">musculo</term>, havemos de conceber os segmentos, ou partes das
               fibras, que constituem os canosinhos carnosos, como huns minimos articulos, os quaes
-              dispostos direitamente, compoem o <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento#sense2" xml:id="t_santucci_0203">filamento</term> inteiro.</s>
+              dispostos direitamente, compoem o <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2" xml:id="t_santucci_0203">filamento</term> inteiro.</s>
             <s xml:id="s_santucci_0102">Isto supposto he certo, que se estes arcos por alguma causa se estenderem muito, naõ
               ficaráõ curvos, como naturalmente devem ser em quanto os <term lemma="músculo" norm="músculos" msd="plural" xml:id="t_santucci_0204"> musculos</term> conservarem a sua relaxaçaõ. </s>Isto
             succederà tanto por causa do sangue, que corre por entre os canaes carnosos, como pelo
@@ -2755,7 +2755,7 @@
           <note xml:id="n_santucci_0130">Obliquos Amatorios, e Troclear, e Obliquo inferior menor.</note>
           <p xml:id="p_santucci_0848">7 <s xml:id="s_santucci_0116">O obliquo segundo, e inferior menor, nasce perto a margem da <term lemma="órbita" norm="Órbita" xml:id="t_santucci_0227">Orbita</term>, e termina no olho, onde os <term lemma="músculo" norm="músculos" msd="plural" xml:id="t_santucci_0228">musculos</term> rectos acabaõ.</s></p>
           <p xml:id="p_santucci_0849">8 <s xml:id="s_santucci_0117">Note-se, que todos os rectos principiaõ do buraco regular, que està no fundo do
-              buraco da <term lemma="órbita" norm="Órbita" xml:id="t_santucci_0229">Orbita</term>, e acabaõ no <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_bulbo#sense2" xml:id="t_santucci_0230">bulbo</term> do olho.</s></p>
+              buraco da <term lemma="órbita" norm="Órbita" xml:id="t_santucci_0229">Orbita</term>, e acabaõ no <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_bulbo_sense2" xml:id="t_santucci_0230">bulbo</term> do olho.</s></p>
         </div>
         <div type="capítulo" n="5">
           <head xml:id="h_santucci_0045">CAPITULO V. DOS MUSCULOS DAS ORELHAS.</head>

@@ -3370,7 +3370,7 @@
 					<p xml:id="p_brotero1_0183">Entunicado (tunicatus), quando a sua casca he <pb n="32" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0112_32_t24-C-R0120.jpg"/> coberta de differentes membranas applicadas humas sobre outras.</p>
 					<p xml:id="p_brotero1_0184">
 						<s xml:id="s_brotero1_0390">Lizo (laevis), quando a sua superficie he por toda a parte igual, sem
-								<term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0215">tuberculos</term>, gretas, riscos, regos nem
+								<term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0215">tuberculos</term>, gretas, riscos, regos nem
 							cavidades algumas (o sayaõ).</s>
 					</p>
 					<p xml:id="p_brotero1_0185">Estriado ou riscado (striatus), quando tem longitudinalmente muitos riscos na
@@ -3385,12 +3385,12 @@
 					</p>
 					<p xml:id="p_brotero1_0188">
 						<s xml:id="s_brotero1_0392">Escabroso (scaber), quando he salpicado de certas producçoẽs glandulosas,
-							pequenos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0216"> tuberculos</term> ou pontos asperos ao tacto (o
+							pequenos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0216"> tuberculos</term> ou pontos asperos ao tacto (o
 							luparo, linho canamo, e amor de hortelaõ).</s>
 					</p>
 					<p xml:id="p_brotero1_0189">
 						<s xml:id="s_brotero1_0393">Echinoso (echinatus, muricatus), quando he nimiamente escabroso, e
-							tuberculozo de modo que os <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0217">tuberculos</term> saõ hum tanto longos,
+							tuberculozo de modo que os <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0217">tuberculos</term> saõ hum tanto longos,
 							agudos e rijos, mas muito pouco picantes (a ruiva dos tintureiros, a
 							abobara menina, e muitas outras cucurbitaceas).</s>
 					</p>
@@ -4346,14 +4346,14 @@
 						</p>
 						<p xml:id="p_brotero1_0362">
 							<s xml:id="s_brotero1_0511">Mamillosas ou verrugosas (papillosa, s. verrucosa), quando a sua
-								superficie tem verrugas, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0337">tuberculos</term>, ou pequenos
+								superficie tem verrugas, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0337">tuberculos</term>, ou pequenos
 								mamillos (a viperina).</s>
 						</p>
 						<p xml:id="p_brotero1_0363">Viscosas (viscosa), quando a sua superficie esta barrada de hum humor,
 							naõ fluido, mas que se apega <pb n="65" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0145_65_t24-C-R0120.jpg"/> aos dedos com tenacidade á maneira de visco (senecio viscosus).</p>
 						<p xml:id="p_brotero1_0364">
 							<s xml:id="s_brotero1_0512">Escabrosas ou asperas (scabra, s. aspera), quando a sua superficie se
-								acha salpicada de graõsinhos, ou pequenos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0338">tuberculos</term>, que a fazem aspera (a pulmonaria).</s>
+								acha salpicada de graõsinhos, ou pequenos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0338">tuberculos</term>, que a fazem aspera (a pulmonaria).</s>
 						</p>
 						<p xml:id="p_brotero1_0365">Cotanilhosas (tomentosa), quando tem a superficie cotanilhosa (como a
 							perpetua): humas vezes saõ cotanilhosas em ambas as faces, outras vezes
@@ -5063,7 +5063,7 @@
 						<p xml:id="p_brotero1_0491">
 							<s xml:id="s_brotero1_0608">Debaxo do nome de glandulas os Botanicos comprehendem em geral ora
 								certas excrescencias ora certas cavidades, que se achaõ no exterior
-								dos vegetaes, e lhes tem dado os nomes de <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0452">tuberculos</term>, mamillos, verrugas, graõsinhos, <term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo#sense2" xml:id="t_brotero1_0453">
+								dos vegetaes, e lhes tem dado os nomes de <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0452">tuberculos</term>, mamillos, verrugas, graõsinhos, <term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo_sense2" xml:id="t_brotero1_0453">
 									utriculos</term>, vesiculas, callos, pontos, fossulas, pustulas,
 								cicatrizes, pòros, &amp;c. de que fallarei, quando tractar da
 								glandulaçaõ relativa ao habito externo.</s>
@@ -6568,7 +6568,7 @@
 								appendiculos das flores, os quaes naõ servem nem à secreçaõ de succo
 								algum nem a contelo, e parece ter huma accepçaõ assaz vaga e
 								illimitada: porquanto vem-se muitas vezes nas flores varias
-								singularidades accessivas, glandulas, poros, globulos, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0606">tuberculos</term>, denticulos, rayos, pilares, escamas, ou
+								singularidades accessivas, glandulas, poros, globulos, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0606">tuberculos</term>, denticulos, rayos, pilares, escamas, ou
 								pequenas valvulas, fossulas, producçoẽs em forma de esporaõ, de
 								grinaldas, de capello, de coroa, de copo, funil, campainha, de
 								estrellas, de labios, cruzes, &amp;c. que tem recebido o nome de
@@ -7232,25 +7232,25 @@
 							ingenuamente que restaõ ainda a este respeito algumas difficuldades, que
 							so hum genio feliz e ajudado de mais observaçoẽs, do que temos athe ão
 							prezente, poderà vencer.</p>
-						<p xml:id="p_brotero1_0862">As especies de pericarpo, segundo Linneo, saõ oito, a saber, <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0656">capsula</term>, siliqua, vagem,
+						<p xml:id="p_brotero1_0862">As especies de pericarpo, segundo Linneo, saõ oito, a saber, <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0656">capsula</term>, siliqua, vagem,
 							follilho, drupa, pomo, baga, e pinha, mas esta ultima especie so se deve
 							contar no numero dos pericarpos bastardos, porque as escamas de que
 							consta saõ humaespecie de <term lemma="cálice" xml:id="t_brotero1_0657">calyz</term> persistente,
 							e naõ foraõ jamais parte do germe do pistillo.</p>
-						<p xml:id="p_brotero1_0863">A <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0658">capsula</term> (capsula), he huma
+						<p xml:id="p_brotero1_0863">A <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0658">capsula</term> (capsula), he huma
 							especie de pericarpo concavo, que se costuma abrir por partes certas e
 							determinadas, como v. g. a da campanula, reseda, meimendro, cravo,
 							tulipa e açucena. <s xml:id="s_brotero1_0787">Nalgumas plantas he molle, ou <term lemma="suculento" norm="suculenta" msd="feminino singular" xml:id="t_brotero1_0659">succulenta</term>, noutras he dura, as vezes he grossa outras
-								vezes delgada.</s> Ha fructos que constaõ de huma so <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0660">capsula</term>, outros constaõ de
+								vezes delgada.</s> Ha fructos que constaõ de huma so <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0660">capsula</term>, outros constaõ de
 							duas, tres, quatro, cinco, ou muitas, de que temos exemplos nas esporas,
 							peonia, estaphisagria, rhodiola, aquilegia, e sayaõ.</p>
-						<p xml:id="p_brotero1_0864">Ha <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0661">capsulas</term> em que se podem destinguir quatro partes, a saber,
+						<p xml:id="p_brotero1_0864">Ha <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0661">capsulas</term> em que se podem destinguir quatro partes, a saber,
 							valvulas, cellulas, partimento, e pilar; as valvulas (valvulae), saõ
 								as<note xml:id="n_brotero1_0262">Ellas estaõ conchegadas antes da madureza do fructo, mas
 								logo que este amadureceo, desviaõ-se para deixar cahir as sementes;
 								e as vezes ficaõ retorcidas depois de terem vibrado as sementes com
 								elasticidade, como as da impatiens noli me tangere.</note> partes
-							que <pb n="170" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0250_170_t24-C-R0120.jpg"/>formaõ as paredes externas da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0662">capsula</term> reunidas por suturas longitudinaes, da mesma sorte
+							que <pb n="170" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0250_170_t24-C-R0120.jpg"/>formaõ as paredes externas da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0662">capsula</term> reunidas por suturas longitudinaes, da mesma sorte
 							que as aduellas formaõ as paredes de huma vasilha; cellulas (loculi, s.
 							loculamenta), saõ os espaços que se achaõ entre as valvulas e
 							partimentos; o partimento (dissepimentum, s. septum), he hum
@@ -7259,9 +7259,9 @@
 								cellulas neste cazo saõ taõbem bastardas, e se communicaõ entre
 								si.</note> ou parede interna que vay das valvulas athe ao pilar, e
 							separa as cellulas; o pilar (columella), he o axe ou pequena coluna que
-							se acha no centro da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0663">capsula</term>, e onde se reunem todos os partimentos (a tulipa, e
+							se acha no centro da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0663">capsula</term>, e onde se reunem todos os partimentos (a tulipa, e
 							açucena).</p>
-						<p xml:id="p_brotero1_0865">A <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0664">capsula</term> diz-se ser:
+						<p xml:id="p_brotero1_0865">A <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0664">capsula</term> diz-se ser:
 							univalve (univalvis), se consta de huma so valvula, e se abre na sua
 							madureza, ou so por huma sutura lateral como nas esporas, ou por furos
 							abertos nos lados ou extremidades (pori), como na campanula, e papoila,
@@ -7287,7 +7287,7 @@
 							<s xml:id="s_brotero1_0788">Didyma ou bilobada (didyma), se tem duas protuberancias semelhantes a
 								duas ginjas apegadas huma à outra (veronica biloba, e outras
 								congeneres) <note xml:id="n_brotero1_0264">
-									<s xml:id="s_brotero1_0789">Ordinariamente este termo he usado como synonymo da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0665">capsula</term> dicocca,
+									<s xml:id="s_brotero1_0789">Ordinariamente este termo he usado como synonymo da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0665">capsula</term> dicocca,
 										mas nesta so ha duas sementes, e na dydima ha sempre mais de
 										duas, o que basta para as destinguir.</s>
 								</note>.</s>
@@ -7303,14 +7303,14 @@
 						<p xml:id="p_brotero1_0872">Infunada (inflata), quando parece huma bexiga cheya de vento (como o
 							cardiospermum). A maior <pb n="172" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0252_172_t24-C-R0120.jpg"/> parte do espaço interno destas capsûlas naõ he occupado pelas
 							sementes.</p>
-						<p xml:id="p_brotero1_0873">N. B. As <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0666">capsulas</term> que foraõ <term lemma="cálice" xml:id="t_brotero1_0667">calyz</term> ou corolla so devem ser consideradas como bastardas;
+						<p xml:id="p_brotero1_0873">N. B. As <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0666">capsulas</term> que foraõ <term lemma="cálice" xml:id="t_brotero1_0667">calyz</term> ou corolla so devem ser consideradas como bastardas;
 							taes saõ por ex. os ouriços, do castanheiro.</p>
 						<p xml:id="p_brotero1_0874"><s xml:id="s_brotero1_0790">Siliqua (siliqua), he huma especie de pericarpo oblongo, bivalve <note xml:id="n_brotero1_0265">
 									<s xml:id="s_brotero1_0791">O Dr. Oeder considera as siliquas, siliculas e vagens como
-										especies de <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0668">capsula</term>, as duas primeiras como proprias das
+										especies de <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0668">capsula</term>, as duas primeiras como proprias das
 										plantas cruciferas, e a ultima como natural às
 										leguminosas.</s>
-									<s xml:id="s_brotero1_0792">Com effeito se reflectirmos em que as sementes nas <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0669">capsulas</term> estaõ apegadas naõ sò à
+									<s xml:id="s_brotero1_0792">Com effeito se reflectirmos em que as sementes nas <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0669">capsulas</term> estaõ apegadas naõ sò à
 										base, topo e meyo, mas ainda algumas vezes às valvulas e
 										suturas, esta assersaõ parece assaz conforme á natureza.</s>
 								</note> concavo, com duas suturas <note xml:id="n_brotero1_0266">
@@ -7454,7 +7454,7 @@
 								bastarda podia ser qualquer outra parte do fructo; depois dá por
 								exemplo das bagas improprias humas <term lemma="suculento" norm="suculentas" msd="feminino plural" xml:id="t_brotero1_0682">succulentas</term>,
 								outras seccas, formadas pelo <term lemma="cálice" xml:id="t_brotero1_0683">calyz</term>,
-								corolla, receptaculo, sementes, arillo, nectario, <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0684">capsulas</term>, follilhos, vagens, e pinhas <note xml:id="n_brotero1_0272">Vej. Phil.
+								corolla, receptaculo, sementes, arillo, nectario, <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0684">capsulas</term>, follilhos, vagens, e pinhas <note xml:id="n_brotero1_0272">Vej. Phil.
 									Botan. pag. 75.</note>. </s> Elle reformou depois huma grande
 							parte destas ideas, mas naõ evitou inteiramente as ambiguidades dos seus
 							predecessores a regpeito da accepcaõ do termo baga, empregando-o muitas
@@ -7502,7 +7502,7 @@
 								(succulentum, baccatum, s. bacciforme).</s>
 							<s xml:id="s_brotero1_0815">Todos os pericarpos, cujas suturas se virem exteriormente bem
 								assinaladas, ou cujo lugar determinado de abertura for reconhecido,
-								como saõ v. g.; as <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0690">capsulas</term> do evonymus, e
+								como saõ v. g.; as <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0690">capsulas</term> do evonymus, e
 								nymphæa, devem conservar os seus nomes proprios, ainda que pela
 								razaõ da succulencia tardem a abrir-se algum tempo depois da
 								madureza das <pb n="179" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0259_179_t24-C-R0120.jpg"/> sementes, e somente se lhes pode ajuntar o termo de <term lemma="suculento" norm="suculentos" msd="masculino plural" xml:id="t_brotero1_0691">succulentos</term>; as pinhas do juniperus, ephedra, e
@@ -7517,7 +7517,7 @@
 									<s xml:id="s_brotero1_0817">A analogia, que tem o prasium com as labiadas gymnospermas,
 										mostra claramente que o tegumento externo dos seus fructos
 										he hum tegumento proprio de sementes nuas, e naõ accessivo:
-										no evonymus alem da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0696">capsula</term> as sementes tem duas laminas ou
+										no evonymus alem da <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0696">capsula</term> as sementes tem duas laminas ou
 										tegumentos proprios, dos quaes o exterior he mais grosso e
 											<term lemma="suculento" xml:id="t_brotero1_0697">succulento</term>, como muitas
 										vezes tenho observado.</s>
@@ -7545,7 +7545,7 @@
 									tegumentos, segundo a sua particular theoria.</note> (scrinum,
 								s. scrinulum) todas as bagas seccas, drupas seccas, e ainda mesmo
 								algumas nozes, a que Linneo chama pericarpos e naõ sementes
-									<note xml:id="n_brotero1_0279">Segundo Linneo as nozes reclusas dentro de huma <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0700">capsula</term>, baga, ou
+									<note xml:id="n_brotero1_0279">Segundo Linneo as nozes reclusas dentro de huma <term lemma="cápsula" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0700">capsula</term>, baga, ou
 									drupa saõ sementes; outras vezes sem serem reclusas em pericarpo
 									naõ deixaõ de ser sementes, como as avellaans e bolotas; outras
 									vezes emfim constituem hum pericarpo, como no esparto e
@@ -8221,7 +8221,7 @@
 								ligusticum, goiveiro, &amp;c.</s>
 						</p>
 						<p xml:id="p_brotero1_0907">O numero das sementes varia muito, e não se sabe muitas vezes qual he o
-							que mais naturalmente daõ algumas bagas, drupas, pomos, e <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula#sense2" xml:id="t_brotero1_0737">capsulas</term>: contudo quando a maior parte das bagas e outros
+							que mais naturalmente daõ algumas bagas, drupas, pomos, e <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2" xml:id="t_brotero1_0737">capsulas</term>: contudo quando a maior parte das bagas e outros
 							pericarpos de huma especie ou genero he observada dar hum numero
 							determinado de huma, duas, tres, quatro sementes, &amp;c. ou quando
 							geralmente as dictas bagas e quaesquer outros pericarpos daõ muitas, naõ
@@ -9592,8 +9592,8 @@
 							<s xml:id="s_brotero1_1012">Ainda que muitas destas producçoẽs so diffiraõ levemente entre si,
 							ellas tem contudo recebido bem diversas denominaçoẽs, as quaes se podem
 							reduzir principalmente a quatorze, a saber: <term lemma="glândula" norm="glândulas" msd="plural" xml:id="t_brotero1_0847"> glandulas</term>, verrugas, callos,
-							pontos, graõs, visiculas, mamillos, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0848">tuberculos</term> ,
-								<term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo#sense2" xml:id="t_brotero1_0849">utriculos</term>, folliculos, poros, fossulas, pustulas, e
+							pontos, graõs, visiculas, mamillos, <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0848">tuberculos</term> ,
+								<term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo_sense2" xml:id="t_brotero1_0849">utriculos</term>, folliculos, poros, fossulas, pustulas, e
 							cicatrizes.</s></p>
 					<p xml:id="p_brotero1_1037">
 						<s xml:id="s_brotero1_1013">As <term lemma="glândula" norm="glândulas" msd="plural" xml:id="t_brotero1_0850"> glandulas</term>
@@ -9617,7 +9617,7 @@
 					<p xml:id="p_brotero1_1038">
 						<s xml:id="s_brotero1_1015">Verrugas (verrucae), saõ glandulas grossas e hum tanto chatas ou
 							concavas, com as que se vem nos peciolos das <term lemma="folha" msd="plural" xml:id="t_brotero1_0856">folhas</term> do noveleiro, e ricinus <note xml:id="n_brotero1_0380">
-								<s xml:id="s_brotero1_1016">Taõbem se da o nome verrugas a certos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0857">tuberculos</term> ou receptaculos de algumas especies de
+								<s xml:id="s_brotero1_1016">Taõbem se da o nome verrugas a certos <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0857">tuberculos</term> ou receptaculos de algumas especies de
 									lichen.</s>
 							</note>.</s>
 					</p>
@@ -9642,20 +9642,20 @@
 							</note> e as do mesembryanthemum cristallinum.</s>
 					</p>
 					<p xml:id="p_brotero1_1043">
-						<s xml:id="s_brotero1_1020">Mamillos ou <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0860">tuberculos</term> (mamilli, s. tubercula), saõ
+						<s xml:id="s_brotero1_1020">Mamillos ou <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0860">tuberculos</term> (mamilli, s. tubercula), saõ
 							pontos carnudos, pontudos, e ordinariamente mais largos na base, como os
 							do cactus mamillaris, e algumas euphorbias <note xml:id="n_brotero1_0382">
-								<s xml:id="s_brotero1_1021">Os <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0861"> tuberculos</term> em algumas especies de
+								<s xml:id="s_brotero1_1021">Os <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0861"> tuberculos</term> em algumas especies de
 									lichen saõ pontos escabrosos e pulverulentos, que constituem o
 									receptaculo da sua fructificaçaõ.</s>
 								<s xml:id="s_brotero1_1022">Nas <term lemma="folha" msd="plural" xml:id="t_brotero1_0862">folhas</term> da pulmonaria
 									e outras asperifolias os pontas asperos, que as salpicaõ saõ
-									taõbem chamados <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0863"> tuberculos</term>.</s>
+									taõbem chamados <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0863"> tuberculos</term>.</s>
 							</note>.</s>
 					</p>
 					<p xml:id="p_brotero1_1044">
 						<s xml:id="s_brotero1_1023">
-							<term lemma="utrículo" norm="Utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo#sense2" xml:id="t_brotero1_0864">
+							<term lemma="utrículo" norm="Utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo_sense2" xml:id="t_brotero1_0864">
 								Utriculos</term> (utriculi) <note xml:id="n_brotero1_0383">
 								<s xml:id="s_brotero1_1024">Os <term lemma="utrículo" norm="utrículos" msd="plural" xml:id="t_brotero1_0865">utriculos</term> considerados em geral podem ser divididos
 									em internos e externos; os internos dependem da dissecçaõ, e
@@ -9670,9 +9670,9 @@
 							de alguma secreçaõ.</s>
 						<s xml:id="s_brotero1_1025">A sua figura varia segundo as differentes plantas; a nepentes
 							distillatoria tem na ponta das suas <term lemma="folha" msd="plural" xml:id="t_brotero1_0866">folhas</term>
-							<term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo#sense2" xml:id="t_brotero1_0867">utriculos</term> oblongos, cylindricos, e guarnecidos de hum
+							<term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo_sense2" xml:id="t_brotero1_0867">utriculos</term> oblongos, cylindricos, e guarnecidos de hum
 							operculo; as <term lemma="folha" msd="plural" xml:id="t_brotero1_0868"> folhas</term> da
-							sarracenia <pb n="254" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0334_254_t24-C-R0120.jpg"/> purpurea tem <term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo#sense2" xml:id="t_brotero1_0869">utriculos</term> tubulosos, e os que se achaõ no
+							sarracenia <pb n="254" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0334_254_t24-C-R0120.jpg"/> purpurea tem <term lemma="utrículo" norm="utrículos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_utriculo_sense2" xml:id="t_brotero1_0869">utriculos</term> tubulosos, e os que se achaõ no
 							centro da umbrella da margravia umbellata saõ longos, desunidos,
 							direitos, e terminados como a petala concava do acónito.</s>
 					</p>
@@ -9712,7 +9712,7 @@
 									especie de enfermidade dos fructos feridos pelo granizo, como
 									saõ as que se vem nas pera a que o vulgo chama peras
 									pedradas.</s></note> (cicatrices, s. pustulae), saõ especies de
-							verrugas ou <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo#sense2" xml:id="t_brotero1_0874">tuberculos</term> alastrados, taes como os que se
+							verrugas ou <term lemma="tubérculo" norm="tubérculos" msd="plural" senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2" xml:id="t_brotero1_0874">tuberculos</term> alastrados, taes como os que se
 							vem nos ramos do hypericum balearicum, e laurus indica.</s>
 					</p>
 					<p xml:id="p_brotero1_1049"><s xml:id="s_brotero1_1030">Algumas glandulas e vasos superficiaes costumaõ naturalmente lançar de si
