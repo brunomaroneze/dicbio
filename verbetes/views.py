@@ -142,7 +142,7 @@ def buscar_contexto_no_xml(xml_id):
         partes = xml_id.split('_')
         obra_slug = partes[1]
     except IndexError:
-        return "Erro no formato do ID"
+        return "[Erro no formato do ID]"
 
     # 2. Mapeia o slug para o nome real do arquivo (ajuste os nomes conforme necessário)
     mapa_arquivos = {
@@ -210,23 +210,30 @@ def verbete_pelo_turtle(request, lema):
         "lexinfo": "http://www.lexinfo.net/ontology/2.0/lexinfo#",
         "itsrdf": "http://www.w3.org/2005/11/its/rdf#", # <--- Para o link do corpus
         "nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#", # <--- Para o corpus
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     }
 
-    # QUERY SIMPLIFICADA: Buscamos direto pela URI da entrada
+    # QUERY COMPLETA E CORRIGIDA
     query = """
-    SELECT ?lemmaText ?pos ?definition ?etymComment ?anchor ?contextID WHERE {
-        # Usamos a URI da entrada que passamos via bind
-        ?entry_uri a ontolex:LexicalEntry .
-        
-        # Pega o lema original (com acento) para exibir no título
+    SELECT ?prop ?val ?definition ?pos ?etymComment ?anchor ?contextID WHERE {
         ?entry_uri ontolex:canonicalForm [ ontolex:writtenRep ?lemmaText ] .
         
         OPTIONAL { ?entry_uri lexinfo:partOfSpeech ?pos . }
         
         ?entry_uri ontolex:sense ?sense .
+        
+        # 1. Propriedades Fixas do Sentido
         OPTIONAL { ?sense skos:definition ?definition . }
         OPTIONAL { ?sense etym:etymology [ rdfs:comment ?etymComment ] . }
         
+        # 2. Captura Genérica de Outras Propriedades
+        OPTIONAL { 
+            ?sense ?prop ?val . 
+            FILTER(?prop NOT IN (skos:definition, etym:etymology, rdf:type, ontolex:isSenseOf))
+        }
+
+        # 3. Exemplos do Corpus (NIF)
         OPTIONAL {
             ?occurrence itsrdf:taIdentRef ?sense ;
                         nif:anchorOf ?anchor ;
@@ -244,7 +251,16 @@ def verbete_pelo_turtle(request, lema):
         'pos': '',
         'definitions': [], 
         'etymology_list': [],
-        'exemplos': [] # Nova lista para os exemplos do Santucci/Vandelli
+        'exemplos': [], # Nova lista para os exemplos do Santucci/Vandelli
+        'extras': {} # Dicionário para propriedades extras
+    }
+
+    # Mapa para traduzir URIs técnicas para nomes bonitos
+    MAPA_LABELS = {
+        "http://www.lexinfo.net/ontology/2.0/lexinfo#firstAttestation": "Primeira Atestação",
+        "http://www.lexinfo.net/ontology/2.0/lexinfo#usageNote": "Nota de Uso",
+        "http://purl.org/dc/terms/source": "Fonte Adicional",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso": "Veja também"
     }
 
     for row in results:
@@ -271,6 +287,17 @@ def verbete_pelo_turtle(request, lema):
             }
             if exemplo not in verbete_data['exemplos']:
                 verbete_data['exemplos'].append(exemplo)
+        
+        # Adiciona propriedades extras
+        if row.prop:
+            uri_prop = str(row.prop)
+            label = MAPA_LABELS.get(uri_prop, uri_prop.split('#')[-1])
+            valor = str(row.val)
+            
+            if label not in verbete_data['extras']:
+                verbete_data['extras'][label] = []
+            if valor not in verbete_data['extras'][label]:
+                verbete_data['extras'][label].append(valor)
 
     if not verbete_data['definitions'] and not verbete_data['etymology_list']:
         return render(request, 'verbetes/404_verbete.html', {'lema': lema}, status=404)

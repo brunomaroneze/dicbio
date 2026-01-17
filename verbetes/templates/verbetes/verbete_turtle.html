@@ -48,7 +48,21 @@
             {% endfor %}
         </ul>
     </section>
-    
+
+    {% if verbete.extras %}
+    <section class="informacoes-adicionais" style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 20px;">
+        <h4>Informações Complementares</h4>
+        <dl>
+            {% for label, valores in verbete.extras.items %}
+                <dt><strong>{{ label }}:</strong></dt>
+                {% for v in valores %}
+                    <dd>{{ v|safe }}</dd>
+                {% endfor %}
+            {% endfor %}
+        </dl>
+    </section>
+    {% endif %}
+
     <footer style="margin-top: 30px; font-size: 0.8em; color: gray;">
         <p>Dados extraídos da Base de Conhecimento (OntoLex-Lemon).</p>
     </footer>
