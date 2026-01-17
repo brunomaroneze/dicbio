@@ -23,8 +23,12 @@
     <section class="etimologia">
         <h3>Discussão Histórico-Etimológica</h3>
         <div class="texto-etimologico">
-            {# O filtro 'safe' é necessário se o seu texto tiver tags <i> do CSV original #}
-            {{ verbete.etymology|safe }}
+            {% for etym in verbete.etymology_list %}
+                <div class="bloco-etym">{{ etym|safe }}</div>
+                {% if not forloop.last %}<hr>{% endif %}
+            {% empty %}
+                <p>Etimologia não disponível.</p>
+            {% endfor %}
         </div>
     </section>
 

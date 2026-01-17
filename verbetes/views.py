@@ -131,69 +131,71 @@ def concordancia_por_definicao(request, def_id):
 import rdflib
 from django.shortcuts import render
 from rdflib.namespace import RDF, RDFS, SKOS
+from rdflib import Namespace, Literal
+
+# 1. Carregue o grafo FORA da função para ele ficar na memória (Singleton)
+# No futuro, você pode colocar isso no apps.py para ser mais elegante
+G = rdflib.Graph()
+G.parse("data/DicionarioBiologia.ttl", format="turtle")
 
 def verbete_pelo_turtle(request, lema):
-    # 1. Caminho para o seu arquivo Turtle (ajuste para o seu caminho real)
-    path_to_ttl = "data/DicionarioBiologia.ttl"
-    
-    # 2. Inicializa o Grafo e carrega o arquivo
-    g = rdflib.Graph()
-    g.parse(path_to_ttl, format="turtle")
-    
-    # 3. Define os Namespaces para a consulta SPARQL
-    # (Devem ser os mesmos que usamos no script de conversão)
-    namespaces = {
+    # Definimos os Namespaces
+    ns = {
         "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "etym": "http://lari-datasets.ilc.cnr.it/lemonEty#",
         "lexinfo": "http://www.lexinfo.net/ontology/2.0/lexinfo#",
-        "dcterms": "http://purl.org/dc/terms/",
-        "dicbio": "http://dicbio.fflch.usp.br/recurso/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "foaf": "http://xmlns.com/foaf/0.1/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "author": "http://dicbio.fflch.usp.br/autor/"
-
     }
 
-    # 4. Consulta SPARQL para pegar os dados do verbete
-    # Filtramos pelo lemma (writtenRep)
+    # AJUSTE NA QUERY: Agora buscamos a etimologia DENTRO do sense
     query = """
-    SELECT ?lemma ?pos ?definition ?etymComment WHERE {
+    SELECT ?pos ?definition ?etymComment WHERE {
+        # Busca a entrada pelo writtenRep (lema)
         ?entry ontolex:canonicalForm [ ontolex:writtenRep ?lemma ] .
         
+        # Pega a classe gramatical (opcional)
         OPTIONAL { ?entry lexinfo:partOfSpeech ?pos . }
-        OPTIONAL { ?entry ontolex:sense [ skos:definition ?definition ] . }
-        OPTIONAL { ?entry etym:etymology [ rdfs:comment ?etymComment ] . }
         
-        FILTER(STR(?lemma) = "%s")
+        # Busca o sentido (obrigatório para ter definição)
+        ?entry ontolex:sense ?sense .
+        
+        # Pega a definição do sentido
+        OPTIONAL { ?sense skos:definition ?definition . }
+        
+        # Pega a etimologia ligada ao SENTIDO (como mudamos agora)
+        OPTIONAL { ?sense etym:etymology [ rdfs:comment ?etymComment ] . }
+        
+        # Filtro para bater o lema exato (sensível a maiúsculas/minúsculas)
+        FILTER(STR(?lemma) = ?targetLema)
     }
-    """ % lema
+    """
 
-    results = g.query(query, initNs=namespaces)
+    # Executa a query passando o parâmetro targetLema de forma segura
+    results = G.query(query, initNs=ns, initBindings={'targetLema': Literal(lema, lang="pt")})
 
-    # 5. Organiza os dados para o template
-    # (Como SPARQL retorna uma lista de tuplas, pegamos a primeira)
     verbete_data = {
         'lemma': lema,
         'pos': '',
-        'etymology': '',
-        'definitions': [] # Lista para guardar as várias definições
-        }
-    for row in results:
-        # Preenche os dados fixos (só precisa fazer uma vez)
-        if not verbete_data['etymology']:
-            verbete_data['etymology'] = row.etymComment
-            verbete_data['pos'] = str(row.pos).split('#')[-1] if row.pos else ""
+        'definitions': [], 
+        'etymology_list': [] # Criamos uma lista caso sentidos diferentes tenham etimologias diferentes
+    }
 
-        # Adiciona a definição à lista se ela existir e ainda não estiver lá
-        if row.definition and str(row.definition) not in verbete_data['definitions']:
+    for row in results:
+        # Preenche o POS (Classe gramatical)
+        if not verbete_data['pos'] and row.pos:
+            verbete_data['pos'] = str(row.pos).split('#')[-1]
+
+        # Adiciona a definição
+        if row.definition:
             verbete_data['definitions'].append(str(row.definition))
 
-    if not verbete_data['definitions'] and not verbete_data['etymology']:
-        return render(request, '404_verbete.html', {'lema': lema})
+        # Adiciona o comentário etimológico (se existir e não for repetido)
+        if row.etymComment and str(row.etymComment) not in verbete_data['etymology_list']:
+            verbete_data['etymology_list'].append(str(row.etymComment))
+
+    # Se não achou nada, 404
+    if not verbete_data['definitions'] and not verbete_data['etymology_list']:
+        return render(request, '404_verbete.html', {'lema': lema}, status=404)
 
     return render(request, 'verbetes/verbete_turtle.html', {'verbete': verbete_data})
