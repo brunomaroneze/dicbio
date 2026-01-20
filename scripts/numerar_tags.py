@@ -1,14 +1,18 @@
+# Este script percorre os arquivos XML TEI no diretório especificado
+# e numera as tags de interesse que não possuem um atributo xml:id,
+# seguindo o padrão definido, garantindo unicidade e continuidade.
+
 import os
 from lxml import etree
 
 # 1. Configuração dos arquivos e seus respectivos "Slugs" de obra
 # Isso resolve o problema de autores com mais de um livro.
 MAPA_OBRAS = {
-    "anatomiasantucci.xml": "anatomiasantucci",
-    "compendio1brotero.xml": "compendio1brotero",
-    "compendio2brotero.xml": "compendio2brotero",
-    "diciovandelli.xml": "diciovandelli",
-    "observSemmedo.xml": "observSemmedo"
+    "anatomiasantucci.xml": "santucci",
+    "compendio1brotero.xml": "brotero1",
+    "compendio2brotero.xml": "brotero2",
+    "diciovandelli.xml": "vandelli",
+    "observSemmedo.xml": "semmedo"
 }
 DIRETORIO_CORPUS = "corpus_digital/obras/"
 

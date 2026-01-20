@@ -1,3 +1,6 @@
+# Este script organiza o dicionário RDF em blocos legíveis
+# agrupando entradas, etimologias, formas e sentidos juntos.
+
 import rdflib
 from rdflib import Namespace, RDF, RDFS, SKOS, DCTERMS
 
