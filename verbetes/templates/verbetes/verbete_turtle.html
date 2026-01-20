@@ -37,10 +37,13 @@
         <ul class="lista-exemplos">
             {% for ex in verbete.exemplos %}
                 <li style="margin-bottom: 15px; line-height: 1.5;">
-                    "{{ ex.contexto_completo }}" 
+                    <a href="{% url 'corpus_digital:obra_detalhe' ex.obra_slug %}#{{ ex.xml_id }}">
+                        "{{ ex.contexto_completo }}"
+                    </a>
                     <br>
                     <small class="text-muted">
-                        (Termo: <strong>{{ ex.termo }}</strong> | Ref: {{ ex.xml_id }})
+                        (Termo: <strong>{{ ex.termo }}</strong> | 
+                        <a href="{% url 'corpus_digital:obra_detalhe' ex.obra_slug %}#{{ ex.xml_id }}">Ver no texto original</a>)
                     </small>
                 </li>
             {% empty %}

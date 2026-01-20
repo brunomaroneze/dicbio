@@ -157,8 +157,8 @@ def buscar_contexto_no_xml(xml_id):
     if not nome_arquivo:
         return f"[Obra '{obra_slug}' não mapeada no dicionário de arquivos]"
 
-    # 2. Constrói o caminho correto apontando para corpus_digital/obras_convertidas
-    caminho_xml = os.path.join(settings.BASE_DIR, "corpus_digital", "obras_convertidas", nome_arquivo)
+    # 2. Constrói o caminho correto apontando para corpus_digital/obras
+    caminho_xml = os.path.join(settings.BASE_DIR, "corpus_digital", "obras", nome_arquivo)
 
     # Debug para você ver no console se o caminho está batendo
     print(f"Tentando abrir: {caminho_xml}")
@@ -246,6 +246,15 @@ def verbete_pelo_turtle(request, lema):
 
     results = G.query(query, initNs=ns, initBindings={'entry_uri': uri_entrada})
 
+    # MAPA DE TRADUÇÃO: Prefixo do ID -> Slug Real do Banco de Dados
+    TRADUTOR_SLUGS = {
+        "santucci": "anatomiasantucci",
+        "brotero1": "compendio1brotero",
+        "brotero2": "compendio2brotero",
+        "vandelli": "diciovandelli",
+        "semmedo": "observsemmedo" # Ajuste conforme o slug real no seu admin do Django
+    }
+
     verbete_data = {
         'lemma': lema,
         'pos': '',
@@ -279,10 +288,21 @@ def verbete_pelo_turtle(request, lema):
         # Adiciona exemplos do corpus
         if row.anchor:
             xml_id_contexto = str(row.contextID)
+            
+            # Extrai o slug do ID (ex: p_santucci_0010 -> santucci)
+            # Isso deve bater com o slug cadastrado no modelo Obra
+            try:
+                prefixo_obra = xml_id_contexto.split('_')[1]
+            except IndexError:
+                prefixo_obra = ""
+
+            # 2. TRADUÇÃO: Busca o slug real. Se não encontrar, usa o prefixo mesmo.
+            slug_real_obra = TRADUTOR_SLUGS.get(prefixo_obra, prefixo_obra)
+
             exemplo = {
                 'termo': str(row.anchor),
                 'xml_id': xml_id_contexto,
-                # BUSCA O TEXTO COMPLETO AQUI:
+                'obra_slug': slug_real_obra, # <--- ENVIAMOS O SLUG PARA O TEMPLATE
                 'contexto_completo': buscar_contexto_no_xml(xml_id_contexto)
             }
             if exemplo not in verbete_data['exemplos']:

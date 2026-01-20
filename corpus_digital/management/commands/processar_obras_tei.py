@@ -6,21 +6,29 @@ from pathlib import Path
 from django.utils.text import slugify
 from django.urls import reverse
 
-# Em corpus_digital/management/commands/processar_obras_tei.py
+# --- FUNÇÕES AUXILIARES DE CONVERSÃO ---
 
 def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
     """
-    Substitui tags TEI por equivalentes HTML, processa <pb>, <titlePage>,
-    e divide parágrafos <p> que contêm quebras de página <pb>.
+    Substitui tags TEI por HTML e preserva os IDs para ancoragem.
     """
     ns_tei_com_chaves = f'{{{ns_tei_url_sem_chaves}}}'
-    ns_map = {'tei': ns_tei_url_sem_chaves}
+    ns_map = {'tei': ns_tei_url_sem_chaves, 'xml': 'http://www.w3.org/XML/1998/namespace'}
+    xml_id_qname = etree.QName(ns_map['xml'], 'id')
 
-    # --- PASSO DE DIVISÃO DE PARÁGRAFOS (MANTIDO, É IMPORTANTE) ---
+    # 1. Mapear xml:id para id HTML em todos os elementos (p, s, head, etc.)
+    # Isso permite que o link do dicionário "pouse" no lugar certo.
+    for el in element.xpath(".//*[@xml:id]", namespaces=ns_map):
+        valor_id = el.get(xml_id_qname)
+        el.set('id', valor_id)
+
+    # 2. Divisão de parágrafos <p> que contêm quebras <pb>
     while element.xpath('.//tei:p/tei:pb', namespaces=ns_map):
         pb_in_p = element.xpath('.//tei:p/tei:pb', namespaces=ns_map)[0]
         p_parent = pb_in_p.getparent()
         new_p = etree.Element(p_parent.tag, attrib=p_parent.attrib)
+        if 'id' in new_p.attrib:
+            new_p.set('id', f"{new_p.get('id')}_cont")
         new_p.text = pb_in_p.tail
         pb_in_p.tail = None
         siblings_to_move = list(pb_in_p.itersiblings())
@@ -28,311 +36,142 @@ def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
             new_p.append(sibling)
         p_parent.addnext(new_p)
         p_parent.addnext(pb_in_p)
-    # --- FIM DO PASSO DE DIVISÃO ---
 
-    # --- REINTRODUZIR O PROCESSAMENTO DE <titlePage> ---
-    # Encontra todas as tags <titlePage>
-    title_pages = list(element.xpath(f'.//tei:titlePage', namespaces=ns_map))
-    for tp_el in title_pages:
-        url_imagem = tp_el.get('facs')
-        
-        # O <titlePage> geralmente contém o título, autor, etc.
-        # Nós queremos manter esse conteúdo, mas inserir um MARCADOR *antes* dele.
-        
-        if url_imagem:
-            page_id = f"pagina_titlepage_{tp_el.get('n', '0')}".replace(" ", "_")
-            display_num = tp_el.get('n', 'Título')
-
-            # Cria o <span> marcador
-            marcador = etree.Element('span')
-            marcador.set('id', page_id)
-            marcador.set('class', 'marcador-pagina marcador-titlepage')
-            marcador.text = f'[Pág. {display_num}] '
-            marcador.set('data-facs', url_imagem)
-            marcador.set('data-pagina-numero', display_num)
-
-            # Insere o marcador ANTES do elemento <titlePage>
-            tp_el.addprevious(marcador)
-    # --- FIM DO PROCESSAMENTO DE <titlePage> ---
-
-
-    # --- Processar <tei:titlePage> --- (código existente)
-    title_pages = list(element.xpath(f'.//tei:titlePage', namespaces=ns_map))
-    # ... (seu código para titlePage permanece o mesmo) ...
-
-
-    # --- Processar <tei:pb> (page breaks) - LÓGICA ATUALIZADA ---
+    # 3. Processar <pb> (page breaks)
     page_breaks = list(element.xpath(f'.//tei:pb', namespaces=ns_map))
     for pb_el in page_breaks:
         num_pagina = pb_el.get('n', '?')
         url_imagem = pb_el.get('facs')
-
-        # Criar um container <div> para a linha e o marcador
         marcador_container = etree.Element('div')
-        marcador_container.set('class', 'page-break-indicator') # Classe para o container geral
-
-        # 1. Adicionar a linha horizontal
-        hr_element = etree.SubElement(marcador_container, 'hr')
-        hr_element.set('class', 'page-separator') # Classe para estilizar a linha
-
-        # 2. Adicionar o span do marcador (que será o alvo para rolagem e JS)
+        marcador_container.set('class', 'page-break-indicator')
+        etree.SubElement(marcador_container, 'hr', attrib={'class': 'page-separator'})
+        
         marcador_span = etree.SubElement(marcador_container, 'span')
-        marcador_span.set('id', f'pagina_{num_pagina.replace(" ", "_")}') # Substitui espaços no ID
+        # Preserva o ID do pb se houver, ou cria um de página
+        pid = pb_el.get(xml_id_qname) or f'pagina_{num_pagina.replace(" ", "_")}'
+        marcador_span.set('id', pid)
         marcador_span.set('class', 'marcador-pagina')
         marcador_span.text = f'[p. {num_pagina}] '
-        if url_imagem:
-            marcador_span.set('data-facs', url_imagem)
-        if num_pagina and num_pagina != '?':
-            marcador_span.set('data-pagina-numero', num_pagina)
-
-        # Se o <pb> tinha um .tail (texto seguindo-o), anexa ao container
+        
         if pb_el.tail:
             marcador_container.tail = pb_el.tail
             pb_el.tail = None
         
-        # Substitui o <pb> original pelo novo container <div>
         parent = pb_el.getparent()
         if parent is not None:
             parent.replace(pb_el, marcador_container)
 
-    # --- Outras substituições (s, note) --- (código existente)
+    # 4. Substituição de outras tags
     for el in element.iter():
         tag = el.tag
         if tag == f'{ns_tei_com_chaves}s':
             el.tag = 'span'
+            el.set('class', 'tei-sentence')
         elif tag == f'{ns_tei_com_chaves}note':
             el.tag = 'div'
             el.set('class', 'nota-tei')
-
-        # --- NOVA LÓGICA: Transformar a própria tag <titlePage> em um <div> ---
-        # Isso preserva o conteúdo da página de título.
         elif tag == f'{ns_tei_com_chaves}titlePage':
             el.tag = 'div'
-            el.set('class', 'title-page-content') # Adiciona uma classe para estilização
+            el.set('class', 'title-page-content')
 
 
-# Função principal de conversão TEI para HTML
 def converter_tei_para_html_para_comando(tree):
-    ns_map = {'tei': 'http://www.tei-c.org/ns/1.0', 'xml': 'http://www.w3.org/XML/1998/namespace'} # Adicionado namespace xml
+    ns_map = {'tei': 'http://www.tei-c.org/ns/1.0', 'xml': 'http://www.w3.org/XML/1998/namespace'}
     tei_ns_url = 'http://www.tei-c.org/ns/1.0'
+    xml_id_qname = etree.QName(ns_map['xml'], 'id')
 
     text_element = tree.find('.//tei:text', namespaces=ns_map)
-
     if text_element is None:
         return "<p>(Sem conteúdo na seção TEI <text>)</p>"
 
-    # 1. Transformar tei:term em <a> (e adicionar data-lemma)
+    # 1. Transformar tei:term em <a> e apontar para o dicionário
     for term_el in text_element.xpath('.//tei:term', namespaces=ns_map):
-        lemma = term_el.get('lemma') or (term_el.text or '').strip()
-        slug_do_lemma = slugify(lemma)
-        token_superficie = term_el.text or lemma
+        t_id = term_el.get(xml_id_qname)
+        
+        # Lógica de link: tenta usar ref, senão usa o lemma slugificado
+        ref = term_el.get('ref')
+        if ref:
+            # Extrai o lema da URI (ex: http.../entry_botanica_sense1 -> botanica)
+            slug_do_lemma = ref.split('/')[-1].replace('entry_', '').split('_sense')[0]
+        else:
+            lemma = term_el.get('lemma') or (term_el.text or '').strip()
+            slug_do_lemma = slugify(lemma)
 
         term_el.tag = 'a'
+        term_el.set('class', 'tei-term-link')
+        if t_id: term_el.set('id', t_id) # Preserva o ID no HTML
+        
         try:
-            url_consulta = reverse('verbetes:detalhe', args=[slug_do_lemma])
+            # Tenta gerar a URL usando o reverse do Django
+            # Ajuste 'verbetes:verbete_pelo_turtle' conforme o nome na sua urls.py
+            url_consulta = reverse('verbetes:verbete_pelo_turtle', args=[slug_do_lemma])
             term_el.set('href', url_consulta)
-        except Exception as e:
-            # print(f"AVISO: Falha ao gerar URL para o termo '{lemma}' (slug: '{slug_do_lemma}'). Erro: {e}.")
-            term_el.set('href', f"/verbetes/{slug_do_lemma}/")
+        except:
+            term_el.set('href', f"/consulta/{slug_do_lemma}/")
 
-        term_el.text = token_superficie
-        if lemma:
-            term_el.set('data-lemma', lemma)
+        # Limpeza de atributos internos do TEI
+        for attr in ['lemma', 'norm', 'msd', 'senseNumber', 'ana', 'corresp', 'ref']:
+            if attr in term_el.attrib: del term_el.attrib[attr]
 
-        # Limpar atributos TEI específicos de tei:term
-        tei_term_attrs_to_remove = ['lemma', 'norm', 'msd', 'senseNumber', 'type', 'ana', 'corresp', 'ref']
-        for attr_name in list(term_el.attrib.keys()):
-            if attr_name in tei_term_attrs_to_remove:
-                del term_el.attrib[attr_name]
-
-    # 2. Chamar a função para substituir/modificar outras tags TEI (pb, titlePage, s, note)
-    # Esta função opera em todo o <text>
+    # 2. Processar outras tags e IDs
     substituir_tags_inadequadas(text_element, tei_ns_url)
 
-    # --- NOVO PASSO: Adicionar classe para elementos com xml:lang="la" ---
-    # XPath para encontrar qualquer elemento (*) com o atributo xml:lang igual a "la"
-    # O namespace 'xml' é predefinido em lxml e geralmente não precisa ser declarado no ns_map para @xml:lang,
-    # mas é uma boa prática incluí-lo para clareza e robustez.
-    # No entanto, lxml pode tratar @xml:lang diretamente. Vamos testar.
-    # Se xpath com @xml:lang não funcionar, usaremos .get('{http://www.w3.org/XML/1998/namespace}lang')
-    
-    # Tentativa 1: XPath direto (mais limpo se funcionar)
-    # Nota: O namespace 'xml' é 'http://www.w3.org/XML/1998/namespace'
-    # elementos_latinos = text_element.xpath(".//*[@xml:lang='la']", namespaces=ns_map)
-    
-    # Tentativa 2: Iterar e verificar o atributo com namespace (mais robusto)
-    # O namespace para xml:lang é '{http://www.w3.org/XML/1998/namespace}lang'
-    xml_lang_attr_qname = etree.QName(ns_map['xml'], 'lang') # Forma correta de obter o nome qualificado
-
-    for el_latim in text_element.xpath(".//*[attribute::*[local-name()='lang' and namespace-uri()='http://www.w3.org/XML/1998/namespace'] = 'la']", namespaces=ns_map):
-    # Alternativa mais simples se a de cima for complexa de ler: iterar e checar
-    # for el_latim in text_element.iter('*'):
-    #    if el_latim.get(xml_lang_attr_qname) == 'la':
-        
-        # Adiciona a classe CSS
-        classes_existentes = el_latim.get('class')
-        if classes_existentes:
-            if 'texto-latim' not in classes_existentes.split():
-                el_latim.set('class', classes_existentes + ' texto-latim')
-        else:
-            el_latim.set('class', 'texto-latim')
-        
-        # Opcional: transferir xml:lang para lang no HTML ou remover xml:lang
-        # Para manter o atributo lang no HTML:
-        el_latim.set('lang', 'la') # Adiciona o atributo lang="la" padrão do HTML
-        if xml_lang_attr_qname in el_latim.attrib:
-             del el_latim.attrib[xml_lang_attr_qname] # Remove o xml:lang original
-    # --------------------------------------------------------------------
-
-# --- NOVO PASSO: Processar tags <g> com referências ---
-    # Este loop deve rodar ANTES da limpeza final de namespaces TEI,
-    # mas depois que outras transformações de tag já aconteceram.
-
-    # Primeiro, vamos construir um mapa das definições de caracteres do <charDecl>
-    char_map = {}
-    for char_el in tree.xpath('.//tei:charDecl/tei:char', namespaces=ns_map):
-        char_id = char_el.get('{http://www.w3.org/XML/1998/namespace}id')
-        if char_id:
-            mapping_el = char_el.find('tei:mapping[@type="unicode"]', namespaces=ns_map)
-            desc_el = char_el.find('tei:desc', namespaces=ns_map)
-            unicode_val = mapping_el.text.replace('U+', '') if mapping_el is not None and mapping_el.text else None
-            desc_val = desc_el.text if desc_el is not None and desc_el.text else char_id
-            char_map[f"#{char_id}"] = {'unicode': unicode_val, 'desc': desc_val}
-
-    # Agora, encontre todas as tags <g> com um atributo ref e processe-as
-    for g_el in text_element.xpath('.//tei:g[@ref]', namespaces=ns_map):
-        ref = g_el.get('ref')
-        
-        # Opcional: manter o texto original do <g> se houver, para fallback
-        # original_text = g_el.text or ""
-        
-        # Substituir por uma Entidade Numérica HTML
-        if ref in char_map and char_map[ref]['unicode']:
-            unicode_hex = char_map[ref]['unicode']
-            html_entity = f"&#x{unicode_hex};" # Ex: 톗
-            
-            # Criar um novo elemento <span> para conter a entidade
-            # Usar etree.fromstring para parsear a entidade corretamente.
-            # O texto da tag será a entidade, que os navegadores renderizarão como o símbolo.
-            # Para que o lxml não escape a entidade, precisamos de um truque.
-            # Vamos criar um span e definir seu 'tail' para a entidade,
-            # então o nó <g> vazio será substituído pelo span, e o tail será inserido.
-            
-            span_substituto = etree.Element('span')
-            span_substituto.set('class', 'special-char') # Para estilização opcional
-            span_substituto.set('title', char_map[ref]['desc']) # Tooltip com a descrição
-            
-            # Adicionar a entidade como 'tail' do elemento que vem ANTES de <g>
-            # ou como 'text' do elemento PAI se for o primeiro filho.
-            # A forma mais segura é substituir <g> por um nó de texto contendo a entidade.
-            # Mas lxml escapa o '&'. A solução é usar um nó de comentário e depois
-            # substituir na string final.
-            placeholder = f"__CHAR_ENTITY_{unicode_hex}__"
-            g_el.tag = 'span' # Transforma <g> em <span>
-            g_el.text = placeholder
-            g_el.set('class', 'special-char')
-            g_el.set('title', char_map[ref]['desc'])
-            # Limpar atributos antigos
-            del g_el.attrib['ref']
-     
-        # --------------------------------------------------
-
-
-    # 3. Limpeza final de namespaces TEI (manter namespaces de outros como HTML 'lang')
+    # 3. Limpeza final de namespaces
     for el in text_element.iter('*'):
-        # Remover namespace TEI da tag
         if el.tag.startswith(f'{{{tei_ns_url}}}'):
             el.tag = el.tag.split('}', 1)[1]
-        
-        # Remover atributos com namespace TEI
-        # Mas preservar atributos de outros namespaces como o 'xml' (que se torna 'lang' no HTML)
-        # ou atributos sem namespace (como 'class', 'id', 'href', 'data-lemma', 'lang' que acabamos de adicionar)
-        for attr_qname_str in list(el.attrib.keys()):
-            if attr_qname_str.startswith(f'{{{tei_ns_url}}}'): # Se for um atributo TEI
-                del el.attrib[attr_qname_str]
-            # Se for um atributo xml:*, como xml:id, e você quiser mantê-lo como id,
-            # uma lógica similar à de xml:lang pode ser necessária.
-            # Por agora, o xml:lang foi tratado acima e convertido para 'lang'.
+        for attr_qname in list(el.attrib.keys()):
+            if attr_qname.startswith(f'{{{tei_ns_url}}}'):
+                del el.attrib[attr_qname]
+            elif attr_qname == xml_id_qname:
+                if 'id' not in el.attrib: el.set('id', el.attrib[attr_qname])
+                del el.attrib[attr_qname]
 
+    return etree.tostring(text_element, method='html', encoding='unicode', pretty_print=True)
 
-    html_string = etree.tostring(text_element, method='html', encoding='unicode', pretty_print=True)
-
-    # Passo final para substituir os placeholders de entidades por entidades reais
-    for ref_id, char_data in char_map.items():
-        if char_data['unicode']:
-            placeholder = f"__CHAR_ENTITY_{char_data['unicode']}__"
-            html_entity = f"&#x{char_data['unicode']};"
-            html_string = html_string.replace(placeholder, html_entity)
-            
-    return html_string
-
+# --- CLASSE DO COMANDO DJANGO ---
 
 class Command(BaseCommand):
     help = 'Converte os arquivos TEI-XML das obras para HTML e salva no banco de dados.'
 
     def add_arguments(self, parser):
-        parser.add_argument(
-            '--slug',
-            type=str,
-            help='Processa apenas a obra com o slug especificado.',
-        )
-        parser.add_argument(
-            '--force',
-            action='store_true',
-            help='Força o reprocessamento mesmo que já exista HTML.',
-        )
+        parser.add_argument('--slug', type=str, help='Processa apenas uma obra.')
+        parser.add_argument('--force', action='store_true', help='Força reprocessamento.')
 
     def handle(self, *args, **options):
         slug_especifico = options['slug']
-        forcar_reprocessamento = options['force']
+        forcar = options['force']
 
-        obras_a_processar = Obra.objects.all()
+        obras = Obra.objects.all()
         if slug_especifico:
-            try:
-                obras_a_processar = Obra.objects.filter(slug=slug_especifico)
-                if not obras_a_processar.exists():
-                    raise CommandError(f'Obra com slug "{slug_especifico}" não encontrada.')
-            except Obra.DoesNotExist:
-                raise CommandError(f'Obra com slug "{slug_especifico}" não encontrada.')
+            obras = obras.filter(slug=slug_especifico)
 
-        if not obras_a_processar.exists() and not slug_especifico:
-             self.stdout.write(self.style.WARNING('Nenhuma obra encontrada para processar.'))
-             return
+        if not obras.exists():
+            self.stdout.write(self.style.WARNING('Nenhuma obra para processar.'))
+            return
 
-        self.stdout.write(self.style.SUCCESS(f'Iniciando processamento de {obras_a_processar.count()} obra(s)...'))
+        for obra in obras:
+            self.stdout.write(f'Processando: {obra.titulo}')
 
-        for obra in obras_a_processar:
-            self.stdout.write(f'Processando: {obra.titulo} (Slug: {obra.slug})')
-
-            if obra.conteudo_html_processado and not forcar_reprocessamento:
-                self.stdout.write(self.style.NOTICE(f'  HTML já existe para "{obra.titulo}". Use --force para reprocessar.'))
+            if obra.conteudo_html_processado and not forcar:
+                self.stdout.write(self.style.NOTICE(f'  Ignorando {obra.titulo}.'))
                 continue
 
-            if not obra.caminho_arquivo:
-                self.stderr.write(self.style.ERROR(f'  Campo "caminho_arquivo" não definido para a obra "{obra.titulo}"'))
-                continue
+            # Supõe que CORPUS_XML_ROOT está em settings.py apontando para a pasta raiz dos XMLs
+            caminho_xml = settings.BASE_DIR / "corpus_digital" / "obras" / obra.caminho_arquivo
 
-            caminho_xml_completo = settings.CORPUS_XML_ROOT / obra.caminho_arquivo
-
-            if not caminho_xml_completo.exists():
-                self.stderr.write(self.style.ERROR(f'  Arquivo XML não encontrado para "{obra.titulo}" em: {caminho_xml_completo}'))
-                self.stderr.write(self.style.NOTICE(f'  Verifique se CORPUS_XML_ROOT em settings.py ({settings.CORPUS_XML_ROOT}) está correto e se obra.caminho_arquivo ("{obra.caminho_arquivo}") está correto.'))
+            if not caminho_xml.exists():
+                self.stderr.write(self.style.ERROR(f'  Arquivo não encontrado: {caminho_xml}'))
                 continue
 
             try:
-                tree = etree.parse(str(caminho_xml_completo))
+                tree = etree.parse(str(caminho_xml))
                 html_content = converter_tei_para_html_para_comando(tree)
-
                 obra.conteudo_html_processado = html_content
                 obra.save()
-                self.stdout.write(self.style.SUCCESS(f'  HTML gerado e salvo para "{obra.titulo}"'))
+                self.stdout.write(self.style.SUCCESS(f'  Sucesso!'))
 
-            except etree.ParseError as e:
-                self.stderr.write(self.style.ERROR(f'  Erro ao parsear XML para "{obra.titulo}": {e}'))
             except Exception as e:
-                self.stderr.write(self.style.ERROR(f'  Erro inesperado ao processar "{obra.titulo}": {e}'))
-                import traceback
-                traceback.print_exc()
+                self.stderr.write(self.style.ERROR(f'  Erro em {obra.titulo}: {e}'))
 
-
-        self.stdout.write(self.style.SUCCESS('Processamento concluído.'))
+        self.stdout.write(self.style.SUCCESS('Concluído.'))
