@@ -2347,7 +2347,7 @@ dicbio:entry_filamento_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_fitologia a ontolex:LexicalEntry ;
     dcterms:created "2023-12-05"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
+    dcterms:creator author:dannielly_rodrigues_silva,
         author:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
@@ -2413,7 +2413,7 @@ dicbio:entry_flosculo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_folha a ontolex:LexicalEntry ;
     dcterms:created "2025-04-09"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
+    dcterms:creator author:dannielly_rodrigues_silva,
         author:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
@@ -4378,7 +4378,7 @@ dicbio:entry_pontoado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_raiz a ontolex:LexicalEntry ;
     dcterms:created "2023-04-03"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
+    dcterms:creator author:dannielly_rodrigues_silva,
         author:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
@@ -4896,7 +4896,7 @@ dicbio:entry_tendinoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tronco a ontolex:LexicalEntry ;
     dcterms:created "2023-06-14"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
+    dcterms:creator author:dannielly_rodrigues_silva,
         author:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
