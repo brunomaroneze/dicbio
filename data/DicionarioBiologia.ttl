@@ -4089,7 +4089,8 @@ dicbio:form_perenne a ontolex:Form ;
         "perenne"@pt .
 
 dicbio:entry_perene_sense1 a ontolex:LexicalSense ;
-    skos:definition "Que produz novas gemas e nova folhagem a cada ano (diz-se de planta)."@pt etym:etymology dicbio:etym_perene_sense1 .
+    skos:definition "Que produz novas gemas e nova folhagem a cada ano (diz-se de planta)."@pt ;
+    etym:etymology dicbio:etym_perene_sense1 .
 
 #------------------------------------------------------------
 
