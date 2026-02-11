@@ -75,8 +75,8 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
 
 # Lista de seus arquivos
 meus_arquivos = [
-    "corpus_digital/obras_convertidas/anatomiasantucci.xml", "corpus_digital/obras_convertidas/compendio1brotero.xml", "corpus_digital/obras_convertidas/compendio2brotero.xml",
-    "corpus_digital/obras_convertidas/diciovandelli.xml", "corpus_digital/obras_convertidas/observSemmedo.xml"
+    "corpus_digital/anatomiasantucci.xml", "corpus_digital/compendio1brotero.xml", "corpus_digital/compendio2brotero.xml",
+    "corpus_digital/diciovandelli.xml", "corpus_digital/observSemmedo.xml"
 ]
 
 gerar_nif_index(meus_arquivos, "corpus_index.ttl")
