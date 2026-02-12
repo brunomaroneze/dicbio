@@ -1,3 +1,5 @@
+# Script para gerar um índice NIF a partir dos arquivos XML do corpus digital
+
 import rdflib
 from rdflib import Namespace, Literal, RDF, URIRef
 from lxml import etree
