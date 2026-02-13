@@ -12,6 +12,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
+
 ### --- VERBETE: ADIPOSO ---
 
 dicbio:entry_adiposo a ontolex:LexicalEntry ;
@@ -29,13 +30,14 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
 
 dicbio:etym_adiposo_sense1 a etym:Etymology ;
     etym:etymon dicbio:etymon_adiposus ;
-    rdfs:comment "O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>. No entanto, a forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."^^rdf:HTML .
+    rdfs:comment """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>. No entanto, a forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML .
 
 dicbio:etymon_adiposus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "“panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C)"@pt ;
     ontolex:writtenRep "adiposus" ;
-    owl:sameAs <https://lila-erc.eu/data/id/lemma/152495> .
+    owl:sameAs <https://lila-erc.eu/data/id/lemma/152495> ;
+    dcterms:source dicbio:source_acta_physico_medica_1730 ;
+    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
 
 dicbio:form_adiposo a ontolex:Form ;
     ontolex:writtenRep "adiposo"@pt ;
@@ -5392,6 +5394,16 @@ dicbio:source_old a bibo:Book ;
     dcterms:publisher "Oxford University Press" ;
     dcterms:issued "1968" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q124030561> . # URI universal do OLD
+
+dicbio:source_acta_physico_medica_series a bibo:Periodical ;
+    dcterms:title "Acta Physico-Medica Academiae Caesareae Leopoldino-Carolinae" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q13548519> .
+
+dicbio:source_acta_physico_medica_1730 a bibo:Issue ;
+    dcterms:title "Acta Physico-Medica, Vol. II" ;
+    dcterms:issued "1730"^^xsd:gYear ;
+    dcterms:isPartOf dicbio:source_acta_physico_medica_series ; 
+    rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .
 
 #------------------------------------------------------------
 
