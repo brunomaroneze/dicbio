@@ -92,8 +92,7 @@ dicbio:form_angulado a ontolex:Form ;
 
 dicbio:form_angulada a ontolex:Form ;
     rdfs:label "feminino singular"@pt ;
-    ontolex:writtenRep "angulada"@pt,
-        "angulada"@pt .
+    ontolex:writtenRep "angulada"@pt .
 
 dicbio:form_anguladas a ontolex:Form ;
     rdfs:label "feminino plural"@pt ;
