@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+
+
+### REGISTRO DAS FONTES ###
+
+# Quando a fonte é o nosso próprio projeto:
+
+dbsrc:dicbio_project a foaf:Project ;
+    foaf:name "Dicionário Histórico de Termos da Biologia" ;
+    dcterms:title "Dicionário Histórico de Termos da Biologia" ;
+    foaf:homepage <https://dicbio.fflch.usp.br/> .
+
+# Definição do Houaiss
+dbsrc:source_houaiss a bibo:Book ;
+    dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
+    dcterms:publisher "Instituto Antônio Houaiss de Lexicografia" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
+
+# Definição do Gaffiot
+dbsrc:source_gaffiot a bibo:Book ;
+    dcterms:title "Dictionnaire illustré latin-français" ;
+    dcterms:creator "Félix Gaffiot" ;
+    dcterms:issued "1934" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1248405> . # URI universal do Gaffiot
+
+# Definição do OLD
+dbsrc:source_old a bibo:Book ;
+    dcterms:title "Oxford Latin Dictionary" ;
+    dcterms:publisher "Oxford University Press" ;
+    dcterms:issued "1968" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
+
+dbsrc:source_acta_physico_medica_series a bibo:Periodical ;
+    dcterms:title "Acta Physico-Medica Academiae Caesareae Leopoldino-Carolinae" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q13548519> .
+
+dbsrc:source_acta_physico_medica_1730 a bibo:Issue ;
+    dcterms:title "Acta Physico-Medica, Vol. II" ;
+    dcterms:issued "1730"^^xsd:gYear ;
+    dcterms:isPartOf dbsrc:source_acta_physico_medica_series ; 
+    rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .
+
+#------------------------------------------------------------

@@ -1,246 +1,29 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dicbio: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix author: <http://dicbio.fflch.usp.br/autores/> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
 @prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
-### --- Cabeçalho da ontologia ---
-
-dicbio:Ontology a owl:Ontology ;
-    dcterms:title "Dicionário Histórico de Termos da Biologia" ;
-    owl:versionInfo "0.4" ;
-    dcterms:creator author:bruno_maroneze .
-
-### --- Classes e propriedades da ontologia ---
-
-dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
-    rdfs:domain etym:Etymology ;
-    rdfs:range rdf:HTML ;
-    rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en .
-
-dicbio:EtymologicalArgument a owl:Class ;
-    rdfs:label "Etymological Argument"@en ;
-    rdfs:comment "An argumentative unit that provides justification, evidence or reasoning in support of or against an etymological hypothesis."@en .
-
-dicbio:evaluatesEtymology a owl:ObjectProperty ;
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range etym:Etymology ;
-    rdfs:label "evaluates etymology"@en ;
-    rdfs:comment "Relates an etymological argument to the etymological hypothesis that it supports or evaluates."@en .
-
-dicbio:usesSource a owl:ObjectProperty ;
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range dcterms:BibliographicResource ;
-    rdfs:comment "Indicates the documentary or bibliographic source used as evidence in the argument."@en .
-
-dicbio:ArgumentTypeScheme a skos:ConceptScheme ;
-    rdfs:label "Argument Type Scheme"@en ;
-    rdfs:comment "A scheme for classifying etymological arguments by their type (e.g., phonological, semantic, morphological, documentary)."@en .
-
-dicbio:phonologicalArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Phonological argument"@en .
-
-dicbio:semanticArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Semantic argument"@en .
-
-dicbio:morphologicalArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Morphological argument"@en .
-
-dicbio:documentaryArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Documentary argument"@en .
-
-dicbio:argumentType a owl:ObjectProperty ;
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range dicbio:ArgumentTypeScheme ;
-    rdfs:label "argument type"@en ;
-    rdfs:comment "Specifies the type of etymological argument (phonological, semantic, morphological, documentary, etc.)."@en .
-
-## --- aqui entram os graus de certeza etimológica
-
-dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme ;
-    rdfs:label "Etymological Certainty Scheme"@en ;
-    rdfs:comment "A controlled vocabulary expressing the degree of certainty attributed to an etymological hypothesis based on the available evidence and its coherence with current scientific knowledge."@en .
-
-dicbio:impossible a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Impossible"@en ;
-    skos:definition "The hypothesis contradicts established linguistic or historical evidence."@en .
-
-dicbio:improbable a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Improbable"@en ;
-    skos:definition "The hypothesis lacks sufficient evidence or conflicts with current knowledge."@en ;
-    skos:broader dicbio:impossible .
-
-dicbio:plausible a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Plausible"@en ;
-    skos:definition "The hypothesis is conceivable but weakly supported by evidence."@en ;
-    skos:broader dicbio:improbable .
-
-dicbio:probable a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Probable"@en ;
-    skos:definition "The hypothesis is supported by relevant evidence and is consistent with current knowledge."@en ;
-    skos:broader dicbio:plausible .
-
-dicbio:certain a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Certain"@en ;
-    skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en ;
-    skos:broader dicbio:probable .
-
-dicbio:confidenceLevel a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
-    rdfs:range dicbio:EtymologicalCertaintyScheme ;
-    rdfs:label "confidence level"@en ;
-    rdfs:comment "Indicates the degree of certainty attributed by the editors to an etymological hypothesis."@en .
-
-## --- aqui entram os tipos de processos etimológicos 
-
-dicbio:EtymologicalProcessScheme a skos:ConceptScheme ;
-    rdfs:label "Etymological Process Scheme"@en ;
-    rdfs:comment "A controlled vocabulary describing the type of etymological process involved in the formation of a lexical item."@en .
-
-dicbio:inherited a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalProcessScheme ;
-    skos:prefLabel "Inherited"@en ;
-    skos:definition "The lexical item is inherited from an earlier stage of the same language."@en .
-
-dicbio:borrowed a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalProcessScheme ;
-    skos:prefLabel "Borrowed"@en ;
-    skos:definition "The lexical item is borrowed from another language."@en .
-
-dicbio:created a skos:Concept ;
-    skos:inScheme dicbio:EtymologicalProcessScheme ;
-    skos:prefLabel "Created"@en ;
-    skos:definition "The lexical item was created within the language, e.g., through derivation, compounding or other kind of neological process."@en .
-
-dicbio:etymologicalProcess a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
-    rdfs:range skos:Concept ;
-    rdfs:label "etymological process"@en ;
-    rdfs:comment "Specifies the type of historical process involved in an etymological hypothesis (e.g., inheritance, borrowing, internal creation). The process is attributed to the hypothesis, not directly to the lexical entry."@en .
-
-dicbio:semanticDerivationFrom a owl:ObjectProperty ;
-    rdfs:domain ontolex:LexicalSense ;
-    rdfs:range ontolex:LexicalSense ;
-    rdfs:label "semantic derivation from"@en ;
-    rdfs:comment "Indicates that one lexical sense historically derives from another through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
-
-dicbio:hasWordFormationRelation a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
-    rdfs:range morph:WordFormationRelation ;
-    rdfs:label "has word formation relation"@en ;
-    rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
-
-
-
-### --- VERBETE: ADIPOSO ---
-
-dicbio:entry_adiposo a ontolex:LexicalEntry ;
-    rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    owl:sameAs <http://kaiko.getalp.org/dbnary/por/adiposo> ;
-    dcterms:created "2024-05-04"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
-    ontolex:canonicalForm dicbio:form_adiposo ;
-    ontolex:otherForm dicbio:form_adiposa,
-        dicbio:form_adiposas,
-        dicbio:form_adiposos ;
-    ontolex:sense dicbio:entry_adiposo_sense1 .
-
-dicbio:etym_adiposo_sense1_h1 a etym:Etymology ;
-    dcterms:source dicbio:source_houaiss ;
-    dicbio:etymologicalProcess dicbio:created ;
-    dicbio:hasWordFormationRelation dicbio:adiposo_derivation ;
-    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>."""^^rdf:HTML ;
-    dicbio:confidenceLevel dicbio:plausible .
-
-dicbio:adiposo_derivation a morph:WordFormationRelation ;
-    vartrans:source dicbio:entry_adipe ;
-    vartrans:target dicbio:entry_adiposo .
-
-dicbio:entry_adipe a ontolex:LexicalEntry ;
-    dcterms:created "2026-02-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
-    lexinfo:partOfSpeech lexinfo:noun ;
-    lexinfo:gender lexinfo:masculine,
-        lexinfo:feminine ;
-    ontolex:canonicalForm dicbio:form_adipe ;
-    ontolex:sense dicbio:entry_adipe_sense1 .
-
-dicbio:form_adipe a ontolex:Form ;
-    ontolex:writtenRep "ádipe"@pt .
-
-dicbio:entry_adipe_sense1 a ontolex:LexicalSense ;
-    skos:definition "Gordura animal."@pt .
-
-dicbio:etym_adiposo_sense1_h2 a etym:Etymology ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
-    dcterms:source dicbio:dicbio_project ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dicbio:etymon_adiposus ;
-    dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
-    dicbio:confidenceLevel dicbio:probable .
-
-dicbio:etymon_adiposus a etym:Etymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    ontolex:writtenRep "adiposus" ;
-    owl:sameAs <https://lila-erc.eu/data/id/lemma/152495> ;
-    dcterms:source dicbio:source_acta_physico_medica_1730 ;
-    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
-
-dicbio:form_adiposo a ontolex:Form ;
-    ontolex:writtenRep "adiposo"@pt ;
-    lexinfo:number lexinfo:singular ;
-    lexinfo:gender lexinfo:masculine .
-
-dicbio:form_adiposa a ontolex:Form ;
-    ontolex:writtenRep "adiposa"@pt ;
-    lexinfo:number lexinfo:singular ;
-    lexinfo:gender lexinfo:feminine .
-
-dicbio:form_adiposas a ontolex:Form ;
-    ontolex:writtenRep "adiposas"@pt ;
-    lexinfo:number lexinfo:plural ;
-    lexinfo:gender lexinfo:feminine .
-
-dicbio:form_adiposos a ontolex:Form ;
-    ontolex:writtenRep "adiposos"@pt ;
-    lexinfo:number lexinfo:plural ;
-    lexinfo:gender lexinfo:masculine .
-
-dicbio:entry_adiposo_sense1 a ontolex:LexicalSense ;
-    skos:definition "Que contém gordura."@pt ;
-    etym:etymology dicbio:etym_adiposo_sense1_h1,
-        dicbio:etym_adiposo_sense1_h2 .
-
-#------------------------------------------------------------
 
 ### --- VERBETE: ANGULADO ---
 
 dicbio:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_angulado ;
     ontolex:otherForm dicbio:form_angulada,
@@ -282,7 +65,7 @@ dicbio:entry_angulado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_antera ;
@@ -328,8 +111,8 @@ dicbio:entry_antera_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_arvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
-    dcterms:creator author:adriane_queiroz,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_arvore ;
@@ -367,8 +150,8 @@ dicbio:entry_arvore_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_auricula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
-    dcterms:creator author:ana_menegassi_rocha,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_auricula ;
@@ -417,8 +200,8 @@ dicbio:entry_auricula_sense3 a ontolex:LexicalSense ;
 
 dicbio:entry_balano a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:marilizi_tarifa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:marilizi_tarifa ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_balano ;
@@ -448,7 +231,7 @@ dicbio:entry_balano_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_bifido a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bifido ;
     ontolex:otherForm dicbio:form_bifido,
@@ -482,8 +265,8 @@ dicbio:entry_bifido_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_bile a ontolex:LexicalEntry ;
     dcterms:created "2024-05-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_bile ;
@@ -511,8 +294,8 @@ dicbio:entry_bile_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_botanica a ontolex:LexicalEntry ;
     dcterms:created "2023-02-16"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_botanica ;
@@ -544,7 +327,7 @@ dicbio:entry_botanica_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_bractea a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_bractea ;
@@ -583,8 +366,8 @@ dicbio:entry_bractea_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_branquia a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_branquia ;
@@ -618,8 +401,8 @@ dicbio:entry_branquia_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_branquiostego a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_branquiostego ;
     ontolex:otherForm dicbio:form_branchiostega,
@@ -661,7 +444,7 @@ dicbio:entry_branquiostego_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_bulbo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_bulbo ;
@@ -704,7 +487,7 @@ dicbio:entry_bulbo_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_bulboso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_bulboso ;
     ontolex:otherForm dicbio:form_bulbosa,
@@ -746,7 +529,7 @@ dicbio:entry_bulboso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_calice a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_calice ;
@@ -809,8 +592,8 @@ dicbio:entry_calice_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_canaliculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-22"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_canaliculado ;
     ontolex:otherForm dicbio:form_canaliculada,
@@ -848,7 +631,7 @@ dicbio:entry_canaliculado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_capreolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_capreolo ;
@@ -882,8 +665,8 @@ dicbio:entry_capreolo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_capsula a ontolex:LexicalEntry ;
     dcterms:created "2024-05-10"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_capsula ;
@@ -923,8 +706,8 @@ dicbio:entry_capsula_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_carotida a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_carotida ;
@@ -962,7 +745,7 @@ dicbio:entry_carotida_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_carpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_carpo ;
@@ -990,7 +773,7 @@ dicbio:entry_carpo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_cartilagineo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cartilagineo ;
     ontolex:otherForm dicbio:form_cartilaginea,
@@ -1028,8 +811,8 @@ dicbio:entry_cartilagineo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_caruncula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-13"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:matheus_casarin ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_caruncula ;
@@ -1079,8 +862,8 @@ dicbio:entry_caruncula_sense3 a ontolex:LexicalSense ;
 
 dicbio:entry_caule a ontolex:LexicalEntry ;
     dcterms:created "2025-02-06"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:vitoria_pereira ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:vitoria_pereira ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_caule ;
@@ -1113,8 +896,8 @@ dicbio:entry_caule_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_cibario a ontolex:LexicalEntry ;
     dcterms:created "2023-05-19"^^xsd:date ;
-    dcterms:creator author:ana_menegassi_rocha,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cibario ;
     ontolex:otherForm dicbio:form_cibarios ;
@@ -1146,8 +929,8 @@ dicbio:entry_cibario_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_ciliado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ciliado ;
     ontolex:otherForm dicbio:form_ciliada,
@@ -1191,7 +974,7 @@ dicbio:entry_ciliado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_cirro a ontolex:LexicalEntry ;
     dcterms:created "2023-11-20"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_cirro ;
@@ -1237,8 +1020,8 @@ dicbio:entry_cirro_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_cistico a ontolex:LexicalEntry ;
     dcterms:created "2025-02-22"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_cistico ;
     ontolex:otherForm dicbio:form_cistica ;
@@ -1270,8 +1053,8 @@ dicbio:entry_cistico_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_clitoris a ontolex:LexicalEntry ;
     dcterms:created "2025-06-16"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_clitoris ;
@@ -1306,7 +1089,7 @@ dicbio:entry_clitoris_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_coarctado a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_coarctado ;
     ontolex:sense dicbio:entry_coarctado_sense1 .
@@ -1333,8 +1116,8 @@ dicbio:entry_coarctado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_coccix a ontolex:LexicalEntry ;
     dcterms:created "2025-02-24"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_coccix ;
@@ -1366,8 +1149,8 @@ dicbio:entry_coccix_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_concameracao a ontolex:LexicalEntry ;
     dcterms:created "2023-11-06"^^xsd:date ;
-    dcterms:creator author:ana_menegassi_rocha,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_concameracao ;
@@ -1407,7 +1190,7 @@ dicbio:entry_concameracao_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_conivente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_conivente ;
     ontolex:otherForm dicbio:form_connivente,
@@ -1443,7 +1226,7 @@ dicbio:entry_conivente_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_corolula a ontolex:LexicalEntry ;
     dcterms:created "2024-11-26"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_corolula ;
@@ -1476,8 +1259,8 @@ dicbio:entry_corolula_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_coronario a ontolex:LexicalEntry ;
     dcterms:created "2025-09-12"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_coronario ;
     ontolex:otherForm dicbio:form_coronarias,
@@ -1515,7 +1298,7 @@ dicbio:entry_coronario_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_cotiledone a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_cotiledone ;
@@ -1557,7 +1340,7 @@ dicbio:entry_cotiledone_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_crena a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_crena ;
@@ -1590,7 +1373,7 @@ dicbio:entry_crena_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_cuticula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_cuticula ;
@@ -1620,7 +1403,7 @@ dicbio:entry_cuticula_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_deflexo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_deflexo ;
     ontolex:otherForm dicbio:form_deflexos ;
@@ -1652,8 +1435,8 @@ dicbio:entry_deflexo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_deltoide a ontolex:LexicalEntry ;
     dcterms:created "2025-09-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:geovanna_lima ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_deltoide ;
@@ -1690,7 +1473,7 @@ dicbio:entry_deltoide_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_desenvolucao a ontolex:LexicalEntry ;
     dcterms:created "2025-03-26"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_desenvolucao ;
@@ -1721,8 +1504,8 @@ dicbio:entry_desenvolucao_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_diafragma a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_diafragma ;
@@ -1765,8 +1548,8 @@ dicbio:entry_diafragma_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_digitado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_digitado ;
     ontolex:otherForm dicbio:form_digitada,
@@ -1815,7 +1598,7 @@ dicbio:entry_digitado_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_disco a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_disco ;
@@ -1851,8 +1634,8 @@ dicbio:entry_disco_sense3 a ontolex:LexicalSense ;
 
 dicbio:entry_dorsal a ontolex:LexicalEntry ;
     dcterms:created "2024-09-27"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:marimeire_barros ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:marimeire_barros ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_dorsal ;
     ontolex:sense dicbio:entry_dorsal_sense1 .
@@ -1879,8 +1662,8 @@ dicbio:entry_dorsal_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_elongado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_elongado ;
     ontolex:otherForm dicbio:form_elongada ;
@@ -1912,8 +1695,8 @@ dicbio:entry_elongado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_emarginado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_emarginado ;
     ontolex:otherForm dicbio:form_emarginados ;
@@ -1945,8 +1728,8 @@ dicbio:entry_emarginado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_enovelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_enovelado ;
     ontolex:otherForm dicbio:form_ennovelada,
@@ -1988,8 +1771,8 @@ dicbio:entry_enovelado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_ensiforme a ontolex:LexicalEntry ;
     dcterms:created "2025-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ensiforme ;
     ontolex:sense dicbio:entry_ensiforme_sense1 .
@@ -2016,8 +1799,8 @@ dicbio:entry_ensiforme_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_entrecortado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_entrecortado ;
     ontolex:otherForm dicbio:form_entrecortadas ;
@@ -2049,7 +1832,7 @@ dicbio:entry_entrecortado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_epiderme a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_epiderme ;
@@ -2081,8 +1864,8 @@ dicbio:entry_epiderme_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_epigastrio a ontolex:LexicalEntry ;
     dcterms:created "2022-07-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_epigastrio ;
@@ -2113,7 +1896,7 @@ dicbio:entry_epigastrio_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_escamoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_escamoso ;
     ontolex:otherForm dicbio:form_escamosa,
@@ -2150,8 +1933,8 @@ dicbio:entry_escamoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_escroto a ontolex:LexicalEntry ;
     dcterms:created "2025-03-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_escroto ;
@@ -2183,8 +1966,8 @@ dicbio:entry_escroto_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_esofago a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_esofago ;
@@ -2221,7 +2004,7 @@ dicbio:entry_esofago_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_estame a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estame ;
@@ -2255,7 +2038,7 @@ dicbio:entry_estame_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_estigma a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estigma ;
@@ -2288,7 +2071,7 @@ dicbio:entry_estigma_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_estipula a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_estipula ;
@@ -2321,8 +2104,8 @@ dicbio:entry_estipula_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_excretorio a ontolex:LexicalEntry ;
     dcterms:created "2025-03-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_excretorio ;
     ontolex:otherForm dicbio:form_excretorios ;
@@ -2354,7 +2137,7 @@ dicbio:entry_excretorio_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_falcado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:kamila_barbosa ;
+    dcterms:creator dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_falcado ;
     ontolex:otherForm dicbio:form_falcada ;
@@ -2386,8 +2169,8 @@ dicbio:entry_falcado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_fastigiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fastigiado ;
     ontolex:otherForm dicbio:form_fastigiadas ;
@@ -2419,8 +2202,8 @@ dicbio:entry_fastigiado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_fecundante a ontolex:LexicalEntry ;
     dcterms:created "2024-10-10"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:luana_borges ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fecundante ;
     ontolex:sense dicbio:entry_fecundante_sense1 .
@@ -2447,7 +2230,7 @@ dicbio:entry_fecundante_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_fibroso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_fibroso ;
     ontolex:otherForm dicbio:form_fibrosas ;
@@ -2480,8 +2263,8 @@ dicbio:entry_fibroso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_filamento a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_filamento ;
@@ -2518,8 +2301,8 @@ dicbio:entry_filamento_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_fitologia a ontolex:LexicalEntry ;
     dcterms:created "2023-12-05"^^xsd:date ;
-    dcterms:creator author:dannielly_rodrigues_silva,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_fitologia ;
@@ -2551,7 +2334,7 @@ dicbio:entry_fitologia_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_flosculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_flosculo ;
@@ -2584,8 +2367,8 @@ dicbio:entry_flosculo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_folha a ontolex:LexicalEntry ;
     dcterms:created "2025-04-09"^^xsd:date ;
-    dcterms:creator author:dannielly_rodrigues_silva,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_folha ;
@@ -2619,7 +2402,7 @@ dicbio:entry_folha_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_foliaceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_foliaceo ;
     ontolex:otherForm dicbio:form_foliacea,
@@ -2656,8 +2439,8 @@ dicbio:entry_foliaceo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_frenico a ontolex:LexicalEntry ;
     dcterms:created "2025-04-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_frenico ;
     ontolex:otherForm dicbio:form_phrenicas,
@@ -2694,7 +2477,7 @@ dicbio:entry_frenico_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_frutificacao a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_frutificacao ;
@@ -2744,8 +2527,8 @@ dicbio:entry_frutificacao_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_gelatinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-04-22"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_gelatinoso ;
     ontolex:otherForm dicbio:form_jalatinosa ;
@@ -2778,7 +2561,7 @@ dicbio:entry_gelatinoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_gema a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_gema ;
@@ -2826,8 +2609,8 @@ dicbio:entry_gema_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_glandula a ontolex:LexicalEntry ;
     dcterms:created "2022-07-26"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_glandula ;
@@ -2863,7 +2646,7 @@ dicbio:entry_glandula_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_gomo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_gomo ;
@@ -2896,7 +2679,7 @@ dicbio:entry_gomo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_hermafrodita a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_hermafrodita ;
     ontolex:otherForm dicbio:form_hermaphroditas,
@@ -2938,8 +2721,8 @@ dicbio:entry_hermafrodita_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_himen a ontolex:LexicalEntry ;
     dcterms:created "2025-09-13"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_himen ;
@@ -2971,8 +2754,8 @@ dicbio:entry_himen_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_hipogastrio a ontolex:LexicalEntry ;
     dcterms:created "2022-06-20"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_hipogastrio ;
@@ -3004,7 +2787,7 @@ dicbio:entry_hipogastrio_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_inseto a ontolex:LexicalEntry ;
     dcterms:created "2022-11-21"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_inseto ;
@@ -3043,7 +2826,7 @@ dicbio:entry_inseto_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_jardim_botanico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_jardim_botanico ;
@@ -3085,8 +2868,8 @@ dicbio:entry_jardim_botanico_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_labiado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_labiado ;
     ontolex:otherForm dicbio:form_labiada,
@@ -3124,7 +2907,7 @@ dicbio:entry_labiado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_lacinia a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_lacinia ;
@@ -3159,7 +2942,7 @@ dicbio:entry_lacinia_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_lanceolado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:kamila_barbosa ;
+    dcterms:creator dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lanceolado ;
     ontolex:otherForm dicbio:form_lanceolada,
@@ -3197,8 +2980,8 @@ dicbio:entry_lanceolado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_ligulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ligulado ;
     ontolex:otherForm dicbio:form_liguladas ;
@@ -3231,7 +3014,7 @@ dicbio:entry_ligulado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_litalgia a ontolex:LexicalEntry ;
     dcterms:created "2025-05-13"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_litalgia ;
@@ -3263,8 +3046,8 @@ dicbio:entry_litalgia_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_lobado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_lobado ;
     ontolex:otherForm dicbio:form_lobada,
@@ -3302,7 +3085,7 @@ dicbio:entry_lobado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_longitudinal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_longitudinal ;
     ontolex:otherForm dicbio:form_longitudinaes ;
@@ -3335,8 +3118,8 @@ dicbio:entry_longitudinal_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_lunula a ontolex:LexicalEntry ;
     dcterms:created "2025-05-01"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_lunula ;
@@ -3367,8 +3150,8 @@ dicbio:entry_lunula_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_maleolo a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_maleolo ;
@@ -3405,8 +3188,8 @@ dicbio:entry_maleolo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_mamais a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:number lexinfo:plural ;
     lexinfo:partOfSpeech lexinfo:noun ;
@@ -3441,8 +3224,8 @@ dicbio:entry_mamais_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_mamario a ontolex:LexicalEntry ;
     dcterms:created "2025-10-27"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mamario ;
     ontolex:otherForm dicbio:form_mamarias,
@@ -3484,8 +3267,8 @@ dicbio:entry_mamario_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_masseter a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:rafaela_domingos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_masseter ;
@@ -3514,7 +3297,7 @@ dicbio:entry_masseter_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_medular a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_medular ;
     ontolex:otherForm dicbio:form_medullar ;
@@ -3549,8 +3332,8 @@ dicbio:entry_medular_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_membrana_branquiostega a ontolex:LexicalEntry ;
     dcterms:created "2025-09-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_membrana_branquiostega ;
@@ -3590,7 +3373,7 @@ dicbio:entry_membrana_branquiostega_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_membranaceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_membranaceo ;
     ontolex:otherForm dicbio:form_membranacea,
@@ -3637,8 +3420,8 @@ dicbio:entry_membranaceo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_membranoso a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:luana_borges ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_membranoso ;
     ontolex:otherForm dicbio:form_membranosa,
@@ -3676,8 +3459,8 @@ dicbio:entry_membranoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_mesenterico a ontolex:LexicalEntry ;
     dcterms:created "2025-11-27"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mesenterico ;
     ontolex:otherForm dicbio:form_mesentericas,
@@ -3714,8 +3497,8 @@ dicbio:entry_mesenterico_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_mesocolon a ontolex:LexicalEntry ;
     dcterms:created "2025-12-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:fabiani_goncalves ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_mesocolon ;
@@ -3745,8 +3528,8 @@ dicbio:entry_mesocolon_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_metacarpo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
-    dcterms:creator author:ana_cristina_lopes,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_metacarpo ;
@@ -3774,8 +3557,8 @@ dicbio:entry_metacarpo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_miologia a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:rafaela_domingos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_miologia ;
@@ -3807,8 +3590,8 @@ dicbio:entry_miologia_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_mucilaginoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:geovanna_lima ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_mucilaginoso ;
     ontolex:otherForm dicbio:form_mucilaginosas ;
@@ -3840,8 +3623,8 @@ dicbio:entry_mucilaginoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_musculo a ontolex:LexicalEntry ;
     dcterms:created "2025-03-06"^^xsd:date ;
-    dcterms:creator author:adriane_queiroz,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_musculo ;
@@ -3877,7 +3660,7 @@ dicbio:entry_musculo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_oblongo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_oblongo ;
     ontolex:otherForm dicbio:form_oblonga,
@@ -3920,8 +3703,8 @@ dicbio:entry_oblongo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_occiput a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:rafaela_domingos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_occiput ;
@@ -3952,7 +3735,7 @@ dicbio:entry_occiput_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_ocelado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:kamila_barbosa ;
+    dcterms:creator dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_ocelado ;
     ontolex:otherForm dicbio:form_ocelladas ;
@@ -3984,8 +3767,8 @@ dicbio:entry_ocelado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_orbita a ontolex:LexicalEntry ;
     dcterms:created "2022-08-23"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:rafaela_domingos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_orbita ;
@@ -4021,8 +3804,8 @@ dicbio:entry_orbita_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_papila a ontolex:LexicalEntry ;
     dcterms:created "2023-10-30"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:matheus_casarin ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_papila ;
@@ -4063,7 +3846,7 @@ dicbio:entry_papila_sense3 a ontolex:LexicalSense ;
 
 dicbio:entry_papilionaceo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_papilionaceo ;
     ontolex:otherForm dicbio:form_papilionaceas ;
@@ -4095,7 +3878,7 @@ dicbio:entry_papilionaceo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_parasitico a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_parasitico ;
     ontolex:otherForm dicbio:form_parasitica ;
@@ -4127,7 +3910,7 @@ dicbio:entry_parasitico_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_peciolo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_peciolo ;
@@ -4163,7 +3946,7 @@ dicbio:entry_peciolo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_pedunculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pedunculo ;
@@ -4204,8 +3987,8 @@ dicbio:entry_pedunculo_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_pelve a ontolex:LexicalEntry ;
     dcterms:created "2025-07-06"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:geovanna_lima ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pelve ;
@@ -4237,7 +4020,7 @@ dicbio:entry_pelve_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_perene a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_perene ;
     ontolex:otherForm dicbio:form_perenne ;
@@ -4269,8 +4052,8 @@ dicbio:entry_perene_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_pericarpo a ontolex:LexicalEntry ;
     dcterms:created "2022-12-20"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pericarpo ;
@@ -4303,7 +4086,7 @@ dicbio:entry_pericarpo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_piloso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_piloso ;
     ontolex:otherForm dicbio:form_pillosa,
@@ -4340,7 +4123,7 @@ dicbio:entry_piloso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_pimpolho a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pimpolho ;
@@ -4374,7 +4157,7 @@ dicbio:entry_pimpolho_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_pistilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_pistilo ;
@@ -4416,8 +4199,8 @@ dicbio:entry_pistilo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_placenta a ontolex:LexicalEntry ;
     dcterms:created "2023-08-21"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:luana_borges ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_placenta ;
@@ -4449,8 +4232,8 @@ dicbio:entry_placenta_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_planta a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_planta ;
@@ -4482,9 +4265,9 @@ dicbio:entry_planta_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_polpa a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
-    dcterms:creator author:adriane_queiroz,
-        author:bruno_maroneze,
-        author:matheus_casarin ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_polpa ;
@@ -4512,8 +4295,8 @@ dicbio:entry_polpa_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_pontoado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_pontoado ;
     ontolex:otherForm dicbio:form_pontoada,
@@ -4550,8 +4333,8 @@ dicbio:entry_pontoado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_raiz a ontolex:LexicalEntry ;
     dcterms:created "2023-04-03"^^xsd:date ;
-    dcterms:creator author:dannielly_rodrigues_silva,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_raiz ;
@@ -4585,7 +4368,7 @@ dicbio:entry_raiz_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_receptaculo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_receptaculo ;
@@ -4616,7 +4399,7 @@ dicbio:entry_receptaculo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_repente a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_repente ;
     ontolex:sense dicbio:entry_repente_sense1 .
@@ -4643,7 +4426,7 @@ dicbio:entry_repente_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_resina a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_resina ;
@@ -4675,7 +4458,7 @@ dicbio:entry_resina_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_resinoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-24"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_resinoso ;
     ontolex:otherForm dicbio:form_rezinosas ;
@@ -4707,8 +4490,8 @@ dicbio:entry_resinoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_reticulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_reticulado ;
     ontolex:otherForm dicbio:form_reticuladas ;
@@ -4740,7 +4523,7 @@ dicbio:entry_reticulado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_romboidal a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_romboidal ;
     ontolex:sense dicbio:entry_romboidal_sense1 .
@@ -4766,8 +4549,8 @@ etym:etymology dicbio:etym_romboidal_sense1 .
 
 dicbio:entry_semente a ontolex:LexicalEntry ;
     dcterms:created "2023-10-22"^^xsd:date ;
-    dcterms:creator author:ana_menegassi_rocha,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_semente ;
@@ -4801,9 +4584,9 @@ dicbio:entry_semente_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_setaceo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-21"^^xsd:date ;
-    dcterms:creator author:adriane_queiroz,
-        author:bruno_maroneze,
-        author:matheus_casarin ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_setaceo ;
     ontolex:otherForm dicbio:form_setacea,
@@ -4849,7 +4632,7 @@ dicbio:entry_setaceo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_sexual a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sexual ;
     ontolex:sense dicbio:entry_sexual_sense1 .
@@ -4876,8 +4659,8 @@ dicbio:entry_sexual_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_sexualismo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-11"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:vitoria_pereira ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:vitoria_pereira ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_sexualismo ;
@@ -4905,7 +4688,7 @@ dicbio:entry_sexualismo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_siliqua a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_siliqua ;
@@ -4940,7 +4723,7 @@ dicbio:entry_siliqua_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_sucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_sucoso ;
     ontolex:otherForm dicbio:form_succosa,
@@ -4977,8 +4760,8 @@ dicbio:entry_sucoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_suculento a ontolex:LexicalEntry ;
     dcterms:created "2023-09-14"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:raissa_buss ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_suculento ;
     ontolex:otherForm dicbio:form_succulenta,
@@ -5025,8 +4808,8 @@ dicbio:entry_suculento_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tendinoso a ontolex:LexicalEntry ;
     dcterms:created "2025-07-07"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:geovanna_lima ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tendinoso ;
     ontolex:otherForm dicbio:form_tendinosa,
@@ -5068,8 +4851,8 @@ dicbio:entry_tendinoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tronco a ontolex:LexicalEntry ;
     dcterms:created "2023-06-14"^^xsd:date ;
-    dcterms:creator author:dannielly_rodrigues_silva,
-        author:bruno_maroneze ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tronco ;
@@ -5102,8 +4885,8 @@ dicbio:entry_tronco_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tuberculado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_tuberculado ;
     ontolex:otherForm dicbio:form_tuberculadas,
@@ -5142,9 +4925,9 @@ dicbio:entry_tuberculado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tuberculo a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator author:adriane_queiroz,
-        author:bruno_maroneze,
-        author:matheus_casarin ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tuberculo ;
@@ -5185,8 +4968,8 @@ dicbio:entry_tuberculo_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_tubulo a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tubulo ;
@@ -5219,7 +5002,7 @@ dicbio:entry_tubulo_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_tunica a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_tunica ;
@@ -5254,8 +5037,8 @@ dicbio:entry_tunica_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_umbilicado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_umbilicado ;
     ontolex:otherForm dicbio:form_umbilicada,
@@ -5292,8 +5075,8 @@ dicbio:entry_umbilicado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_uropigio a ontolex:LexicalEntry ;
     dcterms:created "2025-09-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:sammara_valim_santos ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_uropigio ;
@@ -5328,8 +5111,8 @@ dicbio:entry_uropigio_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_utriculo a ontolex:LexicalEntry ;
     dcterms:created "2024-10-03"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:luana_borges ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_utriculo ;
@@ -5367,7 +5150,7 @@ dicbio:entry_utriculo_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_verrucoso a ontolex:LexicalEntry ;
     dcterms:created "2022-04-13"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_verrucoso ;
     ontolex:otherForm dicbio:form_verrucosas ;
@@ -5399,8 +5182,8 @@ dicbio:entry_verrucoso_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_verticilado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-25"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:kamila_barbosa ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dicbio:form_verticilado ;
     ontolex:otherForm dicbio:form_verticiladas,
@@ -5449,7 +5232,7 @@ dicbio:entry_verticilado_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_vibrissa a ontolex:LexicalEntry ;
     dcterms:created "2023-05-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_vibrissa ;
@@ -5482,7 +5265,7 @@ dicbio:entry_vibrissa_sense1 a ontolex:LexicalSense ;
 
 dicbio:entry_vilo a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze ;
+    dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_vilo ;
@@ -5523,8 +5306,8 @@ dicbio:entry_vilo_sense2 a ontolex:LexicalSense ;
 
 dicbio:entry_zoologia a ontolex:LexicalEntry ;
     dcterms:created "2024-08-15"^^xsd:date ;
-    dcterms:creator author:bruno_maroneze,
-        author:luana_borges ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dicbio:form_zoologia ;
@@ -5547,114 +5330,3 @@ dicbio:entry_zoologia_sense1 a ontolex:LexicalSense ;
     etym:etymology dicbio:etym_zoologia_sense1 .
 
 #------------------------------------------------------------
-
-### REGISTRO DAS FONTES ###
-
-# Quando a fonte é o nosso próprio projeto:
-
-dicbio:dicbio_project a foaf:Project ;
-    foaf:name "Dicionário Histórico de Termos da Biologia" ;
-    dcterms:title "Dicionário Histórico de Termos da Biologia" ;
-    foaf:homepage <https://dicbio.fflch.usp.br/> .
-
-# Definição do Houaiss
-dicbio:source_houaiss a bibo:Book ;
-    dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
-    dcterms:publisher "Instituto Antônio Houaiss de Lexicografia" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
-
-# Definição do Gaffiot
-dicbio:source_gaffiot a bibo:Book ;
-    dcterms:title "Dictionnaire illustré latin-français" ;
-    dcterms:creator "Félix Gaffiot" ;
-    dcterms:issued "1934" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q1248405> . # URI universal do Gaffiot
-
-# Definição do OLD
-dicbio:source_old a bibo:Book ;
-    dcterms:title "Oxford Latin Dictionary" ;
-    dcterms:publisher "Oxford University Press" ;
-    dcterms:issued "1968" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q124030561> . # URI universal do OLD
-
-dicbio:source_acta_physico_medica_series a bibo:Periodical ;
-    dcterms:title "Acta Physico-Medica Academiae Caesareae Leopoldino-Carolinae" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q13548519> .
-
-dicbio:source_acta_physico_medica_1730 a bibo:Issue ;
-    dcterms:title "Acta Physico-Medica, Vol. II" ;
-    dcterms:issued "1730"^^xsd:gYear ;
-    dcterms:isPartOf dicbio:source_acta_physico_medica_series ; 
-    rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .
-
-#------------------------------------------------------------
-
-### REGISTRO DOS COLABORADORES ###
-
-author:adriane_queiroz a foaf:Person ;
-    foaf:name "Adriane Maria de Oliveira Queiroz" ;
-    owl:sameAs <https://orcid.org/0009-0003-3281-5247> ;
-    rdfs:seeAlso <http://lattes.cnpq.br/9688350818351425> .
-
-author:ana_menegassi_rocha a foaf:Person ;
-    foaf:name "Ana Carolina Menegassi Rocha" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/3118171481670217> .
-
-author:ana_cristina_lopes a foaf:Person ;
-    foaf:name "Ana Cristina Gouvêa Lopes" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/6091690669901066> .
-
-author:bruno_maroneze a foaf:Person ;
-    foaf:name "Bruno Oliveira Maroneze" ;
-    owl:sameAs <https://orcid.org/0000-0002-2821-9448> ;
-    rdfs:seeAlso <http://lattes.cnpq.br/2386581098769105> .
-
-author:dannielly_rodrigues_silva a foaf:Person ;
-    foaf:name "Dannielly Victória Rodrigues da Silva" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/8693099469156427> .
-
-author:fabiani_goncalves a foaf:Person ;
-    foaf:name "Fabiani de Amorim Gonçalves" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/5556839544035822> .
-
-author:geovanna_lima a foaf:Person ;
-    foaf:name "Geovanna Salvino de Lima" ;
-    owl:sameAs <https://orcid.org/0009-0000-3764-9477> ;
-    rdfs:seeAlso <http://lattes.cnpq.br/1383229230978249> .
-
-author:kamila_barbosa a foaf:Person ;
-    foaf:name "Kamila da Silva Barbosa" ;
-    owl:sameAs <https://orcid.org/0000-0003-2632-0734> ;
-    rdfs:seeAlso <http://lattes.cnpq.br/0824015704100767> .
-
-author:luana_borges a foaf:Person ;
-    foaf:name "Luana da Silva Borges" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/0983397069003665> .
-
-author:marilizi_tarifa a foaf:Person ;
-    foaf:name "Marilizi Arruda Tarifa" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/4376662733752083> .
-
-author:marimeire_barros a foaf:Person ;
-    foaf:name "Marimeire Almeida Barros" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/3951171920995304> .
-
-author:matheus_casarin a foaf:Person ;
-    foaf:name "Matheus Stein Casarin" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/9927626991207276> .
-
-author:rafaela_domingos a foaf:Person ;
-    foaf:name "Rafaela Lima Domingos" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/1269123121808893> .
-
-author:raissa_buss a foaf:Person ;
-    foaf:name "Raissa Silveira Buss" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/5067931665456928> .
-
-author:sammara_valim_santos a foaf:Person ;
-    foaf:name "Sammara Valim Luz dos Santos" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/3505243267193578> .
-
-author:vitoria_pereira a foaf:Person ;
-    foaf:name "Vitória Fernandes Pereira" ;
-    rdfs:seeAlso <http://lattes.cnpq.br/9858754186832086> .
