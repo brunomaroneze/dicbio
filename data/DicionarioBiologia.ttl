@@ -59,27 +59,83 @@ dicbio:documentaryArgument a skos:Concept ;
 
 dicbio:argumentType a owl:ObjectProperty ;
     rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range skos:Concept ;
+    rdfs:range dicbio:ArgumentTypeScheme ;
+    rdfs:label "argument type"@en ;
     rdfs:comment "Specifies the type of etymological argument (phonological, semantic, morphological, documentary, etc.)."@en .
 
+## --- aqui entram os graus de certeza etimológica
 
-### --------
+dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme ;
+    rdfs:label "Etymological Certainty Scheme"@en ;
+    rdfs:comment "A controlled vocabulary expressing the degree of certainty attributed to an etymological hypothesis based on the available evidence and its coherence with current scientific knowledge."@en .
 
-dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme .
+dicbio:impossible a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Impossible"@en ;
+    skos:definition "The hypothesis contradicts established linguistic or historical evidence."@en .
+
+dicbio:improbable a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Improbable"@en ;
+    skos:definition "The hypothesis lacks sufficient evidence or conflicts with current knowledge."@en ;
+    skos:broader dicbio:impossible .
+
+dicbio:plausible a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Plausible"@en ;
+    skos:definition "The hypothesis is conceivable but weakly supported by evidence."@en ;
+    skos:broader dicbio:improbable .
+
+dicbio:probable a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Probable"@en ;
+    skos:definition "The hypothesis is supported by relevant evidence and is consistent with current knowledge."@en ;
+    skos:broader dicbio:plausible .
+
+dicbio:certain a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Certain"@en ;
+    skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en ;
+    skos:broader dicbio:probable .
 
 dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:domain etym:Etymology ;
-    rdfs:range skos:Concept .
+    rdfs:range dicbio:EtymologicalCertaintyScheme ;
+    rdfs:label "confidence level"@en ;
+    rdfs:comment "Indicates the degree of certainty attributed by the editors to an etymological hypothesis."@en .
 
-dicbio:EtymologicalProcessType a skos:ConceptScheme .
+## --- aqui entram os tipos de processos etimológicos 
+
+dicbio:EtymologicalProcessScheme a skos:ConceptScheme ;
+    rdfs:label "Etymological Process Scheme"@en ;
+    rdfs:comment "A controlled vocabulary describing the type of etymological process involved in the formation of a lexical item."@en .
+
+dicbio:inherited a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Inherited"@en ;
+    skos:definition "The lexical item is inherited from an earlier stage of the same language."@en .
+
+dicbio:borrowed a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Borrowed"@en ;
+    skos:definition "The lexical item is borrowed from another language."@en .
+
+dicbio:created a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Created"@en ;
+    skos:definition "The lexical item was created within the language, e.g., through derivation, compounding or other kind of neological process."@en .
 
 dicbio:etymologicalProcess a owl:ObjectProperty ;
     rdfs:domain etym:Etymology ;
-    rdfs:range skos:Concept .
+    rdfs:range skos:Concept ;
+    rdfs:label "etymological process"@en ;
+    rdfs:comment "Specifies the type of historical process involved in an etymological hypothesis (e.g., inheritance, borrowing, internal creation). The process is attributed to the hypothesis, not directly to the lexical entry."@en .
 
-dicbio:semanticDerivationFrom
+dicbio:semanticDerivationFrom a owl:ObjectProperty ;
     rdfs:domain ontolex:LexicalSense ;
-    rdfs:range ontolex:LexicalSense .
+    rdfs:range ontolex:LexicalSense ;
+    rdfs:label "semantic derivation from"@en ;
+    rdfs:comment "Indicates that one lexical sense historically derives from another through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
 
 
 ### --- VERBETE: ADIPOSO ---
