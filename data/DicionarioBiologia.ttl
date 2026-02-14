@@ -20,6 +20,68 @@ dicbio:Ontology a owl:Ontology ;
     owl:versionInfo "0.4" ;
     dcterms:creator author:bruno_maroneze .
 
+### --- Classes e propriedades da ontologia ---
+
+dicbio:EtymologicalArgument a owl:Class ;
+    rdfs:label "Etymological Argument"@en ;
+    rdfs:comment "An argumentative unit that provides justification, evidence or reasoning in support of or against an etymological hypothesis."@en .
+
+dicbio:evaluatesEtymology a owl:ObjectProperty ;
+    rdfs:domain dicbio:EtymologicalArgument ;
+    rdfs:range etym:Etymology ;
+    rdfs:label "evaluates etymology"@en ;
+    rdfs:comment "Relates an etymological argument to the etymological hypothesis that it supports or evaluates."@en .
+
+dicbio:usesSource a owl:ObjectProperty ;
+    rdfs:domain dicbio:EtymologicalArgument ;
+    rdfs:range dcterms:BibliographicResource ;
+    rdfs:comment "Indicates the documentary or bibliographic source used as evidence in the argument."@en .
+
+dicbio:ArgumentTypeScheme a skos:ConceptScheme ;
+    rdfs:label "Argument Type Scheme"@en ;
+    rdfs:comment "A scheme for classifying etymological arguments by their type (e.g., phonological, semantic, morphological, documentary)."@en .
+
+dicbio:phonologicalArgument a skos:Concept ;
+    skos:inScheme dicbio:ArgumentTypeScheme ;
+    skos:prefLabel "Phonological argument"@en .
+
+dicbio:semanticArgument a skos:Concept ;
+    skos:inScheme dicbio:ArgumentTypeScheme ;
+    skos:prefLabel "Semantic argument"@en .
+
+dicbio:morphologicalArgument a skos:Concept ;
+    skos:inScheme dicbio:ArgumentTypeScheme ;
+    skos:prefLabel "Morphological argument"@en .
+
+dicbio:documentaryArgument a skos:Concept ;
+    skos:inScheme dicbio:ArgumentTypeScheme ;
+    skos:prefLabel "Documentary argument"@en .
+
+dicbio:argumentType a owl:ObjectProperty ;
+    rdfs:domain dicbio:EtymologicalArgument ;
+    rdfs:range skos:Concept ;
+    rdfs:comment "Specifies the type of etymological argument (phonological, semantic, morphological, documentary, etc.)."@en .
+
+
+### --------
+
+dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme .
+
+dicbio:confidenceLevel a owl:ObjectProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range skos:Concept .
+
+dicbio:EtymologicalProcessType a skos:ConceptScheme .
+
+dicbio:etymologicalProcess a owl:ObjectProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range skos:Concept .
+
+dicbio:semanticDerivationFrom
+    rdfs:domain ontolex:LexicalSense ;
+    rdfs:range ontolex:LexicalSense .
+
+
 ### --- VERBETE: ADIPOSO ---
 
 dicbio:entry_adiposo a ontolex:LexicalEntry ;
