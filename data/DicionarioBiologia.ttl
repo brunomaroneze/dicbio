@@ -11,6 +11,7 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
 
 
 ### --- Cabeçalho da ontologia ---
@@ -21,6 +22,11 @@ dicbio:Ontology a owl:Ontology ;
     dcterms:creator author:bruno_maroneze .
 
 ### --- Classes e propriedades da ontologia ---
+
+dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range rdf:HTML ;
+    rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en .
 
 dicbio:EtymologicalArgument a owl:Class ;
     rdfs:label "Etymological Argument"@en ;
@@ -137,6 +143,13 @@ dicbio:semanticDerivationFrom a owl:ObjectProperty ;
     rdfs:label "semantic derivation from"@en ;
     rdfs:comment "Indicates that one lexical sense historically derives from another through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
 
+dicbio:hasWordFormationRelation a owl:ObjectProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range morph:WordFormationRelation ;
+    rdfs:label "has word formation relation"@en ;
+    rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
+
+
 
 ### --- VERBETE: ADIPOSO ---
 
@@ -153,9 +166,40 @@ dicbio:entry_adiposo a ontolex:LexicalEntry ;
         dicbio:form_adiposos ;
     ontolex:sense dicbio:entry_adiposo_sense1 .
 
-dicbio:etym_adiposo_sense1 a etym:Etymology ;
+dicbio:etym_adiposo_sense1_h1 a etym:Etymology ;
+    dcterms:source dicbio:source_houaiss ;
+    dicbio:etymologicalProcess dicbio:created ;
+    dicbio:hasWordFormationRelation dicbio:adiposo_derivation ;
+    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>."""^^rdf:HTML ;
+    dicbio:confidenceLevel dicbio:plausible .
+
+dicbio:adiposo_derivation a morph:WordFormationRelation ;
+    vartrans:source dicbio:entry_adipe ;
+    vartrans:target dicbio:entry_adiposo .
+
+dicbio:entry_adipe a ontolex:LexicalEntry ;
+    dcterms:created "2026-02-14"^^xsd:date ;
+    dcterms:creator author:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine,
+        lexinfo:feminine ;
+    ontolex:canonicalForm dicbio:form_adipe ;
+    ontolex:sense dicbio:entry_adipe_sense1 .
+
+dicbio:form_adipe a ontolex:Form ;
+    ontolex:writtenRep "ádipe"@pt .
+
+dicbio:entry_adipe_sense1 a ontolex:LexicalSense ;
+    skos:definition "Gordura animal."@pt .
+
+dicbio:etym_adiposo_sense1_h2 a etym:Etymology ;
+    dcterms:creator author:bruno_maroneze,
+        author:fabiani_goncalves ;
+    dcterms:source dicbio:dicbio_project ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
     etym:etymon dicbio:etymon_adiposus ;
-    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>. No entanto, a forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
+    dicbio:confidenceLevel dicbio:probable .
 
 dicbio:etymon_adiposus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
@@ -186,7 +230,8 @@ dicbio:form_adiposos a ontolex:Form ;
 
 dicbio:entry_adiposo_sense1 a ontolex:LexicalSense ;
     skos:definition "Que contém gordura."@pt ;
-    etym:etymology dicbio:etym_adiposo_sense1 .
+    etym:etymology dicbio:etym_adiposo_sense1_h1,
+        dicbio:etym_adiposo_sense1_h2 .
 
 #------------------------------------------------------------
 
@@ -5504,6 +5549,19 @@ dicbio:entry_zoologia_sense1 a ontolex:LexicalSense ;
 #------------------------------------------------------------
 
 ### REGISTRO DAS FONTES ###
+
+# Quando a fonte é o nosso próprio projeto:
+
+dicbio:dicbio_project a foaf:Project ;
+    foaf:name "Dicionário Histórico de Termos da Biologia" ;
+    dcterms:title "Dicionário Histórico de Termos da Biologia" ;
+    foaf:homepage <https://dicbio.fflch.usp.br/> .
+
+# Definição do Houaiss
+dicbio:source_houaiss a bibo:Book ;
+    dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
+    dcterms:publisher "Instituto Antônio Houaiss de Lexicografia" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
 
 # Definição do Gaffiot
 dicbio:source_gaffiot a bibo:Book ;
