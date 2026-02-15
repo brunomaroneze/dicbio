@@ -16,8 +16,6 @@
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
-
-
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
     owl:sameAs <http://kaiko.getalp.org/dbnary/por/adiposo> ;
@@ -32,7 +30,7 @@ dbres:entry_adiposo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_adiposo_sense1 .
 
 dbres:etym_adiposo_sense1_h1 a etym:Etymology ;
-    dcterms:source dbres:source_houaiss ;
+    dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalProcess dicbio:created ;
     dicbio:hasWordFormationRelation dbres:adiposo_derivation ;
     dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>."""^^rdf:HTML ;
