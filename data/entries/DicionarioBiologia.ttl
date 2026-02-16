@@ -17,52 +17,6 @@
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
-### --- VERBETE: ANTERA ---
-
-dicbio:entry_antera a ontolex:LexicalEntry ;
-    dcterms:created "2022-02-28"^^xsd:date ;
-    dcterms:creator dbauth:bruno_maroneze ;
-    lexinfo:gender lexinfo:feminine ;
-    lexinfo:partOfSpeech lexinfo:noun ;
-    ontolex:canonicalForm dicbio:form_antera ;
-    ontolex:otherForm dicbio:form_anteras,
-        dicbio:form_anthera,
-        dicbio:form_antheras ;
-    ontolex:sense dicbio:entry_antera_sense1 .
-
-dicbio:etym_antera_sense1 a etym:Etymology ;
-    etym:etymon dicbio:etymon_anthera ;
-    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa \"florido\"."^^rdf:HTML .
-
-dicbio:etymon_anthera a etym:Etymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
-    ontolex:writtenRep "anthera" .
-
-dicbio:form_antera a ontolex:Form ;
-    ontolex:writtenRep "antera"@pt .
-
-dicbio:form_anteras a ontolex:Form ;
-    rdfs:label "plural"@pt ;
-    ontolex:writtenRep "anteras"@pt .
-
-dicbio:form_anthera a ontolex:Form ;
-    ontolex:writtenRep "Anthera"@pt,
-        "anthera"@pt,
-        "anthéra"@pt .
-
-dicbio:form_antheras a ontolex:Form ;
-    rdfs:label "plural"@pt ;
-    ontolex:writtenRep "Antheras"@pt,
-        "Anthéras"@pt,
-        "antheras"@pt .
-
-dicbio:entry_antera_sense1 a ontolex:LexicalSense ;
-    skos:definition "Parte da flor que contém o pólen."@pt ;
-        etym:etymology dicbio:etym_antera_sense1 .
-
-#------------------------------------------------------------
-
 ### --- VERBETE: ARVORE ---
 
 dicbio:entry_arvore a ontolex:LexicalEntry ;

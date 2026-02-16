@@ -13,6 +13,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix morph: <http://www.w3.org/ns/lemon/morph#> .
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
 
 
 
@@ -154,3 +156,24 @@ dicbio:hasWordFormationRelation a owl:ObjectProperty ;
     rdfs:label "has word formation relation"@en ;
     rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
 
+## Aqui entram os conceitos e propriedades para incluir as atestações históricas de uso dos termos, quando disponíveis
+
+dicbio:Attestation a owl:Class ;
+    rdfs:label "Attestation"@en ;
+    rdfs:label "Atestação"@pt ;
+    rdfs:comment "Registro de datação histórica de uma unidade lexical, baseado em uma fonte específica."@pt ;
+    rdfs:subClassOf prov:Entity .
+
+dicbio:hasAttestation a owl:ObjectProperty ;
+    rdfs:label "has attestation"@en ;
+    rdfs:label "tem atestação"@pt ;
+    rdfs:comment "Relaciona uma entrada lexical a um registro de atestação histórica."@pt ;
+    rdfs:domain ontolex:LexicalEntry ;
+    rdfs:range dicbio:Attestation .
+
+dicbio:attestationDate a owl:DatatypeProperty ;
+    rdfs:label "attestation date"@en ;
+    rdfs:label "data de atestação"@pt ;
+    rdfs:comment "Data associada à atestação histórica da unidade lexical."@pt ;
+    rdfs:domain dicbio:Attestation ;
+    rdfs:range xsd:gYear .

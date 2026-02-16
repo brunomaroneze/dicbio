@@ -32,7 +32,8 @@ dbres:entry_antera a ontolex:LexicalEntry ;
 dbres:etym_antera_sense1 a etym:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     etym:etymon dbres:etymon_anthera ;
-    dbres:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
+    dicbio:confidenceLevel dicbio:certain ;
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
 
 dbres:etymon_anthera a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
