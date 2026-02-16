@@ -2,23 +2,23 @@
 
 Informações gerais do termo:
 
-- O termo que corresponde à entrada do verbete é indicado por "dbres:entry_XXXXX"
+- O termo que corresponde à entrada do verbete é indicado por "dbres:entry_XXXXX".
 
-- O termo é colocado como "a ontolex:LexicalEntry"
+- O termo é colocado como "a ontolex:LexicalEntry".
 
-- A propriedade "rdfs:seeAlso" pode ser usada para ligar ao verbete no Wiktionary
+- A propriedade "rdfs:seeAlso" pode ser usada para ligar ao verbete no Wiktionary.
 
-- A propriedade "owl:sameAs" pode ser usada para ligar ao verbete no dbnary
+- A propriedade "skos:exactMatch" pode ser usada para ligar ao verbete no Dbnary.
 
-- "dcterms:created" indica a data de criação do verbete
+- "dcterms:created" indica a data de criação do verbete.
 
-- "dcterms:creator" indica os autores do verbete
+- "dcterms:creator" indica os autores do verbete.
 
-- "lexinfo:partOfSpeech" indica a classe gramatical
+- "lexinfo:partOfSpeech" indica a classe gramatical.
 
-- "ontolex:canonicalForm" indica a forma (prefixada com "form_") canônica, e "ontolex:otherForm" indica as outras formas
+- "ontolex:canonicalForm" indica a forma (prefixada com "form_") canônica, e "ontolex:otherForm" indica as outras formas.
 
-- "ontolex:sense" liga com as acepções (no formato "entry_XXXX_sense1")
+- "ontolex:sense" liga com as acepções (no formato "entry_XXXX_sense1").
 
 ------------------------------------------------------------------------------------
 Informações sobre as hipóteses etimológicas:
@@ -43,7 +43,7 @@ Informações sobre as hipóteses etimológicas:
 
 - O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a etym:Etymon"
 
-- O étimo precisa ter os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "owl:sameAs" pode ser usada para relacionar o étimo latino ao projeto LiLa
+- O étimo precisa ter os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao projeto LiLa
 
 - Um étimo pode ter outro étimo, formando cadeias etimológicas
 

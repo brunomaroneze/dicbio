@@ -18,7 +18,7 @@
 
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    owl:sameAs <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -67,7 +67,7 @@ dbres:etym_adiposo_sense1_h2 a etym:Etymology ;
 dbres:etymon_adiposus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     ontolex:writtenRep "adiposus" ;
-    owl:sameAs <https://lila-erc.eu/data/id/lemma/152495> ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;
     skos:definition "Que contém gordura."@pt ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
