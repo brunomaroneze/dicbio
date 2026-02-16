@@ -26,6 +26,15 @@ dbsrc:dicbio_project a foaf:Project ;
     dcterms:title "Dicionário Histórico de Termos da Biologia" ;
     foaf:homepage <https://dicbio.fflch.usp.br/> .
 
+# Vandelli
+dbsrc:source_vandelli a bibo:Book ;
+    dcterms:title "Diccionario dos Termos Technicos de Historia Natural" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1445443> ;
+    dcterms:issued "1788"^^xsd:gYear ;
+    foaf:page <https://fontesdoportugues.bnportugal.gov.pt/index.php/dicionarios/10-enciclopedias-e-dicionarios-especializados/45-vandelli-domingos-1735-1816> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138313012> ; # URI universal do Vandelli (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
+    dcterms:hasFormat <https://purl.pt/13958/1/> .
+
 # Definição do Houaiss
 dbsrc:source_houaiss a bibo:Book ;
     dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
@@ -35,8 +44,8 @@ dbsrc:source_houaiss a bibo:Book ;
 # Definição do Gaffiot
 dbsrc:source_gaffiot a bibo:Book ;
     dcterms:title "Dictionnaire illustré latin-français" ;
-    dcterms:creator "Félix Gaffiot" ;
-    dcterms:issued "1934" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3092444> ;
+    dcterms:issued "1934"^^xsd:gYear ;
     owl:sameAs <https://www.wikidata.org/wiki/Q1248405> . # URI universal do Gaffiot
 
 # Definição do OLD

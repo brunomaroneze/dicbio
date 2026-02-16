@@ -17,50 +17,6 @@
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
-
-### --- VERBETE: ANGULADO ---
-
-dicbio:entry_angulado a ontolex:LexicalEntry ;
-    dcterms:created "2023-09-15"^^xsd:date ;
-    dcterms:creator dbauth:bruno_maroneze,
-        dbauth:kamila_barbosa ;
-    lexinfo:partOfSpeech lexinfo:adjective ;
-    ontolex:canonicalForm dicbio:form_angulado ;
-    ontolex:otherForm dicbio:form_angulada,
-        dicbio:form_anguladas,
-        dicbio:form_angulados ;
-    ontolex:sense dicbio:entry_angulado_sense1 .
-
-dicbio:etym_angulado_sense1 a etym:Etymology ;
-    etym:etymon dicbio:etymon_angulatus ;
-    dicbio:etymologicalArgumentation "Duas são as possibilidades de descrição do étimo: 1 - <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina; ou 2 - <i>angulado</i> pode ser analisado como derivado do substantivo <i>ângulo</i> com o sufixo -<i>ado</i>, visto que o substantivo <i>ângulo</i> teve, segundo o Dicionário Houaiss, sua primeira atestação no século XIV; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
-
-dicbio:etymon_angulatus a etym:Etymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source dicbio:source_gaffiot, dicbio:source_old ;
-    ontolex:writtenRep "angulatus" .
-
-dicbio:form_angulado a ontolex:Form ;
-    ontolex:writtenRep "angulado"@pt .
-
-dicbio:form_angulada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
-    ontolex:writtenRep "angulada"@pt .
-
-dicbio:form_anguladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
-    ontolex:writtenRep "anguladas"@pt .
-
-dicbio:form_angulados a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
-    ontolex:writtenRep "angulados"@pt .
-
-dicbio:entry_angulado_sense1 a ontolex:LexicalSense ;
-    skos:definition "Que apresenta ângulo; anguloso."@pt ;
-        etym:etymology dicbio:etym_angulado_sense1 .
-
-#------------------------------------------------------------
-
 ### --- VERBETE: ANTERA ---
 
 dicbio:entry_antera a ontolex:LexicalEntry ;

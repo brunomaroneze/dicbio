@@ -37,6 +37,7 @@ dbres:etym_angulado_sense1_h1 a etym:Etymology ;
 dbres:etymon_angulatus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
+    skos:definition "Que tem ângulo; anguloso."@pt ;
     ontolex:writtenRep "angulatus" .
 
 dbres:etym_angulado_sense1_h2 a etym:Etymology ;

@@ -69,6 +69,7 @@ dbres:etymon_adiposus a etym:Etymon ;
     ontolex:writtenRep "adiposus" ;
     owl:sameAs <https://lila-erc.eu/data/id/lemma/152495> ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;
+    skos:definition "Que contém gordura."@pt ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
 
 dbres:form_adiposo a ontolex:Form ;

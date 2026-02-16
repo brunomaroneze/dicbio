@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+dbres:entry_antera a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_antera ;
+    ontolex:otherForm dbres:form_anteras,
+        dbres:form_anthera,
+        dbres:form_antheras,
+        dbres:form_anthera_accent,
+        dbres:form_antheras_accent ;
+    ontolex:sense dbres:entry_antera_sense1 .
+
+dbres:etym_antera_sense1 a etym:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    etym:etymon dbres:etymon_anthera ;
+    dbres:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
+
+dbres:etymon_anthera a etym:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_vandelli ;
+    owl:sameAs <https://lila-erc.eu/data/id/lemma/89247> ;
+    ontolex:writtenRep "anthera" ;
+    skos:definition "Parte da flor que contém o pólen."@pt .
+    etym:etymology dbres:etym_anthera_lat .
+
+dbres:etym_anthera_lat a etym:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    etym:etymon dbres:etymon_antheros ;
+    dcterms:source dbsrc:source_houaiss .
+
+dbres:etymon_antheros a etym:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/grc> ;
+    ontolex:writtenRep "ἀνθηρός" ;
+    skos:definition "Florido."@pt .
+
+dbres:form_antera a ontolex:Form ;
+    ontolex:writtenRep "antera"@pt ;
+    lexinfo:number lexinfo:singular .
+
+dbres:form_anteras a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "anteras"@pt .
+
+dbres:form_anthera a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "anthera"@pt .
+
+dbres:form_anthera_accent a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "anthéra"@pt .
+
+dbres:form_antheras a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "antheras"@pt .
+
+dbres:form_antheras_accent a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "anthéras"@pt .
+
+dbres:entry_antera_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte da flor que contém o pólen."@pt ;
+    etym:etymology dbres:etym_antera_sense1 .
