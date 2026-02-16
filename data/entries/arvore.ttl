@@ -36,7 +36,7 @@ dbres:etym_arvore_sense1 a etym:Etymology ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
     dcterms:source dbsrc:source_houaiss ;
-    dicbio:etymologicalArgumentation "O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de “planta de tronco alto e grosso”), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""^^rdf:HTML .
 
 dbres:etymon_arborem a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
