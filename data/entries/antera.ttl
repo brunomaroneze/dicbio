@@ -39,7 +39,7 @@ dbres:etymon_anthera a etym:Etymon ;
     dcterms:source dbsrc:source_vandelli ;
     owl:sameAs <https://lila-erc.eu/data/id/lemma/89247> ;
     ontolex:writtenRep "anthera" ;
-    skos:definition "Parte da flor que contém o pólen."@pt .
+    skos:definition "Parte da flor que contém o pólen."@pt ;
     etym:etymology dbres:etym_anthera_lat .
 
 dbres:etym_anthera_lat a etym:Etymology ;
