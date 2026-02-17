@@ -17,44 +17,6 @@
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
-### --- VERBETE: ARVORE ---
-
-dicbio:entry_arvore a ontolex:LexicalEntry ;
-    dcterms:created "2023-09-18"^^xsd:date ;
-    dcterms:creator dbauth:adriane_queiroz,
-        dbauth:bruno_maroneze ;
-    lexinfo:gender lexinfo:feminine ;
-    lexinfo:partOfSpeech lexinfo:noun ;
-    ontolex:canonicalForm dicbio:form_arvore ;
-    ontolex:otherForm dicbio:form_arvore,
-        dicbio:form_arvores ;
-    ontolex:sense dicbio:entry_arvore_sense1 .
-
-dicbio:etym_arvore_sense1 a etym:Etymology ;
-    etym:etymon dicbio:etymon_arborem ;
-    dicbio:etymologicalArgumentation "O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de “planta de tronco alto e grosso”), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."^^rdf:HTML .
-
-dicbio:etymon_arborem a etym:Etymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "arborem" .
-
-dicbio:form_arvore a ontolex:Form ;
-    ontolex:writtenRep "Arvore"@pt,
-        "arvore"@pt,
-        "árvore"@pt .
-
-dicbio:form_arvores a ontolex:Form ;
-    rdfs:label "plural"@pt ;
-    ontolex:writtenRep "Arvores"@pt,
-        "arvores"@pt .
-
-dicbio:entry_arvore_sense1 a ontolex:LexicalSense ;
-    skos:definition "Planta perene que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
-    etym:etymology dicbio:etym_arvore_sense1 .
-
-#------------------------------------------------------------
-
 ### --- VERBETE: AURICULA ---
 ### Falta acertar as etimologias para cada acepção
 

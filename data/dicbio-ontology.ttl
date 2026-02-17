@@ -138,6 +138,11 @@ dicbio:created a skos:Concept ;
     skos:prefLabel "Created"@en ;
     skos:definition "The lexical item was created within the language, e.g., through derivation, compounding or other kind of neological process."@en .
 
+dicbio:semanticDerivation a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Derived from another sense"@en ;
+    skos:definition "The lexical item was derived from another lexical sense in the same language."@en .
+
 dicbio:etymologicalProcess a owl:ObjectProperty ;
     rdfs:domain etym:Etymology ;
     rdfs:range skos:Concept ;
@@ -145,16 +150,34 @@ dicbio:etymologicalProcess a owl:ObjectProperty ;
     rdfs:comment "Specifies the type of historical process involved in an etymological hypothesis (e.g., inheritance, borrowing, internal creation). The process is attributed to the hypothesis, not directly to the lexical entry."@en .
 
 dicbio:semanticDerivationFrom a owl:ObjectProperty ;
-    rdfs:domain ontolex:LexicalSense ;
+    rdfs:domain etym:Etymology ;
     rdfs:range ontolex:LexicalSense ;
     rdfs:label "semantic derivation from"@en ;
-    rdfs:comment "Indicates that one lexical sense historically derives from another through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
+    rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
 
 dicbio:hasWordFormationRelation a owl:ObjectProperty ;
     rdfs:domain etym:Etymology ;
     rdfs:range morph:WordFormationRelation ;
     rdfs:label "has word formation relation"@en ;
     rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
+
+### Explains which sense is being analyzed
+
+dicbio:explainsSense a owl:ObjectProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range ontolex:LexicalSense ;
+    rdfs:label "explains sense"@en ;
+    rdfs:comment "Relates an etymological hypothesis to the lexical sense whose historical origin it aims to explain."@en .
+
+
+### Indicates the historical source sense
+
+dicbio:derivesFromSense a owl:ObjectProperty ;
+    rdfs:domain etym:Etymology ;
+    rdfs:range ontolex:LexicalSense ;
+    rdfs:label "derives from sense"@en ;
+    rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change."@en .
+
 
 ## Aqui entram os conceitos e propriedades para incluir as atestações históricas de uso dos termos, quando disponíveis
 

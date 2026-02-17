@@ -35,6 +35,14 @@ dbsrc:source_vandelli a bibo:Book ;
     owl:sameAs <https://www.wikidata.org/wiki/Q138313012> ; # URI universal do Vandelli (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
     dcterms:hasFormat <https://purl.pt/13958/1/> .
 
+# Santucci
+dbsrc:source_santucci a bibo:Book ;
+    dcterms:title "Anatomia do Corpo Humano" ;
+    dcterms:creator <> ; # URI a ser criada para Bernardo Santucci
+    dcterms:issued "1739"^^xsd:gYear ;
+    foaf:page <https://archive.org/details/anatomiadocorpoh00sant/page/n6/mode/1up> ;
+    owl:sameAs <> . # URI universal do Santucci (a ser criada)
+
 # Definição do Houaiss
 dbsrc:source_houaiss a bibo:Book ;
     dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
@@ -65,4 +73,9 @@ dbsrc:source_acta_physico_medica_1730 a bibo:Issue ;
     dcterms:isPartOf dbsrc:source_acta_physico_medica_series ; 
     rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .
 
-#------------------------------------------------------------
+dbsrc:source_blasius a bibo:Book ;
+    dcterms:title "Anatome Animalium" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3282772> ;
+    dcterms:issued "1681"^^xsd:gYear ;
+    owl:sameAs <> ; # URI a ser criada
+    dcterms:hasFormat <https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC?gbpv=0> .

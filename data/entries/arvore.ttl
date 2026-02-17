@@ -23,9 +23,8 @@ dbres:entry_arvore a ontolex:LexicalEntry ;
         dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
-    ontolex:canonicalForm dbres:form_arvore ;
+    ontolex:canonicalForm dbres:form_arvore_accent ;
     ontolex:otherForm dbres:form_arvore,
-        dbres:form_arvore_accent,
         dbres:form_arvores ;
     ontolex:sense dbres:entry_arvore_sense1 .
 
