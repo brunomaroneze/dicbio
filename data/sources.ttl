@@ -38,10 +38,10 @@ dbsrc:source_vandelli a bibo:Book ;
 # Santucci
 dbsrc:source_santucci a bibo:Book ;
     dcterms:title "Anatomia do Corpo Humano" ;
-    dcterms:creator <> ; # URI a ser criada para Bernardo Santucci
+    dcterms:creator <https://www.wikidata.org/entity/Q88168950> ; # URI para Bernardo Santucci
     dcterms:issued "1739"^^xsd:gYear ;
     foaf:page <https://archive.org/details/anatomiadocorpoh00sant/page/n6/mode/1up> ;
-    owl:sameAs <> . # URI universal do Santucci (a ser criada)
+    owl:sameAs <https://www.wikidata.org/entity/Q138340024> . # URI universal do Santucci
 
 # Definição do Houaiss
 dbsrc:source_houaiss a bibo:Book ;
@@ -77,5 +77,5 @@ dbsrc:source_blasius a bibo:Book ;
     dcterms:title "Anatome Animalium" ;
     dcterms:creator <https://www.wikidata.org/entity/Q3282772> ;
     dcterms:issued "1681"^^xsd:gYear ;
-    owl:sameAs <> ; # URI a ser criada
+    owl:sameAs <https://www.wikidata.org/wiki/Q138340044> ; # URI universal do Blasius
     dcterms:hasFormat <https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC?gbpv=0> .
