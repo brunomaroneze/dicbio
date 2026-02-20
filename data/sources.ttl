@@ -63,6 +63,15 @@ dbsrc:source_old a bibo:Book ;
     dcterms:issued "1968" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
 
+# Definição do LSJ
+dbsrc:source_LSJ a bibo:Book ;
+    dcterms:title "The Online Liddell-Scott-Jones Greek-English Lexicon" ;
+    dcterms:publisher "University of California" ;
+    dcterms:issued "2011" ;
+    rdfs:seeAlso <https://stephanus.tlg.uci.edu/lsj/> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138371913> . # URI universal do LSJ (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
+
+
 dbsrc:source_acta_physico_medica_series a bibo:Periodical ;
     dcterms:title "Acta Physico-Medica Academiae Caesareae Leopoldino-Carolinae" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q13548519> .
@@ -79,3 +88,10 @@ dbsrc:source_blasius a bibo:Book ;
     dcterms:issued "1681"^^xsd:gYear ;
     owl:sameAs <https://www.wikidata.org/wiki/Q138340044> ; # URI universal do Blasius
     dcterms:hasFormat <https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC?gbpv=0> .
+
+dbsrc:source_manget a bibo:Book ;
+    dcterms:title "Bibliotheca Chirurgica tomus tertius" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3166339> ;
+    dcterms:issued "1721"^^xsd:gYear ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138375186> ; # URI universal do Manget, criada por nós, pois o Wikidata ainda não tinha um item para essa obra
+    dcterms:hasFormat <https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC> .
