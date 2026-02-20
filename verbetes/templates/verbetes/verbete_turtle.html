@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="verbete">
+    <header>
+        <h1 style="color: darkgreen;">{{ verbete.lemma }}</h1>
+        <p><i>{{ verbete.pos }}</i></p>
+    </header>
+
+    <section class="definicao">
+        <h3>Definições</h3>
+        <ol>
+            {% for def in verbete.definitions %}
+                <li style="margin-bottom: 10px;">{{ def }}</li>
+            {% empty %}
+                <li>Nenhuma definição encontrada.</li>
+            {% endfor %}
+        </ol>
+    </section>
+
+    <hr>
+
+    <section class="etimologia">
+        <h3>Discussão Histórico-Etimológica</h3>
+        <div class="texto-etimologico">
+            {% for etym in verbete.etymology_list %}
+                <div class="bloco-etym">{{ etym|safe }}</div>
+                {% if not forloop.last %}<hr>{% endif %}
+            {% empty %}
+                <p>Etimologia não disponível.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="exemplos">
+        <h3>Atestações no Córpus Histórico</h3>
+        <ul class="lista-exemplos">
+            {% for ex in verbete.exemplos %}
+                <li style="margin-bottom: 15px; line-height: 1.5;">
+                    <a href="{% url 'corpus_digital:obra_detalhe' ex.obra_slug %}#{{ ex.xml_id }}">
+                        "{{ ex.contexto_completo }}"
+                    </a>
+                    <br>
+                    <small class="text-muted">
+                        (Termo: <strong>{{ ex.termo }}</strong> | 
+                        <a href="{% url 'corpus_digital:obra_detalhe' ex.obra_slug %}#{{ ex.xml_id }}">Ver no texto original</a>)
+                    </small>
+                </li>
+            {% empty %}
+                <li>Nenhuma atestação encontrada nos textos transcritos.</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    {% if verbete.extras %}
+    <section class="informacoes-adicionais" style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 20px;">
+        <h4>Informações Complementares</h4>
+        <dl>
+            {% for label, valores in verbete.extras.items %}
+                <dt><strong>{{ label }}:</strong></dt>
+                {% for v in valores %}
+                    <dd>{{ v|safe }}</dd>
+                {% endfor %}
+            {% endfor %}
+        </dl>
+    </section>
+    {% endif %}
+
+    <footer style="margin-top: 30px; font-size: 0.8em; color: gray;">
+        <p>Dados extraídos da Base de Conhecimento (OntoLex-Lemon).</p>
+    </footer>
+</article>
+{% endblock %}

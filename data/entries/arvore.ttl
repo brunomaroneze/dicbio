@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+
+dbres:entry_arvore a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-18"^^xsd:date ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_arvore_accent ;
+    ontolex:otherForm dbres:form_arvore,
+        dbres:form_arvores ;
+    ontolex:sense dbres:entry_arvore_sense1 .
+
+dbres:etym_arvore_sense1 a etym:Etymology ;
+    etym:etymon dbres:etymon_arborem ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dicbio:etymologicalProcess dicbio:inherited ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalArgumentation """O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""^^rdf:HTML .
+
+dbres:etymon_arborem a etym:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_houaiss ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
+    ontolex:writtenRep "arborem" .
+
+dbres:form_arvore a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "arvore"@pt .
+
+dbres:form_arvore_accent a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "árvore"@pt .
+
+dbres:form_arvores a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "arvores"@pt .
+
+dbres:entry_arvore_sense1 a ontolex:LexicalSense ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
+    etym:etymology dbres:etym_arvore_sense1 ;
+    dicbio:hasAttestation dbres:attestation_arvore_houaiss .
+
+dbres:attestation_arvore_houaiss a dicbio:Attestation ;
+    dicbio:attestationDate "0984"^^xsd:gYear ;
+    dcterms:source dbsrc:source_houaiss .
+

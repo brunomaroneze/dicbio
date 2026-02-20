@@ -1,0 +1,98 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+dbres:entry_adiposo a ontolex:LexicalEntry ;
+    rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
+    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dcterms:created "2024-05-04"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposo ;
+    ontolex:otherForm dbres:form_adiposa,
+        dbres:form_adiposas,
+        dbres:form_adiposos ;
+    ontolex:sense dbres:entry_adiposo_sense1 .
+
+dbres:etym_adiposo_sense1_h1 a etym:Etymology ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalProcess dicbio:created ;
+    dicbio:hasWordFormationRelation dbres:adiposo_derivation ;
+    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>."""^^rdf:HTML ;
+    dicbio:confidenceLevel dicbio:plausible .
+
+dbres:adiposo_derivation a morph:WordFormationRelation ;
+    vartrans:source dbres:entry_adipe ;
+    vartrans:target dbres:entry_adiposo .
+
+dbres:entry_adipe a ontolex:LexicalEntry ;
+    dcterms:created "2026-02-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine,
+        lexinfo:feminine ;
+    ontolex:canonicalForm dbres:form_adipe ;
+    ontolex:sense dbres:entry_adipe_sense1 .
+
+dbres:form_adipe a ontolex:Form ;
+    ontolex:writtenRep "ádipe"@pt .
+
+dbres:entry_adipe_sense1 a ontolex:LexicalSense ;
+    skos:definition "Gordura animal."@pt .
+
+dbres:etym_adiposo_sense1_h2 a etym:Etymology ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    etym:etymon dbres:etymon_adiposus ;
+    dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
+    dicbio:confidenceLevel dicbio:probable .
+
+dbres:etymon_adiposus a etym:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    ontolex:writtenRep "adiposus" ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    dcterms:source dbsrc:source_acta_physico_medica_1730 ;
+    skos:definition "Que contém gordura."@pt ;
+    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
+
+dbres:form_adiposo a ontolex:Form ;
+    ontolex:writtenRep "adiposo"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:masculine .
+
+dbres:form_adiposa a ontolex:Form ;
+    ontolex:writtenRep "adiposa"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine .
+
+dbres:form_adiposas a ontolex:Form ;
+    ontolex:writtenRep "adiposas"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine .
+
+dbres:form_adiposos a ontolex:Form ;
+    ontolex:writtenRep "adiposos"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine .
+
+dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que contém gordura."@pt ;
+    etym:etymology dbres:etym_adiposo_sense1_h1,
+        dbres:etym_adiposo_sense1_h2 .

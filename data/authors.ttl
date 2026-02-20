@@ -1,0 +1,89 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+
+
+
+### REGISTRO DOS COLABORADORES ###
+
+dbauth:adriane_queiroz a foaf:Person ;
+    foaf:name "Adriane Maria de Oliveira Queiroz" ;
+    dcterms:identifier <https://orcid.org/0009-0003-3281-5247> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9688350818351425> .
+
+dbauth:ana_menegassi_rocha a foaf:Person ;
+    foaf:name "Ana Carolina Menegassi Rocha" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3118171481670217> .
+
+dbauth:ana_cristina_lopes a foaf:Person ;
+    foaf:name "Ana Cristina Gouvêa Lopes" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/6091690669901066> .
+
+dbauth:bruno_maroneze a foaf:Person ;
+    foaf:name "Bruno Oliveira Maroneze" ;
+    dcterms:identifier <https://orcid.org/0000-0002-2821-9448> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/2386581098769105> .
+
+dbauth:dannielly_rodrigues_silva a foaf:Person ;
+    foaf:name "Dannielly Victória Rodrigues da Silva" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/8693099469156427> .
+
+dbauth:fabiani_goncalves a foaf:Person ;
+    foaf:name "Fabiani de Amorim Gonçalves" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5556839544035822> .
+
+dbauth:geovanna_lima a foaf:Person ;
+    foaf:name "Geovanna Salvino de Lima" ;
+    dcterms:identifier <https://orcid.org/0009-0000-3764-9477> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1383229230978249> .
+
+dbauth:kamila_barbosa a foaf:Person ;
+    foaf:name "Kamila da Silva Barbosa" ;
+    dcterms:identifier <https://orcid.org/0000-0003-2632-0734> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0824015704100767> .
+
+dbauth:luana_borges a foaf:Person ;
+    foaf:name "Luana da Silva Borges" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0983397069003665> .
+
+dbauth:marilizi_tarifa a foaf:Person ;
+    foaf:name "Marilizi Arruda Tarifa" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/4376662733752083> .
+
+dbauth:marimeire_barros a foaf:Person ;
+    foaf:name "Marimeire Almeida Barros" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3951171920995304> .
+
+dbauth:matheus_casarin a foaf:Person ;
+    foaf:name "Matheus Stein Casarin" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9927626991207276> .
+
+dbauth:rafaela_domingos a foaf:Person ;
+    foaf:name "Rafaela Lima Domingos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1269123121808893> .
+
+dbauth:raissa_buss a foaf:Person ;
+    foaf:name "Raissa Silveira Buss" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5067931665456928> .
+
+dbauth:sammara_valim_santos a foaf:Person ;
+    foaf:name "Sammara Valim Luz dos Santos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3505243267193578> .
+
+dbauth:vitoria_pereira a foaf:Person ;
+    foaf:name "Vitória Fernandes Pereira" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9858754186832086> .
