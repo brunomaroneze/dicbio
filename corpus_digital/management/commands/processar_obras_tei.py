@@ -51,7 +51,15 @@ def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
         pid = pb_el.get(xml_id_qname) or f'pagina_{num_pagina.replace(" ", "_")}'
         marcador_span.set('id', pid)
         marcador_span.set('class', 'marcador-pagina')
+
+        ## Acrescentei este bloco para tentar consertar o erro de não aparecer a imagem da página
+        marcador_span.set('data-pagina-numero', num_pagina)
+
+        if url_imagem:
+            marcador_span.set('data-facs', url_imagem)
+        ###--------fim do bloco------------------
         marcador_span.text = f'[p. {num_pagina}] '
+        
         
         if pb_el.tail:
             marcador_container.tail = pb_el.tail
