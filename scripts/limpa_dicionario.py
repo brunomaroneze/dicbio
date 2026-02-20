@@ -61,4 +61,4 @@ def fix_dictionary(input_file, output_file):
     print(f"Sucesso! Arquivo salvo em: {output_file}")
 
 # Execute o script
-fix_dictionary("./data/DicionarioBiologia.ttl", "./data/dicionario_limpo.ttl")
+fix_dictionary("./data/entries/DicionarioBiologia.ttl", "./data/entries/dicionario_limpo.ttl")

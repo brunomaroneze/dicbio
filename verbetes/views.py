@@ -191,7 +191,7 @@ def buscar_contexto_no_xml(xml_id):
 
 # Carregamos os dois grafos (Dicionário e Índice de Exemplos)
 G = rdflib.Graph()
-G.parse("data/DicionarioBiologia.ttl", format="turtle")
+G.parse("data/entries/DicionarioBiologia.ttl", format="turtle")
 G.parse("data/corpus_index.ttl", format="turtle") # <--- Novo arquivo de índice NIF
 
 def verbete_pelo_turtle(request, lema):

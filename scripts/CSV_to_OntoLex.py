@@ -127,5 +127,5 @@ converter_arquivos_locais(
     caminho_dados='data/DadosDoDicionario.csv', 
     caminho_defs='data/Definitions.csv', 
     caminho_termos='data/termos_extraidos.csv', 
-    arquivo_saida='data/DicionarioBiologia.ttl'
+    arquivo_saida='data/entries/DicionarioBiologia.ttl'
 )
