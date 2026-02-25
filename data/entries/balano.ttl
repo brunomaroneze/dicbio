@@ -20,7 +20,10 @@
 # Pensar se vale a pena separar étimo de forma de étimo de sentido.
 # Ou se é melhor criar uma classe Lexia, que parearia uma forma com um sentido.
 # Seria necessário, de alguma forma, amarrar um sentido a um étimo, talvez
-# obrigando o Etymon a ter sempre um e um único ontolex:sense.
+# obrigando o Etymon a ter sempre um e um único ontolex:LexicalSense.
+# O importante é deixar claro que o étimo (Etymon) não é uma entrada lexical (LexicalEntry),
+# mas uma associação entre forma e sentido, ou, no mínimo, um sentido (acepção - 
+# LexicalSense).
 
 
 dbres:entry_balano a ontolex:LexicalEntry ;
@@ -36,7 +39,7 @@ dbres:entry_balano a ontolex:LexicalEntry ;
 dbres:etym_balano_sense1 a etym:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     etym:etymon dbres:etymon_balanus_lat_scient ;
-    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>balanus, i</i>, que já apresenta o significado de "cabeça do pênis" em textos médicos do século XVIII (como, por exemplo, a "Bibliotheca Chirurgica" de Manget, 1721 - https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC). Em latim, a palavra tem origem no grego βάλανος, que, segundo o dicionário de Liddell, Scott e Jones, já apresentava, além da acepção de "fruto do carvalho", também a de "cabeça do pênis". Porém, os dicionários de latim Gaffiot e Oxford Latin Dictionary não apresentam essa acepção; talvez o latim não tenha conhecido essa acepção, ou talvez não tenha sido registrada em textos escritos. O emprego de <i>balanus</i> no latim científico não parece ter sido comum, visto que o termo preferido era <i>glans</i>. O próprio Santucci inclui <i>bálano</i> como um dos sinônimos de glande ou cabeça do membro masculino, mas prefere empregar o termo <i>glande</i>."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>balanus, i</i>, que já apresenta o significado de "cabeça do pênis" em textos médicos do século XVIII (como, por exemplo, a "Bibliotheca Chirurgica" de Manget, 1721 - https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC). Em latim, a palavra tem origem no grego βάλανος, que, segundo o dicionário de Liddell, Scott e Jones, já apresentava, além da acepção de "fruto do carvalho", também a de "cabeça do pênis". Porém, os dicionários de latim Gaffiot e Oxford Latin Dictionary não apresentam essa acepção; talvez o latim clássico não tenha conhecido essa acepção, ou talvez não tenha sido registrada em textos escritos. O emprego de <i>balanus</i> no latim científico não parece ter sido comum, visto que o termo preferido era <i>glans</i>. O próprio Santucci inclui <i>bálano</i> como um dos sinônimos de glande ou cabeça do membro masculino, mas prefere empregar o termo <i>glande</i>."""^^rdf:HTML .
 
 dbres:etymon_balanus_lat_scient a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
