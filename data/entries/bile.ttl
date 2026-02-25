@@ -1,0 +1,47 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+
+### --- VERBETE: BILE ---
+
+dbres:entry_bile a ontolex:LexicalEntry ;
+    dcterms:created "2024-05-07"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_bile ;
+    ontolex:sense dbres:entry_bile_sense1 .
+
+dbres:etym_bile_sense1 a etym:Etymology ;
+    etym:etymon dbres:etymon_bilis ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>bilis</i>, já atestado desde a Antiguidade com o sentido de \"fluido secretado pelo fígado\" (conforme mostra o Oxford Latin Dictionary). A conservação do -l- intervocálico e a data tardia de registro na língua portuguesa indicam tratar-se de palavra erudita, que certamente entrou na língua por meio do latim científico."^^rdf:HTML .
+
+dbres:etymon_bilis a etym:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "bilis" .
+
+dbres:form_bile a ontolex:Form ;
+    ontolex:writtenRep "bile"@pt .
+
+dbres:entry_bile_sense1 a ontolex:LexicalSense ;
+    skos:definition "Substância secretada pelo fígado que atua na digestão."@pt ;
+    etym:etymology dbres:etym_bile_sense1 .
+
+#------------------------------------------------------------
