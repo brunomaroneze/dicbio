@@ -17,8 +17,6 @@
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
-### --- VERBETE: BIFIDO ---
-
 dbres:entry_bifido a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
@@ -29,26 +27,30 @@ dbres:entry_bifido a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bifido_sense1 .
 
 dbres:etym_bifido_sense1 a etym:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
     etym:etymon dbres:etymon_bifidus ;
     dicbio:etymologicalArgumentation """O étimo é certamente o latim <i>bifidus</i>, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino <i>bifidus</i> na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""^^rdf:HTML .
 
 dbres:etymon_bifidus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source dicbio:source_gaffiot, dicbio:source_old ;
+    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     skos:definition "Dividido em duas partes."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/91574> ;
     ontolex:writtenRep "bifidus"@la .
 
 dbres:form_bifido_accent a ontolex:Form ;
-    rdfs:label "masculino singular"@pt ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:number lexinfo:singular ;
     ontolex:writtenRep "bífido"@pt .
 
 dbres:form_bifido a ontolex:Form ;
-    rdfs:label "masculino singular"@pt ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:number lexinfo:singular ;
     ontolex:writtenRep "bifido"@pt .
 
 dbres:form_bifidos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "bifidos"@pt .
 
 dbres:entry_bifido_sense1 a ontolex:LexicalSense ;

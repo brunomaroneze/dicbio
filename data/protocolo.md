@@ -65,6 +65,8 @@
 
 - A propriedade "dicbio:attestationDate" indica o ano da atestação e a propriedade "dcterms:source" indica a fonte da datação.
 
+- (Ainda a ser considerado: vamos indicar atestações de étimos?) A atestação pode ser da acepção do verbete principal, ou da acepção do étimo.
+
 - A fonte pode ser primária (ou seja, uma obra do próprio córpus do projeto) ou secundária (em geral, outro dicionário).
 
 - Será feito um algoritmo que extrai automaticamente do córpus as informações sobre as atestações das fontes primárias.
