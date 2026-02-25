@@ -16,7 +16,6 @@
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
-#------------------------------------------------------------
 
 ### --- VERBETE: BIFIDO ---
 
@@ -24,23 +23,29 @@ dbres:entry_bifido a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
-    ontolex:canonicalForm dbres:form_bifido ;
+    ontolex:canonicalForm dbres:form_bifido_accent ;
     ontolex:otherForm dbres:form_bifido,
         dbres:form_bifidos ;
     ontolex:sense dbres:entry_bifido_sense1 .
 
 dbres:etym_bifido_sense1 a etym:Etymology ;
     etym:etymon dbres:etymon_bifidus ;
-    dicbio:etymologicalArgumentation "O étimo é certamente o latim <i>bifidus</i>, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de “dividido em duas partes”. Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino <i>bifidus</i> na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é certamente o latim <i>bifidus</i>, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino <i>bifidus</i> na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""^^rdf:HTML .
 
 dbres:etymon_bifidus a etym:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dicbio:source_gaffiot, dicbio:source_old ;
+    skos:definition "Dividido em duas partes."@pt ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/91574> ;
     ontolex:writtenRep "bifidus"@la .
 
+dbres:form_bifido_accent a ontolex:Form ;
+    rdfs:label "masculino singular"@pt ;
+    ontolex:writtenRep "bífido"@pt .
+
 dbres:form_bifido a ontolex:Form ;
-    ontolex:writtenRep "bifido"@pt,
-        "bífido"@pt .
+    rdfs:label "masculino singular"@pt ;
+    ontolex:writtenRep "bifido"@pt .
 
 dbres:form_bifidos a ontolex:Form ;
     rdfs:label "masculino plural"@pt ;
