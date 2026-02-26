@@ -51,7 +51,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-03-09T22:15:25.201Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.1.2" when="2025-07-11T02:21:48.340Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-03-09T22:15:25.201Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.1.2" when="2025-07-11T02:21:48.340Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.3.2" when="2026-02-26T20:40:28.212Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -82,7 +82,7 @@
         <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc availability biblFull authority editionStmt edition funder language langUsage keywords licence principal projectDesc profileDesc quotation segmentation sponsor tagUsage tagsDecl encodingDesc editorialDecl"/>
 
         <!-- required core elements (p and title for use in titleStmt) -->
-        <moduleRef key="core" include="p title abbr add analytic author bibl biblScope biblStruct cb choice cit citedRange corr date del desc distinct ellipsis editor emph expan foreign gap gb gloss head graphic headItem headLabel hi imprint item label lb list listBibl measure mentioned monogr name note noteGrp num orig pb publisher pubPlace q quote reg resp respStmt sic soCalled teiCorpus term textLang time unclear unit ref l lg"/>
+        <moduleRef key="core" include="p title abbr add analytic author bibl biblScope biblStruct cb choice cit citedRange corr date del desc distinct ellipsis editor emph expan foreign gap gb gloss head graphic headItem headLabel hi imprint item label lb list listBibl measure mentioned monogr name note noteGrp num orig pb publisher pubPlace q quote reg resp respStmt sic soCalled teiCorpus term textLang time unclear unit ref l lg rs"/>
 
         <!-- required textstructure elements (TEI, text, and body) -->
         <moduleRef key="textstructure" include="TEI text body back div docAuthor docDate docEdition docImprint docTitle epigraph front imprimatur titlePage titlePart byline salute signed closer"/>

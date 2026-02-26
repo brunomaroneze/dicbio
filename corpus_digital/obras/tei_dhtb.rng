@@ -5,9 +5,9 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-07-11T02:22:00Z. . 
-TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
-TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
+Schema generated from ODD source 2026-02-26T20:40:35Z. . 
+TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
   
 --><!--This material is dual-licensed.
 [http://creativecommons.org/licenses/by-sa/3.0/] Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  [http://www.opensource.org/licenses/BSD-2-Clause] Copyright 2013 TEI Consortium. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage. TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the  TEI Consortium .-->
@@ -793,16 +793,6 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
          </attribute>
       </optional>
    </define>
-   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_dhtb-att.measurement-att-measurement-unitRef-constraint-rule-6">
-      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:xi="http://www.w3.org/2001/XInclude"
-                context="tei:*[@unitRef]">
-         <sch:report role="info" test="@unit">The @unit attribute may be unnecessary when @unitRef is present.</sch:report>
-      </sch:rule>
-   </pattern>
    <define name="tei_dhtbatt.notated.attributes">
       <ref name="tei_dhtbatt.notated.attribute.notation"/>
    </define>
@@ -883,7 +873,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_dhtb-att.pointing-targetLang-targetLang-constraint-rule-7">
+            id="tei_dhtb-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -1084,7 +1074,7 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_dhtb-att.spanning-spanTo-spanTo-points-to-following-constraint-rule-8">
+            id="tei_dhtb-att.spanning-spanTo-spanTo-points-to-following-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -1120,7 +1110,7 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_dhtb-att.typed-subtypeTyped-constraint-rule-9">
+            id="tei_dhtb-att.typed-subtypeTyped-constraint-rule-8">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2724,7 +2714,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="tei_dhtbmodel.entryPart">
       <choice>
          <ref name="tei_dhtbsuperEntry"/>
+         <ref name="tei_dhtbentryFree"/>
          <ref name="tei_dhtbsense"/>
+         <ref name="tei_dhtbdictScrap"/>
          <ref name="tei_dhtbform"/>
          <ref name="tei_dhtbdef"/>
       </choice>
@@ -2734,6 +2726,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbmodel.biblLike"/>
          <ref name="tei_dhtbcit"/>
          <ref name="tei_dhtbentry"/>
+         <ref name="tei_dhtbentryFree"/>
          <ref name="tei_dhtbdictScrap"/>
          <ref name="tei_dhtbform"/>
          <ref name="tei_dhtbdef"/>
@@ -3031,6 +3024,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbmodel.nameLike.agent"/>
          <ref name="tei_dhtbmodel.offsetLike"/>
          <ref name="tei_dhtbmodel.placeStateLike"/>
+         <ref name="tei_dhtbrs"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.nameLike_alternation">
@@ -3038,12 +3032,14 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="tei_dhtbmodel.nameLike.agent_alternation"/>
          <ref name="tei_dhtbmodel.offsetLike_alternation"/>
          <ref name="tei_dhtbmodel.placeStateLike_alternation"/>
+         <ref name="tei_dhtbrs"/>
       </choice>
    </define>
    <define name="tei_dhtbmodel.nameLike_sequence">
       <ref name="tei_dhtbmodel.nameLike.agent_sequence"/>
       <ref name="tei_dhtbmodel.offsetLike_sequence"/>
       <ref name="tei_dhtbmodel.placeStateLike_sequence"/>
+      <ref name="tei_dhtbrs"/>
    </define>
    <define name="tei_dhtbmodel.nameLike_sequenceOptional">
       <optional>
@@ -3054,6 +3050,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </optional>
       <optional>
          <ref name="tei_dhtbmodel.placeStateLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_dhtbrs"/>
       </optional>
    </define>
    <define name="tei_dhtbmodel.nameLike_sequenceOptionalRepeatable">
@@ -3066,6 +3065,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <zeroOrMore>
          <ref name="tei_dhtbmodel.placeStateLike_sequenceOptionalRepeatable"/>
       </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_dhtbrs"/>
+      </zeroOrMore>
    </define>
    <define name="tei_dhtbmodel.nameLike_sequenceRepeatable">
       <oneOrMore>
@@ -3076,6 +3078,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </oneOrMore>
       <oneOrMore>
          <ref name="tei_dhtbmodel.placeStateLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_dhtbrs"/>
       </oneOrMore>
    </define>
    <define name="tei_dhtbmodel.global">
@@ -3319,7 +3324,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_dhtb-att.calendarSystem-calendar-calendar_attr_on_empty_element-constraint-rule-10">
+            id="tei_dhtb-att.calendarSystem-calendar-calendar_attr_on_empty_element-constraint-rule-9">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3332,11 +3337,11 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    </pattern>
    <define name="tei_dhtbp">
       <element name="p">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.6. Speech Contents]</a:documentation>
          <ref name="tei_dhtbmacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-11">
+                  id="tei_dhtb-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:p">
@@ -3347,7 +3352,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-p-abstractModel-structure-p-in-l-constraint-rule-12">
+                  id="tei_dhtb-p-abstractModel-structure-p-in-l-constraint-rule-11">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:p">
@@ -3525,7 +3530,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
          <ref name="tei_dhtbmacro.limitedContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-desc-deprecationInfo-only-in-deprecated-constraint-rule-13">
+                  id="tei_dhtb-desc-deprecationInfo-only-in-deprecated-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:desc[ @type eq 'deprecationInfo']">
@@ -3801,6 +3806,17 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="tei_dhtbrs">
+      <element name="rs">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [14.2.1. Personal Names 3.6.1. Referring Strings]</a:documentation>
+         <ref name="tei_dhtbmacro.phraseSeq"/>
+         <ref name="tei_dhtbatt.global.attributes"/>
+         <ref name="tei_dhtbatt.cmc.attributes"/>
+         <ref name="tei_dhtbatt.naming.attributes"/>
+         <ref name="tei_dhtbatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="tei_dhtbnum">
       <element name="num">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) contains a number, written in any form. [3.6.3. Numbers and
@@ -3956,7 +3972,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <ref name="tei_dhtbmacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-ref-refAtts-constraint-rule-14">
+                  id="tei_dhtb-ref-refAtts-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ref">
@@ -4021,7 +4037,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-list-gloss-list-must-have-labels-constraint-rule-15">
+                  id="tei_dhtb-list-gloss-list-must-have-labels-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:list[@type='gloss']">
@@ -4200,7 +4216,7 @@ Elements]</a:documentation>
    <define name="tei_dhtblb">
       <element name="lb">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line beginning) marks the beginning of a topographic line in some edition or version of a text. [3.11.3. Milestone
-Elements 7.2.5. Speech Contents]</a:documentation>
+Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <ref name="tei_dhtbatt.global.attributes"/>
          <ref name="tei_dhtbatt.breaking.attributes"/>
@@ -4574,7 +4590,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    </define>
    <define name="tei_dhtbl">
       <element name="l">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -4586,7 +4602,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-l-abstractModel-structure-l-in-l-constraint-rule-16">
+                  id="tei_dhtb-l-abstractModel-structure-l-in-l-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l">
@@ -4601,7 +4617,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    </define>
    <define name="tei_dhtblg">
       <element name="lg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -4635,7 +4651,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-lg-atleast1oflggapl-constraint-rule-17">
+                  id="tei_dhtb-lg-atleast1oflggapl-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:lg">
@@ -4644,7 +4660,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-lg-abstractModel-structure-lg-in-l-constraint-rule-18">
+                  id="tei_dhtb-lg-abstractModel-structure-lg-in-l-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:lg">
@@ -5169,7 +5185,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-quotation-quotationContents-constraint-rule-19">
+                  id="tei_dhtb-quotation-quotationContents-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -5493,7 +5509,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-div-abstractModel-structure-div-in-l-constraint-rule-20">
+                  id="tei_dhtb-div-abstractModel-structure-div-in-l-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:div">
@@ -5504,7 +5520,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-21">
+                  id="tei_dhtb-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div">
@@ -5555,11 +5571,12 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
    </define>
    <define name="tei_dhtbcloser">
       <element name="closer">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(closer) groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(closer) groups together salutations, datelines, bylines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
                <ref name="tei_dhtbmodel.gLike"/>
+               <ref name="tei_dhtbbyline"/>
                <ref name="tei_dhtbsigned"/>
                <ref name="tei_dhtbsalute"/>
                <ref name="tei_dhtbmodel.phrase"/>
@@ -5931,7 +5948,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <ref name="tei_dhtbmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-s-noNestedS-constraint-rule-22">
+                  id="tei_dhtb-s-noNestedS-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:s">
@@ -6059,7 +6076,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <ref name="tei_dhtbmacro.phraseSeq.limited"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-span-target-from-constraint-rule-23">
+                  id="tei_dhtb-span-target-from-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -6070,7 +6087,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-span-targetto-constraint-rule-24">
+                  id="tei_dhtb-span-targetto-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -6081,7 +6098,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-span-tonotfrom-constraint-rule-25">
+                  id="tei_dhtb-span-tonotfrom-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -6092,7 +6109,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_dhtb-span-tofrom-constraint-rule-26">
+                  id="tei_dhtb-span-tofrom-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -7233,7 +7250,7 @@ Suggested values include: 1] main; 2] hom (homograph); 3] xref (cross reference)
    <define name="tei_dhtbatt.citing.attribute.unit">
       <optional>
          <attribute name="unit">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the unit of information conveyed by the element, e.g. columns, pages, volume, entry.
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the unit of information conveyed by the element.
 Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line; 5] chapter (chapter); 6] part; 7] column; 8] entry</a:documentation>
             <choice>
                <value>volume</value>
@@ -7295,6 +7312,8 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
             <choice>
                <value>composite</value>
                <a:documentation>no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships.</a:documentation>
+               <value>parallel</value>
+               <a:documentation>the contents of this element are intended to represent simultaneous or side-by-side delivery.</a:documentation>
                <value>uniform</value>
                <a:documentation>the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence.</a:documentation>
             </choice>
@@ -7411,7 +7430,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
    <define name="tei_dhtbatt.global.linking.attribute.next">
       <optional>
          <attribute name="next">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(next) points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
             <data type="anyURI">
                <param name="pattern">\S+</param>
             </data>
