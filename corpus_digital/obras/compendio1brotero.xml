@@ -98,6 +98,165 @@
 	"cwrc:hasCertainty": "cwrc:high"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194437489",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-03-27T23:44:37.489Z",
+	"dcterms:modified": "2026-03-27T23:44:37.489Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/icynscaledd",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "sam"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194437489#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194437489#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div[5]/div/p[12]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "owl:Thing",
+		"@id": "https://www.wikidata.org/wiki/Q939633",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.1.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194540754",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-03-27T23:45:40.754Z",
+	"dcterms:modified": "2026-03-27T23:45:40.754Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/icynscaledd",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "sam"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194540754#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/icynscaledd/dicbio/main/corpus_digital/obras/compendio1brotero.xml?thing_annotation_20260327194540754#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div[5]/div/p[14]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "owl:Thing",
+		"@id": "https://www.wikidata.org/wiki/Q21977677",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.1.0"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><encodingDesc>
 			<editorialDecl>
 				<p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter
@@ -3039,13 +3198,13 @@
 						(turbinata) quando he conica verticalmente, ou se assemelha a hum piaõ
 						bailando (como alguns nabos).</p>
 					<p xml:id="p_brotero1_0114">Globosa (globosa), quando tem huma forma quasi
-						espherica (ranunculus bulbosus). Pode ser tanto bolbosa como tuberosa.</p>
+						espherica (<rs key="ranunculus bulbosus" ref="https://www.wikidata.org/wiki/Q939633">ranunculus bulbosus</rs>). Pode ser tanto bolbosa como tuberosa.</p>
 					<p xml:id="p_brotero1_0115">Troncada (truncata, praemorsa), quando he simplez, e
 						naõ termina em ponta, mas antes parece como retraçada ou cortada
 						transversalmente (<rs key="Scabiosa succisa" ref="https://www.wikidata.org/wiki/Q21877314" cert="high">scabiosa succisa</rs>.)</p>
 					<p xml:id="p_brotero1_0116">Fasciculada (fascicularis, fasciculata), quando
 						consta de partes carnudas, bolbosas, ou tuberosas approximadas, e adunadas
-						na extremidade superior <pb n="16" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0096_16_t24-C-R0120.jpg"/> junto da base do tronco (orchis abortiva, ranunculus ficaria, paeonia).
+						na extremidade superior <pb n="16" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_0096_16_t24-C-R0120.jpg"/> junto da base do tronco (<rs key="orchis abortiva" ref="https://www.wikidata.org/wiki/Q21977677" cert="high">orchis abortiva</rs>, ranunculus ficaria, paeonia).
 						Alguns lhe chamaõ taõbem grumosa (grumosa), como sendo disposta por grumos
 						quer sejaõ rentes quer dependurados, como nos ranunculos, anemones, e
 						abrotea. </p>
