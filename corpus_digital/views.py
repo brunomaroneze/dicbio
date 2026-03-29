@@ -17,21 +17,20 @@ def home(request, slug=None):
         # get_object_or_404 lida com o caso de não encontrar a obra
         obra_selecionada = get_object_or_404(Obra, slug=slug)
 
-        if obra_selecionada.conteudo_html_processado:
+        corpus_html_root = Path(
+            getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html')
+        )
+        caminho_html = corpus_html_root / f"{obra_selecionada.slug}.html"
+
+        if caminho_html.exists():
+            html_da_obra_para_exibir = caminho_html.read_text(encoding='utf-8')
+        elif obra_selecionada.conteudo_html_processado:
             html_da_obra_para_exibir = obra_selecionada.conteudo_html_processado
         else:
-            corpus_html_root = Path(
-                getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html')
+            html_da_obra_para_exibir = (
+                "<p><em>O conteúdo desta obra ainda não foi processado ou não está disponível.</em></p>"
+                "<p><em>Por favor, execute o comando de processamento ou verifique o arquivo XML original.</em></p>"
             )
-            caminho_html = corpus_html_root / f"{obra_selecionada.slug}.html"
-
-            if caminho_html.exists():
-                html_da_obra_para_exibir = caminho_html.read_text(encoding='utf-8')
-            else:
-                html_da_obra_para_exibir = (
-                    "<p><em>O conteúdo desta obra ainda não foi processado ou não está disponível.</em></p>"
-                    "<p><em>Por favor, execute o comando de processamento ou verifique o arquivo XML original.</em></p>"
-                )
             # Se você quiser ser mais robusto, poderia verificar se o arquivo XML original existe
             # e dar uma mensagem diferente caso o XML também não exista.
             # Mas, idealmente, o comando de processamento já teria tratado isso.
