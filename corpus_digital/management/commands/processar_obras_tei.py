@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
+from django.db import connection
 from corpus_digital.models import Obra
 from lxml import etree
 from pathlib import Path
@@ -149,10 +150,22 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('--slug', type=str, help='Processa apenas uma obra.')
         parser.add_argument('--force', action='store_true', help='Força reprocessamento.')
+        parser.add_argument(
+            '--output-mode',
+            choices=['db', 'file', 'both'],
+            default='db',
+            help='Destino do HTML processado: banco (db), arquivo (file) ou ambos (both). Padrão: db.',
+        )
 
     def handle(self, *args, **options):
         slug_especifico = options['slug']
         forcar = options['force']
+        output_mode = options['output_mode']
+
+        corpus_xml_root = Path(getattr(settings, 'CORPUS_XML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras'))
+        corpus_html_root = Path(getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html'))
+        if output_mode in ('file', 'both'):
+            corpus_html_root.mkdir(parents=True, exist_ok=True)
 
         obras = Obra.objects.all()
         if slug_especifico:
@@ -163,14 +176,21 @@ class Command(BaseCommand):
             return
 
         for obra in obras:
+            connection.close_if_unusable_or_obsolete()
             self.stdout.write(f'Processando: {obra.titulo}')
 
-            if obra.conteudo_html_processado and not forcar:
+            html_ja_em_arquivo = (corpus_html_root / f'{obra.slug}.html').exists()
+            ja_processada = bool(obra.conteudo_html_processado) or html_ja_em_arquivo
+
+            if ja_processada and not forcar:
                 self.stdout.write(self.style.NOTICE(f'  Ignorando {obra.titulo}.'))
                 continue
 
-            # Supõe que CORPUS_XML_ROOT está em settings.py apontando para a pasta raiz dos XMLs
-            caminho_xml = settings.BASE_DIR / "corpus_digital" / "obras" / obra.caminho_arquivo
+            caminho_relativo = Path(obra.caminho_arquivo)
+            if caminho_relativo.parts and caminho_relativo.parts[0] == 'obras':
+                caminho_relativo = Path(*caminho_relativo.parts[1:])
+
+            caminho_xml = corpus_xml_root / caminho_relativo
 
             if not caminho_xml.exists():
                 self.stderr.write(self.style.ERROR(f'  Arquivo não encontrado: {caminho_xml}'))
@@ -179,8 +199,15 @@ class Command(BaseCommand):
             try:
                 tree = etree.parse(str(caminho_xml))
                 html_content = converter_tei_para_html_para_comando(tree)
-                obra.conteudo_html_processado = html_content
-                obra.save()
+
+                if output_mode in ('db', 'both'):
+                    obra.conteudo_html_processado = html_content
+                    obra.save(update_fields=['conteudo_html_processado'])
+
+                if output_mode in ('file', 'both'):
+                    caminho_html = corpus_html_root / f'{obra.slug}.html'
+                    caminho_html.write_text(html_content, encoding='utf-8')
+
                 self.stdout.write(self.style.SUCCESS(f'  Sucesso!'))
 
             except Exception as e:
