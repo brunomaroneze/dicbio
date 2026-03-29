@@ -6,8 +6,7 @@ from .models import Obra
 # Também não precisamos das funções converter_tei_para_html e substituir_tags_inadequadas aqui.
 
 def home(request, slug=None):
-    # Usar defer para não carregar o HTML pesado de todas as obras na listagem lateral
-    # Apenas o HTML da obra_atual será carregado completamente quando ela for selecionada.
+    # Listagem lateral sem depender do campo de HTML no banco.
     obras_list = Obra.objects.defer("conteudo_html_processado").order_by('ordem', 'autor', 'titulo')
     obra_selecionada = None
     html_da_obra_para_exibir = None # Novo nome para clareza
@@ -24,16 +23,11 @@ def home(request, slug=None):
 
         if caminho_html.exists():
             html_da_obra_para_exibir = caminho_html.read_text(encoding='utf-8')
-        elif obra_selecionada.conteudo_html_processado:
-            html_da_obra_para_exibir = obra_selecionada.conteudo_html_processado
         else:
             html_da_obra_para_exibir = (
-                "<p><em>O conteúdo desta obra ainda não foi processado ou não está disponível.</em></p>"
-                "<p><em>Por favor, execute o comando de processamento ou verifique o arquivo XML original.</em></p>"
+                "<p><em>O HTML desta obra não foi encontrado no diretório de arquivos processados.</em></p>"
+                "<p><em>Execute o processamento com saída em arquivo para gerar o conteúdo desta obra.</em></p>"
             )
-            # Se você quiser ser mais robusto, poderia verificar se o arquivo XML original existe
-            # e dar uma mensagem diferente caso o XML também não exista.
-            # Mas, idealmente, o comando de processamento já teria tratado isso.
 
     context = {
         'obras': obras_list,                     # Lista de obras para a navegação lateral

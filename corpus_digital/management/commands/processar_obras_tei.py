@@ -145,7 +145,7 @@ def converter_tei_para_html_para_comando(tree):
 # --- CLASSE DO COMANDO DJANGO ---
 
 class Command(BaseCommand):
-    help = 'Converte os arquivos TEI-XML das obras para HTML e salva no banco de dados.'
+    help = 'Converte os arquivos TEI-XML das obras para HTML e salva em arquivo, banco ou ambos.'
 
     def add_arguments(self, parser):
         parser.add_argument('--slug', type=str, help='Processa apenas uma obra.')
@@ -153,8 +153,8 @@ class Command(BaseCommand):
         parser.add_argument(
             '--output-mode',
             choices=['db', 'file', 'both'],
-            default='db',
-            help='Destino do HTML processado: banco (db), arquivo (file) ou ambos (both). Padrão: db.',
+            default='file',
+            help='Destino do HTML processado: banco (db), arquivo (file) ou ambos (both). Padrão: file.',
         )
 
     def handle(self, *args, **options):
@@ -180,7 +180,12 @@ class Command(BaseCommand):
             self.stdout.write(f'Processando: {obra.titulo}')
 
             html_ja_em_arquivo = (corpus_html_root / f'{obra.slug}.html').exists()
-            ja_processada = bool(obra.conteudo_html_processado) or html_ja_em_arquivo
+            if output_mode == 'db':
+                ja_processada = bool(obra.conteudo_html_processado)
+            elif output_mode == 'file':
+                ja_processada = html_ja_em_arquivo
+            else:  # both
+                ja_processada = bool(obra.conteudo_html_processado) and html_ja_em_arquivo
 
             if ja_processada and not forcar:
                 self.stdout.write(self.style.NOTICE(f'  Ignorando {obra.titulo}.'))
