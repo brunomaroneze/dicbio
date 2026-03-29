@@ -23,7 +23,8 @@ def substituir_tags_inadequadas(element, ns_tei_url_sem_chaves):
         el.set('id', valor_id)
 
     # 2. Divisão de parágrafos <p> que contêm quebras <pb>
-    while element.xpath('.//tei:p/tei:pb', namespaces=ns_map):
+    pbs = element.xpath('.//tei:p[.//tei:pb]', namespaces=ns_map)
+    for pb_in_p in pbs:
         pb_in_p = element.xpath('.//tei:p/tei:pb', namespaces=ns_map)[0]
         p_parent = pb_in_p.getparent()
         new_p = etree.Element(p_parent.tag, attrib=p_parent.attrib)
