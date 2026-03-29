@@ -137,7 +137,7 @@ USE_TZ = True # USE_L10N está obsoleto no Django 5, USE_TZ é o correto.
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
