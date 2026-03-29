@@ -98,16 +98,23 @@ class Command(BaseCommand):
         punct_re = re.compile(r'^\W+|\W+$|^[\d\s]+$')
         
         data_for_csv = []
-        obras = Obra.objects.filter(conteudo_html_processado__isnull=False).exclude(conteudo_html_processado='')
+        obras = Obra.objects.order_by('ordem', 'autor', 'titulo')
+        corpus_html_root = Path(
+            getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html')
+        )
 
         if not obras.exists():
-            self.stdout.write(self.style.WARNING('Nenhuma obra com HTML processado encontrada.'))
+            self.stdout.write(self.style.WARNING('Nenhuma obra cadastrada encontrada.'))
             return
 
         for obra in obras:
             self.stdout.write(f'Processando obra: {obra.titulo} ({obra.data_referencia or "Sem Data"})')
-            
-            html_content = obra.conteudo_html_processado
+            caminho_html = corpus_html_root / f'{obra.slug}.html'
+            if not caminho_html.exists():
+                self.stdout.write(self.style.WARNING(f'  HTML não encontrado para {obra.slug}. Pulando.'))
+                continue
+
+            html_content = caminho_html.read_text(encoding='utf-8')
             soup = BeautifulSoup(html_content, 'html.parser')
             
             extracted_words_info = []

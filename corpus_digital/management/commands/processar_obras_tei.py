@@ -145,27 +145,19 @@ def converter_tei_para_html_para_comando(tree):
 # --- CLASSE DO COMANDO DJANGO ---
 
 class Command(BaseCommand):
-    help = 'Converte os arquivos TEI-XML das obras para HTML e salva em arquivo, banco ou ambos.'
+    help = 'Converte os arquivos TEI-XML das obras para HTML e salva em arquivos.'
 
     def add_arguments(self, parser):
         parser.add_argument('--slug', type=str, help='Processa apenas uma obra.')
         parser.add_argument('--force', action='store_true', help='Força reprocessamento.')
-        parser.add_argument(
-            '--output-mode',
-            choices=['db', 'file', 'both'],
-            default='file',
-            help='Destino do HTML processado: banco (db), arquivo (file) ou ambos (both). Padrão: file.',
-        )
 
     def handle(self, *args, **options):
         slug_especifico = options['slug']
         forcar = options['force']
-        output_mode = options['output_mode']
 
         corpus_xml_root = Path(getattr(settings, 'CORPUS_XML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras'))
         corpus_html_root = Path(getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html'))
-        if output_mode in ('file', 'both'):
-            corpus_html_root.mkdir(parents=True, exist_ok=True)
+        corpus_html_root.mkdir(parents=True, exist_ok=True)
 
         obras = Obra.objects.all()
         if slug_especifico:
@@ -180,12 +172,7 @@ class Command(BaseCommand):
             self.stdout.write(f'Processando: {obra.titulo}')
 
             html_ja_em_arquivo = (corpus_html_root / f'{obra.slug}.html').exists()
-            if output_mode == 'db':
-                ja_processada = bool(obra.conteudo_html_processado)
-            elif output_mode == 'file':
-                ja_processada = html_ja_em_arquivo
-            else:  # both
-                ja_processada = bool(obra.conteudo_html_processado) and html_ja_em_arquivo
+            ja_processada = html_ja_em_arquivo
 
             if ja_processada and not forcar:
                 self.stdout.write(self.style.NOTICE(f'  Ignorando {obra.titulo}.'))
@@ -205,13 +192,8 @@ class Command(BaseCommand):
                 tree = etree.parse(str(caminho_xml))
                 html_content = converter_tei_para_html_para_comando(tree)
 
-                if output_mode in ('db', 'both'):
-                    obra.conteudo_html_processado = html_content
-                    obra.save(update_fields=['conteudo_html_processado'])
-
-                if output_mode in ('file', 'both'):
-                    caminho_html = corpus_html_root / f'{obra.slug}.html'
-                    caminho_html.write_text(html_content, encoding='utf-8')
+                caminho_html = corpus_html_root / f'{obra.slug}.html'
+                caminho_html.write_text(html_content, encoding='utf-8')
 
                 self.stdout.write(self.style.SUCCESS(f'  Sucesso!'))
 

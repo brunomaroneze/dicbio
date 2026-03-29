@@ -18,14 +18,6 @@ class Obra(models.Model):
         help_text="Opcional: para ordenação customizada na listagem de obras."
     )
 
-    conteudo_html_processado = models.TextField(
-        blank=True,    # Permite que o campo seja vazio no formulário do admin
-        null=True,     # Permite que o valor no banco de dados seja NULL
-        editable=False, # Geralmente não queremos que este campo seja editável diretamente no admin,
-                       # já que é preenchido por um script.
-        help_text="Conteúdo HTML gerado a partir do arquivo TEI-XML. Preenchido automaticamente."
-    )
-
     data_referencia = models.CharField(
         max_length=100, 
         blank=True, 

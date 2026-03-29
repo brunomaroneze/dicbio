@@ -2,6 +2,8 @@
 
 from django.contrib import admin, messages
 from django.core.management import call_command
+from django.conf import settings
+from pathlib import Path
 from .models import Obra
 
 # --- DEFINIÇÃO DAS ADMIN ACTIONS ---
@@ -79,6 +81,9 @@ class ObraAdmin(admin.ModelAdmin):
     ]
 
     def html_processado_status(self, obj):
-        return bool(obj.conteudo_html_processado) # Mais direto para booleano
+        corpus_html_root = Path(
+            getattr(settings, 'CORPUS_HTML_ROOT', settings.BASE_DIR / 'corpus_digital' / 'obras_html')
+        )
+        return (corpus_html_root / f'{obj.slug}.html').exists()
     html_processado_status.short_description = "HTML Processado?"
     html_processado_status.boolean = True

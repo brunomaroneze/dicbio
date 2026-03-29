@@ -6,8 +6,8 @@ from .models import Obra
 # Também não precisamos das funções converter_tei_para_html e substituir_tags_inadequadas aqui.
 
 def home(request, slug=None):
-    # Listagem lateral sem depender do campo de HTML no banco.
-    obras_list = Obra.objects.defer("conteudo_html_processado").order_by('ordem', 'autor', 'titulo')
+    # Listagem lateral das obras.
+    obras_list = Obra.objects.order_by('ordem', 'autor', 'titulo')
     obra_selecionada = None
     html_da_obra_para_exibir = None # Novo nome para clareza
 
