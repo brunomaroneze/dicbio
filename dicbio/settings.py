@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # Para servir arquivos estáticos em produção
+#    'whitenoise.middleware.WhiteNoiseMiddleware', # Para servir arquivos estáticos em produção
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -143,7 +143,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # Para produção, usando WhiteNoise para servir arquivos estáticos de forma eficiente
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # Para produção, usando WhiteNoise para servir arquivos estáticos de forma eficiente
 
 if DJANGO_ENV == 'production':
     # Em produção, você também precisará desta configuração:
