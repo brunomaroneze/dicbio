@@ -22,6 +22,8 @@
       <editorialDecl>
         <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
           letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
+        <p>Cada parágrafo do texto foi marcado com o elemento <gi>p</gi>. As quebras de linha não
+          foram marcadas com nenhum elemento XML.</p>
         <p>As notas marginais foram transcritas usando o elemento <gi>note</gi>, antes do parágrafo
           mais próximo da nota no texto.</p>
         <p>O texto original também pode ser acessado pelo Internet Archive:
@@ -2014,9 +2016,25 @@
             vasos de sangue, que vaõ atè os intestinos, e entre elles muitas glandulas, e as mais
             dellas saõ do tamanho de hum feijaõ. Nos caens o mesentêrio naõ tem por toda a parte
             gordura, nem tantas glandulas, mas huma só, que està no centro, a que Asellio chama
-            pancreas do mesentêrio. Entre os vasos do mesentêrio estaõ</p>
-          <pb n="42"
-            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0162.jp2&amp;id=anatomiadocorpoh01sant"/>
+            pancreas do mesentêrio. Entre os vasos do mesentêrio <pb n="42"
+              facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0162.jp2&amp;id=anatomiadocorpoh01sant"
+            />estaõ os vasos lacteos, que primeiramente se devem considerar.</p>
+          <note>Ducto Thoracico, e seu principio. Est 3. fig. 1. f. f. f. h.</note>
+          <p>3 Estes foraõ descubertos pelo citado Asellio Cremonese, e sahem da superficie dos
+            intestinos, principalmente do jejuno, e do ileo com innumeraveis ramosinhos, que depois
+            fazendo-se mayores, saõ como canosinhos, que continuaõ dentro das membranas do
+            mesentêrio, e no homem passaõ pelas glandulas, que estaõ por toda a membrana, e nos
+            caens só pela glandula grande. E saindo dahi, vaõ ao principio do ducto thoracico. He
+            verosimil, que os intestinos crassos naõ sejaõ totalmente destituidos destes vasos.</p>
+          <note>Cisterna, ou receptaculo do chylo.</note>
+          <note>Est. 3. fig. 1 h</note>
+          <p>4 Ajuntaõ-se as veas lacteas no principio do ducto thoracico, o qual principio nos
+            brutos està junto às primeiras vertebras dos lombos, e tem a fórma de hum saquinho, e se
+            chama cisterna, ou receptaculo do chylo. Este principio no homem se compoem de tres
+            ramos, hum muito grande, e os outros muito menores, que estaõ debaixo da arteria grande,
+            entre as raizes do diaphragma, e acima das vertebras, às quaes se pegaõ os ditos ramos
+            por</p>
+
 
           <pb n="43"
             facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0163.jp2&amp;id=anatomiadocorpoh01sant"/>
