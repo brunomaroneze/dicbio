@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -27,21 +27,21 @@ dbres:entry_angulado a ontolex:LexicalEntry ;
         dbres:form_angulados ;
     ontolex:sense dbres:entry_angulado_sense1 .
 
-dbres:etym_angulado_sense1_h1 a etym:Etymology ;
-    etym:etymon dbres:etymon_angulatus ;
+dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_angulatus ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation "Duas são as possibilidades de descrição do étimo. A primeira, apontada pelo dicionário Houaiss, é que <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_angulatus a etym:Etymon ;
+dbres:etymon_angulatus a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
     ontolex:writtenRep "angulatus" .
 
-dbres:etym_angulado_sense1_h2 a etym:Etymology ;
+dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:created ;
     dicbio:hasWordFormationRelation dbres:angulado_derivation ;
     dcterms:source dbsrc:dicbio_project ;
@@ -87,5 +87,5 @@ dbres:form_angulados a ontolex:Form ;
 
 dbres:entry_angulado_sense1 a ontolex:LexicalSense ;
     skos:definition "Que apresenta ângulo; anguloso."@pt ;
-        etym:etymology dbres:etym_angulado_sense1_h1,
+        lemonety:etymology dbres:etym_angulado_sense1_h1,
              dbres:etym_angulado_sense1_h2 .

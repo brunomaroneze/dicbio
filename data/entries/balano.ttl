@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -36,25 +36,25 @@ dbres:entry_balano a ontolex:LexicalEntry ;
     ontolex:otherForm dbres:form_balano ;
     ontolex:sense dbres:entry_balano_sense1 .
 
-dbres:etym_balano_sense1 a etym:Etymology ;
+dbres:etym_balano_sense1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_balanus_lat_scient ;
+    lemonety:etymon dbres:etymon_balanus_lat_scient ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico <i>balanus, i</i>, que já apresenta o significado de "cabeça do pênis" em textos médicos do século XVIII (como, por exemplo, a "Bibliotheca Chirurgica" de Manget, 1721 - https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC). Em latim, a palavra tem origem no grego βάλανος, que, segundo o dicionário de Liddell, Scott e Jones, já apresentava, além da acepção de "fruto do carvalho", também a de "cabeça do pênis". Porém, os dicionários de latim Gaffiot e Oxford Latin Dictionary não apresentam essa acepção; talvez o latim clássico não tenha conhecido essa acepção, ou talvez não tenha sido registrada em textos escritos. O emprego de <i>balanus</i> no latim científico não parece ter sido comum, visto que o termo preferido era <i>glans</i>. O próprio Santucci inclui <i>bálano</i> como um dos sinônimos de glande ou cabeça do membro masculino, mas prefere empregar o termo <i>glande</i>."""^^rdf:HTML .
 
-dbres:etymon_balanus_lat_scient a etym:Etymon ;
+dbres:etymon_balanus_lat_scient a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_manget ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/33893> ;
     skos:definition "Glande do pênis."@pt ;
     ontolex:writtenRep "balanus"@la ;
     skos:scopeNote "A acepção de 'glande do pênis' não é registrada nos principais dicionários de latim clássico."@pt ;
-    etym:etymology dbres:etym_balanus_lat_scient .
+    lemonety:etymology dbres:etym_balanus_lat_scient .
 
-dbres:etym_balanus_lat_scient a etym:Etymology ;
+dbres:etym_balanus_lat_scient a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_balanos_gr .
+    lemonety:etymon dbres:etymon_balanos_gr .
 
-dbres:etymon_balanos_gr a etym:Etymon ;
+dbres:etymon_balanos_gr a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/grc> ;
     dcterms:source dbsrc:source_LSJ ;
     skos:definition "Glande do pênis."@pt ;
@@ -70,7 +70,7 @@ dbres:form_balano a ontolex:Form ;
 
 dbres:entry_balano_sense1 a ontolex:LexicalSense ;
     skos:definition "Cabeça do membro viril."@pt ;
-    etym:etymology dbres:etym_balano_sense1 ;
+    lemonety:etymology dbres:etym_balano_sense1 ;
     ontolex:reference dbres:concept_glande .
 
 dbres:entry_glande a ontolex:LexicalEntry ;

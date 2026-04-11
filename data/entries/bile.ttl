@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -28,11 +28,11 @@ dbres:entry_bile a ontolex:LexicalEntry ;
     ontolex:canonicalForm dbres:form_bile ;
     ontolex:sense dbres:entry_bile_sense1 .
 
-dbres:etym_bile_sense1 a etym:Etymology ;
-    etym:etymon dbres:etymon_bilis ;
+dbres:etym_bile_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_bilis ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>bilis</i>, já atestado desde a Antiguidade com o sentido de \"fluido secretado pelo fígado\" (conforme mostra o Oxford Latin Dictionary). A conservação do -l- intervocálico e a data tardia de registro na língua portuguesa indicam tratar-se de palavra erudita, que certamente entrou na língua por meio do latim científico."^^rdf:HTML .
 
-dbres:etymon_bilis a etym:Etymon ;
+dbres:etymon_bilis a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "bilis" .
@@ -42,6 +42,6 @@ dbres:form_bile a ontolex:Form ;
 
 dbres:entry_bile_sense1 a ontolex:LexicalSense ;
     skos:definition "Substância secretada pelo fígado que atua na digestão."@pt ;
-    etym:etymology dbres:etym_bile_sense1 .
+    lemonety:etymology dbres:etym_bile_sense1 .
 
 #------------------------------------------------------------

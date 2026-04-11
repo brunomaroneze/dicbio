@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -49,7 +49,7 @@ dicbio:semanticEtymon a owl:ObjectProperty ;
     rdfs:subPropertyOf lemonety:etymon .
 
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range rdf:HTML ;
     rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en .
 
@@ -59,7 +59,7 @@ dicbio:EtymologicalArgument a owl:Class ;
 
 dicbio:evaluatesEtymology a owl:ObjectProperty ;
     rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range etym:Etymology ;
+    rdfs:range lemonety:Etymology ;
     rdfs:label "evaluates etymology"@en ;
     rdfs:comment "Relates an etymological argument to the etymological hypothesis that it supports or evaluates."@en .
 
@@ -126,7 +126,7 @@ dicbio:certain a skos:Concept ;
     skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en .
 
 dicbio:confidenceLevel a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range skos:Concept ;
     rdfs:label "confidence level"@en ;
     rdfs:comment "Indicates the degree of certainty attributed by the editors to an etymological hypothesis."@en .
@@ -158,19 +158,19 @@ dicbio:semanticDerivation a skos:Concept ;
     skos:definition "The lexical item was derived from another lexical sense in the same language."@en .
 
 dicbio:etymologicalProcess a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range skos:Concept ;
     rdfs:label "etymological process"@en ;
     rdfs:comment "Specifies the type of historical process involved in an etymological hypothesis (e.g., inheritance, borrowing, internal creation). The process is attributed to the hypothesis, not directly to the lexical entry."@en .
 
 dicbio:semanticDerivationFrom a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range ontolex:LexicalSense ;
     rdfs:label "semantic derivation from"@en ;
     rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
 
 dicbio:hasWordFormationRelation a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range morph:WordFormationRelation ;
     rdfs:label "has word formation relation"@en ;
     rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
@@ -178,7 +178,7 @@ dicbio:hasWordFormationRelation a owl:ObjectProperty ;
 ### Explains which sense is being analyzed
 
 dicbio:explainsSense a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range ontolex:LexicalSense ;
     rdfs:label "explains sense"@en ;
     rdfs:comment "Relates an etymological hypothesis to the lexical sense whose historical origin it aims to explain."@en .
@@ -187,7 +187,7 @@ dicbio:explainsSense a owl:ObjectProperty ;
 ### Indicates the historical source sense
 
 dicbio:derivesFromSense a owl:ObjectProperty ;
-    rdfs:domain etym:Etymology ;
+    rdfs:domain lemonety:Etymology ;
     rdfs:range ontolex:LexicalSense ;
     rdfs:label "derives from sense"@en ;
     rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change."@en .

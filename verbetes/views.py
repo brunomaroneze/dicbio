@@ -225,12 +225,12 @@ def verbete_pelo_turtle(request, lema):
         
         # 1. Propriedades Fixas do Sentido
         OPTIONAL { ?sense skos:definition ?definition . }
-        OPTIONAL { ?sense etym:etymology [ rdfs:comment ?etymComment ] . }
+        OPTIONAL { ?sense lemonety:etymology [ rdfs:comment ?etymComment ] . }
         
         # 2. Captura Genérica de Outras Propriedades
         OPTIONAL { 
             ?sense ?prop ?val . 
-            FILTER(?prop NOT IN (skos:definition, etym:etymology, rdf:type, ontolex:isSenseOf))
+            FILTER(?prop NOT IN (skos:definition, lemonety:etymology, rdf:type, ontolex:isSenseOf))
         }
 
         # 3. Exemplos do Corpus (NIF)

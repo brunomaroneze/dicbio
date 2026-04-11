@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,26 +29,26 @@ dbres:entry_antera a ontolex:LexicalEntry ;
         dbres:form_antheras_accent ;
     ontolex:sense dbres:entry_antera_sense1 .
 
-dbres:etym_antera_sense1 a etym:Etymology ;
+dbres:etym_antera_sense1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_anthera ;
+    lemonety:etymon dbres:etymon_anthera ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
 
-dbres:etymon_anthera a etym:Etymon ;
+dbres:etymon_anthera a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_vandelli ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
     ontolex:writtenRep "anthera" ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
-    etym:etymology dbres:etym_anthera_lat .
+    lemonety:etymology dbres:etym_anthera_lat .
 
-dbres:etym_anthera_lat a etym:Etymology ;
+dbres:etym_anthera_lat a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_antheros ;
+    lemonety:etymon dbres:etymon_antheros ;
     dcterms:source dbsrc:source_houaiss .
 
-dbres:etymon_antheros a etym:Etymon ;
+dbres:etymon_antheros a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/grc> ;
     ontolex:writtenRep "ἀνθηρός" ;
     skos:definition "Florido."@pt .
@@ -79,4 +79,4 @@ dbres:form_antheras_accent a ontolex:Form ;
 
 dbres:entry_antera_sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
-    etym:etymology dbres:etym_antera_sense1 .
+    lemonety:etymology dbres:etym_antera_sense1 .

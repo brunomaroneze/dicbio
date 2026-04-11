@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,12 +26,12 @@ dbres:entry_bifido a ontolex:LexicalEntry ;
         dbres:form_bifidos ;
     ontolex:sense dbres:entry_bifido_sense1 .
 
-dbres:etym_bifido_sense1 a etym:Etymology ;
+dbres:etym_bifido_sense1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_bifidus ;
+    lemonety:etymon dbres:etymon_bifidus ;
     dicbio:etymologicalArgumentation """O étimo é certamente o latim <i>bifidus</i>, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino <i>bifidus</i> na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""^^rdf:HTML .
 
-dbres:etymon_bifidus a etym:Etymon ;
+dbres:etymon_bifidus a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     skos:definition "Dividido em duas partes."@pt ;
@@ -55,4 +55,4 @@ dbres:form_bifidos a ontolex:Form ;
 
 dbres:entry_bifido_sense1 a ontolex:LexicalSense ;
     skos:definition "Dividido em duas partes, em geral na parte superior (diz-se de folhas, cirros e outras estruturas vegetais, bem como de palpos e outras estruturas dos insetos)."@pt ;
-        etym:etymology dbres:etym_bifido_sense1 .
+        lemonety:etymology dbres:etym_bifido_sense1 .

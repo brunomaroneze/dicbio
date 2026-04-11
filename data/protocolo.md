@@ -39,9 +39,9 @@
 
 - No caso das palavras criadas, a derivação morfológica "dbres:XXXX_derivation" é indicada com "a morf.:WordFormationRelation" e as propriedades "vartans:source" e "vartrans:target" indicam as relações entre primitivo e derivado.
 
-- No caso das palavras emprestadas ou herdadas, usa-se "etym:etymon" para relacionar a hipótese ao étimo.
+- No caso das palavras emprestadas ou herdadas, usa-se "lemonety:etymon" para relacionar a hipótese ao étimo.
 
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a etym:Etymon".
+- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a lemonety:Etymon".
 
 - O étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao projeto LiLa.
 
@@ -77,7 +77,7 @@
 
 - As acepções são denominadas "dbres:entry_XXXXX_sense1" e entram na classe "a ontolex:LexicalSense"
 
-- Precisam conter sempre a "skos:definition" (definição) e "etym:etymology" (lista das hipóteses etimológicas).
+- Precisam conter sempre a "skos:definition" (definição) e "lemonety:etymology" (lista das hipóteses etimológicas).
 
 ---------------------------------------------------
 ## Informações sobre o nível conceitual:
@@ -104,9 +104,9 @@
 
 - form_XXXX → forma (ontolex:Form)
 
-- etym_XXXX_sense1 → hipótese etimológica (etym:Etymology)
+- etym_XXXX_sense1 → hipótese etimológica (lemonety:Etymology)
 
-- etymon_XXXX → étimo (etym:Etymon)
+- etymon_XXXX → étimo (lemonety:Etymon)
 
 - attestation_XXXX → atestação (dicbio:Attestation)
 

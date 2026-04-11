@@ -1,7 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix etym: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,7 +29,7 @@ dbres:entry_adiposo a ontolex:LexicalEntry ;
         dbres:form_adiposos ;
     ontolex:sense dbres:entry_adiposo_sense1 .
 
-dbres:etym_adiposo_sense1_h1 a etym:Etymology ;
+dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalProcess dicbio:created ;
     dicbio:hasWordFormationRelation dbres:adiposo_derivation ;
@@ -55,16 +55,16 @@ dbres:form_adipe a ontolex:Form ;
 dbres:entry_adipe_sense1 a ontolex:LexicalSense ;
     skos:definition "Gordura animal."@pt .
 
-dbres:etym_adiposo_sense1_h2 a etym:Etymology ;
+dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    etym:etymon dbres:etymon_adiposus ;
+    lemonety:etymon dbres:etymon_adiposus ;
     dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_adiposus a etym:Etymon ;
+dbres:etymon_adiposus a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     ontolex:writtenRep "adiposus" ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
@@ -94,5 +94,5 @@ dbres:form_adiposos a ontolex:Form ;
 
 dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
     skos:definition "Que contém gordura."@pt ;
-    etym:etymology dbres:etym_adiposo_sense1_h1,
+    lemonety:etymology dbres:etym_adiposo_sense1_h1,
         dbres:etym_adiposo_sense1_h2 .
