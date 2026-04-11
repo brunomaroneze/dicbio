@@ -34,6 +34,12 @@
 
 ### --- Classes e propriedades da ontologia ---
 
+dicbio:SemanticEtymon a rdfs:Class ; # Classe criada para o artigo, preciso incluir nas instâncias
+    rdfs:label "Semantic Etymon"@en, "Étimo Semântico"@pt ;
+    rdfs:comment "A Semantic Etymon is a Lexical Sense that acts as a semantic source in an etymological relation to another Lexical Sense."@en ;
+    rdfs:comment "Um Étimo Semântico é um Sentido Lexical que atua como origem semântica numa relação etimológica com outro Sentido Lexical."@pt ;
+    rdfs:subClassOf ontolex:LexicalSense .
+
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:domain etym:Etymology ;
     rdfs:range rdf:HTML ;
