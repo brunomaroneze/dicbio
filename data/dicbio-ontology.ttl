@@ -40,6 +40,14 @@ dicbio:SemanticEtymon a rdfs:Class ; # Classe criada para o artigo, preciso incl
     rdfs:comment "Um Étimo Semântico é um Sentido Lexical que atua como origem semântica numa relação etimológica com outro Sentido Lexical."@pt ;
     rdfs:subClassOf ontolex:LexicalSense .
 
+dicbio:semanticEtymon a owl:ObjectProperty ;
+    rdfs:label "semantic etymon"@en, "étimo semântico"@pt ;
+    rdfs:comment "Relates an etymology to a semantic etymon (a LexicalSense acting as an etymon)."@en ;
+    rdfs:comment "Relaciona uma descrição etimológica a um étimo semântico (um Sentido Lexical que atua como um étimo)."@pt ;
+    rdfs:domain lemonety:Etymology ;
+    rdfs:range dicbio:SemanticEtymon ;
+    rdfs:subPropertyOf lemonety:etymon .
+
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:domain etym:Etymology ;
     rdfs:range rdf:HTML ;
