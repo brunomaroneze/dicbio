@@ -14,7 +14,9 @@
 @prefix morph: <http://www.w3.org/ns/lemon/morph#> .
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 
 
 
