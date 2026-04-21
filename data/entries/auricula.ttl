@@ -38,6 +38,7 @@ dbres:etym_auricula_sense1 a lemonety:Etymology ; # Cavidade do coração
     dcterms:source dbsrc:dicbio_project ;
     dicbio:semanticEtymon dbres:etymon_auricula_sense1 ;
     dicbio:etymologicalProcess dicbio:borrowed ;
+    lemonety:etyLinkType "borrowed"@en, "empréstimo"@pt ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico <i>auricula</i>, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""^^rdf:HTML .
 

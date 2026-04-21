@@ -53,21 +53,22 @@ dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:range rdf:HTML ;
     rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en .
 
-dicbio:EtymologicalArgument a owl:Class ;
+dicbio:EtymologicalArgument a owl:Class ; # Criada para incluir argumentos a favor ou contra uma hipótese etimológica, em especial em casos de hipóteses concorrentes. Sugestão do ChatGPT. Precisamos ver exemplos concretos para entender a necessidade real de criar essa classe.
     rdfs:label "Etymological Argument"@en ;
     rdfs:comment "An argumentative unit that provides justification, evidence or reasoning in support of or against an etymological hypothesis."@en .
 
-dicbio:evaluatesEtymology a owl:ObjectProperty ;
+dicbio:evaluatesEtymology a owl:ObjectProperty ; # Relaciona um argumento a uma hipótese etimológica, indicando que o argumento é usado para apoiar ou refutar a hipótese. Eliminar se formos eliminar a classe EtymologicalArgument.
     rdfs:domain dicbio:EtymologicalArgument ;
     rdfs:range lemonety:Etymology ;
     rdfs:label "evaluates etymology"@en ;
     rdfs:comment "Relates an etymological argument to the etymological hypothesis that it supports or evaluates."@en .
 
-dicbio:usesSource a owl:ObjectProperty ;
+dicbio:usesSource a owl:ObjectProperty ; # Indica que o argumento etimológico utiliza uma fonte documental ou bibliográfica como evidência. Eliminar se formos eliminar a classe EtymologicalArgument.
     rdfs:domain dicbio:EtymologicalArgument ;
     rdfs:range dcterms:BibliographicResource ;
     rdfs:comment "Indicates the documentary or bibliographic source used as evidence in the argument."@en .
 
+# Esta e as propriedades seguintes podem ser usadas para classificar os argumentos etimológicos por tipo (e.g., fonológico, semântico, morfológico, documental) e para indicar o grau de certeza atribuído a uma hipótese etimológica com base nos argumentos apresentados. A necessidade de criar uma classe específica para os argumentos etimológicos depende do nível de detalhamento e da complexidade que queremos alcançar na representação das hipóteses etimológicas e dos seus fundamentos. Se decidirmos que é importante representar explicitamente os argumentos e as fontes que os sustentam, a criação dessa classe pode ser útil para organizar e estruturar essas informações de maneira clara e acessível. Caso contrário, podemos optar por incluir essas informações diretamente nas propriedades da classe Etymology, sem a necessidade de uma classe intermediária para os argumentos.
 dicbio:ArgumentTypeScheme a skos:ConceptScheme ;
     rdfs:label "Argument Type Scheme"@en ;
     rdfs:comment "A scheme for classifying etymological arguments by their type (e.g., phonological, semantic, morphological, documentary)."@en .
@@ -98,32 +99,44 @@ dicbio:argumentType a owl:ObjectProperty ;
 
 dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme ;
     rdfs:label "Etymological Certainty Scheme"@en ;
-    rdfs:comment "A controlled vocabulary expressing the degree of certainty attributed to an etymological hypothesis based on the available evidence and its coherence with current scientific knowledge."@en .
+    rdfs:label "Esquema de Certeza Etimológica"@pt ;
+    rdfs:comment "A controlled vocabulary expressing the degree of certainty attributed to an etymological hypothesis based on the available evidence and its coherence with current scientific knowledge."@en ;
+    rdfs:comment "Um vocabulário controlado que expressa o grau de certeza atribuída a uma hipótese etimológica com base nas evidências disponíveis e na sua coerência com o conhecimento científico atual."@pt .
 
 dicbio:impossible a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
     skos:prefLabel "Impossible"@en ;
-    skos:definition "The hypothesis contradicts established linguistic or historical evidence."@en .
+    skos:prefLabel "Impossível"@pt ;
+    skos:definition "The hypothesis contradicts established linguistic or historical evidence."@en ;
+    skos:definition "A hipótese contradiz evidências linguísticas ou históricas estabelecidas."@pt .
 
 dicbio:improbable a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
     skos:prefLabel "Improbable"@en ;
-    skos:definition "The hypothesis lacks sufficient evidence or conflicts with current knowledge."@en  .
+    skos:prefLabel "Improvável"@pt ;
+    skos:definition "The hypothesis lacks sufficient evidence or conflicts with current knowledge."@en ;
+    skos:definition "A hipótese carece de evidências suficientes ou entra em contradição com o conhecimento atual."@pt .
 
 dicbio:plausible a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
     skos:prefLabel "Plausible"@en ;
-    skos:definition "The hypothesis is conceivable but weakly supported by evidence."@en .
+    skos:prefLabel "Plausível"@pt ;
+    skos:definition "The hypothesis is conceivable but weakly supported by evidence."@en ;
+    skos:definition "A hipótese é concebível mas pouco apoiada por evidências."@pt .
 
 dicbio:probable a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
     skos:prefLabel "Probable"@en ;
-    skos:definition "The hypothesis is supported by relevant evidence and is consistent with current knowledge."@en .
+    skos:prefLabel "Provável"@pt ;
+    skos:definition "The hypothesis is supported by relevant evidence and is consistent with current knowledge."@en ;
+    skos:definition "A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual."@pt .
 
 dicbio:certain a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
     skos:prefLabel "Certain"@en ;
-    skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en .
+    skos:prefLabel "Certo"@pt ;
+    skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en ;
+    skos:definition "A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual."@pt .
 
 dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:domain lemonety:Etymology ;
@@ -132,6 +145,7 @@ dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:comment "Indicates the degree of certainty attributed by the editors to an etymological hypothesis."@en .
 
 ## --- aqui entram os tipos de processos etimológicos 
+# A propriedade lemonety:etyLinkType talvez já seja suficiente e não precisemos da propriedade dicbio:etymologicalProcess. Aqui, a ideia seria fazer uma lista fechada de processos, mas não sei se é mesmo necessário. Vamos manter apenas a propriedade lemonety:etyLinkType por enquanto, e depois verificamos se existe mesmo uma lista fechada de processos etimológicos que seja relevante para o nosso projeto e que justifique a criação de uma propriedade específica para isso.
 
 dicbio:EtymologicalProcessScheme a skos:ConceptScheme ;
     rdfs:label "Etymological Process Scheme"@en ;
@@ -198,15 +212,22 @@ dicbio:derivesFromSense a owl:ObjectProperty ;
 dicbio:Attestation a owl:Class ;
     rdfs:label "Attestation"@en ;
     rdfs:label "Atestação"@pt ;
-    rdfs:comment "Registro de datação histórica de uma unidade lexical, baseado em uma fonte específica."@pt ;
+    rdfs:comment "Registro de datação histórica de uma acepção de uma unidade lexical, baseado em uma fonte específica."@pt ;
     rdfs:subClassOf prov:Entity .
 
 dicbio:hasAttestation a owl:ObjectProperty ;
     rdfs:label "has attestation"@en ;
     rdfs:label "tem atestação"@pt ;
-    rdfs:comment "Relaciona uma entrada lexical a um registro de atestação histórica."@pt ;
-    rdfs:domain ontolex:LexicalEntry ;
+    rdfs:comment "Relaciona um sentido lexical (acepção) a um registro de atestação histórica."@pt ;
+    rdfs:domain ontolex:LexicalSense ;
     rdfs:range dicbio:Attestation .
+
+dicbio:hasOccurrence a owl:ObjectProperty ;
+    rdfs:label "has occurrence"@en ;
+    rdfs:label "tem ocorrência"@pt ;
+    rdfs:comment "Relaciona um registro de atestação histórica a uma ocorrência específica de uma unidade lexical em um documento ou fonte."@pt ;
+    rdfs:domain dicbio:Attestation ;
+    rdfs:range nif:Word .
 
 dicbio:attestationDate a owl:DatatypeProperty ;
     rdfs:label "attestation date"@en ;
