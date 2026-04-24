@@ -1,0 +1,61 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: ENOVELADO ---
+
+dbres:entry_enovelado a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-25"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_enovelado ;
+    ontolex:otherForm dbres:form_ennovelada,
+        dbres:form_ennoveladas,
+        dbres:form_ennovellada ;
+    ontolex:sense dbres:entry_enovelado_sense1 .
+
+dbres:etym_enovelado_sense1 a lemonety:Etymology ;
+    lemonety:etymon <http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> ;
+    dicbio:etymologicalArgumentation "<i>Enovelado</i> é o particípio do verbo <i>enovelar</i>, este formado por derivação parassintética a partir do substantivo <i>novelo</i>. O dicionário Houaiss não informa data para o particípio, mas o verbo é datado de 1608. É incerto se Vandelli pretendeu empregá-lo com um sentido especializado (como tradução do latim <i>glomeratus, a, um</i>) ou apenas como uma descrição informal."^^rdf:HTML .
+
+<http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> a lemonety:Etymon ;
+    dcterms:language "formação vernácula" ;
+    dcterms:source "nossa pesquisa" ;
+    ontolex:writtenRep "en- + novelo + -ado" .
+
+dbres:form_enovelado a ontolex:Form ;
+    ontolex:writtenRep "enovelado"@pt .
+
+dbres:form_ennovelada a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Ennovelada"@pt .
+
+dbres:form_ennoveladas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "ennoveladas"@pt .
+
+dbres:form_ennovellada a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Ennovellada"@pt .
+
+dbres:entry_enovelado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Enrolado ou emaranhado em forma de novelo."@pt ;
+    lemonety:etymology dbres:etym_enovelado_sense1 .
+

@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: CAPREOLO ---
+
+dbres:entry_capreolo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_capreolo ;
+    ontolex:otherForm dbres:form_capreolos ;
+    ontolex:sense dbres:entry_capreolo_sense1 .
+
+dbres:etym_capreolo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_capreolus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>capreolus</i>, sinônimo de “cirro”, conforme define o próprio Vandelli: “<i>Capreoli, carbiculae, viticuli:</i> O mesmo, que os <i>cirrhos.</i> Ou he <i>o cirro.</i>” (Diccionario dos termos technicos de Historia Natural, 1788, p. 236). O dicionário de Gaffiot afirma que a palavra já tinha o sentido de \"gavinha da videira\" no latim da Antiguidade, embora também pudesse significar \"cabrito\".<br>O Dicionário Houaiss não inclui esse verbete em sua nomenclatura. O Dicionário Aulete inclui apenas com a acepção de \"espécie de cabra\". É possível que a acepção da Botânica esteja em desuso no português contemporâneo."^^rdf:HTML .
+
+dbres:etymon_capreolus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "capreolus" .
+
+dbres:form_capreolo a ontolex:Form ;
+    ontolex:writtenRep "capréolo"@pt .
+
+dbres:form_capreolos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "capreolos"@pt .
+
+dbres:entry_capreolo_sense1 a ontolex:LexicalSense ;
+    skos:definition "O mesmo que cirro (acepção 2)."@pt ;
+    lemonety:etymology dbres:etym_capreolo_sense1 .
+

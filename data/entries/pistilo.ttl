@@ -1,0 +1,60 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PISTILO ---
+
+dbres:entry_pistilo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_pistilo ;
+    ontolex:otherForm dbres:form_pistillo,
+        dbres:form_pistillos,
+        dbres:form_pistilos ;
+    ontolex:sense dbres:entry_pistilo_sense1 .
+
+dbres:etym_pistilo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_pistillum ;
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que a palavra derivaria do “lat. <i>pistillum</i> ou <i>pistillus,i</i> no sentido de ‘mão de pilão’”; no entanto, é pouco provável que seja uma palavra herdada, visto que a datação é tardia. Assim, não se pode falar que o sentido latino de “mão de pilão” tenha se transformado no sentido de “parte da flor” em português. O emprego da forma latina <i>pistillum</i> no latim científico (como atesta o dicionário de Vandelli) deixa claro que o étimo da forma portuguesa é o latim científico, já no sentido corrente de “parte da flor”, e a alteração de sentido se deve a um emprego metafórico já ocorrido no latim científico."^^rdf:HTML .
+
+dbres:etymon_pistillum a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "pistillum" .
+
+dbres:form_pistilo a ontolex:Form ;
+    ontolex:writtenRep "pistilo"@pt .
+
+dbres:form_pistillo a ontolex:Form ;
+    ontolex:writtenRep "Pistillo"@pt,
+        "pistillo"@pt .
+
+dbres:form_pistillos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "pistillos"@pt .
+
+dbres:form_pistilos a ontolex:Form ;
+    ontolex:writtenRep "pistilos"@pt .
+
+dbres:entry_pistilo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte da flor, em geral entre as anteras, pela qual entra o pólen para a fecundação."@pt ;
+    lemonety:etymology dbres:etym_pistilo_sense1 .
+

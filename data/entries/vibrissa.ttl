@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: VIBRISSA ---
+
+dbres:entry_vibrissa a ontolex:LexicalEntry ;
+    dcterms:created "2023-05-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_vibrissa ;
+    ontolex:otherForm dbres:form_vibrissas ;
+    ontolex:sense dbres:entry_vibrissa_sense1 .
+
+dbres:etym_vibrissa_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_vibrissae ;
+    dicbio:etymologicalArgumentation "O étimo é, sem dúvida, o latim <i>vibrissae, -arum</i>, registrado em diversos dicionários latinos (como o dicionário de Gaffiot, 1934) com a acepção de “pelos do nariz”. Curiosamente, os dicionários remetem sempre ao mesmo contexto, a obra de Festo “De verborum significatione” (datada do século II d.C.), que parece ser a única ocorrência desta palavra num texto da Antiguidade. A edição de Lindsay, 1913 (https://babel.hathitrust.org/cgi/pt?id=njp.32101077773990), traz a forma <i>vibracae</i> em vez de <i>vibrissae</i>, o que leva a crer que se trata de uma forma duvidosa, possivelmente um hápax. Isso, aliado ao fato de que “vibrissa” não tem características de palavra herdada, indica que a palavra provavelmente deixou de ser usada e foi retomada, na sua acepção corrente (“pelos rijos da face dos mamíferos”), no século XVIII. Lineu já o emprega com a nova acepção no <i>Systema Naturae</i> (décima edição, de 1758, e possivelmente em edições anteriores). O autor que primeiro a empregou em latim nessa nova acepção (possivelmente o próprio Lineu) certamente teve acesso a uma cópia do texto de Festo que empregava a forma <i>vibrissae</i>, em vez de <i>vibracae</i>, esta última preferida na leitura de Lindsay."^^rdf:HTML .
+
+dbres:etymon_vibrissae a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "vibrissae" .
+
+dbres:form_vibrissa a ontolex:Form ;
+    ontolex:writtenRep "vibrissa"@pt .
+
+dbres:form_vibrissas a ontolex:Form ;
+    ontolex:writtenRep "vibrissas"@pt .
+
+dbres:entry_vibrissa_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cada um dos pelos rijos presentes na face de certos mamíferos, como os gatos, que servem de órgãos do tato."@pt ;
+    lemonety:etymology dbres:etym_vibrissa_sense1 .
+

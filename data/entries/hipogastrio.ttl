@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: HIPOGASTRIO ---
+
+dbres:entry_hipogastrio a ontolex:LexicalEntry ;
+    dcterms:created "2022-06-20"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_hipogastrio ;
+    ontolex:otherForm dbres:form_hypogastrio ;
+    ontolex:sense dbres:entry_hipogastrio_sense1 .
+
+dbres:etym_hipogastrio_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_hypogastrium ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico hypogastrium, empregado em textos em latim científico do século XVI (cf., por exemplo, “Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0); este, por sua vez, é uma adaptação da palavra grega hypogástrion (ὑπογάστριον), registrada no dicionário LSJ com o significado de “baixo ventre”. O dicionário Houaiss dá como étimo o adjetivo hupogástrios,os,on, mas este adjetivo tem, no LSJ, apenas o sentido de “sexual”."^^rdf:HTML .
+
+dbres:etymon_hypogastrium a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "“Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0" ;
+    ontolex:writtenRep "hypogastrium" .
+
+dbres:form_hipogastrio a ontolex:Form ;
+    ontolex:writtenRep "hipogástrio"@pt .
+
+dbres:form_hypogastrio a ontolex:Form ;
+    ontolex:writtenRep "Hypogastrio"@pt .
+
+dbres:entry_hipogastrio_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte inferior do abdômen dos seres humanos, abaixo da região umbilical, iniciando-se um pouco abaixo do umbigo."@pt ;
+    lemonety:etymology dbres:etym_hipogastrio_sense1 .
+

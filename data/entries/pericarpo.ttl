@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PERICARPO ---
+
+dbres:entry_pericarpo a ontolex:LexicalEntry ;
+    dcterms:created "2022-12-20"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_pericarpo ;
+    ontolex:otherForm dbres:form_pericarpio ;
+    ontolex:sense dbres:entry_pericarpo_sense1 .
+
+dbres:etym_pericarpo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_pericarpum ;
+    dicbio:etymologicalArgumentation "A existência de duas variantes, uma terminada em <i>-pio</i> e a outra em <i>-po</i>, aponta para a possibilidade de ter havido uma fusão de dois étimos. O étimo da forma variante <i>pericárpio</i> é certamente o latim científico <i>pericarpium</i>, atestado em Vandelli (1788), por sua vez derivado do grego περικάρπιον (<i>perikárpion</i>), atestado já na Antiguidade (segundo o dicionário LSJ) com o sentido de “invólucro de um fruto ou semente” – formado pelo prefixo περί (<i>perí</i>) “ao redor” e pelo substantivo καρπός (<i>karpós</i>) “fruto, semente”, na forma diminutiva καρπίον (<i>karpíon</i>). Por não ter sofrido as transformações fonéticas esperadas (em especial pela manutenção do [c] intervocálico), a forma portuguesa é certamente erudita, tendo vindo diretamente do latim científico.<br>Já para explicar a forma variante <i>pericarpo</i>, é preciso inicialmente observar que também existe a forma latina <i>pericarpum</i>, que, segundo o Oxford Latin Dictionary, é atestada na obra “História Natural” de Plínio, o Velho, referindo-se a uma espécie de bulbo. No entanto, essa forma parece não ter sido empregada por nenhum outro autor e tampouco foi encontrada em textos em latim científico.<br>Parece haver, assim, três hipóteses etimológicas possíveis (e não necessariamente conflitantes ou concorrentes) para a variante em <i>-po</i>:<br>a) Essa forma teria sido decalcada diretamente da forma latina <i>pericarpum</i>, talvez por algum autor que conhecesse a obra de Plínio, o Velho;<br>b) Essa forma teria surgido da forma latina <i>pericarpium</i> com a perda do -i- (influenciada ou não pela forma <i>pericarpum</i> de Plínio, o Velho);<br>c) Essa forma teria sido construída em português a partir dos elementos de origem grega <i>perí-</i> e <i>-carpo</i> (hipótese que parece estar implicada na descrição etimológica apresentada pelo dicionário Houaiss), com possível influência da forma latina <i>pericarpium</i>.<br>As duas variantes ocorrem já no século XVIII. Vandelli prefere a forma em <i>-pio</i>, que é mais próxima do latim científico; já Brotero prefere a forma em <i>-po</i>, apresentando-a como o equivalente português do termo latino <i>pericarpium</i>."^^rdf:HTML .
+
+dbres:etymon_pericarpum a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "pericarpum" .
+
+dbres:form_pericarpo a ontolex:Form ;
+    ontolex:writtenRep "pericarpo"@pt .
+
+dbres:form_pericarpio a ontolex:Form ;
+    ontolex:writtenRep "Pericarpio"@pt,
+        "pericarpio"@pt .
+
+dbres:entry_pericarpo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Membrana que reveste o ovário da planta e que, com o amadurecimento, se torna o próprio fruto."@pt ;
+    lemonety:etymology dbres:etym_pericarpo_sense1 .
+

@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: MAMAIS ---
+
+dbres:entry_mamais a ontolex:LexicalEntry ;
+    dcterms:created "2025-09-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_mamais ;
+    ontolex:otherForm dbres:form_mammaes ;
+    ontolex:sense dbres:entry_mamais_sense1 .
+
+dbres:etym_mamais_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_mammalia ;
+    dicbio:etymologicalArgumentation "O étimo desse termo é o latim científico <i>mammalia</i>, forma neutra plural, cujo singular é <i>mammale</i>. Ambas as formas latinas, singular e plural, são encontradas em textos em latim científico. Por exemplo, o singular aparece na dissertação \"Siren Lacertina\" de Osterdam, de 1766 (https://www.google.com.br/books/edition/Dissertationes_variae/05TxdEZ4ezsC); o plural aparece na dissertação \"Fundamenta Ornithologica\" de Backman, de 1765 (https://www.google.com.br/books/edition/Dissertationes_variae/YqZ7sGjyOMIC). O gênero neutro latino é explicado por ser provavelmente uma redução da expressão <i>animal mammale</i> (ou seja, \"animal mamal\", \"animal provido de mamas\"), expressão essa presente, por exemplo, na referida obra \"Siren Lacertina\" de Osterdam. Assim, o termo português é uma adaptação da forma latina.<br>Em português, antes de Vandelli, o termo já aparece (grafado \"Mamaes\") empregado no \"Compendio de Observaçoens...\" de José Antônio de Sá, de 1783. Assim como Vandelli, Sá também emprega esse termo sempre como substantivo e sempre no plural, razão pela qual optou-se por registrá-lo no plural neste dicionário.<br>O termo \"mamal\" está registrado como adjetivo no dicionário Caldas Aulete (\"Dicionário Contemporâneo da Língua Portuguêsa\", edição de 1958, publicado no Rio de Janeiro pela ed. Delta), que afirma que a sua forma latina seria <i>Mammalis</i>."^^rdf:HTML .
+
+dbres:etymon_mammalia a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Fundamenta Ornithologica\" de Backman, de 1765 (https://www.google.com.br/books/edition/Dissertationes_variae/YqZ7sGjyOMIC" ;
+    ontolex:writtenRep "mammalia" .
+
+dbres:form_mamais a ontolex:Form ;
+    ontolex:writtenRep "mamais"@pt .
+
+dbres:form_mammaes a ontolex:Form ;
+    ontolex:writtenRep "MAMMAES"@pt,
+        "Mammaes"@pt,
+        "mammaes"@pt .
+
+dbres:entry_mamais_sense1 a ontolex:LexicalSense ;
+    skos:definition "Animais que têm mamas."@pt ;
+    lemonety:etymology dbres:etym_mamais_sense1 .
+

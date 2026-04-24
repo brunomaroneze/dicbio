@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: FIBROSO ---
+
+dbres:entry_fibroso a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_fibroso ;
+    ontolex:otherForm dbres:form_fibrosas ;
+    ontolex:sense dbres:entry_fibroso_sense1 .
+
+dbres:etym_fibroso_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_fibrosus ;
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss sugere que se trata de uma derivação sufixal (<i>fibra</i> + <i>-oso</i>); no entanto, a ocorrência de <i>fibrosus,a,um</i> no latim científico (atestado em Vandelli) leva a crer que o termo foi decalcado ou emprestado do latim científico.A data de 1751 é informada pelo Dicionário Houaiss e indicada com a abreviatura MarqJFP, que não é incluída na lista de fontes, mas possivelmente se refere a João Feliciano Marques Pereira."^^rdf:HTML .
+
+dbres:etymon_fibrosus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "fibrosus" .
+
+dbres:form_fibroso a ontolex:Form ;
+    ontolex:writtenRep "fibroso"@pt .
+
+dbres:form_fibrosas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "fibrosas"@pt .
+
+dbres:entry_fibroso_sense1 a ontolex:LexicalSense ;
+    skos:definition "Provido de fibras."@pt ;
+    lemonety:etymology dbres:etym_fibroso_sense1 .
+

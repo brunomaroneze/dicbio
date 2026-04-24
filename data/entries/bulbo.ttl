@@ -1,0 +1,62 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: BULBO ---
+### Falta acertar a etimologia para cada acepção
+
+dbres:entry_bulbo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_bulbo ;
+    ontolex:otherForm dbres:form_bulbos ;
+    ontolex:sense dbres:entry_bulbo_sense1,
+        dbres:entry_bulbo_sense2 .
+
+dbres:etym_bulbo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_bulbo_\(1\),
+        dbres:etymon_bulbus ;
+    dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>bulbus,i</i>, que significa \"cebola, bulbo, tubérculo, raiz carnuda\", e é cognato do grego <i>bolbós,oû</i>, que significa \"cebola\". A forma latina já era empregada na Botânica no século XVIII, como atesta o dicionário de Vandelli. O Dicionário Houaiss também inclui o verbete <i>bolbo</i>, sem data, informando que seria a forma vulgar da palavra.<br>A atestação na \"Anatomia do corpo humano\" de Santucci antecede em algumas décadas a datação na Botânica, o que pode indicar que há uma datação ainda mais antiga na Botânica, ainda a ser encontrada.<br>No índice alfabético do dicionário de Vandelli, encontram-se as expressões latinas “Caulinus bulbus”, “Solitus bulbus”, “Squamatus bulbus” e “Tunicatus bulbus”, todas remetendo para o verbete de número 166; no entanto, esse verbete não existe, visto que o último é o de número 164. Assim, supõe-se que o autor previu a inclusão de um verbete para “bulbus”, mas não o incluiu."^^rdf:HTML .
+
+dbres:etymon_bulbo_\(1\) a lemonety:Etymon ;
+    dcterms:language "português" ;
+    dcterms:source "nossa pesquisa" ;
+    ontolex:writtenRep "bulbo (1)" .
+
+dbres:etymon_bulbus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Dicionário Houaiss" ;
+    ontolex:writtenRep "bulbus" .
+
+dbres:form_bulbo a ontolex:Form ;
+    ontolex:writtenRep "bulbo"@pt .
+
+dbres:form_bulbos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "bulbos"@pt .
+
+dbres:entry_bulbo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão vegetal presente em certas plantas, que armazena nutrientes para a planta utilizar em época desfavorável."@pt ;
+    lemonety:etymology dbres:etym_bulbo_sense1 .
+
+dbres:entry_bulbo_sense2 a ontolex:LexicalSense ;
+    skos:definition "Estrutura anatômica semelhante a um bulbo (1), como o olho."@pt .
+

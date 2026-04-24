@@ -1,0 +1,56 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: ESOFAGO ---
+
+dbres:entry_esofago a ontolex:LexicalEntry ;
+    dcterms:created "2022-07-26"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_esofago ;
+    ontolex:otherForm dbres:form_ezofago,
+        dbres:form_isophago ;
+    ontolex:sense dbres:entry_esofago_sense1 .
+
+dbres:etym_esofago_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_oesophagus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>oesophagus</i>, atestado já no século XVI (por exemplo, em “De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC). Por estar ausente dos dicionários de Gaffiot e OLD, supõe-se que não existia no latim da Antiguidade. Em latim, é empréstimo do grego οἰσοφάγος, atestado em Hipócrates, Aristóteles e Galeno com o sentido de “goela, esôfago” (segundo o dicionário de Liddell, Scott e Jones)."^^rdf:HTML .
+
+dbres:etymon_oesophagus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" ;
+    ontolex:writtenRep "oesophagus" .
+
+dbres:form_esofago a ontolex:Form ;
+    ontolex:writtenRep "esôfago"@pt .
+
+dbres:form_ezofago a ontolex:Form ;
+    ontolex:writtenRep "ezofago"@pt .
+
+dbres:form_isophago a ontolex:Form ;
+    ontolex:writtenRep "Isophago"@pt,
+        "isophago"@pt .
+
+dbres:entry_esofago_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão muscular, parte do tubo digestivo, que liga a faringe ao estômago."@pt ;
+    lemonety:etymology dbres:etym_esofago_sense1 .
+

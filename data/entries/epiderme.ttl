@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: EPIDERME ---
+
+dbres:entry_epiderme a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_epiderme ;
+    ontolex:sense dbres:entry_epiderme_sense1,
+        dbres:entry_epiderme_sense2 .
+
+dbres:etym_epiderme_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_epidermis ;
+    dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>epidermis, -is</i>, com o sentido de “epiderme dos animais”, por sua vez originário do grego <i>epidermís, -ídos</i>. Segundo o dicionário de Gaffiot, a palavra latina é atestada na “Ars Veterinaria sive Mulomedicina” de Vegécio (séculos IV-V d.C.). A forma portuguesa não é herdada e sua primeira atestação com essa acepção, de acordo com o Dicionário Houaiss, é a obra “Recopilação da Cirurgia”, de António da Cruz (1601), sob a forma variante <i>epiderma</i>. Seu emprego na Botânica parece ter sido introduzido, em português, pela obra de Vandelli (1788)."^^rdf:HTML .
+
+dbres:etymon_epidermis a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_gaffiot ;
+    ontolex:writtenRep "epidermis" .
+
+dbres:form_epiderme a ontolex:Form ;
+    ontolex:writtenRep "epiderme"@pt .
+
+dbres:entry_epiderme_sense1 a ontolex:LexicalSense ;
+    skos:definition "Camada de revestimento da raiz ou do caule de uma planta; cutícula."@pt .
+
+dbres:entry_epiderme_sense2 a ontolex:LexicalSense ;
+    skos:definition "Membrana que reveste as conchas de certos moluscos."@pt ;
+    lemonety:etymology dbres:etym_epiderme_sense1 .
+

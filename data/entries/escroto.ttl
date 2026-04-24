@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: ESCROTO ---
+
+dbres:entry_escroto a ontolex:LexicalEntry ;
+    dcterms:created "2025-03-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_escroto ;
+    ontolex:otherForm dbres:form_scroto ;
+    ontolex:sense dbres:entry_escroto_sense1 .
+
+dbres:etym_escroto_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_scrotum ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>scrotum</i>, atestado desde a Antiguidade com o mesmo sentido, tendo sido empregado assim por Celso (séc. I d.C.), conforme abona o Oxford Latin Dictionary. Segundo essa obra, trata-se de uma variante de <i>scrautum</i>, palavra que se referia a uma espécie de aljava de couro. Assim, a associação com o escroto teria origem na similaridade de função, visto que ambos são espécie de estojo para proteção.<br>Em português, o termo certamente entrou por via erudita (como evidenciado pela manutenção do -t- intervocálico), pelo latim científico."^^rdf:HTML .
+
+dbres:etymon_scrotum a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "scrotum" .
+
+dbres:form_escroto a ontolex:Form ;
+    ontolex:writtenRep "escroto"@pt .
+
+dbres:form_scroto a ontolex:Form ;
+    ontolex:writtenRep "scroto"@pt .
+
+dbres:entry_escroto_sense1 a ontolex:LexicalSense ;
+    skos:definition "Saco localizado abaixo do pênis, que contém os testículos."@pt ;
+    lemonety:etymology dbres:etym_escroto_sense1 .
+

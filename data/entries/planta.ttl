@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PLANTA ---
+
+dbres:entry_planta a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_planta ;
+    ontolex:otherForm dbres:form_plantas ;
+    ontolex:sense dbres:entry_planta_sense1 .
+
+dbres:etym_planta_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_planta ;
+    dicbio:etymologicalArgumentation "Segundo o dicionário de Gaffiot, o substantivo latino <i>planta, ae</i> na Antiguidade tinha o sentido de “rebento” (ramo de uma planta extraído para propagação), mas também poderia ter o sentido mais geral de “vegetal”, sentido esse que passou ao português. A conservação do encontro consonantal pl- inicial aponta para a entrada na língua por via erudita, ainda que a palavra seja datada da Idade Média."^^rdf:HTML .
+
+dbres:etymon_planta a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_gaffiot ;
+    ontolex:writtenRep "planta" .
+
+dbres:form_planta a ontolex:Form ;
+    ontolex:writtenRep "planta"@pt .
+
+dbres:form_plantas a ontolex:Form ;
+    ontolex:writtenRep "plantas"@pt .
+
+dbres:entry_planta_sense1 a ontolex:LexicalSense ;
+    skos:definition "Designação comum a todos os vegetais."@pt ;
+    lemonety:etymology dbres:etym_planta_sense1 .
+

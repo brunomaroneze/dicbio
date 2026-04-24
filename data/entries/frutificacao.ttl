@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: FRUTIFICACAO ---
+
+dbres:entry_frutificacao a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_frutificacao ;
+    ontolex:otherForm dbres:form_fructificacao,
+        dbres:form_fructificacoens,
+        dbres:form_frutificacao,
+        dbres:form_frutificacoens,
+        dbres:form_frutificacoes ;
+    ontolex:sense dbres:entry_frutificacao_sense1 .
+
+dbres:etym_frutificacao_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_fructificatio ;
+    dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>fructificatio,onis</i>, com o sentido de \"ato de dar frutos\". A palavra já era empregada séculos antes da obra de Vandelli; aparentemente, o autor emprega essa palavra com o sentido de “conjunto de frutos”, ou talvez como um hiperônimo para tipos de fruto diversos. As formas variantes “frutificaçaõ”, “fructificaçaõ”, “fructificaçoens” (pl.) e “frutificações” (pl.) são todas empregadas na obra."^^rdf:HTML .
+
+dbres:etymon_fructificatio a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Dicionário Houaiss" ;
+    ontolex:writtenRep "fructificatio" .
+
+dbres:form_frutificacao a ontolex:Form ;
+    ontolex:writtenRep "Frutificaçaõ"@pt,
+        "frutificaçaõ"@pt,
+        "frutificação"@pt .
+
+dbres:form_fructificacao a ontolex:Form ;
+    ontolex:writtenRep "fructificaçaõ"@pt .
+
+dbres:form_fructificacoens a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "fructificaçoens"@pt .
+
+dbres:form_frutificacoens a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "frutificaçoens"@pt .
+
+dbres:form_frutificacoes a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "frutificações"@pt .
+
+dbres:entry_frutificacao_sense1 a ontolex:LexicalSense ;
+    skos:definition "Estrutura responsável pela reprodução vegetal, formada pelas flores e, posteriormente, pelos frutos."@pt ;
+    lemonety:etymology dbres:etym_frutificacao_sense1 .
+

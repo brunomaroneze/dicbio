@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: GELATINOSO ---
+
+dbres:entry_gelatinoso a ontolex:LexicalEntry ;
+    dcterms:created "2025-04-22"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_gelatinoso ;
+    ontolex:otherForm dbres:form_jalatinosa ;
+    ontolex:sense dbres:entry_gelatinoso_sense1 .
+
+dbres:etym_gelatinoso_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_gelatinosus ;
+    dicbio:etymologicalArgumentation "Em relação à identificação do étimo deste termo, os dados são conflitantes. A ocorrência da expressão latina <i>tumor gelatinosus</i> num texto de 1695 (\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ) parece apontar para uma criação do latim científico (visto que o termo não está registrado nos dicionários do latim da Antiguidade) que teria passado ao português; portanto, um latinismo. No entanto, a forma atestada em Santucci é \"jalatinosa\", e não a forma esperada \"gelatinosa\", o que aponta para uma pronúncia popular e uma possível derivação sufixal inteiramente vernácula. Será necessário buscar outras atestações do termo e, possivelmente, de uma forma primitiva *\"jalatina\". Não obstante, a forma atual \"gelatinoso\" foi muito provavelmente influenciada pela forma latina."^^rdf:HTML .
+
+dbres:etymon_gelatinosus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ" ;
+    ontolex:writtenRep "gelatinosus" .
+
+dbres:form_gelatinoso a ontolex:Form ;
+    ontolex:writtenRep "gelatinoso"@pt .
+
+dbres:form_jalatinosa a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "jalatinosa"@pt .
+
+dbres:entry_gelatinoso_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que tem consistência de gelatina."@pt ;
+    lemonety:etymology dbres:etym_gelatinoso_sense1 .
+

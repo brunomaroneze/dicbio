@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: MEMBRANA_BRANQUIOSTEGA ---
+
+dbres:entry_membrana_branquiostega a ontolex:LexicalEntry ;
+    dcterms:created "2025-09-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_membrana_branquiostega ;
+    ontolex:otherForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega>,
+        dbres:form_membrana_branchiostega ;
+    ontolex:sense dbres:entry_membrana_branquiostega_sense1 .
+
+dbres:etym_membrana_branquiostega_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_membrana_branchiostega ;
+    dicbio:etymologicalArgumentation "O termo português \"membrana branquióstega\" é um decalque do termo latino <i>membrana branchiostega</i>, já empregado em latim científico, como se observa, por exemplo, no \"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C). Sobre a etimologia de \"branquióstego\", conferir esse verbete."^^rdf:HTML .
+
+dbres:etymon_membrana_branchiostega a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C" ;
+    ontolex:writtenRep "membrana branchiostega" .
+
+dbres:form_membrana_branquiostega a ontolex:Form ;
+    ontolex:writtenRep "branquióstega"@pt,
+        "membrana branquióstega"@pt .
+
+<http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega> a ontolex:Form ;
+    ontolex:writtenRep "branchiostega"@pt,
+        """membrana, ou pinna\r
+                branchiostega"""@pt .
+
+dbres:form_membrana_branchiostega a ontolex:Form ;
+    ontolex:writtenRep "branchiostega"@pt,
+        "membrana branchiostega"@pt .
+
+dbres:entry_membrana_branquiostega_sense1 a ontolex:LexicalSense ;
+    skos:definition "Membrana situada abaixo dos pérculos, que reveste as guelras dos peixes."@pt ;
+    lemonety:etymology dbres:etym_membrana_branquiostega_sense1 .
+

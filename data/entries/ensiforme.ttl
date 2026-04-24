@@ -1,0 +1,46 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: ENSIFORME ---
+
+dbres:entry_ensiforme a ontolex:LexicalEntry ;
+    dcterms:created "2025-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_ensiforme ;
+    ontolex:sense dbres:entry_ensiforme_sense1 .
+
+dbres:etym_ensiforme_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_ensiformis ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>ensiformis</i>, atestado já no século XVII - por exemplo, na obra \"Cometographia\" (1668), de Johannes Hevelius (https://www.google.com.br/books/edition/JOHANNIS_HEVELII_COMETOGRAPHIA_Totam_Nat/UvTm7DlL8cUC). A expressão <i>cartilago ensiformis</i>, da qual certamente a \"cartilagem ensiforme\" é um decalque, também já é atestada em obras anteriores, como a \"Anatomy of Human Bodies\" de Thomas Gibson, de 1688 (https://www.google.com.br/books/edition/The_Anatomy_of_Human_Bodies_Epitomiz_d_T/hwhlAAAAcAAJ). O Dicionário Houaiss apresenta não a etimologia, mas a descrição morfológica do termo: os elementos <i>ensi-</i> (do latim <i>ensis, is</i>, \"espada\") e <i>-forme</i>."^^rdf:HTML .
+
+dbres:etymon_ensiformis a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Cometographia\" (1668), de Johannes Hevelius (https://www.google.com.br/books/edition/JOHANNIS_HEVELII_COMETOGRAPHIA_Totam_Nat/UvTm7DlL8cUC" ;
+    ontolex:writtenRep "ensiformis" .
+
+dbres:form_ensiforme a ontolex:Form ;
+    ontolex:writtenRep "ensiforme"@pt .
+
+dbres:entry_ensiforme_sense1 a ontolex:LexicalSense ;
+    skos:definition "Em forma de espada."@pt ;
+    lemonety:etymology dbres:etym_ensiforme_sense1 .
+

@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: COCCIX ---
+
+dbres:entry_coccix a ontolex:LexicalEntry ;
+    dcterms:created "2025-02-24"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_coccix ;
+    ontolex:otherForm dbres:form_coccyx ;
+    ontolex:sense dbres:entry_coccix_sense1 .
+
+dbres:etym_coccix_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_coccyx ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>coccyx</i>, que se refere ao osso da base da coluna vertebral. Os dicionários Oxford Latin Dictionary e Gaffiot não registram essa acepção, mas apenas a de \"cuco\" (ave), ambos afirmando ser palavra de origem grega; o dicionário de Liddell, Scott e Jones, por sua vez, afirma que o grego κόκκυξ (kókkyks), além de se referir à ave, também foi empregado por Rufo de Éfeso e por Galeno para se referir ao osso. Dessa forma, o termo no latim científico tem origem no grego da Antiguidade, ainda que essa acepção não tenha registro no latim da mesma época.<br>Santucci emprega a grafia com -y-, mais próxima da grafia em latim. A grafia com -i- (<i>coccix</i>) pode ser encontrada em francês já em textos médicos do século XVII (como o \"Traité Complet des Opérations de Chirurgie\", de Vauguion, 1698 - https://www.google.com.br/books/edition/Trait%C3%A9_complet_des_op%C3%A9rations_de_chiru/NxhmAAAAcAAJ), mas não a encontramos em latim."^^rdf:HTML .
+
+dbres:etymon_coccyx a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "LSJ" ;
+    ontolex:writtenRep "coccyx" .
+
+dbres:form_coccix a ontolex:Form ;
+    ontolex:writtenRep "cóccix"@pt .
+
+dbres:form_coccyx a ontolex:Form ;
+    ontolex:writtenRep "coccyx"@pt .
+
+dbres:entry_coccix_sense1 a ontolex:LexicalSense ;
+    skos:definition "Pequeno osso triangular localizado na base da coluna vertebral."@pt ;
+    lemonety:etymology dbres:etym_coccix_sense1 .
+

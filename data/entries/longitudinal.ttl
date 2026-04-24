@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: LONGITUDINAL ---
+
+dbres:entry_longitudinal a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_longitudinal ;
+    ontolex:otherForm dbres:form_longitudinaes ;
+    ontolex:sense dbres:entry_longitudinal_sense1 .
+
+dbres:etym_longitudinal_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_longitudinalis ;
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma que a palavra formou-se por derivação sufixal a partir do radical latino <i>longitudine</i>, juntamente com o sufixo <i>-al</i>; no entanto, o adjetivo latino <i>longitudinalis</i> já é atestado no século XIII, segundo o Trésor de la Langue Française (<i>s.v.</i> \"longitudinal\"), e o francês <i>longitudinal</i> é atestado no século XIV (segundo o mesmo dicionário); assim, é mais razoável considerar que a palavra é um empréstimo do latim medieval ou do francês, não tendo sido formado em português."^^rdf:HTML .
+
+dbres:etymon_longitudinalis a lemonety:Etymon ;
+    dcterms:language "latim medieval" ;
+    dcterms:source "TLF" ;
+    ontolex:writtenRep "longitudinalis" .
+
+dbres:form_longitudinal a ontolex:Form ;
+    ontolex:writtenRep "longitudinal"@pt .
+
+dbres:form_longitudinaes a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "Longitudinaes"@pt,
+        "longitudinaes"@pt .
+
+dbres:entry_longitudinal_sense1 a ontolex:LexicalSense ;
+    skos:definition "No sentido do comprimento."@pt ;
+    lemonety:etymology dbres:etym_longitudinal_sense1 .
+

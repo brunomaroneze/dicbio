@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: TRONCO ---
+
+dbres:entry_tronco a ontolex:LexicalEntry ;
+    dcterms:created "2023-06-14"^^xsd:date ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_tronco ;
+    ontolex:otherForm dbres:form_troncos ;
+    ontolex:sense dbres:entry_tronco_sense1 .
+
+dbres:etym_tronco_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_truncum ;
+    dicbio:etymologicalArgumentation "É certamente palavra herdada, tendo como étimo o latim <i>truncus</i> (pela forma do acusativo <i>truncum</i>), que já na Antiguidade tinha tanto o sentido de \"tronco de uma árvore\" quanto de \"tronco do corpo humano\" (conforme se lê no Oxford Latin Dictionary). Em latim, é provavelmente a substantivação do adjetivo <i>truncus, -a, -um</i> \"cortado, mutilado, truncado\".<br>Sobre a diferença entre \"caule\" e \"tronco\", Brotero afirma: \"Os antigos davaõ o nome de tronco (truncus) ao troço ascendente das plantas lenhosas, e o de caule ou talo (caulis) ao das herbaceas; mas hoje a palavra tronco está adoptada por hum termo geral de que o caule he huma especie, de maneira que se pode dizer com igual propriedade de termo, que o choupo tem hum caule lenhoso, como se pode dizer, que a alface tem hum caule herbaceo.\" (BROTERO, 1788, vol. 1, p. 20). Esse trecho é obscuro; por um lado, parece dizer que \"tronco\" é o termo genérico, mas nos exemplos, é \"caule\" que é empregado como genérico. Atualmente, emprega-se \"caule\" como termo genérico (hiperônimo), do qual \"tronco\" é um subtipo (hipônimo)."^^rdf:HTML .
+
+dbres:etymon_truncum a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "truncum" .
+
+dbres:form_tronco a ontolex:Form ;
+    ontolex:writtenRep "tronco"@pt .
+
+dbres:form_troncos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "troncos"@pt .
+
+dbres:entry_tronco_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte da planta que se ergue da terra e sustenta os frutos e as folhas."@pt ;
+    lemonety:etymology dbres:etym_tronco_sense1 .
+

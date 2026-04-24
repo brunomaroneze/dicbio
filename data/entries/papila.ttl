@@ -1,0 +1,61 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PAPILA ---
+### Falta acertar a etimologia das acepções 2 e 3
+
+dbres:entry_papila a ontolex:LexicalEntry ;
+    dcterms:created "2023-10-30"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_papila ;
+    ontolex:otherForm dbres:form_papillas ;
+    ontolex:sense dbres:entry_papila_sense1,
+        dbres:entry_papila_sense2,
+        dbres:entry_papila_sense3 .
+
+dbres:etym_papila_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_papilla ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>papilla</i>, que significava, na Antiguidade, “mamilo, bico do seio” (conforme informa o Oxford Latin Dictionary). A forma portuguesa entrou por via erudita, como se percebe pela conservação do -p- intervocálico.<br>O emprego da palavra no latim científico, com sentido diferente do original, é atribuído a Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/)."^^rdf:HTML .
+
+dbres:etymon_papilla a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" ;
+    ontolex:writtenRep "papilla" .
+
+dbres:form_papila a ontolex:Form ;
+    ontolex:writtenRep "papila"@pt .
+
+dbres:form_papillas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "papillas"@pt .
+
+dbres:entry_papila_sense1 a ontolex:LexicalSense ;
+    skos:definition "Estrutura da pele responsável pela sensibilidade do tato."@pt ;
+    lemonety:etymology dbres:etym_papila_sense1 .
+
+dbres:entry_papila_sense2 a ontolex:LexicalSense ;
+    skos:definition "Mamilo, bico do peito."@pt .
+
+dbres:entry_papila_sense3 a ontolex:LexicalSense ;
+    skos:definition "Protuberância que se projeta a partir de certos órgãos animais ou vegetais."@pt .
+

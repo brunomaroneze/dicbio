@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: EPIGASTRIO ---
+
+dbres:entry_epigastrio a ontolex:LexicalEntry ;
+    dcterms:created "2022-07-25"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_epigastrio ;
+    ontolex:otherForm dbres:form_epigastrio ;
+    ontolex:sense dbres:entry_epigastrio_sense1 .
+
+dbres:etym_epigastrio_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_epigastrium ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>Epigastrium</i>, atestado já no século XVI (por exemplo, em “A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ). Por não estar registrado nem no Oxford Latin Dictionary nem no dicionário de Gaffiot, supõe-se que não era empregado em latim na Antiguidade; mas o dicionário LSJ registra a forma <i>epigástrion</i>) (ἐπιγάστριον), ora com o sentido de “abdômen”, ora com o sentido de “parte do abdômen acima do umbigo”. Assim, a forma latina, provavelmente medieval ou renascentista, foi cunhada a partir do grego."^^rdf:HTML .
+
+dbres:etymon_epigastrium a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "“A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ" ;
+    ontolex:writtenRep "epigastrium" .
+
+dbres:form_epigastrio a ontolex:Form ;
+    ontolex:writtenRep "Epigastrio"@pt,
+        "epigastrio"@pt,
+        "epigástrio"@pt .
+
+dbres:entry_epigastrio_sense1 a ontolex:LexicalSense ;
+    skos:definition "Região do abdômen situada abaixo do diafragma, terminando um pouco acima do umbigo."@pt ;
+    lemonety:etymology dbres:etym_epigastrio_sense1 .
+

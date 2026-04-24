@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: CIRRO ---
+### Falta acertar a etimologia da acepção 2
+
+dbres:entry_cirro a ontolex:LexicalEntry ;
+    dcterms:created "2023-11-20"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_cirro ;
+    ontolex:otherForm dbres:form_cirrho,
+        dbres:form_cirrhos,
+        dbres:form_cirros ;
+    ontolex:sense dbres:entry_cirro_sense1,
+        dbres:entry_cirro_sense2 .
+
+dbres:etym_cirro_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_cirrus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>cirrus</i>, que no latim da Antiguidade significava “mecha de cabelo cacheado, cacho de cabelo”, mas também “excrescência em forma de tufo numa planta”, conforme informa o Oxford Latin Dictionary. Aparentemente, o latim científico especializou a grafia <i>cirrhus</i> para a acepção da Botânica (“gavinha”) e a grafia <i>cirrus</i> para a acepção da Zoologia (apêndice de certos animais). É possível observar isso, por exemplo, no “A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ), que registra apenas <i>cirrhus</i>, e no “Zoophylacium Gronovianum”, de Laurens Theodorus Gronovius (1763 - disponível em https://www.google.com.br/books/edition/Zoophylacium_Gronovianum_exhibens_animal/aUxnAAAAcAAJ), que registra apenas <i>cirrus</i>. Ainda que haja duas grafias, o mais provável é que o étimo latino seja o mesmo. <br>No dicionário de Vandelli, a forma latina aparece grafada ora como <i>cirrus</i>, ora como <i>cirrhus</i>, tanto no sentido do apêndice dos animais quanto do das plantas. Porém, o equivalente português em Vandelli é sempre grafado <i>cirro</i> ao se referir ao apêndice animal, e <i>cirrho</i> ao se referir ao apêndice vegetal (com uma única exceção à p. 236). Já Brotero não emprega esse termo em português, preferindo o equivalente vernáculo <i>gavinha</i>."^^rdf:HTML .
+
+dbres:etymon_cirrus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "“A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ" ;
+    ontolex:writtenRep "cirrus" .
+
+dbres:form_cirro a ontolex:Form ;
+    ontolex:writtenRep "cirro"@pt .
+
+dbres:form_cirrho a ontolex:Form ;
+    ontolex:writtenRep "cirrho"@pt .
+
+dbres:form_cirrhos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "cirrhos"@pt .
+
+dbres:form_cirros a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "cirros"@pt .
+
+dbres:entry_cirro_sense1 a ontolex:LexicalSense ;
+    skos:definition "Apêndice filiforme presente em certos animais como peixes e moluscos."@pt ;
+    lemonety:etymology dbres:etym_cirro_sense1 .
+
+dbres:entry_cirro_sense2 a ontolex:LexicalSense ;
+    skos:definition "Apêndice em espiral pelo qual a planta se une a outros corpos."@pt .
+

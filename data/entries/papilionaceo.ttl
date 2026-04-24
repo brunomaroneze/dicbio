@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PAPILIONACEO ---
+
+dbres:entry_papilionaceo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_papilionaceo ;
+    ontolex:otherForm dbres:form_papilionaceas ;
+    ontolex:sense dbres:entry_papilionaceo_sense1 .
+
+dbres:etym_papilionaceo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_papilionaceus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>papilionaceus,a,um</i> (também grafado <i>papillionaceus</i> com dois LL), atestado na própria obra de Vandelli, derivado do latim clássico <i>papilio,onis</i>, que significa “borboleta”. O Dicionário Houaiss informa que o adjetivo <i>papilionáceo</i> deriva do substantivo feminino <i>papilionácea</i>, “com troca de sufixo”; porém, a datação informada para o substantivo é 1899, enquanto a datação do adjetivo é 1788 (Vandelli) e 1789 (Moraes Silva). Dessa forma, os dados não corroboram essa descrição do Dicionário Houaiss."^^rdf:HTML .
+
+dbres:etymon_papilionaceus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "papilionaceus" .
+
+dbres:form_papilionaceo a ontolex:Form ;
+    ontolex:writtenRep "papilionáceo"@pt .
+
+dbres:form_papilionaceas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "papilionaceas"@pt .
+
+dbres:entry_papilionaceo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Em forma de borboleta (diz-se de flor ou corola)."@pt ;
+    lemonety:etymology dbres:etym_papilionaceo_sense1 .
+

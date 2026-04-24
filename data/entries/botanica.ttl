@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+
+
+### --- VERBETE: BOTANICA ---
+
+dbres:entry_botanica a ontolex:LexicalEntry ;
+    dcterms:created "2023-02-16"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_botanica ;
+    ontolex:otherForm dbres:form_botanica ;
+    ontolex:sense dbres:entry_botanica_sense1 .
+
+dbres:etym_botanica_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_botanica ;
+    dicbio:etymologicalArgumentation "O étimo é, certamente, o latim científico <i>Botanica</i>, já empregado com o sentido de \"ciência dos vegetais\" desde o século XVII (cf., por exemplo, a obra \"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\").<br>O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (<i>botanikós</i>) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."^^rdf:HTML .
+
+dbres:etymon_botanica a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
+    ontolex:writtenRep "Botanica" .
+
+dbres:form_botanica a ontolex:Form ;
+    ontolex:writtenRep "BOTANICA"@pt,
+        "Botanica"@pt,
+        "Botânica"@pt,
+        "botanica"@pt .
+
+dbres:entry_botanica_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte da História Natural responsável pela descrição e estudo dos vegetais."@pt ;
+    lemonety:etymology dbres:etym_botanica_sense1 .
+
+#------------------------------------------------------------

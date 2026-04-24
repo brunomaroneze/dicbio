@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+
+### --- VERBETE: BRANQUIA ---
+
+dbres:entry_branquia a ontolex:LexicalEntry ;
+    dcterms:created "2025-09-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_branquia ;
+    ontolex:otherForm dbres:form_branchias ;
+    ontolex:sense dbres:entry_branquia_sense1 .
+
+dbres:etym_branquia_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_branchia ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>branchia, ae</i>, empregado desde a Antiguidade já com o sentido de \"órgão respiratório dos peixes\", conforme atesta o Oxford Latin Dictionary. Em latim, é um empréstimo do grego βράγχια, com o mesmo sentido, que já é atestado em Aristóteles (de acordo com o dicionário de Liddell, Scott e Jones). Em português, é certamente palavra erudita, visto não haver atestação anterior a fins do século XVIII.<br>O dicionário Houaiss informa que a primeira atestação é de 1782 e está registrada no Dicionário Histórico do Português Brasileiro (https://dicionarios.fclar.unesp.br/dhpb/). Trata-se do texto de Francisco Antônio de Sampaio \"Historia dos Reinos Vegetal, Animal, e Mineral do Brazil, pertencente à Medicina\" (https://objdigital.bn.br/objdigital2/acervo_digital/div_manuscritos/mss22949/mss22949.pdf), cujo manuscrito, escrito em 1782, permaneceu sem publicação até 1971, no vol. 89 dos Anais da Biblioteca Nacional (https://hemeroteca-pdf.bn.gov.br/402630/per402630_1969_00089.pdf)."^^rdf:HTML .
+
+dbres:etymon_branchia a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "OLD/LSJ" ;
+    ontolex:writtenRep "branchia" .
+
+dbres:form_branquia a ontolex:Form ;
+    ontolex:writtenRep "brânquia"@pt .
+
+dbres:form_branchias a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "branchias"@pt .
+
+dbres:entry_branquia_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão responsável pela respiração nos peixes e outros animais aquáticos; guelra."@pt ;
+    lemonety:etymology dbres:etym_branquia_sense1 .
+
+#------------------------------------------------------------

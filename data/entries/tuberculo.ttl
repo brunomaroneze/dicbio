@@ -1,0 +1,62 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: TUBERCULO ---
+### Falta acertar a etimologia da acepção 2
+
+dbres:entry_tuberculo a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-15"^^xsd:date ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_tuberculo ;
+    ontolex:otherForm dbres:form_tuberculo,
+        dbres:form_tuberculos ;
+    ontolex:sense dbres:entry_tuberculo_sense1,
+        dbres:entry_tuberculo_sense2 .
+
+dbres:etym_tuberculo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_tuberculum ;
+    dicbio:etymologicalArgumentation "Tubérculo: O étimo é o substantivo latino <i>tuberculum, i</i>, que, segundo o Oxford Latin Dictionary, tinha na Antiguidade o sentido de “pequena protuberância ou excescência”. É com esse sentido que a palavra “tubérculo” está presente nos autores do século XVIII, seja referindo-se a estruturas animais (na pele ou na superfície de órgãos internos), seja referindo-se a protuberâncias e rugosidades em vegetais e fungos (que eram considerados vegetais). O sentido de “caule espessado que armazena nutrientes” não foi encontrado nos autores que estudamos (ainda que o dicionário Houaiss date essa acepção em 1788).<br>A palavra certamente entrou na língua portuguesa por via erudita, por meio do latim científico. O sentido de “protuberância” é frequente em textos médicos do século XVII (como, por exemplo, no texto “De ingressu ad infirmos” de Júlio César Claudino, 1617 - https://www.google.com.br/books/edition/Iulii_C%C3%A6saris_Claudini_De_ingressu_ad_i/iPcZtI8R6o8C)."^^rdf:HTML .
+
+dbres:etymon_tuberculum a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "“De ingressu ad infirmos” de Júlio César Claudino, 1617 - https://www.google.com.br/books/edition/Iulii_C%C3%A6saris_Claudini_De_ingressu_ad_i/iPcZtI8R6o8C" ;
+    ontolex:writtenRep "tuberculum" .
+
+dbres:form_tuberculo a ontolex:Form ;
+    ontolex:writtenRep "Tuberculo"@pt,
+        "tuberculo"@pt,
+        "tubérculo"@pt .
+
+dbres:form_tuberculos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "Tuberculos"@pt,
+        "tuberculos"@pt .
+
+dbres:entry_tuberculo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Saliência encontrada na pele ou na superfície de certos órgãos dos animais."@pt ;
+    lemonety:etymology dbres:etym_tuberculo_sense1 .
+
+dbres:entry_tuberculo_sense2 a ontolex:LexicalSense ;
+    skos:definition "Saliência semelhante a verrugas presente em certas estruturas vegetais."@pt .
+

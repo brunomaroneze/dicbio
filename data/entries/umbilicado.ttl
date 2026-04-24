@@ -1,0 +1,56 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: UMBILICADO ---
+
+dbres:entry_umbilicado a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-25"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_umbilicado ;
+    ontolex:otherForm dbres:form_umbilicada,
+        dbres:form_umbilicadas ;
+    ontolex:sense dbres:entry_umbilicado_sense1 .
+
+dbres:etym_umbilicado_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_umbilicatus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>umbĭlīcātus</i> (já atestado na \"História Natural\" de Plínio, conforme informa o Oxford Latin Dictionary). A conservação do -l- intervocálico demonstra tratar-se de forma erudita, sendo, portanto, um decalque do latim. Apesar de ter uma base morfológica (substantivo <i>umbigo</i>, já atestada em 1563), a forma esperada por derivação sufixal seria <i>*umbigado</i>; assim, evidencia-se que Vandelli e Brotero recuperaram a forma latina como base para a forma em língua portuguesa."^^rdf:HTML .
+
+dbres:etymon_umbilicatus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "umbilicatus" .
+
+dbres:form_umbilicado a ontolex:Form ;
+    ontolex:writtenRep "umbilicado"@pt .
+
+dbres:form_umbilicada a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Umbilicada"@pt .
+
+dbres:form_umbilicadas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "umbilicadas"@pt .
+
+dbres:entry_umbilicado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que possui uma concavidade semelhante a um umbigo, no centro."@pt ;
+    lemonety:etymology dbres:etym_umbilicado_sense1 .
+

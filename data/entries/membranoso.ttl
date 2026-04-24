@@ -1,0 +1,57 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: MEMBRANOSO ---
+
+dbres:entry_membranoso a ontolex:LexicalEntry ;
+    dcterms:created "2024-10-07"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_membranoso ;
+    ontolex:otherForm dbres:form_membranosa,
+        dbres:form_membranosas ;
+    ontolex:sense dbres:entry_membranoso_sense1 .
+
+dbres:etym_membranoso_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_membranosus ;
+    dicbio:etymologicalArgumentation "A forma latina <i>membranosus</i> já aparece em textos em latim científico (como, por exemplo, em \"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ). Assim, é mais plausível supor que Brotero tenha buscado o termo no latim científico, em vez de tê-lo criado em português por derivação sufixal.<br>A forma latina <i>membranaceus, a, um</i> é atestada desde a Antiguidade (segundo o Oxford Latin Dictionary), com o sentido de \"feito de ou semelhante a uma membrana\", mas a forma <i>membranosus</i> parece ser uma inovação do latim cientifico."^^rdf:HTML .
+
+dbres:etymon_membranosus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ" ;
+    ontolex:writtenRep "membranosus" .
+
+dbres:form_membranoso a ontolex:Form ;
+    ontolex:writtenRep "membranoso"@pt .
+
+dbres:form_membranosa a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "membranosa"@pt .
+
+dbres:form_membranosas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "Membranosas"@pt,
+        "membranosas"@pt .
+
+dbres:entry_membranoso_sense1 a ontolex:LexicalSense ;
+    skos:definition "Feito de ou em forma de membrana."@pt ;
+    lemonety:etymology dbres:etym_membranoso_sense1 .
+

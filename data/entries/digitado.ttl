@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: DIGITADO ---
+### Falta revisar a etimologia para a acepção 2
+
+dbres:entry_digitado a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-25"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_digitado ;
+    ontolex:otherForm dbres:form_digitada,
+        dbres:form_digitadas,
+        dbres:form_digitados ;
+    ontolex:sense dbres:entry_digitado_sense1,
+        dbres:entry_digitado_sense2 .
+
+dbres:etym_digitado_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_digitatus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>digĭtātus</i>, atestado desde a Antiguidade (conforme informa o Oxford Latin Dictionary), com o sentido de \"provido de dedos\". Trata-se, portanto, de um decalque do latim, que entrou na língua portuguesa como um empréstimo do latim científico.<br>O dicionário Houaiss registra a forma <i>dígito</i> como sinônimo (formal) de <i>dedo</i>, datada de 1532. Assim, seria possível hipotetizar que <i>digitado</i> seria um derivado sufixal a partir de <i>dígito</i> (significando <i>dedo</i>, e não <i>algarismo</i>, como é o seu sentido atual). No entanto, devido a essa forma ser incomum na língua portuguesa, parece mais provável que <i>digitado</i> no sentido empregado pelos cientistas do século XVIII seja de fato um decalque do latim."^^rdf:HTML .
+
+dbres:etymon_digitatus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "digitatus" .
+
+dbres:form_digitado a ontolex:Form ;
+    ontolex:writtenRep "digitado"@pt .
+
+dbres:form_digitada a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Digitada"@pt,
+        "digitada"@pt .
+
+dbres:form_digitadas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "Digitadas"@pt,
+        "digitadas"@pt .
+
+dbres:form_digitados a ontolex:Form ;
+    rdfs:label "masculino plural"@pt ;
+    ontolex:writtenRep "digitados"@pt .
+
+dbres:entry_digitado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cujo pecíolo reúne em seu ápice várias folhas menores (diz-se de folha composta)."@pt ;
+    lemonety:etymology dbres:etym_digitado_sense1 .
+
+dbres:entry_digitado_sense2 a ontolex:LexicalSense ;
+    skos:definition "Com divisões semelhantes aos dedos da mão (diz-se de asa de inseto)."@pt .
+

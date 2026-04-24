@@ -1,0 +1,56 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PONTOADO ---
+
+dbres:entry_pontoado a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-25"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_pontoado ;
+    ontolex:otherForm dbres:form_pontoada,
+        dbres:form_pontoadas ;
+    ontolex:sense dbres:entry_pontoado_sense1 .
+
+dbres:etym_pontoado_sense1 a lemonety:Etymology ;
+    lemonety:etymon <http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> ;
+    dicbio:etymologicalArgumentation "O adjetivo <i>pontoado</i> é empregado tanto por Vandelli quanto por Brotero para traduzir o adjetivo latino <i>punctatus, a, um</i> (encontrado no latim dos séculos XVII e XVIII); portanto, pode ser entendido como um decalque do latim. No entanto, a forma mais diretamente adaptada desse particípio latino seria <i>*pontado</i>. A ocorrência da vogal <i>-o-</i> leva a hipotetizar duas duas possibilidades de análise, não mutuamente excludentes: 1 - O adjetivo pode ter sido criado como um particípio do verbo <i>pontoar</i> (variante de <i>pontuar</i>), que já ocorre no século XVIII (como, por exemplo, no \"Divertimento Erudîto\" do Frei João Pacheco - https://www.google.com.br/books/edition/Divertimento_erud%C3%AEto_para_os_curiosos_d/N8_o3ix_EmAC), ainda que com outro sentido (\"empregar sinais de pontuação\"). 2 - O adjetivo seria derivado do substantivo <i>ponto</i> com o sufixo -<i>ado</i>. Assim, pode-se tratar de um caso em que converge mais de um étimo."^^rdf:HTML .
+
+<http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> a lemonety:Etymon ;
+    dcterms:language "formação vernácula" ;
+    dcterms:source "Nossa pesquisa" ;
+    ontolex:writtenRep "ponto + -ado" .
+
+dbres:form_pontoado a ontolex:Form ;
+    ontolex:writtenRep "pontoado"@pt .
+
+dbres:form_pontoada a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Pontoada"@pt .
+
+dbres:form_pontoadas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "Pontoadas"@pt .
+
+dbres:entry_pontoado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que apresenta pontos (diz-se de estrutura animal ou vegetal)."@pt ;
+    lemonety:etymology dbres:etym_pontoado_sense1 .
+

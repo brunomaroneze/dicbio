@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: PEDUNCULO ---
+### Falta acertar a etimologia da acepção 2.
+
+dbres:entry_pedunculo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_pedunculo ;
+    ontolex:otherForm dbres:form_pedunculo,
+        dbres:form_pedunculos ;
+    ontolex:sense dbres:entry_pedunculo_sense1,
+        dbres:entry_pedunculo_sense2 .
+
+dbres:etym_pedunculo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_pedunculus ;
+    dicbio:etymologicalArgumentation "Conforme explica o Dicionário Houaiss, o étimo é o latim <i>pedunculus,i</i>, diminutivo de <i>pes,pedis</i> (que significa \"pé\"). O dicionário de Gaffiot informa que <i>pedunculus</i> ou <i>pediculus</i> já na Antiguidade era empregado com o sentido de \"pedúnculo, haste de uma folha\", mas o étimo do termo português é, evidentemente, o latim científico, visto que a palavra não é herdada. Vandelli distingue (embora nem sempre com muita clareza) os conceitos de <i>pedúnculo</i> (haste da frutificação), <i>pecíolo</i> (haste da folha) e <i>pedicelo</i> (ramo de um pedúnculo). Já a definição de Morais Silva não é tão clara, aparentemente confundindo os conceitos."^^rdf:HTML .
+
+dbres:etymon_pedunculus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_gaffiot ;
+    ontolex:writtenRep "pedunculus" .
+
+dbres:form_pedunculo a ontolex:Form ;
+    ontolex:writtenRep "Pedunculo"@pt,
+        "pedunculo"@pt,
+        "pedúnculo"@pt .
+
+dbres:form_pedunculos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "pedunculos"@pt .
+
+dbres:entry_pedunculo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Estrutura semelhante a um ramo, que sustenta a inflorescência e a frutificação."@pt ;
+    lemonety:etymology dbres:etym_pedunculo_sense1 .
+
+dbres:entry_pedunculo_sense2 a ontolex:LexicalSense ;
+    skos:definition "Haste que sustenta diversas estruturas dos insetos, como antenas, olhos ou o abdômen."@pt .
+

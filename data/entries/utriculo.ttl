@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: UTRICULO ---
+### Falta acertar a etimologia da acepção 2
+
+dbres:entry_utriculo a ontolex:LexicalEntry ;
+    dcterms:created "2024-10-03"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_utriculo ;
+    ontolex:otherForm dbres:form_utriculos ;
+    ontolex:sense dbres:entry_utriculo_sense1,
+        dbres:entry_utriculo_sense2 .
+
+dbres:etym_utriculo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_utriculus ;
+    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>utriculus</i>, atestado com o sentido de \"espécie de vaso dos vegetais\" já no século XVII (por exemplo, na obra de Colbert \"Philosophia Vetus et Nova...\", 1682 - https://www.google.com.br/books/edition/PHILOSOPHIA_VETUS_ET_NOVA/S50tZqHVDCkC). Segundo os dicionários Gaffiot e Oxford Latin Dictionary, <i>utriculus</i> já aparece na Antiguidade, empregado por Plínio com o sentido de \"casca de certas sementes\". O latim científico pode ter recuperado esse emprego. Em latim, é o diminutivo de <i>uter, utris</i>, que significa \"odre, bolsa de couro\".<br>A descrição que Brotero faz do utrículo nos vegetais é confusa. Aparentemente, Brotero entende que há dois tipos de utrículos, os internos e os externos, conforme está descrito na nota de rodapé (c) (p. 253): \"Os utriculos considerados em geral podem ser divididos em internos e externos; os internos dependem da dissecçaõ, e microscopio para se poderem observar, elles saõ destinados à preparaçaõ dos succos proprios, e digestaõ dos succos nutritivos; os externos saõ os que se achaõ na superficie dos vegetaes, huns saõ pouco apparentes, dos quaes ja fiz mençaõ debaixo do nome glandulas utriculares, outros saõ assaz apparentes de modo que ainda mesmo sem lente se podem observar [...].\" Indicamos esses dois tipos como as acepções 1 e 2. Na primeira acepção, parece ser um sinônimo de \"parênquima\", e muito provavelmente deixou de ser empregado com esse sentido na Botânica atual; na segunda acepção, parece ser empregado ainda hoje."^^rdf:HTML .
+
+dbres:etymon_utriculus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Colbert \"Philosophia Vetus et Nova...\", 1682 - https://www.google.com.br/books/edition/PHILOSOPHIA_VETUS_ET_NOVA/S50tZqHVDCkC" ;
+    ontolex:writtenRep "utriculus" .
+
+dbres:form_utriculo a ontolex:Form ;
+    ontolex:writtenRep "utrículo"@pt .
+
+dbres:form_utriculos a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "Utriculos"@pt,
+        "utriculos"@pt .
+
+dbres:entry_utriculo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cada um dos vasos em forma de sacos ovais e esponjosos, situados transversalmente e que ocupam os intervalos dos vasos longitudinais, nos vegetais."@pt ;
+    lemonety:etymology dbres:etym_utriculo_sense1 .
+
+dbres:entry_utriculo_sense2 a ontolex:LexicalSense ;
+    skos:definition "Espécie de glândula presente nos vegetais."@pt .
+

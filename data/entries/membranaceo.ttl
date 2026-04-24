@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: MEMBRANACEO ---
+
+dbres:entry_membranaceo a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_membranaceo ;
+    ontolex:otherForm dbres:form_membranacea,
+        dbres:form_membranaceas,
+        dbres:form_membranaceo,
+        dbres:form_membranaceos ;
+    ontolex:sense dbres:entry_membranaceo_sense1 .
+
+dbres:etym_membranaceo_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_membranaceus ;
+    dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>membranaceus,a,um</i>, que significa \"feito de uma membrana, formado de uma membrana; liso como uma membrana\", já empregado no latim científico, conforme atesta a obra de Vandelli. O sinônimo “membranoso” também ocorre em Vandelli, na parte reservada à Zoologia."^^rdf:HTML .
+
+dbres:etymon_membranaceus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Vandelli" ;
+    ontolex:writtenRep "membranaceus" .
+
+dbres:form_membranaceo a ontolex:Form ;
+    ontolex:writtenRep "Membranaceo"@pt,
+        "membranaceo"@pt,
+        "membranáceo"@pt .
+
+dbres:form_membranacea a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "Membranacea"@pt,
+        "membranacea"@pt .
+
+dbres:form_membranaceas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "Membranaceas"@pt,
+        "membranaceas"@pt .
+
+dbres:form_membranaceos a ontolex:Form ;
+    rdfs:label "masculino plural"@pt ;
+    ontolex:writtenRep "membranaceos"@pt .
+
+dbres:entry_membranaceo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Delgado, comprido, em formato de lâmina ou membrana."@pt ;
+    lemonety:etymology dbres:etym_membranaceo_sense1 .
+

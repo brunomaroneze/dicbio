@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: ORBITA ---
+
+dbres:entry_orbita a ontolex:LexicalEntry ;
+    dcterms:created "2022-08-23"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_orbita ;
+    ontolex:otherForm dbres:form_orbita,
+        dbres:form_orbitas ;
+    ontolex:sense dbres:entry_orbita_sense1 .
+
+dbres:etym_orbita_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_orbita ;
+    dicbio:etymologicalArgumentation "O étimo parece ser o latim científico “orbita”, já empregado com o sentido de “cavidade dos olhos” no século XVI (por exemplo, na obra de Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C). Na Antiguidade, conforme informa o dicionário OLD, o latim “orbita” tem apenas as acepções de “caminho traçado por uma roda”, “movimento dos astros” e “prática regular, rotina”. A acepção da Anatomia, até onde foi possível identificar, surge no período do Renascimento."^^rdf:HTML .
+
+dbres:etymon_orbita a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" ;
+    ontolex:writtenRep "orbita" .
+
+dbres:form_orbita a ontolex:Form ;
+    ontolex:writtenRep "Orbita"@pt,
+        "orbita"@pt,
+        "órbita"@pt .
+
+dbres:form_orbitas a ontolex:Form ;
+    ontolex:writtenRep "orbitas"@pt .
+
+dbres:entry_orbita_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cada uma das cavidades nos ossos da face onde se encontra o olho, o nervo ótico e demais estruturas relacionadas a estes."@pt ;
+    lemonety:etymology dbres:etym_orbita_sense1 .
+

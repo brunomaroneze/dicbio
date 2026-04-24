@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: FOLHA ---
+
+dbres:entry_folha a ontolex:LexicalEntry ;
+    dcterms:created "2025-04-09"^^xsd:date ;
+    dcterms:creator dbauth:dannielly_rodrigues_silva,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_folha ;
+    ontolex:otherForm dbres:form_folhas ;
+    ontolex:sense dbres:entry_folha_sense1 .
+
+dbres:etym_folha_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_folia ;
+    dicbio:etymologicalArgumentation "O étimo é a forma latina <i>folia</i>, neutro plural de <i>folium</i>, que foi reanalisada como um feminino singular. Segundo o dicionário Houaiss, é atestada em português desde a Idade Média.<br>Tanto Vandelli (p. 208) quanto Brotero (p. 38) definem \"folha\" como o órgão responsável pelo movimento da planta. Brotero também menciona a função de absorção de nutrientes, numa interessante analogia com a pele dos animais: \"As folhas absorbem como a pelle dos animaes, e em muitas plantas a maior parte da substancia nutritiva lhes entra pelas folhas; segundo alguns physiologistas os vegetaes em geral nutremse de dia pela via das folhas e de noyte pelas raizes, e no inverno aquellas plantas que nelle perdem inteiramente as suas folhas so se nutrem pela raiz\" (BROTERO, 1788, p. 6). Atualmente, a ideia de \"movimento\" não é mais entendida como inerente ao conceito de \"folha\"."^^rdf:HTML .
+
+dbres:etymon_folia a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Dicionário Houaiss" ;
+    ontolex:writtenRep "folia" .
+
+dbres:form_folha a ontolex:Form ;
+    ontolex:writtenRep "folha"@pt .
+
+dbres:form_folhas a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "Folhas"@pt,
+        "folhas"@pt .
+
+dbres:entry_folha_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão do movimento da planta."@pt ;
+    lemonety:etymology dbres:etym_folha_sense1 .
+

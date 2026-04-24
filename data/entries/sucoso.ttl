@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: SUCOSO ---
+
+dbres:entry_sucoso a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_sucoso ;
+    ontolex:otherForm dbres:form_succosa,
+        dbres:form_sucosa ;
+    ontolex:sense dbres:entry_sucoso_sense1 .
+
+dbres:etym_sucoso_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_sucosus ;
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o étimo é o latim <i>sucosus,a,um</i>, significando \"que contém suco\". A ausência da transformação do <i>c</i> intervocálico para <i>g</i> revela que a palavra não é herdada. A não-ocorrência da forma latina na obra de Vandelli pode indicar que o termo não entrou na língua portuguesa pelo latim científico e pode ter sido criado por derivação sufixal, e não por empréstimo.Ambas as grafias <i>sucoso</i> e <i>succoso</i> ocorrem na obra de Vandelli."^^rdf:HTML .
+
+dbres:etymon_sucosus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "Dicionário Houaiss" ;
+    ontolex:writtenRep "sucosus" .
+
+dbres:form_sucoso a ontolex:Form ;
+    ontolex:writtenRep "sucoso"@pt .
+
+dbres:form_succosa a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "succosa"@pt .
+
+dbres:form_sucosa a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "sucosa"@pt .
+
+dbres:entry_sucoso_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cheio de suco."@pt ;
+    lemonety:etymology dbres:etym_sucoso_sense1 .
+

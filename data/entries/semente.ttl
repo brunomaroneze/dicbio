@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: SEMENTE ---
+
+dbres:entry_semente a ontolex:LexicalEntry ;
+    dcterms:created "2023-10-22"^^xsd:date ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_semente ;
+    ontolex:otherForm dbres:form_sementes ;
+    ontolex:sense dbres:entry_semente_sense1 .
+
+dbres:etym_semente_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_sementem ;
+    dicbio:etymologicalArgumentation "O étimo, segundo informa o dicionário Houaiss, é o latim <i>sementis</i> (mais bem representado pela forma do acusativo <i>semente(m)</i>), que significa “semeadura”, “período de semeadura” (conforme apresenta o Oxford Latin Dictionary). O estudo dos cognatos em outras línguas românicas pode apontar para o momento em que houve a mudança de significado de “semeadura” para “semente”. O Romanisches Etymologisches Wörterbuch traz os seguintes cognatos: italiano <i>semente, sementa</i>, catalão <i>sement</i>, espanhol <i>simiente</i>. Desses, apenas o italiano <i>semente</i> não significa “semente”, mas sim o conjunto de sementes usadas na semeadura."^^rdf:HTML .
+
+dbres:etymon_sementem a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "sementem" .
+
+dbres:form_semente a ontolex:Form ;
+    ontolex:writtenRep "semente"@pt .
+
+dbres:form_sementes a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "Sementes"@pt,
+        "sementes"@pt .
+
+dbres:entry_semente_sense1 a ontolex:LexicalSense ;
+    skos:definition "Estrutura de uma planta que se separa desta e da qual se desenvolve uma nova planta."@pt ;
+    lemonety:etymology dbres:etym_semente_sense1 .
+

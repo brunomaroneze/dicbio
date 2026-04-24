@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: GEMA ---
+### Falta acertar a etimologia da acepção 2
+
+dbres:entry_gema a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_gema ;
+    ontolex:otherForm dbres:form_gemas,
+        dbres:form_gemmas ;
+    ontolex:sense dbres:entry_gema_sense1,
+        dbres:entry_gema_sense2 .
+
+dbres:etym_gema_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_gema_\(1\),
+        dbres:etymon_gemma ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>gemma,ae</i>; a acepção da Botânica (\"broto da videira\") já é atestada no latim clássico (conforme informa o Oxford Latin Dictionary <i>s.v.</i> \"gemma\") e, portanto, ao contrário do que parece sugerir o Dicionário Houaiss, não deriva da acepção latina de \"pedra preciosa\"; pelo contrário, é a acepção de \"pedra preciosa\" que provavelmente se derivou da de \"broto da videira\", como afirma o Dictionnaire Étymologique de la Langue Latine (<i>s.v</i>. \"gemma\"). Assim, a acepção de \"gema do ovo\" pode ter surgido pelo fato de tanto a gema do ovo quanto a da planta terem a função de gerar um novo ser vivo (que é a explicação que dá Corominas, <i>s.v</i>. \"yema\").<br>O verbete <i>gemma</i> no dicionário de Vandelli é referido no índice alfabético ao final, como o verbete de número 166; no entanto, esse verbete não existe de fato (a numeração acaba no 164), o que leva à conclusão de que a obra foi impressa inacabada.<br>A datação informada pelo Dicionário Houaiss é possivelmente referente à acepção de \"gema do ovo\". A acepção da Botânica não foi encontrada em textos anteriores à obra de Vandelli, o que parece indicar que essa acepção “ressuscitou” a partir dos textos em latim científico do século XVIII. O glossário quinhentista de Jerônimo Cardoso emprega a glosa “olho, ou gomo da videira” para a palavra latina “gemma”, o que parece indicar que, de fato, essa acepção não era empregada no século XVI, e o termo equivalente na época seria “olho” ou “gomo”."^^rdf:HTML .
+
+dbres:etymon_gema_\(1\) a lemonety:Etymon ;
+    dcterms:language "português" ;
+    dcterms:source "nossa pesquisa" ;
+    ontolex:writtenRep "gema (1)" .
+
+dbres:etymon_gemma a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_old ;
+    ontolex:writtenRep "gemma" .
+
+dbres:form_gema a ontolex:Form ;
+    ontolex:writtenRep "gema"@pt .
+
+dbres:form_gemas a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "gemas"@pt .
+
+dbres:form_gemmas a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "gemmas"@pt .
+
+dbres:entry_gema_sense1 a ontolex:LexicalSense ;
+    skos:definition "Protuberância no caule ou ramos de uma planta, de onde se originam ramos, folhas ou outras estruturas; gomo."@pt ;
+    lemonety:etymology dbres:etym_gema_sense1 .
+
+dbres:entry_gema_sense2 a ontolex:LexicalSense ;
+    skos:definition "Porção interna do ovo das aves."@pt .
+

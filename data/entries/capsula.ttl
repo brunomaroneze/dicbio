@@ -1,0 +1,60 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: CAPSULA ---
+### Falta acertar a etimologia da acepção 2
+
+dbres:entry_capsula a ontolex:LexicalEntry ;
+    dcterms:created "2024-05-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_capsula ;
+    ontolex:otherForm dbres:form_capsula,
+        dbres:form_capsulas ;
+    ontolex:sense dbres:entry_capsula_sense1,
+        dbres:entry_capsula_sense2 .
+
+dbres:etym_capsula_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_capsula ;
+    dicbio:etymologicalArgumentation "Ainda que a forma latina <i>capsula</i> seja atestada desde a Antiguidade com o sentido de \"pequena caixa\" (conforme se verifica no OLD), a palavra portuguesa não é herdada, como se evidencia pela ocorrência do -l- intervocálico e do encontro consonantal -ps-. O étimo do termo da Anatomia é certamente o latim científico <i>capsula</i>, que é atestado com o sentido científico em textos latinos anteriores à obra de Santucci, tais como a obra de Jacob Douglass \"Descriptio comparata mvscvlorvm corporis hvmani et qvadrvpedis\", de 1729 (disponível em https://www.google.com.br/books/edition/Descriptio_comparata_mvscvlorvm_corporis/ddihNnLG1asC?hl=pt-BR&gbpv=1&dq=capsulae&pg=PA165&printsec=frontcover). O sentido empregado na Botânica parece ter sido empregado originalmente por Lineu, conforme afirma Brotero: \"As especies de pericarpo, segundo Linneo, saõ oito, a saber, capsula, siliqua, vagem, 	follilho, drupa, pomo, baga, e pinha\" (Brotero, 1788, vol. 1, p. 169)."^^rdf:HTML .
+
+dbres:etymon_capsula a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "\"Descriptio comparata mvscvlorvm corporis hvmani et qvadrvpedis\", de 1729 (disponível em https://www.google.com.br/books/edition/Descriptio_comparata_mvscvlorvm_corporis/ddihNnLG1asC?hl=pt-BR&gbpv=1&dq=capsulae&pg=PA165&printsec=frontcover)" ;
+    ontolex:writtenRep "capsula" .
+
+dbres:form_capsula a ontolex:Form ;
+    ontolex:writtenRep "Capsula"@pt,
+        "capsula"@pt,
+        "cápsula"@pt .
+
+dbres:form_capsulas a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "capsulas"@pt .
+
+dbres:entry_capsula_sense1 a ontolex:LexicalSense ;
+    skos:definition "Membrana que envolve certas estruturas anatômicas."@pt ;
+    lemonety:etymology dbres:etym_capsula_sense1 .
+
+dbres:entry_capsula_sense2 a ontolex:LexicalSense ;
+    skos:definition "Espécie de pericarpo côncavo."@pt .
+

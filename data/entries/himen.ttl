@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: HIMEN ---
+
+dbres:entry_himen a ontolex:LexicalEntry ;
+    dcterms:created "2025-09-13"^^xsd:date ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_himen ;
+    ontolex:otherForm dbres:form_hymen ;
+    ontolex:sense dbres:entry_himen_sense1 .
+
+dbres:etym_himen_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_hymen ;
+    dicbio:etymologicalArgumentation "O étimo é o substantivo masculino latino <i>hymen, hymenis</i>, que já apresentava o sentido da membrana do orifício vaginal desde a Antiguidade. O dicionário de Gaffiot informa que esse emprego é atestado na obra de Mauro Sérvio Honorato \"Comentários sobre a Eneida de Vergílio\", do final do século IV d.C. É o próprio Sérvio Honorato que relaciona a palavra <i>hymen</i> ao deus Himeneu, o deus grego dos casamentos. No entanto, essa associação é possivelmente um caso de etimologia popular, visto que a forma grega ὑμήν, ένος (conforme informa o dicionário de Liddell, Scott e Jones) significava apenas \"membrana\", podendo referir-se a membranas que recobrem diversos órgãos, como o coração e os olhos, ou também a asas de insetos, pergaminhos ou outras estruturas em forma de membrana (mas, curiosamente, a membrana do orifício vaginal não aparece registrada como uma das ocorrências em grego). Assim, a especialização do termo para referir-se apenas à membrana do orifício vaginal parece ter acontecido na passagem do grego para o latim, possivelmente influenciada pela homonímia com o nome do deus dos casamentos.<br>Ainda que o termo ocorra já na Antiguidade, o emprego em português é provavelmente erudito, derivado do emprego do termo em obras em latim científico, como na obra de Verheyen \"Corporis Humani Anatomia\", de 1693 (https://www.google.com.br/books/edition/Corporis_humani_anatomia_in_qua_omnia_ta/e2yZdTz7ol8C)."^^rdf:HTML .
+
+dbres:etymon_hymen a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_gaffiot ;
+    ontolex:writtenRep "hymen" .
+
+dbres:form_himen a ontolex:Form ;
+    ontolex:writtenRep "hímen"@pt .
+
+dbres:form_hymen a ontolex:Form ;
+    ontolex:writtenRep "Hymen"@pt .
+
+dbres:entry_himen_sense1 a ontolex:LexicalSense ;
+    skos:definition "Membrana que fecha parcialmente o orifício externo da vagina."@pt ;
+    lemonety:etymology dbres:etym_himen_sense1 .
+

@@ -1,0 +1,66 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: SUCULENTO ---
+
+dbres:entry_suculento a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_suculento ;
+    ontolex:otherForm dbres:form_succulenta,
+        dbres:form_succulentas,
+        dbres:form_succulento,
+        dbres:form_succulentos ;
+    ontolex:sense dbres:entry_suculento_sense1 .
+
+dbres:etym_suculento_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_suculentus ;
+    dicbio:etymologicalArgumentation "O étimo é o adjetivo latino <i>suculentus, a, um</i>, que já no latim da Antiguidade tinha o sentido de “cheio de suco, suculento”. Segundo o dicionário de Gaffiot, já em latim havia as variantes com -c- (<i>suculentus</i>) e com -cc- (<i>succulentus</i>). A palavra ingressou na língua portuguesa pela via do latim científico, visto que já era empregada em textos de Botânica em latim (como, por exemplo, o <i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ). No entanto, o contexto mais antigo que encontramos em português até o momento, de 1784, não se refere à Botânica, antecedendo em quatro anos o emprego da palavra em Brotero."^^rdf:HTML .
+
+dbres:etymon_suculentus a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source "<i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ" ;
+    ontolex:writtenRep "suculentus" .
+
+dbres:form_suculento a ontolex:Form ;
+    ontolex:writtenRep "suculento"@pt .
+
+dbres:form_succulenta a ontolex:Form ;
+    rdfs:label "feminino singular"@pt ;
+    ontolex:writtenRep "succulenta"@pt .
+
+dbres:form_succulentas a ontolex:Form ;
+    rdfs:label "feminino plural"@pt ;
+    ontolex:writtenRep "Succulentas"@pt,
+        "succulentas"@pt .
+
+dbres:form_succulento a ontolex:Form ;
+    ontolex:writtenRep "succulento"@pt .
+
+dbres:form_succulentos a ontolex:Form ;
+    rdfs:label "masculino plural"@pt ;
+    ontolex:writtenRep "succulentos"@pt .
+
+dbres:entry_suculento_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que contém muito suco; sucoso."@pt ;
+    lemonety:etymology dbres:etym_suculento_sense1 .
+

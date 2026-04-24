@@ -1,0 +1,62 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+### --- VERBETE: DIAFRAGMA ---
+### Falta revisar a etimologia para a acepção 2
+
+dbres:entry_diafragma a ontolex:LexicalEntry ;
+    dcterms:created "2022-07-26"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_diafragma ;
+    ontolex:otherForm dbres:form_diafragmas,
+        dbres:form_diaphragma ;
+    ontolex:sense dbres:entry_diafragma_sense1,
+        dbres:entry_diafragma_sense2 .
+
+dbres:etym_diafragma_sense1 a lemonety:Etymology ;
+    lemonety:etymon dbres:etymon_diaphragma ;
+    dicbio:etymologicalArgumentation "O étimo é o latim <i>diaphragma</i>, que, segundo o dicionário de Gaffiot, é atestado na obra de Célio Aureliano (século V d.C), já designando o mesmo músculo; em latim, por sua vez, a palavra é um empréstimo do grego, significando “divisão” ou “barreira”, mas já designando o mesmo músculo em Platão e em Galeno (conforme informa o dicionário de Liddell, Scott e Jones). Em português, trata-se certamente de um latinismo que entrou provavelmente por meio do latim científico."^^rdf:HTML .
+
+dbres:etymon_diaphragma a lemonety:Etymon ;
+    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:source dbsrc:source_gaffiot ;
+    ontolex:writtenRep "diaphragma" .
+
+dbres:form_diafragma a ontolex:Form ;
+    ontolex:writtenRep "diafragma"@pt .
+
+dbres:form_diafragmas a ontolex:Form ;
+    rdfs:label "plural"@pt ;
+    ontolex:writtenRep "diafragmas"@pt .
+
+dbres:form_diaphragma a ontolex:Form ;
+    ontolex:writtenRep "Diaphragma"@pt,
+        "diaphragma"@pt .
+
+dbres:entry_diafragma_sense1 a ontolex:LexicalSense ;
+    skos:definition "Músculo em formato de abóbada que separa a região torácica do abdome."@pt ;
+    lemonety:etymology dbres:etym_diafragma_sense1 .
+
+dbres:entry_diafragma_sense2 a ontolex:LexicalSense ;
+    skos:definition "Membrana que separa duas ou mais cavidades, em certos animais (como moluscos) e vegetais (como cavidades em frutos)."@pt .
+
