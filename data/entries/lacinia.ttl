@@ -36,7 +36,7 @@ dbres:etym_lacinia_sense1 a lemonety:Etymology ;
 
 dbres:etymon_lacinia a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
+    dcterms:source dbsrc:source_vandelli ;
     ontolex:writtenRep "lacinia" .
 
 dbres:form_lacinia a ontolex:Form ;

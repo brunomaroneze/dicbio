@@ -35,7 +35,7 @@ dbres:etym_estipula_sense1 a lemonety:Etymology ;
 
 dbres:etymon_stipula a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
+    dcterms:source dbsrc:source_vandelli ;
     ontolex:writtenRep "stipula" .
 
 dbres:form_estipula a ontolex:Form ;

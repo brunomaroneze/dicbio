@@ -35,7 +35,7 @@ dbres:etym_flosculo_sense1 a lemonety:Etymology ;
 
 dbres:etymon_flosculus a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
+    dcterms:source dbsrc:source_vandelli ;
     ontolex:writtenRep "flosculus" .
 
 dbres:form_flosculo a ontolex:Form ;

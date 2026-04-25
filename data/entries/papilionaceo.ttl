@@ -34,7 +34,7 @@ dbres:etym_papilionaceo_sense1 a lemonety:Etymology ;
 
 dbres:etymon_papilionaceus a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
+    dcterms:source dbsrc:source_vandelli ;
     ontolex:writtenRep "papilionaceus" .
 
 dbres:form_papilionaceo a ontolex:Form ;
