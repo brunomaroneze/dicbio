@@ -30,12 +30,12 @@ dbres:entry_crena a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_crena_sense1 .
 
 dbres:etym_crena_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_crena ;
+    dicbio:semanticEtymon dbres:etymon_crena ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>crena,ae</i>, com o mesmo significado, conforme se observa na própria obra de Vandelli. O Dicionário Houaiss afirma que a palavra era empregada no latim tardio com o sentido de “entalhe, fenda”."^^rdf:HTML .
 
-dbres:etymon_crena a lemonety:Etymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source "Vandelli" ;
+dbres:etymon_crena a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    dcterms:source dbsrc:source_vandelli ;
     ontolex:writtenRep "crena" .
 
 dbres:form_crena a ontolex:Form ;
@@ -47,5 +47,6 @@ dbres:form_crenas a ontolex:Form ;
 
 dbres:entry_crena_sense1 a ontolex:LexicalSense ;
     skos:definition "Incisura perpendicular obtusa na margem de certas folhas."@pt ;
-    lemonety:etymology dbres:etym_crena_sense1 .
+    lemonety:etymology dbres:etym_crena_sense1 ;
+    dicbio:semanticEtymology dbres:sem_etym_crena_sense1 .
 
