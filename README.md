@@ -13,6 +13,5 @@ atualizado.
 
 Tanto os códigos-fonte quanto os demais arquivos são disponíveis gratuitamente
 sob a Licença
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/),
-que permite o compartilhamento e o uso livre (exceto para usos comerciais),
-desde que citada a fonte.
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by/4.0/),
+que permite o compartilhamento e o uso livres, desde que citada a fonte.
