@@ -37,6 +37,11 @@
           em questão. No entanto, é importante notar que, para a correta validação deste arquivo
           XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
           funcionamento correto dos URLs.</p>
+        <p>Depois da página não numerada 73, estão faltando duas páginas. Elas podem ser encontradas
+          no outro exemplar, disponível aqui:
+          https://archive.org/details/anatomiadocorpoh00sant/page/n63/mode/2up</p>
+        <p>Ainda precisamos extrair essas imagens dos dois exemplares.</p>
+
       </editorialDecl>
       <projectDesc>
         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -1254,74 +1259,546 @@
         <p>Ducto, que vem da Parotida, e passa por cima do musculo maceter, e por onde entra na
           boca, à roda tem muitas</p>
       </div>
-      <pb n="não numerada 74 - Raiz, ou base da lingua"
+      <pb n="não numerada 74"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0086.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div>
+        <p>Raiz, ou base da lingua.</p>
+        <p>Musculos ceratoglossos.</p>
+        <p>Musculos genioglossos.</p>
+        <p>Musculos styloglossos.</p>
+        <p>Nervo gustatorio.</p>
+        <p>Figura decimaterceira.</p>
+        <p>A membrana, que cobre a lingua.</p>
+        <p>Fibras, que vaõ pelo cõprimento da lingua.</p>
+        <p>Outras ordens de fibras tecidas a modo de esteira.</p>
+        <p>Huma das fibras lõgitudinaes da lingua.</p>
+        <p>Fig. decimaquarta representa huma membrana papillar, vista com o microscopio, onde
+          apparecem diversas castas de papillas.</p>
+      </div>
       <pb n="não numerada 75" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0087.jp2&amp;id=anatomiadocorpoh01sant"/>
       <pb n="não numerada 76" type="apenas_imagem"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0088.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 77 - Estampa XII"
+      <pb n="não numerada 77"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0089.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 78 - beta Eustachiana"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0090.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 79 - Canal pequeno"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0091.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 80 - Estampa XIII"
+      <div type="legenda" n="12">
+        <head>ESTAMPA XII.</head>
+        <p>Figura primeira faz ver a orelha, e suas partes com varias glandulas descubertas por
+          Valsalva, e a parotida com o seu ducto, que acaba na boca.</p>
+        <p>Elix.</p>
+        <p>Anthelix.</p>
+        <p>Antitrago.</p>
+        <p>Trago.</p>
+        <p>Lobo da orelha.</p>
+        <p>Cavidade innominada.</p>
+        <p>Cavidade scapha.</p>
+        <p>Cavidade concha qual he como dividida em duas, superior, e inferior.</p>
+        <p>Glandula Parotida.</p>
+        <p>Glandula do Trago.</p>
+        <p>Glandula lymphatica do Valsalva.</p>
+        <p>Ducto da Parotida.</p>
+        <p>Orificio do ducto da Parotida, que apparece dentro da boca.</p>
+        <p>Fig. segunda demostra a orelha com o meato auditorio, e tympano, os ossinhos, e corda do
+          tympano, e a trombeta Eustachiana.</p>
+        <p>Orelha pela parte posterior.</p>
+        <p>Glandulas com o corpo reticular, que está em cima do meato auditorio.</p>
+        <p>Porçaõ ossea do meato auditorio.</p>
+        <p>Bigorna.</p>
+        <p>Martello.</p>
+        <p>Membrana do tympano.</p>
+        <p>Corda do tympano.</p>
+        <p>Principio da trombeta Eustachiana.</p>
+        <p>Fim da trombeta.</p>
+        <p>Boca, ou orificio grande da dita trõbeta.</p>
+        <p>Fig. terceira representa toda a organizaçaõ do ouvido.</p>
+        <p>Aqueducto do Falloppio.</p>
+        <p>Principio da <pb n="não numerada 78"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0090.jp2&amp;id=anatomiadocorpoh01sant"
+          />trombeta Eustachiana.</p>
+        <p>Cartilagem, que tambem fórma a trombeta.</p>
+        <p>Fim da trombeta Eustachiana.</p>
+        <p>Musculo da trõbeta.</p>
+        <p>Canal semicircular mayor.</p>
+        <p>Canal semicircular menor.</p>
+        <p>Canal semicircular pequeno.</p>
+        <p>Vestibulo, onde apparecem tres buraquinhos, pelos quaes passaõ os nervos, que entraõ no
+          vestibulo, e abaixo delles se vê a janella redonda.</p>
+        <p>Fig. quarta mostra a porçaõ molle do nervo auditorio, e os vasos de sangue, que
+          juntamente com o dito nervo passaõ para o labyintho, e que fazem a membrana do vestibulo,
+          e as zonas dos canaes semicirculares.</p>
+        <p>Porçaõ do nervo auditorio estendida em zonas.</p>
+        <p>Vasos de sangue que se vem por cima da extensaõ do dito nervo.</p>
+        <p>Zona da cochlea, ou do caracol.</p>
+        <p>Fig. quinta representa todo o labyrintho virado pela parte que está olhando o
+          cerebro.</p>
+        <p>Canaes semicirculares.</p>
+        <p>Vestibulo.</p>
+        <p>Os cinco buraquinhos, que se observaõ no vestibulo, por onde passaõ os nervos.</p>
+        <p>Canal do caracol.</p>
+        <p>Figura sexta representa o mesmo labyrintho virado pela parte do tympano.</p>
+        <p>Canal mayor.</p>
+        <p>Canal menor.</p>
+        <pb n="não numerada 79"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0091.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <p>Canal pequeno.</p>
+        <p>Canal do caracol.</p>
+        <p>Janella oval.</p>
+        <p>Janella redonda.</p>
+        <p>Fig. setima he o osso chamado Estribo.</p>
+        <p>Estribo.</p>
+        <p>Musculo do Estribo.</p>
+        <p>Osso orbicular.</p>
+        <p>Fig. oitava he o osso bigorna.</p>
+        <p>Corpo da bigorna.</p>
+        <p>Processo comprido da bigorna.</p>
+        <p>Processo pequeno da bigorna.</p>
+        <p>Fig. nona he o osso chamado martello com os seus musculos.</p>
+        <p>Cabeça do martello.</p>
+        <p>Musculo menor.</p>
+        <p>Musculo pequeno.</p>
+        <p>Musculo mayor.</p>
+        <p>Cabo do martello.</p>
+        <p>Fig. decima demostra todos os ossinhos articulados como se achaõ no estado natural.</p>
+        <p>Bigorna.</p>
+        <p>Martello.</p>
+        <p>Estribo.</p>
+        <p>Osso orbicular.</p>
+      </div>
+      <pb n="não numerada 80"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0092.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 81" type="apenas_imagem"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0093.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 82" type="em_branco"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0094.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 83 - que estaõ perto do"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0095.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 84 - Nadegas"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0096.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div type="legenda" n="13">
+        <head>ESTAMPA XIII.</head>
+        <p>Figura primeira faz ver todos os miollos tirados fora do craneo, e nelles se vem as
+          seguintes partes.</p>
+        <p>Os quatro lobos do miollo grande.</p>
+        <p>Os lobos do cerebello.</p>
+        <p>Medulla oblongada.</p>
+        <p>Nervos olfactorios, ou primeiro par.</p>
+        <p>Nervos opticos, ou segundo par.</p>
+        <p>Nervos motorios dos olhos, ou terceiro par.</p>
+        <p>Nervos pateticos, ou quarto par.</p>
+        <p>Nervos do quinto par.</p>
+        <p>Nervos do sexto par.</p>
+        <p>Nervos auditorios, ou setimo par.</p>
+        <p>Nervos par vago, ou oitavo par.</p>
+        <p>Nervos spinaes.</p>
+        <p>Nervo nono par.</p>
+        <p>Nervo decimo par.</p>
+        <p>Tronco da arteria carotida, que está cortado.</p>
+        <p>Ramos da arteria carotida, que vaõ entre os lobos anteriores dos miollos.</p>
+        <p>Ramos das carotidas anteriores, que estaõ unidos.</p>
+        <p>Ramos das carotidas, que se unem posteriormente.</p>
+        <p>Tres ramos das arterias vertebraes, que passaõ por cima da medulla oblongada, e estes se
+          unem em hum só ramo grande.</p>
+        <p>Ramos grandes das arterias, que vaõ aos lados, perto do infundibulo para o plexo
+          chorroidal.</p>
+        <p>Infundibulo.</p>
+        <p>Duas glandulas, <pb n="não numerada 81" type="apenas_imagem"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0093.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="não numerada 82" type="em_branco"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0094.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="não numerada 83"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0095.jp2&amp;id=anatomiadocorpoh01sant"
+          /> que estaõ perto do Infundibulo.</p>
+        <p>Protuberancia annular.</p>
+        <p>Figura segunda representa huma cabeça onde está tirada a parte superior do craneo, e dos
+          miollos, para demostrar a parte inferior, e as cavidades dos miollos.</p>
+        <p>Substancia cortical dos miollos.</p>
+        <p>Substancia medul.</p>
+        <p>Parte do corpo calloso, debaixo do qual estaõ o fornice, e o septo lucido.</p>
+        <p>Ventriculos anteriores, e lateraes dos miollos, onde se vê o corpo striato, e o plexo
+          corrhoidal.</p>
+        <p>Quarto ventriculo.</p>
+        <p>Porçaõ da dura mater virada para traz.</p>
+        <p>Fig. terceira demostra os miollos cortados pelo meyo e tirada a parte superior, e nelles
+          se vem.</p>
+        <p>Substancia cortical.</p>
+        <p>Lados das cavidades dos miollos.</p>
+        <p>Corpo striato descuberto.</p>
+        <p>Corpo striato inteiro com os seus proprios vasos.</p>
+        <p>Coxas da medulla oblongada.</p>
+        <p>Substancia cortical do cerebello.</p>
+        <p>Substancia medullar do cerebello.</p>
+        <p>Fim da medulla oblongada dentro do craneo.</p>
+        <p>Base do fornix cortada.</p>
+        <p>Abertura, que vay ao infundibulo.</p>
+        <p>Buraco redondo, que vay para o quarto ventriculo.</p>
+        <p>Glandula Pineal.</p>
+        <p>Processos medullares, que estaõ aos lados debaixo da glandula Pineal.</p>
+        <p>Testiculos.</p>
+        <pb n="não numerada 84"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0096.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <p>Nadegas.</p>
+        <p>Figura quarta representa a falx, ou fouce messoria xom os seus seyos, e parte das veas
+          Jugulares.</p>
+        <p>Parte do craneo.</p>
+        <p>Buraco grande do osso do toutiço.</p>
+        <p>Seyo sagittal aberto, onde apparecem humas cousas como valvulas.</p>
+        <p>Dous seyos lateraes.</p>
+        <p>Quarto seyo cortado.</p>
+        <p>Seyo sagittal menor.</p>
+        <p>Dous seyos tortuosos, que acabaõ nas veas Jugulares.</p>
+        <p>Veas Jugulares cortadas.</p>
+        <p>Falx messoria com os seus vasos.</p>
+        <p>Ramos com que se communicaõ os seyos lateraes com os vertebraes.</p>
+        <p>Ramos, que vaõ à glandula Pituitaria.</p>
+        <p>Figura quinta mostra o seyo quarto com o plexo chorroidal.</p>
+        <p>Quarto seyo cortado perto do seu principio.</p>
+        <p>Divisaõ dos ramos do plexo chorroidal.</p>
+        <p>Azas do plexo chorroidal.</p>
+        <p>Arterias.</p>
+        <p>Figura sexta demostra as glandulas da substancia cortical dos miollos vista com o
+          microscopio.</p>
+        <p>Meninges.</p>
+        <p>Glãdulas dos miollos.</p>
+        <p>Canosinhos, ou tubulos da substancia medullar dos miollos.</p>
+      </div>
       <pb n="não numerada 85" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0097.jp2&amp;id=anatomiadocorpoh01sant"/>
       <pb n="não numerada 86" type="apenas_imagem"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0098.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 87 - Estampa XIV"
+      <pb n="não numerada 87"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0099.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 88 - Estampa XV"
+      <div type="legenda" n="14">
+        <head>ESTAMPA XIV.</head>
+        <p>Figura primeira representa a dura mater, que cobre os miollos dentro do craneo, com todas
+          os nervos vertebraes, que sahem da espinhal medulla.</p>
+        <p>Dura mater.</p>
+        <p>Espinhal medulla.</p>
+        <p>Nervos do osso Sacro, q̃ principiaõ depois do 5. e acabaõ onde està o num. 6.</p>
+        <p>Nervos do pescoço, que acabaõ onde está o 7.</p>
+        <p>Nervos dos lombos, que principiaõ depois do 12. atè o 5.</p>
+        <p>Nervos diaphragmaticos.</p>
+        <p>Nervos, que se distribuem pelos braços, e saõ numerados com. 1.2.3.4.5.6.</p>
+        <p>Nervos intercostaes, que principiaõ depois do 7. atè o 12.</p>
+        <p>Nervos externos cruraes mais curtos.</p>
+        <p>Nervos, que se distribuem pelas partes pudendas.</p>
+        <p>Nervos internos cruraes mayores, e mais cõpridos.</p>
+        <p>Divisaõ do nervo crural.</p>
+        <p>Nervos externos da Tibia.</p>
+        <p>Nervos suraes.</p>
+        <p>Nervos, que vaõ aos dedos dos pès.</p>
+        <p>Nervos, que se distribuem pela maõ.</p>
+      </div>
+      <pb n="não numerada 88"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0100.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 89" type="apenas_imagem"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0101.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 90" type="em_branco"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0102.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 91 - versos das vertebras"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0103.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 92 - Sutura escamosa"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0104.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div type="legenda" n="15">
+        <head>ESTAMPA XV.</head>
+        <p>Figura primeira representa o esqueleto visto pela parte anterior.</p>
+        <p>Osso da testa.</p>
+        <p>Ossos do synciput, ou parietaes.</p>
+        <p>Ossos pomuli, ou zigomaticos.</p>
+        <p>Osso das fontes.</p>
+        <p>Ossos maxillares, ou do queixo superior.</p>
+        <p>Ossos do queixo inferior.</p>
+        <p>Claviculas.</p>
+        <p>Ossos do esternon.</p>
+        <p>Osso da pubes.</p>
+        <p>Tuberosidades do osso Ischio.</p>
+        <p>Cavidades do osso Ilion.</p>
+        <p>Buraco ovalario direito.</p>
+        <p>Beiços do osso Ilion.</p>
+        <p>Trochanter mayor.</p>
+        <p>Trochanter menor.</p>
+        <p>Cervice da parte superior da coxa.</p>
+        <p>Molla patella.</p>
+        <p>Processo Coracoideo da espadoa.</p>
+        <p>Cabeça superior do osso do hombro.</p>
+        <p>Parte média do braço.</p>
+        <p>Processo interno do braço.</p>
+        <p>Processo externo do braço.</p>
+        <p>Processo oleacranon.</p>
+        <p>Parte média do osso Radio.</p>
+        <p>Parte média do osso Cubito.</p>
+        <p>Espinhela.</p>
+        <p>Osso Sacro.</p>
+        <p>Ossos do Carpo.</p>
+        <p>Ossos do metacarpo.</p>
+        <p>Vertebras do espinhaço.</p>
+        <p>Ossos Ischios.</p>
+        <p>Ossos da coxa.</p>
+        <p>Ossos da Tibia.</p>
+        <p>Ossos Peroneos.</p>
+        <p>Processos <pb n="não numerada 89" type="apenas_imagem"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0101.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="não numerada 90" type="em_branco"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0102.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="não numerada 91"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0103.jp2&amp;id=anatomiadocorpoh01sant"
+          /> transversos das vertebras.</p>
+        <p>As doze costellas saõ numeradas com os numeros 1. atè 12.</p>
+        <p>Os ossos do tarso, e do metatarso saõ tambem numerados.</p>
+        <p>Osso navicular.</p>
+        <p>Ossos cuneiformes do pé.</p>
+        <p>Ossos do metatarso.</p>
+        <p>Osso do calcanhar.</p>
+        <p>Ossos astragalos.</p>
+        <p>Osso cuboide.</p>
+        <p>Figura segunda representa huma cabeça virada pela parte inferior.</p>
+        <p>Ponta da barba.</p>
+        <p>Angulo interno do queixo inferior.</p>
+        <p>Ossos do paladar.</p>
+        <p>Osso vomer.</p>
+        <p>Processos Pterigodeos.</p>
+        <p>Processos Condiloides.</p>
+        <p>Processos zigomaticos, ou jugaes.</p>
+        <p>Processos mamillares, ou mastoideos.</p>
+        <p>Buraco grande do toutiço.</p>
+        <p>Processos coronides do toutiço.</p>
+        <p>Figura terceira demostra huma cabeça vista pelos lados.</p>
+        <p>Osso da testa.</p>
+        <p>Osso do synciput.</p>
+        <p>Osso das fontes.</p>
+        <p>Osso do toutiço.</p>
+        <p>Osso zigomatico, ou pomuli.</p>
+        <p>Orbita.</p>
+        <p>Angulo externo do queixo inferior.</p>
+        <p>Osso do nariz.</p>
+        <p>Osso maxillar.</p>
+        <p>Processo coronides, ou retuso do queixo inferior.</p>
+        <p>Osso unguis, ou lagrimal.</p>
+        <p>Sutura coronal.</p>
+        <p>Sutura sagittal.</p>
+        <p>Satura lambdoydea.</p>
+        <pb n="não numerada 92"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0104.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <p>Sutura escamosa.</p>
+        <p>Parte intermedia do queixo inferior, e ahi perto está hũ buraco, por onde passaõ os
+          nervos.</p>
+        <p>Figura quarta representa os ossos do queixo inferior virado.</p>
+        <p>Ponta da barba.</p>
+        <p>Angulos internos.</p>
+        <p>Processos condiloides.</p>
+        <p>Fig. quinta faz ver a metade dos ossos do queixo inferior, e as suas cavidades, onde
+          estaõ metidos os dentes.</p>
+        <p>Processo condiloides.</p>
+        <p>Processo coronides.</p>
+        <p>Còvas, ou cavidades dos dentes.</p>
+        <p>Fig. sexta representa toda a casta dos dentes.</p>
+        <p>Dentes molares.</p>
+        <p>Dentes caninos.</p>
+        <p>Dentes incisivos.</p>
+      </div>
       <pb n="não numerada 93" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0105.jp2&amp;id=anatomiadocorpoh01sant"/>
       <pb n="não numerada 94" type="apenas_imagem"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0106.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 95 - Estampa XVI"
+      <pb n="não numerada 95"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0107.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 96 - versos da Atlante"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0108.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div type="legenda" n="16">
+        <head>ESTAMPA XVI.</head>
+        <p>Fig. primeira representa o esqueleto visto pela parte posterior.</p>
+        <p>Processos espinhosos das vertebras.</p>
+        <p>Processos transversos das vertebras.</p>
+        <p>Processos trocanteres mayores.</p>
+        <p>Osso Sacro.</p>
+        <p>Processos trocãteres menores.</p>
+        <p>Osso Coccix.</p>
+        <p>Cavidade Acetabulo.</p>
+        <p>Cavidade do osso Ilion.</p>
+        <p>Espinha da espadoa.</p>
+        <p>Beiço do osso Ilion.</p>
+        <p>Angulo superior da espadoa.</p>
+        <p>Tuberosidade do Ischio.</p>
+        <p>Processo acromion da espadoa.</p>
+        <p>Osso da coxa.</p>
+        <p>Costa da espadoa.</p>
+        <p>Osso da Tibia esquerda.</p>
+        <p>Osso da sura, ou Peroneo esquerdo.</p>
+        <p>Ossos unidos da perna direita, Tibia, e sura.</p>
+        <p>Ossos Astragalos.</p>
+        <p>Ossos do calcanhar.</p>
+        <p>Osso Cuboide.</p>
+        <p>Osso navicular.</p>
+        <p>Figura segunda demostra hum esqueleto de hum feto.</p>
+        <p>Fontainha.</p>
+        <p>Epiphisis dos joelhos.</p>
+        <p>Epiphisis dos pès.</p>
+        <p>Figura terceira he da vertebra Atlante.</p>
+        <p>Processos<pb n="não numerada 96"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0108.jp2&amp;id=anatomiadocorpoh01sant"
+          />transversos da Atlante.</p>
+        <p>Tuberculo da Atlante.</p>
+        <p>Parte anterior da Atlante.</p>
+        <p>Figura quarta he a segunda vertebra.</p>
+        <p>Processos obliquos.</p>
+        <p>Dente.</p>
+        <p>Figura quinta mostra a terceira vertebra.</p>
+        <p>Processos transversos.</p>
+        <p>Corpo da vertebra.</p>
+        <p>Processo espinhoso.</p>
+        <p>Processos obliquos.</p>
+        <p>Figura sexta he o osso hyoyde.</p>
+        <p>Parte anterior do osso hyoyde.</p>
+        <p>Processos.</p>
+      </div>
       <pb n="não numerada 97" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0109.jp2&amp;id=anatomiadocorpoh01sant"/>
       <pb n="não numerada 98" type="apenas_imagem"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0110.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 99 - Estampa XVII"
+      <pb n="não numerada 99"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0111.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 100 - Musculos vastos internos"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0112.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 101 - thenar. Musculo palmar"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0113.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 102 - torio do nariz"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0114.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div type="legenda" n="17">
+        <head>ESTAMPA XVII.</head>
+        <p>Figura primeira representa todos os musculos do corpo humano, os quaes apparecem tiradas
+          todas as cuberturas commuas.</p>
+        <p>Musculo da testa.</p>
+        <p>Musculo temporal.</p>
+        <p>Musculo zigomatico.</p>
+        <p>Musculo masetere.</p>
+        <p>Musculo montano.</p>
+        <p>Musculo mastoideo.</p>
+        <p>Musculo da paciencia.</p>
+        <p>Musculos Deltoides.</p>
+        <p>Musculos peitoraes mayores.</p>
+        <p>Musculos dentados anticos mayores.</p>
+        <p>Musculos rectos do abdomen.</p>
+        <p>Musculo subscapular.</p>
+        <p>Linha alva, ou branca.</p>
+        <p>Espinhela.</p>
+        <p>Musculos obliquos descendentes.</p>
+        <p>Tendaõ do musculo descendente.</p>
+        <p>Musculos pyramidaes do abdomen.</p>
+        <p>Musculos sartorios.</p>
+        <p>Musculo recto mayor da Tibia.</p>
+        <p>Musculos do Pecten.</p>
+        <p>Musculos rectos inferiores graceis.</p>
+        <p>Musculo Psoas.</p>
+        <p>Musculo faxa larga desapegado da parde esquerda do seu fim.</p>
+        <p>Musculos Tricipites.</p>
+        <pb n="não numerada 100"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0112.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <p>Musculos vastos internos.</p>
+        <p>Musculos vastos externos.</p>
+        <p>Osso da Tibia.</p>
+        <p>Musculo Peroneo posterior.</p>
+        <p>Musculo extensor longo dos dedos com os seus tendoens numerados, 1. 2. 3. 4.</p>
+        <p>Musculo Peroneo anterior.</p>
+        <p>Musculo tibial anterior.</p>
+        <p>Musculos tibiaes posteriores.</p>
+        <p>Musculos bicipites dos braços.</p>
+        <p>Musculo longo supinator.</p>
+        <p>Musculo redondo pronator.</p>
+        <p>Musculo sublime flexor dos dedos.</p>
+        <p>Musculo longo extensor do antebraço.</p>
+        <p>Musculo radial interno.</p>
+        <p>Musculo extensor proprio do dedo polegar dos pés.</p>
+        <p>Musculo longo do polegar da maõ.</p>
+        <p>Musculo breve do dedo polegar da maõ.</p>
+        <p>Figura segunda mostra os musculos de hum braço, e maõ.</p>
+        <p>Musculo sublime perfurado.</p>
+        <p>Musculo profundo perfurante.</p>
+        <p>Musculo flexor do polegar.</p>
+        <p>Musculo pronator redondo do radio.</p>
+        <p>Musculo quadrado do radio.</p>
+        <p>Musculos lombricaes.</p>
+        <p>Musculo thenar.</p>
+        <p>Musculo <pb n="não numerada 101"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0113.jp2&amp;id=anatomiadocorpoh01sant"
+          />anthithenar.</p>
+        <p>Musculo palmar.</p>
+        <p>Musculo cubital interno.</p>
+        <p>Musculo radial externo breve.</p>
+        <p>Musculo radial externo longo.</p>
+        <p>Musculo radial interno.</p>
+        <p>Figura terceira faz ver muitos musculos da parte posterior da cabeça, e das costas.</p>
+        <p>Musculos rectos menores.</p>
+        <p>Musculos rectos mayores.</p>
+        <p>Musculos obliquos menores superiores.</p>
+        <p>Musculos obliquos inferiores mayores.</p>
+        <p>Musculo complexo.</p>
+        <p>Musculo splenio.</p>
+        <p>Musculo semispinhado.</p>
+        <p>Figura quarta representa huma cabeça, e nella se vem todos os musculos da cara.</p>
+        <p>Musculo temporal.</p>
+        <p>Musculo da testa.</p>
+        <p>Muiculo orbicular das capellas.</p>
+        <p>Musculo pyramidal do nariz.</p>
+        <p>Musculo mirtiformis.</p>
+        <p>Musculo incisivo, ou levantador.</p>
+        <p>Musculo maseter.</p>
+        <p>Musculo bucinator.</p>
+        <p>Musculo zigomatico.</p>
+        <p>Musculo triangular do beiço superior.</p>
+        <p>Musculo constrictorio dos beiços.</p>
+        <p>Musculo<pb n="não numerada 102"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0114.jp2&amp;id=anatomiadocorpoh01sant"
+          /> constrictorio do nariz.</p>
+        <p>Musculo canino, ou levantador do beiço inferior.</p>
+        <p>Musculo superior da orelha.</p>
+        <p>Musculos inferiores das orelhas.</p>
+        <p>Musculo montano depressor do beiço inferior.</p>
+      </div>
       <pb n="não numerada 103" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0115.jp2&amp;id=anatomiadocorpoh01sant"/>
       <pb n="não numerada 104" type="apenas_imagem"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0116.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 105 - Estampa XVIII"
+      <pb n="não numerada 105"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0117.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 106 - membranosos"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0118.jp2&amp;id=anatomiadocorpoh01sant"/>
-      <pb n="não numerada 107 - Musculo extensor"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0119.jp2&amp;id=anatomiadocorpoh01sant"/>
+      <div type="legenda" n="18">
+        <head>ESTAMPA XVIII.</head>
+        <p>Fig. primeira mostra todos os musculos posteriores do corpo humano, os quais apparecem de
+          pois das cubertas.</p>
+        <p>Musculo Trapecio, ou Cucular.</p>
+        <p>Musculo Latissimo do Dorso.</p>
+        <p>Musculos Quadrados dos lombos.</p>
+        <p>Musculos Gluteos.</p>
+        <p>Musculos Deltoides.</p>
+        <p>Musculo Bicipite do braço.</p>
+        <p>Musculos Brachiaes externos.</p>
+        <p>Musculos longos extensores do antebraço.</p>
+        <p>Musculo breve extensor do antebraço.</p>
+        <p>Musculo extensor cõmum dos dedos da maõ.</p>
+        <p>Musculo longo supinador do Radio.</p>
+        <p>Musculo redondo pronator do Radio.</p>
+        <p>Musculo Bicorne.</p>
+        <p>Musculo Palmar, e sublime.</p>
+        <p>Musculo Subscapular.</p>
+        <p>Musculos obliquos descenndentes.</p>
+        <p>Musculo Supraespinhado.</p>
+        <p>Musculo Infraespinhado.</p>
+        <p>Musculo redondo mayor do braço.</p>
+        <p>Faxa larga.</p>
+        <p>Musculos Vastos externos.</p>
+        <p>Musculos Bicipites.</p>
+        <p>Musculos <pb n="não numerada 106"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0118.jp2&amp;id=anatomiadocorpoh01sant"
+          />semimembranosos.</p>
+        <p>Musculos seminervosos.</p>
+        <p>Musculos Tricipites.</p>
+        <p>Musculos rectos inferiores, ou graceis.</p>
+        <p>Musculo subpopliteo.</p>
+        <p>Musculos suraes, ou gastrocnemi.</p>
+        <p>Corda magna de Achilles.</p>
+        <p>Musculos Peroneos.</p>
+        <p>Musculo Pedium, ou extensor breve.</p>
+        <p>Os dous tendões dos Peroneos posteriores.</p>
+        <p>Musculo Peroneo anterior.</p>
+        <p>Ligamento annular.</p>
+        <p>Musculo Anconeo.</p>
+        <p>Figura segunda representa hum braço, e nelle os musculos, que se vem posteriormente.</p>
+        <p>Musculo extensor cõmum dos dedos.</p>
+        <p>Musculo supinador longo.</p>
+        <p>Musculo cubital externo.</p>
+        <p>Musculo supinador breve.</p>
+        <p>Musculo longo extensor do carpo. Este musculo está tirado debaixo do ligamento annular,
+          para que appareça melhor.</p>
+        <p>Musculo extensor longo do polegar.</p>
+        <p>Musculo extensor do dedo pequeno.</p>
+        <p>Musculo cubital interno.</p>
+        <pb n="não numerada 107"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0119.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <p>Musculo extensor breve do polegar.</p>
+        <p>Musculo extensor do dedo auricular.</p>
+        <p>Musculo indicador.</p>
+        <p>Figura terceira faz ver hum pê virado pela planta.</p>
+        <p>Musculo flexor sublime menor.</p>
+        <p>Musculo flexor profundo mayor.</p>
+        <p>Musculo flexor do polegar.</p>
+        <p>Musculos lombricaes.</p>
+        <p>Musculo Pedio.</p>
+        <p>Musculo Hypothenar.</p>
+      </div>
       <pb n="não numerada 108" type="em_branco"
         facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0120.jp2&amp;id=anatomiadocorpoh01sant"
       />
@@ -5042,7 +5519,7 @@
       <p xml:id="p_santucci_1056">Do utero, e seu lugar, grandeza, e figura, 9. 11.</p>
       <p xml:id="p_santucci_1057">Dos ligamentos do utero, 12. 13.</p>
       <p xml:id="p_santucci_1058">Das partes do utero, 14.</p>
-      <p xml:id="p_santucci_1059">Da substancia do utero, das rugas, ou val- vulas, dos Idatides, ou
+      <p xml:id="p_santucci_1059">Da substancia do utero, das rugas, ou valvulas, dos Idatides, ou
         novo ovario, das membranas do utero, e do seu humor, 15. 16.</p>
       <p xml:id="p_santucci_1060">Dos vasos Espermaticos, e sua Anastomosi, dos nervos, e vasos
         lymphaticos, 17.</p>
