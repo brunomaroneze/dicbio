@@ -4,11 +4,10 @@ import os
 import markdown
 from pathlib import Path
 from collections import defaultdict
-from django.core.management.base import BaseCommand
+from django.core.management.base import BaseCommand, CommandError
 from django.template.loader import render_to_string
 from django.conf import settings
 from verbetes.models import Verbete
-from weasyprint import HTML
 from django.db.models.functions import Lower
 import logging
 
@@ -26,6 +25,15 @@ class Command(BaseCommand):
     help = 'Gera um único arquivo PDF com capa, textos de apoio e verbetes.'
 
     def handle(self, *args, **options):
+        try:
+            from weasyprint import HTML
+        except Exception as exc:
+            raise CommandError(
+                "WeasyPrint indisponivel. No Windows, instale o runtime do GTK (MSYS2) "
+                "e garanta que a pasta de DLLs esteja no PATH antes de executar o comando. "
+                "Erro original: {0}".format(exc)
+            ) from exc
+
         self.stdout.write("Iniciando a geração do PDF completo...")
 
         # --- 1. COLETA DOS TEXTOS DE APOIO (MARKDOWN) ---
