@@ -29,3 +29,4 @@ nltk_data_storage/
 ngrams_original_text.csv
 ngrams_stopwords_removed.csv
 .idea/
+data/termos_extraidos.csv
