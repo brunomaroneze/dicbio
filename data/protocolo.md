@@ -18,36 +18,7 @@
 
 - "ontolex:canonicalForm" indica a forma (prefixada com "form_") canônica, e "ontolex:otherForm" indica as outras formas.
 
-- "ontolex:sense" liga com as acepções (no formato "entry_XXXX_sense1").
-
-------------------------------------------------------------------------------------
-## Informações sobre as hipóteses etimológicas:
-
-- As hipóteses etimológicas são ligadas às acepções, e não às entradas.
-
-- O nome da hipótese etimológica é indicado por "dbres:etym_XXXXX_sense1"; se houver mais de uma, fica "dbres:etym_XXXXX_sense1_h1".
-
-- A fonte da hipótese é indicada com "dcterms:source".
-
-- Para indicar o processo geral, usa-se "dicbio:etymologicalProcess", e as opções são "dicbio:inherited" (herdadas), "dicbio:borrowed" (empréstimos), "dicbio:created" (neologismos morfológicos) e "dicbio:semanticDerivation" (neologismos semânticos).
-
-- A explicação discursiva da hipótese entra em "dicbio:etymologicalArgumentation".
-
-- O nível de confiança da hipótese entra em "dicbio:confidenceLevel" e pode ser "dicbio:impossible", "dicbio:improbable", "dicbio:plausible", "dicbio:probable" e "dicbio:certain".
-
-- No caso de palavras criadas, usa-se "dicbio:hasWordFormationRelation" para introduzir a explicação morfológica; esta é denominada "dbres:XXXX_derivation".
-
-- No caso das palavras criadas, a derivação morfológica "dbres:XXXX_derivation" é indicada com "a morf.:WordFormationRelation" e as propriedades "vartans:source" e "vartrans:target" indicam as relações entre primitivo e derivado.
-
-- No caso das palavras emprestadas ou herdadas, usa-se "lemonety:etymon" para relacionar a hipótese ao étimo.
-
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a lemonety:Etymon".
-
-- O étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao projeto LiLa.
-
-- Um étimo pode ter outro étimo, formando cadeias etimológicas.
-
-- Nos casos de derivações semânticas, a categoria do "dicbio:etymologicalProcess" é "dicbio:semanticDerivation". A propriedade "dicbio:explainsSense" relaciona a hipótese etimológica à acepção que ela explica (ou seja, a acepção derivada), e a propriedade "dicbio:derivesFromSense" relaciona a hipótese etimológica à acepção primitiva.
+- "ontolex:sense" liga às acepções (no formato "entry_XXXX_sense1").
 
 -------------------------------------------------
 ## Informações sobre as formas:
@@ -57,6 +28,45 @@
 - São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma.
 
 - Se uma forma existe com acento e outra sem acento, a forma com acento recebe o nome "form_XXXX_accent".
+
+--------------------------------------------------
+
+## Informações sobre as acepções:
+
+- As acepções são denominadas "dbres:entry_XXXXX_sense1" e entram na classe "a ontolex:LexicalSense"
+
+- Precisam conter sempre a "skos:definition" (definição) e "lemonety:etymology" (lista das hipóteses etimológicas).
+
+------------------------------------------------------------------------------------
+## Informações sobre as hipóteses etimológicas:
+
+- As hipóteses etimológicas são ligadas às acepções, e não às entradas.
+
+- Uma acepção deve conter a propriedade "lemonety:etymology" seguida da lista das hipóteses etimológicas.
+
+- O nome da hipótese etimológica é indicado por "dbres:etym_XXXXX_sense1"; se houver mais de uma, fica "dbres:etym_XXXXX_sense1_h1".
+
+- A fonte da hipótese é indicada com "dcterms:source".
+
+- Para indicar o processo geral, usa-se "dicbio:etymologicalProcess", e as opções são "dicbio:inherited" (herdadas), "dicbio:borrowed" (empréstimos), "dicbio:created" (neologismos morfológicos) e "dicbio:semanticDerivation" (neologismos semânticos). Novas possibilidades poderão ser criadas.
+
+- A explicação discursiva da hipótese entra em "dicbio:etymologicalArgumentation".
+
+- O nível de confiança da hipótese entra em "dicbio:confidenceLevel" e pode ser "dicbio:impossible", "dicbio:improbable", "dicbio:plausible", "dicbio:probable" e "dicbio:certain".
+
+- No caso de palavras criadas, usa-se "dicbio:hasWordFormationRelation" para introduzir a explicação morfológica; esta é denominada "dbres:XXXX_derivation", se for um caso de derivação.
+
+- No caso das palavras criadas por derivação, a derivação morfológica "dbres:XXXX_derivation" é indicada com "a morph:WordFormationRelation" e as propriedades "vartans:source" e "vartrans:target" indicam as relações entre primitivo e derivado, respectivamente. A propriedade "vartrans:category" indica se é derivação sufixal ("dicbio:Suffixation"), prefixal ("dicbio:Prefixation"), composição ("dicbio:Compounding") ou outra.
+
+- No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
+
+- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon".
+
+- Ao étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao seu URI no projeto LiLa.
+
+- A língua do étimo é apresentada com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261".
+
+- Um étimo pode ter outro étimo, formando cadeias etimológicas.
 
 --------------------------------------------------
 ## Informações sobre as atestações:
@@ -70,14 +80,6 @@
 - A fonte pode ser primária (ou seja, uma obra do próprio córpus do projeto) ou secundária (em geral, outro dicionário).
 
 - Será feito um algoritmo que extrai automaticamente do córpus as informações sobre as atestações das fontes primárias.
-
---------------------------------------------------
-
-## Informações sobre as acepções:
-
-- As acepções são denominadas "dbres:entry_XXXXX_sense1" e entram na classe "a ontolex:LexicalSense"
-
-- Precisam conter sempre a "skos:definition" (definição) e "lemonety:etymology" (lista das hipóteses etimológicas).
 
 ---------------------------------------------------
 ## Informações sobre o nível conceitual:

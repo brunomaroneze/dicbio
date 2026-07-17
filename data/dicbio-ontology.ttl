@@ -17,6 +17,8 @@
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+
 
 
 
@@ -55,47 +57,6 @@ dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:range rdf:HTML ;
     rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en .
 
-dicbio:EtymologicalArgument a owl:Class ; # Criada para incluir argumentos a favor ou contra uma hipótese etimológica, em especial em casos de hipóteses concorrentes. Sugestão do ChatGPT. Precisamos ver exemplos concretos para entender a necessidade real de criar essa classe.
-    rdfs:label "Etymological Argument"@en ;
-    rdfs:comment "An argumentative unit that provides justification, evidence or reasoning in support of or against an etymological hypothesis."@en .
-
-dicbio:evaluatesEtymology a owl:ObjectProperty ; # Relaciona um argumento a uma hipótese etimológica, indicando que o argumento é usado para apoiar ou refutar a hipótese. Eliminar se formos eliminar a classe EtymologicalArgument.
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range lemonety:Etymology ;
-    rdfs:label "evaluates etymology"@en ;
-    rdfs:comment "Relates an etymological argument to the etymological hypothesis that it supports or evaluates."@en .
-
-dicbio:usesSource a owl:ObjectProperty ; # Indica que o argumento etimológico utiliza uma fonte documental ou bibliográfica como evidência. Eliminar se formos eliminar a classe EtymologicalArgument.
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range dcterms:BibliographicResource ;
-    rdfs:comment "Indicates the documentary or bibliographic source used as evidence in the argument."@en .
-
-# Esta e as propriedades seguintes podem ser usadas para classificar os argumentos etimológicos por tipo (e.g., fonológico, semântico, morfológico, documental) e para indicar o grau de certeza atribuído a uma hipótese etimológica com base nos argumentos apresentados. A necessidade de criar uma classe específica para os argumentos etimológicos depende do nível de detalhamento e da complexidade que queremos alcançar na representação das hipóteses etimológicas e dos seus fundamentos. Se decidirmos que é importante representar explicitamente os argumentos e as fontes que os sustentam, a criação dessa classe pode ser útil para organizar e estruturar essas informações de maneira clara e acessível. Caso contrário, podemos optar por incluir essas informações diretamente nas propriedades da classe Etymology, sem a necessidade de uma classe intermediária para os argumentos.
-dicbio:ArgumentTypeScheme a skos:ConceptScheme ;
-    rdfs:label "Argument Type Scheme"@en ;
-    rdfs:comment "A scheme for classifying etymological arguments by their type (e.g., phonological, semantic, morphological, documentary)."@en .
-
-dicbio:phonologicalArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Phonological argument"@en .
-
-dicbio:semanticArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Semantic argument"@en .
-
-dicbio:morphologicalArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Morphological argument"@en .
-
-dicbio:documentaryArgument a skos:Concept ;
-    skos:inScheme dicbio:ArgumentTypeScheme ;
-    skos:prefLabel "Documentary argument"@en .
-
-dicbio:argumentType a owl:ObjectProperty ;
-    rdfs:domain dicbio:EtymologicalArgument ;
-    rdfs:range skos:Concept ;
-    rdfs:label "argument type"@en ;
-    rdfs:comment "Specifies the type of etymological argument (phonological, semantic, morphological, documentary, etc.)."@en .
 
 ## --- aqui entram os graus de certeza etimológica
 
@@ -147,43 +108,42 @@ dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:comment "Indicates the degree of certainty attributed by the editors to an etymological hypothesis."@en .
 
 ## --- aqui entram os tipos de processos etimológicos 
-# A propriedade lemonety:etyLinkType talvez já seja suficiente e não precisemos da propriedade dicbio:etymologicalProcess. Aqui, a ideia seria fazer uma lista fechada de processos, mas não sei se é mesmo necessário. Vamos manter apenas a propriedade lemonety:etyLinkType por enquanto, e depois verificamos se existe mesmo uma lista fechada de processos etimológicos que seja relevante para o nosso projeto e que justifique a criação de uma propriedade específica para isso.
+# A propriedade lemonety:etyLinkType seria suficiente, mas ela não foi pensada para ser ligada à hipótese etimológica. Aqui, a ideia é fazer uma lista fechada de processos etimológicos. Se outros surgirem, acrescentaremos à lista. A propriedade dicbio:etymologicalProcess é subpropriedade de lemonety:etyLinkType, mas com domínio lemonety:Etymology, para indicar que o processo etimológico se aplica à hipótese etimológica, e não diretamente à entrada lexical.
+
+dicbio:EtymologicalProcess a owl:Class ; # Classe com as opções de processos etimológicos, como herança, empréstimo, criação interna, etc. A propriedade dicbio:etymologicalProcess relaciona uma hipótese etimológica a um processo etimológico específico.
+    rdfs:label "Etymological Process"@en ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:comment "A concept representing a type of historical process involved in the origin of a lexical item."@en .
 
 dicbio:EtymologicalProcessScheme a skos:ConceptScheme ;
     rdfs:label "Etymological Process Scheme"@en ;
     rdfs:comment "A controlled vocabulary describing the type of etymological process involved in the formation of a lexical item."@en .
 
-dicbio:inherited a skos:Concept ;
+dicbio:inherited a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
     skos:prefLabel "Inherited"@en ;
     skos:definition "The lexical item is inherited from an earlier stage of the same language."@en .
 
-dicbio:borrowed a skos:Concept ;
+dicbio:borrowed a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
     skos:prefLabel "Borrowed"@en ;
     skos:definition "The lexical item is borrowed from another language."@en .
 
-dicbio:created a skos:Concept ;
+dicbio:created a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
     skos:prefLabel "Created"@en ;
     skos:definition "The lexical item was created within the language, e.g., through derivation, compounding or other kind of neological process."@en .
 
-dicbio:semanticDerivation a skos:Concept ;
+dicbio:semanticDerivation a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
     skos:prefLabel "Derived from another sense"@en ;
     skos:definition "The lexical item was derived from another lexical sense in the same language."@en .
 
-dicbio:etymologicalProcess a owl:ObjectProperty ;
+dicbio:etymologicalProcess a owl:ObjectProperty ; # Era para ser lemonety:etyLinkType, mas essa propriedade não foi pensada para ser ligada à hipótese etimológica. Por isso, criamos uma subpropriedade com domínio lemonety:Etymology.
     rdfs:domain lemonety:Etymology ;
-    rdfs:range skos:Concept ;
+    rdfs:range dicbio:EtymologicalProcess ;
     rdfs:label "etymological process"@en ;
     rdfs:comment "Specifies the type of historical process involved in an etymological hypothesis (e.g., inheritance, borrowing, internal creation). The process is attributed to the hypothesis, not directly to the lexical entry."@en .
-
-dicbio:semanticDerivationFrom a owl:ObjectProperty ;
-    rdfs:domain lemonety:Etymology ;
-    rdfs:range ontolex:LexicalSense ;
-    rdfs:label "semantic derivation from"@en ;
-    rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change (e.g., specialization, generalization, metaphor, metonymy). This property models historical semantic development, not merely synchronic semantic relatedness."@en .
 
 dicbio:hasWordFormationRelation a owl:ObjectProperty ;
     rdfs:domain lemonety:Etymology ;
@@ -191,22 +151,28 @@ dicbio:hasWordFormationRelation a owl:ObjectProperty ;
     rdfs:label "has word formation relation"@en ;
     rdfs:comment "Links an etymological hypothesis to a morphological word formation relation that describes the internal formation of the lexical item."@en .
 
-### Explains which sense is being analyzed
+### Aqui entram os tipos de relações morfológicas, como derivação, composição, etc. A propriedade dicbio:hasWordFormationRelation relaciona uma hipótese etimológica a uma relação morfológica específica.
 
-dicbio:explainsSense a owl:ObjectProperty ;
-    rdfs:domain lemonety:Etymology ;
-    rdfs:range ontolex:LexicalSense ;
-    rdfs:label "explains sense"@en ;
-    rdfs:comment "Relates an etymological hypothesis to the lexical sense whose historical origin it aims to explain."@en .
+dicbio:WordFormationType a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Word formation type"@en ;
+    rdfs:comment "A concept representing a type of word-formation process, such as suffixation, prefixation or compounding."@en .
 
+dicbio:WordFormationTypeScheme a skos:ConceptScheme ;
+    rdfs:label "Word formation type scheme"@en ;
+    rdfs:comment "A controlled vocabulary of word-formation types."@en .
 
-### Indicates the historical source sense
+dicbio:Suffixation a dicbio:WordFormationType ; # Acrescentar uma skos:definition depois
+    skos:inScheme dicbio:WordFormationTypeScheme ;
+    skos:prefLabel "Suffixation"@en .
 
-dicbio:derivesFromSense a owl:ObjectProperty ;
-    rdfs:domain lemonety:Etymology ;
-    rdfs:range ontolex:LexicalSense ;
-    rdfs:label "derives from sense"@en ;
-    rdfs:comment "Relates an etymological hypothesis to the lexical sense from which another sense is assumed to have historically developed through a diachronic semantic change."@en .
+dicbio:Prefixation a dicbio:WordFormationType ; # Acrescentar uma skos:definition depois
+    skos:inScheme dicbio:WordFormationTypeScheme ;
+    skos:prefLabel "Prefixation"@en .
+
+dicbio:Compounding a dicbio:WordFormationType ; # Acrescentar uma skos:definition depois
+    skos:inScheme dicbio:WordFormationTypeScheme ;
+    skos:prefLabel "Compounding"@en .
 
 
 ## Aqui entram os conceitos e propriedades para incluir as atestações históricas de uso dos termos, quando disponíveis
