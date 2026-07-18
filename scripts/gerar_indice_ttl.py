@@ -23,7 +23,7 @@ def slugify(text):
 
 def gerar_nif_index(arquivos_xml, arquivo_saida):
     g = rdflib.Graph()
-    g.bind("dicbio", DICBIO)
+    g.bind("dbres", DICBIO)
     g.bind("nif", NIF)
     g.bind("itsrdf", ITSRDF)
 
