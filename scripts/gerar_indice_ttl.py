@@ -10,7 +10,7 @@ DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
 NIF = Namespace("http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#")
 ITSRDF = Namespace("http://www.w3.org/2005/11/its/rdf#")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
-PROV = Namespace("http://www.w3.org/ns/prov#")
+# PROV = Namespace("http://www.w3.org/ns/prov#")
 
 
 def slugify(text):
@@ -34,7 +34,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
     g.bind("nif", NIF)
     g.bind("itsrdf", ITSRDF)
     g.bind("dcterms", DCTERMS)
-    g.bind("prov", PROV)
+    # g.bind("prov", PROV)
 
     parser = etree.XMLParser(remove_blank_text=True)
 
@@ -132,9 +132,9 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
                        DCTERMS.isPartOf,
                        uri_obra))
 
-                g.add((uri_contexto,
-                       PROV.hadPrimarySource,
-                       uri_documento))
+                # g.add((uri_contexto,
+                #        PROV.wasQuotedFrom,
+                #        uri_documento))
 
                 contextos_gerados.add(id_contexto)
 

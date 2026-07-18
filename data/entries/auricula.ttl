@@ -96,7 +96,7 @@ dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
 
 dbres:attestation_auricula_sense1_vandelli a dicbio:Attestation ;
     dicbio:attestationDate "1788"^^xsd:gYear ;
-    dcterms:source dbsrc:source_vandelli .
+    dcterms:source dbsrc:work_diciovandelli .
 
 dbres:entry_auricula_sense2 a ontolex:LexicalSense ;
     skos:definition "Orelha."@pt ;
@@ -105,7 +105,7 @@ dbres:entry_auricula_sense2 a ontolex:LexicalSense ;
 
 dbres:attestation_auricula_sense2_vandelli a dicbio:Attestation ;
     dicbio:attestationDate "1788"^^xsd:gYear ;
-    dcterms:source dbsrc:source_vandelli .
+    dcterms:source dbsrc:work_diciovandelli .
 
 dbres:entry_auricula_sense3 a ontolex:LexicalSense ;
     skos:definition "Estrutura anatômica em forma de orelha."@pt ;
@@ -114,7 +114,7 @@ dbres:entry_auricula_sense3 a ontolex:LexicalSense ;
 
 dbres:attestation_auricula_sense3_vandelli a dicbio:Attestation ;
     dicbio:attestationDate "1788"^^xsd:gYear ;
-    dcterms:source dbsrc:source_vandelli .
+    dcterms:source dbsrc:work_diciovandelli .
 
 dbres:entry_orelha a ontolex:LexicalEntry ;
     dcterms:created "2026-02-16"^^xsd:date ;
@@ -143,6 +143,6 @@ dbres:entry_orelha_do_coracao_sense1 a ontolex:LexicalSense ;
 
 dbres:attestation_orelha_do_coracao_sense1_santucci a dicbio:Attestation ;
     dicbio:attestationDate "1739"^^xsd:gYear ;
-    dcterms:source dbsrc:source_santucci .
+    dcterms:source dbsrc:work_anatomiasantucci .
 
 # Falta associar aurícula e orelha ao mesmo conceito; e falta incluir o ontolex:reference no protocolo.

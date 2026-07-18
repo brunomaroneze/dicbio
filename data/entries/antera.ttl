@@ -37,7 +37,7 @@ dbres:etym_antera_sense1 a lemonety:Etymology ;
 
 dbres:etymon_anthera a lemonety:Etymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
-    dcterms:source dbsrc:source_vandelli ;
+    dcterms:source dbsrc:work_diciovandelli ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
     ontolex:writtenRep "anthera" ;
     skos:definition "Parte da flor que contém o pólen."@pt ;

@@ -70,7 +70,7 @@
 
 --------------------------------------------------
 ## Informações sobre as atestações:
-
+# REVER
 - A informação sobre a atestação será preferencialmente ligada a uma acepção, e não a uma entrada. É um recurso de nome "dbres:attestation_TERMO_FONTE" e é atribuída à classe "a dicbio:Attestation".
 
 - A propriedade "dicbio:attestationDate" indica o ano da atestação e a propriedade "dcterms:source" indica a fonte da datação.
@@ -97,7 +97,9 @@
 ## Informações sobre autores e fontes:
 - Os autores são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do Lattes.
 
-- As fontes são indicadas com "dbsrc:nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link.
+- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link.
+
+- Os livros do córpus são indicados como se fossem fontes, exceto que se usa "dbsrc:work_nome_da_fonte" em vez de "source".
 
 -------------------------------------------------
 ## Regras de identificação de URIs:

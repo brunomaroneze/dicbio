@@ -35,7 +35,7 @@ dbres:etym_crena_sense1 a lemonety:Etymology ;
 
 dbres:etymon_crena a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_vandelli ;
+    dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "crena" .
 
 dbres:form_crena a ontolex:Form ;
