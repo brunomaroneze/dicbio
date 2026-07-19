@@ -49,6 +49,39 @@ dbsrc:work_anatomiasantucci a bibo:Book ;
 
 # Acrescentar as obras do Brotero e do Semmedo, que estão no corpus digital, mas ainda não foram adicionadas aqui.
 
+# Brotero (obra completa, os dois volumes)
+dbsrc:work_brotero
+    a bibo:Book ;
+    dcterms:title "Compêndio de Botânica" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1032088> ; # URI para Félix Avelar Brotero
+    dcterms:issued "1788"^^xsd:gYear ;
+    dcterms:language glotto:port1283 ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q140626319> .
+
+# Brotero volume 1
+dbsrc:work_compendio1brotero a bibo:Book ;
+    dcterms:isPartOf dbsrc:work_brotero ;
+    bibo:volume "1" ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q51458201> .
+
+# Brotero volume 2
+dbsrc:work_compendio2brotero a bibo:Book ;
+    dcterms:isPartOf dbsrc:work_brotero ;
+    bibo:volume "2" ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q51458204> .
+
+# Semmedo
+dbsrc:work_semmedo a bibo:Book ;
+    dcterms:title "Observações médicas doutrinais" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q94822098> ; # URI para João Curvo Semmedo
+    dcterms:issued "1706"^^xsd:gYear ;
+    dcterms:language glotto:port1283 ;
+    foaf:page <https://archive.org/details/bub_gb_qCVH54Hs2i0C> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q140626344> . # URI universal da obra de Semmedo
+
 # Definição do Houaiss
 dbsrc:source_houaiss a bibo:Book ;
     dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
