@@ -65,7 +65,9 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
 
             texto_exato = "".join(termo.itertext()).strip()
 
-            lema = termo.get("lemma", "")
+            lema = termo.get("lemma")
+            if not lema:
+                lema = texto_exato
 
             ref = termo.get("ref")
             sense_num = termo.get("senseNumber", "1")
