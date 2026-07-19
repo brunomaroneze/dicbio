@@ -9142,548 +9142,658 @@ dbres:t_vandelli_0010 a nif:Word ;
 dbres:t_vandelli_0011 a nif:Word ;
     nif:anchorOf "mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0008 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0012 a nif:Word ;
     nif:anchorOf "auriculas"@pt ;
     nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0015 ;
     itsrdf:taIdentRef dbres:entry_auricula_sense1 .
 
 dbres:t_vandelli_0013 a nif:Word ;
     nif:anchorOf "concameraçoens"@pt ;
     nif:lemma "concameração"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0016 ;
     itsrdf:taIdentRef dbres:entry_concameracao_sense1 .
 
 dbres:t_vandelli_0014 a nif:Word ;
     nif:anchorOf "elongada"@pt ;
     nif:lemma "elongado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0027 ;
     itsrdf:taIdentRef dbres:entry_elongado_sense1 .
 
 dbres:t_vandelli_0015 a nif:Word ;
     nif:anchorOf "mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0038 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0016 a nif:Word ;
     nif:anchorOf "glandula"@pt ;
     nif:lemma "glândula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0049 ;
     itsrdf:taIdentRef dbres:entry_glandula_sense1 .
 
 dbres:t_vandelli_0017 a nif:Word ;
     nif:anchorOf "cibarios"@pt ;
     nif:lemma "cibário"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0051 ;
     itsrdf:taIdentRef dbres:entry_cibario_sense1 .
 
 dbres:t_vandelli_0018 a nif:Word ;
     nif:anchorOf "lobado"@pt ;
     nif:lemma "lobado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0066 ;
     itsrdf:taIdentRef dbres:entry_lobado_sense1 .
 
 dbres:t_vandelli_0019 a nif:Word ;
     nif:anchorOf "glandulas"@pt ;
     nif:lemma "glândula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0083 ;
     itsrdf:taIdentRef dbres:entry_glandula_sense1 .
 
 dbres:t_vandelli_0020 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0102 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0021 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0103 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0022 a nif:Word ;
     nif:anchorOf "orbita"@pt ;
     nif:lemma "órbita"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0120 ;
     itsrdf:taIdentRef dbres:entry_orbita_sense1 .
 
 dbres:t_vandelli_0023 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0124 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0024 a nif:Word ;
     nif:anchorOf "carunculas"@pt ;
     nif:lemma "carúncula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0124 ;
     itsrdf:taIdentRef dbres:entry_caruncula_sense1 .
 
 dbres:t_vandelli_0025 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0156 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0026 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0164 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0027 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0169 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0028 a nif:Word ;
     nif:anchorOf "tuberculo"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0175 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0029 a nif:Word ;
     nif:anchorOf "vibrissas"@pt ;
     nif:lemma "vibrissa"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0178 ;
     itsrdf:taIdentRef dbres:entry_vibrissa_sense1 .
 
 dbres:t_vandelli_0030 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0178 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0031 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0187 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0032 a nif:Word ;
     nif:anchorOf "auriculas"@pt ;
     nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0197 ;
     itsrdf:taIdentRef dbres:entry_auricula_sense2 .
 
 dbres:t_vandelli_0033 a nif:Word ;
     nif:anchorOf "uropigio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0198 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0034 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0202 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0035 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0203 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0036 a nif:Word ;
     nif:anchorOf "tendinosa"@pt ;
     nif:lemma "tendinoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0211 ;
     itsrdf:taIdentRef dbres:entry_tendinoso_sense1 .
 
 dbres:t_vandelli_0037 a nif:Word ;
     nif:anchorOf "caruncula"@pt ;
     nif:lemma "carúncula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0212 ;
     itsrdf:taIdentRef dbres:entry_caruncula_sense1 .
 
 dbres:t_vandelli_0038 a nif:Word ;
     nif:anchorOf "uropigio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0219 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0039 a nif:Word ;
     nif:anchorOf "carunculas"@pt ;
     nif:lemma "carúncula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0228 ;
     itsrdf:taIdentRef dbres:entry_caruncula_sense1 .
 
 dbres:t_vandelli_0040 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0231 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0041 a nif:Word ;
     nif:anchorOf "uropigio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0238 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0042 a nif:Word ;
     nif:anchorOf "uropygio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0238 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0043 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0285 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0044 a nif:Word ;
     nif:anchorOf "sementes"@pt ;
     nif:lemma "semente"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0286 ;
     itsrdf:taIdentRef dbres:entry_semente_sense1 .
 
 dbres:t_vandelli_0045 a nif:Word ;
     nif:anchorOf "vibrissas"@pt ;
     nif:lemma "vibrissa"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0287 ;
     itsrdf:taIdentRef dbres:entry_vibrissa_sense1 .
 
 dbres:t_vandelli_0046 a nif:Word ;
     nif:anchorOf "gema"@pt ;
     nif:lemma "gema"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0300 ;
     itsrdf:taIdentRef dbres:entry_gema_sense2 .
 
 dbres:t_vandelli_0047 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0301 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0048 a nif:Word ;
     nif:anchorOf "glandula"@pt ;
     nif:lemma "glândula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0306 ;
     itsrdf:taIdentRef dbres:entry_glandula_sense1 .
 
 dbres:t_vandelli_0049 a nif:Word ;
     nif:anchorOf "uropigio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0306 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0050 a nif:Word ;
     nif:anchorOf "canaliculada"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0307 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0051 a nif:Word ;
     nif:anchorOf "glandula"@pt ;
     nif:lemma "glândula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0328 ;
     itsrdf:taIdentRef dbres:entry_glandula_sense1 .
 
 dbres:t_vandelli_0052 a nif:Word ;
     nif:anchorOf "uropigio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0328 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0053 a nif:Word ;
     nif:anchorOf "arvores"@pt ;
     nif:lemma "árvore"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0329 ;
     itsrdf:taIdentRef dbres:entry_arvore_sense1 .
 
 dbres:t_vandelli_0054 a nif:Word ;
     nif:anchorOf "arvores"@pt ;
     nif:lemma "árvore"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0329 ;
     itsrdf:taIdentRef dbres:entry_arvore_sense1 .
 
 dbres:t_vandelli_0055 a nif:Word ;
     nif:anchorOf "uropygio"@pt ;
     nif:lemma "uropígio"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0331 ;
     itsrdf:taIdentRef dbres:entry_uropigio_sense1 .
 
 dbres:t_vandelli_0056 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0422 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0057 a nif:Word ;
     nif:anchorOf "branchias"@pt ;
     nif:lemma "brânquia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0436 ;
     itsrdf:taIdentRef dbres:entry_branquia_sense1 .
 
 dbres:t_vandelli_0058 a nif:Word ;
     nif:anchorOf "branchias"@pt ;
     nif:lemma "brânquia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0460 ;
     itsrdf:taIdentRef dbres:entry_branquia_sense1 .
 
 dbres:t_vandelli_0059 a nif:Word ;
-    nif:anchorOf "membrana branchiostega"@pt ;
+    nif:anchorOf """membrana
+                branchiostega"""@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0460 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0060 a nif:Word ;
     nif:anchorOf "branchiostega"@pt ;
     nif:lemma "branquióstego"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0460 ;
     itsrdf:taIdentRef dbres:entry_branquiostego_sense2 .
 
 dbres:t_vandelli_0061 a nif:Word ;
     nif:anchorOf "branchiostegos"@pt ;
     nif:lemma "branquióstego"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0466 ;
     itsrdf:taIdentRef dbres:entry_branquiostego_sense1 .
 
 dbres:t_vandelli_0062 a nif:Word ;
     nif:anchorOf "tubulos"@pt ;
     nif:lemma "túbulo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0470 ;
     itsrdf:taIdentRef dbres:entry_tubulo_sense1 .
 
 dbres:t_vandelli_0063 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0470 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0064 a nif:Word ;
     nif:anchorOf "tuberculadas"@pt ;
     nif:lemma "tuberculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0471 ;
     itsrdf:taIdentRef dbres:entry_tuberculado_sense1 .
 
 dbres:t_vandelli_0065 a nif:Word ;
     nif:anchorOf "Tuberculadas"@pt ;
     nif:lemma "tuberculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0472 ;
     itsrdf:taIdentRef dbres:entry_tuberculado_sense1 .
 
 dbres:t_vandelli_0066 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0472 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0067 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0475 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0068 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0482 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0069 a nif:Word ;
     nif:anchorOf "Escamosa"@pt ;
     nif:lemma "escamoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0505 ;
     itsrdf:taIdentRef dbres:entry_escamoso_sense1 .
 
 dbres:t_vandelli_0070 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0516 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0071 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0517 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0072 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0519 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0073 a nif:Word ;
     nif:anchorOf "setaceo"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0525 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0074 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0525 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0075 a nif:Word ;
     nif:anchorOf "setaceos"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0578 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0076 a nif:Word ;
     nif:anchorOf "branchias"@pt ;
     nif:lemma "brânquia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0593 ;
     itsrdf:taIdentRef dbres:entry_branquia_sense1 .
 
 dbres:t_vandelli_0077 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0605 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0078 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0617 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0079 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0621 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0080 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0669 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0081 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0670 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0082 a nif:Word ;
     nif:anchorOf """membrana, ou pinna
                 branchiostega"""@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0674 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0083 a nif:Word ;
     nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0675 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0084 a nif:Word ;
-    nif:anchorOf """membrana
-                branchiostega"""@pt ;
+    nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0675 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0085 a nif:Word ;
     nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0675 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0086 a nif:Word ;
     nif:anchorOf "Mammaes"@pt ;
     nif:lemma "mamais"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0703 ;
     itsrdf:taIdentRef dbres:entry_mamais_sense1 .
 
 dbres:t_vandelli_0087 a nif:Word ;
     nif:anchorOf "tunica"@pt ;
     nif:lemma "túnica"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0729 ;
     itsrdf:taIdentRef dbres:entry_tunica_sense1 .
 
 dbres:t_vandelli_0088 a nif:Word ;
     nif:anchorOf "escamoso"@pt ;
     nif:lemma "escamoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0730 ;
     itsrdf:taIdentRef dbres:entry_escamoso_sense1 .
 
 dbres:t_vandelli_0089 a nif:Word ;
-    nif:anchorOf "membrana branchiostega"@pt ;
+    nif:anchorOf """membrana
+                branchiostega"""@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0730 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0090 a nif:Word ;
     nif:anchorOf "Ciliada"@pt ;
     nif:lemma "ciliado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0741 ;
     itsrdf:taIdentRef dbres:entry_ciliado_sense1 .
 
 dbres:t_vandelli_0091 a nif:Word ;
     nif:anchorOf "Escamosos"@pt ;
     nif:lemma "escamoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0759 ;
     itsrdf:taIdentRef dbres:entry_escamoso_sense1 .
 
 dbres:t_vandelli_0092 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0760 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0093 a nif:Word ;
     nif:anchorOf "setacea"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0779 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0094 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0792 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0095 a nif:Word ;
     nif:anchorOf "ezofago"@pt ;
     nif:lemma "esôfago"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0793 ;
     itsrdf:taIdentRef dbres:entry_esofago_sense1 .
 
 dbres:t_vandelli_0096 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0799 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0097 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0801 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0098 a nif:Word ;
     nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0809 ;
     itsrdf:taIdentRef dbres:entry_membrana_branquiostega_sense1 .
 
 dbres:t_vandelli_0099 a nif:Word ;
     nif:anchorOf "Longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0813 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0100 a nif:Word ;
     nif:anchorOf "Longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0837 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0101 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0893 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0102 a nif:Word ;
     nif:anchorOf "oblonga"@pt ;
     nif:lemma "oblongo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0901 ;
     itsrdf:taIdentRef dbres:entry_oblongo_sense1 .
 
 dbres:t_vandelli_0103 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0905 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0104 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0908 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0105 a nif:Word ;
     nif:anchorOf "cartilaginea"@pt ;
     nif:lemma "cartilagíneo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0909 ;
     itsrdf:taIdentRef dbres:entry_cartilagineo_sense1 .
 
 dbres:t_vandelli_0106 a nif:Word ;
     nif:anchorOf "Pontoadas"@pt ;
     nif:lemma "pontoado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0930 ;
     itsrdf:taIdentRef dbres:entry_pontoado_sense1 .
 
 dbres:t_vandelli_0107 a nif:Word ;
     nif:anchorOf "Ciliadas"@pt ;
     nif:lemma "ciliado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0931 ;
     itsrdf:taIdentRef dbres:entry_ciliado_sense1 .
 
 dbres:t_vandelli_0108 a nif:Word ;
     nif:anchorOf "setaceo"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0937 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0109 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0937 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0110 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0939 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0111 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0947 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0112 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0949 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0113 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0960 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0114 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0961 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0115 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0999 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0116 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1002 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0117 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1002 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0118 a nif:Word ;
     nif:anchorOf "Membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1015 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0119 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1016 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0120 a nif:Word ;
@@ -9694,206 +9804,247 @@ dbres:t_vandelli_0120 a nif:Word ;
 dbres:t_vandelli_0121 a nif:Word ;
     nif:anchorOf "membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1017 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0122 a nif:Word ;
     nif:anchorOf "Oblongas"@pt ;
     nif:lemma "oblongo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1028 ;
     itsrdf:taIdentRef dbres:entry_oblongo_sense1 .
 
 dbres:t_vandelli_0123 a nif:Word ;
     nif:anchorOf "digitadas"@pt ;
     nif:lemma "digitado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1030 ;
     itsrdf:taIdentRef dbres:entry_digitado_sense2 .
 
 dbres:t_vandelli_0124 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1034 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0125 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1042 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0126 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1043 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0127 a nif:Word ;
     nif:anchorOf "ocelladas"@pt ;
     nif:lemma "ocelado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1051 ;
     itsrdf:taIdentRef dbres:entry_ocelado_sense1 .
 
 dbres:t_vandelli_0128 a nif:Word ;
     nif:anchorOf "filamentos"@pt ;
     nif:lemma "filamento"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1067 ;
     itsrdf:taIdentRef dbres:entry_filamento_sense2 .
 
 dbres:t_vandelli_0129 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1068 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0130 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1069 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0131 a nif:Word ;
     nif:anchorOf "setacea"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1084 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0132 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1087 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0133 a nif:Word ;
     nif:anchorOf "pedunculo"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1120 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense2 .
 
 dbres:t_vandelli_0134 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1121 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0135 a nif:Word ;
     nif:anchorOf "pedunculo"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1124 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense2 .
 
 dbres:t_vandelli_0136 a nif:Word ;
     nif:anchorOf "conniventes"@pt ;
     nif:lemma "conivente"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1141 ;
     itsrdf:taIdentRef dbres:entry_conivente_sense1 .
 
 dbres:t_vandelli_0137 a nif:Word ;
     nif:anchorOf "villos"@pt ;
     nif:lemma "vilo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1145 ;
     itsrdf:taIdentRef dbres:entry_vilo_sense2 .
 
 dbres:t_vandelli_0138 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1155 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0139 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1185 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0140 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1233 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0141 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1251 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0142 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1255 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0143 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1256 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0144 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1257 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0145 a nif:Word ;
     nif:anchorOf "reticuladas"@pt ;
     nif:lemma "reticulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1259 ;
     itsrdf:taIdentRef dbres:entry_reticulado_sense1 .
 
 dbres:t_vandelli_0146 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1260 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0147 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1261 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0148 a nif:Word ;
     nif:anchorOf "conniventes"@pt ;
     nif:lemma "conivente"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1264 ;
     itsrdf:taIdentRef dbres:entry_conivente_sense1 .
 
 dbres:t_vandelli_0149 a nif:Word ;
     nif:anchorOf "emarginados"@pt ;
     nif:lemma "emarginado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1274 ;
     itsrdf:taIdentRef dbres:entry_emarginado_sense1 .
 
 dbres:t_vandelli_0150 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1277 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0151 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1279 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0152 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1280 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0153 a nif:Word ;
     nif:anchorOf "membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1287 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0154 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1298 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0155 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1312 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0156 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1313 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0157 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1324 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0158 a nif:Word ;
     nif:anchorOf "lacinia"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1326 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0159 a nif:Word ;
     nif:anchorOf "Setaceas"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1335 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0160 a nif:Word ;
     nif:anchorOf "Canaliculado"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1342 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0161 a nif:Word ;
     nif:anchorOf "Canaliculada"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1355 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0162 a nif:Word ;
@@ -9904,36 +10055,43 @@ dbres:t_vandelli_0162 a nif:Word ;
 dbres:t_vandelli_0163 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1401 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0164 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1401 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0165 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1401 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0166 a nif:Word ;
     nif:anchorOf "auricula"@pt ;
     nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1411 ;
     itsrdf:taIdentRef dbres:entry_auricula_sense2 .
 
 dbres:t_vandelli_0167 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1413 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0168 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1415 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0169 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1431 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0170 a nif:Word ;
@@ -9944,116 +10102,139 @@ dbres:t_vandelli_0170 a nif:Word ;
 dbres:t_vandelli_0171 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1444 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0172 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1464 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0173 a nif:Word ;
     nif:anchorOf "lacinia"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1470 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0174 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1474 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0175 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1474 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0176 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1475 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0177 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1477 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0178 a nif:Word ;
     nif:anchorOf "pedunculos"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1485 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense2 .
 
 dbres:t_vandelli_0179 a nif:Word ;
     nif:anchorOf "Oblongos"@pt ;
     nif:lemma "oblongo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1489 ;
     itsrdf:taIdentRef dbres:entry_oblongo_sense1 .
 
 dbres:t_vandelli_0180 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1492 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0181 a nif:Word ;
     nif:anchorOf "filamentos"@pt ;
     nif:lemma "filamento"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1494 ;
     itsrdf:taIdentRef dbres:entry_filamento_sense2 .
 
 dbres:t_vandelli_0182 a nif:Word ;
     nif:anchorOf "bifido"@pt ;
     nif:lemma "bífido"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1519 ;
     itsrdf:taIdentRef dbres:entry_bifido_sense1 .
 
 dbres:t_vandelli_0183 a nif:Word ;
     nif:anchorOf "lacinia"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1519 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0184 a nif:Word ;
     nif:anchorOf "membranaceos"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1521 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0185 a nif:Word ;
     nif:anchorOf "bifido"@pt ;
     nif:lemma "bífido"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1535 ;
     itsrdf:taIdentRef dbres:entry_bifido_sense1 .
 
 dbres:t_vandelli_0186 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1542 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0187 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1545 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0188 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1549 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0189 a nif:Word ;
     nif:anchorOf "ciliados"@pt ;
     nif:lemma "ciliado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1559 ;
     itsrdf:taIdentRef dbres:entry_ciliado_sense1 .
 
 dbres:t_vandelli_0190 a nif:Word ;
     nif:anchorOf "canaliculado"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1561 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0191 a nif:Word ;
     nif:anchorOf "falcada"@pt ;
     nif:lemma "falcado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1561 ;
     itsrdf:taIdentRef dbres:entry_falcado_sense1 .
 
 dbres:t_vandelli_0192 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1562 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0193 a nif:Word ;
     nif:anchorOf "Canaliculada"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1565 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0194 a nif:Word ;
@@ -10064,611 +10245,733 @@ dbres:t_vandelli_0194 a nif:Word ;
 dbres:t_vandelli_0195 a nif:Word ;
     nif:anchorOf "Membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1569 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0196 a nif:Word ;
     nif:anchorOf "Ciliados"@pt ;
     nif:lemma "ciliado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1572 ;
     itsrdf:taIdentRef dbres:entry_ciliado_sense1 .
 
 dbres:t_vandelli_0197 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1581 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0198 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1582 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0199 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1586 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0200 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1591 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0201 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1601 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0202 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1611 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0203 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1622 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0204 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1624 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0205 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1625 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0206 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1635 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0207 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1636 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0208 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1637 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0209 a nif:Word ;
     nif:anchorOf "Insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1645 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0210 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1647 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0211 a nif:Word ;
     nif:anchorOf "Ciliado"@pt ;
     nif:lemma "ciliado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1675 ;
     itsrdf:taIdentRef dbres:entry_ciliado_sense1 .
 
 dbres:t_vandelli_0212 a nif:Word ;
     nif:anchorOf "villos"@pt ;
     nif:lemma "vilo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1678 ;
     itsrdf:taIdentRef dbres:entry_vilo_sense2 .
 
 dbres:t_vandelli_0213 a nif:Word ;
     nif:anchorOf "insecto"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1681 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0214 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1685 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0215 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1686 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0216 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1692 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0217 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1696 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0218 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1709 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0219 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1710 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0220 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1711 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0221 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1712 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0222 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1713 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0223 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1716 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0224 a nif:Word ;
     nif:anchorOf "bifidos"@pt ;
     nif:lemma "bífido"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1722 ;
     itsrdf:taIdentRef dbres:entry_bifido_sense1 .
 
 dbres:t_vandelli_0225 a nif:Word ;
     nif:anchorOf "membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1726 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0226 a nif:Word ;
     nif:anchorOf "Canaliculada"@pt ;
     nif:lemma "canaliculado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1740 ;
     itsrdf:taIdentRef dbres:entry_canaliculado_sense1 .
 
 dbres:t_vandelli_0227 a nif:Word ;
     nif:anchorOf "pedunculo"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1749 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense2 .
 
 dbres:t_vandelli_0228 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1749 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0229 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1755 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0230 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1769 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0231 a nif:Word ;
     nif:anchorOf "Botanica"@pt ;
     nif:lemma "Botânica"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1787 ;
     itsrdf:taIdentRef dbres:entry_botanica_sense1 .
 
 dbres:t_vandelli_0232 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1789 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0233 a nif:Word ;
     nif:anchorOf "membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1796 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0234 a nif:Word ;
     nif:anchorOf "angulado"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1811 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0235 a nif:Word ;
     nif:anchorOf "angulada"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1822 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0236 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1908 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0237 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1909 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0238 a nif:Word ;
     nif:anchorOf "auricula"@pt ;
     nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1915 ;
     itsrdf:taIdentRef dbres:entry_auricula_sense3 .
 
 dbres:t_vandelli_0239 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1924 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0240 a nif:Word ;
     nif:anchorOf "cotyledones"@pt ;
     nif:lemma "cotilédone"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1924 ;
     itsrdf:taIdentRef dbres:entry_cotiledone_sense1 .
 
 dbres:t_vandelli_0241 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1924 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0242 a nif:Word ;
     nif:anchorOf "filamentos"@pt ;
     nif:lemma "filamento"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1926 ;
     itsrdf:taIdentRef dbres:entry_filamento_sense2 .
 
 dbres:t_vandelli_0243 a nif:Word ;
     nif:anchorOf "epiderme"@pt ;
     nif:lemma "epiderme"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1936 ;
     itsrdf:taIdentRef dbres:entry_epiderme_sense2 .
 
 dbres:t_vandelli_0244 a nif:Word ;
     nif:anchorOf "concameraçoens"@pt ;
     nif:lemma "concameração"@pt ;
+    nif:referenceContext dbres:sn_vandelli_1995 ;
     itsrdf:taIdentRef dbres:entry_concameracao_sense1 .
 
 dbres:t_vandelli_0245 a nif:Word ;
     nif:anchorOf "filamentos"@pt ;
     nif:lemma "filamento"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2001 ;
     itsrdf:taIdentRef dbres:entry_filamento_sense2 .
 
 dbres:t_vandelli_0246 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2043 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0247 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2049 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0248 a nif:Word ;
     nif:anchorOf "escamoso"@pt ;
     nif:lemma "escamoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2072 ;
     itsrdf:taIdentRef dbres:entry_escamoso_sense1 .
 
 dbres:t_vandelli_0249 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2074 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0250 a nif:Word ;
     nif:anchorOf "Membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2078 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0251 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2083 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0252 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2084 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0253 a nif:Word ;
     nif:anchorOf "Membranaceo"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2095 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0254 a nif:Word ;
     nif:anchorOf "concamerações"@pt ;
     nif:lemma "concameração"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2120 ;
     itsrdf:taIdentRef dbres:entry_concameracao_sense1 .
 
 dbres:t_vandelli_0255 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2123 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0256 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2140 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0257 a nif:Word ;
     nif:anchorOf "pedunculo"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2161 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense1 .
 
 dbres:t_vandelli_0258 a nif:Word ;
     nif:anchorOf "Botanica"@pt ;
     nif:lemma "Botânica"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2161 ;
     itsrdf:taIdentRef dbres:entry_botanica_sense1 .
 
 dbres:t_vandelli_0259 a nif:Word ;
     nif:anchorOf "ennoveladas"@pt ;
     nif:lemma "enovelado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2163 ;
     itsrdf:taIdentRef dbres:entry_enovelado_sense1 .
 
 dbres:t_vandelli_0260 a nif:Word ;
     nif:anchorOf "caliz"@pt ;
     nif:lemma "cálice"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2165 ;
     itsrdf:taIdentRef dbres:entry_calice_sense1 .
 
 dbres:t_vandelli_0261 a nif:Word ;
     nif:anchorOf "membranaceo"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2173 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0262 a nif:Word ;
     nif:anchorOf "diaphragma"@pt ;
     nif:lemma "diafragma"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2174 ;
     itsrdf:taIdentRef dbres:entry_diafragma_sense2 .
 
 dbres:t_vandelli_0263 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2201 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0264 a nif:Word ;
     nif:anchorOf "caruncula"@pt ;
     nif:lemma "carúncula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2242 ;
     itsrdf:taIdentRef dbres:entry_caruncula_sense1 .
 
 dbres:t_vandelli_0265 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2251 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0266 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2257 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0267 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2259 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0268 a nif:Word ;
     nif:anchorOf "Membranaceo"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2267 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0269 a nif:Word ;
     nif:anchorOf "Anguladas"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2274 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0270 a nif:Word ;
     nif:anchorOf "tunica"@pt ;
     nif:lemma "túnica"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2311 ;
     itsrdf:taIdentRef dbres:entry_tunica_sense1 .
 
 dbres:t_vandelli_0271 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2312 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0272 a nif:Word ;
     nif:anchorOf "cirros"@pt ;
     nif:lemma "cirro"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2317 ;
     itsrdf:taIdentRef dbres:entry_cirro_sense1 .
 
 dbres:t_vandelli_0273 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2356 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0274 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2359 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0275 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2369 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0276 a nif:Word ;
     nif:anchorOf "entrecortadas"@pt ;
     nif:lemma "entrecortado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2382 ;
     itsrdf:taIdentRef dbres:entry_entrecortado_sense1 .
 
 dbres:t_vandelli_0277 a nif:Word ;
     nif:anchorOf "epiderme"@pt ;
     nif:lemma "epiderme"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2383 ;
     itsrdf:taIdentRef dbres:entry_epiderme_sense2 .
 
 dbres:t_vandelli_0278 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2394 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0279 a nif:Word ;
     nif:anchorOf "diafragmas"@pt ;
     nif:lemma "diafragma"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2402 ;
     itsrdf:taIdentRef dbres:entry_diafragma_sense2 .
 
 dbres:t_vandelli_0280 a nif:Word ;
     nif:anchorOf "concameraçoens"@pt ;
     nif:lemma "concameração"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2406 ;
     itsrdf:taIdentRef dbres:entry_concameracao_sense1 .
 
 dbres:t_vandelli_0281 a nif:Word ;
     nif:anchorOf "setaceo"@pt ;
     nif:lemma "setáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2418 ;
     itsrdf:taIdentRef dbres:entry_setaceo_sense1 .
 
 dbres:t_vandelli_0282 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2428 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0283 a nif:Word ;
     nif:anchorOf "Ennovellada"@pt ;
     nif:lemma "enovelado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2480 ;
     itsrdf:taIdentRef dbres:entry_enovelado_sense1 .
 
 dbres:t_vandelli_0284 a nif:Word ;
     nif:anchorOf "filamentos"@pt ;
     nif:lemma "filamento"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2504 ;
     itsrdf:taIdentRef dbres:entry_filamento_sense2 .
 
 dbres:t_vandelli_0285 a nif:Word ;
     nif:anchorOf "longitudinaes"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2512 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0286 a nif:Word ;
     nif:anchorOf "membranacea"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2527 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0287 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2536 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0288 a nif:Word ;
     nif:anchorOf "Insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2565 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0289 a nif:Word ;
     nif:anchorOf "insectos"@pt ;
     nif:lemma "inseto"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2565 ;
     itsrdf:taIdentRef dbres:entry_inseto_sense1 .
 
 dbres:t_vandelli_0290 a nif:Word ;
     nif:anchorOf "cartilagineas"@pt ;
     nif:lemma "cartilagíneo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2565 ;
     itsrdf:taIdentRef dbres:entry_cartilagineo_sense1 .
 
 dbres:t_vandelli_0291 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2574 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0292 a nif:Word ;
     nif:anchorOf "pedunculo"@pt ;
     nif:lemma "pedúnculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2579 ;
     itsrdf:taIdentRef dbres:entry_pedunculo_sense1 .
 
 dbres:t_vandelli_0293 a nif:Word ;
     nif:anchorOf "angulada"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2591 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0294 a nif:Word ;
     nif:anchorOf "diafragmas"@pt ;
     nif:lemma "diafragma"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2608 ;
     itsrdf:taIdentRef dbres:entry_diafragma_sense2 .
 
 dbres:t_vandelli_0295 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2616 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0296 a nif:Word ;
     nif:anchorOf "papillas"@pt ;
     nif:lemma "papila"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2616 ;
     itsrdf:taIdentRef dbres:entry_papila_sense3 .
 
 dbres:t_vandelli_0297 a nif:Word ;
     nif:anchorOf "membranaceas"@pt ;
     nif:lemma "membranáceo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2632 ;
     itsrdf:taIdentRef dbres:entry_membranaceo_sense1 .
 
 dbres:t_vandelli_0298 a nif:Word ;
     nif:anchorOf "escamosa"@pt ;
     nif:lemma "escamoso"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2638 ;
     itsrdf:taIdentRef dbres:entry_escamoso_sense1 .
 
 dbres:t_vandelli_0299 a nif:Word ;
     nif:anchorOf "lacinias"@pt ;
     nif:lemma "lacínia"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2641 ;
     itsrdf:taIdentRef dbres:entry_lacinia_sense1 .
 
 dbres:t_vandelli_0300 a nif:Word ;
     nif:anchorOf "Ennovelada"@pt ;
     nif:lemma "enovelado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2644 ;
     itsrdf:taIdentRef dbres:entry_enovelado_sense1 .
 
 dbres:t_vandelli_0301 a nif:Word ;
     nif:anchorOf "diafragmas"@pt ;
     nif:lemma "diafragma"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2687 ;
     itsrdf:taIdentRef dbres:entry_diafragma_sense2 .
 
 dbres:t_vandelli_0302 a nif:Word ;
     nif:anchorOf "Pontoada"@pt ;
     nif:lemma "pontoado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2688 ;
     itsrdf:taIdentRef dbres:entry_pontoado_sense1 .
 
 dbres:t_vandelli_0303 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2688 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0304 a nif:Word ;
     nif:anchorOf "angulada"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2709 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0305 a nif:Word ;
     nif:anchorOf "auricula"@pt ;
     nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2711 ;
     itsrdf:taIdentRef dbres:entry_auricula_sense3 .
 
 dbres:t_vandelli_0306 a nif:Word ;
     nif:anchorOf "romboidal"@pt ;
     nif:lemma "romboidal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2720 ;
     itsrdf:taIdentRef dbres:entry_romboidal_sense1 .
 
 dbres:t_vandelli_0307 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2733 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0308 a nif:Word ;
     nif:anchorOf "umbilicadas"@pt ;
     nif:lemma "umbilicado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2738 ;
     itsrdf:taIdentRef dbres:entry_umbilicado_sense1 .
 
 dbres:t_vandelli_0309 a nif:Word ;
     nif:anchorOf "concameraçaõ"@pt ;
     nif:lemma "concameração"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2739 ;
     itsrdf:taIdentRef dbres:entry_concameracao_sense1 .
 
 dbres:t_vandelli_0310 a nif:Word ;
     nif:anchorOf "longitudinal"@pt ;
     nif:lemma "longitudinal"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2774 ;
     itsrdf:taIdentRef dbres:entry_longitudinal_sense1 .
 
 dbres:t_vandelli_0311 a nif:Word ;
     nif:anchorOf "Angulada"@pt ;
     nif:lemma "angulado"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2779 ;
     itsrdf:taIdentRef dbres:entry_angulado_sense1 .
 
 dbres:t_vandelli_0312 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2795 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0313 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2807 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0314 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2809 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0315 a nif:Word ;
     nif:anchorOf "Tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2813 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0316 a nif:Word ;
     nif:anchorOf "tuberculos"@pt ;
     nif:lemma "tubérculo"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2813 ;
     itsrdf:taIdentRef dbres:entry_tuberculo_sense1 .
 
 dbres:t_vandelli_0317 a nif:Word ;
@@ -17513,6 +17816,7 @@ dbres:t_vandelli_1462 a nif:Word ;
 dbres:t_vandelli_1463 a nif:Word ;
     nif:anchorOf "sementes"@pt ;
     nif:lemma "semente"@pt ;
+    nif:referenceContext dbres:sn_vandelli_2880 ;
     itsrdf:taIdentRef dbres:entry_semente_sense1 .
 
 dbres:t_vandelli_1464 a nif:Word ;
@@ -17533,7 +17837,8 @@ dbres:t_vandelli_1466 a nif:Word ;
     itsrdf:taIdentRef dbres:entry_jardim_botanico_sense1 .
 
 dbres:t_vandelli_1467 a nif:Word ;
-    nif:anchorOf "Jardim Botanico"@pt ;
+    nif:anchorOf """Jardim
+              Botanico"""@pt ;
     nif:lemma "jardim botânico"@pt ;
     nif:referenceContext dbres:s_vandelli_0050 ;
     itsrdf:taIdentRef dbres:entry_jardim_botanico_sense1 .
@@ -17545,8 +17850,7 @@ dbres:t_vandelli_1468 a nif:Word ;
     itsrdf:taIdentRef dbres:entry_jardim_botanico_sense1 .
 
 dbres:t_vandelli_1469 a nif:Word ;
-    nif:anchorOf """Jardins
-              Botanicos"""@pt ;
+    nif:anchorOf "Jardins Botanicos"@pt ;
     nif:lemma "jardim botânico"@pt ;
     nif:referenceContext dbres:s_vandelli_0054 ;
     itsrdf:taIdentRef dbres:entry_jardim_botanico_sense1 .
@@ -22217,6 +22521,998 @@ dbres:s_vandelli_0075 a nif:Sentence ;
     nif:isString "Se corresponder a aceitaçaõ do Publico aos meus sinceros dezejos occupar-me-hei em fazer experiencias sobre as plantas que se cultivaõ, e se cultivaraõ neste Real Jardim Botanico a fim de conhecer as mais adequadas para este feliz clima, e aquellas que multiplicadas poderaõ dar maior utilidade: farei mais exactas observações sobre os lugares incultos: indicarei os meios proporcionados conforme as situaçoens, e producçoens, tratando fundamentalmente de todos estes objectos."@pt ;
     dcterms:isPartOf dbres:work_diciovandelli .
 
+dbres:sn_vandelli_0008 a nif:Phrase ;
+    nif:isString "As armas nos mammaes saõ as Unhas, os Dentes, as Pontas, com que se defendem, e accommettem ao seu inimigo."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0015 a nif:Phrase ;
+    nif:isString "Diz-se do coraçaõ, que tem duas auriculas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0016 a nif:Phrase ;
+    nif:isString "Quando ha duas concameraçoens, ou cavidades."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0027 a nif:Phrase ;
+    nif:isString "He uma cauda elongada, que serve muitas vezes como de terceira maõ ao animal para sua segurança. Simia."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0038 a nif:Phrase ;
+    nif:isString "Nos mammaes he hum circulo de pelos de huma côr diferente dos outros, ou mais compridos, que se acha no pescoço."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0049 a nif:Phrase ;
+    nif:isString "Embigo que tem huma bexiga, ou cavidade, onde se conserva hum humor particular separado de huma glandula. Sus porcus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0051 a nif:Phrase ;
+    nif:isString "Os dentes, saõ os instrumentos cibarios, osseos, postos nas mandibulas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0066 a nif:Phrase ;
+    nif:isString "Quasi lobado, ou com pequenas prominencias na baze."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0083 a nif:Phrase ;
+    nif:isString "He uma cavidade, ou pequena bexiga nas glandulas entre as extremidades das arterias, veias, e ductus excretorios."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0102 a nif:Phrase ;
+    nif:isString "Que tem na borda excavaçoes, e prominencias agudas, e alem disso papillas, ou fibras carnosas a modo de cilias."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0103 a nif:Phrase ;
+    nif:isString "Com aculeos, ou papillas rijas, e agudas na parte superior, como no Gato."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0120 a nif:Phrase ;
+    nif:isString "Saõ aquelles pellos compridos, e rijos, que tem v.g. o Gato, ou o Caõ, ao pè dos narizes, e assima da orbita do olho, ou sobrancelha."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0156 a nif:Phrase ;
+    nif:isString "Dá-se este nome a parte superior da cabeça, ou ao cabelo, que livra os Mammaes das injurias do tempo; isto he tomado restrictamente, todo o cabelo, que cobre a cabeça do animal."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0164 a nif:Phrase ;
+    nif:isString "Isto mostra-nos em os Mammaes a uniaõ, que as escamas (feitas pela uniaõ dos pelos) formaõ entre si, cobrindo desta forma todo o corpo do animal, dentro de que ele se esconde, e se livra dos inimigos, e injurias do tempo. Dasypus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0169 a nif:Phrase ;
+    nif:isString "Isto indica nos Mammaes huns pequenos escudos triangulares feitos pela uniaõ dos pelos, porem cada triangulo he distincto sobre si. Manis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0175 a nif:Phrase ;
+    nif:isString "Verruga, ou tuberculo duro, que está na pelle."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0187 a nif:Phrase ;
+    nif:isString "Significa o calcanhar nos Mammaes, o qual serve para eles se sustentarem em pé, como se vê no Homem, e no Urso."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0197 a nif:Phrase ;
+    nif:isString "As aves naõ tem auriculas, em seu lugar, tem algumas penas mais compridas, que cercaõ o buraco das orelhas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0198 a nif:Phrase ;
+    nif:isString "Nas aves saõ as azas, os pés, e o uropigio. m."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0202 a nif:Phrase ;
+    nif:isString "V. Mammaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0203 a nif:Phrase ;
+    nif:isString "V. Mammaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0211 a nif:Phrase ;
+    nif:isString "He uma substancia, que medéa entre a parte ossea, e tendinosa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0212 a nif:Phrase ;
+    nif:isString "He huma substancia carnosa, nua, molle, que cobre, ou a cabeça, ou collo de algumas Aves, ou as sobrancelhas no Tretrao, Meleagris, Parra, e tambem no Gallo se observa a mesma caruncula, a que o povo erradamente dá o nome de Crista, quando naõ he se naõ pennacea. Phasianus Gallus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0219 a nif:Phrase ;
+    nif:isString "Este termo he improprio nas Aves pela falta da continuação das vertebras, a cujo defeito suprem as penas, que estaõ postas no uropigio, as quaes lhe servem de leme, porem esta he diversa, a saber. Tab.II.fig.2.1."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0228 a nif:Phrase ;
+    nif:isString "Com carunculas. Columba tabelaria."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0231 a nif:Phrase ;
+    nif:isString "Com papillas. Columba turcica."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0285 a nif:Phrase ;
+    nif:isString "V. nos Mammaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0286 a nif:Phrase ;
+    nif:isString "He huma mudança que as Aves fazem de hum clima para outro a que vulgarmente se chama arribaçaõ. Turdus, Sturnus,Fringilla; Destas arribaçoens succede muitas vezes termos varios peixes exoticos, e naõ menos plantas exoticas em os nossos paizes por cauza de as Aves naõ digerirem algumas sementes e ovos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0287 a nif:Phrase ;
+    nif:isString "He a barba ou pelos rijos ou vibrissas reviradas para a parte da face, ou genas. Tab.III.fig.4.b."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0300 a nif:Phrase ;
+    nif:isString "Ovo. Fig.I. e cavidade com ar. d. branco. b. gema. a. punctum saliens, ou rudimento da Ave."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0301 a nif:Phrase ;
+    nif:isString "V. Mammaes. Ardea pavonina."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0307 a nif:Phrase ;
+    nif:isString "Consta de huma base cylindrica, concava, que se extende pelo Rachis. (V. Rachis) arqueada para a parte inferior, liza superiormente, quasi canaliculada na parte inferior, pinnata, com raios parallelos, cada hum dos quaes he quasi pinnato, e estaõ encostados, ou unidos entre si formando huma figura convexa superiormente, e concava inferiormente, e o lado exterior mais apertado, o interior mais largo, o posterior pubescente, ou com lanugem, a parte anterior mais estreita."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0331 a nif:Phrase ;
+    nif:isString "Saõ as pennas da cauda pegadas em modo de pente, ou cilias ao uropygio; vulgarmente saõ doze, e contaõ-se da ultima até á do meio; em muitas Gallinhas, e Patos saõ mais de doze, em muitas Pegas saõ somente dez; que servem as Aves como leme, com que as mesmas Aves se propellem, e guiaõ o seu corpo. D."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0422 a nif:Phrase ;
+    nif:isString "He toda parte que naõ constitue o principal, mas sim o accessorio, como saõ os cirros na cabeça do peixe, e nas pinnas do mesmo huma porçaõ de membrana siliforme."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0436 a nif:Phrase ;
+    nif:isString "Abertura das branchias, ou guelras, he huma abertura quasi sempre situada na parte posterior ou lateral da cabeça que se abre entre os operculos e o tronco. Ella acaba dentro da boca, contem as guelras, que saõ as partes interiores."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0466 a nif:Phrase ;
+    nif:isString "Lateraes, que estaõ postas em os lados nos peixes branchiostegos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0471 a nif:Phrase ;
+    nif:isString "Dissimilhantes, quando humas tem pelos ou sedas no lado exterior e interior e as outras saõ tuberculadas. Perca, Spari."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0475 a nif:Phrase ;
+    nif:isString "Armadas de pontas ou aculeos, quando a parte concava do ossiculo em lugar de tuberculos tem bicos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0482 a nif:Phrase ;
+    nif:isString "Com aculeos, ou tuberculos. Scomber."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0505 a nif:Phrase ;
+    nif:isString "Escamosa. Mugil, Sciaena, Sparus em algumas especies."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0516 a nif:Phrase ;
+    nif:isString "Sem cirros. Spari, Labri &c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0517 a nif:Phrase ;
+    nif:isString "Com cirros. Cyprini, Gadi &c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0519 a nif:Phrase ;
+    nif:isString "Sem aculeos, e tuberculos. Pleuronectes, Exocoetus &c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0578 a nif:Phrase ;
+    nif:isString "Saõ os appendices setaceos, articulados livres, que se achaõ postos entre as barbatanas, do peito, e as do ventre. Trigla. fig. I. B. B."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0593 a nif:Phrase ;
+    nif:isString "A gûela he a parte do tronco, que corresponde ás barbatanas das branchias, ou guelras, e que está posta entre as mesmas. fig. 4. c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0605 a nif:Phrase ;
+    nif:isString "Linha lateral. Esta estende-se desde a cabeça do peixe até á cauda, e está posta nos dous lados do peixe. Ordinariamente he formada pela falta de escamas, ou pela sua quilha, ou pelos seus tuberculos. He varia pela figura, pelo numero, pela direcçaõ, e pelos additamentos. fig. I. C. fig. 4. d."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0617 a nif:Phrase ;
+    nif:isString "Sem pellos, barba, aculeos, ou tuberculos, na maior parte dos peixes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0621 a nif:Phrase ;
+    nif:isString "Armada de osso, de tuberculos, ou escamas rijas, sendo o resto do corpo liso."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0669 a nif:Phrase ;
+    nif:isString "Com cirros. Silurus, Gadus. No queixo superior somente Gobius, no inferior Mullus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0670 a nif:Phrase ;
+    nif:isString "Ambos os queixos sem cirros Perca, Labrus, Sparus, e a maior parte dos peixes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0674 a nif:Phrase ;
+    nif:isString "Esta he huma verdadeira pinna, ou barbatana composta de raios curvos, desiguaes, unidos entre si por huma membrana. Esta esconde-se debaixo dos operculos das guelras, a que esta pegada. Esta membrana, ou pinna branchiostega he dobrada, e redobrada debaixo do operculo; pode-se allongar, e estender como as outras barbatanas do corpo; na sua maior extensaõ, he muito maior que o operculo, serve para a respiraçaõ. fig. I. A. fig. 4.e."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0703 a nif:Phrase ;
+    nif:isString "Que naõ tem mais, que hum buraco em cada parte, como nos Mammaes; mas estes saõ muito raros."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0729 a nif:Phrase ;
+    nif:isString "Sem a dita membrana, ou cute, ou tunica."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0741 a nif:Phrase ;
+    nif:isString "Ciliada, quando a margem posterior, ou todo o contorno he cortado como huma franja, ou ornado com appendices carnosos parallelos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0759 a nif:Phrase ;
+    nif:isString "Escamosos, cubertos de escamas em lugar de pélle. Labrus, Sciæna, Sparus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0760 a nif:Phrase ;
+    nif:isString "Hum peixe chato, cujo diametro longitudinal, e transversal saõ iguaes. Rhombus aculeatus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0779 a nif:Phrase ;
+    nif:isString "Que acaba em huma ponta comprida, e setacea. Pegasus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0792 a nif:Phrase ;
+    nif:isString "Corpo do peixe, em que o diametro transversal excede o longitudinal, ou em que o peixe he mais comprido, que largo. Chuetodon, Sparus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0793 a nif:Phrase ;
+    nif:isString "O paladar he a quella parte interior da bocca, que se comprehende entre a base dos queixos, e donde principia o ezofago: tambem pertence ao paladar a parte inferior da bocca, que se acha perto da base da lingua, e que se chama guéla."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0799 a nif:Phrase ;
+    nif:isString "Com papillas; Nos Nantes, Squalus, Pristis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0801 a nif:Phrase ;
+    nif:isString "He o corpo do peixe cheio de tuberculos molles, cutaneos em lugar de escamas. Zeus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0809 a nif:Phrase ;
+    nif:isString "He a membrana branchiostega. V. Membrana branchiostega."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0813 a nif:Phrase ;
+    nif:isString "Longitudinal, occupando todo o espaço entre o ano, e a extremidade da cauda. Echeneis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0837 a nif:Phrase ;
+    nif:isString "Longitudinaes, quando se extendem desde a cabeça até a cauda, por todo o comprimento do corpo. Pleuronectes solea."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0893 a nif:Phrase ;
+    nif:isString "Quando alem dos ossiculos tambem estaõ cirros. Ophidium."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0901 a nif:Phrase ;
+    nif:isString "A menina do olho acha-se em quasi todos os peixes. Ordinariamente he esferica, ou oblonga, em alguns he oval."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0905 a nif:Phrase ;
+    nif:isString "Diz-se daquelle peixe cheio de linhas longitudinaes, e transversaes á maneira de malha. Sparus, Ostracion. Coriphaena."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0908 a nif:Phrase ;
+    nif:isString "A superficie com tuberculos, ou pequenos aculeos, ou escamas reviradas &c. Scorpæna."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0909 a nif:Phrase ;
+    nif:isString "He hum corpo de substancia entre cartilaginea, e coriacea, Lepadogaster, Gouan, quasi redondo, concavo marginado posto no abdomen do peixe."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0930 a nif:Phrase ;
+    nif:isString "Pontoadas, cubertas de pontos. Scorpæna."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0931 a nif:Phrase ;
+    nif:isString "Ciliadas, cercadas de cilhas, ou pellos ao redor. Pleuronectes Solea, Rhombus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0939 a nif:Phrase ;
+    nif:isString "Corpo com tres, ou quatro angulos longitudinaes, prominentes, estando os lados exactamente planos. Ostracion, Syngnathus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0947 a nif:Phrase ;
+    nif:isString "Diz se do peixe, que he chêo lateralmente desde a cabeça até á cauda, de zonas longitudinaes. Atherina, Spari, Labri."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0949 a nif:Phrase ;
+    nif:isString "O abdomen, ou ventre he formado de anneis, e lateralmente entre cada annel estaõ huns pequenos buracos, que servem para a respiraçaõ do Insecto. O abdomen está pegado ao thorax. A parte superior do abdomen chama-se dorso, a inferior chama se ventre, ou barriga. Tab. VI. fig. I. g. III. h. h. h."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0960 a nif:Phrase ;
+    nif:isString "Cujo diametro transversal he menor, que o longitudinal, a base forma hum segmento de circulo, e o apice he mais estreito. Dytiscus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0961 a nif:Phrase ;
+    nif:isString "Quando o diametro transversal he igual ao longitudinal. Aranea."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0999 a nif:Phrase ;
+    nif:isString "Com papillas prominentes para teçer. Aranea."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1015 a nif:Phrase ;
+    nif:isString "Elytra. Azas superiores crustaceas. Tab. VI. fig. 1. 2. fig. II. l. l. Hemelytra, semicrustaceas Membranaceas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1016 a nif:Phrase ;
+    nif:isString "Linnéo tirou as ordens dos insectos. das azas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1017 a nif:Phrase ;
+    nif:isString "As azas membranaceas nervosas. Nos Lepidopteros, ou Glossatos de Fabricio; as variedades das cores existem nas escamas. fig. I. IV."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1028 a nif:Phrase ;
+    nif:isString "Oblongas, ou compridas. Papilio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1030 a nif:Phrase ;
+    nif:isString "Rachadas, digitadas, ou cortadas como dedos. Pterophorus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1034 a nif:Phrase ;
+    nif:isString "Apertadas por meio de linhas longitudinaes. Vespa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1042 a nif:Phrase ;
+    nif:isString "Com veias prominentes longitudinaes distinctas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1043 a nif:Phrase ;
+    nif:isString "Com veias longitudinaes, e transversaes, que se unem, ou communicaõ entre si. Hemerobius. fig. 50."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1051 a nif:Phrase ;
+    nif:isString "São as mesmas ocelladas, ou com malhas á maneira de olho com hum ponto no meio da dita malha. Papilio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1067 a nif:Phrase ;
+    nif:isString "As antennas saõ huns filamentos articulados moveis, que servem de sensorio, e tem differentes nomes. Tab. VI. fig. II. III. c. c. c.c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1068 a nif:Phrase ;
+    nif:isString "Quando o insecto as naõ tem. Aranea, Phalangium. fig. 79."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1069 a nif:Phrase ;
+    nif:isString "Duas, na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1084 a nif:Phrase ;
+    nif:isString "O mesmo que setacea. Musca."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1087 a nif:Phrase ;
+    nif:isString "Divididas em lacinias. Nepa. fig. 37."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1120 a nif:Phrase ;
+    nif:isString "Com pedunculo. Gammarus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1121 a nif:Phrase ;
+    nif:isString "Nos insectos saõ cauda, aculeo, pés, azas, alteres, pentes, os quaes lhes servem para o movimento, e defesa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1124 a nif:Phrase ;
+    nif:isString "Separada do thorax por meio de hum pedunculo, como se fosse pescoço."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1141 a nif:Phrase ;
+    nif:isString "Com duas unhas arqueadas, que saõ conniventes, ou se avisinhaõ na ponta. Forficula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1145 a nif:Phrase ;
+    nif:isString "Com villos. Lepisma. fig. 73."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1155 a nif:Phrase ;
+    nif:isString "Diz se dos pès anteriores, que servem ao insecto como de maõs, incrassados, divididos na ponta em duas partes, das quaes huma he movel, outra immovel. Scorpio, Cancer."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1185 a nif:Phrase ;
+    nif:isString "As cores, como sabiamente adverte Fabricio, saõ inconstantes principalmente nos Insectos. O verde v. g. varia muito, e tem muitos gráos; e assim nas outras. Scopoli, e Poda trabalharaõ, e propuzeraõ o modo de imitar estas differentes cores com varias misturas; porém naõ sahem como elles asseveraõ. Posto que de muitas cores naõ temos termos, que os possaõ exprimir para se fazer huma exacta idea dellas, com tudo procuraremos expollas com a maior cla-reza possivel."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1233 a nif:Phrase ;
+    nif:isString "Os elytros em alguns insectos estaõ conglutinados, e unidos entre si; e entaõ faltaõ as asas posteriores, e o scutello."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1251 a nif:Phrase ;
+    nif:isString "Com tuberculos. Curculio. fig. 8."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1255 a nif:Phrase ;
+    nif:isString "Imprimidos com linhas longitudinaes. Carabus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1256 a nif:Phrase ;
+    nif:isString "Os pontos dispostos em linhas longitudinaes. Cysomela."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1257 a nif:Phrase ;
+    nif:isString "Com linhas longitudinaes excavadas. Carabus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1259 a nif:Phrase ;
+    nif:isString "Com varias linhas prominentes reticuladas, ou dispostas em modo de rede. Silpha rugosa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1260 a nif:Phrase ;
+    nif:isString "Com linhas levantadas longitudinaes. Silpha atrata."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1261 a nif:Phrase ;
+    nif:isString "Com linhas prominentes longitudinaes crenadas, ou ondadas. Curculio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1264 a nif:Phrase ;
+    nif:isString "A margem interior dos elytros saõ conniventes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1274 a nif:Phrase ;
+    nif:isString "Excavados, ou emarginados no apice. Leptura, Stenocorus.."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1277 a nif:Phrase ;
+    nif:isString "Sciencia, que trata dos Insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1279 a nif:Phrase ;
+    nif:isString "A regiaõ epigastrica nos insectos he o espaço que fica na parte superior do ventre. Cantharis rufa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1280 a nif:Phrase ;
+    nif:isString "Copia do humor, que o insecto lança quando se corta, ou tambem pela transpiraçaõ"@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1287 a nif:Phrase ;
+    nif:isString "Com as margens membranaceas estendidas. Gryllus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1298 a nif:Phrase ;
+    nif:isString "He cornea na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1312 a nif:Phrase ;
+    nif:isString "A modo de quilha; ou com huma linha longitudinal aguda levantada. Curculio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1313 a nif:Phrase ;
+    nif:isString "Com huma linha longitudinal excavada. Curculio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1324 a nif:Phrase ;
+    nif:isString "He mais breve, que os palpos; na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1326 a nif:Phrase ;
+    nif:isString "Comprida até a aba, ou lacinia externa da lingua. Apis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1335 a nif:Phrase ;
+    nif:isString "Setaceas. Tipula. fig. 64."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1342 a nif:Phrase ;
+    nif:isString "Canaliculado. Bibio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1355 a nif:Phrase ;
+    nif:isString "Canaliculada."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1411 a nif:Phrase ;
+    nif:isString "Lobo, ou aba corresponde á figura da parte inferior da auricula; he huma prominencia semicircular, ou que forma hum segmento de circulo; tendo huma diz-se unilobus; tendo duas diz-se bilobus. Scarabaeus bilobus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1413 a nif:Phrase ;
+    nif:isString "Outra especie de queixos taõbem transversaes produzidos da substancia interior da cabeça, muitas vezes de substancia membranacea, que fechaõ os lados da bocca interiormente."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1415 a nif:Phrase ;
+    nif:isString "Duas. Na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1431 a nif:Phrase ;
+    nif:isString "De substancia membranacea. Apis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1444 a nif:Phrase ;
+    nif:isString "Duas. Em muitos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1464 a nif:Phrase ;
+    nif:isString "A pequena fenda no apice com duas lacinias, ou pontas agudas. Gyrinus. fig. 6."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1470 a nif:Phrase ;
+    nif:isString "O apice mais grosso, fendido com huma lacinia, ou aba movel. Phalangium. fig. 79."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1475 a nif:Phrase ;
+    nif:isString "Chamaõ-se aquelles Insectos, que por falta de genitaes, saõ estereis; estes só se achaõ na republica das abêlhas, e formigas, servem para construirem, e encherem os favos, defenderem os maridos, e guardarem as Pupas. Fabricio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1477 a nif:Phrase ;
+    nif:isString "São dous na maior parte dos Insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1485 a nif:Phrase ;
+    nif:isString "Com pedunculos, que os sustentaõ. Cancer."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1489 a nif:Phrase ;
+    nif:isString "Oblongos. Buprestis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1492 a nif:Phrase ;
+    nif:isString "A bocca para tomar o alimento he cousa, que todos tem, e naquelles Insectos, em que parece faltar, supprem alguns poros; ella consta de clypeo, beiços, mandibulas, maxillas, galea, palpos, lingua espiral, proboscide, rostro, houstello."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1494 a nif:Phrase ;
+    nif:isString "Saõ os filamentos juntos á bocca, articulados moveis, que servem de sensorio. Tab. VI. fig. II. III. b. b."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1521 a nif:Phrase ;
+    nif:isString "Muito compridos, compressos dos lados, membranaceos á maneira de lingua. Nomada."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1535 a nif:Phrase ;
+    nif:isString "O ultimo nó bifido, ou dividido. Alucita."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1542 a nif:Phrase ;
+    nif:isString "Saõ duas partes em figura de pente, que se observaõ entre o abdomen, e o peito de alguns insectos. Scorpio. Pelo numero dos dentes destes pentes he, que se distinguem as especies deste genero."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1545 a nif:Phrase ;
+    nif:isString "Ao peito ordinariamente estão pegados os quatro pés anteriores nos insectos hexapodos, ou de seis pés."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1549 a nif:Phrase ;
+    nif:isString "Seis na maior parte dos Insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1559 a nif:Phrase ;
+    nif:isString "Com os pés posteriores compressos ciliados, com o tarso mutico, ou sem unha. Dytiscus, Notonecta."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1562 a nif:Phrase ;
+    nif:isString "Diz-se de huma continuação carnoza, recta, cylindrica, posta na bocca do Insecto com dous beiços na ponta, a qual o animal, póde voluntariamente recolher, e estender. Musca."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1565 a nif:Phrase ;
+    nif:isString "Canaliculada. Tabanus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1569 a nif:Phrase ;
+    nif:isString "Membranacea. Rhingia. Tabanus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1572 a nif:Phrase ;
+    nif:isString "Ciliados. Rhagio. Empis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1581 a nif:Phrase ;
+    nif:isString "Diz-se do animal, que passando do estado de larva fica revestido de huma substancia mais seca ainda esteril, a que podemos chamar adolescencia do Insecto, passando, para a idade vegetativa, corrobora a imagem occulta até a perfeiçoar; considera-se pois esta pelas fórmas seguintes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1582 a nif:Phrase ;
+    nif:isString "Sahindo o Insecto do estado de pupa agil em todas as suas partes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1586 a nif:Phrase ;
+    nif:isString "Quando o Insecto se acha dentro de hum globo."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1591 a nif:Phrase ;
+    nif:isString "Nos Insectos he huma bainha articulada, que consta de huma só valva, e inclue ordinariamente tres sedas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1601 a nif:Phrase ;
+    nif:isString "Com linha longitudinal esculpida. Laternaria."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1611 a nif:Phrase ;
+    nif:isString "Com a margem membranacea estendida."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1622 a nif:Phrase ;
+    nif:isString "Pequeno escudo, pegado na parte posterior do thorax, posto entre as azas. Tab. VI. fig. II. k. O escutello. falta nos Insectos apteros, ou que naõ tem azas, assim como tambem nos que tem elytros pegados, ou unidos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1624 a nif:Phrase ;
+    nif:isString "O uso do escutello parece ser para o insecto estender as azas, quando voa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1625 a nif:Phrase ;
+    nif:isString "Mais breve que o abdomen, na maior parte dos Insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1635 a nif:Phrase ;
+    nif:isString "A modo de quilha, ou com linha longitudinal levantada, aguda. Acrydium. Gryllus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1636 a nif:Phrase ;
+    nif:isString "Com strias levantadas longitudinaes. Crabro fossoria."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1637 a nif:Phrase ;
+    nif:isString "Com linha longitudinal muito excavada, ou aprofundada. Scarabaeus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1645 a nif:Phrase ;
+    nif:isString "Saõ os poros lateraes, que se observaõ em cada segmento do abdomen do Insecto"@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1647 a nif:Phrase ;
+    nif:isString "O sterno he huma linha longitudinal elevada no peito muitas vezes anterior, e posteriormente acaba em ponta. fig. III. f."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1675 a nif:Phrase ;
+    nif:isString "Ciliado. Dytiscus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1678 a nif:Phrase ;
+    nif:isString "Cercado de villos, ou de muitos pellos sem ordem. Sphinx. Phalaena."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1681 a nif:Phrase ;
+    nif:isString "Situaçaõ, e figura das partes, que o insecto póde extender, e recolher, e que contem alguns orgaõs sensorios. V. Fabricio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1685 a nif:Phrase ;
+    nif:isString "Cujo diametro transversal he igual ao longitudinal."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1686 a nif:Phrase ;
+    nif:isString "Cujo diametro transversal he mais breve, que o longitudinal. Carabus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1692 a nif:Phrase ;
+    nif:isString "Cujo diametro transversal excede o longitudinal. Dytiscus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1696 a nif:Phrase ;
+    nif:isString "Mais breve, que o abdomen, o que se observa na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1709 a nif:Phrase ;
+    nif:isString "Com huma linha longitudinal levantada, aguda, lisa. Gryllus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1710 a nif:Phrase ;
+    nif:isString "Com huma linha longitudinal excavada."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1711 a nif:Phrase ;
+    nif:isString "Com linha longitudinal levantada, lisa. Gryllus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1712 a nif:Phrase ;
+    nif:isString "Com linhas superficiaes, longitudinaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1713 a nif:Phrase ;
+    nif:isString "Com linhas longitudinaes excavadas mais profundamente."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1716 a nif:Phrase ;
+    nif:isString "Com linhas transversaes, e longitudinaes sem ordem, formando rugas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1722 a nif:Phrase ;
+    nif:isString "Com tentaculos, que se contrahem, bifidos ou divididos em dous, em ambos os lados. Malachius."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1726 a nif:Phrase ;
+    nif:isString "Com margens membranaceas muito sahidas. Mantis."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1740 a nif:Phrase ;
+    nif:isString "Canaliculada. Carabus. Tipula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1755 a nif:Phrase ;
+    nif:isString "Tambem nos servimos deste termo para os tuberculos, ou protuberancias excavadas, que estaõ ao comprido dos braços da Sepia Loligo &c. por meio dos quaes absorbe o ar, e a agua, e a lança fòra, ou tambem serrem para chupar os humores dos animaes, a que se pegaõ."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1769 a nif:Phrase ;
+    nif:isString "Com costas longitudinaes arqueadas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1787 a nif:Phrase ;
+    nif:isString "Com nós que tem incisuras. V. Crenatum na Botanica."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1789 a nif:Phrase ;
+    nif:isString "Com excavações longitudinaes, e superficiaes. Nautilus Beccarii. fig. 16."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1796 a nif:Phrase ;
+    nif:isString "Formado, ou cuberto com pequenas laminas membranaceas transversaes. Buccinum Bezoar."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1811 a nif:Phrase ;
+    nif:isString "Quasi angulado."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1822 a nif:Phrase ;
+    nif:isString "Concha, que he longitudinalmente angulada de hum lado, e outro. Helix."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1908 a nif:Phrase ;
+    nif:isString "Liso, sem espinhos, tuberculos &c."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1909 a nif:Phrase ;
+    nif:isString "Com linhas longitudinaes, ou strias alguma cousa prominentes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1915 a nif:Phrase ;
+    nif:isString "Nas bivalves he quando tem auricula. Ostrea Pectines. V. Auricula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1926 a nif:Phrase ;
+    nif:isString "He huma especie de filamentos, que sahem dos Molluscos, com que as conchas se pegaõ humas ás outras, ou aos rochedos. Pinna, Mytilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1936 a nif:Phrase ;
+    nif:isString "He huma rede grossa sobre a epiderme, ou periosteo de certas conchas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1995 a nif:Phrase ;
+    nif:isString "Certas concameraçoens divididas entre si. Nautilus. fig. 16."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2001 a nif:Phrase ;
+    nif:isString "Saõ os filamentos das conchas multivalves. Lepas. Tab. XIII. fig. 2. d."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2043 a nif:Phrase ;
+    nif:isString "Diz-se de huma coroa feita de tuberculos agudos com incisoens profundas, ou tambem a circumferencia, ou margem das conchas bivalves com pequenas excavacoens, ou incisoens."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2049 a nif:Phrase ;
+    nif:isString "Conchas univalves, cujos aculeos, ou tuberculos formaõ huma coroa sobre a clavicula. V. Clavicula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2072 a nif:Phrase ;
+    nif:isString "Quasi escamoso. Holothuria phantapus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2074 a nif:Phrase ;
+    nif:isString "Elevaçoens longitudinaes, raras vezes transversaes, que se observaõ em algumas testas das conchas. Ostrea Pecten, Buccinum Harpa. Tab. XII. fig. 14. Murex."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2078 a nif:Phrase ;
+    nif:isString "Membranaceas"@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2083 a nif:Phrase ;
+    nif:isString "Com tuberculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2084 a nif:Phrase ;
+    nif:isString "Saõ alguns tuberculos chatos com hum buraco no meio, os quaes se achaõ na parte interior dos braços da Sepia."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2095 a nif:Phrase ;
+    nif:isString "Membranaceo, dobrado, ou retorcido, fazendo angulo agudo na dobra. Muctra. fig. 10. a. a."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2120 a nif:Phrase ;
+    nif:isString "Divizaõ das concamerações, ou cellulas. Nautilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2123 a nif:Phrase ;
+    nif:isString "O labio dividido em abas, ou lacinias extendidas. Strombus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2140 a nif:Phrase ;
+    nif:isString "Diz-se da concha cuja clavicula, espiras, canaliculaturas, linhas, pontos, e tuberculos se naõ podem observar, ou estaõ como safadas, pelas interrupções, que causa a sua antiguidade."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2163 a nif:Phrase ;
+    nif:isString "Cellulas ennoveladas, ou amontoadas. Cellepora verrucosa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2165 a nif:Phrase ;
+    nif:isString "Á maneira de copo de caliz. Madrepora cavernosa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2173 a nif:Phrase ;
+    nif:isString "Tubo membranaceo, pelo qual algumas especies de Lepas, ou Anomias se pegaõ a outros corpos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2174 a nif:Phrase ;
+    nif:isString "Isthmo, á semelhança da lingua de terra, que se acha entre dous mares, he a divizaõ, que se observa em cada diaphragma, que divide a cavidade do Nautilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2201 a nif:Phrase ;
+    nif:isString "Com inchaçosinhos, ou tuberculos. Nerita."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2242 a nif:Phrase ;
+    nif:isString "He huma pequena caruncula branca, conica, negra na ponta, posta na parte posterior da mandibula de alguns molluscos. Limax Vid. Argenville."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2251 a nif:Phrase ;
+    nif:isString "Com abas, ou lacinias."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2257 a nif:Phrase ;
+    nif:isString "Concha reticulada com tuberculos elevados na seçaõ das costas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2259 a nif:Phrase ;
+    nif:isString "Rodeado na regiaõ do anus com huma covinha quasi longitudinal."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2267 a nif:Phrase ;
+    nif:isString "Membranaceo."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2274 a nif:Phrase ;
+    nif:isString "Anguladas na parte inferior. Terebella."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2311 a nif:Phrase ;
+    nif:isString "Chama-sa olho hum ponto central na voluta, na summidade da concha no Lepas. Na ponta dos tentaculos do limax, Swammerdam chamou o centro destes tentaculos nervo optico, elle observa, que a ponta destes pelo interior he cuberta com a tunica chamada uvea; elle distinguio os tres humores, Aqueo, Vitreo, cristalino; mas naõ obstante isto suppomos os olhos nostes animaes como partes muito incognitas, aindaque os tentaculos sejaõ a sua parte mais sensivel."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2312 a nif:Phrase ;
+    nif:isString "Lamina com a qual algumas conchas fechaõ a sua abertura, e esta, ou de substancia como cornea, ou de unha, ou testacea, ou membranacea, como Helix Pomatia."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2317 a nif:Phrase ;
+    nif:isString "Com cirros. Mixine."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2356 a nif:Phrase ;
+    nif:isString "Saõ certas malhas dispostas sem ordem, ou longitudinaes, ou obliquas. Os pontos saõ elevados, ou escavados."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2359 a nif:Phrase ;
+    nif:isString "Raio nas conchas bivalves he huma prominencia longitudinal, que principia do umbo, e vai divergindo até a outra extremidade."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2369 a nif:Phrase ;
+    nif:isString "De substancia como membranacea, e striada transversalmente, ou com linhas transversaes, ou atravessadas. Ostrea striatula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2382 a nif:Phrase ;
+    nif:isString "Concha chêia de linhas simplices côradas entrecortadas á maneira de rede. V. Argenvill."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2383 a nif:Phrase ;
+    nif:isString "Dezenho natural sobre a epiderme da concha feito por linhas córadas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2394 a nif:Phrase ;
+    nif:isString "He aquella parte do corpo do mollusco, que he mui distincta, sobre as espaduas do Limax, que corresponde ao escutello dos Insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2402 a nif:Phrase ;
+    nif:isString "Tubo cylindrico, ou canal cylindrico, que attravessa de parte a parte os diafragmas, ou divisoẽs das conchas, ̃q tem muitas cavidades."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2406 a nif:Phrase ;
+    nif:isString "Tubo articulado, que passa pelas concameraçoens do Nautilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2418 a nif:Phrase ;
+    nif:isString "Á maneira de seda, ou setaceo. Murex tribulus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2428 a nif:Phrase ;
+    nif:isString "Coroada, ou cercada de tuberculos, ou de outra cousa aguda, Conus varius."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2480 a nif:Phrase ;
+    nif:isString "Ennovellada com pequenas laminas. Madrepora pileus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2504 a nif:Phrase ;
+    nif:isString "Composta de filamentos, e de substancia calcaria. Corallina."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2512 a nif:Phrase ;
+    nif:isString "Diz-se de humas linhas finas, e longitudinaes elevadas entre a cavidade de huns regos, pequenos, e superficiaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2527 a nif:Phrase ;
+    nif:isString "De substancia membranacea."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2536 a nif:Phrase ;
+    nif:isString "Com tuberculos, ou pequenos inchaços. Conus nussatella."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2574 a nif:Phrase ;
+    nif:isString "Divididos em ramos, ou lacinias recortadas. Holothuria frondosa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2579 a nif:Phrase ;
+    nif:isString "Sustidos por hum pedunculo. Sepia."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2591 a nif:Phrase ;
+    nif:isString "Concha angulada longitudinalmente de hum, e outro lado com angulo agudo, e como o fio de huma faca."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2608 a nif:Phrase ;
+    nif:isString "Dividida em varias cavidades arqueadas por meio de alguns dissepimentos, ou especie de diafragmas furados. Nautilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2632 a nif:Phrase ;
+    nif:isString "Feita aspera pelas suturas membranaceas elevadas. Murex."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2638 a nif:Phrase ;
+    nif:isString "Arqueada, e escamosa, ou com escamas."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2641 a nif:Phrase ;
+    nif:isString "Elevaçoens na concha divididas em tres partes, e cada huma dividida em lacinias. Murex."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2644 a nif:Phrase ;
+    nif:isString "Ennovelada. Serpula glomerata."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2687 a nif:Phrase ;
+    nif:isString "Com muitos thalamos ou cavidades, ou conchas divididas por varios diafragmas. Nautilus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2709 a nif:Phrase ;
+    nif:isString "Quasi angulada. Helix algira."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2711 a nif:Phrase ;
+    nif:isString "Tendo hum principio de auricula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2720 a nif:Phrase ;
+    nif:isString "Quasi de figura romboidal, ou quadrada, mas com os angulos obliquos. Arca lactea."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2733 a nif:Phrase ;
+    nif:isString "Com tuberculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2738 a nif:Phrase ;
+    nif:isString "Com embigo, ou excavaçaõ á maneira de embigo Trochus. Mas as Cipreas se chamaõ umbilicadas quando se acha a espira obtusa em huma cavidade."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2739 a nif:Phrase ;
+    nif:isString "Com huma só concameraçaõ, ou cavidade. Voluta."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2774 a nif:Phrase ;
+    nif:isString "Com excavaçaõ longitudinal."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2779 a nif:Phrase ;
+    nif:isString "Angulada com nós."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2795 a nif:Phrase ;
+    nif:isString "Com tuberculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2807 a nif:Phrase ;
+    nif:isString "Que forma longitudinalmente huma superficie aspera por causa de alguns tuberculos agudos. Lumbricus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2809 a nif:Phrase ;
+    nif:isString "Com tuberculos. Doris verrucosa. fig. 5."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2880 a nif:Phrase ;
+    nif:isString "As particulas quasi redondas em figura de sementes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
 dbres:p_brotero1_0596 a nif:Paragraph ;
     nif:isString "Verticillada (verticillatus), he disposta em verticillo; o verticillo (verticillus) he huma pilha de flores rentes, ou pedunculadas; postas á roda do tronco em forma de annel, como se vê no marroyo branco, e hortelaan. O verticillo diz-se: rente (sessilis), se as flores que o formaõ naõ tem pedunculo; pedunculado (pedunculatus), se ellas saõ pedunculadas: involucrado (involucratus), se tem hum involucro: bracteado (bracteatus), se he acompanhado de alguma bractea: nu (nudas), se naõ tem involucro nem bractea alguma: basto (confertus), se os flosculos que o compoem estaõ, approximados densamente: raleado (distans), se os seus flosculos estaõ hum tanto distantes entre si: semicircular (dimidiatus), quando, os seus flosculos naõ formaõ á roda do tronco hum annel completo, mas somente metade delle."@pt ;
     dcterms:isPartOf dbres:work_compendio1brotero .
@@ -23817,6 +25113,86 @@ dbres:s_vandelli_0071 a nif:Sentence ;
     nif:isString "A Amoreira branca nasce bem em semelhante terreno, e nelle dá as folhas mais seccas, e porisso mais uteis para o sustento dos bixos da seda; e plantando os ramos das raizes velhas das Amoreiras dentro em quatro annos daõ folhas grandes."@pt ;
     dcterms:isPartOf dbres:work_diciovandelli .
 
+dbres:sn_vandelli_0124 a nif:Phrase ;
+    nif:isString "Com tuberculos, ou carunculas. Sorex cristatus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0178 a nif:Phrase ;
+    nif:isString "Com vibrissas, ou pelos rijos, os quaes existem em alguns Mammaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0238 a nif:Phrase ;
+    nif:isString "He o lado inferior do uropigio, ou espaço, que está entre o ano, e o apice do mesmo uropygio. Tab.II.fig.2.l.u."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0306 a nif:Phrase ;
+    nif:isString "He huma uniaõ de pellos, que cerca a glandula, ou poro oleifero, que está posto na parte superior do uropigio em as Aves. m."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0328 a nif:Phrase ;
+    nif:isString "Da-se esta nome a huma glandula, que termina o dorso das Aves acima do uropigio, e que contem huma materia sebacea. B."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0329 a nif:Phrase ;
+    nif:isString "Ordem com que as arvores estaõ dispostas em certas distancia de maneira que por qualquer parte, que se olhe, sempre se vê o caminho recto, e as arvores em linha recta; deste modo tambem estaõ dispostas as penas nas aves, como se pode ver na Tab. II. Fig 2. C."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0470 a nif:Phrase ;
+    nif:isString "Da mesma natureza, guarnecidas ou de sedas, ou de tubulos carnosos, ou de tuberculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0472 a nif:Phrase ;
+    nif:isString "Tuberculadas, a parte arqueada concava do ossiculo he cuberta de tuberculos, cousa, que se observa em quasi todos os peixes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0525 a nif:Phrase ;
+    nif:isString "Ou barba, he hum appendis setaceo, que está pendente da bocca, ou das mandibulas; he carnoso, movel, simples, ordinariamente mais grosso na base: pode-se considerar como huma expançaõ da pelle, ou como hum feixe de fibras do tegumento. Tem sua semelhança com as antenas dos insectos, o seu uso naõ está ainda conhecido. Accipencer, Trigla, Cyprinus. fig. 4. a. a."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0730 a nif:Phrase ;
+    nif:isString "Operculo das guélras he hum corpo escamoso posto na parte posterior dos queixos de cada parte da cabeça atrás dos olhos. O seu uso, he de ter fechada a abertura das guélras, e defendellas dos corpos externos, e suster a membrana branchiostega. Tab. V. fig. 4. c. fig. 5. c. Os operculos variaõ em differentes peixes pela sua estructura, pelo movimento, pelo numero das peças, ou laminas, de que constaõ, pela proporçaõ, e superficie."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0937 a nif:Phrase ;
+    nif:isString "Quando Linnéo dá o nome de tentaculo a certas partes dos peixes, como he no Gymnotus, deve-se entender por hum additamento setaceo, cutaneo, situado entre os olhos, e narizes, ou pela parte superior; movel á vontade do peixe: muitas vezes observa-se cortado, formando huma crista. O uso deste tentaculo, he taõ incognito, como o dos cirros: Os Ichthyologos daõ-lhe muitas vezes o nome de pinnula."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1002 a nif:Phrase ;
+    nif:isString "Aguilhaõ, que termina o abdomen, ou ventre de duas valvulas, pelo qual o insecto lança fóra huma seta, ou aguilhaõ rijo, picante, e penetrante. Serve para defesa, para furar as plantas, e para depor nellas os seus ovos, o que succede áquelles insectos, que tem o aguilhaõ sempre sahido."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1474 a nif:Phrase ;
+    nif:isString "He a mudança dos insectos a qual he de quatro estados desde o ovo até o Insecto perfeito, ou Imagem. Comprehende O Ovo, Larva, Pupa, e Imagem."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1519 a nif:Phrase ;
+    nif:isString "O ultimo nó bifido, ou dividido, com huma lacinia, ou parte movel. Scorpio."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1561 a nif:Phrase ;
+    nif:isString "Quando o femur anterior he canaliculado, e recebe a tibia falcada, ou arqueada. Nepa. fig. 37."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1749 a nif:Phrase ;
+    nif:isString "Separado por meio de hum pedunculo, ou especie de pescoço, na maior parte dos insectos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2161 a nif:Phrase ;
+    nif:isString "Com pésinho, ou pedunculo. V. na Botanica."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2616 a nif:Phrase ;
+    nif:isString "Coroada de tuberculos redondos, e elevados, como papillas. Buccinum auricularia."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2688 a nif:Phrase ;
+    nif:isString "Pontoada com tuberculos, ou inchaços redondos. Cypraea nucleus."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2813 a nif:Phrase ;
+    nif:isString "Tuberculos desiguaes formados de muitos outros tuberculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
 dbres:p_brotero1_0619 a nif:Paragraph ;
     nif:isString "O CALYZ e corolla saõ os tegumentos dos organos sexuaes, ou para me explicar segundo o modo de alguns sexualistas, o calyz he o thalamo nupcial das flores, e a corolla a rica armaçaõ delle. Cesalpino pensava que o calyz era hum prolongamento da casca e a corlla huma prodcçaõ do livrilho ou alburno."@pt ;
     dcterms:isPartOf dbres:work_compendio1brotero .
@@ -24271,6 +25647,26 @@ dbres:s_vandelli_0012 a nif:Sentence ;
 
 dbres:s_vandelli_0023 a nif:Sentence ;
     nif:isString "Murex reticularis. Concha com a superficie em forma de rede; o dorso, ou costas com malhas, as quaes tem inchaços, ou tuberculos, b. b. varices oppostas, continuadas, chêas de tuberculos, a espira pequena, aguda, c. giros cubertos com tuberculos, d. cauda sahida para fóra breve, que vai subindo, para huma parte alguma cousa dobrada, ou torcida. e. com excavaçaõ."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0460 a nif:Phrase ;
+    nif:isString "As branchias ou guelras saõ os primeiros orgaõs da respiraçaõ nos peixes. Estaõ postas entre a cabeça e o tronco. Para cada huma se ver he necessario levantar o operculo branchial e ter dobrada a membrana branchiostega; e na abertura branchiostega que entaõ fica aberta he que se vé o que propriamente se chama guelra. Desunindo-se humas das outras daõ postagem á agua que o peixe engulio e que quer deitar fora da sua gûela, avizinhando-se entre si e estando os operculos fechados, acha-se a agua retida, e não pode sahir sem se dilatarem as guelras, e sem se levantarem os operculos."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_0675 a nif:Phrase ;
+    nif:isString "Esta membrana, e os operculos tem o seu uso comum, que he o de reter a agua, que peixe faz passar da guéla ao travez das guèlras, que entaõ se desunem humas das outras para se unirem logo, em quanto os operculos ficaõ abatidos, e fechaõ a abertura; que communica as guelras. Depois levantaõ-se os operculos, e abrem a abertura das guélras; a membrana branchiostega se estende para alí, a agua, que antes estava como fechada entre a abertura, e os operculos acha-se expellida, e a abertura das guélras fechada. Em fim os operculos abaixaõ-se pouco, a pouco, e a membrana branchiostega contrahe-se, ou dobrase. Esta membrana, e o operculo pode considerar-se como huma valvula de duas laminas, que se levanta, e abaixa á vontade do animal segundo a necessidade que elle tem de lançar fora a agua, ou o ar. A membrana branchiostega sempre he huma só; mas varîa pelo numero, e forma dos raios, ou ossiculos, dos quaes he composta."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1401 a nif:Phrase ;
+    nif:isString "O primeiro estado dos insectos logo que sahem do Ovo, a que podemos clamar estado da infancia no insecto, de cujo estado passa o insecto ao de pupa."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_1924 a nif:Phrase ;
+    nif:isString "Da-se este nome de braço, a huma especie de cirros grossos, e compridos, com que a Sepia, ou siba abraça, ou apanha alguns animaes, e por meio dos cotyledones postos na parte interior dos mesmos cirros, chupa o humor dos animaes."@pt ;
+    dcterms:isPartOf dbres:work_diciovandelli .
+
+dbres:sn_vandelli_2565 a nif:Phrase ;
+    nif:isString "Saõ humas partes carnosas dos Vermes, que se pódem estender, e recolher voluntariamente, e correspondem ás antennas dos Insectos, com a differença porem, que nos insectos saõ as antennas cartilagineas, e articuladas, e naõ se podem recolher. Os tentaculos saõ dous, ou quatro."@pt ;
     dcterms:isPartOf dbres:work_diciovandelli .
 
 dbres:p_brotero1_0707 a nif:Paragraph ;

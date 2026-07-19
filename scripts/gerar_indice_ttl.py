@@ -86,23 +86,26 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
             g.add((uri_token, ITSRDF.taIdentRef, uri_acepcao))
 
             #
-            # Procura primeiro a sentença (<s>)
+            # Procura o contexto do termo.
+            # A prioridade é:
+            #   1. sentença (<s>)
+            #   2. acepção de dicionário (<sense>)
+            #   3. parágrafo (<p>)
+            # Se as estruturas dos TEI-XML mudarem,
+            # será necessário ajustar a busca do contexto.
             #
 
-            contexto = termo.xpath("ancestor::tei:s[@xml:id][1]", namespaces=ns)
+            contexto = None
 
-            if contexto:
-
-                contexto = contexto[0]
-
-            else:
-
-                contexto = termo.xpath("ancestor::tei:p[@xml:id][1]", namespaces=ns)
-
-                if contexto:
-                    contexto = contexto[0]
-                else:
-                    contexto = None
+            for xpath in (
+                "ancestor::tei:s[@xml:id][1]",
+                "ancestor::tei:sense[@xml:id][1]",
+                "ancestor::tei:p[@xml:id][1]",
+            ):
+                resultado = termo.xpath(xpath, namespaces=ns)
+                if resultado:
+                    contexto = resultado[0]
+                    break
 
             if contexto is None:
                 continue
@@ -123,7 +126,16 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
                     "".join(contexto.itertext()).split()
                 )
 
-                tipo = NIF.Sentence if contexto.tag.endswith("s") else NIF.Paragraph
+                tag = etree.QName(contexto).localname
+
+                if tag == "s":
+                    tipo = NIF.Sentence
+                elif tag == "p":
+                    tipo = NIF.Paragraph
+                elif tag == "sense":
+                    tipo = NIF.Phrase
+                else:
+                    tipo = NIF.Context
 
                 g.add((uri_contexto, RDF.type, tipo))
                 g.add((uri_contexto,
