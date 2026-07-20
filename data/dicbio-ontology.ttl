@@ -190,16 +190,16 @@ dicbio:hasAttestation a owl:ObjectProperty ;
     rdfs:domain ontolex:LexicalSense ;
     rdfs:range dicbio:Attestation .
 
-dicbio:hasOccurrence a owl:ObjectProperty ;
-    rdfs:label "has occurrence"@en ;
-    rdfs:label "tem ocorrência"@pt ;
-    rdfs:comment "Relaciona um registro de atestação histórica a uma ocorrência específica de uma unidade lexical em um documento ou fonte."@pt ;
-    rdfs:domain dicbio:Attestation ;
-    rdfs:range nif:Word .
-
 dicbio:attestationDate a owl:DatatypeProperty ;
     rdfs:label "attestation date"@en ;
     rdfs:label "data de atestação"@pt ;
     rdfs:comment "Data associada à atestação histórica da unidade lexical."@pt ;
     rdfs:domain dicbio:Attestation ;
     rdfs:range xsd:gYear .
+
+dicbio:realizesForm a owl:ObjectProperty ;
+    rdfs:label "realizes form"@en ;
+    rdfs:label "realiza forma"@pt ;
+    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) à forma lexical que ela realiza."@pt ;
+    rdfs:domain nif:Word ;
+    rdfs:range ontolex:Form .
