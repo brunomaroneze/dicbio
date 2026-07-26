@@ -34,7 +34,7 @@ dbres:etym_umbilicado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_umbilicatus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>umbĭlīcātus</i> (já atestado na \"História Natural\" de Plínio, conforme informa o Oxford Latin Dictionary). A conservação do -l- intervocálico demonstra tratar-se de forma erudita, sendo, portanto, um decalque do latim. Apesar de ter uma base morfológica (substantivo <i>umbigo</i>, já atestada em 1563), a forma esperada por derivação sufixal seria <i>*umbigado</i>; assim, evidencia-se que Vandelli e Brotero recuperaram a forma latina como base para a forma em língua portuguesa."^^rdf:HTML .
 
-dbres:etymon_umbilicatus a lemonety:Etymon ;
+dbres:etymon_umbilicatus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "umbilicatus" .

@@ -33,7 +33,7 @@ dbres:etym_vibrissa_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_vibrissae ;
     dicbio:etymologicalArgumentation "O étimo é, sem dúvida, o latim <i>vibrissae, -arum</i>, registrado em diversos dicionários latinos (como o dicionário de Gaffiot, 1934) com a acepção de “pelos do nariz”. Curiosamente, os dicionários remetem sempre ao mesmo contexto, a obra de Festo “De verborum significatione” (datada do século II d.C.), que parece ser a única ocorrência desta palavra num texto da Antiguidade. A edição de Lindsay, 1913 (https://babel.hathitrust.org/cgi/pt?id=njp.32101077773990), traz a forma <i>vibracae</i> em vez de <i>vibrissae</i>, o que leva a crer que se trata de uma forma duvidosa, possivelmente um hápax. Isso, aliado ao fato de que “vibrissa” não tem características de palavra herdada, indica que a palavra provavelmente deixou de ser usada e foi retomada, na sua acepção corrente (“pelos rijos da face dos mamíferos”), no século XVIII. Lineu já o emprega com a nova acepção no <i>Systema Naturae</i> (décima edição, de 1758, e possivelmente em edições anteriores). O autor que primeiro a empregou em latim nessa nova acepção (possivelmente o próprio Lineu) certamente teve acesso a uma cópia do texto de Festo que empregava a forma <i>vibrissae</i>, em vez de <i>vibracae</i>, esta última preferida na leitura de Lindsay."^^rdf:HTML .
 
-dbres:etymon_vibrissae a lemonety:Etymon ;
+dbres:etymon_vibrissae a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "vibrissae" .

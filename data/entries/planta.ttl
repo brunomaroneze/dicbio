@@ -34,7 +34,7 @@ dbres:etym_planta_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_planta ;
     dicbio:etymologicalArgumentation "Segundo o dicionário de Gaffiot, o substantivo latino <i>planta, ae</i> na Antiguidade tinha o sentido de “rebento” (ramo de uma planta extraído para propagação), mas também poderia ter o sentido mais geral de “vegetal”, sentido esse que passou ao português. A conservação do encontro consonantal pl- inicial aponta para a entrada na língua por via erudita, ainda que a palavra seja datada da Idade Média."^^rdf:HTML .
 
-dbres:etymon_planta a lemonety:Etymon ;
+dbres:etymon_planta a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "planta" .

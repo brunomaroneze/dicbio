@@ -33,7 +33,7 @@ dbres:etym_reticulado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_reticulatus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>rētĭcŭlātus</i>, já atestado no latim da Antiguidade (conforme mostra o Oxford Latin Dictonary), com o sentido de \"coberto com rede\". A conservação das consoantes intervocálicas indica que entrou na língua portuguesa como termo erudito, e não herdado. Assim, o termo é um decalque da forma latina. A base morfológica <i>retículo</i> é registrada no dicionário Houaiss, mas sem datação, de modo que não parece ser provável a hipótese de o termo ter sido formado por derivação sufixal em português."^^rdf:HTML .
 
-dbres:etymon_reticulatus a lemonety:Etymon ;
+dbres:etymon_reticulatus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "reticulatus" .

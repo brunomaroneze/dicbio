@@ -35,7 +35,7 @@ dbres:etym_carotida_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_carotides ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina <i>carotides, um</i>, que, segundo o Oxford Latin Dictionary, já é atestado com o sentido de \"artéria do pescoço\" na obra de Aulo Cornélio Celso (séc. I d.C.). O termo em latim é claramente um empréstimo do grego καρωτίδες, que, segundo o dicionário de Liddell, Scott e Jones, também já era empregado com o mesmo sentido por autores da Antiguidade, como Galeno e Areteu da Capadócia. Esse dicionário ainda afirma que Rufo de Éfeso associa o termo ao verbo καρόω \"atordoar, causar adormecimento\", devido ao efeito conseguido pela compressão dessas artérias.<br>Ainda que o termo seja empregado desde a Antiguidade, sua forma na língua portuguesa é claramente erudita (evidenciada pela conservação das consoantes -t- e -d- intervocálicas), ou seja, o termo entrou na língua portuguesa certamente por meio de textos em latim científico."^^rdf:HTML .
 
-dbres:etymon_carotides a lemonety:Etymon ;
+dbres:etymon_carotides a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "carotides" .

@@ -34,7 +34,7 @@ dbres:etym_mesocolon_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_mesocolon ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>mesocolon, i</i>, empregado com o mesmo sentido já no século XVII, como se observa, por exemplo, na \"Opera Anatomica\" de Riolan, publicada em 1649  (https://www.google.com.br/books/edition/Ioannis_Riolani_filii_Opera_anatomica_ve/TF9tWd706e0C). Ainda que não seja documentado nos dicionários do latim da Antiguidade, seu emprego em latim é um empréstimo do grego μεσόκωλον (mesókōlon), que, segundo o dicionário de Liddell, Scott e Jones, foi empregado com o mesmo sentido por Hipócrates e Galeno. Assim, o termo português deriva do termo em latim científico que, por sua vez, é um empréstimo do grego da Antiguidade."^^rdf:HTML .
 
-dbres:etymon_mesocolon a lemonety:Etymon ;
+dbres:etymon_mesocolon a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Opera Anatomica\" de Riolan, publicada em 1649  (https://www.google.com.br/books/edition/Ioannis_Riolani_filii_Opera_anatomica_ve/TF9tWd706e0C" ;
     ontolex:writtenRep "mesocolon" .

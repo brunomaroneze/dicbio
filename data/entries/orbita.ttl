@@ -35,7 +35,7 @@ dbres:etym_orbita_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_orbita ;
     dicbio:etymologicalArgumentation "O étimo parece ser o latim científico “orbita”, já empregado com o sentido de “cavidade dos olhos” no século XVI (por exemplo, na obra de Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C). Na Antiguidade, conforme informa o dicionário OLD, o latim “orbita” tem apenas as acepções de “caminho traçado por uma roda”, “movimento dos astros” e “prática regular, rotina”. A acepção da Anatomia, até onde foi possível identificar, surge no período do Renascimento."^^rdf:HTML .
 
-dbres:etymon_orbita a lemonety:Etymon ;
+dbres:etymon_orbita a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" ;
     ontolex:writtenRep "orbita" .

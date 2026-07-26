@@ -32,7 +32,7 @@ dbres:etym_fecundante_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_fecundans ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>fecundans, -ntis</i>, particípio presente do verbo <i>fecundo, -are</i>, que, no latim da Antiguidade, tem o sentido de \"tornar fértil\" (segundo o Oxford Latin Dictionary). A não ocorrência da sonorização do [k] intervocálico evidencia que o termo não é herdado, mas entrou na língua portuguesa por via erudita, provavelmente a partir do seu emprego no latim científico (já atestado em obras como as \"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC)."^^rdf:HTML .
 
-dbres:etymon_fecundans a lemonety:Etymon ;
+dbres:etymon_fecundans a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC" ;
     ontolex:writtenRep "fecundans" .

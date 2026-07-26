@@ -34,7 +34,7 @@ dbres:etym_lunula_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_lunula ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>lunula, ae</i>, que já apresenta o sentido de \"parte clara da raiz das unhas\" em obras anteriores, como o \"Compedium Anatomicum\" de Heister, 1719 (https://www.google.com.br/books/edition/Laurentii_Heisteri_Compendium_anatomicum/9yNgAAAAcAAJ). Em português, é claramente um latinismo, como fica evidenciado pela permanência do -n- e do -l- intervocálicos.<br>A forma latina <i>lunula, ae</i> ocorre na Antiguidade com o sentido de \"ornamento em formato de lua crescente\", registrada no Oxford Latin Dictionary e no Gaffiot. Evidentemente, não é esse o sentido que permanece na Anatomia. A motivação do termo é decorrente do formato semelhante a uma lua crescente, visto que <i>lunula</i> é o diminutivo de <i>Luna</i> \"Lua\"."^^rdf:HTML .
 
-dbres:etymon_lunula a lemonety:Etymon ;
+dbres:etymon_lunula a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Compedium Anatomicum\" de Heister, 1719 (https://www.google.com.br/books/edition/Laurentii_Heisteri_Compendium_anatomicum/9yNgAAAAcAAJ" ;
     ontolex:writtenRep "lunula" .

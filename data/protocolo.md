@@ -109,7 +109,7 @@
 
 - etym_XXXX_sense1 → hipótese etimológica (lemonety:Etymology)
 
-- etymon_XXXX → étimo (lemonety:Etymon)
+- etymon_XXXX → étimo (dicbio:SemanticEtymon; era lemonety:Etymon, mas alterei porque este último não é subclasse de um Lexical Sense)
 
 - attestation_XXXX → atestação (dicbio:Attestation)
 

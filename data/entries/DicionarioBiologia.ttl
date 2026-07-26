@@ -64,7 +64,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_adiposus a lemonety:Etymon ;
+dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     ontolex:writtenRep "adiposus" ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;

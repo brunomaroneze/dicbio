@@ -34,7 +34,7 @@ dbres:etym_hermafrodita_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_hermaphroditus ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>hermaphroditus,a,um</i>, já atestado no latim clássico (cf. dicionário de Gaffiot) no sentido de \"andrógino, de ambos os sexos\", por sua vez derivado do grego <i>Hermaphróditos,ou</i> no sentido de \"Hermafrodito, filho de Hermes e Afrodite\".<br>O Dicionário Houaiss indica que o emprego como adjetivo biforme (<i>hermafrodito</i> m, <i>hermafrodita</i> f) é anterior ao emprego como uniforme (<i>hermafrodita</i> m, f). Vandelli parece empregá-lo como biforme, a julgar pelas expressões “flores hermaphroditos” (com “flores” no masculino, possivelmente por influência do italiano) e “flosculos hermaphroditos”. Todas as ocorrências da forma <i>hermaphrodita</i> em Vandelli são com substantivos femininos."^^rdf:HTML .
 
-dbres:etymon_hermaphroditus a lemonety:Etymon ;
+dbres:etymon_hermaphroditus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "hermaphroditus" .

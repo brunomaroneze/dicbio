@@ -34,7 +34,7 @@ dbres:etym_litalgia_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon <http://dicbio.fflch.usp.br/recurso/etymon_lit(o)-_+_-algia> ;
     dicbio:etymologicalArgumentation "O termo \"litalgia\" (grafado \"lithalgia\" em Brotero) parece ser um caso de <i>hapax legomenon</i>, ou seja, um termo que apresenta uma única ocorrência. Não foi encontrado em nenhum dicionário, seja de língua portuguesa, seja de latim ou grego; tampouco foi encontrado em qualquer outra obra do repositório Google Livros. Assim, a menos que venha a ser encontrado em outra obra no futuro, deve ser considerado um neologismo criado pelo próprio Botero.<br>No entanto, o seu significado é claro, bem como a sua estrutura morfológica: trata-se de um composto formado pelos elementos gregos <i>lit(o)-</i> (que significa \"pedra\", presente em <i>litografia</i>, por exemplo) e <i>-algia</i> (que significa \"dor\", presente em <i>nevralgia</i>, por exemplo), e se refere à dor causada pela presença de pedras nos rins. No contexto, Brotero refere-se às supostas propriedades que o chá teria para aliviar essas dores, e o termo concorre com a expressão \"dor de pedra\"."^^rdf:HTML .
 
-<http://dicbio.fflch.usp.br/recurso/etymon_lit(o)-_+_-algia> a lemonety:Etymon ;
+<http://dicbio.fflch.usp.br/recurso/etymon_lit(o)-_+_-algia> a dicbio:SemanticEtymon ;
     dcterms:language "formação vernácula" ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "lit(o)- + -algia" .

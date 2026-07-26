@@ -34,7 +34,7 @@ dbres:etym_lobado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_lobatus ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim <i>lobatus</i>, já empregado em textos científicos do século XVII (como, por exemplo, na obra \"Prosopopoeiae Botanicae\" de Virgilio Falugi - https://www.google.com.br/books/edition/Prosopopoeiae_botanicae_sive_Nomenclator/CqS6hxlUbe4C); ou 2 - como adjetivo derivado do substantivo <i>lobo</i> (= \"parte de um órgão\") acrescido do sufixo -<i>ado</i>, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1670; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
-dbres:etymon_lobatus a lemonety:Etymon ;
+dbres:etymon_lobatus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Prosopopoeiae Botanicae\" de Virgilio Falugi - https://www.google.com.br/books/edition/Prosopopoeiae_botanicae_sive_Nomenclator/CqS6hxlUbe4C" ;
     ontolex:writtenRep "lobatus" .

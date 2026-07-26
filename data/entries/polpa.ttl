@@ -34,7 +34,7 @@ dbres:etym_polpa_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_pulpa ;
     dicbio:etymologicalArgumentation "O étimo é o substantivo latino <i>pulpa, ae</i>, que, no latim da Antiguidade, significava “parte carnosa do corpo” e, por extensão, “parte carnosa de um fruto” (segundo o Oxford Latin Dictionary). A alternância -u- para -o- sugere tratar-se de palavra herdada, ainda que sua atestação seja tardia (século XVI, segundo o dicionário Houaiss). Nos textos de Vandelli e Brotero, “polpa” se refere não só à parte carnosa dos frutos, mas também de outras estruturas vegetais, como certas folhas de plantas suculentas."^^rdf:HTML .
 
-dbres:etymon_pulpa a lemonety:Etymon ;
+dbres:etymon_pulpa a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "pulpa" .

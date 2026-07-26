@@ -32,7 +32,7 @@ dbres:etym_parasitico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_parasiticus ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss propõe que o termo é uma derivação sufixal (<i>parasita</i> + <i>-ico</i>). Como o dicionário de Vandelli não registra uma forma latina equivalente, não há evidência de que tenha sido um decalque do latim científico.Tanto Vandelli quanto Moraes Silva registram a expressão <i>planta parasitica</i>, o que leva a crer que o adjetivo pode ter tido o seu primeiro emprego como parte dessa expressão, e apenas depois tem seu emprego estendido para outros tipos de parasitas."^^rdf:HTML .
 
-dbres:etymon_parasiticus a lemonety:Etymon ;
+dbres:etymon_parasiticus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "parasiticus" .

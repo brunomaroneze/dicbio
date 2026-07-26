@@ -32,7 +32,7 @@ dbres:etym_verrucoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_verrucosus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>verrucosus,a,um</i>, que significa “que tem verrugas”, atestado desde a Antiguidade (conforme atesta o Oxford Latin Dictionary). O sentido de “semelhante a uma verruga”, que é o encontrado em Vandelli (1788), é possivelmente do latim científico."^^rdf:HTML .
 
-dbres:etymon_verrucosus a lemonety:Etymon ;
+dbres:etymon_verrucosus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "verrucosus" .

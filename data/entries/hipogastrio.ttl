@@ -34,7 +34,7 @@ dbres:etym_hipogastrio_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_hypogastrium ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico hypogastrium, empregado em textos em latim científico do século XVI (cf., por exemplo, “Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0); este, por sua vez, é uma adaptação da palavra grega hypogástrion (ὑπογάστριον), registrada no dicionário LSJ com o significado de “baixo ventre”. O dicionário Houaiss dá como étimo o adjetivo hupogástrios,os,on, mas este adjetivo tem, no LSJ, apenas o sentido de “sexual”."^^rdf:HTML .
 
-dbres:etymon_hypogastrium a lemonety:Etymon ;
+dbres:etymon_hypogastrium a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "“Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0" ;
     ontolex:writtenRep "hypogastrium" .

@@ -33,7 +33,7 @@ dbres:etym_cuticula_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_cuticula ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>cuticula,ae</i>, diminutivo de <i>cutis,i</i>, que significa \"pele\". A atestação informada pelo Dicionário Houaiss é possivelmente para uma acepção fora da Botânica. A ocorrência em Vandelli talvez seja a primeira atestação no âmbito da Botânica."^^rdf:HTML .
 
-dbres:etymon_cuticula a lemonety:Etymon ;
+dbres:etymon_cuticula a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "cuticula" .

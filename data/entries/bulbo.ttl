@@ -36,12 +36,12 @@ dbres:etym_bulbo_sense1 a lemonety:Etymology ;
         dbres:etymon_bulbus ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>bulbus,i</i>, que significa \"cebola, bulbo, tubérculo, raiz carnuda\", e é cognato do grego <i>bolbós,oû</i>, que significa \"cebola\". A forma latina já era empregada na Botânica no século XVIII, como atesta o dicionário de Vandelli. O Dicionário Houaiss também inclui o verbete <i>bolbo</i>, sem data, informando que seria a forma vulgar da palavra.<br>A atestação na \"Anatomia do corpo humano\" de Santucci antecede em algumas décadas a datação na Botânica, o que pode indicar que há uma datação ainda mais antiga na Botânica, ainda a ser encontrada.<br>No índice alfabético do dicionário de Vandelli, encontram-se as expressões latinas “Caulinus bulbus”, “Solitus bulbus”, “Squamatus bulbus” e “Tunicatus bulbus”, todas remetendo para o verbete de número 166; no entanto, esse verbete não existe, visto que o último é o de número 164. Assim, supõe-se que o autor previu a inclusão de um verbete para “bulbus”, mas não o incluiu."^^rdf:HTML .
 
-dbres:etymon_bulbo_\(1\) a lemonety:Etymon ;
+dbres:etymon_bulbo_\(1\) a dicbio:SemanticEtymon ;
     dcterms:language "português" ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "bulbo (1)" .
 
-dbres:etymon_bulbus a lemonety:Etymon ;
+dbres:etymon_bulbus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "bulbus" .

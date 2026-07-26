@@ -32,7 +32,7 @@ dbres:etym_fibroso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_fibrosus ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss sugere que se trata de uma derivação sufixal (<i>fibra</i> + <i>-oso</i>); no entanto, a ocorrência de <i>fibrosus,a,um</i> no latim científico (atestado em Vandelli) leva a crer que o termo foi decalcado ou emprestado do latim científico.A data de 1751 é informada pelo Dicionário Houaiss e indicada com a abreviatura MarqJFP, que não é incluída na lista de fontes, mas possivelmente se refere a João Feliciano Marques Pereira."^^rdf:HTML .
 
-dbres:etymon_fibrosus a lemonety:Etymon ;
+dbres:etymon_fibrosus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "fibrosus" .

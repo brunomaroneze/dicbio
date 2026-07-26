@@ -31,7 +31,7 @@ dbres:etym_sexual_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_sexualis ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>sexualis, -e</i>, adjetivo já empregado no contexto da Botânica, conforme atesta, por exemplo, o título da obra “Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC). O Dicionário Houaiss informa que esse mesmo adjetivo já era empregado em latim tardio com o sentido de \"do sexo feminino, feminil, de mulher\"; no entanto, esse emprego provavelmente desapareceu e ressurgiu no latim científico, de onde passou ao português."^^rdf:HTML .
 
-dbres:etymon_sexualis a lemonety:Etymon ;
+dbres:etymon_sexualis a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "“Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC)" ;
     ontolex:writtenRep "sexualis" .

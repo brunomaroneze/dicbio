@@ -37,7 +37,7 @@ dbres:etym_papila_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_papilla ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>papilla</i>, que significava, na Antiguidade, “mamilo, bico do seio” (conforme informa o Oxford Latin Dictionary). A forma portuguesa entrou por via erudita, como se percebe pela conservação do -p- intervocálico.<br>O emprego da palavra no latim científico, com sentido diferente do original, é atribuído a Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/)."^^rdf:HTML .
 
-dbres:etymon_papilla a lemonety:Etymon ;
+dbres:etymon_papilla a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" ;
     ontolex:writtenRep "papilla" .

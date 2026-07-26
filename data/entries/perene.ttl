@@ -32,7 +32,7 @@ dbres:etym_perene_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_perennis ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>perennis,e</i>, com o sentido de \"que dura, sólido, durável, duradouro\". A forma da palavra não permite identificar se é uma palavra herdada ou um empréstimo erudito. A datação informada pelo Dicionário Houaiss é possivelmente para outras acepções fora do âmbito da Botânica."^^rdf:HTML .
 
-dbres:etymon_perennis a lemonety:Etymon ;
+dbres:etymon_perennis a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "perennis" .

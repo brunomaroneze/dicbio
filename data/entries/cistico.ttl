@@ -33,7 +33,7 @@ dbres:etym_cistico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_cysticus ;
     dicbio:etymologicalArgumentation "De acordo com o dicionário Houaiss, o adjetivo \"cístico\" é considerado uma formação vernácula, sendo formado pela combinação do radical \"cisto-\" com o sufixo \"-ico\". A forma \"cysticus\" não consta nos dicionários Gaffiot, Oxford Latin Dictionary e Lexicon Totius Latinitatis. No entanto, a expressão \"bilis cystica\" já aparece em latim científico, por exemplo, na obra \"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC). Dessa forma, é possível que o étimo da forma portuguesa seja o latim científico, e não necessariamente uma formação vernácula, ao contrário do que é sugerido pelo dicionário Houaiss."^^rdf:HTML .
 
-dbres:etymon_cysticus a lemonety:Etymon ;
+dbres:etymon_cysticus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC" ;
     ontolex:writtenRep "cysticus" .

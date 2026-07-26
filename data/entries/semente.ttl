@@ -34,7 +34,7 @@ dbres:etym_semente_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_sementem ;
     dicbio:etymologicalArgumentation "O étimo, segundo informa o dicionário Houaiss, é o latim <i>sementis</i> (mais bem representado pela forma do acusativo <i>semente(m)</i>), que significa “semeadura”, “período de semeadura” (conforme apresenta o Oxford Latin Dictionary). O estudo dos cognatos em outras línguas românicas pode apontar para o momento em que houve a mudança de significado de “semeadura” para “semente”. O Romanisches Etymologisches Wörterbuch traz os seguintes cognatos: italiano <i>semente, sementa</i>, catalão <i>sement</i>, espanhol <i>simiente</i>. Desses, apenas o italiano <i>semente</i> não significa “semente”, mas sim o conjunto de sementes usadas na semeadura."^^rdf:HTML .
 
-dbres:etymon_sementem a lemonety:Etymon ;
+dbres:etymon_sementem a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "sementem" .

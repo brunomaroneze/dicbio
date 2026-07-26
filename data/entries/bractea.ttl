@@ -35,7 +35,7 @@ dbres:etym_bractea_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_bractea ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>bractea</i>, já com o sentido usual da Botânica. No latim da Antiguidade, conforme informa o dicionário de Gaffiot, a palavra designava \"folha de metal, de ouro\"."^^rdf:HTML .
 
-dbres:etymon_bractea a lemonety:Etymon ;
+dbres:etymon_bractea a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "bractea" .

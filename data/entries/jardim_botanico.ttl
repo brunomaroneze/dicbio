@@ -34,7 +34,7 @@ dbres:etym_jardim_botanico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_nao_se_aplica ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss data essa expressão do ano de 1852, mas não informa a fonte. A expressão é bem mais antiga, como mostra o contexto de 1735. Em 1718, a expressão que aparece é “Jardim Real Botanico”, com o elemento “Real” intercalado, o que revela que a expressão ainda estava em vias de se consolidar na forma que tem nos dias atuais.<br>É possível que essa expressão seja um decalque de uma expressão semelhante de outra língua europeia. O francês <i>jardin botanique</i> já aparece em 1673 (“Recherche des Antiquités et Curiosités de la ville de Lyon”, disponível em https://books.google.pt/books?id=btFTAAAAcAAJ), ainda que a data indicada pelo Trésor de la Langue Française seja 1732. O latim <i>hortus botanicus</i> é ainda mais antigo, aparecendo na obra “Critica Sacra”, de Edward Legh, 1639 (disponível em https://books.google.pt/books?id=0IRmAAAAcAAJ). Dessa forma, é razoável supor que a expressão portuguesa tenha sido uma tradução de uma expressão equivalente em outra língua."^^rdf:HTML .
 
-dbres:etymon_nao_se_aplica a lemonety:Etymon ;
+dbres:etymon_nao_se_aplica a dicbio:SemanticEtymon ;
     dcterms:language "não se aplica" ;
     dcterms:source "“Critica Sacra”, de Edward Legh, 1639 (disponível em https://books.google.pt/books?id=0IRmAAAAcAAJ" ;
     ontolex:writtenRep "não se aplica" .

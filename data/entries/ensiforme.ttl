@@ -32,7 +32,7 @@ dbres:etym_ensiforme_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_ensiformis ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>ensiformis</i>, atestado já no século XVII - por exemplo, na obra \"Cometographia\" (1668), de Johannes Hevelius (https://www.google.com.br/books/edition/JOHANNIS_HEVELII_COMETOGRAPHIA_Totam_Nat/UvTm7DlL8cUC). A expressão <i>cartilago ensiformis</i>, da qual certamente a \"cartilagem ensiforme\" é um decalque, também já é atestada em obras anteriores, como a \"Anatomy of Human Bodies\" de Thomas Gibson, de 1688 (https://www.google.com.br/books/edition/The_Anatomy_of_Human_Bodies_Epitomiz_d_T/hwhlAAAAcAAJ). O Dicionário Houaiss apresenta não a etimologia, mas a descrição morfológica do termo: os elementos <i>ensi-</i> (do latim <i>ensis, is</i>, \"espada\") e <i>-forme</i>."^^rdf:HTML .
 
-dbres:etymon_ensiformis a lemonety:Etymon ;
+dbres:etymon_ensiformis a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Cometographia\" (1668), de Johannes Hevelius (https://www.google.com.br/books/edition/JOHANNIS_HEVELII_COMETOGRAPHIA_Totam_Nat/UvTm7DlL8cUC" ;
     ontolex:writtenRep "ensiformis" .

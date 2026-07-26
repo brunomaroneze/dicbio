@@ -33,7 +33,7 @@ dbres:etym_corolula_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_corollula ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>corollula</i>, atestado no século XVIII (como, por exemplo, na obra <i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ). Trata-se do diminutivo de <i>corolla</i>, esta última já um diminutivo (de <i>corona</i>, coroa).<br>O termo não aparece em textos de Botânica em pesquisas recentes no Google, o que leva a crer que não é mais usado atualmente."^^rdf:HTML .
 
-dbres:etymon_corollula a lemonety:Etymon ;
+dbres:etymon_corollula a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "<i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ" ;
     ontolex:writtenRep "corollula" .

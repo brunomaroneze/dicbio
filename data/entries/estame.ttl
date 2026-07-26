@@ -33,7 +33,7 @@ dbres:etym_estame_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_stamen ;
     dicbio:etymologicalArgumentation "Como informa o Dicionário Houaiss, o étimo é o latim <i>stamen, -inis</i> no sentido de “fio da roca”. A datação informada pelo dicionário Houaiss é provavelmente referente à acepção de “fio de tecer”. O emprego do latim <i>stamen</i> na Botânica já ocorre no século XVIII e influenciou a acepção no português."^^rdf:HTML .
 
-dbres:etymon_stamen a lemonety:Etymon ;
+dbres:etymon_stamen a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "stamen" .

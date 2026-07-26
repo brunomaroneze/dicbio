@@ -39,12 +39,12 @@ dbres:etym_caruncula_sense1 a lemonety:Etymology ;
         dbres:etymon_caruncula_seminal ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>caruncula</i>, que tinha, na Antiguidade, o sentido de “pequeno pedaço de carne”, mas já aparece, em Celso (“De Medicina” 6.8.2.A, citado pelo Oxford Language Dictionary), com o sentido de “protuberância” (especificamente dentro das narinas). A palavra entrou em português pela via erudita (como fica evidenciado pela conservação do -u- postônico). No latim científico, <i>caruncula</i> parece ter sido empregada para nomear diversas estruturas anatômicas. Por exemplo, a expressão “caruncula lacrymalis” é empregada para nomear as estruturas que produzem as lágrimas no “Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ); na obra “An Anatomical Exposition of the Structure of the Human Body”, de James Benignus Winslow (1756 - https://www.google.com.br/books/edition/An_Anatomical_Exposition_of_the_Structur/vq-wTrSjhGQC), <i>caruncula</i> designa uma estrutura presente na próstata. Assim, Vandelli provavelmente buscou esse termo no latim científico para designar diversas estruturas anatômicas animais."^^rdf:HTML .
 
-dbres:etymon_caruncula a lemonety:Etymon ;
+dbres:etymon_caruncula a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "“Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ" ;
     ontolex:writtenRep "caruncula" .
 
-dbres:etymon_caruncula_seminal a lemonety:Etymon ;
+dbres:etymon_caruncula_seminal a dicbio:SemanticEtymon ;
     dcterms:language "português" ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "carúncula seminal" .

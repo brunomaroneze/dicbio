@@ -33,7 +33,7 @@ dbres:etym_capreolo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_capreolus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>capreolus</i>, sinônimo de “cirro”, conforme define o próprio Vandelli: “<i>Capreoli, carbiculae, viticuli:</i> O mesmo, que os <i>cirrhos.</i> Ou he <i>o cirro.</i>” (Diccionario dos termos technicos de Historia Natural, 1788, p. 236). O dicionário de Gaffiot afirma que a palavra já tinha o sentido de \"gavinha da videira\" no latim da Antiguidade, embora também pudesse significar \"cabrito\".<br>O Dicionário Houaiss não inclui esse verbete em sua nomenclatura. O Dicionário Aulete inclui apenas com a acepção de \"espécie de cabra\". É possível que a acepção da Botânica esteja em desuso no português contemporâneo."^^rdf:HTML .
 
-dbres:etymon_capreolus a lemonety:Etymon ;
+dbres:etymon_capreolus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "capreolus" .

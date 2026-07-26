@@ -36,7 +36,7 @@ dbres:etym_vilo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_villus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>villus,i</i>, empregado no século XVIII com o mesmo sentido, como mostra o próprio dicionário de Vandelli. Segundo o dicionário de Gaffiot, no latim da Antiguidade essa palavra designava pelos de animais, mas também poderia se referir ao musgo.Esse termo não é registrado no Dicionário Houaiss nem nos dicionários Aulete ou Michaelis. É possivelmente um termo que desapareceu da língua portuguesa."^^rdf:HTML .
 
-dbres:etymon_villus a lemonety:Etymon ;
+dbres:etymon_villus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "villus" .

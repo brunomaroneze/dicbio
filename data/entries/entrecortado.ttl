@@ -33,7 +33,7 @@ dbres:etym_entrecortado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon <http://dicbio.fflch.usp.br/recurso/etymon_entrecortar_+_-ado> ;
     dicbio:etymologicalArgumentation "<i>Entrecortado</i> é o particípio do verbo <i>entrecortar</i>, este formado por derivação prefixal com o prefixo <i>entre-</i> unido ao verbo <i>cortar</i> (ou talvez seja um empréstimo do espanhol, visto que a forma <i>entrecortadas</i> já aparece na obra \"Monarchia Mistica de la Yglesia\", do padre Fray Lorenzo de Zamora, publicado em 1616 - https://www.google.com.br/books/edition/Monarchia_mistica_de_la_yglesia_hecha_de/2PMk0_RzwT4C). O Dicionário Houaiss informa que a atestação mais antiga para o verbo <i>entrecortar</i> é 1836, mas esse verbo já aparece no \"Diccionario Italiano, e Portuguez\" de Joaquim José da Costa e Sá, publicado em 1773 (https://www.google.com.br/books/edition/Diccionario_italiano_e_portuguez_extrahi/3ENAAAAAcAAJ), como equivalente do italiano <i>intersecare</i>."^^rdf:HTML .
 
-<http://dicbio.fflch.usp.br/recurso/etymon_entrecortar_+_-ado> a lemonety:Etymon ;
+<http://dicbio.fflch.usp.br/recurso/etymon_entrecortar_+_-ado> a dicbio:SemanticEtymon ;
     dcterms:language "formação vernácula" ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "entrecortar + -ado" .

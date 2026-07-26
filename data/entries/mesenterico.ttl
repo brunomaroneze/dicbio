@@ -34,7 +34,7 @@ dbres:etym_mesenterico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_mesentericus ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo do latim científico <i>mesentericus, a, um</i>, atestado, por exemplo, na obra \"Opera Medica et Physica\", de Thomas Willis, 1676 (https://www.google.com.br/books/edition/Clarissimi_viri_Thom%C3%A6_Willis_opera_medi/VrucCs-1Hh4C). Ainda que, morfologicamente, <i>mesentérico</i> seja um derivado sufixal de <i>mesentério</i> + <i>-ico</i>, é improvável que tenha sido um termo formado na língua portuguesa, como parece implicar a descrição etimológica do dicionário Houaiss."^^rdf:HTML .
 
-dbres:etymon_mesentericus a lemonety:Etymon ;
+dbres:etymon_mesentericus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Opera Medica et Physica\", de Thomas Willis, 1676 (https://www.google.com.br/books/edition/Clarissimi_viri_Thom%C3%A6_Willis_opera_medi/VrucCs-1Hh4C" ;
     ontolex:writtenRep "mesentericus" .

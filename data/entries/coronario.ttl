@@ -34,7 +34,7 @@ dbres:etym_coronario_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_coronarius ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>coronarius, a, um</i>, que já era empregado em obras de anatomia referindo-se aos vasos sanguíneos do coração; por exemplo, a expressão <i>arteriae coronariae</i> pode ser encontrada na obra \"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ).<br>O adjetivo latino <i>coronarius, a, um</i> está registrado nos dicionários de latim da Antiguidade (Oxford Latin Dictionary e Gaffiot) com o sentido de \"relativo a coroa\"; o substantivo <i>coronarius, ii</i> (bem como a sua forma feminina <i>coronaria, ae</i>) tem o sentido de \"fabricante ou vendedor(a) de coroas ou guirlandas\". Certamente não é esse último o sentido que aparece empregado no latim científico, mas sim o sentido adjetival \"relativo a coroa\", que foi associado à forma pela qual os vasos coronários recobrem o coração. Assim, ainda que o étimo (mais direto) seja o latim científico, o sentido mais geral do termo remonta ao latim da Antiguidade."^^rdf:HTML .
 
-dbres:etymon_coronarius a lemonety:Etymon ;
+dbres:etymon_coronarius a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ" ;
     ontolex:writtenRep "coronarius" .

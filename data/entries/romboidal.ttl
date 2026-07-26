@@ -31,7 +31,7 @@ dbres:etym_romboidal_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_rhomboidalis ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma se tratar de uma derivação sufixal a partir do substantivo <i>romboide</i>, com o acréscimo do sufixo <i>-al</i>. O Trésor de la Langue Française afirma que o francês <i>rhomboïdal</i> é atestado desde 1671, forma essa que pode ter influenciado a forma portuguesa."^^rdf:HTML .
 
-dbres:etymon_rhomboidalis a lemonety:Etymon ;
+dbres:etymon_rhomboidalis a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Index Testarum Conchyliorum\" de Gualtieri, 1742 (https://www.google.com.br/books/edition/Index_testarvm_conchyliorvm_qvae_adserva/HoRSuCDGWyIC)" ;
     ontolex:writtenRep "rhomboidalis" .

@@ -32,7 +32,7 @@ dbres:etym_bile_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_bilis ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>bilis</i>, já atestado desde a Antiguidade com o sentido de \"fluido secretado pelo fígado\" (conforme mostra o Oxford Latin Dictionary). A conservação do -l- intervocálico e a data tardia de registro na língua portuguesa indicam tratar-se de palavra erudita, que certamente entrou na língua por meio do latim científico."^^rdf:HTML .
 
-dbres:etymon_bilis a lemonety:Etymon ;
+dbres:etymon_bilis a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "bilis" .

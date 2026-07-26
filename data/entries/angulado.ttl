@@ -61,7 +61,7 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O adjetivo <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_angulatus a lemonety:Etymon ;
+dbres:etymon_angulatus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     skos:definition "Que tem ângulo; anguloso."@pt ;

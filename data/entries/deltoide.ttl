@@ -35,7 +35,7 @@ dbres:etym_deltoide_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_deltoides ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>deltoides</i>, não atestado no latim da Antiguidade, mas já empregado para se referir ao músculo do ombro desde o século XVI, como se lê na obra “Opera anatomica\" (1595), de Andreas Du-Laurens (https://www.google.com.br/books/edition/Opera_anatomica_etc_Ed_altera/13lVAAAAcAAJ). O termo latino, por sua vez, é um empréstimo do adjetivo grego δελτοειδής (<i>deltoeidés</i>) “em forma de delta (ou seja, triangular)”. Segundo o dicionário de Liddell, Scott e Jones, já na Antiguidade Galeno empregou esse adjetivo para se referir ao músculo do ombro. Dessa forma, o termo passou do grego da Antiguidade para o latim científico e, deste, para o português."^^rdf:HTML .
 
-dbres:etymon_deltoides a lemonety:Etymon ;
+dbres:etymon_deltoides a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "“Opera anatomica\" (1595), de Andreas Du-Laurens (https://www.google.com.br/books/edition/Opera_anatomica_etc_Ed_altera/13lVAAAAcAAJ" ;
     ontolex:writtenRep "deltoides" .

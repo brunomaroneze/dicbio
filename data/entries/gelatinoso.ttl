@@ -33,7 +33,7 @@ dbres:etym_gelatinoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_gelatinosus ;
     dicbio:etymologicalArgumentation "Em relação à identificação do étimo deste termo, os dados são conflitantes. A ocorrência da expressão latina <i>tumor gelatinosus</i> num texto de 1695 (\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ) parece apontar para uma criação do latim científico (visto que o termo não está registrado nos dicionários do latim da Antiguidade) que teria passado ao português; portanto, um latinismo. No entanto, a forma atestada em Santucci é \"jalatinosa\", e não a forma esperada \"gelatinosa\", o que aponta para uma pronúncia popular e uma possível derivação sufixal inteiramente vernácula. Será necessário buscar outras atestações do termo e, possivelmente, de uma forma primitiva *\"jalatina\". Não obstante, a forma atual \"gelatinoso\" foi muito provavelmente influenciada pela forma latina."^^rdf:HTML .
 
-dbres:etymon_gelatinosus a lemonety:Etymon ;
+dbres:etymon_gelatinosus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ" ;
     ontolex:writtenRep "gelatinosus" .

@@ -36,7 +36,7 @@ dbres:etym_pedunculo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_pedunculus ;
     dicbio:etymologicalArgumentation "Conforme explica o Dicionário Houaiss, o étimo é o latim <i>pedunculus,i</i>, diminutivo de <i>pes,pedis</i> (que significa \"pé\"). O dicionário de Gaffiot informa que <i>pedunculus</i> ou <i>pediculus</i> já na Antiguidade era empregado com o sentido de \"pedúnculo, haste de uma folha\", mas o étimo do termo português é, evidentemente, o latim científico, visto que a palavra não é herdada. Vandelli distingue (embora nem sempre com muita clareza) os conceitos de <i>pedúnculo</i> (haste da frutificação), <i>pecíolo</i> (haste da folha) e <i>pedicelo</i> (ramo de um pedúnculo). Já a definição de Morais Silva não é tão clara, aparentemente confundindo os conceitos."^^rdf:HTML .
 
-dbres:etymon_pedunculus a lemonety:Etymon ;
+dbres:etymon_pedunculus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "pedunculus" .

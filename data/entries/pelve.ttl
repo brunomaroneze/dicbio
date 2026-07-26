@@ -35,7 +35,7 @@ dbres:etym_pelve_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_pelvis ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>pelvis</i>, que se refere a \"bacia de metal; caldeirão\", conforme registrado no dicionário de Gaffiot. No entanto, não há registros da forma latina <i>pelvis</i> com o sentido de \"cavidade óssea\" nos dicionários de latim da Antiguidade (Gaffiot e Oxford Latin Dictionary), o que leva a crer que o étimo da forma portuguesa nessa acepção surge nos textos do latim científico, já que é possível encontrar textos técnicos do século XVII em que o termo ocorre, como, por exemplo, em \"Opera Omnia\" (1687), de Marcello Malpighi (https://www.google.com.br/books/edition/Opera_omnia/jyNAAAAAcAAJ)."^^rdf:HTML .
 
-dbres:etymon_pelvis a lemonety:Etymon ;
+dbres:etymon_pelvis a dicbio:SemanticEtymonEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Opera Omnia\" (1687), de Marcello Malpighi (https://www.google.com.br/books/edition/Opera_omnia/jyNAAAAAcAAJ" ;
     ontolex:writtenRep "pelvis" .

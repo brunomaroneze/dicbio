@@ -34,7 +34,7 @@ dbres:etym_coccix_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_coccyx ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>coccyx</i>, que se refere ao osso da base da coluna vertebral. Os dicionários Oxford Latin Dictionary e Gaffiot não registram essa acepção, mas apenas a de \"cuco\" (ave), ambos afirmando ser palavra de origem grega; o dicionário de Liddell, Scott e Jones, por sua vez, afirma que o grego κόκκυξ (kókkyks), além de se referir à ave, também foi empregado por Rufo de Éfeso e por Galeno para se referir ao osso. Dessa forma, o termo no latim científico tem origem no grego da Antiguidade, ainda que essa acepção não tenha registro no latim da mesma época.<br>Santucci emprega a grafia com -y-, mais próxima da grafia em latim. A grafia com -i- (<i>coccix</i>) pode ser encontrada em francês já em textos médicos do século XVII (como o \"Traité Complet des Opérations de Chirurgie\", de Vauguion, 1698 - https://www.google.com.br/books/edition/Trait%C3%A9_complet_des_op%C3%A9rations_de_chiru/NxhmAAAAcAAJ), mas não a encontramos em latim."^^rdf:HTML .
 
-dbres:etymon_coccyx a lemonety:Etymon ;
+dbres:etymon_coccyx a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "LSJ" ;
     ontolex:writtenRep "coccyx" .

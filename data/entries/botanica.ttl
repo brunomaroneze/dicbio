@@ -36,7 +36,7 @@ dbres:etym_botanica_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_botanica ;
     dicbio:etymologicalArgumentation "O étimo é, certamente, o latim científico <i>Botanica</i>, já empregado com o sentido de \"ciência dos vegetais\" desde o século XVII (cf., por exemplo, a obra \"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\").<br>O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (<i>botanikós</i>) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."^^rdf:HTML .
 
-dbres:etymon_botanica a lemonety:Etymon ;
+dbres:etymon_botanica a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
     ontolex:writtenRep "Botanica" .

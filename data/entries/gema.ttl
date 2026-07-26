@@ -37,12 +37,12 @@ dbres:etym_gema_sense1 a lemonety:Etymology ;
         dbres:etymon_gemma ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>gemma,ae</i>; a acepção da Botânica (\"broto da videira\") já é atestada no latim clássico (conforme informa o Oxford Latin Dictionary <i>s.v.</i> \"gemma\") e, portanto, ao contrário do que parece sugerir o Dicionário Houaiss, não deriva da acepção latina de \"pedra preciosa\"; pelo contrário, é a acepção de \"pedra preciosa\" que provavelmente se derivou da de \"broto da videira\", como afirma o Dictionnaire Étymologique de la Langue Latine (<i>s.v</i>. \"gemma\"). Assim, a acepção de \"gema do ovo\" pode ter surgido pelo fato de tanto a gema do ovo quanto a da planta terem a função de gerar um novo ser vivo (que é a explicação que dá Corominas, <i>s.v</i>. \"yema\").<br>O verbete <i>gemma</i> no dicionário de Vandelli é referido no índice alfabético ao final, como o verbete de número 166; no entanto, esse verbete não existe de fato (a numeração acaba no 164), o que leva à conclusão de que a obra foi impressa inacabada.<br>A datação informada pelo Dicionário Houaiss é possivelmente referente à acepção de \"gema do ovo\". A acepção da Botânica não foi encontrada em textos anteriores à obra de Vandelli, o que parece indicar que essa acepção “ressuscitou” a partir dos textos em latim científico do século XVIII. O glossário quinhentista de Jerônimo Cardoso emprega a glosa “olho, ou gomo da videira” para a palavra latina “gemma”, o que parece indicar que, de fato, essa acepção não era empregada no século XVI, e o termo equivalente na época seria “olho” ou “gomo”."^^rdf:HTML .
 
-dbres:etymon_gema_\(1\) a lemonety:Etymon ;
+dbres:etymon_gema_\(1\) a dicbio:SemanticEtymon ;
     dcterms:language "português" ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "gema (1)" .
 
-dbres:etymon_gemma a lemonety:Etymon ;
+dbres:etymon_gemma a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "gemma" .

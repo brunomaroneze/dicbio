@@ -35,7 +35,7 @@ dbres:etym_esofago_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_oesophagus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>oesophagus</i>, atestado já no século XVI (por exemplo, em “De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC). Por estar ausente dos dicionários de Gaffiot e OLD, supõe-se que não existia no latim da Antiguidade. Em latim, é empréstimo do grego οἰσοφάγος, atestado em Hipócrates, Aristóteles e Galeno com o sentido de “goela, esôfago” (segundo o dicionário de Liddell, Scott e Jones)."^^rdf:HTML .
 
-dbres:etymon_oesophagus a lemonety:Etymon ;
+dbres:etymon_oesophagus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" ;
     ontolex:writtenRep "oesophagus" .

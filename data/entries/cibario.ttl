@@ -33,7 +33,7 @@ dbres:etym_cibario_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_cibarius ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo latino <i>cibarius, a, um</i>, atestado desde a Antiguidade (conforme apontam os dicionários Oxford Latin Dictionary e Gaffiot) com o sentido de “relativo aos alimentos” (derivado do latim <i>cibus, i</i>, “alimento”). O termo em português é certamente um latinismo erudito, derivado possivelmente do latim científico."^^rdf:HTML .
 
-dbres:etymon_cibarius a lemonety:Etymon ;
+dbres:etymon_cibarius a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     ontolex:writtenRep "cibarius" .

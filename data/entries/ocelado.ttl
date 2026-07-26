@@ -32,7 +32,7 @@ dbres:etym_ocelado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_ocellatus ;
     dicbio:etymologicalArgumentation "<i>Ocelado</i> tem como étimo o latim <i>ocellatus</i>. O termo <i>ocelado</i> é considerado um decalque advindo do latim, pois, apesar de ter uma base morfológica na língua portuguesa, a datação encontrada para ela é de 1881, ou seja, uma datação posterior a escrita do dicionário de Vandelli (1788). Portanto, no momento da elaboração do dicionário, Vandelli não teria a possibilidade de utilizar o substantivo ocelo para formar uma derivação com o sufixo -<i>ado</i>, tendo em vista que essa palavra ainda não fazia parte do vocabulário da língua portuguesa."^^rdf:HTML .
 
-dbres:etymon_ocellatus a lemonety:Etymon ;
+dbres:etymon_ocellatus a dicbio:SemanticEtymon ;
     dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "ocellatus" .
