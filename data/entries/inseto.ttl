@@ -35,7 +35,7 @@ dbres:etym_inseto_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina <i>insectum, i</i>, atestada já em Plínio, o Velho (portanto, século I d.C.), segundo o Oxford Latin Dictionary. No entanto, a palavra não é herdada em português (como fica evidente pela ausência da transformação ct > it), mas provavelmente derivada do emprego em latim científico, atestado pelo menos desde o século XVI (cf., por exemplo, a obra “Historiae Animalium”, de Conrad Gessner, publicada entre os anos 1551 e 1558, disponível em https://www.google.com.br/books/edition/Conradi_Gesneri_medici_Tigurini_Historia/J2IQTOBA_tYC). O substantivo <i>insectum, i</i>, em latim, é o particípio do verbo <i>inseco, are</i> (“cortar, fazer uma incisão”) e significa, literalmente, “cortado, dividido” (ou seja, de corpo segmentado).<br>Para Vandelli (e outros, como o já mencionado Gessner), o conceito de “inseto” engloba também animais como aranhas, escorpiões, caranguejos e lagostas; ou seja, refere-se ao grupo conhecido atualmente como “artrópodes”. O conceito atual de “inseto” é provavelmente do século XIX."^^rdf:HTML .
 
 dbres:etymon_insectum a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "insectum" .
 

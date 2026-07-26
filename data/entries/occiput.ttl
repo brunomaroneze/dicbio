@@ -35,7 +35,7 @@ dbres:etym_occiput_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Trata-se de um empréstimo direto do latim, atestado desde a Antiguidade: o dicionário OLD registra as formas sinônimas <i>occipicium</i> e <i>occiput</i>, já com o sentido de “parte posterior da cabeça”. O dicionário Houaiss registra como sinônimas as formas “occipício”, “occipúcio”, “occipital” e “ócciput”, mas definidas em referência à parte da cabeça, não exatamente ao osso. Também em Santucci se observa oscilação no emprego da palavra: ora refere-se à parte da cabeça, ora ao osso presente nessa parte. A forma “toutiço”, apontada como sinônima por Santucci, parece apresentar essa mesma ambiguidade, ora como a parte da cabeça, ora como o osso ali presente."^^rdf:HTML .
 
 dbres:etymon_occiput a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "occiput" .
 

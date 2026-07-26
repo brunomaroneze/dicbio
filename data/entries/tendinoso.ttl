@@ -36,7 +36,7 @@ dbres:etym_tendinoso_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>tendinosus</i>. O termo não é registrado em dicionários de latim clássico, como o Gaffiot e o Oxford Latin Dictionary, mas em textos do latim científico é possível encontrá-lo, como em “Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ). No dicionário Houaiss, o termo é atestado em 1790, no SeabCh. No entanto, é possível encontrar o termo no livro Anatomia do Corpo Humano (1739), de Bernardo Santucci."^^rdf:HTML .
 
 dbres:etymon_tendinosus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "“Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ" ;
     ontolex:writtenRep "tendinosus" .
 

@@ -65,7 +65,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dicbio:confidenceLevel dicbio:probable .
 
 dbres:etymon_adiposus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     ontolex:writtenRep "adiposus" ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;

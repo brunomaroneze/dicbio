@@ -34,7 +34,7 @@ dbres:etym_mucilaginoso_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>mucilaginosus</i>, com o mesmo significado. Essa forma não é registrada em dicionários de latim clássico, como o Gaffiot e o Oxford Latin Dictionary, o que nos leva a entender o termo como originado do latim científico, já que é registrado em livros técnicos, como em “Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ).  De acordo com o dicionário Houaiss, o termo é atestado em 1782, no Dicionário Etimológico Nova Fronteira da Língua Portuguesa, de Antônio Geraldo da Cunha. No entanto, é possível encontrar o termo no livro Anatomia do Corpo Humano (1739), de Bernardo Santucci."^^rdf:HTML .
 
 dbres:etymon_mucilaginosus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "“Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ" ;
     ontolex:writtenRep "mucilaginosus" .
 

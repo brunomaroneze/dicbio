@@ -35,7 +35,7 @@ dbres:etym_escroto_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>scrotum</i>, atestado desde a Antiguidade com o mesmo sentido, tendo sido empregado assim por Celso (séc. I d.C.), conforme abona o Oxford Latin Dictionary. Segundo essa obra, trata-se de uma variante de <i>scrautum</i>, palavra que se referia a uma espécie de aljava de couro. Assim, a associação com o escroto teria origem na similaridade de função, visto que ambos são espécie de estojo para proteção.<br>Em português, o termo certamente entrou por via erudita (como evidenciado pela manutenção do -t- intervocálico), pelo latim científico."^^rdf:HTML .
 
 dbres:etymon_scrotum a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "scrotum" .
 

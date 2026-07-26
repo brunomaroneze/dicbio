@@ -36,7 +36,7 @@ dbres:etym_musculo_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>musculus</i>, que já apresentava o sentido de 'músculo' na Antiguidade, conforme atesta o Oxford Latin Dictionary (com abonações de Celso, Lucrécio, Apuleio e outros). Como o sentido inicial da palavra seria ‘rato pequeno', 'ratinho' (por ser o diminutivo de <i>mus</i> no sentido de 'rato', 'camundongo'), a mudança semântica ocorreu ainda na língua latina. Segundo o dicionário Houaiss, a mudança se deu pela semelhança que apresentam alguns músculos, ao se contraírem, com o movimento rápido do rato.<br>A palavra, ainda que de atestação bem recuada (século XIV, conforme o dicionário Houaiss), entrou na língua portuguesa por via erudita, como atesta o acento proparoxítono e a preservação do -l- intervocálico, por exemplo."^^rdf:HTML .
 
 dbres:etymon_musculus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "musculus" .
 

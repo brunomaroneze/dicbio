@@ -37,7 +37,7 @@ dbres:etym_filamento_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é provavelmente o latim <i>filamentum, i</i>, atestado na obra de Pompeio Festo, de acordo com o dicionário de Gaffiot (<i>s.v.</i> filamentum), com o sentido de “reunião de fios”. Certamente entrou no português por via erudita, como evidencia a permanência do -l- intervocálico.<br>A atestação mais antiga que encontramos até o momento é o seu emprego na \"Anatomia\" de Santucci, referindo-se a estruturas anatômicas em forma de fio; porém, Santucci não apresenta marcas tipográficas ou metalinguísticas que sugerem que o termo fosse sentido como neológico, de modo que pode haver, portanto, emprego anterior ainda não encontrado.<br>O Dicionário Houaiss sugere como étimo o francês <i>filament</i>, indicado como de 1904, mas esta é a data da acepção na Eletrônica, conforme informa o Trésor de la Langue Française; o sentido de “elemento orgânico animal ou vegetal de forma fina e alongada” é datado pelo Trésor como sendo de 1538, o que seria coerente com a hipótese do étimo francês; porém, o emprego da forma latina <i>filamentum</i> em textos científicos anteriores (como na obra \"Anatome Corporis Humani\" de Diemerbroeck, 1679 - https://books.google.com.br/books?id=SEEUAAAAQAAJ) sugere que o étimo é, de fato, o termo latino."^^rdf:HTML .
 
 dbres:etymon_filamentum a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "filamentum" .
 

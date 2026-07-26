@@ -33,7 +33,7 @@ dbres:etym_falcado_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "<i>Falcado</i> tem como étimo o latim <i>falcatus</i>, sendo caracterizado como um decalque advindo do latim. Apesar de ter uma base morfológica (substantivo <i>foice</i>, já atestada no séc. XIV), não podemos classificar <i>falcado</i> também como derivação, visto que, o que resultaria de <i>foice</i> quando anexado ao sufixo -<i>ado</i> seria uma forma diferente da que temos aqui representada - “<i>foiçado</i>” -, portanto,  é mais provável que Vandelli tenha recuperado a forma latina (<i>falcatus</i>) como base para a forma em língua portuguesa. Isto acontece porque o substantivo <i>foice</i> é uma palavra herdada e passou por diversas mudanças desde sua forma do latim <i>falx</i> para <i>foice</i>.  "^^rdf:HTML .
 
 dbres:etymon_falcatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "falcatus" .
 

@@ -38,7 +38,7 @@ dbres:etym_frutificacao_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>fructificatio,onis</i>, com o sentido de \"ato de dar frutos\". A palavra já era empregada séculos antes da obra de Vandelli; aparentemente, o autor emprega essa palavra com o sentido de “conjunto de frutos”, ou talvez como um hiperônimo para tipos de fruto diversos. As formas variantes “frutificaçaõ”, “fructificaçaõ”, “fructificaçoens” (pl.) e “frutificações” (pl.) são todas empregadas na obra."^^rdf:HTML .
 
 dbres:etymon_fructificatio a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "fructificatio" .
 

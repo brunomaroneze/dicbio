@@ -34,7 +34,7 @@ dbres:etym_resina_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina <i>resīna,ae</i> (com o mesmo sentido), atestada desde a Antiguidade, segundo o Oxford Latin Dictionary. A julgar pela permanência do -n- intervocálico na forma portuguesa, a palavra deve ser considerada erudita (ainda que atestada desde a Idade Média, segundo o dicionário Houaiss), ou, talvez, uma reconstituição erudita posterior (visto que o mesmo dicionário informa que a forma medieval é <i>resia</i>)."^^rdf:HTML .
 
 dbres:etymon_resina a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "resina" .
 

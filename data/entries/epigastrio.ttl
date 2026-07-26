@@ -35,7 +35,7 @@ dbres:etym_epigastrio_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>Epigastrium</i>, atestado já no século XVI (por exemplo, em “A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ). Por não estar registrado nem no Oxford Latin Dictionary nem no dicionário de Gaffiot, supõe-se que não era empregado em latim na Antiguidade; mas o dicionário LSJ registra a forma <i>epigástrion</i>) (ἐπιγάστριον), ora com o sentido de “abdômen”, ora com o sentido de “parte do abdômen acima do umbigo”. Assim, a forma latina, provavelmente medieval ou renascentista, foi cunhada a partir do grego."^^rdf:HTML .
 
 dbres:etymon_epigastrium a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "“A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ" ;
     ontolex:writtenRep "epigastrium" .
 

@@ -35,7 +35,7 @@ dbres:etym_tuberculado_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim <i>tuberculatus</i>, já empregado em textos em latim do século XVI (como, por exemplo, na obra \"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC); ou 2 - como adjetivo derivado do substantivo <i>tubérculo</i> (= \"verruga\") acrescido do sufixo -<i>ado</i>, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1668; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
 dbres:etymon_tuberculatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "\"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC" ;
     ontolex:writtenRep "tuberculatus" .
 

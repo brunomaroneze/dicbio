@@ -42,7 +42,7 @@ dbres:etymon_bulbo_\(1\) a dicbio:SemanticEtymon ;
     ontolex:writtenRep "bulbo (1)" .
 
 dbres:etymon_bulbus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "bulbus" .
 

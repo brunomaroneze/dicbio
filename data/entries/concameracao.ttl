@@ -37,7 +37,7 @@ dbres:etym_concameracao_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>concameratio</i>, atestado desde a Antiguidade, porém com o sentido de “abóbada”, “arcada” (conforme informa o Oxford Latin Dictionary). O sentido empregado por Vandelli parece já ocorrer em textos anteriores em latim científico, como, por exemplo, na obra “Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ). O termo parece não ser mais empregado na Biologia no século XXI."^^rdf:HTML .
 
 dbres:etymon_concameratio a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "“Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ" ;
     ontolex:writtenRep "concameratio" .
 

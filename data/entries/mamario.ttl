@@ -36,7 +36,7 @@ dbres:etym_mamario_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>mammarius, a, um</i>, que já havia sido empregado para se referir às artérias e veias mamárias por Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC). Assim, embora a estrutura morfológica seja de um derivado sufixal (<i>mama</i> + o sufixo <i>-ário</i>), o termo não foi formado em português, mas se trata, mais propriamente, de um latinismo."^^rdf:HTML .
 
 dbres:etymon_mammarius a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC" ;
     ontolex:writtenRep "mammarius" .
 

@@ -35,7 +35,7 @@ dbres:etym_canaliculado_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é certamente o latim  <i>cănālĭcŭlātus</i>, atestado desde a Antiguidade (conforme registro no Oxford Latin Dictionary). No entanto, o termo não ingressou na língua portuguesa por via herdada (visto não ter sofrido as mutações fonéticas, como a queda do -l- intervocálico, por exemplo), sendo, portanto, um decalque advindo do latim científico. Seria possível analisá-lo como um derivado sufixal a partir de <i>canalículo</i>, mas essa análise fica comprometida pelo fato de que a datação disponível para <i>canalículo</i> é de 1873 (segundo o dicionário Houaiss), ou seja, uma datação posterior à data que encontramos para <i>canaliculado</i>."^^rdf:HTML .
 
 dbres:etymon_canaliculatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "canaliculatus" .
 

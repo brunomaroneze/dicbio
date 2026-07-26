@@ -36,7 +36,7 @@ dbres:etym_cotiledone_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>cotyledon,onis</i>, empregado, segundo o Dicionário Houaiss, por Lineu em 1751 já com o significado de \"elemento seminal que nutre a planta\". Ainda segundo o Dicionário Houaiss, a palavra latina seria a adaptação do grego </i>kotuledón,ónos</i>, que significa \"cavidade\".<br>Brotero emprega a palavra como sendo do gênero feminino; já Vandelli emprega como sendo masculina, que é também o gênero registrado pelo Dicionário Houaiss."^^rdf:HTML .
 
 dbres:etymon_cotyledon a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Lineu" ;
     ontolex:writtenRep "cotyledon" .
 

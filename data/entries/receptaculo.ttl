@@ -34,7 +34,7 @@ dbres:etym_receptaculo_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>receptaculum,i</i>, que já no século XVIII era empregado com a acepção da Botânica. A data informada pelo Dicionário Houaiss é provavelmente para outra acepção. A data de 1788 para essa acepção é possivelmente a obra de Brotero. Consultas a especialistas são necessárias para verificar quais são de fato as diferenças entre as três acepções da Botânica e se de fato ocorre essa polissemia."^^rdf:HTML .
 
 dbres:etymon_receptaculum a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "\"Expositio Florum Compositi\", 1760 (https://www.google.com.br/books/edition/Expositio_characteristica_structurae_flo/J_heAAAAcAAJ)" ;
     ontolex:writtenRep "receptaculum" .
 

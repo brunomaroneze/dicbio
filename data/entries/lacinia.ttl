@@ -35,7 +35,7 @@ dbres:etym_lacinia_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim </i>lacinia,ae</i>, que no latim da Antiguidade significava \"borda, extremidade, orla\". Foi empregada na acepção da Botânica no latim científico do século XVIII, conforme atesta a própria obra de Vandelli."^^rdf:HTML .
 
 dbres:etymon_lacinia a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "lacinia" .
 

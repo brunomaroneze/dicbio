@@ -38,7 +38,7 @@ dbres:etym_diafragma_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>diaphragma</i>, que, segundo o dicionário de Gaffiot, é atestado na obra de Célio Aureliano (século V d.C), já designando o mesmo músculo; em latim, por sua vez, a palavra é um empréstimo do grego, significando “divisão” ou “barreira”, mas já designando o mesmo músculo em Platão e em Galeno (conforme informa o dicionário de Liddell, Scott e Jones). Em português, trata-se certamente de um latinismo que entrou provavelmente por meio do latim científico."^^rdf:HTML .
 
 dbres:etymon_diaphragma a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "diaphragma" .
 

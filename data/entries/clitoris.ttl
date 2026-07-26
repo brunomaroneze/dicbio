@@ -36,7 +36,7 @@ dbres:etym_clitoris_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é muito provavelmente o latim científico <i>clitoris, idis</i>, que ocorre, por exemplo, na \"Anatomia\" de Verheyen, 1706 (https://www.google.com.br/books/edition/Corporis_humani_anatomia_etc_With_Philip/gXoAaisWinMC). A forma latina, por sua vez, é um empréstimo do grego κλειτορίς, -ίδος (<i>kleitorís, -ídos</i>), forma esta já atestada desde a Antiguidade com o mesmo sentido que o atual, em Rufo de Éfeso (séculos I-II d.C.), conforme informa o dicionário de Liddell, Scott e Jones. Assim, é possível que a forma grega já tenha passado para o latim em data mais remota; mas isso é improvável, visto que os dicionários de latim da Antiguidade que consultamos (Gaffiot e Oxford Latin Dictionary) não registram o termo. Assim, até que mais dados sejam encontrados, é mais adequado supor que se trata de termo do latim científico.<br>É interessante notar que tanto grego κλειτορίς quanto o latim <i>clitoris</i> são de gênero feminino; esse também é o gênero em que ocorre a palavra na primeira atestação portuguesa, em Santucci. São necessários mais estudos para identificar quando a palavra passa a ser empregada no gênero masculino."^^rdf:HTML .
 
 dbres:etymon_clitoris a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "\"Anatomia\" de Verheyen, 1706 (https://www.google.com.br/books/edition/Corporis_humani_anatomia_etc_With_Philip/gXoAaisWinMC" ;
     ontolex:writtenRep "clitoris" .
 

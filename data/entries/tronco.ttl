@@ -35,7 +35,7 @@ dbres:etym_tronco_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "É certamente palavra herdada, tendo como étimo o latim <i>truncus</i> (pela forma do acusativo <i>truncum</i>), que já na Antiguidade tinha tanto o sentido de \"tronco de uma árvore\" quanto de \"tronco do corpo humano\" (conforme se lê no Oxford Latin Dictionary). Em latim, é provavelmente a substantivação do adjetivo <i>truncus, -a, -um</i> \"cortado, mutilado, truncado\".<br>Sobre a diferença entre \"caule\" e \"tronco\", Brotero afirma: \"Os antigos davaõ o nome de tronco (truncus) ao troço ascendente das plantas lenhosas, e o de caule ou talo (caulis) ao das herbaceas; mas hoje a palavra tronco está adoptada por hum termo geral de que o caule he huma especie, de maneira que se pode dizer com igual propriedade de termo, que o choupo tem hum caule lenhoso, como se pode dizer, que a alface tem hum caule herbaceo.\" (BROTERO, 1788, vol. 1, p. 20). Esse trecho é obscuro; por um lado, parece dizer que \"tronco\" é o termo genérico, mas nos exemplos, é \"caule\" que é empregado como genérico. Atualmente, emprega-se \"caule\" como termo genérico (hiperônimo), do qual \"tronco\" é um subtipo (hipônimo)."^^rdf:HTML .
 
 dbres:etymon_truncum a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "truncum" .
 

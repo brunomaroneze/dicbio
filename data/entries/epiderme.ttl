@@ -34,7 +34,7 @@ dbres:etym_epiderme_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>epidermis, -is</i>, com o sentido de “epiderme dos animais”, por sua vez originário do grego <i>epidermís, -ídos</i>. Segundo o dicionário de Gaffiot, a palavra latina é atestada na “Ars Veterinaria sive Mulomedicina” de Vegécio (séculos IV-V d.C.). A forma portuguesa não é herdada e sua primeira atestação com essa acepção, de acordo com o Dicionário Houaiss, é a obra “Recopilação da Cirurgia”, de António da Cruz (1601), sob a forma variante <i>epiderma</i>. Seu emprego na Botânica parece ter sido introduzido, em português, pela obra de Vandelli (1788)."^^rdf:HTML .
 
 dbres:etymon_epidermis a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "epidermis" .
 

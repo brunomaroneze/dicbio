@@ -43,7 +43,7 @@ dbres:etymon_gema_\(1\) a dicbio:SemanticEtymon ;
     ontolex:writtenRep "gema (1)" .
 
 dbres:etymon_gemma a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "gemma" .
 

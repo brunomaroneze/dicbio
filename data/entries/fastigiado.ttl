@@ -34,7 +34,7 @@ dbres:etym_fastigiado_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim <i>fastīgiātus</i> (atestado na Antiguidade, conforme registrado no dicionário de Gaffiot, como variante do adjetivo <i>fastigatus</i>), que teria entrado na língua portuguesa por meio do latim científico (visto não ser palavra herdada, como se percebe pela conservação do -g- intervocálico); ou 2 - como adjetivo derivado do substantivo <i>fastígio</i> acrescido do sufixo -<i>ado</i>, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1548; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
 dbres:etymon_fastigiatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_gaffiot ;
     ontolex:writtenRep "fastigiatus" .
 

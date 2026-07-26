@@ -34,7 +34,7 @@ dbres:etym_excretorio_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>excretorius</i>, atestado na obra de Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ), entre outras. Assim, o adjetivo português é claramente um decalque do latim, ainda que, morfologicamente, seja um derivado sufixal. O termo latino é formado a partir do verbo <i>excerno</i> (que tem a forma do supino <i>excretum</i>), empregado já na Antiguidade com o sentido de \"excretar, eliminar\" (conforme aponta o Oxford Latin Dictionary). É importante observar que a forma <i>excretum</i> é homófona do supino do verbo <i>excresco</i> \"crescer, inchar\", mas o sentido denota que este último não é a base para a formação do adjetivo <i>excretorius</i> em latim."^^rdf:HTML .
 
 dbres:etymon_excretorius a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" ;
     ontolex:writtenRep "excretorius" .
 

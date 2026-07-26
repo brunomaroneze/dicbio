@@ -34,7 +34,7 @@ dbres:etym_conivente_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>connivens,entis</i>, particípio presente de <i>connivere</i>, que, no latim da Antiguidade, significava “fechar, piscar os olhos”; o Oxford Latin Dictionary afirma que o sentido desse verbo também podia se estender para outras partes do corpo e outros objetos que se tocam. O termo latino já passa a ser empregado na Botânica no século XVIII, como atesta o próprio dicionário de Vandelli; seu sentido é provavelmente derivado dessa ideia de objetos que se tocam, como as pálpebras que fecham os olhos.O Dicionário Houaiss informa a data de 1836, possivelmente para a acepção da língua geral (“condescendente, complacente”); e a acepção da Botânica é datada de 1858, mas sem indicação da fonte. Se a data de 1836 estiver correta, é possível que a acepção da Botânica tenha sido a primeira na língua, para apenas posteriormente surgir a acepção geral."^^rdf:HTML .
 
 dbres:etymon_connivens a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "connivens" .
 

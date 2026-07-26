@@ -62,7 +62,7 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
     dicbio:confidenceLevel dicbio:probable .
 
 dbres:etymon_angulatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;

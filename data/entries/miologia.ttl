@@ -35,7 +35,7 @@ dbres:etym_miologia_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Trata-se de um cultismo formado pelos elementos de composição de origem grega <i>mi(o)-</i> (do grego <i>mûs, muós</i> - μῦς, μυός -, “rato”, “músculo”) e <i>-logia</i> (indicativo de “ciência”, “arte”, “tratado”). A forma “myologia” é atestada em latim científico desde pelo menos o século XVII (como se observa na obra de Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC). A palavra provavelmente se disseminou a partir do latim científico para as demais línguas europeias."^^rdf:HTML .
 
 dbres:etymon_myologia a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC" ;
     ontolex:writtenRep "myologia" .
 

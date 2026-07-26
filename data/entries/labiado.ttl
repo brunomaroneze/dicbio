@@ -35,7 +35,7 @@ dbres:etym_labiado_sense1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim <i>labiatus</i>, empregado em textos científicos do século XVII (como, por exemplo, na \"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC); ou 2 - como adjetivo derivado do substantivo <i>lábio</i> acrescido do sufixo -<i>ado</i>, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1589; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
 dbres:etymon_labiatus a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/lat> ;
+    dcterms:language glotto:lati1261 ;
     dcterms:source "\"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC)" ;
     ontolex:writtenRep "labiatus" .
 
