@@ -70,14 +70,15 @@
 
 --------------------------------------------------
 ## Informações sobre as atestações:
-# REVER
 - A informação sobre a atestação será ligada a uma acepção, e não a uma entrada. É um recurso de nome "dbres:attestation_TERMO_ACEPÇÃO_FONTE" (por exemplo, dbres:attestation_arvore_sense1_houaiss) e é atribuída à classe "a dicbio:Attestation".
+
+- O sentido lexical é vinculado à atestação pela propriedade "dicbio:hasAttestation".
 
 - A propriedade "dicbio:attestationDate" indica o ano da atestação e a propriedade "dcterms:source" indica a fonte da datação. Só é necessário inserir a data e a fonte da atestação nos casos em que a atestação deriva de uma fonte externa ao córpus do projeto (fonte secundária).
 
 - A propriedade "dicbio:realizesForm" relaciona uma ocorrência à forma que ela realiza. É inserida automaticamente.
 
-- (Ainda a ser considerado: vamos indicar atestações de étimos?) A atestação pode ser da acepção do verbete principal, ou da acepção do étimo.
+- A atestação pode ser da acepção do verbete principal, ou da acepção do étimo.
 
 - Será feito um algoritmo que extrai automaticamente do córpus as informações sobre as atestações das fontes primárias.
 

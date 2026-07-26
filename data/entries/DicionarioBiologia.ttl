@@ -98,9 +98,14 @@ dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
     ontolex:writtenRep "adiposus" ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
-    dcterms:source dbsrc:source_acta_physico_medica_1730 ; # Seria mais propriamente uma atestação do étimo, não uma fonte. Teríamos que criar uma instância da classe dicbio:Attestation para isso.
-    skos:definition "Que contém gordura."@pt ;
-    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
+    dicbio:hasAttestation dbres:attestation_adiposus ;
+    skos:definition "Que contém gordura."@pt .
+
+dbres:attestation_adiposus a dicbio:Attestation ;
+    dcterms:source dbsrc:source_acta_physico_medica_1730 ;
+    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt ;
+    dicbio:attestationDate "1730"^^xsd:gYear .
+
 
 ## Angulado
 
@@ -149,10 +154,13 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
 
 dbres:etymon_angulatus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;  # Seria mais propriamente uma atestação do étimo, não uma fonte. Teríamos que criar uma instância da classe dicbio:Attestation para isso.
     skos:definition "Que tem ângulo; anguloso."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
-    ontolex:writtenRep "angulatus" .
+    ontolex:writtenRep "angulatus" ;
+    dicbio:hasAttestation dbres:attestation_angulatus .
+
+dbres:attestation_angulatus a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old .
 
 dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:created ;
