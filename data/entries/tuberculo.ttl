@@ -35,7 +35,7 @@ dbres:entry_tuberculo a ontolex:LexicalEntry ;
         dbres:entry_tuberculo_sense2 .
 
 dbres:etym_tuberculo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_tuberculum ;
+    dicbio:semanticEtymon dbres:etymon_tuberculum ;
     dicbio:etymologicalArgumentation "Tubérculo: O étimo é o substantivo latino <i>tuberculum, i</i>, que, segundo o Oxford Latin Dictionary, tinha na Antiguidade o sentido de “pequena protuberância ou excescência”. É com esse sentido que a palavra “tubérculo” está presente nos autores do século XVIII, seja referindo-se a estruturas animais (na pele ou na superfície de órgãos internos), seja referindo-se a protuberâncias e rugosidades em vegetais e fungos (que eram considerados vegetais). O sentido de “caule espessado que armazena nutrientes” não foi encontrado nos autores que estudamos (ainda que o dicionário Houaiss date essa acepção em 1788).<br>A palavra certamente entrou na língua portuguesa por via erudita, por meio do latim científico. O sentido de “protuberância” é frequente em textos médicos do século XVII (como, por exemplo, no texto “De ingressu ad infirmos” de Júlio César Claudino, 1617 - https://www.google.com.br/books/edition/Iulii_C%C3%A6saris_Claudini_De_ingressu_ad_i/iPcZtI8R6o8C)."^^rdf:HTML .
 
 dbres:etymon_tuberculum a lemonety:Etymon ;

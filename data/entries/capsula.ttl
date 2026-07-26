@@ -34,7 +34,7 @@ dbres:entry_capsula a ontolex:LexicalEntry ;
         dbres:entry_capsula_sense2 .
 
 dbres:etym_capsula_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_capsula ;
+    dicbio:semanticEtymon dbres:etymon_capsula ;
     dicbio:etymologicalArgumentation "Ainda que a forma latina <i>capsula</i> seja atestada desde a Antiguidade com o sentido de \"pequena caixa\" (conforme se verifica no OLD), a palavra portuguesa não é herdada, como se evidencia pela ocorrência do -l- intervocálico e do encontro consonantal -ps-. O étimo do termo da Anatomia é certamente o latim científico <i>capsula</i>, que é atestado com o sentido científico em textos latinos anteriores à obra de Santucci, tais como a obra de Jacob Douglass \"Descriptio comparata mvscvlorvm corporis hvmani et qvadrvpedis\", de 1729 (disponível em https://www.google.com.br/books/edition/Descriptio_comparata_mvscvlorvm_corporis/ddihNnLG1asC?hl=pt-BR&gbpv=1&dq=capsulae&pg=PA165&printsec=frontcover). O sentido empregado na Botânica parece ter sido empregado originalmente por Lineu, conforme afirma Brotero: \"As especies de pericarpo, segundo Linneo, saõ oito, a saber, capsula, siliqua, vagem, 	follilho, drupa, pomo, baga, e pinha\" (Brotero, 1788, vol. 1, p. 169)."^^rdf:HTML .
 
 dbres:etymon_capsula a lemonety:Etymon ;

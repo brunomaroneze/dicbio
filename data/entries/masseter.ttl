@@ -30,7 +30,7 @@ dbres:entry_masseter a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_masseter_sense1 .
 
 dbres:etym_masseter_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_masseter ;
+    dicbio:semanticEtymon dbres:etymon_masseter ;
     dicbio:etymologicalArgumentation "O étimo é certamente o latim científico <i>masseter</i>, já em referência ao músculo, atestado pelo menos desde o século XVI (por exemplo, na obra de Vesalius, de 1543, disponível em https://www.google.com.br/books/edition/Andreae_Vesalii_Brvxellensis_Scholae_med/DqAtzTRY5foC). Em latim, é empréstimo do grego μασητήρ, ῆρος “mastigador”, já atestado em Hipócrates e Galeno (conforme informa o dicionário LSJ). Assim, parece pouco provável que seja um empréstimo do francês, como afirma o dicionário Houaiss, visto que já circulava em textos médicos em latim científico."^^rdf:HTML .
 
 dbres:etymon_masseter a lemonety:Etymon ;

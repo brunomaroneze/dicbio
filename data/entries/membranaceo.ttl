@@ -32,7 +32,7 @@ dbres:entry_membranaceo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_membranaceo_sense1 .
 
 dbres:etym_membranaceo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_membranaceus ;
+    dicbio:semanticEtymon dbres:etymon_membranaceus ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>membranaceus,a,um</i>, que significa \"feito de uma membrana, formado de uma membrana; liso como uma membrana\", já empregado no latim científico, conforme atesta a obra de Vandelli. O sinônimo “membranoso” também ocorre em Vandelli, na parte reservada à Zoologia."^^rdf:HTML .
 
 dbres:etymon_membranaceus a lemonety:Etymon ;

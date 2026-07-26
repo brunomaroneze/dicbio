@@ -31,7 +31,7 @@ dbres:entry_raiz a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_raiz_sense1 .
 
 dbres:etym_raiz_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_radicem ;
+    dicbio:semanticEtymon dbres:etymon_radicem ;
     dicbio:etymologicalArgumentation "É palavra herdada, cujo étimo é o latim <i>radicem</i> (nominativo <i>radix</i>), que já apresentava o sentido de \"órgão de sustentação da planta\" desde a Antiguidade (conforme informa o Oxford Latin Dictionary). Em português, é atestado desde o período medieval (conforme informa o Dicionário Houaiss).<br>Tanto Vandelli quanto Brotero afirmam que a raiz se situa, geralmente, embaixo da terra: \"a raiz está na terra, e cresce debaixo della\" (VANDELLI, 1788, p. 193); \"A Raiz he hum organo nutritivo apegado a terra\" (BROTERO, 1788, p. 12). Ambos também mencionam a função de nutrição, características ainda hoje consideradas centrais ao conceito de \"raiz\", conforme se lê na definição Glossário de Termos Botânicos da Universidade de Coimbra (https://www.uc.pt/herbario_digital/learn_botany/glossario): \"Raiz (radix). Órgão geralmente subterrâneo através do qual são absorvidos sais minerais e água e que fixa a planta ao solo.\""^^rdf:HTML .
 
 dbres:etymon_radicem a lemonety:Etymon ;

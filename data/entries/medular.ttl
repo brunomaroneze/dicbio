@@ -31,7 +31,7 @@ dbres:entry_medular a ontolex:LexicalEntry ;
         dbres:entry_medular_sense2 .
 
 dbres:etym_medular_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_medullaris ;
+    dicbio:semanticEtymon dbres:etymon_medullaris ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma que se trata de uma derivação sufixal a partir de <i>medula</i> com o acréscimo do sufixo <i>-ar</i>, e também remete ao adjetivo latino <i>medullaris,e</i>, que significa \"que penetra a medula dos ossos\". Como já se encontra o mesmo adjetivo no latim científico do século XVIII com o sentido de \"relativo à medula\" (como na obra “De Atonia Nervorum”, de Johann Christoph von Steinen, 1749, disponível em https://books.google.pt/books?id=Ubav7mRfZ\\_cC), é razoável supor que o termo entrou na língua portuguesa como um empréstimo, e não como um derivado sufixal."^^rdf:HTML .
 
 dbres:etymon_medullaris a lemonety:Etymon ;

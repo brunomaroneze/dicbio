@@ -29,7 +29,7 @@ dbres:entry_arvore a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_arvore_sense1 .
 
 dbres:etym_arvore_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_arborem ;
+    dicbio:semanticEtymon dbres:etymon_arborem ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
     dcterms:source dbsrc:source_houaiss ;

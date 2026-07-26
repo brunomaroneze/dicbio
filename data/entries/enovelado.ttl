@@ -32,7 +32,7 @@ dbres:entry_enovelado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_enovelado_sense1 .
 
 dbres:etym_enovelado_sense1 a lemonety:Etymology ;
-    lemonety:etymon <http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> ;
+    dicbio:semanticEtymon <http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> ;
     dicbio:etymologicalArgumentation "<i>Enovelado</i> é o particípio do verbo <i>enovelar</i>, este formado por derivação parassintética a partir do substantivo <i>novelo</i>. O dicionário Houaiss não informa data para o particípio, mas o verbo é datado de 1608. É incerto se Vandelli pretendeu empregá-lo com um sentido especializado (como tradução do latim <i>glomeratus, a, um</i>) ou apenas como uma descrição informal."^^rdf:HTML .
 
 <http://dicbio.fflch.usp.br/recurso/etymon_en-_+_novelo_+_-ado> a lemonety:Etymon ;

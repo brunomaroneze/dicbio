@@ -28,7 +28,7 @@ dbres:entry_coarctado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_coarctado_sense1 .
 
 dbres:etym_coarctado_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_coarctatus ;
+    dicbio:semanticEtymon dbres:etymon_coarctatus ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>coarctatus,a,um</i>, particípio passado de <i>coarctare</i>, que significa \"apertar, estreitar\". Já era empregado na acepção da Botânica no latim do século XVIII, conforme atestado na própria obra de Vandelli. O Dicionário Houaiss não inclui nenhuma rubrica referente à Botânica; a datação informada é possivelmente para outra acepção."^^rdf:HTML .
 
 dbres:etymon_coarctatus a lemonety:Etymon ;

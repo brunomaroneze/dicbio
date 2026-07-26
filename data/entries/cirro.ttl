@@ -34,7 +34,7 @@ dbres:entry_cirro a ontolex:LexicalEntry ;
         dbres:entry_cirro_sense2 .
 
 dbres:etym_cirro_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_cirrus ;
+    dicbio:semanticEtymon dbres:etymon_cirrus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>cirrus</i>, que no latim da Antiguidade significava “mecha de cabelo cacheado, cacho de cabelo”, mas também “excrescência em forma de tufo numa planta”, conforme informa o Oxford Latin Dictionary. Aparentemente, o latim científico especializou a grafia <i>cirrhus</i> para a acepção da Botânica (“gavinha”) e a grafia <i>cirrus</i> para a acepção da Zoologia (apêndice de certos animais). É possível observar isso, por exemplo, no “A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ), que registra apenas <i>cirrhus</i>, e no “Zoophylacium Gronovianum”, de Laurens Theodorus Gronovius (1763 - disponível em https://www.google.com.br/books/edition/Zoophylacium_Gronovianum_exhibens_animal/aUxnAAAAcAAJ), que registra apenas <i>cirrus</i>. Ainda que haja duas grafias, o mais provável é que o étimo latino seja o mesmo. <br>No dicionário de Vandelli, a forma latina aparece grafada ora como <i>cirrus</i>, ora como <i>cirrhus</i>, tanto no sentido do apêndice dos animais quanto do das plantas. Porém, o equivalente português em Vandelli é sempre grafado <i>cirro</i> ao se referir ao apêndice animal, e <i>cirrho</i> ao se referir ao apêndice vegetal (com uma única exceção à p. 236). Já Brotero não emprega esse termo em português, preferindo o equivalente vernáculo <i>gavinha</i>."^^rdf:HTML .
 
 dbres:etymon_cirrus a lemonety:Etymon ;

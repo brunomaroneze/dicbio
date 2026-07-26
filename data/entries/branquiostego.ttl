@@ -35,7 +35,7 @@ dbres:entry_branquiostego a ontolex:LexicalEntry ;
         dbres:entry_branquiostego_sense2 .
 
 dbres:etym_branquiostego_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_branchiostegus ;
+    dicbio:semanticEtymon dbres:etymon_branchiostegus ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo <i>branchiostegus, a, um</i>, não atestado no latim da Antiguidade, mas empregado no latim científico, como se pode ler, por exemplo, no \"Systema Naturae\" de Lineu, de 1748 (https://www.google.com.br/books/edition/Caroli_Linn%C3%A6i/Xh8AAAAAQAAJ). O termo latino, por sua vez, é formado pelos radicais gregos <i>branchio-</i> (referente às brânquias dos peixes) e <i>-steg-</i> (telhado, abrigo). Assim, o sentido pretendido, em latim, parece ser o de \"proteção, abrigo para as brânquias\".<br>Esse adjetivo aparece no texto de Vandelli em três empregos diferentes: a) em referência a \"peixes branquióstegos\" (que talvez sejam os peixes do gênero <i>Branchiostegus</i>, conforme se lê no dicionário Houaiss, s.v. \"branquióstego\"); b) na expressão \"membrana branquióstega\" (conferir esse verbete); e c) na expressão \"abertura branquióstega\", que parece se referir à abertura das brânquias."^^rdf:HTML .
 
 dbres:etymon_branchiostegus a lemonety:Etymon ;

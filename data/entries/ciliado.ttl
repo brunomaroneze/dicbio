@@ -32,7 +32,7 @@ dbres:entry_ciliado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_ciliado_sense1 .
 
 dbres:etym_ciliado_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_ciliatus ;
+    dicbio:semanticEtymon dbres:etymon_ciliatus ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim <i>cĭlĭātus</i> (atestado na Antiguidade, conforme registrado no dicionário de Gaffiot), que teria entrado na língua portuguesa por meio do latim científico (visto não ser palavra herdada, como se percebe pela conservação do -l- intervocálico); ou 2 - como adjetivo derivado do substantivo <i>cílio</i> acrescido do sufixo -<i>ado</i>, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1344; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
 dbres:etymon_ciliatus a lemonety:Etymon ;

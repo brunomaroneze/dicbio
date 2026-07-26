@@ -34,7 +34,7 @@ dbres:entry_digitado a ontolex:LexicalEntry ;
         dbres:entry_digitado_sense2 .
 
 dbres:etym_digitado_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_digitatus ;
+    dicbio:semanticEtymon dbres:etymon_digitatus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>digĭtātus</i>, atestado desde a Antiguidade (conforme informa o Oxford Latin Dictionary), com o sentido de \"provido de dedos\". Trata-se, portanto, de um decalque do latim, que entrou na língua portuguesa como um empréstimo do latim científico.<br>O dicionário Houaiss registra a forma <i>dígito</i> como sinônimo (formal) de <i>dedo</i>, datada de 1532. Assim, seria possível hipotetizar que <i>digitado</i> seria um derivado sufixal a partir de <i>dígito</i> (significando <i>dedo</i>, e não <i>algarismo</i>, como é o seu sentido atual). No entanto, devido a essa forma ser incomum na língua portuguesa, parece mais provável que <i>digitado</i> no sentido empregado pelos cientistas do século XVIII seja de fato um decalque do latim."^^rdf:HTML .
 
 dbres:etymon_digitatus a lemonety:Etymon ;

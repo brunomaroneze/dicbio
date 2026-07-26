@@ -31,7 +31,7 @@ dbres:entry_tunica a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_tunica_sense1 .
 
 dbres:etym_tunica_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_tunica ;
+    dicbio:semanticEtymon dbres:etymon_tunica ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>tunica,ae</i>, que já na Antiguidade significava \"vestimenta inferior usada pelos romanos de ambos os sexos\". A acepção da Botânica ocorre também no latim científico (como se observa, por exemplo, na obra “De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ)."^^rdf:HTML .
 
 dbres:etymon_tunica a lemonety:Etymon ;

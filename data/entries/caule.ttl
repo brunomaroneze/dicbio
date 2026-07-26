@@ -31,7 +31,7 @@ dbres:entry_caule a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_caule_sense1 .
 
 dbres:etym_caule_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_caulis ;
+    dicbio:semanticEtymon dbres:etymon_caulis ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>caulis</i>, atestado desde a Antiguidade (segundo o Oxford Latin Dictionary), que significa “tronco, talo das plantas, couve”, mas que é palavra erudita, adaptada como um latinismo no século XVIII (como fica evidente pela conservação do ditongo [au] e do [l] intervocálico).<br>No século XVIII, os sentidos de “caule” e de “tronco” são distintos dos sentidos atuais, de modo que parece haver uma concorrência entre os dois termos. Conforme apontado também no verbete “tronco” deste dicionário, Brotero (1788, p. 20) apresenta um trecho obscuro, em que parece contradizer-se a respeito do significado de “caule”: “Os antigos davaõ o nome de tronco (truncus) ao troço ascendente das plantas lenhosas, e o de caule ou talo (caulis) ao das herbaceas; mas hoje a palavra tronco está adoptada por hum termo geral de que o caule he huma especie”, ou seja, para o autor, “tronco” é um termo genérico, do qual “caule” é uma espécie. Porém, logo em seguida, Brotero também afirma que se pode falar que “o choupo tem hum caule lenhoso” e que “a alface tem hum caule herbaceo\", ou seja, parece empregar “caule” também como termo genérico.<br>Vandelli (1788, p. 196), de modo similar, afirma que “truncus” e “caulis” (em latim) são espécies de “truncus”, e parece implicar que em português há uma relação de sinonímia, no trecho “Tronco, ou caule” (p. 196)."^^rdf:HTML .
 
 dbres:etymon_caulis a lemonety:Etymon ;

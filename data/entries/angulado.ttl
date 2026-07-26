@@ -15,6 +15,8 @@
 @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
 dbres:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
@@ -27,11 +29,36 @@ dbres:entry_angulado a ontolex:LexicalEntry ;
         dbres:form_angulados ;
     ontolex:sense dbres:entry_angulado_sense1 .
 
+dbres:form_angulado a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:masculine ;
+    ontolex:writtenRep "angulado"@pt .
+
+dbres:form_angulada a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:writtenRep "angulada"@pt .
+
+dbres:form_anguladas a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:writtenRep "anguladas"@pt .
+
+dbres:form_angulados a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
+    ontolex:writtenRep "angulados"@pt .
+
+dbres:entry_angulado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que apresenta ângulo; anguloso."@pt ;
+        lemonety:etymology dbres:etym_angulado_sense1_h1,
+             dbres:etym_angulado_sense1_h2 .
+
 dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_angulatus ;
+    dicbio:semanticEtymon dbres:etymon_angulatus ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dcterms:source dbsrc:source_houaiss ;
-    dicbio:etymologicalArgumentation "Duas são as possibilidades de descrição do étimo. A primeira, apontada pelo dicionário Houaiss, é que <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."^^rdf:HTML ;
+    dicbio:etymologicalArgumentation "O adjetivo <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
 dbres:etymon_angulatus a lemonety:Etymon ;
@@ -64,28 +91,3 @@ dbres:form_angulo a ontolex:Form ;
 
 dbres:entry_angulo_sense1 a ontolex:LexicalSense ;
     skos:definition "Figura geométrica formada por duas semirretas que partem de um mesmo ponto."@pt .
-
-dbres:form_angulado a ontolex:Form ;
-    lexinfo:number lexinfo:singular ;
-    lexinfo:gender lexinfo:masculine ;
-    ontolex:writtenRep "angulado"@pt .
-
-dbres:form_angulada a ontolex:Form ;
-    lexinfo:number lexinfo:singular ;
-    lexinfo:gender lexinfo:feminine ;
-    ontolex:writtenRep "angulada"@pt .
-
-dbres:form_anguladas a ontolex:Form ;
-    lexinfo:number lexinfo:plural ;
-    lexinfo:gender lexinfo:feminine ;
-    ontolex:writtenRep "anguladas"@pt .
-
-dbres:form_angulados a ontolex:Form ;
-    lexinfo:number lexinfo:plural ;
-    lexinfo:gender lexinfo:masculine ;
-    ontolex:writtenRep "angulados"@pt .
-
-dbres:entry_angulado_sense1 a ontolex:LexicalSense ;
-    skos:definition "Que apresenta ângulo; anguloso."@pt ;
-        lemonety:etymology dbres:etym_angulado_sense1_h1,
-             dbres:etym_angulado_sense1_h2 .

@@ -32,7 +32,7 @@ dbres:entry_maleolo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_maleolo_sense1 .
 
 dbres:etym_maleolo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_malleolus ;
+    dicbio:semanticEtymon dbres:etymon_malleolus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>malleolus, i</i>, que já era empregado com o sentido de \"proeminência do tornozelo\" desde pelo menos o século XVII, como se observa, por exemplo, na obra \"Anatomia\" de Domenico Marchetti, 1656 (https://www.google.com.br/books/edition/Anatomia/4fQGAAAAcAAJ). No latim da Antiguidade, <i>malleolus</i> é o diminutivo de <i>malleus, i</i> \"martelo\", ou seja, designava um pequeno martelo; segundo o Oxford Latin Dictionary, também poderia designar a cruzeta (técnica de jardinagem que consiste em cortar um ramo em forma de cruz ou martelo, para plantá-lo) ou, ainda, um dardo incendiário. Assim, aparentemente, a forma latina <i>malleolus</i> passa a designar a proeminência do tornozelo pela sua semelhança com um pequeno martelo, em período posterior à Antiguidade (possivelmente pós-Renascimento), e passa ao português como um decalque erudito."^^rdf:HTML .
 
 dbres:etymon_malleolus a lemonety:Etymon ;

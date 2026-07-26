@@ -30,7 +30,7 @@ dbres:entry_elongado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_elongado_sense1 .
 
 dbres:etym_elongado_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_elongatus ;
+    dicbio:semanticEtymon dbres:etymon_elongatus ;
     dicbio:etymologicalArgumentation "O étimo é, muito provavelmente, o latim <i>elongatus</i> (particípio do verbo latino <i>elongo, are</i>, atestado, segundo o dicionário de Gaffiot, no texto da Vulgata); assim, trata-se de um decalque do latim. É possível hipotetizar que o verbo <i>elongar</i> seja uma retroformação a partir de <i>elongado</i>, mas sem datações confiáveis para o verbo, ainda não é possível afirmar com certeza."^^rdf:HTML .
 
 dbres:etymon_elongatus a lemonety:Etymon ;

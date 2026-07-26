@@ -30,7 +30,7 @@ dbres:entry_escamoso a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_escamoso_sense1 .
 
 dbres:etym_escamoso_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_squamosus ;
+    dicbio:semanticEtymon dbres:etymon_squamosus ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim <i>squamosus, -a, -um</i> no sentido de “coberto de escamas”, já empregado no latim científico do século XVIII, como atesta a própria citação de Vandelli. O emprego na Botânica foi possivelmente introduzido na língua portuguesa por Vandelli."^^rdf:HTML .
 
 dbres:etymon_squamosus a lemonety:Etymon ;

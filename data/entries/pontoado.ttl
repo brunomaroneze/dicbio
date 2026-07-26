@@ -31,7 +31,7 @@ dbres:entry_pontoado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_pontoado_sense1 .
 
 dbres:etym_pontoado_sense1 a lemonety:Etymology ;
-    lemonety:etymon <http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> ;
+    dicbio:semanticEtymon <http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> ;
     dicbio:etymologicalArgumentation "O adjetivo <i>pontoado</i> é empregado tanto por Vandelli quanto por Brotero para traduzir o adjetivo latino <i>punctatus, a, um</i> (encontrado no latim dos séculos XVII e XVIII); portanto, pode ser entendido como um decalque do latim. No entanto, a forma mais diretamente adaptada desse particípio latino seria <i>*pontado</i>. A ocorrência da vogal <i>-o-</i> leva a hipotetizar duas duas possibilidades de análise, não mutuamente excludentes: 1 - O adjetivo pode ter sido criado como um particípio do verbo <i>pontoar</i> (variante de <i>pontuar</i>), que já ocorre no século XVIII (como, por exemplo, no \"Divertimento Erudîto\" do Frei João Pacheco - https://www.google.com.br/books/edition/Divertimento_erud%C3%AEto_para_os_curiosos_d/N8_o3ix_EmAC), ainda que com outro sentido (\"empregar sinais de pontuação\"). 2 - O adjetivo seria derivado do substantivo <i>ponto</i> com o sufixo -<i>ado</i>. Assim, pode-se tratar de um caso em que converge mais de um étimo."^^rdf:HTML .
 
 <http://dicbio.fflch.usp.br/recurso/etymon_ponto_+_-ado> a lemonety:Etymon ;

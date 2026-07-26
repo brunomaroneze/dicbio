@@ -29,7 +29,7 @@ dbres:entry_deflexo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_deflexo_sense1 .
 
 dbres:etym_deflexo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_deflexus ;
+    dicbio:semanticEtymon dbres:etymon_deflexus ;
     dicbio:etymologicalArgumentation "Conforme explica o Dicionário Houaiss, o étimo é o adjetivo latino <i>deflexus,a,um</i>, que significa \"voltado para dentro\", particípio passado do verbo <i>deflectere</i>. O seu emprego no latim científico é atestado na própria obra de Vandelli, o que evidencia que se trata de um empréstimo, e não de palavra herdada."^^rdf:HTML .
 
 dbres:etymon_deflexus a lemonety:Etymon ;

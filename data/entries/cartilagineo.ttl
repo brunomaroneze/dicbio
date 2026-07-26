@@ -30,7 +30,7 @@ dbres:entry_cartilagineo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_cartilagineo_sense1 .
 
 dbres:etym_cartilagineo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_cartilagineus ;
+    dicbio:semanticEtymon dbres:etymon_cartilagineus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>cartilagineus,a,um</i>, com a mesma acepção, conforme mostra o próprio dicionário de Vandelli. Esse termo já era empregado no latim clássico (e está registrado no dicionário de Gaffiot, por exemplo), mas a palavra portuguesa é claramente um empréstimo, e não uma palavra herdada.<br>O Dicionário Houaiss não indica nenhuma rubrica referente à Botânica, mas a acepção de número 3 traz como exemplo a expressão “órgãos vegetais cartilagíneos”, indicando o emprego desse termo em referência a estruturas vegetais."^^rdf:HTML .
 
 dbres:etymon_cartilagineus a lemonety:Etymon ;

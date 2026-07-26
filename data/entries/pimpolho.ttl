@@ -30,7 +30,7 @@ dbres:entry_pimpolho a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_pimpolho_sense1 .
 
 dbres:etym_pimpolho_sense1 a lemonety:Etymology ;
-    lemonety:etymon <http://dicbio.fflch.usp.br/recurso/etymon_pino_+_pollo> ;
+    dicbio:semanticEtymon <http://dicbio.fflch.usp.br/recurso/etymon_pino_+_pollo> ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma que a palavra é resultado da composição da raiz <i>pino</i> (derivado do latim <i>pinus</i> no sentido de \"pinho\") com a raiz <i>pollo</i> (derivado do latim <i>pullus,i</i> no sentido de \"vegetal ou animal jovem\"). Vandelli não emprega itálico, indicando que de fato não era sentido como neológico. No entanto, ao contrário do que afirma o Dicionário Houaiss, Vandelli emprega o termo para se referir a qualquer broto, não apenas o da videira.<br>A acepção contemporânea de “criança” é provavelmente posterior à obra de Vandelli, como afirma o próprio Dicionário Houaiss."^^rdf:HTML .
 
 <http://dicbio.fflch.usp.br/recurso/etymon_pino_+_pollo> a lemonety:Etymon ;

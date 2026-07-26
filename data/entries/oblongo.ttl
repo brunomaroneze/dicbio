@@ -31,7 +31,7 @@ dbres:entry_oblongo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_oblongo_sense1 .
 
 dbres:etym_oblongo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_oblongus ;
+    dicbio:semanticEtymon dbres:etymon_oblongus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>oblongus,a,um</i>, com o mesmo sentido, já empregado na Botânica no século XVIII, como atesta o próprio dicionário de Vandelli (por exemplo, à p. 214). Entrou na língua portuguesa como um empréstimo, provavelmente do latim científico. A atestação mais antiga informada pelo Dicionário Houaiss é possivelmente para outra acepção."^^rdf:HTML .
 
 dbres:etymon_oblongus a lemonety:Etymon ;

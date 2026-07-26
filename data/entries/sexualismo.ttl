@@ -30,7 +30,7 @@ dbres:entry_sexualismo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_sexualismo_sense1 .
 
 dbres:etym_sexualismo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_sexualismus ;
+    dicbio:semanticEtymon dbres:etymon_sexualismus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>sexualismus</i>, atestado em obras como a \"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ). O termo latino é, por sua vez, formado pelo adjetivo <i>sexualis, is</i> acrescido do sufixo de origem grega <i>-ismus</i>. Assim, a atestação da forma latina em textos em latim científico torna pouco provável a hipótese de uma formação ocorrida em português, ainda que, morfologicamente, o termo possa ser classificado como um derivado sufixal."^^rdf:HTML .
 
 dbres:etymon_sexualismus a lemonety:Etymon ;

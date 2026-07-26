@@ -29,7 +29,7 @@ dbres:entry_papilionaceo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_papilionaceo_sense1 .
 
 dbres:etym_papilionaceo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_papilionaceus ;
+    dicbio:semanticEtymon dbres:etymon_papilionaceus ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico <i>papilionaceus,a,um</i> (também grafado <i>papillionaceus</i> com dois LL), atestado na própria obra de Vandelli, derivado do latim clássico <i>papilio,onis</i>, que significa “borboleta”. O Dicionário Houaiss informa que o adjetivo <i>papilionáceo</i> deriva do substantivo feminino <i>papilionácea</i>, “com troca de sufixo”; porém, a datação informada para o substantivo é 1899, enquanto a datação do adjetivo é 1788 (Vandelli) e 1789 (Moraes Silva). Dessa forma, os dados não corroboram essa descrição do Dicionário Houaiss."^^rdf:HTML .
 
 dbres:etymon_papilionaceus a lemonety:Etymon ;

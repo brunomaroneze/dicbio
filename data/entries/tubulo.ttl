@@ -31,7 +31,7 @@ dbres:entry_tubulo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_tubulo_sense1 .
 
 dbres:etym_tubulo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_tubulus ;
+    dicbio:semanticEtymon dbres:etymon_tubulus ;
     dicbio:etymologicalArgumentation "O étimo é o latim <i>tubulus, i</i>, que é atestado desde a Antiguidade com o sentido de \"pequeno tubo\", conforme atesta o Oxford Language Dictionary. O emprego que Vandelli faz dessa palavra é relativamente obscuro: ele está claramente descrevendo uma estrutura tubular presente nas brânquias de certos peixes, mas não fica claro se esse é o nome técnico dessa estrutura ou se o autor está apenas descrevendo a sua forma. Independentemente disso, o emprego em Vandelli é a data mais recuada da palavra em português até onde foi possível encontrar. É claramente uma palavra erudita, como se percebe pela conservação do -l- intervocálico."^^rdf:HTML .
 
 dbres:etymon_tubulus a lemonety:Etymon ;

@@ -31,7 +31,7 @@ dbres:entry_folha a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_folha_sense1 .
 
 dbres:etym_folha_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_folia ;
+    dicbio:semanticEtymon dbres:etymon_folia ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina <i>folia</i>, neutro plural de <i>folium</i>, que foi reanalisada como um feminino singular. Segundo o dicionário Houaiss, é atestada em português desde a Idade Média.<br>Tanto Vandelli (p. 208) quanto Brotero (p. 38) definem \"folha\" como o órgão responsável pelo movimento da planta. Brotero também menciona a função de absorção de nutrientes, numa interessante analogia com a pele dos animais: \"As folhas absorbem como a pelle dos animaes, e em muitas plantas a maior parte da substancia nutritiva lhes entra pelas folhas; segundo alguns physiologistas os vegetaes em geral nutremse de dia pela via das folhas e de noyte pelas raizes, e no inverno aquellas plantas que nelle perdem inteiramente as suas folhas so se nutrem pela raiz\" (BROTERO, 1788, p. 6). Atualmente, a ideia de \"movimento\" não é mais entendida como inerente ao conceito de \"folha\"."^^rdf:HTML .
 
 dbres:etymon_folia a lemonety:Etymon ;

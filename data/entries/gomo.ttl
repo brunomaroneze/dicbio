@@ -30,7 +30,7 @@ dbres:entry_gomo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_gomo_sense1 .
 
 dbres:etym_gomo_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_obscuro ;
+    dicbio:semanticEtymon dbres:etymon_obscuro ;
     dicbio:etymologicalArgumentation "De acordo com o Dicionário Houaiss, o termo tem origem obscura. Vandelli o emprega sem recurso ao itálico, o que indica que não era sentido como um neologismo. Também não é claro se Vandelli o emprega na mesma acepção definida pelo Houaiss (“a parte compreendida entre dois nós de gramíneas”), visto que o termo “gomo” em Vandelli é apresentado como um sinônimo de <i>gema</i>."^^rdf:HTML .
 
 dbres:etymon_obscuro a lemonety:Etymon ;

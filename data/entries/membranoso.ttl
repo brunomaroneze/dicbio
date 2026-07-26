@@ -31,7 +31,7 @@ dbres:entry_membranoso a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_membranoso_sense1 .
 
 dbres:etym_membranoso_sense1 a lemonety:Etymology ;
-    lemonety:etymon dbres:etymon_membranosus ;
+    dicbio:semanticEtymon dbres:etymon_membranosus ;
     dicbio:etymologicalArgumentation "A forma latina <i>membranosus</i> já aparece em textos em latim científico (como, por exemplo, em \"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ). Assim, é mais plausível supor que Brotero tenha buscado o termo no latim científico, em vez de tê-lo criado em português por derivação sufixal.<br>A forma latina <i>membranaceus, a, um</i> é atestada desde a Antiguidade (segundo o Oxford Latin Dictionary), com o sentido de \"feito de ou semelhante a uma membrana\", mas a forma <i>membranosus</i> parece ser uma inovação do latim cientifico."^^rdf:HTML .
 
 dbres:etymon_membranosus a lemonety:Etymon ;
