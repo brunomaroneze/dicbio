@@ -97,7 +97,7 @@ dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
     ontolex:writtenRep "adiposus" ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
-    dcterms:source dbsrc:source_acta_physico_medica_1730 ;
+    dcterms:source dbsrc:source_acta_physico_medica_1730 ; # Seria mais propriamente uma atestação do étimo, não uma fonte. Teríamos que criar uma instância da classe dicbio:Attestation para isso.
     skos:definition "Que contém gordura."@pt ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt .
 

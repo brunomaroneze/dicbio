@@ -63,7 +63,7 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
 
 dbres:etymon_angulatus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
+    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;  # Seria mais propriamente uma atestação do étimo, não uma fonte. Teríamos que criar uma instância da classe dicbio:Attestation para isso.
     skos:definition "Que tem ângulo; anguloso."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
     ontolex:writtenRep "angulatus" .
@@ -72,11 +72,12 @@ dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:created ;
     dicbio:hasWordFormationRelation dbres:angulado_derivation ;
     dcterms:source dbsrc:dicbio_project ;
-    dicbio:etymologicalArgumentation "Duas são as possibilidades de descrição do étimo. A segunda é que <i>angulado</i> pode ser analisado como derivado do substantivo <i>ângulo</i> com o sufixo -<i>ado</i>, visto que o substantivo <i>ângulo</i> teve, segundo o Dicionário Houaiss, sua primeira atestação no século XIV; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O adjetivo <i>angulado</i> pode ser analisado como derivado do substantivo <i>ângulo</i> com o sufixo -<i>ado</i>, visto que o substantivo <i>ângulo</i> teve, segundo o Dicionário Houaiss, sua primeira atestação no século XIV; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."^^rdf:HTML .
 
 dbres:angulado_derivation a morph:WordFormationRelation ;
     vartrans:source dbres:entry_angulo ;
-    vartrans:target dbres:entry_angulado .
+    vartrans:target dbres:entry_angulado ;
+    vartrans:category dicbio:Suffixation .
 
 dbres:entry_angulo a ontolex:LexicalEntry ;
     dcterms:created "2026-02-15"^^xsd:date ;
