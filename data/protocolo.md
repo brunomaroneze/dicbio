@@ -56,7 +56,7 @@
 
 - No caso de palavras criadas, usa-se "dicbio:hasWordFormationRelation" para introduzir a explicação morfológica; esta é denominada "dbres:XXXX_derivation", se for um caso de derivação.
 
-- No caso das palavras criadas por derivação, a derivação morfológica "dbres:XXXX_derivation" é indicada com "a morph:WordFormationRelation" e as propriedades "vartans:source" e "vartrans:target" indicam as relações entre primitivo e derivado, respectivamente. A propriedade "vartrans:category" indica se é derivação sufixal ("dicbio:Suffixation"), prefixal ("dicbio:Prefixation"), composição ("dicbio:Compounding") ou outra.
+- No caso das palavras criadas por derivação, a derivação morfológica "dbres:XXXX_derivation" é indicada com "a morph:WordFormationRelation" e as propriedades "vartrans:source" e "vartrans:target" indicam as relações entre primitivo e derivado, respectivamente. A propriedade "vartrans:category" indica se é derivação sufixal ("dicbio:Suffixation"), prefixal ("dicbio:Prefixation"), composição ("dicbio:Compounding") ou outra.
 
 - No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
 
