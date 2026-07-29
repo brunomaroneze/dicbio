@@ -29,30 +29,6 @@ dbres:entry_antera a ontolex:LexicalEntry ;
         dbres:form_antheras_accent ;
     ontolex:sense dbres:entry_antera_sense1 .
 
-dbres:etym_antera_sense1 a lemonety:Etymology ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:semanticEtymon dbres:etymon_anthera ;
-    dicbio:confidenceLevel dicbio:certain ;
-    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
-
-dbres:etymon_anthera a dicbio:SemanticEtymon ;
-    dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
-    ontolex:writtenRep "anthera" ;
-    skos:definition "Parte da flor que contém o pólen."@pt ;
-    lemonety:etymology dbres:etym_anthera_lat .
-
-dbres:etym_anthera_lat a lemonety:Etymology ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:semanticEtymon dbres:etymon_antheros ;
-    dcterms:source dbsrc:source_houaiss .
-
-dbres:etymon_antheros a dicbio:SemanticEtymon ;
-    dcterms:language <http://www.lexvo.org/page/iso639-3/grc> ;
-    ontolex:writtenRep "ἀνθηρός" ;
-    skos:definition "Florido."@pt .
-
 dbres:form_antera a ontolex:Form ;
     ontolex:writtenRep "antera"@pt ;
     lexinfo:number lexinfo:singular .
@@ -80,3 +56,35 @@ dbres:form_antheras_accent a ontolex:Form ;
 dbres:entry_antera_sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_antera_sense1 .
+
+dbres:etym_antera_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_anthera ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
+
+dbres:etymon_anthera a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
+    ontolex:writtenRep "anthera" ;
+    skos:definition "Parte da flor que contém o pólen."@pt ;
+    lemonety:etymology dbres:etym_anthera_lat ;
+    dicbio:hasAttestation dbres:attestation_anthera .
+
+dbres:attestation_anthera a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+
+dbres:etym_anthera_lat a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_antheros ;
+    dcterms:source dbsrc:source_houaiss .
+
+dbres:etymon_antheros a dicbio:SemanticEtymon ;
+    dcterms:language glotto:gree1276 ;
+    ontolex:writtenRep "ἀνθηρός" ;
+    skos:definition "Florido."@pt ;
+    dicbio:hasAttestation dbres:attestation_antheros .
+
+dbres:attestation_antheros a dicbio:Attestation ;
+    dcterms:source dbsrc:dbsrc:source_LSJ .

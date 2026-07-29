@@ -64,7 +64,7 @@
 
 - Ao étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao seu URI no projeto LiLa.
 
-- A língua do étimo é apresentada com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261".
+- A língua do étimo é apresentada com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261". O código da língua grega é "glotto:gree1276".
 
 - Um étimo pode ter outro étimo, formando cadeias etimológicas.
 

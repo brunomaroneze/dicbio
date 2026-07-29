@@ -186,3 +186,81 @@ dbres:form_angulo a ontolex:Form ;
 
 dbres:entry_angulo_sense1 a ontolex:LexicalSense ;
     skos:definition "Figura geométrica formada por duas semirretas que partem de um mesmo ponto."@pt .
+
+## Antera
+
+dbres:entry_antera a ontolex:LexicalEntry ;
+    dcterms:created "2022-02-28"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_antera ;
+    ontolex:otherForm dbres:form_anteras,
+        dbres:form_anthera,
+        dbres:form_antheras,
+        dbres:form_anthera_accent,
+        dbres:form_antheras_accent ;
+    ontolex:sense dbres:entry_antera_sense1 .
+
+dbres:form_antera a ontolex:Form ;
+    ontolex:writtenRep "antera"@pt ;
+    lexinfo:number lexinfo:singular .
+
+dbres:form_anteras a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "anteras"@pt .
+
+dbres:form_anthera a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "anthera"@pt .
+
+dbres:form_anthera_accent a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "anthéra"@pt .
+
+dbres:form_antheras a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "antheras"@pt .
+
+dbres:form_antheras_accent a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "anthéras"@pt .
+
+dbres:entry_antera_sense1 a ontolex:LexicalSense ;
+    skos:definition "Parte da flor que contém o pólen."@pt ;
+    lemonety:etymology dbres:etym_antera_sense1 .
+
+dbres:etym_antera_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_anthera ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
+
+dbres:etymon_anthera a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
+    ontolex:writtenRep "anthera" ;
+    skos:definition "Parte da flor que contém o pólen."@pt ;
+    lemonety:etymology dbres:etym_anthera_lat ;
+    dicbio:hasAttestation dbres:attestation_anthera .
+
+dbres:attestation_anthera a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+
+dbres:etym_anthera_lat a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_antheros ;
+    dcterms:source dbsrc:source_houaiss .
+
+dbres:etymon_antheros a dicbio:SemanticEtymon ;
+    dcterms:language glotto:gree1276 ;
+    ontolex:writtenRep "ἀνθηρός" ;
+    skos:definition "Florido."@pt ;
+    dicbio:hasAttestation dbres:attestation_antheros .
+
+dbres:attestation_antheros a dicbio:Attestation ;
+    dcterms:source dbsrc:dbsrc:source_LSJ .
+
+## Árvore
+
