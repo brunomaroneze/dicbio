@@ -309,3 +309,5 @@ dbres:etymon_arborem a dicbio:SemanticEtymon ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
     ontolex:writtenRep "arborem" .
 
+## Aurícula
+
