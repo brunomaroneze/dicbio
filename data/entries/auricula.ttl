@@ -18,8 +18,6 @@
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
 
 
-### Falta acertar as etimologias para cada acepção
-
 dbres:entry_auricula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
     dcterms:creator dbauth:ana_menegassi_rocha,
