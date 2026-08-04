@@ -1,6 +1,8 @@
 # Dicionário Histórico de Termos da Biologia
 
-O *Dicionário Histórico de Termos da Biologia* é um projeto de Humanidades Digitais dedicado ao estudo histórico do léxico científico português a partir dos séculos XVII e XVIII.
+## Visão geral
+
+O *Dicionário Histórico de Termos da Biologia* é um projeto de Humanidades Digitais dedicado ao estudo histórico do léxico científico português a partir dos séculos XVII e XVIII. O projeto reúne um dicionário histórico, um *corpus* digital anotado em TEI-XML e uma representação lexical em RDF seguindo o modelo OntoLex-Lemon.
 
 ## Objetivos
 Os objetivos são:
@@ -35,6 +37,24 @@ Os dados são continuamente atualizados à medida que o dicionário também é a
 - RDF
 - OntoLex-Lemon
 
+## Arquitetura
+
+O *corpus*, transcrito usando ferramentas computacionais (em especial o Transkribus) e revisão humana, está anotado com marcações do padrão TEI-XML. Um script em Python (comando ```python manage.py processar_obras_tei```) converte os textos para HTML (para serem exibidos no site). Outro script (comando ```python manage.py extract_corpus_terms```) extrai todos os elementos ```<term>``` do *corpus* e gera um arquivo CSV (```termos_extraidos.csv```) contendo um contexto (em geral, frase ou parágrafo) para cada termo.
+
+As informações dos verbetes (definições, explicações etimológicas, classe gramatical etc.) estão nos arquivos ```DadosDoDicionario.csv``` e ```definitions.csv```, atualizados manualmente. Atualmente, estão sendo feitos testes para disponibilizar esses dados em formato RDF, de modo que LLMs possam redigir os verbetes de forma semiautomática. Esses dados em RDF (Turtle) estão na pasta ```entries```.
+
+Os arquivos CSV são transformados num banco de dados administrado por scripts da biblioteca Django (Python), biblioteca essa que também é empregada no *front-end*.
+
+## Estrutura do repositório
+
+Este repositório contém diversas subpastas com todos os códigos necessários para rodar o site do projeto.
+
+Algumas subpastas de interesse são:
+- ```corpus_digital/obras```: contém os arquivos TEI-XML das obras que integram o *corpus*;
+- ```data```: contém os arquivos CSV e Turtle com os dados dos verbetes;
+- ```documentacao```: contém os textos da seção "Documentação" em formato MarkDown;
+- ```scripts```: contém scripts diversos para manipular os dados.
+
 ## Como executar o site localmente
 
 Para executar o site localmente, as seguintes etapas são necessárias:
@@ -56,6 +76,9 @@ A documentação mais detalhada pode ser acessada em https://dicbio.fflch.usp.br
 ## Financiamento
 
 O projeto contou com financiamento do CNPq (2023-2024) e atualmente conta com o financiamento da FUNDECT.
+
+## Como citar
+
 
 ## Licença
 
