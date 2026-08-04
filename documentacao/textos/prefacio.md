@@ -12,7 +12,7 @@ O desenvolvimento inicial deste dicionário foi possível graças ao estágio de
 
 No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
 
-O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Também contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) no período de 2023 a 2024.
+O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Atualmente conta com financiamento da FUNDECT (Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia de Mato Grosso do Sul).
 
 ## Objetivos
 O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
@@ -46,6 +46,8 @@ O **Dicionário** apresenta uma interface computacional escrita em Python e Djan
 A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD e do CNPq.
 
 O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pró-Humanidades 2022, sob a forma de bolsas de Iniciação Científica e de Apoio Técnico, no período de 2023-2024.
+
+Atualmente, o projeto conta com o financiamento da FUNDECT, por meio de uma bolsa PQ (2025-2028).
 
 A redação dos primeiros verbetes e a criação da parte computacional do dicionário foram possíveis graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. **Graça Rio-Torto**.
 
