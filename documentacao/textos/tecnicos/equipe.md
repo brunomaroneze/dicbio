@@ -10,13 +10,13 @@ autores: Bruno Maroneze
 - **Ernany de Almeida Neto** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2025
 - **Vitória Fernandes Pereira** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
 - **Sammara Valim Luz dos Santos** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
-- **Vinícius Matheus Nunes** (bolsista do PIBIC-Ensino Médio) - transcrição e preparação do córpus, desenho do *website* - desde 2025
+- **Ana Cristina Gouvêa Lopes** (estudante de pós-graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - desde 2024
 
 ## Colaboradores eventuais
 - **Geovanna Salvino de Lima** (estudante de pós-graduação, Universidade Federal da Grande Dourados) - elaboração de verbetes
 
 ## Antigos colaboradores
-- **Ana Cristina Gouvêa Lopes** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - 2024-2025
+- **Vinícius Matheus Nunes** (bolsista do PIBIC-Ensino Médio) - transcrição e preparação do córpus, desenho do *website* - 2025
 - **Guilherme Ferreira Mendes Vieira** (estudante de graduação, Universidade Federal da Grande Dourados) - desenho do *website*, programação do código e automação de tarefas - 2024-2025
 - **Ana Luísa Rodrigues Lopes** (bolsista do PIBIC-Ensino Médio) - transcrição e preparação do córpus - 2024-2025
 - **Marimeire Almeida Barros** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus, pesquisa etimológica - 2024
@@ -38,3 +38,7 @@ autores: Bruno Maroneze
 - **Cinddy Daniela Lima Tragueta** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2020
 - **Amarildo Braga de Oliveira** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017-2018
 - **Florival Dourado dos Reis Neto** (estudante de graduação, Universidade Federal da Grande Dourados) - preparação do córpus - 2017
+
+## Como colaborar
+
+Interessados em colaborar com o projeto podem entrar em contato com o coordenador pelo e-mail brunomaroneze@ufgd.edu.br.

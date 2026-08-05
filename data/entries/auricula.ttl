@@ -18,8 +18,6 @@
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
 
 
-### Falta acertar as etimologias para cada acepção
-
 dbres:entry_auricula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
     dcterms:creator dbauth:ana_menegassi_rocha,
@@ -33,48 +31,6 @@ dbres:entry_auricula a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_auricula_sense1,
         dbres:entry_auricula_sense2,
         dbres:entry_auricula_sense3 .
-
-dbres:etym_auricula_sense1 a lemonety:Etymology ; # Cavidade do coração
-    dcterms:source dbsrc:dicbio_project ;
-    dicbio:semanticEtymon dbres:etymon_auricula_sense1 ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
-    lemonety:etyLinkType "borrowed"@en, "empréstimo"@pt ;
-    dicbio:confidenceLevel dicbio:certain ;
-    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>auricula</i>, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""^^rdf:HTML .
-
-dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ; # Incluí a classe SemanticEtymon, preciso padronizar isso nas outras instâncias
-    dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_blasius ;
-    skos:definition "Cavidade superior dos ventrículos do coração."@pt .
-
-dbres:auricula_lat a ontolex:LexicalEntry ; # Preciso criar isso porque o étimo passa a ser apenas a acepção
-    ontolex:canonicalForm dbres:auricula_lat_form ;
-    ontolex:sense dbres:etymon_auricula_sense1, 
-        dbres:etymon_auricula_sense2 ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/90761> .
-
-dbres:auricula_lat_form a ontolex:Form ;
-    ontolex:writtenRep "auricula"@la .
-
-dbres:etym_auricula_sense2 a lemonety:Etymology ; # Orelha
-    dcterms:source dbsrc:dicbio_project,
-        dbsrc:source_houaiss ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:confidenceLevel dicbio:probable ;
-    dicbio:semanticEtymon dbres:etymon_auricula_sense2 ;
-    dicbio:etymologicalArgumentation """O étimo é o latim <i>auricula</i>, diminutivo de <i>auris</i>, que na Antiguidade era empregado para se referir à orelha (conforme afirma o Oxford Latin Dictionary). É sabido que a forma <i>auricula</i> é também o étimo da forma herdada "orelha"; dessa forma, "orelha" e "aurícula" são, etimologicamente, formas <i>doublets</i>."""^^rdf:HTML .
-
-dbres:etymon_auricula_sense2 a dicbio:SemanticEtymon ;
-    dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot,
-        dbsrc:source_old ;
-    skos:definition "Orelha."@pt .
-
-dbres:etym_auricula_sense3 a lemonety:Etymology ; # Estrutura anatômica em forma de orelha
-    dcterms:source dbsrc:dicbio_project ;
-    dicbio:etymologicalProcess dicbio:semanticDerivation ;
-    dicbio:semanticEtymon dbres:entry_auricula_sense2 ;
-    dicbio:etymologicalArgumentation """A acepção "Estrutura anatômica em forma de orelha", atestada em Vandelli, é uma derivação semântica da acepção "orelha"."""^^rdf:HTML .
 
 dbres:form_auricula a ontolex:Form ;
     lexinfo:number lexinfo:singular ;
@@ -94,38 +50,109 @@ dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
     ontolex:reference dbres:concept_atrio ;
     dicbio:hasAttestation dbres:attestation_auricula_sense1_vandelli .
 
-dbres:attestation_auricula_sense1_vandelli a dicbio:Attestation ;
-    dicbio:attestationDate "1788"^^xsd:gYear ;
-    dcterms:source dbsrc:work_diciovandelli .
+dbres:etym_auricula_sense1 a lemonety:Etymology ; # Cavidade do coração
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:semanticEtymon dbres:etymon_auricula_sense1 ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>auricula</i>, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""^^rdf:HTML .
+
+dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    dicbio:hasAttestation dbres:attestation_auricula_lat_sense1_blasius ;
+    skos:definition "Cavidade superior dos ventrículos do coração."@pt .
+
+dbres:attestation_auricula_lat_sense1_blasius a dicbio:Attestation ;
+    dicbio:attestationDate "1681"^^xsd:gYear ;
+    dcterms:source dbsrc:source_blasius .
+
+### Entrada em latim para o étimo, que é a mesma palavra latina, mas com duas acepções distintas. A entrada em latim é necessária para poder associar as duas acepções do étimo à mesma palavra latina.
+
+dbres:auricula_lat a ontolex:LexicalEntry ;
+    dcterms:language glotto:lati1261 ;
+    ontolex:canonicalForm dbres:auricula_lat_form ;
+    ontolex:sense dbres:etymon_auricula_sense1, 
+        dbres:etymon_auricula_sense2 ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/90761> .
+
+dbres:auricula_lat_form a ontolex:Form ;
+    ontolex:writtenRep "auricula"@la .
+
+### Fim da entrada em latim
 
 dbres:entry_auricula_sense2 a ontolex:LexicalSense ;
     skos:definition "Orelha."@pt ;
     lemonety:etymology dbres:etym_auricula_sense2 ;
+    ontolex:reference dbres:concept_orelha ;
     dicbio:hasAttestation dbres:attestation_auricula_sense2_vandelli .
 
-dbres:attestation_auricula_sense2_vandelli a dicbio:Attestation ;
-    dicbio:attestationDate "1788"^^xsd:gYear ;
-    dcterms:source dbsrc:work_diciovandelli .
+dbres:etym_auricula_sense2 a lemonety:Etymology ; # Orelha
+    dcterms:source dbsrc:dicbio_project,
+        dbsrc:source_houaiss ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:confidenceLevel dicbio:probable ;
+    dicbio:semanticEtymon dbres:etymon_auricula_sense2 ;
+    dicbio:etymologicalArgumentation """O étimo é o latim <i>auricula</i>, diminutivo de <i>auris</i>, que na Antiguidade era empregado para se referir à orelha (conforme afirma o Oxford Latin Dictionary). É sabido que a forma <i>auricula</i> é também o étimo da forma herdada "orelha"; dessa forma, "orelha" e "aurícula" são, etimologicamente, formas <i>doublets</i>."""^^rdf:HTML .
+
+dbres:etymon_auricula_sense2 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    dicbio:hasAttestation dbres:attestation_auricula_lat_sense2_gaffiot,
+        dbres:attestation_auricula_lat_sense2_old ;
+    skos:definition "Orelha."@pt .
+
+dbres:attestation_auricula_lat_sense2_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+
+dbres:attestation_auricula_lat_sense2_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
 
 dbres:entry_auricula_sense3 a ontolex:LexicalSense ;
     skos:definition "Estrutura anatômica em forma de orelha."@pt ;
     lemonety:etymology dbres:etym_auricula_sense3 ;
     dicbio:hasAttestation dbres:attestation_auricula_sense3_vandelli .
 
+dbres:etym_auricula_sense3 a lemonety:Etymology ; # Estrutura anatômica em forma de orelha
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:etymologicalProcess dicbio:semanticDerivation ;
+    dicbio:confidenceLevel dicbio:probable ;
+    dicbio:semanticEtymon dbres:entry_auricula_sense2 ;
+    dicbio:etymologicalArgumentation """A acepção "Estrutura anatômica em forma de orelha", atestada em Vandelli, é uma derivação semântica da acepção "orelha"."""^^rdf:HTML .
+
+dbres:attestation_auricula_sense1_vandelli a dicbio:Attestation ;
+    dicbio:attestationDate "1788"^^xsd:gYear ;
+    dcterms:source dbsrc:work_diciovandelli .
+
+dbres:attestation_auricula_sense2_vandelli a dicbio:Attestation ;
+    dicbio:attestationDate "1788"^^xsd:gYear ;
+    dcterms:source dbsrc:work_diciovandelli .
+
 dbres:attestation_auricula_sense3_vandelli a dicbio:Attestation ;
     dicbio:attestationDate "1788"^^xsd:gYear ;
     dcterms:source dbsrc:work_diciovandelli .
+
+
+## Entradas para orelha e átrio, para poder relacionar aurícula e orelha ao mesmo conceito, e para poder relacionar aurícula e átrio ao mesmo conceito.
 
 dbres:entry_orelha a ontolex:LexicalEntry ;
     dcterms:created "2026-02-16"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
-    skos:definition "Órgão do corpo humano e de outros animais, situado na cabeça, que tem a função de captar os sons."@pt .
+    ontolex:sense dbres:entry_orelha_sense1 .
+
+dbres:entry_orelha_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão do corpo humano e de outros animais, situado na cabeça, que tem a função de captar os sons."@pt ;
+    ontolex:reference dbres:concept_orelha .
+
+dbres:concept_orelha a skos:Concept ;
+    skos:definition "Órgão do corpo humano e de outros animais, situado na cabeça, que tem a função de captar os sons."@pt ;
+    skos:exactMatch <http://purl.obolibrary.org/obo/UBERON_0001690> .
 
 dbres:entry_atrio a ontolex:LexicalEntry ;
     dcterms:created "2026-02-16"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:sense dbres:entry_atrio_sense1 .
 
 dbres:entry_atrio_sense1 a ontolex:LexicalSense ;
@@ -139,10 +166,8 @@ dbres:concept_atrio a skos:Concept ;
 dbres:entry_orelha_do_coracao_sense1 a ontolex:LexicalSense ;
     skos:definition "Cavidade superior do coração."@pt ;
     ontolex:reference dbres:concept_atrio ;
-    dicbio:hasAttestation dbres:attestation_orelha_do_coracao_sense1_santucci . #Santucci, "Anatomia do Corpo Humano", 1739, p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas".
+    dicbio:hasAttestation dbres:attestation_orelha_do_coracao_sense1_santucci . # Santucci, "Anatomia do Corpo Humano", 1739, p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas". É preciso marcar essa ocorrência no XML do Santucci
 
 dbres:attestation_orelha_do_coracao_sense1_santucci a dicbio:Attestation ;
     dicbio:attestationDate "1739"^^xsd:gYear ;
     dcterms:source dbsrc:work_anatomiasantucci .
-
-# Falta associar aurícula e orelha ao mesmo conceito; e falta incluir o ontolex:reference no protocolo.
