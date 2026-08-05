@@ -88,7 +88,6 @@ O projeto contou com financiamento do CNPq (2023-2024) e atualmente conta com o 
 
 ## Licença
 
-Os códigos-fonte são disponíveis sob a licença MIT.
+- **Código-fonte:** licenciado sob a licença MIT (ver o arquivo ```LICENSE```).
 
-Os demais arquivos são disponíveis gratuitamente sob a Licença [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by/4.0/),
-que permite o compartilhamento e o uso livres, desde que citada a fonte.
+- **Dados, documentação e demais conteúdos:** disponibilizados sob a Licença [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).

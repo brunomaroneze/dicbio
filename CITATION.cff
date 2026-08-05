@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this project in your research, please cite it as follows."
+title: "Dicionário Histórico de Termos da Biologia"
+type: software
+
+authors:
+  - family-names: "Maroneze"
+    given-names: "Bruno Oliveira"
+    affiliation: "Universidade Federal da Grande Dourados"
+
+version: "0.9.0"
+
+date-released: "2026-08-04"
+
+license: "MIT"
+
+repository-code: "https://github.com/brunomaroneze/dicbio"
+
+url: "https://dicbio.fflch.usp.br"
+
+keywords:
+  - "historical lexicography"
+  - "etymology"
+  - "terminology"
+  - "digital humanities"
+  - "TEI-XML"
+  - "OntoLex-Lemon"
+  - "RDF"
+  - "history of science"
+
+abstract: >
+  An open digital dictionary devoted to the historical study of
+  Portuguese biological terminology, integrating a TEI-XML corpus,
+  a Django web application and lexical data represented according
+  to the OntoLex-Lemon model.
+
+preferred-citation:
+  type: website
