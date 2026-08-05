@@ -8,12 +8,6 @@ O **Dicionário Histórico de Termos da Biologia** é um dicionário eletrônico
 
 O projeto é coordenado pelo Prof. Dr. Bruno Oliveira Maroneze e conta com a participação de estudantes de graduação e pós-graduação da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS).
 
-O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
-
-No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
-
-O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte. Atualmente conta com financiamento da FUNDECT (Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia de Mato Grosso do Sul).
-
 ## Objetivos
 O objetivo geral deste projeto é compilar uma obra de referência, para consulta *online*, que descreva o léxico científico da língua portuguesa, na área das ciências biológicas, através da história.
 
@@ -27,10 +21,17 @@ Seus objetivos específicos são:
 
 - Descrever a etimologia dos termos e as mudanças de forma e significado pelas quais passaram ao longo do tempo.
 
+## Público-alvo
+
+Este dicionário destina-se principalmente a pesquisadores das áreas de Linguística Histórica, Lexicografia, Terminologia, História da Ciência e História da Língua Portuguesa. Também interessará especialmente a biólogos e professores de Biologia.
+
 ## Organização do *site*
 Os verbetes do dicionário podem ser consultados na aba **Consulta**. Os textos que compõem o córpus deste dicionário podem ser consultados em **Córpus**, ao lado das imagens das obras e com *links* para os verbetes no próprio texto. A descrição detalhada do córpus são encontradas [aqui](../corpus/).
 
 Em **Documentação** encontram-se diversos textos de apoio a respeito do Dicionário.
+
+## Estrutura computacional
+O **Dicionário** apresenta uma interface computacional escrita em Python e Django, em parte com o auxílio de ferramentas de Inteligência Artificial. Os dados que "alimentam" o dicionário, bem como o código-fonte, estão disponíveis para *download* no repositório [*GitHub*](https://github.com/brunomaroneze/dicbio).
 
 ## Política de disponibilização dos dados
 Este **Dicionário** encontra-se em permanente atualização. Para dar mais agilidade à divulgação, optou-se por disponibilizar os verbetes à medida que vão sendo elaborados.
@@ -39,15 +40,21 @@ Em cada verbete, registram-se a data da inserção e a data da última atualiza�
 
 Os dados e o código-fonte encontram-se disponíveis para *download* no repositório *GitHub* [neste *link*](https://github.com/brunomaroneze/dicbio).
 
-## Estrutura computacional
-O **Dicionário** apresenta uma interface computacional escrita em Python e Django, em parte com o auxílio de ferramentas de Inteligência Artificial. Os dados que "alimentam" o dicionário, bem como o código-fonte, estão disponíveis para *download* no repositório [*GitHub*](https://github.com/brunomaroneze/dicbio).
+## Histórico
+
+O desenvolvimento inicial deste dicionário foi possível graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. Graça Rio-Torto.
+
+No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pelo Edital Pró-Humanidades (Chamada CNPq/MCTI/FNDCT n. 40/2022).
+
+O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte.
+
+## Financiamento
+O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pró-Humanidades 2022, sob a forma de bolsas de Iniciação Científica e de Apoio Técnico, no período de 2023-2024.
+
+Atualmente, o projeto conta com o financiamento da FUNDECT (Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia de Mato Grosso do Sul), por meio de uma bolsa PQ (2025-2028).
 
 ## Agradecimentos
 A compilação do córpus foi (e ainda é) possível graças à colaboração de estudantes de graduação da Universidade Federal da Grande Dourados, alguns dos quais receberam bolsas de Iniciação Científica da PROPP-UFGD e do CNPq.
-
-O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pró-Humanidades 2022, sob a forma de bolsas de Iniciação Científica e de Apoio Técnico, no período de 2023-2024.
-
-Atualmente, o projeto conta com o financiamento da FUNDECT, por meio de uma bolsa PQ (2025-2028).
 
 A redação dos primeiros verbetes e a criação da parte computacional do dicionário foram possíveis graças ao estágio de pós-doutoramento desenvolvido pelo coordenador do projeto junto à Universidade de Coimbra (Portugal), sob a supervisão da Profa. Dra. **Graça Rio-Torto**.
 

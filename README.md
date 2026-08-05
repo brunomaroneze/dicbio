@@ -69,9 +69,15 @@ Para executar o site localmente, as seguintes etapas são necessárias:
 8. Popular o banco de dados (comando ```python manage.py migrate```);
 9. Rodar o servidor local (comando ```python manage.py runserver```).
 
+## Como colaborar com o projeto
+
+Este repositório está formalmente como um "fork" do repositório da FFLCH-USP; no entanto, na prática, não está mais vinculado. Assim, os interessados podem fazer seus próprios "forks" e enviar *pull requests* a este repositório.
+
+O coordenador do projeto pode ser contatado pelo e-mail brunomaroneze@ufgd.edu.br.
+
 ## Documentação
 
-A documentação mais detalhada pode ser acessada em https://dicbio.fflch.usp.br/documentacao/.
+A documentação detalhada pode ser acessada em https://dicbio.fflch.usp.br/documentacao/.
 
 ## Financiamento
 
@@ -82,7 +88,7 @@ O projeto contou com financiamento do CNPq (2023-2024) e atualmente conta com o 
 
 ## Licença
 
-Tanto os códigos-fonte quanto os demais arquivos são disponíveis gratuitamente
-sob a Licença
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by/4.0/),
+Os códigos-fonte são disponíveis sob a licença MIT.
+
+Os demais arquivos são disponíveis gratuitamente sob a Licença [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by/4.0/),
 que permite o compartilhamento e o uso livres, desde que citada a fonte.
