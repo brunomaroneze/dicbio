@@ -467,3 +467,104 @@ dbres:attestation_orelha_do_coracao_sense1_santucci a dicbio:Attestation ;
 
 ## Balano
 
+dbres:entry_balano a ontolex:LexicalEntry ;
+    dcterms:created "2024-10-07"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:marilizi_tarifa ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_balano_accent ;
+    ontolex:otherForm dbres:form_balano ;
+    ontolex:sense dbres:entry_balano_sense1 .
+
+dbres:form_balano_accent a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "bálano"@pt .
+
+dbres:form_balano a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "balano"@pt .
+
+dbres:entry_balano_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cabeça do membro viril."@pt ;
+    lemonety:etymology dbres:etym_balano_sense1 ;
+    ontolex:reference dbres:concept_glande .
+
+dbres:etym_balano_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_balanus ;
+    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>balanus, i</i>, que já apresenta o significado de "cabeça do pênis" em textos médicos do século XVIII (como, por exemplo, a "Bibliotheca Chirurgica" de Manget, 1721 - https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC). Em latim, a palavra tem origem no grego βάλανος, que, segundo o dicionário de Liddell, Scott e Jones, já apresentava, além da acepção de "fruto do carvalho", também a de "cabeça do pênis". Porém, os dicionários de latim Gaffiot e Oxford Latin Dictionary não apresentam essa acepção; talvez o latim clássico não tenha conhecido essa acepção, ou talvez não tenha sido registrada em textos escritos. O emprego de <i>balanus</i> no latim científico não parece ter sido comum, visto que o termo preferido era <i>glans</i>. O próprio Santucci inclui <i>bálano</i> como um dos sinônimos de glande ou cabeça do membro masculino, mas prefere empregar o termo <i>glande</i>."""^^rdf:HTML .
+
+dbres:etymon_balanus a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/33893> ;
+    skos:definition "Glande do pênis."@pt ;
+    ontolex:writtenRep "balanus"@la ;
+    skos:scopeNote "A acepção de 'glande do pênis' não é registrada nos principais dicionários de latim clássico."@pt ;
+    dicbio:hasAttestation dbres:attestation_balanus_lat ;
+    lemonety:etymology dbres:etym_balanus .
+
+dbres:attestation_balanus_lat a dicbio:Attestation ;
+    dcterms:source dbsrc:source_manget ;
+    dicbio:attestationDate "1721"^^xsd:gYear .
+
+dbres:etym_balanus a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_balanos_sense2 .
+
+dbres:attestation_balanos_grc a dicbio:Attestation ;
+    dcterms:source dbsrc:source_LSJ .
+
+dbres:entry_balanos a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-06"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:gree1276 ;
+    ontolex:canonicalForm dbres:form_balanos ;
+    ontolex:sense dbres:etymon_balanos_sense1,
+        dbres:etymon_balanos_sense2 .
+
+dbres:etymon_balanos_sense1 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:gree1276 ;
+    skos:definition "Fruto do carvalho."@pt ;
+    dicbio:hasAttestation dbres:attestation_balanos_grc .
+
+dbres:etymon_balanos_sense2 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:gree1276 ;
+    skos:definition "Glande do pênis."@pt ;
+    lemonety:etymology dbres:etym_balanos_sense2 ;
+    ontolex:reference dbres:concept_glande ;
+    dicbio:hasAttestation dbres:attestation_balanos_grc .
+
+dbres:etym_balanos_sense2 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:semanticDerivation ;
+    dicbio:semanticEtymon dbres:etymon_balanos_sense1 ;
+    dcterms:source dbsrc:source_LSJ ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dicbio:etymologicalArgumentation """A acepção de "glande do pênis é uma derivação semântica da acepção original "fruto do carvalho", por semelhança de forma."""^^rdf:HTML .
+
+dbres:form_balanos a ontolex:Form ;
+    ontolex:writtenRep "βάλανος"@grc .
+
+## Glande
+
+dbres:entry_glande a ontolex:LexicalEntry ;
+    dcterms:created "2026-02-20"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_glande ;
+    ontolex:sense dbres:entry_glande_sense1 .
+
+dbres:form_glande a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "glande"@pt .
+
+dbres:entry_glande_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cabeça do membro viril."@pt ;
+    ontolex:reference dbres:concept_glande .
+
+dbres:concept_glande a skos:Concept ;
+    skos:definition "Cabeça do pênis."@pt ;
+    skos:exactMatch <http://purl.obolibrary.org/obo/UBERON_0001299> .
+
+## bífido
