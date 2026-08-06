@@ -60,6 +60,6 @@ dbres:etymon_arborem a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
-    ontolex:writtenRep "arborem" .
+    ontolex:writtenRep "arborem" . # Falta inserir a entrada de "arborem"
 
 

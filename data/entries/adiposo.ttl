@@ -95,7 +95,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
 
 dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
-    ontolex:writtenRep "adiposus" ;
+    ontolex:writtenRep "adiposus" ; ## Falta inserir a entrada de "adiposus"
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .

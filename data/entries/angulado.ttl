@@ -65,7 +65,7 @@ dbres:etymon_angulatus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
-    ontolex:writtenRep "angulatus" ;
+    ontolex:writtenRep "angulatus" ; # Falta inserir a entrada de "angulatus"
     dicbio:hasAttestation dbres:attestation_angulatus .
 
 dbres:attestation_angulatus a dicbio:Attestation ;

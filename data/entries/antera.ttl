@@ -67,7 +67,7 @@ dbres:etym_antera_sense1 a lemonety:Etymology ;
 dbres:etymon_anthera a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
-    ontolex:writtenRep "anthera" ;
+    ontolex:writtenRep "anthera" ; # Falta inserir a entrada de "anthera"
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
     dicbio:hasAttestation dbres:attestation_anthera .
@@ -82,7 +82,7 @@ dbres:etym_anthera_lat a lemonety:Etymology ;
 
 dbres:etymon_antheros a dicbio:SemanticEtymon ;
     dcterms:language glotto:gree1276 ;
-    ontolex:writtenRep "ἀνθηρός" ;
+    ontolex:writtenRep "ἀνθηρός" ; # Falta inserir a entrada de "ἀνθηρός"
     skos:definition "Florido."@pt ;
     dicbio:hasAttestation dbres:attestation_antheros .
 
