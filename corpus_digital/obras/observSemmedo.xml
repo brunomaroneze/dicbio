@@ -39,6 +39,7 @@
           funcionamento correto dos URLs.</p>
         <p>O sumário foi indicado com o elemento <gi>list</gi>, com cada item do sumário marcado com
             <gi>item</gi>.</p>
+        <p>A errata foi incluída como uma tabela.</p>
       </editorialDecl>
       <projectDesc>
         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -1471,8 +1472,121 @@
         <signed>Doutor Francisco da Fonseca Henriques.</signed>
       </div>
       <pb n="não numerada 32"
-        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0035.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
-      />
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0035.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <div type="errata">
+        <head>ERRATAS.</head>
+        <table>
+          <row>
+            <cell role="label">Erro.</cell>
+            <cell role="label">Emenda.</cell>
+            <cell role="label">Pag.</cell>
+            <cell role="label">Reg.</cell>
+          </row>
+          <row>
+            <cell>Insultuosos.</cell>
+            <cell>insultos.</cell>
+            <cell>339.</cell>
+            <cell>8.</cell>
+          </row>
+          <row>
+            <cell>Meyor.</cell>
+            <cell>melhor.</cell>
+            <cell>351.</cell>
+            <cell>32.</cell>
+          </row>
+          <row>
+            <cell>Prohido.</cell>
+            <cell>prohibido.</cell>
+            <cell>352.</cell>
+            <cell>28.</cell>
+          </row>
+          <row>
+            <cell>Ao desemparado.</cell>
+            <cell>ao desemparo.</cell>
+            <cell>354.</cell>
+            <cell>14.</cell>
+          </row>
+          <row>
+            <cell>Obdomen.</cell>
+            <cell>abdomen.</cell>
+            <cell>355.</cell>
+            <cell>5.</cell>
+          </row>
+          <row>
+            <cell>Ouvido.</cell>
+            <cell>Ouvidio.</cell>
+            <cell>358.</cell>
+            <cell>1.</cell>
+          </row>
+          <row>
+            <cell>Doca.</cell>
+            <cell>boca.</cell>
+            <cell>359.</cell>
+            <cell>9.</cell>
+          </row>
+          <row>
+            <cell>Belancia.</cell>
+            <cell>melancia.</cell>
+            <cell>359.</cell>
+            <cell>9.</cell>
+          </row>
+          <row>
+            <cell>Excestuo.</cell>
+            <cell>excessivo.</cell>
+            <cell>362.</cell>
+            <cell>8.</cell>
+          </row>
+          <row>
+            <cell>Reborantes.</cell>
+            <cell>roborantes.</cell>
+            <cell>366.</cell>
+            <cell>24.</cell>
+          </row>
+          <row>
+            <cell>Prepado.</cell>
+            <cell>preparado.</cell>
+            <cell>368.</cell>
+            <cell>17.</cell>
+          </row>
+          <row>
+            <cell>Ourros.</cell>
+            <cell>outros.</cell>
+            <cell>369.</cell>
+            <cell>26.</cell>
+          </row>
+          <row>
+            <cell>Advrtio.</cell>
+            <cell>advirto.</cell>
+            <cell>369.</cell>
+            <cell>27.</cell>
+          </row>
+          <row>
+            <cell>Espirieos.</cell>
+            <cell>espiritos.</cell>
+            <cell>372.</cell>
+            <cell>19.</cell>
+          </row>
+          <row>
+            <cell>Preperar.</cell>
+            <cell>preparar.</cell>
+            <cell>372.</cell>
+            <cell>37.</cell>
+          </row>
+          <row>
+            <cell>Huũ.</cell>
+            <cell>hũa.</cell>
+            <cell>431.</cell>
+            <cell>1.</cell>
+          </row>
+          <row>
+            <cell>Inquietaçaõ.</cell>
+            <cell>Inquisiçaõ.</cell>
+            <cell>525.</cell>
+            <cell>21.</cell>
+          </row>
+        </table>
+      </div>
+
     </front>
     <body>
       <pb n="1"/>
