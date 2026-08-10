@@ -64,10 +64,20 @@ dbres:etym_antera_sense1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
 
-dbres:etymon_anthera a dicbio:SemanticEtymon ;
+dbres:entry_anthera a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
-    ontolex:writtenRep "anthera" ;
+    ontolex:canonicalForm dbres:form_anthera_lat ;
+    ontolex:sense dbres:etymon_anthera .
+
+dbres:form_anthera_lat a ontolex:Form ;
+    ontolex:writtenRep "anthera"@la .
+
+dbres:etymon_anthera a dicbio:SemanticEtymon ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
     dicbio:hasAttestation dbres:attestation_anthera .
@@ -80,9 +90,18 @@ dbres:etym_anthera_lat a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_antheros ;
     dcterms:source dbsrc:source_houaiss .
 
-dbres:etymon_antheros a dicbio:SemanticEtymon ;
+dbres:entry_antheros a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:gree1276 ;
-    ontolex:writtenRep "ἀνθηρός" ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_antheros ;
+    ontolex:sense dbres:etymon_antheros .
+
+dbres:form_antheros a ontolex:Form ;
+    ontolex:writtenRep "ἀνθηρός"@grc .
+
+dbres:etymon_antheros a dicbio:SemanticEtymon ;
     skos:definition "Florido."@pt ;
     dicbio:hasAttestation dbres:attestation_antheros .
 

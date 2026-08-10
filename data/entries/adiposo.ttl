@@ -93,10 +93,19 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_adiposus a dicbio:SemanticEtymon ;
+dbres:adiposus_entry a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
-    ontolex:writtenRep "adiposus" ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposus ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    ontolex:sense dbres:etymon_adiposus .
+
+dbres:form_adiposus a ontolex:Form ;
+    ontolex:writtenRep "adiposus"@la .
+
+dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 

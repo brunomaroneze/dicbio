@@ -56,10 +56,21 @@ dbres:etym_arvore_sense1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""^^rdf:HTML .
 
-dbres:etymon_arborem a dicbio:SemanticEtymon ;
+dbres:entry:arborem a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
     dcterms:language glotto:lati1261 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
-    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
-    ontolex:writtenRep "arborem" .
+    ontolex:otherForm dbres:form_arborem ;
+    ontolex:sense dbres:etymon_arborem .
 
+dbres:form_arborem a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:case lexinfo:accusative ;
+    ontolex:writtenRep "arborem"@la .
+
+dbres:etymon_arborem a dicbio:SemanticEtymon ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 
