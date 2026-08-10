@@ -94,10 +94,19 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_adiposus a dicbio:SemanticEtymon ;
+dbres:adiposus_entry a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
-    ontolex:writtenRep "adiposus" ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposus ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    ontolex:sense dbres:etymon_adiposus .
+
+dbres:form_adiposus a ontolex:Form ;
+    ontolex:writtenRep "adiposus"@la .
+
+dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 
@@ -105,7 +114,6 @@ dbres:attestation_adiposus a dicbio:Attestation ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt ;
     dicbio:attestationDate "1730"^^xsd:gYear .
-
 
 ## Angulado
 
@@ -152,11 +160,20 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O adjetivo <i>angulado</i> pode ter como étimo o latim <i>angŭlātus</i> (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."^^rdf:HTML ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_angulatus a dicbio:SemanticEtymon ;
+dbres:angulatus_entry a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
-    skos:definition "Que tem ângulo; anguloso."@pt ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
-    ontolex:writtenRep "angulatus" ;
+    ontolex:canonicalForm dbres:form_angulatus ;
+    ontolex:sense dbres:etymon_angulatus .
+
+dbres:form_angulatus a ontolex:Form ;
+    ontolex:writtenRep "angulatus"@la .
+
+dbres:etymon_angulatus a dicbio:SemanticEtymon ;
+    skos:definition "Que tem ângulo; anguloso."@pt ;
     dicbio:hasAttestation dbres:attestation_angulatus .
 
 dbres:attestation_angulatus a dicbio:Attestation ;
@@ -237,10 +254,20 @@ dbres:etym_antera_sense1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico <i>anthera</i>, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego <i>antherós,á,ón</i>, que significa "florido"."""^^rdf:HTML .
 
-dbres:etymon_anthera a dicbio:SemanticEtymon ;
+dbres:entry_anthera a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
-    ontolex:writtenRep "anthera" ;
+    ontolex:canonicalForm dbres:form_anthera_lat ;
+    ontolex:sense dbres:etymon_anthera .
+
+dbres:form_anthera_lat a ontolex:Form ;
+    ontolex:writtenRep "anthera"@la .
+
+dbres:etymon_anthera a dicbio:SemanticEtymon ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
     dicbio:hasAttestation dbres:attestation_anthera .
@@ -253,9 +280,18 @@ dbres:etym_anthera_lat a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_antheros ;
     dcterms:source dbsrc:source_houaiss .
 
-dbres:etymon_antheros a dicbio:SemanticEtymon ;
+dbres:entry_antheros a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:gree1276 ;
-    ontolex:writtenRep "ἀνθηρός" ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_antheros ;
+    ontolex:sense dbres:etymon_antheros .
+
+dbres:form_antheros a ontolex:Form ;
+    ontolex:writtenRep "ἀνθηρός"@grc .
+
+dbres:etymon_antheros a dicbio:SemanticEtymon ;
     skos:definition "Florido."@pt ;
     dicbio:hasAttestation dbres:attestation_antheros .
 
@@ -303,11 +339,23 @@ dbres:etym_arvore_sense1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o substantivo latino <i>arbor, oris</i> (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo <i>arborem</i>, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""^^rdf:HTML .
 
-dbres:etymon_arborem a dicbio:SemanticEtymon ;
+dbres:entry:arborem a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
     dcterms:language glotto:lati1261 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
-    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
-    ontolex:writtenRep "arborem" .
+    ontolex:otherForm dbres:form_arborem ;
+    ontolex:sense dbres:etymon_arborem .
+
+dbres:form_arborem a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:case lexinfo:accusative ;
+    ontolex:writtenRep "arborem"@la .
+
+dbres:etymon_arborem a dicbio:SemanticEtymon ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 
 ## Aurícula
 
