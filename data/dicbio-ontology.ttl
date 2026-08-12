@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio: <https://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,7 +24,7 @@
 
 ### --- Cabeçalho da ontologia ---
 
-<http://dicbio.fflch.usp.br/ontology/>
+<https://dicbio.fflch.usp.br/ontology/>
     a owl:Ontology ;
     rdfs:label "Dicionário Histórico de Termos da Biologia"@pt ;
     dcterms:title "Dicionário Histórico de Termos da Biologia"@pt ;
@@ -33,17 +33,12 @@
     dcterms:creator dbauth:bruno_maroneze ;
     dcterms:issued "2026-08-11"^^xsd:date ;
     dcterms:modified "2026-08-11"^^xsd:date ;
-    owl:versionIRI <http://dicbio.fflch.usp.br/ontology/1.0> ;
+    owl:versionIRI <https://dicbio.fflch.usp.br/ontology/1.0/> ;
     owl:imports <http://www.w3.org/ns/lemon/ontolex> ;
     owl:imports <http://lari-datasets.ilc.cnr.it/lemonEty#> ;
     owl:imports <http://www.w3.org/ns/lemon/morph#> ;
-    owl:imports <http://www.w3.org/ns/lemon/vartrans#> ;
-    owl:imports <http://www.lexinfo.net/ontology/2.0/lexinfo#> ;
-    owl:imports <http://purl.org/ontology/bibo/> ;
     owl:imports <http://www.w3.org/2004/02/skos/core#> ;
     owl:imports <http://purl.org/dc/terms/> ;
-    owl:imports <http://www.w3.org/2001/XMLSchema#> ;
-    owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
     owl:imports <http://www.w3.org/ns/prov#> ;
     owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
 
