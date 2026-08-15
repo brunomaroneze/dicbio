@@ -1,6 +1,6 @@
 # Protocolo de descrição dos termos:
 
-## Informações gerais do termo:
+## Entrada lexical:
 
 - O termo que corresponde à entrada do verbete é indicado por "dbres:entry_XXXXX".
 
@@ -21,7 +21,7 @@
 - "ontolex:sense" liga às acepções (no formato "entry_XXXX_sense1").
 
 -------------------------------------------------
-## Informações sobre as formas:
+## Formas:
 
 - Os recursos "dbres:form_XXXX" representam formas flexionadas e também formas gráficas encontradas no córpus.
 
@@ -31,14 +31,14 @@
 
 --------------------------------------------------
 
-## Informações sobre as acepções:
+## Acepções:
 
 - As acepções são denominadas "dbres:entry_XXXXX_sense1" e entram na classe "a ontolex:LexicalSense"
 
 - Precisam conter sempre a "skos:definition" (definição) e "lemonety:etymology" (lista das hipóteses etimológicas).
 
 ------------------------------------------------------------------------------------
-## Informações sobre as hipóteses etimológicas:
+## Hipóteses etimológicas:
 
 - As hipóteses etimológicas são ligadas às acepções, e não às entradas.
 
@@ -69,7 +69,7 @@
 - Um étimo pode ter outro étimo, formando cadeias etimológicas. Nesse caso, a explicação etimológica pode ficar com o nome "dbres:etym_XXXXX", sem a necessidade de "_sense1".
 
 --------------------------------------------------
-## Informações sobre as atestações:
+## Atestações:
 - A informação sobre a atestação será ligada a uma acepção, e não a uma entrada. É um recurso de nome "dbres:attestation_TERMO_ACEPÇÃO_FONTE" (por exemplo, dbres:attestation_arvore_sense1_houaiss) e é atribuída à classe "a dicbio:Attestation".
 
 - O sentido lexical é vinculado à atestação pela propriedade "dicbio:hasAttestation".
@@ -88,7 +88,7 @@
 - Será feito um algoritmo que extrai automaticamente do córpus as informações sobre as atestações das fontes primárias.
 
 ---------------------------------------------------
-## Informações sobre o nível conceitual:
+## Conceitos:
 
 - Uma acepção pode ser vinculada ao URI de um conceito por meio de "ontolex:reference".
 
@@ -99,7 +99,7 @@
 - Os casos de substituição de termo (como "aurícula" para "átrio") e de mais de uma denominação para o mesmo conceito (como "uropígio" e "sobrecu") serão modelados usando a atribuição dos sentidos ao mesmo conceito.
 
 ---------------------------------------------------
-## Informações sobre autores e fontes:
+## Autores e fontes:
 - Os autores são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do Lattes.
 
 - As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link.
@@ -129,7 +129,7 @@
 - Se alguma informação das previstas no protocolo não for conhecida, deixar em branco e avisar isso nos "issues" do GitHub.
 -----------------------------------------------------
 
-## O que falta:
+## Questões em aberto:
 - Falta um protocolo para associar os sentidos aos URIs dos conceitos (quando eles representam conceitos)
 - Da mesma forma, precisamos associar nomes científicos de animais e plantas aos respectivos URIs
 - Podemos pensar também em associar cada verbete a outras descrições em artigos científicos
