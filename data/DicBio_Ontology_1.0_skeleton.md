@@ -14,17 +14,21 @@
 
 ### 1.1. Apresentação
 
-O **Dicionário Histórico de Termos da Biologia** (DicBio) é um dicionário eletrônico que visa reunir informações histórico-etimológicas sobre os termos da Biologia em língua portuguesa. É desenvolvido por estudantes e pesquisadores da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS), com financiamento do CNPq e da FUNDECT.
+O **Dicionário Histórico de Termos da Biologia** (DicBio) é um dicionário eletrônico dedicado à descrição histórico-etimológica dos termos da Biologia em língua portuguesa. O projeto reúne dados lexicais, linguísticos, etimológicos, histórico-documentais e semântico-conceituais provenientes de diferentes fontes, incluindo dicionários históricos e obras que integram seu corpus documental.
 
-Esta ontologia tem por finalidade modelar os dados do dicionário, disponibilizados no formato RDF, segundo os princípios do Linked Open Data.
+O projeto é desenvolvido por estudantes e pesquisadores da Universidade Federal da Grande Dourados (UFGD) e da Universidade Federal de Mato Grosso do Sul (UFMS).
+
+Esta ontologia tem por finalidade fornecer um modelo semântico formal para a representação dos dados do dicionário em RDF, favorecendo sua publicação como Linked Open Data e sua interoperabilidade com outros conjuntos de dados e vocabulários da Web Semântica.
 
 ### 1.2. Motivação
 
-De acordo com os princípios do Linked Open Data, os dados devem estar disponíveis na Web de modo a explicitarem as suas relações com outros dados. A própria natureza relacional dos dados lexicais convida o(a) pesquisador(a) a procurá-los representar na forma de dados interligados (Linked Data), possibilitando assim a recuperação automatizada da vasta rede de remissões de uma determinada palavra. Essa recuperação automatizada pode ser usada para enriquecer diversos sistemas, como LLMs. Para isso, faz-se necessário elaborar uma ontologia que sistematize as diversas relações possíveis entre a entrada lexical e as informações linguísticas (classe gramatical, estrutura morfológica), etimológicas (étimo, datação) e conceituais, bem como as relações entre a entrada e as ocorrências de suas formas no *corpus*.
+De acordo com os princípios do Linked Open Data, os dados devem ser disponibilizados na Web de modo a explicitar suas relações com outros dados. A própria natureza relacional dos dados lexicais convida à sua representação como dados interligados (*Linked Data*), possibilitando a recuperação automatizada da rede de relações que se estabelece entre uma entrada lexical e suas formas, acepções, relações etimológicas, fontes, atestações e conceitos. Essa estrutura pode ser explorada tanto por pesquisadores quanto por aplicações computacionais, inclusive sistemas baseados em inteligência artificial. Para isso, faz-se necessário um modelo semântico que sistematize as diversas relações possíveis entre esses diferentes tipos de recursos. A Ontologia DicBio foi desenvolvida com essa finalidade.
 
 ### 1.3. Organização desta documentação
 
-<!-- Explicar a diferença entre esta documentação da ontologia e o futuro Guia de Modelagem dos Dados DicBio. -->
+Esta documentação apresenta a estrutura e os princípios fundamentais da Ontologia DicBio 1.0. Seu objetivo é descrever as classes, propriedades, vocabulários controlados, relações com ontologias externas e principais decisões de modelagem que constituem a ontologia.
+
+A documentação da ontologia deve ser distinguida do **DicBio — Guia de Modelagem dos Dados**, que apresenta instruções mais detalhadas para a criação e manutenção das instâncias dos dados. Enquanto esta documentação descreve o modelo semântico propriamente dito, o Guia de Modelagem orienta sua aplicação na construção dos dados do dicionário. A validação automática desses dados será realizada por meio de formas SHACL, descritas em documentação própria.
 
 ---
 
@@ -32,19 +36,44 @@ De acordo com os princípios do Linked Open Data, os dados devem estar disponív
 
 ### 2.1. Objetivo
 
-<!-- Definir o que a DicBio Ontology pretende representar. -->
+Esta ontologia visa representar as informações lexicográficas, linguístico-semânticas, histórico-documentais e etimológicas relacionadas aos termos descritos no Dicionário Histórico de Termos da Biologia, bem como as relações desses termos com suas fontes documentais e com as ocorrências identificadas no corpus do projeto.
 
 ### 2.2. Escopo
 
-<!-- Delimitar os tipos de entidades e relações abrangidos pela ontologia. -->
+A Ontologia DicBio contempla a representação de:
+
+- entradas lexicais e suas formas;
+- acepções e definições;
+- informações gramaticais e linguísticas associadas às entradas e formas;
+- hipóteses etimológicas e seus argumentos;
+- étimos entendidos como acepções lexicalmente identificáveis;
+- processos etimológicos e tipos de formação de palavras;
+- atestações históricas das formas e acepções;
+- conceitos associados às acepções;
+- fontes bibliográficas e documentais;
+- autores e colaboradores relacionados aos recursos do dicionário;
+- relações de proveniência e outras relações relevantes para a documentação dos dados;
+- relações entre os recursos lexicais e as ocorrências identificadas no corpus documental do DicBio.
+
+A ontologia reutiliza, sempre que possível, classes e propriedades de ontologias e vocabulários consolidados, especialmente OntoLex-Lemon, LemonEty, LexInfo, SKOS, Dublin Core Terms, PROV-O e NIF.
 
 ### 2.3. Fora do escopo
 
-<!-- Registrar explicitamente aspectos que não são objeto da ontologia. -->
+A Ontologia DicBio não pretende representar exaustivamente:
+
+- o conhecimento biológico propriamente dito;
+- uma taxonomia completa dos organismos;
+- uma ontologia geral da língua portuguesa;
+- uma teoria linguística ou etimológica completa;
+- as regras editoriais e operacionais utilizadas pelos pesquisadores para produzir os verbetes;
+- a estrutura interna das obras do corpus para além das informações necessárias à representação das fontes, atestações e relações documentais relevantes para o dicionário.
+
+Essas informações podem ser representadas por outros modelos ou vocabulários e relacionadas aos dados do DicBio quando pertinente.
 
 ### 2.4. Público-alvo
 
-<!-- Indicar os principais usuários: pesquisadores, estudantes, desenvolvedores, editores de dados etc. -->
+O público-alvo imediato desta ontologia são os pesquisadores e estudantes que atuam na elaboração do Dicionário Histórico de Termos da Biologia.
+Além disso, espera-se que esta ontologia seja útil particularmente para pesquisadores das áreas de Terminologia e Linguística, em especial a Linguística Histórica. Por fim, os dados descritos por esta ontologia poderão ser úteis a desenvolvedores e pesquisadores de Humanidades Digitais que pretendem consultar os dados do dicionário via SPARQL.
 
 ---
 
@@ -52,7 +81,7 @@ De acordo com os princípios do Linked Open Data, os dados devem estar disponív
 
 ### 3.1. Status
 
-<!-- Informar o status da versão 1.0 e a data de publicação. -->
+A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT, executado por meio do Protégé Desktop. A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, *ranges*, reutilização de ontologias externas e documentação.
 
 ### 3.2. Identificação da versão
 
@@ -66,7 +95,9 @@ De acordo com os princípios do Linked Open Data, os dados devem estar disponív
 
 ### 3.3. Política de versionamento
 
-<!-- Explicar como serão tratadas versões futuras (1.1, 1.2, 2.0 etc.). -->
+A Ontologia DicBio adota versionamento semântico em três níveis. Alterações que preservem a compatibilidade semântica e acrescentem classes, propriedades ou conceitos sem modificar o significado dos elementos existentes poderão resultar em versões secundárias (1.1, 1.2 etc.). Alterações que corrijam erros sem modificar a estrutura conceitual poderão resultar em versões de correção. Alterações incompatíveis com a versão anterior, especialmente aquelas que modifiquem o significado ou removam classes ou propriedades existentes, resultarão em uma nova versão principal (2.0, 3.0 etc.).
+
+Cada versão estável da ontologia possui uma URI própria, de modo a preservar sua identificação e permitir a referência a versões históricas.
 
 ---
 
@@ -92,11 +123,25 @@ https://dicbio.fflch.usp.br/ontology/1.0/
 
 ### 4.3. Política de URIs
 
-<!-- Explicar a política de identificação das classes, propriedades e demais recursos da ontologia. -->
+Os URIs das classes e propriedades da Ontologia DicBio são construídos a partir do namespace da ontologia:
+
+´https://dicbio.fflch.usp.br/ontology/´
+
+Os identificadores dos recursos são estáveis e não dependem da versão específica da ontologia. Assim, por exemplo, a classe ´dicbio:Attestation´ tem por URI:
+
+´https://dicbio.fflch.usp.br/ontology/Attestation´
+
+A versão específica da ontologia é identificada separadamente por meio de sua ´owl:versionIRI´.
+
+Os URIs das instâncias dos dados pertencem a namespaces distintos, como ´dbres:´, ´dbsrc:´ e ´dbauth:´. Essa separação permite distinguir claramente os termos do modelo ontológico dos recursos concretos descritos pelo dicionário.
+
 
 ### 4.4. Namespaces utilizados nos dados
 
-<!-- Distinguir o namespace da ontologia (dicbio:) dos namespaces utilizados para instâncias e recursos do projeto, como dbres:, dbsrc: e dbauth:. -->
+O *namespace* `dicbio:` é empregado para as classes e propriedades gerais que foram criadas para descrever as informações do dicionário.
+O *namespace* `dbres:` é empregado para as instâncias das entradas, formas, acepções, descrições etimológicas etc.
+O *namespace* `dbsrc:` é empregado para as instâncias das fontes dos dados, sejam primárias (as próprias obras que integram o *corpus* e outras), sejam secundárias (em geral, os demais dicionários consultados).
+O *namespace* `dbauth:` é empregado para os recursos que representam os colaboradores do dicionário (estudantes e pesquisadores que atuam ou atuaram no projeto).
 
 | Prefixo | Namespace | Função |
 |---|---|---|
@@ -109,7 +154,9 @@ https://dicbio.fflch.usp.br/ontology/1.0/
 
 ## 5. Licença
 
-<!-- Informar a licença da ontologia e, se necessário, distinguir a licença da ontologia das licenças dos dados, código e documentação. -->
+A Ontologia DicBio é disponibilizada sob a licença **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+A licença da ontologia não implica necessariamente a mesma licença para os dados, código-fonte, imagens, reproduções de obras ou demais recursos associados ao projeto. As condições de uso desses materiais são indicadas em sua documentação específica.
 
 ---
 
@@ -117,7 +164,7 @@ https://dicbio.fflch.usp.br/ontology/1.0/
 
 ### 6.1. Autor(es)
 
-<!-- Informar os autores da ontologia. -->
+Bruno Oliveira Maroneze - concepção, desenvolvimento e manutenção da Ontologia DicBio.
 
 ### 6.2. Contribuidores
 
@@ -147,11 +194,15 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 | `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | Proveniência |
 | `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | <!-- preencher --> |
 
-<!-- Confirmar a lista definitiva e distinguir ontologias efetivamente importadas daquelas utilizadas apenas nos dados. -->
+### 7.2. Vocabulários utilizados na representação dos dados
 
-### 7.2. Justificativa das reutilizações
+Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio, os dados do DicBio utilizam outros vocabulários externos para representar informações específicas. Esses vocabulários não constituem dependências da ontologia e, por isso, não são necessariamente incluídos em ´owl:imports´.
 
-<!-- Explicar as principais decisões de reutilização. -->
+<!-- Mencionar Glottolog, FOAF, BIBO e outros -->
+
+<!-- ### 7.3. Justificativa das reutilizações
+
+Explicar as principais decisões de reutilização. Mencionar o problema do LemonEty. -->
 
 ---
 
@@ -159,33 +210,61 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 
 ### 8.1. Reutilização de ontologias existentes
 
-<!-- Explicar a preferência por OntoLex-Lemon, SKOS etc. -->
+A Ontologia DicBio procura reutilizar ontologias e vocabulários existentes sempre que estes oferecem classes ou propriedades adequadas às entidades e relações que precisam ser representadas. Essa estratégia favorece a interoperabilidade e reduz a necessidade de criação de termos específicos do projeto.
+
+Entre os principais vocabulários reutilizados encontram-se OntoLex-Lemon, LemonEty, LexInfo, SKOS, Dublin Core Terms, PROV-O e NIF.
+
+A reutilização não implica que todos os vocabulários empregados na representação dos dados sejam dependências formais da ontologia. A distinção entre ontologias importadas e vocabulários utilizados apenas nas instâncias é apresentada na seção 7.
 
 ### 8.2. Separação entre ontologia e dados
 
-<!-- Explicar a distinção entre classes/propriedades da ontologia e instâncias dos dados DicBio. -->
+A Ontologia DicBio distingue o modelo conceitual utilizado para descrever os dados dos próprios recursos que constituem o dicionário. As classes e propriedades definidas ou reutilizadas pela ontologia pertencem ao namespace ´dicbio:´, enquanto as instâncias concretas são identificadas por namespaces específicos, como ´dbres:´, ´dbsrc:´ e ´dbauth:´.
+
+Essa separação permite que o modelo ontológico seja mantido e versionado independentemente dos dados, ao mesmo tempo em que possibilita que diferentes conjuntos de dados sejam descritos segundo o mesmo modelo.
+
 
 ### 8.3. Separação entre entrada lexical e acepção
 
-<!-- Explicar, em termos conceituais, a distinção entre LexicalEntry e LexicalSense. -->
+Uma entrada lexical (´ontolex:LexicalEntry´) representa a unidade lexical que constitui o verbete e pode estar associada a uma ou mais formas (´ontolex:Form´) e a uma ou mais acepções (´ontolex:LexicalSense´). Cada acepção é representada como um recurso próprio e se relaciona à entrada lexical à qual pertence por meio da propriedade ´ontolex:sense´.
+
+Essa distinção permite representar adequadamente a polissemia: uma mesma entrada lexical pode apresentar diversas acepções, enquanto cada acepção pode receber informações semânticas, etimológicas e documentais próprias.
 
 ### 8.4. Representação das hipóteses etimológicas
 
-<!-- Explicar a opção por associar hipóteses etimológicas às acepções. -->
+Em relação ao modelo adotado por *LemonEty*, a Ontologia DicBio faz uma escolha de modelagem distinta. Optou-se aqui por descrever o étimo como um recurso da classe ´dicbio:SemanticEtymon´ (definida como uma subclasse de `ontolex:LexicalSense` e, portanto, distinta de `lemonety:Etymon`). Duas são as principais vantagens desta modelagem:
+1. Isso permite descrever adequadamente os casos em que apenas uma das acepções de uma palavra foi transmitida a outra. Por exemplo, o português brasileiro *mouse* tem como étimo não a entrada inglesa *mouse* (com todas as suas acepções), mas apenas a acepção de "dispositivo informático";
+2. Também é possível associar etimologicamente duas acepções da mesma entrada, indicando que a mudança semântica também tem natureza etimológica.
+
+A classe `lemonety:Etymology` (reaproveitada da ontologia *LemonEty*) é entendida como a descrição de uma hipótese etimológica e, portanto, deve relacionar sempre uma acepção ao seu étimo, que, por sua vez, também é uma acepção.
+
+<!-- Acrescentar um exemplo -->
 
 ### 8.5. Representação das atestações
 
-<!-- Explicar o papel das atestações e sua relação com as acepções. -->
+Uma **atestação** representa uma ocorrência documentada de uma forma lexical ou de uma acepção em uma fonte histórica. A atestação permite registrar informações sobre a ocorrência e relacioná-la à fonte que fornece a evidência documental.
+
+As atestações são representadas pela classe ´dicbio:Attestation´ e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de ´dcterms:source´, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete.
+
+Quando a atestação corresponde a uma ocorrência identificável no corpus digital do DicBio, ela pode também ser relacionada ao recurso correspondente no corpus por meio das propriedades apropriadas.
+
+<!-- Incluir as propriedades que relacionam a atestação ao corpus. -->
 
 ### 8.6. Vocabulários controlados
 
-<!-- Explicar o uso de SKOS para os vocabulários controlados do DicBio. -->
+A Ontologia DicBio utiliza SKOS para representar conjuntos de valores controlados empregados na descrição dos dados. Esses conjuntos são organizados como ´skos:ConceptScheme´, enquanto seus valores são representados como ´skos:Concept´.
+
+Na versão 1.0, são definidos vocabulários controlados para certeza etimológica, processo etimológico e tipo de formação de palavras. Os conceitos desses vocabulários recebem rótulos e definições em português e inglês.
+
+A utilização de SKOS permite que esses vocabulários sejam tratados como conjuntos de conceitos identificáveis por URIs, sem exigir que se estabeleça entre eles uma hierarquia conceitual quando tal hierarquia não corresponde às necessidades de modelagem do DicBio.
 
 ### 8.7. Evidência e fontes
 
-<!-- Explicar os princípios gerais para representação de fontes e evidências históricas. -->
+A representação dos dados do DicBio procura distinguir as informações afirmadas sobre os termos das fontes e evidências que sustentam essas informações. As fontes bibliográficas e documentais são representadas como recursos próprios e podem ser relacionadas às afirmações ou recursos correspondentes por meio de propriedades de proveniência e de citação bibliográfica.
 
-> **Nota:** As regras operacionais detalhadas para a criação das instâncias serão apresentadas no **DicBio — Guia de Modelagem dos Dados**.
+Essa separação permite registrar, por exemplo, que uma determinada hipótese etimológica foi proposta ou registrada em determinada fonte, sem confundir a fonte com a própria hipótese representada no grafo.
+
+A modelagem detalhada das diferentes categorias de fontes e das convenções utilizadas para sua identificação é apresentada no **Guia de Modelagem dos Dados DicBio**.
+
 
 ---
 
@@ -285,7 +364,7 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 ## 11. Propriedades
 
-Esta seção apresenta as propriedades definidas pela DicBio Ontology.
+Esta seção apresenta as propriedades definidas pela Ontologia DicBio.
 
 Para cada propriedade, registrar, quando aplicável:
 
@@ -365,7 +444,15 @@ Para cada propriedade, registrar, quando aplicável:
 ---
 
 ## 13. Exemplos
-
+<!-- 
+13.1. Exemplo básico: entrada e formas
+13.2. Exemplo de polissemia
+13.3. Exemplo de hipótese etimológica
+13.4. Exemplo de étimo semântico
+13.5. Exemplo de atestação
+13.6. Exemplo de formação de palavra
+13.7. Exemplo completo: um verbete real
+-->
 ### 13.1. Exemplo mínimo de uma entrada lexical
 
 ```turtle
@@ -452,6 +539,10 @@ Para cada propriedade, registrar, quando aplicável:
 
 ## 15. Inferências e raciocínio
 
+A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT no Protégé Desktop. O reasoner classificou a ontologia sem apresentar erros de consistência.
+
+Entre as inferências esperadas encontra-se a classificação dos conceitos dos vocabulários controlados como instâncias de ´skos:Concept´, em decorrência da relação de subclasse estabelecida entre ´dicbio:EtymologicalProcess´, ´dicbio:WordFormationType´ e ´skos:Concept´.
+
 ### 15.1. Perfil de raciocínio
 
 <!-- Registrar as características OWL relevantes e o reasoner utilizado nos testes. -->
@@ -487,7 +578,9 @@ Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é infe
 
 ### 16.1. Limitações conceituais
 
-<!-- Registrar aspectos do domínio que a ontologia não pretende representar completamente. -->
+A versão 1.0 não pretende constituir uma representação exaustiva de todos os fenômenos lexicais, etimológicos e histórico-documentais relacionados à terminologia biológica. Ela estabelece um modelo suficientemente geral para a representação dos dados atualmente contemplados pelo projeto, podendo ser ampliada em versões futuras.
+
+Algumas necessidades de modelagem que surgirem com a expansão do *corpus*, a inclusão de novos tipos de dados ou a incorporação de novos casos lexicográficos poderão exigir extensões ou revisões da ontologia. Tais alterações serão avaliadas em versões posteriores, preservando-se, sempre que possível, a compatibilidade com as versões anteriores.
 
 ### 16.2. Limitações de interoperabilidade
 
@@ -507,8 +600,7 @@ Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é infe
 
 | Versão | Data | Descrição |
 |---|---|---|
-| 0.1 | <!-- preencher --> | Início do desenvolvimento |
-| 0.4 | <!-- preencher --> | Versão de desenvolvimento anterior à 1.0 |
+| desenvolvimento | 2025-2026 | Desenvolvimento e revisão da ontologia |
 | 1.0 | <!-- preencher --> | Primeira versão estável |
 
 ### 17.1. Política para versões futuras
