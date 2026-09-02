@@ -61,9 +61,9 @@ dicbio:semanticEtymon a owl:ObjectProperty ;
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:label "etymological argumentation"@en, "argumentação etimológica"@pt ;
     rdfs:domain lemonety:Etymology ;
-    rdfs:range rdf:HTML ;
-    rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis."@en ;
-    rdfs:comment "Fornece a argumentação discursiva que apoia ou explica a hipótese etimológica."@pt .
+    rdfs:range rdf:langString ;
+    rdfs:comment "Provides the discursive argumentation supporting or explaining the etymological hypothesis. The text may contain lightweight Markdown formatting (e.g. *italics* for loanwords and Latinisms), to be rendered as HTML at publication time."@en ;
+    rdfs:comment "Fornece a argumentação discursiva que apoia ou explica a hipótese etimológica. O texto pode conter formatação leve em Markdown (por exemplo, *itálico* para estrangeirismos e latinismos), a ser convertida em HTML no momento da publicação."@pt .
 
 
 ## --- aqui entram os graus de certeza etimológica
@@ -204,6 +204,13 @@ dicbio:Attestation a owl:Class ;
     rdfs:comment "Registro de datação histórica de uma acepção de uma unidade lexical, baseado em uma fonte específica."@pt ;
     rdfs:subClassOf prov:Entity .
 
+dicbio:attestedByOccurrence a owl:ObjectProperty ;
+    rdfs:label "attested by occurrence"@en, "atestada pela ocorrência"@pt ;
+    rdfs:comment "Relates an Attestation record to the specific corpus occurrence (nif:Word) that provides the textual evidence."@en ;
+    rdfs:comment "Relaciona um registro de atestação à ocorrência específica do corpus (nif:Word) que fornece a evidência textual."@pt ;
+    rdfs:domain dicbio:Attestation ;
+    rdfs:range nif:Word .
+
 dicbio:hasAttestation a owl:ObjectProperty ;
     rdfs:label "has attestation"@en, "tem atestação"@pt ;
     rdfs:comment "Relates a lexical sense to a record of historical attestation."@en ;
@@ -224,3 +231,10 @@ dicbio:realizesForm a owl:ObjectProperty ;
     rdfs:comment "Relaciona uma ocorrência textual (nif:Word) à forma lexical que ela realiza."@pt ;
     rdfs:domain nif:Word ;
     rdfs:range ontolex:Form .
+
+dicbio:realizesSense a owl:ObjectProperty ;
+    rdfs:label "realizes sense"@en, "realiza sentido"@pt ;
+    rdfs:comment "Relates a textual occurrence (nif:Word) to the lexical sense it disambiguates/realizes, independently of the form it realizes."@en ;
+    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical (acepção) que ela desambigua/realiza, independentemente da forma que ela realiza."@pt ;
+    rdfs:domain nif:Word ;
+    rdfs:range ontolex:LexicalSense .

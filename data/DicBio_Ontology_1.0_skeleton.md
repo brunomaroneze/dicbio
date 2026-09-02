@@ -1,6 +1,6 @@
 # Ontologia Dicbio 1.0 / DicBio Ontology 1.0
 
-**Dicionário Histórico de Termos da Biologia**
+**Ontologia do Dicionário Histórico de Termos da Biologia**
 
 > **Status:** Rascunho — versão 1.0 em preparação  
 > **Versão:** 1.0  
@@ -166,13 +166,19 @@ A licença da ontologia não implica necessariamente a mesma licença para os da
 
 Bruno Oliveira Maroneze - concepção, desenvolvimento e manutenção da Ontologia DicBio.
 
-### 6.2. Contribuidores
+### 6.2. Colaboradores(as)
 
 <!-- Informar contribuidores, quando aplicável. -->
 
 ### 6.3. Atribuição
 
-<!-- Informar como a ontologia deve ser citada. -->
+Ao reutilizar ou citar a Ontologia DicBio, recomenda-se atribuir a autoria a **Bruno Oliveira Maroneze** e indicar o projeto **Dicionário Histórico de Termos da Biologia** (DicBio), juntamente com a versão da ontologia utilizada.
+
+Recomenda-se a seguinte referência:
+
+MARONEZE, Bruno Oliveira. DicBio Ontology 1.0. Dicionário Histórico de Termos da Biologia. 2026. Disponível em: https://dicbio.fflch.usp.br/ontology/1.0/. Acesso em: [data].
+
+Para citações em trabalhos acadêmicos, recomenda-se também citar a publicação ou documentação científica do projeto, quando disponível.
 
 ---
 
@@ -182,23 +188,37 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 
 ### 7.1. Ontologias e vocabulários
 
-| Prefixo | Ontologia / vocabulário | Namespace | Função na DicBio Ontology |
+| Prefixo | Ontologia / vocabulário | Namespace | Função na Ontologia DicBio |
 |---|---|---|---|
 | `ontolex:` | OntoLex-Lemon | `http://www.w3.org/ns/lemon/ontolex#` | Representação lexical |
 | `lemonety:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | Representação etimológica |
 | `morph:` | OntoLex-Morph | `http://www.w3.org/ns/lemon/morph#` | Relações de formação de palavras |
-| `vartrans:` | OntoLex-VarTrans | `http://www.w3.org/ns/lemon/vartrans#` | Relações entre formas/entradas |
-| `lexinfo:` | LexInfo | `http://www.lexinfo.net/ontology/2.0/lexinfo#` | Informação linguística |
 | `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Vocabulários e conceitos |
 | `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados |
 | `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | Proveniência |
-| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | <!-- preencher --> |
+| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Integração com o *corpus* |
 
 ### 7.2. Vocabulários utilizados na representação dos dados
 
 Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio, os dados do DicBio utilizam outros vocabulários externos para representar informações específicas. Esses vocabulários não constituem dependências da ontologia e, por isso, não são necessariamente incluídos em ´owl:imports´.
 
-<!-- Mencionar Glottolog, FOAF, BIBO e outros -->
+| Prefixo | Ontologia / vocabulário | Namespace | Função na Ontologia DicBio |
+|---|---|---|---|
+| `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | <!-- completar --> |
+| `dcterms:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | <!-- completar --> |
+| `morph:` | OntoLex-Morph | `http://www.w3.org/ns/lemon/morph#` | <!-- completar --> |
+| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | <!-- completar --> |
+| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | <!-- completar --> |
+| `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | <!-- completar --> |
+| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | <!-- completar --> |
+<!-- Mencionar Glottolog, FOAF, BIBO, lexinfo, vartrans e outros 
+
+foaf:name "Adriane Maria de Oliveira Queiroz" ;
+    dcterms:identifier <https://orcid.org/0009-0003-3281-5247> ;
+    rdfs:seeAlso
+owl:sameAs
+
+-->
 
 <!-- ### 7.3. Justificativa das reutilizações
 
@@ -308,19 +328,7 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 **Uso:** <!-- preencher -->
 
-### 10.2. `dicbio:EtymologicalArgument`
-
-**URI:** `https://dicbio.fflch.usp.br/ontology/EtymologicalArgument`
-
-**Rótulo:** <!-- preencher -->
-
-**Definição:** <!-- preencher -->
-
-**Superclasse(s):** <!-- preencher -->
-
-**Uso:** <!-- preencher -->
-
-### 10.3. `dicbio:EtymologicalProcess`
+### 10.2. `dicbio:EtymologicalProcess`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/EtymologicalProcess`
 
@@ -332,7 +340,7 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 **Uso:** <!-- preencher -->
 
-### 10.4. `dicbio:SemanticEtymon`
+### 10.3. `dicbio:SemanticEtymon`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/SemanticEtymon`
 
@@ -344,7 +352,7 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 **Uso:** <!-- preencher -->
 
-### 10.5. `dicbio:WordFormationType`
+### 10.4. `dicbio:WordFormationType`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/WordFormationType`
 
@@ -356,7 +364,7 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 **Uso:** <!-- preencher -->
 
-### 10.6. Classes reutilizadas
+### 10.5. Classes reutilizadas
 
 <!-- Apresentar, quando útil, as classes externas mais importantes utilizadas pela ontologia, como ontolex:LexicalEntry, ontolex:LexicalSense e ontolex:Form. -->
 
@@ -383,6 +391,19 @@ Para cada propriedade, registrar, quando aplicável:
 ### 11.1. Propriedades de etimologia
 
 <!-- Listar propriedades como dicbio:etymologicalProcess, dicbio:etymologicalArgumentation, dicbio:confidenceLevel etc. -->
+### 11.1.1 `dicbio:etymologicalArgumentation`
+
+**URI:** `https://dicbio.fflch.usp.br/ontology/etymologicalArgumentation`
+
+**Rótulo:** <!-- preencher -->
+
+**Definição:** <!-- preencher -->
+
+**Superclasse(s):** <!-- preencher -->
+
+**Uso:** <!-- preencher -->
+
+
 
 ### 11.2. Propriedades de formação de palavras
 
