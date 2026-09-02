@@ -235,7 +235,7 @@ def verbete_pelo_turtle(request, lema):
 
         # 3. Exemplos do Corpus (NIF)
         OPTIONAL {
-            ?occurrence itsrdf:taIdentRef ?sense ;
+            ?occurrence dicbio:realizesSense ?sense ;
                         nif:anchorOf ?anchor ;
                         nif:referenceContext ?contextURI .
             BIND(STRAFTER(STR(?contextURI), "recurso/") AS ?contextID)
