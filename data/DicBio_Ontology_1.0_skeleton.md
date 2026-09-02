@@ -197,24 +197,29 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 | `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados |
 | `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | Proveniência |
 | `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Integração com o *corpus* |
+| `itsrdf:` | ITS | `http://www.w3.org/2005/11/its/rdf#` | Anotação de sentido das ocorrências |
+
 
 ### 7.2. Vocabulários utilizados na representação dos dados
 
 Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio, os dados do DicBio utilizam outros vocabulários externos para representar informações específicas. Esses vocabulários não constituem dependências da ontologia e, por isso, não são necessariamente incluídos em ´owl:imports´.
 
-| Prefixo | Ontologia / vocabulário | Namespace | Função na Ontologia DicBio |
+| Prefixo | Ontologia / vocabulário | Namespace | Função nos dados do DicBio |
 |---|---|---|---|
-| `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | <!-- completar --> |
-| `dcterms:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | <!-- completar --> |
-| `morph:` | OntoLex-Morph | `http://www.w3.org/ns/lemon/morph#` | <!-- completar --> |
-| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | <!-- completar --> |
-| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | <!-- completar --> |
-| `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | <!-- completar --> |
-| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | <!-- completar --> |
-<!-- Mencionar Glottolog, FOAF, BIBO, lexinfo, vartrans e outros 
+| `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | Nomes e endereços web |
+| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados das fontes |
+| `lexinfo:` | OntoLex-Morph | `http://www.lexinfo.net/ontology/3.0/lexinfo#` | Propriedades gramaticais |
+| `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações sobre as fontes bibliográficas |
+| `rdf:` | Dublin Core Terms | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | <!-- completar --> |
+| `vartrans:` | PROV-O | `http://www.w3.org/ns/lemon/vartrans#` | <!-- completar --> |
+| `glotto:` | Glottolog | `https://glottolog.org/resource/languoid/id/` | Idiomas das fontes ou dos termos |
+| `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | <!-- completar --> |
+| `rdfs:` | Dublin Core Terms | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | <!-- completar --> |
+| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Informações relacionadas ao *corpus* |
 
-foaf:name "Adriane Maria de Oliveira Queiroz" ;
-    dcterms:identifier <https://orcid.org/0009-0003-3281-5247> ;
+
+
+<!-- 
     rdfs:seeAlso
 owl:sameAs
 

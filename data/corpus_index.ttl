@@ -1,7 +1,9 @@
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+# @prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
+# A propriedade itsrdf:taIdentRef será substituída por dicbio:realizesSense, que é mais específica para o nosso caso de uso (anotação de acepções lexicais). A propriedade itsrdf:taIdentRef será mantida como superpropriedade de dicbio:realizesSense, para manter compatibilidade com a ontologia NIF.
 
 dbres:t_brotero1_0001 a nif:Word ;
     nif:anchorOf "Botanica"@pt ;

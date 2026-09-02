@@ -207,7 +207,7 @@ def verbete_pelo_turtle(request, lema):
         "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "etym": "http://lari-datasets.ilc.cnr.it/lemonEty#",
-        "lexinfo": "http://www.lexinfo.net/ontology/2.0/lexinfo#",
+        "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
         "itsrdf": "http://www.w3.org/2005/11/its/rdf#", # <--- Para o link do corpus
         "nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#", # <--- Para o corpus
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -266,8 +266,8 @@ def verbete_pelo_turtle(request, lema):
 
     # Mapa para traduzir URIs técnicas para nomes bonitos
     MAPA_LABELS = {
-        "http://www.lexinfo.net/ontology/2.0/lexinfo#firstAttestation": "Primeira Atestação",
-        "http://www.lexinfo.net/ontology/2.0/lexinfo#usageNote": "Nota de Uso",
+        "http://www.lexinfo.net/ontology/3.0/lexinfo#firstAttestation": "Primeira Atestação",
+        "http://www.lexinfo.net/ontology/3.0/lexinfo#usageNote": "Nota de Uso",
         "http://purl.org/dc/terms/source": "Fonte Adicional",
         "http://www.w3.org/2000/01/rdf-schema#seeAlso": "Veja também"
     }

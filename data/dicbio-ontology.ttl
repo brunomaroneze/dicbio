@@ -6,7 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
-@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,6 +18,7 @@
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
 @prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
 @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
 
 
 
@@ -40,7 +41,8 @@
     owl:imports <http://www.w3.org/2004/02/skos/core#> ;
     owl:imports <http://purl.org/dc/terms/> ;
     owl:imports <http://www.w3.org/ns/prov#> ;
-    owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+    owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>;
+    owl:imports <http://www.w3.org/2005/11/its/rdf#> .
 
 ### --- Classes e propriedades da ontologia ---
 
@@ -111,7 +113,6 @@ dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:comment "Indica o grau de certeza atribuído pelos editores a uma hipótese etimológica."@pt .
 
 ## --- aqui entram os tipos de processos etimológicos 
-# A propriedade lemonety:etyLinkType seria suficiente, mas ela não foi pensada para ser ligada à hipótese etimológica. Aqui, a ideia é fazer uma lista fechada de processos etimológicos. Se outros surgirem, acrescentaremos à lista. A propriedade dicbio:etymologicalProcess é subpropriedade de lemonety:etyLinkType, mas com domínio lemonety:Etymology, para indicar que o processo etimológico se aplica à hipótese etimológica, e não diretamente à entrada lexical.
 
 dicbio:EtymologicalProcess a owl:Class ; # Classe com as opções de processos etimológicos, como herança, empréstimo, criação interna, etc. A propriedade dicbio:etymologicalProcess relaciona uma hipótese etimológica a um processo etimológico específico.
     rdfs:label "Etymological Process"@en, "Processo Etimológico"@pt ;
@@ -233,8 +234,9 @@ dicbio:realizesForm a owl:ObjectProperty ;
     rdfs:range ontolex:Form .
 
 dicbio:realizesSense a owl:ObjectProperty ;
+    rdfs:subPropertyOf itsrdf:taIdentRef ;
     rdfs:label "realizes sense"@en, "realiza sentido"@pt ;
-    rdfs:comment "Relates a textual occurrence (nif:Word) to the lexical sense it disambiguates/realizes, independently of the form it realizes."@en ;
-    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical (acepção) que ela desambigua/realiza, independentemente da forma que ela realiza."@pt ;
+    rdfs:comment "Relates a textual occurrence (nif:Word) to the lexical sense it disambiguates. A specialization of itsrdf:taIdentRef for lexicographic sense-tagging, as opposed to named-entity linking."@en ;
+    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical que ela desambigua. Uma especialização de itsrdf:taIdentRef para anotação de sentido lexicográfico, distinta da vinculação a entidades nomeadas."@pt ;
     rdfs:domain nif:Word ;
     rdfs:range ontolex:LexicalSense .

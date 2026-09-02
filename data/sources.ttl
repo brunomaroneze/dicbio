@@ -7,7 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
-@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -46,8 +46,6 @@ dbsrc:work_anatomiasantucci a bibo:Book ;
     dcterms:language glotto:port1283 ;
     foaf:page <https://archive.org/details/anatomiadocorpoh00sant/page/n6/mode/1up> ;
     owl:sameAs <https://www.wikidata.org/entity/Q138340024> . # URI universal do Santucci
-
-# Acrescentar as obras do Brotero e do Semmedo, que estão no corpus digital, mas ainda não foram adicionadas aqui.
 
 # Brotero (obra completa, os dois volumes)
 dbsrc:work_brotero

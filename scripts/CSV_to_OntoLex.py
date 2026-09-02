@@ -5,7 +5,7 @@ from rdflib.namespace import RDF, RDFS, XSD, DCTERMS, SKOS
 # 1. Configuração de Namespaces
 DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
 ONTOLEX = Namespace("http://www.w3.org/ns/lemon/ontolex#")
-LEXINFO = Namespace("http://www.lexinfo.net/ontology/2.0/lexinfo#")
+LEXINFO = Namespace("http://www.lexinfo.net/ontology/3.0/lexinfo#")
 ETYM = Namespace("http://lari-datasets.ilc.cnr.it/lemonEty#")
 AUTHOR = Namespace("http://dicbio.fflch.usp.br/autor/")
 FOAF = Namespace("http://xmlns.com/foaf/0.1/")
