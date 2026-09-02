@@ -160,17 +160,13 @@ A licença da ontologia não implica necessariamente a mesma licença para os da
 
 ---
 
-## 6. Autores
+## 6. Autores(as)
 
-### 6.1. Autor(es)
+### 6.1. Autor(es/as) e colaboradores(as)
 
 Bruno Oliveira Maroneze - concepção, desenvolvimento e manutenção da Ontologia DicBio.
 
-### 6.2. Colaboradores(as)
-
-<!-- Informar contribuidores, quando aplicável. -->
-
-### 6.3. Atribuição
+### 6.2. Atribuição
 
 Ao reutilizar ou citar a Ontologia DicBio, recomenda-se atribuir a autoria a **Bruno Oliveira Maroneze** e indicar o projeto **Dicionário Histórico de Termos da Biologia** (DicBio), juntamente com a versão da ontologia utilizada.
 
@@ -208,24 +204,21 @@ Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio
 |---|---|---|---|
 | `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | Nomes e endereços web |
 | `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados das fontes |
-| `lexinfo:` | OntoLex-Morph | `http://www.lexinfo.net/ontology/3.0/lexinfo#` | Propriedades gramaticais |
+| `lexinfo:` | LexInfo | `http://www.lexinfo.net/ontology/3.0/lexinfo#` | Propriedades gramaticais |
 | `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações sobre as fontes bibliográficas |
-| `rdf:` | Dublin Core Terms | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | <!-- completar --> |
-| `vartrans:` | PROV-O | `http://www.w3.org/ns/lemon/vartrans#` | <!-- completar --> |
+| `vartrans:` | Variation and Translation | `http://www.w3.org/ns/lemon/vartrans#` | Informações morfológicas |
+| `morph:` | Ontolex-Morph | `http://www.w3.org/ns/lemon/morph#` | Informações morfológicas |
 | `glotto:` | Glottolog | `https://glottolog.org/resource/languoid/id/` | Idiomas das fontes ou dos termos |
-| `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | <!-- completar --> |
-| `rdfs:` | Dublin Core Terms | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | <!-- completar --> |
+| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Definições e conceitos |
+| `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | owl:sameAs para remissões |
+| `rdfs:` | RDF Schema | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | rdfs:seeAlso para remissões |
 | `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Informações relacionadas ao *corpus* |
+| `lemonety:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | Informações etimológicas |
 
-
-
-<!-- 
-    rdfs:seeAlso
-owl:sameAs
-
--->
 
 <!-- ### 7.3. Justificativa das reutilizações
+
+Será que precisa deste item?
 
 Explicar as principais decisões de reutilização. Mencionar o problema do LemonEty. -->
 
