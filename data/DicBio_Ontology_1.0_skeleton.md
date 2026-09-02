@@ -255,7 +255,37 @@ Em relação ao modelo adotado por *LemonEty*, a Ontologia DicBio faz uma escolh
 
 A classe `lemonety:Etymology` (reaproveitada da ontologia *LemonEty*) é entendida como a descrição de uma hipótese etimológica e, portanto, deve relacionar sempre uma acepção ao seu étimo, que, por sua vez, também é uma acepção.
 
-<!-- Acrescentar um exemplo -->
+Tem-se, por exemplo, o verbete para "aurícula", que é uma entrada lexical (`ontolex:LexicalEntry`) à qual correspondem três sentidos ou acepções (`ontolex:LexicalSense`):
+
+`dbres:entry_auricula a ontolex:LexicalEntry ;
+    ontolex:sense dbres:entry_auricula_sense1,
+        dbres:entry_auricula_sense2,
+        dbres:entry_auricula_sense3 .`
+
+Cada uma dessas acepções é associada a uma definição (`skos:definition`) e a uma descrição etimológica (por meio de `lemonety:etymology`). A primeira acepção é assim definida e associada à sua descrição etimológica:
+
+`dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
+   skos:definition "Cavidade superior dos ventrículos do coração."@pt ;
+   lemonety:etymology dbres:etym_auricula_sense1 .`
+
+A descrição etimológica (da classe `lemonety:Etymology`), por sua vez, indica (por meio da propriedade `dicbio:semanticEtymon`) qual é o étimo (que é necessariamente outra acepção, não outra entrada):
+
+`dbres:etym_auricula_sense1 a lemonety:Etymology ;
+    dicbio:semanticEtymon dbres:etymon_auricula_sense1 .`
+    
+Já o étimo (da classe `dicbio:SemanticEtymon`) apresenta uma definição (`skos:definition`):
+
+`dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+   skos:definition "Cavidade superior dos ventrículos do coração."@pt .`
+
+Por fim, o étimo (que, lembre-se, é uma acepção) é associado à sua entrada correspondente, que também contém uma forma (`ontolex:canonicalForm`):
+
+`dbres:auricula_lat a ontolex:LexicalEntry ;
+    dcterms:language glotto:lati1261 ;
+    ontolex:canonicalForm dbres:form_auricula_lat ;
+    ontolex:sense dbres:etymon_auricula_sense1 .`
+
 
 ### 8.5. Representação das atestações
 
@@ -265,7 +295,8 @@ As atestações são representadas pela classe ´dicbio:Attestation´ e podem se
 
 Quando a atestação corresponde a uma ocorrência identificável no corpus digital do DicBio, ela pode também ser relacionada ao recurso correspondente no corpus por meio das propriedades apropriadas.
 
-<!-- Incluir as propriedades que relacionam a atestação ao corpus. -->
+<!-- Incluir as propriedades que relacionam a atestação ao corpus.
+Incluir dicbio:attestedByOccurrence, realizesForm e realizesSense -->
 
 ### 8.6. Vocabulários controlados
 
@@ -397,7 +428,11 @@ Para cada propriedade, registrar, quando aplicável:
 
 **Definição:** <!-- preencher -->
 
-**Superclasse(s):** <!-- preencher -->
+**Domínio:** <!-- preencher -->
+
+**Range:** <!-- preencher -->
+
+**Superpropriedade:** <!-- preencher -->
 
 **Uso:** <!-- preencher -->
 

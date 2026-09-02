@@ -237,6 +237,6 @@ dicbio:realizesSense a owl:ObjectProperty ;
     rdfs:subPropertyOf itsrdf:taIdentRef ;
     rdfs:label "realizes sense"@en, "realiza sentido"@pt ;
     rdfs:comment "Relates a textual occurrence (nif:Word) to the lexical sense it disambiguates. A specialization of itsrdf:taIdentRef for lexicographic sense-tagging, as opposed to named-entity linking."@en ;
-    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical que ela desambigua. Uma especialização de dicbio:realizesSense para anotação de sentido lexicográfico, distinta da vinculação a entidades nomeadas."@pt ;
+    rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical que ela desambigua. Uma especialização de itsrdf:taIdentRef para anotação de sentido lexicográfico, distinta da vinculação a entidades nomeadas."@pt ;
     rdfs:domain nif:Word ;
     rdfs:range ontolex:LexicalSense .
