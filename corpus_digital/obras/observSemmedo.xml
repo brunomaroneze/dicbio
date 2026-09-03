@@ -1349,35 +1349,37 @@
       <pb n="não numerada 28"
         facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0031.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="AprovacoesSantoOficio">
-        <head>APPROVAÇOENS Do Santo Officio.</head>
+        <head xml:id="h_semmedo_0112">APPROVAÇOENS Do Santo Officio.</head>
         <div type="Despacho">
-          <p>O P. Mestre Fr. Pedro da Encarnaçaõ, Qualificador do Santo Officio, veja o livro de que
-            faz mençaõ esta petiçaõ, &amp; informe com seu parecer. Lisboa 28. de Julho de 1705.</p>
+          <p xml:id="p_semmedo_1095">O P. Mestre Fr. Pedro da Encarnaçaõ, Qualificador do Santo
+            Officio, veja o livro de que faz mençaõ esta petiçaõ, &amp; informe com seu parecer.
+            Lisboa 28. de Julho de 1705.</p>
           <signed>Carneiro. Moniz. Hasse. Monteiro. Rocha.</signed>
         </div>
         <div type="parecer">
           <salute>ILLUSTRISSIMO SENHOR.</salute>
-          <p>VI o livro de que a petiçaõ faz mençaõ, &amp; sobre naõ conter cousa dissonante a nossa
-            Santa Fé, ou bons costumes, a fama do Author desprezadora de adulações, &amp; de
-            invejas; a notoriedade de suas largas, &amp; bem logradas experiencias em curas arduas,
-            &amp; casos desesperados; a fecunda, &amp; feliz inventiva de varios, &amp; singulares
-            remedios nunca dantes conhecidos; o ingenioso da idea, o artificioso do methodo, o facil
-            do estylo, a galante contextura de ambos os idiomas Lusitano, &amp; Latino, fazem esta
-            obra plausivel, &amp; merecedora da licença que se pede, para beneficio da publica
-            utilidade. Este he meu parecer, salvo &amp;c. Collegio dos Dominicos Irlandezes da Corte
-            Real de Lisboa, em 17. de Agosto de 1705.</p>
+          <p xml:id="p_semmedo_1096">VI o livro de que a petiçaõ faz mençaõ, &amp; sobre naõ conter
+            cousa dissonante a nossa Santa Fé, ou bons costumes, a fama do Author desprezadora de
+            adulações, &amp; de invejas; a notoriedade de suas largas, &amp; bem logradas
+            experiencias em curas arduas, &amp; casos desesperados; a fecunda, &amp; feliz inventiva
+            de varios, &amp; singulares remedios nunca dantes conhecidos; o ingenioso da idea, o
+            artificioso do methodo, o facil do estylo, a galante contextura de ambos os idiomas
+            Lusitano, &amp; Latino, fazem esta obra plausivel, &amp; merecedora da licença que se
+            pede, para beneficio da publica utilidade. Este he meu parecer, salvo &amp;c. Collegio
+            dos Dominicos Irlandezes da Corte Real de Lisboa, em 17. de Agosto de 1705.</p>
           <signed>Fr. Pedro da Encarnaçaõ.</signed>
         </div>
         <div type="despacho">
-          <p>O P. M. Fr. Domingos Daly, Qualificador do Santo Officio, veja o livro de que trata
-            esta petiçaõ, &amp; informe com seu parecer. Lisboa 18. de Agosto de 1705.</p>
+          <p xml:id="p_semmedo_1097">O P. M. Fr. Domingos Daly, Qualificador do Santo Officio, veja
+            o livro de que trata esta petiçaõ, &amp; informe com seu parecer. Lisboa 18. de Agosto
+            de 1705.</p>
           <signed>Moniz. Hasse. Monteiro. Ribeiro. Rocha.</signed>
         </div>
         <div type="parecer">
-          <p>IUssu Supremi Senatus Sanctæ Inquisitionis perquàm studiosè vidi, &amp; legi hanc
-            Centuriam Medicinalem Latino, &amp; Lusitano idiomate, ab eruditissimo, celeberrimoque
-            Doctore Joanne Curvo Semmedo compositam: non solùm ab omni prorsus labe adversus fidem,
-            ac bonos <pb n="não numerada 29"
+          <p xml:id="p_semmedo_1098">IUssu Supremi Senatus Sanctæ Inquisitionis perquàm studiosè
+            vidi, &amp; legi hanc Centuriam Medicinalem Latino, &amp; Lusitano idiomate, ab
+            eruditissimo, celeberrimoque Doctore Joanne Curvo Semmedo compositam: non solùm ab omni
+            prorsus labe adversus fidem, ac bonos <pb n="não numerada 29"
               facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0032.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
             />mores res immunis est, verum etiam multa anteactis temporibus incognita, &amp;
             diligentissimis observationibus (quibus scienter, citò, securè, suaviter, &amp;
@@ -1388,93 +1390,97 @@
           <signed>Fr. Dominicus Daly.</signed>
         </div>
         <div type="licencaSantoOficio">
-          <head>LICENÇA DO SANTO OFFICIO.</head>
-          <p> VIstas as informações, podese imprimir o livro de que esta petiçaõ trata, &amp; de que
-            he Author Joaõ Curvo Semmedo; &amp; impresso tornarà para se conferir, &amp; dar licença
-            que corra, &amp; sem ella naõ correrá. Lisboa 11. de Septembro de 1705.</p>
+          <head xml:id="h_semmedo_0113">LICENÇA DO SANTO OFFICIO.</head>
+          <p xml:id="p_semmedo_1099"> VIstas as informações, podese imprimir o livro de que esta
+            petiçaõ trata, &amp; de que he Author Joaõ Curvo Semmedo; &amp; impresso tornarà para se
+            conferir, &amp; dar licença que corra, &amp; sem ella naõ correrá. Lisboa 11. de
+            Septembro de 1705.</p>
           <signed>Moniz. Hasse. Monteiro. Ribeiro. Rocha.</signed>
         </div>
         <div type="licencaOrdinario">
-          <head>LICENÇA DO ORDINARIO.</head>
-          <p>VIstas as informações, podese imprimir o livro de que he Author Joaõ Curvo Semmedo,
-            &amp; impresso tornará para se dar licença para correr. Lisboa 2. de Outubro de
-            1705.</p>
+          <head xml:id="h_semmedo_0114">LICENÇA DO ORDINARIO.</head>
+          <p xml:id="p_semmedo_1100">VIstas as informações, podese imprimir o livro de que he Author
+            Joaõ Curvo Semmedo, &amp; impresso tornará para se dar licença para correr. Lisboa 2. de
+            Outubro de 1705.</p>
           <signed>Fr. Pedro Bispo de Bona.</signed>
         </div>
       </div>
       <pb n="não numerada 30"
         facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0033.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="aprovacaoPaco">
-        <head>APPROVAÇAM Do Paço.</head>
+        <head xml:id="h_semmedo_0115">APPROVAÇAM Do Paço.</head>
         <salute>SENHOR:</salute>
-        <p>LI por mandado de V. Magestade as Observações Medicinaes do Doutor Joaõ Curvo Semmedo;
-          escritas com elegancia na lingua Latina, &amp; vertidas com formalidade na Portugueza;
-          obra taõ douta, que seguras traz comsigo as approvações, &amp; que logrará infalliveis os
-          applausos prevenidos já na sua Polyanthea, em q̃ a elevada penna do Author fez voar o seu
-          celebre nome às terras mais remotas, sendo glorioso assumpto das vozes da Fama, &amp;
-          immortalizando em toda a posteridade a sua memoria,<note>(1.) Virum laude dignum Musa
-            vetat mori.</note> com decoroso credito da Medicina, com grande utilidade da saude
-          humana, &amp; com gloria indelevel da Naçaõ Portugueza, para cuja felicidade parece que
-          foy altamente destinado este Varaõ sciente.<note>(2.) Cùm alicujus gentis bona vult Deus
-            ponit in ejus regibus scientiam, aui regnum in ejus sapientibus. Euseb. apud Garau tom.
-            I. maxim. 24.</note></p>
-        <p>De cem casos se compoem o volume deste prodigioso bem concinnado livro, animados com
-          tantos medicinaes dictames, &amp; escriptos com taõ suave, elegante estylo, que naõ só he
-          para os doentes efficaz remedio pela doutrina; mas tambem para os Leytores agradavel
-          divertimento pela frase.<note>(3.) Omne tulit punctum qui miscuit utile dulci.
-            Horat.</note> E certo que tenho por gloria o haver feito ao Author com mais culta penna
-          algũas persuasões para dar a luz esta obra, quando vi que na sua Polyanthea Medicinal a
-          prometia.</p>
-        <p>Naõ se contentou o Author deste frutuosissimo livro com se empregar nervozamente em
-          soccorrer aos seus enfermos, livrando-os scientificamente dos poderes da morte; senão q̃
-          tambem se occupa em deixar à posteridade estas immunidades nos seus remedios, referindo as
-          Observações com tal verdade, que nem se esquece das minimas circunstancias daquelles
-          casos; nem se envergonha de confessar ingenuamente o como se enganava algũas vezes nos
-            discursos;<note>(4) Optimus, ac gravissimus quisque consuetur se multa ignorare, sibi
-            etiam, atque etiam discenda. Cicero 3. Tuscul.</note> cousa que se chegou a louvar muito
-          em <pb n="não numerada 31"
+        <p xml:id="p_semmedo_1101">LI por mandado de V. Magestade as Observações Medicinaes do
+          Doutor Joaõ Curvo Semmedo; escritas com elegancia na lingua Latina, &amp; vertidas com
+          formalidade na Portugueza; obra taõ douta, que seguras traz comsigo as approvações, &amp;
+          que logrará infalliveis os applausos prevenidos já na sua Polyanthea, em q̃ a elevada
+          penna do Author fez voar o seu celebre nome às terras mais remotas, sendo glorioso
+          assumpto das vozes da Fama, &amp; immortalizando em toda a posteridade a sua memoria,<note
+            xml:id="n_semmedo_0004">(1.) Virum laude dignum Musa vetat mori.</note> com decoroso
+          credito da Medicina, com grande utilidade da saude humana, &amp; com gloria indelevel da
+          Naçaõ Portugueza, para cuja felicidade parece que foy altamente destinado este Varaõ
+            sciente.<note xml:id="n_semmedo_0005">(2.) Cùm alicujus gentis bona vult Deus ponit in
+            ejus regibus scientiam, aui regnum in ejus sapientibus. Euseb. apud Garau tom. I. maxim.
+            24.</note></p>
+        <p xml:id="p_semmedo_1102">De cem casos se compoem o volume deste prodigioso bem concinnado
+          livro, animados com tantos medicinaes dictames, &amp; escriptos com taõ suave, elegante
+          estylo, que naõ só he para os doentes efficaz remedio pela doutrina; mas tambem para os
+          Leytores agradavel divertimento pela frase.<note xml:id="n_semmedo_0006">(3.) Omne tulit
+            punctum qui miscuit utile dulci. Horat.</note> E certo que tenho por gloria o haver
+          feito ao Author com mais culta penna algũas persuasões para dar a luz esta obra, quando vi
+          que na sua Polyanthea Medicinal a prometia.</p>
+        <p xml:id="p_semmedo_1103">Naõ se contentou o Author deste frutuosissimo livro com se
+          empregar nervozamente em soccorrer aos seus enfermos, livrando-os scientificamente dos
+          poderes da morte; senão q̃ tambem se occupa em deixar à posteridade estas immunidades nos
+          seus remedios, referindo as Observações com tal verdade, que nem se esquece das minimas
+          circunstancias daquelles casos; nem se envergonha de confessar ingenuamente o como se
+          enganava algũas vezes nos discursos;<note xml:id="n_semmedo_0007">(4) Optimus, ac
+            gravissimus quisque consuetur se multa ignorare, sibi etiam, atque etiam discenda.
+            Cicero 3. Tuscul.</note> cousa que se chegou a louvar muito em <pb n="não numerada 31"
             facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0034.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
-          /> Hippocrates;<note>(5.) A suturis esse deceptum Hippocrates cõmendavit, more magnorum
-            virorum, fiduciam, &amp; perit ut magnarum rerum habentium; nam leviæ ingeniæ, quia
-            nihil habent, nihil sibi detrahunt; magno ingenio multaque nihilominus habituro,
-            convenit etiam simplex veri erroris confessio. Cornel. Cels. lib. 8. cap. 4. </note> he
-          certo que naõ merece menos encomios no heroico engenho deste grande professor da Medicina,
-          que assim conheceo a vastidaõ de huma sciencia, que se estriba em falliveis, conjecturaes
-          fundamentos, para confessar discretamente seus erros, em differença dos ignorantes, cuja
-          philaucia os conserva obstinados na sua cegueira, parecendolhes que tem chegado ao fim da
-          Medicina, para cuja comprehensaõ he breve termo a idade mais provecta.<note>(6.) Vita
-            brevis, Ars vero longa, &amp;c.</note></p>
-        <p>Cada huma das curas de que este livro consta, he hum compendio dos mais genuinos
-          remedios, com que devem tratarse aquelles males; porque seu Author naõ só propoem o
-          remedio em que observou utilidade; mas com indefesso trabalho faz huma copiosa silva de
-          outros muitos, que para os ditos males saõ proveitosos; escrevendo com animo taõ candido,
-          &amp; com engenho taõ livre, que nem se faz escravo da douta antiguidade que venera, nem
-          se vincula às mesmas novidades que louva;<note>(7. Nos enim in verba parentum non
-            juravimus, in verba veritatis stetimus, nã absque veritatis examine antiquitati cedere
-            solius antiquitatis ratione, est ignavæ timiditatis servitus, &amp; fatuæ ignorantiæ
-            ultima desperatio. Gasp. Caldera de Heredia Tribun. Med. fol. 281.</note> &amp; como
-          quem he mais amante da verdade, que de Plataõ, assim ajusta os preceitos dos antigos com
-          os novos documentos dos modernos, que tudo parece doutrina de huma mesma Escola,
-          nobilitada com remedios espagyricos, &amp; enriquecida com os seus excellentes
-          bezoarticos, de cujas eximias virtudes parece que teme a morte as efficacias, acclamadas
-          naõ só nas vozes dos Portuguezes, mas nas linguas das Nações estrangeiras, &amp; nos
-          faustissimos successos com que até na India, donde nos vem os melhores antidotos, se
-          singularizàraõ entre todos, de maneira que nunca as tempestades da enveja puderaõ lançar a
-          pique o baxel da sua reputaçaõ, nem arrancar a robusta arvore de sua fama,<note>(8.) Non
-            est arbor fortis nisi in quam frequens ventus incursat, ipsa enim vexatione
-            constringitur, &amp; radices certius figit. Seneca de Providentia cap. 2.</note> porque
-          o Author destes segredos, tendo por objecto o bem commum, soube resistir com animo
-          constante aos assaltos da emulaçaõ,<note>(9) Hoc est præcipuũ posse, læto animo ad versa
-            tolerare, &amp; quidquid acciderit sic ferre quasi sibi voluerit accidisse. Seneca lib.
-            3. Nat, quæst.</note> &amp; foy sempre trabalhando na cultura dos livros, para nos
-          deixar este prestantissimo fruto de suas facundissimas obras, dignissimas sem duvida de se
-          darem ao prelo. V. Magestade mandará o que for servido. Lisboa 2. de Julho de 1706.</p>
+          /> Hippocrates;<note xml:id="n_semmedo_0008">(5.) A suturis esse deceptum Hippocrates
+            cõmendavit, more magnorum virorum, fiduciam, &amp; perit ut magnarum rerum habentium;
+            nam leviæ ingeniæ, quia nihil habent, nihil sibi detrahunt; magno ingenio multaque
+            nihilominus habituro, convenit etiam simplex veri erroris confessio. Cornel. Cels. lib.
+            8. cap. 4. </note> he certo que naõ merece menos encomios no heroico engenho deste
+          grande professor da Medicina, que assim conheceo a vastidaõ de huma sciencia, que se
+          estriba em falliveis, conjecturaes fundamentos, para confessar discretamente seus erros,
+          em differença dos ignorantes, cuja philaucia os conserva obstinados na sua cegueira,
+          parecendolhes que tem chegado ao fim da Medicina, para cuja comprehensaõ he breve termo a
+          idade mais provecta.<note xml:id="n_semmedo_0009">(6.) Vita brevis, Ars vero longa,
+            &amp;c.</note></p>
+        <p xml:id="p_semmedo_1104">Cada huma das curas de que este livro consta, he hum compendio
+          dos mais genuinos remedios, com que devem tratarse aquelles males; porque seu Author naõ
+          só propoem o remedio em que observou utilidade; mas com indefesso trabalho faz huma
+          copiosa silva de outros muitos, que para os ditos males saõ proveitosos; escrevendo com
+          animo taõ candido, &amp; com engenho taõ livre, que nem se faz escravo da douta
+          antiguidade que venera, nem se vincula às mesmas novidades que louva;<note
+            xml:id="n_semmedo_0010">(7. Nos enim in verba parentum non juravimus, in verba veritatis
+            stetimus, nã absque veritatis examine antiquitati cedere solius antiquitatis ratione,
+            est ignavæ timiditatis servitus, &amp; fatuæ ignorantiæ ultima desperatio. Gasp. Caldera
+            de Heredia Tribun. Med. fol. 281.</note> &amp; como quem he mais amante da verdade, que
+          de Plataõ, assim ajusta os preceitos dos antigos com os novos documentos dos modernos, que
+          tudo parece doutrina de huma mesma Escola, nobilitada com remedios espagyricos, &amp;
+          enriquecida com os seus excellentes bezoarticos, de cujas eximias virtudes parece que teme
+          a morte as efficacias, acclamadas naõ só nas vozes dos Portuguezes, mas nas linguas das
+          Nações estrangeiras, &amp; nos faustissimos successos com que até na India, donde nos vem
+          os melhores antidotos, se singularizàraõ entre todos, de maneira que nunca as tempestades
+          da enveja puderaõ lançar a pique o baxel da sua reputaçaõ, nem arrancar a robusta arvore
+          de sua fama,<note xml:id="n_semmedo_0011">(8.) Non est arbor fortis nisi in quam frequens
+            ventus incursat, ipsa enim vexatione constringitur, &amp; radices certius figit. Seneca
+            de Providentia cap. 2.</note> porque o Author destes segredos, tendo por objecto o bem
+          commum, soube resistir com animo constante aos assaltos da emulaçaõ,<note
+            xml:id="n_semmedo_0012">(9) Hoc est præcipuũ posse, læto animo ad versa tolerare, &amp;
+            quidquid acciderit sic ferre quasi sibi voluerit accidisse. Seneca lib. 3. Nat,
+            quæst.</note> &amp; foy sempre trabalhando na cultura dos livros, para nos deixar este
+          prestantissimo fruto de suas facundissimas obras, dignissimas sem duvida de se darem ao
+          prelo. V. Magestade mandará o que for servido. Lisboa 2. de Julho de 1706.</p>
         <signed>Doutor Francisco da Fonseca Henriques.</signed>
       </div>
       <pb n="não numerada 32"
         facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0035.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="errata">
-        <head>ERRATAS.</head>
+        <head xml:id="h_semmedo_0116">ERRATAS.</head>
         <table>
           <row>
             <cell role="label">Erro.</cell>
@@ -1586,12 +1592,79 @@
           </row>
         </table>
       </div>
-
+      <pb n="não numerada 33"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0036.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <div type="LicencaPaco">
+        <head xml:id="h_semmedo_0117">LICENÇA Do Paço.</head>
+        <div type="licenca-1">
+          <p xml:id="p_semmedo_1105">QUe se possa imprimir, vistas as licenças do Santo Officio,
+            &amp; Ordinario, &amp; depois de impresso tornará à mesa para se conferir, &amp; taxar,
+            &amp; sem isso naõ correrá. Lisboa 5. de Julho de 1706.</p>
+          <signed>Duque P.</signed>
+          <signed>Lacerda.</signed>
+          <signed>Vieira.</signed>
+          <signed>Carneiro.</signed>
+          <signed>Costa.</signed>
+          <signed>Andrade.</signed>
+        </div>
+        <div type="licenca-2">
+          <p xml:id="p_semmedo_1106">VIsto estar conforme com o original pode correr este livro.
+            Lisboa 29. de Julho de 1707.</p>
+          <signed>Carneyro.</signed>
+          <signed>Moniz.</signed>
+          <signed>Hasse.</signed>
+          <signed>Monteyro.</signed>
+          <signed>Ribeyro.</signed>
+          <signed>Rocha.</signed>
+          <signed>Fr. Encarnaçaõ.</signed>
+        </div>
+        <div type="licenca-3">
+          <p xml:id="p_semmedo_1107">POde correr. Lisboa 12. de Agosto de 1707.</p>
+          <signed>Fr. Pedro Bispo de Bona.</signed>
+        </div>
+        <div type="licenca-4">
+          <p xml:id="p_semmedo_1108">TAxão este Livro em dezoito tostoẽs. Lisboa 28. de Agosto de
+            1707.</p>
+          <signed>Oliveira.</signed>
+          <signed>Vieira.</signed>
+          <signed>Lacerda.</signed>
+          <signed>Carneiro.</signed>
+        </div>
+      </div>
+      <pb n="não numerada 34"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0037.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <div type="privilegio">
+        <head xml:id="h_semmedo_0118">PRIVILEGIO.</head>
+        <p xml:id="p_semmedo_1109">EU ELREY faço saber que Joaõ Curvo Semmedo Medico da minha Casa,
+          Familiar do Santo Officio, &amp; Cavalleiro professo da Ordem de Christo me representou
+          por sua petiçaõ, que elle com licença minha, &amp; as mais requisitas mandàra imprimir o
+          livro intitulado, Observações Medicas Doutrinaes; &amp; porque este era de muita utilidade
+          ao bem commun, &amp; na composiçaõ delle tivera muito trabalho, &amp; na impressaõ fizera
+          grande dispendio, me pedia lhe fizesse mercè conceder privilegio para que por tempo de dez
+          annos nenhum impressor, nem outra pessoa o pudesse imprimir, nem mandar vir de fóra do
+          Reyno; &amp; visto o que allegou, &amp; o trabalho que o Supplicante teve em compor o
+          livro referido, Hey por bem fazerlhe mercè de que nenhum impressor, nem outra alguma
+          pessoa possa imprimir, nem mandar vir de fóra do Reyno o livro de que trata, por tempo de
+          dez annos, como pede. E este Alvará se cumprirá como nelle se contem, de que pagou de
+          novos direitos quinhentos &amp; quarenta reis, que se carregáraõ ao Thesoureiro delles a
+          folhas noventa &amp; sete do livro segundo da sua receita, &amp; se registou o
+          conhecimento em fórma no livro segundo do Regimento géral a folhas trinta &amp; cinco.
+          Joseph da Maya &amp; Faria o fez em Lisboa a nove de Setembro de 1707. Luis Paulino da
+          Silva o fez escrever.</p>
+        <signed>REY.</signed>
+      </div>
+      <pb n="não numerada 35"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0038.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 36"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0039.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+      />
     </front>
     <body>
-      <pb n="1"/>
+      <pb n="1"
+        facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0040.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <head xml:id="h_semmedo_0010">OBSERVAÇOENS MEDICAS DOUTRINAES</head>
-      <div type="chapter" n="1">
+      <div type="chapter" n="1"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0040.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
         <head xml:id="h_semmedo_0011">OBSERVAÇAM I.</head>
         <p xml:id="p_semmedo_0006">De hũa Colica nephritica, que affligio ao Excellentissimo senhor
           Principe de Ligne, &amp; Marquez de Arrouches, em 6. de Janeiro de 1685.</p>
@@ -1605,6 +1678,7 @@
           pude achalla; porque nenhũa differença ha entre as dos soberanos, &amp; humildes.
           Documento he este verdadeyramente digno de taõ grande Filosofo; porque a morte, as
           doenças, &amp; as dores nem respeytaõ as Magestades, nem veneraõ as pessoas, nem <pb n="2"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0041.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
           />obedecem aos cargos; antes com tanta ousadia se atrevem aos Principes soberanos, como
           aos pastores humildes. Quem havia de imaginar que o Excellentissimo Principe de Ligne, já
           pelo esplendor do sangue illustrado com os augustos diademas de seus Reaes Progenitores;
@@ -1629,15 +1703,16 @@
           alimentos, &amp; expurgar as fezes: &amp; posto que o corpo dos intestinos seja hum
           continuado desde o principio atè o fim; com tudo pela variedade da substancia huns se
           chamaõ grossos, outros delgados: por razaõ do officio, huns recebem, &amp; outros
-          distribuem: por razaõ da figura huns saõ rectos, outros <pb n="3"/>anfractuosos: por razaõ
-          do sitio, huns saõ inferiores, outros superiores: finalmente por razaõ do numero, se
-          reduzem a seis: tres delgados, como saõ o Duodeno, o Jejuno, &amp; o Ilio; &amp; tres
-          grossos, como saõ o Cego, o Colon, &amp; o Recto. O primeiro intestino, começando do
-          estomago, se chama Duodeno, porque tem semelhança de doze dedos; naõ tem muitas dobrezes,
-          &amp; desce para o espinhaço, para dar lugar á vea Porta : tem o corpo pela parte
-          posterior glanduloso; &amp; neste intestino está plantado hum cano, pelo qual se evacuaõ
-          os excrementos. O segundo intestino se chama Jejuno, assim porque o chylo, que desce do
-          estomago, se detem pouco tempo nelle; como porque o humor colerico lhe accelera o
+          distribuem: por razaõ da figura huns saõ rectos, outros <pb n="3"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0042.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />anfractuosos: por razaõ do sitio, huns saõ inferiores, outros superiores: finalmente por
+          razaõ do numero, se reduzem a seis: tres delgados, como saõ o Duodeno, o Jejuno, &amp; o
+          Ilio; &amp; tres grossos, como saõ o Cego, o Colon, &amp; o Recto. O primeiro intestino,
+          começando do estomago, se chama Duodeno, porque tem semelhança de doze dedos; naõ tem
+          muitas dobrezes, &amp; desce para o espinhaço, para dar lugar á vea Porta : tem o corpo
+          pela parte posterior glanduloso; &amp; neste intestino está plantado hum cano, pelo qual
+          se evacuaõ os excrementos. O segundo intestino se chama Jejuno, assim porque o chylo, que
+          desce do estomago, se detem pouco tempo nelle; como porque o humor colerico lhe accelera o
           movimento; como finalmente pelas muitas veas, que attrahem o chylo para o figado; &amp;
           porque o sobredito intestino està sempre vasio, se diz Jejuno. O tal intestino he mais
           delgado que o Duodeno, &amp; bastantemente comprido; collocase em toda a regiaõ umbilical
@@ -1654,16 +1729,18 @@
           dos vestidos, mas nas obras ordenadas com acerto, &amp; effeituadas com felicidade, puz
           todo o cuidado em conhecer a enfermidade, &amp; os lugares em que estava, para lhe
           applicar os remedios convenientes; mas como no mesmo lugar (qual he o ventre) hajaõ muitas
-          partes, naõ he fácil distinguir o sitio da dor pela acçaõ <pb n="4"/>lesa, nem pela
-          retençaõ das fezes; porque tinha este senhor continuos desejos de vomitar, grandes dores
-          no ventre, excessiva adstriçaõ das fezes, repetidas vontades de ourinar, o que fazia gotta
-          a gotta, &amp; com grandissimos ardores. Porèm como estes symptomas sejaõ quasi identicos
-          na dor de colica, &amp; na nephritica, &amp; se equivoquem entre si de maneira, que a dor
-          que começou colica, acaba muitas vezes nephritica, (1.) me vi muito embaraçado para
-          distinguir huma dor da outra; porque sem ter perfeito conhecimento da doença, me exporia a
-          algum sinistro acontecimento: porque se a dor fosse verdadeiramente colica, &amp; eu lhe
-          applicasse remedios diureticos, faria hum erro da primeira grandeza; porque levaria os
-          humores para as veas dos rins, que saõ mais apertadas, &amp; pequenas.</p>
+          partes, naõ he fácil distinguir o sitio da dor pela acçaõ <pb n="4"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0043.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />lesa, nem pela retençaõ das fezes; porque tinha este senhor continuos desejos de
+          vomitar, grandes dores no ventre, excessiva adstriçaõ das fezes, repetidas vontades de
+          ourinar, o que fazia gotta a gotta, &amp; com grandissimos ardores. Porèm como estes
+          symptomas sejaõ quasi identicos na dor de colica, &amp; na nephritica, &amp; se equivoquem
+          entre si de maneira, que a dor que começou colica, acaba muitas vezes nephritica, (1.) me
+          vi muito embaraçado para distinguir huma dor da outra; porque sem ter perfeito
+          conhecimento da doença, me exporia a algum sinistro acontecimento: porque se a dor fosse
+          verdadeiramente colica, &amp; eu lhe applicasse remedios diureticos, faria hum erro da
+          primeira grandeza; porque levaria os humores para as veas dos rins, que saõ mais
+          apertadas, &amp; pequenas.</p>
         <p xml:id="p_semmedo_0011">Conheci pois que a dor era verdadeiramente nephritica, assim
           porque permanecia fixa na mesma parte; como porque sentia estupor na perna da mesma
           ilharga; como porque as ourinas eraõ delgadas, &amp; poucas; (2.) como porque naõ podia
@@ -1679,31 +1756,34 @@
           causa de tanto mal; &amp; para conseguir estas intenções, lhe fiz lançar huma ajuda
           emolliente preparada pelo modo seguinte. Tomem de raizes de malvaisco machucadas huma
           onça; de folhas de malvas, violas, alfavaca de cobra, &amp; de ortigas mortas, de cada
-          cousa destas huma maõ <pb n="5"/>chea; de semente de linho, &amp; de alforvas, de cada
-          cousa destas meya onça; de raiz de aristoloquia duas oitavas; tudo se coza com hum frangaõ
-          em huma canada de agua, atè ficar hum só quartilho; &amp; coandose este cozimento, mandei
-          ajuntar a quatro onças delle huma onça de diaprunis com tres onças de lambedor violado;
-          ordenando que esta ajuda se applicasse morna, para se sustentar mais tempo dentro no
-          corpo, &amp; fazer melhor obra. Porèm como a natureza pela vehemencia da dor estivesse
-          atormentadissima, &amp; mui alhea de si, aproveitou pouco a dita ajuda, porque a naõ
-          reteve, &amp; por isso lhe fiz deitar outra muito especifica na fórma seguinte. Em quatro
-          onças do sobredito cozimento mandei ajuntar huma onça de terebinthina de beta, lavada
-          tantas vezes em agua de malvas, atè se fazer branca, duas gemas de ovos cruas, &amp; dez
-          oitavas de diaprunis, &amp; que se applicasse morna. Mas como as dores se exasperassem
-          mais, &amp; o ventre se endurecesse muito, lhe fiz beber tres onças de agua benedicta
-          vigorada, obrigado de tres motivos. O primeiro, porque a natureza desde a primeira hora da
-          dor tinha muitas vezes vomitado alguma colera, com o que sentia alivio. (4.) O segundo,
-          porque com a experiencia de muitos annos tenho observado que nenhum remedio aproveita
-          tanto nas dores nephriticas, como saõ os vomitorios de agua benedicta. (5.)O terceiro,
-          porque naõ ha remedio, que tanto lave o ventre, quando está endurecido, nem tanto o
-          aperte, quando está relaxado, como saõ os vomitorios: assim o diz Hippocrates, (6.) &amp;
-          eu o tenho tambem experimentado a ssim.</p>
+          cousa destas huma maõ <pb n="5"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0044.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />chea; de semente de linho, &amp; de alforvas, de cada cousa destas meya onça; de raiz de
+          aristoloquia duas oitavas; tudo se coza com hum frangaõ em huma canada de agua, atè ficar
+          hum só quartilho; &amp; coandose este cozimento, mandei ajuntar a quatro onças delle huma
+          onça de diaprunis com tres onças de lambedor violado; ordenando que esta ajuda se
+          applicasse morna, para se sustentar mais tempo dentro no corpo, &amp; fazer melhor obra.
+          Porèm como a natureza pela vehemencia da dor estivesse atormentadissima, &amp; mui alhea
+          de si, aproveitou pouco a dita ajuda, porque a naõ reteve, &amp; por isso lhe fiz deitar
+          outra muito especifica na fórma seguinte. Em quatro onças do sobredito cozimento mandei
+          ajuntar huma onça de terebinthina de beta, lavada tantas vezes em agua de malvas, atè se
+          fazer branca, duas gemas de ovos cruas, &amp; dez oitavas de diaprunis, &amp; que se
+          applicasse morna. Mas como as dores se exasperassem mais, &amp; o ventre se endurecesse
+          muito, lhe fiz beber tres onças de agua benedicta vigorada, obrigado de tres motivos. O
+          primeiro, porque a natureza desde a primeira hora da dor tinha muitas vezes vomitado
+          alguma colera, com o que sentia alivio. (4.) O segundo, porque com a experiencia de muitos
+          annos tenho observado que nenhum remedio aproveita tanto nas dores nephriticas, como saõ
+          os vomitorios de agua benedicta. (5.)O terceiro, porque naõ ha remedio, que tanto lave o
+          ventre, quando está endurecido, nem tanto o aperte, quando está relaxado, como saõ os
+          vomitorios: assim o diz Hippocrates, (6.) &amp; eu o tenho tambem experimentado a
+          ssim.</p>
         <p xml:id="p_semmedo_0013">Deilhe pois tres onças de agua benedicta vigorada; a qual
           supposto obrasse copiosamente por hũa, &amp; outra via, &amp; tenha maravilhosas virtudes
           para curar muitas doenças, como dizem graves Authores, (7.) não venceo de todo as dores,
           nem as afflições; porque naõ tem a Medicina remedio algum tam magnifico, que aproveite
           igualmente a todos; &amp; por isso às pessoas, a quem o vomitar he mui custoso, se naõ
           devem applicar vomitorios com tanta confiança, como àquellas, a quem he facil.<pb n="6"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0045.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
           />Por esta causa appelei para tres onças de mannà desatado em quatro de oleo de amendoas
           doces tirado sem fogo; porque deste remedio tenho visto grandes maravilhas em casos
           semelhantes. Porèm como dores tivessem jà tomado grande posse, desprezáraõ a efficacia de
