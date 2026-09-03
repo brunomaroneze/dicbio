@@ -35,6 +35,9 @@
                     elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
                         <att> facs</att> com o endereço URL do arquivo da imagem correspondente à
                     página em questão.</p>
+                <p>Foram colocados como <gi>body</gi> os cinco capítulos da exposição do sitema de
+                    Lineu e o dicionário botânico. Os índices e catálogos finais foram transcritos
+                    como <gi>back</gi> (ou seja, como elementos pós-textuais).</p>
             </editorialDecl>
             <projectDesc>
                 <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -730,11 +733,63 @@
                                 sem corolla, como o Calamus, Juncus, e Peplis<note>Este genero foy
                                     posto nesta divisaõ por causa da maior parte das suas flores naõ
                                     terem corolla.</note>.</p>
+                            <pb n="24"
+                                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0028_24_t24-C-R0120.jpg"/>
+                            <p>A 2ª. Ordem ou Digynia comprehende as plantas que daõ flores com dois
+                                pistillos, como a Falckia, Atraphaxis, Gahnia, e Oryza.</p>
+                            <p>A 3ª. Ordem ou Trigynia consta das plantas que daõ flores com tres
+                                pistillos; os seus generos saõ divididos, 1º. nos que daõ flores
+                                sottopostas, como o Colchicum, Melanthium, Medeola, Helonias,
+                                Trillium, Triglochin, Rumex, Scheuchzeria, e Wurmbea; 2º. nos que
+                                daõ flores sobrepostas, como a Flagellaria.</p>
+                            <p>A 4ª. Ordem ou Tetragynia comprehende as plantas que daõ flores com
+                                quatro pistillos, como a Petiveria. A 5ª. Ordem ou Polygynia consta
+                                das plantas, que daõ cinco, seis, ou mais pistillos, como a
+                                Alisma.</p>
+                        </div>
+                        <div type="subchapter">
+                            <head>§. Classe VII.</head>
+                            <p>HEPTRANDRIA (heptrandria); esta classe comprehende as plantas que daõ
+                                flores hermaphroditas com sette estames, como por ex. o castanheiro
+                                da India (ou AEsculus hippocastanum); contem quatro Ordens, a 1ª. ou
+                                Monogynia consta das plantas que daõ flores com hum so pistillo,
+                                como a Trientalis, Disandra, e AEsculus; a 2ª. ou Digynia das que
+                                daõ flores com dois pistillos, como o Limeum; a 3ª. ou Tetragynia
+                                das que daõ flores com quatro pistillos, como o Saururus e
+                                Aponogeton; a 4ª. em fim ou Heptagynia comprehende as que daõ flores
+                                com sette pistillos, como o Septas.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div type="Parte">
+                <head>DICCIONARIO BOTANICO.</head>
+            </div>
         </body>
-        <back/>
+        <back>
+            <div type="catalogo">
+                <head>CATALOGO DOS AUTORES BOTANICOS, Com as suas citaçoens abbreviadas.</head>
+            </div>
+            <div type="indice">
+                <head>INDEX Dos nomes Triviaes Portuguezes de Plantas, referidos aos seus Generos e
+                    Especies, segundo o Systema de Linneo.</head>
+            </div>
+            <div type="indice">
+                <head>NOMES De plantas, que nam pude observar, nem achei bem descriptas.</head>
+            </div>
+            <div type="estampas">
+                <head>EXPLICAÇAÕ DAS ESTAMPAS.</head>
+            </div>
+            <div type="indice">
+                <head>INDEX Dos Termos Portuguezes relativos à estructura, habitaçam, qualidades, e
+                    destribuiçoens methodicas dos Vegetaes.</head>
+            </div>
+            <div type="sumario">
+                <head>TABELLA DOS CAPITULOS DESTA OBRA.</head>
+            </div>
+            <div type="errata">
+                <head>TOMO I.</head>
+            </div>
+        </back>
     </text>
 </TEI>
