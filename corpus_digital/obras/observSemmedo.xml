@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -15,7 +16,8 @@
       <sourceDesc>
         <bibl>
           <author>SEMEDO, João Curvo</author>. <title>Observaçoens medicas doutrinaes</title>.
-            <pubPlace>Lisboa</pubPlace>: Na Officina de Antonio Pedrozo Galram, <date when="1707">1707</date>. Disponível em: https://archive.org/details/bub_gb_qCVH54Hs2i0C.</bibl>
+            <pubPlace>Lisboa</pubPlace>: Na Officina de Antonio Pedrozo Galram, <date when="1707"
+            >1707</date>. Disponível em: https://archive.org/details/bub_gb_qCVH54Hs2i0C.</bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -47,7 +49,8 @@
   </teiHeader>
   <text>
     <front>
-      <titlePage facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0000.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
+      <titlePage
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0000.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
         <docTitle>
           <titlePart type="main">OBSERVAÇOENS MEDICAS DOUTRINAES</titlePart>
           <titlePart type="desc">De cem Casos gravissimos</titlePart>
@@ -61,10 +64,14 @@
           licenças necessarias, &amp; Privilegio Real. <docDate when="1707">Anno M
           DCCVII</docDate>.</docImprint>
       </titlePage>
-      <pb n="em branco" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0001.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
-      <pb n="em branco" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0002.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
-      <pb n="imagem" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0003.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
-      <pb n="não numerada 1" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0004.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="em branco"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0001.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="em branco"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0002.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="imagem"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0003.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 1"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0004.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="carta_dedicatoria">
         <salute>ILLUSTRISSIMO SENHOR.</salute>
         <note xml:lang="la" xml:id="n_semmedo_0001">Galenus lib. de theriaca ad Pisonem cap. 11.
@@ -92,7 +99,10 @@
           pertendia o seu desejo. Naõ era menos grande o que eu tinha de que esta minha obra achasse
           boa aceitaçaõ em todo o mundo; mas quando olhava para ella, como parto do meu pobre
           talento, temia que tomasse a humildade do Pay, &amp; que por esta causa fosse desprezada
-          de todos; nesta desconfiança, &amp; temor me atentou muito a lembrança de que desde o<pb n="não numerada 2" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0005.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/> primeiro instante, que debuxei com o pensamento a fabrica deste livro, logo levantei a
+          de todos; nesta desconfiança, &amp; temor me atentou muito a lembrança de que desde o<pb
+            n="não numerada 2"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0005.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          /> primeiro instante, que debuxei com o pensamento a fabrica deste livro, logo levantei a
           idea a buscarlhe hum Real Protector, de quem tomasse alguma decorosa divisa para timbre de
           seu respeito, &amp; lá foy parar aos pés de Vossa Illustrissima; &amp; como sobi a taõ
           grande altura, perdi de vista o medo, &amp; entendi que esta obra naõ avia de copiar em si
@@ -117,7 +127,8 @@
           menor, &amp; mais obrigado criado de Vossa IIlustrissima</p>
         <signed>Joaõ Curvo Semmedo.</signed>
       </div>
-      <pb n="não numerada 3" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0006.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 3"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0006.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="prologo">
         <head xml:id="h_semmedo_0001">PROLOGO AO LEYTOR.</head>
         <p xml:id="p_semmedo_0004">CONSIDERO a tua admiraçaõ, &amp; a tua queixa ao abrires este
@@ -135,7 +146,10 @@
           Polyanthea escrita em lingua Portugueza; louvando-o huns, porque só assim se aproveitariaõ
           todos, que he, &amp; deve ser o principal intento de semelhantes livros; vituperando-o
           outros, porque era humilhar, &amp; desluzir hũa sciencia taõ nobre como a Medicina. Para
-          concordar estes pareceres taõ encontrados, me determinava a ajuntar em hum só <pb n="não numerada 4" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0007.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>tomo estas Observações em ambas as linguas; mas depois de feitas, &amp; revistas,
+          concordar estes pareceres taõ encontrados, me determinava a ajuntar em hum só <pb
+            n="não numerada 4"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0007.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />tomo estas Observações em ambas as linguas; mas depois de feitas, &amp; revistas,
           reconheci que o remedio era peyor que a doença; porque querendo contentar a algũs,
           desagradava a todos; aos que sabem a lingua latina, obrigando: os a comprar
           desnecessariamente meyo livro na lingua Portugueza; &amp; aos que naõ sabem mais que a
@@ -145,7 +159,8 @@
           gostasses: se ainda assim tiveres que estranhar, entenderei que he incuravel a enfermidade
           do teu fastio, &amp;c. Deos te guarde.</p>
       </div>
-      <pb n="não numerada 5" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0012.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 5"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0012.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="poema" xml:lang="la">
         <head xml:id="h_semmedo_0002">Fr. PETRI AB INCARNATIONE Dominicani Hyberni, sacræ Theologiæ
           professoris, &amp; Sancti Officij Qualificatoris, in obsequium Authoris, &amp; operum
@@ -178,7 +193,8 @@
         <l>Morbis bellum illaturus</l>
         <l>Tractatum de Peste,</l>
         <l>Medicinalem Polyantheam,</l>
-        <pb n="não numerada 6" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0013.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 6"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0013.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Medicarum Observationum Centuriam</l>
         <l>Prælo dedit,</l>
         <l>Ut conjuratos in prælium hostes</l>
@@ -221,7 +237,8 @@
         <l>Inutrumque Polum</l>
         <l>Florida Polyanthea,</l>
         <l>Et verè florida,</l>
-        <pb n="não numerada 7" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0014.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 7"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0014.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Quæ florum omnium exhalat fragrantiam,</l>
         <l>Exprimit quintam essentiam</l>
         <l>Quintilij floridissima</l>
@@ -264,7 +281,8 @@
         <l>Cæcutiunt Zoili,</l>
         <l>Lippiunt scioli,</l>
         <l>Garriuntque cæteri Tenebriones,</l>
-        <pb n="não numerada 8" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0015.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 8"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0015.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Qui lucem aspicere non valentes</l>
         <l>Artem Chymicam calumniantur;</l>
         <l>Quibus tamen aut condolendum, aut condonandum</l>
@@ -308,7 +326,8 @@
         <l>Sua effundere oracula,</l>
         <l>Pandere arcana.</l>
         <l>Enim verò</l>
-        <pb n="não numerada 9" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0016.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 9"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0016.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Curvus in hac sua Centuria,</l>
         <l>Magna, ac mira docet;</l>
         <l>Sed non tam suo Marte fretus,</l>
@@ -351,7 +370,8 @@
         <l>Fiunt medicamentarij,</l>
         <l>Medicamentarij fiunt Medici,</l>
         <l>Medicique tyrones</l>
-        <pb n="não numerada 10" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0017.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 10"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0017.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Protomedici fiunt.</l>
         <l>Centuriæ stylus bilinguis est,</l>
         <l>Sed minimè fallax,</l>
@@ -394,7 +414,8 @@
         <l>Quia habet in cuspide linguæ;</l>
         <l>Eos, quibus profuit,</l>
         <l>Recensere non valet, etiamsi velit;</l>
-        <pb n="não numerada 11" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0018.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 11"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0018.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <l>Quia hac in re</l>
         <l>Patitur lapsum memoriæ,</l>
         <l>Cui succurrere nescit Anacardina.</l>
@@ -438,7 +459,8 @@
         <l>Quamquam ego, cùm plura supersint dicenda,</l>
         <l>Nondum satis dixi.</l>
       </div>
-      <pb n="não numerada 12" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0019.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 12"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0019.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="poema" xml:lang="la">
         <head xml:id="h_semmedo_0003">
           <title type="dedicatória">IN LAUDEM SAPIENTISSIMI DOCTORIS JOANNIS CURVI SEMMEDO, Christi
@@ -472,7 +494,8 @@
         <l>Dùmquethymo pascentur apes, dum rore cicadæ.</l>
         <byline>Rochius Monteiro de Barros, Llamas, &amp; Brito.</byline>
       </div>
-      <pb n="não numerada 13" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0020.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 13"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0020.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="sinopse">
         <list>
           <head xml:id="h_semmedo_0004">SYNOPSIS, Ou disposiçaõ do seguinte Romance
@@ -558,7 +581,8 @@
               <item xml:id="i_semmedo_0057">Que elle só basta por todo, paa defender as
                 vidas.</item>
             </list></item>
-          <pb n="não numerada 14" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0021.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 14"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0021.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <item xml:id="i_semmedo_0058">Digressaõ. <list>
               <item xml:id="i_semmedo_0059">Do nome JOAM, no qual <list>
                   <item xml:id="i_semmedo_0060">A letra I, o representa na forma de columna. <list>
@@ -641,7 +665,8 @@
             </list></item>
         </list>
       </div>
-      <pb n="não numerada 15" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0008.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 15"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0008.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="poema">
         <head xml:id="h_semmedo_0005">
           <title type="dedicatória">AO DOUTOR JOAM CURVO SEMMEDO, insigne Medico Lusitano.</title>
@@ -693,7 +718,8 @@
           <l>He preciso o morrer: saõ seus effeitos</l>
           <l>Inevitaveis; que a Justiça summa</l>
           <l>Do Sempiterno Deos, no Protoplasto,</l>
-          <pb n="não numerada 16" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0009.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 16"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0009.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <l>Tal pena impoz às gerações futuras.</l>
         </lg>
         <lg>
@@ -756,7 +782,8 @@
           <l>Da Apollinea Cohorte Antesignanos,</l>
           <l>Cujo valor em seus escriptos dura.</l>
         </lg>
-        <pb n="não numerada 17" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0010.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+        <pb n="não numerada 17"
+          facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0010.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
         <lg>
           <l>Mas hoje, ò graõ Semmedo, alto silencio</l>
           <l>Seus nomes cala, seus trofeos sepulta;</l>
@@ -819,7 +846,8 @@
         </lg>
         <lg>
           <l>Agonizaõ cadaveres doentes,</l>
-          <pb n="não numerada 18" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0011.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 18"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0011.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <l>Sendo estacada o leito, a morte luta;</l>
           <l>Chegais vòs, (grande auxilio!) &amp; à vista vossa</l>
           <l>Alma parece, que lhes dá segunda.</l>
@@ -881,7 +909,8 @@
         <lg>
           <l>Mas que muito frustreis ardis à Parca,</l>
           <l>Se vòs, para saberdes quantos usa,</l>
-          <pb n="não numerada 19" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0022.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 19"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0022.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <l>Aos mortos consultais, que vos respondem</l>
           <l>Por caracteres de palavras mudas?</l>
         </lg>
@@ -943,7 +972,8 @@
           <l>Vivei, durai nos seculos vindouros,</l>
           <l>Huma posteridade taõ fecunda,</l>
           <l>Que os partos, que produz o vosso engenho,</l>
-          <pb n="não numerada 20" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0023.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 20"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0023.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <l>Por mais que o tempo gaste, os naõ consuma.</l>
         </lg>
         <lg>
@@ -984,7 +1014,8 @@
         </lg>
         <byline>Do Beneficiado Francisco Leytaõ Ferreyra.</byline>
       </div>
-      <pb n="não numerada 21" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0024.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 21"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0024.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="poema">
         <head xml:id="h_semmedo_0007">AO DOUTOR JOAM CURVO SEMMEDO D. &amp; C. este Romance</head>
         <byline>Antonio Marques Lesbio.</byline>
@@ -1046,7 +1077,8 @@
         <l>Tu nulli cedens Medicina, vivere cunctis</l>
         <l>Lumine das, nobis maior Apollo tuo.</l>
       </div>
-      <pb n="não numerada 22" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0025.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 22"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0025.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="sumário">
         <head xml:id="h_semmedo_0009">INDICE DAS OBSERVAÇOENS, Que se contem neste livro.</head>
         <list type="toc">
@@ -1086,7 +1118,10 @@
           <item xml:id="i_semmedo_0115">OBSERV. XIII. De hũ rebelde fluxo de sangue pelos narizes,
             pag. 87.</item>
           <item xml:id="i_semmedo_0116">OBSERV. XIV. De humas ancias de coraçaõ procedidas dos
-            vapores venenosos de rosalgar fervido com vinagre, com que certa mulher<pb n="não numerada 23" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0026.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>lavou o seu leito para matar os porçovejos, pag. 91.</item>
+            vapores venenosos de rosalgar fervido com vinagre, com que certa mulher<pb
+              n="não numerada 23"
+              facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0026.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+            />lavou o seu leito para matar os porçovejos, pag. 91.</item>
           <item xml:id="i_semmedo_0117">OBSERV. XV. De humas grandes dores de ventre, &amp; estomago
             com febre, tremores convulsivos, &amp; afflicções do coraçaõ procedidas de lombrigas,
             pag. 95.</item>
@@ -1135,7 +1170,8 @@
           <item xml:id="i_semmedo_0137">OBSERV. XXXV. De hum menino, que no instante em que nasceo,
             se resfriou de sorte, como se estivesse morto, naõ mamando por espaço de quinze horas,
             pag. 212.</item>
-          <pb n="não numerada 24" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0027.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 24"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0027.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <item xml:id="i_semmedo_0138">OBSERV. XXXVI. De hum menino quebrado de ambas as verilhas,
             pag. 217.</item>
           <item xml:id="i_semmedo_0139">OBSERV. XXXVII. De huma grande hernia humoral, com febre
@@ -1184,7 +1220,9 @@
           <item xml:id="i_semmedo_0154">OBSERV. LII. De huma febre terçãa exquisita, causada de
             enchimento do estomago, pag. 319.</item>
           <item xml:id="i_semmedo_0155">OBSERV. LIII. De outra febre terçãa exquisita, que por causa
-            das <pb n="não numerada 25" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0028.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>muitas sangrias degenerou em maligna taõ perigosa, que para escapar della foy
+            das <pb n="não numerada 25"
+              facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0028.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+            />muitas sangrias degenerou em maligna taõ perigosa, que para escapar della foy
             necessario tomar muita quantidade do meu cordeal, p. 323.</item>
           <item xml:id="i_semmedo_0156">OBSERV. LIV. De huma rebelde ictericia, pag. 328.</item>
           <item xml:id="i_semmedo_0157">OBSERV. LV. De huma tosse taõ violenta, &amp; continua, que
@@ -1235,7 +1273,8 @@
           <item xml:id="i_semmedo_0175">OBSERV. LXXIV. De hũa febre maligna com hũ fluxo de sangue
             uterino taõ copioso, que fez cahir a enferma em hũa hydropesia Anasarca, pag.
             433.</item>
-          <pb n="não numerada 26" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0029.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+          <pb n="não numerada 26"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0029.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
           <item xml:id="i_semmedo_0176">OBSERV. LXXV. De huma dysuria, ou repetidos desejos de
             ourinar, com grandes dores, &amp; ardores padecidos por espaço de dous annos, pag.
             438.</item>
@@ -1286,7 +1325,9 @@
             inchadas, pag. 540.</item>
           <item xml:id="i_semmedo_0197">OBSERV. XCVI. De hum Principe Ecclesiastico, q̃ estando com
             saude, quando tomava nas mãos hum pucaro cheyo de agua nevada, ou outra cousa muito
-            fria, sentia taõ grande quentura, como se <pb n="não numerada 27" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0030.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>tomasse brazas de fogo; &amp; pelo contrario, quando tomava nas mãos huma tigela com
+            fria, sentia taõ grande quentura, como se <pb n="não numerada 27"
+              facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0030.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+            />tomasse brazas de fogo; &amp; pelo contrario, quando tomava nas mãos huma tigela com
             caldo, ou agua fervendo, sentia taõ grande frialdade, que a naõ podia sofrer, pag.
             544.</item>
           <item xml:id="i_semmedo_0198">OBSERV. XCVII. De huma hernia intestinal com muitos vomitos
@@ -1305,37 +1346,42 @@
             companhia, pag. 565.</item>
         </list>
       </div>
-      <pb n="não numerada 28" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0031.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 28"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0031.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="AprovacoesSantoOficio">
         <head xml:id="h_semmedo_0112">APPROVAÇOENS Do Santo Officio.</head>
         <div type="Despacho">
-          <p xml:id="p_semmedo_1095">O P. Mestre Fr. Pedro da Encarnaçaõ, Qualificador do Santo Officio, veja o livro de que
-            faz mençaõ esta petiçaõ, &amp; informe com seu parecer. Lisboa 28. de Julho de 1705.</p>
+          <p xml:id="p_semmedo_1095">O P. Mestre Fr. Pedro da Encarnaçaõ, Qualificador do Santo
+            Officio, veja o livro de que faz mençaõ esta petiçaõ, &amp; informe com seu parecer.
+            Lisboa 28. de Julho de 1705.</p>
           <signed>Carneiro. Moniz. Hasse. Monteiro. Rocha.</signed>
         </div>
         <div type="parecer">
           <salute>ILLUSTRISSIMO SENHOR.</salute>
-          <p xml:id="p_semmedo_1096">VI o livro de que a petiçaõ faz mençaõ, &amp; sobre naõ conter cousa dissonante a nossa
-            Santa Fé, ou bons costumes, a fama do Author desprezadora de adulações, &amp; de
-            invejas; a notoriedade de suas largas, &amp; bem logradas experiencias em curas arduas,
-            &amp; casos desesperados; a fecunda, &amp; feliz inventiva de varios, &amp; singulares
-            remedios nunca dantes conhecidos; o ingenioso da idea, o artificioso do methodo, o facil
-            do estylo, a galante contextura de ambos os idiomas Lusitano, &amp; Latino, fazem esta
-            obra plausivel, &amp; merecedora da licença que se pede, para beneficio da publica
-            utilidade. Este he meu parecer, salvo &amp;c. Collegio dos Dominicos Irlandezes da Corte
-            Real de Lisboa, em 17. de Agosto de 1705.</p>
+          <p xml:id="p_semmedo_1096">VI o livro de que a petiçaõ faz mençaõ, &amp; sobre naõ conter
+            cousa dissonante a nossa Santa Fé, ou bons costumes, a fama do Author desprezadora de
+            adulações, &amp; de invejas; a notoriedade de suas largas, &amp; bem logradas
+            experiencias em curas arduas, &amp; casos desesperados; a fecunda, &amp; feliz inventiva
+            de varios, &amp; singulares remedios nunca dantes conhecidos; o ingenioso da idea, o
+            artificioso do methodo, o facil do estylo, a galante contextura de ambos os idiomas
+            Lusitano, &amp; Latino, fazem esta obra plausivel, &amp; merecedora da licença que se
+            pede, para beneficio da publica utilidade. Este he meu parecer, salvo &amp;c. Collegio
+            dos Dominicos Irlandezes da Corte Real de Lisboa, em 17. de Agosto de 1705.</p>
           <signed>Fr. Pedro da Encarnaçaõ.</signed>
         </div>
         <div type="despacho">
-          <p xml:id="p_semmedo_1097">O P. M. Fr. Domingos Daly, Qualificador do Santo Officio, veja o livro de que trata
-            esta petiçaõ, &amp; informe com seu parecer. Lisboa 18. de Agosto de 1705.</p>
+          <p xml:id="p_semmedo_1097">O P. M. Fr. Domingos Daly, Qualificador do Santo Officio, veja
+            o livro de que trata esta petiçaõ, &amp; informe com seu parecer. Lisboa 18. de Agosto
+            de 1705.</p>
           <signed>Moniz. Hasse. Monteiro. Ribeiro. Rocha.</signed>
         </div>
         <div type="parecer">
-          <p xml:id="p_semmedo_1098">IUssu Supremi Senatus Sanctæ Inquisitionis perquàm studiosè vidi, &amp; legi hanc
-            Centuriam Medicinalem Latino, &amp; Lusitano idiomate, ab eruditissimo, celeberrimoque
-            Doctore Joanne Curvo Semmedo compositam: non solùm ab omni prorsus labe adversus fidem,
-            ac bonos <pb n="não numerada 29" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0032.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>mores res immunis est, verum etiam multa anteactis temporibus incognita, &amp;
+          <p xml:id="p_semmedo_1098">IUssu Supremi Senatus Sanctæ Inquisitionis perquàm studiosè
+            vidi, &amp; legi hanc Centuriam Medicinalem Latino, &amp; Lusitano idiomate, ab
+            eruditissimo, celeberrimoque Doctore Joanne Curvo Semmedo compositam: non solùm ab omni
+            prorsus labe adversus fidem, ac bonos <pb n="não numerada 29"
+              facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0032.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+            />mores res immunis est, verum etiam multa anteactis temporibus incognita, &amp;
             diligentissimis observationibus (quibus scienter, citò, securè, suaviter, &amp;
             radicaliter diversorum morborum genuinus medendi modus exponitur) animadversa, inapertam
             lucem exhibet. Dignissimam igitur judico, ut æternæ memoriæ ad Patriæ, &amp; exterarum
@@ -1345,86 +1391,94 @@
         </div>
         <div type="licencaSantoOficio">
           <head xml:id="h_semmedo_0113">LICENÇA DO SANTO OFFICIO.</head>
-          <p xml:id="p_semmedo_1099"> VIstas as informações, podese imprimir o livro de que esta petiçaõ trata, &amp; de que
-            he Author Joaõ Curvo Semmedo; &amp; impresso tornarà para se conferir, &amp; dar licença
-            que corra, &amp; sem ella naõ correrá. Lisboa 11. de Septembro de 1705.</p>
+          <p xml:id="p_semmedo_1099"> VIstas as informações, podese imprimir o livro de que esta
+            petiçaõ trata, &amp; de que he Author Joaõ Curvo Semmedo; &amp; impresso tornarà para se
+            conferir, &amp; dar licença que corra, &amp; sem ella naõ correrá. Lisboa 11. de
+            Septembro de 1705.</p>
           <signed>Moniz. Hasse. Monteiro. Ribeiro. Rocha.</signed>
         </div>
         <div type="licencaOrdinario">
           <head xml:id="h_semmedo_0114">LICENÇA DO ORDINARIO.</head>
-          <p xml:id="p_semmedo_1100">VIstas as informações, podese imprimir o livro de que he Author Joaõ Curvo Semmedo,
-            &amp; impresso tornará para se dar licença para correr. Lisboa 2. de Outubro de
-            1705.</p>
+          <p xml:id="p_semmedo_1100">VIstas as informações, podese imprimir o livro de que he Author
+            Joaõ Curvo Semmedo, &amp; impresso tornará para se dar licença para correr. Lisboa 2. de
+            Outubro de 1705.</p>
           <signed>Fr. Pedro Bispo de Bona.</signed>
         </div>
       </div>
-      <pb n="não numerada 30" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0033.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 30"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0033.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="aprovacaoPaco">
         <head xml:id="h_semmedo_0115">APPROVAÇAM Do Paço.</head>
         <salute>SENHOR:</salute>
-        <p xml:id="p_semmedo_1101">LI por mandado de V. Magestade as Observações Medicinaes do Doutor Joaõ Curvo Semmedo;
-          escritas com elegancia na lingua Latina, &amp; vertidas com formalidade na Portugueza;
-          obra taõ douta, que seguras traz comsigo as approvações, &amp; que logrará infalliveis os
-          applausos prevenidos já na sua Polyanthea, em q̃ a elevada penna do Author fez voar o seu
-          celebre nome às terras mais remotas, sendo glorioso assumpto das vozes da Fama, &amp;
-          immortalizando em toda a posteridade a sua memoria,<note xml:id="n_semmedo_0004">(1.) Virum laude dignum Musa
-            vetat mori.</note> com decoroso credito da Medicina, com grande utilidade da saude
-          humana, &amp; com gloria indelevel da Naçaõ Portugueza, para cuja felicidade parece que
-          foy altamente destinado este Varaõ sciente.<note xml:id="n_semmedo_0005">(2.) Cùm alicujus gentis bona vult Deus
-            ponit in ejus regibus scientiam, aui regnum in ejus sapientibus. Euseb. apud Garau tom.
-            I. maxim. 24.</note></p>
-        <p xml:id="p_semmedo_1102">De cem casos se compoem o volume deste prodigioso bem concinnado livro, animados com
-          tantos medicinaes dictames, &amp; escriptos com taõ suave, elegante estylo, que naõ só he
-          para os doentes efficaz remedio pela doutrina; mas tambem para os Leytores agradavel
-          divertimento pela frase.<note xml:id="n_semmedo_0006">(3.) Omne tulit punctum qui miscuit utile dulci.
-            Horat.</note> E certo que tenho por gloria o haver feito ao Author com mais culta penna
-          algũas persuasões para dar a luz esta obra, quando vi que na sua Polyanthea Medicinal a
-          prometia.</p>
-        <p xml:id="p_semmedo_1103">Naõ se contentou o Author deste frutuosissimo livro com se empregar nervozamente em
-          soccorrer aos seus enfermos, livrando-os scientificamente dos poderes da morte; senão q̃
-          tambem se occupa em deixar à posteridade estas immunidades nos seus remedios, referindo as
-          Observações com tal verdade, que nem se esquece das minimas circunstancias daquelles
-          casos; nem se envergonha de confessar ingenuamente o como se enganava algũas vezes nos
-            discursos;<note xml:id="n_semmedo_0007">(4) Optimus, ac gravissimus quisque consuetur se multa ignorare, sibi
-            etiam, atque etiam discenda. Cicero 3. Tuscul.</note> cousa que se chegou a louvar muito
-          em <pb n="não numerada 31" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0034.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/> Hippocrates;<note xml:id="n_semmedo_0008">(5.) A suturis esse deceptum Hippocrates cõmendavit, more magnorum
-            virorum, fiduciam, &amp; perit ut magnarum rerum habentium; nam leviæ ingeniæ, quia
-            nihil habent, nihil sibi detrahunt; magno ingenio multaque nihilominus habituro,
-            convenit etiam simplex veri erroris confessio. Cornel. Cels. lib. 8. cap. 4. </note> he
-          certo que naõ merece menos encomios no heroico engenho deste grande professor da Medicina,
-          que assim conheceo a vastidaõ de huma sciencia, que se estriba em falliveis, conjecturaes
-          fundamentos, para confessar discretamente seus erros, em differença dos ignorantes, cuja
-          philaucia os conserva obstinados na sua cegueira, parecendolhes que tem chegado ao fim da
-          Medicina, para cuja comprehensaõ he breve termo a idade mais provecta.<note xml:id="n_semmedo_0009">(6.) Vita
-            brevis, Ars vero longa, &amp;c.</note></p>
-        <p xml:id="p_semmedo_1104">Cada huma das curas de que este livro consta, he hum compendio dos mais genuinos
-          remedios, com que devem tratarse aquelles males; porque seu Author naõ só propoem o
-          remedio em que observou utilidade; mas com indefesso trabalho faz huma copiosa silva de
-          outros muitos, que para os ditos males saõ proveitosos; escrevendo com animo taõ candido,
-          &amp; com engenho taõ livre, que nem se faz escravo da douta antiguidade que venera, nem
-          se vincula às mesmas novidades que louva;<note xml:id="n_semmedo_0010">(7. Nos enim in verba parentum non
-            juravimus, in verba veritatis stetimus, nã absque veritatis examine antiquitati cedere
-            solius antiquitatis ratione, est ignavæ timiditatis servitus, &amp; fatuæ ignorantiæ
-            ultima desperatio. Gasp. Caldera de Heredia Tribun. Med. fol. 281.</note> &amp; como
-          quem he mais amante da verdade, que de Plataõ, assim ajusta os preceitos dos antigos com
-          os novos documentos dos modernos, que tudo parece doutrina de huma mesma Escola,
-          nobilitada com remedios espagyricos, &amp; enriquecida com os seus excellentes
-          bezoarticos, de cujas eximias virtudes parece que teme a morte as efficacias, acclamadas
-          naõ só nas vozes dos Portuguezes, mas nas linguas das Nações estrangeiras, &amp; nos
-          faustissimos successos com que até na India, donde nos vem os melhores antidotos, se
-          singularizàraõ entre todos, de maneira que nunca as tempestades da enveja puderaõ lançar a
-          pique o baxel da sua reputaçaõ, nem arrancar a robusta arvore de sua fama,<note xml:id="n_semmedo_0011">(8.) Non
-            est arbor fortis nisi in quam frequens ventus incursat, ipsa enim vexatione
-            constringitur, &amp; radices certius figit. Seneca de Providentia cap. 2.</note> porque
-          o Author destes segredos, tendo por objecto o bem commum, soube resistir com animo
-          constante aos assaltos da emulaçaõ,<note xml:id="n_semmedo_0012">(9) Hoc est præcipuũ posse, læto animo ad versa
-            tolerare, &amp; quidquid acciderit sic ferre quasi sibi voluerit accidisse. Seneca lib.
-            3. Nat, quæst.</note> &amp; foy sempre trabalhando na cultura dos livros, para nos
-          deixar este prestantissimo fruto de suas facundissimas obras, dignissimas sem duvida de se
-          darem ao prelo. V. Magestade mandará o que for servido. Lisboa 2. de Julho de 1706.</p>
+        <p xml:id="p_semmedo_1101">LI por mandado de V. Magestade as Observações Medicinaes do
+          Doutor Joaõ Curvo Semmedo; escritas com elegancia na lingua Latina, &amp; vertidas com
+          formalidade na Portugueza; obra taõ douta, que seguras traz comsigo as approvações, &amp;
+          que logrará infalliveis os applausos prevenidos já na sua Polyanthea, em q̃ a elevada
+          penna do Author fez voar o seu celebre nome às terras mais remotas, sendo glorioso
+          assumpto das vozes da Fama, &amp; immortalizando em toda a posteridade a sua memoria,<note
+            xml:id="n_semmedo_0004">(1.) Virum laude dignum Musa vetat mori.</note> com decoroso
+          credito da Medicina, com grande utilidade da saude humana, &amp; com gloria indelevel da
+          Naçaõ Portugueza, para cuja felicidade parece que foy altamente destinado este Varaõ
+            sciente.<note xml:id="n_semmedo_0005">(2.) Cùm alicujus gentis bona vult Deus ponit in
+            ejus regibus scientiam, aui regnum in ejus sapientibus. Euseb. apud Garau tom. I. maxim.
+            24.</note></p>
+        <p xml:id="p_semmedo_1102">De cem casos se compoem o volume deste prodigioso bem concinnado
+          livro, animados com tantos medicinaes dictames, &amp; escriptos com taõ suave, elegante
+          estylo, que naõ só he para os doentes efficaz remedio pela doutrina; mas tambem para os
+          Leytores agradavel divertimento pela frase.<note xml:id="n_semmedo_0006">(3.) Omne tulit
+            punctum qui miscuit utile dulci. Horat.</note> E certo que tenho por gloria o haver
+          feito ao Author com mais culta penna algũas persuasões para dar a luz esta obra, quando vi
+          que na sua Polyanthea Medicinal a prometia.</p>
+        <p xml:id="p_semmedo_1103">Naõ se contentou o Author deste frutuosissimo livro com se
+          empregar nervozamente em soccorrer aos seus enfermos, livrando-os scientificamente dos
+          poderes da morte; senão q̃ tambem se occupa em deixar à posteridade estas immunidades nos
+          seus remedios, referindo as Observações com tal verdade, que nem se esquece das minimas
+          circunstancias daquelles casos; nem se envergonha de confessar ingenuamente o como se
+          enganava algũas vezes nos discursos;<note xml:id="n_semmedo_0007">(4) Optimus, ac
+            gravissimus quisque consuetur se multa ignorare, sibi etiam, atque etiam discenda.
+            Cicero 3. Tuscul.</note> cousa que se chegou a louvar muito em <pb n="não numerada 31"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0034.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          /> Hippocrates;<note xml:id="n_semmedo_0008">(5.) A suturis esse deceptum Hippocrates
+            cõmendavit, more magnorum virorum, fiduciam, &amp; perit ut magnarum rerum habentium;
+            nam leviæ ingeniæ, quia nihil habent, nihil sibi detrahunt; magno ingenio multaque
+            nihilominus habituro, convenit etiam simplex veri erroris confessio. Cornel. Cels. lib.
+            8. cap. 4. </note> he certo que naõ merece menos encomios no heroico engenho deste
+          grande professor da Medicina, que assim conheceo a vastidaõ de huma sciencia, que se
+          estriba em falliveis, conjecturaes fundamentos, para confessar discretamente seus erros,
+          em differença dos ignorantes, cuja philaucia os conserva obstinados na sua cegueira,
+          parecendolhes que tem chegado ao fim da Medicina, para cuja comprehensaõ he breve termo a
+          idade mais provecta.<note xml:id="n_semmedo_0009">(6.) Vita brevis, Ars vero longa,
+            &amp;c.</note></p>
+        <p xml:id="p_semmedo_1104">Cada huma das curas de que este livro consta, he hum compendio
+          dos mais genuinos remedios, com que devem tratarse aquelles males; porque seu Author naõ
+          só propoem o remedio em que observou utilidade; mas com indefesso trabalho faz huma
+          copiosa silva de outros muitos, que para os ditos males saõ proveitosos; escrevendo com
+          animo taõ candido, &amp; com engenho taõ livre, que nem se faz escravo da douta
+          antiguidade que venera, nem se vincula às mesmas novidades que louva;<note
+            xml:id="n_semmedo_0010">(7. Nos enim in verba parentum non juravimus, in verba veritatis
+            stetimus, nã absque veritatis examine antiquitati cedere solius antiquitatis ratione,
+            est ignavæ timiditatis servitus, &amp; fatuæ ignorantiæ ultima desperatio. Gasp. Caldera
+            de Heredia Tribun. Med. fol. 281.</note> &amp; como quem he mais amante da verdade, que
+          de Plataõ, assim ajusta os preceitos dos antigos com os novos documentos dos modernos, que
+          tudo parece doutrina de huma mesma Escola, nobilitada com remedios espagyricos, &amp;
+          enriquecida com os seus excellentes bezoarticos, de cujas eximias virtudes parece que teme
+          a morte as efficacias, acclamadas naõ só nas vozes dos Portuguezes, mas nas linguas das
+          Nações estrangeiras, &amp; nos faustissimos successos com que até na India, donde nos vem
+          os melhores antidotos, se singularizàraõ entre todos, de maneira que nunca as tempestades
+          da enveja puderaõ lançar a pique o baxel da sua reputaçaõ, nem arrancar a robusta arvore
+          de sua fama,<note xml:id="n_semmedo_0011">(8.) Non est arbor fortis nisi in quam frequens
+            ventus incursat, ipsa enim vexatione constringitur, &amp; radices certius figit. Seneca
+            de Providentia cap. 2.</note> porque o Author destes segredos, tendo por objecto o bem
+          commum, soube resistir com animo constante aos assaltos da emulaçaõ,<note
+            xml:id="n_semmedo_0012">(9) Hoc est præcipuũ posse, læto animo ad versa tolerare, &amp;
+            quidquid acciderit sic ferre quasi sibi voluerit accidisse. Seneca lib. 3. Nat,
+            quæst.</note> &amp; foy sempre trabalhando na cultura dos livros, para nos deixar este
+          prestantissimo fruto de suas facundissimas obras, dignissimas sem duvida de se darem ao
+          prelo. V. Magestade mandará o que for servido. Lisboa 2. de Julho de 1706.</p>
         <signed>Doutor Francisco da Fonseca Henriques.</signed>
       </div>
-      <pb n="não numerada 32" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0035.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 32"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0035.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="errata">
         <head xml:id="h_semmedo_0116">ERRATAS.</head>
         <table>
@@ -1538,13 +1592,14 @@
           </row>
         </table>
       </div>
-      <pb n="não numerada 33" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0036.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 33"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0036.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="LicencaPaco">
         <head xml:id="h_semmedo_0117">LICENÇA Do Paço.</head>
         <div type="licenca-1">
-          <p xml:id="p_semmedo_1105">QUe se possa imprimir, vistas as licenças do Santo Officio, &amp; Ordinario, &amp;
-            depois de impresso tornará à mesa para se conferir, &amp; taxar, &amp; sem isso naõ
-            correrá. Lisboa 5. de Julho de 1706.</p>
+          <p xml:id="p_semmedo_1105">QUe se possa imprimir, vistas as licenças do Santo Officio,
+            &amp; Ordinario, &amp; depois de impresso tornará à mesa para se conferir, &amp; taxar,
+            &amp; sem isso naõ correrá. Lisboa 5. de Julho de 1706.</p>
           <signed>Duque P.</signed>
           <signed>Lacerda.</signed>
           <signed>Vieira.</signed>
@@ -1553,8 +1608,8 @@
           <signed>Andrade.</signed>
         </div>
         <div type="licenca-2">
-          <p xml:id="p_semmedo_1106">VIsto estar conforme com o original pode correr este livro. Lisboa 29. de Julho de
-            1707.</p>
+          <p xml:id="p_semmedo_1106">VIsto estar conforme com o original pode correr este livro.
+            Lisboa 29. de Julho de 1707.</p>
           <signed>Carneyro.</signed>
           <signed>Moniz.</signed>
           <signed>Hasse.</signed>
@@ -1568,41 +1623,48 @@
           <signed>Fr. Pedro Bispo de Bona.</signed>
         </div>
         <div type="licenca-4">
-          <p xml:id="p_semmedo_1108">TAxão este Livro em dezoito tostoẽs. Lisboa 28. de Agosto de 1707.</p>
+          <p xml:id="p_semmedo_1108">TAxão este Livro em dezoito tostoẽs. Lisboa 28. de Agosto de
+            1707.</p>
           <signed>Oliveira.</signed>
           <signed>Vieira.</signed>
           <signed>Lacerda.</signed>
           <signed>Carneiro.</signed>
         </div>
       </div>
-      <pb n="não numerada 34" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0037.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 34"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0037.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <div type="privilegio">
         <head xml:id="h_semmedo_0118">PRIVILEGIO.</head>
-        <p xml:id="p_semmedo_1109">EU ELREY faço saber que Joaõ Curvo Semmedo Medico da minha Casa, Familiar do Santo
-          Officio, &amp; Cavalleiro professo da Ordem de Christo me representou por sua petiçaõ, que
-          elle com licença minha, &amp; as mais requisitas mandàra imprimir o livro intitulado,
-          Observações Medicas Doutrinaes; &amp; porque este era de muita utilidade ao bem commun,
-          &amp; na composiçaõ delle tivera muito trabalho, &amp; na impressaõ fizera grande
-          dispendio, me pedia lhe fizesse mercè conceder privilegio para que por tempo de dez annos
-          nenhum impressor, nem outra pessoa o pudesse imprimir, nem mandar vir de fóra do Reyno;
-          &amp; visto o que allegou, &amp; o trabalho que o Supplicante teve em compor o livro
-          referido, Hey por bem fazerlhe mercè de que nenhum impressor, nem outra alguma pessoa
-          possa imprimir, nem mandar vir de fóra do Reyno o livro de que trata, por tempo de dez
-          annos, como pede. E este Alvará se cumprirá como nelle se contem, de que pagou de novos
-          direitos quinhentos &amp; quarenta reis, que se carregáraõ ao Thesoureiro delles a folhas
-          noventa &amp; sete do livro segundo da sua receita, &amp; se registou o conhecimento em
-          fórma no livro segundo do Regimento géral a folhas trinta &amp; cinco. Joseph da Maya
-          &amp; Faria o fez em Lisboa a nove de Setembro de 1707. Luis Paulino da Silva o fez
-          escrever.</p>
+        <p xml:id="p_semmedo_1109">EU ELREY faço saber que Joaõ Curvo Semmedo Medico da minha Casa,
+          Familiar do Santo Officio, &amp; Cavalleiro professo da Ordem de Christo me representou
+          por sua petiçaõ, que elle com licença minha, &amp; as mais requisitas mandàra imprimir o
+          livro intitulado, Observações Medicas Doutrinaes; &amp; porque este era de muita utilidade
+          ao bem commun, &amp; na composiçaõ delle tivera muito trabalho, &amp; na impressaõ fizera
+          grande dispendio, me pedia lhe fizesse mercè conceder privilegio para que por tempo de dez
+          annos nenhum impressor, nem outra pessoa o pudesse imprimir, nem mandar vir de fóra do
+          Reyno; &amp; visto o que allegou, &amp; o trabalho que o Supplicante teve em compor o
+          livro referido, Hey por bem fazerlhe mercè de que nenhum impressor, nem outra alguma
+          pessoa possa imprimir, nem mandar vir de fóra do Reyno o livro de que trata, por tempo de
+          dez annos, como pede. E este Alvará se cumprirá como nelle se contem, de que pagou de
+          novos direitos quinhentos &amp; quarenta reis, que se carregáraõ ao Thesoureiro delles a
+          folhas noventa &amp; sete do livro segundo da sua receita, &amp; se registou o
+          conhecimento em fórma no livro segundo do Regimento géral a folhas trinta &amp; cinco.
+          Joseph da Maya &amp; Faria o fez em Lisboa a nove de Setembro de 1707. Luis Paulino da
+          Silva o fez escrever.</p>
         <signed>REY.</signed>
       </div>
-      <pb n="não numerada 35" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0038.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
-      <pb n="não numerada 36" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0039.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 35"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0038.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
+      <pb n="não numerada 36"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0039.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+      />
     </front>
     <body>
-      <pb n="1"/>
+      <pb n="1"
+        facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0040.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>
       <head xml:id="h_semmedo_0010">OBSERVAÇOENS MEDICAS DOUTRINAES</head>
-      <div type="chapter" n="1" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0040.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
+      <div type="chapter" n="1"
+        facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0040.jp2&amp;id=bub_gb_qCVH54Hs2i0C">
         <head xml:id="h_semmedo_0011">OBSERVAÇAM I.</head>
         <p xml:id="p_semmedo_0006">De hũa Colica nephritica, que affligio ao Excellentissimo senhor
           Principe de Ligne, &amp; Marquez de Arrouches, em 6. de Janeiro de 1685.</p>
@@ -1615,7 +1677,9 @@
           Filosofo respondeo: Ando buscando a caveira delRey de Macedonia vosso pay; mas atègora naõ
           pude achalla; porque nenhũa differença ha entre as dos soberanos, &amp; humildes.
           Documento he este verdadeyramente digno de taõ grande Filosofo; porque a morte, as
-          doenças, &amp; as dores nem respeytaõ as Magestades, nem veneraõ as pessoas, nem <pb n="2" facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0041.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>obedecem aos cargos; antes com tanta ousadia se atrevem aos Principes soberanos, como
+          doenças, &amp; as dores nem respeytaõ as Magestades, nem veneraõ as pessoas, nem <pb n="2"
+            facs="https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0041.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />obedecem aos cargos; antes com tanta ousadia se atrevem aos Principes soberanos, como
           aos pastores humildes. Quem havia de imaginar que o Excellentissimo Principe de Ligne, já
           pelo esplendor do sangue illustrado com os augustos diademas de seus Reaes Progenitores;
           jà pela profundidade do seu juizo qualificado com a agudeza de tantas obras, &amp; dotado
@@ -1639,7 +1703,9 @@
           alimentos, &amp; expurgar as fezes: &amp; posto que o corpo dos intestinos seja hum
           continuado desde o principio atè o fim; com tudo pela variedade da substancia huns se
           chamaõ grossos, outros delgados: por razaõ do officio, huns recebem, &amp; outros
-          distribuem: por razaõ da figura huns saõ rectos, outros <pb n="3" facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0042.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>anfractuosos: por razaõ do sitio, huns saõ inferiores, outros superiores: finalmente por
+          distribuem: por razaõ da figura huns saõ rectos, outros <pb n="3"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0042.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />anfractuosos: por razaõ do sitio, huns saõ inferiores, outros superiores: finalmente por
           razaõ do numero, se reduzem a seis: tres delgados, como saõ o Duodeno, o Jejuno, &amp; o
           Ilio; &amp; tres grossos, como saõ o Cego, o Colon, &amp; o Recto. O primeiro intestino,
           começando do estomago, se chama Duodeno, porque tem semelhança de doze dedos; naõ tem
@@ -1663,7 +1729,9 @@
           dos vestidos, mas nas obras ordenadas com acerto, &amp; effeituadas com felicidade, puz
           todo o cuidado em conhecer a enfermidade, &amp; os lugares em que estava, para lhe
           applicar os remedios convenientes; mas como no mesmo lugar (qual he o ventre) hajaõ muitas
-          partes, naõ he fácil distinguir o sitio da dor pela acçaõ <pb n="4" facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0043.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>lesa, nem pela retençaõ das fezes; porque tinha este senhor continuos desejos de
+          partes, naõ he fácil distinguir o sitio da dor pela acçaõ <pb n="4"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0043.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />lesa, nem pela retençaõ das fezes; porque tinha este senhor continuos desejos de
           vomitar, grandes dores no ventre, excessiva adstriçaõ das fezes, repetidas vontades de
           ourinar, o que fazia gotta a gotta, &amp; com grandissimos ardores. Porèm como estes
           symptomas sejaõ quasi identicos na dor de colica, &amp; na nephritica, &amp; se equivoquem
@@ -1688,7 +1756,9 @@
           causa de tanto mal; &amp; para conseguir estas intenções, lhe fiz lançar huma ajuda
           emolliente preparada pelo modo seguinte. Tomem de raizes de malvaisco machucadas huma
           onça; de folhas de malvas, violas, alfavaca de cobra, &amp; de ortigas mortas, de cada
-          cousa destas huma maõ <pb n="5" facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0044.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>chea; de semente de linho, &amp; de alforvas, de cada cousa destas meya onça; de raiz de
+          cousa destas huma maõ <pb n="5"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0044.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />chea; de semente de linho, &amp; de alforvas, de cada cousa destas meya onça; de raiz de
           aristoloquia duas oitavas; tudo se coza com hum frangaõ em huma canada de agua, atè ficar
           hum só quartilho; &amp; coandose este cozimento, mandei ajuntar a quatro onças delle huma
           onça de diaprunis com tres onças de lambedor violado; ordenando que esta ajuda se
@@ -1712,7 +1782,9 @@
           para curar muitas doenças, como dizem graves Authores, (7.) não venceo de todo as dores,
           nem as afflições; porque naõ tem a Medicina remedio algum tam magnifico, que aproveite
           igualmente a todos; &amp; por isso às pessoas, a quem o vomitar he mui custoso, se naõ
-          devem applicar vomitorios com tanta confiança, como àquellas, a quem he facil.<pb n="6" facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0045.jp2&amp;id=bub_gb_qCVH54Hs2i0C"/>Por esta causa appelei para tres onças de mannà desatado em quatro de oleo de amendoas
+          devem applicar vomitorios com tanta confiança, como àquellas, a quem he facil.<pb n="6"
+            facs="https://ia902806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_0045.jp2&amp;id=bub_gb_qCVH54Hs2i0C"
+          />Por esta causa appelei para tres onças de mannà desatado em quatro de oleo de amendoas
           doces tirado sem fogo; porque deste remedio tenho visto grandes maravilhas em casos
           semelhantes. Porèm como dores tivessem jà tomado grande posse, desprezáraõ a efficacia de
           tam especifico medicamento.</p>
@@ -9784,7 +9856,8 @@
             proprio modo que o sol he o coraçaõ do mundo, se póde tambem dizer que o coraçaõ he o
             sol do homem: &amp; assim como o sol com a sua presença, &amp; quentura alegra, &amp; dà
             vida, &amp; esforço a tudo; porque a terra se alcatifica de flores, as ervas crescem à
-            competencia, as <term lemma="árvore" norm="árvores" msd="plural" xml:id="t_semmedo_0001">arvores</term> brotaõ fecundas, &amp; se revestem de verde gala de esperança: pelo
+            competencia, as <term lemma="árvore" norm="árvores" msd="plural" xml:id="t_semmedo_0001"
+              >arvores</term> brotaõ fecundas, &amp; se revestem de verde gala de esperança: pelo
             contrario ausentandose o sol, logo a terra entristece, as ervas se seccaõ, as flores
             murchaõ, as arvores se despem das folhas, &amp; tudo o que a fecundidade da natureza
             avia produzido, se desmaya.</s> Da mesma forte todo o corpo humano se anima, &amp;
@@ -11498,7 +11571,8 @@
           utilissimas à saude; mas se privaõ de saber mil segredos admiraveis, com que os doentes
           melhor se curassem, &amp; os Medicos tivessem melhor fama. <s xml:id="s_semmedo_0002">Eu
             entendo que se o tempo, que alguns gastaõ em especular questões infrutuosas, o
-            applicassem ao estudo da Chymica, da Anatomia, &amp; da <term lemma="Botânica" norm="botânica" xml:id="t_semmedo_0002">botanica</term>, a Medicina fertilissima de
+            applicassem ao estudo da Chymica, da Anatomia, &amp; da <term lemma="Botânica"
+              norm="botânica" xml:id="t_semmedo_0002">botanica</term>, a Medicina fertilissima de
             remedios mais pela preparação, &amp; mais suaves pela pouca, escusando nos doentes os
             enjoos dos almudes &amp; canada de bebidas que lhes damos.</s> Perguntara eu aos que
           aborrecem a Chymica, de que serve aos, &amp; aos Medicos, o saber se os peixes respirão,
