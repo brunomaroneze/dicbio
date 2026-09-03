@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -35,6 +34,9 @@
                     elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
                         <att> facs</att> com o endereço URL do arquivo da imagem correspondente à
                     página em questão.</p>
+                <p>Foram colocados como <gi>body</gi> os cinco capítulos da exposição do sitema de
+                    Lineu e o dicionário botânico. Os índices e catálogos finais foram transcritos
+                    como <gi>back</gi> (ou seja, como elementos pós-textuais).</p>
             </editorialDecl>
             <projectDesc>
                 <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -44,8 +46,7 @@
     </teiHeader>
     <text>
         <front>
-            <titlePage
-                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0005_rosto_t24-C-R0120.jpg">
+            <titlePage facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0005_rosto_t24-C-R0120.jpg">
                 <titlePart type="main">COMPENDIO DE BOTANICA</titlePart>
                 <titlePart type="desc">, OU NOÇOENS ELEMENTARES DESTA SCIENCIA, segundo os melhores
                     Escritores modernos, expostas na lingua Portugueza,</titlePart>
@@ -62,8 +63,7 @@
             </titlePage>
         </front>
         <body>
-            <pb n="3"
-                facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0007_3_t24-C-R0120.jpg"/>
+            <pb n="3" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0007_3_t24-C-R0120.jpg"/>
             <div type="Parte">
                 <head xml:id="h_brotero2_0001">EXPOSIÇAÕ DO SYSTEMA SEXUAL.</head>
                 <div type="chapter" n="1">
@@ -81,19 +81,14 @@
                         bem destinctamente visivel ou he clandestina. Na que he bem destinctamente
                         visivel, os organos sexuaes saõ assaz apparentes sem o soccorro do
                         microscopio de maneira que ninguem os confundirà jamais nem com as sementes
-                        nem com o tenro fructo. As <pb n="4"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0008_4_t24-C-R0120.jpg"
-                        />plantas, cuja Florecencia he bem destinctamente visivel, humas daõ na
+                        nem com o tenro fructo. As <pb n="4" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0008_4_t24-C-R0120.jpg"/>plantas, cuja Florecencia he bem destinctamente visivel, humas daõ na
                         mesma especie flores todas hermaphroditas, outras daõ flores masculinas e
                         femininas taõbem na mesma especie: no primeiro cazo as flores hermaphroditas
-                        ou tem os estames desapegados entre si e juntamente do pistillo<note
-                            xml:id="n_brotero2_0001">Naõ saõ insertos ao pistillo, mas sim ao
+                        ou tem os estames desapegados entre si e juntamente do pistillo<note xml:id="n_brotero2_0001">Naõ saõ insertos ao pistillo, mas sim ao
                             receptaculo, <term lemma="cálice" xml:id="t_brotero2_0001">calys</term>,
                             ou corolla; e saõ soltos, isto he, tem os filetes desadunados e
-                            igualmente as <term lemma="antera" norm="anteras" msd="plural"
-                                xml:id="t_brotero2_0002">antheras</term>.</note>, ou apegados entre
-                        si ou ao pistillo<note xml:id="n_brotero2_0002">Isto he, insertos ao <term
-                                lemma="pistilo" xml:id="t_brotero2_0003">pistillo</term>, ou parte
+                            igualmente as <term lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0002">antheras</term>.</note>, ou apegados entre
+                        si ou ao pistillo<note xml:id="n_brotero2_0002">Isto he, insertos ao <term lemma="pistilo" xml:id="t_brotero2_0003">pistillo</term>, ou parte
                             equivalente a elle.</note> Se os estames se achaõ desapegados, e saõ de
                         comprimento inderterminado<note xml:id="n_brotero2_0003">Isto he, quando
                             dois delles naõ saõ sempre mais curtos nas flores de quatro e seis
@@ -104,8 +99,7 @@
                         classes, que differem humas das outras pelo numero dos dictos estames, e seu
                         lugar de insersaõ<note xml:id="n_brotero2_0004">Isto he, pelo apego da base
                             do filete ao <term lemma="cálice" xml:id="t_brotero2_0004">calys</term>
-                            ou receptaculo.</note>. Na 1ª. classe ou Monandria<note
-                            xml:id="n_brotero2_0005">Os que dezejarem saber as etymologias Gregas
+                            ou receptaculo.</note>. Na 1ª. classe ou Monandria<note xml:id="n_brotero2_0005">Os que dezejarem saber as etymologias Gregas
                             dos nomes das Classes e Ordens podem consultar o Diccionario dos termos
                             botanicos que ajuntei no fim deste Compendio.</note> as flores constaõ
                         de hum so estame, na 2ª. ou Diandria constaõ de dois, na 3ª. ou Triandria de
@@ -113,10 +107,7 @@
                         ou Hexandria de seis, na 7ª. ou Heptandria de sette, na 8ª. ou Octandria de
                         oito, na 9ª. ou Enneandria de nove, na 10ª. ou Decandria de dez, na 11ª. ou
                         Dodecandria de onze athe dezanove inclusivamente, na 12ª. ou Icosandria de
-                        vinte ou mais insertos ao <term lemma="cálice" xml:id="t_brotero2_0005"
-                            >calyz</term>, na 13ª. ou Polyandria de numerosos <pb n="5"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0009_5_t24-C-R0120.jpg"
-                        /> estames<note xml:id="n_brotero2_0006">O seu numero pode ser de vinte athe
+                        vinte ou mais insertos ao <term lemma="cálice" xml:id="t_brotero2_0005">calyz</term>, na 13ª. ou Polyandria de numerosos <pb n="5" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0009_5_t24-C-R0120.jpg"/> estames<note xml:id="n_brotero2_0006">O seu numero pode ser de vinte athe
                             mil ou mais, contanto que sejaõ insertos ao receptaculo.</note> insertos
                         ao receptaculo. Se os estames das dictas flores hermaphroditas tem hum
                         comprimento determinado, sendo dois mais altos e dois mais curtos,
@@ -126,12 +117,8 @@
                         Monadelphia ou classe 16ª., a Diadelphia ou 17ª. classe se estaõ adunados em
                         dois corpos, e a 18ª. ou Polyadelphia se acazo se achaõ adunados em muitos
                         corpos ou phalanges; se estaõ somente<note xml:id="n_brotero2_0007">Nesta
-                            circumstancia os filetes estaõ desadunados.</note> apegados pelas <term
-                            lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0006"
-                            >antheras</term> constituem a classe 19ª. ou Syngenesia, e a 20ª. ou
-                        Gynandria quando somente estaõ apegados pelas suas bases ao pistillo<note
-                            xml:id="n_brotero2_0008">Nesta classe tanto as <term lemma="antera"
-                                norm="anteras" msd="plural" xml:id="t_brotero2_0007">antheras</term>
+                            circumstancia os filetes estaõ desadunados.</note> apegados pelas <term lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0006">antheras</term> constituem a classe 19ª. ou Syngenesia, e a 20ª. ou
+                        Gynandria quando somente estaõ apegados pelas suas bases ao pistillo<note xml:id="n_brotero2_0008">Nesta classe tanto as <term lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0007">antheras</term>
                             como os filetes estaõ desadunados entre si, e somente a circumstancia de
                             estarem insertos ao pistillo ou seu equivalente he que constitue o
                             caracter da classe.</note>. A florecencia pode ainda ser bem
@@ -143,14 +130,11 @@
                         clandestina, isto he, quando os organos sexuaes saõ de huma forma
                         singularizada, apparentemente confundidos, e occultos á vista, precizando se
                         de microscopio para se poderem reconhecer e destinguir entre si, as plantas
-                        que assim florecem <pb n="6"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0010_6_t24-C-R0120.jpg"
-                        />saõ classadas na Cryptogamia ou classe 24ª. e ultima do Systema. Eu
+                        que assim florecem <pb n="6" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0010_6_t24-C-R0120.jpg"/>saõ classadas na Cryptogamia ou classe 24ª. e ultima do Systema. Eu
                         fallarei depois mais circumstanciadamente de todas estas classes; por ora
                         estas ideas geraes seraõ sufficientes para facilitar a intelligencia da
                         Clave seguinte.</p>
-                    <pb n="7"
-                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0011_7_t24-C-R0120.jpg"/>
+                    <pb n="7" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0011_7_t24-C-R0120.jpg"/>
                     <list>
                         <head xml:id="h_brotero2_0003">CLAVE DO SISTEMA SEXUAL</head>
                         <item xml:id="i_brotero2_0001">Florecencia <list>
@@ -203,9 +187,7 @@
                                                   <item xml:id="i_brotero2_0027">em muitos corpos
                                                   ... XVIII. Polyadelphia</item>
                                                   </list></item>
-                                                  <item xml:id="i_brotero2_0028">pelas <term
-                                                  lemma="antera" norm="anteras" msd="plural"
-                                                  xml:id="t_brotero2_0008">antheras</term> ... XIX.
+                                                  <item xml:id="i_brotero2_0028">pelas <term lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0008">antheras</term> ... XIX.
                                                   Syngenesia</item>
                                                   </list></item>
                                                   <item xml:id="i_brotero2_0029">ao pistillo. ...
@@ -229,8 +211,7 @@
                             </list>
                         </item>
                     </list>
-                    <pb n="8"
-                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0012_8_t24-C-R0120.jpg"/>
+                    <pb n="8" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0012_8_t24-C-R0120.jpg"/>
                     <p xml:id="p_brotero2_0004"><s xml:id="s_brotero2_0001">As Ordens das treze
                             primeiras classes, em que ha sempre flores hermaphroditas, saõ fundadas
                             no numero de pistillos, que se contaõ sempre pelos estyletes
@@ -257,10 +238,7 @@
                         denominadas as Siliculosas (siliculosae) ou plantas cujo pericarpo he uma
                         Silicula, e as Siliquosas (Siliquosae) ou plantas que tem huma siliqua por
                         pericarpo.</p>
-                    <p xml:id="p_brotero2_0006">Nas Classes seguintes, taes como a Monadelphia, <pb
-                            n="9"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0013_9_t24-C-R0120.jpg"
-                        />Diadelphia, Polyadelphia, Monoicia, Dioicia, e Gynandria, as Ordens saõ
+                    <p xml:id="p_brotero2_0006">Nas Classes seguintes, taes como a Monadelphia, <pb n="9" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0013_9_t24-C-R0120.jpg"/>Diadelphia, Polyadelphia, Monoicia, Dioicia, e Gynandria, as Ordens saõ
                         ordinariamente deduzidas do numero dos estames e tem por conseguinte os
                         mesmos nomes, que se daõ às primeiras trezes classes do systema que saõ
                         fundadas no dicto numero; assim a Ordem chamada Monandria contem flores de
@@ -278,28 +256,21 @@
                         alem d'alguma das predictas ordens, a Monadelphia, Syngenesia e Gynandria;
                         na primeira destas tres ordens os estames das flores masculinas estaõ todos
                         apegados pelos filetes em hum corpo, na ordem Syngenesia os estames das
-                        dictas flores tem as <term lemma="antera" norm="anteras" msd="plural"
-                            xml:id="t_brotero2_0009">antheras</term> adunadas, e na ordem Gynandria
+                        dictas flores tem as <term lemma="antera" norm="anteras" msd="plural" xml:id="t_brotero2_0009">antheras</term> adunadas, e na ordem Gynandria
                         estaõ apegados ao pistillo.</p>
                     <p xml:id="p_brotero2_0008">Na classe Syngenesia a primeira Ordem he chamada
                         Polygamia igual (polygamia æqualis) e nella todos os flosculos da flor
                         composta saõ hermaphroditos tanto no disco como no rayo; na Polygamia
                         superflua (polygamia superflua) os flosculos do disco saõ hermaphroditos, os
                         do rayo femininos, e huns e outros saõ ferteis; na Polygamia frustrada
-                        (polygamia frustranea) os flosculos hermaphroditos do disco saõ <pb n="10"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0014_10_t24-C-R0120.jpg"
-                        /> ferteis, e os femininos do rayo saõ estereis; na Polygamia necessaria
+                        (polygamia frustranea) os flosculos hermaphroditos do disco saõ <pb n="10" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0014_10_t24-C-R0120.jpg"/> ferteis, e os femininos do rayo saõ estereis; na Polygamia necessaria
                         (polygamia necessaria) os flosculos do disco saõ masculinos ou
                         hermaphroditos estereis, e os do raio femininos ferteis; na Polygamia
-                        segregada (polygamia segregata) o <term lemma="cálice"
-                            xml:id="t_brotero2_0010">calys</term> commum comprehende em si muitos
-                            <term lemma="cálice" norm="cálices" msd="plural"
-                            xml:id="t_brotero2_0011">calyces</term> parciaes unifloros ou ainda de
+                        segregada (polygamia segregata) o <term lemma="cálice" xml:id="t_brotero2_0010">calys</term> commum comprehende em si muitos
+                            <term lemma="cálice" norm="cálices" msd="plural" xml:id="t_brotero2_0011">calyces</term> parciaes unifloros ou ainda de
                         maior numero de flosculos<note xml:id="n_brotero2_0011">
-                            <p xml:id="p_brotero2_0009">Os <term lemma="cálice" norm="cálices"
-                                    msd="plural" xml:id="t_brotero2_0012">calyces</term> parciaes
-                                procedem do <term lemma="cálice" xml:id="t_brotero2_0013"
-                                    >calys</term> commum, e naõ estaõ sobrepostos aos germes.</p>
+                            <p xml:id="p_brotero2_0009">Os <term lemma="cálice" norm="cálices" msd="plural" xml:id="t_brotero2_0012">calyces</term> parciaes
+                                procedem do <term lemma="cálice" xml:id="t_brotero2_0013">calys</term> commum, e naõ estaõ sobrepostos aos germes.</p>
                         </note>; na Monogamia (monogamia) as flores saõ simplices, e naõ compostas
                         como nas ordens precedentes. Na classe Polygamia ha tres Ordens, a saber, a
                         Monoicia, em que as flores hermaphroditas e unisexuaes, que constituem a
@@ -311,8 +282,7 @@
                         Fetos, Musgos, Algas, e Fungos; como a exposiçaõ dos seus caracteres requer
                         mais extensaõ do que me parece ser propria deste capitulo, reservala-hei
                         para quando tractar da classe, a que dizem respeito.</p>
-                    <pb n="11"
-                        facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0015_11_t24-C-R0120.jpg"/>
+                    <pb n="11" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0015_11_t24-C-R0120.jpg"/>
                     <table>
                         <head xml:id="h_brotero2_0004">CLASSES com as suas ORDENS
                             respectivas.</head>
@@ -374,8 +344,7 @@
                             <cell>Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Hexagynia,
                                 Polygynia.</cell>
                         </row>
-                        <pb n="12"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0016_12_t24-C-R0120.jpg"/>
+                        <pb n="12" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0016_12_t24-C-R0120.jpg"/>
                         <row>
                             <cell>XIV. DIDYNAMIA</cell>
                             <cell>Gymnospermia, Angiospermia.</cell>
@@ -428,8 +397,7 @@
                         </row>
                     </table>
                 </div>
-                <pb n="13"
-                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0017_13_t24-C-R0120.jpg"/>
+                <pb n="13" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0017_13_t24-C-R0120.jpg"/>
                 <div type="chapter" n="2">
                     <head xml:id="h_brotero2_0005">CAPITULO II. Das Classes e Ordens do Systema de
                         Linneo em particular.</head>
@@ -443,8 +411,7 @@
                             flores; contem athe ao prezente treze generos, dos quaes dez daõ fructos
                             guarnecidos de pericarpo, a saber, a Renealmia, Amomum, Curcuma, Thalia,
                             Maranta, Myrosma, Kaempferia, Canna, Alpinia, e Costus, e tres daõ
-                            fructos sem pericarpo, e monospermos, como saõ a Boerhaavia<note
-                                xml:id="n_brotero2_0012">O Leitor vera (nos Tractados dos Generos e
+                            fructos sem pericarpo, e monospermos, como saõ a Boerhaavia<note xml:id="n_brotero2_0012">O Leitor vera (nos Tractados dos Generos e
                                 Especies de plantas publicados pelo Dr. Linneo) alguns generos desta
                                 classe com especies que pertencem a outras, como na Salicornia,
                                 Boerhaavia, Corispermum, e Callitriche, pelo contrario observará que
@@ -459,12 +426,10 @@
                                 outras. Linneo tinha bem reconhecido a necessidade deste trabalho,
                                 mas o que elle nos deixou começado a este respeito està ainda muito
                                 incompleto.</note>, Hippuris, e Salicornia.</p>
-                        <pb n="14"
-                            facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0018_14_t24-C-R0120.jpg"/>
+                        <pb n="14" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0018_14_t24-C-R0120.jpg"/>
                         <p xml:id="p_brotero2_0012">A 2ª. Ordem ou Digynia comprehende as plantas
                             que daõ flores com dois pistillos e contem os generos Corispermum,
-                            Callitriche, Blitum, Mniarum, e Cinna que he huma planta graminea<note
-                                xml:id="n_brotero2_0013">Linneo foy obrigado a separar os
+                            Callitriche, Blitum, Mniarum, e Cinna que he huma planta graminea<note xml:id="n_brotero2_0013">Linneo foy obrigado a separar os
                                 differentes generos de Gramas em razaõ das leys do seu systema; a
                                 maior parte dellas estaõ classados na Triandria; o Anthoxanthum esta
                                 na Diandria; a Gahnia, Oryza, e Ehrharta na Hexandria; a Zizania,
@@ -484,9 +449,7 @@
                                 2º. nos que tem flores sottopostas, corollas monopetalas irregulares
                                 e por fructo huma capsula, como saõ a Pœderota, Veronica, Gratiola,
                                 Schwenkia, Justicia, Dianthera, Calceolaria, Pinguicula,
-                                Utricularia, e Wulfenia; <pb n="15"
-                                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0019_15_t24-C-R0120.jpg"
-                                />3º. nos que tem flores sottopostas, corollas monopetalas
+                                Utricularia, e Wulfenia; <pb n="15" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0019_15_t24-C-R0120.jpg"/>3º. nos que tem flores sottopostas, corollas monopetalas
                                 irregulares, e sementes nuas, como saõ a Verbena, Lycopus,
                                 Amethystea, Ziziphora, Monarda, Rosmarinus, Salvia, Cunila, e
                                 Collinsonia; 4º. nos que tem flores sottopostas e corollas de quatro
@@ -512,10 +475,7 @@
                                 Gladiolus, Witsenia, Ixia, e Dilatris; 2º. nos que daõ flores
                                 sottopostas, como a Wachendorfia, Commelina, Hippocratea,
                                 Loeflingia, Williachia, Tamarindus, Callisia, Rumphia, Cneorum,
-                                Xyris, Comocladia, Olax, Rotala, Ortegia,<pb n="16"
-                                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0020_16_t24-C-R0120.jpg"
-                                />Polycnemum; 3º. nos que daõ flores casulosas<note
-                                    xml:id="n_brotero2_0014">Todos estes generos, e os da Ordem
+                                Xyris, Comocladia, Olax, Rotala, Ortegia,<pb n="16" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0020_16_t24-C-R0120.jpg"/>Polycnemum; 3º. nos que daõ flores casulosas<note xml:id="n_brotero2_0014">Todos estes generos, e os da Ordem
                                     seguinte pertencem a familia natural das Gramineas.</note> como
                                 o Schaenus, Cyperus, Scirpus, Eriophorum, Nardus, Lygeum, Kyllingia,
                                 Fuirena, e Pomereulla.</p>
@@ -540,9 +500,7 @@
                             <head xml:id="h_brotero2_0009">§. Classe IV</head>
                             <p xml:id="p_brotero2_0019">TETRANDRIA (tetrandria); esta classe
                                 comprehende as plantas que daõ flores hermaphroditas com quatro
-                                estames de altura igual ou endeterminada (e nisto<pb n="17"
-                                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0021_17_t24-C-R0120.jpg"
-                                />se destingue da classe Didynamia, cujas plantas daõ flores com
+                                estames de altura igual ou endeterminada (e nisto<pb n="17" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0021_17_t24-C-R0120.jpg"/>se destingue da classe Didynamia, cujas plantas daõ flores com
                                 dois estames sempre mais curtos) taes saõ por ex. o cardo penteador,
                                 a saudade, escabiosa, tanchagem, diabelha, ruiva dos tintureiros,
                                 amor de hortelaõ, cerejeira brava, alchemilla, arvore do paraiso,
@@ -566,10 +524,7 @@
                                 dicocco (saõ as Estrelladas de Ray), como a Rubia, Galium, Asperula,
                                 Scherardia, Spermacoce, Knoxia, Diodia, e Crucianella; 7º. nos que
                                 tem flores sottopostas, corollas monopetalas, e fructo quadricocco
-                                ou composto de quatro bagas adunadas, como o Siphonanthus; <pb
-                                    n="18"
-                                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0022_18_t24-C-R0120.jpg"
-                                />8º. nos que tem flores completas, sottopostas, e corollas de
+                                ou composto de quatro bagas adunadas, como o Siphonanthus; <pb n="18" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0022_18_t24-C-R0120.jpg"/>8º. nos que tem flores completas, sottopostas, e corollas de
                                 quatro petalas, como o Epimedium, Skimmia, Rhacoma, Othera, Orixa,
                                 Ptelea, Samara, Fagara, Ammannia, Banksia, e Hartogia; 9º nos que
                                 tem flores completas, sobrepostas, e corollas de quatro petalas,
@@ -579,16 +534,16 @@
                                 Alchemilla, Dorstenia, e Cometes; 11º nos que tem flores
                                 incompletas, e sobrepostas ao germe, como o Sirium, Acaena,
                                 Isnardia, Elaeagnus, e Gonocarpus.</p>
-                            <p>A 2ª. Ordem ou Digynia comprehende as plantas que daõ flores como
+                            <p xml:id="p_brotero2_0021">A 2ª. Ordem ou Digynia comprehende as plantas que daõ flores como
                                 dois pistillos, como a Bufonia, Hypecoum, Hamamelis, Cuscuta,
                                 Gomozia, Galopina, Aphanes, e Cruzita.</p>
-                            <p>A 3ª. Ordem, ou Tetragynia, consta das plantas que daõ flores com
+                            <p xml:id="p_brotero2_0022">A 3ª. Ordem, ou Tetragynia, consta das plantas que daõ flores com
                                 quatro pistillos, como o Ilex, Coldenia, Sagina, Tillaea, Myginda,
                                 Potamogeton, e Ruppia.</p>
                         </div>
                         <div type="subchapter">
-                            <head>§. Classe V</head>
-                            <p>PENTANDRIA (Pentandria); esta classe, he huma das mais extensas do
+                            <head xml:id="h_brotero2_0010">§. Classe V</head>
+                            <p xml:id="p_brotero2_0023">PENTANDRIA (Pentandria); esta classe, he huma das mais extensas do
                                 Systema, e comprehende as plantas que daõ flores hermaphroditas com
                                 cinco estames, como por ex. a borragem, buglossa, cynoglossa,
                                 murriaõ, quejadilho, meimendro, herva sancta, verbasco, verdeselha,
@@ -598,17 +553,17 @@
                                 />hera, acelga, ulmeiro, cenoira, salsa, coentro, herva doce,
                                 murugem, funcho, sabugueiro, tineiro ou folhada, tamargueira,
                                 sumagre, linho, &amp;c. &amp;c.</p>
-                            <p>Nesta classe ha seis ordens; a 1ª. ou Monogynia consta das plantas
+                            <p xml:id="p_brotero2_0024">Nesta classe ha seis ordens; a 1ª. ou Monogynia consta das plantas
                                 que daõ flores com hum so pistillo; os seus generos saõ destribuidos
                                 1º. nos que tem flores sottopostas, corollas monopetalas, e o fructo
-                                    monospermo<note>Segundo Linneo, todas as plantas destas quatro
+                                    monospermo<note xml:id="n_brotero2_0015">Segundo Linneo, todas as plantas destas quatro
                                     primeiras divisoẽs, menos a Messenschmidia, saõ gymnospermas,
                                     isto he, daõ sementes sem pericarpo, aindaque algumas destas
                                     tenhaõ, segundo elle, duas ou quatro cellulas como a Cerinthe e
                                     Nolana. Veja este respeito o das Sementes. </note>, como a
                                 Mirabilis, Weigela, e Plumbago; 2º. nos que tem flores sottopostas,
                                 corollas monopetalas, e por fructo quatro sementes adunadas duas a
-                                    duas<note>Os generos desta divisaõ e da seguinte pertencem ás
+                                    duas<note xml:id="n_brotero2_0016">Os generos desta divisaõ e da seguinte pertencem ás
                                     Asperifolias de Ray.</note> como a Cerinthe, e Messenschmidia;
                                 3º, nos que tem flores sottopostas, corollas monopetalas, e daõ
                                 quatro sementes, que cahem desadunadas, como o Echium, Heleotropium,
@@ -616,14 +571,12 @@
                                 Asperugo, Cynoglossum, Anchusa, e Myosotis; 4º. nos que tem flores
                                 sottopostas, corollas monopetalas, e daõ cinco sementes, como a
                                 Nolana; 5º. nos que tem flores sottopostas, corollas monopetalas, e
-                                sementes cobertas de pericarpo<note>Esta divisaõ he demasiadamente
+                                sementes cobertas de pericarpo<note xml:id="n_brotero2_0017">Esta divisaõ he demasiadamente
                                     longa, e se poderà abbreviar hum tanto attendendo às differenças
                                     do fructo.</note>, como o Hydrophyllum, Coris, Galax, Cortusa,
                                 Anagallis, Lysimachia, Cyclamen, Dodecatheon, Soldanella, Primula,
                                 Androsace, Aretia, Hottonia, Menyanthes, Doræna, Allamanda,
-                                Theophrasta, Scheffieldia, Retzia, Spigelia, Ophiorhiza, <pb n="20"
-                                    facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0024_20_t24-C-R0120.jpg"
-                                />Convolvulus, Lisianthus, Patagonula, Nigrina, Datura, Hyosciamus,
+                                Theophrasta, Scheffieldia, Retzia, Spigelia, Ophiorhiza, <pb n="20" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0024_20_t24-C-R0120.jpg"/>Convolvulus, Lisianthus, Patagonula, Nigrina, Datura, Hyosciamus,
                                 Nicotiana, Verbascum, Chironia, Diapensia, Phlox, Polemonium,
                                 Ipomœa, Brossœa, Azalea, Epachris, Ceropegia, Nerium, Echites,
                                 Pergularia, Plumieria, Cameraria, Tabernæmontana, Vinca, Ignatia,
@@ -647,12 +600,416 @@
                                 Conocarpus; 9º. nos que tem flores descorolladas, e sottopostas,
                                 como a Celosia, Achyrantes, Chenolea, Illecebrum, e Glaux, 10º. nos
                                 que tem flores descorolladas, e sobrepostas, como o Thesium.</p>
-                            <p>A 2ª. Ordem ou Digynia consta de plantas que daõ</p>
+                            <p xml:id="p_brotero2_0025">A 2ª. Ordem ou Digynia consta de plantas que daõ <pb n="21" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0025_21_t24-C-R0120.jpg"/>flores com dois pistillos; os seus generos saõ divididos 1°. nos
+                                que tem flores sottopostas e corollas monopetalas, como a Stapelia,
+                                Cynanchum, Periploca, Apocynum, Asclepias, Melodinus, Swertia,
+                                Gentiana, Cressa, Hydrolea, Porana, Schrebera, e Steris; 2°. nos que
+                                tem flores sobrepostas, e corollas de cinco petalas, como a
+                                Russelia; 3°. nos que tem flores sottopostas e corollas de cinco
+                                petalas, como a Velezia, Linconia, Nama, Heuchera, Bumalda,
+                                Anabasis, e Gomphrena; 4°. nos que tem flores incompletas (com calys
+                                sem corolla) como a Salsola, Chenopodium, Beta, Herniaria, Bosea, e
+                                Ulmus; 5°. nos que tem flores sobrepostas ao germe, umbrelladas, com
+                                umbrellas universaes e parciaes guarnecidas de involucros, corollas
+                                de cinco petalas, e duas sementes nuas quasi adunadas<note xml:id="n_brotero2_0018">Esta
+                                    divisaô e as duas seguintes comprehendem a familia natural das
+                                    Umbrelladas.</note>, como a Vahlia, Phyllis, Coprosma, Eryngium,
+                                Hydrocotyle, Sanicula, Astrantia, Heracleum, OEnanthe, Echinophora,
+                                Caucalis, Artedia, Daucus, Tordylium, Laserpitium, Peucedanum, Ammi,
+                                Hasselquistia, Conium, Bunium, Athamanta, Buplevrum, Sium, Selinum,
+                                Cuminum, Ferula, Crithmum, Bubon, Cachris, Ligusticum, Angelica, e
+                                Sison; 6º. nos que tem as circumstancias do artigo precedente,
+                                excepto o naõ terem as umbrellas universaes involucro algum, mas taõ
+                                somente as parciaes, como a Aethusa, Coriandrum, Scandix,
+                                Chaerophyllum, Phellandrium, Imperatoria, Sesili, e Cicuta; 7º. nos
+                                que tem as circumstancias do artigo quinto, mas naõ tem involucros
+                                nem universaes nem parciaes, como o Smyrnium, Carum, Thapsia,
+                                Pastinaca, <pb n="22" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0026_22_t24-C-R0120.jpg"/>Anethum, Aegopodium, Apium,<note xml:id="n_brotero2_0019">Exceptuaõ-se a salsa, especie de
+                                    Apium, e a herva doce, de Pimpinella, que tem involucros
+                                    parciaes compostos de foliolos miudos e em pequeno
+                                    numero.</note>, Pimpinella, e Cussonia.</p>
+                            <p xml:id="p_brotero2_0026">A 3ª. Ordem ou Trigynia consta de plantas que daõ flores com tres
+                                pistillos; os seus generos saõ dividos 1º. nos que tem flores
+                                sobrepostas, como o Viburnum e Sambucus; 2º. nos que tem flores
+                                sottopostas, como o Semecarpus, Rhus, Cassine, Spathelia, Tamarix,
+                                Staphylea, Drypis, Turnera, Sarothra, Alsine, Telephium, Corrigiola,
+                                Pharnaceum, Xylophylla, e Basella.</p>
+                            <p xml:id="p_brotero2_0027">A 4ª. Ordem ou Tetragynia consta de plantas que daõ flores com quatro
+                                pistillos, como a Panassia, e Evolvulus.</p>
+                            <p xml:id="p_brotero2_0028">A 5ª. Ordem ou Pentagynia comprehende as plantas que daõ flores com
+                                cinco pistillos; os seus generos saõ divididos 1º. nos que daõ
+                                flores sobrepostas, como a Aralia; 2º. nos que daõ flores
+                                sottopostas, como a Crassula, Gisekia, Linum, Aldrovanda, Drosera,
+                                Mahernia, Commersonia, Sibbaldia, e Statice.</p>
+                            <p xml:id="p_brotero2_0029">A 6ª. Ordem ou Polyginia comprehende as plantas que daõ flores com
+                                pistillos numerosos<note xml:id="n_brotero2_0020">Basta que os pistillos sejaõ seis, ou
+                                    excedaõ este numero.</note>, como o Myosurus.</p>
+                        </div>
+                        <div type="subchapter">
+                            <head xml:id="h_brotero2_0011">§. Classe VI.</head>
+                            <p xml:id="p_brotero2_0030">HEXANDRIA (hexandria); esta classe comprehende as plantas que daõ
+                                plantas com seis estames de comprimento igual ou
+                                    indeterminado<note xml:id="n_brotero2_0021">Nisto se destingue da classe Tetradynamia,
+                                    que consta de plantas, cujas flores aindaque tem seis estames,
+                                    dos delles saõ sempre mais curtos e quatro mais altos.</note>
+                                como o ananaz,<pb n="23" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0027_23_t24-C-R0120.jpg"/>narcizo, jonquilho, alho, cebola, piteira, aloe, tuberosa, cebola
+                                alvarraan, jacintho, abrotea, espargo, açucena, tulipa, acòro,
+                                junco, arroz, conchico, azeda, labaça, &amp;c. Contem cinco
+                                Ordens.</p>
+                            <p xml:id="p_brotero2_0031">A 1ª. ou Monogynia, consta de plantas que daõ flores com hum so
+                                pistillo; os seus generos saõ divididos 1º. nos que daõ flores com
+                                perianthio e corolla <note xml:id="n_brotero2_0022">O calys nesta divisaõ he hum perianthio,
+                                    ora sottoposto ora sobreposto.</note> com a Licuala, Bromelia,
+                                Tillandsia, Burmannia, Lachenalia, Tradescantia, Bursera, Frankenia,
+                                Loranthus, Hilia, Richardia, Berberis, Leontice, Prinos, Duroia,
+                                Canarina, Nandina, e Achras; 2º. nos que daõ flores com calys e
+                                corolla, mas o calys he hum involucro, espatha, ou casulo, como o
+                                Haemanthus, Leucojum, Galanthus, Narcissus, Pancratium, Amaryllis,
+                                Crinum, Pontederia, Tulbagia, Allium, Aphyllanthes, Hypoxis, e
+                                Ehrarta; 3º. nos que daõ flores descalycinas com huma corolla de
+                                seis petalas ou de seis lacinias, quer seja sobreposta quer
+                                sottoposta, como a Alstroemeria, Bulbocodium, Gethyllis,
+                                Hemerocallis, Agave, Aloe, Aletris, Polyanthes, Convallaria,
+                                Hyacinthus, Phormium, Asphodelus, Anthericum, Ornithogalum, Scilla,
+                                Cyanella, Dracaena, Pollia, Asparagus, Gloriosa, Erythronium,
+                                Uvularia, Fritillaria, Lilium, Tulipa, Yucca, Albuca, Lindera,
+                                Massonia, Acorus, e Orantium; 4º. nos que daõ flores, com perianthio
+                                sem corolla, como o Calamus, Juncus, e Peplis<note xml:id="n_brotero2_0023">Este genero foy
+                                    posto nesta divisaõ por causa da maior parte das suas flores naõ
+                                    terem corolla.</note>.</p>
+                            <pb n="24" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0028_24_t24-C-R0120.jpg"/>
+                            <p xml:id="p_brotero2_0032">A 2ª. Ordem ou Digynia comprehende as plantas que daõ flores com dois
+                                pistillos, como a Falckia, Atraphaxis, Gahnia, e Oryza.</p>
+                            <p xml:id="p_brotero2_0033">A 3ª. Ordem ou Trigynia consta das plantas que daõ flores com tres
+                                pistillos; os seus generos saõ divididos, 1º. nos que daõ flores
+                                sottopostas, como o Colchicum, Melanthium, Medeola, Helonias,
+                                Trillium, Triglochin, Rumex, Scheuchzeria, e Wurmbea; 2º. nos que
+                                daõ flores sobrepostas, como a Flagellaria.</p>
+                            <p xml:id="p_brotero2_0034">A 4ª. Ordem ou Tetragynia comprehende as plantas que daõ flores com
+                                quatro pistillos, como a Petiveria. A 5ª. Ordem ou Polygynia consta
+                                das plantas, que daõ cinco, seis, ou mais pistillos, como a
+                                Alisma.</p>
+                        </div>
+                        <div type="subchapter">
+                            <head xml:id="h_brotero2_0012">§. Classe VII.</head>
+                            <p xml:id="p_brotero2_0035">HEPTRANDRIA (heptrandria); esta classe comprehende as plantas que daõ
+                                flores hermaphroditas com sette estames, como por ex. o castanheiro
+                                da India (ou AEsculus hippocastanum); contem quatro Ordens, a 1ª. ou
+                                Monogynia consta das plantas que daõ flores com hum so pistillo,
+                                como a Trientalis, Disandra, e AEsculus; a 2ª. ou Digynia das que
+                                daõ flores com dois pistillos, como o Limeum; a 3ª. ou Tetragynia
+                                das que daõ flores com quatro pistillos, como o Saururus e
+                                Aponogeton; a 4ª. em fim ou Heptagynia comprehende as que daõ flores
+                                com sette pistillos, como o Septas.</p>
                         </div>
                     </div>
                 </div>
+                <pb n="25" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0029_25_t24-C-R0120.jpg"/>
+                <pb n="26" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0030_26_t24-C-R0120.jpg"/>
+                <pb n="27" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0031_27_t24-C-R0120.jpg"/>
+                <pb n="28" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0032_28_t24-C-R0120.jpg"/>
+                <pb n="29" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0033_29_t24-C-R0120.jpg"/>
+                <pb n="30" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0034_30_t24-C-R0120.jpg"/>
+                <pb n="31" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0035_31_t24-C-R0120.jpg"/>
+                <pb n="32" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0036_32_t24-C-R0120.jpg"/>
+                <pb n="33" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0037_33_t24-C-R0120.jpg"/>
+                <pb n="34" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0038_34_t24-C-R0120.jpg"/>
+                <pb n="35" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0039_35_t24-C-R0120.jpg"/>
+                <pb n="36" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0040_36_t24-C-R0120.jpg"/>
+                <pb n="37" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0041_37_t24-C-R0120.jpg"/>
+                <pb n="38" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0042_38_t24-C-R0120.jpg"/>
+                <pb n="39" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0043_39_t24-C-R0120.jpg"/>
+                <pb n="40" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0044_40_t24-C-R0120.jpg"/>
+                <pb n="41" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0045_41_t24-C-R0120.jpg"/>
+                <pb n="42" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0046_42_t24-C-R0120.jpg"/>
+                <pb n="43" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0047_43_t24-C-R0120.jpg"/>
+                <pb n="44" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0048_44_t24-C-R0120.jpg"/>
+                <pb n="45" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0049_45_t24-C-R0120.jpg"/>
+                <pb n="46" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0050_46_t24-C-R0120.jpg"/>
+                <pb n="47" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0051_47_t24-C-R0120.jpg"/>
+                <pb n="48" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0052_48_t24-C-R0120.jpg"/>
+                <pb n="49" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0053_49_t24-C-R0120.jpg"/>
+                <pb n="50" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0054_50_t24-C-R0120.jpg"/>
+                <pb n="51" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0055_51_t24-C-R0120.jpg"/>
+                <pb n="52" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0056_52_t24-C-R0120.jpg"/>
+                <pb n="53" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0057_53_t24-C-R0120.jpg"/>
+                <pb n="54" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0058_54_t24-C-R0120.jpg"/>
+                <pb n="55" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0059_55_t24-C-R0120.jpg"/>
+                <pb n="56" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0060_56_t24-C-R0120.jpg"/>
+                <pb n="57" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0061_57_t24-C-R0120.jpg"/>
+                <pb n="58" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0062_58_t24-C-R0120.jpg"/>
+                <pb n="59" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0063_59_t24-C-R0120.jpg"/>
+                <pb n="60" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0064_60_t24-C-R0120.jpg"/>
+                <pb n="61" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0065_61_t24-C-R0120.jpg"/>
+                <pb n="62" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0066_62_t24-C-R0120.jpg"/>
+                <pb n="63" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0067_63_t24-C-R0120.jpg"/>
+                <pb n="64" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0068_64_t24-C-R0120.jpg"/>
+                <pb n="65" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0069_65_t24-C-R0120.jpg"/>
+                <pb n="66" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0070_66_t24-C-R0120.jpg"/>
+                <pb n="67" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0071_67_t24-C-R0120.jpg"/>
+                <pb n="68" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0072_68_t24-C-R0120.jpg"/>
+                <pb n="69" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0073_69_t24-C-R0120.jpg"/>
+                <pb n="70" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0074_70_t24-C-R0120.jpg"/>
+                <pb n="71" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0075_71_t24-C-R0120.jpg"/>
+                <pb n="72" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0076_72_t24-C-R0120.jpg"/>
+                <pb n="73" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0077_73_t24-C-R0120.jpg"/>
+                <pb n="74" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0078_74_t24-C-R0120.jpg"/>
+                <pb n="75" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0079_75_t24-C-R0120.jpg"/>
+                <pb n="76" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0080_76_t24-C-R0120.jpg"/>
+                <pb n="77" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0081_77_t24-C-R0120.jpg"/>
+                <pb n="78" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0082_78_t24-C-R0120.jpg"/>
+                <pb n="79" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0083_79_t24-C-R0120.jpg"/>
+                <pb n="80" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0084_80_t24-C-R0120.jpg"/>
+                <pb n="81" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0085_81_t24-C-R0120.jpg"/>
+                <pb n="82" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0086_82_t24-C-R0120.jpg"/>
+                <pb n="83" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0087_83_t24-C-R0120.jpg"/>
+                <pb n="84" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0088_84_t24-C-R0120.jpg"/>
+                <pb n="85" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0089_85_t24-C-R0120.jpg"/>
+                <pb n="86" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0090_86_t24-C-R0120.jpg"/>
+                <pb n="87" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0091_87_t24-C-R0120.jpg"/>
+                <pb n="88" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0092_88_t24-C-R0120.jpg"/>
+                <pb n="89" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0093_89_t24-C-R0120.jpg"/>
+                <pb n="90" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0094_90_t24-C-R0120.jpg"/>
+                <pb n="91" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0095_91_t24-C-R0120.jpg"/>
+                <pb n="92" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0096_92_t24-C-R0120.jpg"/>
+                <pb n="93" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0097_93_t24-C-R0120.jpg"/>
+                <pb n="94" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0098_94_t24-C-R0120.jpg"/>
+                <pb n="95" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0099_95_t24-C-R0120.jpg"/>
+                <pb n="96" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0100_96_t24-C-R0120.jpg"/>
+                <pb n="97" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0101_97_t24-C-R0120.jpg"/>
+                <pb n="98" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0102_98_t24-C-R0120.jpg"/>
+                <pb n="99" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0103_99_t24-C-R0120.jpg"/>
+                <pb n="100" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0104_100_t24-C-R0120.jpg"/>
+                <pb n="101" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0105_101_t24-C-R0120.jpg"/>
+                <pb n="102" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0106_102_t24-C-R0120.jpg"/>
+                <pb n="103" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0107_103_t24-C-R0120.jpg"/>
+                <pb n="104" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0108_104_t24-C-R0120.jpg"/>
+                <pb n="105" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0109_105_t24-C-R0120.jpg"/>
+                <pb n="106" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0110_106_t24-C-R0120.jpg"/>
+                <pb n="107" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0111_107_t24-C-R0120.jpg"/>
+                <pb n="108" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0112_108_t24-C-R0120.jpg"/>
+                <pb n="109" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0113_109_t24-C-R0120.jpg"/>
+                <pb n="110" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0114_110_t24-C-R0120.jpg"/>
+                <pb n="111" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0115_111_t24-C-R0120.jpg"/>
+                <pb n="112" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0116_112_t24-C-R0120.jpg"/>
+                <pb n="113" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0117_113_t24-C-R0120.jpg"/>
+                <pb n="114" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0118_114_t24-C-R0120.jpg"/>
+                <pb n="115" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0119_115_t24-C-R0120.jpg"/>
+                <pb n="116" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0120_116_t24-C-R0120.jpg"/>
+                <pb n="117" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0121_117_t24-C-R0120.jpg"/>
+                <pb n="118" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0122_118_t24-C-R0120.jpg"/>
+                <pb n="119" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0123_119_t24-C-R0120.jpg"/>
+                <pb n="120" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0124_120_t24-C-R0120.jpg"/>
+                <pb n="121" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0125_121_t24-C-R0120.jpg"/>
+                <pb n="122" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0126_122_t24-C-R0120.jpg"/>
+                <pb n="123" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0127_123_t24-C-R0120.jpg"/>
+                <pb n="124" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0128_124_t24-C-R0120.jpg"/>
+                <pb n="125" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0129_125_t24-C-R0120.jpg"/>
+                <pb n="126" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0130_126_t24-C-R0120.jpg"/>
+                <pb n="127" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0131_127_t24-C-R0120.jpg"/>
+                <pb n="128" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0132_128_t24-C-R0120.jpg"/>
+                <pb n="129" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0133_129_t24-C-R0120.jpg"/>
+                <pb n="130" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0134_130_t24-C-R0120.jpg"/>
+                <pb n="131" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0135_131_t24-C-R0120.jpg"/>
+                <pb n="132" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0136_132_t24-C-R0120.jpg"/>
+                <pb n="133" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0137_133_t24-C-R0120.jpg"/>
+                <pb n="134" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0138_134_t24-C-R0120.jpg"/>
+                <pb n="135" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0139_135_t24-C-R0120.jpg"/>
+                <pb n="136" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0140_136_t24-C-R0120.jpg"/>
+                <pb n="137" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0141_137_t24-C-R0120.jpg"/>
+                <pb n="138" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0142_b_t24-C-R0120.jpg"/>
+            </div>
+            <pb n="139" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0143_139_t24-C-R0120.jpg"/>
+            <div type="Parte">
+                <head xml:id="h_brotero2_0013">DICCIONARIO BOTANICO.</head>
+                <pb n="140" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0144_140_t24-C-R0120.jpg"/>
+                <pb n="141" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0145_141_t24-C-R0120.jpg"/>
+                <pb n="142" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0146_142_t24-C-R0120.jpg"/>
+                <pb n="143" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0147_143_t24-C-R0120.jpg"/>
+                <pb n="144" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0148_144_t24-C-R0120.jpg"/>
+                <pb n="145" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0149_145_t24-C-R0120.jpg"/>
+                <pb n="146" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0150_146_t24-C-R0120.jpg"/>
+                <pb n="147" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0151_147_t24-C-R0120.jpg"/>
+                <pb n="148" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0152_148_t24-C-R0120.jpg"/>
+                <pb n="149" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0153_149_t24-C-R0120.jpg"/>
+                <pb n="150" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0154_150_t24-C-R0120.jpg"/>
+                <pb n="151" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0155_151_t24-C-R0120.jpg"/>
+                <pb n="152" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0156_152_t24-C-R0120.jpg"/>
+                <pb n="153" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0157_153_t24-C-R0120.jpg"/>
+                <pb n="154" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0158_154_t24-C-R0120.jpg"/>
+                <pb n="155" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0159_155_t24-C-R0120.jpg"/>
+                <pb n="156" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0160_156_t24-C-R0120.jpg"/>
+                <pb n="157" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0161_157_t24-C-R0120.jpg"/>
+                <pb n="158" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0162_158_t24-C-R0120.jpg"/>
+                <pb n="159" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0163_159_t24-C-R0120.jpg"/>
+                <pb n="160" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0164_160_t24-C-R0120.jpg"/>
+                <pb n="161" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0165_161_t24-C-R0120.jpg"/>
+                <pb n="162" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0166_162_t24-C-R0120.jpg"/>
+                <pb n="163" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0167_163_t24-C-R0120.jpg"/>
+                <pb n="164" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0168_164_t24-C-R0120.jpg"/>
+                <pb n="165" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0169_165_t24-C-R0120.jpg"/>
+                <pb n="166" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0170_166_t24-C-R0120.jpg"/>
+                <pb n="167" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0171_167_t24-C-R0120.jpg"/>
+                <pb n="168" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0172_168_t24-C-R0120.jpg"/>
+                <pb n="169" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0173_169_t24-C-R0120.jpg"/>
+                <pb n="170" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0174_170_t24-C-R0120.jpg"/>
+                <pb n="171" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0175_171_t24-C-R0120.jpg"/>
+                <pb n="172" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0176_172_t24-C-R0120.jpg"/>
+                <pb n="173" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0177_173_t24-C-R0120.jpg"/>
+                <pb n="174" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0178_174_t24-C-R0120.jpg"/>
+                <pb n="175" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0179_175_t24-C-R0120.jpg"/>
+                <pb n="176" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0180_176_t24-C-R0120.jpg"/>
+                <pb n="177" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0181_177_t24-C-R0120.jpg"/>
+                <pb n="178" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0182_178_t24-C-R0120.jpg"/>
+                <pb n="179" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0183_179_t24-C-R0120.jpg"/>
+                <pb n="180" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0184_180_t24-C-R0120.jpg"/>
+                <pb n="181" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0185_181_t24-C-R0120.jpg"/>
+                <pb n="182" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0186_182_t24-C-R0120.jpg"/>
+                <pb n="183" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0187_183_t24-C-R0120.jpg"/>
+                <pb n="184" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0188_184_t24-C-R0120.jpg"/>
+                <pb n="185" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0189_185_t24-C-R0120.jpg"/>
+                <pb n="186" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0190_186_t24-C-R0120.jpg"/>
+                <pb n="187" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0191_187_t24-C-R0120.jpg"/>
+                <pb n="188" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0192_188_t24-C-R0120.jpg"/>
+                <pb n="189" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0193_189_t24-C-R0120.jpg"/>
+                <pb n="190" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0194_190_t24-C-R0120.jpg"/>
+                <pb n="191" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0195_191_t24-C-R0120.jpg"/>
+                <pb n="192" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0196_192_t24-C-R0120.jpg"/>
+                <pb n="193" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0197_193_t24-C-R0120.jpg"/>
+                <pb n="194" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0198_194_t24-C-R0120.jpg"/>
+                <pb n="195" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0199_195_t24-C-R0120.jpg"/>
+                <pb n="196" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0200_196_t24-C-R0120.jpg"/>
+                <pb n="197" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0201_197_t24-C-R0120.jpg"/>
+                <pb n="198" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0202_198_t24-C-R0120.jpg"/>
+                <pb n="199" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0203_199_t24-C-R0120.jpg"/>
+                <pb n="200" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0204_200_t24-C-R0120.jpg"/>
+                <pb n="201" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0205_201_t24-C-R0120.jpg"/>
+                <pb n="202" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0206_202_t24-C-R0120.jpg"/>
+                <pb n="203" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0207_203_t24-C-R0120.jpg"/>
+                <pb n="204" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0208_204_t24-C-R0120.jpg"/>
+                <pb n="205" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0209_205_t24-C-R0120.jpg"/>
+                <pb n="206" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0210_206_t24-C-R0120.jpg"/>
+                <pb n="207" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0211_207_t24-C-R0120.jpg"/>
+                <pb n="208" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0212_208_t24-C-R0120.jpg"/>
+                <pb n="209" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0213_209_t24-C-R0120.jpg"/>
+                <pb n="210" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0214_210_t24-C-R0120.jpg"/>
+                <pb n="211" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0215_211_t24-C-R0120.jpg"/>
+                <pb n="212" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0216_212_t24-C-R0120.jpg"/>
+                <pb n="213" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0217_213_t24-C-R0120.jpg"/>
+                <pb n="214" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0218_214_t24-C-R0120.jpg"/>
+                <pb n="215" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0219_215_t24-C-R0120.jpg"/>
+                <pb n="216" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0220_216_t24-C-R0120.jpg"/>
+                <pb n="217" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0221_217_t24-C-R0120.jpg"/>
+                <pb n="218" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0222_218_t24-C-R0120.jpg"/>
+                <pb n="219" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0223_219_t24-C-R0120.jpg"/>
+                <pb n="220" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0224_220_t24-C-R0120.jpg"/>
+                <pb n="221" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0225_221_t24-C-R0120.jpg"/>
+                <pb n="222" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0226_222_t24-C-R0120.jpg"/>
+                <pb n="223" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0227_223_t24-C-R0120.jpg"/>
+                <pb n="224" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0228_224_t24-C-R0120.jpg"/>
+                <pb n="225" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0229_225_t24-C-R0120.jpg"/>
+                <pb n="226" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0230_226_t24-C-R0120.jpg"/>
+                <pb n="227" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0231_227_t24-C-R0120.jpg"/>
+                <pb n="228" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0232_228_t24-C-R0120.jpg"/>
+                <pb n="229" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0233_229_t24-C-R0120.jpg"/>
+                <pb n="230" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0234_230_t24-C-R0120.jpg"/>
+                <pb n="231" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0235_231_t24-C-R0120.jpg"/>
+                <pb n="232" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0236_232_t24-C-R0120.jpg"/>
+                <pb n="233" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0237_233_t24-C-R0120.jpg"/>
+                <pb n="234" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0238_234_t24-C-R0120.jpg"/>
+                <pb n="235" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0239_235_t24-C-R0120.jpg"/>
+                <pb n="236" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0240_236_t24-C-R0120.jpg"/>
+                <pb n="237" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0241_237_t24-C-R0120.jpg"/>
+                <pb n="238" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0242_238_t24-C-R0120.jpg"/>
+                <pb n="239" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0243_239_t24-C-R0120.jpg"/>
+                <pb n="240" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0244_240_t24-C-R0120.jpg"/>
+                <pb n="241" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0245_241_t24-C-R0120.jpg"/>
+                <pb n="242" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0246_242_t24-C-R0120.jpg"/>
+                <pb n="243" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0247_243_t24-C-R0120.jpg"/>
+                <pb n="244" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0248_244_t24-C-R0120.jpg"/>
+                <pb n="245" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0249_245_t24-C-R0120.jpg"/>
+                <pb n="246" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0250_246_t24-C-R0120.jpg"/>
+                <pb n="247" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0251_247_t24-C-R0120.jpg"/>
+                <pb n="248" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0252_248_t24-C-R0120.jpg"/>
+                <pb n="249" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0253_249_t24-C-R0120.jpg"/>
+                <pb n="250" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0254_250_t24-C-R0120.jpg"/>
+                <pb n="251" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0255_251_t24-C-R0120.jpg"/>
+                <pb n="252" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0256_252_t24-C-R0120.jpg"/>
+                <pb n="253" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0257_253_t24-C-R0120.jpg"/>
+                <pb n="254" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0258_254_t24-C-R0120.jpg"/>
+                <pb n="255" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0259_255_t24-C-R0120.jpg"/>
+                <pb n="256" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0260_256_t24-C-R0120.jpg"/>
+                <pb n="257" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0261_257_t24-C-R0120.jpg"/>
+                <pb n="258" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0262_258_t24-C-R0120.jpg"/>
+                <pb n="259" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0263_259_t24-C-R0120.jpg"/>
+                <pb n="260" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0264_260_t24-C-R0120.jpg"/>
+                <pb n="261" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0265_261_t24-C-R0120.jpg"/>
+                <pb n="262" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0266_262_t24-C-R0120.jpg"/>
+                <pb n="263" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0267_263_t24-C-R0120.jpg"/>
+                <pb n="264" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0268_264_t24-C-R0120.jpg"/>
+                <pb n="265" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0269_265_t24-C-R0120.jpg"/>
+                <pb n="266" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0270_266_t24-C-R0120.jpg"/>
+                <pb n="267" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0271_267_t24-C-R0120.jpg"/>
+                <pb n="268" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0272_268_t24-C-R0120.jpg"/>
+                <pb n="269" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0273_269_t24-C-R0120.jpg"/>
+                <pb n="270" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0274_270_t24-C-R0120.jpg"/>
+                <pb n="271" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0275_271_t24-C-R0120.jpg"/>
+                <pb n="272" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0276_272_t24-C-R0120.jpg"/>
+                <pb n="273" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0277_273_t24-C-R0120.jpg"/>
+                <pb n="274" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0278_274_t24-C-R0120.jpg"/>
+                <pb n="275" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0279_275_t24-C-R0120.jpg"/>
+                <pb n="276" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0280_276_t24-C-R0120.jpg"/>
+                <pb n="277" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0281_277_t24-C-R0120.jpg"/>
+                <pb n="278" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0282_278_t24-C-R0120.jpg"/>
+                <pb n="279" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0283_279_t24-C-R0120.jpg"/>
+                <pb n="280" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0284_280_t24-C-R0120.jpg"/>
+                <pb n="281" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0285_281_t24-C-R0120.jpg"/>
+                <pb n="282" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0286_282_t24-C-R0120.jpg"/>
+                <pb n="283" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0287_283_t24-C-R0120.jpg"/>
+                <pb n="284" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0288_284_t24-C-R0120.jpg"/>
+                <pb n="285" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0289_285_t24-C-R0120.jpg"/>
+                <pb n="286" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0290_286_t24-C-R0120.jpg"/>
+                <pb n="287" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0291_287_t24-C-R0120.jpg"/>
+                <pb n="288" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0292_288_t24-C-R0120.jpg"/>
+                <pb n="289" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0293_289_t24-C-R0120.jpg"/>
+                <pb n="290" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0294_290_t24-C-R0120.jpg"/>
+                <pb n="291" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0295_291_t24-C-R0120.jpg"/>
+                <pb n="292" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0296_292_t24-C-R0120.jpg"/>
+                <pb n="293" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0297_293_t24-C-R0120.jpg"/>
+                <pb n="294" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0298_294_t24-C-R0120.jpg"/>
+                <pb n="295" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0299_295_t24-C-R0120.jpg"/>
+                <pb n="296" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0300_296_t24-C-R0120.jpg"/>
+                <pb n="297" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0301_297_t24-C-R0120.jpg"/>
+                <pb n="298" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0302_298_t24-C-R0120.jpg"/>
+                <pb n="299" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0303_299_t24-C-R0120.jpg"/>
+                <pb n="300" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0304_300_t24-C-R0120.jpg"/>
+                <pb n="301" facs="https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/UCFCTBt-B-78-1-16_JPG/UCFCTBt-B-78-1-16_JPG_24-C-R0120/UCFCTBt-B-78-1-16_0305_301_t24-C-R0120.jpg"/>
             </div>
         </body>
-        <back/>
+        <back>
+            <div type="catalogo">
+                <head xml:id="h_brotero2_0014">CATALOGO DOS AUTORES BOTANICOS, Com as suas citaçoens abbreviadas.</head>
+            </div>
+            <div type="indice">
+                <head xml:id="h_brotero2_0015">INDEX Dos nomes Triviaes Portuguezes de Plantas, referidos aos seus Generos e
+                    Especies, segundo o Systema de Linneo.</head>
+            </div>
+            <div type="indice">
+                <head xml:id="h_brotero2_0016">NOMES De plantas, que nam pude observar, nem achei bem descriptas.</head>
+            </div>
+            <div type="estampas">
+                <head xml:id="h_brotero2_0017">EXPLICAÇAÕ DAS ESTAMPAS.</head>
+            </div>
+            <div type="indice">
+                <head xml:id="h_brotero2_0018">INDEX Dos Termos Portuguezes relativos à estructura, habitaçam, qualidades, e
+                    destribuiçoens methodicas dos Vegetaes.</head>
+            </div>
+            <div type="sumario">
+                <head xml:id="h_brotero2_0019">TABELLA DOS CAPITULOS DESTA OBRA.</head>
+            </div>
+            <div type="errata">
+                <head xml:id="h_brotero2_0020">TOMO I.</head>
+            </div>
+        </back>
     </text>
 </TEI>

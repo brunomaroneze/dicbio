@@ -70,12 +70,12 @@ dbres:attestation_auricula_lat_sense1_blasius a dicbio:Attestation ;
 
 dbres:auricula_lat a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
-    ontolex:canonicalForm dbres:auricula_lat_form ;
+    ontolex:canonicalForm dbres:form_auricula_lat ;
     ontolex:sense dbres:etymon_auricula_sense1, 
         dbres:etymon_auricula_sense2 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/90761> .
 
-dbres:auricula_lat_form a ontolex:Form ;
+dbres:form_auricula_lat a ontolex:Form ;
     ontolex:writtenRep "auricula"@la .
 
 ### Fim da entrada em latim
@@ -83,6 +83,7 @@ dbres:auricula_lat_form a ontolex:Form ;
 dbres:entry_auricula_sense2 a ontolex:LexicalSense ;
     skos:definition "Orelha."@pt ;
     lemonety:etymology dbres:etym_auricula_sense2 ;
+    ontolex:reference dbres:concept_orelha ;
     ontolex:reference dbres:concept_orelha ;
     dicbio:hasAttestation dbres:attestation_auricula_sense2_vandelli .
 

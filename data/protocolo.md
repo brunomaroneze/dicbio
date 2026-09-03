@@ -60,13 +60,13 @@
 
 - No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
 
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon".
+- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus").
 
 - Ao étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao seu URI no projeto LiLa.
 
 - A língua do étimo é apresentada com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261". O código da língua grega é "glotto:gree1276".
 
-- Um étimo pode ter outro étimo, formando cadeias etimológicas.
+- Um étimo pode ter outro étimo, formando cadeias etimológicas. Nesse caso, a explicação etimológica pode ficar com o nome "dbres:etym_XXXXX", sem a necessidade de "_sense1".
 
 --------------------------------------------------
 ## Informações sobre as atestações:
@@ -74,7 +74,12 @@
 
 - O sentido lexical é vinculado à atestação pela propriedade "dicbio:hasAttestation".
 
-- A propriedade "dicbio:attestationDate" indica o ano da atestação e a propriedade "dcterms:source" indica a fonte da datação. Só é necessário inserir a data e a fonte da atestação nos casos em que a atestação deriva de uma fonte externa ao córpus do projeto (fonte secundária).
+- A propriedade "dicbio:attestationDate" indica o ano da atestação e a propriedade "dcterms:source" indica a fonte da datação. Só é necessário inserir a data e a fonte da atestação nos casos em que a atestação deriva de uma fonte externa ao córpus do projeto (primária ou secundária).
+
+- A atestação pode ser:
+- a) Uma ocorrência da acepção do termo no córpus do projeto (nesse caso, é gerada automaticamente);
+- b) Uma ocorrência da acepção do termo ou do seu étimo em alguma fonte primária, em geral localizada pelo Google Livros (caso em que a fonte deve ser inserida na lista de fontes);
+- c) Um registro da acepção do termo ou do seu étimo em alguma fonte secundária, em geral algum dicionário de latim ou grego.
 
 - A propriedade "dicbio:realizesForm" relaciona uma ocorrência à forma que ela realiza. É inserida automaticamente.
 
