@@ -6,7 +6,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
-@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -128,8 +127,8 @@ dicbio:EtymologicalProcessScheme a skos:ConceptScheme ;
 dicbio:inherited a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
     skos:prefLabel "Inherited"@en, "Herdado"@pt ;
-    skos:definition "The lexical item is inherited from an earlier stage of the same language."@en ;
-    skos:definition "A unidade lexical é herdada de um estágio anterior da mesma língua."@pt .
+    skos:definition "The lexical item is inherited from an earlier stage of the same language or from its parent language."@en ;
+    skos:definition "A unidade lexical é herdada de um estágio anterior da mesma língua ou da sua língua-mãe."@pt .
 
 dicbio:borrowed a dicbio:EtymologicalProcess ;
     skos:inScheme dicbio:EtymologicalProcessScheme ;
@@ -149,7 +148,7 @@ dicbio:semanticDerivation a dicbio:EtymologicalProcess ;
     skos:definition "The lexical item was derived from another lexical sense in the same language."@en ;
     skos:definition "A unidade lexical foi derivada de outro sentido lexical na mesma língua."@pt .
 
-dicbio:etymologicalProcess a owl:ObjectProperty ; # Era para ser lemonety:etyLinkType, mas essa propriedade não foi pensada para ser ligada à hipótese etimológica. Por isso, criamos uma subpropriedade com domínio lemonety:Etymology.
+dicbio:etymologicalProcess a owl:ObjectProperty ; # Foi necessário criar essa propriedade porque a propriedade lemonety:etyLinkType não foi pensada para ser ligada à hipótese etimológica. Assim, o domínio da propriedade é definido como lemonety:Etymology, para que ela possa ser utilizada em conjunto com as hipóteses etimológicas.
     rdfs:domain lemonety:Etymology ;
     rdfs:range dicbio:EtymologicalProcess ;
     rdfs:label "etymological process"@en, "processo etimológico"@pt ;

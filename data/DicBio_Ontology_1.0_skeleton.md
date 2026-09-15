@@ -55,7 +55,7 @@ A Ontologia DicBio contempla a representação de:
 - relações de proveniência e outras relações relevantes para a documentação dos dados;
 - relações entre os recursos lexicais e as ocorrências identificadas no corpus documental do DicBio.
 
-A ontologia reutiliza, sempre que possível, classes e propriedades de ontologias e vocabulários consolidados, especialmente OntoLex-Lemon, LemonEty, LexInfo, SKOS, Dublin Core Terms, PROV-O e NIF.
+A ontologia reutiliza, sempre que possível, classes e propriedades de ontologias e vocabulários consolidados, especialmente OntoLex-Lemon, LemonEty, SKOS, Dublin Core Terms, PROV-O, ITS-RDF e NIF.
 
 ### 2.3. Fora do escopo
 
@@ -146,9 +146,9 @@ O *namespace* `dbauth:` é empregado para os recursos que representam os colabor
 | Prefixo | Namespace | Função |
 |---|---|---|
 | `dicbio:` | `https://dicbio.fflch.usp.br/ontology/` | Ontologia DicBio |
-| `dbres:` | <!-- preencher --> | Recursos do DicBio |
-| `dbsrc:` | <!-- preencher --> | Fontes e obras |
-| `dbauth:` | <!-- preencher --> | Autores |
+| `dbres:` | `https://dicbio.fflch.usp.br/recurso/` | Recursos do DicBio |
+| `dbsrc:` | `https://dicbio.fflch.usp.br/fontes/` | Fontes e obras |
+| `dbauth:` | `https://dicbio.fflch.usp.br/autores/` | Autores |
 
 ---
 
@@ -203,24 +203,21 @@ Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio
 | Prefixo | Ontologia / vocabulário | Namespace | Função nos dados do DicBio |
 |---|---|---|---|
 | `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | Nomes e endereços web |
-| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados das fontes |
+| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados avulsos das instâncias |
 | `lexinfo:` | LexInfo | `http://www.lexinfo.net/ontology/3.0/lexinfo#` | Propriedades gramaticais |
-| `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações sobre as fontes bibliográficas |
+| `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações bibliográficas |
 | `vartrans:` | Variation and Translation | `http://www.w3.org/ns/lemon/vartrans#` | Informações morfológicas |
-| `morph:` | Ontolex-Morph | `http://www.w3.org/ns/lemon/morph#` | Informações morfológicas |
 | `glotto:` | Glottolog | `https://glottolog.org/resource/languoid/id/` | Idiomas das fontes ou dos termos |
-| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Definições e conceitos |
+| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Anotação/mapeamento avulsos |
 | `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | owl:sameAs para remissões |
 | `rdfs:` | RDF Schema | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | rdfs:seeAlso para remissões |
-| `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Informações relacionadas ao *corpus* |
-| `lemonety:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | Informações etimológicas |
 
 
 <!-- ### 7.3. Justificativa das reutilizações
 
 Será que precisa deste item?
 
-Explicar as principais decisões de reutilização. Mencionar o problema do LemonEty. -->
+Explicar as principais decisões de reutilização -->
 
 ---
 
@@ -230,7 +227,7 @@ Explicar as principais decisões de reutilização. Mencionar o problema do Lemo
 
 A Ontologia DicBio procura reutilizar ontologias e vocabulários existentes sempre que estes oferecem classes ou propriedades adequadas às entidades e relações que precisam ser representadas. Essa estratégia favorece a interoperabilidade e reduz a necessidade de criação de termos específicos do projeto.
 
-Entre os principais vocabulários reutilizados encontram-se OntoLex-Lemon, LemonEty, LexInfo, SKOS, Dublin Core Terms, PROV-O e NIF.
+Entre os principais vocabulários reutilizados encontram-se OntoLex-Lemon, LemonEty, SKOS, Dublin Core Terms, PROV-O, ITS-RDF e NIF.
 
 A reutilização não implica que todos os vocabulários empregados na representação dos dados sejam dependências formais da ontologia. A distinção entre ontologias importadas e vocabulários utilizados apenas nas instâncias é apresentada na seção 7.
 
@@ -276,7 +273,7 @@ A descrição etimológica (da classe `lemonety:Etymology`), por sua vez, indica
 Já o étimo (da classe `dicbio:SemanticEtymon`) apresenta uma definição (`skos:definition`):
 
 `dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
-    dcterms:language glotto:lati1261 ;
+   dcterms:language glotto:lati1261 ;
    skos:definition "Cavidade superior dos ventrículos do coração."@pt .`
 
 Por fim, o étimo (que, lembre-se, é uma acepção) é associado à sua entrada correspondente, que também contém uma forma (`ontolex:canonicalForm`):
@@ -291,12 +288,40 @@ Por fim, o étimo (que, lembre-se, é uma acepção) é associado à sua entrada
 
 Uma **atestação** representa uma ocorrência documentada de uma forma lexical ou de uma acepção em uma fonte histórica. A atestação permite registrar informações sobre a ocorrência e relacioná-la à fonte que fornece a evidência documental.
 
-As atestações são representadas pela classe ´dicbio:Attestation´ e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de ´dcterms:source´, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete.
+As atestações são representadas pela classe ´dicbio:Attestation´ e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de ´dcterms:source´, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete. Por exemplo, a forma latina *auricula* (étimo da forma portuguesa "aurícula") é atestada numa obra de 1681 (a data é informada pela propriedade `dicbio:attestationDate`):
 
-Quando a atestação corresponde a uma ocorrência identificável no corpus digital do DicBio, ela pode também ser relacionada ao recurso correspondente no corpus por meio das propriedades apropriadas.
+dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
+    dcterms:language glotto:lati1261 ;
+    dicbio:hasAttestation dbres:attestation_auricula_lat_sense1_blasius ;
+    skos:definition "Cavidade superior dos ventrículos do coração."@pt .
 
-<!-- Incluir as propriedades que relacionam a atestação ao corpus.
-Incluir dicbio:attestedByOccurrence, realizesForm e realizesSense -->
+`dbres:attestation_auricula_lat_sense1_blasius a dicbio:Attestation ;
+    dicbio:attestationDate "1681"^^xsd:gYear ;
+    dcterms:source dbsrc:source_blasius .`
+
+Quando a atestação corresponde a uma ocorrência identificável no corpus digital do DicBio, ela pode também ser relacionada ao recurso correspondente no corpus. Por exemplo, a primeira acepção de "aurícula" tem uma atestação na obra de Vandelli, indicada pela propriedade `dicbio:hasAttestation`:
+
+`dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cavidade superior dos ventrículos do coração."@pt ;
+    lemonety:etymology dbres:etym_auricula_sense1 ;
+    ontolex:reference dbres:concept_atrio ;
+    dicbio:hasAttestation dbres:attestation_auricula_sense1_vandelli .`
+
+A atestação em Vandelli é relacionada a uma ocorrência específica do corpus, por meio da propriedade `dicbio:attestedByOccurrence`:
+
+`dbres:attestation_auricula_sense1_vandelli a dicbio:Attestation ;
+    dicbio:attestationDate "1788"^^xsd:gYear ;
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestedByOccurrence dbres:t_vandelli_0012 .`
+
+Por fim, a própria ocorrência do corpus é associada tanto à forma quanto à acepção, indicadas, respectivamente, pelas propriedades `dicbio:realizesForm` e `dicbio:realizesSense`:
+
+`dbres:t_vandelli_0012 a nif:Word ;
+    nif:anchorOf "auriculas"@pt ;
+    nif:lemma "aurícula"@pt ;
+    nif:referenceContext dbres:sn_vandelli_0015 ;
+    dicbio:realizesForm dbres:form_auricula ;
+    dicbio:realizesSense dbres:entry_auricula_sense1 .`
 
 ### 8.6. Vocabulários controlados
 
@@ -321,15 +346,23 @@ A modelagem detalhada das diferentes categorias de fontes e das convenções uti
 
 ### 9.1. Visão conceitual
 
-<!-- Inserir uma descrição geral da estrutura da ontologia. -->
+A Ontologia DicBio organiza-se em torno de quatro camadas articuladas. A camada *lexical*, baseada em OntoLex-Lemon, representa entradas, formas e acepções. A camada *etimológica*, baseada em LemonEty com adaptações próprias, descreve hipóteses etimológicas que relacionam uma acepção a seu étimo — este último modelado como outra acepção lexical (`dicbio:SemanticEtymon`), e não como uma entrada inteira. A camada *morfológica*, baseada em OntoLex-Morph e OntoLex-VarTrans, descreve a estrutura morfológica interna de uma hipótese etimológica quando pertinente. Por fim, a camada de *evidência documental*, que combina classes próprias (`dicbio:Attestation`) com PROV-O, NIF e ITS-RDF, relaciona uma hipótese ou acepção a ocorrências específicas identificadas no corpus digital do projeto, distinguindo a forma e o sentido realizados por uma ocorrência textual da fonte que a atesta historicamente.
+
+<!-- Além dessas quatro camadas, cada verbete também apresenta uma articulação conceptual, ou seja, relações com ontologias da Medicina, da Biologia etc., como Uberon. Como indicar isso aqui? O item 9.5 parece que ficou redundante com essa descrição. -->
+
 
 ### 9.2. Principais classes
 
-<!-- Apresentar resumidamente as classes próprias da DicBio Ontology. -->
+* `dicbio:SemanticEtymon` — um sentido lexical que atua como étimo de outro sentido.
+* `dicbio:EtymologicalProcess` — vocabulário controlado dos tipos de processo etimológico(herança, empréstimo, criação, derivação semântica).
+* `dicbio:WordFormationType` — vocabulário controlado dos tipos de formação de palavras (sufixação, prefixação, composição).
+* `dicbio:Attestation` — registro de uma atestação histórica, com data e fonte.
 
 ### 9.3. Principais propriedades
 
-<!-- Apresentar resumidamente as propriedades próprias da DicBio Ontology. -->
+* Etimologia: `dicbio:semanticEtymon`, `dicbio:etymologicalProcess`, `dicbio:etymologicalArgumentation`, `dicbio:confidenceLevel`.
+* Estrutura morfológica: `dicbio:hasWordFormationRelation`.
+* Atestação e corpus: `dicbio:hasAttestation`, `dicbio:attestedByOccurrence`, `dicbio:realizesForm`, `dicbio:realizesSense`, `dicbio:attestationDate`.
 
 ### 9.4. Relação entre os principais componentes
 
@@ -349,49 +382,49 @@ Esta seção apresenta as classes definidas pela DicBio Ontology.
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/Attestation`
 
-**Rótulo:** <!-- preencher -->
+**Rótulo:** Attestation / Atestação
 
-**Definição:** <!-- preencher -->
+**Definição:** Registro de datação histórica de uma acepção, baseado em uma fonte específica.
 
-**Superclasse(s):** <!-- preencher -->
+**Superclasse(s):** `prov:Entity`
 
-**Uso:** <!-- preencher -->
+**Uso:** Relaciona-se a uma acepção via `dicbio:hasAttestation` e, quando identificável no corpus, a uma ocorrência específica via `dicbio:attestedByOccurrence` (ver §8.5).
 
 ### 10.2. `dicbio:EtymologicalProcess`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/EtymologicalProcess`
 
-**Rótulo:** <!-- preencher -->
+**Rótulo:** Etymological Process / Processo Etimológico
 
-**Definição:** <!-- preencher -->
+**Definição:** Conceito que representa um tipo de processo etimológico envolvido na origem de uma unidade lexical.
 
-**Superclasse(s):** <!-- preencher -->
+**Superclasse(s):** `skos:Concept`
 
-**Uso:** <!-- preencher -->
+**Uso:** Valores possíveis de `dicbio:etymologicalProcess`, atribuído a uma hipótese etimológica (`lemonety:Etymology`). Instâncias: `dicbio:inherited`, `borrowed`, `created`, `semanticDerivation` (ver §12.2).
 
 ### 10.3. `dicbio:SemanticEtymon`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/SemanticEtymon`
 
-**Rótulo:** <!-- preencher -->
+**Rótulo:** Semantic Etymon / Étimo Semântico
 
-**Definição:** <!-- preencher -->
+**Definição:** Um Sentido Lexical que atua como origem semântica numa relação etimológica com outro Sentido Lexical.
 
-**Superclasse(s):** <!-- preencher -->
+**Superclasse(s):** `ontolex:LexicalSense`
 
-**Uso:** <!-- preencher -->
+**Uso:** Valor do range de `dicbio:semanticEtymon`. Permite representar transmissão semântica parcial entre acepções (ver exemplo em §8.4).
 
 ### 10.4. `dicbio:WordFormationType`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/WordFormationType`
 
-**Rótulo:** <!-- preencher -->
+**Rótulo:** Word Formation Type / Tipo de Formação de Palavras
 
-**Definição:** <!-- preencher -->
+**Definição:** Conceito que representa um tipo de processo de formação de palavras.
 
-**Superclasse(s):** <!-- preencher -->
+**Superclasse(s):** `skos:Concept`
 
-**Uso:** <!-- preencher -->
+**Uso:** Vocabulário inicial e extensível (§12.3), usado como valor de `vartrans:category` nas instâncias de `morph:WordFormationRelation` ligadas por `dicbio:hasWordFormationRelation`.
 
 ### 10.5. Classes reutilizadas
 
@@ -420,21 +453,23 @@ Para cada propriedade, registrar, quando aplicável:
 ### 11.1. Propriedades de etimologia
 
 <!-- Listar propriedades como dicbio:etymologicalProcess, dicbio:etymologicalArgumentation, dicbio:confidenceLevel etc. -->
+
 ### 11.1.1 `dicbio:etymologicalArgumentation`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/etymologicalArgumentation`
 
-**Rótulo:** <!-- preencher -->
+**Rótulo:** etymological argumentation / argumentação etimológica
 
-**Definição:** <!-- preencher -->
+**Definição:** Fornece a argumentação discursiva que apoia ou explica a hipótese etimológica.
 
-**Domínio:** <!-- preencher -->
+**Domínio:** `lemonety:Etymology`
 
-**Range:** <!-- preencher -->
+**Range:** `rdf:langString`
 
-**Superpropriedade:** <!-- preencher -->
+**Superpropriedade:** nenhuma (propriedade própria, sem equivalente direto reutilizado)
 
-**Uso:** <!-- preencher -->
+**Uso:** O texto pode conter formatação leve em Markdown (por exemplo, *itálico* para estrangeirismos e latinismos), convertida em HTML apenas no momento da publicação — mantendo o dado independente de qualquer decisão de apresentação.
+<!-- (Nota: essa justificativa merece uma subseção própria em §8, algo como "8.8 Representação de texto com formatação" — ainda não escrita.) -->
 
 
 
@@ -460,36 +495,30 @@ Para cada propriedade, registrar, quando aplicável:
 
 ### 12.1. `dicbio:EtymologicalCertaintyScheme`
 
-<!-- Descrever o esquema de certeza etimológica. -->
-
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:impossible` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:improbable` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:plausible` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:probable` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:certain` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
+| `dicbio:impossible` | <!-- URI --> | Impossível / Impossible | A hipótese contradiz evidências linguísticas ou históricas estabelecidas. |
+| `dicbio:improbable` | <!-- URI --> | Improvável / Improbable | A hipótese carece de evidências suficientes ou entra em contradição com o conhecimento atual. |
+| `dicbio:plausible` | <!-- URI --> | Plausível / Plausible | A hipótese é concebível mas pouco apoiada por evidências. |
+| `dicbio:probable` | <!-- URI --> | Probable / Provável | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
+| `dicbio:certain` | <!-- URI --> | Certa / Certain | A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual. |
 
 ### 12.2. `dicbio:EtymologicalProcessScheme`
 
-<!-- Descrever o esquema de processos etimológicos. -->
-
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:inherited` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:borrowed` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:created` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:semanticDerivation` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
+| `dicbio:inherited` | <!-- URI --> | Herdado / Inherited | Unidade lexical herdada de um estágio anterior da mesma língua ou da sua língua-mãe. |
+| `dicbio:borrowed` | <!-- URI --> | Emprestado / Borrowed | Unidade lexical emprestada de outra língua. |
+| `dicbio:created` | <!-- URI --> | Criado / Created | Unidade lexical criada dentro da língua (derivação, composição etc.). |
+| `dicbio:semanticDerivation` | <!-- URI --> | Derivado de outro sentido / Derived from another sense | Unidade lexical derivada de outro sentido lexical na mesma língua. |
 
 ### 12.3. `dicbio:WordFormationTypeScheme`
 
-<!-- Descrever o esquema de tipos de formação de palavras. -->
-
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:Suffixation` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:Prefixation` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
-| `dicbio:Compounding` | <!-- URI --> | <!-- PT / EN --> | <!-- preencher --> |
+| `dicbio:Suffixation` | <!-- URI --> | Sufixação / Suffixation | Adição de sufixo para criar palavra com significado/função diferente. |
+| `dicbio:Prefixation` | <!-- URI --> | Prefixação / Prefixation | Adição de prefixo para criar palavra com significado/função diferente. |
+| `dicbio:Compounding` | <!-- URI --> | Composição / Compounding | Combinação de duas ou mais palavras/elementos para criar palavra com significado/função diferente. |
 
 ### 12.4. Extensibilidade dos vocabulários
 
@@ -498,15 +527,7 @@ Para cada propriedade, registrar, quando aplicável:
 ---
 
 ## 13. Exemplos
-<!-- 
-13.1. Exemplo básico: entrada e formas
-13.2. Exemplo de polissemia
-13.3. Exemplo de hipótese etimológica
-13.4. Exemplo de étimo semântico
-13.5. Exemplo de atestação
-13.6. Exemplo de formação de palavra
-13.7. Exemplo completo: um verbete real
--->
+
 ### 13.1. Exemplo mínimo de uma entrada lexical
 
 ```turtle
@@ -524,6 +545,7 @@ Para cada propriedade, registrar, quando aplicável:
 ```turtle
 # inserir exemplo
 ```
+<!-- Incluir também exemplo de polissemia -->
 
 ### 13.4. Exemplo de uma hipótese etimológica
 
@@ -570,6 +592,23 @@ Para cada propriedade, registrar, quando aplicável:
 ### 14.2. LemonEty
 
 <!-- Explicar o uso de LemonEty para a representação das relações etimológicas. -->
+É importante mencionar que a ontologia *LemonEty* está descrita no seu respectivo repositório GitHub (https://github.com/anasfkhan81/lemonEty), mas o namespace informado (http://lari-datasets.ilc.cnr.it/lemonEty#) não é um *link* rastreável. Além disso, observa-se o que parece ser uma incoerência da ontologia: a propriedade `etyLinkType` está assim descrita:
+
+`:etyLinkType a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "etymological link type"@en ;
+    rdfs:comment "'etymological link type' specifies the type of a Etymological Link."@en ;
+    rdfs:range :EtyLink .`
+
+No entanto, no arquivo de exemplo fornecido no repositório GitHub, essa propriedade está sendo usada da seguinte forma:
+
+`:etyLink_ENM_EN a owl:NamedIndividual , lemonEty:EtyLink ;
+	rdfs:comment "An etymological relationship (borrowing) between 'frere' (in Middle English) and 'friar' (in Modern English)"@en ;
+	lemonEty:etyLinkType "'specialisation'"@en ;
+	lemonEty:etySource :frere_ENM_et ;
+	lemonEty:etyTarget :friar_EN_le .`
+
+Como se pode perceber, o range da propriedade é um literal, não um `:EtyLink`. Provavelmente, na definição da propriedade, deveria estar escrito `rdfs:domain :EtyLink`, em vez de `rdfs:range`. Por essa razão, optou-se, aqui, por não reutilizar essa propriedade.
 
 ### 14.3. SKOS
 
@@ -587,8 +626,12 @@ Para cada propriedade, registrar, quando aplicável:
 
 | DicBio | Ontologia externa | Elemento externo | Tipo de relação |
 |---|---|---|---|
-| <!-- preencher --> | <!-- preencher --> | <!-- preencher --> | <!-- preencher --> |
-
+| `dicbio:SemanticEtymon` | OntoLex-Lemon | `ontolex:LexicalSense` | `rdfs:subClassOf` |
+| `dicbio:semanticEtymon` | LemonEty | `lemonety:etymon` | `rdfs:subPropertyOf` |
+| `dicbio:EtymologicalProcess` | SKOS | `skos:Concept` | `rdfs:subClassOf` |
+| `dicbio:WordFormationType` | SKOS | `skos:Concept` | `rdfs:subClassOf` |
+| `dicbio:Attestation` | PROV-O | `prov:Entity` | `rdfs:subClassOf` |
+| `dicbio:realizesSense` | ITS-RDF | `itsrdf:taIdentRef` | `rdfs:subPropertyOf` |
 ---
 
 ## 15. Inferências e raciocínio
@@ -646,6 +689,7 @@ Algumas necessidades de modelagem que surgirem com a expansão do *corpus*, a in
 
 ### 16.4. Questões não resolvidas
 
+É necessário avaliar qual é a melhor forma de indicar os offsets de cada termo, sentença e parágrafo no corpus, para fazer corretamente a integração com o padrão NIF.
 <!-- Registrar questões que permanecerão em desenvolvimento sem transformá-las em regras da versão 1.0. -->
 
 ---
