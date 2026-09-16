@@ -81,28 +81,28 @@ dbsrc:work_semmedo a bibo:Book ;
     owl:sameAs <https://www.wikidata.org/wiki/Q140626344> . # URI universal da obra de Semmedo
 
 # Definição do Houaiss
-dbsrc:source_houaiss a bibo:Book ;
+dbsrc:source_houaiss a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
     dcterms:publisher "Instituto Antônio Houaiss de Lexicografia" ;
     dcterms:language glotto:port1283 ;
     owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
 
 # Definição do Gaffiot
-dbsrc:source_gaffiot a bibo:Book ;
+dbsrc:source_gaffiot a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Dictionnaire illustré latin-français" ;
     dcterms:creator <https://www.wikidata.org/entity/Q3092444> ;
     dcterms:issued "1934"^^xsd:gYear ;
     owl:sameAs <https://www.wikidata.org/wiki/Q1248405> . # URI universal do Gaffiot
 
 # Definição do OLD
-dbsrc:source_old a bibo:Book ;
+dbsrc:source_old a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Oxford Latin Dictionary" ;
     dcterms:publisher "Oxford University Press" ;
     dcterms:issued "1968" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
 
 # Definição do LSJ
-dbsrc:source_LSJ a bibo:Book ;
+dbsrc:source_LSJ a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "The Online Liddell-Scott-Jones Greek-English Lexicon" ;
     dcterms:publisher "University of California" ;
     dcterms:issued "2011" ;

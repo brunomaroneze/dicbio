@@ -25,7 +25,7 @@
 
 - Os recursos "dbres:form_XXXX" representam formas flexionadas e também formas gráficas encontradas no córpus.
 
-- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma.
+- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina, o gênero neutro é "lexinfo:neuter".
 
 - Se uma forma existe com acento e outra sem acento, a forma com acento recebe o nome "form_XXXX_accent".
 
@@ -60,7 +60,7 @@
 
 - No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
 
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus").
+- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus"). É relacionado à hipótese etimológica por meio da propriedade "dicbio:semanticEtymon".
 
 - Ao étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao seu URI no projeto LiLa.
 
@@ -94,13 +94,13 @@
 
 - Pode-se ligar diretamente ao URI do conceito (extraído preferencialmente da ontologia Uberon ou outra ontologia de anatomia), mas, para fins de estudo histórico posterior, é adequado criar um recurso para o conceito.
 
-- O recurso para o conceito terá a forma "dbres:concept_XXXX" e precisa conter, pelo menos, "skos:definition" e "skos:exactMatch" (este último ligado ao URI do conceito).
+- O recurso para o conceito terá a forma "dbres:concept_XXXX"; é definido como um "skos:Concept" e precisa conter, pelo menos, "skos:definition" e "skos:exactMatch" (este último ligado ao URI do conceito).
 
 - Os casos de substituição de termo (como "aurícula" para "átrio") e de mais de uma denominação para o mesmo conceito (como "uropígio" e "sobrecu") serão modelados usando a atribuição dos sentidos ao mesmo conceito.
 
 ---------------------------------------------------
 ## Autores e fontes:
-- Os autores são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do Lattes.
+- Os autores são da classe "foaf:Person" e são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do Lattes.
 
 - As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link.
 
