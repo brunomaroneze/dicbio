@@ -8,7 +8,8 @@ from pyshacl import validate
 
 
 # Arquivo SHACL
-SHACL_FILE = Path("data/dicbio-shapes-1.0.ttl")
+# SHACL_FILE = Path("data/dicbio-shapes-1.0.ttl")
+SHACL_FILE = Path("data/dicbio-shacl-shapes.ttl")
 
 
 def validate_ttl(data_file):
