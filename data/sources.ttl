@@ -98,14 +98,14 @@ dbsrc:source_gaffiot a bibo:Book, bibo:ReferenceSource ;
 dbsrc:source_old a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Oxford Latin Dictionary" ;
     dcterms:publisher "Oxford University Press" ;
-    dcterms:issued "1968" ;
+    dcterms:issued "1968"^^xsd:gYear ;
     owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
 
 # Definição do LSJ
 dbsrc:source_LSJ a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "The Online Liddell-Scott-Jones Greek-English Lexicon" ;
     dcterms:publisher "University of California" ;
-    dcterms:issued "2011" ;
+    dcterms:issued "2011"^^xsd:gYear ;
     rdfs:seeAlso <https://stephanus.tlg.uci.edu/lsj/> ;
     owl:sameAs <https://www.wikidata.org/wiki/Q138371913> . # URI universal do LSJ (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
 

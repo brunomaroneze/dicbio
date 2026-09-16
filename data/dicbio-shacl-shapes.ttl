@@ -1,0 +1,691 @@
+########################################################################
+# SHACL Shapes — Dicionário Histórico de Termos da Biologia
+# Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+#
+# Regras que exigem SHACL-SPARQL (sh:sparql) estão marcadas abaixo.
+# Rode o pySHACL com advanced=True (ver nota final) para ativá-las.
+########################################################################
+
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix bibo:     <http://purl.org/ontology/bibo/> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix nif:      <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
+# --- Namespaces reais do projeto (de dicbio-ontology.ttl) ---------------
+@prefix dicbio:   <https://dicbio.fflch.usp.br/ontology/> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix morph:    <http://www.w3.org/ns/lemon/morph#> .
+@prefix dbres:    <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbauth:   <http://dicbio.fflch.usp.br/autores/> .
+@prefix dbsrc:    <http://dicbio.fflch.usp.br/fontes/> .
+@prefix glotto:   <https://glottolog.org/resource/languoid/id/> .
+
+@prefix dsh:      <http://example.org/dicbio/shapes#> .
+
+########################################################################
+## 1. ENTRADA LEXICAL — ontolex:LexicalEntry
+########################################################################
+
+dsh:LexicalEntryShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalEntry ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/entry_" ;
+
+    sh:property [
+        sh:path lexinfo:partOfSpeech ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Todo LexicalEntry precisa de lexinfo:partOfSpeech." ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:canonicalForm ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node dsh:FormShape ;
+        sh:message "Todo LexicalEntry precisa de exatamente uma ontolex:canonicalForm." ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:otherForm ;
+        sh:minCount 0 ;
+        sh:node dsh:FormShape ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:sense ;
+        sh:minCount 1 ;
+        sh:node dsh:LexicalSenseShape ;
+        sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense." ;
+    ] ;
+
+    # dcterms:creator na ENTRADA identifica o(s) colaborador(es) do
+    # projeto que redigiram o verbete — diferente do dcterms:creator
+    # de uma FONTE (que aponta direto para um URI da Wikidata, sem
+    # sh:class, ver BookSourceShape). Aqui exijo que o valor seja um
+    # foaf:Person (dbauth:), conforme "Autores e fontes" do protocolo.
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:minCount 1 ;
+        sh:class foaf:Person ;
+        sh:message "Todo LexicalEntry precisa indicar ao menos um dcterms:creator (colaborador, foaf:Person)." ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:created ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se registrar dcterms:created (data de criação do verbete)." ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # lexinfo:gender na ENTRADA vale para substantivos (masc./fem.).
+    # Neutro é reservado a Formas latinas (ver nota geral sobre
+    # verificação condicional por classe gramatical).
+    sh:property [
+        sh:path lexinfo:gender ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in ( lexinfo:masculine lexinfo:feminine ) ;
+        sh:message "lexinfo:gender na Entrada deve ser masculine ou feminine (substantivos)." ;
+    ] .
+
+########################################################################
+## 2. FORMAS — ontolex:Form
+########################################################################
+
+dsh:FormShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:Form ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/form_" ;
+
+    sh:property [
+        sh:path ontolex:writtenRep ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Toda Form precisa de ontolex:writtenRep." ;
+    ] ;
+
+    # lexinfo:gender na FORMA vale para adjetivos (masc./fem.) e para
+    # formas latinas eventualmente registradas (neutro).
+    sh:property [
+        sh:path lexinfo:gender ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in ( lexinfo:masculine lexinfo:feminine lexinfo:neuter ) ;
+        sh:message "lexinfo:gender na Forma deve ser masculine, feminine ou neuter (este último só para formas latinas)." ;
+    ] ;
+
+    sh:property [
+        sh:path lexinfo:number ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+    ] .
+
+# NOTA: a convenção form_XXXX_accent (forma acentuada nomeada a partir
+# da forma sem acento) não é verificável em SHACL puro — exigiria
+# comparar o "XXXX" de duas IRIs distintas, o que está fora do que
+# sh:pattern/sh:sparql conseguem fazer sobre um único nó por vez.
+# Não há shape para isso; ver nota final.
+
+########################################################################
+## 3. ACEPÇÕES — ontolex:LexicalSense
+########################################################################
+
+# IMPORTANTE: dicbio:SemanticEtymon é rdfs:subClassOf ontolex:LexicalSense
+# (ver seção 5), então um sh:targetClass ontolex:LexicalSense comum
+# também pegaria os étimos — que têm um padrão de nome diferente
+# (etymon_ em vez de entry_..._sense...) e para os quais
+# lemonety:etymology é opcional, não obrigatório. Por isso o alvo usa
+# sh:target (SPARQLTarget) para pegar só as Acepções "de verdade",
+# excluindo os nós que também são dicbio:SemanticEtymon.
+dsh:LexicalSenseShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT ?this
+            WHERE {
+                ?this a ontolex:LexicalSense .
+                FILTER NOT EXISTS { ?this a dicbio:SemanticEtymon }
+            }
+        """ ;
+    ] ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/entry_[^_]+_sense[0-9]+$" ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:message "Toda LexicalSense precisa de skos:definition." ;
+    ] ;
+
+    sh:property [
+        sh:path lemonety:etymology ;
+        sh:minCount 1 ;
+        sh:node dsh:EtymologyShape ;
+        sh:message "Toda LexicalSense precisa de ao menos uma hipótese em lemonety:etymology." ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:hasAttestation ;
+        sh:minCount 0 ;
+        sh:node dsh:AttestationShape ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:reference ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "ontolex:reference deve apontar para o URI de um conceito." ;
+    ] .
+
+########################################################################
+## 4. HIPÓTESES ETIMOLÓGICAS — lemonety:Etymology
+########################################################################
+
+dsh:EtymologyShape
+    a sh:NodeShape ;
+    sh:targetClass lemonety:Etymology ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/etym_" ;
+
+    sh:property [
+        sh:path dcterms:source ;
+        sh:minCount 1 ;
+        sh:message "Toda hipótese etimológica precisa citar dcterms:source." ;
+    ] ;
+
+    # Verificação "forte": o valor precisa ao menos pertencer à classe
+    # dicbio:EtymologicalProcess (isso vale mesmo se novos processos
+    # forem criados no futuro, como o protocolo prevê).
+    sh:property [
+        sh:path dicbio:etymologicalProcess ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dicbio:EtymologicalProcess ;
+        sh:message "Toda hipótese etimológica precisa de exatamente um dicbio:etymologicalProcess (instância de dicbio:EtymologicalProcess)." ;
+    ] ;
+
+    # Verificação "leve": aviso (não erro) se o valor não estiver entre
+    # os 4 processos já catalogados, já que o protocolo permite criar
+    # novas possibilidades.
+    sh:property [
+        sh:path dicbio:etymologicalProcess ;
+        sh:in ( dicbio:inherited dicbio:borrowed dicbio:created dicbio:semanticDerivation ) ;
+        sh:severity sh:Warning ;
+        sh:message "Valor fora do vocabulário atual de etymologicalProcess (permitido, mas confira se não é erro de digitação)." ;
+    ] ;
+
+    # dicbio:confidenceLevel é um vocabulário fechado (5 valores fixos,
+    # sem ressalva de extensão no protocolo) — aqui a checagem é
+    # obrigatória (Violation), não apenas um aviso.
+    sh:property [
+        sh:path dicbio:confidenceLevel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class skos:Concept ;
+        sh:in ( dicbio:impossible dicbio:improbable dicbio:plausible dicbio:probable dicbio:certain ) ;
+        sh:message "Toda hipótese etimológica precisa de dicbio:confidenceLevel, com um dos 5 valores previstos." ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:etymologicalArgumentation ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se sempre preencher dicbio:etymologicalArgumentation (explicação discursiva da hipótese)." ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:hasWordFormationRelation ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:class morph:WordFormationRelation ;
+        sh:node dsh:WordFormationRelationShape ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:semanticEtymon ;
+        sh:minCount 0 ;
+        sh:class dicbio:SemanticEtymon ;
+        sh:node dsh:SemanticEtymonShape ;
+    ] .
+
+# Regras condicionais (SHACL-SPARQL):
+# - etymologicalProcess = created ⇒ precisa de hasWordFormationRelation
+# - etymologicalProcess = borrowed/inherited ⇒ precisa de semanticEtymon
+dsh:EtymologyProcessConsistencyShape
+    a sh:NodeShape ;
+    sh:targetClass lemonety:Etymology ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Hipótese classificada como dicbio:created deve ter dicbio:hasWordFormationRelation (explicação morfológica)." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT $this
+            WHERE {
+                $this dicbio:etymologicalProcess dicbio:created .
+                FILTER NOT EXISTS { $this dicbio:hasWordFormationRelation ?d }
+            }
+        """ ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Hipótese classificada como dicbio:borrowed ou dicbio:inherited deve ter dicbio:semanticEtymon (étimo)." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT $this
+            WHERE {
+                $this dicbio:etymologicalProcess ?p .
+                FILTER (?p IN (dicbio:borrowed, dicbio:inherited))
+                FILTER NOT EXISTS { $this dicbio:semanticEtymon ?e }
+            }
+        """ ;
+    ] .
+
+########################################################################
+## 5. ÉTIMOS — dicbio:SemanticEtymon
+#
+# dicbio:SemanticEtymon é rdfs:subClassOf ontolex:LexicalSense (não uma
+# classe independente com writtenRep/definition "soltos" — é uma
+# Acepção que atua como étimo). Por isso ela também pode ter
+# lemonety:etymology, permitindo cadeias etimológicas (um étimo com
+# outro étimo por trás), como previsto no protocolo.
+########################################################################
+
+dsh:SemanticEtymonShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:SemanticEtymon ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/etymon_" ;
+
+    sh:property [
+        sh:path dcterms:language ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://glottolog\\.org/resource/languoid/id/" ;
+        sh:message "dcterms:language do étimo deve apontar para um código glotto: (Glottolog)." ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:writtenRep ;
+        sh:minCount 1 ;
+        sh:message "Todo étimo precisa de ontolex:writtenRep." ;
+    ] ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:message "Todo étimo precisa de skos:definition." ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "skos:exactMatch pode ligar o étimo latino ao URI correspondente no projeto LiLa." ;
+    ] ;
+
+    # Cadeia etimológica: o próprio étimo pode ter sua hipótese de
+    # origem mais remota (dbres:etym_XXXXX, sem "_sense1").
+    sh:property [
+        sh:path lemonety:etymology ;
+        sh:minCount 0 ;
+        sh:node dsh:EtymologyShape ;
+        sh:message "Se o étimo tiver origem anterior (cadeia etimológica), use lemonety:etymology apontando para outra hipótese." ;
+    ] .
+
+########################################################################
+## 6. ATESTAÇÕES — dicbio:Attestation
+#
+# Correção importante em relação à primeira versão: dicbio:realizesForm
+# e dicbio:realizesSense têm domínio nif:Word (a OCORRÊNCIA no córpus),
+# não dicbio:Attestation. A Attestation se liga à ocorrência por meio
+# de dicbio:attestedByOccurrence.
+########################################################################
+
+dsh:AttestationShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/attestation_" ;
+
+    # Só se aplica ao caso (a): ocorrência automática no córpus do projeto.
+    sh:property [
+        sh:path dicbio:attestedByOccurrence ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:class nif:Word ;
+        sh:node dsh:OccurrenceShape ;
+    ] ;
+
+    # Só se aplica aos casos (b)/(c): fonte externa ao córpus (primária
+    # ou secundária) — protocolo diz que devem vir sempre juntas.
+    sh:property [
+        sh:path dicbio:attestationDate ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:gYear ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:source ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+    ] .
+
+dsh:AttestationDateSourceCoOccurrenceShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Se a atestação tem dicbio:attestationDate, também precisa ter dcterms:source (e vice-versa) — datação só se aplica a fontes externas ao córpus." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT $this
+            WHERE {
+                { $this dicbio:attestationDate ?d . FILTER NOT EXISTS { $this dcterms:source ?s } }
+                UNION
+                { $this dcterms:source ?s . FILTER NOT EXISTS { $this dicbio:attestationDate ?d } }
+            }
+        """ ;
+    ] ;
+
+    # Aviso (não erro): toda atestação deveria ter OU uma ocorrência de
+    # córpus OU (data + fonte externas) — caso contrário está incompleta.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:severity sh:Warning ;
+        sh:message "Atestação sem dicbio:attestedByOccurrence e sem (dicbio:attestationDate + dcterms:source) — parece incompleta." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS { $this dicbio:attestedByOccurrence ?o }
+                FILTER NOT EXISTS { $this dicbio:attestationDate ?d . $this dcterms:source ?s }
+            }
+        """ ;
+    ] .
+
+# Ocorrência textual no córpus (nif:Word) — carrega realizesForm e
+# opcionalmente realizesSense.
+dsh:OccurrenceShape
+    a sh:NodeShape ;
+    sh:targetClass nif:Word ;
+
+    sh:property [
+        sh:path dicbio:realizesForm ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:Form ;
+        sh:message "Toda ocorrência (nif:Word) precisa de dicbio:realizesForm apontando para uma ontolex:Form." ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:realizesSense ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:LexicalSense ;
+    ] .
+
+########################################################################
+## 7. DERIVAÇÃO MORFOLÓGICA — morph:WordFormationRelation
+########################################################################
+
+dsh:WordFormationRelationShape
+    a sh:NodeShape ;
+    sh:targetClass morph:WordFormationRelation ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "_derivation$" ;
+
+    sh:property [
+        sh:path vartrans:source ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Toda WordFormationRelation precisa de vartrans:source (primitivo)." ;
+    ] ;
+
+    sh:property [
+        sh:path vartrans:target ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Toda WordFormationRelation precisa de vartrans:target (derivado)." ;
+    ] ;
+
+    sh:property [
+        sh:path vartrans:category ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dicbio:WordFormationType ;
+        sh:message "Toda WordFormationRelation precisa de vartrans:category (instância de dicbio:WordFormationType)." ;
+    ] ;
+
+    # Vocabulário aberto ("outros tipos poderão ser acrescentados"), só aviso.
+    sh:property [
+        sh:path vartrans:category ;
+        sh:in ( dicbio:Suffixation dicbio:Prefixation dicbio:Compounding ) ;
+        sh:severity sh:Warning ;
+        sh:message "Categoria de derivação fora do vocabulário-base (Suffixation/Prefixation/Compounding) — permitido, mas confira." ;
+    ] .
+
+########################################################################
+## 8. CONCEITOS — dbres:concept_XXXX
+#
+# IMPORTANTE: skos:Concept também é usado pela ontologia para os
+# vocabulários controlados (dicbio:impossible, dicbio:inherited,
+# dicbio:Suffixation etc. são todos "a skos:Concept" via subclasses).
+# Por isso, NÃO se pode usar sh:targetClass skos:Concept aqui — isso
+# forçaria essas etiquetas de vocabulário a também exigir
+# skos:exactMatch, o que não faz sentido para elas.
+#
+# Em vez disso, o alvo é definido como "todo nó que é objeto de
+# ontolex:reference" (sh:targetObjectsOf), que captura exatamente os
+# concept_XXXX usados para ligar acepções a conceitos anatômicos,
+# sem tocar nos termos de vocabulário controlado.
+########################################################################
+
+dsh:ConceptShape
+    a sh:NodeShape ;
+    sh:targetObjectsOf ontolex:reference ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:message "Todo concept_XXXX precisa de skos:definition." ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Todo concept_XXXX precisa de skos:exactMatch para o URI do conceito na ontologia externa (ex.: Uberon)." ;
+    ] .
+
+########################################################################
+## 9. AUTORES/COLABORADORES — dbauth:nome_da_pessoa (foaf:Person)
+########################################################################
+
+dsh:AuthorShape
+    a sh:NodeShape ;
+    sh:targetClass foaf:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/autores/" ;
+
+    sh:property [
+        sh:path foaf:name ;
+        sh:minCount 1 ;
+        sh:message "Todo colaborador precisa de foaf:name." ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:identifier ;
+        sh:minCount 1 ;
+        sh:message "Todo colaborador precisa de dcterms:identifier (ORCID)." ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "rdfs:seeAlso pode apontar para o Lattes do colaborador." ;
+    ] .
+
+########################################################################
+## 10. FONTES — dbsrc:source_* / dbsrc:work_*
+########################################################################
+
+dsh:BookSourceShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:Book ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:path dcterms:title ;
+        sh:minCount 1 ;
+        sh:message "Toda fonte do tipo livro precisa de dcterms:title." ;
+    ] ;
+
+    # dcterms:creator AQUI aponta direto para o URI da Wikidata do
+    # autor da obra (não é o mesmo uso de dcterms:creator na Entrada,
+    # que exige foaf:Person) — por isso não há sh:class aqui.
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Toda fonte do tipo livro precisa de dcterms:creator (URI da Wikidata do autor da obra)." ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:issued ;
+        sh:minCount 1 ;
+        sh:message "Toda fonte do tipo livro precisa de dcterms:issued." ;
+    ] ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Toda fonte do tipo livro precisa de owl:sameAs apontando para o Wikidata." ;
+    ] ;
+
+    sh:property [
+        sh:path foaf:page ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+    ] .
+
+# Dicionários são bibo:Book + bibo:ReferenceSource ao mesmo tempo, então
+# esta shape não repete os requisitos (já cobertos por BookSourceShape
+# quando o recurso também é tipado como bibo:Book) — só avisa se
+# alguém esquecer de também tipar como bibo:Book.
+dsh:ReferenceSourceConsistencyShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:ReferenceSource ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:severity sh:Warning ;
+        sh:message "bibo:ReferenceSource (dicionário) deveria também ser tipado como bibo:Book, conforme o protocolo." ;
+        sh:select """
+            PREFIX bibo: <http://purl.org/ontology/bibo/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS { $this a bibo:Book }
+            }
+        """ ;
+    ] .
+
+# bibo:Periodical e bibo:Issue: o protocolo apenas cita esses tipos
+# como possíveis para fontes, sem detalhar propriedades obrigatórias
+# específicas. Alvos declarados sem constraints de propriedade — ver
+# nota final.
+dsh:PeriodicalSourceShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:Periodical .
+
+dsh:IssueSourceShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:Issue .
+
+########################################################################
+## NOTAS
+########################################################################
+
+# 1) EXECUÇÃO COM pySHACL
+#    As shapes com sh:sparql (EtymologyProcessConsistencyShape,
+#    AttestationDateSourceCoOccurrenceShape, ReferenceSourceConsistencyShape)
+#    só são avaliadas com SHACL-SPARQL habilitado. No seu script:
+#
+#        from pyshacl import validate
+#        conforms, report_graph, report_text = validate(
+#            data_graph,
+#            shacl_graph=shapes_graph,
+#            ont_graph=ontology_graph,   # o dicbio-ontology.ttl,
+#                                        # útil para sh:class reconhecer
+#                                        # subclasses (ex.: dicbio:inherited
+#                                        # como dicbio:EtymologicalProcess)
+#            advanced=True,
+#            inference="rdfs",           # ajuda sh:class a considerar
+#                                        # rdfs:subClassOf
+#        )
+#
+#    Sem ont_graph + inference="rdfs", os testes com sh:class contra
+#    classes como dicbio:EtymologicalProcess ou dicbio:WordFormationType
+#    só vão passar se os dados repetirem explicitamente TODOS os
+#    rdf:type (inclusive os herdados por subclasse).
+#
+# 2) PENDÊNCIAS QUE FICARAM EM ABERTO
+#    - lexinfo:noun / lexinfo:adjective: para a checagem condicional de
+#      "gênero na entrada só se substantivo, gênero na forma só se
+#      adjetivo" eu precisaria dos valores exatos de
+#      lexinfo:partOfSpeech usados por vocês para essas duas classes
+#      gramaticais. Não modelei essa regra ainda por esse motivo — me
+#      diga os IRIs exatos (ex.: lexinfo:noun / lexinfo:adjective, se
+#      forem esses) e eu acrescento mais duas constraints SPARQL.
+#    - bibo:Periodical / bibo:Issue: sem propriedades obrigatórias
+#      definidas — se vocês já sabem quais campos um periódico/volume
+#      deve ter (título, ISSN, editora, número, ano etc.), me diga que
+#      eu completo essas duas shapes.
+#    - dsh:OccurrenceShape (nif:Word) foi modelada só com base no
+#      rdfs:domain/range do dicbio-ontology.ttl; não tenho um exemplo
+#      real de instância nif:Word do córpus para confirmar se há mais
+#      campos NIF (offset, contexto etc.) que também deveriam ser
+#      exigidos.
+#    - Convenção form_XXXX_accent: continua não verificável em SHACL
+#      puro (precisaria comparar strings entre duas IRIs distintas).

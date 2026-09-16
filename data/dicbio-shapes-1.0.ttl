@@ -1,0 +1,547 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dicbio: <https://dicbio.fflch.usp.br/ontology/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
+@prefix morph: <http://www.w3.org/ns/lemon/morph#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
+@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+
+#################################################################
+# Dicionário Histórico de Termos da Biologia — SHACL 1.0
+#
+# Shapes derived from:
+#   - dicbio-ontology 1.0
+#   - Protocolo de descrição dos termos
+#
+# Objetivo: validar os dados do grafo do DicBio.
+# As restrições abaixo distinguem:
+#   * propriedades obrigatórias;
+#   * cardinalidades;
+#   * classes esperadas;
+#   * vocabulários controlados;
+#   * algumas regras condicionais explicitadas no protocolo.
+#################################################################
+
+#################################################################
+# Entrada lexical
+#################################################################
+
+dicbio:LexicalEntryShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalEntry ;
+
+    sh:property [
+        sh:path dcterms:created ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "Uma entrada lexical deve ter exatamente uma data de criação (dcterms:created) em xsd:date."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:minCount 1 ;
+        sh:class foaf:Person ;
+        sh:message "Uma entrada lexical deve indicar pelo menos um autor (dcterms:creator) da classe foaf:Person."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path lexinfo:partOfSpeech ;
+        sh:maxCount 1 ;
+        sh:message "A entrada lexical pode ter no máximo uma classe gramatical (lexinfo:partOfSpeech)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:canonicalForm ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:Form ;
+        sh:message "Uma entrada lexical deve ter exatamente uma forma canônica (ontolex:canonicalForm)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:otherForm ;
+        sh:class ontolex:Form ;
+        sh:message "Cada ontolex:otherForm deve ser um recurso da classe ontolex:Form."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:sense ;
+        sh:minCount 1 ;
+        sh:class ontolex:LexicalSense ;
+        sh:message "Uma entrada lexical deve ter pelo menos uma acepção (ontolex:sense)."@pt ;
+    ] .
+
+#################################################################
+# Formas
+#################################################################
+
+dicbio:FormShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:Form ;
+
+    sh:property [
+        sh:path ontolex:writtenRep ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Uma forma deve conter exatamente uma representação escrita (ontolex:writtenRep) com indicação de língua."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path lexinfo:gender ;
+        sh:maxCount 1 ;
+        sh:in (
+            lexinfo:masculine
+            lexinfo:feminine
+            lexinfo:neuter
+        ) ;
+        sh:message "lexinfo:gender deve ser masculine, feminine ou neuter."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path lexinfo:number ;
+        sh:maxCount 1 ;
+        sh:in (
+            lexinfo:singular
+            lexinfo:plural
+        ) ;
+        sh:message "lexinfo:number deve ser singular ou plural."@pt ;
+    ] .
+
+#################################################################
+# Acepções
+#################################################################
+
+dicbio:LexicalSenseShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalSense ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Uma acepção deve conter pelo menos uma definição (skos:definition)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path lemonety:etymology ;
+        sh:minCount 1 ;
+        sh:class lemonety:Etymology ;
+        sh:message "Uma acepção deve conter pelo menos uma hipótese etimológica (lemonety:etymology)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:hasAttestation ;
+        sh:class dicbio:Attestation ;
+        sh:message "Cada atestação ligada a uma acepção deve ser da classe dicbio:Attestation."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path ontolex:reference ;
+        sh:class skos:Concept ;
+        sh:maxCount 1 ;
+        sh:message "Se houver ontolex:reference, o recurso deve ser um skos:Concept."@pt ;
+    ] .
+
+#################################################################
+# Hipóteses etimológicas
+#################################################################
+
+dicbio:EtymologyShape
+    a sh:NodeShape ;
+    sh:targetClass lemonety:Etymology ;
+
+    sh:property [
+        sh:path dcterms:source ;
+        sh:minCount 1 ;
+        sh:message "Uma hipótese etimológica deve indicar sua fonte (dcterms:source)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:etymologicalArgumentation ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A argumentação etimológica deve ser um texto com no máximo um valor."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:confidenceLevel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (
+            dicbio:impossible
+            dicbio:improbable
+            dicbio:plausible
+            dicbio:probable
+            dicbio:certain
+        ) ;
+        sh:message "Toda hipótese etimológica deve indicar um nível de confiança controlado."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:etymologicalProcess ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (
+            dicbio:inherited
+            dicbio:borrowed
+            dicbio:created
+            dicbio:semanticDerivation
+        ) ;
+        sh:message "Toda hipótese etimológica deve indicar exatamente um processo etimológico do vocabulário controlado."@pt ;
+    ] ;
+
+    sh:or (
+        [
+            sh:property [
+                sh:path dicbio:etymologicalProcess ;
+                sh:hasValue dicbio:inherited ;
+            ] ;
+            sh:property [
+                sh:path dicbio:semanticEtymon ;
+                sh:minCount 1 ;
+                sh:class dicbio:SemanticEtymon ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:path dicbio:etymologicalProcess ;
+                sh:hasValue dicbio:borrowed ;
+            ] ;
+            sh:property [
+                sh:path dicbio:semanticEtymon ;
+                sh:minCount 1 ;
+                sh:class dicbio:SemanticEtymon ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:path dicbio:etymologicalProcess ;
+                sh:hasValue dicbio:created ;
+            ] ;
+            sh:property [
+                sh:path dicbio:hasWordFormationRelation ;
+                sh:minCount 1 ;
+                sh:class morph:WordFormationRelation ;
+            ] ;
+        ]
+        [
+            sh:property [
+                sh:path dicbio:etymologicalProcess ;
+                sh:hasValue dicbio:semanticDerivation ;
+            ] ;
+        ]
+    ) ;
+
+    sh:property [
+        sh:path dicbio:semanticEtymon ;
+        sh:class dicbio:SemanticEtymon ;
+        sh:message "dicbio:semanticEtymon deve apontar para um dicbio:SemanticEtymon."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:hasWordFormationRelation ;
+        sh:class morph:WordFormationRelation ;
+        sh:message "dicbio:hasWordFormationRelation deve apontar para uma morph:WordFormationRelation."@pt ;
+    ] .
+
+#################################################################
+# Étimo semântico
+#################################################################
+
+dicbio:SemanticEtymonShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:SemanticEtymon ;
+
+    sh:property [
+        sh:path ontolex:writtenRep ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Um étimo semântico deve conter exatamente uma forma escrita (ontolex:writtenRep)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:language ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Um étimo semântico deve indicar sua língua (dcterms:language)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Um étimo semântico deve conter uma definição (skos:definition)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "skos:exactMatch, quando usado, deve apontar para uma IRI."@pt ;
+    ] .
+
+#################################################################
+# Relações de formação de palavras
+#################################################################
+
+dicbio:WordFormationRelationShape
+    a sh:NodeShape ;
+    sh:targetClass morph:WordFormationRelation ;
+
+    sh:property [
+        sh:path vartrans:source ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Uma relação de formação de palavras deve ter exatamente uma origem (vartrans:source)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path vartrans:target ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Uma relação de formação de palavras deve ter exatamente um alvo (vartrans:target)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path vartrans:category ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (
+            dicbio:Suffixation
+            dicbio:Prefixation
+            dicbio:Compounding
+        ) ;
+        sh:message "vartrans:category deve ser um tipo de formação de palavras previsto no vocabulário controlado."@pt ;
+    ] .
+
+#################################################################
+# Atestações
+#################################################################
+
+dicbio:AttestationShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+
+    sh:property [
+        sh:path dicbio:attestationDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:gYear ;
+        sh:message "dicbio:attestationDate, quando presente, deve ser um ano (xsd:gYear)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:source ;
+        sh:maxCount 1 ;
+        sh:message "A atestação pode ter no máximo uma fonte de datação (dcterms:source)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:attestedByOccurrence ;
+        sh:maxCount 1 ;
+        sh:class nif:Word ;
+        sh:message "dicbio:attestedByOccurrence deve apontar, quando presente, para uma ocorrência nif:Word."@pt ;
+    ] .
+
+#################################################################
+# Ocorrências do córpus
+#################################################################
+
+dicbio:NifWordShape
+    a sh:NodeShape ;
+    sh:targetClass nif:Word ;
+
+    sh:property [
+        sh:path dicbio:realizesForm ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:Form ;
+        sh:message "Uma ocorrência nif:Word deve realizar exatamente uma forma lexical (dicbio:realizesForm)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dicbio:realizesSense ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:LexicalSense ;
+        sh:message "Uma ocorrência nif:Word deve realizar exatamente uma acepção (dicbio:realizesSense)."@pt ;
+    ] .
+
+#################################################################
+# Conceitos
+#################################################################
+
+dicbio:ConceptShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Um conceito usado pelo DicBio deve conter pelo menos uma definição (skos:definition)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Um conceito usado pelo DicBio deve conter pelo menos um skos:exactMatch."@pt ;
+    ] .
+
+#################################################################
+# Autores
+#################################################################
+
+dicbio:AuthorShape
+    a sh:NodeShape ;
+    sh:targetClass foaf:Person ;
+
+    sh:property [
+        sh:path foaf:name ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Um autor deve conter exatamente um foaf:name."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:identifier ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Um autor deve conter seu identificador ORCID (dcterms:identifier)."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "rdfs:seeAlso, quando presente, deve apontar para uma IRI."@pt ;
+    ] .
+
+#################################################################
+# Fontes bibliográficas
+#################################################################
+
+dicbio:BookSourceShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:Book ;
+
+    sh:property [
+        sh:path dcterms:title ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Uma fonte bibliográfica classificada como bibo:Book deve ter título."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:minCount 1 ;
+        sh:class foaf:Person ;
+        sh:message "Uma fonte bibliográfica deve indicar pelo menos um autor/criador."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:issued ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Uma fonte bibliográfica deve indicar a data/ano de publicação."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Uma fonte bibliográfica deve indicar o URI correspondente no Wikidata por owl:sameAs."@pt ;
+    ] ;
+
+    sh:property [
+        sh:path foaf:page ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "foaf:page, quando presente, deve apontar para uma IRI."@pt ;
+    ] .
+
+#################################################################
+# Vocabulários controlados do DicBio
+#################################################################
+
+dicbio:EtymologicalProcessShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:EtymologicalProcess ;
+
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:hasValue dicbio:EtymologicalProcessScheme ;
+    ] .
+
+dicbio:WordFormationTypeShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:WordFormationType ;
+
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:hasValue dicbio:WordFormationTypeScheme ;
+    ] .
+
+#################################################################
+# Integridade das relações de atestação
+#################################################################
+
+dicbio:AttestationConsistencyShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+
+    sh:property [
+        sh:path dicbio:attestedByOccurrence ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A ocorrência que fundamenta uma atestação deve ser identificada por uma IRI."@pt ;
+    ] .
+
+#################################################################
+# Nota sobre limitações deliberadas desta primeira versão
+#
+# 1. O protocolo deixa em aberto a modelagem detalhada da relação
+#    entre forma, acepção e atestação no córpus; por isso a shape
+#    exige dicbio:realizesForm e dicbio:realizesSense em nif:Word,
+#    mas não impõe regras adicionais sobre os IDs XML.
+#
+# 2. Atestações provenientes do córpus podem não possuir data/fonte
+#    explícitas, segundo o protocolo; por isso estas propriedades
+#    não são obrigatórias na AttestationShape.
+#
+# 3. Não são impostas regras sobre rdfs:seeAlso/skos:exactMatch da
+#    entrada lexical, pois são propriedades opcionais no protocolo.
+#
+# 4. A shape de skos:Concept é aplicada a todos os skos:Concept do
+#    grafo. Se o grafo incluir os conceitos dos vocabulários
+#    controlados acima, eles também serão alvo dessa shape; em uma
+#    implementação real, pode ser conveniente restringir a shape
+#    aos recursos dbres:concept_XXXX.
+#################################################################

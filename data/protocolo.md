@@ -100,11 +100,14 @@
 
 ---------------------------------------------------
 ## Autores e fontes:
-- Os autores são da classe "foaf:Person" e são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do Lattes.
+- Os autores das obras usadas nas fontes são referidos apenas pelo URI da Wikidata, por meio da propriedade dcterms:creator.
 
-- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link.
+- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link. Se for dicionário, será ao mesmo tempo "bibo:Book" e "bibo:ReferenceSource". Pode ser também periódico "bibo:Periodical" e volume de periódico "bibo:Issue".
 
 - Os livros do córpus são indicados como se fossem fontes, exceto que se usa "dbsrc:work_nome_da_fonte" em vez de "source".
+
+- Os colaboradores são da classe "foaf:Person" e são indicados com "dbauth:nome_da_pessoa" e contêm "foaf:name" com  nome por escrito, "dcterms:identifier" com o Orcid e "rdfs:seeAlso" com o link do currículo Lattes.
+
 
 -------------------------------------------------
 ## Regras de identificação de URIs:
