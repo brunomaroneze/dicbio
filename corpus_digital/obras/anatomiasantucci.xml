@@ -1,4 +1,4 @@
-  <?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="tei_dhtb.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
@@ -3051,69 +3051,90 @@
           <p>40 O fim para que o fangue he levado do feto para a placenta, he (como assentaõ
             commummente os AA.) para absorver da mesma placenta alguma materia semelhante à que
             recebemos do ar pelos bofes, a qual he muito necessaria para a conservaçaõ da vida E
-            como os bofes no feto estaõ ociosos, era precisa outra via para fazer o que fariaõ os bofes.<pb n="96"
+            como os bofes no <pb n="96"
               facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0216.jp2&amp;id=anatomiadocorpoh01sant"
-            />
-          </p>
-          <p> 41 Quer Verheien, que alèm dos vasos de sangue, hajaõ tambem nervos entre os vasos Umbilicaes da vide.</p>
-          <p> 42 O uraco nos fetos das vacas he furado, porèm nos fetos humanos ainda isto naõ he manifesto. Sahe este uraco nos ditos animaes do sundo da bexiga ourinaria,
-          e depois passa pelo embigo, atè acabar na membrana Allantoyde. Nos fetos humanos ouraco (que assim lhe chamaõ ordinariamente) he como hum ligamento, pelo
-          qual està suspenso do embigo, o fundo da bexiga. Este uraco naõ he furado (como acima dissemos) e està em duvida se ha no feto humano cousa, que se possa chamar Uraco, e Allantoydes. </p)
-          <note>Verhey de secund. p. 117. Uraco nas vacas, e nos homens. Est. 2 fig. 1. Est. 6. fig 1. Est. 8. fig. 1 </note>
-          <note> Uso do uracho nos fetos humanos. </note>
-        <p> 43 Os vasos, de que atéqui temos tratado, fóra do feto, estaõ cubertos com huma membrana grossa, e dura, derivada do chorion, e dentro do feto depois do
-        prarto reduzem-se a ligamentos. Isto se entende das duas arterias do Uraco; e da vea Umbilical, a qual vem a fazerse ligamento do figado. <pb n="97"
-        facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0217.jp2&amp;id=anatomiadocorpoh01sant"                                                                                                                                            
-          />
-        </p)
-          <p> CAPITULO XIII.
-          Das partes do thorax e primeiramente das continentes proprias,
-          e da natureza do leyte, e seus principios.
-          O Thorax he a cavidade, que principìa das claviculas atè o diaphragma: pela parte de diante tem o esternon,aos lados as costellas, pela parte posterioras 
-          vertebras. As suas partes dividem-se em continentes, e conteùdas. Das primeiras. humas saõ commuas, e outras proprias; das commuas agora não trataremos, porque temos tratado bastantemente no seu
-          lugar. Só fallaremos das partes continentes proprias, e destas tambem naõ de todas, por se tratar dellas em outros lugares, e assim fallaremos primeiro das mamas.</p>
-          <p> 2 O lugar das mamas, o seu tamanho, a sua figura, e numero he taõ manifesto, que naõ necessita de expiicaçaõ.</p>
-          <note> Partes de thorax. Est 7. fig. 1. </note>
-          <note> As mamas </note>
-        <pb n="98"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0218.jp2&amp;id=anatomiadocorpoh01sant"/>
-          <p>A substancia das mamas, segundo Malpighio he feita de canosinhos, que servem para conservar o leite, e estes se comunicaõ entre si com mutua anastomôse: estaõ
-          entre os ditos canosinhos muitas glandulasinhas com muita gordura, as quaes estaõ pendentes dos vasos do sangue, e os canosinhos tem todo o genero de vasos. 
-            Estes canosinhos unem-se nas papillas, e ahi se abrem com muitos buraquinhos.</p>
-          <note> Substancia das mamas. Es.t 8. fig. 5.67.</note>
-          <p> 3 As papillas saõ aquelles corpos redondos, que se observaõ levantados no meyo das mamas, os quaes tem ao redor hum circulo, que tem differente cor da
-          cute, e està cheyo de glandulas, e o tal circulo se chama Areola. A sua cor nas virgens he pállida; nas que tem leite, e nas velhas vay para negro. A cor das pa-
-          pillas nas mulheres pejadas he quasi vermelha.</p>
-          <note> Papillas das mamas. Fig.5.7. </note>
-          <note> Areola, e sua cor. B. fig. 5 </note>
-          <note> Substancia das papillas. </note>
-          <note> Vasos de sangue. </note>
-          <p> 4 A substancia das papillas he composta de fibras variamente tecidas, a modo dos corpos cavernosos do membro viril, e de vasos de sangue, e canosinhos, que
-          servem para o leite. Os vasos de sangue derivaõ-se daquelles da subclavia, e dos axilla- </p>
-        <pb n="99"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0219.jp2&amp;id=anatomiadocorpoh01sant"/>
-        <p> axillares, e tambem dos hypogastricos, e de todos estes vaõ atè as mamas. Os nervos sahem daquelles das vertebras das costas. Varthno quer que as mamas tenhaõ 
-          tambem vasos lymphaticos. Alguns dizem, que estes vasos sahem do ducto thoracico para se poder produzir o leite.</p>
-          <note> Nervos </p>
-          <note> Vasos lymphaticos das mamas. </note>
-          <p> 5 Mas se discorrermos pelo que se tem visto nos caens, e nos coelhos, diremos, que os ductos, que sahem da cisterna do chylo para as tetas saõ vasos lymphaticos,
-          e naõ ductos chyliferos; e assim por nenhum outro modo o leite se poderá separar nas mamas, senaõ por aquelle mesmo, com que os outros licores se separaõ do
-          sangue nas partes glandulosas. </p>
-            <note> Os ductos chyliferus naõ saõ que vasos lymphaticos. Est. 8. fig. 7.6. </note>
-          <p> 6 Agora diremos alguma cousa do mesmo leite. Entre os humores uteis separados do nosso corpo, tem o primeiro lugar o leite. Este he hum humor branco
-          e doce, cuja consistencia he mediocre. Separa-se do chylo por meyo do sangue nas mamas, e he destinado para a nutriçaõ da prole. 
-          Podemos investigar os seus principios por dous modos, convem a saber: mechanicamente, e chimicamente. </p>
-            <note> Separa-se o leite de chylo por meyo do sangue nas mamas. </p>
+            />feto estaõ ociosos, era precisa outra via para fazer o que fariaõ os bofes. </p>
+          <p>41 Quer Verheien, que alèm dos vasos de sangue, hajaõ tambem nervos entre os vasos
+            Umbilicaes da vide.</p>
+          <p>42 O uraco nos fetos das vacas he furado, porèm nos fetos humanos ainda isto naõ he
+            manifesto. Sahe este uraco nos ditos animaes do sundo da bexiga ourinaria, e depois
+            passa pelo embigo, atè acabar na membrana Allantoyde. Nos fetos humanos ouraco (que
+            assim lhe chamaõ ordinariamente) he como hum ligamento, pelo qual està suspenso do
+            embigo, o fundo da bexiga. Este uraco naõ he furado (como acima dissemos) e està em
+            duvida se ha no feto humano cousa, que se possa chamar Uraco, e Allantoydes.</p>
+          <note>Verhey de secund. p. 117. Uraco nas vacas, e nos homens. Est. 2 fig. 1. Est. 6. fig
+            1. Est. 8. fig. 1 </note>
+          <note>Uso do uracho nos fetos humanos.</note>
+          <p>43 Os vasos, de que atéqui temos tratado, fóra do feto, estaõ cubertos com huma
+            membrana grossa, e dura, derivada do chorion, e dentro do feto depois do prarto
+            reduzem-se a ligamentos. Isto se entende das duas arterias do Uraco; e da vea Umbilical,
+            a qual vem a fazerse ligamento do figado.</p>
+        </div>
+        <pb n="97"
+          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0217.jp2&amp;id=anatomiadocorpoh01sant"/>
+        <div type="capitulo" n="13">
+          <head>CAPITULO XIII. Das partes do thorax e primeiramente das continentes proprias, e da
+            natureza do leyte, e seus principios.</head>
+          <p>1 O Thorax he a cavidade, que principìa das claviculas atè o diaphragma: pela parte de
+            diante tem o esternon,aos lados as costellas, pela parte posterioras vertebras. As suas
+            partes dividem-se em continentes, e conteùdas. Das primeiras. humas saõ commuas, e
+            outras proprias; das commuas agora não trataremos, porque temos tratado bastantemente no
+            seu lugar. Só fallaremos das partes continentes proprias, e destas tambem naõ de todas,
+            por se tratar dellas em outros lugares, e assim fallaremos primeiro das mamas.</p>
+          <note>Partes deo thorax. Est 7. fig. 1.</note>
+          <note>As mamas.</note>
+          <p>2 O lugar das mamas, o seu tamanho, a sua figura, e numero he taõ manifesto, que naõ
+            necessita de expiicaçaõ. <pb n="98"
+              facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0218.jp2&amp;id=anatomiadocorpoh01sant"
+            />A substancia das mamas, segundo Malpighio he feita de canosinhos, que servem para
+            conservar o leite, e estes se comunicaõ entre si com mutua anastomôse: estaõ entre os
+            ditos canosinhos muitas glandulasinhas com muita gordura, as quaes estaõ pendentes dos
+            vasos do sangue, e os canosinhos tem todo o genero de vasos. Estes canosinhos unem-se
+            nas papillas, e ahi se abrem com muitos buraquinhos.</p>
+          <note>Substancia das mamas. Es.t 8. fig. 5.67.</note>
+          <p>3 As papillas saõ aquelles corpos redondos, que se observaõ levantados no meyo das
+            mamas, os quaes tem ao redor hum circulo, que tem differente cor da cute, e està cheyo
+            de glandulas, e o tal circulo se chama Areola. A sua cor nas virgens he pállida; nas que
+            tem leite, e nas velhas vay para negro. A cor das papillas nas mulheres pejadas he quasi
+            vermelha.</p>
+          <note>Papillas das mamas. Fig.5.7.</note>
+          <note>Areola, e sua cor. B. fig. 5.</note>
+          <note>Substancia das papillas.</note>
+          <note>Vasos de sangue.</note>
+          <p>4 A substancia das papillas he composta de fibras variamente tecidas, a modo dos corpos
+            cavernosos do membro viril, e de vasos de sangue, e canosinhos, que servem para o leite.
+            Os vasos de sangue derivaõ-se daquelles da subclavia, e dos <pb n="99"
+              facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0219.jp2&amp;id=anatomiadocorpoh01sant"
+            />axillares, e tambem dos hypogastricos, e de todos estes vaõ atè as mamas. Os nervos
+            sahem daquelles das vertebras das costas. Varthno quer que as mamas tenhaõ tambem vasos
+            lymphaticos. Alguns dizem, que estes vasos sahem do ducto thoracico para se poder
+            produzir o leite.</p>
+          <note>Nervos</note>
+          <note>Vasos lymphaticos das mamas.</note>
+          <p>5 Mas se discorrermos pelo que se tem visto nos caens, e nos coelhos, diremos, que os
+            ductos, que sahem da cisterna do chylo para as tetas saõ vasos lymphaticos, e naõ ductos
+            chyliferos; e assim por nenhum outro modo o leite se poderá separar nas mamas, senaõ por
+            aquelle mesmo, com que os outros licores se separaõ do sangue nas partes
+            glandulosas.</p>
+          <note>Os ductos chyliferos naõ saõ que vasos lymphaticos. Est. 8. fig. 7.6.</note>
+          <p>6 Agora diremos alguma cousa do mesmo leite. Entre os humores uteis separados do nosso
+            corpo, tem o primeiro lugar o leite. Este he hum humor branco e doce, cuja consistencia
+            he mediocre. Separa-se do chylo por meyo do sangue nas mamas, e he destinado para a
+            nutriçaõ da prole. Podemos investigar os seus principios por dous modos, convem a saber:
+            mechanicamente, e chimicamente.</p>
+          <note>Separa-se o leite de chylo por meyo do sangue nas mamas.</note>
           <pb n="100"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0220.jp2&amp;id=anatomiadocorpoh01sant"/>
-        <pb n="101"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0221.jp2&amp;id=anatomiadocorpoh01sant"/>
-        <pb n="102"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0222.jp2&amp;id=anatomiadocorpoh01sant"/>
-        <pb n="103"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0223.jp2&amp;id=anatomiadocorpoh01sant"/>
-        <pb n="104"
-          facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0224.jp2&amp;id=anatomiadocorpoh01sant"/>
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0220.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="101"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0221.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="102"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0222.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="103"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0223.jp2&amp;id=anatomiadocorpoh01sant"/>
+          <pb n="104"
+            facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0224.jp2&amp;id=anatomiadocorpoh01sant"
+          />
+        </div>
         <pb n="105"
           facs="https://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/anatomiadocorpoh01sant/anatomiadocorpoh01sant_jp2.zip&amp;file=anatomiadocorpoh01sant_jp2/anatomiadocorpoh01sant_0225.jp2&amp;id=anatomiadocorpoh01sant"/>
         <pb n="106"
