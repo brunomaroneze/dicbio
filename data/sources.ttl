@@ -105,7 +105,7 @@ dbsrc:source_old a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Oxford Latin Dictionary" ;
     dcterms:publisher "Oxford University Press" ;
     dcterms:issued "1968"^^xsd:gYear ;
-    bibo:editor [ a foaf:Person ; foaf:name "P. G. W. Glare" ] ;
+    bibo:editor <https://www.wikidata.org/wiki/Q132146572> ; # P. G. W. Glare ;
     dcterms:description "Obra de autoria editorial coletiva; sem autor individual atribuído." ;
     owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
 

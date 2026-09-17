@@ -1,11 +1,24 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
-# Atualização: flexibilização de autoria em bibo:Book (v2.1)
+# v2.3 — dsh:AuthorShape: substituído sh:targetClass foaf:Person por
+#   SPARQLTarget restrito a IRIs dbauth:, evitando que nós foaf:Person
+#   externos (ex.: bibo:editor de fontes) sejam capturados pela shape.
+# v2.1 — flexibilização de autoria em bibo:Book:
 #   dcterms:creator rebaixado para Warning; bibo:editor aceito como
 #   alternativa para obras coletivas/editoriais (ex.: OLD, TLL).
-#   Nova shape SPARQL dsh:BookSourceAuthorshipShape garante que ao
-#   menos um dos dois esteja presente (Violation se ambos ausentes).
+#   Nova dsh:BookSourceAuthorshipShape (SPARQL) garante que ao menos
+#   um dos dois esteja presente (Violation se ambos ausentes).
+# v2.2 — suporte a volumes e a periódicos/fascículos:
+#   dsh:BookSourceShape convertida para SPARQLTarget, excluindo volumes
+#   (bibo:Book com dcterms:isPartOf → bibo:Book).
+#   dsh:BookSourceAuthorshipShape idem (mesmo alvo).
+#   Nova dsh:BookVolumeShape: valida volumes, exige bibo:volume e
+#   dcterms:isPartOf → obra-mãe válida; dispensa title/issued/creator.
+#   dsh:PeriodicalSourceShape: agora exige dcterms:title e owl:sameAs.
+#   dsh:IssueSourceShape: agora exige dcterms:isPartOf (Periodical
+#   válido), dcterms:issued e bibo:volume; title/sameAs/seeAlso como
+#   Warning.
 #
 # Regras que exigem SHACL-SPARQL (sh:sparql) estão marcadas abaixo.
 # Rode o pySHACL com advanced=True (ver nota final) para ativá-las.
@@ -549,7 +562,24 @@ dsh:ConceptShape
 
 dsh:AuthorShape
     a sh:NodeShape ;
-    sh:targetClass foaf:Person ;
+    # Alvo restrito a colaboradores do projeto (IRI dbauth:).
+    # sh:targetClass foaf:Person capturaria qualquer foaf:Person no
+    # grafo — inclusive nós externos usados em bibo:editor de fontes
+    # (ex.: editores de obras de referência com nó vazio ou URI
+    # externa). O SPARQLTarget filtra pelo prefixo da IRI, evitando
+    # falsos positivos sobre pessoas externas ao projeto.
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
+            PREFIX dbauth: <http://dicbio.fflch.usp.br/autores/>
+            SELECT ?this
+            WHERE {
+                ?this a foaf:Person .
+                FILTER (STRSTARTS(STR(?this), STR(dbauth:)))
+            }
+        """ ;
+    ] ;
     sh:nodeKind sh:IRI ;
     sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/autores/" ;
 
@@ -575,11 +605,45 @@ dsh:AuthorShape
 
 ########################################################################
 ## 10. FONTES — dbsrc:source_* / dbsrc:work_*
+#
+# Hierarquia de tipos bibliográficos cobertos:
+#
+#   bibo:Book (obra independente, sem dcterms:isPartOf → bibo:Book)
+#     └─ bibo:ReferenceSource (dicionários — também tipados como Book)
+#        └─ volumes (bibo:Book com dcterms:isPartOf → bibo:Book)
+#   bibo:Periodical (série de periódico, sem fascículos próprios)
+#     └─ bibo:Issue (fascículo com data e volume próprios)
+#
+# Obras independentes e volumes são ambos bibo:Book, mas têm regras
+# diferentes: obras independentes carregam todos os metadados canônicos
+# (title, issued, creator/editor, sameAs); volumes herdam esses campos
+# da obra-mãe via dcterms:isPartOf e só precisam de bibo:volume.
+# A separação é feita por SPARQLTarget em dsh:BookSourceShape (exclui
+# volumes) e dsh:BookVolumeShape (exclui obras independentes).
 ########################################################################
+
+# ── 10a. Obras independentes (bibo:Book sem dcterms:isPartOf → Book) ──
 
 dsh:BookSourceShape
     a sh:NodeShape ;
-    sh:targetClass bibo:Book ;
+    # Alvo: bibo:Book que NÃO sejam volumes (sem isPartOf apontando
+    # para outro bibo:Book). Isso exclui os volumes do Brotero e
+    # similares, que têm suas próprias regras em dsh:BookVolumeShape.
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX bibo:    <http://purl.org/ontology/bibo/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT ?this
+            WHERE {
+                ?this a bibo:Book .
+                FILTER NOT EXISTS {
+                    ?this dcterms:isPartOf ?parent .
+                    ?parent a bibo:Book .
+                }
+            }
+        """ ;
+    ] ;
     sh:nodeKind sh:IRI ;
 
     sh:property [
@@ -588,18 +652,13 @@ dsh:BookSourceShape
         sh:message "Toda fonte do tipo livro precisa de dcterms:title." ;
     ] ;
 
-    # dcterms:creator AQUI aponta direto para o URI da Wikidata do
-    # autor da obra (não é o mesmo uso de dcterms:creator na Entrada,
-    # que exige foaf:Person) — por isso não há sh:class aqui.
-    #
-    # POLÍTICA DE AUTORIA (atualizada):
-    # Obras com autoria individual clara → dcterms:creator (URI Wikidata do autor).
+    # POLÍTICA DE AUTORIA:
+    # Obras com autoria individual clara → dcterms:creator (URI Wikidata).
     # Obras de autoria coletiva/editorial (ex.: Oxford Latin Dictionary) →
-    #   bibo:editor (URI Wikidata do editor-chefe ou nome literal) em substituição.
-    # A constraint abaixo (dsh:BookSourceAuthorshipShape) verifica que ao
-    # menos um dos dois está presente. dcterms:creator continua sendo
-    # recomendado (Warning) quando ausente, para incentivar seu uso nos
-    # casos em que há um autor identificável.
+    #   bibo:editor em substituição (URI Wikidata do editor-chefe).
+    # A constraint dsh:BookSourceAuthorshipShape exige ao menos um dos
+    # dois. dcterms:creator e bibo:editor ficam como Warning individualmente
+    # para orientar o catalogador sem bloquear casos legítimos.
     sh:property [
         sh:path dcterms:creator ;
         sh:minCount 0 ;
@@ -635,18 +694,30 @@ dsh:BookSourceShape
         sh:nodeKind sh:IRI ;
     ] .
 
-# Regra condicional (SHACL-SPARQL): toda fonte do tipo livro deve ter
-# ao menos dcterms:creator OU bibo:editor — obras sem nenhum dos dois
-# estão incompletas (Violation). Isso permite omitir dcterms:creator
-# em obras de autoria coletiva/editorial sem abrir mão de uma
-# identificação de responsabilidade intelectual.
+# Regra condicional (SHACL-SPARQL): toda obra independente deve ter
+# ao menos dcterms:creator OU bibo:editor. Volumes são excluídos
+# (eles herdam a autoria da obra-mãe via dcterms:isPartOf).
 dsh:BookSourceAuthorshipShape
     a sh:NodeShape ;
-    sh:targetClass bibo:Book ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX bibo:    <http://purl.org/ontology/bibo/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT ?this
+            WHERE {
+                ?this a bibo:Book .
+                FILTER NOT EXISTS {
+                    ?this dcterms:isPartOf ?parent .
+                    ?parent a bibo:Book .
+                }
+            }
+        """ ;
+    ] ;
 
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "Toda fonte do tipo livro precisa de ao menos dcterms:creator (autoria individual) OU bibo:editor (autoria coletiva/editorial). Para obras de referência sem autor nominal (ex.: Oxford Latin Dictionary), use bibo:editor apontando para o editor-chefe ou para um nó com foaf:name literal." ;
+        sh:message "Toda fonte do tipo livro precisa de ao menos dcterms:creator (autoria individual) OU bibo:editor (autoria coletiva/editorial). Para obras de referência sem autor nominal (ex.: Oxford Latin Dictionary), use bibo:editor apontando para o editor-chefe." ;
         sh:select """
             PREFIX dcterms: <http://purl.org/dc/terms/>
             PREFIX bibo:    <http://purl.org/ontology/bibo/>
@@ -658,10 +729,69 @@ dsh:BookSourceAuthorshipShape
         """ ;
     ] .
 
-# Dicionários são bibo:Book + bibo:ReferenceSource ao mesmo tempo, então
-# esta shape não repete os requisitos (já cobertos por BookSourceShape
-# quando o recurso também é tipado como bibo:Book) — só avisa se
-# alguém esquecer de também tipar como bibo:Book.
+# ── 10b. Volumes (bibo:Book com dcterms:isPartOf → bibo:Book) ────────
+#
+# Volumes não repetem title/issued/creator da obra-mãe — herdam esses
+# campos via dcterms:isPartOf. Só precisam de bibo:volume para se
+# identificar dentro da série e de dcterms:isPartOf apontando para uma
+# obra-mãe válida (verificada por sh:node dsh:BookSourceShape).
+# owl:sameAs é recomendado (Warning) quando o volume tem item próprio
+# no Wikidata (como os dois volumes do Brotero).
+
+dsh:BookVolumeShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX bibo:    <http://purl.org/ontology/bibo/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT ?this
+            WHERE {
+                ?this a bibo:Book ;
+                      dcterms:isPartOf ?parent .
+                ?parent a bibo:Book .
+            }
+        """ ;
+    ] ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:path dcterms:isPartOf ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node dsh:BookSourceShape ;
+        sh:message "dcterms:isPartOf do volume deve apontar para uma bibo:Book válida (com title, issued e creator/editor)." ;
+    ] ;
+
+    sh:property [
+        sh:path bibo:volume ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Todo volume precisa de bibo:volume identificando sua posição na obra." ;
+    ] ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se owl:sameAs quando o volume tem item próprio no Wikidata." ;
+    ] ;
+
+    sh:property [
+        sh:path foaf:page ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+    ] .
+
+# ── 10c. Dicionários (bibo:ReferenceSource) ───────────────────────────
+#
+# Dicionários são tipados como bibo:Book + bibo:ReferenceSource ao mesmo
+# tempo. As regras de bibo:Book (dsh:BookSourceShape) já cobrem os
+# metadados obrigatórios. Esta shape apenas verifica a consistência de
+# tipagem dupla.
+
 dsh:ReferenceSourceConsistencyShape
     a sh:NodeShape ;
     sh:targetClass bibo:ReferenceSource ;
@@ -678,26 +808,106 @@ dsh:ReferenceSourceConsistencyShape
         """ ;
     ] .
 
-# bibo:Periodical e bibo:Issue: o protocolo apenas cita esses tipos
-# como possíveis para fontes, sem detalhar propriedades obrigatórias
-# específicas. Alvos declarados sem constraints de propriedade — ver
-# nota final.
+# ── 10d. Periódicos (bibo:Periodical) ────────────────────────────────
+#
+# O periódico é um contêiner — sua função no grafo é ser o alvo do
+# dcterms:isPartOf dos Issues. Não tem data própria (a data fica no
+# Issue). Exige title e owl:sameAs para identificação.
+
 dsh:PeriodicalSourceShape
     a sh:NodeShape ;
-    sh:targetClass bibo:Periodical .
+    sh:targetClass bibo:Periodical ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:path dcterms:title ;
+        sh:minCount 1 ;
+        sh:message "Todo periódico precisa de dcterms:title." ;
+    ] ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Todo periódico precisa de owl:sameAs apontando para o Wikidata." ;
+    ] .
+
+# ── 10e. Fascículos (bibo:Issue) ──────────────────────────────────────
+#
+# O fascículo é a unidade citável do periódico. Carrega a data e o
+# número de volume. dcterms:title é recomendado (Warning): em muitos
+# casos é composto do título da série + número, derivável por consulta,
+# mas útil para legibilidade humana. owl:sameAs é recomendado: nem
+# todo fascículo tem item próprio no Wikidata.
+# A constraint SPARQL dsh:IssueParentConsistencyShape verifica que o
+# dcterms:isPartOf aponta para um bibo:Periodical válido.
 
 dsh:IssueSourceShape
     a sh:NodeShape ;
-    sh:targetClass bibo:Issue .
+    sh:targetClass bibo:Issue ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:path dcterms:isPartOf ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class bibo:Periodical ;
+        sh:node dsh:PeriodicalSourceShape ;
+        sh:message "Todo fascículo precisa de dcterms:isPartOf apontando para um bibo:Periodical válido (com title e sameAs)." ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:issued ;
+        sh:minCount 1 ;
+        sh:datatype xsd:gYear ;
+        sh:message "Todo fascículo precisa de dcterms:issued (ano de publicação)." ;
+    ] ;
+
+    sh:property [
+        sh:path bibo:volume ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Todo fascículo precisa de bibo:volume identificando sua posição na série." ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:title ;
+        sh:minCount 0 ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se dcterms:title no fascículo para legibilidade (ex.: 'Acta Physico-Medica, Vol. II')." ;
+    ] ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se owl:sameAs quando o fascículo tem item próprio no Wikidata." ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se rdfs:seeAlso com link para a digitalização do fascículo." ;
+    ] .
 
 ########################################################################
 ## NOTAS
 ########################################################################
 
 # 1) EXECUÇÃO COM pySHACL
-#    As shapes com sh:sparql (EtymologyProcessConsistencyShape,
-#    AttestationDateSourceCoOccurrenceShape, ReferenceSourceConsistencyShape,
-#    BookSourceAuthorshipShape)
+#    As shapes com sh:sparql ou sh:target SPARQLTarget:
+#      dsh:AuthorShape (SPARQLTarget)
+#      dsh:LexicalSenseShape (SPARQLTarget)
+#      dsh:EtymologyProcessConsistencyShape
+#      dsh:AttestationDateSourceCoOccurrenceShape
+#      dsh:ReferenceSourceConsistencyShape
+#      dsh:BookSourceShape (SPARQLTarget)
+#      dsh:BookSourceAuthorshipShape (SPARQLTarget + SPARQLConstraint)
+#      dsh:BookVolumeShape (SPARQLTarget)
 #    só são avaliadas com SHACL-SPARQL habilitado. No seu script:
 #
 #        from pyshacl import validate
@@ -726,10 +936,6 @@ dsh:IssueSourceShape
 #      gramaticais. Não modelei essa regra ainda por esse motivo — me
 #      diga os IRIs exatos (ex.: lexinfo:noun / lexinfo:adjective, se
 #      forem esses) e eu acrescento mais duas constraints SPARQL.
-#    - bibo:Periodical / bibo:Issue: sem propriedades obrigatórias
-#      definidas — se vocês já sabem quais campos um periódico/volume
-#      deve ter (título, ISSN, editora, número, ano etc.), me diga que
-#      eu completo essas duas shapes.
 #    - dsh:OccurrenceShape (nif:Word) foi modelada só com base no
 #      rdfs:domain/range do dicbio-ontology.ttl; não tenho um exemplo
 #      real de instância nif:Word do córpus para confirmar se há mais
