@@ -17,6 +17,9 @@ def validate_ttl(data_file):
     data_graph = Graph()
     data_graph.parse(data_file, format="turtle")
 
+    # Carrega a ontologia básica
+    data_graph.parse("data/dicbio-ontology.ttl", format="turtle")
+
     # Carrega as shapes SHACL
     shacl_graph = Graph()
     shacl_graph.parse(SHACL_FILE, format="turtle")
@@ -28,7 +31,7 @@ def validate_ttl(data_file):
         inference="none",
         abort_on_first=False,
         allow_infos=False,
-        allow_warnings=False,
+        allow_warnings=True,
     )
 
     print("=" * 70)

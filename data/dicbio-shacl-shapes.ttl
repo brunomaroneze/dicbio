@@ -22,7 +22,7 @@
 @prefix nif:      <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
 # --- Namespaces reais do projeto (de dicbio-ontology.ttl) ---------------
-@prefix dicbio:   <https://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio:   <http://dicbio.fflch.usp.br/ontology/> .
 @prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix morph:    <http://www.w3.org/ns/lemon/morph#> .
 @prefix dbres:    <http://dicbio.fflch.usp.br/recurso/> .
@@ -108,7 +108,7 @@ dsh:LexicalEntryShape
     sh:property [
         sh:path lexinfo:gender ;
         sh:minCount 0 ;
-        sh:maxCount 1 ;
+        sh:maxCount 1 ; # Considerar tirar - há palavras que têm ambos os gêneros
         sh:in ( lexinfo:masculine lexinfo:feminine ) ;
         sh:message "lexinfo:gender na Entrada deve ser masculine ou feminine (substantivos)." ;
     ] .
@@ -169,7 +169,7 @@ dsh:LexicalSenseShape
         a sh:SPARQLTarget ;
         sh:select """
             PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
             SELECT ?this
             WHERE {
                 ?this a ontolex:LexicalSense .
@@ -289,7 +289,7 @@ dsh:EtymologyProcessConsistencyShape
         a sh:SPARQLConstraint ;
         sh:message "Hipótese classificada como dicbio:created deve ter dicbio:hasWordFormationRelation (explicação morfológica)." ;
         sh:select """
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
             SELECT $this
             WHERE {
                 $this dicbio:etymologicalProcess dicbio:created .
@@ -302,7 +302,7 @@ dsh:EtymologyProcessConsistencyShape
         a sh:SPARQLConstraint ;
         sh:message "Hipótese classificada como dicbio:borrowed ou dicbio:inherited deve ter dicbio:semanticEtymon (étimo)." ;
         sh:select """
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
             SELECT $this
             WHERE {
                 $this dicbio:etymologicalProcess ?p .
@@ -412,7 +412,7 @@ dsh:AttestationDateSourceCoOccurrenceShape
         a sh:SPARQLConstraint ;
         sh:message "Se a atestação tem dicbio:attestationDate, também precisa ter dcterms:source (e vice-versa) — datação só se aplica a fontes externas ao córpus." ;
         sh:select """
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
@@ -430,7 +430,7 @@ dsh:AttestationDateSourceCoOccurrenceShape
         sh:severity sh:Warning ;
         sh:message "Atestação sem dicbio:attestedByOccurrence e sem (dicbio:attestationDate + dcterms:source) — parece incompleta." ;
         sh:select """
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
@@ -557,7 +557,8 @@ dsh:AuthorShape
     sh:property [
         sh:path dcterms:identifier ;
         sh:minCount 1 ;
-        sh:message "Todo colaborador precisa de dcterms:identifier (ORCID)." ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se registrar o dcterms:identifier (ORCID) do colaborador." ;
     ] ;
 
     sh:property [

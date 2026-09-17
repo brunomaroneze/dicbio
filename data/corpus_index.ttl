@@ -1,5 +1,5 @@
 @prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
-@prefix dicbio: <https://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 # @prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .

@@ -60,8 +60,8 @@ dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
 dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalProcess dicbio:created ;
-    dicbio:hasWordFormationRelation dbres:adiposo_derivation ; # REVER
-    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de <i>ádipe</i> (gordura animal) com o acréscimo do sufixo <i>-oso</i>."""^^rdf:HTML ;
+    dicbio:hasWordFormationRelation dbres:adiposo_derivation ;
+    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de *ádipe* (gordura animal) com o acréscimo do sufixo *-oso*."""@pt ;
     dicbio:confidenceLevel dicbio:plausible .
 
 dbres:adiposo_derivation a morph:WordFormationRelation ;
@@ -90,7 +90,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:semanticEtymon dbres:etymon_adiposus ;
-    dicbio:etymologicalArgumentation """A forma latina <i>adiposus</i>, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""^^rdf:HTML ;
+    dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
 dbres:adiposus_entry a ontolex:LexicalEntry ;
