@@ -83,8 +83,14 @@ dbsrc:work_semmedo a bibo:Book ;
 # Definição do Houaiss
 dbsrc:source_houaiss a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
-    dcterms:publisher "Instituto Antônio Houaiss de Lexicografia" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1337113>, # URI de Antonio Houaiss
+                    <https://www.wikidata.org/entity/Q18277573> ; # URI de Mauro de Salles Villar
+    dcterms:publisher "Editora Objetiva / Instituto Antônio Houaiss de Lexicografia" ;
     dcterms:language glotto:port1283 ;
+    dcterms:issued "2009"^^xsd:gYear ; # lançamento da versão online
+    dcterms:modified "2025"^^xsd:gYear ; # última revisão conhecida da versão online
+    dcterms:description "Obra de revisão contínua; versão online lançada em 2009." ;
+    bibo:uri <https://houaiss.uol.com.br/> ;
     owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
 
 # Definição do Gaffiot
@@ -99,15 +105,20 @@ dbsrc:source_old a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "Oxford Latin Dictionary" ;
     dcterms:publisher "Oxford University Press" ;
     dcterms:issued "1968"^^xsd:gYear ;
+    bibo:editor [ a foaf:Person ; foaf:name "P. G. W. Glare" ] ;
+    dcterms:description "Obra de autoria editorial coletiva; sem autor individual atribuído." ;
     owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
 
 # Definição do LSJ
 dbsrc:source_LSJ a bibo:Book, bibo:ReferenceSource ;
     dcterms:title "The Online Liddell-Scott-Jones Greek-English Lexicon" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q649971>, # URI para Henry George Liddell
+                    <https://www.wikidata.org/entity/Q747540>, # URI para Robert Scott
+                    <https://www.wikidata.org/entity/Q1607288> ; # URI para Henry Stuart Jones
     dcterms:publisher "University of California" ;
     dcterms:issued "2011"^^xsd:gYear ;
     rdfs:seeAlso <https://stephanus.tlg.uci.edu/lsj/> ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q138371913> . # URI universal do LSJ (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
+    owl:sameAs <https://www.wikidata.org/wiki/Q300426> . # URI universal do LSJ
 
 
 dbsrc:source_acta_physico_medica_series a bibo:Periodical ;
@@ -116,6 +127,7 @@ dbsrc:source_acta_physico_medica_series a bibo:Periodical ;
 
 dbsrc:source_acta_physico_medica_1730 a bibo:Issue ;
     dcterms:title "Acta Physico-Medica, Vol. II" ;
+    bibo:volume "2" ;
     dcterms:issued "1730"^^xsd:gYear ;
     dcterms:isPartOf dbsrc:source_acta_physico_medica_series ; 
     rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .

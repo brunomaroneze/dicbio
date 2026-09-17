@@ -1,6 +1,11 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# Atualização: flexibilização de autoria em bibo:Book (v2.1)
+#   dcterms:creator rebaixado para Warning; bibo:editor aceito como
+#   alternativa para obras coletivas/editoriais (ex.: OLD, TLL).
+#   Nova shape SPARQL dsh:BookSourceAuthorshipShape garante que ao
+#   menos um dos dois esteja presente (Violation se ambos ausentes).
 #
 # Regras que exigem SHACL-SPARQL (sh:sparql) estão marcadas abaixo.
 # Rode o pySHACL com advanced=True (ver nota final) para ativá-las.
@@ -586,11 +591,29 @@ dsh:BookSourceShape
     # dcterms:creator AQUI aponta direto para o URI da Wikidata do
     # autor da obra (não é o mesmo uso de dcterms:creator na Entrada,
     # que exige foaf:Person) — por isso não há sh:class aqui.
+    #
+    # POLÍTICA DE AUTORIA (atualizada):
+    # Obras com autoria individual clara → dcterms:creator (URI Wikidata do autor).
+    # Obras de autoria coletiva/editorial (ex.: Oxford Latin Dictionary) →
+    #   bibo:editor (URI Wikidata do editor-chefe ou nome literal) em substituição.
+    # A constraint abaixo (dsh:BookSourceAuthorshipShape) verifica que ao
+    # menos um dos dois está presente. dcterms:creator continua sendo
+    # recomendado (Warning) quando ausente, para incentivar seu uso nos
+    # casos em que há um autor identificável.
     sh:property [
         sh:path dcterms:creator ;
-        sh:minCount 1 ;
+        sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
-        sh:message "Toda fonte do tipo livro precisa de dcterms:creator (URI da Wikidata do autor da obra)." ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se dcterms:creator (URI Wikidata do autor) quando há autoria individual identificável. Para obras coletivas/editoriais, use bibo:editor." ;
+    ] ;
+
+    sh:property [
+        sh:path bibo:editor ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se bibo:editor (URI Wikidata do editor-chefe) para obras de autoria coletiva ou editorial." ;
     ] ;
 
     sh:property [
@@ -610,6 +633,29 @@ dsh:BookSourceShape
         sh:path foaf:page ;
         sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
+    ] .
+
+# Regra condicional (SHACL-SPARQL): toda fonte do tipo livro deve ter
+# ao menos dcterms:creator OU bibo:editor — obras sem nenhum dos dois
+# estão incompletas (Violation). Isso permite omitir dcterms:creator
+# em obras de autoria coletiva/editorial sem abrir mão de uma
+# identificação de responsabilidade intelectual.
+dsh:BookSourceAuthorshipShape
+    a sh:NodeShape ;
+    sh:targetClass bibo:Book ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Toda fonte do tipo livro precisa de ao menos dcterms:creator (autoria individual) OU bibo:editor (autoria coletiva/editorial). Para obras de referência sem autor nominal (ex.: Oxford Latin Dictionary), use bibo:editor apontando para o editor-chefe ou para um nó com foaf:name literal." ;
+        sh:select """
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            PREFIX bibo:    <http://purl.org/ontology/bibo/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS { $this dcterms:creator ?creator }
+                FILTER NOT EXISTS { $this bibo:editor ?editor }
+            }
+        """ ;
     ] .
 
 # Dicionários são bibo:Book + bibo:ReferenceSource ao mesmo tempo, então
@@ -650,7 +696,8 @@ dsh:IssueSourceShape
 
 # 1) EXECUÇÃO COM pySHACL
 #    As shapes com sh:sparql (EtymologyProcessConsistencyShape,
-#    AttestationDateSourceCoOccurrenceShape, ReferenceSourceConsistencyShape)
+#    AttestationDateSourceCoOccurrenceShape, ReferenceSourceConsistencyShape,
+#    BookSourceAuthorshipShape)
 #    só são avaliadas com SHACL-SPARQL habilitado. No seu script:
 #
 #        from pyshacl import validate
