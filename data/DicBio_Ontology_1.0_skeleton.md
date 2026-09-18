@@ -125,15 +125,15 @@ https://dicbio.fflch.usp.br/ontology/1.0/
 
 Os URIs das classes e propriedades da Ontologia DicBio são construídos a partir do namespace da ontologia:
 
-´https://dicbio.fflch.usp.br/ontology/´
+`https://dicbio.fflch.usp.br/ontology/`
 
-Os identificadores dos recursos são estáveis e não dependem da versão específica da ontologia. Assim, por exemplo, a classe ´dicbio:Attestation´ tem por URI:
+Os identificadores dos recursos são estáveis e não dependem da versão específica da ontologia. Assim, por exemplo, a classe `dicbio:Attestation` tem por URI:
 
-´https://dicbio.fflch.usp.br/ontology/Attestation´
+`https://dicbio.fflch.usp.br/ontology/Attestation`
 
-A versão específica da ontologia é identificada separadamente por meio de sua ´owl:versionIRI´.
+A versão específica da ontologia é identificada separadamente por meio de sua `owl:versionIRI`.
 
-Os URIs das instâncias dos dados pertencem a namespaces distintos, como ´dbres:´, ´dbsrc:´ e ´dbauth:´. Essa separação permite distinguir claramente os termos do modelo ontológico dos recursos concretos descritos pelo dicionário.
+Os URIs das instâncias dos dados pertencem a namespaces distintos, como `dbres:`, `dbsrc:` e `dbauth:`. Essa separação permite distinguir claramente os termos do modelo ontológico dos recursos concretos descritos pelo dicionário.
 
 
 ### 4.4. Namespaces utilizados nos dados
@@ -198,7 +198,7 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 
 ### 7.2. Vocabulários utilizados na representação dos dados
 
-Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio, os dados do DicBio utilizam outros vocabulários externos para representar informações específicas. Esses vocabulários não constituem dependências da ontologia e, por isso, não são necessariamente incluídos em ´owl:imports´.
+Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio, os dados do DicBio utilizam outros vocabulários externos para representar informações específicas. Esses vocabulários não constituem dependências da ontologia e, por isso, não são necessariamente incluídos em `owl:imports`.
 
 | Prefixo | Ontologia / vocabulário | Namespace | Função nos dados do DicBio |
 |---|---|---|---|
@@ -233,20 +233,20 @@ A reutilização não implica que todos os vocabulários empregados na represent
 
 ### 8.2. Separação entre ontologia e dados
 
-A Ontologia DicBio distingue o modelo conceitual utilizado para descrever os dados dos próprios recursos que constituem o dicionário. As classes e propriedades definidas ou reutilizadas pela ontologia pertencem ao namespace ´dicbio:´, enquanto as instâncias concretas são identificadas por namespaces específicos, como ´dbres:´, ´dbsrc:´ e ´dbauth:´.
+A Ontologia DicBio distingue o modelo conceitual utilizado para descrever os dados dos próprios recursos que constituem o dicionário. As classes e propriedades definidas ou reutilizadas pela ontologia pertencem ao namespace `dicbio:`, enquanto as instâncias concretas são identificadas por namespaces específicos, como `dbres:`, `dbsrc:` e `dbauth:`.
 
 Essa separação permite que o modelo ontológico seja mantido e versionado independentemente dos dados, ao mesmo tempo em que possibilita que diferentes conjuntos de dados sejam descritos segundo o mesmo modelo.
 
 
 ### 8.3. Separação entre entrada lexical e acepção
 
-Uma entrada lexical (´ontolex:LexicalEntry´) representa a unidade lexical que constitui o verbete e pode estar associada a uma ou mais formas (´ontolex:Form´) e a uma ou mais acepções (´ontolex:LexicalSense´). Cada acepção é representada como um recurso próprio e se relaciona à entrada lexical à qual pertence por meio da propriedade ´ontolex:sense´.
+Uma entrada lexical (`ontolex:LexicalEntry`) representa a unidade lexical que constitui o verbete e pode estar associada a uma ou mais formas (`ontolex:Form`) e a uma ou mais acepções (`ontolex:LexicalSense`). Cada acepção é representada como um recurso próprio e se relaciona à entrada lexical à qual pertence por meio da propriedade `ontolex:sense`.
 
 Essa distinção permite representar adequadamente a polissemia: uma mesma entrada lexical pode apresentar diversas acepções, enquanto cada acepção pode receber informações semânticas, etimológicas e documentais próprias.
 
 ### 8.4. Representação das hipóteses etimológicas
 
-Em relação ao modelo adotado por *LemonEty*, a Ontologia DicBio faz uma escolha de modelagem distinta. Optou-se aqui por descrever o étimo como um recurso da classe ´dicbio:SemanticEtymon´ (definida como uma subclasse de `ontolex:LexicalSense` e, portanto, distinta de `lemonety:Etymon`). Duas são as principais vantagens desta modelagem:
+Em relação ao modelo adotado por *LemonEty*, a Ontologia DicBio faz uma escolha de modelagem distinta. Optou-se aqui por descrever o étimo como um recurso da classe `dicbio:SemanticEtymon` (definida como uma subclasse de `ontolex:LexicalSense` e, portanto, distinta de `lemonety:Etymon`). Duas são as principais vantagens desta modelagem:
 1. Isso permite descrever adequadamente os casos em que apenas uma das acepções de uma palavra foi transmitida a outra. Por exemplo, o português brasileiro *mouse* tem como étimo não a entrada inglesa *mouse* (com todas as suas acepções), mas apenas a acepção de "dispositivo informático";
 2. Também é possível associar etimologicamente duas acepções da mesma entrada, indicando que a mudança semântica também tem natureza etimológica.
 
@@ -288,7 +288,7 @@ Por fim, o étimo (que, lembre-se, é uma acepção) é associado à sua entrada
 
 Uma **atestação** representa uma ocorrência documentada de uma forma lexical ou de uma acepção em uma fonte histórica. A atestação permite registrar informações sobre a ocorrência e relacioná-la à fonte que fornece a evidência documental.
 
-As atestações são representadas pela classe ´dicbio:Attestation´ e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de ´dcterms:source´, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete. Por exemplo, a forma latina *auricula* (étimo da forma portuguesa "aurícula") é atestada numa obra de 1681 (a data é informada pela propriedade `dicbio:attestationDate`):
+As atestações são representadas pela classe `dicbio:Attestation` e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de `dcterms:source`, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete. Por exemplo, a forma latina *auricula* (étimo da forma portuguesa "aurícula") é atestada numa obra de 1681 (a data é informada pela propriedade `dicbio:attestationDate`):
 
 dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
@@ -325,7 +325,7 @@ Por fim, a própria ocorrência do corpus é associada tanto à forma quanto à 
 
 ### 8.6. Vocabulários controlados
 
-A Ontologia DicBio utiliza SKOS para representar conjuntos de valores controlados empregados na descrição dos dados. Esses conjuntos são organizados como ´skos:ConceptScheme´, enquanto seus valores são representados como ´skos:Concept´.
+A Ontologia DicBio utiliza SKOS para representar conjuntos de valores controlados empregados na descrição dos dados. Esses conjuntos são organizados como `skos:ConceptScheme`, enquanto seus valores são representados como `skos:Concept`.
 
 Na versão 1.0, são definidos vocabulários controlados para certeza etimológica, processo etimológico e tipo de formação de palavras. Os conceitos desses vocabulários recebem rótulos e definições em português e inglês.
 
@@ -792,7 +792,7 @@ As demais classes e propriedades de *LemonEty* também não foram reutilizadas, 
 
 A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT no Protégé Desktop. O reasoner classificou a ontologia sem apresentar erros de consistência.
 
-Entre as inferências esperadas encontra-se a classificação das instâncias de ´dicbio:EtymologicalProcess´ e ´dicbio:WordFormationType´ como instâncias de ´skos:Concept´.
+Entre as inferências esperadas encontra-se a classificação das instâncias de `dicbio:EtymologicalProcess` e `dicbio:WordFormationType` como instâncias de `skos:Concept`.
 
 ### 15.1. Perfil de raciocínio
 
