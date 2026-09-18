@@ -5,7 +5,7 @@ import rdflib
 from rdflib import Namespace, RDF, RDFS, SKOS, DCTERMS
 
 # 1. Definição MANUAL dos Namespaces que não são nativos da RDFLib
-DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
+DICBIO = Namespace("https://dicbio.fflch.usp.br/recurso/")
 ONTOLEX = Namespace("http://www.w3.org/ns/lemon/ontolex#")
 ETYM = Namespace("http://lari-datasets.ilc.cnr.it/lemonEty#")
 
@@ -20,7 +20,7 @@ def organizar_dicionario(arquivo_input, arquivo_output):
     with open(arquivo_output, "w", encoding="utf-8") as f:
         # Escrever os Prefixos no topo do arquivo
         f.write("@prefix dcterms: <http://purl.org/dc/terms/> .\n")
-        f.write("@prefix dicbio: <http://dicbio.fflch.usp.br/recurso/> .\n")
+        f.write("@prefix dicbio: <https://dicbio.fflch.usp.br/recurso/> .\n")
         f.write("@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .\n")
         f.write("@prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .\n")
         f.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n")

@@ -732,14 +732,14 @@
               <form xml:lang="la">— Denticulato-ciliata.</form>
               <sense xml:id="sn_vandelli_0102">Que tem na borda excavaçoes, e prominencias agudas, e
                 alem disso <term lemma="papila" norm="papilas" senseNumber="3"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0020">papillas</term>, ou fibras carnosas a modo de
                 cilias.</sense>
             </entry>
             <entry>
               <form xml:lang="la">— Supra aculeata.</form>
               <sense xml:id="sn_vandelli_0103">Com aculeos, ou <term lemma="papila" norm="papilas"
-                  senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0021">papillas</term> rijas, e agudas na parte superior, como
                 no Gato.</sense>
             </entry>
@@ -1238,7 +1238,7 @@
             <form xml:lang="la">AURICULA.</form>
             <sense xml:id="sn_vandelli_0197">As aves naõ tem <term lemma="aurícula" norm="aurículas"
                 msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
                 xml:id="t_vandelli_0032">auriculas</term>, em seu lugar, tem algumas penas mais
               compridas, que cercaõ o buraco das orelhas.</sense>
           </entry>
@@ -1418,7 +1418,7 @@
             <entry>
               <form xml:lang="la">— Papillosa.</form>
               <sense xml:id="sn_vandelli_0231">Com <term lemma="papila" norm="papilas"
-                  senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0040">papillas</term>. Columba turcica.</sense>
             </entry>
             <entry>
@@ -1790,7 +1790,7 @@
           <entry>
             <form xml:lang="la">OVUM.</form>
             <sense xml:id="sn_vandelli_0300">Ovo. Fig.I. e cavidade com ar. d. branco. b. <term
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_gema_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_gema_sense2"
                 xml:id="t_vandelli_0046">gema</term>. a. punctum saliens, ou rudimento da
               Ave.</sense>
           </entry>
@@ -2679,7 +2679,7 @@
                 lemma="membrana branquióstega" xml:id="t_vandelli_0059">membrana
                 branchiostega</term>; e na abertura <term lemma="branquióstego" norm="branquióstega"
                 msd="feminino singular" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_branquiostego_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_branquiostego_sense2"
                 xml:id="t_vandelli_0060">branchiostega</term> que entaõ fica aberta he que se vé o
               que propriamente se chama guelra. Desunindo-se humas das outras daõ postagem á agua
               que o peixe engulio e que quer deitar fora da sua gûela, avizinhando-se entre si e
@@ -4505,7 +4505,7 @@
             <entry>
               <form xml:lang="la">— Papillosum.</form>
               <sense xml:id="sn_vandelli_0799"> Com <term lemma="papila" norm="papilas"
-                  senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0096">papillas</term>; Nos Nantes, Squalus, Pristis.</sense>
             </entry>
           </entry>
@@ -5570,7 +5570,7 @@
             <entry>
               <form xml:lang="la">— Papillosum.</form>
               <sense xml:id="sn_vandelli_0999"> Com <term lemma="papila" norm="papilas"
-                  senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0115">papillas</term> prominentes para teçer. Aranea.</sense>
             </entry>
             <entry>
@@ -5750,7 +5750,7 @@
               <form xml:lang="la">— Laciniatæ, fissæ, digitatae.</form>
               <sense xml:id="sn_vandelli_1030"> Rachadas, <term lemma="digitado"
                   msd="feminino plural" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_digitado_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_digitado_sense2"
                   xml:id="t_vandelli_0123">digitadas</term>, ou cortadas como dedos.
                 Pterophorus.</sense>
             </entry>
@@ -5938,7 +5938,7 @@
             <form xml:lang="la">ANTENNÆ.</form>
             <sense xml:id="sn_vandelli_1067">As antennas saõ huns <term lemma="filamento"
                 msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
                 xml:id="t_vandelli_0128"> filamentos</term> articulados moveis, que servem de
               sensorio, e tem differentes nomes. Tab. VI. fig. II. III. c. c. c.c.</sense>
             <dictScrap>Pelo numero.</dictScrap>
@@ -6194,7 +6194,7 @@
             <entry>
               <form xml:lang="la">— Pedunculatæ.</form>
               <sense xml:id="sn_vandelli_1120"> Com <term lemma="pedúnculo" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
                   xml:id="t_vandelli_0133">pedunculo</term>. Gammarus.</sense>
             </entry>
           </entry>
@@ -6224,7 +6224,7 @@
               <form xml:lang="la">— Distinctum.</form>
               <sense xml:id="sn_vandelli_1124"> Separada do thorax por meio de hum <term
                   lemma="pedúnculo" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
                   xml:id="t_vandelli_0135"> pedunculo</term>, como se fosse pescoço.</sense>
             </entry>
             <entry>
@@ -6325,7 +6325,7 @@
             <entry>
               <form xml:lang="la">— Villosa.</form>
               <sense xml:id="sn_vandelli_1145">Com <term lemma="vilo" norm="vilos" msd="plural"
-                  senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_vilo_sense2"
+                  senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_vilo_sense2"
                   xml:id="t_vandelli_0137">villos</term>. Lepisma. fig. 73.</sense>
             </entry>
             <pb n="86"
@@ -7584,7 +7584,7 @@
             <form xml:lang="la">LOBUS, bilobus &amp;c.</form>
             <sense xml:id="sn_vandelli_1411">Lobo, ou aba corresponde á figura da parte inferior da
                 <term lemma="aurícula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
                 xml:id="t_vandelli_0166">auricula</term>; he huma prominencia semicircular, ou que
               forma hum segmento de circulo; tendo huma diz-se unilobus; tendo duas diz-se bilobus.
               Scarabaeus bilobus.</sense>
@@ -7950,7 +7950,7 @@
               <form xml:lang="la">— Pedunculati.</form>
               <sense xml:id="sn_vandelli_1485"> Com <term lemma="pedúnculo" norm="pedúnculos"
                   msd="plural" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
                   xml:id="t_vandelli_0178"> pedunculos</term>, que os sustentaõ. Cancer.</sense>
             </entry>
             <dictScrap>Pela composiçaõ.</dictScrap>
@@ -8002,7 +8002,7 @@
           <entry>
             <form xml:lang="la">PALPI.</form>
             <sense xml:id="sn_vandelli_1494">Saõ os <term lemma="filamento" msd="plural"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
                 xml:id="t_vandelli_0181">filamentos</term> juntos á bocca, <pb n="104"
                 facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0118.jp2&amp;id=diccionariodost00vand"
               />articulados moveis, que servem de sensorio. Tab. VI. fig. II. III. b. b.</sense>
@@ -8350,7 +8350,7 @@
             <pb n="108"
               facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0122.jp2&amp;id=diccionariodost00vand"/>
             <dictScrap>Pelo Stipe, ou <term lemma="pedúnculo" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
                 xml:id="t_vandelli_0194"> pedunculo</term>.</dictScrap>
             <entry>
               <form xml:lang="la">— Cornea.</form>
@@ -8882,7 +8882,7 @@
               <form xml:lang="la">— Villosus.</form>
               <sense xml:id="sn_vandelli_1678"> Cercado de <term lemma="vilo" norm="vilos"
                   msd="plural" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_vilo_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_vilo_sense2"
                   xml:id="t_vandelli_0212">villos</term>, ou de muitos pellos sem ordem. Sphinx.
                 Phalaena.</sense>
             </entry>
@@ -9235,7 +9235,7 @@
             <entry>
               <form xml:lang="la">— Distinctus.</form>
               <sense xml:id="sn_vandelli_1749">Separado por meio de hum <term lemma="pedúnculo"
-                  senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
+                  senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_pedunculo_sense2"
                   xml:id="t_vandelli_0227"> pedunculo</term>, ou especie de pescoço, na maior parte
                 dos <term lemma="inseto" norm="insetos" msd="plural" xml:id="t_vandelli_0228"
                   >insectos</term>.</sense>
@@ -10028,7 +10028,7 @@
           <entry>
             <form xml:lang="la">AURITA.</form>
             <sense xml:id="sn_vandelli_1915">Nas bivalves he quando tem <term lemma="aurícula"
-                senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
+                senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
                 xml:id="t_vandelli_0238">auricula</term>. Ostrea Pectines. V. Auricula.</sense>
           </entry>
         </div>
@@ -10088,7 +10088,7 @@
           <entry>
             <form xml:lang="la">BYSSUS.</form>
             <sense xml:id="sn_vandelli_1926">He huma especie de <term lemma="filamento" msd="plural"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
                 xml:id="t_vandelli_0242">filamentos</term>, que <pb n="128"
                 facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0142.jp2&amp;id=diccionariodost00vand"
               />sahem dos Molluscos, com que as conchas se pegaõ humas ás outras, ou aos rochedos.
@@ -10143,7 +10143,7 @@
           <entry>
             <form xml:lang="la">CANCELLI.</form>
             <sense xml:id="sn_vandelli_1936">He huma rede grossa sobre a <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_epiderme_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_epiderme_sense2"
                 xml:id="t_vandelli_0243">epiderme</term>, ou periosteo de certas conchas.</sense>
           </entry>
           <entry>
@@ -10439,7 +10439,7 @@
           <entry>
             <form xml:lang="la">CIRRI.</form>
             <sense xml:id="sn_vandelli_2001">Saõ os <term lemma="filamento" msd="plural"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
                 xml:id="t_vandelli_0245">filamentos</term> das conchas multivalves. Lepas. Tab.
               XIII. fig. 2. d.</sense>
             <sense xml:id="sn_vandelli_2002">Ou tambem nos Molluscos saõ de algum modo semelhantes
@@ -11261,7 +11261,7 @@
             <form xml:lang="la">ISTHMUM.</form>
             <sense xml:id="sn_vandelli_2174">Isthmo, á semelhança da lingua de terra, que se acha
               entre dous mares, he a divizaõ, que se observa em cada <term lemma="diafragma"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                 xml:id="t_vandelli_0262">diaphragma</term>, que divide a cavidade do
               Nautilus.</sense>
           </entry>
@@ -12225,7 +12225,7 @@
           <entry>
             <form xml:lang="la">RETICULUM.</form>
             <sense xml:id="sn_vandelli_2383">Dezenho natural sobre a <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_epiderme_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_epiderme_sense2"
                 xml:id="t_vandelli_0277">epiderme</term> da concha feito por linhas córadas.</sense>
           </entry>
           <entry>
@@ -12318,7 +12318,7 @@
             <form xml:lang="la">SIPHO tubo cylindrico.</form>
             <sense xml:id="sn_vandelli_2402">Tubo cylindrico, ou canal cylindrico, que attravessa de
               parte a parte os <term lemma="diafragma" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                 xml:id="t_vandelli_0279">diafragmas</term>, ou divisoẽs das conchas, ̃q tem muitas
               cavidades.</sense>
             <entry>
@@ -12767,7 +12767,7 @@
             <entry>
               <form xml:lang="la">— Filamentosa, calcaria.</form>
               <sense xml:id="sn_vandelli_2504"> Composta de <term lemma="filamento" msd="plural"
-                  senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
+                  senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_filamento_sense2"
                   xml:id="t_vandelli_0284">filamentos</term>, e de substancia calcaria.
                 Corallina.</sense>
             </entry>
@@ -13257,7 +13257,7 @@
                 alguns <pb n="163"
                   facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0177.jp2&amp;id=diccionariodost00vand"
                 />dissepimentos, ou especie de <term lemma="diafragma" msd="plural" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                   xml:id="t_vandelli_0294">diafragmas</term> furados. Nautilus.</sense>
             </entry>
             <entry>
@@ -13296,7 +13296,7 @@
               <sense xml:id="sn_vandelli_2616"> Coroada de <term lemma="tubérculo" norm="tubérculos"
                   msd="plural" xml:id="t_vandelli_0295">tuberculos</term> redondos, e elevados, como
                   <term lemma="papila" norm="papilas" senseNumber="3"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0296">papillas</term>. Buccinum auricularia. </sense>
             </entry>
             <entry>
@@ -13629,7 +13629,7 @@
               <form xml:lang="la">— Polythalamia.</form>
               <sense xml:id="sn_vandelli_2687"> Com muitos thalamos ou cavidades, ou conchas
                 divididas por varios <term lemma="diafragma" msd="plural" senseNumber="2"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                   xml:id="t_vandelli_0301">diafragmas</term>. Nautilus.</sense>
             </entry>
             <entry>
@@ -13741,7 +13741,7 @@
             <entry>
               <form xml:lang="la">— Subaurita.</form>
               <sense xml:id="sn_vandelli_2711"> Tendo hum principio de <term lemma="aurícula"
-                  senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
+                  senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
                   xml:id="t_vandelli_0305"> auricula</term>.</sense>
             </entry>
             <entry>
@@ -14536,7 +14536,7 @@
             <p xml:id="p_vandelli_0041">Fig. 20. <s xml:id="s_vandelli_0024">Trochus maculatus.
                 Concha conica; a. base com pequenos inchaços, a maneira de <term lemma="papila"
                   norm="papilas" senseNumber="3"
-                  ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                  ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                   xml:id="t_vandelli_0326">papillas</term>, b. b. giros cubertos com <term
                   lemma="tubérculo" norm="tubérculos" msd="plural" xml:id="t_vandelli_0327"
                   >tuberculos</term> miudos, dispostos como as telhas, o ventre inferiormente quasi
@@ -14568,7 +14568,7 @@
             <p xml:id="p_vandelli_0047">Fig. 25. <s xml:id="s_vandelli_0026">Haliotis parva. Concha
                 oval de figura de orelha, estriada como a letra X, ou em aspa; a. o dorso, ou costas
                 do ventre circumdado com angulo levantado, parallelo, com buracos, que occupaõ o
-                  <term senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense3"
+                  <term senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense3"
                   xml:id="t_vandelli_0329">disco</term>. b. b. espira quasi impercetivel,
                 lateral.</s></p>
             <p xml:id="p_vandelli_0048">Fig. 26. Murex saxatilis. Concha contigua, frondosa; a. a.
@@ -14621,7 +14621,7 @@
             <p xml:id="p_vandelli_0057">Fig. 4. Ostrea. O caracter do genero he. A charneira, ou
               cardo sem dentes, e excavado no meio para huma covinha de figura oval. Ostrea Pallium
               a. a covinha da charneira concava, oval, b. a <term lemma="aurícula" senseNumber="3"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense3"
                 xml:id="t_vandelli_0331">auricula</term> superior inteira, c. a inferior mais sahida
               para fóra, como cortada, d. inferiormente a base quasi com dentes.</p>
             <p xml:id="p_vandelli_0058">Fig. 8. Donax. O caracter generico.</p>
@@ -14708,7 +14708,7 @@
               os beiços, b. b. Pubes, c nadegas, c. d. umbo, ou a parte mais elevada da concha, d.
               e. o <pb n="187"
                 facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0201.jp2&amp;id=diccionariodost00vand"
-                /><term senseNumber="3" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense3"
+                /><term senseNumber="3" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense3"
                 xml:id="t_vandelli_0334">disco</term> f. f. f. a orla, g. h. a margem anterior, h.
               i. margem inferior, i. k. margem posterior, k. g. margem superior.</p>
             <p xml:id="p_vandelli_0080">Fig. 18. Cardium pectinatum. Concha de figura de meio
@@ -15648,7 +15648,7 @@
             <p xml:id="p_vandelli_0347">— Rectissima. He o mesmo que stricta.</p>
             <p xml:id="p_vandelli_0348">— Rigida. Sendo apenas flexiveis. Gallium uliginosum.</p>
             <p xml:id="p_vandelli_0349">— Adpressa. Quando o meio, ou <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0600"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0600"
                 >disco</term> da <term xml:id="t_vandelli_0601"> folha</term> se approxima, ou se
               une ao mesmo <term xml:id="t_vandelli_0602">caule</term>. Thlaspi bursa pastoris.</p>
             <p xml:id="p_vandelli_0350">— Patentia. fig. 84. He o contrario do termo adpressa, ou
@@ -15700,7 +15700,7 @@
                 xml:id="t_vandelli_0613">folhas</term> pela superficie da agua. Nymphæa.</p>
             <p xml:id="p_vandelli_0366">— Radicata. Quando as mesmas <term lemma="folha"
                 msd="plural" xml:id="t_vandelli_0614">folhas</term> lançaõ no <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0615"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0615"
                 >disco</term> inferior raizes como em algumas Algas.</p>
             <p xml:id="p_vandelli_0367">— Radicantia. Sahindo raiz da extremidade, ou apice da <term
                 xml:id="t_vandelli_0616">folha</term>. Saxifraga cotyledon.</p>
@@ -15798,7 +15798,7 @@
               Eupatorium cannabinum.</p>
             <p xml:id="p_vandelli_0394">— Auritum. Reprezenta a figura de huma <term
                 lemma="aurícula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_auricula_sense2"
                 xml:id="t_vandelli_0657">auricula</term>, ou orelha. Jungermania complanata.</p>
             <p xml:id="p_vandelli_0395">— Pubescens. <term lemma="folha" xml:id="t_vandelli_0658"
                 >Folha</term> cuberta de certos <term lemma="vilo" norm="vilos" msd="plural"
@@ -15964,7 +15964,7 @@
                 >folha</term> em quanto á sua margem.</p>
             <p xml:id="p_vandelli_0447">Por margem da <term xml:id="t_vandelli_0708">folha</term>
               entendem-se todos os lados exteriores, naõ fallando do <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0709"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0709"
                 >disco</term>.</p>
             <p xml:id="p_vandelli_0448">— a.) Integerrimum fig. 42. <term lemma="folha"
                 xml:id="t_vandelli_0710">Folha</term> destituida de incizuras, ou <term
@@ -16019,7 +16019,7 @@
             <p xml:id="p_vandelli_0467">— Cartilagineum, fig. 34. Sendo a margem <term
                 lemma="cartilagíneo" norm="cartilagínea" msd="feminino singular"
                 xml:id="t_vandelli_0721">cartilaginea</term>, differente da substancia do <term
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
                 xml:id="t_vandelli_0722">disco</term>, ou da superficie, Sedum.</p>
           </div>
           <div type="item" n="45">
@@ -16075,7 +16075,7 @@
               fora. Gallium uliginosum.</p>
             <p xml:id="p_vandelli_0485">— Cirrhosum, cirrhatum. fig. 72. 73. Terminando em <term
                 lemma="cirro" norm="cirros" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0734"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0734"
                 >cirrhos</term> no apice, isto he, em varios <term lemma="filamento" msd="plural"
                 xml:id="t_vandelli_0735">filamentos</term>, por meio dos quaes sobem por outros
               corpos. Lathyrus. Pisum sativum.</p>
@@ -16134,19 +16134,19 @@
               album.</p>
             <p xml:id="p_vandelli_0503">— Rugosum. fg. 51. As veias da <term
                 xml:id="t_vandelli_0756">folha</term> se contrahem de tal sorte, que comprimindo o
-                <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
+                <term senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
                 xml:id="t_vandelli_0757">disco</term>, este sobresahe; isto he, eleva-se mais, que
               os mesmos lados da <term xml:id="t_vandelli_0758">folha</term>. Primula veris.</p>
             <pb n="224"
               facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0238.jp2&amp;id=diccionariodost00vand"/>
             <p xml:id="p_vandelli_0504">— Bullatum. Sobresahindo de entre as rugas para parte do
-                <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
+                <term senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
                 xml:id="t_vandelli_0759">disco</term>, ou da superficies da <term
                 xml:id="t_vandelli_0760">folha</term>, de figura conica pela parte superior, e
               concava pela inferior. Salvia: Ocymum basìlicum.</p>
             <p xml:id="p_vandelli_0505">— Lacunosum. A <term xml:id="t_vandelli_0761">folha</term>,
               que tem varias excavaçoens, ou o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0762"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0762"
                 >disco</term> entre as veias está abaixado. Lichen saxatilis.</p>
             <p xml:id="p_vandelli_0506">— Avenium. Naõ tendo a <term xml:id="t_vandelli_0763"
                 >folha</term> vasos ramozos.</p>
@@ -16159,7 +16159,7 @@
               e carnozos. Mesembryanthemum cristallinum.</p>
             <p xml:id="p_vandelli_0509">— Papulosum. Constando de <term lemma="tubérculo"
                 norm="tubérculos" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2"
                 xml:id="t_vandelli_0765">tuberculos</term> algumas vezes côrados, mas naõ carnozos,
               ou coberta de pontos á maneira de bexiga.</p>
             <p xml:id="p_vandelli_0510">— Viscidum. Estando a <term xml:id="t_vandelli_0766"
@@ -16192,16 +16192,16 @@
             <p xml:id="p_vandelli_0517">— Scabrum, s: asperum. <term lemma="folha"
                 xml:id="t_vandelli_0772">Folha</term> revestida de <term lemma="tubérculo"
                 norm="tubérculos" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_tuberculo_sense2"
                 xml:id="t_vandelli_0773">tuberculos</term> algum tanto duros, espalhados pelo seu
-                <term senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
+                <term senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2"
                 xml:id="t_vandelli_0774">disco</term> ou superficie. Gallium aparine.</p>
             <p xml:id="p_vandelli_0518">— Hispidum. fig. 49. Havendo sedas de <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0775"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0775"
                 >disco</term>, ou na superficie da <term xml:id="t_vandelli_0776">folha</term>, que
               sejaõ algum tanto duras, rijas, asperas, e quebradiças. Echium vulgare.</p>
             <p xml:id="p_vandelli_0519">— Aculeatum. Estando o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0777"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0777"
                 >disco</term> cheio de espinhos rijos, e picantes. Gallium uliginosum. Solanum
               indicum.</p>
             <p xml:id="p_vandelli_0520">— Strigosum. Sendo a <term xml:id="t_vandelli_0778"
@@ -16234,32 +16234,32 @@
             <p xml:id="p_vandelli_0529">— Cylindricum. De figura de cylindro. Aloe succotrina.</p>
             <p xml:id="p_vandelli_0530">— Concavum, excavatum. A margem ou lado mais restricto
               obriga o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0787"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0787"
                 >disco</term> da <term xml:id="t_vandelli_0788">folha</term> a ser concavo.
               Convolvulus coeruleus.</p>
             <p xml:id="p_vandelli_0531">— Convexum. Sendo o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0789"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0789"
                 >disco</term> superior da <term xml:id="t_vandelli_0790">folha</term> mais elevado,
               ou convexo. Hyacinthus muscari.</p>
             <p xml:id="p_vandelli_0532">— Cucullatum. Os lados da <term xml:id="t_vandelli_0791"
                 >folha</term> na base estaõ muito apertados, e estaõ estendidos para o apice.
               Geranium africanum.</p>
             <p xml:id="p_vandelli_0533">— Plicatum. fig. 37. O <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0792"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0792"
                 >disco</term> da <term xml:id="t_vandelli_0793">folha</term> sobe, e desce para a
               margem formando assim varios angulos, e muitas pregas. Alchemilla vulgaris.</p>
             <p xml:id="p_vandelli_0534">— Undulatum. Subindo, e descendo o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0794"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0794"
                 >disco</term> da <term xml:id="t_vandelli_0795">folha</term> convexamente até a
               margem. Rumex crispus, Inula pulicaria.</p>
             <p xml:id="p_vandelli_0535">— Undatum. O <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0796"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0796"
                 >disco</term> da <term xml:id="t_vandelli_0797">folha</term> forma varias dobras
               obtusas, e alternadas.</p>
             <p xml:id="p_vandelli_0536">— Crispum. fig. 39. <term lemma="folha"
                 xml:id="t_vandelli_0798">Folha</term> monstruosa, pois he quando a margem da <term
                 xml:id="t_vandelli_0799">folha</term> sahe maior do que o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0800"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0800"
                 >disco</term> admitte, de maneira que a margem he as ondas. Malva crispa.</p>
             <p xml:id="p_vandelli_0537">— Rugosum. fig. 51. Sahindo as veias da <term
                 xml:id="t_vandelli_0801">folha</term> mais contrahidas de tal forte que sobre sahia
@@ -16291,7 +16291,7 @@
               Allium cepa.</p>
             <p xml:id="p_vandelli_0547">— Depressum. A <term xml:id="t_vandelli_0809">folha</term>
               he mais funda no <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0810"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0810"
                 >disco</term>, que nos lados.</p>
             <p xml:id="p_vandelli_0548">— Compressum. <term lemma="folha" xml:id="t_vandelli_0811"
                 >Folha</term>, cujos lados comprimem de tal forte o centro, que este fique mais
@@ -16300,7 +16300,7 @@
                 xml:id="t_vandelli_0812">folhas</term> saõ taõ unidas, que cobrem todo o <term
                 xml:id="t_vandelli_0813">caule</term>. Antirrbinum linaria.</p>
             <p xml:id="p_vandelli_0550">— Carinatum. A superficie interior ou <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0814"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0814"
                 >disco</term> da <term xml:id="t_vandelli_0815">folha</term> elevada
               longitudinalmente á mesma maneira de quilha. Gallium aparine.</p>
           </div>
@@ -16330,7 +16330,7 @@
             <p xml:id="p_vandelli_0557">— Anceps. Tendo dous angulos <term lemma="longitudinal"
                 norm="longitudinais" msd="plural" xml:id="t_vandelli_0823">longitudinaes</term>,
               prominentes, oppostos, e o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0824"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_disco_sense2" xml:id="t_vandelli_0824"
                 >disco</term> mais convexo. Cyperus flavescens.</p>
             <p xml:id="p_vandelli_0558">— Lingulatum, linguiforme. <term lemma="folha"
                 xml:id="t_vandelli_0825">Folha</term> linear, carnosa, obtusa, convexa pela parte
@@ -16446,12 +16446,12 @@
             <p xml:id="p_vandelli_0587">— Pinnatum, cirrhosum. fig. 72. 73. <term lemma="folha"
                 xml:id="t_vandelli_0874">Folha</term> pinnata, que acaba com <term lemma="cirro"
                 norm="cirro" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0875"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0875"
                 >cirrho</term>, ou ello. Lathyrus.</p>
             <p xml:id="p_vandelli_0588">— Pinnatum abruptum. fig. 69. He a <term
                 xml:id="t_vandelli_0876">folha</term> pinnata acabando sem <term lemma="cirro"
                 norm="cirro" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0877"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0877"
                 >cirrho</term>, ou ello, nem pequena <term xml:id="t_vandelli_0878">folha</term> na
               sua extremidade. Abrus precatarius.</p>
             <p xml:id="p_vandelli_0589">— Pinnatum opposite. fig. 69. 69. As pequenas <term
@@ -16682,9 +16682,9 @@
               Pisum.</p>
             <p xml:id="p_vandelli_0658">Capreoli, carbiculae, viticuli: O mesmo, que os <term
                 lemma="cirro" norm="cirros" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0953"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0953"
                 >cirrhos</term>. Ou he o <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0954"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2" xml:id="t_vandelli_0954"
                 >cirro</term>.</p>
             <p xml:id="p_vandelli_0659">— a) Axillaris. No angulo superior, que forma a <term
                 xml:id="t_vandelli_0955">folha</term>, ou o ramo com <term xml:id="t_vandelli_0956"
@@ -16763,7 +16763,7 @@
           <div type="item" n="82">
             <p xml:id="p_vandelli_0686">82. d.) Glandulae. fig. 118. c. 119. Saõ humas <term
                 lemma="papila" norm="papilas" senseNumber="3"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_papila_sense3"
                 xml:id="t_vandelli_0968">papillas</term>, ou pequenas eminencias redondas, que
               separaõ hum humor nas incisuras das <term lemma="folha" msd="plural"
                 xml:id="t_vandelli_0969">folhas</term>, mais inferiores, Salix alba. Na base dos
@@ -16892,7 +16892,7 @@
             <p xml:id="p_vandelli_0732">— Petiolaris. Sahe do <term lemma="pecíolo"
                 xml:id="t_vandelli_1007">peciolo</term>. Hibiscus.</p>
             <p xml:id="p_vandelli_0733">— Cirrhiferus. Tendo <term lemma="cirro" norm="cirro"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_cirro_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_cirro_sense2"
                 xml:id="t_vandelli_1008">cirrho</term>, ou ello (76) Vitis, Cardiospermum.</p>
             <p xml:id="p_vandelli_0734">— Terminalis. Que está na extremidade do <term
                 xml:id="t_vandelli_1009">caule</term>, ou do ramo.</p>
@@ -18172,11 +18172,11 @@
               fruto concavo, que se abre com regularidade. Fritillaria imperialis.</p>
             <p xml:id="p_vandelli_1244">— Uni-bi-tri-multi-capsularis. Saõ huma, duas tres, ou
               muitas <term lemma="cápsula" norm="cápsulas" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1306">capsulas</term> unidas na base, as quaes se distinguem bem
               pela parte externa.</p>
             <p xml:id="p_vandelli_1245">— Unicapsularis. De huma <term lemma="cápsula"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1307">capsula</term>. Lychnis.</p>
             <p xml:id="p_vandelli_1246">— Bicapsularis. De duas. Pæonia. Asclepias.</p>
             <p xml:id="p_vandelli_1247">— Tricapsularis. De tres. Veratrum. Delphinium.</p>
@@ -18184,13 +18184,13 @@
             <p xml:id="p_vandelli_1249">— Quinquecapsularis. De cinco. Alquilegia.</p>
             <p xml:id="p_vandelli_1250">— Multicapsularis. De muitas. Caltha.</p>
             <p xml:id="p_vandelli_1251">Partes da <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1308">capsula</term>.</p>
             <p xml:id="p_vandelli_1252">Valvulæ. fig. 160. a. As valvas, ou paredes do fruto, que o
               cobrem externamente; estas paredes unem-se por meio de suturas.</p>
             <p xml:id="p_vandelli_1253">— Uni-bi-tri-quadri-multi-valvae. <term lemma="cápsula"
                 norm="Cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1309">Capsula</term> de huma, <pb n="273"
                 facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0287.jp2&amp;id=diccionariodost00vand"
               />de duas, de tres, &amp;c. de muitas valvas, ou paredes.</p>
@@ -18201,15 +18201,15 @@
             <p xml:id="p_vandelli_1258">Loculamenta. fig. 160. d. Saõ <term lemma="concameração"
                 norm="concamerações" msd="plural" xml:id="t_vandelli_1310">concameraçoens</term>, ou
               cavidades vazias no interior da <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1311">capsula</term> para conter as <term lemma="semente"
                 msd="plural" xml:id="t_vandelli_1312">sementes</term>.</p>
             <p xml:id="p_vandelli_1259">— Uni-bi-tri-multilocularis. Denomina-se a <term
                 lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1313">capsula</term> pelo numero de taes cavidades.</p>
             <p xml:id="p_vandelli_1260">— Unilocularis. <term lemma="cápsula" norm="Cápsula"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1314">Capsula</term>, que tem sómente huma cavidade. Primula.</p>
             <p xml:id="p_vandelli_1261">— Bilocularis. Duas cavidades. Hyosciamus.</p>
             <p xml:id="p_vandelli_1262">— Trilocularis. De tres. Lilium.</p>
@@ -18221,16 +18221,16 @@
             <p xml:id="p_vandelli_1268">— Multilocularis. De muitas. Nymphæa.</p>
             <p xml:id="p_vandelli_1269">Dissepimenta, fig. 160. b. Especies de <term
                 lemma="diafragma" msd="plural" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                 xml:id="t_vandelli_1315">diafragmas</term>, ou paredes interiores da <term
                 lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1316">capsula</term>, ou fruto, as quaes o dividem internamente
               em varias cavidades, ou <term lemma="concameração" norm="concamerações" msd="plural"
                 xml:id="t_vandelli_1317">concameraçoens</term>.</p>
             <p xml:id="p_vandelli_1270">— Parallelum. Sendo parallelo ás paredes, ou valvas externas
               da <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1318">capsula</term>. Lunaria.</p>
             <p xml:id="p_vandelli_1271">— Transversale. Posto á través das valvas concavas.</p>
             <p xml:id="p_vandelli_1272">— Contrarium. Quando forma hum angulo recto com as ditas
@@ -18241,21 +18241,21 @@
             <pb n="274"
               facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0288.jp2&amp;id=diccionariodost00vand"/>
             <p xml:id="p_vandelli_1274">— Di-tri-cocca. He a <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1320">capsula</term> bi-tri-locular, que naõ contem em cada
               cavidade mais que huma <term xml:id="t_vandelli_1321">semente</term>.</p>
             <p xml:id="p_vandelli_1275">— Di-cocca. Mercurialis.</p>
             <p xml:id="p_vandelli_1276">— Tricocca. <term lemma="cápsula" norm="Cápsula"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1322">Capsula</term> com tres nós prominentes, ou elevados, e
               dividida internamente em tres loculamentos, ou cavidades. Euphorbia Esula.
               Ricinus.</p>
             <p xml:id="p_vandelli_1277">— Didyma. <term lemma="cápsula" norm="Cápsula"
-                senseNumber="2" ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                senseNumber="2" ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1323">Capsula</term>, que tem externamente duas corcovas.</p>
             <p xml:id="p_vandelli_1278">As <term lemma="semente" msd="plural"
                 xml:id="t_vandelli_1324">sementes</term> na <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1325">capsula</term> estaõ pegadas, ou na parte superior, ou na
               inferior, ou no meio, ou lateralmente a humas especies de traves.</p>
           </div>
@@ -18294,12 +18294,12 @@
           </div>
           <div type="item" n="141">
             <p xml:id="p_vandelli_1294">141. Dissepimentum. O <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                 xml:id="t_vandelli_1331">diafragma</term>, ou parede interna da <term
                 lemma="síliqua" xml:id="t_vandelli_1332">siliqua</term>. (139)</p>
             <p xml:id="p_vandelli_1295">— Parallelum. Quando a superficie, ou <term
                 xml:id="t_vandelli_1333">disco</term> do <term senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_diafragma_sense2"
                 xml:id="t_vandelli_1334">diafragma</term> está opposto ao <term
                 xml:id="t_vandelli_1335">disco</term> da valva. Lunaria. Draba.</p>
             <p xml:id="p_vandelli_1296">— Transversum, coutrarium. Se a margem está virada contra a
@@ -18359,17 +18359,17 @@
             <p xml:id="p_vandelli_1320">145. Pomum. fig. 156. Pera, maçã, he hum fruto cheio de
               carne, ou <term xml:id="t_vandelli_1344">polpa</term>, que cerca a <term
                 lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1345">capsula</term>, que está no meio; ou he fruto, que está
               cheio, sem valva, que contem huma <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1346">capsula</term>. (139)</p>
             <p xml:id="p_vandelli_1321">Pela figura.</p>
             <p xml:id="p_vandelli_1322">— Turbinatum. (139) Pyrus communis.</p>
             <p xml:id="p_vandelli_1323">— Globosum. De figura de globo. Pyrus malus.</p>
             <p xml:id="p_vandelli_1324">— Loculamentis 1-2-3-4-5-loculare. Pelas cavidades que a sua
                 <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1347">capsula</term> tem.</p>
             <pb n="277"
               facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0291.jp2&amp;id=diccionariodost00vand"/>
@@ -18383,7 +18383,7 @@
             <p xml:id="p_vandelli_1326">146. Bacca. fig. 158. Baga, fruto cheio, sem volvas, que
               contem <term lemma="semente" msd="plural" xml:id="t_vandelli_1350">sementes</term> sem
                 <term lemma="cápsula" senseNumber="2"
-                ref="http://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
+                ref="https://dicbio.fflch.usp.br/recurso/entry_capsula_sense2"
                 xml:id="t_vandelli_1351">capsula</term>. Vitis suculenta. Solanum.</p>
             <p xml:id="p_vandelli_1327">A baga denomina-se pelo numero das <term lemma="semente"
                 msd="plural" xml:id="t_vandelli_1352">sementes</term>.</p>

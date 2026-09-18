@@ -4,7 +4,7 @@ import unicodedata
 import re
 
 # 1. Configuração dos Namespaces
-DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
+DICBIO = Namespace("https://dicbio.fflch.usp.br/recurso/")
 ONTOLEX = Namespace("http://www.w3.org/ns/lemon/ontolex#")
 
 def slugify(uri):

@@ -7,7 +7,7 @@ def converter_corpus_tei(pasta_entrada, pasta_saida):
         os.makedirs(pasta_saida)
 
     # Base da URI
-    BASE_URI = "http://dicbio.fflch.usp.br/recurso/sense_"
+    BASE_URI = "https://dicbio.fflch.usp.br/recurso/sense_"
 
     # Percorre todos os arquivos na pasta
     for nome_arquivo in os.listdir(pasta_entrada):

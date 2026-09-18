@@ -6,8 +6,8 @@ from rdflib import Namespace, Literal, RDF, URIRef
 from lxml import etree
 
 # Namespaces
-DBRES = Namespace("http://dicbio.fflch.usp.br/recurso/")
-DICBIO = Namespace("http://dicbio.fflch.usp.br/ontology/")
+DBRES = Namespace("https://dicbio.fflch.usp.br/recurso/")
+DICBIO = Namespace("https://dicbio.fflch.usp.br/ontology/")
 NIF = Namespace("http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#")
 # ITSRDF = Namespace("http://www.w3.org/2005/11/its/rdf#")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
@@ -74,7 +74,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
         uri_obra = DBRES[f"work_{nome_obra}"]
 
         uri_documento = URIRef(
-            f"http://dicbio.fflch.usp.br/corpus_digital/{os.path.basename(xml_file)}"
+            f"https://dicbio.fflch.usp.br/corpus_digital/{os.path.basename(xml_file)}"
         )
 
         termos = tree.xpath("//tei:term[@xml:id]", namespaces=ns)

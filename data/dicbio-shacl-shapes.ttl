@@ -40,12 +40,12 @@
 @prefix nif:      <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
 # --- Namespaces reais do projeto (de dicbio-ontology.ttl) ---------------
-@prefix dicbio:   <http://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio:   <https://dicbio.fflch.usp.br/ontology/> .
 @prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix morph:    <http://www.w3.org/ns/lemon/morph#> .
-@prefix dbres:    <http://dicbio.fflch.usp.br/recurso/> .
-@prefix dbauth:   <http://dicbio.fflch.usp.br/autores/> .
-@prefix dbsrc:    <http://dicbio.fflch.usp.br/fontes/> .
+@prefix dbres:    <https://dicbio.fflch.usp.br/recurso/> .
+@prefix dbauth:   <https://dicbio.fflch.usp.br/autores/> .
+@prefix dbsrc:    <https://dicbio.fflch.usp.br/fontes/> .
 @prefix glotto:   <https://glottolog.org/resource/languoid/id/> .
 
 @prefix dsh:      <http://example.org/dicbio/shapes#> .
@@ -58,7 +58,7 @@ dsh:LexicalEntryShape
     a sh:NodeShape ;
     sh:targetClass ontolex:LexicalEntry ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/entry_" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_" ;
 
     sh:property [
         sh:path lexinfo:partOfSpeech ;
@@ -139,7 +139,7 @@ dsh:FormShape
     a sh:NodeShape ;
     sh:targetClass ontolex:Form ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/form_" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/form_" ;
 
     sh:property [
         sh:path ontolex:writtenRep ;
@@ -187,7 +187,7 @@ dsh:LexicalSenseShape
         a sh:SPARQLTarget ;
         sh:select """
             PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             SELECT ?this
             WHERE {
                 ?this a ontolex:LexicalSense .
@@ -196,7 +196,7 @@ dsh:LexicalSenseShape
         """ ;
     ] ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/entry_[^_]+_sense[0-9]+$" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_[^_]+_sense[0-9]+$" ;
 
     sh:property [
         sh:path skos:definition ;
@@ -232,7 +232,7 @@ dsh:EtymologyShape
     a sh:NodeShape ;
     sh:targetClass lemonety:Etymology ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/etym_" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/etym_" ;
 
     sh:property [
         sh:path dcterms:source ;
@@ -307,7 +307,7 @@ dsh:EtymologyProcessConsistencyShape
         a sh:SPARQLConstraint ;
         sh:message "Hipótese classificada como dicbio:created deve ter dicbio:hasWordFormationRelation (explicação morfológica)." ;
         sh:select """
-            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             SELECT $this
             WHERE {
                 $this dicbio:etymologicalProcess dicbio:created .
@@ -320,7 +320,7 @@ dsh:EtymologyProcessConsistencyShape
         a sh:SPARQLConstraint ;
         sh:message "Hipótese classificada como dicbio:borrowed ou dicbio:inherited deve ter dicbio:semanticEtymon (étimo)." ;
         sh:select """
-            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             SELECT $this
             WHERE {
                 $this dicbio:etymologicalProcess ?p .
@@ -344,7 +344,7 @@ dsh:SemanticEtymonShape
     a sh:NodeShape ;
     sh:targetClass dicbio:SemanticEtymon ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/etymon_" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/etymon_" ;
 
     sh:property [
         sh:path dcterms:language ;
@@ -396,7 +396,7 @@ dsh:AttestationShape
     a sh:NodeShape ;
     sh:targetClass dicbio:Attestation ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/recurso/attestation_" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/attestation_" ;
 
     # Só se aplica ao caso (a): ocorrência automática no córpus do projeto.
     sh:property [
@@ -430,7 +430,7 @@ dsh:AttestationDateSourceCoOccurrenceShape
         a sh:SPARQLConstraint ;
         sh:message "Se a atestação tem dicbio:attestationDate, também precisa ter dcterms:source (e vice-versa) — datação só se aplica a fontes externas ao córpus." ;
         sh:select """
-            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
@@ -448,7 +448,7 @@ dsh:AttestationDateSourceCoOccurrenceShape
         sh:severity sh:Warning ;
         sh:message "Atestação sem dicbio:attestedByOccurrence e sem (dicbio:attestationDate + dcterms:source) — parece incompleta." ;
         sh:select """
-            PREFIX dicbio: <http://dicbio.fflch.usp.br/ontology/>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
@@ -572,7 +572,7 @@ dsh:AuthorShape
         a sh:SPARQLTarget ;
         sh:select """
             PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
-            PREFIX dbauth: <http://dicbio.fflch.usp.br/autores/>
+            PREFIX dbauth: <https://dicbio.fflch.usp.br/autores/>
             SELECT ?this
             WHERE {
                 ?this a foaf:Person .
@@ -581,7 +581,7 @@ dsh:AuthorShape
         """ ;
     ] ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^http://dicbio\\.fflch\\.usp\\.br/autores/" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/autores/" ;
 
     sh:property [
         sh:path foaf:name ;

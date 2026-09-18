@@ -1,6 +1,6 @@
-@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
+@prefix dbres: <https://dicbio.fflch.usp.br/recurso/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio: <https://dicbio.fflch.usp.br/ontology/> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
 dbres:t_brotero1_0001 a nif:Word ;
@@ -11176,7 +11176,7 @@ dbres:t_vandelli_0081 a nif:Word ;
     nif:referenceContext dbres:sn_vandelli_0670 .
 
 dbres:t_vandelli_0082 a nif:Word ;
-    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega> ;
+    dicbio:realizesForm <https://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega> ;
     dicbio:realizesSense dbres:entry_membrana_branquiostega_sense1 ;
     nif:anchorOf "membrana, ou pinna branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;

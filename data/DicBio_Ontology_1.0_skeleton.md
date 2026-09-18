@@ -227,7 +227,7 @@ Explicar as principais decisões de reutilização -->
 
 A Ontologia DicBio procura reutilizar ontologias e vocabulários existentes sempre que estes oferecem classes ou propriedades adequadas às entidades e relações que precisam ser representadas. Essa estratégia favorece a interoperabilidade e reduz a necessidade de criação de termos específicos do projeto.
 
-Entre os principais vocabulários reutilizados encontram-se OntoLex-Lemon, LemonEty, SKOS, Dublin Core Terms, PROV-O, ITS-RDF e NIF.
+Entre os principais vocabulários reutilizados encontram-se OntoLex-Lemon, LemonEty, SKOS, Dublin Core Terms, PROV-O e NIF.
 
 A reutilização não implica que todos os vocabulários empregados na representação dos dados sejam dependências formais da ontologia. A distinção entre ontologias importadas e vocabulários utilizados apenas nas instâncias é apresentada na seção 7.
 
@@ -339,7 +339,11 @@ Essa separação permite registrar, por exemplo, que uma determinada hipótese e
 
 A modelagem detalhada das diferentes categorias de fontes e das convenções utilizadas para sua identificação é apresentada no **Guia de Modelagem dos Dados DicBio**.
 
-### 8.8. Representação de textos com formatação
+### 8.8. Vinculação com conceitos
+
+<!-- Incluir aqui o uso de skos:Concept e ontolex:reference para relacionar um sentido ao seu conceito em outras ontologias como UBERON -->
+
+### 8.9. Representação de textos com formatação
 
 Os textos apresentados como literais, especialmente definições e descrições etimológicas, que podem ser relativamente longos, podem apresentar formatação simples em MarkDown, principalmente *itálicos* para representar estrangeirismos e latinismos.
 
@@ -621,7 +625,7 @@ Para cada propriedade, registrar, quando aplicável:
 | `dicbio:impossible` | <!-- URI --> | Impossível / Impossible | A hipótese contradiz evidências linguísticas ou históricas estabelecidas. |
 | `dicbio:improbable` | <!-- URI --> | Improvável / Improbable | A hipótese carece de evidências suficientes ou entra em contradição com o conhecimento atual. |
 | `dicbio:plausible` | <!-- URI --> | Plausível / Plausible | A hipótese é concebível mas pouco apoiada por evidências. |
-| `dicbio:probable` | <!-- URI --> | Probable / Provável | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
+| `dicbio:probable` | <!-- URI --> | Provável / Probable | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
 | `dicbio:certain` | <!-- URI --> | Certa / Certain | A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual. |
 
 ### 12.2. `dicbio:EtymologicalProcessScheme`

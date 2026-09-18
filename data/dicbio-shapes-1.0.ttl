@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dicbio: <http://dicbio.fflch.usp.br/ontology/> .
+@prefix dicbio: <https://dicbio.fflch.usp.br/ontology/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#> .
 @prefix morph: <http://www.w3.org/ns/lemon/morph#> .
@@ -17,9 +17,9 @@
 @prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
 @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
-@prefix dbres: <http://dicbio.fflch.usp.br/recurso/> .
-@prefix dbauth: <http://dicbio.fflch.usp.br/autores/> .
-@prefix dbsrc: <http://dicbio.fflch.usp.br/fontes/> .
+@prefix dbres: <https://dicbio.fflch.usp.br/recurso/> .
+@prefix dbauth: <https://dicbio.fflch.usp.br/autores/> .
+@prefix dbsrc: <https://dicbio.fflch.usp.br/fontes/> .
 
 #################################################################
 # Dicionário Histórico de Termos da Biologia — SHACL 1.0

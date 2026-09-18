@@ -201,7 +201,7 @@ def verbete_pelo_turtle(request, lema):
 
     # 2. Monte a URI da entrada usando o lema que vem da URL (que já é um slug)
     # Ex: se a URL é /botanica, vira dicbio:entry_botanica
-    uri_entrada = rdflib.URIRef(f"http://dicbio.fflch.usp.br/recurso/entry_{lema}")
+    uri_entrada = rdflib.URIRef(f"https://dicbio.fflch.usp.br/recurso/entry_{lema}")
 
     ns = {
         "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
