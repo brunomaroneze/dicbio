@@ -57,7 +57,7 @@ dicbio:semanticEtymon a owl:ObjectProperty ;
     rdfs:comment "Relaciona uma descrição etimológica a um étimo semântico (um Sentido Lexical que atua como um étimo)."@pt ;
     rdfs:domain lemonety:Etymology ;
     rdfs:range dicbio:SemanticEtymon ;
-    rdfs:subPropertyOf lemonety:etymon .
+    rdfs:seeAlso lemonety:etymon .
 
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:label "etymological argumentation"@en, "argumentação etimológica"@pt ;

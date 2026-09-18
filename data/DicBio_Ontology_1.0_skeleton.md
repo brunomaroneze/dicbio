@@ -591,7 +591,10 @@ Para cada propriedade, registrar, quando aplicável:
 
 ### 14.2. LemonEty
 
-<!-- Explicar o uso de LemonEty para a representação das relações etimológicas. -->
+Da ontologia *LemonEty*, emprega-se a classe `lemonety:Etymology` para representar a hipótese etimológica. Essa classe é relacionada à entrada lexical cuja etimologia ela descreve por meio da propriedade `lemonety:etymology`, conforme já previsto no modelo *LemonEty*.
+
+Devido à nossa decisão de compreender o étimo como uma acepção, e não como uma entrada, optamos por não reutilizar a classe `lemonety:Etymon`, mas criar a nossa própria classe `dicbio:SemanticEtymon`. Da mesma forma, a propriedade `dicbio:semanticEtymon` (que relaciona uma hipótese etimológica a um étimo semântico) não pôde ser definida como uma subpropriedade de `lemonety:etymon`, visto ter outro range.
+
 É importante mencionar que a ontologia *LemonEty* está descrita no seu respectivo repositório GitHub (https://github.com/anasfkhan81/lemonEty), mas o namespace informado (http://lari-datasets.ilc.cnr.it/lemonEty#) não é um *link* rastreável. Além disso, observa-se o que parece ser uma incoerência da ontologia: a propriedade `etyLinkType` está assim descrita:
 
 `:etyLinkType a rdf:Property,
