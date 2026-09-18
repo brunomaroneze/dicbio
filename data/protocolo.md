@@ -25,9 +25,13 @@
 
 - Os recursos "dbres:form_XXXX" representam formas flexionadas e também formas gráficas encontradas no córpus.
 
-- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina, o gênero neutro é "lexinfo:neuter".
+- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina ou grega, o gênero neutro é "lexinfo:neuter".
+
+- Formas com inicial maiúscula devem ser registradas distintamente das formas com inicial minúscula. Por exemplo, "botanica" e "Botanica" serão registradas sob as formas "dbres:form_botanica" e "dbres:form_Botanica", respectivamente.
 
 - Se uma forma existe com acento e outra sem acento, a forma com acento recebe o nome "form_XXXX_accent".
+
+- É importante mencionar que a classe "ontolex:Form" foi pensada originalmente apenas para formas flexionadas, não para formas gráficas. Aqui, estamos ampliando o sentido original devido à grande proliferação de formas gráficas no córpus histórico, devido principalmente à necessidade de vincular as atestações do córpus às formas. Se necessário, no futuro pode ser criada uma nova classe para formas gráficas históricas.
 
 --------------------------------------------------
 
@@ -102,7 +106,11 @@
 ## Autores e fontes:
 - Os autores das obras usadas nas fontes são referidos apenas pelo URI da Wikidata, por meio da propriedade dcterms:creator.
 
-- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued", "owl:sameAs" (com o URI do Wikidata) e, opcionalmente, "foaf:page" com o link. Se for dicionário, será ao mesmo tempo "bibo:Book" e "bibo:ReferenceSource". Pode ser também periódico "bibo:Periodical" e volume de periódico "bibo:Issue".
+- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued" e, opcionalmente, "owl:sameAs" (com o URI do Wikidata) e "foaf:page" com o link. Se for dicionário, será ao mesmo tempo "bibo:Book" e "bibo:ReferenceSource".
+
+- Se uma obra contiver mais de um volume, deve ser feita uma entrada para a obra toda e outra para cada volume. A entrada da obra toda é da classe "bibo:Book" e contém o título ("dcterms:title"), o autor ("dcterms:creator") e a data ("dcterms:issued"). As entradas de cada volume também são da classe "bibo:Book", mas devem conter a propriedade "dcterms:isPartOf" para associá-las à entrada da obra toda, bem como a propriedade "bibo:volume" para informar o número do volume. Não precisam conter autor e data (a menos que sejam diferentes do autor ou data da obra toda).
+
+- Fontes que são periódicos são atribuídas à classe "bibo:Periodical". Cada volume ou fascículo do periódico é atribuído à classe "bibo:Issue" e deve conter a propriedade "dcterms:isPartOf" relacionando-o ao periódico todos. A data é indicada com "dcterms:issued" apenas referente ao volume ou fascículo, não ao periódico como um todo.
 
 - Os livros do córpus são indicados como se fossem fontes, exceto que se usa "dbsrc:work_nome_da_fonte" em vez de "source".
 
