@@ -6,9 +6,10 @@ from rdflib import Namespace, Literal, RDF, URIRef
 from lxml import etree
 
 # Namespaces
-DICBIO = Namespace("http://dicbio.fflch.usp.br/recurso/")
+DBRES = Namespace("http://dicbio.fflch.usp.br/recurso/")
+DICBIO = Namespace("http://dicbio.fflch.usp.br/ontology/")
 NIF = Namespace("http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#")
-ITSRDF = Namespace("http://www.w3.org/2005/11/its/rdf#")
+# ITSRDF = Namespace("http://www.w3.org/2005/11/its/rdf#")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 # PROV = Namespace("http://www.w3.org/ns/prov#")
 
@@ -26,13 +27,32 @@ def slugify(text):
     return text_slug.lower().replace(" ", "_")
 
 
+def form_slugify(text):
+    if not text:
+        return ""
+
+    nfkd_form = unicodedata.normalize("NFKD", text)
+    tem_acento = any(unicodedata.combining(c) for c in nfkd_form)
+    text_slug = "".join(
+        c for c in nfkd_form
+        if not unicodedata.combining(c)
+    )
+
+    text_slug = text_slug.replace(" ", "_")
+    if tem_acento:
+        text_slug += "_accent"
+
+    return text_slug
+
+
 def gerar_nif_index(arquivos_xml, arquivo_saida):
 
     g = rdflib.Graph()
 
-    g.bind("dbres", DICBIO)
+    g.bind("dbres", DBRES)
+    g.bind("dicbio", DICBIO)
     g.bind("nif", NIF)
-    g.bind("itsrdf", ITSRDF)
+    # g.bind("itsrdf", ITSRDF)
     g.bind("dcterms", DCTERMS)
     # g.bind("prov", PROV)
 
@@ -51,7 +71,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
 
         nome_obra = os.path.splitext(os.path.basename(xml_file))[0]
 
-        uri_obra = DICBIO[f"work_{nome_obra}"]
+        uri_obra = DBRES[f"work_{nome_obra}"]
 
         uri_documento = URIRef(
             f"http://dicbio.fflch.usp.br/corpus_digital/{os.path.basename(xml_file)}"
@@ -76,21 +96,24 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
                 uri_acepcao = URIRef(ref)
             else:
                 slug_lema = slugify(lema)
-                uri_acepcao = DICBIO[f"entry_{slug_lema}_sense{sense_num}"]
+                uri_acepcao = DBRES[f"entry_{slug_lema}_sense{sense_num}"]
 
-            uri_token = DICBIO[xml_id]
+            uri_token = DBRES[xml_id]
 
             g.add((uri_token, RDF.type, NIF.Word))
             g.add((uri_token, NIF.anchorOf, Literal(texto_exato, lang="pt")))
             g.add((uri_token, NIF.lemma, Literal(lema, lang="pt")))
-            g.add((uri_token, ITSRDF.taIdentRef, uri_acepcao))
+            uri_forma = DBRES[f"form_{form_slugify(texto_exato)}"]
+            g.add((uri_token, DICBIO.realizesForm, uri_forma))
+            g.add((uri_token, DICBIO.realizesSense, uri_acepcao))
 
             #
             # Procura o contexto do termo.
             # A prioridade é:
             #   1. sentença (<s>)
             #   2. acepção de dicionário (<sense>)
-            #   3. parágrafo (<p>)
+            #   3. nota (<note>)
+            #   4. parágrafo (<p>)
             # Se as estruturas dos TEI-XML mudarem,
             # será necessário ajustar a busca do contexto.
             #
@@ -100,6 +123,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
             for xpath in (
                 "ancestor::tei:s[@xml:id][1]",
                 "ancestor::tei:sense[@xml:id][1]",
+                "ancestor::tei:note[@xml:id][1]",
                 "ancestor::tei:p[@xml:id][1]",
             ):
                 resultado = termo.xpath(xpath, namespaces=ns)
@@ -112,7 +136,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
 
             id_contexto = contexto.get("{http://www.w3.org/XML/1998/namespace}id")
 
-            uri_contexto = DICBIO[id_contexto]
+            uri_contexto = DBRES[id_contexto]
 
             g.add((uri_token, NIF.referenceContext, uri_contexto))
 
