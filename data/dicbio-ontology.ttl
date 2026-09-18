@@ -45,7 +45,7 @@
 
 ### --- Classes e propriedades da ontologia ---
 
-dicbio:SemanticEtymon a rdfs:Class ;
+dicbio:SemanticEtymon a owl:Class ;
     rdfs:label "Semantic Etymon"@en, "Étimo Semântico"@pt ;
     rdfs:comment "A Semantic Etymon is a Lexical Sense that acts as a semantic source in an etymological relation to another Lexical Sense."@en ;
     rdfs:comment "Um Étimo Semântico é um Sentido Lexical que atua como origem semântica numa relação etimológica com outro Sentido Lexical."@pt ;
@@ -100,7 +100,7 @@ dicbio:probable a skos:Concept ;
 
 dicbio:certain a skos:Concept ;
     skos:inScheme dicbio:EtymologicalCertaintyScheme ;
-    skos:prefLabel "Certain"@en, "Certo"@pt ;
+    skos:prefLabel "Certain"@en, "Certa"@pt ;
     skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en ;
     skos:definition "A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual."@pt .
 

@@ -113,3 +113,7 @@ dbres:attestation_adiposus a dicbio:Attestation ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt ;
     dicbio:attestationDate "1730"^^xsd:gYear .
+
+dbres:attestation_adiposo a dicbio:Attestation ;
+    dcterms:source dbsrc:work_anatomiasantucci ;
+    dicbio:attestationDate "1739"^^xsd:gYear .

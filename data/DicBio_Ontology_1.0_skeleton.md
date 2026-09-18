@@ -339,6 +339,9 @@ Essa separação permite registrar, por exemplo, que uma determinada hipótese e
 
 A modelagem detalhada das diferentes categorias de fontes e das convenções utilizadas para sua identificação é apresentada no **Guia de Modelagem dos Dados DicBio**.
 
+### 8.8. Representação de textos com formatação
+
+Os textos apresentados como literais, especialmente definições e descrições etimológicas, que podem ser relativamente longos, podem apresentar formatação simples em MarkDown, principalmente *itálicos* para representar estrangeirismos e latinismos.
 
 ---
 
@@ -346,9 +349,7 @@ A modelagem detalhada das diferentes categorias de fontes e das convenções uti
 
 ### 9.1. Visão conceitual
 
-A Ontologia DicBio organiza-se em torno de quatro camadas articuladas. A camada *lexical*, baseada em OntoLex-Lemon, representa entradas, formas e acepções. A camada *etimológica*, baseada em LemonEty com adaptações próprias, descreve hipóteses etimológicas que relacionam uma acepção a seu étimo — este último modelado como outra acepção lexical (`dicbio:SemanticEtymon`), e não como uma entrada inteira. A camada *morfológica*, baseada em OntoLex-Morph e OntoLex-VarTrans, descreve a estrutura morfológica interna de uma hipótese etimológica quando pertinente. Por fim, a camada de *evidência documental*, que combina classes próprias (`dicbio:Attestation`) com PROV-O, NIF e ITS-RDF, relaciona uma hipótese ou acepção a ocorrências específicas identificadas no corpus digital do projeto, distinguindo a forma e o sentido realizados por uma ocorrência textual da fonte que a atesta historicamente.
-
-<!-- Além dessas quatro camadas, cada verbete também apresenta uma articulação conceptual, ou seja, relações com ontologias da Medicina, da Biologia etc., como Uberon. Como indicar isso aqui? O item 9.5 parece que ficou redundante com essa descrição. -->
+A Ontologia DicBio organiza-se em torno de cinco camadas articuladas. A camada *lexical*, baseada em OntoLex-Lemon, representa entradas, formas e acepções. A camada *etimológica*, baseada em LemonEty com adaptações próprias, descreve hipóteses etimológicas que relacionam uma acepção a seu étimo — este último modelado como outra acepção lexical (`dicbio:SemanticEtymon`), e não como uma entrada inteira. A camada *morfológica*, baseada em OntoLex-Morph e OntoLex-VarTrans, descreve a estrutura morfológica interna de uma hipótese etimológica quando pertinente. A camada de *evidência documental*, que combina classes próprias (`dicbio:Attestation`) com PROV-O e NIF, relaciona uma hipótese ou acepção a ocorrências específicas identificadas no corpus digital do projeto, distinguindo a forma e o sentido realizados por uma ocorrência textual da fonte que a atesta historicamente. Por fim, a camada *conceptual*, baseada em SKOS, correlaciona os conceitos com conceitos presentes em outras ontologias da área da Saúde, como UBERON.
 
 
 ### 9.2. Principais classes
@@ -368,15 +369,11 @@ A Ontologia DicBio organiza-se em torno de quatro camadas articuladas. A camada 
 
 <!-- Inserir diagrama da ontologia, se houver. -->
 
-### 9.5. Módulos conceituais
-
-<!-- Se pertinente, organizar a ontologia em módulos: léxico, etimologia, morfologia, atestação, conceitos etc. -->
-
 ---
 
 ## 10. Classes
 
-Esta seção apresenta as classes definidas pela DicBio Ontology.
+Esta seção apresenta as classes definidas pela Ontologia DicBio.
 
 ### 10.1. `dicbio:Attestation`
 
@@ -452,8 +449,6 @@ Para cada propriedade, registrar, quando aplicável:
 
 ### 11.1. Propriedades de etimologia
 
-<!-- Listar propriedades como dicbio:etymologicalProcess, dicbio:etymologicalArgumentation, dicbio:confidenceLevel etc. -->
-
 ### 11.1.1 `dicbio:etymologicalArgumentation`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/etymologicalArgumentation`
@@ -469,15 +464,141 @@ Para cada propriedade, registrar, quando aplicável:
 **Superpropriedade:** nenhuma (propriedade própria, sem equivalente direto reutilizado)
 
 **Uso:** O texto pode conter formatação leve em Markdown (por exemplo, *itálico* para estrangeirismos e latinismos), convertida em HTML apenas no momento da publicação — mantendo o dado independente de qualquer decisão de apresentação.
-<!-- (Nota: essa justificativa merece uma subseção própria em §8, algo como "8.8 Representação de texto com formatação" — ainda não escrita.) -->
+
+### 11.1.2 `dicbio:semanticEtymon`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
 
 
+### 11.1.3 `dicbio:confidenceLevel`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
 
 ### 11.2. Propriedades de formação de palavras
+
+### 11.2.1 `dicbio:hasWordFormationRelation`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
 
 <!-- Listar propriedades relacionadas à formação de palavras. -->
 
 ### 11.3. Propriedades de atestação
+
+### 11.3.1 `dicbio:attestedByOccurrence`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
+
+### 11.3.2 `dicbio:hasAttestation`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
+
+### 11.3.3 `dicbio:attestationDate`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
+
+### 11.3.4 `dicbio:realizesForm`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
+
+### 11.3.5 `dicbio:realizesSense`
+
+**URI:** 
+
+**Rótulo:** 
+
+**Definição:** 
+
+**Domínio:** 
+
+**Range:** 
+
+**Superpropriedade:** 
+
+**Uso:** 
 
 <!-- Listar propriedades relacionadas às atestações. -->
 
@@ -531,50 +652,99 @@ Para cada propriedade, registrar, quando aplicável:
 ### 13.1. Exemplo mínimo de uma entrada lexical
 
 ```turtle
-# inserir exemplo
+dbres:entry_adiposo a ontolex:LexicalEntry ;
+    rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
+    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dcterms:created "2024-05-04"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposo ;
+    ontolex:otherForm dbres:form_adiposa,
+        dbres:form_adiposas,
+        dbres:form_adiposos ;
+    ontolex:sense dbres:entry_adiposo_sense1 .
 ```
 
 ### 13.2. Exemplo de uma forma
 
 ```turtle
-# inserir exemplo
+dbres:form_adiposo a ontolex:Form ;
+    ontolex:writtenRep "adiposo"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:masculine .
+
+dbres:form_adiposa a ontolex:Form ;
+    ontolex:writtenRep "adiposa"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine .
 ```
 
 ### 13.3. Exemplo de uma acepção
 
 ```turtle
-# inserir exemplo
+dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que contém gordura."@pt ;
+    lemonety:etymology dbres:etym_adiposo_sense1_h1 .
 ```
-<!-- Incluir também exemplo de polissemia -->
+```turtle
+dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
+    skos:definition "Cavidade superior dos ventrículos do coração."@pt ;
+    lemonety:etymology dbres:etym_auricula_sense1 ;
+    ontolex:reference dbres:concept_atrio ;
+    dicbio:hasAttestation dbres:attestation_auricula_sense1_vandelli .
+
+dbres:entry_auricula_sense2 a ontolex:LexicalSense ;
+    skos:definition "Orelha."@pt ;
+    lemonety:etymology dbres:etym_auricula_sense2 ;
+    ontolex:reference dbres:concept_orelha ;
+    dicbio:hasAttestation dbres:attestation_auricula_sense2_vandelli .
+```
 
 ### 13.4. Exemplo de uma hipótese etimológica
 
 ```turtle
-# inserir exemplo
+dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_adiposus ;
+    dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
+    dicbio:confidenceLevel dicbio:probable .
 ```
 
 ### 13.5. Exemplo de um étimo
 
 ```turtle
-# inserir exemplo
+dbres:etymon_adiposus a dicbio:SemanticEtymon ;
+    dicbio:hasAttestation dbres:attestation_adiposus ;
+    skos:definition "Que contém gordura."@pt .
 ```
 
 ### 13.6. Exemplo de uma relação de formação de palavras
 
 ```turtle
-# inserir exemplo
+dbres:adiposo_derivation a morph:WordFormationRelation ;
+    vartrans:source dbres:entry_adipe ;
+    vartrans:target dbres:entry_adiposo ;
+    vartrans:category dicbio:Suffixation .
 ```
 
 ### 13.7. Exemplo de uma atestação
 
 ```turtle
-# inserir exemplo
+dbres:attestation_adiposo a dicbio:Attestation ;
+    dcterms:source dbsrc:work_anatomiasantucci ;
+    dicbio:attestationDate "1739"^^xsd:gYear .
 ```
 
 ### 13.8. Exemplo envolvendo um conceito
 
 ```turtle
-# inserir exemplo
+dbres:concept_atrio a skos:Concept ;
+    skos:definition "Cavidade superior do coração."@pt ;
+    skos:exactMatch <http://purl.obolibrary.org/obo/UBERON_0002081> .
 ```
 
 ### 13.9. Exemplo completo
@@ -591,28 +761,10 @@ Para cada propriedade, registrar, quando aplicável:
 
 ### 14.2. LemonEty
 
-Da ontologia *LemonEty*, emprega-se a classe `lemonety:Etymology` para representar a hipótese etimológica. Essa classe é relacionada à entrada lexical cuja etimologia ela descreve por meio da propriedade `lemonety:etymology`, conforme já previsto no modelo *LemonEty*.
+A Ontologia DicBio reutiliza `lemonety:Etymology` para representar hipóteses etimológicas, bem como a propriedade `lemonety:etymology` para relacionar a hipótese à entrada lexical cuja etimologia ela descreve. Entretanto, devido à opção de modelar o étimo como uma acepção, e não como uma entrada lexical, a classe `lemonety:Etymon` não é reutilizada, sendo substituída por `dicbio:SemanticEtymon`.
 
-Devido à nossa decisão de compreender o étimo como uma acepção, e não como uma entrada, optamos por não reutilizar a classe `lemonety:Etymon`, mas criar a nossa própria classe `dicbio:SemanticEtymon`. Da mesma forma, a propriedade `dicbio:semanticEtymon` (que relaciona uma hipótese etimológica a um étimo semântico) não pôde ser definida como uma subpropriedade de `lemonety:etymon`, visto ter outro range.
-
-É importante mencionar que a ontologia *LemonEty* está descrita no seu respectivo repositório GitHub (https://github.com/anasfkhan81/lemonEty), mas o namespace informado (http://lari-datasets.ilc.cnr.it/lemonEty#) não é um *link* rastreável. Além disso, observa-se o que parece ser uma incoerência da ontologia: a propriedade `etyLinkType` está assim descrita:
-
-`:etyLinkType a rdf:Property,
-        owl:DatatypeProperty ;
-    rdfs:label "etymological link type"@en ;
-    rdfs:comment "'etymological link type' specifies the type of a Etymological Link."@en ;
-    rdfs:range :EtyLink .`
-
-No entanto, no arquivo de exemplo fornecido no repositório GitHub, essa propriedade está sendo usada da seguinte forma:
-
-`:etyLink_ENM_EN a owl:NamedIndividual , lemonEty:EtyLink ;
-	rdfs:comment "An etymological relationship (borrowing) between 'frere' (in Middle English) and 'friar' (in Modern English)"@en ;
-	lemonEty:etyLinkType "'specialisation'"@en ;
-	lemonEty:etySource :frere_ENM_et ;
-	lemonEty:etyTarget :friar_EN_le .`
-
-Como se pode perceber, o range da propriedade é um literal, não um `:EtyLink`. Provavelmente, na definição da propriedade, deveria estar escrito `rdfs:domain :EtyLink`, em vez de `rdfs:range`. Por essa razão, optou-se, aqui, por não reutilizar essa propriedade.
-
+As demais classes e propriedades de *LemonEty* também não foram reutilizadas, devido à opção por um formato próprio de modelagem.
+	
 ### 14.3. SKOS
 
 <!-- Explicar a relação entre os conceitos e vocabulários controlados DicBio e SKOS. -->
@@ -630,7 +782,6 @@ Como se pode perceber, o range da propriedade é um literal, não um `:EtyLink`.
 | DicBio | Ontologia externa | Elemento externo | Tipo de relação |
 |---|---|---|---|
 | `dicbio:SemanticEtymon` | OntoLex-Lemon | `ontolex:LexicalSense` | `rdfs:subClassOf` |
-| `dicbio:semanticEtymon` | LemonEty | `lemonety:etymon` | `rdfs:subPropertyOf` |
 | `dicbio:EtymologicalProcess` | SKOS | `skos:Concept` | `rdfs:subClassOf` |
 | `dicbio:WordFormationType` | SKOS | `skos:Concept` | `rdfs:subClassOf` |
 | `dicbio:Attestation` | PROV-O | `prov:Entity` | `rdfs:subClassOf` |
@@ -641,7 +792,7 @@ Como se pode perceber, o range da propriedade é um literal, não um `:EtyLink`.
 
 A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT no Protégé Desktop. O reasoner classificou a ontologia sem apresentar erros de consistência.
 
-Entre as inferências esperadas encontra-se a classificação dos conceitos dos vocabulários controlados como instâncias de ´skos:Concept´, em decorrência da relação de subclasse estabelecida entre ´dicbio:EtymologicalProcess´, ´dicbio:WordFormationType´ e ´skos:Concept´.
+Entre as inferências esperadas encontra-se a classificação das instâncias de ´dicbio:EtymologicalProcess´ e ´dicbio:WordFormationType´ como instâncias de ´skos:Concept´.
 
 ### 15.1. Perfil de raciocínio
 
@@ -690,9 +841,10 @@ Algumas necessidades de modelagem que surgirem com a expansão do *corpus*, a in
 
 <!-- Registrar eventuais limitações relevantes de OntoLex-Lemon, LemonEty, LexInfo etc. -->
 
-### 16.4. Questões não resolvidas
+### 16.4. Questões em desenvolvimento
 
-É necessário avaliar qual é a melhor forma de indicar os offsets de cada termo, sentença e parágrafo no corpus, para fazer corretamente a integração com o padrão NIF.
+A integração completa com NIF requer a definição de uma estratégia consistente para representação dos offsets de termos, sentenças e parágrafos no corpus. Essa questão será aprofundada durante o desenvolvimento da camada de integração com o corpus.
+
 <!-- Registrar questões que permanecerão em desenvolvimento sem transformá-las em regras da versão 1.0. -->
 
 ---
