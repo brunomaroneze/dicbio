@@ -83,7 +83,7 @@ def gerar_nif_index(arquivos_xml, arquivo_saida):
 
             xml_id = termo.get("{http://www.w3.org/XML/1998/namespace}id")
 
-            texto_exato = "".join(termo.itertext()).strip()
+            texto_exato = " ".join("".join(termo.itertext()).split())
 
             lema = termo.get("lemma")
             if not lema:

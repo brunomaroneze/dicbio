@@ -11015,11 +11015,9 @@ dbres:t_vandelli_0058 a nif:Word ;
     nif:referenceContext dbres:sn_vandelli_0460 .
 
 dbres:t_vandelli_0059 a nif:Word ;
-    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_membrana
-________________branchiostega> ;
+    dicbio:realizesForm dbres:form_membrana_branchiostega ;
     dicbio:realizesSense dbres:entry_membrana_branquiostega_sense1 ;
-    nif:anchorOf """membrana
-                branchiostega"""@pt ;
+    nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
     nif:referenceContext dbres:sn_vandelli_0460 .
 
@@ -11178,11 +11176,9 @@ dbres:t_vandelli_0081 a nif:Word ;
     nif:referenceContext dbres:sn_vandelli_0670 .
 
 dbres:t_vandelli_0082 a nif:Word ;
-    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna
-________________branchiostega> ;
+    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_membrana,_ou_pinna_branchiostega> ;
     dicbio:realizesSense dbres:entry_membrana_branquiostega_sense1 ;
-    nif:anchorOf """membrana, ou pinna
-                branchiostega"""@pt ;
+    nif:anchorOf "membrana, ou pinna branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
     nif:referenceContext dbres:sn_vandelli_0674 .
 
@@ -11229,11 +11225,9 @@ dbres:t_vandelli_0088 a nif:Word ;
     nif:referenceContext dbres:sn_vandelli_0730 .
 
 dbres:t_vandelli_0089 a nif:Word ;
-    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_membrana
-________________branchiostega> ;
+    dicbio:realizesForm dbres:form_membrana_branchiostega ;
     dicbio:realizesSense dbres:entry_membrana_branquiostega_sense1 ;
-    nif:anchorOf """membrana
-                branchiostega"""@pt ;
+    nif:anchorOf "membrana branchiostega"@pt ;
     nif:lemma "membrana branquióstega"@pt ;
     nif:referenceContext dbres:sn_vandelli_0730 .
 
@@ -20835,11 +20829,9 @@ dbres:t_vandelli_1466 a nif:Word ;
     nif:referenceContext dbres:s_vandelli_0047 .
 
 dbres:t_vandelli_1467 a nif:Word ;
-    dicbio:realizesForm <http://dicbio.fflch.usp.br/recurso/form_Jardim
-______________Botanico> ;
+    dicbio:realizesForm dbres:form_Jardim_Botanico ;
     dicbio:realizesSense dbres:entry_jardim_botanico_sense1 ;
-    nif:anchorOf """Jardim
-              Botanico"""@pt ;
+    nif:anchorOf "Jardim Botanico"@pt ;
     nif:lemma "jardim botânico"@pt ;
     nif:referenceContext dbres:s_vandelli_0050 .
 
