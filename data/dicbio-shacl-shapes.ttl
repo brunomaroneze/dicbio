@@ -1,6 +1,28 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.5 — protocolo revisado: o étimo agora exige uma ontolex:LexicalEntry
+#   própria (na língua de origem), ligada a ele por ontolex:sense.
+#   dsh:SemanticEtymonShape: writtenRep/language/exactMatch saíram do
+#   étimo; ficou só skos:definition + hasAttestation + cadeia
+#   (lemonety:etymology) + checagem (caminho inverso) de que existe uma
+#   Entrada apontando para ele. Nova dsh:EtymonEntryShape exige
+#   dcterms:language (e aceita skos:exactMatch) na Entrada do étimo.
+#   dsh:LexicalEntryShape.ontolex:sense agora usa sh:or (LexicalSenseShape
+#   OU SemanticEtymonShape), já que a Entrada do étimo também usa
+#   ontolex:sense, só que apontando para um étimo em vez de uma Acepção
+#   comum.
+# v2.4 — gênero oscilante em substantivos (ex.: "ádipe", "substantivo
+#   de dois gêneros" no Houaiss): LexicalEntryShape.lexinfo:gender agora
+#   aceita maxCount 2; nova dsh:EntryGenderOscillationNoticeShape avisa
+#   (Warning) quando há mais de um valor, para confirmação humana.
+#   CORREÇÃO DE BUG do pySHACL: sh:severity dentro de um bloco sh:sparql
+#   é ignorado por essa lib (sempre reporta como Violation) — precisa
+#   estar na NodeShape que contém o sh:sparql. Corrigido também em
+#   dsh:ReferenceSourceConsistencyShape e na antiga
+#   dsh:AttestationDateSourceCoOccurrenceShape, que foi separada em
+#   duas shapes (uma Violation, outra — dsh:AttestationCompletenessNoticeShape — Warning),
+#   já que sh:severity vale para a shape inteira.
 # v2.3 — dsh:AuthorShape: substituído sh:targetClass foaf:Person por
 #   SPARQLTarget restrito a IRIs dbauth:, evitando que nós foaf:Person
 #   externos (ex.: bibo:editor de fontes) sejam capturados pela shape.
@@ -84,8 +106,11 @@ dsh:LexicalEntryShape
     sh:property [
         sh:path ontolex:sense ;
         sh:minCount 1 ;
-        sh:node dsh:LexicalSenseShape ;
-        sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense." ;
+        # Ou é uma Acepção comum (verbete "normal"), ou é um étimo
+        # (SemanticEtymon) — caso desta seja a "entrada do étimo" numa
+        # língua de origem (ver dsh:EtymonEntryShape).
+        sh:or ( dsh:LexicalSenseShape dsh:SemanticEtymonShape ) ;
+        sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense (Acepção comum ou étimo)." ;
     ] ;
 
     # dcterms:creator na ENTRADA identifica o(s) colaborador(es) do
@@ -123,12 +148,47 @@ dsh:LexicalEntryShape
     # lexinfo:gender na ENTRADA vale para substantivos (masc./fem.).
     # Neutro é reservado a Formas latinas (ver nota geral sobre
     # verificação condicional por classe gramatical).
+    #
+    # maxCount 2 (não 1): existem substantivos de gênero oscilante —
+    # usados tanto no masculino quanto no feminino na mesma época, sem
+    # mudança de sentido (ex.: "ádipe", que o Houaiss classifica como
+    # "substantivo de dois gêneros"). Isso é diferente de uma palavra
+    # que MUDOU de gênero ao longo do tempo (ex.: "clitóris", feminino
+    # no séc. XVIII e masculino hoje) — esse segundo caso não precisa
+    # de dois valores no mesmo nó: cada gênero fica na Forma/Entrada
+    # correspondente ao período em que valia, e cada uma continua com
+    # um único lexinfo:gender.
     sh:property [
         sh:path lexinfo:gender ;
         sh:minCount 0 ;
-        sh:maxCount 1 ; # Considerar tirar - há palavras que têm ambos os gêneros
+        sh:maxCount 2 ;
         sh:in ( lexinfo:masculine lexinfo:feminine ) ;
-        sh:message "lexinfo:gender na Entrada deve ser masculine ou feminine (substantivos)." ;
+        sh:message "lexinfo:gender na Entrada deve ser masculine e/ou feminine (substantivos)." ;
+    ] .
+
+# Aviso (não violação) quando a Entrada tem mais de um lexinfo:gender —
+# não impede a validação, mas sinaliza o caso para confirmação humana:
+# é um substantivo de dois gêneros de verdade (ex.: "ádipe"), ou é uma
+# duplicidade acidental de dado?
+dsh:EntryGenderOscillationNoticeShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalEntry ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Entrada com mais de um lexinfo:gender — confirme se é um caso legítimo de substantivo de dois gêneros (ex.: 'ádipe') e não duplicidade de dado." ;
+        sh:select """
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                {
+                    SELECT $this (COUNT(DISTINCT ?g) AS ?n)
+                    WHERE { $this lexinfo:gender ?g }
+                    GROUP BY $this
+                }
+                FILTER (?n > 1)
+            }
+        """ ;
     ] .
 
 ########################################################################
@@ -333,11 +393,20 @@ dsh:EtymologyProcessConsistencyShape
 ########################################################################
 ## 5. ÉTIMOS — dicbio:SemanticEtymon
 #
-# dicbio:SemanticEtymon é rdfs:subClassOf ontolex:LexicalSense (não uma
-# classe independente com writtenRep/definition "soltos" — é uma
-# Acepção que atua como étimo). Por isso ela também pode ter
-# lemonety:etymology, permitindo cadeias etimológicas (um étimo com
-# outro étimo por trás), como previsto no protocolo.
+# MUDANÇA DE PROTOCOLO (v2.5): como o étimo é sempre uma Acepção
+# (dicbio:SemanticEtymon rdfs:subClassOf ontolex:LexicalSense), agora
+# ele também precisa de uma ontolex:LexicalEntry própria (na língua do
+# étimo) que o referencie via ontolex:sense — exatamente como qualquer
+# outra Acepção precisa estar ligada a uma Entrada. Por isso:
+#   - ontolex:writtenRep, dcterms:language e skos:exactMatch SAÍRAM do
+#     étimo (SemanticEtymon) e foram para a nova Entrada do étimo (ver
+#     dsh:EtymonEntryShape, seção 5b) — writtenRep vai na Forma dessa
+#     entrada, dcterms:language e skos:exactMatch vão na própria Entrada.
+#   - O étimo em si (SemanticEtymon) agora só precisa mesmo de
+#     skos:definition, mais o que qualquer Acepção pode ter
+#     (dicbio:hasAttestation, cadeia via lemonety:etymology).
+#   - Uma nova checagem (caminho inverso de ontolex:sense) garante que
+#     todo étimo tenha ao menos uma Entrada apontando para ele.
 ########################################################################
 
 dsh:SemanticEtymonShape
@@ -347,31 +416,15 @@ dsh:SemanticEtymonShape
     sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/etymon_" ;
 
     sh:property [
-        sh:path dcterms:language ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:pattern "^https://glottolog\\.org/resource/languoid/id/" ;
-        sh:message "dcterms:language do étimo deve apontar para um código glotto: (Glottolog)." ;
-    ] ;
-
-    sh:property [
-        sh:path ontolex:writtenRep ;
-        sh:minCount 1 ;
-        sh:message "Todo étimo precisa de ontolex:writtenRep." ;
-    ] ;
-
-    sh:property [
         sh:path skos:definition ;
         sh:minCount 1 ;
         sh:message "Todo étimo precisa de skos:definition." ;
     ] ;
 
     sh:property [
-        sh:path skos:exactMatch ;
+        sh:path dicbio:hasAttestation ;
         sh:minCount 0 ;
-        sh:nodeKind sh:IRI ;
-        sh:message "skos:exactMatch pode ligar o étimo latino ao URI correspondente no projeto LiLa." ;
+        sh:node dsh:AttestationShape ;
     ] ;
 
     # Cadeia etimológica: o próprio étimo pode ter sua hipótese de
@@ -381,6 +434,61 @@ dsh:SemanticEtymonShape
         sh:minCount 0 ;
         sh:node dsh:EtymologyShape ;
         sh:message "Se o étimo tiver origem anterior (cadeia etimológica), use lemonety:etymology apontando para outra hipótese." ;
+    ] ;
+
+    # Todo étimo precisa ter uma Entrada lexical própria (na língua do
+    # étimo) que o referencie via ontolex:sense — caminho inverso.
+    sh:property [
+        sh:path [ sh:inversePath ontolex:sense ] ;
+        sh:minCount 1 ;
+        sh:class ontolex:LexicalEntry ;
+        sh:message "Todo étimo precisa de uma ontolex:LexicalEntry que o referencie via ontolex:sense (a 'entrada do étimo', na língua original)." ;
+    ] .
+
+########################################################################
+## 5b. ENTRADA DO ÉTIMO — ontolex:LexicalEntry (na língua do étimo)
+#
+# É uma ontolex:LexicalEntry comum (por isso já herda todas as
+# exigências de dsh:LexicalEntryShape: lexinfo:partOfSpeech,
+# ontolex:canonicalForm, dcterms:creator etc.), só que aponta via
+# ontolex:sense para um dicbio:SemanticEtymon em vez de uma
+# ontolex:LexicalSense comum, e precisa adicionalmente de
+# dcterms:language. O alvo é definido por SPARQLTarget (entradas cujo
+# ontolex:sense aponta para um SemanticEtymon), já que não há uma
+# classe RDF distinta para "entrada de étimo" — é a mesma
+# ontolex:LexicalEntry de sempre, só que num papel diferente.
+########################################################################
+
+dsh:EtymonEntryShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dicbio:  <https://dicbio.fflch.usp.br/ontology/>
+            SELECT ?this
+            WHERE {
+                ?this a ontolex:LexicalEntry ;
+                      ontolex:sense ?s .
+                ?s a dicbio:SemanticEtymon .
+            }
+        """ ;
+    ] ;
+
+    sh:property [
+        sh:path dcterms:language ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://glottolog\\.org/resource/languoid/id/" ;
+        sh:message "A entrada do étimo precisa de dcterms:language apontando para um código glotto: (Glottolog)." ;
+    ] ;
+
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "skos:exactMatch pode ligar a entrada do étimo latino ao URI correspondente no projeto LiLa." ;
     ] .
 
 ########################################################################
@@ -439,13 +547,19 @@ dsh:AttestationDateSourceCoOccurrenceShape
                 { $this dcterms:source ?s . FILTER NOT EXISTS { $this dicbio:attestationDate ?d } }
             }
         """ ;
-    ] ;
+    ] .
 
-    # Aviso (não erro): toda atestação deveria ter OU uma ocorrência de
-    # córpus OU (data + fonte externas) — caso contrário está incompleta.
+# Aviso (não erro): toda atestação deveria ter OU uma ocorrência de
+# córpus OU (data + fonte externas) — caso contrário está incompleta.
+# Em NodeShape separada porque sh:severity vale para toda a shape (não
+# dá para misturar Violation e Warning na mesma NodeShape com sh:sparql).
+dsh:AttestationCompletenessNoticeShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+    sh:severity sh:Warning ;
+
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:severity sh:Warning ;
         sh:message "Atestação sem dicbio:attestedByOccurrence e sem (dicbio:attestationDate + dcterms:source) — parece incompleta." ;
         sh:select """
             PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
@@ -795,9 +909,9 @@ dsh:BookVolumeShape
 dsh:ReferenceSourceConsistencyShape
     a sh:NodeShape ;
     sh:targetClass bibo:ReferenceSource ;
+    sh:severity sh:Warning ;
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:severity sh:Warning ;
         sh:message "bibo:ReferenceSource (dicionário) deveria também ser tipado como bibo:Book, conforme o protocolo." ;
         sh:select """
             PREFIX bibo: <http://purl.org/ontology/bibo/>
@@ -904,6 +1018,8 @@ dsh:IssueSourceShape
 #      dsh:LexicalSenseShape (SPARQLTarget)
 #      dsh:EtymologyProcessConsistencyShape
 #      dsh:AttestationDateSourceCoOccurrenceShape
+#      dsh:AttestationCompletenessNoticeShape
+#      dsh:EntryGenderOscillationNoticeShape
 #      dsh:ReferenceSourceConsistencyShape
 #      dsh:BookSourceShape (SPARQLTarget)
 #      dsh:BookSourceAuthorshipShape (SPARQLTarget + SPARQLConstraint)

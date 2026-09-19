@@ -25,7 +25,7 @@
 
 - Os recursos "dbres:form_XXXX" representam formas flexionadas e também formas gráficas encontradas no córpus.
 
-- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina ou grega, o gênero neutro é "lexinfo:neuter".
+- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina ou grega, o gênero neutro é "lexinfo:neuter". Nos raros casos de substantivos com mais de um gênero, todos os gêneros devem ser incluídos.
 
 - Formas com inicial maiúscula devem ser registradas distintamente das formas com inicial minúscula. Por exemplo, "botanica" e "Botanica" serão registradas sob as formas "dbres:form_botanica" e "dbres:form_Botanica", respectivamente.
 
@@ -64,11 +64,15 @@
 
 - No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
 
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus"). É relacionado à hipótese etimológica por meio da propriedade "dicbio:semanticEtymon".
+- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus"). É relacionado à hipótese etimológica por meio da propriedade "dicbio:semanticEtymon". Deve conter também a propriedade "skos:definition" (a definição do étimo).
 
-- Ao étimo convém apresentar os elementos "dcterms:language" (a língua do étimo), "ontolex:writtenRep" (a forma escrita) e "skos:definition" (a definição do étimo). A propriedade "skos:exactMatch" pode ser usada para relacionar o étimo latino ao seu URI no projeto LiLa.
+- Como o étimo é sempre uma acepção, é preciso também criar uma entrada lexical para o étimo, que será associada ao étimo pela propriedade "ontolex:sense". A entrada do étimo terá a mesma forma que outras entradas, ou seja: "entry_XXXX". Se por acaso isso resultar numa forma idêntica a outra entrada, acrescenta-se, para diferenciar, ao final, a língua do étimo. Por exemplo, "auricula" em latim seria idêntico à entrada "aurícula" em português, então a entrada em latim fica "entry_auricula_lat".
 
-- A língua do étimo é apresentada com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261". O código da língua grega é "glotto:gree1276".
+- A entrada do étimo (da classe "ontolex:LexicalEntry") deve conter o elemento "dcterms:language", apresentando a língua do étimo, com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261". O código da língua grega é "glotto:gree1276".
+
+- A entrada do étimo deve ainda conter a propriedade "lexinfo:partOfSpeech" (com a classe gramatical) e uma "ontolex:canonicalForm", podendo conter uma ou mais "ontolex:otherForm". Assim, também será necessário criar triplas para as respectivas formas do étimo e suas representações escritas.
+
+- No caso dos étimos em latim, a propriedade "skos:exactMatch" pode ser usada para relacionar a entrada do étimo ao seu URI no projeto LiLa.
 
 - Um étimo pode ter outro étimo, formando cadeias etimológicas. Nesse caso, a explicação etimológica pode ficar com o nome "dbres:etym_XXXXX", sem a necessidade de "_sense1".
 

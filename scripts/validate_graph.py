@@ -20,6 +20,10 @@ def validate_ttl(data_file):
     # Carrega a ontologia básica
     data_graph.parse("data/dicbio-ontology.ttl", format="turtle")
 
+    # Carrega triplas auxiliares (fontes e autores), necessárias para a validação mas não validadas diretamente
+    data_graph.parse("data/sources.ttl", format="turtle")
+    data_graph.parse("data/authors.ttl", format="turtle")
+
     # Carrega as shapes SHACL
     shacl_graph = Graph()
     shacl_graph.parse(SHACL_FILE, format="turtle")
