@@ -278,7 +278,7 @@ Já o étimo (da classe `dicbio:SemanticEtymon`) apresenta uma definição (`sko
 
 Por fim, o étimo (que, lembre-se, é uma acepção) é associado à sua entrada correspondente, que também contém uma forma (`ontolex:canonicalForm`):
 
-`dbres:auricula_lat a ontolex:LexicalEntry ;
+`dbres:entry_auricula_lat a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
     ontolex:canonicalForm dbres:form_auricula_lat ;
     ontolex:sense dbres:etymon_auricula_sense1 .`
@@ -429,7 +429,15 @@ Esta seção apresenta as classes definidas pela Ontologia DicBio.
 
 ### 10.5. Classes reutilizadas
 
-<!-- Apresentar, quando útil, as classes externas mais importantes utilizadas pela ontologia, como ontolex:LexicalEntry, ontolex:LexicalSense e ontolex:Form. -->
+Além das classes próprias listadas acima, a Ontologia DicBio reutiliza diretamente as seguintes classes externas, sem redefini-las:
+
+- `ontolex:LexicalEntry` — representa a entrada lexical (o verbete propriamente dito), podendo estar associada a uma ou mais formas e a uma ou mais acepções (ver §8.3).
+- `ontolex:Form` — representa uma forma flexionada, variante gráfica ou a forma canônica de uma entrada lexical.
+- `ontolex:LexicalSense` — representa uma acepção da entrada lexical; é a superclasse de `dicbio:SemanticEtymon` (§10.3).
+- `lemonety:Etymology` — representa uma hipótese etimológica, relacionando uma acepção ao seu étimo por meio de `dicbio:semanticEtymon` (ver §8.4).
+- `morph:WordFormationRelation` — representa uma relação morfológica de formação de palavras, associada a uma hipótese etimológica por `dicbio:hasWordFormationRelation` (§11.2.1).
+- `nif:Word` — representa uma ocorrência textual identificada no corpus digital do projeto, relacionada à forma e à acepção que realiza por meio de `dicbio:realizesForm` e `dicbio:realizesSense` (§8.5).
+- `skos:Concept` — além de servir de superclasse aos vocabulários controlados próprios (`dicbio:EtymologicalProcess`, `dicbio:WordFormationType`), é usada diretamente para representar conceitos de domínio associados às acepções via `ontolex:reference`, eventualmente alinhados a ontologias biomédicas externas como a UBERON (ver exemplo em §13.8).
 
 ---
 
@@ -437,23 +445,11 @@ Esta seção apresenta as classes definidas pela Ontologia DicBio.
 
 Esta seção apresenta as propriedades definidas pela Ontologia DicBio.
 
-Para cada propriedade, registrar, quando aplicável:
-
-- URI;
-- rótulo em português;
-- rótulo em inglês;
-- definição em português;
-- definição em inglês;
-- domínio;
-- range;
-- superpropriedade;
-- propriedades relacionadas;
-- observações de uso;
-- exemplo.
+Para cada propriedade, registram-se, quando aplicável: URI; rótulo em português e em inglês; definição; domínio; range; superpropriedade; observações de uso.
 
 ### 11.1. Propriedades de etimologia
 
-### 11.1.1 `dicbio:etymologicalArgumentation`
+### 11.1.1. `dicbio:etymologicalArgumentation`
 
 **URI:** `https://dicbio.fflch.usp.br/ontology/etymologicalArgumentation`
 
@@ -469,150 +465,167 @@ Para cada propriedade, registrar, quando aplicável:
 
 **Uso:** O texto pode conter formatação leve em Markdown (por exemplo, *itálico* para estrangeirismos e latinismos), convertida em HTML apenas no momento da publicação — mantendo o dado independente de qualquer decisão de apresentação.
 
-### 11.1.2 `dicbio:semanticEtymon`
+### 11.1.2. `dicbio:semanticEtymon`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/semanticEtymon`
 
-**Rótulo:** 
+**Rótulo:** semantic etymon / étimo semântico
 
-**Definição:** 
+**Definição:** Relaciona uma hipótese etimológica ao étimo semântico que ela postula — isto é, à acepção (`dicbio:SemanticEtymon`) que constitui a origem semântica do sentido descrito.
 
-**Domínio:** 
+**Domínio:** `lemonety:Etymology`
 
-**Range:** 
+**Range:** `dicbio:SemanticEtymon`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma. A propriedade se relaciona a `lemonety:etymon` apenas por `rdfs:seeAlso`, não por `rdfs:subPropertyOf` — o range de `lemonety:etymon` é `lemonety:Etymon`, incompatível com `dicbio:SemanticEtymon`, o que impede uma subpropriedade formal.
 
-**Uso:** 
+**Uso:** É a propriedade central da modelagem etimológica da ontologia (ver §8.4): liga cada hipótese etimológica ao étimo, sempre representado como uma acepção, nunca como uma entrada lexical inteira — o que permite descrever transmissão semântica parcial entre entradas polissêmicas.
 
+### 11.1.3. `dicbio:confidenceLevel`
 
-### 11.1.3 `dicbio:confidenceLevel`
+**URI:** `https://dicbio.fflch.usp.br/ontology/confidenceLevel`
 
-**URI:** 
+**Rótulo:** confidence level / nível de confiança
 
-**Rótulo:** 
+**Definição:** Indica o grau de certeza atribuído pelos editores a uma hipótese etimológica.
 
-**Definição:** 
+**Domínio:** `lemonety:Etymology`
 
-**Domínio:** 
+**Range:** `skos:Concept` (na prática, uma das instâncias de `dicbio:EtymologicalCertaintyScheme`: `dicbio:impossible`, `dicbio:improbable`, `dicbio:plausible`, `dicbio:probable` ou `dicbio:certain`; ver §12.1)
 
-**Range:** 
+**Superpropriedade:** nenhuma
 
-**Superpropriedade:** 
-
-**Uso:** 
+**Uso:** Atribuída a cada hipótese etimológica para registrar a avaliação qualitativa da equipe quanto à solidez da proposta, com base no vocabulário controlado descrito em §12.1 (ver exemplo em §13.4, em que `dicbio:probable` é atribuído à hipótese sobre o étimo científico de "adiposo").
 
 ### 11.2. Propriedades de formação de palavras
 
-### 11.2.1 `dicbio:hasWordFormationRelation`
+### 11.2.1. `dicbio:hasWordFormationRelation`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/hasWordFormationRelation`
 
-**Rótulo:** 
+**Rótulo:** has word formation relation / tem relação de formação de palavras
 
-**Definição:** 
+**Definição:** Liga uma hipótese etimológica a uma relação morfológica de formação de palavras que descreve a formação interna da unidade lexical.
 
-**Domínio:** 
+**Domínio:** `lemonety:Etymology`
 
-**Range:** 
+**Range:** `morph:WordFormationRelation`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma
 
-**Uso:** 
-
-<!-- Listar propriedades relacionadas à formação de palavras. -->
+**Uso:** Utilizada tipicamente quando `dicbio:etymologicalProcess` tem valor `dicbio:created`, ou seja, quando a unidade lexical resulta de um processo interno à língua. A relação morfológica indicada por esta propriedade associa a entrada de origem (`vartrans:source`) à entrada resultante (`vartrans:target`) e classifica o tipo de formação por meio de `vartrans:category`, cujo valor é uma instância de `dicbio:WordFormationType` (§12.3). Ver exemplo em §13.6.
 
 ### 11.3. Propriedades de atestação
 
-### 11.3.1 `dicbio:attestedByOccurrence`
+### 11.3.1. `dicbio:attestedByOccurrence`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/attestedByOccurrence`
 
-**Rótulo:** 
+**Rótulo:** attested by occurrence / atestada pela ocorrência
 
-**Definição:** 
+**Definição:** Relaciona um registro de atestação à ocorrência específica do corpus (`nif:Word`) que fornece a evidência textual para essa atestação.
 
-**Domínio:** 
+**Domínio:** `dicbio:Attestation`
 
-**Range:** 
+**Range:** `nif:Word`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma
 
-**Uso:** 
+**Uso:** Utilizada quando a atestação corresponde a uma ocorrência identificável no corpus digital do DicBio, permitindo remeter da datação histórica ao trecho textual específico da fonte (ver exemplo em §8.5).
 
-### 11.3.2 `dicbio:hasAttestation`
+### 11.3.2. `dicbio:hasAttestation`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/hasAttestation`
 
-**Rótulo:** 
+**Rótulo:** has attestation / tem atestação
 
-**Definição:** 
+**Definição:** Relaciona uma acepção a um registro de atestação histórica.
 
-**Domínio:** 
+**Domínio:** `ontolex:LexicalSense`
 
-**Range:** 
+**Range:** `dicbio:Attestation`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma
 
-**Uso:** 
+**Uso:** Como `dicbio:SemanticEtymon` é subclasse de `ontolex:LexicalSense`, esta propriedade também pode relacionar um étimo a sua própria atestação (ver exemplo em §13.5, em que `dbres:etymon_adiposus` — um `dicbio:SemanticEtymon` — recebe `dicbio:hasAttestation`).
 
-### 11.3.3 `dicbio:attestationDate`
+### 11.3.3. `dicbio:attestationDate`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/attestationDate`
 
-**Rótulo:** 
+**Rótulo:** attestation date / data de atestação
 
-**Definição:** 
+**Definição:** Data associada à atestação histórica da unidade lexical.
 
-**Domínio:** 
+**Domínio:** `dicbio:Attestation`
 
-**Range:** 
+**Range:** `xsd:gYear`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma
 
-**Uso:** 
+**Uso:** Restrita ao ano (`xsd:gYear`), refletindo o grau de precisão cronológica geralmente disponível nas fontes históricas do corpus do projeto.
 
-### 11.3.4 `dicbio:realizesForm`
+### 11.3.4. `dicbio:realizesForm`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/realizesForm`
 
-**Rótulo:** 
+**Rótulo:** realizes form / realiza forma
 
-**Definição:** 
+**Definição:** Relaciona uma ocorrência textual do corpus (`nif:Word`) à forma lexical que ela realiza.
 
-**Domínio:** 
+**Domínio:** `nif:Word`
 
-**Range:** 
+**Range:** `ontolex:Form`
 
-**Superpropriedade:** 
+**Superpropriedade:** nenhuma
 
-**Uso:** 
+**Uso:** Empregada em conjunto com `dicbio:realizesSense` para associar uma ocorrência textual tanto à sua forma quanto ao sentido correspondente (ver §8.5).
 
-### 11.3.5 `dicbio:realizesSense`
+### 11.3.5. `dicbio:realizesSense`
 
-**URI:** 
+**URI:** `https://dicbio.fflch.usp.br/ontology/realizesSense`
 
-**Rótulo:** 
+**Rótulo:** realizes sense / realiza sentido
 
-**Definição:** 
+**Definição:** Relaciona uma ocorrência textual do corpus (`nif:Word`) ao sentido lexical que ela desambigua.
 
-**Domínio:** 
+**Domínio:** `nif:Word`
 
-**Range:** 
+**Range:** `ontolex:LexicalSense`
 
-**Superpropriedade:** 
+**Superpropriedade:** `itsrdf:taIdentRef`
 
-**Uso:** 
-
-<!-- Listar propriedades relacionadas às atestações. -->
+**Uso:** Especialização de `itsrdf:taIdentRef` para anotação de sentido lexicográfico, distinguindo-se do uso mais comum dessa propriedade para vinculação a entidades nomeadas (ver §14.6).
 
 ### 11.4. Outras propriedades
 
-<!-- Demais propriedades próprias da ontologia. -->
+Além das propriedades listadas em 11.1–11.3, a Ontologia DicBio 1.0 não define, nesta versão, propriedades próprias adicionais. Novas propriedades poderão ser introduzidas em versões futuras à medida que novas necessidades de modelagem sejam identificadas (ver §3.3 e §16.1).
 
 ### 11.5. Propriedades reutilizadas
 
-<!-- Apresentar as propriedades externas mais importantes utilizadas pela ontologia. -->
+Além das propriedades próprias descritas acima, os dados do DicBio empregam diversas propriedades de ontologias externas. As principais são:
+
+| Propriedade | Origem | Função nos dados do DicBio |
+|---|---|---|
+| `ontolex:sense` | OntoLex-Lemon | Relaciona uma entrada lexical às suas acepções |
+| `ontolex:canonicalForm` / `ontolex:otherForm` | OntoLex-Lemon | Relacionam uma entrada lexical à sua forma canônica e às demais formas flexionadas e gráficas |
+| `ontolex:writtenRep` | OntoLex-Lemon | Representação escrita de uma forma lexical |
+| `ontolex:reference` | OntoLex-Lemon | Relaciona uma acepção a um conceito de domínio (`skos:Concept`), eventualmente alinhado a ontologias biomédicas externas (ver exemplo em §13.8) |
+| `lemonety:etymology` | LemonEty | Relaciona uma acepção à hipótese etimológica (`lemonety:Etymology`) que descreve sua origem |
+| `vartrans:source` / `vartrans:target` | OntoLex-VarTrans | Relacionam uma relação de formação de palavras à entrada primitiva e à entrada derivada |
+| `vartrans:category` | OntoLex-VarTrans | Classifica uma relação de formação de palavras por meio de uma instância de `dicbio:WordFormationType` |
+| `dcterms:creator` | Dublin Core Terms | Autoria de um recurso (entrada, hipótese etimológica etc.) |
+| `dcterms:created` / `dcterms:modified` | Dublin Core Terms | Datas de criação e última modificação de um recurso |
+| `dcterms:source` | Dublin Core Terms | Relaciona um recurso à fonte documental ou bibliográfica correspondente |
+| `dcterms:language` | Dublin Core Terms | Idioma de uma entrada lexical ou de um étimo, tipicamente com valor no vocabulário Glottolog (`glotto:`) |
+| `skos:definition` | SKOS | Definição textual de uma acepção ou de um conceito |
+| `skos:exactMatch` | SKOS | Alinhamento entre um conceito do DicBio e um termo equivalente em outro vocabulário (por exemplo, dbnary, UBERON) |
+| `lexinfo:partOfSpeech`, `lexinfo:gender`, `lexinfo:number` | LexInfo | Categoria gramatical, gênero e número de entradas e formas |
+| `nif:anchorOf`, `nif:lemma`, `nif:referenceContext` | NIF | Texto, lema e contexto de referência de uma ocorrência do corpus |
+| `rdfs:seeAlso` | RDFS | Remissões a recursos externos relacionados (por exemplo, Wikcionário) |
+| `owl:sameAs` | OWL | Identidade entre um recurso do DicBio e um recurso equivalente em outro conjunto de dados |
+
+A lista acima não é exaustiva; ela reúne as propriedades reutilizadas mais relevantes para a compreensão do modelo, priorizando as que aparecem nos exemplos da Seção 13.
 
 ---
 
@@ -761,7 +774,9 @@ dbres:concept_atrio a skos:Concept ;
 
 ### 14.1. OntoLex-Lemon
 
-<!-- Explicar o alinhamento com ontolex:LexicalEntry, ontolex:Form, ontolex:LexicalSense etc. -->
+A camada lexical da Ontologia DicBio é construída diretamente sobre o modelo *core* de OntoLex-Lemon. As entradas do dicionário são representadas como `ontolex:LexicalEntry`, associadas às suas formas (`ontolex:Form`, relacionadas por `ontolex:canonicalForm` e `ontolex:otherForm`) e às suas acepções (`ontolex:LexicalSense`, relacionadas por `ontolex:sense`). Essa separação entre entrada, forma e acepção é o fundamento sobre o qual as demais camadas da ontologia — etimológica, morfológica e documental — são construídas (ver §8.3).
+
+A Ontologia DicBio não estende nem restringe formalmente essas classes; a única relação de subclasse acrescentada é a de `dicbio:SemanticEtymon` como subclasse de `ontolex:LexicalSense` (§10.3), motivada pela decisão de modelagem descrita em §8.4.
 
 ### 14.2. LemonEty
 
@@ -771,17 +786,17 @@ As demais classes e propriedades de *LemonEty* também não foram reutilizadas, 
 	
 ### 14.3. SKOS
 
-<!-- Explicar a relação entre os conceitos e vocabulários controlados DicBio e SKOS. -->
+A Ontologia DicBio utiliza SKOS em dois sentidos complementares. Em primeiro lugar, SKOS fornece a estrutura para os vocabulários controlados próprios da ontologia — `dicbio:EtymologicalCertaintyScheme`, `dicbio:EtymologicalProcessScheme` e `dicbio:WordFormationTypeScheme` (§12) —, cujas classes de valores (`dicbio:EtymologicalProcess`, `dicbio:WordFormationType`) são subclasses de `skos:Concept`. Em segundo lugar, `skos:Concept` é usada diretamente, sem subclasse própria, para representar conceitos de domínio associados às acepções via `ontolex:reference`, permitindo o alinhamento com ontologias externas por meio de `skos:exactMatch` (ver exemplo em §13.8). Essas duas utilizações de SKOS atendem a necessidades distintas — controle terminológico interno e alinhamento conceitual externo — e não devem ser confundidas.
 
 ### 14.4. LexInfo
 
-<!-- Explicar o uso de LexInfo para categorias e propriedades linguísticas. -->
+LexInfo é reutilizada, nos dados do DicBio (embora não como dependência formal da ontologia — ver §7.2), para representar propriedades e valores gramaticais das entradas e formas lexicais, como categoria gramatical (`lexinfo:partOfSpeech`), gênero (`lexinfo:gender`) e número (`lexinfo:number`), conforme ilustrado nos exemplos de §13.1 e §13.2.
 
-### 14.5. Outros alinhamentos
+<!-- ### 14.5. Outros alinhamentos
 
-<!-- Registrar outros alinhamentos relevantes. -->
+Registrar outros alinhamentos relevantes. -->
 
-### 14.6. Tabela de alinhamentos
+### 14.5. Tabela de alinhamentos
 
 | DicBio | Ontologia externa | Elemento externo | Tipo de relação |
 |---|---|---|---|
@@ -800,7 +815,7 @@ Entre as inferências esperadas encontra-se a classificação das instâncias de
 
 ### 15.1. Perfil de raciocínio
 
-<!-- Registrar as características OWL relevantes e o reasoner utilizado nos testes. -->
+A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**, executado a partir do **Protégé Desktop**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.6), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
 
 ### 15.2. Inferências esperadas
 
@@ -817,7 +832,7 @@ Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é infe
 
 ### 15.3. Domínio e range
 
-<!-- Explicar as principais inferências decorrentes de rdfs:domain e rdfs:range. -->
+As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:semanticEtymon` tem `rdfs:range dicbio:SemanticEtymon`, qualquer recurso relacionado como objeto dessa propriedade é inferido como instância de `dicbio:SemanticEtymon`, mesmo que isso não tenha sido declarado explicitamente nos dados — o que, na prática, dispensa a repetição manual da tipagem (`a dicbio:SemanticEtymon`) em todos os exemplos, embora a documentação a mantenha por clareza.
 
 ### 15.4. Testes com reasoner
 
@@ -862,7 +877,11 @@ A integração completa com NIF requer a definição de uma estratégia consiste
 
 ### 17.1. Política para versões futuras
 
-<!-- Explicar o que caracteriza uma versão de correção, uma versão compatível (1.x) e uma versão com mudanças incompatíveis (2.x). -->
+Uma versão de correção (por exemplo, 1.0.1) reúne apenas emendas que não alteram a estrutura conceitual da ontologia — correções de rótulos, definições, exemplos ou erros de digitação nos URIs, sem acréscimo ou remoção de classes e propriedades.
+
+Uma versão compatível (1.x) pode acrescentar novas classes, propriedades ou conceitos aos vocabulários controlados, desde que não altere o significado dos elementos já existentes nem quebre dados publicados sob versões anteriores da série 1.x.
+
+Uma versão com mudanças incompatíveis (2.x) é necessária sempre que uma alteração modificar o significado de uma classe ou propriedade existente, remover elementos da ontologia, ou alterar domínio/range de forma que invalide dados anteriormente válidos. Nesse caso, a ontologia recebe uma nova URI de versão (§4.2) e a compatibilidade retroativa não é garantida.
 
 ---
 
