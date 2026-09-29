@@ -739,12 +739,19 @@ dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
 ### 13.5. Exemplo de um étimo
 
 ```turtle
+dbres:entry_adiposus a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:lati1261 ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposus ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    ontolex:sense dbres:etymon_adiposus .
+
 dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 ```
-<!-- Inserir aqui a entrada do étimo latino. -->
-
 
 ### 13.6. Exemplo de uma relação de formação de palavras
 

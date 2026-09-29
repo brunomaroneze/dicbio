@@ -1,6 +1,12 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.7 — dcterms:source em lemonety:Etymology deixou de ser obrigatório
+#   via sh:minCount (agora minCount 0) e passou a ser exigido por uma
+#   terceira regra SPARQL em dsh:EtymologyProcessConsistencyShape, que
+#   dispensa a exigência apenas quando etymologicalProcess for
+#   dicbio:pendingResearch ou dicbio:outOfScope (decisão editorial, sem
+#   fonte bibliográfica a citar).
 # v2.6 — sincronização com o novo vocabulário controlado da ontologia
 #   (dicbio-ontology.ttl): dicbio:pendingResearch e dicbio:outOfScope
 #   acrescentados à lista de aviso de dicbio:etymologicalProcess;
@@ -273,7 +279,15 @@ dsh:LexicalSenseShape
     sh:property [
         sh:path lemonety:etymology ;
         sh:minCount 1 ;
-        sh:node dsh:EtymologyShape ;
+        # sh:class, não sh:node: dsh:EtymologyShape já é alvo próprio
+        # (sh:targetClass lemonety:Etymology, mais abaixo), então toda
+        # instância já é checada por completo de qualquer forma. Usar
+        # sh:node aqui duplicaria a checagem E causaria um bug do
+        # pySHACL: um aviso (Warning) interno a EtymologyShape (como a
+        # recomendação de etymologicalArgumentation) faz o sh:node
+        # externo reportar Violation, mesmo sendo só um aviso lá dentro.
+        # Ver nota final sobre isso.
+        sh:class lemonety:Etymology ;
         sh:message "Toda LexicalSense precisa de ao menos uma hipótese em lemonety:etymology." ;
     ] ;
 
@@ -300,10 +314,16 @@ dsh:EtymologyShape
     sh:nodeKind sh:IRI ;
     sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/etym_" ;
 
+    # minCount 0 aqui: dcterms:source deixa de ser obrigatório apenas
+    # quando etymologicalProcess é pendingResearch ou outOfScope (não
+    # há fonte bibliográfica para uma decisão editorial de não
+    # investigar/ainda não ter investigado). Para todos os outros
+    # processos, a obrigatoriedade é reforçada pela checagem SPARQL em
+    # dsh:EtymologySourceConsistencyShape, logo abaixo.
     sh:property [
         sh:path dcterms:source ;
-        sh:minCount 1 ;
-        sh:message "Toda hipótese etimológica precisa citar dcterms:source." ;
+        sh:minCount 0 ;
+        sh:message "Toda hipótese etimológica precisa citar dcterms:source (exceto quando etymologicalProcess for pendingResearch ou outOfScope)." ;
     ] ;
 
     # Verificação "forte": o valor precisa ao menos pertencer à classe
@@ -392,6 +412,27 @@ dsh:EtymologyProcessConsistencyShape
                 $this dicbio:etymologicalProcess ?p .
                 FILTER (?p IN (dicbio:borrowed, dicbio:inherited))
                 FILTER NOT EXISTS { $this dicbio:semanticEtymon ?e }
+            }
+        """ ;
+    ] ;
+
+    # dcterms:source é opcional só para pendingResearch/outOfScope (ver
+    # dsh:EtymologyShape acima); para todo o resto, continua obrigatório
+    # — só que agora via SPARQL, e não mais via sh:minCount, porque a
+    # obrigatoriedade passou a depender do valor de etymologicalProcess.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Hipótese etimológica sem dcterms:source — obrigatório, exceto quando etymologicalProcess for pendingResearch ou outOfScope." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS { $this dcterms:source ?s }
+                FILTER NOT EXISTS {
+                    $this dicbio:etymologicalProcess ?p .
+                    FILTER (?p IN (dicbio:pendingResearch, dicbio:outOfScope))
+                }
             }
         """ ;
     ] .

@@ -82,7 +82,12 @@ dbres:form_adipe a ontolex:Form ;
     ontolex:writtenRep "ádipe"@pt .
 
 dbres:entry_adipe_sense1 a ontolex:LexicalSense ;
-    skos:definition "Gordura animal."@pt .
+    skos:definition "Gordura animal."@pt ;
+    lemonety:etymology dbres:etym_adipe_sense1_h1.
+
+dbres:etym_adipe_sense1_h1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
 
 dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dcterms:creator dbauth:bruno_maroneze,
