@@ -1,6 +1,12 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.6 — sincronização com o novo vocabulário controlado da ontologia
+#   (dicbio-ontology.ttl): dicbio:pendingResearch e dicbio:outOfScope
+#   acrescentados à lista de aviso de dicbio:etymologicalProcess;
+#   dicbio:notApplicable acrescentado à lista obrigatória de
+#   dicbio:confidenceLevel. Sem isso, toda hipótese "de interrupção"
+#   (pesquisa pendente / fora de escopo) falharia a validação.
 # v2.5 — protocolo revisado: o étimo agora exige uma ontolex:LexicalEntry
 #   própria (na língua de origem), ligada a ele por ontolex:sense.
 #   dsh:SemanticEtymonShape: writtenRep/language/exactMatch saíram do
@@ -316,7 +322,7 @@ dsh:EtymologyShape
     # novas possibilidades.
     sh:property [
         sh:path dicbio:etymologicalProcess ;
-        sh:in ( dicbio:inherited dicbio:borrowed dicbio:created dicbio:semanticDerivation ) ;
+        sh:in ( dicbio:inherited dicbio:borrowed dicbio:created dicbio:semanticDerivation dicbio:pendingResearch dicbio:outOfScope ) ;
         sh:severity sh:Warning ;
         sh:message "Valor fora do vocabulário atual de etymologicalProcess (permitido, mas confira se não é erro de digitação)." ;
     ] ;
@@ -329,7 +335,7 @@ dsh:EtymologyShape
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:class skos:Concept ;
-        sh:in ( dicbio:impossible dicbio:improbable dicbio:plausible dicbio:probable dicbio:certain ) ;
+        sh:in ( dicbio:impossible dicbio:improbable dicbio:plausible dicbio:probable dicbio:certain dicbio:notApplicable ) ;
         sh:message "Toda hipótese etimológica precisa de dicbio:confidenceLevel, com um dos 5 valores previstos." ;
     ] ;
 

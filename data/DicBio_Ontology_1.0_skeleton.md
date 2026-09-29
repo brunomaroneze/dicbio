@@ -57,7 +57,7 @@ A Ontologia DicBio contempla a representação de:
 
 A ontologia reutiliza, sempre que possível, classes e propriedades de ontologias e vocabulários consolidados, especialmente OntoLex-Lemon, LemonEty, SKOS, Dublin Core Terms, PROV-O, ITS-RDF e NIF.
 
-### 2.3. Fora do escopo
+### 2.3. O que a ontologia não pretende
 
 A Ontologia DicBio não pretende representar exaustivamente:
 
@@ -401,7 +401,7 @@ Esta seção apresenta as classes definidas pela Ontologia DicBio.
 
 **Superclasse(s):** `skos:Concept`
 
-**Uso:** Valores possíveis de `dicbio:etymologicalProcess`, atribuído a uma hipótese etimológica (`lemonety:Etymology`). Instâncias: `dicbio:inherited`, `borrowed`, `created`, `semanticDerivation` (ver §12.2).
+**Uso:** Valores possíveis de `dicbio:etymologicalProcess`, atribuído a uma hipótese etimológica (`lemonety:Etymology`). Instâncias: `dicbio:inherited`, `borrowed`, `created`, `semanticDerivation`, `pendingResearch`, `outOfScope` (ver §12.2).
 
 ### 10.3. `dicbio:SemanticEtymon`
 
@@ -491,11 +491,11 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `skos:Concept` (na prática, uma das instâncias de `dicbio:EtymologicalCertaintyScheme`: `dicbio:impossible`, `dicbio:improbable`, `dicbio:plausible`, `dicbio:probable` ou `dicbio:certain`; ver §12.1)
+**Range:** `skos:Concept` (na prática, uma das instâncias de `dicbio:EtymologicalCertaintyScheme`: `dicbio:impossible`, `dicbio:improbable`, `dicbio:plausible`, `dicbio:probable`, `dicbio:certain`, ou `dicbio:notApplicable`; ver §12.1)
 
 **Superpropriedade:** nenhuma
 
-**Uso:** Atribuída a cada hipótese etimológica para registrar a avaliação qualitativa da equipe quanto à solidez da proposta, com base no vocabulário controlado descrito em §12.1 (ver exemplo em §13.4, em que `dicbio:probable` é atribuído à hipótese sobre o étimo científico de "adiposo").
+**Uso:** Atribuída a cada hipótese etimológica para registrar a avaliação qualitativa da equipe quanto à solidez da proposta, com base no vocabulário controlado descrito em §12.1 (ver exemplo em §13.4, em que `dicbio:probable` é atribuído à hipótese sobre o étimo científico de "adiposo"). Nos casos em que a hipótese etimológica recebe a classificação do processo como `dicbio:pendingResearch` ou `dicbio:outOfScope`, atribui-se o nível de confiança `dicbio:notApplicable` ("não se aplica").
 
 ### 11.2. Propriedades de formação de palavras
 
@@ -640,6 +640,8 @@ A lista acima não é exaustiva; ela reúne as propriedades reutilizadas mais re
 | `dicbio:plausible` | <!-- URI --> | Plausível / Plausible | A hipótese é concebível mas pouco apoiada por evidências. |
 | `dicbio:probable` | <!-- URI --> | Provável / Probable | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
 | `dicbio:certain` | <!-- URI --> | Certa / Certain | A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual. |
+| `dicbio:notApplicable` | <!-- URI --> | Não se aplica / Not applicable | A hipótese não é avaliada em termos de nível de confiança. Emprega-se para os casos de pesquisa pendente e fora de escopo. |
+
 
 ### 12.2. `dicbio:EtymologicalProcessScheme`
 
@@ -649,6 +651,9 @@ A lista acima não é exaustiva; ela reúne as propriedades reutilizadas mais re
 | `dicbio:borrowed` | <!-- URI --> | Emprestado / Borrowed | Unidade lexical emprestada de outra língua. |
 | `dicbio:created` | <!-- URI --> | Criado / Created | Unidade lexical criada dentro da língua (derivação, composição etc.). |
 | `dicbio:semanticDerivation` | <!-- URI --> | Derivado de outro sentido / Derived from another sense | Unidade lexical derivada de outro sentido lexical na mesma língua. |
+| `dicbio:pendingResearch` | <!-- URI --> | Pesquisa pendente / Pending research | A hipótese etimológica está pendente de investigação. |
+| `dicbio:outOfScope` | <!-- URI --> | Fora do escopo / Out of scope | A cadeia etimológica é interrompida aqui por decisão editorial. |
+
 
 ### 12.3. `dicbio:WordFormationTypeScheme`
 
@@ -738,6 +743,8 @@ dbres:etymon_adiposus a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 ```
+<!-- Inserir aqui a entrada do étimo latino. -->
+
 
 ### 13.6. Exemplo de uma relação de formação de palavras
 
@@ -764,7 +771,12 @@ dbres:concept_atrio a skos:Concept ;
     skos:exactMatch <http://purl.obolibrary.org/obo/UBERON_0002081> .
 ```
 
-### 13.9. Exemplo completo
+### 13.9. Exemplo envolvendo os casos de `pendingResearch/outOfScope/notApplicable`
+
+<!-- Inserir aqui um exemplo com esses casos. -->
+
+
+### 13.10. Exemplo completo
 
 <!-- Inserir aqui um exemplo real e suficientemente completo de um verbete DicBio. -->
 

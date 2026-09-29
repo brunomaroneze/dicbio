@@ -69,6 +69,7 @@ dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
 
 ## --- aqui entram os graus de certeza etimológica
 
+# Precisei criar o grau de certeza "não se aplica" para os casos de dicbio:pendingResearch e dicbio:outOfScope, pois não há hipótese a ser avaliada nesses casos.
 dicbio:EtymologicalCertaintyScheme a skos:ConceptScheme ;
     rdfs:label "Etymological Certainty Scheme"@en, "Esquema de Certeza Etimológica"@pt ;
     rdfs:comment "A controlled vocabulary expressing the degree of certainty attributed to an etymological hypothesis based on the available evidence and its coherence with current scientific knowledge."@en ;
@@ -104,6 +105,12 @@ dicbio:certain a skos:Concept ;
     skos:definition "The hypothesis is strongly supported by convergent evidence and is fully consistent with current scientific knowledge."@en ;
     skos:definition "A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual."@pt .
 
+dicbio:notApplicable a skos:Concept ;
+    skos:inScheme dicbio:EtymologicalCertaintyScheme ;
+    skos:prefLabel "Not applicable"@en, "Não se aplica"@pt ;
+    skos:definition "No confidence level is assigned, as there is no hypothesis to be evaluated. It is used for cases of 'dicbio:pendingResearch' and 'dicbio:outOfScope'."@en ;
+    skos:definition "Não se atribui nível de confiança, pois não há hipótese a ser avaliada. Emprega-se nos casos de 'dicbio:pendingResearch' e 'dicbio:outOfScope'."@pt .
+
 dicbio:confidenceLevel a owl:ObjectProperty ;
     rdfs:domain lemonety:Etymology ;
     rdfs:range skos:Concept ;
@@ -114,6 +121,7 @@ dicbio:confidenceLevel a owl:ObjectProperty ;
 ## --- aqui entram os tipos de processos etimológicos 
 
 dicbio:EtymologicalProcess a owl:Class ; # Classe com as opções de processos etimológicos, como herança, empréstimo, criação interna, etc. A propriedade dicbio:etymologicalProcess relaciona uma hipótese etimológica a um processo etimológico específico.
+# Precisei criar dicbio:pendingResearch para indicar uma hipótese etimológica que ainda está sendo pesquisada; e dicbio:outOfScope para indicar que a cadeia etimológica será interrompida aqui por decisão editorial, pois não se pretende investigar mais.
     rdfs:label "Etymological Process"@en, "Processo Etimológico"@pt ;
     rdfs:subClassOf skos:Concept ;
     rdfs:comment "A concept representing a type of etymological process involved in the origin of a lexical item."@en ;
@@ -147,6 +155,18 @@ dicbio:semanticDerivation a dicbio:EtymologicalProcess ;
     skos:prefLabel "Derived from another sense"@en, "Derivado de outro sentido"@pt ;
     skos:definition "The lexical item was derived from another lexical sense in the same language."@en ;
     skos:definition "A unidade lexical foi derivada de outro sentido lexical na mesma língua."@pt .
+
+dicbio:pendingResearch a dicbio:EtymologicalProcess ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Pending research"@en, "Pesquisa pendente"@pt ;
+    skos:definition "The etymological hypothesis was not yet formulated or investigated and remains pending future research."@en ;
+    skos:definition "A hipótese etimológica ainda não foi formulada ou investigada e permanece pendente de pesquisa futura."@pt .
+
+dicbio:outOfScope a dicbio:EtymologicalProcess ;
+    skos:inScheme dicbio:EtymologicalProcessScheme ;
+    skos:prefLabel "Out of scope"@en, "Fora do escopo"@pt ;
+    skos:definition "The etymological chain is interrupted here by editorial decision, as it is not intended to investigate further."@en ;
+    skos:definition "A cadeia etimológica é interrompida aqui por decisão editorial, pois não se pretende investigar mais."@pt .
 
 dicbio:etymologicalProcess a owl:ObjectProperty ; # Foi necessário criar essa propriedade porque a propriedade lemonety:etyLinkType não foi pensada para ser ligada à hipótese etimológica. Assim, o domínio da propriedade é definido como lemonety:Etymology, para que ela possa ser utilizada em conjunto com as hipóteses etimológicas.
     rdfs:domain lemonety:Etymology ;
@@ -193,7 +213,7 @@ dicbio:Compounding a dicbio:WordFormationType ;
     skos:inScheme dicbio:WordFormationTypeScheme ;
     skos:prefLabel "Compounding"@en, "Composição"@pt ;
     skos:definition "The process of combining two or more words or compound elements to create a new word with a different meaning or grammatical function."@en ;
-    skos:definition "O processo de combinar duas ou mais palavras ou elementos de composiçãopara criar uma nova palavra com um significado ou função gramatical diferente."@pt .
+    skos:definition "O processo de combinar duas ou mais palavras ou elementos de composição para criar uma nova palavra com um significado ou função gramatical diferente."@pt .
 
 
 ## Aqui entram os conceitos e propriedades para incluir as atestações históricas de uso dos termos, quando disponíveis
