@@ -90,8 +90,8 @@ A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontol
 | Versão | 1.0 |
 | URI da ontologia | `https://dicbio.fflch.usp.br/ontology/` |
 | URI da versão | `https://dicbio.fflch.usp.br/ontology/1.0/` |
-| Data de emissão | <!-- preencher --> |
-| Data da última modificação | <!-- preencher --> |
+| Data de emissão | 2026-08-11 |
+| Data da última modificação | 2026-08-11 |
 
 ### 3.3. Política de versionamento
 
@@ -341,7 +341,9 @@ A modelagem detalhada das diferentes categorias de fontes e das convenções uti
 
 ### 8.8. Vinculação com conceitos
 
-<!-- Incluir aqui o uso de skos:Concept e ontolex:reference para relacionar um sentido ao seu conceito em outras ontologias como UBERON -->
+Uma acepção (`ontolex:LexicalSense`) pode ser relacionada a um conceito de domínio por meio de `ontolex:reference`. Essa relação pode apontar diretamente para o URI de um conceito definido em outra ontologia — preferencialmente UBERON, no caso de conceitos de anatomia, ou outra ontologia de domínio equivalente — ou para um recurso próprio do DicBio, da classe `skos:Concept` (`dbres:concept_XXXX`), criado quando se considera relevante preservar um ponto de ancoragem estável para fins de estudo histórico-terminológico. Esse recurso intermediário deve conter, no mínimo, `skos:definition` e `skos:exactMatch` (este último ligado ao URI do conceito externo).
+
+Essa estratégia é particularmente útil para modelar dois fenômenos terminológicos recorrentes no domínio: a substituição de um termo por outro para designar o mesmo conceito ao longo do tempo (substituição onomasiológica - como "aurícula", substituído por "átrio") e a coexistência de mais de uma denominação para o mesmo conceito (sinonímia - como "uropígio" e "sobrecu"). Em ambos os casos, os sentidos lexicais envolvidos são associados ao mesmo `dbres:concept_XXXX`, e não entre si diretamente — é o conceito compartilhado que expressa a equivalência referencial, preservando a autonomia de cada acepção enquanto unidade lexicográfica. Ver exemplo em §13.8.
 
 ### 8.9. Representação de textos com formatação
 
@@ -635,33 +637,33 @@ A lista acima não é exaustiva; ela reúne as propriedades reutilizadas mais re
 
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:impossible` | <!-- URI --> | Impossível / Impossible | A hipótese contradiz evidências linguísticas ou históricas estabelecidas. |
-| `dicbio:improbable` | <!-- URI --> | Improvável / Improbable | A hipótese carece de evidências suficientes ou entra em contradição com o conhecimento atual. |
-| `dicbio:plausible` | <!-- URI --> | Plausível / Plausible | A hipótese é concebível mas pouco apoiada por evidências. |
-| `dicbio:probable` | <!-- URI --> | Provável / Probable | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
-| `dicbio:certain` | <!-- URI --> | Certa / Certain | A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual. |
-| `dicbio:notApplicable` | <!-- URI --> | Não se aplica / Not applicable | A hipótese não é avaliada em termos de nível de confiança. Emprega-se para os casos de pesquisa pendente e fora de escopo. |
+| `dicbio:impossible` | `https://dicbio.fflch.usp.br/ontology/impossible` | Impossível / Impossible | A hipótese contradiz evidências linguísticas ou históricas estabelecidas. |
+| `dicbio:improbable` | `https://dicbio.fflch.usp.br/ontology/improbable` | Improvável / Improbable | A hipótese carece de evidências suficientes ou entra em contradição com o conhecimento atual. |
+| `dicbio:plausible` | `https://dicbio.fflch.usp.br/ontology/plausible` | Plausível / Plausible | A hipótese é concebível mas pouco apoiada por evidências. |
+| `dicbio:probable` | `https://dicbio.fflch.usp.br/ontology/probable` | Provável / Probable | A hipótese é apoiada por evidências relevantes e é consistente com o conhecimento atual. |
+| `dicbio:certain` | `https://dicbio.fflch.usp.br/ontology/certain` | Certa / Certain | A hipótese é fortemente apoiada por evidências convergentes e é totalmente consistente com o conhecimento científico atual. |
+| `dicbio:notApplicable` | `https://dicbio.fflch.usp.br/ontology/notApplicable` | Não se aplica / Not applicable | A hipótese não é avaliada em termos de nível de confiança. Emprega-se para os casos de pesquisa pendente e fora de escopo. |
 
 
 ### 12.2. `dicbio:EtymologicalProcessScheme`
 
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:inherited` | <!-- URI --> | Herdado / Inherited | Unidade lexical herdada de um estágio anterior da mesma língua ou da sua língua-mãe. |
-| `dicbio:borrowed` | <!-- URI --> | Emprestado / Borrowed | Unidade lexical emprestada de outra língua. |
-| `dicbio:created` | <!-- URI --> | Criado / Created | Unidade lexical criada dentro da língua (derivação, composição etc.). |
-| `dicbio:semanticDerivation` | <!-- URI --> | Derivado de outro sentido / Derived from another sense | Unidade lexical derivada de outro sentido lexical na mesma língua. |
-| `dicbio:pendingResearch` | <!-- URI --> | Pesquisa pendente / Pending research | A hipótese etimológica está pendente de investigação. |
-| `dicbio:outOfScope` | <!-- URI --> | Fora do escopo / Out of scope | A cadeia etimológica é interrompida aqui por decisão editorial. |
+| `dicbio:inherited` | `https://dicbio.fflch.usp.br/ontology/inherited` | Herdado / Inherited | Unidade lexical herdada de um estágio anterior da mesma língua ou da sua língua-mãe. |
+| `dicbio:borrowed` | `https://dicbio.fflch.usp.br/ontology/borrowed` | Emprestado / Borrowed | Unidade lexical emprestada de outra língua. |
+| `dicbio:created` | `https://dicbio.fflch.usp.br/ontology/created` | Criado / Created | Unidade lexical criada dentro da língua (derivação, composição etc.). |
+| `dicbio:semanticDerivation` | `https://dicbio.fflch.usp.br/ontology/semanticDerivation` | Derivado de outro sentido / Derived from another sense | Unidade lexical derivada de outro sentido lexical na mesma língua. |
+| `dicbio:pendingResearch` | `https://dicbio.fflch.usp.br/ontology/pendingResearch` | Pesquisa pendente / Pending research | A hipótese etimológica está pendente de investigação. |
+| `dicbio:outOfScope` | `https://dicbio.fflch.usp.br/ontology/outOfScope` | Fora do escopo / Out of scope | A cadeia etimológica é interrompida aqui por decisão editorial. |
 
 
 ### 12.3. `dicbio:WordFormationTypeScheme`
 
 | Conceito | URI | Rótulo | Definição |
 |---|---|---|---|
-| `dicbio:Suffixation` | <!-- URI --> | Sufixação / Suffixation | Adição de sufixo para criar palavra com significado/função diferente. |
-| `dicbio:Prefixation` | <!-- URI --> | Prefixação / Prefixation | Adição de prefixo para criar palavra com significado/função diferente. |
-| `dicbio:Compounding` | <!-- URI --> | Composição / Compounding | Combinação de duas ou mais palavras/elementos para criar palavra com significado/função diferente. |
+| `dicbio:Suffixation` | `https://dicbio.fflch.usp.br/ontology/Suffixation` | Sufixação / Suffixation | Adição de sufixo para criar palavra com significado/função diferente. |
+| `dicbio:Prefixation` | `https://dicbio.fflch.usp.br/ontology/Prefixation` | Prefixação / Prefixation | Adição de prefixo para criar palavra com significado/função diferente. |
+| `dicbio:Compounding` | `https://dicbio.fflch.usp.br/ontology/Compounding` | Composição / Compounding | Combinação de duas ou mais palavras/elementos para criar palavra com significado/função diferente. |
 
 ### 12.4. Extensibilidade dos vocabulários
 
@@ -780,12 +782,124 @@ dbres:concept_atrio a skos:Concept ;
 
 ### 13.9. Exemplo envolvendo os casos de `pendingResearch/outOfScope/notApplicable`
 
-<!-- Inserir aqui um exemplo com esses casos. -->
+O verbete *ádipe* é incluído por ser o substantivo primitivo de *adiposo* (§13.10), mas sua própria etimologia (do latim *adeps, adipis*) não é aprofundada nesta versão do dicionário — trata-se de uma decisão editorial de circunscrever a pesquisa etimológica aos termos portugueses e a seu étimo (em geral latino ou grego) mais próximo, sem remontar a camadas anteriores. Por isso, a hipótese etimológica de *ádipe* é registrada com `dicbio:outOfScope`, e o nível de confiança correspondente é `dicbio:notApplicable` — sem `dcterms:source`, já que não há uma fonte bibliográfica para uma decisão do próprio projeto. (Essa dispensa de `dcterms:source` para os casos `pendingResearch`/`outOfScope` é uma regra de validação implementada no arquivo SHACL do projeto, não uma restrição formal desta ontologia.)
+
+```turtle
+dbres:entry_adipe a ontolex:LexicalEntry ;
+    dcterms:created "2026-02-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine,
+        lexinfo:feminine ;
+    ontolex:canonicalForm dbres:form_adipe ;
+    ontolex:sense dbres:entry_adipe_sense1 .
+
+dbres:form_adipe a ontolex:Form ;
+    ontolex:writtenRep "ádipe"@pt .
+
+dbres:entry_adipe_sense1 a ontolex:LexicalSense ;
+    skos:definition "Gordura animal."@pt ;
+    lemonety:etymology dbres:etym_adipe_sense1_h1 .
+
+dbres:etym_adipe_sense1_h1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
+```
+
+Note também que `lexinfo:gender` aparece com dois valores (`masculine` e `feminine`) — *ádipe* é registrado pelo Houaiss como substantivo de dois gêneros. A ontologia não impõe cardinalidade máxima a `lexinfo:gender`; é a validação SHACL do projeto que permite explicitamente até dois valores nesse tipo de caso, emitindo um aviso (não um erro) para confirmação editorial sempre que isso ocorrer.
 
 
 ### 13.10. Exemplo completo
 
-<!-- Inserir aqui um exemplo real e suficientemente completo de um verbete DicBio. -->
+O verbete *adiposo* reúne, num único exemplo, praticamente todos os elementos apresentados nas seções anteriores: uma entrada com múltiplas formas flexionadas; uma acepção com duas hipóteses etimológicas concorrentes (uma por derivação sufixal a partir de *ádipe*, outra por empréstimo do latim científico *adiposus*); a relação de derivação morfológica; o étimo latino, com sua própria entrada lexical, forma, atestação e remissão ao projeto LiLa; e a atestação do próprio verbete português. É também o exemplo que evidencia, na prática, a estrutura descrita em §8.4 (a entrada do étimo) e o caso de gênero oscilante de §13.9 (*ádipe*, incluído aqui por ser o substantivo primitivo):
+
+```turtle
+dbres:entry_adiposo a ontolex:LexicalEntry ;
+    rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
+    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dcterms:created "2024-05-04"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposo ;
+    ontolex:otherForm dbres:form_adiposa,
+        dbres:form_adiposas,
+        dbres:form_adiposos ;
+    ontolex:sense dbres:entry_adiposo_sense1 .
+
+dbres:form_adiposo a ontolex:Form ;
+    ontolex:writtenRep "adiposo"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:masculine .
+
+dbres:form_adiposa a ontolex:Form ;
+    ontolex:writtenRep "adiposa"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine .
+
+dbres:form_adiposas a ontolex:Form ;
+    ontolex:writtenRep "adiposas"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine .
+
+dbres:form_adiposos a ontolex:Form ;
+    ontolex:writtenRep "adiposos"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine .
+
+dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que contém gordura."@pt ;
+    lemonety:etymology dbres:etym_adiposo_sense1_h1,
+        dbres:etym_adiposo_sense1_h2 .
+
+dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalProcess dicbio:created ;
+    dicbio:hasWordFormationRelation dbres:adiposo_derivation ;
+    dicbio:etymologicalArgumentation """O dicionário Houaiss afirma tratar-se de derivação sufixal a partir de *ádipe* (gordura animal) com o acréscimo do sufixo *-oso*."""@pt ;
+    dicbio:confidenceLevel dicbio:plausible .
+
+dbres:adiposo_derivation a morph:WordFormationRelation ;
+    vartrans:source dbres:entry_adipe ;
+    vartrans:target dbres:entry_adiposo ;
+    vartrans:category dicbio:Suffixation .
+
+dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:semanticEtymon dbres:etymon_adiposus ;
+    dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão "panniculus adiposus", presente na "Acta Physico-Medica" de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
+    dicbio:confidenceLevel dicbio:probable .
+
+dbres:entry_adiposus a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:lati1261 ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_adiposus ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    ontolex:sense dbres:etymon_adiposus .
+
+dbres:form_adiposus a ontolex:Form ;
+    ontolex:writtenRep "adiposus"@la .
+
+dbres:etymon_adiposus a dicbio:SemanticEtymon ;
+    dicbio:hasAttestation dbres:attestation_adiposus ;
+    skos:definition "Que contém gordura."@pt .
+
+dbres:attestation_adiposus a dicbio:Attestation ;
+    dcterms:source dbsrc:source_acta_physico_medica_1730 ;
+    skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt ;
+    dicbio:attestationDate "1730"^^xsd:gYear .
+
+dbres:attestation_adiposo a dicbio:Attestation ;
+    dcterms:source dbsrc:work_anatomiasantucci ;
+    dicbio:attestationDate "1739"^^xsd:gYear .
+```
+
+(A entrada de *ádipe*, citada acima como primitivo em `vartrans:source`, está descrita por extenso em §13.9.)
 
 ---
 
@@ -892,7 +1006,7 @@ A integração completa com NIF requer a definição de uma estratégia consiste
 | Versão | Data | Descrição |
 |---|---|---|
 | desenvolvimento | 2025-2026 | Desenvolvimento e revisão da ontologia |
-| 1.0 | <!-- preencher --> | Primeira versão estável |
+| 1.0 | 2026-08-11 | Primeira versão estável |
 
 ### 17.1. Política para versões futuras
 
@@ -910,16 +1024,19 @@ Uma versão com mudanças incompatíveis (2.x) é necessária sempre que uma alt
 
 ### Ontologias e vocabulários
 
-- OntoLex-Lemon: <!-- referência -->
-- LemonEty: <!-- referência -->
-- SKOS: <!-- referência -->
-- LexInfo: <!-- referência -->
-- PROV-O: <!-- referência -->
-- NIF: <!-- referência -->
+- OntoLex-Lemon: CIMIANO, P.; MCCRAE, J. P.; BUITELAAR, P. *Lexicon Model for Ontologies: Community Report, 10 May 2016*. Ontology-Lexicon (OntoLex) Community Group, W3C, 2016. Disponível em: https://www.w3.org/2016/05/ontolex. Ver também: MCCRAE, J. P.; BOSQUE-GIL, J.; GRACIA, J.; BUITELAAR, P.; CIMIANO, P. The OntoLex-Lemon Model: development and applications. In: *Proceedings of eLex 2017*. Leiden, 2017.
+- LemonEty: KHAN, A. F. Towards the Representation of Etymological Data on the Semantic Web. *Information*, v. 9, n. 12, p. 304, 2018. DOI: 10.3390/info9120304.
+- SKOS: MILES, A.; BECHHOFER, S. (ed.). *SKOS Simple Knowledge Organization System Reference*. W3C Recommendation, 18 August 2009. Disponível em: https://www.w3.org/TR/skos-reference/.
+- LexInfo: CIMIANO, P.; BUITELAAR, P.; MCCRAE, J.; SINTEK, M. LexInfo: A declarative model for the lexicon-ontology interface. *Journal of Web Semantics: Science, Services and Agents on the World Wide Web*, v. 9, n. 1, p. 29-51, 2011. DOI: 10.1016/j.websem.2010.11.001.
+- PROV-O: LEBO, T.; SAHOO, S.; MCGUINNESS, D. (ed.). *PROV-O: The PROV Ontology*. W3C Recommendation, 30 April 2013. Disponível em: https://www.w3.org/TR/prov-o/.
+- NIF: HELLMANN, S.; LEHMANN, J.; AUER, S.; BRÜMMER, M. Integrating NLP using Linked Data. In: *The Semantic Web – ISWC 2013*. Lecture Notes in Computer Science, v. 8219. Berlin/Heidelberg: Springer, 2013. p. 98-113. Disponível em: https://link.springer.com/chapter/10.1007/978-3-642-41338-4_7.
 
 ### Documentação e especificações
 
-<!-- Outras referências. -->
+- FOAF: BRICKLEY, D.; MILLER, L. *FOAF Vocabulary Specification 0.99*. Disponível em: http://xmlns.com/foaf/spec/.
+- BIBO (The Bibliographic Ontology): D'ARCUS, B.; GIASSON, F. *Bibliographic Ontology (BIBO) in RDF*. Disponível em: https://www.dublincore.org/specifications/bibo/bibo/.
+- Glottolog (usado via `glotto:`): HAMMARSTRÖM, H.; FORKEL, R.; HASPELMATH, M.; BANK, S. *Glottolog 5.3*. Leipzig: Max Planck Institute for Evolutionary Anthropology. Disponível em: https://glottolog.org.
+- LiLa Knowledge Base (usado via `skos:exactMatch` nos étimos latinos, §13.5): PASSAROTTI, M. (ed.) *LiLa: Linking Latin*. Disponível em: https://lila-erc.eu/.
 
 ---
 
