@@ -61,7 +61,7 @@ dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
     dicbio:etymologicalArgumentation "O adjetivo *angulado* pode ter como étimo o latim *angŭlātus* (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:angulatus_entry a ontolex:LexicalEntry ;
+dbres:entry_angulatus a ontolex:LexicalEntry ;
     dcterms:created "2026-08-10"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
@@ -75,10 +75,18 @@ dbres:form_angulatus a ontolex:Form ;
 
 dbres:etymon_angulatus a dicbio:SemanticEtymon ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
-    dicbio:hasAttestation dbres:attestation_angulatus .
+    dicbio:hasAttestation dbres:attestation_angulatus_gaffiot, 
+                          dbres:attestation_angulatus_old .
 
-dbres:attestation_angulatus a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old .
+dbres:attestation_angulatus_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot ;
+    skos:note "O dicionário de Gaffiot abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    dicbio:attestationDate "-0044"^^xsd:gYear .
+
+dbres:attestation_angulatus_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    dicbio:attestationDate "-0044"^^xsd:gYear .
 
 dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:created ;
@@ -104,4 +112,9 @@ dbres:form_angulo a ontolex:Form ;
     ontolex:writtenRep "ângulo"@pt .
 
 dbres:entry_angulo_sense1 a ontolex:LexicalSense ;
-    skos:definition "Figura geométrica formada por duas semirretas que partem de um mesmo ponto."@pt .
+    skos:definition "Figura geométrica formada por duas semirretas que partem de um mesmo ponto."@pt ;
+    lemonety:etymology dbres:etym_angulo_sense1_h1 .
+
+dbres:etym_angulo_sense1_h1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .

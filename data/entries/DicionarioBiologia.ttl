@@ -124,3 +124,105 @@ dbres:attestation_adiposo a dicbio:Attestation ;
     dcterms:source dbsrc:work_anatomiasantucci ;
     dicbio:attestationDate "1739"^^xsd:gYear .
 
+## Angulado
+
+dbres:entry_angulado a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_angulado ;
+    ontolex:otherForm dbres:form_angulada,
+        dbres:form_anguladas,
+        dbres:form_angulados ;
+    ontolex:sense dbres:entry_angulado_sense1 .
+
+dbres:form_angulado a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:masculine ;
+    ontolex:writtenRep "angulado"@pt .
+
+dbres:form_angulada a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:writtenRep "angulada"@pt .
+
+dbres:form_anguladas a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
+    ontolex:writtenRep "anguladas"@pt .
+
+dbres:form_angulados a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
+    ontolex:writtenRep "angulados"@pt .
+
+dbres:entry_angulado_sense1 a ontolex:LexicalSense ;
+    skos:definition "Que apresenta ângulo; anguloso."@pt ;
+        lemonety:etymology dbres:etym_angulado_sense1_h1,
+             dbres:etym_angulado_sense1_h2 .
+
+dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
+    dicbio:semanticEtymon dbres:etymon_angulatus ;
+    dicbio:etymologicalProcess dicbio:borrowed ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalArgumentation "O adjetivo *angulado* pode ter como étimo o latim *angŭlātus* (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."@pt ;
+    dicbio:confidenceLevel dicbio:probable .
+
+dbres:entry_angulatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:lati1261 ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
+    ontolex:canonicalForm dbres:form_angulatus ;
+    ontolex:sense dbres:etymon_angulatus .
+
+dbres:form_angulatus a ontolex:Form ;
+    ontolex:writtenRep "angulatus"@la .
+
+dbres:etymon_angulatus a dicbio:SemanticEtymon ;
+    skos:definition "Que tem ângulo; anguloso."@pt ;
+    dicbio:hasAttestation dbres:attestation_angulatus_gaffiot, 
+                          dbres:attestation_angulatus_old .
+
+dbres:attestation_angulatus_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot ;
+    skos:note "O dicionário de Gaffiot abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    dicbio:attestationDate "-0044"^^xsd:gYear .
+
+dbres:attestation_angulatus_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    dicbio:attestationDate "-0044"^^xsd:gYear .
+
+dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:created ;
+    dicbio:hasWordFormationRelation dbres:angulado_derivation ;
+    dcterms:source dbsrc:dicbio_project ;
+    dicbio:confidenceLevel dicbio:plausible ;
+    dicbio:etymologicalArgumentation "O adjetivo *angulado* pode ser analisado como derivado do substantivo *ângulo* com o sufixo *-ado*, visto que o substantivo *ângulo* teve, segundo o Dicionário Houaiss, sua primeira atestação no século XIV; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
+
+dbres:angulado_derivation a morph:WordFormationRelation ;
+    vartrans:source dbres:entry_angulo ;
+    vartrans:target dbres:entry_angulado ;
+    vartrans:category dicbio:Suffixation .
+
+dbres:entry_angulo a ontolex:LexicalEntry ;
+    dcterms:created "2026-02-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    ontolex:canonicalForm dbres:form_angulo ;
+    ontolex:sense dbres:entry_angulo_sense1 .
+
+dbres:form_angulo a ontolex:Form ;
+    ontolex:writtenRep "ângulo"@pt .
+
+dbres:entry_angulo_sense1 a ontolex:LexicalSense ;
+    skos:definition "Figura geométrica formada por duas semirretas que partem de um mesmo ponto."@pt ;
+    lemonety:etymology dbres:etym_angulo_sense1_h1 .
+
+dbres:etym_angulo_sense1_h1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
