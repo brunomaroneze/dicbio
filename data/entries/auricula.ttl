@@ -55,7 +55,7 @@ dbres:etym_auricula_sense1 a lemonety:Etymology ; # Cavidade do coração
     dicbio:semanticEtymon dbres:etymon_auricula_sense1 ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:certain ;
-    dicbio:etymologicalArgumentation """O étimo é o latim científico <i>auricula</i>, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é o latim científico *auricula*, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""@pt .
 
 dbres:etymon_auricula_sense1 a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
@@ -92,7 +92,7 @@ dbres:etym_auricula_sense2 a lemonety:Etymology ; # Orelha
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:probable ;
     dicbio:semanticEtymon dbres:etymon_auricula_sense2 ;
-    dicbio:etymologicalArgumentation """O étimo é o latim <i>auricula</i>, diminutivo de <i>auris</i>, que na Antiguidade era empregado para se referir à orelha (conforme afirma o Oxford Latin Dictionary). É sabido que a forma <i>auricula</i> é também o étimo da forma herdada "orelha"; dessa forma, "orelha" e "aurícula" são, etimologicamente, formas <i>doublets</i>."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é o latim *auricula*, diminutivo de *auris*, que na Antiguidade era empregado para se referir à orelha (conforme afirma o Oxford Latin Dictionary). É sabido que a forma *auricula* é também o étimo da forma herdada "orelha"; dessa forma, "orelha" e "aurícula" são, etimologicamente, formas *doublets*."""@pt .
 
 dbres:etymon_auricula_sense2 a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
@@ -116,7 +116,7 @@ dbres:etym_auricula_sense3 a lemonety:Etymology ; # Estrutura anatômica em form
     dicbio:etymologicalProcess dicbio:semanticDerivation ;
     dicbio:confidenceLevel dicbio:probable ;
     dicbio:semanticEtymon dbres:entry_auricula_sense2 ;
-    dicbio:etymologicalArgumentation """A acepção "Estrutura anatômica em forma de orelha", atestada em Vandelli, é uma derivação semântica da acepção "orelha"."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """A acepção "Estrutura anatômica em forma de orelha", atestada em Vandelli, é uma derivação semântica da acepção "orelha"."""@pt .
 
 dbres:attestation_auricula_sense1_vandelli a dicbio:Attestation ;
     dicbio:attestationDate "1788"^^xsd:gYear ;

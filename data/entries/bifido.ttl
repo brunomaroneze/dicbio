@@ -29,7 +29,7 @@ dbres:entry_bifido a ontolex:LexicalEntry ;
 dbres:etym_bifido_sense1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:semanticEtymon dbres:etymon_bifidus ;
-    dicbio:etymologicalArgumentation """O étimo é certamente o latim <i>bifidus</i>, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino <i>bifidus</i> na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""^^rdf:HTML .
+    dicbio:etymologicalArgumentation """O étimo é certamente o latim *bifidus*, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino *bifidus* na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""@pt .
 
 dbres:etymon_bifidus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

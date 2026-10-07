@@ -30,7 +30,7 @@ dbres:entry_dorsal a ontolex:LexicalEntry ;
 
 dbres:etym_dorsal_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_dorsalis ;
-    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>dorsalis</i>, que ocorre em textos desde pelo menos o século XVII (conforme se observa, por exemplo, na obra de Platter \"De corporis humani structura et usu\", de 1603 - https://www.google.com.br/books/edition/De_corporis_humani_structura_et_usu_libr/4fQ6AAAAcAAJ). A forma atestada no latim da Antiguidade é <i>dorsualis</i>, forma essa que não serviu de base para outras formações em português."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O étimo é o latim científico *dorsalis*, que ocorre em textos desde pelo menos o século XVII (conforme se observa, por exemplo, na obra de Platter \"De corporis humani structura et usu\", de 1603 - https://www.google.com.br/books/edition/De_corporis_humani_structura_et_usu_libr/4fQ6AAAAcAAJ). A forma atestada no latim da Antiguidade é *dorsualis*, forma essa que não serviu de base para outras formações em português."@pt .
 
 dbres:etymon_dorsalis a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

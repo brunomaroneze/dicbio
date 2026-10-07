@@ -31,7 +31,7 @@ dbres:entry_piloso a ontolex:LexicalEntry ;
 
 dbres:etym_piloso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_pilosus ;
-    dicbio:etymologicalArgumentation "O étimo é o latim científico <i>pilosus,a,um</i>, com o mesmo sentido, conforme atesta o próprio dicionário de Vandelli. A palavra latina já era usada na Antiguidade com o sentido de “peludo, coberto de pelos” (conforme se lê no dicionário de Gaffiot), mas o termo português é claramente um empréstimo do latim científico, e não uma palavra herdada."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O étimo é o latim científico *pilosus,a,um*, com o mesmo sentido, conforme atesta o próprio dicionário de Vandelli. A palavra latina já era usada na Antiguidade com o sentido de “peludo, coberto de pelos” (conforme se lê no dicionário de Gaffiot), mas o termo português é claramente um empréstimo do latim científico, e não uma palavra herdada."@pt .
 
 dbres:etymon_pilosus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

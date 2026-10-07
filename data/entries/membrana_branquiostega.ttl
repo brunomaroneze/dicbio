@@ -33,7 +33,7 @@ dbres:entry_membrana_branquiostega a ontolex:LexicalEntry ;
 
 dbres:etym_membrana_branquiostega_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_membrana_branchiostega ;
-    dicbio:etymologicalArgumentation "O termo português \"membrana branquióstega\" é um decalque do termo latino <i>membrana branchiostega</i>, já empregado em latim científico, como se observa, por exemplo, no \"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C). Sobre a etimologia de \"branquióstego\", conferir esse verbete."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O termo português \"membrana branquióstega\" é um decalque do termo latino *membrana branchiostega*, já empregado em latim científico, como se observa, por exemplo, no \"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C). Sobre a etimologia de \"branquióstego\", conferir esse verbete."@pt .
 
 dbres:etymon_membrana_branchiostega a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

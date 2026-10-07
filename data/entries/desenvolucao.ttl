@@ -31,7 +31,7 @@ dbres:entry_desenvolucao a ontolex:LexicalEntry ;
 
 dbres:etym_desenvolucao_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon <https://dicbio.fflch.usp.br/recurso/etymon_desenvolver_+_-cao> ;
-    dicbio:etymologicalArgumentation "A ausência de cognatos em latim ou em outras línguas românicas parece indicar que se trata de criação portuguesa. A existência prévia de <i>desenvolver</i> (datado do século XIV, segundo o dicionário Houaiss), mas não de <i>*envolução</i>, leva a crer que se trata, morfológica e etimologicamente, de uma derivação sufixal a partir do verbo <i>desenvolver</i>, sob o modelo de <i>revolução</i>, <i>evolução</i> etc.<br>O termo caiu em desuso em favor da forma <i>desenvolvimento</i>, mais antiga (século XV, segundo o dicionário Houaiss) e mais frequente."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "A ausência de cognatos em latim ou em outras línguas românicas parece indicar que se trata de criação portuguesa. A existência prévia de *desenvolver* (datado do século XIV, segundo o dicionário Houaiss), mas não de **envolução*, leva a crer que se trata, morfológica e etimologicamente, de uma derivação sufixal a partir do verbo *desenvolver*, sob o modelo de *revolução*, *evolução* etc.<br>O termo caiu em desuso em favor da forma *desenvolvimento*, mais antiga (século XV, segundo o dicionário Houaiss) e mais frequente."@pt .
 
 <https://dicbio.fflch.usp.br/recurso/etymon_desenvolver_+_-cao> a dicbio:SemanticEtymon ;
     dcterms:language "formação vernácula" ;

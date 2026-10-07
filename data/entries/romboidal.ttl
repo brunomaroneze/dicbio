@@ -29,7 +29,7 @@ dbres:entry_romboidal a ontolex:LexicalEntry ;
 
 dbres:etym_romboidal_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_rhomboidalis ;
-    dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma se tratar de uma derivação sufixal a partir do substantivo <i>romboide</i>, com o acréscimo do sufixo <i>-al</i>. O Trésor de la Langue Française afirma que o francês <i>rhomboïdal</i> é atestado desde 1671, forma essa que pode ter influenciado a forma portuguesa."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma se tratar de uma derivação sufixal a partir do substantivo *romboide*, com o acréscimo do sufixo *-al*. O Trésor de la Langue Française afirma que o francês *rhomboïdal* é atestado desde 1671, forma essa que pode ter influenciado a forma portuguesa."@pt .
 
 dbres:etymon_rhomboidalis a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

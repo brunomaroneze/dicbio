@@ -31,7 +31,7 @@ dbres:entry_estigma a ontolex:LexicalEntry ;
 
 dbres:etym_estigma_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_stigma ;
-    dicbio:etymologicalArgumentation "O étimo é o latim <i>stigma, atis</i>, conforme informa o Dicionário Houaiss, que já era empregado, no latim científico do século XVIII, com o sentido que tem na Botânica. A data informada pelo Dicionário Houaiss é possivelmente para outra acepção da mesma palavra."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O étimo é o latim *stigma, atis*, conforme informa o Dicionário Houaiss, que já era empregado, no latim científico do século XVIII, com o sentido que tem na Botânica. A data informada pelo Dicionário Houaiss é possivelmente para outra acepção da mesma palavra."@pt .
 
 dbres:etymon_stigma a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;

@@ -30,7 +30,7 @@ dbres:entry_resinoso a ontolex:LexicalEntry ;
 
 dbres:etym_resinoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_resinosus ;
-    dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o termo é formado por derivação sufixal a partir do substantivo <i>resina</i>. No entanto, a forma latina <i>resinosus, a, um</i> (com o sentido de “cheio de resina”) já é atestada na Antiguidade, como informa o Oxford Latin Dictionary. Dessa forma, é possível supor que o étimo seja a forma latina."^^rdf:HTML .
+    dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o termo é formado por derivação sufixal a partir do substantivo *resina*. No entanto, a forma latina *resinosus, a, um* (com o sentido de “cheio de resina”) já é atestada na Antiguidade, como informa o Oxford Latin Dictionary. Dessa forma, é possível supor que o étimo seja a forma latina."@pt .
 
 dbres:etymon_resinosus a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
