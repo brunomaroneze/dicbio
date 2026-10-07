@@ -33,7 +33,7 @@ dbres:entry_glandula a ontolex:LexicalEntry ;
 
 dbres:etym_glandula_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_glandula ;
-    dicbio:etymologicalArgumentation "O étimo é o latim *glandula*, atestado desde a Antiguidade, conforme informam os dicionários de Gaffiot e o OLD. Em Celso (segundo os mesmos dicionários), parece ter o sentido ora de “glândula”, ora de “amídala”. Em português, é certamente um latinismo, provavelmente originário do latim científico."@pt
+    dicbio:etymologicalArgumentation "O étimo é o latim *glandula*, atestado desde a Antiguidade, conforme informam os dicionários de Gaffiot e o OLD. Em Celso (segundo os mesmos dicionários), parece ter o sentido ora de “glândula”, ora de “amídala”. Em português, é certamente um latinismo, provavelmente originário do latim científico."@pt .
 
 dbres:etymon_glandula a dicbio:SemanticEtymon ;
     dcterms:language glotto:lati1261 ;
