@@ -15,6 +15,9 @@
 @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
 @prefix dbres: <https://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <https://dicbio.fflch.usp.br/fontes/> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
 
 dbres:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
@@ -83,11 +86,14 @@ dbres:etymon_anthera a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_anthera .
 
 dbres:attestation_anthera a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "1788"^^xsd:gYear .
 
 dbres:etym_anthera_lat a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
+    dicbio:confidenceLevel dicbio:probable ;
     dicbio:semanticEtymon dbres:etymon_antheros ;
+    dicbio:etymologicalArgumentation "O étimo é o grego *antherós,á,ón*, com o sentido de \"florido\", que é atestado em Aristófanes (de acordo com o dicionário de Liddell, Scott e Jones)."@pt ;
     dcterms:source dbsrc:source_houaiss .
 
 dbres:entry_antheros a ontolex:LexicalEntry ;
@@ -106,4 +112,6 @@ dbres:etymon_antheros a dicbio:SemanticEtymon ;
     dicbio:hasAttestation dbres:attestation_antheros .
 
 dbres:attestation_antheros a dicbio:Attestation ;
-    dcterms:source dbsrc:dbsrc:source_LSJ .
+    dcterms:source dbsrc:source_LSJ ;
+    skos:note "O dicionário de Liddell, Scott e Jones abona o termo *ἀνθηρός* na comédia *Aves* de Aristófanes, exibida em 414 a.C."@pt ;
+    dicbio:attestationDate "-0413"^^xsd:gYear .
