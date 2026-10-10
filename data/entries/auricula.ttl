@@ -16,6 +16,7 @@
 @prefix dbres: <https://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <https://dicbio.fflch.usp.br/fontes/> .
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
 
 dbres:entry_auricula a ontolex:LexicalEntry ;

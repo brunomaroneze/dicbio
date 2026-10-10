@@ -15,6 +15,9 @@
 @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
 @prefix dbres: <https://dicbio.fflch.usp.br/recurso/> .
 @prefix dbsrc: <https://dicbio.fflch.usp.br/fontes/> .
+@prefix glotto: <https://glottolog.org/resource/languoid/id/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
 
 
 dbres:entry_arvore a ontolex:LexicalEntry ;
@@ -50,27 +53,33 @@ dbres:attestation_arvore_sense1_houaiss a dicbio:Attestation ;
     dcterms:source dbsrc:source_houaiss .
 
 dbres:etym_arvore_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_arborem ;
+    dicbio:semanticEtymon dbres:etymon_arbor ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o substantivo latino *arbor, oris* (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo *arborem*, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""@pt .
 
-dbres:entry:arborem a ontolex:LexicalEntry ;
+dbres:entry_arbor a ontolex:LexicalEntry ;
     dcterms:created "2026-08-10"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     dcterms:language glotto:lati1261 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
+    ontolex:canonicalForm dbres:form_arbor ;
     ontolex:otherForm dbres:form_arborem ;
-    ontolex:sense dbres:etymon_arborem .
+    ontolex:sense dbres:etymon_arbor .
+
+dbres:form_arbor a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:case lexinfo:nominative ;
+    ontolex:writtenRep "arbor"@la .
 
 dbres:form_arborem a ontolex:Form ;
     lexinfo:number lexinfo:singular ;
     lexinfo:case lexinfo:accusative ;
     ontolex:writtenRep "arborem"@la .
 
-dbres:etymon_arborem a dicbio:SemanticEtymon ;
+dbres:etymon_arbor a dicbio:SemanticEtymon ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 
