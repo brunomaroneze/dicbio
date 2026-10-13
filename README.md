@@ -71,7 +71,7 @@ Para executar o site localmente, as seguintes etapas são necessárias:
 
 ## Como colaborar com o projeto
 
-Este repositório está formalmente como um "fork" do repositório da FFLCH-USP; no entanto, na prática, não está mais vinculado. Assim, os interessados podem fazer seus próprios "forks" e enviar *pull requests* a este repositório.
+Os interessados em colaborar podem fazer seus próprios "forks" e enviar *pull requests* a este repositório.
 
 O coordenador do projeto pode ser contatado pelo e-mail brunomaroneze@ufgd.edu.br.
 
