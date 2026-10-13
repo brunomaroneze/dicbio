@@ -1,4 +1,40 @@
-
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="tei_dhtb.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="null"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>"Qual o melhor tratamento da febre amarela" de Novais: Transcrição digital</title>
+			</titleStmt>
+			<publicationStmt>
+				<p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+					(https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+					Maroneze.</p>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<author>NOVAES, Clementino Ribeiro de</author>. <title>Qual o melhor tratamento da febre amarela</title>. <pubPlace>Salvador</pubPlace>: Imprensa da Faculdade de Medicina da Bahia, <date when="1871">1871</date>. Disponível em:
+					https://repositorio.ufba.br/bitstream/ri/24821/1/Clementino%20Ribeiro%20de%20Novaes%20%28TI-1871%29.pdf.
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>A ortografia original da obra foi mantida sempre que possível.</p>
+				<p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
+					rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
+						<gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+				
+			</editorialDecl>
+			
+			<projectDesc>
+				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+					Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+			</projectDesc>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+    
+<body>
 
 
 
@@ -457,3 +493,6 @@ Dr. V. C. Damazio
 Dr. Moura.
 Imprima-se. Bahia e Faculdade de Medicina 7 de Agosto de 1871.
 Dr. Magalhães
+</body>
+</text>
+</TEI>
