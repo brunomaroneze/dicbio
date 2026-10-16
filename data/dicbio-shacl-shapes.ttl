@@ -680,7 +680,7 @@ dsh:EntryLanguageNoticeShape
     sh:property [
         sh:path dcterms:language ;
         sh:minCount 1 ;
-        sh:severity sh:Warning ;
+        sh:severity sh:Violation ;
         sh:message "Entrada sem dcterms:language. Sem ela, assume-se português, mas indique a língua explicitamente (português: glotto:port1283)." ;
     ] .
 
