@@ -1,6 +1,13 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.11 — dsh:LexicalSenseShape: coerência de nome entre acepção e entrada
+#   (entry_X_senseN deve pertencer a entry_X; erro se estiver ligada a
+#   outra entrada).
+# v2.10 — dsh:LexicalSenseShape: toda acepção comum precisa pertencer a uma
+#   ontolex:LexicalEntry (caminho inverso de ontolex:sense, ou
+#   ontolex:isSenseOf). Antes só os étimos (dicbio:SemanticEtymon) tinham
+#   essa checagem; uma acepção "órfã" passava sem aviso.
 # v2.9 — língua explícita em toda entrada. Sem dcterms:language assume-se
 #   português (glotto:port1283), mas o grafo deve declará-lo:
 #   (1) dsh:EntryLanguageNoticeShape: AVISO para entrada sem
@@ -307,6 +314,33 @@ dsh:LexicalSenseShape
     ] ;
     sh:nodeKind sh:IRI ;
     sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_.+_sense[0-9]+$" ;
+
+    # Toda acepção pertence a uma entrada lexical: alguma ontolex:LexicalEntry
+    # a referencia via ontolex:sense (ou, no sentido inverso, a acepção
+    # declara ontolex:isSenseOf). Caminho inverso, como em dsh:SemanticEtymonShape.
+    sh:property [
+        sh:path [ sh:alternativePath ( [ sh:inversePath ontolex:sense ] ontolex:isSenseOf ) ] ;
+        sh:minCount 1 ;
+        sh:class ontolex:LexicalEntry ;
+        sh:message "Toda ontolex:LexicalSense precisa pertencer a uma ontolex:LexicalEntry (alguma entrada deve apontar para ela via ontolex:sense)." ;
+    ] ;
+
+    # Coerência de nome: a acepção "entry_X_senseN" deve pertencer à entrada
+    # "entry_X" (e não a outra). Vale tanto para ontolex:sense quanto para
+    # ontolex:isSenseOf. Só para acepções comuns; o nome dos étimos
+    # (etymon_...) não depende do nome da entrada.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "A acepção {$this} pertence à entrada {?entry}, mas o nome dela deveria começar por {?entry}_sense (convenção entry_X_senseN para a entrada entry_X)." ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this ?entry
+            WHERE {
+                { ?entry ontolex:sense $this } UNION { $this ontolex:isSenseOf ?entry }
+                FILTER (!STRSTARTS(STR($this), CONCAT(STR(?entry), "_sense")))
+            }
+        """ ;
+    ] ;
 
     sh:property [
         sh:path skos:definition ;
@@ -646,7 +680,7 @@ dsh:EntryLanguageNoticeShape
     sh:property [
         sh:path dcterms:language ;
         sh:minCount 1 ;
-        sh:severity sh:Violation ;
+        sh:severity sh:Warning ;
         sh:message "Entrada sem dcterms:language. Sem ela, assume-se português, mas indique a língua explicitamente (português: glotto:port1283)." ;
     ] .
 
