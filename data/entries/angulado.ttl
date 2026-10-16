@@ -22,6 +22,7 @@ dbres:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
+    dcterms:language glotto:port1283 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_angulado ;
     ontolex:otherForm dbres:form_angulada,
@@ -103,6 +104,7 @@ dbres:angulado_derivation a morph:WordFormationRelation ;
 dbres:entry_angulo a ontolex:LexicalEntry ;
     dcterms:created "2026-02-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:port1283 ;
     lexinfo:partOfSpeech lexinfo:noun ;
     lexinfo:gender lexinfo:masculine ;
     ontolex:canonicalForm dbres:form_angulo ;

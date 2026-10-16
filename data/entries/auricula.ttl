@@ -23,6 +23,7 @@ dbres:entry_auricula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
     dcterms:creator dbauth:ana_menegassi_rocha,
         dbauth:bruno_maroneze ;
+    dcterms:language glotto:port1283 ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dbres:form_auricula_accent ;

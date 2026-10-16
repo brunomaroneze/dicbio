@@ -111,26 +111,40 @@ def flatten(rg, data, node, seen=None):
 
 
 def translate(data, r):
-    """Mensagens genéricas do pySHACL (em inglês) -> português curto."""
+    """Mensagens genéricas do pySHACL (em inglês) -> português curto.
+
+    Mensagens escritas nas shapes (sh:message) são mantidas; só trocamos os
+    textos padrão do pySHACL. IRIs longos dentro da mensagem viram prefixados.
+    """
     msg, comp = r["message"], r["component"]
     path = short(data, r["path"]) if r["path"] else ""
     value = short(data, r["value"]) if r["value"] is not None else ""
-    if comp == "PatternConstraintComponent":
+    out = msg
+    if comp == "PatternConstraintComponent" and msg.startswith("Value does not match pattern"):
         m = re.search(r"pattern '(.+)'", msg)
-        padrao = m.group(1).replace("\\.", ".").replace("^", "") if m else "?"
-        return f"o identificador não segue a convenção de nome (esperado começar por {padrao})"
-    if comp == "ClassConstraintComponent" and msg.startswith("Value does not have class"):
+        padrao = m.group(1) if m else "?"
+        padrao = re.sub(r"^\^", "", padrao).replace("\\.", ".")
+        if r["value"] is not None and r["value"] != r["focus"]:
+            out = f"{path}: o valor {value} não segue o padrão {padrao}"
+        else:
+            out = f"o identificador não segue a convenção de nome (esperado começar por {padrao})"
+    elif comp == "ClassConstraintComponent" and msg.startswith("Value does not have class"):
         classe = msg.rsplit(" ", 1)[-1]
-        return f"{path} aponta para {value}, que não é do tipo {classe}"
-    if comp == "MinCountConstraintComponent" and msg.startswith("Less than"):
-        return f"falta a propriedade {path}"
-    if comp == "MaxCountConstraintComponent" and msg.startswith("More than"):
-        return f"{path} tem valores demais (máximo permitido: {msg.split()[2]})"
-    if comp == "DatatypeConstraintComponent":
-        return f"{path}: o valor {value} não tem o tipo de dado esperado ({msg})"
-    if comp == "InConstraintComponent":
-        return f"{path}: o valor {value} não está entre os valores permitidos"
-    return msg
+        out = f"{path} aponta para {value}, que não é do tipo {classe}"
+    elif comp == "MinCountConstraintComponent" and msg.startswith("Less than"):
+        out = f"falta a propriedade {path}"
+    elif comp == "MaxCountConstraintComponent" and msg.startswith("More than"):
+        out = f"{path} tem valores demais (máximo permitido: {msg.split()[2]})"
+    elif comp == "DatatypeConstraintComponent" and msg.startswith("Value is not Literal"):
+        out = f"{path}: o valor {value} não tem o tipo de dado esperado ({msg})"
+    elif comp == "InConstraintComponent" and msg.startswith("Value is not in"):
+        out = f"{path}: o valor {value} não está entre os valores permitidos"
+    # IRIs completos dentro da mensagem -> forma com prefixo
+    return re.sub(
+        r"https?://[^\s,;)]+",
+        lambda m: short(data, URIRef(m.group(0))),
+        out,
+    )
 
 
 def is_derived(data, r):

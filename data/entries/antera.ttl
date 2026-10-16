@@ -22,6 +22,7 @@
 dbres:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
+    dcterms:language glotto:port1283 ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dbres:form_antera ;

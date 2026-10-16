@@ -20,6 +20,8 @@
 
 - "ontolex:sense" liga às acepções (no formato "entry_XXXX_sense1").
 
+- "dcterms:language" indica qual é a língua da entrada. A língua é presentada por um IRI do Glottolog (namespace "glotto"). A língua portuguesa é "glotto:port1283".
+
 -------------------------------------------------
 ## Formas:
 

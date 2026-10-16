@@ -24,6 +24,7 @@ dbres:entry_arvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
     dcterms:creator dbauth:adriane_queiroz,
         dbauth:bruno_maroneze ;
+    dcterms:language glotto:port1283 ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     ontolex:canonicalForm dbres:form_arvore_accent ;

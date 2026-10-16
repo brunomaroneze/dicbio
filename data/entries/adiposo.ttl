@@ -25,6 +25,7 @@ dbres:entry_adiposo a ontolex:LexicalEntry ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
+    dcterms:language glotto:port1283 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_adiposo ;
     ontolex:otherForm dbres:form_adiposa,

@@ -1,6 +1,31 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.9 — língua explícita em toda entrada. Sem dcterms:language assume-se
+#   português (glotto:port1283), mas o grafo deve declará-lo:
+#   (1) dsh:EntryLanguageNoticeShape: AVISO para entrada sem
+#   dcterms:language (exceto entradas de étimo, que já o exigem como
+#   ERRO). Depois de migrar os verbetes antigos, trocar o sh:severity
+#   dessa shape para sh:Violation. (2) dsh:LexicalEntryShape: no máximo
+#   uma língua, e ela deve ser um IRI do Glottolog. (3)
+#   dsh:EntryLanguageFormTagConsistencyShape: a etiqueta de língua das
+#   formas (@pt, @la, @grc) deve concordar com dcterms:language da
+#   entrada (ausente = português). A tabela etiqueta → glottocode está
+#   nos IF dessa shape; acrescentar um IF por nova língua.
+# v2.8 — (1) sh:node encadeados trocados por checagens de tipo (sh:class /
+#   sh:or de classes): cada nó já é validado pela própria shape (via
+#   sh:targetClass/sh:target), então o sh:node só duplicava a checagem,
+#   fazia erros "subirem" pela cadeia sentido → hipótese → étimo
+#   (erros derivados), escalava Warnings para Violations e causava o
+#   ShapeRecursionWarning. (2) Padrão de nome das acepções aceita termos
+#   compostos (entry_orelha_do_coracao_sense1). (3) dicbio:semanticEtymon
+#   aceita uma ontolex:LexicalSense comum (derivação semântica dentro da
+#   mesma língua); em empréstimo/herança continua exigindo
+#   dicbio:SemanticEtymon; semanticDerivation passa a exigir
+#   semanticEtymon. (4) Novas shapes de posição: dcterms:language e
+#   skos:exactMatch só na entrada (não em acepção, étimo, forma,
+#   hipótese ou atestação); ontolex:writtenRep só em ontolex:Form;
+#   aviso para entrada em latim sem skos:exactMatch para o LiLa.
 # v2.7 — dcterms:source em lemonety:Etymology deixou de ser obrigatório
 #   via sh:minCount (agora minCount 0) e passou a ser exigido por uma
 #   terceira regra SPARQL em dsh:EtymologyProcessConsistencyShape, que
@@ -105,14 +130,14 @@ dsh:LexicalEntryShape
         sh:path ontolex:canonicalForm ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:node dsh:FormShape ;
-        sh:message "Todo LexicalEntry precisa de exatamente uma ontolex:canonicalForm." ;
+        sh:class ontolex:Form ;
+        sh:message "Todo LexicalEntry precisa de exatamente uma ontolex:canonicalForm (uma ontolex:Form)." ;
     ] ;
 
     sh:property [
         sh:path ontolex:otherForm ;
         sh:minCount 0 ;
-        sh:node dsh:FormShape ;
+        sh:class ontolex:Form ;
     ] ;
 
     sh:property [
@@ -121,7 +146,9 @@ dsh:LexicalEntryShape
         # Ou é uma Acepção comum (verbete "normal"), ou é um étimo
         # (SemanticEtymon) — caso desta seja a "entrada do étimo" numa
         # língua de origem (ver dsh:EtymonEntryShape).
-        sh:or ( dsh:LexicalSenseShape dsh:SemanticEtymonShape ) ;
+        # Checagem só de TIPO (sh:class), sem sh:node: o conteúdo de cada
+        # acepção/étimo já é validado pela sua própria shape.
+        sh:or ( [ sh:class ontolex:LexicalSense ] [ sh:class dicbio:SemanticEtymon ] ) ;
         sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense (Acepção comum ou étimo)." ;
     ] ;
 
@@ -135,6 +162,17 @@ dsh:LexicalEntryShape
         sh:minCount 1 ;
         sh:class foaf:Person ;
         sh:message "Todo LexicalEntry precisa indicar ao menos um dcterms:creator (colaborador, foaf:Person)." ;
+    ] ;
+
+    # Língua da entrada: valor único e do Glottolog. A OBRIGATORIEDADE é
+    # tratada em dsh:EntryLanguageNoticeShape (aviso) e, para entradas de
+    # étimo, em dsh:EtymonEntryShape (erro). Ausência = português.
+    sh:property [
+        sh:path dcterms:language ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://glottolog\\.org/resource/languoid/id/" ;
+        sh:message "dcterms:language da entrada deve ser um único IRI do Glottolog (glotto:...)." ;
     ] ;
 
     sh:property [
@@ -268,7 +306,7 @@ dsh:LexicalSenseShape
         """ ;
     ] ;
     sh:nodeKind sh:IRI ;
-    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_[^_]+_sense[0-9]+$" ;
+    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_.+_sense[0-9]+$" ;
 
     sh:property [
         sh:path skos:definition ;
@@ -294,7 +332,7 @@ dsh:LexicalSenseShape
     sh:property [
         sh:path dicbio:hasAttestation ;
         sh:minCount 0 ;
-        sh:node dsh:AttestationShape ;
+        sh:class dicbio:Attestation ;
     ] ;
 
     sh:property [
@@ -372,19 +410,28 @@ dsh:EtymologyShape
         sh:minCount 0 ;
         sh:maxCount 1 ;
         sh:class morph:WordFormationRelation ;
-        sh:node dsh:WordFormationRelationShape ;
     ] ;
 
+    # dicbio:semanticEtymon aponta para a ACEPÇÃO que é a origem semântica:
+    #   - empréstimo/herança: um dicbio:SemanticEtymon (acepção de uma
+    #     entrada em outra língua/estágio — regra SPARQL mais abaixo);
+    #   - semanticDerivation: uma ontolex:LexicalSense comum (outra
+    #     acepção da mesma língua).
+    # Aqui só se exige que seja uma acepção (SemanticEtymon é subclasse
+    # de LexicalSense, mas listo as duas para não depender de inferência).
     sh:property [
         sh:path dicbio:semanticEtymon ;
         sh:minCount 0 ;
-        sh:class dicbio:SemanticEtymon ;
-        sh:node dsh:SemanticEtymonShape ;
+        sh:or ( [ sh:class ontolex:LexicalSense ] [ sh:class dicbio:SemanticEtymon ] ) ;
+        sh:message "dicbio:semanticEtymon deve apontar para uma acepção (ontolex:LexicalSense ou dicbio:SemanticEtymon)." ;
     ] .
 
 # Regras condicionais (SHACL-SPARQL):
 # - etymologicalProcess = created ⇒ precisa de hasWordFormationRelation
-# - etymologicalProcess = borrowed/inherited ⇒ precisa de semanticEtymon
+# - etymologicalProcess = borrowed/inherited ⇒ precisa de semanticEtymon,
+#   e ele deve ser um dicbio:SemanticEtymon (étimo de outra língua/estágio)
+# - etymologicalProcess = semanticDerivation ⇒ precisa de semanticEtymon
+#   (a acepção de origem, que pode ser uma ontolex:LexicalSense comum)
 dsh:EtymologyProcessConsistencyShape
     a sh:NodeShape ;
     sh:targetClass lemonety:Etymology ;
@@ -411,6 +458,34 @@ dsh:EtymologyProcessConsistencyShape
             WHERE {
                 $this dicbio:etymologicalProcess ?p .
                 FILTER (?p IN (dicbio:borrowed, dicbio:inherited))
+                FILTER NOT EXISTS { $this dicbio:semanticEtymon ?e }
+            }
+        """ ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Em empréstimo/herança, dicbio:semanticEtymon deve ser um dicbio:SemanticEtymon (acepção de uma entrada em outra língua/estágio), não uma acepção comum. Para derivação semântica dentro da mesma língua, use dicbio:semanticDerivation." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT $this
+            WHERE {
+                $this dicbio:etymologicalProcess ?p ;
+                      dicbio:semanticEtymon ?e .
+                FILTER (?p IN (dicbio:borrowed, dicbio:inherited))
+                FILTER NOT EXISTS { ?e a dicbio:SemanticEtymon }
+            }
+        """ ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Hipótese classificada como dicbio:semanticDerivation deve ter dicbio:semanticEtymon apontando para a acepção de origem." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT $this
+            WHERE {
+                $this dicbio:etymologicalProcess dicbio:semanticDerivation .
                 FILTER NOT EXISTS { $this dicbio:semanticEtymon ?e }
             }
         """ ;
@@ -454,6 +529,12 @@ dsh:EtymologyProcessConsistencyShape
 #     (dicbio:hasAttestation, cadeia via lemonety:etymology).
 #   - Uma nova checagem (caminho inverso de ontolex:sense) garante que
 #     todo étimo tenha ao menos uma Entrada apontando para ele.
+#   - dicbio:SemanticEtymon é reservado para o étimo de OUTRA língua ou
+#     estágio (empréstimo/herança), com entrada própria. Na derivação
+#     semântica (dicbio:semanticDerivation) a acepção de origem é uma
+#     ontolex:LexicalSense comum de uma entrada da mesma língua, e NÃO
+#     deve ser tipada como SemanticEtymon (senão a entrada dela seria
+#     tratada como "entrada de étimo" e exigiria dcterms:language).
 ########################################################################
 
 dsh:SemanticEtymonShape
@@ -471,7 +552,7 @@ dsh:SemanticEtymonShape
     sh:property [
         sh:path dicbio:hasAttestation ;
         sh:minCount 0 ;
-        sh:node dsh:AttestationShape ;
+        sh:class dicbio:Attestation ;
     ] ;
 
     # Cadeia etimológica: o próprio étimo pode ter sua hipótese de
@@ -479,7 +560,7 @@ dsh:SemanticEtymonShape
     sh:property [
         sh:path lemonety:etymology ;
         sh:minCount 0 ;
-        sh:node dsh:EtymologyShape ;
+        sh:class lemonety:Etymology ;
         sh:message "Se o étimo tiver origem anterior (cadeia etimológica), use lemonety:etymology apontando para outra hipótese." ;
     ] ;
 
@@ -525,9 +606,6 @@ dsh:EtymonEntryShape
     sh:property [
         sh:path dcterms:language ;
         sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:pattern "^https://glottolog\\.org/resource/languoid/id/" ;
         sh:message "A entrada do étimo precisa de dcterms:language apontando para um código glotto: (Glottolog)." ;
     ] ;
 
@@ -536,6 +614,168 @@ dsh:EtymonEntryShape
         sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
         sh:message "skos:exactMatch pode ligar a entrada do étimo latino ao URI correspondente no projeto LiLa." ;
+    ] .
+
+########################################################################
+## 5b'. LÍNGUA EXPLÍCITA EM TODA ENTRADA
+#
+# Por convenção, entrada sem dcterms:language é em português
+# (glotto:port1283). Como RDF trabalha em mundo aberto ("sem
+# informação" ≠ "português"), o projeto prefere declarar a língua em
+# todas as entradas. Transição: por ora é AVISO; quando os verbetes
+# antigos forem migrados, trocar sh:Warning por sh:Violation abaixo.
+########################################################################
+
+dsh:EntryLanguageNoticeShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            PREFIX dicbio:  <https://dicbio.fflch.usp.br/ontology/>
+            SELECT ?this
+            WHERE {
+                ?this a ontolex:LexicalEntry .
+                FILTER NOT EXISTS { ?this dcterms:language ?l }
+                # entradas de étimo já exigem a língua como ERRO (dsh:EtymonEntryShape)
+                FILTER NOT EXISTS { ?this ontolex:sense ?s . ?s a dicbio:SemanticEtymon }
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path dcterms:language ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Entrada sem dcterms:language. Sem ela, assume-se português, mas indique a língua explicitamente (português: glotto:port1283)." ;
+    ] .
+
+# Coerência entre dcterms:language e a etiqueta de língua das formas.
+# Língua ausente conta como português. Tabela etiqueta → glottocode nos
+# IF aninhados (acrescente um IF por nova língua; etiquetas fora da
+# tabela não são verificadas).
+dsh:EntryLanguageFormTagConsistencyShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalEntry ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "A forma {?form} está marcada como @{?tag}, mas a língua da entrada (dcterms:language; se ausente, português) é outra." ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            PREFIX glotto:  <https://glottolog.org/resource/languoid/id/>
+            SELECT $this ?form ?tag
+            WHERE {
+                $this (ontolex:canonicalForm|ontolex:otherForm) ?form .
+                ?form ontolex:writtenRep ?wr .
+                BIND (STRBEFORE(CONCAT(LCASE(LANG(?wr)), "-"), "-") AS ?tag)
+                # Tabela etiqueta → glottocode (SHACL-SPARQL proíbe listas de valores inline).
+                # Para nova língua, acrescente um IF. Etiqueta desconhecida → ignorada.
+                BIND (IF(?tag = "pt",  glotto:port1283,
+                      IF(?tag = "la",  glotto:lati1261,
+                      IF(?tag = "grc", glotto:gree1276,
+                         <urn:dicbio:etiqueta-desconhecida>))) AS ?code)
+                FILTER (?code != <urn:dicbio:etiqueta-desconhecida>)
+                OPTIONAL { $this dcterms:language ?l }
+                BIND (COALESCE(?l, glotto:port1283) AS ?lang)
+                FILTER (?lang != ?code)
+            }
+        """ ;
+    ] .
+
+########################################################################
+## 5c. ONDE CADA PROPRIEDADE PODE FICAR
+#
+# - ontolex:writtenRep: só em ontolex:Form (a representação escrita é
+#   da forma — nunca da entrada, da acepção ou do étimo).
+# - dcterms:language e skos:exactMatch (ex.: LiLa, Dbnary): ficam na
+#   ENTRADA lexical (é a entrada inteira que está em latim), e não em
+#   acepção, étimo, forma, hipótese ou atestação. (skos:exactMatch também
+#   é usado em skos:Concept e dcterms:language pode aparecer em fontes —
+#   por isso a checagem é por lista de tipos proibidos, não "só entrada".)
+########################################################################
+
+dsh:WrittenRepOnFormShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf ontolex:writtenRep ;
+    sh:class ontolex:Form ;
+    sh:message "ontolex:writtenRep só pode ficar em uma ontolex:Form: a representação escrita é da forma, não da entrada, da acepção ou do étimo." .
+
+dsh:LanguageOnEntryShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dicbio:   <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            PREFIX dcterms:  <http://purl.org/dc/terms/>
+            SELECT DISTINCT ?this
+            WHERE {
+                ?this dcterms:language ?l ; a ?t .
+                FILTER (?t IN (ontolex:LexicalSense, dicbio:SemanticEtymon, ontolex:Form,
+                               lemonety:Etymology, dicbio:Attestation))
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path dcterms:language ;
+        sh:maxCount 0 ;
+        sh:message "dcterms:language deve ficar na ontolex:LexicalEntry (é a entrada inteira que está na língua), não em acepção, étimo, forma, hipótese ou atestação." ;
+    ] .
+
+dsh:ExactMatchOnEntryShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dicbio:   <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+            SELECT DISTINCT ?this
+            WHERE {
+                ?this skos:exactMatch ?m ; a ?t .
+                FILTER (?t IN (ontolex:LexicalSense, dicbio:SemanticEtymon, ontolex:Form,
+                               lemonety:Etymology, dicbio:Attestation))
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:maxCount 0 ;
+        sh:message "skos:exactMatch (ex.: LiLa, Dbnary) deve ficar na ontolex:LexicalEntry, não em acepção, étimo, forma, hipótese ou atestação. Para ligar uma acepção a um conceito, use ontolex:reference." ;
+    ] .
+
+# Recomendação: toda entrada em latim deveria apontar para o LiLa.
+# (sh:severity na NodeShape, não dentro do sh:sparql — o pySHACL ignora
+# a severidade declarada dentro do sh:sparql.)
+dsh:LatinEntryLilaNoticeShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            PREFIX glotto:  <https://glottolog.org/resource/languoid/id/>
+            SELECT ?this
+            WHERE { ?this a ontolex:LexicalEntry ; dcterms:language glotto:lati1261 . }
+        """ ;
+    ] ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Entrada em latim sem skos:exactMatch para o LiLa (https://lila-erc.eu/...): recomenda-se ligar o lema ao LiLa." ;
+        sh:select """
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this skos:exactMatch ?m .
+                    FILTER (STRSTARTS(STR(?m), "https://lila-erc.eu/"))
+                }
+            }
+        """ ;
     ] .
 
 ########################################################################
@@ -559,7 +799,6 @@ dsh:AttestationShape
         sh:minCount 0 ;
         sh:maxCount 1 ;
         sh:class nif:Word ;
-        sh:node dsh:OccurrenceShape ;
     ] ;
 
     # Só se aplica aos casos (b)/(c): fonte externa ao córpus (primária
@@ -895,7 +1134,7 @@ dsh:BookSourceAuthorshipShape
 # Volumes não repetem title/issued/creator da obra-mãe — herdam esses
 # campos via dcterms:isPartOf. Só precisam de bibo:volume para se
 # identificar dentro da série e de dcterms:isPartOf apontando para uma
-# obra-mãe válida (verificada por sh:node dsh:BookSourceShape).
+# obra-mãe do tipo bibo:Book (a obra-mãe é validada por dsh:BookSourceShape).
 # owl:sameAs é recomendado (Warning) quando o volume tem item próprio
 # no Wikidata (como os dois volumes do Brotero).
 
@@ -920,7 +1159,7 @@ dsh:BookVolumeShape
         sh:path dcterms:isPartOf ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:node dsh:BookSourceShape ;
+        sh:class bibo:Book ;
         sh:message "dcterms:isPartOf do volume deve apontar para uma bibo:Book válida (com title, issued e creator/editor)." ;
     ] ;
 
@@ -1013,7 +1252,6 @@ dsh:IssueSourceShape
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:class bibo:Periodical ;
-        sh:node dsh:PeriodicalSourceShape ;
         sh:message "Todo fascículo precisa de dcterms:isPartOf apontando para um bibo:Periodical válido (com title e sameAs)." ;
     ] ;
 
