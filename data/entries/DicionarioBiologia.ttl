@@ -188,12 +188,12 @@ dbres:etymon_angulatus a dicbio:SemanticEtymon ;
 
 dbres:attestation_angulatus_gaffiot a dicbio:Attestation ;
     dcterms:source dbsrc:source_gaffiot ;
-    skos:note "O dicionário de Gaffiot abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    skos:note "O dicionário de Gaffiot abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrita no ano 45 a.C."@pt ;
     dicbio:attestationDate "-0044"^^xsd:gYear .
 
 dbres:attestation_angulatus_old a dicbio:Attestation ;
     dcterms:source dbsrc:source_old ;
-    skos:note "O Oxford Latin Dictionary abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrito no ano 45 a.C."@pt ;
+    skos:note "O Oxford Latin Dictionary abona o termo *angulatus* na obra *De Natura Deorum* de Cícero, escrita no ano 45 a.C."@pt ;
     dicbio:attestationDate "-0044"^^xsd:gYear .
 
 dbres:etym_angulado_sense1_h2 a lemonety:Etymology ;
@@ -325,4 +325,71 @@ dbres:attestation_antheros a dicbio:Attestation ;
     dcterms:source dbsrc:source_LSJ ;
     skos:note "O dicionário de Liddell, Scott e Jones abona o termo *ἀνθηρός* na comédia *Aves* de Aristófanes, exibida em 414 a.C."@pt ;
     dicbio:attestationDate "-0413"^^xsd:gYear .
+
+## Árvore
+
+dbres:entry_arvore a ontolex:LexicalEntry ;
+    dcterms:created "2023-09-18"^^xsd:date ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_arvore_accent ;
+    ontolex:otherForm dbres:form_arvore,
+        dbres:form_arvores ;
+    ontolex:sense dbres:entry_arvore_sense1 .
+
+dbres:form_arvore a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "arvore"@pt .
+
+dbres:form_arvore_accent a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "árvore"@pt .
+
+dbres:form_arvores a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "arvores"@pt .
+
+dbres:entry_arvore_sense1 a ontolex:LexicalSense ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt ;
+    lemonety:etymology dbres:etym_arvore_sense1 ;
+    dicbio:hasAttestation dbres:attestation_arvore_sense1_houaiss .
+
+dbres:attestation_arvore_sense1_houaiss a dicbio:Attestation ;
+    dicbio:attestationDate "0984"^^xsd:gYear ;
+    dcterms:source dbsrc:source_houaiss .
+
+dbres:etym_arvore_sense1 a lemonety:Etymology ;
+    dicbio:semanticEtymon dbres:etymon_arbor ;
+    dicbio:confidenceLevel dicbio:certain ;
+    dicbio:etymologicalProcess dicbio:inherited ;
+    dcterms:source dbsrc:source_houaiss ;
+    dicbio:etymologicalArgumentation """O étimo é o substantivo latino *arbor, oris* (com o mesmo significado de "planta de tronco alto e grosso"), pelo acusativo *arborem*, visto ser palavra herdada. É atestada desde a Idade Média e, a julgar pela data informada pelo dicionário Houaiss (984), é uma das palavras mais antigamente atestadas na língua portuguesa."""@pt .
+
+dbres:entry_arbor a ontolex:LexicalEntry ;
+    dcterms:created "2026-08-10"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dcterms:language glotto:lati1261 ;
+    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
+    ontolex:canonicalForm dbres:form_arbor ;
+    ontolex:otherForm dbres:form_arborem ;
+    ontolex:sense dbres:etymon_arbor .
+
+dbres:form_arbor a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:case lexinfo:nominative ;
+    ontolex:writtenRep "arbor"@la .
+
+dbres:form_arborem a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:case lexinfo:accusative ;
+    ontolex:writtenRep "arborem"@la .
+
+dbres:etymon_arbor a dicbio:SemanticEtymon ;
+    skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
+
+## Aurícula
 

@@ -69,7 +69,10 @@ dbres:attestation_auricula_lat_sense1_blasius a dicbio:Attestation ;
 
 ### Entrada em latim para o étimo, que é a mesma palavra latina, mas com duas acepções distintas. A entrada em latim é necessária para poder associar as duas acepções do étimo à mesma palavra latina.
 
-dbres:auricula_lat a ontolex:LexicalEntry ;
+dbres:entry_auricula_lat a ontolex:LexicalEntry ;
+    dcterms:creator dbauth:bruno_maroneze ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
     dcterms:language glotto:lati1261 ;
     ontolex:canonicalForm dbres:form_auricula_lat ;
     ontolex:sense dbres:etymon_auricula_sense1, 
@@ -102,10 +105,14 @@ dbres:etymon_auricula_sense2 a dicbio:SemanticEtymon ;
     skos:definition "Orelha."@pt .
 
 dbres:attestation_auricula_lat_sense2_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
+    dcterms:source dbsrc:source_gaffiot ;
+    skos:note "O dicionário de Gaffiot abona o termo *auricula* na obra *Poenulus*, de Plauto, escrita possivelmente em 189 a.C."@pt ;
+    dicbio:attestationDate "-0188"^^xsd:gYear .
 
 dbres:attestation_auricula_lat_sense2_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
+    dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo *auricula* na obra *Asinaria*, de Plauto, escrita em data obscura, mas cujo autor faleceu em 184 a.C."@pt ;
+    dicbio:attestationDate "-0183"^^xsd:gYear .
 
 dbres:entry_auricula_sense3 a ontolex:LexicalSense ;
     skos:definition "Estrutura anatômica em forma de orelha."@pt ;
@@ -139,11 +146,21 @@ dbres:entry_orelha a ontolex:LexicalEntry ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_orelha ;
     ontolex:sense dbres:entry_orelha_sense1 .
+
+dbres:form_orelha a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "orelha"@pt .
 
 dbres:entry_orelha_sense1 a ontolex:LexicalSense ;
     skos:definition "Órgão do corpo humano e de outros animais, situado na cabeça, que tem a função de captar os sons."@pt ;
+    lemonety:etymology dbres:etym_orelha_sense1 ;
     ontolex:reference dbres:concept_orelha .
+
+dbres:etym_orelha_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
 
 dbres:concept_orelha a skos:Concept ;
     skos:definition "Órgão do corpo humano e de outros animais, situado na cabeça, que tem a função de captar os sons."@pt ;
@@ -154,11 +171,21 @@ dbres:entry_atrio a ontolex:LexicalEntry ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
     lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm dbres:form_atrio ;
     ontolex:sense dbres:entry_atrio_sense1 .
+
+dbres:form_atrio a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "átrio"@pt .
 
 dbres:entry_atrio_sense1 a ontolex:LexicalSense ;
     skos:definition "Cavidade superior do coração."@pt ;
+    lemonety:etymology dbres:etym_atrio_sense1 ;
     ontolex:reference dbres:concept_atrio .
+
+dbres:etym_atrio_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
 
 dbres:concept_atrio a skos:Concept ;
     skos:definition "Cavidade superior do coração."@pt ;
@@ -167,7 +194,12 @@ dbres:concept_atrio a skos:Concept ;
 dbres:entry_orelha_do_coracao_sense1 a ontolex:LexicalSense ;
     skos:definition "Cavidade superior do coração."@pt ;
     ontolex:reference dbres:concept_atrio ;
+    lemonety:etymology dbres:etym_orelha_do_coracao_sense1 ;
     dicbio:hasAttestation dbres:attestation_orelha_do_coracao_sense1_santucci . # Santucci, "Anatomia do Corpo Humano", 1739, p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas". É preciso marcar essa ocorrência no XML do Santucci
+
+dbres:etym_orelha_do_coracao_sense1 a lemonety:Etymology ;
+    dicbio:etymologicalProcess dicbio:outOfScope ;
+    dicbio:confidenceLevel dicbio:notApplicable .
 
 dbres:attestation_orelha_do_coracao_sense1_santucci a dicbio:Attestation ;
     dicbio:attestationDate "1739"^^xsd:gYear ;
