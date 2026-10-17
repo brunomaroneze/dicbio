@@ -54,6 +54,7 @@ dbres:attestation_arvore_sense1_houaiss a dicbio:Attestation ;
 
 dbres:etym_arvore_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:etymon_arbor ;
+    dicbio:formalEtymon dbres:form_arborem ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
     dcterms:source dbsrc:source_houaiss ;

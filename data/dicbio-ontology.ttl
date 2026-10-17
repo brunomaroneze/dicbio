@@ -32,7 +32,7 @@
     owl:versionInfo "1.0" ;
     dcterms:creator dbauth:bruno_maroneze ;
     dcterms:issued "2026-08-11"^^xsd:date ;
-    dcterms:modified "2026-08-11"^^xsd:date ;
+    dcterms:modified "2026-10-17"^^xsd:date ;
     owl:versionIRI <https://dicbio.fflch.usp.br/ontology/1.0/> ;
     owl:imports <http://www.w3.org/ns/lemon/ontolex> ;
     owl:imports <http://lari-datasets.ilc.cnr.it/lemonEty#> ;
@@ -45,19 +45,21 @@
 
 ### --- Classes e propriedades da ontologia ---
 
-dicbio:SemanticEtymon a owl:Class ;
-    rdfs:label "Semantic Etymon"@en, "Étimo Semântico"@pt ;
-    rdfs:comment "A Semantic Etymon is a Lexical Sense that acts as a semantic source in an etymological relation to another Lexical Sense."@en ;
-    rdfs:comment "Um Étimo Semântico é um Sentido Lexical que atua como origem semântica numa relação etimológica com outro Sentido Lexical."@pt ;
-    rdfs:subClassOf ontolex:LexicalSense .
-
 dicbio:semanticEtymon a owl:ObjectProperty ;
     rdfs:label "semantic etymon"@en, "étimo semântico"@pt ;
     rdfs:comment "Relates an etymology to a semantic etymon (a LexicalSense acting as an etymon)."@en ;
     rdfs:comment "Relaciona uma descrição etimológica a um étimo semântico (um Sentido Lexical que atua como um étimo)."@pt ;
     rdfs:domain lemonety:Etymology ;
-    rdfs:range dicbio:SemanticEtymon ;
+    rdfs:range ontolex:LexicalSense ;
     rdfs:seeAlso lemonety:etymon .
+
+dicbio:formalEtymon a owl:ObjectProperty ;
+    rdfs:label "formal etymon"@en, "étimo formal"@pt ;
+    rdfs:comment "Relates an etymology to the specific Form of the etymon's entry that served as the formal source (e.g., the Latin accusative \"arborem\" for Portuguese \"árvore\"). When absent, the canonical form of the etymon's entry is assumed."@en ;
+    rdfs:comment "Relaciona uma descrição etimológica à Forma específica da entrada do étimo que serviu de origem formal (por exemplo, o acusativo latino \"arborem\" para o português \"árvore\"). Quando ausente, entende-se que o étimo formal é a forma canônica da entrada do étimo."@pt ;
+    rdfs:domain lemonety:Etymology ;
+    rdfs:range ontolex:Form ;
+    rdfs:seeAlso dicbio:semanticEtymon .
 
 dicbio:etymologicalArgumentation a owl:DatatypeProperty ;
     rdfs:label "etymological argumentation"@en, "argumentação etimológica"@pt ;
