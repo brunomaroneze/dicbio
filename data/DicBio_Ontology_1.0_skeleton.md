@@ -250,7 +250,7 @@ Em relação ao modelo adotado por *LemonEty*, a Ontologia DicBio faz uma escolh
 1. Isso permite descrever adequadamente os casos em que apenas uma das acepções de uma palavra foi transmitida a outra. Por exemplo, o português brasileiro *mouse* tem como étimo não a entrada inglesa *mouse* (com todas as suas acepções), mas apenas a acepção de "dispositivo informático";
 2. Também é possível associar etimologicamente duas acepções da mesma entrada, indicando que a mudança semântica também tem natureza etimológica.
 
-A classe `lemonety:Etymology` (reaproveitada da ontologia *LemonEty*) é entendida como a descrição de uma hipótese etimológica e, portanto, deve relacionar sempre uma acepção ao seu étimo, que, por sua vez, também é uma acepção.
+A classe `lemonety:Etymology` (reaproveitada da ontologia *LemonEty*) é entendida como a descrição de uma hipótese etimológica e, portanto, deve relacionar sempre uma acepção ao seu étimo semântico, que, por sua vez, também é uma acepção.
 
 Tem-se, por exemplo, o verbete para "aurícula", que é uma entrada lexical (`ontolex:LexicalEntry`) à qual correspondem três sentidos ou acepções (`ontolex:LexicalSense`):
 
