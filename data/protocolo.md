@@ -66,9 +66,13 @@
 
 - No caso das palavras emprestadas ou herdadas, usa-se "dicbio:semanticEtymon" para relacionar a hipótese ao étimo.
 
-- O étimo é denominado "dbres:etymon_XXXX" e é indicado como "a dicbio:SemanticEtymon", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "etymon_adiposus"). É relacionado à hipótese etimológica por meio da propriedade "dicbio:semanticEtymon". Deve conter também a propriedade "skos:definition" (a definição do étimo).
+- Há duas formas de étimo: o étimo formal e o étimo semântico. O étimo semântico é colocado como uma acepção da entrada do étimo. Como toda acepção, recebe o nome "dbres:entry_XXXX_senseX", onde XXXX é a forma da palavra na língua do étimo (por exemplo, em latim, como "entry_adiposus_sense1"), e é indicado como "a ontolex:LexicalSense". É relacionado à hipótese etimológica por meio da propriedade "dicbio:semanticEtymon". Deve conter também a propriedade "skos:definition" (a definição do étimo).
 
-- Como o étimo é sempre uma acepção, é preciso também criar uma entrada lexical para o étimo, que será associada ao étimo pela propriedade "ontolex:sense". A entrada do étimo terá a mesma forma que outras entradas, ou seja: "entry_XXXX". Se por acaso isso resultar numa forma idêntica a outra entrada, acrescenta-se, para diferenciar, ao final, a língua do étimo. Por exemplo, "auricula" em latim seria idêntico à entrada "aurícula" em português, então a entrada em latim fica "entry_auricula_lat".
+- Já o étimo formal recebe o nome "dbres:form_XXXX", onde XXXX é a forma. É relacionado à hipótese etimológica por meio da propriedade "dicbio:formalEtymon". Nos casos em que não houver étimo formal explícito, subentende-se que o étimo formal é a forma canônica da entrada do étimo semântico.
+
+- Como o étimo é sempre ou uma forma ou uma acepção, é preciso também criar uma entrada lexical para o étimo, que será associada ao étimo semântico pela propriedade "ontolex:sense" e ao étimo formal pelas propriedades "ontolex:canonicalForm" ou "ontolex:otherForm" (respectivamente, se for a forma canônica ou outra forma).
+
+- A entrada do étimo terá o mesmo nome que outras entradas, ou seja: "entry_XXXX". Se por acaso isso resultar numa forma idêntica a outra entrada, acrescenta-se, para diferenciar, ao final, a língua do étimo. Por exemplo, "auricula" em latim seria idêntico à entrada "aurícula" em português, então a entrada em latim fica "entry_auricula_lat".
 
 - A entrada do étimo (da classe "ontolex:LexicalEntry") deve conter o elemento "dcterms:language", apresentando a língua do étimo, com o prefixo "glotto:" e o código da língua no projeto Glottolog. O código da língua latina é "glotto:lati1261". O código da língua grega é "glotto:gree1276".
 
@@ -132,7 +136,7 @@
 
 - etym_XXXX_sense1 → hipótese etimológica (lemonety:Etymology)
 
-- etymon_XXXX → étimo (dicbio:SemanticEtymon; era lemonety:Etymon, mas alterei porque este último não é subclasse de um Lexical Sense)
+- entry_XXXX_sense1 → acepção (ontolex:LexicalSense)
 
 - attestation_XXXX → atestação (dicbio:Attestation)
 

@@ -81,6 +81,6 @@ dbres:form_arborem a ontolex:Form ;
     lexinfo:case lexinfo:accusative ;
     ontolex:writtenRep "arborem"@la .
 
-dbres:entry_arbor_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_arbor_sense1 a ontolex:LexicalSense ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 

@@ -30,10 +30,10 @@ dbres:entry_sucoso a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_sucoso_sense1 .
 
 dbres:etym_sucoso_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_sucosus ;
+    dicbio:semanticEtymon dbres:entry_sucosus_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o étimo é o latim *sucosus,a,um*, significando \"que contém suco\". A ausência da transformação do *c* intervocálico para *g* revela que a palavra não é herdada. A não-ocorrência da forma latina na obra de Vandelli pode indicar que o termo não entrou na língua portuguesa pelo latim científico e pode ter sido criado por derivação sufixal, e não por empréstimo.Ambas as grafias *sucoso* e *succoso* ocorrem na obra de Vandelli."@pt .
 
-dbres:etymon_sucosus a dicbio:SemanticEtymon ;
+dbres:entry_sucosus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "sucosus" .

@@ -74,7 +74,7 @@ dbres:entry_angulatus a ontolex:LexicalEntry ;
 dbres:form_angulatus a ontolex:Form ;
     ontolex:writtenRep "angulatus"@la .
 
-dbres:entry_angulatus_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_angulatus_sense1 a ontolex:LexicalSense ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
     dicbio:hasAttestation dbres:attestation_angulatus_gaffiot, 
                           dbres:attestation_angulatus_old .

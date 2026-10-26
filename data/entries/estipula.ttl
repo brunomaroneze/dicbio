@@ -30,10 +30,10 @@ dbres:entry_estipula a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_estipula_sense1 .
 
 dbres:etym_estipula_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_stipula ;
+    dicbio:semanticEtymon dbres:entry_stipula_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *stipula*, cujo sentido original de \"haste dos cereais\" remonta à Antiguidade; no entanto, o seu emprego científico como termo da Botânica deriva do latim científico (como atesta a própria obra de Vandelli), sendo, portanto, empréstimo do latim."@pt .
 
-dbres:etymon_stipula a dicbio:SemanticEtymon ;
+dbres:entry_stipula_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "stipula" .

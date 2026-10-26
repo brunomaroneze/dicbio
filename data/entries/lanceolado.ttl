@@ -30,10 +30,10 @@ dbres:entry_lanceolado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_lanceolado_sense1 .
 
 dbres:etym_lanceolado_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_lanceolatus ;
+    dicbio:semanticEtymon dbres:entry_lanceolatus_sense1 ;
     dicbio:etymologicalArgumentation "*Lanceolado* tem como étimo o latim *lanceolatus* (atestado desde a Antiguidade, conforme se observa em Gaffiot); sendo assim, *lanceolado* é um decalque advindo do latim. Poder-se-ia considerar o substantivo lança como sendo a base morfológica; mas a forma em -*eol*- indica a recuperação da forma latina *lanceola* (diminutivo de *lancea*, “lança”). Dessa forma, em português não parece ser possível estabelecer uma relação de base e derivado entre *lança* e *lanceolado*."@pt .
 
-dbres:etymon_lanceolatus a dicbio:SemanticEtymon ;
+dbres:entry_lanceolatus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "lanceolatus" .

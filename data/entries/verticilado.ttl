@@ -33,10 +33,10 @@ dbres:entry_verticilado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_verticilado_sense1 .
 
 dbres:etym_verticilado_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_verficillatus ;
+    dicbio:semanticEtymon dbres:entry_verficillatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *verticillatus*, já empregado em textos em latim científico do século XVII (como, por exemplo, na obra \"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ); ou 2 - como adjetivo derivado do substantivo *verticilo* acrescido do sufixo -*ado*, visto que o substantivo já é empregado por Brotero em 1788; assim, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:etymon_verficillatus a dicbio:SemanticEtymon ;
+dbres:entry_verficillatus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "\"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ" ;
     ontolex:writtenRep "verficillatus" .

@@ -30,11 +30,11 @@ dbres:entry_zoologia a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_zoologia_sense1 .
 
 dbres:etym_zoologia_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_zoologia ;
+    dicbio:semanticEtymon dbres:entry_zoologia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *zoologia*, já atestado no século XVII (como se percebe no próprio título da obra \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ). Dessa forma, junção dos elementos de origem grega *zoo-* e *-logia* ocorreu já no latim científico, e não em português, como está implícito na descrição etimológica do dicionário Houaiss."@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:etymon_zoologia a dicbio:SemanticEtymon ;
+dbres:entry_zoologia_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source " \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ" ;
     ontolex:writtenRep "zoologia" .

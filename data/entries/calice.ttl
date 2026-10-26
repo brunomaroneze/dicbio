@@ -36,10 +36,10 @@ dbres:entry_calice a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_calice_sense1 .
 
 dbres:etym_calice_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_calyx ;
+    dicbio:semanticEtymon dbres:entry_calyx_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *calyx, -ycis*, atestado já na Antiguidade (cf. Oxford Latin Dictionary), por sua vez originário do grego *káluks, -ukos*, com o sentido de “envoltório de um fruto”. Desde a Antiguidade essa forma é confundida com *calix, -icis* “espécie de recipiente” (cf. Oxford Latin Dictionary). O termo foi difundido no latim científico e pode ser encontrado no século XVIII, com ambas as grafias *calix* e *calyx* (cf. a própria obra de Vandelli, 1788, p. 249). O Dicionário Houaiss informa como primeira atestação da forma com C (*calice*) o dicionário de Domingos Vieira (1873), mas essa forma no plural (*calices*) já está presente no dicionário de Vandelli (1788)."@pt .
 
-dbres:etymon_calyx a dicbio:SemanticEtymon ;
+dbres:entry_calyx_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "calyx" .

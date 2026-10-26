@@ -112,7 +112,7 @@ dbres:entry_adiposus a ontolex:LexicalEntry ;
 dbres:form_adiposus a ontolex:Form ;
     ontolex:writtenRep "adiposus"@la .
 
-dbres:entry_adiposus_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 

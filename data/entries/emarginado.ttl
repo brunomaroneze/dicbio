@@ -30,10 +30,10 @@ dbres:entry_emarginado a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_emarginado_sense1 .
 
 dbres:etym_emarginado_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_emarginatus ;
+    dicbio:semanticEtymon dbres:entry_emarginatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *emarginatus*, particípio do verbo *ēmargĭnō, āre* (atestado desde a Antiguidade, com o sentido de \"corroer as margens\", conforme registrado no Oxford Latin Dictionary), caracterizando-se como um decalque do latim. O termo ingressou na língua portuguesa certamente pela via erudita, por meio do latim científico, visto que *emarginatus* é empregado no próprio dicionário de Vandelli."@pt .
 
-dbres:etymon_emarginatus a dicbio:SemanticEtymon ;
+dbres:entry_emarginatus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:source_old ;
     ontolex:writtenRep "emarginatus" .

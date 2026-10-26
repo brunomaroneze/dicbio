@@ -31,10 +31,10 @@ dbres:entry_bulboso a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bulboso_sense1 .
 
 dbres:etym_bulboso_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_bulbosus ;
+    dicbio:semanticEtymon dbres:entry_bulbosus_sense1 ;
     dicbio:etymologicalArgumentation "É possível considerar o termo como tendo se formado por derivação sufixal a partir de “bulbo”, bem como também considerar um empréstimo direto do latim *bulbosus,a,um*, já empregado no latim científico, conforme atesta o dicionário de Vandelli."@pt .
 
-dbres:etymon_bulbosus a dicbio:SemanticEtymon ;
+dbres:entry_bulbosus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "bulbosus" .

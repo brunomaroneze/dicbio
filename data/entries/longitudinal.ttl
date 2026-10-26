@@ -29,10 +29,10 @@ dbres:entry_longitudinal a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_longitudinal_sense1 .
 
 dbres:etym_longitudinal_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_longitudinalis ;
+    dicbio:semanticEtymon dbres:entry_longitudinalis_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma que a palavra formou-se por derivação sufixal a partir do radical latino *longitudine*, juntamente com o sufixo *-al*; no entanto, o adjetivo latino *longitudinalis* já é atestado no século XIII, segundo o Trésor de la Langue Française (*s.v.* \"longitudinal\"), e o francês *longitudinal* é atestado no século XIV (segundo o mesmo dicionário); assim, é mais razoável considerar que a palavra é um empréstimo do latim medieval ou do francês, não tendo sido formado em português."@pt .
 
-dbres:etymon_longitudinalis a dicbio:SemanticEtymon ;
+dbres:entry_longitudinalis_sense1 a ontolex:LexicalSense ;
     dcterms:language "latim medieval" ;
     dcterms:source "TLF" ;
     ontolex:writtenRep "longitudinalis" .

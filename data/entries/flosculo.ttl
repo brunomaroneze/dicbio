@@ -30,10 +30,10 @@ dbres:entry_flosculo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_flosculo_sense1 .
 
 dbres:etym_flosculo_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_flosculus ;
+    dicbio:semanticEtymon dbres:entry_flosculus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo, conforme aponta o Dicionário Houaiss, é o latim *flosculus, i*, diminutivo de *flos, oris* \"flor\". O termo latino *flosculus* é referenciado no índice do dicionário de Vandelli, mas não aparece descrito em sua nomenclatura."@pt .
 
-dbres:etymon_flosculus a dicbio:SemanticEtymon ;
+dbres:entry_flosculus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "flosculus" .

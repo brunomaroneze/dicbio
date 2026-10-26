@@ -32,10 +32,10 @@ dbres:entry_disco a ontolex:LexicalEntry ;
         dbres:entry_disco_sense3 .
 
 dbres:etym_disco_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_discus ;
+    dicbio:semanticEtymon dbres:entry_discus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *discus,i*, adaptação do grego *dískos,ou*, que significa \"peso, prato, objeto de lançamento em exercícios de força\". Conforme se observa na obra de Vandelli, o termo latino *discus* já era empregado no latim científico no âmbito da Botânica e da Zoologia. O termo português é empregado por Vandelli em pelo menos três acepções diferentes, duas delas na Botânica."@pt .
 
-dbres:etymon_discus a dicbio:SemanticEtymon ;
+dbres:entry_discus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "discus" .

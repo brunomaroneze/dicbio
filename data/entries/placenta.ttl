@@ -31,10 +31,10 @@ dbres:entry_placenta a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_placenta_sense1 .
 
 dbres:etym_placenta_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_placenta ;
+    dicbio:semanticEtymon dbres:entry_placenta_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *placenta*, empregado pela primeira vez com esse sentido pelo médico italiano Gabriele Falloppio (na obra *Observationes anatomicae*, de 1562). Em latim clássico, *placenta* designa uma espécie de torta ou bolo achatado, cuja semelhança com o órgão da gravidez foi mencionada, pela primeira vez, por Realdo Colombo (na obra *De Re Anatomica*, de 1559). O termo se inseriu na língua portuguesa, já com o sentido atual, provavelmente por meio da expressão *placenta da madre*, atestada na obra de Bluteau (*Vocabulario Portuguez e Latino*, no volume de 1721), e aparece pela primeira vez como verbete de um dicionário na obra de Moraes Silva (*Diccionario da Lingua Portugueza* de 1789)."@pt .
 
-dbres:etymon_placenta a dicbio:SemanticEtymon ;
+dbres:entry_placenta_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "Gabriele Falloppio (na obra <i>Observationes anatomicae</i>, de 1562" ;
     ontolex:writtenRep "placenta" .

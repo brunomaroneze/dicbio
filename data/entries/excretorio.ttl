@@ -30,10 +30,10 @@ dbres:entry_excretorio a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_excretorio_sense1 .
 
 dbres:etym_excretorio_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_excretorius ;
+    dicbio:semanticEtymon dbres:entry_excretorius_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *excretorius*, atestado na obra de Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ), entre outras. Assim, o adjetivo português é claramente um decalque do latim, ainda que, morfologicamente, seja um derivado sufixal. O termo latino é formado a partir do verbo *excerno* (que tem a forma do supino *excretum*), empregado já na Antiguidade com o sentido de \"excretar, eliminar\" (conforme aponta o Oxford Latin Dictionary). É importante observar que a forma *excretum* é homófona do supino do verbo *excresco* \"crescer, inchar\", mas o sentido denota que este último não é a base para a formação do adjetivo *excretorius* em latim."@pt .
 
-dbres:etymon_excretorius a dicbio:SemanticEtymon ;
+dbres:entry_excretorius_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" ;
     ontolex:writtenRep "excretorius" .

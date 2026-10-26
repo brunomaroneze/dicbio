@@ -81,7 +81,7 @@ dbres:entry_anthera a ontolex:LexicalEntry ;
 dbres:form_anthera_lat a ontolex:Form ;
     ontolex:writtenRep "anthera"@la .
 
-dbres:entry_anthera_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_anthera_sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
     dicbio:hasAttestation dbres:attestation_anthera .
@@ -108,7 +108,7 @@ dbres:entry_antheros a ontolex:LexicalEntry ;
 dbres:form_antheros a ontolex:Form ;
     ontolex:writtenRep "ἀνθηρός"@grc .
 
-dbres:entry_antheros_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_antheros_sense1 a ontolex:LexicalSense ;
     skos:definition "Florido."@pt ;
     dicbio:hasAttestation dbres:attestation_antheros .
 

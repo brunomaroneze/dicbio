@@ -31,10 +31,10 @@ dbres:entry_fitologia a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_fitologia_sense1 .
 
 dbres:etym_fitologia_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_phytologia ;
+    dicbio:semanticEtymon dbres:entry_phytologia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *phytologia*, empregado já no século XVII (como, por exemplo, na obra “Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ). Em latim, é formada pelos elementos de origem grega *phyto-* (planta) e *-logia* (discurso). O fato de não ser atestado nos dicionários de latim e grego referentes ao período da Antiguidade revela tratar-se de uma inovação do latim científico, a partir do qual passou ao português.<br>Em português, não é tão usada quanto o seu sinônimo “Botânica”."@pt .
 
-dbres:etymon_phytologia a dicbio:SemanticEtymon ;
+dbres:entry_phytologia_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" ;
     ontolex:writtenRep "phytologia" .

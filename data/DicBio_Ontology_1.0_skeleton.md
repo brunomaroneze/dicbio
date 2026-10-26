@@ -824,7 +824,8 @@ Note também que `lexinfo:gender` aparece com dois valores (`masculine` e `femin
 
 ### 13.10. Exemplo envolvendo o uso de `formalEtymon`
 
-O verbete "árvore" <!-- Completar. -->
+No verbete "árvore", o étimo formal (ou seja, a forma da qual se origina a palavra portuguesa) não é a forma canônica da palavra latina (que seria o nominativo singular), mas sim a forma do acusativo singular. Isso é expresso pela propriedade `dicbio:formalEtymon` atribuída à hipótese etimológica.
+
 ```turtle
 dbres:entry_arvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
@@ -1079,7 +1080,7 @@ Uma versão com mudanças incompatíveis (2.x) é necessária sempre que uma alt
 
 ## Referências
 
-<!-- Incluir aqui as referências bibliográficas e documentais das ontologias e vocabulários reutilizados, além das referências metodológicas relevantes. -->
+São incluídas aqui as referências bibliográficas e documentais das ontologias e vocabulários reutilizados.
 
 ### Ontologias e vocabulários
 

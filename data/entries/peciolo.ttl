@@ -31,10 +31,10 @@ dbres:entry_peciolo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_peciolo_sense1 .
 
 dbres:etym_peciolo_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_petiolus ;
+    dicbio:semanticEtymon dbres:entry_petiolus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *petiolus,i*, que desde a Antiguidade tem o sentido de \"pé pequeno; pé dos frutos, pecíolo\". No entanto, a forma da palavra indica que não se trata de palavra herdada, mas de um empréstimo do latim científico. Vandelli emprega tanto a forma adaptada *peciolo* quanto a forma traduzida *pésinho* (também grafada *pesinho* ou *pezinho*) para traduzir o termo latino *petiolus*, conforme se observa no trecho transcrito. A forma *pezinho* também é empregada pelo autor para traduzir o termo *pedunculus*."@pt .
 
-dbres:etymon_petiolus a dicbio:SemanticEtymon ;
+dbres:entry_petiolus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "Dicionário Houaiss" ;
     ontolex:writtenRep "petiolus" .

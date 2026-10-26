@@ -29,10 +29,10 @@ dbres:entry_carpo a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_carpo_sense1 .
 
 dbres:etym_carpo_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_carpus ;
+    dicbio:semanticEtymon dbres:entry_carpus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *carpus*, empregado desde pelo menos o século XVII (por exemplo, na obra \"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC). É, por sua vez, a latinização da forma grega καρπός (karpós), empregada desde a Antiguidade, conforme informa o dicionário de Liddell, Scott e Jones, já com o sentido de \"punho\"."@pt .
 
-dbres:etymon_carpus a dicbio:SemanticEtymon ;
+dbres:entry_carpus_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source "\"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC" ;
     ontolex:writtenRep "carpus" .

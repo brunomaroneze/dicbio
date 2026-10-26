@@ -28,10 +28,10 @@ dbres:entry_repente a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_repente_sense1 .
 
 dbres:etym_repente_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_repens ;
+    dicbio:semanticEtymon dbres:entry_repens_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *repens,entis*, particípio presente do verbo *repere*, que significa “arrastar-se”. Esse adjetivo já era empregado no latim científico, conforme atesta o próprio dicionário de Vandelli. O Dicionário Houaiss registra esse verbete como o homônimo 2 e não traz datação."@pt .
 
-dbres:etymon_repens a dicbio:SemanticEtymon ;
+dbres:entry_repens_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dcterms:source dbsrc:work_diciovandelli ;
     ontolex:writtenRep "repens" .
