@@ -63,7 +63,7 @@ dbres:entry_antera_sense1 a ontolex:LexicalSense ;
 
 dbres:etym_antera_sense1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:semanticEtymon dbres:etymon_anthera ;
+    dicbio:semanticEtymon dbres:entry_anthera_sense1 ;
     dicbio:confidenceLevel dicbio:certain ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico *anthera*, já atestado no século XVIII, como mostra o dicionário de Vandelli. Segundo o Dicionário Houaiss, o termo foi criado a partir do grego *antherós,á,ón*, que significa "florido"."""@pt .
@@ -76,12 +76,12 @@ dbres:entry_anthera a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
     ontolex:canonicalForm dbres:form_anthera_lat ;
-    ontolex:sense dbres:etymon_anthera .
+    ontolex:sense dbres:entry_anthera_sense1 .
 
 dbres:form_anthera_lat a ontolex:Form ;
     ontolex:writtenRep "anthera"@la .
 
-dbres:etymon_anthera a dicbio:SemanticEtymon ;
+dbres:entry_anthera_sense1 a dicbio:SemanticEtymon ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
     dicbio:hasAttestation dbres:attestation_anthera .
@@ -93,7 +93,7 @@ dbres:attestation_anthera a dicbio:Attestation ;
 dbres:etym_anthera_lat a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:probable ;
-    dicbio:semanticEtymon dbres:etymon_antheros ;
+    dicbio:semanticEtymon dbres:entry_antheros_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o grego *antherós,á,ón*, com o sentido de \"florido\", que é atestado em Aristófanes (de acordo com o dicionário de Liddell, Scott e Jones)."@pt ;
     dcterms:source dbsrc:source_houaiss .
 
@@ -103,12 +103,12 @@ dbres:entry_antheros a ontolex:LexicalEntry ;
     dcterms:language glotto:gree1276 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_antheros ;
-    ontolex:sense dbres:etymon_antheros .
+    ontolex:sense dbres:entry_antheros_sense1 .
 
 dbres:form_antheros a ontolex:Form ;
     ontolex:writtenRep "ἀνθηρός"@grc .
 
-dbres:etymon_antheros a dicbio:SemanticEtymon ;
+dbres:entry_antheros_sense1 a dicbio:SemanticEtymon ;
     skos:definition "Florido."@pt ;
     dicbio:hasAttestation dbres:attestation_antheros .
 

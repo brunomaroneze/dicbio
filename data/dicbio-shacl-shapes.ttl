@@ -1,6 +1,21 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.13 — a classe dicbio:SemanticEtymon deixou de existir na ontologia. O
+#   étimo é uma ontolex:LexicalSense comum, de uma entrada comum na língua
+#   de origem. Removidas dsh:SemanticEtymonShape e dsh:EtymonEntryShape, a
+#   exclusão no alvo de dsh:LexicalSenseShape e os sh:or com a classe.
+#   Hipótese etimológica agora só é obrigatória em acepção de entrada em
+#   português (língua ausente = português). Novas regras por língua:
+#   borrowed ⇒ origem em OUTRA língua; semanticDerivation ⇒ origem na MESMA
+#   língua. Nome da acepção: entry_X_senseN para todas (o legado etymon_X
+#   ainda passa, com aviso — dsh:LegacyEtymonSenseNameNoticeShape).
+# v2.12 — dicbio:formalEtymon (étimo formal): propriedade opcional em
+#   lemonety:Etymology, no máximo uma, apontando para uma ontolex:Form.
+#   Sem ela, vale a forma canônica da entrada do étimo. Nova
+#   dsh:FormalEtymonConsistencyShape: exige dicbio:semanticEtymon na mesma
+#   hipótese e que a forma pertença (canonicalForm/otherForm) à entrada cuja
+#   acepção é esse étimo semântico.
 # v2.11 — dsh:LexicalSenseShape: coerência de nome entre acepção e entrada
 #   (entry_X_senseN deve pertencer a entry_X; erro se estiver ligada a
 #   outra entrada).
@@ -150,13 +165,12 @@ dsh:LexicalEntryShape
     sh:property [
         sh:path ontolex:sense ;
         sh:minCount 1 ;
-        # Ou é uma Acepção comum (verbete "normal"), ou é um étimo
-        # (SemanticEtymon) — caso desta seja a "entrada do étimo" numa
-        # língua de origem (ver dsh:EtymonEntryShape).
         # Checagem só de TIPO (sh:class), sem sh:node: o conteúdo de cada
-        # acepção/étimo já é validado pela sua própria shape.
-        sh:or ( [ sh:class ontolex:LexicalSense ] [ sh:class dicbio:SemanticEtymon ] ) ;
-        sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense (Acepção comum ou étimo)." ;
+        # acepção já é validado pela sua própria shape. Vale também para a
+        # "entrada do étimo" (entrada em latim/grego etc.): o étimo é uma
+        # acepção comum dessa entrada.
+        sh:class ontolex:LexicalSense ;
+        sh:message "Todo LexicalEntry precisa de ao menos uma ontolex:sense (uma ontolex:LexicalSense)." ;
     ] ;
 
     # dcterms:creator na ENTRADA identifica o(s) colaborador(es) do
@@ -172,8 +186,9 @@ dsh:LexicalEntryShape
     ] ;
 
     # Língua da entrada: valor único e do Glottolog. A OBRIGATORIEDADE é
-    # tratada em dsh:EntryLanguageNoticeShape (aviso) e, para entradas de
-    # étimo, em dsh:EtymonEntryShape (erro). Ausência = português.
+    # tratada em dsh:EntryLanguageNoticeShape (aviso). Entrada em outra língua
+    # SEM dcterms:language é pega por dsh:EntryLanguageFormTagConsistencyShape
+    # (as formas @la/@grc não batem com o português assumido). Ausência = português.
     sh:property [
         sh:path dcterms:language ;
         sh:maxCount 1 ;
@@ -291,33 +306,35 @@ dsh:FormShape
 ## 3. ACEPÇÕES — ontolex:LexicalSense
 ########################################################################
 
-# IMPORTANTE: dicbio:SemanticEtymon é rdfs:subClassOf ontolex:LexicalSense
-# (ver seção 5), então um sh:targetClass ontolex:LexicalSense comum
-# também pegaria os étimos — que têm um padrão de nome diferente
-# (etymon_ em vez de entry_..._sense...) e para os quais
-# lemonety:etymology é opcional, não obrigatório. Por isso o alvo usa
-# sh:target (SPARQLTarget) para pegar só as Acepções "de verdade",
-# excluindo os nós que também são dicbio:SemanticEtymon.
+# Todas as acepções passam por esta shape — inclusive as dos étimos (acepções
+# de entradas em latim, grego etc.). Não há classe própria para "étimo":
+# o étimo é só uma ontolex:LexicalSense ligada a uma hipótese por
+# dicbio:semanticEtymon. O que diferencia é a LÍNGUA da entrada: acepção de
+# entrada em português exige hipótese etimológica; a de outras línguas, não.
 dsh:LexicalSenseShape
     a sh:NodeShape ;
-    sh:target [
-        a sh:SPARQLTarget ;
+    sh:targetClass ontolex:LexicalSense ;
+    sh:nodeKind sh:IRI ;
+
+    # Nome: entry_X_senseN. O nome legado etymon_X ainda é aceito, mas gera
+    # aviso (dsh:LegacyEtymonSenseNameNoticeShape). Quando todos os verbetes
+    # estiverem migrados, remover "etymon_.+" da expressão abaixo.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "O nome da acepção {$this} não segue a convenção entry_X_senseN (o nome legado etymon_X ainda é aceito, com aviso)." ;
         sh:select """
             PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
-            SELECT ?this
+            SELECT $this
             WHERE {
-                ?this a ontolex:LexicalSense .
-                FILTER NOT EXISTS { ?this a dicbio:SemanticEtymon }
+                $this a ontolex:LexicalSense .
+                FILTER (!REGEX(STR($this), "^https://dicbio[.]fflch[.]usp[.]br/recurso/(entry_.+_sense[0-9]+|etymon_.+)$"))
             }
         """ ;
     ] ;
-    sh:nodeKind sh:IRI ;
-    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/entry_.+_sense[0-9]+$" ;
 
     # Toda acepção pertence a uma entrada lexical: alguma ontolex:LexicalEntry
     # a referencia via ontolex:sense (ou, no sentido inverso, a acepção
-    # declara ontolex:isSenseOf). Caminho inverso, como em dsh:SemanticEtymonShape.
+    # declara ontolex:isSenseOf). Caminho inverso de ontolex:sense.
     sh:property [
         sh:path [ sh:alternativePath ( [ sh:inversePath ontolex:sense ] ontolex:isSenseOf ) ] ;
         sh:minCount 1 ;
@@ -327,8 +344,8 @@ dsh:LexicalSenseShape
 
     # Coerência de nome: a acepção "entry_X_senseN" deve pertencer à entrada
     # "entry_X" (e não a outra). Vale tanto para ontolex:sense quanto para
-    # ontolex:isSenseOf. Só para acepções comuns; o nome dos étimos
-    # (etymon_...) não depende do nome da entrada.
+    # ontolex:isSenseOf. Só para nomes entry_...; o nome legado etymon_X
+    # não depende do nome da entrada (e gera aviso próprio).
     sh:sparql [
         a sh:SPARQLConstraint ;
         sh:message "A acepção {$this} pertence à entrada {?entry}, mas o nome dela deveria começar por {?entry}_sense (convenção entry_X_senseN para a entrada entry_X)." ;
@@ -337,6 +354,7 @@ dsh:LexicalSenseShape
             SELECT $this ?entry
             WHERE {
                 { ?entry ontolex:sense $this } UNION { $this ontolex:isSenseOf ?entry }
+                FILTER (STRSTARTS(STR($this), "https://dicbio.fflch.usp.br/recurso/entry_"))
                 FILTER (!STRSTARTS(STR($this), CONCAT(STR(?entry), "_sense")))
             }
         """ ;
@@ -348,9 +366,30 @@ dsh:LexicalSenseShape
         sh:message "Toda LexicalSense precisa de skos:definition." ;
     ] ;
 
+    # Hipótese etimológica obrigatória só para acepções de entradas em
+    # PORTUGUÊS (língua ausente = português). Acepções de entradas em outras
+    # línguas (os étimos) a dispensam: a cadeia pode parar ali.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Toda acepção de entrada em português precisa de ao menos uma hipótese em lemonety:etymology (acepções de entradas em outras línguas, como as dos étimos, são dispensadas)." ;
+        sh:select """
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms:  <http://purl.org/dc/terms/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            PREFIX glotto:   <https://glottolog.org/resource/languoid/id/>
+            SELECT DISTINCT $this
+            WHERE {
+                { ?e ontolex:sense $this } UNION { $this ontolex:isSenseOf ?e }
+                OPTIONAL { ?e dcterms:language ?l }
+                FILTER (!BOUND(?l) || ?l = glotto:port1283)
+                FILTER NOT EXISTS { $this lemonety:etymology ?h }
+            }
+        """ ;
+    ] ;
+
     sh:property [
         sh:path lemonety:etymology ;
-        sh:minCount 1 ;
+        sh:minCount 0 ;
         # sh:class, não sh:node: dsh:EtymologyShape já é alvo próprio
         # (sh:targetClass lemonety:Etymology, mais abaixo), então toda
         # instância já é checada por completo de qualquer forma. Usar
@@ -360,7 +399,7 @@ dsh:LexicalSenseShape
         # externo reportar Violation, mesmo sendo só um aviso lá dentro.
         # Ver nota final sobre isso.
         sh:class lemonety:Etymology ;
-        sh:message "Toda LexicalSense precisa de ao menos uma hipótese em lemonety:etymology." ;
+        sh:message "lemonety:etymology deve apontar para uma lemonety:Etymology." ;
     ] ;
 
     sh:property [
@@ -374,6 +413,26 @@ dsh:LexicalSenseShape
         sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
         sh:message "ontolex:reference deve apontar para o URI de um conceito." ;
+    ] .
+
+# Aviso de transição: nome legado etymon_X para acepções de étimos. A
+# convenção atual é entry_X_senseN (ex.: entry_arbor_sense1).
+# (sh:severity na NodeShape, não dentro do sh:sparql.)
+dsh:LegacyEtymonSenseNameNoticeShape
+    a sh:NodeShape ;
+    sh:targetClass ontolex:LexicalSense ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Nome legado: {$this} deveria se chamar entry_X_senseN, onde entry_X é a entrada do étimo (ex.: entry_arbor_sense1)." ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this a ontolex:LexicalSense .
+                FILTER (STRSTARTS(STR($this), "https://dicbio.fflch.usp.br/recurso/etymon_"))
+            }
+        """ ;
     ] .
 
 ########################################################################
@@ -446,26 +505,38 @@ dsh:EtymologyShape
         sh:class morph:WordFormationRelation ;
     ] ;
 
-    # dicbio:semanticEtymon aponta para a ACEPÇÃO que é a origem semântica:
-    #   - empréstimo/herança: um dicbio:SemanticEtymon (acepção de uma
-    #     entrada em outra língua/estágio — regra SPARQL mais abaixo);
-    #   - semanticDerivation: uma ontolex:LexicalSense comum (outra
-    #     acepção da mesma língua).
-    # Aqui só se exige que seja uma acepção (SemanticEtymon é subclasse
-    # de LexicalSense, mas listo as duas para não depender de inferência).
+    # dicbio:semanticEtymon aponta para a ACEPÇÃO (ontolex:LexicalSense) que é
+    # a origem semântica. Não há classe própria para o étimo: o que muda é a
+    # língua da entrada da acepção de origem (regras SPARQL mais abaixo):
+    #   - empréstimo: entrada de OUTRA língua;
+    #   - derivação semântica: entrada da MESMA língua;
+    #   - herança: sem restrição de língua.
     sh:property [
         sh:path dicbio:semanticEtymon ;
         sh:minCount 0 ;
-        sh:or ( [ sh:class ontolex:LexicalSense ] [ sh:class dicbio:SemanticEtymon ] ) ;
-        sh:message "dicbio:semanticEtymon deve apontar para uma acepção (ontolex:LexicalSense ou dicbio:SemanticEtymon)." ;
+        sh:class ontolex:LexicalSense ;
+        sh:message "dicbio:semanticEtymon deve apontar para uma acepção (ontolex:LexicalSense)." ;
+    ] ;
+
+    # dicbio:formalEtymon: a FORMA (ontolex:Form) da entrada do étimo que serviu
+    # de origem formal (ex.: o acusativo "arborem"). Opcional: quando ausente,
+    # vale a forma canônica da entrada do étimo. No máximo uma. As regras de
+    # coerência com semanticEtymon estão em dsh:FormalEtymonConsistencyShape.
+    sh:property [
+        sh:path dicbio:formalEtymon ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:class ontolex:Form ;
+        sh:message "dicbio:formalEtymon deve apontar para uma única ontolex:Form (a forma da entrada do étimo que serviu de origem formal)." ;
     ] .
 
 # Regras condicionais (SHACL-SPARQL):
 # - etymologicalProcess = created ⇒ precisa de hasWordFormationRelation
-# - etymologicalProcess = borrowed/inherited ⇒ precisa de semanticEtymon,
-#   e ele deve ser um dicbio:SemanticEtymon (étimo de outra língua/estágio)
-# - etymologicalProcess = semanticDerivation ⇒ precisa de semanticEtymon
-#   (a acepção de origem, que pode ser uma ontolex:LexicalSense comum)
+# - etymologicalProcess = borrowed/inherited ⇒ precisa de semanticEtymon
+# - borrowed ⇒ a acepção de origem é de entrada de OUTRA língua
+# - etymologicalProcess = semanticDerivation ⇒ precisa de semanticEtymon,
+#   e a acepção de origem é de entrada da MESMA língua
+# (língua ausente = português, glotto:port1283)
 dsh:EtymologyProcessConsistencyShape
     a sh:NodeShape ;
     sh:targetClass lemonety:Etymology ;
@@ -499,15 +570,46 @@ dsh:EtymologyProcessConsistencyShape
 
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "Em empréstimo/herança, dicbio:semanticEtymon deve ser um dicbio:SemanticEtymon (acepção de uma entrada em outra língua/estágio), não uma acepção comum. Para derivação semântica dentro da mesma língua, use dicbio:semanticDerivation." ;
+        sh:message "Empréstimo (dicbio:borrowed): a acepção de origem {?src} é de uma entrada da MESMA língua da acepção descrita; empréstimo vem de outra língua. Se for a mesma língua, use herança ou derivação semântica." ;
         sh:select """
-            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
-            SELECT $this
+            PREFIX dicbio:   <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms:  <http://purl.org/dc/terms/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            PREFIX glotto:   <https://glottolog.org/resource/languoid/id/>
+            SELECT DISTINCT $this ?src
             WHERE {
-                $this dicbio:etymologicalProcess ?p ;
-                      dicbio:semanticEtymon ?e .
-                FILTER (?p IN (dicbio:borrowed, dicbio:inherited))
-                FILTER NOT EXISTS { ?e a dicbio:SemanticEtymon }
+                $this dicbio:etymologicalProcess dicbio:borrowed ;
+                      dicbio:semanticEtymon ?src .
+                ?sense lemonety:etymology $this .
+                { ?e1 ontolex:sense ?sense } UNION { ?sense ontolex:isSenseOf ?e1 }
+                { ?e2 ontolex:sense ?src }   UNION { ?src ontolex:isSenseOf ?e2 }
+                OPTIONAL { ?e1 dcterms:language ?l1 }
+                OPTIONAL { ?e2 dcterms:language ?l2 }
+                FILTER (COALESCE(?l1, glotto:port1283) = COALESCE(?l2, glotto:port1283))
+            }
+        """ ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Derivação semântica (dicbio:semanticDerivation): a acepção de origem {?src} é de uma entrada de OUTRA língua; a derivação semântica liga acepções da mesma língua. Para origem em outra língua, use dicbio:borrowed ou dicbio:inherited." ;
+        sh:select """
+            PREFIX dicbio:   <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dcterms:  <http://purl.org/dc/terms/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            PREFIX glotto:   <https://glottolog.org/resource/languoid/id/>
+            SELECT DISTINCT $this ?src
+            WHERE {
+                $this dicbio:etymologicalProcess dicbio:semanticDerivation ;
+                      dicbio:semanticEtymon ?src .
+                ?sense lemonety:etymology $this .
+                { ?e1 ontolex:sense ?sense } UNION { ?sense ontolex:isSenseOf ?e1 }
+                { ?e2 ontolex:sense ?src }   UNION { ?src ontolex:isSenseOf ?e2 }
+                OPTIONAL { ?e1 dcterms:language ?l1 }
+                OPTIONAL { ?e2 dcterms:language ?l2 }
+                FILTER (COALESCE(?l1, glotto:port1283) != COALESCE(?l2, glotto:port1283))
             }
         """ ;
     ] ;
@@ -546,109 +648,56 @@ dsh:EtymologyProcessConsistencyShape
         """ ;
     ] .
 
-########################################################################
-## 5. ÉTIMOS — dicbio:SemanticEtymon
-#
-# MUDANÇA DE PROTOCOLO (v2.5): como o étimo é sempre uma Acepção
-# (dicbio:SemanticEtymon rdfs:subClassOf ontolex:LexicalSense), agora
-# ele também precisa de uma ontolex:LexicalEntry própria (na língua do
-# étimo) que o referencie via ontolex:sense — exatamente como qualquer
-# outra Acepção precisa estar ligada a uma Entrada. Por isso:
-#   - ontolex:writtenRep, dcterms:language e skos:exactMatch SAÍRAM do
-#     étimo (SemanticEtymon) e foram para a nova Entrada do étimo (ver
-#     dsh:EtymonEntryShape, seção 5b) — writtenRep vai na Forma dessa
-#     entrada, dcterms:language e skos:exactMatch vão na própria Entrada.
-#   - O étimo em si (SemanticEtymon) agora só precisa mesmo de
-#     skos:definition, mais o que qualquer Acepção pode ter
-#     (dicbio:hasAttestation, cadeia via lemonety:etymology).
-#   - Uma nova checagem (caminho inverso de ontolex:sense) garante que
-#     todo étimo tenha ao menos uma Entrada apontando para ele.
-#   - dicbio:SemanticEtymon é reservado para o étimo de OUTRA língua ou
-#     estágio (empréstimo/herança), com entrada própria. Na derivação
-#     semântica (dicbio:semanticDerivation) a acepção de origem é uma
-#     ontolex:LexicalSense comum de uma entrada da mesma língua, e NÃO
-#     deve ser tipada como SemanticEtymon (senão a entrada dela seria
-#     tratada como "entrada de étimo" e exigiria dcterms:language).
-########################################################################
-
-dsh:SemanticEtymonShape
+# dicbio:formalEtymon só faz sentido junto de dicbio:semanticEtymon, e a forma
+# apontada precisa pertencer (canonicalForm ou otherForm) à entrada cuja
+# acepção é o étimo semântico da MESMA hipótese. Impede, por exemplo, apontar
+# o acusativo de outra palavra.
+dsh:FormalEtymonConsistencyShape
     a sh:NodeShape ;
-    sh:targetClass dicbio:SemanticEtymon ;
-    sh:nodeKind sh:IRI ;
-    sh:pattern "^https://dicbio\\.fflch\\.usp\\.br/recurso/etymon_" ;
+    sh:targetClass lemonety:Etymology ;
 
-    sh:property [
-        sh:path skos:definition ;
-        sh:minCount 1 ;
-        sh:message "Todo étimo precisa de skos:definition." ;
-    ] ;
-
-    sh:property [
-        sh:path dicbio:hasAttestation ;
-        sh:minCount 0 ;
-        sh:class dicbio:Attestation ;
-    ] ;
-
-    # Cadeia etimológica: o próprio étimo pode ter sua hipótese de
-    # origem mais remota (dbres:etym_XXXXX, sem "_sense1").
-    sh:property [
-        sh:path lemonety:etymology ;
-        sh:minCount 0 ;
-        sh:class lemonety:Etymology ;
-        sh:message "Se o étimo tiver origem anterior (cadeia etimológica), use lemonety:etymology apontando para outra hipótese." ;
-    ] ;
-
-    # Todo étimo precisa ter uma Entrada lexical própria (na língua do
-    # étimo) que o referencie via ontolex:sense — caminho inverso.
-    sh:property [
-        sh:path [ sh:inversePath ontolex:sense ] ;
-        sh:minCount 1 ;
-        sh:class ontolex:LexicalEntry ;
-        sh:message "Todo étimo precisa de uma ontolex:LexicalEntry que o referencie via ontolex:sense (a 'entrada do étimo', na língua original)." ;
-    ] .
-
-########################################################################
-## 5b. ENTRADA DO ÉTIMO — ontolex:LexicalEntry (na língua do étimo)
-#
-# É uma ontolex:LexicalEntry comum (por isso já herda todas as
-# exigências de dsh:LexicalEntryShape: lexinfo:partOfSpeech,
-# ontolex:canonicalForm, dcterms:creator etc.), só que aponta via
-# ontolex:sense para um dicbio:SemanticEtymon em vez de uma
-# ontolex:LexicalSense comum, e precisa adicionalmente de
-# dcterms:language. O alvo é definido por SPARQLTarget (entradas cujo
-# ontolex:sense aponta para um SemanticEtymon), já que não há uma
-# classe RDF distinta para "entrada de étimo" — é a mesma
-# ontolex:LexicalEntry de sempre, só que num papel diferente.
-########################################################################
-
-dsh:EtymonEntryShape
-    a sh:NodeShape ;
-    sh:target [
-        a sh:SPARQLTarget ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "dicbio:formalEtymon ({?form}) exige dicbio:semanticEtymon na mesma hipótese: a forma de origem é sempre uma forma da entrada do étimo semântico." ;
         sh:select """
-            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-            PREFIX dicbio:  <https://dicbio.fflch.usp.br/ontology/>
-            SELECT ?this
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            SELECT DISTINCT $this ?form
             WHERE {
-                ?this a ontolex:LexicalEntry ;
-                      ontolex:sense ?s .
-                ?s a dicbio:SemanticEtymon .
+                $this dicbio:formalEtymon ?form .
+                FILTER NOT EXISTS { $this dicbio:semanticEtymon ?s }
             }
         """ ;
     ] ;
 
-    sh:property [
-        sh:path dcterms:language ;
-        sh:minCount 1 ;
-        sh:message "A entrada do étimo precisa de dcterms:language apontando para um código glotto: (Glottolog)." ;
-    ] ;
-
-    sh:property [
-        sh:path skos:exactMatch ;
-        sh:minCount 0 ;
-        sh:nodeKind sh:IRI ;
-        sh:message "skos:exactMatch pode ligar a entrada do étimo latino ao URI correspondente no projeto LiLa." ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "A forma {?form} (dicbio:formalEtymon) não pertence à entrada do étimo semântico desta hipótese: deve ser a canonicalForm ou uma otherForm da entrada cuja ontolex:sense é o dicbio:semanticEtymon." ;
+        sh:select """
+            PREFIX dicbio:  <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT DISTINCT $this ?form
+            WHERE {
+                $this dicbio:formalEtymon ?form ;
+                      dicbio:semanticEtymon ?any .
+                FILTER NOT EXISTS {
+                    $this dicbio:semanticEtymon ?s .
+                    { ?e ontolex:sense ?s } UNION { ?s ontolex:isSenseOf ?e }
+                    ?e (ontolex:canonicalForm|ontolex:otherForm) ?form .
+                }
+            }
+        """ ;
     ] .
+
+########################################################################
+## 5. ÉTIMOS (sem classe própria)
+#
+# Não existe classe para "étimo". O étimo é uma ontolex:LexicalSense comum,
+# de uma ontolex:LexicalEntry comum na língua de origem (ex.: entry_arbor,
+# em latim), ligada à hipótese por dicbio:semanticEtymon (e, opcionalmente,
+# à forma por dicbio:formalEtymon). Todas as regras de acepção e de entrada
+# (seções 1 e 3) valem para elas. O que diferencia o étimo é só a LÍNGUA
+# da entrada: dcterms:language (ver seção 5b').
+########################################################################
 
 ########################################################################
 ## 5b'. LÍNGUA EXPLÍCITA EM TODA ENTRADA
@@ -672,15 +721,13 @@ dsh:EntryLanguageNoticeShape
             WHERE {
                 ?this a ontolex:LexicalEntry .
                 FILTER NOT EXISTS { ?this dcterms:language ?l }
-                # entradas de étimo já exigem a língua como ERRO (dsh:EtymonEntryShape)
-                FILTER NOT EXISTS { ?this ontolex:sense ?s . ?s a dicbio:SemanticEtymon }
             }
         """ ;
     ] ;
     sh:property [
         sh:path dcterms:language ;
         sh:minCount 1 ;
-        sh:severity sh:Violation ;
+        sh:severity sh:Warning ;
         sh:message "Entrada sem dcterms:language. Sem ela, assume-se português, mas indique a língua explicitamente (português: glotto:port1283)." ;
     ] .
 
@@ -747,7 +794,7 @@ dsh:LanguageOnEntryShape
             SELECT DISTINCT ?this
             WHERE {
                 ?this dcterms:language ?l ; a ?t .
-                FILTER (?t IN (ontolex:LexicalSense, dicbio:SemanticEtymon, ontolex:Form,
+                FILTER (?t IN (ontolex:LexicalSense, ontolex:Form,
                                lemonety:Etymology, dicbio:Attestation))
             }
         """ ;
@@ -770,7 +817,7 @@ dsh:ExactMatchOnEntryShape
             SELECT DISTINCT ?this
             WHERE {
                 ?this skos:exactMatch ?m ; a ?t .
-                FILTER (?t IN (ontolex:LexicalSense, dicbio:SemanticEtymon, ontolex:Form,
+                FILTER (?t IN (ontolex:LexicalSense, ontolex:Form,
                                lemonety:Etymology, dicbio:Attestation))
             }
         """ ;

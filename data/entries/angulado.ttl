@@ -56,7 +56,7 @@ dbres:entry_angulado_sense1 a ontolex:LexicalSense ;
              dbres:etym_angulado_sense1_h2 .
 
 dbres:etym_angulado_sense1_h1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_angulatus ;
+    dicbio:semanticEtymon dbres:entry_angulatus_sense1 ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dcterms:source dbsrc:source_houaiss ;
     dicbio:etymologicalArgumentation "O adjetivo *angulado* pode ter como étimo o latim *angŭlātus* (atestado na Antiguidade, conforme registrado nos dicionários de Gaffiot e Oxford Latin Dictionary), constituindo-se, dessa forma, como um decalque da língua latina."@pt ;
@@ -69,12 +69,12 @@ dbres:entry_angulatus a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
     ontolex:canonicalForm dbres:form_angulatus ;
-    ontolex:sense dbres:etymon_angulatus .
+    ontolex:sense dbres:entry_angulatus_sense1 .
 
 dbres:form_angulatus a ontolex:Form ;
     ontolex:writtenRep "angulatus"@la .
 
-dbres:etymon_angulatus a dicbio:SemanticEtymon ;
+dbres:entry_angulatus_sense1 a dicbio:SemanticEtymon ;
     skos:definition "Que tem ângulo; anguloso."@pt ;
     dicbio:hasAttestation dbres:attestation_angulatus_gaffiot, 
                           dbres:attestation_angulatus_old .

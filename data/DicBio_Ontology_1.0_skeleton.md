@@ -91,7 +91,7 @@ A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontol
 | URI da ontologia | `https://dicbio.fflch.usp.br/ontology/` |
 | URI da versão | `https://dicbio.fflch.usp.br/ontology/1.0/` |
 | Data de emissão | 2026-08-11 |
-| Data da última modificação | 2026-10-17 |
+| Data da última modificação | 2026-10-26 |
 
 ### 3.3. Política de versionamento
 
@@ -268,11 +268,11 @@ Cada uma dessas acepções é associada a uma definição (`skos:definition`) e 
 A descrição etimológica (da classe `lemonety:Etymology`), por sua vez, indica (por meio da propriedade `dicbio:semanticEtymon`) qual é o étimo semântico (que é necessariamente outra acepção, não outra entrada):
 
 `dbres:etym_auricula_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_auricula_sense1 .`
+    dicbio:semanticEtymon dbres:entry_auricula_sense1 .`
     
 Já o étimo semântico (da classe `ontolex:LexicalSense`) apresenta uma definição (`skos:definition`):
 
-`dbres:etymon_auricula_sense1 a ontolex:LexicalSense ;
+`dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
    skos:definition "Cavidade superior dos ventrículos do coração."@pt .`
 
 Por fim, o étimo semântico (que, lembre-se, é uma acepção) é associado à sua entrada correspondente, que também contém uma forma (`ontolex:canonicalForm`):
@@ -280,12 +280,12 @@ Por fim, o étimo semântico (que, lembre-se, é uma acepção) é associado à 
 `dbres:entry_auricula_lat a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
     ontolex:canonicalForm dbres:form_auricula_lat ;
-    ontolex:sense dbres:etymon_auricula_sense1 .`
+    ontolex:sense dbres:entry_auricula_sense1 .`
 
 Nos casos em que é necessário descrever a forma (o significante) do étimo separadamente do seu significado, emprega-se a propriedade `dicbio:formalEtymon` para relacionar a hipótese etimológica a essa forma. Por exemplo, no caso de "árvore", é relevante indicar que o étimo formal é a forma do acusativo, não a do nominativo:
 
 `dbres:etym_arvore_sense1
-    dicbio:semanticEtymon dbres:etymon_arbor ;
+    dicbio:semanticEtymon dbres:entry_arbor_sense1 ;
     dicbio:formalEtymon dbres:form_arborem .
     
 dbres:form_arborem a ontolex:Form ;
@@ -301,7 +301,7 @@ Uma **atestação** representa uma ocorrência documentada de uma forma lexical 
 
 As atestações são representadas pela classe `dicbio:Attestation` e podem ser associadas às acepções ou formas lexicais correspondentes. A fonte da atestação é indicada por meio de `dcterms:source`, permitindo distinguir a evidência documental de outras fontes utilizadas na elaboração do verbete. Por exemplo, a forma latina *auricula* (étimo da forma portuguesa "aurícula") é atestada numa obra de 1681 (a data é informada pela propriedade `dicbio:attestationDate`):
 
-dbres:etymon_auricula_sense1 a ontolex:LexicalSense ;
+dbres:entry_auricula_lat_sense1 a ontolex:LexicalSense ;
     dcterms:language glotto:lati1261 ;
     dicbio:hasAttestation dbres:attestation_auricula_lat_sense1_blasius ;
     skos:definition "Cavidade superior dos ventrículos do coração."@pt .
@@ -427,13 +427,13 @@ Esta seção apresenta as classes definidas pela Ontologia DicBio.
 
 **Uso:** Vocabulário inicial e extensível (§12.3), usado como valor de `vartrans:category` nas instâncias de `morph:WordFormationRelation` ligadas por `dicbio:hasWordFormationRelation`.
 
-### 4. Classes reutilizadas
+### 10.4. Classes reutilizadas
 
 Além das classes próprias listadas acima, a Ontologia DicBio reutiliza diretamente as seguintes classes externas, sem redefini-las:
 
 - `ontolex:LexicalEntry` — representa a entrada lexical (o verbete propriamente dito), podendo estar associada a uma ou mais formas e a uma ou mais acepções (ver §8.3).
 - `ontolex:Form` — representa uma forma flexionada, variante gráfica ou a forma canônica de uma entrada lexical.
-- `ontolex:LexicalSense` — representa uma acepção da entrada lexical, que pode ser o étimo semântico de outra acepção (§10.3). <!-- Conferir a remissão, agora mudou. Penso em remeter para 8.4. -->
+- `ontolex:LexicalSense` — representa uma acepção da entrada lexical, que pode ser o étimo semântico de outra acepção (§8.4).
 - `lemonety:Etymology` — representa uma hipótese etimológica, relacionando uma acepção ao seu étimo por meio de `dicbio:semanticEtymon` e, opcionalmente, à forma do étimo por meio de `dicbio:formalEtymon` (ver §8.4).
 - `morph:WordFormationRelation` — representa uma relação morfológica de formação de palavras, associada a uma hipótese etimológica por `dicbio:hasWordFormationRelation` (§11.2.1).
 - `nif:Word` — representa uma ocorrência textual identificada no corpus digital do projeto, relacionada à forma e à acepção que realiza por meio de `dicbio:realizesForm` e `dicbio:realizesSense` (§8.5).
@@ -479,7 +479,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Superpropriedade:** nenhuma. A propriedade se relaciona a `lemonety:etymon` apenas por `rdfs:seeAlso`, não por `rdfs:subPropertyOf` — o range de `lemonety:etymon` é `lemonety:Etymon`, incompatível com `ontolex:LexicalSense`, o que impede uma subpropriedade formal.
 
-**Uso:** É a propriedade central da modelagem etimológica da ontologia (ver §8.4): liga cada hipótese etimológica ao étimo, sempre representado como uma acepção, nunca como uma entrada lexical inteira — o que permite descrever transmissão semântica parcial entre entradas polissêmicas.
+**Uso:** É a propriedade central da modelagem etimológica da ontologia (ver §8.4): liga cada hipótese etimológica ao étimo, sempre representado como uma acepção, nunca como uma entrada lexical inteira — o que permite descrever transmissão semântica parcial entre entradas polissêmicas. Nos casos de empréstimos (`dicbio:borrowed`), o étimo é uma acepção de uma entrada em outra língua. Nos casos de derivação semântica (`dicbio:semanticDerivation`), o étimo é uma acepção de uma entrada na mesma língua. Nos casos de palavras herdadas (`dicbio:inherited`), não há restrição quanto à língua do étimo.
 
 ### 11.1.3. `dicbio:formalEtymon`
 
@@ -563,7 +563,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Superpropriedade:** nenhuma
 
-**Uso:** Como `dicbio:SemanticEtymon` é subclasse de `ontolex:LexicalSense`, esta propriedade também pode relacionar um étimo a sua própria atestação (ver exemplo em §13.5, em que `dbres:etymon_adiposus` — um `ontolex:LexicalSense` — recebe `dicbio:hasAttestation`). <!-- Reescrever -->
+**Uso:** Como o étimo semântico é uma `ontolex:LexicalSense` (§8.4), esta propriedade também pode relacionar um étimo a sua própria atestação (ver exemplo em §13.5, em que `dbres:entry_adiposus_sense1` — um `ontolex:LexicalSense` — recebe `dicbio:hasAttestation`).
 
 ### 11.3.3. `dicbio:attestationDate`
 
@@ -747,7 +747,7 @@ dbres:etym_adiposo_sense1_h1 a lemonety:Etymology ;
         dbauth:fabiani_goncalves ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:semanticEtymon dbres:etymon_adiposus ;
+    dicbio:semanticEtymon dbres:entry_adiposus_sense1 ;
     dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
     dicbio:confidenceLevel dicbio:probable .
 ```
@@ -762,9 +762,9 @@ dbres:entry_adiposus a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_adiposus ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
-    ontolex:sense dbres:etymon_adiposus .
+    ontolex:sense dbres:entry_adiposus_sense1 .
 
-dbres:etymon_adiposus a ontolex:LexicalSense ;
+dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 ```
@@ -837,7 +837,7 @@ dbres:entry_arvore a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_arvore_sense1 .
 
 dbres:etym_arvore_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:etymon_arbor ;
+    dicbio:semanticEtymon dbres:entry_arbor_sense1 ;
     dicbio:formalEtymon dbres:form_arborem ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
@@ -853,7 +853,7 @@ dbres:entry_arbor a ontolex:LexicalEntry ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
     ontolex:canonicalForm dbres:form_arbor ;
     ontolex:otherForm dbres:form_arborem ;
-    ontolex:sense dbres:etymon_arbor .
+    ontolex:sense dbres:entry_arbor_sense1 .
 
 dbres:form_arbor a ontolex:Form ;
     lexinfo:number lexinfo:singular ;
@@ -865,7 +865,7 @@ dbres:form_arborem a ontolex:Form ;
     lexinfo:case lexinfo:accusative ;
     ontolex:writtenRep "arborem"@la .
 
-dbres:etymon_arbor a ontolex:LexicalSense ;
+dbres:entry_arbor_sense1 a ontolex:LexicalSense ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 ```
 
@@ -930,7 +930,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
         dbauth:fabiani_goncalves ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
-    dicbio:semanticEtymon dbres:etymon_adiposus ;
+    dicbio:semanticEtymon dbres:entry_adiposus_sense1 ;
     dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão "panniculus adiposus", presente na "Acta Physico-Medica" de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
@@ -941,12 +941,12 @@ dbres:entry_adiposus a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_adiposus ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
-    ontolex:sense dbres:etymon_adiposus .
+    ontolex:sense dbres:entry_adiposus_sense1 .
 
 dbres:form_adiposus a ontolex:Form ;
     ontolex:writtenRep "adiposus"@la .
 
-dbres:etymon_adiposus a ontolex:LexicalSense ;
+dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 
@@ -968,9 +968,7 @@ dbres:attestation_adiposo a dicbio:Attestation ;
 
 ### 14.1. OntoLex-Lemon
 
-A camada lexical da Ontologia DicBio é construída diretamente sobre o modelo *core* de OntoLex-Lemon. As entradas do dicionário são representadas como `ontolex:LexicalEntry`, associadas às suas formas (`ontolex:Form`, relacionadas por `ontolex:canonicalForm` e `ontolex:otherForm`) e às suas acepções (`ontolex:LexicalSense`, relacionadas por `ontolex:sense`). Essa separação entre entrada, forma e acepção é o fundamento sobre o qual as demais camadas da ontologia — etimológica, morfológica e documental — são construídas (ver §8.3).
-
-A Ontologia DicBio não estende nem restringe formalmente essas classes; a única relação de subclasse acrescentada é a de `dicbio:SemanticEtymon` como subclasse de `ontolex:LexicalSense` (§10.3), motivada pela decisão de modelagem descrita em §8.4. <!-- Talvez eliminar este parágrafo. -->
+A camada lexical da Ontologia DicBio é construída diretamente sobre o modelo *core* de OntoLex-Lemon. As entradas do dicionário são representadas como `ontolex:LexicalEntry`, associadas às suas formas (`ontolex:Form`, relacionadas por `ontolex:canonicalForm` e `ontolex:otherForm`) e às suas acepções (`ontolex:LexicalSense`, relacionadas por `ontolex:sense`). Essa separação entre entrada, forma e acepção é o fundamento sobre o qual as demais camadas da ontologia — etimológica, morfológica e documental — são construídas (ver §8.3). A Ontologia DicBio não estende nem restringe formalmente essas classes.
 
 ### 14.2. LemonEty
 
@@ -1025,8 +1023,8 @@ Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é infe
 
 ### 15.3. Domínio e range
 
-As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:formalEtymon` tem `rdfs:range ontolex:Form`, o objeto é inferido como `ontolex:Form`. Já `dicbio:semanticEtymon` tem range `ontolex:LexicalSense`, de modo que `dicbio:SemanticEtymon` não é inferida: é declarada explicitamente nos étimos de empréstimo e herança, e a validação a exige.
-<!-- Este trecho precisa ser reescrito. -->
+As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:formalEtymon` tem `rdfs:range ontolex:Form`, o objeto é inferido como `ontolex:Form`. Da mesma forma, `dicbio:semanticEtymon` tem range `ontolex:LexicalSense`, de modo que o objeto é inferido como `ontolex:LexicalSense`.
+<!-- Preciso ver se acrescento que o SHACL não usa inferência e, por isso, o étimo precisa ser declarado como ontolex:LexicalSense. -->
 
 ### 15.4. Testes com reasoner
 

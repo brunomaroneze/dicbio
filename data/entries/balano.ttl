@@ -47,10 +47,10 @@ dbres:etym_balano_sense1 a lemonety:Etymology ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:certain ;
-    dicbio:semanticEtymon dbres:etymon_balanus ;
+    dicbio:semanticEtymon dbres:entry_balanus_sense1 ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico *balanus, i*, que já apresenta o significado de "cabeça do pênis" em textos médicos do século XVIII (como, por exemplo, a "Bibliotheca Chirurgica" de Manget, 1721 - https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC). Em latim, a palavra tem origem no grego βάλανος, que, segundo o dicionário de Liddell, Scott e Jones, já apresentava, além da acepção de "fruto do carvalho", também a de "cabeça do pênis". Porém, os dicionários de latim Gaffiot e Oxford Latin Dictionary não apresentam essa acepção; talvez o latim clássico não tenha conhecido essa acepção, ou talvez não tenha sido registrada em textos escritos. O emprego de *balanus* no latim científico não parece ter sido comum, visto que o termo preferido era *glans*. O próprio Santucci inclui *bálano* como um dos sinônimos de glande ou cabeça do membro masculino, mas prefere empregar o termo *glande*."""@pt .
 
-dbres:etymon_balanus a dicbio:SemanticEtymon ;
+dbres:entry_balanus_sense1 a dicbio:SemanticEtymon ;
     skos:definition "Glande do pênis."@pt ;
     skos:scopeNote "A acepção de 'glande do pênis' não é registrada nos principais dicionários de latim clássico."@pt ;
     dicbio:hasAttestation dbres:attestation_balanus_lat ;
@@ -64,7 +64,7 @@ dbres:entry_balanus a ontolex:LexicalEntry ;
     ontolex:canonicalForm dbres:form_balanus ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/33893> ;
     dcterms:language glotto:lati1261 ;
-    ontolex:sense dbres:etymon_balanus .
+    ontolex:sense dbres:entry_balanus_sense1 .
 
 dbres:form_balanus a ontolex:Form ;
     lexinfo:number lexinfo:singular ;
@@ -79,7 +79,7 @@ dbres:etym_balanus a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation "O latim *balanus* é certamente um empréstimo do grego *βάλανος*, ainda que apenas esteja atestado em textos do latim científico."@pt ;
-    dicbio:semanticEtymon dbres:etymon_balanos_sense2 .
+    dicbio:semanticEtymon dbres:entry_balanos_sense2 .
 
 dbres:attestation_balanos_grc_sense1 a dicbio:Attestation ;
     dcterms:source dbsrc:source_LSJ ;
@@ -98,14 +98,14 @@ dbres:entry_balanos a ontolex:LexicalEntry ;
     ontolex:canonicalForm dbres:form_balanos ;
     lexinfo:partOfSpeech lexinfo:noun ;
     lexinfo:gender lexinfo:feminine ;
-    ontolex:sense dbres:etymon_balanos_sense1,
-        dbres:etymon_balanos_sense2 .
+    ontolex:sense dbres:entry_balanos_sense1,
+        dbres:entry_balanos_sense2 .
 
-dbres:etymon_balanos_sense1 a dicbio:SemanticEtymon ;
+dbres:entry_balanos_sense1 a dicbio:SemanticEtymon ;
     skos:definition "Fruto do carvalho."@pt ;
     dicbio:hasAttestation dbres:attestation_balanos_grc_sense1 .
 
-dbres:etymon_balanos_sense2 a dicbio:SemanticEtymon ;
+dbres:entry_balanos_sense2 a dicbio:SemanticEtymon ;
     skos:definition "Glande do pênis."@pt ;
     lemonety:etymology dbres:etym_balanos_sense2 ;
     ontolex:reference dbres:concept_glande ;
@@ -113,7 +113,7 @@ dbres:etymon_balanos_sense2 a dicbio:SemanticEtymon ;
 
 dbres:etym_balanos_sense2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:semanticDerivation ;
-    dicbio:semanticEtymon dbres:etymon_balanos_sense1 ;
+    dicbio:semanticEtymon dbres:entry_balanos_sense1 ;
     dcterms:source dbsrc:source_LSJ ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation """A acepção de "glande do pênis é uma derivação semântica da acepção original "fruto do carvalho", por semelhança de forma."""@pt .
