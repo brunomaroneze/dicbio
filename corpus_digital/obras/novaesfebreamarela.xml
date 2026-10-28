@@ -74,16 +74,19 @@
 			DE AQUINO GASPAR. A Faculdade não approva nem reprova as opiniões emittidas nesta
 			these.</front>
 		<body>
-			<div><head>SECÇÃO MEDICA.</head>
+			<div>
+				<head>SECÇÃO MEDICA.</head>
 				<head>Qual o melhor tratamento da febre amarella ?</head>
 				<head>DISSERTAÇÃO</head>
 				<head>PRIMEIRA PARTE</head>
-				<epigraph>Les epidemies sont dans l'histoire medicale des peuples, les evènements
-					principaux, les accidents les plus remarquables. It faut en perpetuer le
-					souvenir, afin que les tristes leçons de ces etranges calamitès ne soient, pas
-					entierement perdues pour les génerations qui suivent, afin que les medicins
-					n'entrent pas tout-neufs dans la penible corriere de ce genre d'ètudes. (FLEURY,
-					COUS D'HYGIEE.)</epigraph>
+				<epigraph>
+					<p>Les epidemies sont dans l'histoire medicale des peuples, les evènements
+						principaux, les accidents les plus remarquables. It faut en perpetuer le
+						souvenir, afin que les tristes leçons de ces etranges calamitès ne soient,
+						pas entierement perdues pour les génerations qui suivent, afin que les
+						medicins n'entrent pas tout-neufs dans la penible corriere de ce genre
+						d'ètudes. (FLEURY, COUS D'HYGIEE.)</p>
+				</epigraph>
 				<p>Antes de tratarmos propriamente do ponto, julgamos de summa importancia fazer
 					algumas ligeiras considerações sobre a natureza da molestia, de modo que
 					possamos entrar com mais segurança no tratamento therapeutico: procuraremos
@@ -95,15 +98,16 @@
 					hoje reina na sciencia a respeito d'esta molestia: com tudo procuraremos
 					descrevêl-a, ainda que resumidamente, de maneira que consigamos dar uma idéa
 					mais ou menos approximada do que ella seja.</p>
-				<pb n="2"/><p>A febre amarella, tambem chamada, febre de Sian, febre icterica
-					maligna, febre maritima, febre gastro-hepatica, febre putrida continua, typo
-					americano, icterico ou bilioso, vomito negro dos italianos e vomito preto dos
-					hespanhões, é uma molestia propria á certos climas quentes, é uma pyrexia
-					proveniente de um envenenamento do sangue ordinariamente epidemica, podendo
-					tambem tornar-se endemica e exporadica, tendo por caracteres principaes a
-					amarellidão dos <bodyPart>tegumentos</bodyPart> o vomito negro e as
-					hemorrhagias.</p>
-				<div><head>HISTORIA.</head>
+				<pb n="2"/>
+				<p>A febre amarella, tambem chamada, febre de Sian, febre icterica maligna, febre
+					maritima, febre gastro-hepatica, febre putrida continua, typo americano,
+					icterico ou bilioso, vomito negro dos italianos e vomito preto dos hespanhões, é
+					uma molestia propria á certos climas quentes, é uma pyrexia proveniente de um
+					envenenamento do sangue ordinariamente epidemica, podendo tambem tornar-se
+					endemica e exporadica, tendo por caracteres principaes a amarellidão dos <term
+						type="body-part">tegumentos</term> o vomito negro e as hemorrhagias.</p>
+				<div>
+					<head>HISTORIA.</head>
 					<p>Completamente desconhecida dos antigos, a febre amarella foi por muito tempo
 						confundida com as molestias pestilenciaes, até qne em 1494 o apparecimento
 						d'este terrivel flagello em Haity prendeu a attenção de muitos medicos, que,
@@ -128,804 +132,794 @@
 						qual outro flagello da idade antiga, devastou a humanidade deixando o seu
 						caminho fatal semeiado de cadaveres e cobrindo todos estes logares de
 						luctuosa tristeza.</p>
-					<p>Afanos no seu peregrinar eil-a que de novo surge no sólo
-						Americanos O Brazil não podendo escapar as garras d'este inimigo invisivel
-						que, como diz Foissac, é mais terrivel que Timour e Attila, e que nem os
-						mares, nem os montes, nem as muralhas, nem os exercitos tem o poder de
-						contel-o, tornou se por sua vez o theatro de suas devastações! E então, em
-						1686 apresentou se em Pernambuco levando á sepultura centenares de
-						victimas.</p> <p>Do Recife passou a molestia á Olinda em 1691 e á seus
-					reconcavos, sendo muito poucas as pessôas que, pela malignidade e vehemencia
-					d mal ficavam isentas.</p>
-					<p>A Bahia no mesmo anno resentio-se do mal; porém 1849 e 1850 foram as épocas mais calamitosas para estas duas provincias,
-					bem como para a do Rio de Janeiro.</p>
-					<p>Infelizmente o monstro das Antilhas encontrou
-					na terra da Santa Cruz condições favoraveis para o seu desenvolvimento e para
-					sua propagação!</p>
-					<p>Assim é que constituio-se nosso hospede e hospede bem importuno,
-					pois que de quando em quando sóe encommodar-nos com suas visitas, produzindo
-					sempre desastrosos effeitos.</p>
-					<p>Ainda em 1869 tivemos a sua visita funesta na
-					capital do imperio, apparecendo tambem no ancoradouro da Bahia quatro
-					marinheiros de febre amarella, que pertenciam á curveta italiana Guiscardo
-					procedente do Rio de Janeiro; d'estes falleceram trez no Hospital da Caridade,
-					não tendo os propagado o mal nem dentro e nem fóra do Hospital.</p>
-					<p>Em Janeiro de
-					1870 desenvolveu-se epidemicamente no Rio de Janeiro. Em Abril do mesmo anno
-					apresentou-se de novo na Bahia, onde visitou as freguezias da Victoria e S.
-					Pedro, e igualmente o Hospital da Caridade.</p>
-					<p>A' 29 de Janeiro do corrente anno
-					entrou em nosso porto o vapor inglez Douro procedente da Europa com escala por
-					Pernambuco, onde<pb n="4"/> reinava a febre amarella por mar e por terra; apezar de trazer
-					carta suja foi admittido a livre pratica. Logo no dia 30 foram recolhidos ao
-					Hospital da Caridade dous marinheiros atacados do typho icteroide.</p>
-					<p>Durante o mez
-					de Fevereiro foram recolhidos á este Hospital mais onze affectados do mesmo mal,
-					e até o dia 28 d'este mez já havia 25 victimas no seio da população.</p>
-					<p>Durante os
-					mezes de Março, Abril, Maio, Junho e Julho, continuou o mal sempre crescente
-					tendo todavia maior intencidade no ancoradouro</p>
-					<p>Ainda no corrente anno appareceu
-					na republica Argentina (em Buenos-Ayres, Entre-Rios e Corrientes) uma febre
-					epidemica, cujo diagnostico não está ainda perfeitamente esclarecido, mas que,
-					pelos estragos que em tão pouco tempo causou á aquelles lugares, e pelo vomito
-					negro que dizem ter apparecido em alguns doentes, é supposta ser a febre
+					<p>Afanos no seu peregrinar eil-a que de novo surge no sólo Americanos O Brazil
+						não podendo escapar as garras d'este inimigo invisivel que, como diz
+						Foissac, é mais terrivel que Timour e Attila, e que nem os mares, nem os
+						montes, nem as muralhas, nem os exercitos tem o poder de contel-o, tornou se
+						por sua vez o theatro de suas devastações! E então, em 1686 apresentou se em
+						Pernambuco levando á sepultura centenares de victimas.</p>
+					<p>Do Recife passou a molestia á Olinda em 1691 e á seus reconcavos, sendo muito
+						poucas as pessôas que, pela malignidade e vehemencia d mal ficavam
+						isentas.</p>
+					<p>A Bahia no mesmo anno resentio-se do mal; porém 1849 e 1850 foram as épocas
+						mais calamitosas para estas duas provincias, bem como para a do Rio de
+						Janeiro.</p>
+					<p>Infelizmente o monstro das Antilhas encontrou na terra da Santa Cruz
+						condições favoraveis para o seu desenvolvimento e para sua propagação!</p>
+					<p>Assim é que constituio-se nosso hospede e hospede bem importuno, pois que de
+						quando em quando sóe encommodar-nos com suas visitas, produzindo sempre
+						desastrosos effeitos.</p>
+					<p>Ainda em 1869 tivemos a sua visita funesta na capital do imperio, apparecendo
+						tambem no ancoradouro da Bahia quatro marinheiros de febre amarella, que
+						pertenciam á curveta italiana Guiscardo procedente do Rio de Janeiro;
+						d'estes falleceram trez no Hospital da Caridade, não tendo os propagado o
+						mal nem dentro e nem fóra do Hospital.</p>
+					<p>Em Janeiro de 1870 desenvolveu-se epidemicamente no Rio de Janeiro. Em Abril
+						do mesmo anno apresentou-se de novo na Bahia, onde visitou as freguezias da
+						Victoria e S. Pedro, e igualmente o Hospital da Caridade.</p>
+					<p>A' 29 de Janeiro do corrente anno entrou em nosso porto o vapor inglez Douro
+						procedente da Europa com escala por Pernambuco, onde<pb n="4"/> reinava a
+						febre amarella por mar e por terra; apezar de trazer carta suja foi
+						admittido a livre pratica. Logo no dia 30 foram recolhidos ao Hospital da
+						Caridade dous marinheiros atacados do typho icteroide.</p>
+					<p>Durante o mez de Fevereiro foram recolhidos á este Hospital mais onze
+						affectados do mesmo mal, e até o dia 28 d'este mez já havia 25 victimas no
+						seio da população.</p>
+					<p>Durante os mezes de Março, Abril, Maio, Junho e Julho, continuou o mal sempre
+						crescente tendo todavia maior intencidade no ancoradouro</p>
+					<p>Ainda no corrente anno appareceu na republica Argentina (em Buenos-Ayres,
+						Entre-Rios e Corrientes) uma febre epidemica, cujo diagnostico não está
+						ainda perfeitamente esclarecido, mas que, pelos estragos que em tão pouco
+						tempo causou á aquelles lugares, e pelo vomito negro que dizem ter
+						apparecido em alguns doentes, é supposta ser a febre amarella.</p>
+				</div>
+				<div type="subchapter">
+					<head>NATURESA DA FEBRE AMARELLA.</head>
+					<p>Muitas hypotheses têm sido apresentadas para explicação da natureza da febre
+						amarella; porem todas ellas tem sido infructiferas, e o véo de tão grande
+						mysterio até hoje não tem podido ssr descortinado.</p>
+					<p>A anatomia pathologica vem demonstraranos que a febre amarella não é uma
+						gastrite e muito menos uma inflammação hepato-gastrica, como queria
+						Thomazini: alem das altêrações do <term type="body-part">estomago</term> não
+						serem constantes e as do <term type="body-part">figado</term> serem-no
+						sempre, com tudo, estas alterações não nos podem explicar os graves
+						symptomas que tem por epilogo a morte.</p>
+					<p>Tambem não podemos admittir a identidade que observou Chervim entre esta
+						molestia e a febre intermittente, onmo sendo o grão mais elevado dos
+						diversos accideutes que o miasma paludoso pode produzir.</p>
+					<p>As observações de Chervim, apezar de muito curiosas, não escapam á esta
+						humilde objecção. Porque o sulphato de quinina não apresenia na febre
+						amarella os brilhantes resultados que apresenta quando é empregado contra a
+						febre intermittente? Alem d'isso a existencia da febre amarella em lugares
+						não paludosos vem dizer-nos anenhuma analogia com a febre intermittente,
+						visto como esta geralmente se apresenta nos lugares onde existem materias
+						vegeto-animaes em estado de putrefacção.</p>
+					<pb n="5"/>
+					<p>Podemos reconhecer, e aqui mesmo confessamos, que a febre amarella algumas
+						vezes pode revertir o typo intermittente e manifestar accessos
+						periodicos.</p>
+					<p>Mas que concluir-se se as duas molestias podem muita vez complicar-se, e os
+						symptomas de uma serem suffocados pela predominancia de outra?</p>
+					<p>E nem se nos diga que a febre amarella pode ser comparada com uma icterice
+						grave por apresentar o doente a côr amarella da <term type="body-part"
+							>pelle</term>, porque esta icterice é hematogena e não hepatogena; isto
+						é, a côr amarella que apresentam os doentes não é devida a substancia
+						corante da bilis derramada no sangue, e sim aos glodulos vermelhos d'este
+						liquido, que, em completo estado de dissolução, se introduzem nos <term
+							type="body-part">vazos capilares</term>.</p>
+					<p>Keraudrin parece partilhar d'essa opinião, dizendo muito expressivamente
+						«pode-se comparar áqui a côr icterica a côr amarella que t[ILEGÍVEL: p. 5]a
+							<term type="body-part">pelle</term> no lugar em que tem sido
+						contusa.»</p>
+					<p>Deixando de lado todas estas hypotheses, consideramos a febre amarella como
+						um envenenamento de todo organismo, (totius substantia de Dutrouleau) em que
+						este reagindo dá lugar a manifestação de tão graves symptomas, quer de lado
+						geral da nutrição, quer dos phenomenos propriamente inherentes ao systema
+						nervoso da vida de relação.</p>
+				</div>
+				<div>
+					<head>A febre amarella é ou não contagiosa ?</head>
+					<p>E' esta uma questão de alta importancia sobre a qual grandes debates se tem
+						suscitado na sciencia; uns admittem o contagio, outros o negam; entre uns e
+						outros ha vultos eminentes. Entretanto este problema de tão difficil
+						resolução acha-se ainda sujeito ao nebuloso dominio das hypotheses.</p>
+					<p>Nós, pela leitura que temos feito de diversos authores que especialmente se
+						occupam da febre amarella, e entre elles, Dutroulau, Griezinger e Saint-Vel,
+						somos levados a crer que esta molestia é infecto-contangiosa.</p>
+					<p>Admittimos o contangio directo e indirecto, aquelle correspoude <pb n="6"/>as
+						molestias virulentas, este as molestias que se propagam á individuos sem ser
+						por meio da inoculação, e sim por meio de emanações, reproduzindo-se quasi
+						sempre com os mesmos caracteres. São estes os dous modos que admittimos para
+						a transmissão do contagio, isto é, a germinação sobre a parte e absorpção
+						sobre os <term type="body-part">tegumentos</term>.</p>
+					<p>Como infectuosa só ha um meio de transmissão, é a absorpção pulmonar ou
+						cutanea. Na infecção é necessario que haja um fóco e que actuem sobre elle
+						as condições do sólo e meteorologicas. No contagio, o foco é o proprio
+						individuo affectado, as mercadorias e as vestimentas, o que tem sido
+						cabalmente provado pela importação d'esta molestia.</p>
+					<p>E quando os inumeros factos observados não bastassem para comprovar de modo
+						irrefragavel a propriedade contagiosa da febre amarella, cuja causa até hoje
+						desconhecida, mas que por sua natureza ninguem lhe poderá [ILEGÍVEL: p. 6] a
+						sua especifidade pois que atacando grande numero de individuos se reproduz
+						quasi sempre com os mesmos caracteres e symptomas, e ainda mais pela
+						immunidade maior ou menor de que parecem gozar quando uma vez acomettidos,
+						nos induzem a não poder duvidar absolutamente do caracter nimiamente
+						contágioso d'esta enfermidade.</p>
+					<p>Temos visto ainda que ella raras vezes se apresenta expontaneamente, e que a
+						chegada de navios procedentes de portos infectos é a causa mais frequente de
+						seu desenvolvimento, e que só o desemdarque de pessoas affectadas vem
+						produzir o constante foco da molestia.</p>
+					<p>Bem alto fallam em favor d'essa opinião os factos dados em paizes em que a
+						policia sanitaria e o governo velam pela saude do povo. Para melhor
+						corroborar o que temos dito, citaremos aqui alguns factos de contagio
+						observados por medicos distinctos.</p>
+					<p>O Dr. Lind refere que tendo sido aberto na Philadelphia um bahú de um moço
+						que morrera de febre amarella na Barbada, todas as pessoas que assistiram a
+						este acto foram atacadas da mesma molestia que logo depois assolou a
+						cidade.</p>
+					<p>O mesmo author diz que a epidemia, que devastou Cadix em 1764, foi importada
+						por um navio que alli aportara procedente da America, que a<pb n="7"/>
+						molestia, principiando nas tabernas em que estavam alojados os marinheiros,
+						communicou-se as casas vesinhas, habitadas pela classe indigonte, e assim se
+						propagou por toda cidade.</p>
+					<p>O Dr. Bally diz que a epidemia, que se manifestou em 1793 no continente da
+						America, foi levada das Antilhas pelos colonos fráncezes, que então para
+						alli emigraram para não serem victimas da matança geral.</p>
+					<p>O Dr. Moreau de Jonés refere o seguinte facto; em 1808 o brigue francez
+						Palinuro foi ancorar no porto Forte-Real da Martinica: a febre amarella
+						communicou-se immediatamente a equipagem; a mortandade tornou-se
+						consideravel. O governador, esperando que a molestia diminuisse de
+						intencidade em pleno mar, mandou que essa embarcação fosse cruzar:
+						cumprio-se a ordem. O brigue inglez Carnation, vindo da Europa, não tendo
+						arribado e nem tendo doentes a seu bordo, achou-se nas aguas do Palinuro;
+						trávaram combate: o capitão francez ordenou abordagem; a maior parte da sua
+						equipagem foi passado para o Palinuro e um grande numero d'ella atacada da
+						febre amarella. O mesmo refere muitos outros casos identicos que não deixam
+						á menor duvida sobre o contagio da febre amarella.</p>
+					<p>Os Drs. Villalba, Arejula, Palloni, Bonneau, Sulpicy, Pym, Lining, Caillot,
+						Mitchell, Parizet etc, observaram casos analogos aos que acabamos de
+						referir, e julgaram a molestia eminentemente contagiosa.</p>
+					<p>Aqui entre nós deu-se o facto seguinte: a gazeta medica da Bahia de 15 de
+						Setembro de 1869 diz que em meiado de Abril do mesmo anno entrou no nosso
+						porto, procedente do Rio da Prata por Santa Catharina e Rio de Janeiro, onde
+						permaneceu por muitos dias, a corveta italiana Guiscardo. No dia 23 de Abril
+						foi conduzido ao Hospital da Caridade um marinheiro, por alguns dos
+						tripolantes do vaso, ja quasi morto. No dia seguinte entraram mais trez do
+						mesmo navio, e todos accommettidos de febre amarella: um esteve na
+						enfermaria de S. Francisco, e dous em S. José. O Sr. P. L.... chamado para
+						confessar os doentes por conhecer a lingua italiana foi affectado da febre
+						amarella por contagio.</p>
+				</div>
+			</div>
+			<div><head>SEGUNDA PARTE Tratamento therapeutico.</head>
+				<epigraph>
+					<p>Si tu ne peux as soulager, sache au moins ne point nuire. (HUFELAND).</p>
+				</epigraph>
+				<pb n="8"/><p>E' esta, por sem duvida, a parte mais difficil e importante de nossa
+					dissertação.</p>
+				<p>E' na procura dos meios que o medico deve empregar para debellar este mal, que os
+					seus <term type="body-part">olhos</term> penetrantes prescrutam no organismo do
+					enfermo a causa de seus soffrimentos.</p>
+				<p>Por maiores porem que tenham sido as vigilias que locubrem a sua vida, por mais
+					ricas e brilhantes que tenham sido as conquistas feitas pelos pathologistas,
+					ainda o talento investigador do pratico não poude descrimina a causa directa de
+					tão atroz soffrimento.</p>
+				<p>A anatomia pathologica, que tanto tem contribuido para dar a pathologia interna
+					os fóros de sciencia, ainda não pronunciou a sua ultima palavra sobre e
+					conhecimto intimo de outras molestias, e muito menos sobre a pathogenia da febre
 					amarella.</p>
-				</div> NATURESA DA FEBRE AMARELLA. <p>Muitas hypotheses têm sido
-				apresentadas para explicação da natureza da febre amarella; porem todas ellas tem
-				sido infructiferas, e o véo de tão grande mysterio até hoje não tem podido ssr
-				descortinado.</p>
-				<p>A anatomia pathologica vem demonstraranos que a febre amarella não é
-				uma gastrite e muito menos uma inflammação hepato-gastrica, como queria Thomazini:
-				alem das altêrações do <bodyPart>estomago</bodyPart> não serem constantes e as do
-					<bodyPart>figado</bodyPart> serem-no sempre, com tudo, estas alterações não nos
-				podem explicar os graves symptomas que tem por epilogo a morte.</p>
-				<p>Tambem não podemos
-				admittir a identidade que observou Chervim entre esta molestia e a febre
-				intermittente, onmo sendo o grão mais elevado dos diversos accideutes que o miasma
-				paludoso pode produzir.</p>
-				<p>As observações de Chervim, apezar de muito curiosas, não
-				escapam á esta humilde objecção. Porque o sulphato de quinina não apresenia na febre
-				amarella os brilhantes resultados que apresenta quando é empregado contra a febre
-				intermittente? Alem d'isso a existencia da febre amarella em lugares não paludosos
-				vem dizer-nos anenhuma analogia com a febre intermittente, visto como esta
-				geralmente se apresenta nos lugares onde existem materias vegeto-animaes em estado
-				de putrefacção.</p>
-				<pb n="5"/><p>Podemos reconhecer, e aqui mesmo confessamos, que a febre amarella
-				algumas vezes pode revertir o typo intermittente e manifestar accessos periodicos.</p>
-				<p>Mas que concluir-se se as duas molestias podem muita vez complicar-se, e os
-				symptomas de uma serem suffocados pela predominancia de outra?</p>
-				<p>E nem se nos diga que
-				a febre amarella pode ser comparada com uma icterice grave por apresentar o doente a
-				côr amarella da <bodyPart>pelle</bodyPart>, porque esta icterice é hematogena e não
-				hepatogena; isto é, a côr amarella que apresentam os doentes não é devida a
-				substancia corante da bilis derramada no sangue, e sim aos glodulos vermelhos d'este
-				liquido, que, em completo estado de dissolução, se introduzem nos <bodyPart>vazos
-					capilares</bodyPart>.</p>
-				<p>Keraudrin parece partilhar d'essa opinião, dizendo muito
-				expressivamente «pode-se comparar áqui a côr icterica a côr amarella que t[ILEGÍVEL:
-				p. 5]a <bodyPart>pelle</bodyPart> no lugar em que tem sido contusa.»</p>
-				<p>Deixando de
-				lado todas estas hypotheses, consideramos a febre amarella como um envenenamento de
-				todo organismo, (totius substantia de Dutrouleau) em que este reagindo dá lugar a
-				manifestação de tão graves symptomas, quer de lado geral da nutrição, quer dos
-				phenomenos propriamente inherentes ao systema nervoso da vida de relação.</p>
-				A febre
-				amarella é ou não contagiosa ? 
-				<p>E' esta uma questão de alta importancia sobre a qual
-				grandes debates se tem suscitado na sciencia; uns admittem o contagio, outros o
-				negam; entre uns e outros ha vultos eminentes. Entretanto este problema de tão
-				difficil resolução acha-se ainda sujeito ao nebuloso dominio das hypotheses.</p>
-				<p>Nós,
-				pela leitura que temos feito de diversos authores que especialmente se occupam da
-				febre amarella, e entre elles, Dutroulau, Griezinger e Saint-Vel, somos levados a
-				crer que esta molestia é infecto-contangiosa.</p>
-				<p>Admittimos o contangio directo e
-				indirecto, aquelle correspoude <pb n="6"/>as molestias virulentas, este as molestias que se
-				propagam á individuos sem ser por meio da inoculação, e sim por meio de emanações,
-				reproduzindo-se quasi sempre com os mesmos caracteres. São estes os dous modos que
-				admittimos para a transmissão do contagio, isto é, a germinação sobre a parte e
-				absorpção sobre os <bodyPart>tegumentos</bodyPart>.</p>
-				<p>Como infectuosa só ha um meio de
-				transmissão, é a absorpção pulmonar ou cutanea. Na infecção é necessario que haja um
-				fóco e que actuem sobre elle as condições do sólo e meteorologicas. No contagio, o
-				foco é o proprio individuo affectado, as mercadorias e as vestimentas, o que tem
-				sido cabalmente provado pela importação d'esta molestia.</p>
-				<p>E quando os inumeros factos
-				observados não bastassem para comprovar de modo irrefragavel a propriedade
-				contagiosa da febre amarella, cuja causa até hoje desconhecida, mas que por sua
-				natureza ninguem lhe poderá [ILEGÍVEL: p. 6] a sua especifidade pois que atacando
-				grande numero de individuos se reproduz quasi sempre com os mesmos caracteres e
-				symptomas, e ainda mais pela immunidade maior ou menor de que parecem gozar quando
-				uma vez acomettidos, nos induzem a não poder duvidar absolutamente do caracter
-				nimiamente contágioso d'esta enfermidade.</p>
-				<p>Temos visto ainda que ella raras vezes se
-				apresenta expontaneamente, e que a chegada de navios procedentes de portos infectos
-				é a causa mais frequente de seu desenvolvimento, e que só o desemdarque de pessoas
-				affectadas vem produzir o constante foco da molestia.</p>
-				<p>Bem alto fallam em favor
-				d'essa opinião os factos dados em paizes em que a policia sanitaria e o governo
-				velam pela saude do povo. Para melhor corroborar o que temos dito, citaremos aqui
-				alguns factos de contagio observados por medicos distinctos.</p>
-				<p>O Dr. Lind refere que
-				tendo sido aberto na Philadelphia um bahú de um moço que morrera de febre amarella
-				na Barbada, todas as pessoas que assistiram a este acto foram atacadas da mesma
-				molestia que logo depois assolou a cidade.</p>
-				<p>O mesmo author diz que a epidemia, que
-				devastou Cadix em 1764, foi importada por um navio que alli aportara procedente da
-				America, que a<pb n="7"/> molestia, principiando nas tabernas em que estavam alojados os
-				marinheiros, communicou-se as casas vesinhas, habitadas pela classe indigonte, e
-				assim se propagou por toda cidade.</p>
-				<p>O Dr. Bally diz que a epidemia, que se manifestou
-				em 1793 no continente da America, foi levada das Antilhas pelos colonos fráncezes,
-				que então para alli emigraram para não serem victimas da matança geral.</p>
-				<p>O Dr. Moreau
-				de Jonés refere o seguinte facto; em 1808 o brigue francez Palinuro foi ancorar no
-				porto Forte-Real da Martinica: a febre amarella communicou-se immediatamente a
-				equipagem; a mortandade tornou-se consideravel. O governador, esperando que a
-				molestia diminuisse de intencidade em pleno mar, mandou que essa embarcação fosse
-				cruzar: cumprio-se a ordem. O brigue inglez Carnation, vindo da Europa, não tendo
-				arribado e nem tendo doentes a seu bordo, achou-se nas aguas do Palinuro; trávaram
-				combate: o capitão francez ordenou abordagem; a maior parte da sua equipagem foi
-				passado para o Palinuro e um grande numero d'ella atacada da febre amarella. O mesmo
-				refere muitos outros casos identicos que não deixam á menor duvida sobre o contagio
-				da febre amarella.</p>
-				<p>Os Drs. Villalba, Arejula, Palloni, Bonneau, Sulpicy, Pym,
-				Lining, Caillot, Mitchell, Parizet etc, observaram casos analogos aos que acabamos
-				de referir, e julgaram a molestia eminentemente contagiosa.</p>
-				<p>Aqui entre nós deu-se o
-				facto seguinte: a gazeta medica da Bahia de 15 de Setembro de 1869 diz que em meiado
-				de Abril do mesmo anno entrou no nosso porto, procedente do Rio da Prata por Santa
-				Catharina e Rio de Janeiro, onde permaneceu por muitos dias, a corveta italiana
-				Guiscardo. No dia 23 de Abril foi conduzido ao Hospital da Caridade um marinheiro,
-				por alguns dos tripolantes do vaso, ja quasi morto. No dia seguinte entraram mais
-				trez do mesmo navio, e todos accommettidos de febre amarella: um esteve na
-				enfermaria de S. Francisco, e dous em S. José. O Sr. P. L.... chamado para confessar
-				os doentes por conhecer a lingua italiana foi affectado da febre amarella por
-				contagio.</p></div>
-			<div>SEGUNDA PARTE Tratamento therapeutico. Si tu ne peux as soulager, sache au moins ne
-				point nuire. (HUFELAND). <pb n="8"/><p>E' esta, por sem duvida, a parte mais difficil e importante
-				de nossa dissertação.</p>
-				<p>E' na procura dos meios que o medico deve empregar para
-				debellar este mal, que os seus <bodyPart>olhos</bodyPart> penetrantes prescrutam no
-				organismo do enfermo a causa de seus soffrimentos.</p>
-				<p>Por maiores porem que tenham sido
-				as vigilias que locubrem a sua vida, por mais ricas e brilhantes que tenham sido as
-				conquistas feitas pelos pathologistas, ainda o talento investigador do pratico não
-				poude descrimina a causa directa de tão atroz soffrimento.</p>
-				<p>A anatomia pathologica,
-				que tanto tem contribuido para dar a pathologia interna os fóros de sciencia, ainda
-				não pronunciou a sua ultima palavra sobre e conhecimto intimo de outras molestias, e
-				muito menos sobre a pathogenia da febre amarella.</p>
-				<p>A materia medica e a therapeutica
-				que, tão importantes descobrimentos tem feito, tanto no reino organico como
-				inorganico, ellas que cada dia devassam novos horisontes e attingem zonas mais
-				luminosas, vacillam ainda duvidosas á cata de um agente que, senão especifico pelo
-				menos efficaz, possa expellir do seio da economia o principio deleterio que com
-				tanta violencia pretende aniquilal-a.</p>
-				<p>E' pois no tratamento d'esta enfermidede que
-				os recursos do medico devem ser variados, porque desconhecendo a natureza ou antes a
-				essencia do mal, somente lhe resta a applicação dos meios indirectos.</p>
-				<p>E' per tanto o
-				tratamento symptomatico que elle tem de preencher, e <pb n="9"/>assim mesmo este deve ser
-				modificado em vista da intensidade dos phenomenos, e das condições inherentes ao
-				individuo, e ao contrario não se póde explicar os diversos modos de tratamento que
-				nas monographias d'esta enfermidade apresentam os praticos.</p>
-				<p>Sendo certo que a febre
-				amarella tem periodos bem definidos, que difficilmente podem escapar aos
-					<bodyPart>olhos</bodyPart> do clinico, vamos apresentar os meios que podemos
-				empregar em cada um desses periodos.</p>
-				<p>No primeiro periodo, denominado prodromico, e
-				em que os individuos accusam uma especie de mão estar, calafrios, cephalalgia
-				frontal, e o facto bem caracteristico da rhachialgia, quasi todos os praticos
-				aconselham que a todo transe se provoque a diaphorese e que se promova o excitamento
-				da <bodyPart>pelle</bodyPart>: o <plantName>aconito</plantName>, o acetado de
-				ammonea, as infusões de <plantName>sabugueiro</plantName>,
-					<plantName>borragem</plantName>, as bebidas quentes e mornas, que contenham
-				aromas pouco energicos, bem como as infuzões de <plantName>melissa</plantName>, de
-					<plantName>chá</plantName>, <plantName>tilia</plantName>,
-					<plantName>arnica</plantName>, grellos de <plantName>larangeiras</plantName>, as
-				tincturas camphoradas, as bebidas aciduladas com vinagre e com sumo de limão, são
-				prescriptas de concomitancia com os revulsivos cutaneos, os pediluvios, e os banhos
-				quentes e mornos, excitando-se a <bodyPart>pelle</bodyPart> do doente ao
-				enxugar-se-lhe o corpo. Tem se colhido bons resultados pelo emprego d'essa medicação
-				no principio da invasão do mal, e principalmente quando ha dores nos
-					<bodyPart>rins</bodyPart>, frio geral, colicas e calor nos
-					<bodyPart>intestinos</bodyPart>.</p>
-				<p>Ainda n'este periodo o distincto lente de
-				clinica interna, o Sr. Dr. Torres Homem no Rio de Janeirv, preconisara muito a
-				seguiute formula.</p>
-				R.—Infusão de <plantName>sabugueiro</plantName> seis onças.
-				Acetato de ammonea duas oitavas. Tinctura de <plantName>aconito</plantName> vinte
-				gottas. Dita de <plantName>belladona</plantName> quinze gottas. Xarope de flôres de
-					<plantName>larangeira</plantName> uma onça. Misture para tomar aos calices.
-				<p>Tivemos occasião de observar que n'este periodo a medicação tonica em começo
-				produzio grandes resultados, por isso que os doentes melhoravam vizivelmente com o
-				uso das infusões de <plantName>quassia</plantName>, <plantName>simaruba</plantName>,
-					<plantName>genciana</plantName>, tinctura de <plantName>calumba</plantName> e
-				tambem a agua ingleza.</p>
-				<pb n="10"/><p>Esse tratamento foi adoptado na casa de Saude de Sr.
-				Fancisco, para onde foram recolhidos 68 doentes, cujo tratamento acompanhamos á
-				convite do nosso illustre mestre o Sr. Dr. Domingos Rodrigues Seixas. Quando esses
-				meios são infructiferos, então vê-se a intensidade dos phenomenos descriptos no
-				primeiro periodo tornar-se maior, e á elles ajuntar-se o vomito mucoso, a dôr
-				epigastrica, a turgencia da <bodyPart>face</bodyPart>, a injecção das
-					<bodyPart>conjuctivas</bodyPart>, ar constipação ou a soltura de
-					<bodyPart>ventre</bodyPart> etc.</p>
-				<p>Este constitue o segundo periodo. E' n'essa
-				occasião que a medicação evacuante tem sido applicada com grandes vantagens por
-				todos os medicos que tem tratado da febre amarella, e principalmente pelos inglezes,
-				Norte Americanos, e Brazileiros, e sobre tudo nas luctuosas épocas de 1849 e 1850,
-				quando as provincias do Rio de Janeiro e Bahia foram devastadas por esta terrivel
-				molestia.</p>
+				<p>A materia medica e a therapeutica que, tão importantes descobrimentos tem feito,
+					tanto no reino organico como inorganico, ellas que cada dia devassam novos
+					horisontes e attingem zonas mais luminosas, vacillam ainda duvidosas á cata de
+					um agente que, senão especifico pelo menos efficaz, possa expellir do seio da
+					economia o principio deleterio que com tanta violencia pretende aniquilal-a.</p>
+				<p>E' pois no tratamento d'esta enfermidede que os recursos do medico devem ser
+					variados, porque desconhecendo a natureza ou antes a essencia do mal, somente
+					lhe resta a applicação dos meios indirectos.</p>
+				<p>E' per tanto o tratamento symptomatico que elle tem de preencher, e <pb n="9"
+					/>assim mesmo este deve ser modificado em vista da intensidade dos phenomenos, e
+					das condições inherentes ao individuo, e ao contrario não se póde explicar os
+					diversos modos de tratamento que nas monographias d'esta enfermidade apresentam
+					os praticos.</p>
+				<p>Sendo certo que a febre amarella tem periodos bem definidos, que difficilmente
+					podem escapar aos <term type="body-part">olhos</term> do clinico, vamos
+					apresentar os meios que podemos empregar em cada um desses periodos.</p>
+				<p>No primeiro periodo, denominado prodromico, e em que os individuos accusam uma
+					especie de mão estar, calafrios, cephalalgia frontal, e o facto bem
+					caracteristico da rhachialgia, quasi todos os praticos aconselham que a todo
+					transe se provoque a diaphorese e que se promova o excitamento da <term
+						type="body-part">pelle</term>: o <term type="plant">aconito</term>, o
+					acetado de ammonea, as infusões de <term type="plant">sabugueiro</term>, <term
+						type="plant">borragem</term>, as bebidas quentes e mornas, que contenham
+					aromas pouco energicos, bem como as infuzões de <term type="plant"
+						>melissa</term>, de <term type="plant">chá</term>, <term type="plant"
+						>tilia</term>, <term type="plant">arnica</term>, grellos de <term
+						type="plant">larangeiras</term>, as tincturas camphoradas, as bebidas
+					aciduladas com vinagre e com sumo de limão, são prescriptas de concomitancia com
+					os revulsivos cutaneos, os pediluvios, e os banhos quentes e mornos,
+					excitando-se a <term type="body-part">pelle</term> do doente ao enxugar-se-lhe o
+					corpo. Tem se colhido bons resultados pelo emprego d'essa medicação no principio
+					da invasão do mal, e principalmente quando ha dores nos <term type="body-part"
+						>rins</term>, frio geral, colicas e calor nos <term type="body-part"
+						>intestinos</term>.</p>
+				<p>Ainda n'este periodo o distincto lente de clinica interna, o Sr. Dr. Torres Homem
+					no Rio de Janeirv, preconisara muito a seguiute formula.</p> R.—Infusão de <term
+					type="plant">sabugueiro</term> seis onças. Acetato de ammonea duas oitavas.
+				Tinctura de <term type="plant">aconito</term> vinte gottas. Dita de <term
+					type="plant">belladona</term> quinze gottas. Xarope de flôres de <term
+					type="plant">larangeira</term> uma onça. Misture para tomar aos calices.
+					<p>Tivemos occasião de observar que n'este periodo a medicação tonica em começo
+					produzio grandes resultados, por isso que os doentes melhoravam vizivelmente com
+					o uso das infusões de <term type="plant">quassia</term>, <term type="plant"
+						>simaruba</term>, <term type="plant">genciana</term>, tinctura de <term
+						type="plant">calumba</term> e tambem a agua ingleza.</p>
+				<pb n="10"/><p>Esse tratamento foi adoptado na casa de Saude de Sr. Fancisco, para
+					onde foram recolhidos 68 doentes, cujo tratamento acompanhamos á convite do
+					nosso illustre mestre o Sr. Dr. Domingos Rodrigues Seixas. Quando esses meios
+					são infructiferos, então vê-se a intensidade dos phenomenos descriptos no
+					primeiro periodo tornar-se maior, e á elles ajuntar-se o vomito mucoso, a dôr
+					epigastrica, a turgencia da <term type="body-part">face</term>, a injecção das
+						<term type="body-part">conjuctivas</term>, ar constipação ou a soltura de
+						<term type="body-part">ventre</term> etc.</p>
+				<p>Este constitue o segundo periodo. E' n'essa occasião que a medicação evacuante
+					tem sido applicada com grandes vantagens por todos os medicos que tem tratado da
+					febre amarella, e principalmente pelos inglezes, Norte Americanos, e
+					Brazileiros, e sobre tudo nas luctuosas épocas de 1849 e 1850, quando as
+					provincias do Rio de Janeiro e Bahia foram devastadas por esta terrivel
+					molestia.</p>
 				<p>Os purgativos oleosos e salinos, e entre elles os que tem sido mais
-				recommendados, são o oleo de <plantName>ricino</plantName>, os sulphatos de magnesia
-				e soda, a pôlpa de <plantName>tamarindos</plantName>, o maná, o tartrato, acido de
-				potassa e o calomelanos: de entre estes ainda os que tem sido mais geralmente
-				empregados são o oleo de <plantName>ricino</plantName> e os sulphatos de magnesia e
-				sóda. O oleo de <plantName>Croton</plantName> fôra tambem preconisado pelos Drs.
-				Tegart e Macheto, quando praticaram nas antilhas inglezas. O Dr. Tegart diz que uma
-				ou duas gottas d'esta substancia postas sobre a <bodyPart>lingua</bodyPart> não só
-				excitam a acção dos <bodyPart>intestinos</bodyPart> como tambem a dos
-					<bodyPart>rins</bodyPart>.</p>
-				<p>De todos os purgativos porem, aqulle que fôra
-				preconizado como meio quasi especifico para o tratamento da febre amarella, foi o
-				calomelanos. Os factos citados pelos medicos inglezes e Norte Americanos e por
-				muitos outros adeptos d'este medicamento, parecem provar os melhores resultados.
-				Porém nós, guardadas todas as conveniencias, regeitamos este meio, porque na febre
-				amarella estando toda massa sanguinea no maior grão de deluição, existindo por assim
-				dizer uma dyscrazia do sangue, e sendo o calomelanos um diluente de primeira força,
-				um alterantbem conhecido, parece-nos curial que por este meio vamos tornar o sangue
-				mais fluido e por tanto tornar o estado do doente mais grave, pelas<pb n="11"/> circunstancias
-				que mais tarde hão de por força sobrevir, oque não acontece com os outros
-				purgativos, que alem de não produzirem os inconvenieentes que acabamos de referir,
-				tem a nosso modo de ver, não só a vantagem de oppôr uma dirivação ás congestões
-				sanguineas, despertando o erythismo do systema nervoso, e ao mesmo tempo podem
-				favorecer a a eliminação do agente morbifico.</p>
-				<p>Quando no decurso d'este periodo
-				sobrevem phenomenos ataxicos, taes como dilirio, agitação, sobre-salto dos
-					<bodyPart>tendões</bodyPart>, contracturas, certas congestões, e se as dores
-				epigastricas augmentam, então conjunctamente com estes meios á que nos referimos,
-				empregaremos os sinapismos de mostarda, os visicatorios volantes, e ainda os
-				sudoriferos, pois que alem de combaterem esses phenomes podem coadjuvar (os ultimos)
-				á sahida do agente deleterio.</p>
-				<p>Tambem as compressas de agua fria e de agua
-				avinagrada, a agua sedativa de Raspail, quando a cephalalgia é rebelde, tem dado
-				resultados satisfatorios.</p>
-				<p>E'ra n'este periodo, e muita vez desde o principio da
-				molestia que a sangria fôra preconisada, e de tal modo que, mesmo sem notavel
-				excitação manifestar-se, muitos medicos sangravam os seus doentes.</p>
-				<p>A Escola de
-				Broussais tinha então toda vóga. A sciencia porém progredira, e em face dos factos
-				hoje colhidos por observadores de grande nota, este meio, que bem se pode chamar de
-				barbaro, deve ser inteiramente proscripto. A pathologia deve lavrar um protesto
-				solemne contra semelhante tratamento. Ainda quando a febre amarella ataque um
-				individuo de constituição robusta e temperamento sanguineo, quando a febre se
-				mostrar em um grão assaz intenso, de modo que receiemos congestões para orgaõs
-				importantes, outros meios teremos de reconhecida vanagem.</p>
-				<p>N'esta molestia em que,
-				para nós ha um envenenamento geral da economia, procedendo d'ahi o consideravel
-				abatimento das forças, como poderemos tirar sangue? Como roubarmos ao organismo uma
-				parte de que elle tanto precisa para reagir? Eliminaremos o principio morbifico
-				<pb n="12"/>diminuindo a massa do sangue? E em taes casos a convalença não será muito mais
-				longa? Portanto proscrevemos sempre a sangria, e estamos certos de que se os
-				praticos, aliás de grande nota, que tanto a preconisavam, tivessem de tratar hoje da
-				febre amarella, não dariam á sangria tanta importancia como n'aquelles tempos. Até
-				as sangrias locaes, as ventosas e as sanguessugas são para nós contra-indicadas em
-				razão da tendencia que ha para as hemorrhagias: qualquer escoriação póde com muita
-				facilidade dar em resultado um escorrimento abundantissimo de sangue, occazionando
-				muitas vezes até a morte.</p>
-				<p>Quando n'este periodo a sêde for intensa e a
-					<bodyPart>lingua</bodyPart> secca, a administração das bebidas geladas, as
-				limonadas mais de acidos vegetaes do que mineraes, tem dado bons resultados no
-				tratamento d'esta molestia. Muitas vezes porem os doentes não podem suportar as
-				limonadas geladas! porque estas provocam-lhes os vomitos: então a agua fresca, a
-				agua gazoza adoçada —com o xarope de limão, constituem uma bebida assaz agradavel, e
-				que muito alliviam aos doentes que se escaldam pela febre.</p>
-				<p>Os vomitivos apezar de
-				serem eminentemente contra indicados por muitos praticos, em razão das hemorrhagias
-				gastricas e da presença do sangue no <bodyPart>estomago</bodyPart>, principaes
-				causas dos vomitos e das nauseas nos doentes de febre amarella, outros ha porem, que
-				asseveram ter tirado muito bom proveito pela applicação d'elles.</p>
-				<p>Infelizmente á esta
-				terrivel molestia não se pode applicar o theorema, vomito cura-se com vomito; mas
-				tambem não se deve excluir absolutamente as indicações emeticas, e somos de opinião
-				que em alguns casos e circunstancias os vomitivos podem favorecer o curativo da
-				febre amarella. Assim pois nós não os indicamos como tharapeutica geral para todos
-				os casos e circunstancias, como discussivos para expellir o principio morbifico e
-				como evacuantes para desembaraçar o apparelho digestivo, porque sabemos que elles
-				podem, irritando o <bodyPart>estomago</bodyPart>, aggravar o mal apressando as
-				hemorrhagias e o apparecimento do vomito negro, que sendo um symptoma gravissimo
-				devemos tanto mais evital-o.</p>
-				<p>Banil-os totalmente, esqueceriamo-nos de que a pratica
-				tem provado<pb n="13"/> que elles são proveitosos no principio da molestia, e sobre tudo quando
-				a <bodyPart>lingua</bodyPart> se achar saburrosa, quando houver máo gosto, halito
-				fetido, alguma cephalalgia, e sem que a molestia esteja muito adiantada, não havendo
-				notavel inflammação no <bodyPart>estomago</bodyPart>.</p>
-				<p>Mas ainda n'estes casos,
-				receiamos a applicação do tartáro emetico, em razão da grande prostação que elle
-				produz nos doentes, e ainda pela irritação que naturalmente produzirá na
-					<bodyPart>mucosa</bodyPart> do <bodyPart>estomago</bodyPart>: nós damos a
-				preferencia a <plantName>epecacuanha</plantName>, porque alem de não irritar tanto o
-					<bodyPart>estomago</bodyPart> e nem abater tanto o organismo enfermo, tem a
-				vantagem de chamar para a <bodyPart>pelle</bodyPart> a transpiração, o que nos
-				parece de não pequena vantagem.</p>
-				<p>Ainda n'estes casos, e talvez com mais prudencia,
-				alguns praticos aconselham que se faça vomitar o doente pela ingestão de grandes
-				quantidades de agua morna, ou ingerindo copos de azeite, segundo praticavam os
-				mexicamos.</p>
-				<p>Quando no segundo periodo sobrevém os vomitos nervosos acompanhados de
-				repetidos soluços, symptoma que, seja dito de passagem, é bem difficil de
-				combater-se na maioria dos casos, tem sido applicados os antispasmodicos, e entre
-				elles o ether, o castorios, o almiscar, a camphora conjunctamente com o gêlo, o
-				vinho branco, a poção antivomitiva de Riviére, e com quanto não sejam infalliveis
-				esses seus meios, todavia tem dado resultados satisfatorios.</p>
-				<p>Para combater a
-				insomnia e a agitação, que muita vez apparecem n'este periodo, tem se lançado mão do
-				opio, quer interna quer externamente. O Sr. Griezinger preconisa muito o acido
-				cyanhydrico como poderoso calmante.</p>
-				<p>O delirio furioso, as cephalalgias persistentes
-				e outros phenomenos de excitação, foram vantajosamente combatidos, pelos Srs.
-				Dutroulau, Griezinger, Saint-Vel e Chapius, por meio dos banhos gelados e das
-				affusões d'agua fria. Por este meio tonico e refrigerante, elles conseguiam grandes
-				subtrações de calor, e a diminuição de numero das pulsações: a cephalalgia diminuia,
-				e muitas vezes apparecia a emissão das urinas nos casos de anuria.</p>
-				<p>Os mesmos
-				praticos exerciam uma especie de hydrotherapia submettendo<pb n="14"/> o doente a um banho de
-				agua fria por alguns minutos, depois retiravam-no, enxugavam-no, envolviam-no em um
-				panno molhado! e depois em uma colcha de lã: collocavam-no sobre o leito, e fazendo
-				beber grande porção de agua fria gelada, dava-se uma transpiração abundante, o
-				doente sentia mais socego, e consiliava o somno por algumas horas.</p>
-				<p>Acreditamos muito
-				neste meio curativo, visto como se elle por si só não modifica a gravidade do mal,
-				ao menos retarda por algum tempo a apparição dos accidentes nervosos, e previne uma
-				forte fluxão de sangue para a <bodyPart>cabeça</bodyPart>. O Sr. Dr. Pereira Rego no
-				Rio de Janeiro preconisou a pomada de <plantName>belladona</plantName> e
-					<plantName>louro cereja</plantName> para fricções na <bodyPart>columna
-					vertebral</bodyPart>, nos phenomenos ataxicos acompanhados de sobre-salto dos
-					<bodyPart>tendões</bodyPart> e convulsões. O mesmo clinico empregou, e diz qne
-				com bons resultados, o emplastro de theriaga sobre a região epigasdrica para
-				combater o vomito nervoso.</p>
-				<p>A febre n'este periodo, que as vezes é muito
-				consideravel, tem sido combatida, pela infusão de <plantName>serpentaria de
-					virginia</plantName> ou pelo cosimento antifebril de Lewis, e este medicamente
-				fôra muito preconisado pelo Exm. Sr. Barão de Petropoles, distincto clinico do Rio
-				de Janeiro.</p>
-				<p>Todos esses medicamentos que acabamos de indicar, acompanhados dos
-				tonicos, tem sido proveitosos no segundo poriodo da febre amarella.</p>
-				<p>Tratemos agora
-				da remissão, tambem chamada falsa tregua, que ha entre o segundo e o terceiro
-				periodos, onde distingue-se, sem muita difficuldade a suspensão dos accidentes: é
-				n'esta occasião que muitas vezes os doentes apresentam um bem estar e uma melhora
-				que soem enganar aos medicos, e persuadil-os de que a molestia marcha para a cura:
-				mas de repente exacerbam-se os symptomas ja descriptos e ainda mais o apparecimento
-				de outros mais terriveis complicam o estado do doente, e a esperança pouco a pouco
-				parece abandonar ao medico que lucta com um inimigo desconhecido e traiçoeiro.</p>
-				<p>Era
-				n'essa occasião que muitos praticos costumavam lançar mão do sulphato de quinina e
-				muitos ainda desde o principio da molestia que o applicavam como especifico para
-				essa enfermidade. E' que elles, seduzidos <pb n="15"/>pelos brilhantes resultados que dá o
-				sulphato de quinina contra febre intermittente, enxergavam naturalmente alguma
-				analogia entre esta e a febre amarella, analogia levada até a natureza das duas
-				molestias, por isso que o tratamento era identico.</p>
-				<p>Hoje porem, que a pratica se tem
-				esclarecido, que graças aos trabalhos modernos de Griesinger, Saint-Paiz, Dutroulau
-				e Saint-Vel, se tem chegado a bem distinguir estas duas entidades morbidas, já o
-				sulphato de quinina tem deixado de gosar do titulo de medicamento especifico para a
-				febre amarella como o é para a intermittente.</p>
-				<p>Assim pois, logo que a remissão se
-				manifestasse e debaixo de qualquer forma que a febre amarella se apresentasse, elles
-				davam em alta dóse o sulphato de quinina, não tendo em resultado senão ver a
-				molestia progredir em seus symptomas pela acção altamente hypostenizante da quinina
-				sobre o systema nervoso cerebro-spinhal. Empregado portanto no principio da
-				molestia, augmenta a agitação e a anciedade ao doente, produzindo os zunidos dos
-					<bodyPart>ouvidos</bodyPart> e o enfraquecimento da <bodyPart>vista</bodyPart>,
-				emfim predispondo-o a uma adynamia consideravel.</p>
-				<p>Apezar do que acabamos de dizer a
-				respeito do sulphato de quinina empregado contra a febre amarella, não podemos negar
-				a utilidade que d'elle se pode tirar, porém em circumstancias muito restrictas.</p>
-				<p>Quando pois a febre amarella apresentar symptomas de intermittente e quando o doente
-				apresentar-se abatido pela força do veneno, que tanto deprime o systema nervoso, o
-				sulphato de quinina será applicado com grandes vantagens: no primeiro caso em alta
-				dóse como antipyretico; no segundo em dóses fraccionadas como tonico das forças
-				radicaes do organismo.</p> Ainda á respeito do sulphato de quinina não nos podemos
-				subtrahir á umas observações que nos fizeram acreditar na vantagem de sua
-				applicação, quando a febre amarella apresentava symptomas de febre perniciosa,
-				revelando-se por phenomenos de ataxia, exaltação cerebral, e pela
-					<bodyPart>lingua</bodyPart> secca e queimada até a ponta,
-					<bodyPart>lingua</bodyPart> que humedecia passado o paroxismo. Estes factos
-				foram por nós observados na caza de saude de S. Francisco: á estes doentes o emprego
-				do sulphato de quinina em alta dose evitava a<pb n="16"/> reapparição dos paroxismos e,
-				extinguindo a consideravel aridez da <bodyPart>lingua</bodyPart>, concorria para o
-				seu restabelecimento ajudado dos tonicos em alta dose.</p>
-				TERCEIRO PERIODO 
-				<p>E' n'este
-				periodo que devemos applicar toda attenção, afim de podermos seguir a marcha sempre
-				crescente da molestia. Aqui duas grandes indicações devem ser preenchidas: primeiro,
-				as que dependem da predominancia dos symptomas: segundo, as que são fornecidas pelo
-				estado geral do doente.</p>
-				<p>Trez symptomas bastante graves caracterisam propriamente
-				este periodo; são os vomitos negros, os accidentes cerebraes e as hemorrhagias:
-				tratemos de cada um d'elles em particular.</p>
-				<p>O vomito em taes casos ou é nervoso e
-				sympatico ou é essencial e hemorrhagico. No primeiro caso elle compõe-se de bilis ou
-				de um liquido anegrado; n'este caso applicamos os sinapismos na região epigastrica,
-				e os vesicatorios volantes. Muitos aconselham os causticos, os quaes não achamos
-				muito prudentes pela razão não só de facilitar a hemorrhagia pela excoriação que
-				produzem, como ainda pela tendencia que tem a ferida para a gangrena.</p>
-				<p>O doente deve
-				tomar poucas bebidas, e estas devem ser agua gazosa ou agua simples gelada: e se aos
-				doentes não repugnarem os acidos, pode-se administrar as limonadas vegetaes, as
-				laranjadas, a limonada citrica, assim como o vinho branco misturado com agua de
-				Seltz. O Dr. Lacaill diz ter obtido resultados lisongeiros pela applicação do
-				bisulphito de cal. Os medicos inglezes usavam dar aos seus doentes o vinho de
-				Champanha e a cerveja no sentido, talvez, de que elles oppondo-se aos vomitos ainda
-				obrem como tonicos. Ainda aqui os antipasmodicos tem dado bons resultados; entre
-				elles, o ether, a <plantName>belladona</plantName>, o extracto de
-					<plantName>valeriana</plantName> e a camphora, acompanhados do uso constante das
-				infusões de <plantName>quassia</plantName>, <plantName>simaruba</plantName>
-				<plantName>genciana</plantName>, e da agua ingleza, que como tonicos tem triumphado
-				d'este terrivel symptoma. Nos casos em que o vomito é essencial e hemorrhagico,<pb n="17"/> e
-				composto de materia negra, ja quasi que todos os recursos são infructiferos; com
-				tudo não devemos crusar os <bodyPart>braços</bodyPart>, e então lançaremos mão dos
-				adstrigentes, bem como a <plantName>ratanhia</plantName>, o perchlorureto de ferro e
-				a ergotina: de todos estes, o perchlorureto de ferro tem dado melhores resultados,
-				porque alem de oppôr-se a hemorrhagia do <bodyPart>estomago</bodyPart>, ainda é um
-				restaurativo das forças abatidas do doente. Tambem tem sido empregados o gêlo
-				internamente, as limonadas mineraes geladas, o elixir paregorico, com resultados
-				satisfatorios.</p>
-				<p>Os antisepticos tem sido empregados com vantagem n'este caso, e
-				d'entre elles merecem especial menção, o acido phenico, e o creozoto que tem dado
-				bons resultados quer tomados em poções internamente quer em clysteres: pois elles
-				tem o poder não só de impedir a putrefacção do sangue como de neutralisal-a quando
-				ja existe.</p>
-				<p>Ainda n'este caso temos visto darem bons resultados os tonicos, cuja
-				perseverança deve ser rigorosamente observada; pois, a nosso modo de ver, a
-				medicação tonica deve formar a base do tratamento da febre amarella, porque sendo
-				geralmente admittido que n'essa molestia ha uma intoxicação lenta do sangue, e que
-				este liquido alterado vae produzir em toda economia o desarranjo de suas funcções,
-				que o individuo pode apresentar desde o principio grande prostação de forças, que a
-				adynamia tende a proseguir com toda intensidade, e o sangue em um grau
-				extraordinario de dissolução da lugar a hemorrhagias até no proprio tecido do
-					<bodyPart>derma</bodyPart>, e ainda mais o organismo profundamente abalado em
-				seus eixos lucta contra um inimigo desconhecido, e que n'esta lucta suprema,
-				denominada agonia, em que o doente ja exhausto espera a cada momento deixar a vida
-				pela morte, não podemos deixar de reconhecer que só a medicação tonica poderá
-				produzir verdadeiras resurreições, como por mais de uma vez tivemos occasião de ver.</p>
-				<p>Tratemos agora dos phenomenos cerebraes: esses podem exacerbar-se e então devem ser
-				empregados os narcoticos e os calmantes, de entre os narcoticos, a codeina e o
-				sulphato de morphina tem dado bons resultados se os doentes não poderem tolerar esta
-				medicação, então applicaremos um sal de morphina pelo methodo endermico, sendo
-				preferivel o sulphato:<pb n="18"/> de entre os calmantes, a agua de <plantName>louro
-					cereja</plantName> em uma infusão de <plantName>tilia</plantName> com xarope de
-				flores de <plantName>larangeira</plantName>, tem sido preconisada com bom resultado.</p>
-				<p>Ainda para debellar-se esses phenomenos tem se applicado as compressas geladas sobre
-				a <bodyPart>fronte</bodyPart>, os sinapismos entre as <bodyPart>espadoas</bodyPart>
-				e nas <bodyPart>extremidades</bodyPart> inferiores, os clysteres emolientes e
-				purgativos conjunctamente com os drasticos, com o fim de operarem para o
-					<bodyPart>recto</bodyPart> uma derivação que naturalmente minorará esses
-				phenomenos: entre os drastiticos os que tem sido mais usados são, a
-					<plantName>jalapa</plantName>, á <plantName>escamonêa</plantName>, á
-					<plantName>coloquintida</plantName>, e o purgante de Leroy.</p>
-				<p>Passemos as
-				hemorrhagias que constituem, por certo, o symptoma mais aterrador e ao mesmo tempo o
-				mais difficil de debellar-se. Tem ellas zombado de todos os meios: o frio e os
-				adstringentes debalde tem sido empregados: só os tonicos tem apresentado resultados
-				mais favoraveis; e esta medicação tem bastante fundamento, porque, se como ja vimos,
-				ha dyscrazia do sangue, so os tonicos poderão reconstituilo: devemos pois dar o
-				vinho do Porto generoso, a agua ingleza, <plantName>angeciana</plantName>, os caldos
-				frios, a <plantName>simaruba</plantName> e a <plantName>quassia</plantName>.</p>
-				<p>Serve
-				de exemplo ao que levamos dito um caso que observamos na casa de saude de S.
-				Francisco: n'um doente, marinheiro inglez cuja tendencia á hemorrhagia foi tão
-				consideravel que, essa até manifestou-se nos <bodyPart>vasos</bodyPart> da
-					<bodyPart>perna</bodyPart> em forma de abscessos metastazicos' prorompendo pela
-					<bodyPart>pele</bodyPart> que afinal tomou a forma de ulcera hemorrhagica,
-				N'este doente o uso dos tonicos, com perseverança, dêbellou por sua acção interna e
-				fortificante do sangue, a hemorrhagia, que gradualmente cedia a proporção que se
-				augmentava a doze dos tonicos, vindo ainda estes heroicos medicamentos á produzirem
-				vantajosos effeitos em applicações topicas sobre as ulceras.</p>
-				<p>Tratemos agora de
-				certos symptomas que ainda se podem apresentar complicando esta enfermidade, e os
-				meios que geralmente tem sido empregados para combatel-os.</p>
-				<p>As parotidites trazem
-				quasi sempre uma terminação fatal á febre amarella, sendo muito mais grave nas
-				crianças, segundo o Sr. Cornillac.</p>
-				<pb n"19"/>Quasi todos os praticos combatem este symptoma de
-				duas maneiras; ou applicam os emollientes afim de formarem-se os abcessos e
-				praticarem depois a sua abertura, ou applicam sobre a parte inflammada um pedaço de
-				potassa caustica, de modo que produza uma abertura antes da formação do fóco
-				purulento, fixando d'esta arte a fluxão sobre a glandula e prevenindo a roabsorpção
-				ou a metastaze.</p>
-					<p>Nós observamos alguns casos d'estes em que tiramos bons resultados
-				por meio das fricções com pomada mercurial e <plantName>belladona</plantName>,
-				junctamente com os gargarejos de cosimento de <plantName>malvas</plantName> e de
-					<plantName>quina</plantName> para combater a inflammação da
-					<bodyPart>garganta</bodyPart>.</p>
-					<p>A suppressão da secreção urinaria, é tambem um
-				symptoma quasi sempre infallivel e incommodativo. Os meios mais empregados para
-				combater este symptoma eram os dicereticos, e especialmente o nitrato de potassa, o
-				subcarbonato, o acetato e o bicarbonato, porem sem nenhum proveito na maioria dos
-				casos.</p>
-					<p>Pensamos que a suppressão da secreção urinaria nos doentes de febre amarella
-				é uma consequencia ou effeito da pertubação geral das funcções organicas, e que não
-				póde por conseguinte ser combatida por um especifico que tem a propriedade de
-				excitar a actividade vital dos <bodyPart>rins</bodyPart>, e neste caso pensamos que
-				devem ser contra indicados os diureticos especificos. Mas tem-se aconselhado as
-				bebidas mucilaginosas, o cosimento de raiz de <plantName>althêa</plantName>, o de
-					<plantName>gramma</plantName>, as bebidas frias e refrigerantes, para combaterem
-				a irritação e inflammação: e se bem que não sejam diureticos especificos, tem sido
-				como taes empregados quando a secreção das urinas diminui-se por causa irritante
-				local ou geral e por tanto n'estes casos são bem aconselhados. O Sr. Dr. Pereira
-				Rego diz ter feito reapparecer a urina pelo uso das fricções com essencia de
-				therebentina na região lombar e com os clysteres camphorados.</p>
-					<p>Os soluços que
-				ordinariamonte tornam-se por demais rebeldes no fim da molestia, tem algumas vezes
-				obedecido ao emprego chloroformio, do valerianato de zinco, da
-					<plantName>belladona</plantName>, e ainda pela applicação dos sinapismos sobre a
-				região epigastrica; porem na maior parte das vezes<pb n="20"/> elles são fataes, e muito
-				contribuem para o termo proximo da molestia.</p>
-					<p>Pelo que temos exposto ja se vê a nossa
-				humilde opinião a respeito do tratamento da febre amarella, terminaremos em resumo
-				mencionando quaes os meios que mais tem aproveitado, indicando apenas os periodos da
-				molestia em que elles são appicados.</p> Assim pois vemos que, no primeiro periodo, são
-				geralmente empregados, o <plantName>aconito</plantName>, o acetato de ammonea, as
-				infusões de <plantName>sabugueiro</plantName>, <plantName>borragem</plantName>,
-					<plantName>tilia</plantName>, <plantName>chá</plantName>,
-					<plantName>melissa</plantName>, <plantName>arnica</plantName>, grellos de
-					<plantName>larangeira</plantName>, as tincturas camphoradas, as bebidas
-				aciduladas, os revulsivos cutaneos, os pediluvios, os banhos quentes e mornos
-				seguidos de fricções seccas pela superficie cutanea etc.</p>
-					<p>No segundo periodo, os
-				purgativos oleosos e salinos, bem como o oleo de <plantName>ricino</plantName>, os
-				sulphatos de magnesia e soda, a polpa de <plantName>tamarindos</plantName>, o maná,
-				tartrato acido de potassa, e o oleo de <plantName>croton</plantName>: os revulsivos,
-				e entre elles os sinapismos de <plantName>mustarda</plantName>, os visicatorios
-				volantes, os sudorificos, as compressas d'agua fria, a agua sedativa de Raspail, as
-				bebidas geladas, as limonadas mais de acido vegetaes do que mineraes, e a agua
-				gazoza; os vomitivos, e entra elles a <plantName>epecacuanha</plantName> em certos e
-				determinados casos; os antipasmodicos, e de preferencia o ether, o castores; o
-				almiscar, a camphora; os antivomitivos, a poção de Riviére, o vinho branco, e o
-				gelo; os narcoticos, e entre elles as preparações de opio, e o acido cyanhydrico; os
-				calmantes, as affusões de agua fria, a agua de <plantName>louro cereja</plantName>,
-				a morphina, e o emplastro de theriaga; os antifebris, a <plantName>serpentaria de
-					verginea</plantName>, a <plantName>quina</plantName>, e o cozimento antifebril
-				de Lewis; os tonicos, e o sulphato de quinina em certas circunstancias.</p>
-					<p>No terceiro
-				periodo, ainda são indicados os sinapismos, os visicatorios volantes, a agua simples
-				gelada, a agua gazoza, as limonadas vegetaes, a agua de Seltz, a limonada
-				chlorydrica, os antispasmodicos, os antivomitivos, e entre elles a cerveja, a
-				Champanha e o bisulphito de cal os adstringentes, bem como a ergotina, o
-				perchlorureto de<pb n="21"/> ferro e o gelo: os anticepticos, o acido phenico, o creozoto, e
-				ainda o bisulphito de cal a morphina e seus saes, ou injeridos em poções ou pelo
-				methodo endermico: as compressas geladas, os drasticos, e entre elles a
-					<plantName>jalapa</plantName>, a <plantName>escamonêa</plantName>, a
-					<plantName>coloquintida</plantName> e o Leroy: e sempre os tonicos, sendo
-				d'entre elles os mais empregados, a <plantName>simaruba</plantName>, a
-					<plantName>quassia</plantName>, <plantName>angeciana</plantName>, a agua
-				ingleza, os caldos frios, e o vinho do Porto generoso, tambem as bebidas
-				mucilaginosas e diureticas, o cosimento de raiz de <plantName>althêa</plantName>, e
-				de <plantName>gramma</plantName>, as fricções com essencia de therebentina, e os
-				clysteres camphorados.</p>
-					<p>São estes os medicamentos que até hoje tem os praticos
-				empregado para combater a febre amarella: infelizmente ainda não nos é dado dizer
-				que elles são os especificos ou os infalliveis para esta terrivel molestia; mas
-				podemos assegurar que são os que tem áproveitado, e por conseguinte são considerados
-				como o melhor tratamento até a presente época.</p>
-					<p>Aqui transcrevemos o tratamento
-				empregado no Hospital da Santa Casa da Misericordia no corrente anno, o qual nos foi
-				fornecido pelo medico interno do mesmo Hospital, o Illm. Sr. Dr. José Ignacio de
-				Oliveira.</p>
-					<p>No primeiro periodo applicara o olheo de <plantName>ricino</plantName>
-				acompanhado da applicação continuada de sinapismos nas
-					<bodyPart>extremidades</bodyPart>. Se os doentes apresentavam cephalalgia,
-				applicava na <bodyPart>fronte</bodyPart> compressas embebidas n'agua sedativa.</p>
-					<p>No
-				segundo periodo, quando os symptomas mais graves denunciavam-se, era prescripta a
-				seguinte formula:</p>
-					R.—Infuzão de <plantName>serpentaria de Virginia</plantName> 500
-				grammas Tinctura de <plantName>quina</plantName> ãa 4 grammas. Acetato de ammonea
-				Sulphato de sóda 12 grammas. 
-					<p>Dissolva para tomar as colheres de hora em hora. Ao
-				mesmo tempo applicava compressas d'agua fria sobre o <bodyPart>ventre</bodyPart><pb n="22"/> de
-				concomitancia com os sinapismos nas <bodyPart>extremidades</bodyPart>. Quanto
-				finalmente havia cessação dos symptomas mais graves dava limonada chlorydrica aos
-				calices.</p>
-					<p>Este tratamento approveitou alguma cousa, pois que de onze doentes que
-				entraram para o Hospital, e destes, 8 em estado grave,</p>
-					Sahiram curados 6 Falleceram
-				4 Sahio para tratar-se fóra 1 
-					<p>No hospital de Mont-Serrat, sob a direcção do nosso
-				distincto mestre o Illm. Sr. Dr. Luiz Alvares, o tratamento seguido foi o que se
-				segue.</p>
-					<p>Admittida a pathogenia da febre amarella como um envenenamento do sangue
-				(septicemia,) apenas entraram os doentes para aquelle hospital se chegavam no
-				periodo da invasão da molestia, tomavam um emetocathartico (tartaro emetico e
-				sulphato de sóda.) A diaphoreze era entretida no dia seguinte por uma poção
-				diaphoretica com acetato de ammonea, alcool, ou agua de <plantName>hortelaã
-					pimenta</plantName> e continuava o tratamento com os purgantes. Se
-				apresentavam-se symptomas que indicavam a eminencia do vomito negro, tomavam os
-				doentes n'este periodo uma porção, em que entrava a proporção de vinte gottas de
-				perchlorureto de ferro para uma libra de agua, dada as colheres, e applicava-se um
-				sinapismo na região do <bodyPart>estomago</bodyPart>. Se o vomito, não obstante,
-				tinha lugar, augmentavam-se a dóze do perchlorureto, ou empregava-se um preparado de
-				tanino, ou ratanha. Da mesma maneira eram combatidas as hemorrhagias intestinas que
-				as vezes acompanham ou substituem o vomito negro, Quando symptomas
-				ataxico-adynamicos se manifestavam, empregavam-se preparações antispasmodicos
-				(castorio, almiscar etc,) e applicavam-se vesicatorios nas barrigas das
-					<bodyPart>pernas</bodyPart>, que eram curados com pommada de sulphato de
-				quinina. Quando se apresentava a suffusão icterica, davam-se os purgantes salinos, e
-				o bicarbonato de sóda, Esse tratamento, que só éra modificado,<pb n="23"/> quando era opportuna
-				a modificação, deu felizes resultados, como se póde deprehender da estatistica
-				d'esse hospital desde o dia 22 de Abril, em que foi aberto, até o ultimo de Junho; e
-				que vae junto. Do dia 22 de Abril até o ultimo de Junho.</p>
-					Entraram 251 Sahiram
-				curados 179 Falleceram 47 Ficaram existindo 25 
-					<p>Observações.—Dos fallecidos, um
-				entrou já agonisante e durou poucas horas; nove tiveram vomito negro; e quatro
-				entraram graves com symptomas ataxo-adynamicos.</p>
-					<p>Dos que sahiram curados, vinte
-				entraram graves, tendo trez destes, vomito negro: treze entraram em estado duvidoso,
-				apresentando trez a forma typhicà: e quarenta e oito no periodo invasor da molestia.
-				Dos existentes, quatorze entraram graves, tendo cinco destes, vomito negro: dous
-				aprezentando a forma typhica: dous duvidozos e este no periodo de invazão da
-				molestia. Regulou a mortalidade total em dezoito e meio por cento.</p>
-					PROPHILAXIA 
-					<p>Sendo
-				a febre amarella uma molestia infecto-contagiosa, como já dissemos em uma parte
-				d'este trabalho claro está que a hygiene publica bem como a individual devem lançar
-				mãos de seus recursos para, senão extingir, ao menos minorar os seus males.</p>
-					<p>Quanto
-				ao que diz respeito á hygiene publica, ao governo compete, de combinação com a
-				sciencia velar pelo bem estar do povo.</p>
-					<p>Assim pois, reinando a epidemia em um pôrto,
-				achamos de grande necessidade que todos os navios que chegarem á esse porto sejão<pb n="24"/>
-				afastados do ancoradouro; que os seus passageiros sejam desembarcado em lugar
-				distante da cidade: que esses passageiros estejam debaixo da vigilancia de um medico
-				sendo convenientemente alimentados, e obrigados a observarem todos os preceitos
-				impostos pelo medico. Não deveriam expor-se ao rigôr do sol, nem entregar-se-hão á
-				excessos de qualidade alguma, como por exemplo, o abuso dos alcoolicos, a dormida ao
-				relento aos resfriamentos, e nem deverão comer fructos verdes. Quando apparecer
-				entre elles casos da molestia ou mesmo algum caso duvidoso, o medico deve tomar todo
-				cuidado, mandando o doente para o lazareto, que n'esta occasião deverá o governo ter
-				criado. Aquelles porem que se conservarem incolumes, deverão passsar de vezem quando
-				ao centro da cidade, afim de que pouco a pouco se aclimem.</p>
-					<p>Como ja dissemos, os
-				navios estando afastados do ancoradouro e em um lugar cuja ventilação seja franca e
-				livre, e que alem disto estejam ao abrigo das emanações putridas que possam vir de
-				terra, então proceder-se-ha a descarga do navio, que melhor será feita pelos
-				habitantes do lugar do que pela tripolação, pois é certo que as fadigas e o cançaço
-				muito predispõem os individuos á contrahirem o mal.</p>
-					<p>Dedois de descarregado, o navio
-				deve ser lavado com todo cuidado, desde o tombadilho até e quilha, onde dizem os
-				authores, que se desenvoérem gazes maphiticos provenientes da mistura d'agua doce
-				com a salgada.</p>
-					<p>Depois de lavado o navio, deve-se immediatamento proceder a
-				desinfecção: o chloro, o enchofre, o acido phenico, e o Labarraque tem real
-				applicação n'estes casos.</p>
-					<p>A commissão medica que fôr encarregada de assistir a
-				descarga do navio, deve velar com toda attenção á este acto, ordenando que se abram
-				todas as escotilhas, afim de que se dê a ventilação no interior do navio.</p>
-					<p>O governo
-				humanitario, como deve ser, e principalmente n'estas occasiões, tudo deve fazer em
-				beneficio do povo; assim achamos de summa importancia que seja criada uma commissão
-				medica, para examinar a<pb n="25"/> carne, e os diversos generos alimenticios que sahem dos
-				mercados, armazens, e vendas para o consumo do povo, devendo ser estes generos da
-				melhor qualidade.</p>
-					<p>Deve haver todo aceio na cidade, afastando-se para longe todas as
-				materias em estado de putrefacção, evitando-se as aguas estagnadas enterrando-se os
-				animaes mortos, emfim, evitar-sehão todas as causas que sejam capazes de dar
-				incremento ao desenvolvimento da molestia. Os quarteis, e as casas de prisão devem
-				ser cuidadosamente aceiadas. Deve-se evitar a aglomeração de povo em logares
-				circunscriptos, bem como nos templos, theatros etc, em razão da viciação do ar, que
-				n'estes lugares torno-se insufficiente.</p>
-					<p>A classe pobre que entre nós é inteiramente
-				balda de recursos, que para bem dizer, vive em um estado de mizeria deploravel,
-				muito precisa da intervenção do governo nas occasiões de epidemias, afim de que este
-				lhe porporcione os meios de emigração para fora da cidade, onde a infeliz pobreza
-				vive encerrada em cubiculos immundos, em que o mal parece auinhar-se para depois
-				fazer explosão. Os cadaveres devem ser immediatamente sepultados, e desinfectados os
-				colxões, lençóes e mais objectos que servirem durante a molestia.</p>
-					<p>Ainda lembramos
-				como medida publica, a inoculação, que em 1855 o Dr. Cuilherme Lambert Humboldt,
-				lembrou com meio preservativo contra a febre amarella.</p>
-					<p>Este meio preservativo
-				consistia na inoculação de uma substancia, cujo principio activo era o venêna de uma
-				serpente, que sendo inoculada ou preservava os individuos para sempre da febre
-				amarella, ou se a contrahiam, era benigna e raramente d'ella pesreciam. Diz o Dr.
-				Humboldt, que no decurso de 9 annos, inoculára 1438 individuos; destes só vira 7
-				serem affectados da febre amarella, e destes 7, apenas morreram 2. Que em 386
-				inoculados em Nova-Orleans, sendo depois alguns affectados da febre amarella, em
-				nenhum se manifestaram os symptomas aterradores d'esta molestia, isto é, o vomito
-				negro e as hemorrhagias.</p>
-					<p>Diz mais que, para a inoculação exercer a sua virtude
-				preservadoura,<pb n="26"/> não era necessario que os seus symptomas fossem intensos; que somente
-				bastava os inoculados apresentarem o enfraquecimento do pulso e uma tendencia
-				hemorrhogica das <bodyPart>gengivas</bodyPart> Essa substancia depois de ter sido
-				inoculada no <bodyPart>braço</bodyPart>, pelo mesmo processo que a vacina,
-				applicava-se sobre as picadas da lanceta uma pequena cruz de malta de esparadrape.
-				Se no fim de alguns minutos levantava-se o apparelho encontrava-se o seguinte: ao
-				redor das picadas uma pequena elevação em forma de papula branca diaphana, análoga a
-				dentada de um mosquito; esse phenomeno era visivel no fim de 5 minutos, e no fim de
-				12 á 24 horas não existia mais. Logo depois da inoculação manifestava-se no
-					<bodyPart>antebraço</bodyPart> uma sensação de comichão e de entorpecimento,
-				ligeiro phenomeno anestesico que durava de 2 á 4 dias. No momento da inoculação a
-				molestia delineava-se pela syncope, que passava rapidamente, ou ainda por um tremor
-				nervoso que era mais raro, mas que durava por mais tempo: o pulso accelerava-se sob
-				a impressão do abalo do momento. No fim de 7 horas o pulso era modificado de uma
-				maneira permanente; era mais frequente ou mais lento, mais forte ou mais fraco; no
-				fim de 11 horas, havia calor febril; no de 14 horas, cephalalgia, anorexia e sêde
-				intensa no fim de 16 horas, turgencia da <bodyPart>face</bodyPart>, injecção das
-					<bodyPart>conjunctivas</bodyPart> e lacrimejamento; no fim de 18 horas, dôr nas
-					<bodyPart>gengivas</bodyPart>, cujos bordos coravam-se ao redor dos
-					<bodyPart>dentes</bodyPart>, dôr nas <bodyPart>glandulas salivares</bodyPart> e
-				na direcção dos differentes <bodyPart>ramos nervosos</bodyPart> da
-					<bodyPart>face</bodyPart> e do <bodyPart>craneo</bodyPart>; no fim de 19 horas
-				dôres na <bodyPart>maxilla</bodyPart> inferior, na direcção do <bodyPart>nervo
-					maxillar inferior</bodyPart> e abatimento; no fim de 20 horas, gosto amargo,
-				somnolencia, corisa, e edema da <bodyPart>face</bodyPart>; no fim de 20 horas, gosto
-				amargo, somnolencia, corisa e edema da <bodyPart>face</bodyPart>; no fim de
-				2 horas, sentimento de constricção na <bodyPart>garganta</bodyPart>
-				sem modificação visivel da <bodyPart>mucosa</bodyPart>, no fim de 23 horas, suffusão
-				icterica; no fim de 24 horas, hemorrhagia das geugivas; no fim de 28 horas, angina
-				tensillar; no fim de 30 horas rhachialgia; no fim de 36 horas, edema das
-					<bodyPart>palpebras</bodyPart>; no fim de 38 horas, dôres musculares e
-				articulares; no fim de 40 horas, odontalgia; emfim depois de 72 horas, edema do
-					<bodyPart>labio</bodyPart> inferior.</p>
-					<pb n="27"/><p>Tal era o modo porque se manifestava a
-				molestia provocada pela inoculação. Logo depois da inoculação, era administrado um
-				xarope composto d'esta maneira:</P>
-						R.—Xarope de <plantName>eupatorio</plantName>
-					(<plantName>mikania guaco</plantName>) 187 grammas Dito de
-					<plantName>rhuibardo</plantName> 125 grammas Iodureto de potassio 4 grammas Goma
-				gutta 12 grammas Misture.
-						<p>Este medicamento era administrado do seguinte modo: no
-				primeiro dia, uma colher de sôpa de 2 em 2 horas; no segundo dia uma colher pe 4 em
-				4 horas, no terceiro dia uma colher de manhã e outra á tarde.</p>
-						<p>Se os symptomas
-				apresentavam violencia, elle demiuuia os intervallos e dava com o xarope uma chicara
-				de <plantName>chá</plantName> de 2 em 2 horas. E quando os symptomas eram muito
-				intensos, eram combatidos pelo sulphato de quinina.</p>
-						<p>Vemos pois, que grande parte dos
-				symptomas fornecidos pela inoculação, não deixam de ter grande analogia com os da
-				febre amarella Quem sabe se da mesma maneira que a vacina, que foi considerada como
-				uma utopia, esta substancia inoculavel não venha para o futuro trazer a humanidade
-				immensos beneficios?</p>
-						<p>Lembramos este facto, apenas como novidade, sem emittirmos
-				nenhum juizo sobre elle: deixemos qne o futuro possr demonstrar a suá utilidade ou
-				por ventura a sua banalidade.</p>
-						<p>Ainda a hygiene dá uma serie de conselhos, que devem
-				ser observados pelo individuo particularmente. Os medicos que exercerem a clinica na
-				cidade, devem com prudencia instruirem aos individuos de que ha epedemia, afim de
-				que elles não fiquem na ignorancia, não se deixem apoderar pelo terror, e procurem
-				acautelar-se das intempereis da<pb n="28"/> estação, não commettendo certas imprudencias, e
-				procurem evitar tudo quanto lhes possa fazer mal.</p>
-						<p>Cada individuo deve ter a sua
-				habitação bem aceiada, convenientemente arejada, arredando de suas immediações todas
-				as substancias que se possam putrefazer. Deve cada individuo cuidar de si,
-				nutrindo-se moderamente de alimentos cuja digestibilidade seja facil, evitando o uso
-				immoderado das bebidas alcoolicas, dos prazeres venereos, emfim evitará todas as
-				causas que tendem á enfraquecer o organismo, pois sabemos que a febre amarella
-				combate com victoria segura as suas victimas quando ja se acham fracas.</p>
-						<p>Muitos
-				praticos aconselham que se faça uso de laxativos brandos como preservativos, pois
-				elles conservam sempre livre o turbo digestivo. As vestimentas devem ser apropriadas
-				as estações. As grandes vigilias, os trabalhos intellectuaes, as fadigas moraes,
-				devem ser evitadas, pois enfraquecendo o organismo predispoem-no a facilmente
-				contrahir a molestia.</p>
-						<p>Nas casas em que existirem doentes de febre amarella, achamos
-				conveniente que se proceda a inhumação das materias fecaes e que se use
-				constantemente dos disinfectantes.</p>
-						<p>São estes os conselhos que a hygiene dá, e que
-				segundo nos parece, muito devem servir, a aquelles que commettendo qnanta sorte de
-				extravagancia ha, abusam completamente do bem mais precioso que possuimos—a saude.</p>
-				<p>Aqui concluimos o nosso pequeno trabalho, certos de que leva o cunho da inperfeição;
-				pois alem de faltar-nos os recursos mais necessarios, falta-nos tambem o habito de
-				escrever para o publico: e se não fossemos obrigados pela imperiosa lei do dever,
-				por certo que nos conservariamo-nos mais profundo e absoluto silencio. Resta-nos um
-				consolo, é que se por um lado falta-nos a intelligencia, por outro sóbram-nos os
-				bons desejos, que esperamos ser bem acolhidos pela benevolencia de nossos
-				Mestres.</div></p>
+					recommendados, são o oleo de <term type="plant">ricino</term>, os sulphatos de
+					magnesia e soda, a pôlpa de <term type="plant">tamarindos</term>, o maná, o
+					tartrato, acido de potassa e o calomelanos: de entre estes ainda os que tem sido
+					mais geralmente empregados são o oleo de <term type="plant">ricino</term> e os
+					sulphatos de magnesia e sóda. O oleo de <term type="plant">Croton</term> fôra
+					tambem preconisado pelos Drs. Tegart e Macheto, quando praticaram nas antilhas
+					inglezas. O Dr. Tegart diz que uma ou duas gottas d'esta substancia postas sobre
+					a <term type="body-part">lingua</term> não só excitam a acção dos <term
+						type="body-part">intestinos</term> como tambem a dos <term type="body-part"
+						>rins</term>.</p>
+				<p>De todos os purgativos porem, aqulle que fôra preconizado como meio quasi
+					especifico para o tratamento da febre amarella, foi o calomelanos. Os factos
+					citados pelos medicos inglezes e Norte Americanos e por muitos outros adeptos
+					d'este medicamento, parecem provar os melhores resultados. Porém nós, guardadas
+					todas as conveniencias, regeitamos este meio, porque na febre amarella estando
+					toda massa sanguinea no maior grão de deluição, existindo por assim dizer uma
+					dyscrazia do sangue, e sendo o calomelanos um diluente de primeira força, um
+					alterantbem conhecido, parece-nos curial que por este meio vamos tornar o sangue
+					mais fluido e por tanto tornar o estado do doente mais grave, pelas<pb n="11"/>
+					circunstancias que mais tarde hão de por força sobrevir, oque não acontece com
+					os outros purgativos, que alem de não produzirem os inconvenieentes que acabamos
+					de referir, tem a nosso modo de ver, não só a vantagem de oppôr uma dirivação ás
+					congestões sanguineas, despertando o erythismo do systema nervoso, e ao mesmo
+					tempo podem favorecer a a eliminação do agente morbifico.</p>
+				<p>Quando no decurso d'este periodo sobrevem phenomenos ataxicos, taes como dilirio,
+					agitação, sobre-salto dos <term type="body-part">tendões</term>, contracturas,
+					certas congestões, e se as dores epigastricas augmentam, então conjunctamente
+					com estes meios á que nos referimos, empregaremos os sinapismos de mostarda, os
+					visicatorios volantes, e ainda os sudoriferos, pois que alem de combaterem esses
+					phenomes podem coadjuvar (os ultimos) á sahida do agente deleterio.</p>
+				<p>Tambem as compressas de agua fria e de agua avinagrada, a agua sedativa de
+					Raspail, quando a cephalalgia é rebelde, tem dado resultados satisfatorios.</p>
+				<p>E'ra n'este periodo, e muita vez desde o principio da molestia que a sangria fôra
+					preconisada, e de tal modo que, mesmo sem notavel excitação manifestar-se,
+					muitos medicos sangravam os seus doentes.</p>
+				<p>A Escola de Broussais tinha então toda vóga. A sciencia porém progredira, e em
+					face dos factos hoje colhidos por observadores de grande nota, este meio, que
+					bem se pode chamar de barbaro, deve ser inteiramente proscripto. A pathologia
+					deve lavrar um protesto solemne contra semelhante tratamento. Ainda quando a
+					febre amarella ataque um individuo de constituição robusta e temperamento
+					sanguineo, quando a febre se mostrar em um grão assaz intenso, de modo que
+					receiemos congestões para orgaõs importantes, outros meios teremos de
+					reconhecida vanagem.</p>
+				<p>N'esta molestia em que, para nós ha um envenenamento geral da economia,
+					procedendo d'ahi o consideravel abatimento das forças, como poderemos tirar
+					sangue? Como roubarmos ao organismo uma parte de que elle tanto precisa para
+					reagir? Eliminaremos o principio morbifico <pb n="12"/>diminuindo a massa do
+					sangue? E em taes casos a convalença não será muito mais longa? Portanto
+					proscrevemos sempre a sangria, e estamos certos de que se os praticos, aliás de
+					grande nota, que tanto a preconisavam, tivessem de tratar hoje da febre
+					amarella, não dariam á sangria tanta importancia como n'aquelles tempos. Até as
+					sangrias locaes, as ventosas e as sanguessugas são para nós contra-indicadas em
+					razão da tendencia que ha para as hemorrhagias: qualquer escoriação póde com
+					muita facilidade dar em resultado um escorrimento abundantissimo de sangue,
+					occazionando muitas vezes até a morte.</p>
+				<p>Quando n'este periodo a sêde for intensa e a <term type="body-part">lingua</term>
+					secca, a administração das bebidas geladas, as limonadas mais de acidos vegetaes
+					do que mineraes, tem dado bons resultados no tratamento d'esta molestia. Muitas
+					vezes porem os doentes não podem suportar as limonadas geladas! porque estas
+					provocam-lhes os vomitos: então a agua fresca, a agua gazoza adoçada —com o
+					xarope de limão, constituem uma bebida assaz agradavel, e que muito alliviam aos
+					doentes que se escaldam pela febre.</p>
+				<p>Os vomitivos apezar de serem eminentemente contra indicados por muitos praticos,
+					em razão das hemorrhagias gastricas e da presença do sangue no <term
+						type="body-part">estomago</term>, principaes causas dos vomitos e das
+					nauseas nos doentes de febre amarella, outros ha porem, que asseveram ter tirado
+					muito bom proveito pela applicação d'elles.</p>
+				<p>Infelizmente á esta terrivel molestia não se pode applicar o theorema, vomito
+					cura-se com vomito; mas tambem não se deve excluir absolutamente as indicações
+					emeticas, e somos de opinião que em alguns casos e circunstancias os vomitivos
+					podem favorecer o curativo da febre amarella. Assim pois nós não os indicamos
+					como tharapeutica geral para todos os casos e circunstancias, como discussivos
+					para expellir o principio morbifico e como evacuantes para desembaraçar o
+					apparelho digestivo, porque sabemos que elles podem, irritando o <term
+						type="body-part">estomago</term>, aggravar o mal apressando as hemorrhagias
+					e o apparecimento do vomito negro, que sendo um symptoma gravissimo devemos
+					tanto mais evital-o.</p>
+				<p>Banil-os totalmente, esqueceriamo-nos de que a pratica tem provado<pb n="13"/>
+					que elles são proveitosos no principio da molestia, e sobre tudo quando a <term
+						type="body-part">lingua</term> se achar saburrosa, quando houver máo gosto,
+					halito fetido, alguma cephalalgia, e sem que a molestia esteja muito adiantada,
+					não havendo notavel inflammação no <term type="body-part">estomago</term>.</p>
+				<p>Mas ainda n'estes casos, receiamos a applicação do tartáro emetico, em razão da
+					grande prostação que elle produz nos doentes, e ainda pela irritação que
+					naturalmente produzirá na <term type="body-part">mucosa</term> do <term
+						type="body-part">estomago</term>: nós damos a preferencia a <term
+						type="plant">epecacuanha</term>, porque alem de não irritar tanto o <term
+						type="body-part">estomago</term> e nem abater tanto o organismo enfermo, tem
+					a vantagem de chamar para a <term type="body-part">pelle</term> a transpiração,
+					o que nos parece de não pequena vantagem.</p>
+				<p>Ainda n'estes casos, e talvez com mais prudencia, alguns praticos aconselham que
+					se faça vomitar o doente pela ingestão de grandes quantidades de agua morna, ou
+					ingerindo copos de azeite, segundo praticavam os mexicamos.</p>
+				<p>Quando no segundo periodo sobrevém os vomitos nervosos acompanhados de repetidos
+					soluços, symptoma que, seja dito de passagem, é bem difficil de combater-se na
+					maioria dos casos, tem sido applicados os antispasmodicos, e entre elles o
+					ether, o castorios, o almiscar, a camphora conjunctamente com o gêlo, o vinho
+					branco, a poção antivomitiva de Riviére, e com quanto não sejam infalliveis
+					esses seus meios, todavia tem dado resultados satisfatorios.</p>
+				<p>Para combater a insomnia e a agitação, que muita vez apparecem n'este periodo,
+					tem se lançado mão do opio, quer interna quer externamente. O Sr. Griezinger
+					preconisa muito o acido cyanhydrico como poderoso calmante.</p>
+				<p>O delirio furioso, as cephalalgias persistentes e outros phenomenos de excitação,
+					foram vantajosamente combatidos, pelos Srs. Dutroulau, Griezinger, Saint-Vel e
+					Chapius, por meio dos banhos gelados e das affusões d'agua fria. Por este meio
+					tonico e refrigerante, elles conseguiam grandes subtrações de calor, e a
+					diminuição de numero das pulsações: a cephalalgia diminuia, e muitas vezes
+					apparecia a emissão das urinas nos casos de anuria.</p>
+				<p>Os mesmos praticos exerciam uma especie de hydrotherapia submettendo<pb n="14"/>
+					o doente a um banho de agua fria por alguns minutos, depois retiravam-no,
+					enxugavam-no, envolviam-no em um panno molhado! e depois em uma colcha de lã:
+					collocavam-no sobre o leito, e fazendo beber grande porção de agua fria gelada,
+					dava-se uma transpiração abundante, o doente sentia mais socego, e consiliava o
+					somno por algumas horas.</p>
+				<p>Acreditamos muito neste meio curativo, visto como se elle por si só não modifica
+					a gravidade do mal, ao menos retarda por algum tempo a apparição dos accidentes
+					nervosos, e previne uma forte fluxão de sangue para a <term type="body-part"
+						>cabeça</term>. O Sr. Dr. Pereira Rego no Rio de Janeiro preconisou a pomada
+					de <term type="plant">belladona</term> e <term type="plant">louro cereja</term>
+					para fricções na <bodyPart>columna vertebral</bodyPart>, nos phenomenos ataxicos
+					acompanhados de sobre-salto dos <term type="body-part">tendões</term> e
+					convulsões. O mesmo clinico empregou, e diz qne com bons resultados, o emplastro
+					de theriaga sobre a região epigasdrica para combater o vomito nervoso.</p>
+				<p>A febre n'este periodo, que as vezes é muito consideravel, tem sido combatida,
+					pela infusão de <plantName>serpentaria de virginia</plantName> ou pelo cosimento
+					antifebril de Lewis, e este medicamente fôra muito preconisado pelo Exm. Sr.
+					Barão de Petropoles, distincto clinico do Rio de Janeiro.</p>
+				<p>Todos esses medicamentos que acabamos de indicar, acompanhados dos tonicos, tem
+					sido proveitosos no segundo poriodo da febre amarella.</p>
+				<p>Tratemos agora da remissão, tambem chamada falsa tregua, que ha entre o segundo e
+					o terceiro periodos, onde distingue-se, sem muita difficuldade a suspensão dos
+					accidentes: é n'esta occasião que muitas vezes os doentes apresentam um bem
+					estar e uma melhora que soem enganar aos medicos, e persuadil-os de que a
+					molestia marcha para a cura: mas de repente exacerbam-se os symptomas ja
+					descriptos e ainda mais o apparecimento de outros mais terriveis complicam o
+					estado do doente, e a esperança pouco a pouco parece abandonar ao medico que
+					lucta com um inimigo desconhecido e traiçoeiro.</p>
+				<p>Era n'essa occasião que muitos praticos costumavam lançar mão do sulphato de
+					quinina e muitos ainda desde o principio da molestia que o applicavam como
+					especifico para essa enfermidade. E' que elles, seduzidos <pb n="15"/>pelos
+					brilhantes resultados que dá o sulphato de quinina contra febre intermittente,
+					enxergavam naturalmente alguma analogia entre esta e a febre amarella, analogia
+					levada até a natureza das duas molestias, por isso que o tratamento era
+					identico.</p>
+				<p>Hoje porem, que a pratica se tem esclarecido, que graças aos trabalhos modernos
+					de Griesinger, Saint-Paiz, Dutroulau e Saint-Vel, se tem chegado a bem
+					distinguir estas duas entidades morbidas, já o sulphato de quinina tem deixado
+					de gosar do titulo de medicamento especifico para a febre amarella como o é para
+					a intermittente.</p>
+				<p>Assim pois, logo que a remissão se manifestasse e debaixo de qualquer forma que a
+					febre amarella se apresentasse, elles davam em alta dóse o sulphato de quinina,
+					não tendo em resultado senão ver a molestia progredir em seus symptomas pela
+					acção altamente hypostenizante da quinina sobre o systema nervoso
+					cerebro-spinhal. Empregado portanto no principio da molestia, augmenta a
+					agitação e a anciedade ao doente, produzindo os zunidos dos <term
+						type="body-part">ouvidos</term> e o enfraquecimento da <term
+						type="body-part">vista</term>, emfim predispondo-o a uma adynamia
+					consideravel.</p>
+				<p>Apezar do que acabamos de dizer a respeito do sulphato de quinina empregado
+					contra a febre amarella, não podemos negar a utilidade que d'elle se pode tirar,
+					porém em circumstancias muito restrictas.</p>
+				<p>Quando pois a febre amarella apresentar symptomas de intermittente e quando o
+					doente apresentar-se abatido pela força do veneno, que tanto deprime o systema
+					nervoso, o sulphato de quinina será applicado com grandes vantagens: no primeiro
+					caso em alta dóse como antipyretico; no segundo em dóses fraccionadas como
+					tonico das forças radicaes do organismo.</p>
+				<p>Ainda á respeito do sulphato de quinina não nos podemos subtrahir á umas
+					observações que nos fizeram acreditar na vantagem de sua applicação, quando a
+					febre amarella apresentava symptomas de febre perniciosa, revelando-se por
+					phenomenos de ataxia, exaltação cerebral, e pela <term type="body-part"
+						>lingua</term> secca e queimada até a ponta, <term type="body-part"
+						>lingua</term> que humedecia passado o paroxismo. Estes factos foram por nós
+					observados na caza de saude de S. Francisco: á estes doentes o emprego do
+					sulphato de quinina em alta dose evitava a<pb n="16"/> reapparição dos
+					paroxismos e, extinguindo a consideravel aridez da <term type="body-part"
+						>lingua</term>, concorria para o seu restabelecimento ajudado dos tonicos em
+					alta dose.</p> TERCEIRO PERIODO <p>E' n'este periodo que devemos applicar toda
+					attenção, afim de podermos seguir a marcha sempre crescente da molestia. Aqui
+					duas grandes indicações devem ser preenchidas: primeiro, as que dependem da
+					predominancia dos symptomas: segundo, as que são fornecidas pelo estado geral do
+					doente.</p>
+				<p>Trez symptomas bastante graves caracterisam propriamente este periodo; são os
+					vomitos negros, os accidentes cerebraes e as hemorrhagias: tratemos de cada um
+					d'elles em particular.</p>
+				<p>O vomito em taes casos ou é nervoso e sympatico ou é essencial e hemorrhagico. No
+					primeiro caso elle compõe-se de bilis ou de um liquido anegrado; n'este caso
+					applicamos os sinapismos na região epigastrica, e os vesicatorios volantes.
+					Muitos aconselham os causticos, os quaes não achamos muito prudentes pela razão
+					não só de facilitar a hemorrhagia pela excoriação que produzem, como ainda pela
+					tendencia que tem a ferida para a gangrena.</p>
+				<p>O doente deve tomar poucas bebidas, e estas devem ser agua gazosa ou agua simples
+					gelada: e se aos doentes não repugnarem os acidos, pode-se administrar as
+					limonadas vegetaes, as laranjadas, a limonada citrica, assim como o vinho branco
+					misturado com agua de Seltz. O Dr. Lacaill diz ter obtido resultados lisongeiros
+					pela applicação do bisulphito de cal. Os medicos inglezes usavam dar aos seus
+					doentes o vinho de Champanha e a cerveja no sentido, talvez, de que elles
+					oppondo-se aos vomitos ainda obrem como tonicos. Ainda aqui os antipasmodicos
+					tem dado bons resultados; entre elles, o ether, a <term type="plant"
+						>belladona</term>, o extracto de <term type="plant">valeriana</term> e a
+					camphora, acompanhados do uso constante das infusões de <term type="plant"
+						>quassia</term>, <term type="plant">simaruba</term>
+					<term type="plant">genciana</term>, e da agua ingleza, que como tonicos tem
+					triumphado d'este terrivel symptoma. Nos casos em que o vomito é essencial e
+						hemorrhagico,<pb n="17"/> e composto de materia negra, ja quasi que todos os
+					recursos são infructiferos; com tudo não devemos crusar os <term
+						type="body-part">braços</term>, e então lançaremos mão dos adstrigentes, bem
+					como a <term type="plant">ratanhia</term>, o perchlorureto de ferro e a
+					ergotina: de todos estes, o perchlorureto de ferro tem dado melhores resultados,
+					porque alem de oppôr-se a hemorrhagia do <term type="body-part">estomago</term>,
+					ainda é um restaurativo das forças abatidas do doente. Tambem tem sido
+					empregados o gêlo internamente, as limonadas mineraes geladas, o elixir
+					paregorico, com resultados satisfatorios.</p>
+				<p>Os antisepticos tem sido empregados com vantagem n'este caso, e d'entre elles
+					merecem especial menção, o acido phenico, e o creozoto que tem dado bons
+					resultados quer tomados em poções internamente quer em clysteres: pois elles tem
+					o poder não só de impedir a putrefacção do sangue como de neutralisal-a quando
+					ja existe.</p>
+				<p>Ainda n'este caso temos visto darem bons resultados os tonicos, cuja perseverança
+					deve ser rigorosamente observada; pois, a nosso modo de ver, a medicação tonica
+					deve formar a base do tratamento da febre amarella, porque sendo geralmente
+					admittido que n'essa molestia ha uma intoxicação lenta do sangue, e que este
+					liquido alterado vae produzir em toda economia o desarranjo de suas funcções,
+					que o individuo pode apresentar desde o principio grande prostação de forças,
+					que a adynamia tende a proseguir com toda intensidade, e o sangue em um grau
+					extraordinario de dissolução da lugar a hemorrhagias até no proprio tecido do
+						<term type="body-part">derma</term>, e ainda mais o organismo profundamente
+					abalado em seus eixos lucta contra um inimigo desconhecido, e que n'esta lucta
+					suprema, denominada agonia, em que o doente ja exhausto espera a cada momento
+					deixar a vida pela morte, não podemos deixar de reconhecer que só a medicação
+					tonica poderá produzir verdadeiras resurreições, como por mais de uma vez
+					tivemos occasião de ver.</p>
+				<p>Tratemos agora dos phenomenos cerebraes: esses podem exacerbar-se e então devem
+					ser empregados os narcoticos e os calmantes, de entre os narcoticos, a codeina e
+					o sulphato de morphina tem dado bons resultados se os doentes não poderem
+					tolerar esta medicação, então applicaremos um sal de morphina pelo methodo
+					endermico, sendo preferivel o sulphato:<pb n="18"/> de entre os calmantes, a
+					agua de <term type="plant">louro cereja</term> em uma infusão de <term
+						type="plant">tilia</term> com xarope de flores de <term type="plant"
+						>larangeira</term>, tem sido preconisada com bom resultado.</p>
+				<p>Ainda para debellar-se esses phenomenos tem se applicado as compressas geladas
+					sobre a <term type="body-part">fronte</term>, os sinapismos entre as <term
+						type="body-part">espadoas</term> e nas <term type="body-part"
+						>extremidades</term> inferiores, os clysteres emolientes e purgativos
+					conjunctamente com os drasticos, com o fim de operarem para o <term
+						type="body-part">recto</term> uma derivação que naturalmente minorará esses
+					phenomenos: entre os drastiticos os que tem sido mais usados são, a <term
+						type="plant">jalapa</term>, á <term type="plant">escamonêa</term>, á <term
+						type="plant">coloquintida</term>, e o purgante de Leroy.</p>
+				<p>Passemos as hemorrhagias que constituem, por certo, o symptoma mais aterrador e
+					ao mesmo tempo o mais difficil de debellar-se. Tem ellas zombado de todos os
+					meios: o frio e os adstringentes debalde tem sido empregados: só os tonicos tem
+					apresentado resultados mais favoraveis; e esta medicação tem bastante
+					fundamento, porque, se como ja vimos, ha dyscrazia do sangue, so os tonicos
+					poderão reconstituilo: devemos pois dar o vinho do Porto generoso, a agua
+					ingleza, <term type="plant">angeciana</term>, os caldos frios, a <term
+						type="plant">simaruba</term> e a <term type="plant">quassia</term>.</p>
+				<p>Serve de exemplo ao que levamos dito um caso que observamos na casa de saude de
+					S. Francisco: n'um doente, marinheiro inglez cuja tendencia á hemorrhagia foi
+					tão consideravel que, essa até manifestou-se nos <term type="body-part"
+						>vasos</term> da <term type="body-part">perna</term> em forma de abscessos
+					metastazicos' prorompendo pela <term type="body-part">pele</term> que afinal
+					tomou a forma de ulcera hemorrhagica, N'este doente o uso dos tonicos, com
+					perseverança, dêbellou por sua acção interna e fortificante do sangue, a
+					hemorrhagia, que gradualmente cedia a proporção que se augmentava a doze dos
+					tonicos, vindo ainda estes heroicos medicamentos á produzirem vantajosos
+					effeitos em applicações topicas sobre as ulceras.</p>
+				<p>Tratemos agora de certos symptomas que ainda se podem apresentar complicando esta
+					enfermidade, e os meios que geralmente tem sido empregados para combatel-os.</p>
+				<p>As parotidites trazem quasi sempre uma terminação fatal á febre amarella, sendo
+					muito mais grave nas crianças, segundo o Sr. Cornillac. <pb n="19"/>Quasi todos
+					os praticos combatem este symptoma de duas maneiras; ou applicam os emollientes
+					afim de formarem-se os abcessos e praticarem depois a sua abertura, ou applicam
+					sobre a parte inflammada um pedaço de potassa caustica, de modo que produza uma
+					abertura antes da formação do fóco purulento, fixando d'esta arte a fluxão sobre
+					a glandula e prevenindo a roabsorpção ou a metastaze.</p>
+				<p>Nós observamos alguns casos d'estes em que tiramos bons resultados por meio das
+					fricções com pomada mercurial e <term type="plant">belladona</term>, junctamente
+					com os gargarejos de cosimento de <term type="plant">malvas</term> e de <term
+						type="plant">quina</term> para combater a inflammação da <term
+						type="body-part">garganta</term>.</p>
+				<p>A suppressão da secreção urinaria, é tambem um symptoma quasi sempre infallivel e
+					incommodativo. Os meios mais empregados para combater este symptoma eram os
+					dicereticos, e especialmente o nitrato de potassa, o subcarbonato, o acetato e o
+					bicarbonato, porem sem nenhum proveito na maioria dos casos.</p>
+				<p>Pensamos que a suppressão da secreção urinaria nos doentes de febre amarella é
+					uma consequencia ou effeito da pertubação geral das funcções organicas, e que
+					não póde por conseguinte ser combatida por um especifico que tem a propriedade
+					de excitar a actividade vital dos <term type="body-part">rins</term>, e neste
+					caso pensamos que devem ser contra indicados os diureticos especificos. Mas
+					tem-se aconselhado as bebidas mucilaginosas, o cosimento de raiz de <term
+						type="plant">althêa</term>, o de <term type="plant">gramma</term>, as
+					bebidas frias e refrigerantes, para combaterem a irritação e inflammação: e se
+					bem que não sejam diureticos especificos, tem sido como taes empregados quando a
+					secreção das urinas diminui-se por causa irritante local ou geral e por tanto
+					n'estes casos são bem aconselhados. O Sr. Dr. Pereira Rego diz ter feito
+					reapparecer a urina pelo uso das fricções com essencia de therebentina na região
+					lombar e com os clysteres camphorados.</p>
+				<p>Os soluços que ordinariamonte tornam-se por demais rebeldes no fim da molestia,
+					tem algumas vezes obedecido ao emprego chloroformio, do valerianato de zinco, da
+						<term type="plant">belladona</term>, e ainda pela applicação dos sinapismos
+					sobre a região epigastrica; porem na maior parte das vezes<pb n="20"/> elles são
+					fataes, e muito contribuem para o termo proximo da molestia.</p>
+				<p>Pelo que temos exposto ja se vê a nossa humilde opinião a respeito do tratamento
+					da febre amarella, terminaremos em resumo mencionando quaes os meios que mais
+					tem aproveitado, indicando apenas os periodos da molestia em que elles são
+					appicados.</p>
+				<p>Assim pois vemos que, no primeiro periodo, são geralmente empregados, o <term
+						type="plant">aconito</term>, o acetato de ammonea, as infusões de <term
+						type="plant">sabugueiro</term>, <term type="plant">borragem</term>, <term
+						type="plant">tilia</term>, <term type="plant">chá</term>, <term type="plant"
+						>melissa</term>, <term type="plant">arnica</term>, grellos de <term
+						type="plant">larangeira</term>, as tincturas camphoradas, as bebidas
+					aciduladas, os revulsivos cutaneos, os pediluvios, os banhos quentes e mornos
+					seguidos de fricções seccas pela superficie cutanea etc.</p>
+				<p>No segundo periodo, os purgativos oleosos e salinos, bem como o oleo de <term
+						type="plant">ricino</term>, os sulphatos de magnesia e soda, a polpa de
+						<term type="plant">tamarindos</term>, o maná, tartrato acido de potassa, e o
+					oleo de <term type="plant">croton</term>: os revulsivos, e entre elles os
+					sinapismos de <term type="plant">mustarda</term>, os visicatorios volantes, os
+					sudorificos, as compressas d'agua fria, a agua sedativa de Raspail, as bebidas
+					geladas, as limonadas mais de acido vegetaes do que mineraes, e a agua gazoza;
+					os vomitivos, e entra elles a <term type="plant">epecacuanha</term> em certos e
+					determinados casos; os antipasmodicos, e de preferencia o ether, o castores; o
+					almiscar, a camphora; os antivomitivos, a poção de Riviére, o vinho branco, e o
+					gelo; os narcoticos, e entre elles as preparações de opio, e o acido
+					cyanhydrico; os calmantes, as affusões de agua fria, a agua de <term
+						type="plant">louro cereja</term>, a morphina, e o emplastro de theriaga; os
+					antifebris, a <plantName>serpentaria de verginea</plantName>, a <term
+						type="plant">quina</term>, e o cozimento antifebril de Lewis; os tonicos, e
+					o sulphato de quinina em certas circunstancias.</p>
+				<p>No terceiro periodo, ainda são indicados os sinapismos, os visicatorios volantes,
+					a agua simples gelada, a agua gazoza, as limonadas vegetaes, a agua de Seltz, a
+					limonada chlorydrica, os antispasmodicos, os antivomitivos, e entre elles a
+					cerveja, a Champanha e o bisulphito de cal os adstringentes, bem como a
+					ergotina, o perchlorureto de<pb n="21"/> ferro e o gelo: os anticepticos, o
+					acido phenico, o creozoto, e ainda o bisulphito de cal a morphina e seus saes,
+					ou injeridos em poções ou pelo methodo endermico: as compressas geladas, os
+					drasticos, e entre elles a <term type="plant">jalapa</term>, a <term
+						type="plant">escamonêa</term>, a <term type="plant">coloquintida</term> e o
+					Leroy: e sempre os tonicos, sendo d'entre elles os mais empregados, a <term
+						type="plant">simaruba</term>, a <term type="plant">quassia</term>, <term
+						type="plant">angeciana</term>, a agua ingleza, os caldos frios, e o vinho do
+					Porto generoso, tambem as bebidas mucilaginosas e diureticas, o cosimento de
+					raiz de <term type="plant">althêa</term>, e de <term type="plant">gramma</term>,
+					as fricções com essencia de therebentina, e os clysteres camphorados.</p>
+				<p>São estes os medicamentos que até hoje tem os praticos empregado para combater a
+					febre amarella: infelizmente ainda não nos é dado dizer que elles são os
+					especificos ou os infalliveis para esta terrivel molestia; mas podemos assegurar
+					que são os que tem áproveitado, e por conseguinte são considerados como o melhor
+					tratamento até a presente época.</p>
+				<p>Aqui transcrevemos o tratamento empregado no Hospital da Santa Casa da
+					Misericordia no corrente anno, o qual nos foi fornecido pelo medico interno do
+					mesmo Hospital, o Illm. Sr. Dr. José Ignacio de Oliveira.</p>
+				<p>No primeiro periodo applicara o olheo de <term type="plant">ricino</term>
+					acompanhado da applicação continuada de sinapismos nas <term type="body-part"
+						>extremidades</term>. Se os doentes apresentavam cephalalgia, applicava na
+						<term type="body-part">fronte</term> compressas embebidas n'agua
+					sedativa.</p>
+				<p>No segundo periodo, quando os symptomas mais graves denunciavam-se, era
+					prescripta a seguinte formula:</p> R.—Infuzão de <term type="plant">serpentaria
+					de Virginia</term> 500 grammas Tinctura de <term type="plant">quina</term> ãa 4
+				grammas. Acetato de ammonea Sulphato de sóda 12 grammas. <p>Dissolva para tomar as
+					colheres de hora em hora. Ao mesmo tempo applicava compressas d'agua fria sobre
+					o <term type="body-part">ventre</term><pb n="22"/> de concomitancia com os
+					sinapismos nas <term type="body-part">extremidades</term>. Quanto finalmente
+					havia cessação dos symptomas mais graves dava limonada chlorydrica aos
+					calices.</p>
+				<p>Este tratamento approveitou alguma cousa, pois que de onze doentes que entraram
+					para o Hospital, e destes, 8 em estado grave,</p> Sahiram curados 6 Falleceram 4
+				Sahio para tratar-se fóra 1 <p>No hospital de Mont-Serrat, sob a direcção do nosso
+					distincto mestre o Illm. Sr. Dr. Luiz Alvares, o tratamento seguido foi o que se
+					segue.</p>
+				<p>Admittida a pathogenia da febre amarella como um envenenamento do sangue
+					(septicemia,) apenas entraram os doentes para aquelle hospital se chegavam no
+					periodo da invasão da molestia, tomavam um emetocathartico (tartaro emetico e
+					sulphato de sóda.) A diaphoreze era entretida no dia seguinte por uma poção
+					diaphoretica com acetato de ammonea, alcool, ou agua de <plantName>hortelaã
+						pimenta</plantName> e continuava o tratamento com os purgantes. Se
+					apresentavam-se symptomas que indicavam a eminencia do vomito negro, tomavam os
+					doentes n'este periodo uma porção, em que entrava a proporção de vinte gottas de
+					perchlorureto de ferro para uma libra de agua, dada as colheres, e applicava-se
+					um sinapismo na região do <term type="body-part">estomago</term>. Se o vomito,
+					não obstante, tinha lugar, augmentavam-se a dóze do perchlorureto, ou
+					empregava-se um preparado de tanino, ou ratanha. Da mesma maneira eram
+					combatidas as hemorrhagias intestinas que as vezes acompanham ou substituem o
+					vomito negro, Quando symptomas ataxico-adynamicos se manifestavam, empregavam-se
+					preparações antispasmodicos (castorio, almiscar etc,) e applicavam-se
+					vesicatorios nas barrigas das <term type="body-part">pernas</term>, que eram
+					curados com pommada de sulphato de quinina. Quando se apresentava a suffusão
+					icterica, davam-se os purgantes salinos, e o bicarbonato de sóda, Esse
+					tratamento, que só éra modificado,<pb n="23"/> quando era opportuna a
+					modificação, deu felizes resultados, como se póde deprehender da estatistica
+					d'esse hospital desde o dia 22 de Abril, em que foi aberto, até o ultimo de
+					Junho; e que vae junto. Do dia 22 de Abril até o ultimo de Junho.</p> Entraram
+				251 Sahiram curados 179 Falleceram 47 Ficaram existindo 25 <p>Observações.—Dos
+					fallecidos, um entrou já agonisante e durou poucas horas; nove tiveram vomito
+					negro; e quatro entraram graves com symptomas ataxo-adynamicos.</p>
+				<p>Dos que sahiram curados, vinte entraram graves, tendo trez destes, vomito negro:
+					treze entraram em estado duvidoso, apresentando trez a forma typhicà: e quarenta
+					e oito no periodo invasor da molestia. Dos existentes, quatorze entraram graves,
+					tendo cinco destes, vomito negro: dous aprezentando a forma typhica: dous
+					duvidozos e este no periodo de invazão da molestia. Regulou a mortalidade total
+					em dezoito e meio por cento.</p> PROPHILAXIA <p>Sendo a febre amarella uma
+					molestia infecto-contagiosa, como já dissemos em uma parte d'este trabalho claro
+					está que a hygiene publica bem como a individual devem lançar mãos de seus
+					recursos para, senão extingir, ao menos minorar os seus males.</p>
+				<p>Quanto ao que diz respeito á hygiene publica, ao governo compete, de combinação
+					com a sciencia velar pelo bem estar do povo.</p>
+				<p>Assim pois, reinando a epidemia em um pôrto, achamos de grande necessidade que
+					todos os navios que chegarem á esse porto sejão<pb n="24"/> afastados do
+					ancoradouro; que os seus passageiros sejam desembarcado em lugar distante da
+					cidade: que esses passageiros estejam debaixo da vigilancia de um medico sendo
+					convenientemente alimentados, e obrigados a observarem todos os preceitos
+					impostos pelo medico. Não deveriam expor-se ao rigôr do sol, nem entregar-se-hão
+					á excessos de qualidade alguma, como por exemplo, o abuso dos alcoolicos, a
+					dormida ao relento aos resfriamentos, e nem deverão comer fructos verdes. Quando
+					apparecer entre elles casos da molestia ou mesmo algum caso duvidoso, o medico
+					deve tomar todo cuidado, mandando o doente para o lazareto, que n'esta occasião
+					deverá o governo ter criado. Aquelles porem que se conservarem incolumes,
+					deverão passsar de vezem quando ao centro da cidade, afim de que pouco a pouco
+					se aclimem.</p>
+				<p>Como ja dissemos, os navios estando afastados do ancoradouro e em um lugar cuja
+					ventilação seja franca e livre, e que alem disto estejam ao abrigo das emanações
+					putridas que possam vir de terra, então proceder-se-ha a descarga do navio, que
+					melhor será feita pelos habitantes do lugar do que pela tripolação, pois é certo
+					que as fadigas e o cançaço muito predispõem os individuos á contrahirem o
+					mal.</p>
+				<p>Dedois de descarregado, o navio deve ser lavado com todo cuidado, desde o
+					tombadilho até e quilha, onde dizem os authores, que se desenvoérem gazes
+					maphiticos provenientes da mistura d'agua doce com a salgada.</p>
+				<p>Depois de lavado o navio, deve-se immediatamento proceder a desinfecção: o
+					chloro, o enchofre, o acido phenico, e o Labarraque tem real applicação n'estes
+					casos.</p>
+				<p>A commissão medica que fôr encarregada de assistir a descarga do navio, deve
+					velar com toda attenção á este acto, ordenando que se abram todas as escotilhas,
+					afim de que se dê a ventilação no interior do navio.</p>
+				<p>O governo humanitario, como deve ser, e principalmente n'estas occasiões, tudo
+					deve fazer em beneficio do povo; assim achamos de summa importancia que seja
+					criada uma commissão medica, para examinar a<pb n="25"/> carne, e os diversos
+					generos alimenticios que sahem dos mercados, armazens, e vendas para o consumo
+					do povo, devendo ser estes generos da melhor qualidade.</p>
+				<p>Deve haver todo aceio na cidade, afastando-se para longe todas as materias em
+					estado de putrefacção, evitando-se as aguas estagnadas enterrando-se os animaes
+					mortos, emfim, evitar-sehão todas as causas que sejam capazes de dar incremento
+					ao desenvolvimento da molestia. Os quarteis, e as casas de prisão devem ser
+					cuidadosamente aceiadas. Deve-se evitar a aglomeração de povo em logares
+					circunscriptos, bem como nos templos, theatros etc, em razão da viciação do ar,
+					que n'estes lugares torno-se insufficiente.</p>
+				<p>A classe pobre que entre nós é inteiramente balda de recursos, que para bem
+					dizer, vive em um estado de mizeria deploravel, muito precisa da intervenção do
+					governo nas occasiões de epidemias, afim de que este lhe porporcione os meios de
+					emigração para fora da cidade, onde a infeliz pobreza vive encerrada em
+					cubiculos immundos, em que o mal parece auinhar-se para depois fazer explosão.
+					Os cadaveres devem ser immediatamente sepultados, e desinfectados os colxões,
+					lençóes e mais objectos que servirem durante a molestia.</p>
+				<p>Ainda lembramos como medida publica, a inoculação, que em 1855 o Dr. Cuilherme
+					Lambert Humboldt, lembrou com meio preservativo contra a febre amarella.</p>
+				<p>Este meio preservativo consistia na inoculação de uma substancia, cujo principio
+					activo era o venêna de uma serpente, que sendo inoculada ou preservava os
+					individuos para sempre da febre amarella, ou se a contrahiam, era benigna e
+					raramente d'ella pesreciam. Diz o Dr. Humboldt, que no decurso de 9 annos,
+					inoculára 1438 individuos; destes só vira 7 serem affectados da febre amarella,
+					e destes 7, apenas morreram 2. Que em 386 inoculados em Nova-Orleans, sendo
+					depois alguns affectados da febre amarella, em nenhum se manifestaram os
+					symptomas aterradores d'esta molestia, isto é, o vomito negro e as
+					hemorrhagias.</p>
+				<p>Diz mais que, para a inoculação exercer a sua virtude preservadoura,<pb n="26"/>
+					não era necessario que os seus symptomas fossem intensos; que somente bastava os
+					inoculados apresentarem o enfraquecimento do pulso e uma tendencia hemorrhogica
+					das <term type="body-part">gengivas</term> Essa substancia depois de ter sido
+					inoculada no <term type="body-part">braço</term>, pelo mesmo processo que a
+					vacina, applicava-se sobre as picadas da lanceta uma pequena cruz de malta de
+					esparadrape. Se no fim de alguns minutos levantava-se o apparelho encontrava-se
+					o seguinte: ao redor das picadas uma pequena elevação em forma de papula branca
+					diaphana, análoga a dentada de um mosquito; esse phenomeno era visivel no fim de
+					5 minutos, e no fim de 12 á 24 horas não existia mais. Logo depois da inoculação
+					manifestava-se no <term type="body-part">antebraço</term> uma sensação de
+					comichão e de entorpecimento, ligeiro phenomeno anestesico que durava de 2 á 4
+					dias. No momento da inoculação a molestia delineava-se pela syncope, que passava
+					rapidamente, ou ainda por um tremor nervoso que era mais raro, mas que durava
+					por mais tempo: o pulso accelerava-se sob a impressão do abalo do momento. No
+					fim de 7 horas o pulso era modificado de uma maneira permanente; era mais
+					frequente ou mais lento, mais forte ou mais fraco; no fim de 11 horas, havia
+					calor febril; no de 14 horas, cephalalgia, anorexia e sêde intensa no fim de 16
+					horas, turgencia da <term type="body-part">face</term>, injecção das <term
+						type="body-part">conjunctivas</term> e lacrimejamento; no fim de 18 horas,
+					dôr nas <term type="body-part">gengivas</term>, cujos bordos coravam-se ao redor
+					dos <term type="body-part">dentes</term>, dôr nas <term type="body-part"
+						>glandulas salivares</term> e na direcção dos differentes <term
+						type="body-part">ramos nervosos</term> da <term type="body-part">face</term>
+					e do <term type="body-part">craneo</term>; no fim de 19 horas dôres na <term
+						type="body-part">maxilla</term> inferior, na direcção do <bodyPart>nervo
+						maxillar inferior</bodyPart> e abatimento; no fim de 20 horas, gosto amargo,
+					somnolencia, corisa, e edema da <term type="body-part">face</term>; no fim de 20
+					horas, gosto amargo, somnolencia, corisa e edema da <term type="body-part"
+						>face</term>; no fim de 2 horas, sentimento de constricção na <term
+						type="body-part">garganta</term> sem modificação visivel da <term
+						type="body-part">mucosa</term>, no fim de 23 horas, suffusão icterica; no
+					fim de 24 horas, hemorrhagia das geugivas; no fim de 28 horas, angina tensillar;
+					no fim de 30 horas rhachialgia; no fim de 36 horas, edema das <term
+						type="body-part">palpebras</term>; no fim de 38 horas, dôres musculares e
+					articulares; no fim de 40 horas, odontalgia; emfim depois de 72 horas, edema do
+						<term type="body-part">labio</term> inferior.</p>
+				<pb n="27"/><p>Tal era o modo porque se manifestava a molestia provocada pela
+					inoculação. Logo depois da inoculação, era administrado um xarope composto
+					d'esta maneira:</p> R.—Xarope de <term type="plant">eupatorio</term> (<term
+					type="plant">mikania guaco</term>) 187 grammas Dito de <term type="plant"
+					>rhuibardo</term> 125 grammas Iodureto de potassio 4 grammas Goma gutta 12
+				grammas Misture. <p>Este medicamento era administrado do seguinte modo: no primeiro
+					dia, uma colher de sôpa de 2 em 2 horas; no segundo dia uma colher pe 4 em 4
+					horas, no terceiro dia uma colher de manhã e outra á tarde.</p>
+				<p>Se os symptomas apresentavam violencia, elle demiuuia os intervallos e dava com o
+					xarope uma chicara de <term type="plant">chá</term> de 2 em 2 horas. E quando os
+					symptomas eram muito intensos, eram combatidos pelo sulphato de quinina.</p>
+				<p>Vemos pois, que grande parte dos symptomas fornecidos pela inoculação, não deixam
+					de ter grande analogia com os da febre amarella Quem sabe se da mesma maneira
+					que a vacina, que foi considerada como uma utopia, esta substancia inoculavel
+					não venha para o futuro trazer a humanidade immensos beneficios?</p>
+				<p>Lembramos este facto, apenas como novidade, sem emittirmos nenhum juizo sobre
+					elle: deixemos qne o futuro possr demonstrar a suá utilidade ou por ventura a
+					sua banalidade.</p>
+				<p>Ainda a hygiene dá uma serie de conselhos, que devem ser observados pelo
+					individuo particularmente. Os medicos que exercerem a clinica na cidade, devem
+					com prudencia instruirem aos individuos de que ha epedemia, afim de que elles
+					não fiquem na ignorancia, não se deixem apoderar pelo terror, e procurem
+					acautelar-se das intempereis da<pb n="28"/> estação, não commettendo certas
+					imprudencias, e procurem evitar tudo quanto lhes possa fazer mal.</p>
+				<p>Cada individuo deve ter a sua habitação bem aceiada, convenientemente arejada,
+					arredando de suas immediações todas as substancias que se possam putrefazer.
+					Deve cada individuo cuidar de si, nutrindo-se moderamente de alimentos cuja
+					digestibilidade seja facil, evitando o uso immoderado das bebidas alcoolicas,
+					dos prazeres venereos, emfim evitará todas as causas que tendem á enfraquecer o
+					organismo, pois sabemos que a febre amarella combate com victoria segura as suas
+					victimas quando ja se acham fracas.</p>
+				<p>Muitos praticos aconselham que se faça uso de laxativos brandos como
+					preservativos, pois elles conservam sempre livre o turbo digestivo. As
+					vestimentas devem ser apropriadas as estações. As grandes vigilias, os trabalhos
+					intellectuaes, as fadigas moraes, devem ser evitadas, pois enfraquecendo o
+					organismo predispoem-no a facilmente contrahir a molestia.</p>
+				<p>Nas casas em que existirem doentes de febre amarella, achamos conveniente que se
+					proceda a inhumação das materias fecaes e que se use constantemente dos
+					disinfectantes.</p>
+				<p>São estes os conselhos que a hygiene dá, e que segundo nos parece, muito devem
+					servir, a aquelles que commettendo qnanta sorte de extravagancia ha, abusam
+					completamente do bem mais precioso que possuimos—a saude.</p>
+				<p>Aqui concluimos o nosso pequeno trabalho, certos de que leva o cunho da
+					inperfeição; pois alem de faltar-nos os recursos mais necessarios, falta-nos
+					tambem o habito de escrever para o publico: e se não fossemos obrigados pela
+					imperiosa lei do dever, por certo que nos conservariamo-nos mais profundo e
+					absoluto silencio. Resta-nos um consolo, é que se por um lado falta-nos a
+					intelligencia, por outro sóbram-nos os bons desejos, que esperamos ser bem
+					acolhidos pela benevolencia de nossos Mestres.</p></div>
 		</body>
 		<back>
 			<div>SECÇÃO CIRURGICA FERIDAS POR ARMA DE FOGO. PROPOSIÇÕES. 1.ª—As feridas por arma de
@@ -934,9 +928,9 @@
 				geralmente seccos, anegrados, abertos e echymosados. 3.ª—Em geral póde-se, sem muita
 				difficuldade, nos ferimentos por arma de fogo distinguir-se as aberturas de entrada
 				e de sahida da bala. 4.ª—A abertura de entrada é geralmente regular e contuza, tendo
-				as <bodyPart>partes molles</bodyPart> dirigidas para dentro; a da sahida é menos
-				contuza, mais irregular, e as <bodyPart>partes molles</bodyPart> são projectadas
-				para fóra. 5.ª—Pela existencia de uma só abertura, não deve o cirurgião
+				as <term type="body-part">partes molles</term> dirigidas para dentro; a da sahida é
+				menos contuza, mais irregular, e as <term type="body-part">partes molles</term> são
+				projectadas para fóra. 5.ª—Pela existencia de uma só abertura, não deve o cirurgião
 				absolutamente inferir que existe n'ella o projectil: assim como pela existencia de
 				duas aberturas não deve elle affirmar a não existencia de corpo extranho. 6.ª—Para
 				examinar se ha ou não corpo extranho em uma ferida o melhor instrumento de que o
@@ -948,44 +942,45 @@
 				sempre grave e algumas vezes mortal. 10.—Em certos casos as amputações são
 				reclamadas em consequencia desses ferimentos, e as vezes ellas devem ser praticadas
 				immediatamente. 11.—E' de grande necessidade a observancia dos meios hygienicos no
-				tratamento das feridas por arma de fogo. 12.—A hydrotherapia, o oleo de
-					<plantName>copahiba</plantName>, a glycerina, o acido phenico, a tinctura de
-				iodo; o alcool camphorado, e o Labarraque, são hoje empregados com muita vantagem no
+				tratamento das feridas por arma de fogo. 12.—A hydrotherapia, o oleo de <term
+					type="plant">copahiba</term>, a glycerina, o acido phenico, a tinctura de iodo;
+				o alcool camphorado, e o Labarraque, são hoje empregados com muita vantagem no
 				tratamento das feridas por arma de fogo.</div>
-			<div>SECÇÃO MEDICA Acção physiologica e therapeutica do <plantName>café</plantName> e do
-					<plantName>chá</plantName> PROPOSICÕES. C'est toi, divin
-					<plantName>café</plantName>, dont l'aimable liqueur Sans alterer la tête,
-				épanouit le cœur, (DÉLILE.) 1.ª—O <plantName>café</plantName> pertence a familia das
-				Rubiaceas, a tribu das cofeaceas, é conhecido pelo nome de <plantName>coffœa
-					arabica</plantName>. 2.ª—O principio activo do <plantName>café</plantName> e a
-				cafeina. Encontra-se n'elle celluloze-glycose, dextrina, acido vegetal
-				indeterminado, legumina, caseina, oleo essencial concreto, essencia aromatica,
-				substancias gordas, e substancias mineraes. 3.ª—E' principalmente sobre o systema
-				nervoso que o <plantName>café</plantName> dirije a sua acção. 4.ª—O
-					<plantName>café</plantName> estimulando o <bodyPart>cerebro</bodyPart> sem
-				perturbal-o, como os alcoolicos, produz nas pessôas nervosas um estado erethil e
-				vaporoso, facilita o trabalho intellectual, desenvolve as idéas e é por isso chamado
-				por Cabanis, o alimento do genio. 5.ª—O abuso do <plantName>café</plantName> pelas
-				pessoas nervosas e não habituadas á seu uso produz a insomnia, o tremor dos
-					<bodyPart>membros</bodyPart>, as palpitações do <bodyPart>coração</bodyPart> e o
-				enfraquecimento do <bodyPart>orgão</bodyPart> da digestão. 6.ª—Depois da comida não
-				só o <plantName>café</plantName> deleita-nos immenso o sentido do gosto, como ainda
-				favorece a digestão excitando o <bodyPart>estomago</bodyPart>. 7.ª—O
-					<plantName>café</plantName> é empregado nas cephalalgias nervosas, congestões
-				cerebraes, hernias estranguladas, cholera-morbus e em outros estados morbidos. 8.ª—O
-					<plantName>café</plantName>, por suas propriedades estimulantes, é empregado
-				para combater a acção do opio dos alcoolicos. 9.ª—O <plantName>chá</plantName>,
-					<plantName>thea sinensis</plantName>, da familia das Theaceas, do genero
-					<plantName>thea</plantName>. 10.—O principio activo do
-					<plantName>chá</plantName> é a thêna. N'elle se encontra pela analyse, oleo
-				essencial, chlorafila, cêra, rezina, gomma, tanino, materia extrativa, lenhoso e
-				tambem a cofeina. 11.—O <plantName>chá</plantName> até certo tempo se era usado como
-				bebida agradavel e de luxo: depois dos trabalhos de Péligot, que reconheceu n'elle a
-				existencia de grandes proporções em principios azotados, foi collocado entre os
-				alimentos nutritivos. 12.—Os individuos, cujas digestões são vagarosas e tardias,
-				devem fazer uso da infusão de <plantName>chá</plantName> em pequena quantidade, afim
-				de que este como digestivo ajude o <bodyPart>estomago</bodyPart> a digerir os
-				alimentos solidos de que se acha sobrecarregado.</div>
+			<div>SECÇÃO MEDICA Acção physiologica e therapeutica do <term type="plant">café</term> e
+				do <term type="plant">chá</term> PROPOSICÕES. C'est toi, divin <term type="plant"
+					>café</term>, dont l'aimable liqueur Sans alterer la tête, épanouit le cœur,
+				(DÉLILE.) 1.ª—O <term type="plant">café</term> pertence a familia das Rubiaceas, a
+				tribu das cofeaceas, é conhecido pelo nome de <plantName>coffœa arabica</plantName>.
+				2.ª—O principio activo do <term type="plant">café</term> e a cafeina. Encontra-se
+				n'elle celluloze-glycose, dextrina, acido vegetal indeterminado, legumina, caseina,
+				oleo essencial concreto, essencia aromatica, substancias gordas, e substancias
+				mineraes. 3.ª—E' principalmente sobre o systema nervoso que o <term type="plant"
+					>café</term> dirije a sua acção. 4.ª—O <term type="plant">café</term>
+				estimulando o <term type="body-part">cerebro</term> sem perturbal-o, como os
+				alcoolicos, produz nas pessôas nervosas um estado erethil e vaporoso, facilita o
+				trabalho intellectual, desenvolve as idéas e é por isso chamado por Cabanis, o
+				alimento do genio. 5.ª—O abuso do <term type="plant">café</term> pelas pessoas
+				nervosas e não habituadas á seu uso produz a insomnia, o tremor dos <term
+					type="body-part">membros</term>, as palpitações do <term type="body-part"
+					>coração</term> e o enfraquecimento do <term type="body-part">orgão</term> da
+				digestão. 6.ª—Depois da comida não só o <term type="plant">café</term> deleita-nos
+				immenso o sentido do gosto, como ainda favorece a digestão excitando o <term
+					type="body-part">estomago</term>. 7.ª—O <term type="plant">café</term> é
+				empregado nas cephalalgias nervosas, congestões cerebraes, hernias estranguladas,
+				cholera-morbus e em outros estados morbidos. 8.ª—O <term type="plant">café</term>,
+				por suas propriedades estimulantes, é empregado para combater a acção do opio dos
+				alcoolicos. 9.ª—O <term type="plant">chá</term>, <term type="plant">thea
+					sinensis</term>, da familia das Theaceas, do genero <term type="plant"
+					>thea</term>. 10.—O principio activo do <term type="plant">chá</term> é a thêna.
+				N'elle se encontra pela analyse, oleo essencial, chlorafila, cêra, rezina, gomma,
+				tanino, materia extrativa, lenhoso e tambem a cofeina. 11.—O <term type="plant"
+					>chá</term> até certo tempo se era usado como bebida agradavel e de luxo: depois
+				dos trabalhos de Péligot, que reconheceu n'elle a existencia de grandes proporções
+				em principios azotados, foi collocado entre os alimentos nutritivos. 12.—Os
+				individuos, cujas digestões são vagarosas e tardias, devem fazer uso da infusão de
+					<term type="plant">chá</term> em pequena quantidade, afim de que este como
+				digestivo ajude o <term type="body-part">estomago</term> a digerir os alimentos
+				solidos de que se acha sobrecarregado.</div>
 			<div>SECÇÃO ACCESSORIA Como reconheer-se que houve aborto em um caso medico-legal ?
 				PROPOSIÇÕES. 1.ª—Aborto em Medicina-legal, é a expulsão violenta e prematura do
 				producto da concepção. 2.ª—Ainda são muito obscuras e difficeis as questões que
@@ -997,22 +992,23 @@
 				aborto são empregados os meios indirectos ou substancias therapeuticas, e os meios
 				directos ou processos cirurgicos. 6.ª—As substancias therapeuticas empregadas como
 				abortivas são muitas vezes falliveis. 7.ª—Os processos cirurgicos gozam
-				incontestavelmente de maior efficacia. 8.ª—O <plantName>centeio espigado</plantName>
-				deixa de ser considerado como agente poderoso para provocar o aborto, porque elle
-				não determina a contractilidade do <bodyPart>utero</bodyPart> sem que haja trabalho
-				em começo. 9.ª—Entre os diversos meios abortivos, a electricidade é modernamente
-				empregada como menos perigosa a vida da mulher. 10.—Não deve o medico legista
-				prescindir de examinar o producto expellido pelo <bodyPart>utero</bodyPart>, para
-				reconhecer se houve ou não aborto. 11.—Tambem deve elle prestar attenção as
-				alterações que apresentam os <bodyPart>orgãos</bodyPart> genitaes da mulher, para
-				maior clareza do diagnostico. 12.—Não deve o medico legista esquecer-se dos
-				precedentes da mulher, que são de algum valor para o caso em questão.</div>
+				incontestavelmente de maior efficacia. 8.ª—O <term type="plant">centeio
+					espigado</term> deixa de ser considerado como agente poderoso para provocar o
+				aborto, porque elle não determina a contractilidade do <term type="body-part"
+					>utero</term> sem que haja trabalho em começo. 9.ª—Entre os diversos meios
+				abortivos, a electricidade é modernamente empregada como menos perigosa a vida da
+				mulher. 10.—Não deve o medico legista prescindir de examinar o producto expellido
+				pelo <term type="body-part">utero</term>, para reconhecer se houve ou não aborto.
+				11.—Tambem deve elle prestar attenção as alterações que apresentam os <term
+					type="body-part">orgãos</term> genitaes da mulher, para maior clareza do
+				diagnostico. 12.—Não deve o medico legista esquecer-se dos precedentes da mulher,
+				que são de algum valor para o caso em questão.</div>
 			<div>HYP CRATIS APHORISMI ——— I Vita brevis, ars longa, occasio prœceps, experientia
 				fallax, judicium difficile. (Sect. 1ª aph. 1). II In febribus, ex somnis pavores,
 				aut convulsiones, malum. (Sect. 4ª aph. 67). III Ubi somnus delirium sedat, bonum.
 				(Sect. 2. aph. 2). IV Ad extremos morbos, extrema remedia, exquisite optima. (Sect.
 				2ª aph. 6). V Vulneri convulsio superveniens, lethale. (Sect. 5ª aph. 2ª). VI Mulier
-				in <bodyPart>utero</bodyPart> gerens sectâ venâ abortit, et magis, si major
+				in <term type="body-part">utero</term> gerens sectâ venâ abortit, et magis, si major
 				fuefœtus. (Sect. 5ª aph. 31).</div>
 			<div>[No original, a página seguinte está em letra caligráfica.] Remettida á commissão
 				revisora, Bahia e Faculdade de Medicina em 1 de Agosto de 1871, Dr. Cincinato Pinto.
