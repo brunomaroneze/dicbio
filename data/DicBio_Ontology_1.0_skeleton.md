@@ -383,7 +383,69 @@ A Ontologia DicBio organiza-se em torno de cinco camadas articuladas. A camada *
 
 ### 9.4. Relação entre os principais componentes
 
-<!-- Inserir diagrama da ontologia, se houver. -->
+```mermaid
+flowchart TB
+
+    subgraph L["CAMADA LEXICAL — OntoLex-Lemon"]
+        LE["LexicalEntry<br/>Entrada lexical"]
+        F["Form<br/>Forma"]
+        S["LexicalSense<br/>Acepção"]
+        
+        LE -->|"canonicalForm / otherForm"| F
+        LE -->|"sense"| S
+    end
+
+    subgraph E["CAMADA ETIMOLÓGICA — LemonEty + DicBio"]
+        ET["Etymology<br/>Hipótese etimológica"]
+        SE["LexicalSense<br/>Étimo semântico"]
+        FE["Form<br/>Étimo formal"]
+        
+        S -->|"etymology"| ET
+        ET -->|"semanticEtymon"| SE
+        ET -.->|"formalEtymon (opcional)"| FE
+    end
+
+    subgraph M["CAMADA MORFOLÓGICA — OntoLex-Morph / VarTrans"]
+        WFR["WordFormationRelation<br/>Relação de formação"]
+        
+        ET -->|"hasWordFormationRelation<br/>(quando pertinente)"| WFR
+        WFR -->|"source"| LE
+        WFR -->|"target"| LE
+        WFR -->|"category"| WFT["WordFormationType<br/>Tipo de formação"]
+    end
+
+    subgraph D["CAMADA DE EVIDÊNCIA DOCUMENTAL — DicBio / PROV-O / NIF"]
+        AT["Attestation<br/>Atestação histórica"]
+        WO["nif:Word<br/>Ocorrência no corpus"]
+        
+        S -->|"hasAttestation"| AT
+        SE -->|"hasAttestation (quando pertinente)"| AT
+        AT -->|"attestedByOccurrence<br/>(quando identificável)"| WO
+        WO -->|"realizesForm"| F
+        WO -->|"realizesSense"| S
+    end
+
+    subgraph C["CAMADA CONCEPTUAL — SKOS"]
+        CON["skos:Concept<br/>Conceito de domínio"]
+        EXT["Conceito externo<br/>(ex.: UBERON)"]
+        
+        S -->|"reference"| CON
+        CON -->|"exactMatch"| EXT
+    end
+
+    classDef lexical fill:#DCEBFA,stroke:#4472A8,color:#17365D
+    classDef etym fill:#FCE8D5,stroke:#C47A35,color:#633B16
+    classDef morph fill:#E6DDF5,stroke:#8665A5,color:#38264D
+    classDef document fill:#DDEEDB,stroke:#57915B,color:#24452A
+    classDef concept fill:#F8E6EA,stroke:#B65B77,color:#572A38
+
+    class LE,F,S lexical
+    class ET,SE,FE etym
+    class WFR,WFT morph
+    class AT,WO document
+    class CON,EXT concept
+```
+**Figura 1 —** Visão geral das relações entre os principais componentes da Ontologia DicBio 1.0. O diagrama apresenta as cinco camadas do modelo — lexical, etimológica, morfológica, de evidência documental e conceptual — e suas principais relações, com base em OntoLex-Lemon, LemonEty, OntoLex-Morph, OntoLex-VarTrans, NIF, PROV-O e SKOS.
 
 ---
 
