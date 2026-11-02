@@ -212,13 +212,6 @@ Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio
 | `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | owl:sameAs para remissões |
 | `rdfs:` | RDF Schema | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | rdfs:seeAlso para remissões |
 
-
-<!-- ### 7.3. Justificativa das reutilizações
-
-Será que precisa deste item?
-
-Explicar as principais decisões de reutilização -->
-
 ---
 
 ## 8. Princípios de modelagem
@@ -1049,9 +1042,6 @@ A Ontologia DicBio utiliza SKOS em dois sentidos complementares. Em primeiro lug
 
 LexInfo é reutilizada, nos dados do DicBio (embora não como dependência formal da ontologia — ver §7.2), para representar propriedades e valores gramaticais das entradas e formas lexicais, como categoria gramatical (`lexinfo:partOfSpeech`), gênero (`lexinfo:gender`), número (`lexinfo:number`) e caso (`lexinfo:case` — especialmente para as formas latinas), conforme ilustrado nos exemplos de §13.1 e §13.2.
 
-<!-- ### 14.5. Outros alinhamentos
-
-Registrar outros alinhamentos relevantes. -->
 
 ### 14.5. Tabela de alinhamentos
 
@@ -1089,7 +1079,8 @@ Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é infe
 ### 15.3. Domínio e range
 
 As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:formalEtymon` tem `rdfs:range ontolex:Form`, o objeto é inferido como `ontolex:Form`. Da mesma forma, `dicbio:semanticEtymon` tem range `ontolex:LexicalSense`, de modo que o objeto é inferido como `ontolex:LexicalSense`.
-<!-- Preciso ver se acrescento que o SHACL não usa inferência e, por isso, o étimo precisa ser declarado como ontolex:LexicalSense. -->
+
+É importante distinguir as inferências realizadas pelo reasoner OWL da validação estrutural dos dados por meio de SHACL. A validação SHACL não pressupõe a materialização das inferências da ontologia. Por isso, nos dados do DicBio, os recursos utilizados como étimos semânticos devem ser explicitamente declarados como instâncias de `ontolex:LexicalSense`, ainda que essa classificação possa ser inferida pelo reasoner a partir de outras declarações.
 
 ### 15.4. Testes com reasoner
 
@@ -1097,7 +1088,9 @@ As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da o
 
 ### 15.5. Limites do raciocínio
 
-<!-- Distinguir inferências lógicas de validação de dados. Explicar que a validação estrutural dos dados será realizada por SHACL. -->
+A consistência lógica da ontologia e a validação estrutural dos dados são procedimentos distintos. O reasoner OWL verifica a consistência dos axiomas e permite obter inferências a partir das relações formalmente declaradas. Esse procedimento, entretanto, não garante que os dados estejam completos ou que atendam a todas as convenções de modelagem estabelecidas pelo projeto.
+
+A validação dos dados do DicBio é realizada por meio de formas SHACL, que permitem verificar restrições estruturais, cardinalidades, propriedades obrigatórias e outras condições específicas da representação dos dados. Assim, a ontologia e o SHACL desempenham funções complementares: a primeira define o modelo semântico; o segundo estabelece critérios de validação para sua aplicação.
 
 ---
 
@@ -1109,19 +1102,9 @@ A versão 1.0 não pretende constituir uma representação exaustiva de todos os
 
 Algumas necessidades de modelagem que surgirem com a expansão do *corpus*, a inclusão de novos tipos de dados ou a incorporação de novos casos lexicográficos poderão exigir extensões ou revisões da ontologia. Tais alterações serão avaliadas em versões posteriores, preservando-se, sempre que possível, a compatibilidade com as versões anteriores.
 
-### 16.2. Limitações de interoperabilidade
-
-<!-- Registrar limitações decorrentes de dependências externas ou diferenças entre modelos. -->
-
-### 16.3. Limitações dos vocabulários reutilizados
-
-<!-- Registrar eventuais limitações relevantes de OntoLex-Lemon, LemonEty, LexInfo etc. -->
-
-### 16.4. Questões em desenvolvimento
+### 16.2. Questões em desenvolvimento
 
 A integração completa com NIF requer a definição de uma estratégia consistente para representação dos offsets de termos, sentenças e parágrafos no corpus. Essa questão será aprofundada durante o desenvolvimento da camada de integração com o corpus.
-
-<!-- Registrar questões que permanecerão em desenvolvimento sem transformá-las em regras da versão 1.0. -->
 
 ---
 
