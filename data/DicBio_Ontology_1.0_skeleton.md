@@ -1075,7 +1075,7 @@ A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**, exe
 
 ### 15.2. Inferências esperadas
 
-<!-- Documentar inferências que decorrem dos axiomas da ontologia. -->
+As inferências esperadas decorrem principalmente das relações de subsunção entre classes e das declarações de domínio e alcance (*range*) das propriedades. Essas inferências permitem que recursos sejam reconhecidos como instâncias de classes mais gerais, mesmo quando essa classificação não está explicitamente declarada nos dados.
 
 Exemplo:
 
