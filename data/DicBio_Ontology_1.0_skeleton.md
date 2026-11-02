@@ -743,7 +743,9 @@ A lista acima não é exaustiva; ela reúne as propriedades reutilizadas mais re
 
 ### 12.4. Extensibilidade dos vocabulários
 
-<!-- Explicar como novos conceitos dos vocabulários controlados poderão ser acrescentados em versões futuras. -->
+Os vocabulários controlados da Ontologia DicBio são extensíveis. Novos conceitos poderão ser acrescentados conforme as necessidades de descrição dos dados do dicionário, desde que respeitem a estrutura e os critérios de organização do vocabulário correspondente.
+
+A inclusão de novos conceitos que não alterem o significado dos elementos existentes poderá ocorrer em versões compatíveis da ontologia (1.x). Alterações na definição ou no significado de conceitos já estabelecidos deverão ser avaliadas de acordo com a política de versionamento descrita em § 3.3 e § 17.1.
 
 ---
 
