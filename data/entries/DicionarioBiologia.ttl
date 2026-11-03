@@ -18,8 +18,6 @@
 @prefix glotto: <https://glottolog.org/resource/languoid/id/> .
 @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
 
-## Adiposo
-
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
     skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
@@ -97,6 +95,7 @@ dbres:etym_adiposo_sense1_h2 a lemonety:Etymology ;
     dcterms:source dbsrc:dicbio_project ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:semanticEtymon dbres:entry_adiposus_sense1 ;
+    dicbio:formalEtymon dbres:form_adiposus ;
     dicbio:etymologicalArgumentation """A forma latina *adiposus*, ainda que não esteja registrada nos dicionários de latim da Antiguidade, pode ser encontrada em textos em latim científico, como, por exemplo, na expressão “panniculus adiposus”, presente na “Acta Physico-Medica” de 1730 (https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C). Dessa forma, o étimo da forma portuguesa pode ser o latim científico, e não uma formação vernacular, como propõe o dicionário Houaiss."""@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
@@ -124,8 +123,6 @@ dbres:attestation_adiposus a dicbio:Attestation ;
 dbres:attestation_adiposo a dicbio:Attestation ;
     dcterms:source dbsrc:work_anatomiasantucci ;
     dicbio:attestationDate "1739"^^xsd:gYear .
-
-## Angulado
 
 dbres:entry_angulado a ontolex:LexicalEntry ;
     dcterms:created "2023-09-15"^^xsd:date ;
@@ -230,7 +227,6 @@ dbres:etym_angulo_sense1_h1 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:outOfScope ;
     dicbio:confidenceLevel dicbio:notApplicable .
 
-## Antera
 
 dbres:entry_antera a ontolex:LexicalEntry ;
     dcterms:created "2022-02-28"^^xsd:date ;
@@ -330,8 +326,6 @@ dbres:attestation_antheros a dicbio:Attestation ;
     skos:note "O dicionário de Liddell, Scott e Jones abona o termo *ἀνθηρός* na comédia *Aves* de Aristófanes, exibida em 414 a.C."@pt ;
     dicbio:attestationDate "-0413"^^xsd:gYear .
 
-## Árvore
-
 dbres:entry_arvore a ontolex:LexicalEntry ;
     dcterms:created "2023-09-18"^^xsd:date ;
     dcterms:creator dbauth:adriane_queiroz,
@@ -367,6 +361,7 @@ dbres:attestation_arvore_sense1_houaiss a dicbio:Attestation ;
 
 dbres:etym_arvore_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_arbor_sense1 ;
+    dicbio:formalEtymon dbres:form_arborem ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalProcess dicbio:inherited ;
     dcterms:source dbsrc:source_houaiss ;
@@ -396,7 +391,6 @@ dbres:form_arborem a ontolex:Form ;
 dbres:entry_arbor_sense1 a ontolex:LexicalSense ;
     skos:definition "Planta que apresenta um tronco em geral alto e grosso, com ramos."@pt .
 
-## Aurícula
 
 dbres:entry_auricula a ontolex:LexicalEntry ;
     dcterms:created "2023-11-27"^^xsd:date ;
@@ -433,12 +427,12 @@ dbres:entry_auricula_sense1 a ontolex:LexicalSense ;
 
 dbres:etym_auricula_sense1 a lemonety:Etymology ; # Cavidade do coração
     dcterms:source dbsrc:dicbio_project ;
-    dicbio:semanticEtymon dbres:entry_auricula_sense1_sense1 ;
+    dicbio:semanticEtymon dbres:entry_auricula_lat_sense1 ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation """O étimo é o latim científico *auricula*, que já era empregado para designar as cavidades superiores do coração (chamadas de "átrio" pela Medicina do século XXI) no latim científico desde pelo menos o século XVII (como, por exemplo, em "Anatome Animalium" de Gerard Blasius, 1681 - https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC), mas em língua portuguesa o primeiro emprego parece mesmo ter sido na obra de Vandelli. Bernardo Santucci, na "Anatomia do Corpo Humano" (1739), à p. 125, fala em "orelhas do coraçaõ" em vez de "aurículas"."""@pt .
 
-dbres:entry_auricula_sense1_sense1 a ontolex:LexicalSense ;
+dbres:entry_auricula_lat_sense1 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_auricula_lat_sense1_blasius ;
     skos:definition "Cavidade superior dos ventrículos do coração."@pt .
 
@@ -454,8 +448,8 @@ dbres:entry_auricula_lat a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     dcterms:language glotto:lati1261 ;
     ontolex:canonicalForm dbres:form_auricula_lat ;
-    ontolex:sense dbres:entry_auricula1_sense1, 
-        dbres:entry_auricula_sense2_sense1 ;
+    ontolex:sense dbres:entry_auricula_lat_sense1, 
+        dbres:entry_auricula_lat_sense2 ;
     skos:exactMatch <https://lila-erc.eu/data/id/lemma/90761> .
 
 dbres:form_auricula_lat a ontolex:Form ;
@@ -474,10 +468,10 @@ dbres:etym_auricula_sense2 a lemonety:Etymology ; # Orelha
         dbsrc:source_houaiss ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:probable ;
-    dicbio:semanticEtymon dbres:entry_auricula_sense2_sense1 ;
+    dicbio:semanticEtymon dbres:entry_auricula_lat_sense2 ;
     dicbio:etymologicalArgumentation """O étimo é o latim *auricula*, diminutivo de *auris*, que na Antiguidade era empregado para se referir à orelha (conforme afirma o Oxford Latin Dictionary). É sabido que a forma *auricula* é também o étimo da forma herdada "orelha"; dessa forma, "orelha" e "aurícula" são, etimologicamente, formas *doublets*."""@pt .
 
-dbres:entry_auricula_sense2_sense1 a ontolex:LexicalSense ;
+dbres:entry_auricula_lat_sense2 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_auricula_lat_sense2_gaffiot,
         dbres:attestation_auricula_lat_sense2_old ;
     skos:definition "Orelha."@pt .
@@ -598,7 +592,7 @@ dbres:attestation_orelha_do_coracao_sense1_santucci a dicbio:Attestation ;
     dicbio:attestationDate "1739"^^xsd:gYear ;
     dcterms:source dbsrc:work_anatomiasantucci .
 
-## Bálano
+
 
 dbres:entry_balano a ontolex:LexicalEntry ;
     dcterms:created "2024-10-07"^^xsd:date ;
@@ -660,7 +654,7 @@ dbres:etym_balanus a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:borrowed ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation "O latim *balanus* é certamente um empréstimo do grego *βάλανος*, ainda que apenas esteja atestado em textos do latim científico."@pt ;
-    dicbio:semanticEtymon dbres:entry_balanos_sense2_sense1 .
+    dicbio:semanticEtymon dbres:entry_balanos_sense2 .
 
 dbres:attestation_balanos_grc_sense1 a dicbio:Attestation ;
     dcterms:source dbsrc:source_LSJ ;
@@ -680,13 +674,13 @@ dbres:entry_balanos a ontolex:LexicalEntry ;
     lexinfo:partOfSpeech lexinfo:noun ;
     lexinfo:gender lexinfo:feminine ;
     ontolex:sense dbres:entry_balanos_sense1,
-        dbres:entry_balanos_sense2_sense1 .
+        dbres:entry_balanos_sense2 .
 
-dbres:entry_balanos_sense1_sense1 a ontolex:LexicalSense ;
+dbres:entry_balanos_sense1 a ontolex:LexicalSense ;
     skos:definition "Fruto do carvalho."@pt ;
     dicbio:hasAttestation dbres:attestation_balanos_grc_sense1 .
 
-dbres:entry_balanos_sense2_sense1 a ontolex:LexicalSense ;
+dbres:entry_balanos_sense2 a ontolex:LexicalSense ;
     skos:definition "Glande do pênis."@pt ;
     lemonety:etymology dbres:etym_balanos_sense2 ;
     ontolex:reference dbres:concept_glande ;
@@ -694,7 +688,7 @@ dbres:entry_balanos_sense2_sense1 a ontolex:LexicalSense ;
 
 dbres:etym_balanos_sense2 a lemonety:Etymology ;
     dicbio:etymologicalProcess dicbio:semanticDerivation ;
-    dicbio:semanticEtymon dbres:entry_balanos_sense1_sense1 ;
+    dicbio:semanticEtymon dbres:entry_balanos_sense1 ;
     dcterms:source dbsrc:source_LSJ ;
     dicbio:confidenceLevel dicbio:certain ;
     dicbio:etymologicalArgumentation """A acepção de "glande do pênis é uma derivação semântica da acepção original "fruto do carvalho", por semelhança de forma."""@pt .
@@ -730,3 +724,203 @@ dbres:concept_glande a skos:Concept ;
     skos:definition "Cabeça do pênis."@pt ;
     skos:exactMatch <http://purl.obolibrary.org/obo/UBERON_0001299> .
 
+
+
+### REGISTRO DAS FONTES ###
+
+# Quando a fonte é o nosso próprio projeto:
+
+dbsrc:dicbio_project a foaf:Project ;
+    foaf:name "Dicionário Histórico de Termos da Biologia" ;
+    dcterms:title "Dicionário Histórico de Termos da Biologia" ;
+    foaf:homepage <https://dicbio.fflch.usp.br/> .
+
+# Vandelli
+dbsrc:work_diciovandelli a bibo:Book ;
+    dcterms:title "Diccionario dos Termos Technicos de Historia Natural" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1445443> ;
+    dcterms:issued "1788"^^xsd:gYear ;
+    dcterms:language glotto:port1283, 
+        glotto:lati1261 ;
+    foaf:page <https://fontesdoportugues.bnportugal.gov.pt/index.php/dicionarios/10-enciclopedias-e-dicionarios-especializados/45-vandelli-domingos-1735-1816> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138313012> ; # URI universal do Vandelli (criada por nós, pois o Wikidata ainda não tinha um item para essa obra)
+    dcterms:hasFormat <https://purl.pt/13958/1/> .
+
+# Santucci
+dbsrc:work_anatomiasantucci a bibo:Book ;
+    dcterms:title "Anatomia do Corpo Humano" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q88168950> ; # URI para Bernardo Santucci
+    dcterms:issued "1739"^^xsd:gYear ;
+    dcterms:language glotto:port1283 ;
+    foaf:page <https://archive.org/details/anatomiadocorpoh00sant/page/n6/mode/1up> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q138340024> . # URI universal do Santucci
+
+# Brotero (obra completa, os dois volumes)
+dbsrc:work_brotero
+    a bibo:Book ;
+    dcterms:title "Compêndio de Botânica" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1032088> ; # URI para Félix Avelar Brotero
+    dcterms:issued "1788"^^xsd:gYear ;
+    dcterms:language glotto:port1283 ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q140626319> .
+
+# Brotero volume 1
+dbsrc:work_compendio1brotero a bibo:Book ;
+    dcterms:isPartOf dbsrc:work_brotero ;
+    bibo:volume "1" ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q51458201> .
+
+# Brotero volume 2
+dbsrc:work_compendio2brotero a bibo:Book ;
+    dcterms:isPartOf dbsrc:work_brotero ;
+    bibo:volume "2" ;
+    foaf:page <https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-16/UCFCTBt-B-78-1-16_item1/index.html> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q51458204> .
+
+# Semmedo
+dbsrc:work_semmedo a bibo:Book ;
+    dcterms:title "Observações médicas doutrinais" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q94822098> ; # URI para João Curvo Semmedo
+    dcterms:issued "1706"^^xsd:gYear ;
+    dcterms:language glotto:port1283 ;
+    foaf:page <https://archive.org/details/bub_gb_qCVH54Hs2i0C> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q140626344> . # URI universal da obra de Semmedo
+
+# Definição do Houaiss
+dbsrc:source_houaiss a bibo:Book, bibo:ReferenceSource ;
+    dcterms:title "Dicionário Houaiss da Língua Portuguesa" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1337113>, # URI de Antonio Houaiss
+                    <https://www.wikidata.org/entity/Q18277573> ; # URI de Mauro de Salles Villar
+    dcterms:publisher "Editora Objetiva / Instituto Antônio Houaiss de Lexicografia" ;
+    dcterms:language glotto:port1283 ;
+    dcterms:issued "2009"^^xsd:gYear ; # lançamento da versão online
+    dcterms:modified "2025"^^xsd:gYear ; # última revisão conhecida da versão online
+    dcterms:description "Obra de revisão contínua; versão online lançada em 2009." ;
+    bibo:uri <https://houaiss.uol.com.br/> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1797792> . # URI universal do Houaiss
+
+# Definição do Gaffiot
+dbsrc:source_gaffiot a bibo:Book, bibo:ReferenceSource ;
+    dcterms:title "Dictionnaire illustré latin-français" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3092444> ;
+    dcterms:issued "1934"^^xsd:gYear ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1248405> . # URI universal do Gaffiot
+
+# Definição do OLD
+dbsrc:source_old a bibo:Book, bibo:ReferenceSource ;
+    dcterms:title "Oxford Latin Dictionary" ;
+    dcterms:publisher "Oxford University Press" ;
+    dcterms:issued "1968"^^xsd:gYear ;
+    bibo:editor <https://www.wikidata.org/wiki/Q132146572> ; # P. G. W. Glare ;
+    dcterms:description "Obra de autoria editorial coletiva; sem autor individual atribuído." ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q822282> . # URI universal do OLD
+
+# Definição do LSJ
+dbsrc:source_LSJ a bibo:Book, bibo:ReferenceSource ;
+    dcterms:title "The Online Liddell-Scott-Jones Greek-English Lexicon" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q649971>, # URI para Henry George Liddell
+                    <https://www.wikidata.org/entity/Q747540>, # URI para Robert Scott
+                    <https://www.wikidata.org/entity/Q1607288> ; # URI para Henry Stuart Jones
+    dcterms:publisher "University of California" ;
+    dcterms:issued "2011"^^xsd:gYear ;
+    rdfs:seeAlso <https://stephanus.tlg.uci.edu/lsj/> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q300426> . # URI universal do LSJ
+
+
+dbsrc:source_acta_physico_medica_series a bibo:Periodical ;
+    dcterms:title "Acta Physico-Medica Academiae Caesareae Leopoldino-Carolinae" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q13548519> .
+
+dbsrc:source_acta_physico_medica_1730 a bibo:Issue ;
+    dcterms:title "Acta Physico-Medica, Vol. II" ;
+    bibo:volume "2" ;
+    dcterms:issued "1730"^^xsd:gYear ;
+    dcterms:isPartOf dbsrc:source_acta_physico_medica_series ; 
+    rdfs:seeAlso <https://www.google.com.br/books/edition/Acta_physico_medica_Academiae_caesareae/bYy3qY5Fgn8C> .
+
+dbsrc:source_blasius a bibo:Book ;
+    dcterms:title "Anatome Animalium" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3282772> ;
+    dcterms:issued "1681"^^xsd:gYear ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138340044> ; # URI universal do Blasius
+    dcterms:hasFormat <https://www.google.com.br/books/edition/Gerardi_Blasii_Anatome_animalium_terrest/Bx1fAGulTCQC?gbpv=0> .
+
+dbsrc:source_manget a bibo:Book ;
+    dcterms:title "Bibliotheca Chirurgica tomus tertius" ;
+    dcterms:creator <https://www.wikidata.org/entity/Q3166339> ;
+    dcterms:issued "1721"^^xsd:gYear ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q138375186> ; # URI universal do Manget, criada por nós, pois o Wikidata ainda não tinha um item para essa obra
+    dcterms:hasFormat <https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC> .
+
+
+### REGISTRO DOS COLABORADORES ###
+
+dbauth:adriane_queiroz a foaf:Person ;
+    foaf:name "Adriane Maria de Oliveira Queiroz" ;
+    dcterms:identifier <https://orcid.org/0009-0003-3281-5247> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9688350818351425> .
+
+dbauth:ana_menegassi_rocha a foaf:Person ;
+    foaf:name "Ana Carolina Menegassi Rocha" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3118171481670217> .
+
+dbauth:ana_cristina_lopes a foaf:Person ;
+    foaf:name "Ana Cristina Gouvêa Lopes" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/6091690669901066> .
+
+dbauth:bruno_maroneze a foaf:Person ;
+    foaf:name "Bruno Oliveira Maroneze" ;
+    dcterms:identifier <https://orcid.org/0000-0002-2821-9448> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/2386581098769105> .
+
+dbauth:dannielly_rodrigues_silva a foaf:Person ;
+    foaf:name "Dannielly Victória Rodrigues da Silva" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/8693099469156427> .
+
+dbauth:fabiani_goncalves a foaf:Person ;
+    foaf:name "Fabiani de Amorim Gonçalves" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5556839544035822> .
+
+dbauth:geovanna_lima a foaf:Person ;
+    foaf:name "Geovanna Salvino de Lima" ;
+    dcterms:identifier <https://orcid.org/0009-0000-3764-9477> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1383229230978249> .
+
+dbauth:kamila_barbosa a foaf:Person ;
+    foaf:name "Kamila da Silva Barbosa" ;
+    dcterms:identifier <https://orcid.org/0000-0003-2632-0734> ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0824015704100767> .
+
+dbauth:luana_borges a foaf:Person ;
+    foaf:name "Luana da Silva Borges" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/0983397069003665> .
+
+dbauth:marilizi_tarifa a foaf:Person ;
+    foaf:name "Marilizi Arruda Tarifa" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/4376662733752083> .
+
+dbauth:marimeire_barros a foaf:Person ;
+    foaf:name "Marimeire Almeida Barros" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3951171920995304> .
+
+dbauth:matheus_casarin a foaf:Person ;
+    foaf:name "Matheus Stein Casarin" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9927626991207276> .
+
+dbauth:rafaela_domingos a foaf:Person ;
+    foaf:name "Rafaela Lima Domingos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/1269123121808893> .
+
+dbauth:raissa_buss a foaf:Person ;
+    foaf:name "Raissa Silveira Buss" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/5067931665456928> .
+
+dbauth:sammara_valim_santos a foaf:Person ;
+    foaf:name "Sammara Valim Luz dos Santos" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/3505243267193578> .
+
+dbauth:vitoria_pereira a foaf:Person ;
+    foaf:name "Vitória Fernandes Pereira" ;
+    rdfs:seeAlso <http://lattes.cnpq.br/9858754186832086> .
