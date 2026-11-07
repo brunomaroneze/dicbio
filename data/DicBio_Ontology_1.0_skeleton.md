@@ -81,7 +81,7 @@ Além disso, espera-se que esta ontologia seja útil particularmente para pesqui
 
 ### 3.1. Status
 
-A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT, executado por meio do Protégé Desktop. A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, contradomínios (*ranges*), reutilização de ontologias externas e documentação.
+A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT (ver §15.4). A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, contradomínios (*ranges*), reutilização de ontologias externas e documentação.
 
 ### 3.2. Identificação da versão
 
@@ -91,7 +91,7 @@ A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontol
 | URI da ontologia | `https://dicbio.fflch.usp.br/ontology/` |
 | URI da versão | `https://dicbio.fflch.usp.br/ontology/1.0/` |
 | Data de emissão | 2026-08-11 |
-| Data da última modificação | 2026-10-26 |
+| Data da última modificação | 2026-11-07 |
 
 ### 3.3. Política de versionamento
 
@@ -208,7 +208,7 @@ Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio
 | `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações bibliográficas |
 | `vartrans:` | Variation and Translation | `http://www.w3.org/ns/lemon/vartrans#` | Informações morfológicas |
 | `glotto:` | Glottolog | `https://glottolog.org/resource/languoid/id/` | Idiomas das fontes ou dos termos |
-| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Anotação/mapeamento avulsos |
+| `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Anotação avulsa e mapeamento de conceitos (`skos:exactMatch`, só em conceitos; ver §8.10) |
 | `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | owl:sameAs para remissões |
 | `rdfs:` | RDF Schema | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | rdfs:seeAlso para remissões |
 
@@ -353,6 +353,14 @@ Essa estratégia é particularmente útil para modelar dois fenômenos terminol�
 
 Os textos apresentados como literais, especialmente definições e descrições etimológicas, que podem ser relativamente longos, podem apresentar formatação simples em MarkDown, principalmente *itálicos* para representar estrangeirismos e latinismos.
 
+
+### 8.10. Vinculação com recursos lexicais externos
+
+Uma entrada lexical (`ontolex:LexicalEntry`) pode ser relacionada à entrada, página ou lema correspondente em outro recurso lexical — por exemplo, o DBnary (Wikcionário em RDF) ou a LiLa Knowledge Base, para o latim — por meio da propriedade `dicbio:externalEntry` (§11.4.1). A ligação é feita sempre na entrada, nunca na acepção, na forma, na hipótese etimológica ou na atestação, e pode ser repetida quando houver mais de um recurso correspondente. Toda entrada em latim, inclusive a que representa um étimo, deve apontar para o lema correspondente no LiLa.
+
+Essa relação não utiliza `skos:exactMatch` nem `owl:sameAs`, por três razões. Primeiro, `skos:exactMatch` tem domínio e contradomínio `skos:Concept`: aplicado a entradas lexicais, leva o reasoner a classificá-las (e também os recursos externos) como conceitos, o que foi apontado pelos testes com o HermiT. Segundo, os alvos externos não pertencem necessariamente à mesma classe: um lema do LiLa é uma `ontolex:Form`, e o URI do DBnary pode designar uma página (`dbnary:Page`) que reúne várias entradas, e não uma única `ontolex:LexicalEntry`. Terceiro, `owl:sameAs` afirmaria identidade e fundiria, no raciocínio, a entrada do DicBio — com suas acepções, hipóteses etimológicas e autoria próprias — com a entrada externa, cujo inventário de acepções é outro. Por isso, `dicbio:externalEntry` indica apenas correspondência, sem identidade. Remissões de leitura para páginas externas, como o Wikcionário, continuam a ser feitas com `rdfs:seeAlso`.
+
+`skos:exactMatch` permanece reservado a conceitos (`skos:Concept`), como descrito em §8.8.
 ---
 
 ## 9. Visão geral da ontologia
@@ -373,10 +381,10 @@ A Ontologia DicBio organiza-se em torno de cinco camadas articuladas. A camada *
 * Etimologia: `dicbio:semanticEtymon`, `dicbio:etymologicalProcess`, `dicbio:etymologicalArgumentation`, `dicbio:confidenceLevel`, `dicbio:formalEtymon`.
 * Estrutura morfológica: `dicbio:hasWordFormationRelation`.
 * Atestação e corpus: `dicbio:hasAttestation`, `dicbio:attestedByOccurrence`, `dicbio:realizesForm`, `dicbio:realizesSense`, `dicbio:attestationDate`.
-<!-- Acrescentar aqui a propriedade dicbio:externalEntry também? -->
+* Alinhamento com recursos lexicais externos: `dicbio:externalEntry`.
 
 ### 9.4. Relação entre os principais componentes
-<!-- Acrescentar aqui neste gráfico a propriedade dicbio:externalEntry também? -->
+
 ```mermaid
 flowchart TB
 
@@ -427,19 +435,27 @@ flowchart TB
         CON -->|"exactMatch"| EXT
     end
 
+    subgraph X["RECURSOS LEXICAIS EXTERNOS"]
+        EL["Entrada, página ou lema<br/>(ex.: DBnary, LiLa)"]
+    end
+
+    LE -->|"externalEntry"| EL
+
     classDef lexical fill:#DCEBFA,stroke:#4472A8,color:#17365D
     classDef etym fill:#FCE8D5,stroke:#C47A35,color:#633B16
     classDef morph fill:#E6DDF5,stroke:#8665A5,color:#38264D
     classDef document fill:#DDEEDB,stroke:#57915B,color:#24452A
     classDef concept fill:#F8E6EA,stroke:#B65B77,color:#572A38
+    classDef external fill:#EEEEEE,stroke:#808080,color:#333333
 
     class LE,F,S lexical
     class ET,SE,FE etym
     class WFR,WFT morph
     class AT,WO document
     class CON,EXT concept
+    class EL external
 ```
-**Figura 1 —** Visão geral das relações entre os principais componentes da Ontologia DicBio 1.0. O diagrama apresenta as cinco camadas do modelo — lexical, etimológica, morfológica, de evidência documental e conceptual — e suas principais relações, com base em OntoLex-Lemon, LemonEty, OntoLex-Morph, OntoLex-VarTrans, NIF, PROV-O e SKOS.
+**Figura 1 —** Visão geral das relações entre os principais componentes da Ontologia DicBio 1.0. O diagrama apresenta as cinco camadas do modelo — lexical, etimológica, morfológica, de evidência documental e conceptual — e suas principais relações, com base em OntoLex-Lemon, LemonEty, OntoLex-Morph, OntoLex-VarTrans, NIF, PROV-O e SKOS, além da ligação das entradas lexicais a recursos lexicais externos (`dicbio:externalEntry`).
 
 ---
 
@@ -667,14 +683,31 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Superpropriedade:** `itsrdf:taIdentRef`
 
-**Uso:** Especialização de `itsrdf:taIdentRef` para anotação de sentido lexicográfico, distinguindo-se do uso mais comum dessa propriedade para vinculação a entidades nomeadas (ver §14.6).
-<!-- Acrescentar aqui a propriedade dicbio:externalEntry também? -->
+**Uso:** Especialização de `itsrdf:taIdentRef` para anotação de sentido lexicográfico, distinguindo-se do uso mais comum dessa propriedade para vinculação a entidades nomeadas (ver §14.5).
 
-### 11.4. Outras propriedades
+### 11.4. Propriedades de alinhamento com recursos externos
 
-Além das propriedades listadas em 11.1–11.3, a Ontologia DicBio 1.0 não define, nesta versão, propriedades próprias adicionais. Novas propriedades poderão ser introduzidas em versões futuras à medida que novas necessidades de modelagem sejam identificadas (ver §3.3 e §16.1).
+### 11.4.1. `dicbio:externalEntry`
 
-### 11.5. Propriedades reutilizadas
+**URI:** `https://dicbio.fflch.usp.br/ontology/externalEntry`
+
+**Rótulo:** external entry / entrada externa
+
+**Definição:** Relaciona uma entrada lexical do DicBio à entrada, página ou lema correspondente em outro recurso lexical (por exemplo, DBnary ou LiLa). Não afirma identidade entre os recursos.
+
+**Domínio:** `ontolex:LexicalEntry`
+
+**Contradomínio:** nenhum declarado, pois os alvos são heterogêneos: um lema do LiLa é uma `ontolex:Form`, e o URI do DBnary pode designar uma página (`dbnary:Page`) ou uma entrada (`ontolex:LexicalEntry`).
+
+**Superpropriedade:** nenhuma. A propriedade não é subpropriedade de `skos:exactMatch` (cujo domínio e contradomínio, `skos:Concept`, levariam o reasoner a tratar entradas lexicais como conceitos) nem de `owl:sameAs` (que fundiria os indivíduos).
+
+**Uso:** Usada apenas em `ontolex:LexicalEntry`, com um IRI como valor, e pode ser repetida quando houver mais de um recurso correspondente. Toda entrada em latim deve apontar para o lema do LiLa (ver exemplos em §13.1 e §13.5; justificativa em §8.10). Para ligar uma acepção a um conceito, usa-se `ontolex:reference` (§8.8), e `skos:exactMatch` fica restrito a conceitos.
+
+### 11.5. Outras propriedades
+
+Além das propriedades listadas em 11.1–11.4, a Ontologia DicBio 1.0 não define, nesta versão, propriedades próprias adicionais. Novas propriedades poderão ser introduzidas em versões futuras à medida que novas necessidades de modelagem sejam identificadas (ver §3.3 e §16.1).
+
+### 11.6. Propriedades reutilizadas
 
 Além das propriedades próprias descritas acima, os dados do DicBio empregam diversas propriedades de ontologias externas. As principais são:
 
@@ -692,7 +725,7 @@ Além das propriedades próprias descritas acima, os dados do DicBio empregam di
 | `dcterms:source` | Dublin Core Terms | Relaciona um recurso à fonte documental ou bibliográfica correspondente |
 | `dcterms:language` | Dublin Core Terms | Idioma de uma entrada lexical ou de um étimo, tipicamente com valor no vocabulário Glottolog (`glotto:`) |
 | `skos:definition` | SKOS | Definição textual de uma acepção ou de um conceito |
-| `skos:exactMatch` | SKOS | Alinhamento entre um conceito do DicBio e um termo equivalente em outro vocabulário (por exemplo, dbnary, UBERON) |
+| `skos:exactMatch` | SKOS | Alinhamento entre um conceito do DicBio (`skos:Concept`) e o conceito equivalente em outra ontologia (por exemplo, UBERON); não é usado em entradas lexicais (ver §8.10) |
 | `lexinfo:partOfSpeech`, `lexinfo:gender`, `lexinfo:number` | LexInfo | Categoria gramatical, gênero e número de entradas e formas |
 | `nif:anchorOf`, `nif:lemma`, `nif:referenceContext` | NIF | Texto, lema e contexto de referência de uma ocorrência do corpus |
 | `rdfs:seeAlso` | RDFS | Remissões a recursos externos relacionados (por exemplo, Wikcionário) |
@@ -751,7 +784,7 @@ A inclusão de novos conceitos que não alterem o significado dos elementos exis
 ```turtle
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo__Adjetivo__1> ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -762,6 +795,8 @@ dbres:entry_adiposo a ontolex:LexicalEntry ;
         dbres:form_adiposos ;
     ontolex:sense dbres:entry_adiposo_sense1 .
 ```
+
+Nesse exemplo, `dicbio:externalEntry` liga a entrada ao recurso correspondente no DBnary, e `rdfs:seeAlso` remete à página do Wikcionário (ver §8.10).
 
 ### 13.2. Exemplo de uma forma
 
@@ -827,6 +862,8 @@ dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
     dicbio:hasAttestation dbres:attestation_adiposus ;
     skos:definition "Que contém gordura."@pt .
 ```
+
+Aqui `dicbio:externalEntry` liga a entrada do étimo ao lema correspondente no LiLa, que é uma `ontolex:Form` (ver §8.10).
 
 ### 13.6. Exemplo de uma relação de formação de palavras
 
@@ -936,7 +973,7 @@ O verbete *adiposo* reúne, num único exemplo, praticamente todos os elementos 
 ```turtle
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo__Adjetivo__1> ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -1038,7 +1075,7 @@ As demais classes e propriedades de *LemonEty* também não foram reutilizadas, 
 	
 ### 14.3. SKOS
 
-A Ontologia DicBio utiliza SKOS em dois sentidos complementares. Em primeiro lugar, SKOS fornece a estrutura para os vocabulários controlados próprios da ontologia — `dicbio:EtymologicalCertaintyScheme`, `dicbio:EtymologicalProcessScheme` e `dicbio:WordFormationTypeScheme` (§12) —, cujas classes de valores (`dicbio:EtymologicalProcess`, `dicbio:WordFormationType`) são subclasses de `skos:Concept`. Em segundo lugar, `skos:Concept` é usada diretamente, sem subclasse própria, para representar conceitos de domínio associados às acepções via `ontolex:reference`, permitindo o alinhamento com ontologias externas por meio de `skos:exactMatch` (ver exemplo em §13.8). Essas duas utilizações de SKOS atendem a necessidades distintas — controle terminológico interno e alinhamento conceitual externo — e não devem ser confundidas.
+A Ontologia DicBio utiliza SKOS em dois sentidos complementares. Em primeiro lugar, SKOS fornece a estrutura para os vocabulários controlados próprios da ontologia — `dicbio:EtymologicalCertaintyScheme`, `dicbio:EtymologicalProcessScheme` e `dicbio:WordFormationTypeScheme` (§12) —, cujas classes de valores (`dicbio:EtymologicalProcess`, `dicbio:WordFormationType`) são subclasses de `skos:Concept`. Em segundo lugar, `skos:Concept` é usada diretamente, sem subclasse própria, para representar conceitos de domínio associados às acepções via `ontolex:reference`, permitindo o alinhamento com ontologias externas por meio de `skos:exactMatch` (ver exemplo em §13.8). Essas duas utilizações de SKOS atendem a necessidades distintas — controle terminológico interno e alinhamento conceitual externo — e não devem ser confundidas. Em ambos os casos, `skos:exactMatch` aplica-se somente a conceitos; a correspondência entre entradas lexicais do DicBio e de outros recursos lexicais é expressa por `dicbio:externalEntry` (§8.10 e §11.4.1).
 
 ### 14.4. LexInfo
 
@@ -1057,13 +1094,13 @@ LexInfo é reutilizada, nos dados do DicBio (embora não como dependência forma
 
 ## 15. Inferências e raciocínio
 
-A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT no Protégé Desktop. O reasoner classificou a ontologia sem apresentar erros de consistência.
+A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT (ver §15.4). O reasoner classificou a ontologia sem apresentar erros de consistência.
 
 Entre as inferências esperadas encontra-se a classificação das instâncias de `dicbio:EtymologicalProcess` e `dicbio:WordFormationType` como instâncias de `skos:Concept`.
 
 ### 15.1. Perfil de raciocínio
 
-A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.6), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
+A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.5), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
 
 ### 15.2. Inferências esperadas
 
@@ -1121,6 +1158,8 @@ Algumas necessidades de modelagem que surgirem com a expansão do *corpus*, a in
 
 A integração completa com NIF requer a definição de uma estratégia consistente para representação dos offsets de termos, sentenças e parágrafos no corpus. Essa questão será aprofundada durante o desenvolvimento da camada de integração com o corpus.
 
+A propriedade `dicbio:externalEntry` (§11.4.1) não declara contradomínio, pois seus alvos pertencem a classes diferentes conforme o recurso externo (lemas do LiLa, páginas e entradas do DBnary). Se o projeto passar a se ligar a mais recursos, ela poderá ser refinada em uma versão 1.x, por exemplo com subpropriedades específicas por recurso.
+
 ---
 
 ## 17. Histórico de versões
@@ -1158,7 +1197,8 @@ São incluídas aqui as referências bibliográficas e documentais das ontologia
 - FOAF: BRICKLEY, D.; MILLER, L. *FOAF Vocabulary Specification 0.99*. Disponível em: http://xmlns.com/foaf/spec/.
 - BIBO (The Bibliographic Ontology): D'ARCUS, B.; GIASSON, F. *Bibliographic Ontology (BIBO) in RDF*. Disponível em: https://www.dublincore.org/specifications/bibo/bibo/.
 - Glottolog (usado via `glotto:`): HAMMARSTRÖM, H.; FORKEL, R.; HASPELMATH, M.; BANK, S. *Glottolog 5.3*. Leipzig: Max Planck Institute for Evolutionary Anthropology. Disponível em: https://glottolog.org.
-- LiLa Knowledge Base (usado via `skos:exactMatch` nos étimos latinos, §13.5): PASSAROTTI, M. (ed.) *LiLa: Linking Latin*. Disponível em: https://lila-erc.eu/.
+- LiLa Knowledge Base (usado via `dicbio:externalEntry` nas entradas latinas, §13.5): PASSAROTTI, M. (ed.) *LiLa: Linking Latin*. Disponível em: https://lila-erc.eu/.
+- DBnary (usado via `dicbio:externalEntry` nas entradas em português, §13.1): SÉRASSET, G. DBnary: Wiktionary as a Lemon-based multilingual lexical resource in RDF. *Semantic Web*, 2015. DOI: 10.3233/SW-140147.
 
 ---
 
