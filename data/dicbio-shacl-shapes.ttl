@@ -1,6 +1,22 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.14 — skos:exactMatch deixou de ser usado em ontolex:LexicalEntry (o
+#   domínio/contradomínio de skos:exactMatch é skos:Concept; usá-lo entre
+#   entradas fazia o reasoner tratar entradas, formas e páginas externas
+#   como conceitos). A ligação da entrada a recurso lexical externo
+#   (DBnary, LiLa etc.) passa a ser dicbio:externalEntry (nova propriedade
+#   da ontologia, domínio ontolex:LexicalEntry, sem afirmar identidade).
+#   (1) dsh:LexicalEntryShape: aceita dicbio:externalEntry (IRI) no lugar
+#   de skos:exactMatch. (2) A antiga dsh:ExactMatchOnEntryShape foi
+#   substituída por dsh:ExactMatchOnlyOnConceptShape: skos:exactMatch fica
+#   reservado a conceitos; é erro em entrada, acepção, forma, hipótese ou
+#   atestação. (3) Nova dsh:ExternalEntryOnEntryShape: dicbio:externalEntry
+#   só pode ficar em ontolex:LexicalEntry (o IRI como valor é checado em
+#   dsh:LexicalEntryShape). (4)
+#   dsh:LatinEntryLilaNoticeShape: o aviso agora cobra dicbio:externalEntry
+#   para o LiLa. Dados antigos com skos:exactMatch em entradas precisam
+#   ser migrados (troca direta de predicado).
 # v2.13 — a classe dicbio:SemanticEtymon deixou de existir na ontologia. O
 #   étimo é uma ontolex:LexicalSense comum, de uma entrada comum na língua
 #   de origem. Removidas dsh:SemanticEtymonShape e dsh:EtymonEntryShape, a
@@ -211,10 +227,14 @@ dsh:LexicalEntryShape
         sh:nodeKind sh:IRI ;
     ] ;
 
+    # Correspondência com entrada/página/lema de outro recurso lexical
+    # (DBnary, LiLa etc.). NÃO usar skos:exactMatch aqui: ele é reservado
+    # a conceitos (ver dsh:ExactMatchOnlyOnConceptShape).
     sh:property [
-        sh:path skos:exactMatch ;
+        sh:path dicbio:externalEntry ;
         sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
+        sh:message "dicbio:externalEntry deve apontar para um IRI (entrada, página ou lema em outro recurso lexical, ex.: DBnary, LiLa)." ;
     ] ;
 
     # lexinfo:gender na ENTRADA vale para substantivos (masc./fem.).
@@ -769,11 +789,14 @@ dsh:EntryLanguageFormTagConsistencyShape
 #
 # - ontolex:writtenRep: só em ontolex:Form (a representação escrita é
 #   da forma — nunca da entrada, da acepção ou do étimo).
-# - dcterms:language e skos:exactMatch (ex.: LiLa, Dbnary): ficam na
-#   ENTRADA lexical (é a entrada inteira que está em latim), e não em
-#   acepção, étimo, forma, hipótese ou atestação. (skos:exactMatch também
-#   é usado em skos:Concept e dcterms:language pode aparecer em fontes —
+# - dcterms:language e dicbio:externalEntry (ex.: LiLa, DBnary): ficam na
+#   ENTRADA lexical (é a entrada inteira que está em latim, ou que
+#   corresponde a uma entrada externa), e não em acepção, étimo, forma,
+#   hipótese ou atestação. (dcterms:language pode aparecer em fontes —
 #   por isso a checagem é por lista de tipos proibidos, não "só entrada".)
+# - skos:exactMatch: reservado a skos:Concept (dbres:concept_XXXX, ligado
+#   à acepção por ontolex:reference). Nunca em entrada, acepção, forma,
+#   hipótese ou atestação.
 ########################################################################
 
 dsh:WrittenRepOnFormShape
@@ -805,7 +828,7 @@ dsh:LanguageOnEntryShape
         sh:message "dcterms:language deve ficar na ontolex:LexicalEntry (é a entrada inteira que está na língua), não em acepção, étimo, forma, hipótese ou atestação." ;
     ] .
 
-dsh:ExactMatchOnEntryShape
+dsh:ExactMatchOnlyOnConceptShape
     a sh:NodeShape ;
     sh:target [
         a sh:SPARQLTarget ;
@@ -817,15 +840,44 @@ dsh:ExactMatchOnEntryShape
             SELECT DISTINCT ?this
             WHERE {
                 ?this skos:exactMatch ?m ; a ?t .
-                FILTER (?t IN (ontolex:LexicalSense, ontolex:Form,
-                               lemonety:Etymology, dicbio:Attestation))
+                FILTER (?t IN (ontolex:LexicalEntry, ontolex:LexicalSense,
+                               ontolex:Form, lemonety:Etymology,
+                               dicbio:Attestation))
             }
         """ ;
     ] ;
     sh:property [
         sh:path skos:exactMatch ;
         sh:maxCount 0 ;
-        sh:message "skos:exactMatch (ex.: LiLa, Dbnary) deve ficar na ontolex:LexicalEntry, não em acepção, étimo, forma, hipótese ou atestação. Para ligar uma acepção a um conceito, use ontolex:reference." ;
+        sh:message "skos:exactMatch é reservado a conceitos (dbres:concept_XXXX). Para ligar uma entrada a outro recurso lexical (DBnary, LiLa etc.), use dicbio:externalEntry; para ligar uma acepção a um conceito, use ontolex:reference." ;
+    ] .
+
+# dicbio:externalEntry só pode ficar na entrada lexical. Como a ontologia
+# declara rdfs:domain ontolex:LexicalEntry nessa propriedade, com
+# inference="rdfs" qualquer sujeito ganharia o tipo LexicalEntry e um
+# sh:class simples nunca falharia; por isso o alvo é a lista de tipos
+# proibidos (o tipo original continua nos dados). A exigência de IRI como
+# valor está em dsh:LexicalEntryShape.
+dsh:ExternalEntryOnEntryShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX dicbio:   <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX lemonety: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+            SELECT DISTINCT ?this
+            WHERE {
+                ?this dicbio:externalEntry ?m ; a ?t .
+                FILTER (?t IN (ontolex:LexicalSense, ontolex:Form,
+                               lemonety:Etymology, dicbio:Attestation))
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path dicbio:externalEntry ;
+        sh:maxCount 0 ;
+        sh:message "dicbio:externalEntry só pode ficar em uma ontolex:LexicalEntry, não em acepção, étimo, forma, hipótese ou atestação." ;
     ] .
 
 # Recomendação: toda entrada em latim deveria apontar para o LiLa.
@@ -846,13 +898,13 @@ dsh:LatinEntryLilaNoticeShape
     sh:severity sh:Warning ;
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "Entrada em latim sem skos:exactMatch para o LiLa (https://lila-erc.eu/...): recomenda-se ligar o lema ao LiLa." ;
+        sh:message "Entrada em latim sem dicbio:externalEntry para o LiLa (https://lila-erc.eu/...): recomenda-se ligar o lema ao LiLa." ;
         sh:select """
-            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             SELECT $this
             WHERE {
                 FILTER NOT EXISTS {
-                    $this skos:exactMatch ?m .
+                    $this dicbio:externalEntry ?m .
                     FILTER (STRSTARTS(STR(?m), "https://lila-erc.eu/"))
                 }
             }
