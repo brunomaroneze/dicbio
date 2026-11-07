@@ -3,7 +3,7 @@
 ## Texto sugerido para a descrição da ontologia
 
 Em 7 de novembro de 2026, a ontologia DicBio e uma amostra de seus dados foram
-submetidas a testes de consistência e de inferência com o reasoner HermiT,
+submetidas a testes de consistência e de inferência com o reasoner HermiT (versão 1.3.8),
 executado por meio do Owlready2. As execuções incluíram as importações
 carregadas da ontologia e não apontaram inconsistências nos conjuntos testados.
 Em dados sintéticos, seis inferências de domínio e contradomínio das

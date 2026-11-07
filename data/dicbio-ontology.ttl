@@ -261,3 +261,11 @@ dicbio:realizesSense a owl:ObjectProperty ;
     rdfs:comment "Relaciona uma ocorrência textual (nif:Word) ao sentido lexical que ela desambigua. Uma especialização de itsrdf:taIdentRef para anotação de sentido lexicográfico, distinta da vinculação a entidades nomeadas."@pt ;
     rdfs:domain nif:Word ;
     rdfs:range ontolex:LexicalSense .
+
+# Tive que criar esta propriedade para relacionar uma entrada lexical do DicBio a uma entrada correspondente em outro recurso lexical, como DBnary ou LiLa. A propriedade não afirma identidade entre as entradas, apenas indica que elas estão relacionadas de alguma forma.
+
+dicbio:externalEntry a owl:ObjectProperty ;
+    rdfs:label "external entry"@en, "entrada externa"@pt ;
+    rdfs:comment "Relates a DicBio lexical entry to the corresponding entry, page or lemma in another lexical resource (e.g. DBnary, LiLa). It does not assert identity."@en ;
+    rdfs:comment "Relaciona uma entrada lexical do DicBio à entrada, página ou lema correspondente em outro recurso lexical (por exemplo, DBnary, LiLa). Não afirma identidade."@pt ;
+    rdfs:domain ontolex:LexicalEntry .

@@ -81,7 +81,7 @@ Além disso, espera-se que esta ontologia seja útil particularmente para pesqui
 
 ### 3.1. Status
 
-A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT, executado por meio do Protégé Desktop. A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, *ranges*, reutilização de ontologias externas e documentação.
+A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT, executado por meio do Protégé Desktop. A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, contradomínios (*ranges*), reutilização de ontologias externas e documentação.
 
 ### 3.2. Identificação da versão
 
@@ -373,9 +373,10 @@ A Ontologia DicBio organiza-se em torno de cinco camadas articuladas. A camada *
 * Etimologia: `dicbio:semanticEtymon`, `dicbio:etymologicalProcess`, `dicbio:etymologicalArgumentation`, `dicbio:confidenceLevel`, `dicbio:formalEtymon`.
 * Estrutura morfológica: `dicbio:hasWordFormationRelation`.
 * Atestação e corpus: `dicbio:hasAttestation`, `dicbio:attestedByOccurrence`, `dicbio:realizesForm`, `dicbio:realizesSense`, `dicbio:attestationDate`.
+<!-- Acrescentar aqui a propriedade dicbio:externalEntry também? -->
 
 ### 9.4. Relação entre os principais componentes
-
+<!-- Acrescentar aqui neste gráfico a propriedade dicbio:externalEntry também? -->
 ```mermaid
 flowchart TB
 
@@ -500,7 +501,7 @@ Além das classes próprias listadas acima, a Ontologia DicBio reutiliza diretam
 
 Esta seção apresenta as propriedades definidas pela Ontologia DicBio.
 
-Para cada propriedade, registram-se, quando aplicável: URI; rótulo em português e em inglês; definição; domínio; range; superpropriedade; observações de uso.
+Para cada propriedade, registram-se, quando aplicável: URI; rótulo em português e em inglês; definição; domínio; contradomínio; superpropriedade; observações de uso.
 
 ### 11.1. Propriedades de etimologia
 
@@ -514,7 +515,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `rdf:langString`
+**Contradomínio:** `rdf:langString`
 
 **Superpropriedade:** nenhuma (propriedade própria, sem equivalente direto reutilizado)
 
@@ -530,9 +531,9 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `ontolex:LexicalSense`
+**Contradomínio:** `ontolex:LexicalSense`
 
-**Superpropriedade:** nenhuma. A propriedade se relaciona a `lemonety:etymon` apenas por `rdfs:seeAlso`, não por `rdfs:subPropertyOf` — o range de `lemonety:etymon` é `lemonety:Etymon`, incompatível com `ontolex:LexicalSense`, o que impede uma subpropriedade formal.
+**Superpropriedade:** nenhuma. A propriedade se relaciona a `lemonety:etymon` apenas por `rdfs:seeAlso`, não por `rdfs:subPropertyOf` — o contradomínio de `lemonety:etymon` é `lemonety:Etymon`, incompatível com `ontolex:LexicalSense`, o que impede uma subpropriedade formal.
 
 **Uso:** É a propriedade central da modelagem etimológica da ontologia (ver §8.4): liga cada hipótese etimológica ao étimo, sempre representado como uma acepção, nunca como uma entrada lexical inteira — o que permite descrever transmissão semântica parcial entre entradas polissêmicas. Nos casos de empréstimos (`dicbio:borrowed`), o étimo é uma acepção de uma entrada em outra língua. Nos casos de derivação semântica (`dicbio:semanticDerivation`), o étimo é uma acepção de uma entrada na mesma língua. Nos casos de palavras herdadas (`dicbio:inherited`), não há restrição quanto à língua do étimo.
 
@@ -546,7 +547,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `ontolex:Form`
+**Contradomínio:** `ontolex:Form`
 
 **Superpropriedade:** nenhuma (relaciona-se a `dicbio:semanticEtymon` por `rdfs:seeAlso`).
 
@@ -562,7 +563,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `skos:Concept` (na prática, uma das instâncias de `dicbio:EtymologicalCertaintyScheme`: `dicbio:impossible`, `dicbio:improbable`, `dicbio:plausible`, `dicbio:probable`, `dicbio:certain`, ou `dicbio:notApplicable`; ver §12.1)
+**Contradomínio:** `skos:Concept` (na prática, uma das instâncias de `dicbio:EtymologicalCertaintyScheme`: `dicbio:impossible`, `dicbio:improbable`, `dicbio:plausible`, `dicbio:probable`, `dicbio:certain`, ou `dicbio:notApplicable`; ver §12.1)
 
 **Superpropriedade:** nenhuma
 
@@ -580,7 +581,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `lemonety:Etymology`
 
-**Range:** `morph:WordFormationRelation`
+**Contradomínio:** `morph:WordFormationRelation`
 
 **Superpropriedade:** nenhuma
 
@@ -598,7 +599,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `dicbio:Attestation`
 
-**Range:** `nif:Word`
+**Contradomínio:** `nif:Word`
 
 **Superpropriedade:** nenhuma
 
@@ -614,7 +615,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `ontolex:LexicalSense`
 
-**Range:** `dicbio:Attestation`
+**Contradomínio:** `dicbio:Attestation`
 
 **Superpropriedade:** nenhuma
 
@@ -630,7 +631,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `dicbio:Attestation`
 
-**Range:** `xsd:gYear`
+**Contradomínio:** `xsd:gYear`
 
 **Superpropriedade:** nenhuma
 
@@ -646,7 +647,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `nif:Word`
 
-**Range:** `ontolex:Form`
+**Contradomínio:** `ontolex:Form`
 
 **Superpropriedade:** nenhuma
 
@@ -662,11 +663,12 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Domínio:** `nif:Word`
 
-**Range:** `ontolex:LexicalSense`
+**Contradomínio:** `ontolex:LexicalSense`
 
 **Superpropriedade:** `itsrdf:taIdentRef`
 
 **Uso:** Especialização de `itsrdf:taIdentRef` para anotação de sentido lexicográfico, distinguindo-se do uso mais comum dessa propriedade para vinculação a entidades nomeadas (ver §14.6).
+<!-- Acrescentar aqui a propriedade dicbio:externalEntry também? -->
 
 ### 11.4. Outras propriedades
 
@@ -749,7 +751,7 @@ A inclusão de novos conceitos que não alterem o significado dos elementos exis
 ```turtle
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo> ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -818,7 +820,7 @@ dbres:entry_adiposus a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_adiposus ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/152495> ;
     ontolex:sense dbres:entry_adiposus_sense1 .
 
 dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
@@ -908,7 +910,7 @@ dbres:entry_arbor a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     dcterms:language glotto:lati1261 ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/89780> ;
     ontolex:canonicalForm dbres:form_arbor ;
     ontolex:otherForm dbres:form_arborem ;
     ontolex:sense dbres:entry_arbor_sense1 .
@@ -934,7 +936,7 @@ O verbete *adiposo* reúne, num único exemplo, praticamente todos os elementos 
 ```turtle
 dbres:entry_adiposo a ontolex:LexicalEntry ;
     rdfs:seeAlso <https://pt.wiktionary.org/wiki/adiposo> ;
-    skos:exactMatch <http://kaiko.getalp.org/dbnary/por/adiposo> ;
+    dicbio:externalEntry <http://kaiko.getalp.org/dbnary/por/adiposo> ;
     dcterms:created "2024-05-04"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -998,7 +1000,7 @@ dbres:entry_adiposus a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
     ontolex:canonicalForm dbres:form_adiposus ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/152495> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/152495> ;
     ontolex:sense dbres:entry_adiposus_sense1 .
 
 dbres:form_adiposus a ontolex:Form ;
@@ -1061,11 +1063,11 @@ Entre as inferências esperadas encontra-se a classificação das instâncias de
 
 ### 15.1. Perfil de raciocínio
 
-A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**, executado a partir do **Protégé Desktop**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.6), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
+A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.6), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
 
 ### 15.2. Inferências esperadas
 
-As inferências esperadas decorrem principalmente das relações de subsunção entre classes e das declarações de domínio e alcance (*range*) das propriedades. Essas inferências permitem que recursos sejam reconhecidos como instâncias de classes mais gerais, mesmo quando essa classificação não está explicitamente declarada nos dados.
+As inferências esperadas decorrem principalmente das relações de subsunção entre classes e das declarações de domínio e contradomínio das propriedades. Essas inferências permitem que recursos sejam reconhecidos como instâncias de classes mais gerais, mesmo quando essa classificação não está explicitamente declarada nos dados.
 
 Exemplo:
 
@@ -1076,15 +1078,28 @@ dicbio:EtymologicalProcess
 
 Consequentemente, uma instância de `dicbio:EtymologicalProcess` também é inferida como instância de `skos:Concept`.
 
-### 15.3. Domínio e range
+### 15.3. Domínio e contradomínio
 
-As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:formalEtymon` tem `rdfs:range ontolex:Form`, o objeto é inferido como `ontolex:Form`. Da mesma forma, `dicbio:semanticEtymon` tem range `ontolex:LexicalSense`, de modo que o objeto é inferido como `ontolex:LexicalSense`.
+As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da ontologia (§11) permitem inferir a classe das instâncias relacionadas por essas propriedades. Por exemplo, como `dicbio:formalEtymon` tem `rdfs:range ontolex:Form`, o objeto é inferido como `ontolex:Form`. Da mesma forma, `dicbio:semanticEtymon` tem contradomínio `ontolex:LexicalSense`, de modo que o objeto é inferido como `ontolex:LexicalSense`.
 
 É importante distinguir as inferências realizadas pelo reasoner OWL da validação estrutural dos dados por meio de SHACL. A validação SHACL não pressupõe a materialização das inferências da ontologia. Por isso, nos dados do DicBio, os recursos utilizados como étimos semânticos devem ser explicitamente declarados como instâncias de `ontolex:LexicalSense`, ainda que essa classificação possa ser inferida pelo reasoner a partir de outras declarações.
 
 ### 15.4. Testes com reasoner
 
-<!-- Registrar os testes realizados com HermiT ou outro reasoner. -->
+A ontologia DicBio e uma amostra de seus dados foram submetidas a testes de 
+consistência e de inferência com o reasoner HermiT (versão 1.3.8),
+executado por meio do Owlready2. As execuções incluíram as importações
+carregadas da ontologia e não apontaram inconsistências nos conjuntos testados.
+Em dados sintéticos, seis inferências de domínio e contradomínio das
+propriedades `semanticEtymon`, `formalEtymon` e `hasAttestation` foram
+confirmadas. Na amostra de dados, quatro consultas não encontraram os padrões
+de tipos e relações indesejados selecionados.
+
+Esses resultados se limitam aos arquivos, axiomas e casos examinados: a
+materialização de relações inferidas entre indivíduos foi desativada devido a
+um erro interno do HermiT nessa etapa. As consultas negativas verificam a
+ausência dos padrões no grafo consultado, não a negação lógica das afirmações.
+<!-- Incluir testes com outro reasoner. -->
 
 ### 15.5. Limites do raciocínio
 
@@ -1121,7 +1136,7 @@ Uma versão de correção (por exemplo, 1.0.1) reúne apenas emendas que não al
 
 Uma versão compatível (1.x) pode acrescentar novas classes, propriedades ou conceitos aos vocabulários controlados, desde que não altere o significado dos elementos já existentes nem quebre dados publicados sob versões anteriores da série 1.x.
 
-Uma versão com mudanças incompatíveis (2.x) é necessária sempre que uma alteração modificar o significado de uma classe ou propriedade existente, remover elementos da ontologia, ou alterar domínio/range de forma que invalide dados anteriormente válidos. Nesse caso, a ontologia recebe uma nova URI de versão (§4.2) e a compatibilidade retroativa não é garantida.
+Uma versão com mudanças incompatíveis (2.x) é necessária sempre que uma alteração modificar o significado de uma classe ou propriedade existente, remover elementos da ontologia, ou alterar domínio/contradomínio de forma que invalide dados anteriormente válidos. Nesse caso, a ontologia recebe uma nova URI de versão (§4.2) e a compatibilidade retroativa não é garantida.
 
 ---
 
