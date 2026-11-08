@@ -35,6 +35,18 @@
 				<p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
 					rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
 						<gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+				<p>Os nomes de doenças foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "illness".</p>
+				<p>Os nomes de partes do corpo foram marcados com o elemento <gi>term</gi> acrescido
+					do atributo <att>type</att> com o valor "body-part".</p>
+				<p>Os nomes de plantas foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "plant".</p>
+				<p>Os nomes de sintomas foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "symptom".</p>
+				<p>Os nomes científicos que aparecem no texto foram marcados com o elemento
+						<gi>name</gi>, o atributo <att>type</att> com o valor "taxon" e o atributo
+						<att>subtype</att> com o valor "species", "genus" ou "family", dependendo do
+					nível taxonômico.</p>
 			</editorialDecl>
 			<projectDesc>
 				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -300,8 +312,8 @@
 						type="illness" xml:id="t_novaes_0191" lemma="febre pútrida contínua">febre
 						putrida continua</term>, <term type="illness" xml:id="t_novaes_0192"
 						lemma="tipo americano">typo americano</term>, <term type="illness"
-						xml:id="t_novaes_0193" lemma="ictérico">icterico</term> ou <term
-						lemma="bilioso">bilioso</term>, <term type="illness" xml:id="t_novaes_0194"
+						xml:id="t_novaes_0193" lemma="ictérico">icterico</term> ou
+						<term>bilioso</term>, <term type="illness" xml:id="t_novaes_0194"
 						lemma="vômito negro dos italianos">vomito negro dos italianos</term> e <term
 						type="illness" xml:id="t_novaes_0195" lemma="vômito preto dos espanhóis"
 						>vomito preto dos hespanhòes</term>, é uma molestia propria á certos climas
@@ -408,7 +420,7 @@
 					<p xml:id="p_novaes_0029">A anatomia pathologica vem demonstraranos que a <term
 							type="illness" xml:id="t_novaes_0207" lemma="febre amarela">febre
 							amarella</term> não é uma <term type="illness" xml:id="t_novaes_0208"
-							lemma="gastrite">gastrite</term> e muito menos uma <term type="illness"
+							>gastrite</term> e muito menos uma <term type="illness"
 							xml:id="t_novaes_0209" lemma="inflamação hepato-gástrica">inflammação
 							hepato-gastrica</term>, como queria Thomazini: alem das altêrações do
 							<term type="body-part" xml:id="t_novaes_0002" lemma="estômago"
@@ -445,16 +457,15 @@
 						de outra?</p>
 					<p xml:id="p_novaes_0034">E nem se nos diga que a <term type="illness"
 							xml:id="t_novaes_0217" lemma="febre amarela">febre amarella</term> pode
-						ser comparada com uma <term type="illness" xml:id="t_novaes_0218"
-							lemma="icterícia grave">icterice grave</term> por apresentar o doente a
-						côr amarella da <term type="body-part" xml:id="t_novaes_0004" lemma="pele"
-							>pelle</term>, porque esta <term type="illness" xml:id="t_novaes_0219"
-							lemma="icterícia">icterice</term> é hematogena e não hepatogena; isto é,
-						a côr amarella que apresentam os doentes não é devida a substancia corante
-						da bilis derramada no sangue, e sim aos glodulos vermelhos d'este liquido,
-						que, em completo estado de dissolução, se introduzem nos <term
-							type="body-part" xml:id="t_novaes_0005" lemma="vasos capilares">vazos
-							capilares</term>.</p>
+						ser comparada com uma <term type="illness" xml:id="t_novaes_0218">icterice
+							grave</term> por apresentar o doente a côr amarella da <term
+							type="body-part" xml:id="t_novaes_0004" lemma="pele">pelle</term>,
+						porque esta <term type="illness" xml:id="t_novaes_0219">icterice</term> é
+						hematogena e não hepatogena; isto é, a côr amarella que apresentam os
+						doentes não é devida a substancia corante da bilis derramada no sangue, e
+						sim aos glodulos vermelhos d'este liquido, que, em completo estado de
+						dissolução, se introduzem nos <term type="body-part" xml:id="t_novaes_0005"
+							lemma="vaso capilar">vazos capilares</term>.</p>
 					<p xml:id="p_novaes_0035">Keraudrin parece partilhar d'essa opinião, dizendo
 						muito expressivamente «pode-se comparar áqui a côr icterica a côr amarella
 						que t[ILEGÍVEL: p. 5]a <term type="body-part" xml:id="t_novaes_0006"
@@ -604,7 +615,7 @@
 					periodos.</p>
 				<p xml:id="p_novaes_0059">No primeiro periodo, denominado prodromico, e em que os
 					individuos accusam uma especie de <term type="symptom" xml:id="t_novaes_0232"
-						lemma="mal-estar">mão estar</term>, <term type="symptom"
+						lemma="mal-estar">máo estar</term>, <term type="symptom"
 						xml:id="t_novaes_0233" lemma="calafrio">calafrios</term>, <term
 						type="symptom" xml:id="t_novaes_0234" lemma="cefalalgia frontal">cephalalgia
 						frontal</term>, e o facto bem caracteristico da <term type="symptom"
@@ -614,13 +625,12 @@
 					o excitamento da <term type="body-part" xml:id="t_novaes_0010" lemma="pele"
 						>pelle</term>: o <term type="plant" xml:id="t_novaes_0011" lemma="acônito"
 						>aconito</term>, o acetado de ammonea, as infusões de <term type="plant"
-						xml:id="t_novaes_0012" lemma="sabugueiro">sabugueiro</term>, <term
-						type="plant" xml:id="t_novaes_0013" lemma="borragem">borragem</term>, as
-					bebidas quentes e mornas, que contenham aromas pouco energicos, bem como as
-					infuzões de <term type="plant" xml:id="t_novaes_0014" lemma="melissa"
-						>melissa</term>, de <term type="plant" xml:id="t_novaes_0015" lemma="chá"
-						>chá</term>, <term type="plant" xml:id="t_novaes_0016" lemma="tília"
-						>tilia</term>, <term type="plant" xml:id="t_novaes_0017" lemma="arnica"
+						xml:id="t_novaes_0012">sabugueiro</term>, <term type="plant"
+						xml:id="t_novaes_0013">borragem</term>, as bebidas quentes e mornas, que
+					contenham aromas pouco energicos, bem como as infuzões de <term type="plant"
+						xml:id="t_novaes_0014">melissa</term>, de <term type="plant"
+						xml:id="t_novaes_0015">chá</term>, <term type="plant" xml:id="t_novaes_0016"
+						lemma="tília">tilia</term>, <term type="plant" xml:id="t_novaes_0017"
 						>arnica</term>, grellos de <term type="plant" xml:id="t_novaes_0018"
 						lemma="laranjeira">larangeiras</term>, as <term type="chemical-medicine"
 						xml:id="t_novaes_0237" lemma="tintura canforada">tincturas
@@ -632,17 +642,17 @@
 					principio da invasão do mal, e principalmente quando ha <term type="symptom"
 						xml:id="t_novaes_0238" lemma="dor">dores</term> nos <term type="body-part"
 						xml:id="t_novaes_0020" lemma="rim">rins</term>, <term type="symptom"
-						xml:id="t_novaes_0239" lemma="frio geral">frio geral</term>, <term
-						type="symptom" xml:id="t_novaes_0240" lemma="cólica">colicas</term> e calor
-					nos <term type="body-part" xml:id="t_novaes_0021" lemma="intestino"
-						>intestinos</term>.</p>
+						xml:id="t_novaes_0239">frio geral</term>, <term type="symptom"
+						xml:id="t_novaes_0240" lemma="cólica">colicas</term> e calor nos <term
+						type="body-part" xml:id="t_novaes_0021" lemma="intestino"
+					>intestinos</term>.</p>
 				<p xml:id="p_novaes_0060">Ainda n'este periodo o distincto lente de clinica interna,
 					o Sr. Dr. Torres Homem no Rio de Janeirv, preconisara muito a seguiute
 					formula.</p>
 				<table>
 					<row>
 						<cell>R.—Infusão de <term type="plant" xml:id="t_novaes_0022"
-								lemma="sabugueiro">sabugueiro</term></cell>
+								>sabugueiro</term></cell>
 						<cell>seis onças.</cell>
 					</row>
 					<row>
@@ -673,10 +683,9 @@
 					medicação tonica em começo produzio grandes resultados, por isso que os doentes
 					melhoravam vizivelmente com o uso das infusões de <term type="plant"
 						xml:id="t_novaes_0026" lemma="quássia">quassia</term>, <term type="plant"
-						xml:id="t_novaes_0027" lemma="simaruba">simaruba</term>, <term type="plant"
-						xml:id="t_novaes_0028" lemma="genciana">genciana</term>, tinctura de <term
-						type="plant" xml:id="t_novaes_0029" lemma="calumba">calumba</term> e tambem
-					a agua ingleza.</p>
+						xml:id="t_novaes_0027">simaruba</term>, <term type="plant"
+						xml:id="t_novaes_0028">genciana</term>, tinctura de <term type="plant"
+						xml:id="t_novaes_0029">calumba</term> e tambem a agua ingleza.</p>
 				<pb n="10"
 					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0013.jp2&amp;id=101464815.nlm.nih.gov"/>
 				<p xml:id="p_novaes_0062">Esse tratamento foi adoptado na casa de Saude de Sr.
@@ -688,13 +697,12 @@
 						mucoso</term>, a <term type="symptom" xml:id="t_novaes_0243"
 						lemma="dor epigástrica">dôr epigastrica</term>, a <term type="symptom"
 						xml:id="t_novaes_0244" lemma="turgência">turgencia</term> da <term
-						type="body-part" xml:id="t_novaes_0030" lemma="face">face</term>, a injecção
-					das <term type="body-part" xml:id="t_novaes_0031" lemma="conjuntiva"
+						type="body-part" xml:id="t_novaes_0030">face</term>, a injecção das <term
+						type="body-part" xml:id="t_novaes_0031" lemma="conjuntiva"
 						>conjuctivas</term>, ar <term type="symptom" xml:id="t_novaes_0245"
-						lemma="constipação">constipação</term> ou a <term type="symptom"
-						xml:id="t_novaes_0246" lemma="soltura">soltura</term> de <term
-						type="body-part" xml:id="t_novaes_0032" lemma="ventre">ventre</term>
-					etc.</p>
+						>constipação</term> ou a <term type="symptom" xml:id="t_novaes_0246"
+						>soltura</term> de <term type="body-part" xml:id="t_novaes_0032"
+						>ventre</term> etc.</p>
 				<p xml:id="p_novaes_0063">Este constitue o segundo periodo. E' n'essa occasião que a
 					medicação evacuante tem sido applicada com grandes vantagens por todos os
 					medicos que tem tratado da <term type="illness" xml:id="t_novaes_0247"
@@ -705,16 +713,16 @@
 				<p xml:id="p_novaes_0064">Os purgativos oleosos e salinos, e entre elles os que tem
 					sido mais recommendados, são o oleo de <term type="plant" xml:id="t_novaes_0033"
 						lemma="rícino">ricino</term>, os <term type="chemical-medicine"
-						xml:id="t_novaes_0248" lemma="sulfato de magnésio e sódio">sulphatos de
+						xml:id="t_novaes_0248" lemma="sulfato de magnésia e soda">sulphatos de
 						magnesia e soda</term>, a pôlpa de <term type="plant" xml:id="t_novaes_0034"
 						lemma="tamarindo">tamarindos</term>, o maná, o tartrato, acido de potassa e
 					o <term type="chemical-medicine" xml:id="t_novaes_0249" lemma="calomelano"
 						>calomelanos</term>: de entre estes ainda os que tem sido mais geralmente
 					empregados são o oleo de <term type="plant" xml:id="t_novaes_0035"
 						lemma="rícino">ricino</term> e os <term type="chemical-medicine"
-						xml:id="t_novaes_0250" lemma="sulfato de magnésio e sódio">sulphatos de
+						xml:id="t_novaes_0250" lemma="sulfato de magnésia e soda">sulphatos de
 						magnesia e sóda</term>. O oleo de <term type="plant" xml:id="t_novaes_0036"
-						lemma="Croton">Croton</term> fôra tambem preconisado pelos Drs. Tegart e
+						lemma="cróton">Croton</term> fôra tambem preconisado pelos Drs. Tegart e
 					Macheto, quando praticaram nas antilhas inglezas. O Dr. Tegart diz que uma ou
 					duas gottas d'esta substancia postas sobre a <term type="body-part"
 						xml:id="t_novaes_0037" lemma="língua">lingua</term> não só excitam a acção
@@ -745,17 +753,16 @@
 				<p xml:id="p_novaes_0066">Quando no decurso d'este periodo sobrevem phenomenos
 					ataxicos, taes como <term type="symptom" xml:id="t_novaes_0256" lemma="delírio"
 						>dilirio</term>, <term type="symptom" xml:id="t_novaes_0257"
-						lemma="agitação">agitação</term>, <term type="symptom"
-						xml:id="t_novaes_0258" lemma="sobressalto">sobre-salto</term> dos <term
-						type="body-part" xml:id="t_novaes_0040" lemma="tendão">tendões</term>, <term
-						type="symptom" xml:id="t_novaes_0259" lemma="contratura"
-					>contracturas</term>, certas <term type="symptom" xml:id="t_novaes_0260"
-						lemma="congestão">congestões</term>, e se as <term type="symptom"
-						xml:id="t_novaes_0261" lemma="dor epigástrica">dores epigastricas</term>
-					augmentam, então conjunctamente com estes meios á que nos referimos,
-					empregaremos os sinapismos de mostarda, os visicatorios volantes, e ainda os
-					sudoriferos, pois que alem de combaterem esses phenomes podem coadjuvar (os
-					ultimos) á sahida do agente deleterio.</p>
+					>agitação</term>, <term type="symptom" xml:id="t_novaes_0258"
+						lemma="sobressalto">sobre-salto</term> dos <term type="body-part"
+						xml:id="t_novaes_0040" lemma="tendão">tendões</term>, <term type="symptom"
+						xml:id="t_novaes_0259" lemma="contratura">contracturas</term>, certas <term
+						type="symptom" xml:id="t_novaes_0260" lemma="congestão">congestões</term>, e
+					se as <term type="symptom" xml:id="t_novaes_0261" lemma="dor epigástrica">dores
+						epigastricas</term> augmentam, então conjunctamente com estes meios á que
+					nos referimos, empregaremos os sinapismos de mostarda, os visicatorios volantes,
+					e ainda os sudoriferos, pois que alem de combaterem esses phenomes podem
+					coadjuvar (os ultimos) á sahida do agente deleterio.</p>
 				<p xml:id="p_novaes_0067">Tambem as compressas de agua fria e de agua avinagrada, a
 					agua sedativa de Raspail, quando a <term type="symptom" xml:id="t_novaes_0262"
 						lemma="cefalalgia">cephalalgia</term> é rebelde, tem dado resultados
@@ -775,9 +782,9 @@
 					importantes, outros meios teremos de reconhecida vanagem.</p>
 				<p xml:id="p_novaes_0070">N'esta molestia em que, para nós ha um envenenamento geral
 					da economia, procedendo d'ahi o consideravel <term type="symptom"
-						xml:id="t_novaes_0265" lemma="abatimento">abatimento</term> das forças, como
-					poderemos tirar sangue? Como roubarmos ao organismo uma parte de que elle tanto
-					precisa para reagir? Eliminaremos o principio morbifico <pb n="12"
+						xml:id="t_novaes_0265">abatimento</term> das forças, como poderemos tirar
+					sangue? Como roubarmos ao organismo uma parte de que elle tanto precisa para
+					reagir? Eliminaremos o principio morbifico <pb n="12"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0015.jp2&amp;id=101464815.nlm.nih.gov"
 					/>diminuindo a massa do sangue? E em taes casos a convalença não será muito mais
 					longa? Portanto proscrevemos sempre a sangria, e estamos certos de que se os
@@ -839,15 +846,14 @@
 						type="chemical-medicine" xml:id="t_novaes_0280" lemma="tártaro emético"
 						>tartáro emetico</term>, em razão da grande prostação que elle produz nos
 					doentes, e ainda pela irritação que naturalmente produzirá na <term
-						type="body-part" xml:id="t_novaes_0046" lemma="mucosa">mucosa</term> do
-						<term type="body-part" xml:id="t_novaes_0047" lemma="estômago"
-						>estomago</term>: nós damos a preferencia a <term type="plant"
-						xml:id="t_novaes_0048" lemma="ipecacuanha">epecacuanha</term>, porque alem
-					de não irritar tanto o <term type="body-part" xml:id="t_novaes_0049"
-						lemma="estômago">estomago</term> e nem abater tanto o organismo enfermo, tem
-					a vantagem de chamar para a <term type="body-part" xml:id="t_novaes_0050"
-						lemma="pele">pelle</term> a transpiração, o que nos parece de não pequena
-					vantagem.</p>
+						type="body-part" xml:id="t_novaes_0046">mucosa</term> do <term
+						type="body-part" xml:id="t_novaes_0047" lemma="estômago">estomago</term>:
+					nós damos a preferencia a <term type="plant" xml:id="t_novaes_0048"
+						lemma="ipecacuanha">epecacuanha</term>, porque alem de não irritar tanto o
+						<term type="body-part" xml:id="t_novaes_0049" lemma="estômago"
+						>estomago</term> e nem abater tanto o organismo enfermo, tem a vantagem de
+					chamar para a <term type="body-part" xml:id="t_novaes_0050" lemma="pele"
+						>pelle</term> a transpiração, o que nos parece de não pequena vantagem.</p>
 				<p xml:id="p_novaes_0076">Ainda n'estes casos, e talvez com mais prudencia, alguns
 					praticos aconselham que se faça vomitar o doente pela ingestão de grandes
 					quantidades de agua morna, ou ingerindo copos de azeite, segundo praticavam os
@@ -865,12 +871,12 @@
 					todavia tem dado resultados satisfatorios.</p>
 				<p xml:id="p_novaes_0078">Para combater a <term type="symptom"
 						xml:id="t_novaes_0285" lemma="insônia">insomnia</term> e a <term
-						type="symptom" xml:id="t_novaes_0286" lemma="agitação">agitação</term>, que
-					muita vez apparecem n'este periodo, tem se lançado mão do <term
-						type="chemical-medicine" xml:id="t_novaes_0287" lemma="ópio">opio</term>,
-					quer interna quer externamente. O Sr. Griezinger preconisa muito o <term
-						type="chemical-medicine" xml:id="t_novaes_0288" lemma="ácido cianídrico"
-						>acido cyanhydrico</term> como poderoso calmante.</p>
+						type="symptom" xml:id="t_novaes_0286">agitação</term>, que muita vez
+					apparecem n'este periodo, tem se lançado mão do <term type="chemical-medicine"
+						xml:id="t_novaes_0287" lemma="ópio">opio</term>, quer interna quer
+					externamente. O Sr. Griezinger preconisa muito o <term type="chemical-medicine"
+						xml:id="t_novaes_0288" lemma="ácido cianídrico">acido cyanhydrico</term>
+					como poderoso calmante.</p>
 				<p xml:id="p_novaes_0079">O <term type="symptom" xml:id="t_novaes_0289"
 						lemma="delírio furioso">delirio furioso</term>, as <term type="symptom"
 						xml:id="t_novaes_0290" lemma="cefalalgia persistente">cephalalgias
@@ -893,11 +899,11 @@
 				<p xml:id="p_novaes_0081">Acreditamos muito neste meio curativo, visto como se elle
 					por si só não modifica a gravidade do mal, ao menos retarda por algum tempo a
 					apparição dos accidentes nervosos, e previne uma forte fluxão de sangue para a
-						<term type="body-part" xml:id="t_novaes_0051" lemma="cabeça">cabeça</term>.
-					O Sr. Dr. Pereira Rego no Rio de Janeiro preconisou a pomada de <term
-						type="plant" xml:id="t_novaes_0052" lemma="beladona">belladona</term> e
-						<term type="plant" xml:id="t_novaes_0053" lemma="louro-cereja">louro
-						cereja</term> para fricções na <term type="body-part" xml:id="t_novaes_0054"
+						<term type="body-part" xml:id="t_novaes_0051">cabeça</term>. O Sr. Dr.
+					Pereira Rego no Rio de Janeiro preconisou a pomada de <term type="plant"
+						xml:id="t_novaes_0052" lemma="beladona">belladona</term> e <term
+						type="plant" xml:id="t_novaes_0053" lemma="louro-cereja">louro cereja</term>
+					para fricções na <term type="body-part" xml:id="t_novaes_0054"
 						lemma="coluna vertebral">columna vertebral</term>, nos phenomenos ataxicos
 					acompanhados de <term type="symptom" xml:id="t_novaes_0293" lemma="sobressalto"
 						>sobre-salto</term> dos <term type="body-part" xml:id="t_novaes_0055"
@@ -907,7 +913,7 @@
 						>vomito nervoso</term>.</p>
 				<p xml:id="p_novaes_0082">A febre n'este periodo, que as vezes é muito consideravel,
 					tem sido combatida, pela infusão de <term type="plant" xml:id="t_novaes_0056"
-						lemma="serpentária da Virgínia">serpentaria de virginia</term> ou pelo
+						lemma="serpentária-da-virgínia">serpentaria de virginia</term> ou pelo
 					cosimento antifebril de Lewis, e este medicamente fôra muito preconisado pelo
 					Exm. Sr. Barão de Petropoles, distincto clinico do Rio de Janeiro.</p>
 				<p xml:id="p_novaes_0083">Todos esses medicamentos que acabamos de indicar,
@@ -950,14 +956,13 @@
 						lemma="sulfato de quinina">sulphato de quinina</term>, não tendo em
 					resultado senão ver a molestia progredir em seus symptomas pela acção altamente
 					hypostenizante da <term type="chemical-medicine" xml:id="t_novaes_0304"
-						lemma="quinina">quinina</term> sobre o systema nervoso cerebro-spinhal.
-					Empregado portanto no principio da molestia, augmenta a <term type="symptom"
-						xml:id="t_novaes_0305" lemma="agitação">agitação</term> e a anciedade ao
-					doente, produzindo os zunidos dos <term type="body-part" xml:id="t_novaes_0057"
-						lemma="ouvido">ouvidos</term> e o enfraquecimento da <term type="body-part"
-						xml:id="t_novaes_0058" lemma="vista">vista</term>, emfim predispondo-o a uma
-						<term type="symptom" xml:id="t_novaes_0306" lemma="adinamia">adynamia</term>
-					consideravel.</p>
+						>quinina</term> sobre o systema nervoso cerebro-spinhal. Empregado portanto
+					no principio da molestia, augmenta a <term type="symptom" xml:id="t_novaes_0305"
+						>agitação</term> e a anciedade ao doente, produzindo os zunidos dos <term
+						type="body-part" xml:id="t_novaes_0057" lemma="ouvido">ouvidos</term> e o
+					enfraquecimento da <term type="body-part" xml:id="t_novaes_0058">vista</term>,
+					emfim predispondo-o a uma <term type="symptom" xml:id="t_novaes_0306"
+						lemma="adinamia">adynamia</term> consideravel.</p>
 				<p xml:id="p_novaes_0088">Apezar do que acabamos de dizer a respeito do <term
 						type="chemical-medicine" xml:id="t_novaes_0307" lemma="sulfato de quinina"
 						>sulphato de quinina</term> empregado contra a <term type="illness"
@@ -979,15 +984,15 @@
 						lemma="febre amarela">febre amarella</term> apresentava symptomas de <term
 						type="illness" xml:id="t_novaes_0313" lemma="febre perniciosa">febre
 						perniciosa</term>, revelando-se por phenomenos de <term type="symptom"
-						xml:id="t_novaes_0314" lemma="ataxia">ataxia</term>, <term type="symptom"
-						xml:id="t_novaes_0315" lemma="exaltação cerebral">exaltação cerebral</term>,
-					e pela <term type="body-part" xml:id="t_novaes_0059" lemma="língua"
-						>lingua</term> secca e queimada até a ponta, <term type="body-part"
-						xml:id="t_novaes_0060" lemma="língua">lingua</term> que humedecia passado o
-					paroxismo. Estes factos foram por nós observados na caza de saude de S.
-					Francisco: á estes doentes o emprego do <term type="chemical-medicine"
-						xml:id="t_novaes_0316" lemma="sulfato de quinina">sulphato de quinina</term>
-					em alta dose evitava a<pb n="16"
+						xml:id="t_novaes_0314">ataxia</term>, <term type="symptom"
+						xml:id="t_novaes_0315">exaltação cerebral</term>, e pela <term
+						type="body-part" xml:id="t_novaes_0059" lemma="língua">lingua</term> secca e
+					queimada até a ponta, <term type="body-part" xml:id="t_novaes_0060"
+						lemma="língua">lingua</term> que humedecia passado o paroxismo. Estes factos
+					foram por nós observados na caza de saude de S. Francisco: á estes doentes o
+					emprego do <term type="chemical-medicine" xml:id="t_novaes_0316"
+						lemma="sulfato de quinina">sulphato de quinina</term> em alta dose evitava
+						a<pb n="16"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0019.jp2&amp;id=101464815.nlm.nih.gov"
 					/> reapparição dos paroxismos e, extinguindo a consideravel aridez da <term
 						type="body-part" xml:id="t_novaes_0061" lemma="língua">lingua</term>,
@@ -1021,42 +1026,40 @@
 						citrica, assim como o vinho branco misturado com agua de Seltz. O Dr.
 						Lacaill diz ter obtido resultados lisongeiros pela applicação do <term
 							type="chemical-medicine" xml:id="t_novaes_0322"
-							lemma="bissulfito de cálcio">bisulphito de cal</term>. Os medicos
-						inglezes usavam dar aos seus doentes o vinho de Champanha e a cerveja no
-						sentido, talvez, de que elles oppondo-se aos <term type="symptom"
+							lemma="bissulfito de cal">bisulphito de cal</term>. Os medicos inglezes
+						usavam dar aos seus doentes o vinho de Champanha e a cerveja no sentido,
+						talvez, de que elles oppondo-se aos <term type="symptom"
 							xml:id="t_novaes_0323" lemma="vômito">vomitos</term> ainda obrem como
 						tonicos. Ainda aqui os antipasmodicos tem dado bons resultados; entre elles,
 						o <term type="chemical-medicine" xml:id="t_novaes_0324" lemma="éter"
 							>ether</term>, a <term type="plant" xml:id="t_novaes_0062"
 							lemma="beladona">belladona</term>, o extracto de <term type="plant"
-							xml:id="t_novaes_0063" lemma="valeriana">valeriana</term> e a <term
+							xml:id="t_novaes_0063">valeriana</term> e a <term
 							type="chemical-medicine" xml:id="t_novaes_0325" lemma="cânfora"
 							>camphora</term>, acompanhados do uso constante das infusões de <term
 							type="plant" xml:id="t_novaes_0064" lemma="quássia">quassia</term>,
-							<term type="plant" xml:id="t_novaes_0065" lemma="simaruba"
-							>simaruba</term>
-						<term type="plant" xml:id="t_novaes_0066" lemma="genciana">genciana</term>,
-						e da agua ingleza, que como tonicos tem triumphado d'este terrivel symptoma.
-						Nos casos em que o vomito é essencial e <term type="symptom"
-							xml:id="t_novaes_0326" lemma="hemorrágico">hemorrhagico</term>,<pb
-							n="17"
+							<term type="plant" xml:id="t_novaes_0065">simaruba</term>
+						<term type="plant" xml:id="t_novaes_0066">genciana</term>, e da agua
+						ingleza, que como tonicos tem triumphado d'este terrivel symptoma. Nos casos
+						em que o vomito é essencial e <term type="symptom" xml:id="t_novaes_0326"
+							lemma="hemorrágico">hemorrhagico</term>,<pb n="17"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0020.jp2&amp;id=101464815.nlm.nih.gov"
 						/> e composto de materia negra, ja quasi que todos os recursos são
 						infructiferos; com tudo não devemos crusar os <term type="body-part"
 							xml:id="t_novaes_0067" lemma="braço">braços</term>, e então lançaremos
 						mão dos adstrigentes, bem como a <term type="plant" xml:id="t_novaes_0068"
 							lemma="ratânia">ratanhia</term>, o <term type="chemical-medicine"
-							xml:id="t_novaes_0327" lemma="percloreto de ferro">perchlorureto de
+							xml:id="t_novaes_0327" lemma="perclorureto de ferro">perchlorureto de
 							ferro</term> e a <term type="chemical-medicine" xml:id="t_novaes_0328"
-							lemma="ergotina">ergotina</term>: de todos estes, o <term
-							type="chemical-medicine" xml:id="t_novaes_0329"
-							lemma="percloreto de ferro">perchlorureto de ferro</term> tem dado
-						melhores resultados, porque alem de oppôr-se a <term type="symptom"
-							xml:id="t_novaes_0330" lemma="hemorragia">hemorrhagia</term> do <term
-							type="body-part" xml:id="t_novaes_0069" lemma="estômago"
-						>estomago</term>, ainda é um restaurativo das forças abatidas do doente.
-						Tambem tem sido empregados o gêlo internamente, as limonadas mineraes
-						geladas, o elixir paregorico, com resultados satisfatorios.</p>
+							>ergotina</term>: de todos estes, o <term type="chemical-medicine"
+							xml:id="t_novaes_0329" lemma="perclorureto de ferro">perchlorureto de
+							ferro</term> tem dado melhores resultados, porque alem de oppôr-se a
+							<term type="symptom" xml:id="t_novaes_0330" lemma="hemorragia"
+							>hemorrhagia</term> do <term type="body-part" xml:id="t_novaes_0069"
+							lemma="estômago">estomago</term>, ainda é um restaurativo das forças
+						abatidas do doente. Tambem tem sido empregados o gêlo internamente, as
+						limonadas mineraes geladas, o elixir paregorico, com resultados
+						satisfatorios.</p>
 					<p xml:id="p_novaes_0095">Os antisepticos tem sido empregados com vantagem
 						n'este caso, e d'entre elles merecem especial menção, o <term
 							type="chemical-medicine" xml:id="t_novaes_0331" lemma="ácido fênico"
@@ -1077,13 +1080,12 @@
 						tende a proseguir com toda intensidade, e o sangue em um grau extraordinario
 						de dissolução da lugar a <term type="symptom" xml:id="t_novaes_0335"
 							lemma="hemorragia">hemorrhagias</term> até no proprio tecido do <term
-							type="body-part" xml:id="t_novaes_0070" lemma="derma">derma</term>, e
-						ainda mais o organismo profundamente abalado em seus eixos lucta contra um
-						inimigo desconhecido, e que n'esta lucta suprema, denominada agonia, em que
-						o doente ja exhausto espera a cada momento deixar a vida pela morte, não
-						podemos deixar de reconhecer que só a medicação tonica poderá produzir
-						verdadeiras resurreições, como por mais de uma vez tivemos occasião de
-						ver.</p>
+							type="body-part" xml:id="t_novaes_0070">derma</term>, e ainda mais o
+						organismo profundamente abalado em seus eixos lucta contra um inimigo
+						desconhecido, e que n'esta lucta suprema, denominada agonia, em que o doente
+						ja exhausto espera a cada momento deixar a vida pela morte, não podemos
+						deixar de reconhecer que só a medicação tonica poderá produzir verdadeiras
+						resurreições, como por mais de uma vez tivemos occasião de ver.</p>
 					<p xml:id="p_novaes_0097">Tratemos agora dos phenomenos cerebraes: esses podem
 						exacerbar-se e então devem ser empregados os narcoticos e os calmantes, de
 						entre os narcoticos, a <term type="chemical-medicine" xml:id="t_novaes_0336"
@@ -1102,18 +1104,18 @@
 						preconisada com bom resultado.</p>
 					<p xml:id="p_novaes_0098">Ainda para debellar-se esses phenomenos tem se
 						applicado as compressas geladas sobre a <term type="body-part"
-							xml:id="t_novaes_0074" lemma="fronte">fronte</term>, os sinapismos entre
-						as <term type="body-part" xml:id="t_novaes_0075" lemma="espádua"
-							>espadoas</term> e nas <term type="body-part" xml:id="t_novaes_0076"
-							lemma="extremidade">extremidades</term> inferiores, os clysteres
-						emolientes e purgativos conjunctamente com os drasticos, com o fim de
-						operarem para o <term type="body-part" xml:id="t_novaes_0077" lemma="reto"
-							>recto</term> uma derivação que naturalmente minorará esses phenomenos:
-						entre os drastiticos os que tem sido mais usados são, a <term type="plant"
-							xml:id="t_novaes_0078" lemma="jalapa">jalapa</term>, á <term
-							type="plant" xml:id="t_novaes_0079" lemma="escamonea">escamonêa</term>,
-						á <term type="plant" xml:id="t_novaes_0080" lemma="coloquíntida"
-							>coloquintida</term>, e o purgante de Leroy.</p>
+							xml:id="t_novaes_0074">fronte</term>, os sinapismos entre as <term
+							type="body-part" xml:id="t_novaes_0075" lemma="espádua">espadoas</term>
+						e nas <term type="body-part" xml:id="t_novaes_0076" lemma="extremidade"
+							>extremidades</term> inferiores, os clysteres emolientes e purgativos
+						conjunctamente com os drasticos, com o fim de operarem para o <term
+							type="body-part" xml:id="t_novaes_0077" lemma="reto">recto</term> uma
+						derivação que naturalmente minorará esses phenomenos: entre os drastiticos
+						os que tem sido mais usados são, a <term type="plant" xml:id="t_novaes_0078"
+							>jalapa</term>, á <term type="plant" xml:id="t_novaes_0079"
+							lemma="escamônea">escamonêa</term>, á <term type="plant"
+							xml:id="t_novaes_0080" lemma="coloquíntida">coloquintida</term>, e o
+						purgante de Leroy.</p>
 					<p xml:id="p_novaes_0099">Passemos as <term type="symptom"
 							xml:id="t_novaes_0339" lemma="hemorragia">hemorrhagias</term> que
 						constituem, por certo, o symptoma mais aterrador e ao mesmo tempo o mais
@@ -1122,9 +1124,8 @@
 						resultados mais favoraveis; e esta medicação tem bastante fundamento,
 						porque, se como ja vimos, ha dyscrazia do sangue, so os tonicos poderão
 						reconstituilo: devemos pois dar o vinho do Porto generoso, a agua ingleza,
-							<term type="plant" xml:id="t_novaes_0081" lemma="genciana"
-							>angeciana</term>, os caldos frios, a <term type="plant"
-							xml:id="t_novaes_0082" lemma="simaruba">simaruba</term> e a <term
+							<term type="plant" xml:id="t_novaes_0081">angeciana</term>, os caldos
+						frios, a <term type="plant" xml:id="t_novaes_0082">simaruba</term> e a <term
 							type="plant" xml:id="t_novaes_0083" lemma="quássia">quassia</term>.</p>
 					<p xml:id="p_novaes_0100">Serve de exemplo ao que levamos dito um caso que
 						observamos na casa de saude de S. Francisco: n'um doente, marinheiro inglez
@@ -1132,15 +1133,14 @@
 							lemma="hemorragia">hemorrhagia</term> foi tão consideravel que, essa até
 						manifestou-se nos <term type="body-part" xml:id="t_novaes_0084" lemma="vaso"
 							>vasos</term> da <term type="body-part" xml:id="t_novaes_0085"
-							lemma="perna">perna</term> em forma de abscessos metastazicos'
-						prorompendo pela <term type="body-part" xml:id="t_novaes_0086" lemma="pele"
-							>pele</term> que afinal tomou a forma de ulcera hemorrhagica, N'este
-						doente o uso dos tonicos, com perseverança, dêbellou por sua acção interna e
-						fortificante do sangue, a <term type="symptom" xml:id="t_novaes_0341"
-							lemma="hemorragia">hemorrhagia</term>, que gradualmente cedia a
-						proporção que se augmentava a doze dos tonicos, vindo ainda estes heroicos
-						medicamentos á produzirem vantajosos effeitos em applicações topicas sobre
-						as ulceras.</p>
+							>perna</term> em forma de abscessos metastazicos' prorompendo pela <term
+							type="body-part" xml:id="t_novaes_0086">pele</term> que afinal tomou a
+						forma de ulcera hemorrhagica, N'este doente o uso dos tonicos, com
+						perseverança, dêbellou por sua acção interna e fortificante do sangue, a
+							<term type="symptom" xml:id="t_novaes_0341" lemma="hemorragia"
+							>hemorrhagia</term>, que gradualmente cedia a proporção que se
+						augmentava a doze dos tonicos, vindo ainda estes heroicos medicamentos á
+						produzirem vantajosos effeitos em applicações topicas sobre as ulceras.</p>
 					<p xml:id="p_novaes_0101">Tratemos agora de certos symptomas que ainda se podem
 						apresentar complicando esta enfermidade, e os meios que geralmente tem sido
 						empregados para combatel-os.</p>
@@ -1159,22 +1159,21 @@
 						prevenindo a roabsorpção ou a metastaze.</p>
 					<p xml:id="p_novaes_0103">Nós observamos alguns casos d'estes em que tiramos
 						bons resultados por meio das fricções com <term type="chemical-medicine"
-							xml:id="t_novaes_0345" lemma="pomada mercurial">pomada mercurial</term>
-						e <term type="plant" xml:id="t_novaes_0087" lemma="beladona"
-							>belladona</term>, junctamente com os gargarejos de cosimento de <term
-							type="plant" xml:id="t_novaes_0088" lemma="malva">malvas</term> e de
-							<term type="plant" xml:id="t_novaes_0089" lemma="quina">quina</term>
-						para combater a inflammação da <term type="body-part" xml:id="t_novaes_0090"
-							lemma="garganta">garganta</term>.</p>
+							xml:id="t_novaes_0345">pomada mercurial</term> e <term type="plant"
+							xml:id="t_novaes_0087" lemma="beladona">belladona</term>, junctamente
+						com os gargarejos de cosimento de <term type="plant" xml:id="t_novaes_0088"
+							lemma="malva">malvas</term> e de <term type="plant"
+							xml:id="t_novaes_0089">quina</term> para combater a inflammação da <term
+							type="body-part" xml:id="t_novaes_0090">garganta</term>.</p>
 					<p xml:id="p_novaes_0104">A <term type="symptom" xml:id="t_novaes_0346"
 							lemma="supressão da secreção urinária">suppressão da secreção
 							urinaria</term>, é tambem um symptoma quasi sempre infallivel e
 						incommodativo. Os meios mais empregados para combater este symptoma eram os
 						dicereticos, e especialmente o <term type="chemical-medicine"
-							xml:id="t_novaes_0347" lemma="nitrato de potássio">nitrato de
+							xml:id="t_novaes_0347" lemma="nitrato de potassa">nitrato de
 							potassa</term>, o <term type="chemical-medicine" xml:id="t_novaes_0348"
-							lemma="subcarbonato">subcarbonato</term>, o acetato e o bicarbonato,
-						porem sem nenhum proveito na maioria dos casos.</p>
+							>subcarbonato</term>, o acetato e o bicarbonato, porem sem nenhum
+						proveito na maioria dos casos.</p>
 					<p xml:id="p_novaes_0105">Pensamos que a <term type="symptom"
 							xml:id="t_novaes_0349" lemma="supressão da secreção urinária">suppressão
 							da secreção urinaria</term> nos doentes de <term type="illness"
@@ -1219,13 +1218,12 @@
 							lemma="acônito">aconito</term>, o <term type="chemical-medicine"
 							xml:id="t_novaes_0357" lemma="acetato de amônia">acetato de
 							ammonea</term>, as infusões de <term type="plant" xml:id="t_novaes_0096"
-							lemma="sabugueiro">sabugueiro</term>, <term type="plant"
-							xml:id="t_novaes_0097" lemma="borragem">borragem</term>, <term
-							type="plant" xml:id="t_novaes_0098" lemma="tília">tilia</term>, <term
-							type="plant" xml:id="t_novaes_0099" lemma="chá">chá</term>, <term
-							type="plant" xml:id="t_novaes_0100" lemma="melissa">melissa</term>,
-							<term type="plant" xml:id="t_novaes_0101" lemma="arnica">arnica</term>,
-						grellos de <term type="plant" xml:id="t_novaes_0102" lemma="laranjeira"
+							>sabugueiro</term>, <term type="plant" xml:id="t_novaes_0097"
+							>borragem</term>, <term type="plant" xml:id="t_novaes_0098"
+							lemma="tília">tilia</term>, <term type="plant" xml:id="t_novaes_0099"
+							>chá</term>, <term type="plant" xml:id="t_novaes_0100">melissa</term>,
+							<term type="plant" xml:id="t_novaes_0101">arnica</term>, grellos de
+							<term type="plant" xml:id="t_novaes_0102" lemma="laranjeira"
 							>larangeira</term>, as <term type="chemical-medicine"
 							xml:id="t_novaes_0358" lemma="tintura canforada">tincturas
 							camphoradas</term>, as bebidas aciduladas, os revulsivos cutaneos, os
@@ -1234,12 +1232,12 @@
 					<p xml:id="p_novaes_0109">No segundo periodo, os purgativos oleosos e salinos,
 						bem como o oleo de <term type="plant" xml:id="t_novaes_0103" lemma="rícino"
 							>ricino</term>, os <term type="chemical-medicine" xml:id="t_novaes_0359"
-							lemma="sulfato de magnésio e sódio">sulphatos de magnesia e soda</term>,
+							lemma="sulfato de magnésia e soda">sulphatos de magnesia e soda</term>,
 						a polpa de <term type="plant" xml:id="t_novaes_0104" lemma="tamarindo"
 							>tamarindos</term>, o maná, <term type="chemical-medicine"
-							xml:id="t_novaes_0360" lemma="tartrato ácido de potássio">tartrato acido
+							xml:id="t_novaes_0360" lemma="tartrato ácido de potassa">tartrato acido
 							de potassa</term>, e o oleo de <term type="plant" xml:id="t_novaes_0105"
-							lemma="Croton">croton</term>: os revulsivos, e entre elles os sinapismos
+							lemma="cróton">croton</term>: os revulsivos, e entre elles os sinapismos
 						de <term type="plant" xml:id="t_novaes_0106" lemma="mostarda"
 							>mustarda</term>, os visicatorios volantes, os sudorificos, as
 						compressas d'agua fria, a agua sedativa de Raspail, as bebidas geladas, as
@@ -1257,43 +1255,41 @@
 						affusões de agua fria, a agua de <term type="plant" xml:id="t_novaes_0108"
 							lemma="louro-cereja">louro cereja</term>, a morphina, e o emplastro de
 						theriaga; os antifebris, a <term type="plant" xml:id="t_novaes_0109"
-							lemma="serpentária da Virgínia">serpentaria de verginea</term>, a <term
-							type="plant" xml:id="t_novaes_0110" lemma="quina">quina</term>, e o
-						cozimento antifebril de Lewis; os tonicos, e o <term
-							type="chemical-medicine" xml:id="t_novaes_0365"
-							lemma="sulfato de quinina">sulphato de quinina</term> em certas
-						circunstancias.</p>
+							lemma="serpentária-da-virgínia">serpentaria de verginea</term>, a <term
+							type="plant" xml:id="t_novaes_0110">quina</term>, e o cozimento
+						antifebril de Lewis; os tonicos, e o <term type="chemical-medicine"
+							xml:id="t_novaes_0365" lemma="sulfato de quinina">sulphato de
+							quinina</term> em certas circunstancias.</p>
 					<p xml:id="p_novaes_0110">No terceiro periodo, ainda são indicados os
 						sinapismos, os visicatorios volantes, a agua simples gelada, a agua gazoza,
 						as limonadas vegetaes, a agua de Seltz, a <term type="chemical-medicine"
 							xml:id="t_novaes_0366" lemma="limonada clorídrica">limonada
 							chlorydrica</term>, os antispasmodicos, os antivomitivos, e entre elles
 						a cerveja, a Champanha e o <term type="chemical-medicine"
-							xml:id="t_novaes_0367" lemma="bissulfito de cálcio">bisulphito de
+							xml:id="t_novaes_0367" lemma="bissulfito de cal">bisulphito de
 							cal</term> os adstringentes, bem como a <term type="chemical-medicine"
-							xml:id="t_novaes_0368" lemma="ergotina">ergotina</term>, o perchlorureto
-							de<pb n="21"
+							xml:id="t_novaes_0368">ergotina</term>, o perchlorureto de<pb n="21"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0024.jp2&amp;id=101464815.nlm.nih.gov"
 						/> ferro e o gelo: os anticepticos, o <term type="chemical-medicine"
 							xml:id="t_novaes_0369" lemma="ácido fênico">acido phenico</term>, o
 							<term type="chemical-medicine" xml:id="t_novaes_0370" lemma="creosoto"
 							>creozoto</term>, e ainda o <term type="chemical-medicine"
-							xml:id="t_novaes_0371" lemma="bissulfito de cálcio">bisulphito de
+							xml:id="t_novaes_0371" lemma="bissulfito de cal">bisulphito de
 							cal</term> a morphina e seus saes, ou injeridos em poções ou pelo
 						methodo endermico: as compressas geladas, os drasticos, e entre elles a
-							<term type="plant" xml:id="t_novaes_0111" lemma="jalapa">jalapa</term>,
-						a <term type="plant" xml:id="t_novaes_0112" lemma="escamonea"
-							>escamonêa</term>, a <term type="plant" xml:id="t_novaes_0113"
-							lemma="coloquíntida">coloquintida</term> e o Leroy: e sempre os tonicos,
-						sendo d'entre elles os mais empregados, a <term type="plant"
-							xml:id="t_novaes_0114" lemma="simaruba">simaruba</term>, a <term
-							type="plant" xml:id="t_novaes_0115" lemma="quássia">quassia</term>,
-							<term type="plant" xml:id="t_novaes_0116" lemma="genciana"
-							>angeciana</term>, a agua ingleza, os caldos frios, e o vinho do Porto
-						generoso, tambem as bebidas mucilaginosas e diureticas, o cosimento de raiz
-						de <term type="plant" xml:id="t_novaes_0117" lemma="alteia">althêa</term>, e
-						de <term type="plant" xml:id="t_novaes_0118" lemma="grama">gramma</term>, as
-						fricções com <term type="chemical-medicine" xml:id="t_novaes_0372"
+							<term type="plant" xml:id="t_novaes_0111">jalapa</term>, a <term
+							type="plant" xml:id="t_novaes_0112" lemma="escamônea">escamonêa</term>,
+						a <term type="plant" xml:id="t_novaes_0113" lemma="coloquíntida"
+							>coloquintida</term> e o Leroy: e sempre os tonicos, sendo d'entre elles
+						os mais empregados, a <term type="plant" xml:id="t_novaes_0114"
+							>simaruba</term>, a <term type="plant" xml:id="t_novaes_0115"
+							lemma="quássia">quassia</term>, <term type="plant"
+							xml:id="t_novaes_0116">angeciana</term>, a agua ingleza, os caldos
+						frios, e o vinho do Porto generoso, tambem as bebidas mucilaginosas e
+						diureticas, o cosimento de raiz de <term type="plant" xml:id="t_novaes_0117"
+							lemma="alteia">althêa</term>, e de <term type="plant"
+							xml:id="t_novaes_0118" lemma="grama">gramma</term>, as fricções com
+							<term type="chemical-medicine" xml:id="t_novaes_0372"
 							lemma="essência de terebintina">essencia de therebentina</term>, e os
 							<term type="chemical-medicine" xml:id="t_novaes_0373"
 							lemma="clister canforado">clysteres camphorados</term>.</p>
@@ -1314,38 +1310,37 @@
 							type="body-part" xml:id="t_novaes_0120" lemma="extremidade"
 							>extremidades</term>. Se os doentes apresentavam <term type="symptom"
 							xml:id="t_novaes_0375" lemma="cefalalgia">cephalalgia</term>, applicava
-						na <term type="body-part" xml:id="t_novaes_0121" lemma="fronte"
-							>fronte</term> compressas embebidas n'agua sedativa.</p>
+						na <term type="body-part" xml:id="t_novaes_0121">fronte</term> compressas
+						embebidas n'agua sedativa.</p>
 					<p xml:id="p_novaes_0114">No segundo periodo, quando os symptomas mais graves
 						denunciavam-se, era prescripta a seguinte formula:</p>
 					<table>
 						<row>
 							<cell>R.—Infuzão de <term type="plant" xml:id="t_novaes_0122"
-									lemma="serpentária da Virgínia">serpentaria de
+									lemma="serpentária-da-virgínia">serpentaria de
 								Virginia</term></cell>
 							<cell>500 grammas</cell>
 						</row>
 						<row>
-							<cell>Tinctura de <term type="plant" xml:id="t_novaes_0123"
-									lemma="quina">quina</term>
+							<cell>Tinctura de <term type="plant" xml:id="t_novaes_0123">quina</term>
 								<term type="chemical-medicine" xml:id="t_novaes_0376"
 									lemma="acetato de amônia">Acetato de ammonea</term></cell>
 							<cell>ãa 4 grammas.</cell>
 						</row>
 						<row>
 							<cell><term type="chemical-medicine" xml:id="t_novaes_0377"
-									lemma="sulfato de sódio">Sulphato de sóda</term> 12
+									lemma="sulfato de soda">Sulphato de sóda</term> 12
 								grammas.</cell>
 						</row>
 					</table>
 					<p xml:id="p_novaes_0115">Dissolva para tomar as colheres de hora em hora. Ao
 						mesmo tempo applicava compressas d'agua fria sobre o <term type="body-part"
-							xml:id="t_novaes_0124" lemma="ventre">ventre</term><pb n="22"/> de
-						concomitancia com os sinapismos nas <term type="body-part"
-							xml:id="t_novaes_0125" lemma="extremidade">extremidades</term>. Quanto
-						finalmente havia cessação dos symptomas mais graves dava <term
-							type="chemical-medicine" xml:id="t_novaes_0378"
-							lemma="limonada clorídrica">limonada chlorydrica</term> aos calices.</p>
+							xml:id="t_novaes_0124">ventre</term><pb n="22"/> de concomitancia com os
+						sinapismos nas <term type="body-part" xml:id="t_novaes_0125"
+							lemma="extremidade">extremidades</term>. Quanto finalmente havia
+						cessação dos symptomas mais graves dava <term type="chemical-medicine"
+							xml:id="t_novaes_0378" lemma="limonada clorídrica">limonada
+							chlorydrica</term> aos calices.</p>
 					<p xml:id="p_novaes_0116">Este tratamento approveitou alguma cousa, pois que de
 						onze doentes que entraram para o Hospital, e destes, 8 em estado grave,</p>
 					<table>
@@ -1368,11 +1363,11 @@
 					<p xml:id="p_novaes_0118">Admittida a pathogenia da <term type="illness"
 							xml:id="t_novaes_0379" lemma="febre amarela">febre amarella</term> como
 						um envenenamento do sangue (<term type="illness" xml:id="t_novaes_0380"
-							lemma="septicemia">septicemia</term>,) apenas entraram os doentes para
-						aquelle hospital se chegavam no periodo da invasão da molestia, tomavam um
-						emetocathartico (<term type="chemical-medicine" xml:id="t_novaes_0381"
+							>septicemia</term>,) apenas entraram os doentes para aquelle hospital se
+						chegavam no periodo da invasão da molestia, tomavam um emetocathartico
+							(<term type="chemical-medicine" xml:id="t_novaes_0381"
 							lemma="tártaro emético">tartaro emetico</term> e <term
-							type="chemical-medicine" xml:id="t_novaes_0382" lemma="sulfato de sódio"
+							type="chemical-medicine" xml:id="t_novaes_0382" lemma="sulfato de soda"
 							>sulphato de sóda</term>.) A diaphoreze era entretida no dia seguinte
 						por uma poção diaphoretica com <term type="chemical-medicine"
 							xml:id="t_novaes_0383" lemma="acetato de amônia">acetato de
@@ -1384,16 +1379,16 @@
 							lemma="vômito negro">vomito negro</term>, tomavam os doentes n'este
 						periodo uma porção, em que entrava a proporção de vinte gottas de <term
 							type="chemical-medicine" xml:id="t_novaes_0386"
-							lemma="percloreto de ferro">perchlorureto de ferro</term> para uma libra
-						de agua, dada as colheres, e applicava-se um sinapismo na região do <term
-							type="body-part" xml:id="t_novaes_0127" lemma="estômago"
-						>estomago</term>. Se o vomito, não obstante, tinha lugar, augmentavam-se a
-						dóze do perchlorureto, ou empregava-se um preparado de <term
-							type="chemical-medicine" xml:id="t_novaes_0387" lemma="tanino"
-							>tanino</term>, ou ratanha. Da mesma maneira eram combatidas as <term
-							type="symptom" xml:id="t_novaes_0388" lemma="hemorragia intestinal"
-							>hemorrhagias intestinas</term> que as vezes acompanham ou substituem o
-							<term type="symptom" xml:id="t_novaes_0389" lemma="vômito">vomito</term>
+							lemma="perclorureto de ferro">perchlorureto de ferro</term> para uma
+						libra de agua, dada as colheres, e applicava-se um sinapismo na região do
+							<term type="body-part" xml:id="t_novaes_0127" lemma="estômago"
+							>estomago</term>. Se o vomito, não obstante, tinha lugar, augmentavam-se
+						a dóze do perchlorureto, ou empregava-se um preparado de <term
+							type="chemical-medicine" xml:id="t_novaes_0387">tanino</term>, ou
+						ratanha. Da mesma maneira eram combatidas as <term type="symptom"
+							xml:id="t_novaes_0388" lemma="hemorragia intestina">hemorrhagias
+							intestinas</term> que as vezes acompanham ou substituem o <term
+							type="symptom" xml:id="t_novaes_0389" lemma="vômito">vomito</term>
 						negro, Quando symptomas ataxico-adynamicos se manifestavam, empregavam-se
 						preparações antispasmodicos (castorio, almiscar etc,) e applicavam-se
 						vesicatorios nas barrigas das <term type="body-part" xml:id="t_novaes_0128"
@@ -1403,8 +1398,8 @@
 						apresentava a <term type="symptom" xml:id="t_novaes_0391"
 							lemma="sufusão ictérica">suffusão icterica</term>, davam-se os purgantes
 						salinos, e o <term type="chemical-medicine" xml:id="t_novaes_0392"
-							lemma="bicarbonato de sódio">bicarbonato de sóda</term>, Esse
-						tratamento, que só éra modificado,<pb n="23"
+							lemma="bicarbonato de soda">bicarbonato de sóda</term>, Esse tratamento,
+						que só éra modificado,<pb n="23"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0026.jp2&amp;id=101464815.nlm.nih.gov"
 						/> quando era opportuna a modificação, deu felizes resultados, como se póde
 						deprehender da estatistica d'esse hospital desde o dia 22 de Abril, em que
@@ -1436,7 +1431,7 @@
 						trez destes, <term type="symptom" xml:id="t_novaes_0394"
 							lemma="vômito negro">vomito negro</term>: treze entraram em estado
 						duvidoso, apresentando trez a <term type="illness" xml:id="t_novaes_0395"
-							lemma="forma tífica">forma typhicà</term>: e quarenta e oito no periodo
+							lemma="forma tífica">forma typhica</term>: e quarenta e oito no periodo
 						invasor da molestia. Dos existentes, quatorze entraram graves, tendo cinco
 						destes, <term type="symptom" xml:id="t_novaes_0396" lemma="vômito"
 							>vomito</term> negro: dous aprezentando a <term type="illness"
@@ -1535,89 +1530,83 @@
 					<p xml:id="p_novaes_0133">Diz mais que, para a inoculação exercer a sua virtude
 							preservadoura,<pb n="26"/> não era necessario que os seus symptomas
 						fossem intensos; que somente bastava os inoculados apresentarem o <term
-							type="symptom" xml:id="t_novaes_0408" lemma="enfraquecimento do pulso"
-							>enfraquecimento do pulso</term> e uma tendencia hemorrhogica das <term
-							type="body-part" xml:id="t_novaes_0129" lemma="gengiva">gengivas</term>
-						Essa substancia depois de ter sido inoculada no <term type="body-part"
-							xml:id="t_novaes_0130" lemma="braço">braço</term>, pelo mesmo processo
-						que a vacina, applicava-se sobre as picadas da lanceta uma pequena cruz de
-						malta de esparadrape. Se no fim de alguns minutos levantava-se o apparelho
-						encontrava-se o seguinte: ao redor das picadas uma pequena elevação em forma
-						de <term type="symptom" xml:id="t_novaes_0409" lemma="pápula branca">papula
-							branca</term> diaphana, análoga a dentada de um mosquito; esse phenomeno
-						era visivel no fim de 5 minutos, e no fim de 12 á 24 horas não existia mais.
-						Logo depois da inoculação manifestava-se no <term type="body-part"
-							xml:id="t_novaes_0131" lemma="antebraço">antebraço</term> uma sensação
-						de <term type="symptom" xml:id="t_novaes_0410" lemma="comichão"
-							>comichão</term> e de <term type="symptom" xml:id="t_novaes_0411"
-							lemma="entorpecimento">entorpecimento</term>, ligeiro phenomeno
-						anestesico que durava de 2 á 4 dias. No momento da inoculação a molestia
-						delineava-se pela <term type="symptom" xml:id="t_novaes_0412"
-							lemma="síncope">syncope</term>, que passava rapidamente, ou ainda por um
-							<term type="symptom" xml:id="t_novaes_0413" lemma="tremor nervoso"
+							type="symptom" xml:id="t_novaes_0408">enfraquecimento do pulso</term> e
+						uma tendencia hemorrhogica das <term type="body-part" xml:id="t_novaes_0129"
+							lemma="gengiva">gengivas</term> Essa substancia depois de ter sido
+						inoculada no <term type="body-part" xml:id="t_novaes_0130">braço</term>,
+						pelo mesmo processo que a vacina, applicava-se sobre as picadas da lanceta
+						uma pequena cruz de malta de esparadrape. Se no fim de alguns minutos
+						levantava-se o apparelho encontrava-se o seguinte: ao redor das picadas uma
+						pequena elevação em forma de <term type="symptom" xml:id="t_novaes_0409"
+							lemma="pápula branca">papula branca</term> diaphana, análoga a dentada
+						de um mosquito; esse phenomeno era visivel no fim de 5 minutos, e no fim de
+						12 á 24 horas não existia mais. Logo depois da inoculação manifestava-se no
+							<term type="body-part" xml:id="t_novaes_0131">antebraço</term> uma
+						sensação de <term type="symptom" xml:id="t_novaes_0410">comichão</term> e de
+							<term type="symptom" xml:id="t_novaes_0411">entorpecimento</term>,
+						ligeiro phenomeno anestesico que durava de 2 á 4 dias. No momento da
+						inoculação a molestia delineava-se pela <term type="symptom"
+							xml:id="t_novaes_0412" lemma="síncope">syncope</term>, que passava
+						rapidamente, ou ainda por um <term type="symptom" xml:id="t_novaes_0413"
 							>tremor nervoso</term> que era mais raro, mas que durava por mais tempo:
-						o <term type="symptom" xml:id="t_novaes_0414" lemma="pulso acelerado">pulso
-							accelerava-se</term> sob a impressão do abalo do momento. No fim de 7
-						horas o pulso era modificado de uma maneira permanente; era mais frequente
-						ou mais lento, mais forte ou mais fraco; no fim de 11 horas, havia <term
+						o pulso accelerava-se sob a impressão do abalo do momento. No fim de 7 horas
+						o pulso era modificado de uma maneira permanente; era mais frequente ou mais
+						lento, mais forte ou mais fraco; no fim de 11 horas, havia <term
 							type="symptom" xml:id="t_novaes_0415" lemma="calor febril">calor
 							febril</term>; no de 14 horas, <term type="symptom"
 							xml:id="t_novaes_0416" lemma="cefalalgia">cephalalgia</term>, <term
-							type="symptom" xml:id="t_novaes_0417" lemma="anorexia">anorexia</term> e
-							<term type="symptom" xml:id="t_novaes_0418" lemma="sede intensa">sêde
+							type="symptom" xml:id="t_novaes_0417">anorexia</term> e <term
+							type="symptom" xml:id="t_novaes_0418" lemma="sede intensa">sêde
 							intensa</term> no fim de 16 horas, <term type="symptom"
 							xml:id="t_novaes_0419" lemma="turgência">turgencia</term> da <term
-							type="body-part" xml:id="t_novaes_0132" lemma="face">face</term>,
-						injecção das <term type="body-part" xml:id="t_novaes_0133"
-							lemma="conjuntiva">conjunctivas</term> e <term type="symptom"
-							xml:id="t_novaes_0420" lemma="lacrimejamento">lacrimejamento</term>; no
-						fim de 18 horas, <term type="symptom" xml:id="t_novaes_0421" lemma="dor"
-							>dôr</term> nas <term type="body-part" xml:id="t_novaes_0134"
-							lemma="gengiva">gengivas</term>, cujos bordos coravam-se ao redor dos
-							<term type="body-part" xml:id="t_novaes_0135" lemma="dente"
-							>dentes</term>, <term type="symptom" xml:id="t_novaes_0422" lemma="dor"
-							>dôr</term> nas <term type="body-part" xml:id="t_novaes_0136"
+							type="body-part" xml:id="t_novaes_0132">face</term>, injecção das <term
+							type="body-part" xml:id="t_novaes_0133" lemma="conjuntiva"
+							>conjunctivas</term> e <term type="symptom" xml:id="t_novaes_0420"
+							>lacrimejamento</term>; no fim de 18 horas, <term type="symptom"
+							xml:id="t_novaes_0421" lemma="dor">dôr</term> nas <term type="body-part"
+							xml:id="t_novaes_0134" lemma="gengiva">gengivas</term>, cujos bordos
+						coravam-se ao redor dos <term type="body-part" xml:id="t_novaes_0135"
+							lemma="dente">dentes</term>, <term type="symptom" xml:id="t_novaes_0422"
+							lemma="dor">dôr</term> nas <term type="body-part" xml:id="t_novaes_0136"
 							lemma="glândula salivar">glandulas salivares</term> e na direcção dos
 						differentes <term type="body-part" xml:id="t_novaes_0137"
 							lemma="ramo nervoso">ramos nervosos</term> da <term type="body-part"
-							xml:id="t_novaes_0138" lemma="face">face</term> e do <term
-							type="body-part" xml:id="t_novaes_0139" lemma="crânio">craneo</term>; no
-						fim de 19 horas <term type="symptom" xml:id="t_novaes_0423" lemma="dor"
-							>dôres</term> na <term type="body-part" xml:id="t_novaes_0140"
-							lemma="maxila">maxilla</term> inferior, na direcção do <term
-							type="body-part" xml:id="t_novaes_0141" lemma="nervo maxilar inferior"
-							>nervo maxillar inferior</term> e <term type="symptom"
-							xml:id="t_novaes_0424" lemma="abatimento">abatimento</term>; no fim de
-						20 horas, gosto amargo, <term type="symptom" xml:id="t_novaes_0425"
-							lemma="sonolência">somnolencia</term>, <term type="symptom"
-							xml:id="t_novaes_0426" lemma="coriza">corisa</term>, e <term
-							type="symptom" xml:id="t_novaes_0427" lemma="edema">edema</term> da
-							<term type="body-part" xml:id="t_novaes_0142" lemma="face">face</term>;
-						no fim de 20 horas, gosto amargo, <term type="symptom"
-							xml:id="t_novaes_0428" lemma="sonolência">somnolencia</term>, <term
-							type="symptom" xml:id="t_novaes_0429" lemma="coriza">corisa</term> e
-							<term type="symptom" xml:id="t_novaes_0430" lemma="edema">edema</term>
-						da <term type="body-part" xml:id="t_novaes_0143" lemma="face">face</term>;
-						no fim de 2 horas, sentimento de <term type="symptom" xml:id="t_novaes_0431"
-							lemma="constrição">constricção</term> na <term type="body-part"
-							xml:id="t_novaes_0144" lemma="garganta">garganta</term> sem modificação
-						visivel da <term type="body-part" xml:id="t_novaes_0145" lemma="mucosa"
-							>mucosa</term>, no fim de 23 horas, <term type="symptom"
-							xml:id="t_novaes_0432" lemma="sufusão ictérica">suffusão
-						icterica</term>; no fim de 24 horas, <term type="symptom"
+							xml:id="t_novaes_0138">face</term> e do <term type="body-part"
+							xml:id="t_novaes_0139" lemma="crânio">craneo</term>; no fim de 19 horas
+							<term type="symptom" xml:id="t_novaes_0423" lemma="dor">dôres</term> na
+							<term type="body-part" xml:id="t_novaes_0140" lemma="maxila"
+							>maxilla</term> inferior, na direcção do <term type="body-part"
+							xml:id="t_novaes_0141" lemma="nervo maxilar inferior">nervo maxillar
+							inferior</term> e <term type="symptom" xml:id="t_novaes_0424"
+							>abatimento</term>; no fim de 20 horas, gosto amargo, <term
+							type="symptom" xml:id="t_novaes_0425" lemma="sonolência"
+							>somnolencia</term>, <term type="symptom" xml:id="t_novaes_0426"
+							lemma="coriza">corisa</term>, e <term type="symptom"
+							xml:id="t_novaes_0427">edema</term> da <term type="body-part"
+							xml:id="t_novaes_0142">face</term>; no fim de 20 horas, gosto amargo,
+							<term type="symptom" xml:id="t_novaes_0428" lemma="sonolência"
+							>somnolencia</term>, <term type="symptom" xml:id="t_novaes_0429"
+							lemma="coriza">corisa</term> e <term type="symptom"
+							xml:id="t_novaes_0430">edema</term> da <term type="body-part"
+							xml:id="t_novaes_0143">face</term>; no fim de 2 horas, sentimento de
+							<term type="symptom" xml:id="t_novaes_0431" lemma="constrição"
+							>constricção</term> na <term type="body-part" xml:id="t_novaes_0144"
+							>garganta</term> sem modificação visivel da <term type="body-part"
+							xml:id="t_novaes_0145">mucosa</term>, no fim de 23 horas, <term
+							type="symptom" xml:id="t_novaes_0432" lemma="sufusão ictérica">suffusão
+							icterica</term>; no fim de 24 horas, <term type="symptom"
 							xml:id="t_novaes_0433" lemma="hemorragia">hemorrhagia</term> das
 						geugivas; no fim de 28 horas, <term type="illness" xml:id="t_novaes_0434"
-							lemma="angina tonsilar">angina tensillar</term>; no fim de 30 horas
+							lemma="angina tensilar">angina tensillar</term>; no fim de 30 horas
 							<term type="symptom" xml:id="t_novaes_0435" lemma="raquialgia"
 							>rhachialgia</term>; no fim de 36 horas, <term type="symptom"
-							xml:id="t_novaes_0436" lemma="edema">edema</term> das <term
-							type="body-part" xml:id="t_novaes_0146" lemma="pálpebra"
-							>palpebras</term>; no fim de 38 horas, <term type="symptom"
-							xml:id="t_novaes_0437" lemma="dor muscular e articular">dôres musculares
-							e articulares</term>; no fim de 40 horas, <term type="symptom"
-							xml:id="t_novaes_0438" lemma="odontalgia">odontalgia</term>; emfim
-						depois de 72 horas, <term type="symptom" xml:id="t_novaes_0439"
-							lemma="edema">edema</term> do <term type="body-part"
+							xml:id="t_novaes_0436">edema</term> das <term type="body-part"
+							xml:id="t_novaes_0146" lemma="pálpebra">palpebras</term>; no fim de 38
+						horas, <term type="symptom" xml:id="t_novaes_0437"
+							lemma="dor muscular e articular">dôres musculares e articulares</term>;
+						no fim de 40 horas, <term type="symptom" xml:id="t_novaes_0438"
+							>odontalgia</term>; emfim depois de 72 horas, <term type="symptom"
+							xml:id="t_novaes_0439">edema</term> do <term type="body-part"
 							xml:id="t_novaes_0147" lemma="lábio">labio</term> inferior.</p>
 					<pb n="27"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0030.jp2&amp;id=101464815.nlm.nih.gov"/>
@@ -1627,19 +1616,18 @@
 					<table>
 						<row>
 							<cell>R.—Xarope de <term type="plant" xml:id="t_novaes_0148"
-									lemma="eupatório">eupatorio</term> (<term type="plant"
-									xml:id="t_novaes_0149" lemma="Mikania guaco">mikania
-									guaco</term>)</cell>
+									lemma="eupatório">eupatorio</term> (<name type="taxon"
+									subtype="species">mikania guaco</name>)</cell>
 							<cell>187 grammas</cell>
 						</row>
 						<row>
-							<cell>Dito de <term type="plant" xml:id="t_novaes_0150" lemma="ruibarbo"
+							<cell>Dito de <term type="plant" xml:id="t_novaes_0150" lemma="ruibardo"
 									>rhuibardo</term></cell>
 							<cell>125 grammas</cell>
 						</row>
 						<row>
 							<cell><term type="chemical-medicine" xml:id="t_novaes_0440"
-									lemma="iodeto de potássio">Iodureto de potassio</term></cell>
+									lemma="iodureto de potássio">Iodureto de potassio</term></cell>
 							<cell>4 grammas</cell>
 						</row>
 						<row>
@@ -1655,10 +1643,10 @@
 						pe 4 em 4 horas, no terceiro dia uma colher de manhã e outra á tarde.</p>
 					<p xml:id="p_novaes_0136">Se os symptomas apresentavam violencia, elle demiuuia
 						os intervallos e dava com o xarope uma chicara de <term type="plant"
-							xml:id="t_novaes_0151" lemma="chá">chá</term> de 2 em 2 horas. E quando
-						os symptomas eram muito intensos, eram combatidos pelo <term
-							type="chemical-medicine" xml:id="t_novaes_0441"
-							lemma="sulfato de quinina">sulphato de quinina</term>.</p>
+							xml:id="t_novaes_0151">chá</term> de 2 em 2 horas. E quando os symptomas
+						eram muito intensos, eram combatidos pelo <term type="chemical-medicine"
+							xml:id="t_novaes_0441" lemma="sulfato de quinina">sulphato de
+							quinina</term>.</p>
 					<p xml:id="p_novaes_0137">Vemos pois, que grande parte dos symptomas fornecidos
 						pela inoculação, não deixam de ter grande analogia com os da <term
 							type="illness" xml:id="t_novaes_0442" lemma="febre amarela">febre
@@ -1762,81 +1750,75 @@
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0033.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0026">SECÇÃO MEDICA Acção physiologica e therapeutica do
-						<term type="plant" xml:id="t_novaes_0155" lemma="café">café</term> e do
-						<term type="plant" xml:id="t_novaes_0156" lemma="chá">chá</term>
-					PROPOSICÕES.</head>
+						<term type="plant" xml:id="t_novaes_0155">café</term> e do <term
+						type="plant" xml:id="t_novaes_0156">chá</term> PROPOSICÕES.</head>
 				<epigraph>
 					<p xml:id="p_novaes_0157">C'est toi, divin <term type="plant"
-							xml:id="t_novaes_0157" lemma="café">café</term>, dont l'aimable liqueur
-						Sans alterer la tête, épanouit le cœur, (DÉLILE.)</p>
+							xml:id="t_novaes_0157">café</term>, dont l'aimable liqueur Sans alterer
+						la tête, épanouit le cœur, (DÉLILE.)</p>
 				</epigraph>
 				<p xml:id="p_novaes_0158">1.ª—O <term type="plant" xml:id="t_novaes_0158"
-						lemma="café">café</term> pertence a familia das Rubiaceas, a tribu das
-					cofeaceas, é conhecido pelo nome de <term type="plant" xml:id="t_novaes_0159"
-						lemma="Coffea arabica">coffœa arabica</term>.</p>
+						>café</term> pertence a familia das Rubiaceas, a tribu das cofeaceas, é
+					conhecido pelo nome de <name type="taxon" subtype="species">coffœa
+						arabica</name>.</p>
 				<p xml:id="p_novaes_0159">2.ª—O principio activo do <term type="plant"
-						xml:id="t_novaes_0160" lemma="café">café</term> e a <term
-						type="chemical-medicine" xml:id="t_novaes_0449" lemma="cafeína"
-						>cafeina</term>. Encontra-se n'elle celluloze-glycose, dextrina, acido
-					vegetal indeterminado, legumina, caseina, oleo essencial concreto, essencia
-					aromatica, substancias gordas, e substancias mineraes.</p>
+						xml:id="t_novaes_0160">café</term> e a <term type="chemical-medicine"
+						xml:id="t_novaes_0449" lemma="cafeína">cafeina</term>. Encontra-se n'elle
+					celluloze-glycose, dextrina, acido vegetal indeterminado, legumina, caseina,
+					oleo essencial concreto, essencia aromatica, substancias gordas, e substancias
+					mineraes.</p>
 				<p xml:id="p_novaes_0160">3.ª—E' principalmente sobre o systema nervoso que o <term
-						type="plant" xml:id="t_novaes_0161" lemma="café">café</term> dirije a sua
-					acção.</p>
+						type="plant" xml:id="t_novaes_0161">café</term> dirije a sua acção.</p>
 				<p xml:id="p_novaes_0161">4.ª—O <term type="plant" xml:id="t_novaes_0162"
-						lemma="café">café</term> estimulando o <term type="body-part"
-						xml:id="t_novaes_0163" lemma="cérebro">cerebro</term> sem perturbal-o, como
-					os alcoolicos, produz nas pessôas nervosas um estado erethil e vaporoso,
-					facilita o trabalho intellectual, desenvolve as idéas e é por isso chamado por
-					Cabanis, o alimento do genio.</p>
+						>café</term> estimulando o <term type="body-part" xml:id="t_novaes_0163"
+						lemma="cérebro">cerebro</term> sem perturbal-o, como os alcoolicos, produz
+					nas pessôas nervosas um estado erethil e vaporoso, facilita o trabalho
+					intellectual, desenvolve as idéas e é por isso chamado por Cabanis, o alimento
+					do genio.</p>
 				<p xml:id="p_novaes_0162">5.ª—O abuso do <term type="plant" xml:id="t_novaes_0164"
-						lemma="café">café</term> pelas pessoas nervosas e não habituadas á seu uso
-					produz a <term type="symptom" xml:id="t_novaes_0450" lemma="insônia"
-						>insomnia</term>, o <term type="symptom" xml:id="t_novaes_0451"
-						lemma="tremor">tremor</term> dos <term type="body-part"
-						xml:id="t_novaes_0165" lemma="membro">membros</term>, as <term
-						type="symptom" xml:id="t_novaes_0452" lemma="palpitação">palpitações</term>
-					do <term type="body-part" xml:id="t_novaes_0166" lemma="coração">coração</term>
-					e o enfraquecimento do <term type="body-part" xml:id="t_novaes_0167"
-						lemma="órgão">orgão</term> da digestão.</p>
+						>café</term> pelas pessoas nervosas e não habituadas á seu uso produz a
+						<term type="symptom" xml:id="t_novaes_0450" lemma="insônia">insomnia</term>,
+					o <term type="symptom" xml:id="t_novaes_0451">tremor</term> dos <term
+						type="body-part" xml:id="t_novaes_0165" lemma="membro">membros</term>, as
+						<term type="symptom" xml:id="t_novaes_0452" lemma="palpitação"
+						>palpitações</term> do <term type="body-part" xml:id="t_novaes_0166"
+						>coração</term> e o enfraquecimento do <term type="body-part"
+						xml:id="t_novaes_0167" lemma="órgão">orgão</term> da digestão.</p>
 				<p xml:id="p_novaes_0163">6.ª—Depois da comida não só o <term type="plant"
-						xml:id="t_novaes_0168" lemma="café">café</term> deleita-nos immenso o
-					sentido do gosto, como ainda favorece a digestão excitando o <term
-						type="body-part" xml:id="t_novaes_0169" lemma="estômago"
-					>estomago</term>.</p>
+						xml:id="t_novaes_0168">café</term> deleita-nos immenso o sentido do gosto,
+					como ainda favorece a digestão excitando o <term type="body-part"
+						xml:id="t_novaes_0169" lemma="estômago">estomago</term>.</p>
 				<p xml:id="p_novaes_0164">7.ª—O <term type="plant" xml:id="t_novaes_0170"
-						lemma="café">café</term> é empregado nas <term type="symptom"
-						xml:id="t_novaes_0453" lemma="cefalalgia nervosa">cephalalgias
-						nervosas</term>, <term type="symptom" xml:id="t_novaes_0454"
-						lemma="congestão cerebral">congestões cerebraes</term>, <term type="illness"
-						xml:id="t_novaes_0455" lemma="hérnia estrangulada">hernias
-						estranguladas</term>, <term type="illness" xml:id="t_novaes_0456"
-						lemma="cólera-morbo">cholera-morbus</term> e em outros estados morbidos.</p>
+						>café</term> é empregado nas <term type="symptom" xml:id="t_novaes_0453"
+						lemma="cefalalgia nervosa">cephalalgias nervosas</term>, <term
+						type="symptom" xml:id="t_novaes_0454" lemma="congestão cerebral">congestões
+						cerebraes</term>, <term type="illness" xml:id="t_novaes_0455"
+						lemma="hérnia estrangulada">hernias estranguladas</term>, <term
+						type="illness" xml:id="t_novaes_0456" lemma="cólera-morbus"
+						>cholera-morbus</term> e em outros estados morbidos.</p>
 				<p xml:id="p_novaes_0165">8.ª—O <term type="plant" xml:id="t_novaes_0171"
-						lemma="café">café</term>, por suas propriedades estimulantes, é empregado
-					para combater a acção do <term type="chemical-medicine" xml:id="t_novaes_0457"
-						lemma="ópio">opio</term> dos alcoolicos.</p>
+						>café</term>, por suas propriedades estimulantes, é empregado para combater
+					a acção do <term type="chemical-medicine" xml:id="t_novaes_0457" lemma="ópio"
+						>opio</term> dos alcoolicos.</p>
 				<p xml:id="p_novaes_0166">9.ª—O <term type="plant" xml:id="t_novaes_0172"
-						lemma="chá">chá</term>, <term type="plant" xml:id="t_novaes_0173"
-						lemma="Thea sinensis">thea sinensis</term>, da familia das Theaceas, do
-					genero <term type="plant" xml:id="t_novaes_0174" lemma="Thea">thea</term>.</p>
+					>chá</term>, <name type="taxon" subtype="species">thea sinensis</name>, da
+					familia das <name type="taxon" subtype="family">Theaceas</name>, do genero <name
+						type="taxon" subtype="genus">thea</name>.</p>
 				<p xml:id="p_novaes_0167">10.—O principio activo do <term type="plant"
-						xml:id="t_novaes_0175" lemma="chá">chá</term> é a <term
-						type="chemical-medicine" xml:id="t_novaes_0458" lemma="teína">thêna</term>.
-					N'elle se encontra pela analyse, oleo essencial, chlorafila, cêra, rezina,
-					gomma, <term type="chemical-medicine" xml:id="t_novaes_0459" lemma="tanino"
-						>tanino</term>, materia extrativa, lenhoso e tambem a <term
-						type="chemical-medicine" xml:id="t_novaes_0460" lemma="cafeína"
-						>cofeina</term>.</p>
-				<p xml:id="p_novaes_0168">11.—O <term type="plant" xml:id="t_novaes_0176"
-						lemma="chá">chá</term> até certo tempo se era usado como bebida agradavel e
-					de luxo: depois dos trabalhos de Péligot, que reconheceu n'elle a existencia de
-					grandes proporções em principios azotados, foi collocado entre os alimentos
-					nutritivos.</p>
+						xml:id="t_novaes_0175">chá</term> é a <term type="chemical-medicine"
+						xml:id="t_novaes_0458" lemma="teína">thêna</term>. N'elle se encontra pela
+					analyse, oleo essencial, chlorafila, cêra, rezina, gomma, <term
+						type="chemical-medicine" xml:id="t_novaes_0459">tanino</term>, materia
+					extrativa, lenhoso e tambem a <term type="chemical-medicine"
+						xml:id="t_novaes_0460" lemma="cofeína">cofeina</term>.</p>
+				<p xml:id="p_novaes_0168">11.—O <term type="plant" xml:id="t_novaes_0176">chá</term>
+					até certo tempo se era usado como bebida agradavel e de luxo: depois dos
+					trabalhos de Péligot, que reconheceu n'elle a existencia de grandes proporções
+					em principios azotados, foi collocado entre os alimentos nutritivos.</p>
 				<p xml:id="p_novaes_0169">12.—Os individuos, cujas digestões são vagarosas e
 					tardias, devem fazer uso da infusão de <term type="plant" xml:id="t_novaes_0177"
-						lemma="chá">chá</term> em pequena quantidade, afim de que este como
-					digestivo ajude o <term type="body-part" xml:id="t_novaes_0178" lemma="estômago"
+						>chá</term> em pequena quantidade, afim de que este como digestivo ajude o
+						<term type="body-part" xml:id="t_novaes_0178" lemma="estômago"
 						>estomago</term> a digerir os alimentos solidos de que se acha
 					sobrecarregado.</p>
 			</div>
@@ -1862,11 +1844,11 @@
 					são muitas vezes falliveis.</p>
 				<p xml:id="p_novaes_0176">7.ª—Os processos cirurgicos gozam incontestavelmente de
 					maior efficacia.</p>
-				<p xml:id="p_novaes_0177">8.ª—O <term type="plant" xml:id="t_novaes_0179"
-						lemma="centeio espigado">centeio espigado</term> deixa de ser considerado
-					como agente poderoso para provocar o aborto, porque elle não determina a
-					contractilidade do <term type="body-part" xml:id="t_novaes_0180" lemma="útero"
-						>utero</term> sem que haja trabalho em começo.</p>
+				<p xml:id="p_novaes_0177">8.ª—O <term type="plant" xml:id="t_novaes_0179">centeio
+						espigado</term> deixa de ser considerado como agente poderoso para provocar
+					o aborto, porque elle não determina a contractilidade do <term type="body-part"
+						xml:id="t_novaes_0180" lemma="útero">utero</term> sem que haja trabalho em
+					começo.</p>
 				<p xml:id="p_novaes_0178">9.ª—Entre os diversos meios abortivos, a electricidade é
 					modernamente empregada como menos perigosa a vida da mulher.</p>
 				<p xml:id="p_novaes_0179">10.—Não deve o medico legista prescindir de examinar o
