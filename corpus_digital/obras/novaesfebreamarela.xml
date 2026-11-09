@@ -292,7 +292,7 @@
 					therapeutico: procuraremos definil-a e tambem apresentar, se bem que mui
 					perfunctoriamente, o seu esboço historico, e finalmente trataremos do seu modo
 					de propagação, para podermos tambem tratar da sua <term lemma="profilaxia"
-						>prophylaxia</term>.</p>
+						xml:id="t_novaes_0461">prophylaxia</term>.</p>
 				<p xml:id="p_novaes_0009">Sabemos que não podemos dar uma definição completa e
 					satisfatoria do que seja <term type="illness" xml:id="t_novaes_0185"
 						lemma="febre amarela">febre amarella</term>, ja pela exiguidade de nossas
@@ -312,18 +312,19 @@
 						type="illness" xml:id="t_novaes_0191" lemma="febre pútrida contínua">febre
 						putrida continua</term>, <term type="illness" xml:id="t_novaes_0192"
 						lemma="tipo americano">typo americano</term>, <term type="illness"
-						xml:id="t_novaes_0193" lemma="ictérico">icterico</term> ou
-						<term>bilioso</term>, <term type="illness" xml:id="t_novaes_0194"
-						lemma="vômito negro dos italianos">vomito negro dos italianos</term> e <term
-						type="illness" xml:id="t_novaes_0195" lemma="vômito preto dos espanhóis"
-						>vomito preto dos hespanhòes</term>, é uma molestia propria á certos climas
-					quentes, é uma pyrexia proveniente de um envenenamento do sangue ordinariamente
-					epidemica, podendo tambem tornar-se endemica e exporadica, tendo por caracteres
-					principaes a <term type="symptom" xml:id="t_novaes_0196" lemma="amarelidão"
-						>amarellidão</term> dos <term type="body-part" xml:id="t_novaes_0001"
-						lemma="tegumento">tegumentos</term> o <term xml:id="t_novaes_0197"
-						lemma="vômito">vomito</term> negro e as <term type="symptom"
-						xml:id="t_novaes_0198" lemma="hemorragia">hemorrhagias</term>.</p>
+						xml:id="t_novaes_0193" lemma="ictérico">icterico</term> ou <term
+						xml:id="t_novaes_0462">bilioso</term>, <term type="illness"
+						xml:id="t_novaes_0194" lemma="vômito negro dos italianos">vomito negro dos
+						italianos</term> e <term type="illness" xml:id="t_novaes_0195"
+						lemma="vômito preto dos espanhóis">vomito preto dos hespanhòes</term>, é uma
+					molestia propria á certos climas quentes, é uma pyrexia proveniente de um
+					envenenamento do sangue ordinariamente epidemica, podendo tambem tornar-se
+					endemica e exporadica, tendo por caracteres principaes a <term type="symptom"
+						xml:id="t_novaes_0196" lemma="amarelidão">amarellidão</term> dos <term
+						type="body-part" xml:id="t_novaes_0001" lemma="tegumento">tegumentos</term>
+					o <term xml:id="t_novaes_0197" lemma="vômito">vomito</term> negro e as <term
+						type="symptom" xml:id="t_novaes_0198" lemma="hemorragia"
+					>hemorrhagias</term>.</p>
 				<div>
 					<head xml:id="h_novaes_0019">HISTORIA.</head>
 					<p xml:id="p_novaes_0011">Completamente desconhecida dos antigos, a <term

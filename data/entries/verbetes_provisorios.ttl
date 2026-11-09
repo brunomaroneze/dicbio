@@ -1,0 +1,1468 @@
+# Esqueleto RDF de verbetes provisórios (gerado automaticamente).
+# ATENÇÃO: dicbio:entryStatus e dicbio:provisional são termos NOVOS: defina-os na ontologia.
+# AJUSTE o padrão de URI das entradas e a forma canônica (aqui, nó em branco) ao seu modelo.
+# dcterms:language omitido em todas as entradas (ausente = português).
+
+@prefix dicbio:  <https://dicbio.fflch.usp.br/ontology/> .
+@prefix dbres:   <https://dicbio.fflch.usp.br/recurso/> .
+@prefix dbsrc:   <https://dicbio.fflch.usp.br/fontes/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+dbres:entrada_abatimento a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "abatimento"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_acetato_de_amonia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "acetato de amônia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_acidente_cerebral a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "acidente cerebral"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_acido_cianidrico a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ácido cianídrico"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_acido_fenico a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ácido fênico"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_aconito a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "acônito"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_adinamia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "adinamia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_agitacao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "agitação"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_alcool a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "álcool"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_alcool_canforado a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "álcool canforado"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_alteia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "alteia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_amarelidao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "amarelidão"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_angeciana a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "angeciana"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_angina_tensilar a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "angina tensilar"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_anorexia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "anorexia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_antebraco a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "antebraço"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_anuria a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "anúria"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_arnica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "arnica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ataxia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ataxia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_beladona a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "beladona"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_bicarbonato_de_soda a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "bicarbonato de soda"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_bilioso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "bilioso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_bissulfito_de_cal a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "bissulfito de cal"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_borragem a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "borragem"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_braco a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "braço"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cabeca a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cabeça"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cafe a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "café"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cafeina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cafeína"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_calafrio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "calafrio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_calomelano a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "calomelano"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_calor_febril a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "calor febril"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_calumba a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "calumba"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_canfora a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cânfora"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cefalalgia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cefalalgia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cefalalgia_frontal a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cefalalgia frontal"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cefalalgia_nervosa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cefalalgia nervosa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cefalalgia_persistente a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cefalalgia persistente"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_centeio_espigado a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "centeio espigado"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cerebro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cérebro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cha a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "chá"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_clister_canforado a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "clister canforado"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cloro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cloro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cloroformio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "clorofórmio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_codeina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "codeína"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cofeina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cofeína"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_colera_morbus a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cólera-morbus"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_colica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cólica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_coloquintida a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "coloquíntida"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_coluna_vertebral a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "coluna vertebral"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_comichao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "comichão"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_congestao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "congestão"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_congestao_cerebral a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "congestão cerebral"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_conjuntiva a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "conjuntiva"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_constipacao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "constipação"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_constricao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "constrição"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_contratura a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "contratura"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_copaiba a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "copaíba"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_coracao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "coração"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_coriza a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "coriza"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_cranio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "crânio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_creosoto a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "creosoto"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_croton a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "cróton"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_delirio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "delírio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_delirio_furioso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "delírio furioso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_dente a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "dente"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_derma a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "derma"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_diaforese a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "diaforese"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_dor a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "dor"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_dor_epigastrica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "dor epigástrica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_dor_muscular_e_articular a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "dor muscular e articular"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_edema a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "edema"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_enfraquecimento_do_pulso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "enfraquecimento do pulso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_entorpecimento a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "entorpecimento"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_enxofre a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "enxofre"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ergotina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ergotina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_escamonea a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "escamônea"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_espadua a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "espádua"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_essencia_de_terebintina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "essência de terebintina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_estomago a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "estômago"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_eter a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "éter"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_eupatorio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "eupatório"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_exaltacao_cerebral a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "exaltação cerebral"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_extremidade a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "extremidade"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_face a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "face"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_amarela a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre amarela"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_de_siao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre de sião"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_gastro_hepatica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre gastro-hepática"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_icterica_maligna a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre ictérica maligna"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_intermitente a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre intermitente"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_maritima a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre marítima"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_perniciosa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre perniciosa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_febre_putrida_continua a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "febre pútrida contínua"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_figado a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "fígado"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_forma_tifica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "forma tífica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_frio_geral a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "frio geral"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_fronte a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "fronte"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_garganta a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "garganta"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_gastrite a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "gastrite"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_genciana a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "genciana"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_gengiva a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "gengiva"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_glandula_salivar a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "glândula salivar"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_glicerina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "glicerina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_grama a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "grama"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_halito_fetido a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hálito fétido"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_hemorragia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hemorragia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_hemorragia_intestina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hemorragia intestina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_hemorragico a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hemorrágico"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_hernia_estrangulada a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hérnia estrangulada"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_hortela_pimenta a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "hortelã-pimenta"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_icterice a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "icterice"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_icterice_grave a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "icterice grave"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_icterico a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ictérico"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_inflamacao_hepato_gastrica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "inflamação hepato-gástrica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_insonia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "insônia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_intestino a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "intestino"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_iodureto_de_potassio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "iodureto de potássio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ipecacuanha a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ipecacuanha"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_jalapa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "jalapa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_labio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "lábio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_lacrimejamento a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "lacrimejamento"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_laranjeira a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "laranjeira"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_limonada_cloridrica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "limonada clorídrica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_lingua a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "língua"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_louro_cereja a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "louro-cereja"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_mal_estar a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "mal-estar"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_malva a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "malva"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_mau_gosto a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "mau gosto"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_maxila a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "maxila"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_melissa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "melissa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_membro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "membro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_mostarda a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "mostarda"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_mucosa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "mucosa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_nausea a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "náusea"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_nervo_maxilar_inferior a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "nervo maxilar inferior"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_nitrato_de_potassa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "nitrato de potassa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_odontalgia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "odontalgia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_olho a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "olho"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_opio a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ópio"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_orgao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "órgão"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ouvido a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ouvido"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_palpebra a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "pálpebra"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_palpitacao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "palpitação"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_papula_branca a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "pápula branca"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_parotidite a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "parotidite"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_parte_mole a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "parte mole"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_pele a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "pele"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_perclorureto_de_ferro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "perclorureto de ferro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_perna a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "perna"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_pomada_mercurial a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "pomada mercurial"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_potassa_caustica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "potassa cáustica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_profilaxia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "profilaxia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_quassia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "quássia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_quina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "quina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_quinina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "quinina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ramo_nervoso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ramo nervoso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_raquialgia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "raquialgia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ratania a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ratânia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_reto a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "reto"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ricino a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "rícino"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_rim a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "rim"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ruibardo a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ruibardo"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sabugueiro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sabugueiro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sal_de_morfina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sal de morfina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sede a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sede"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sede_intensa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sede intensa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_septicemia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "septicemia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_serpentaria_da_virginia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "serpentária-da-virgínia"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_simaruba a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "simaruba"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sincope a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "síncope"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sobressalto a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sobressalto"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_soltura a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "soltura"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_soluco a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "soluço"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sonolencia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sonolência"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_subcarbonato a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "subcarbonato"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sufusao_icterica a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sufusão ictérica"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sulfato_de_magnesia_e_soda a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sulfato de magnésia e soda"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sulfato_de_morfina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sulfato de morfina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sulfato_de_quinina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sulfato de quinina"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_sulfato_de_soda a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "sulfato de soda"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_supressao_da_secrecao_urinaria a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "supressão da secreção urinária"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tamarindo a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tamarindo"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tanino a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tanino"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tartaro_emetico a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tártaro emético"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tartrato_acido_de_potassa a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tartrato ácido de potassa"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tegumento a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tegumento"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_teina a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "teína"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tendao a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tendão"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tifo_icteroide a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tifo icteroide"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tilia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tília"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tintura_canforada a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tintura canforada"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tintura_de_iodo a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tintura de iodo"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tipo_americano a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tipo americano"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tremor a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tremor"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_tremor_nervoso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "tremor nervoso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_turgencia a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "turgência"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_utero a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "útero"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_valeriana a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "valeriana"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_valerianato_de_zinco a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "valerianato de zinco"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vaso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vaso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vaso_capilar a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vaso capilar"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_ventre a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "ventre"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vista a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vista"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito_mucoso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito mucoso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito_negro a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito negro"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito_negro_dos_italianos a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito negro dos italianos"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito_nervoso a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito nervoso"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .
+
+dbres:entrada_vomito_preto_dos_espanhois a ontolex:LexicalEntry ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "vômito preto dos espanhóis"@pt ] ;
+    dicbio:entryStatus dicbio:provisional ;
+    dcterms:source dbsrc:novaes_1871 ;
+    dcterms:created "2026-11-08"^^xsd:date ;
+    rdfs:comment "Verbete provisório gerado automaticamente; sem estudo lexicográfico."@pt .

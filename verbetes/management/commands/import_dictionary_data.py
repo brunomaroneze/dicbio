@@ -6,6 +6,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 from verbetes.models import Verbete, Definition, OcorrenciaCorpus
 
+
 class Command(BaseCommand):
     help = 'Importa/Atualiza dados de Verbetes, Definições e Ocorrências a partir de CSVs.'
 
@@ -54,7 +55,7 @@ class Command(BaseCommand):
             if not csv_path.exists():
                 raise CommandError(f"Arquivo CSV não encontrado: {csv_path}")
 
-            df = pd.read_csv(csv_path)
+            df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
             
             def parse_date(date_str):
                 if pd.isna(date_str) or not isinstance(date_str, str):
@@ -139,6 +140,8 @@ class Command(BaseCommand):
 
             df = pd.read_csv(csv_path)
 
+            verbetes_por_termo = {verbete.termo: verbete for verbete in Verbete.objects.all()}
+
             # Para Ocorrências, o padrão comum em full refresh é apagar tudo e recriar,
             # pois identificar uma única ocorrência por chaves de negócio é difícil.
             # Se você precisar de atualização em vez de recriação, precisará de uma chave única.
@@ -148,10 +151,12 @@ class Command(BaseCommand):
 
             for index, row in df.iterrows():
                 try:
-                    headword = str(row['Headword']).strip()
+                    headword = ' '.join(str(row['Headword']).split())
                     sense_number = int(row['SenseNumber'])
 
-                    verbete = Verbete.objects.get(termo=headword)
+                    verbete = verbetes_por_termo.get(headword)
+                    if verbete is None:
+                        raise Verbete.DoesNotExist
                     
                     definicao = None
                     try:
