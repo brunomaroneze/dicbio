@@ -30,3 +30,11 @@ ngrams_original_text.csv
 ngrams_stopwords_removed.csv
 .idea/
 data/termos_extraidos.csv
+
+# ROBOT: ferramenta baixada e relatórios gerados por scripts/testes_robot.py
+ferramentas/robot/robot.jar
+relatorios/robot/*/
+ferramentas/
+
+# Testes de consistência com o ROBOT
+scripts/robot_consultas/
