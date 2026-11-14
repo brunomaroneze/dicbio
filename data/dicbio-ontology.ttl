@@ -39,10 +39,35 @@
     owl:imports <http://lari-datasets.ilc.cnr.it/lemonEty#> ;
     owl:imports <http://www.w3.org/ns/lemon/morph> ;
     owl:imports <http://www.w3.org/2004/02/skos/core#> ;
-    owl:imports <http://purl.org/dc/terms/> ;
     owl:imports <http://www.w3.org/ns/prov#> ;
     owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>;
     owl:imports <http://www.w3.org/2005/11/its/rdf#> .
+
+### --- Propriedades do DCMI Metadata Terms (dcterms) usadas como anotações ---
+
+# O vocabulário dcterms não é importado: seu arquivo RDF declara as
+# propriedades como rdf:Property com contradomínios que o OWL interpreta como
+# propriedades de dado ou de objeto, o que gera conflitos com o uso delas como
+# anotações e tira a ontologia do perfil OWL 2 DL. Seguindo a prática comum
+# (OntoLex, SKOS, PROV-O, ontologias OBO), declaram-se aqui como
+# owl:AnnotationProperty apenas as propriedades usadas na ontologia e nos
+# dados. Elas são metadados (autoria, fonte, datas, língua) e não participam
+# do raciocínio; a validação dos seus valores fica a cargo do SHACL.
+# Ao usar uma nova propriedade dcterms, acrescente-a a esta lista.
+
+dcterms:created a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:hasFormat a owl:AnnotationProperty .
+dcterms:identifier a owl:AnnotationProperty .
+dcterms:isPartOf a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:language a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:publisher a owl:AnnotationProperty .
+dcterms:source a owl:AnnotationProperty .
+dcterms:title a owl:AnnotationProperty .
 
 ### --- Classes e propriedades da ontologia ---
 

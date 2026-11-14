@@ -245,6 +245,22 @@ TIPOS_PT = {
 }
 
 
+# Violações do perfil OWL 2 DL conhecidas e aceitas por decisão de modelagem.
+# Cada item: (nome curto, função que reconhece a linha, justificativa).
+# Só valem para os casos exatos descritos; um uso novo do mesmo problema em
+# outra propriedade continua aparecendo como violação a examinar.
+VIOLACOES_ACEITAS = [
+    (
+        "xsd:gYear em dicbio:attestationDate",
+        lambda l: "xsd:gYear" in l and f"<{DICBIO_ONT}attestationDate>" in l,
+        "xsd:gYear não faz parte do mapa de tipos de dados do OWL 2, mas é o tipo "
+        "semanticamente correto para um ano de atestação e o esperado em dados "
+        "abertos. O HermiT do `reason` ignora o tipo; a validade do valor é "
+        "conferida pelo SHACL (`sh:datatype xsd:gYear`).",
+    ),
+]
+
+
 def vocab_nao_importado(iri):
     """Prefixo do vocabulário não importado a que o IRI pertence (ou None)."""
     for prefixo, (ns, _, _) in VOCAB_NAO_IMPORTADOS.items():
@@ -275,7 +291,7 @@ def resumir_perfil(arquivo_txt):
     for l in linhas[1:]:
         # linhas de violação terminam em "]"; as demais são continuação de
         # literais longos (comentários das ontologias importadas)
-        if not l[:1].isupper() or not l.rstrip().endswith("]"):
+        if not l[:1].isupper() or not l.rstrip().endswith("]") or "[" not in l:
             continue
         corpo = re.sub(r"in OntologyID\(.*", "", l)  # tira a atribuição à ontologia
         if DICBIO in corpo:
@@ -285,6 +301,16 @@ def resumir_perfil(arquivo_txt):
     # violações cujo termo é de vocabulário não importado de propósito: esperadas
     esperadas = [l for l in dicbio if vocab_nao_importado(termo_principal(l))]
     dicbio = [l for l in dicbio if l not in esperadas]
+    # violações aceitas por decisão de modelagem
+    aceitas = Counter()
+    restantes = []
+    for l in dicbio:
+        nome = next((n for n, reconhece, _ in VIOLACOES_ACEITAS if reconhece(l)), None)
+        if nome:
+            aceitas[nome] += 1
+        else:
+            restantes.append(l)
+    dicbio = restantes
     nao_declarados = defaultdict(set)
     for l in dicbio:
         m = RE_NAO_DECL.match(l)
@@ -294,6 +320,7 @@ def resumir_perfil(arquivo_txt):
         "ok": False,
         "dicbio": dicbio,
         "esperadas": esperadas,
+        "aceitas": aceitas,
         "importacoes": importacoes,
         "tipos_dicbio": Counter(tipo_violacao(l) for l in dicbio),
         "vocab_esperados": Counter(vocab_nao_importado(termo_principal(l)) for l in esperadas),
@@ -313,14 +340,22 @@ def passo_perfil(entrada, grafo, pasta, log, md):
     if r["ok"]:
         md.append("✓ O conjunto (com importações) está no perfil OWL 2 DL.\n")
         return True
-    total = len(r["dicbio"]) + len(r["esperadas"]) + len(r["importacoes"])
+    n_aceitas = sum(r["aceitas"].values())
+    total = len(r["dicbio"]) + len(r["esperadas"]) + n_aceitas + len(r["importacoes"])
     md.append(
         f"✗ Fora do perfil OWL 2 DL: {total} violações —\n\n"
         f"- **{len(r['dicbio'])}** envolvem termos ou dados do DicBio (a examinar);\n"
+        f"- {n_aceitas} são conhecidas e aceitas por decisão de modelagem (ver abaixo);\n"
         f"- {len(r['esperadas'])} se devem a vocabulários usados nos dados e não importados "
         "de propósito (esperadas; a existência desses termos é conferida na etapa f);\n"
         f"- {len(r['importacoes'])} vêm só das ontologias importadas.\n"
     )
+    if r["aceitas"]:
+        md.append("Violações aceitas:\n")
+        for nome, reconhece, justificativa in VIOLACOES_ACEITAS:
+            if r["aceitas"][nome]:
+                md.append(f"- **{nome}** ({r['aceitas'][nome]}): {justificativa}")
+        md.append("")
     if r["vocab_esperados"]:
         md.append(
             "Esperadas, por vocabulário: "
@@ -341,6 +376,11 @@ def passo_perfil(entrada, grafo, pasta, log, md):
             nomes = sorted(t if ":" in t and "//" not in t else compactar(grafo, t) for t in termos)
             md.append(f"- {tipo}: " + ", ".join(f"`{t}`" for t in nomes))
         md.append("")
+        if any(t.startswith("http://purl.org/dc/terms/") for ts in r["nao_declarados"].values() for t in ts):
+            md.append(
+                "Dica: o dcterms não é importado; cada propriedade `dcterms:` usada precisa "
+                "estar declarada como `owl:AnnotationProperty` em `dicbio-ontology.ttl`.\n"
+            )
         proprios = sorted(
             t for ts in r["nao_declarados"].values() for t in ts if t.startswith(DICBIO_ONT)
         )

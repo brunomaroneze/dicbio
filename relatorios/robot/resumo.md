@@ -1,6 +1,6 @@
 # Testes da ontologia DicBio com o ROBOT
 
-- Data: 2026-11-13 18:51
+- Data: 2026-11-13 19:19
 - ROBOT version 1.9.11; reasoner HermiT (embutido no ROBOT)
 - Importações resolvidas por cópias locais (`ferramentas/robot/imports/`)
 
@@ -17,36 +17,26 @@ Arquivos: `data/dicbio-ontology.ttl`
 
 ### a. Perfil OWL 2 DL (`validate-profile`)
 
-✗ Fora do perfil OWL 2 DL: 961 violações —
+✗ Fora do perfil OWL 2 DL: 237 violações —
 
-- **8** envolvem termos ou dados do DicBio (a examinar);
+- **0** envolvem termos ou dados do DicBio (a examinar);
+- 1 são conhecidas e aceitas por decisão de modelagem (ver abaixo);
 - 0 se devem a vocabulários usados nos dados e não importados de propósito (esperadas; a existência desses termos é conferida na etapa f);
-- 953 vêm só das ontologias importadas.
+- 236 vêm só das ontologias importadas.
 
-Violações que envolvem o DicBio (exceto as esperadas), por tipo:
+Violações aceitas:
 
-- 3 × Use of undeclared annotation property
-- 2 × Use of undeclared datatype
-- 1 × Use of undeclared data property
-- 1 × Cannot pun between properties
-- 1 × Use of defined datatype in datatype restriction
-
-Termos usados pelo DicBio e não declarados em nenhuma ontologia importada (o reasoner os trata como anotações ou os ignora):
-
-- propriedade de anotação: `dc:date`, `dcterms:creator`, `dcterms:issued`
-- propriedade de dado: `dcterms:modified`
-- tipo de dado: `xsd:date`, `xsd:gYear`
+- **xsd:gYear em dicbio:attestationDate** (1): xsd:gYear não faz parte do mapa de tipos de dados do OWL 2, mas é o tipo semanticamente correto para um ano de atestação e o esperado em dados abertos. O HermiT do `reason` ignora o tipo; a validade do valor é conferida pelo SHACL (`sh:datatype xsd:gYear`).
 
 Violações só das importações, por tipo (as 8 mais frequentes):
 
-- 382 × Use of undeclared annotation property
-- 171 × Cannot pun between properties
-- 142 × Use of undeclared data property
-- 99 × Use of defined datatype in datatype restriction
-- 99 × Use of undeclared datatype
-- 35 × Use of undeclared class
-- 12 × Use of reserved vocabulary for class IRI
+- 155 × Use of undeclared annotation property
+- 26 × Use of undeclared class
+- 23 × Cannot pun between properties
 - 11 × Use of undeclared object property
+- 11 × Use of reserved vocabulary for class IRI
+- 9 × Use of undeclared data property
+- 1 × Use of reserved vocabulary for object property IRI
 
 Lista completa: `perfil_owl2dl.txt`; só as do DicBio: `perfil_owl2dl_dicbio.txt`.
 
@@ -62,12 +52,12 @@ Lista completa: `perfil_owl2dl.txt`; só as do DicBio: `perfil_owl2dl_dicbio.txt
 
 | métrica | valor |
 |---|---|
-| axiom_count | 854 |
-| logical_axiom_count | 203 |
-| class_count | 36 |
-| individual_count | 118 |
-| axiom_count_incl | 4397 |
-| class_count_incl | 143 |
+| axiom_count | 222 |
+| logical_axiom_count | 60 |
+| class_count | 12 |
+| individual_count | 18 |
+| axiom_count_incl | 3765 |
+| class_count_incl | 120 |
 | expressivity | RRESTRH(D) |
 
 Todas as métricas: `metricas.tsv` (sufixo `_incl` = com importações).
@@ -82,38 +72,28 @@ Arquivos: `data/dicbio-ontology.ttl`, `data/sources.ttl`, `data/authors.ttl`, `d
 
 ### a. Perfil OWL 2 DL (`validate-profile`)
 
-✗ Fora do perfil OWL 2 DL: 1139 violações —
+✗ Fora do perfil OWL 2 DL: 302 violações —
 
-- **126** envolvem termos ou dados do DicBio (a examinar);
+- **0** envolvem termos ou dados do DicBio (a examinar);
+- 5 são conhecidas e aceitas por decisão de modelagem (ver abaixo);
 - 61 se devem a vocabulários usados nos dados e não importados de propósito (esperadas; a existência desses termos é conferida na etapa f);
-- 952 vêm só das ontologias importadas.
+- 236 vêm só das ontologias importadas.
+
+Violações aceitas:
+
+- **xsd:gYear em dicbio:attestationDate** (5): xsd:gYear não faz parte do mapa de tipos de dados do OWL 2, mas é o tipo semanticamente correto para um ano de atestação e o esperado em dados abertos. O HermiT do `reason` ignora o tipo; a validade do valor é conferida pelo SHACL (`sh:datatype xsd:gYear`).
 
 Esperadas, por vocabulário: `bibo:` 23, `foaf:` 25, `lexinfo:` 13.
 
-Violações que envolvem o DicBio (exceto as esperadas), por tipo:
-
-- 73 × Use of undeclared annotation property
-- 33 × Cannot pun between properties
-- 8 × Use of undeclared datatype
-- 7 × Use of defined datatype in datatype restriction
-- 5 × Use of undeclared data property
-
-Termos usados pelo DicBio e não declarados em nenhuma ontologia importada (o reasoner os trata como anotações ou os ignora):
-
-- propriedade de anotação: `dc:date`, `dcterms:accrualPeriodicity`, `dcterms:creator`, `dcterms:description`, `dcterms:hasFormat`, `dcterms:identifier`, `dcterms:isPartOf`, `dcterms:issued`, `dcterms:language`, `dcterms:publisher`, `dcterms:source`, `dcterms:title`
-- propriedade de dado: `dcterms:created`, `dcterms:modified`
-- tipo de dado: `xsd:date`, `xsd:gYear`
-
 Violações só das importações, por tipo (as 8 mais frequentes):
 
-- 381 × Use of undeclared annotation property
-- 171 × Cannot pun between properties
-- 142 × Use of undeclared data property
-- 99 × Use of defined datatype in datatype restriction
-- 99 × Use of undeclared datatype
-- 35 × Use of undeclared class
-- 12 × Use of reserved vocabulary for class IRI
+- 155 × Use of undeclared annotation property
+- 26 × Use of undeclared class
+- 23 × Cannot pun between properties
 - 11 × Use of undeclared object property
+- 11 × Use of reserved vocabulary for class IRI
+- 9 × Use of undeclared data property
+- 1 × Use of reserved vocabulary for object property IRI
 
 Lista completa: `perfil_owl2dl.txt`; só as do DicBio: `perfil_owl2dl_dicbio.txt`.
 
@@ -143,12 +123,12 @@ Lista por recurso: `tipos_inferidos.tsv`.
 
 | métrica | valor |
 |---|---|
-| axiom_count | 1095 |
-| logical_axiom_count | 310 |
-| class_count | 42 |
-| individual_count | 182 |
-| axiom_count_incl | 4638 |
-| class_count_incl | 148 |
+| axiom_count | 463 |
+| logical_axiom_count | 163 |
+| class_count | 18 |
+| individual_count | 82 |
+| axiom_count_incl | 4006 |
+| class_count_incl | 125 |
 | expressivity | RRESTRHO(D) |
 
 Todas as métricas: `metricas.tsv` (sufixo `_incl` = com importações).

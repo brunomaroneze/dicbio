@@ -81,7 +81,7 @@ Além disso, espera-se que esta ontologia seja útil particularmente para pesqui
 
 ### 3.1. Status
 
-A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT (ver §15.4). A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, contradomínios (*ranges*), reutilização de ontologias externas e documentação.
+A versão 1.0 da Ontologia DicBio constitui a primeira versão estável da ontologia. Foi submetida a testes de consistência lógica com o reasoner HermiT, executado por meio do Owlready2 e do ROBOT (ver §15.4). A versão foi revisada quanto à definição das classes, propriedades, vocabulários controlados, domínios, contradomínios (*ranges*), reutilização de ontologias externas e documentação.
 
 ### 3.2. Identificação da versão
 
@@ -182,7 +182,7 @@ Para citações em trabalhos acadêmicos, recomenda-se também citar a publicaç
 
 A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que apropriado, evitando a criação de conceitos já disponíveis em modelos consolidados.
 
-### 7.1. Ontologias e vocabulários
+### 7.1. Ontologias e vocabulários importados
 
 | Prefixo | Ontologia / vocabulário | Namespace | Função na Ontologia DicBio |
 |---|---|---|---|
@@ -190,10 +190,11 @@ A Ontologia DicBio reutiliza vocabulários e ontologias existentes sempre que ap
 | `lemonety:` | LemonEty | `http://lari-datasets.ilc.cnr.it/lemonEty#` | Representação etimológica |
 | `morph:` | OntoLex-Morph | `http://www.w3.org/ns/lemon/morph#` | Relações de formação de palavras |
 | `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Vocabulários e conceitos |
-| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados |
 | `prov:` | PROV-O | `http://www.w3.org/ns/prov#` | Proveniência |
 | `nif:` | NIF | `http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#` | Integração com o *corpus* |
 | `itsrdf:` | ITS | `http://www.w3.org/2005/11/its/rdf#` | Anotação de sentido das ocorrências |
+
+Além dessas, a ontologia emprega propriedades do vocabulário Dublin Core Terms (`dcterms:`) para metadados — título, descrição, autoria, licença, datas, fonte e língua —, mas não o importa. O arquivo RDF do Dublin Core Terms declara suas propriedades como `rdf:Property`, com contradomínios que, em OWL, as caracterizam como propriedades de dados ou de objeto. Como a ontologia e os dados as utilizam como anotações, a importação produz conflitos de tipo de propriedade que situam a ontologia fora do perfil OWL 2 DL (ver §15.4). Seguindo a prática adotada por vocabulários como OntoLex-Lemon, SKOS e PROV-O, as propriedades `dcterms:` efetivamente utilizadas são declaradas na própria ontologia como `owl:AnnotationProperty` (ver §11.6). Na condição de anotações, elas não participam do raciocínio; a validação de seus valores é feita pelas formas SHACL.
 
 
 ### 7.2. Vocabulários utilizados na representação dos dados
@@ -203,14 +204,14 @@ Além das ontologias reutilizadas diretamente na definição da Ontologia DicBio
 | Prefixo | Ontologia / vocabulário | Namespace | Função nos dados do DicBio |
 |---|---|---|---|
 | `foaf:` | FOAF | `http://xmlns.com/foaf/0.1/` | Nomes e endereços web |
-| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados avulsos das instâncias |
+| `dcterms:` | Dublin Core Terms | `http://purl.org/dc/terms/` | Metadados avulsos das instâncias; as propriedades são declaradas como anotações (conforme informado em §7.1) |
 | `lexinfo:` | LexInfo | `http://www.lexinfo.net/ontology/3.0/lexinfo#` | Propriedades gramaticais |
 | `bibo:` | The Bibliographic Ontology | `http://purl.org/ontology/bibo/` | Informações bibliográficas |
-| `vartrans:` | Variation and Translation | `http://www.w3.org/ns/lemon/vartrans#` | Informações morfológicas |
+| `vartrans:` | Variation and Translation | `http://www.w3.org/ns/lemon/vartrans#` | Origem, alvo e categoria das relações de formação de palavras; também entra indiretamente, importado por OntoLex-Morph e LemonEty |
 | `glotto:` | Glottolog | `https://glottolog.org/resource/languoid/id/` | Idiomas das fontes ou dos termos |
 | `skos:` | SKOS | `http://www.w3.org/2004/02/skos/core#` | Anotação avulsa e mapeamento de conceitos (`skos:exactMatch`, só em conceitos; ver §8.10) |
-| `owl:` | Web Ontology Language | `https://www.w3.org/TR/owl-ref/` | owl:sameAs para remissões |
-| `rdfs:` | RDF Schema | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` | rdfs:seeAlso para remissões |
+| `owl:` | Web Ontology Language | `http://www.w3.org/2002/07/owl#` | owl:sameAs para remissões |
+| `rdfs:` | RDF Schema | `http://www.w3.org/2000/01/rdf-schema#` | rdfs:seeAlso para remissões |
 
 ---
 
@@ -651,7 +652,7 @@ Para cada propriedade, registram-se, quando aplicável: URI; rótulo em portugu�
 
 **Superpropriedade:** nenhuma
 
-**Uso:** Restrita ao ano (`xsd:gYear`), refletindo o grau de precisão cronológica geralmente disponível nas fontes históricas do corpus do projeto.
+**Uso:** Restrita ao ano (`xsd:gYear`), refletindo o grau de precisão cronológica geralmente disponível nas fontes históricas do corpus do projeto. A indicação `xsd:gYear` não integra o mapa de tipos de dados do OWL 2; o *reasoner* não valida esses valores, razão pela qual essa validação é feita pelo SHACL (ver §15.4).
 
 ### 11.3.4. `dicbio:realizesForm`
 
@@ -724,6 +725,7 @@ Além das propriedades próprias descritas acima, os dados do DicBio empregam di
 | `dcterms:created` / `dcterms:modified` | Dublin Core Terms | Datas de criação e última modificação de um recurso |
 | `dcterms:source` | Dublin Core Terms | Relaciona um recurso à fonte documental ou bibliográfica correspondente |
 | `dcterms:language` | Dublin Core Terms | Idioma de uma entrada lexical ou de um étimo, tipicamente com valor no vocabulário Glottolog (`glotto:`) |
+| `dcterms:license` | Dublin Core Terms | Indica a licença da ontologia (CC BY 4.0) |
 | `skos:definition` | SKOS | Definição textual de uma acepção ou de um conceito |
 | `skos:exactMatch` | SKOS | Alinhamento entre um conceito do DicBio (`skos:Concept`) e o conceito equivalente em outra ontologia (por exemplo, UBERON); não é usado em entradas lexicais (ver §8.10) |
 | `lexinfo:partOfSpeech`, `lexinfo:gender`, `lexinfo:number` | LexInfo | Categoria gramatical, gênero e número de entradas e formas |
@@ -1094,13 +1096,13 @@ LexInfo é reutilizada, nos dados do DicBio (embora não como dependência forma
 
 ## 15. Inferências e raciocínio
 
-A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT (ver §15.4). O reasoner classificou a ontologia sem apresentar erros de consistência.
+A Ontologia DicBio 1.0 foi submetida a testes de consistência lógica utilizando o reasoner HermiT, executado por meio do Owlready2 e do ROBOT (ver §15.4). O reasoner classificou a ontologia sem apresentar erros de consistência.
 
 Entre as inferências esperadas encontra-se a classificação das instâncias de `dicbio:EtymologicalProcess` e `dicbio:WordFormationType` como instâncias de `skos:Concept`.
 
 ### 15.1. Perfil de raciocínio
 
-A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, Dublin Core Terms, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.5), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
+A Ontologia DicBio 1.0 foi desenvolvida e testada com o reasoner **HermiT**. A ontologia importa OntoLex-Lemon, LemonEty, OntoLex-Morph, SKOS, PROV-O, NIF e ITS-RDF (ver §4 e §7.1), e as inferências relevantes para a versão 1.0 decorrem principalmente das relações `rdfs:subClassOf` entre classes próprias e classes dos vocabulários reutilizados (§14.5), e das declarações de `rdfs:domain`/`rdfs:range` das propriedades próprias (§11).
 
 ### 15.2. Inferências esperadas
 
@@ -1123,20 +1125,26 @@ As declarações de `rdfs:domain` e `rdfs:range` das propriedades próprias da o
 
 ### 15.4. Testes com reasoner
 
-A ontologia DicBio e uma amostra de seus dados foram submetidas a testes de 
-consistência e de inferência com o reasoner HermiT (versão 1.3.8),
-executado por meio do Owlready2. As execuções incluíram as importações
-carregadas da ontologia e não apontaram inconsistências nos conjuntos testados.
-Em dados sintéticos, seis inferências de domínio e contradomínio das
-propriedades `semanticEtymon`, `formalEtymon` e `hasAttestation` foram
-confirmadas. Na amostra de dados, quatro consultas não encontraram os padrões
-de tipos e relações indesejados selecionados.
+A ontologia DicBio e uma amostra de seus dados foram submetidas a testes de consistência, de inferência e de qualidade em duas etapas complementares, ambas com o reasoner HermiT.
 
-Esses resultados se limitam aos arquivos, axiomas e casos examinados: a
-materialização de relações inferidas entre indivíduos foi desativada devido a
-um erro interno do HermiT nessa etapa. As consultas negativas verificam a
-ausência dos padrões no grafo consultado, não a negação lógica das afirmações.
-<!-- Incluir testes com outro reasoner. -->
+#### 15.4.1. Testes com HermiT via Owlready2
+
+Em 7 de novembro de 2026, o HermiT (versão 1.3.8) foi executado por meio do Owlready2. As execuções incluíram as importações carregadas da ontologia e não apontaram inconsistências nos conjuntos testados. Em dados sintéticos (ou seja, criados especificamente para os testes), seis inferências de domínio e contradomínio das propriedades `semanticEtymon`, `formalEtymon` e `hasAttestation` foram confirmadas. Na amostra de dados, quatro consultas não encontraram os padrões de tipos e relações indesejados selecionados. A materialização de relações inferidas entre indivíduos foi desativada devido a um erro interno do HermiT nessa etapa, e tipos indiretos (como a classificação de entradas lexicais como `semiotics:Expression`, decorrente dos axiomas do OntoLex-Lemon) não foram materializados.
+
+#### 15.4.2. Testes com ROBOT
+
+Em 13 de novembro de 2026, a ontologia foi testada com o ROBOT (versão 1.9.11, com HermiT 1.4.5 e OWL API 4.5.29) em dois conjuntos: (a) a ontologia isolada; (b) a ontologia acrescida dos arquivos de fontes (`sources.ttl`), de autores (`authors.ttl`) e da entrada *adiposo*, como amostra. As importações foram resolvidas por meio de cópias locais registradas em um catálogo XML, porque, na data dos testes, os IRIs do LemonEty e do NIF não respondiam e o IRI do OntoLex-Morph devolvia o documento do núcleo do OntoLex-Lemon. Os testes compreenderam:
+
+- **Consistência e classificação:** os dois conjuntos são consistentes e não contêm classes insatisfazíveis.
+- **Inferência de tipos nos dados:** o reasoner atribuiu às entradas lexicais o tipo `semiotics:Expression` e às acepções o tipo `semiotics:Meaning` (ambos decorrentes dos axiomas do OntoLex-Lemon, o que confirma a expectativa não verificada na etapa anterior), à relação de formação de palavras o tipo `vartrans:LexicalRelation` e às atestações o tipo `prov:Entity` (§14.5). Todas as inferências correspondem ao esperado, e nenhuma indicou uso indevido de propriedades.
+- **Perfil OWL 2 DL:** o fecho de importações (*imports closure*, ou seja, o conjunto formado pela ontologia e pelas demais ontologias que ela importa) não está integralmente no perfil OWL 2 DL, mas as violações restantes localizam-se nas próprias ontologias importadas (sobretudo propriedades de metadados usadas sem declaração e propriedades declaradas com tipos conflitantes). A única violação originada na ontologia DicBio é o uso de `xsd:gYear` (ver §15.4.3). Nos dados, os termos de LexInfo, BIBO e FOAF aparecem como não declarados, pois esses vocabulários não são importados (§7.2). Uma verificação complementar confirmou que todos os termos desses vocabulários empregados nos dados existem nas respectivas especificações.
+- **Relatório de qualidade:** além de regras do ROBOT aplicáveis a ontologias fora do contexto OBO, foram executadas consultas SPARQL próprias que verificam rótulos e definições em português e inglês, conceitos SKOS sem esquema, recursos sem tipo e o uso de propriedades em desacordo com seus domínios e contradomínios declarados (em relação aos tipos afirmados nos dados). Nenhum problema foi encontrado.
+
+#### 15.4.3. Decisões de modelagem decorrentes dos testes
+
+Os testes motivaram duas decisões. Primeiro, o Dublin Core Terms deixou de ser importado, e as propriedades utilizadas passaram a ser declaradas como anotações (ver §7.1). Segundo, manteve-se `xsd:gYear` como contradomínio de `dicbio:attestationDate` (§11.3.3), embora esse tipo não integre o mapa de tipos de dados do OWL 2. O HermiT o desconsidera na classificação, de modo que o reasoner não valida esses valores. A validação é feita pelas formas SHACL (`sh:datatype xsd:gYear`). A escolha privilegia a adequação semântica — a precisão cronológica disponível nas fontes é, em geral, o ano — e a interoperabilidade com outros conjuntos de dados abertos.
+
+**Alcance dos resultados:** Os resultados se limitam aos arquivos, axiomas e casos examinados. A amostra de dados reúne uma única entrada e suas entidades relacionadas; as demais entradas serão testadas após a revisão com as formas SHACL. As consultas negativas verificam a ausência dos padrões no grafo consultado, não a negação lógica das afirmações. Nenhuma das duas etapas testou a materialização de relações inferidas entre indivíduos.
 
 ### 15.5. Limites do raciocínio
 
@@ -1191,6 +1199,10 @@ São incluídas aqui as referências bibliográficas e documentais das ontologia
 - LexInfo: CIMIANO, P.; BUITELAAR, P.; MCCRAE, J.; SINTEK, M. LexInfo: A declarative model for the lexicon-ontology interface. *Journal of Web Semantics: Science, Services and Agents on the World Wide Web*, v. 9, n. 1, p. 29-51, 2011. DOI: 10.1016/j.websem.2010.11.001.
 - PROV-O: LEBO, T.; SAHOO, S.; MCGUINNESS, D. (ed.). *PROV-O: The PROV Ontology*. W3C Recommendation, 30 April 2013. Disponível em: https://www.w3.org/TR/prov-o/.
 - NIF: HELLMANN, S.; LEHMANN, J.; AUER, S.; BRÜMMER, M. Integrating NLP using Linked Data. In: *The Semantic Web – ISWC 2013*. Lecture Notes in Computer Science, v. 8219. Berlin/Heidelberg: Springer, 2013. p. 98-113. Disponível em: https://link.springer.com/chapter/10.1007/978-3-642-41338-4_7.
+- Dublin Core Terms (DCMI Metadata Terms): DCMI Usage Board. *DCMI Metadata Terms*. 2020. Disponível em: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/.
+- OntoLex-Morph: CHIARCOS, C.; IONOV, M.; MCCRAE, J.; PELLEGRINI, M. (ed.). *The OntoLex Module for Morphology*. Draft Community Group Report. Disponível em: https://ontolex.github.io/morph/.
+- ITS-RDF: FILIP, D. et al. (ed.) *Internationalization Tag Set (ITS) Version 2.0*. W3C Recommendation 29 October 2013. Disponível em: https://www.w3.org/TR/its20/.
+
 
 ### Documentação e especificações
 
@@ -1199,6 +1211,11 @@ São incluídas aqui as referências bibliográficas e documentais das ontologia
 - Glottolog (usado via `glotto:`): HAMMARSTRÖM, H.; FORKEL, R.; HASPELMATH, M.; BANK, S. *Glottolog 5.3*. Leipzig: Max Planck Institute for Evolutionary Anthropology. Disponível em: https://glottolog.org.
 - LiLa Knowledge Base (usado via `dicbio:externalEntry` nas entradas latinas, §13.5): PASSAROTTI, M. (ed.) *LiLa: Linking Latin*. Disponível em: https://lila-erc.eu/.
 - DBnary (usado via `dicbio:externalEntry` nas entradas em português, §13.1): SÉRASSET, G. DBnary: Wiktionary as a Lemon-based multilingual lexical resource in RDF. *Semantic Web*, 2015. DOI: 10.3233/SW-140147.
+
+### Ferramentas utilizadas
+
+- ROBOT: JACKSON, R. C. et al. ROBOT: A Tool for Automating Ontology Workflows. *BMC Bioinformatics*, v. 20, 407, 2019. DOI: 10.1186/s12859-019-3002-3.
+- HermiT: GLIMM, B. et al. HermiT: An OWL 2 Reasoner. *Journal of Automated Reasoning*, v. 53, n. 3, p. 245-269, 2014. DOI: 10.1007/s10817-014-9305-1.
 
 ---
 
