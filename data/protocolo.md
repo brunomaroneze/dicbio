@@ -8,7 +8,7 @@
 
 - A propriedade "rdfs:seeAlso" pode ser usada para ligar ao verbete no Wiktionary.
 
-- A propriedade "skos:exactMatch" pode ser usada para ligar ao verbete no Dbnary.
+- A propriedade "dicbio:externalEntry" pode ser usada para ligar ao verbete no Dbnary.
 
 - "dcterms:created" indica a data de criação do verbete.
 
@@ -78,7 +78,7 @@
 
 - A entrada do étimo deve ainda conter a propriedade "lexinfo:partOfSpeech" (com a classe gramatical) e uma "ontolex:canonicalForm", podendo conter uma ou mais "ontolex:otherForm". Assim, também será necessário criar triplas para as respectivas formas do étimo e suas representações escritas.
 
-- No caso dos étimos em latim, a propriedade "skos:exactMatch" pode ser usada para relacionar a entrada do étimo ao seu URI no projeto LiLa.
+- No caso dos étimos em latim, a propriedade "dicbio:externalEntry" pode ser usada para relacionar a entrada do étimo ao seu URI no projeto LiLa.
 
 - Um étimo pode ter outro étimo, formando cadeias etimológicas. Nesse caso, a explicação etimológica pode ficar com o nome "dbres:etym_XXXXX", sem a necessidade de "_sense1".
 
