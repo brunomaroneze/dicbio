@@ -55,6 +55,7 @@ dbres:form_adiposos a ontolex:Form ;
 
 dbres:entry_adiposo_sense1 a ontolex:LexicalSense ;
     skos:definition "Que contém gordura."@pt ;
+    dicbio:hasAttestation dbres:attestation_adiposo_sense1_anatomiasantucci ;
     lemonety:etymology dbres:etym_adiposo_sense1_h1,
         dbres:etym_adiposo_sense1_h2 .
 
@@ -113,14 +114,14 @@ dbres:form_adiposus a ontolex:Form ;
     ontolex:writtenRep "adiposus"@la .
 
 dbres:entry_adiposus_sense1 a ontolex:LexicalSense ;
-    dicbio:hasAttestation dbres:attestation_adiposus ;
+    dicbio:hasAttestation dbres:attestation_adiposus_sense1_acta_physico_medica_1730 ;
     skos:definition "Que contém gordura."@pt .
 
-dbres:attestation_adiposus a dicbio:Attestation ;
+dbres:attestation_adiposus_sense1_acta_physico_medica_1730 a dicbio:Attestation ;
     dcterms:source dbsrc:source_acta_physico_medica_1730 ;
     skos:note "Ocorrência encontrada na expressão 'panniculus adiposus'."@pt ;
     dicbio:attestationDate "1730"^^xsd:gYear .
 
-dbres:attestation_adiposo a dicbio:Attestation ;
+dbres:attestation_adiposo_sense1_anatomiasantucci a dicbio:Attestation ;
     dcterms:source dbsrc:work_anatomiasantucci ;
     dicbio:attestationDate "1739"^^xsd:gYear .

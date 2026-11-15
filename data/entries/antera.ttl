@@ -74,7 +74,7 @@ dbres:entry_anthera a ontolex:LexicalEntry ;
     dcterms:language glotto:lati1261 ;
     lexinfo:partOfSpeech lexinfo:noun ;
     lexinfo:gender lexinfo:feminine ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89247> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/89247> ;
     ontolex:canonicalForm dbres:form_anthera_lat ;
     ontolex:sense dbres:entry_anthera_sense1 .
 
@@ -84,9 +84,9 @@ dbres:form_anthera_lat a ontolex:Form ;
 dbres:entry_anthera_sense1 a ontolex:LexicalSense ;
     skos:definition "Parte da flor que contém o pólen."@pt ;
     lemonety:etymology dbres:etym_anthera_lat ;
-    dicbio:hasAttestation dbres:attestation_anthera .
+    dicbio:hasAttestation dbres:attestation_anthera_diciovandelli .
 
-dbres:attestation_anthera a dicbio:Attestation ;
+dbres:attestation_anthera_diciovandelli a dicbio:Attestation ;
     dcterms:source dbsrc:work_diciovandelli ;
     dicbio:attestationDate "1788"^^xsd:gYear .
 
@@ -110,9 +110,9 @@ dbres:form_antheros a ontolex:Form ;
 
 dbres:entry_antheros_sense1 a ontolex:LexicalSense ;
     skos:definition "Florido."@pt ;
-    dicbio:hasAttestation dbres:attestation_antheros .
+    dicbio:hasAttestation dbres:attestation_antheros_LSJ .
 
-dbres:attestation_antheros a dicbio:Attestation ;
+dbres:attestation_antheros_LSJ a dicbio:Attestation ;
     dcterms:source dbsrc:source_LSJ ;
     skos:note "O dicionário de Liddell, Scott e Jones abona o termo *ἀνθηρός* na comédia *Aves* de Aristófanes, exibida em 414 a.C."@pt ;
     dicbio:attestationDate "-0413"^^xsd:gYear .

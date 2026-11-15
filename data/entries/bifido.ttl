@@ -20,6 +20,7 @@
 
 
 dbres:entry_bifido a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,12 +34,30 @@ dbres:etym_bifido_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_bifidus_sense1 ;
     dicbio:etymologicalArgumentation """O étimo é certamente o latim *bifidus*, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino *bifidus* na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""@pt .
 
-dbres:entry_bifidus_sense1 a ontolex:LexicalSense ;
+dbres:entry_bifidus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
-    skos:definition "Dividido em duas partes."@pt ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/91574> ;
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/91574> ;
+    ontolex:canonicalForm dbres:form_bifidus ;
+    ontolex:sense dbres:entry_bifidus_sense1 .
+
+dbres:form_bifidus a ontolex:Form ;
     ontolex:writtenRep "bifidus"@la .
+
+dbres:entry_bifidus_sense1 a ontolex:LexicalSense ;
+    skos:definition "Dividido em duas partes."@pt ;
+    dicbio:hasAttestation dbres:attestation_bifidus_sense1_gaffiot,
+        dbres:attestation_bifidus_sense1_old .
+
+dbres:attestation_bifidus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
+
+dbres:attestation_bifidus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
 
 dbres:form_bifido_accent a ontolex:Form ;
     lexinfo:gender lexinfo:masculine ;

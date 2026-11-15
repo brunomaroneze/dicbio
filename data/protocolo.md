@@ -22,12 +22,14 @@
 
 - "dcterms:language" indica qual é a língua da entrada. A língua é presentada por um IRI do Glottolog (namespace "glotto"). A língua portuguesa é "glotto:port1283".
 
+- As entradas precisam ter a propriedade `dcterms:creator` para incluir o criador da entrada.
+
 -------------------------------------------------
 ## Formas:
 
 - Os recursos "dbres:form_XXXX" representam formas flexionadas e também formas gráficas encontradas no córpus.
 
-- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep". Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina ou grega, o gênero neutro é "lexinfo:neuter". Nos raros casos de substantivos com mais de um gênero, todos os gêneros devem ser incluídos.
+- São indicados com a classe "a ontolex:Form" e precisam conter sempre a representação escrita "ontolex:writtenRep" (com a etiqueta da língua, como @pt, @la etc.). Podem conter também "lexinfo:gender" (no caso dos adjetivos) e "lexinfo:number". Observação: no caso dos substantivos, "lexinfo:gender" fica atribuído à entrada, e não à forma. Masculino é "lexinfo:masculine" e feminino é "lexinfo:feminine". Se necessário atribuir a uma forma latina ou grega, o gênero neutro é "lexinfo:neuter". Nos raros casos de substantivos com mais de um gênero, todos os gêneros devem ser incluídos.
 
 - Formas com inicial maiúscula devem ser registradas distintamente das formas com inicial minúscula. Por exemplo, "botanica" e "Botanica" serão registradas sob as formas "dbres:form_botanica" e "dbres:form_Botanica", respectivamente.
 
@@ -41,7 +43,7 @@
 
 - As acepções são denominadas "dbres:entry_XXXXX_sense1" e entram na classe "a ontolex:LexicalSense"
 
-- Precisam conter sempre a "skos:definition" (definição) e "lemonety:etymology" (lista das hipóteses etimológicas).
+- Precisam conter sempre a `skos:definition` (definição); as acepções das entradas em português também devem conter a propriedade `lemonety:etymology` (lista das hipóteses etimológicas).
 
 ------------------------------------------------------------------------------------
 ## Hipóteses etimológicas:
@@ -54,11 +56,13 @@
 
 - A fonte da hipótese é indicada com "dcterms:source".
 
-- Para indicar o processo geral, usa-se "dicbio:etymologicalProcess", e as opções são "dicbio:inherited" (herdadas), "dicbio:borrowed" (empréstimos), "dicbio:created" (neologismos morfológicos) e "dicbio:semanticDerivation" (neologismos semânticos). Novas possibilidades poderão ser criadas.
+- Para indicar o processo geral, usa-se "dicbio:etymologicalProcess", e as opções são "dicbio:inherited" (herdadas), "dicbio:borrowed" (empréstimos), "dicbio:created" (neologismos morfológicos) e "dicbio:semanticDerivation" (neologismos semânticos). Novas possibilidades poderão ser criadas. Há ainda duas propriedades de natureza editorial: `dicbio:pendingResearch` para os casos que ainda serão analisados, e `dicbio:outOfScope` para os casos de acepções de entradas de étimos ou de palavras morfologicamente primitivas, que não terão sua etimologia descrita por estarem fora da proposta do dicionário.
+
+- O étimo de uma acepção marcada com `dicbio:borrowed` é necessariamente de outra língua. Já o étimo de uma acepção marcada com `dicbio:semanticEtymon` é outra acepção da mesma língua.
 
 - A explicação discursiva da hipótese entra em "dicbio:etymologicalArgumentation".
 
-- O nível de confiança da hipótese entra em "dicbio:confidenceLevel" e pode ser "dicbio:impossible", "dicbio:improbable", "dicbio:plausible", "dicbio:probable" e "dicbio:certain".
+- O nível de confiança da hipótese entra em "dicbio:confidenceLevel" e pode ser "dicbio:impossible", "dicbio:improbable", "dicbio:plausible", "dicbio:probable" e "dicbio:certain". O grau de certeza `dicbio:notApplicable` é empregado nos casos em que a hipótese etimológica é marcada como `dicbio:pendingResearch` ou `dicbio:outOfScope`.
 
 - No caso de palavras criadas, usa-se "dicbio:hasWordFormationRelation" para introduzir a explicação morfológica; esta é denominada "dbres:XXXX_derivation", se for um caso de derivação.
 
@@ -95,6 +99,8 @@
 - b) Uma ocorrência da acepção do termo ou do seu étimo em alguma fonte primária, em geral localizada pelo Google Livros (caso em que a fonte deve ser inserida na lista de fontes);
 - c) Um registro da acepção do termo ou do seu étimo em alguma fonte secundária, em geral algum dicionário de latim ou grego.
 
+- Quando a atestação for uma fonte secundária (em geral dicionários de latim e grego), a data da atestação (ou seja, `dicbio:attestationDate`) deve ser a data informada numa abonação dessa fonte. Por meio de `skos:note`, pode-se incluir um comentário discursivo sobre a abonação.
+
 - A propriedade "dicbio:realizesForm" relaciona uma ocorrência à forma que ela realiza. É inserida automaticamente.
 
 - A atestação pode ser da acepção do verbete principal, ou da acepção do étimo.
@@ -116,11 +122,11 @@
 ## Autores e fontes:
 - Os autores das obras usadas nas fontes são referidos apenas pelo URI da Wikidata, por meio da propriedade dcterms:creator.
 
-- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator", "dcterms:issued" e, opcionalmente, "owl:sameAs" (com o URI do Wikidata) e "foaf:page" com o link. Se for dicionário, será ao mesmo tempo "bibo:Book" e "bibo:ReferenceSource".
+- As fontes são indicadas com "dbsrc:source_nome_da_fonte". Se for livro, é atribuído à classe "a bibo:Book" e contém "dcterms:title", "dcterms:creator" (ou `bibo:editor`), "dcterms:issued" e, opcionalmente, "owl:sameAs" (com o URI do Wikidata) e "foaf:page" com o link. Se for dicionário, será ao mesmo tempo "bibo:Book" e "bibo:ReferenceSource".
 
 - Se uma obra contiver mais de um volume, deve ser feita uma entrada para a obra toda e outra para cada volume. A entrada da obra toda é da classe "bibo:Book" e contém o título ("dcterms:title"), o autor ("dcterms:creator") e a data ("dcterms:issued"). As entradas de cada volume também são da classe "bibo:Book", mas devem conter a propriedade "dcterms:isPartOf" para associá-las à entrada da obra toda, bem como a propriedade "bibo:volume" para informar o número do volume. Não precisam conter autor e data (a menos que sejam diferentes do autor ou data da obra toda).
 
-- Fontes que são periódicos são atribuídas à classe "bibo:Periodical". Cada volume ou fascículo do periódico é atribuído à classe "bibo:Issue" e deve conter a propriedade "dcterms:isPartOf" relacionando-o ao periódico todos. A data é indicada com "dcterms:issued" apenas referente ao volume ou fascículo, não ao periódico como um todo.
+- Fontes que são periódicos são atribuídas à classe "bibo:Periodical". Cada volume ou fascículo do periódico é atribuído à classe "bibo:Issue" e deve conter a propriedade "dcterms:isPartOf" relacionando-o ao periódico todo, bem como a propriedade `bibo:volume` para associar ao volume específico. A data é indicada com "dcterms:issued" apenas referente ao volume ou fascículo, não ao periódico como um todo.
 
 - Os livros do córpus são indicados como se fossem fontes, exceto que se usa "dbsrc:work_nome_da_fonte" em vez de "source".
 

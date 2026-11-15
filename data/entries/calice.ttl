@@ -21,6 +21,7 @@
 ### --- VERBETE: CALICE ---
 
 dbres:entry_calice a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -39,16 +40,30 @@ dbres:etym_calice_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_calyx_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *calyx, -ycis*, atestado já na Antiguidade (cf. Oxford Latin Dictionary), por sua vez originário do grego *káluks, -ukos*, com o sentido de “envoltório de um fruto”. Desde a Antiguidade essa forma é confundida com *calix, -icis* “espécie de recipiente” (cf. Oxford Latin Dictionary). O termo foi difundido no latim científico e pode ser encontrado no século XVIII, com ambas as grafias *calix* e *calyx* (cf. a própria obra de Vandelli, 1788, p. 249). O Dicionário Houaiss informa como primeira atestação da forma com C (*calice*) o dicionário de Domingos Vieira (1873), mas essa forma no plural (*calices*) já está presente no dicionário de Vandelli (1788)."@pt .
 
-dbres:entry_calyx_sense1 a ontolex:LexicalSense ;
+dbres:entry_calyx a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-14"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "calyx" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_calyx_lat ;
+    ontolex:sense dbres:entry_calyx_sense1 .
+
+dbres:form_calyx_lat a ontolex:Form ;
+    ontolex:writtenRep "calyx"@la .
+
+dbres:entry_calyx_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_calyx_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_calyx_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
 
 dbres:form_calice a ontolex:Form ;
     ontolex:writtenRep "cálice"@pt .
 
 dbres:form_calices a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "calices"@pt .
 
 dbres:form_caliz a ontolex:Form ;
@@ -56,11 +71,11 @@ dbres:form_caliz a ontolex:Form ;
         "caliz"@pt .
 
 dbres:form_calizes a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "calizes"@pt .
 
 dbres:form_calyces a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "calyces"@pt .
 
 dbres:form_calys a ontolex:Form ;
