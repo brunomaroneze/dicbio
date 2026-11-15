@@ -21,6 +21,7 @@
 ### --- VERBETE: SEXUALISMO ---
 
 dbres:entry_sexualismo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-11"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:vitoria_pereira ;
@@ -33,10 +34,26 @@ dbres:etym_sexualismo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_sexualismus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *sexualismus*, atestado em obras como a \"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ). O termo latino é, por sua vez, formado pelo adjetivo *sexualis, is* acrescido do sufixo de origem grega *-ismus*. Assim, a atestação da forma latina em textos em latim científico torna pouco provável a hipótese de uma formação ocorrida em português, ainda que, morfologicamente, o termo possa ser classificado como um derivado sufixal."@pt .
 
-dbres:entry_sexualismus_sense1 a ontolex:LexicalSense ;
+dbres:entry_sexualismus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:vitoria_pereira ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ)" ;
-    ontolex:writtenRep "sexualismus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_sexualismus ;
+    ontolex:sense dbres:entry_sexualismus_sense1 .
+
+dbres:form_sexualismus a ontolex:Form ;
+    ontolex:writtenRep "sexualismus"@la .
+
+dbres:entry_sexualismus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_sexualismus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_sexualismus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ)" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_sexualismo a ontolex:Form ;
     ontolex:writtenRep "sexualismo"@pt .

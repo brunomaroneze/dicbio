@@ -21,6 +21,7 @@
 ### --- VERBETE: LABIADO ---
 
 dbres:entry_labiado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -34,21 +35,39 @@ dbres:etym_labiado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_labiatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *labiatus*, empregado em textos científicos do século XVII (como, por exemplo, na \"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC); ou 2 - como adjetivo derivado do substantivo *lábio* acrescido do sufixo -*ado*, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1589; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_labiatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_labiatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC)" ;
-    ontolex:writtenRep "labiatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_labiatus ;
+    ontolex:sense dbres:entry_labiatus_sense1 .
+
+dbres:form_labiatus a ontolex:Form ;
+    ontolex:writtenRep "labiatus"@la .
+
+dbres:entry_labiatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_labiatus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_labiatus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC)" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_labiado a ontolex:Form ;
     ontolex:writtenRep "labiado"@pt .
 
 dbres:form_labiada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Labiada"@pt,
         "labiada"@pt .
 
 dbres:form_labiadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "labiadas"@pt .
 
 dbres:entry_labiado_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: CIBARIO ---
 
 dbres:entry_cibario a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-05-19"^^xsd:date ;
     dcterms:creator dbauth:ana_menegassi_rocha,
         dbauth:bruno_maroneze ;
@@ -33,16 +34,37 @@ dbres:etym_cibario_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_cibarius_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo latino *cibarius, a, um*, atestado desde a Antiguidade (conforme apontam os dicionários Oxford Latin Dictionary e Gaffiot) com o sentido de “relativo aos alimentos” (derivado do latim *cibus, i*, “alimento”). O termo em português é certamente um latinismo erudito, derivado possivelmente do latim científico."@pt .
 
-dbres:entry_cibarius_sense1 a ontolex:LexicalSense ;
+dbres:entry_cibarius a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot, dbsrc:source_old ;
-    ontolex:writtenRep "cibarius" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_cibarius ;
+    ontolex:sense dbres:entry_cibarius_sense1 .
+
+dbres:form_cibarius a ontolex:Form ;
+    ontolex:writtenRep "cibarius"@la .
+
+dbres:entry_cibarius_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_cibarius_sense1_gaffiot,
+        dbres:attestation_cibarius_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_cibarius_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+
+dbres:attestation_cibarius_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_cibario a ontolex:Form ;
     ontolex:writtenRep "cibário"@pt .
 
 dbres:form_cibarios a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "cibarios"@pt .
 
 dbres:entry_cibario_sense1 a ontolex:LexicalSense ;

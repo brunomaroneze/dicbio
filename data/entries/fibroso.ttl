@@ -21,6 +21,7 @@
 ### --- VERBETE: FIBROSO ---
 
 dbres:entry_fibroso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_fibroso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_fibrosus_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss sugere que se trata de uma derivação sufixal (*fibra* + *-oso*); no entanto, a ocorrência de *fibrosus,a,um* no latim científico (atestado em Vandelli) leva a crer que o termo foi decalcado ou emprestado do latim científico.A data de 1751 é informada pelo Dicionário Houaiss e indicada com a abreviatura MarqJFP, que não é incluída na lista de fontes, mas possivelmente se refere a João Feliciano Marques Pereira."@pt .
 
-dbres:entry_fibrosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_fibrosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "fibrosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_fibrosus ;
+    ontolex:sense dbres:entry_fibrosus_sense1 .
+
+dbres:form_fibrosus a ontolex:Form ;
+    ontolex:writtenRep "fibrosus"@la .
+
+dbres:entry_fibrosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_fibrosus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_fibrosus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_fibroso a ontolex:Form ;
     ontolex:writtenRep "fibroso"@pt .
 
 dbres:form_fibrosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "fibrosas"@pt .
 
 dbres:entry_fibroso_sense1 a ontolex:LexicalSense ;

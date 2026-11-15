@@ -21,6 +21,7 @@
 ### --- VERBETE: OBLONGO ---
 
 dbres:entry_oblongo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -34,25 +35,42 @@ dbres:etym_oblongo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_oblongus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *oblongus,a,um*, com o mesmo sentido, já empregado na Botânica no século XVIII, como atesta o próprio dicionário de Vandelli (por exemplo, à p. 214). Entrou na língua portuguesa como um empréstimo, provavelmente do latim científico. A atestação mais antiga informada pelo Dicionário Houaiss é possivelmente para outra acepção."@pt .
 
-dbres:entry_oblongus_sense1 a ontolex:LexicalSense ;
+dbres:entry_oblongus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "oblongus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_oblongus ;
+    ontolex:sense dbres:entry_oblongus_sense1 .
+
+dbres:form_oblongus a ontolex:Form ;
+    ontolex:writtenRep "oblongus"@la .
+
+dbres:entry_oblongus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_oblongus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_oblongus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_oblongo a ontolex:Form ;
     ontolex:writtenRep "oblongo"@pt .
 
 dbres:form_oblonga a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Oblonga"@pt,
         "oblonga"@pt .
 
 dbres:form_oblongas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Oblongas"@pt .
 
 dbres:form_oblongos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "Oblongos"@pt .
 
 dbres:entry_oblongo_sense1 a ontolex:LexicalSense ;

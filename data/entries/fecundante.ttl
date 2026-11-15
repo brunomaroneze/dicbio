@@ -21,6 +21,7 @@
 ### --- VERBETE: FECUNDANTE ---
 
 dbres:entry_fecundante a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-10-10"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:luana_borges ;
@@ -32,10 +33,26 @@ dbres:etym_fecundante_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_fecundans_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *fecundans, -ntis*, particípio presente do verbo *fecundo, -are*, que, no latim da Antiguidade, tem o sentido de \"tornar fértil\" (segundo o Oxford Latin Dictionary). A não ocorrência da sonorização do [k] intervocálico evidencia que o termo não é herdado, mas entrou na língua portuguesa por via erudita, provavelmente a partir do seu emprego no latim científico (já atestado em obras como as \"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC)."@pt .
 
-dbres:entry_fecundans_sense1 a ontolex:LexicalSense ;
+dbres:entry_fecundans a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC" ;
-    ontolex:writtenRep "fecundans" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_fecundans ;
+    ontolex:sense dbres:entry_fecundans_sense1 .
+
+dbres:form_fecundans a ontolex:Form ;
+    ontolex:writtenRep "fecundans"@la .
+
+dbres:entry_fecundans_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_fecundans_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_fecundans_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_fecundante a ontolex:Form ;
     ontolex:writtenRep "fecundante"@pt .

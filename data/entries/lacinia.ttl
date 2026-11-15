@@ -21,6 +21,7 @@
 ### --- VERBETE: LACINIA ---
 
 dbres:entry_lacinia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -31,20 +32,34 @@ dbres:entry_lacinia a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_lacinia_sense1 .
 
 dbres:etym_lacinia_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_lacinia_sense1 ;
+    dicbio:semanticEtymon dbres:entry_lacinia_lat_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim </i>lacinia,ae</i>, que no latim da Antiguidade significava \"borda, extremidade, orla\". Foi empregada na acepção da Botânica no latim científico do século XVIII, conforme atesta a própria obra de Vandelli."@pt .
 
-dbres:entry_lacinia_sense1 a ontolex:LexicalSense ;
+dbres:entry_lacinia_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "lacinia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_lacinia_lat ;
+    ontolex:sense dbres:entry_lacinia_lat_sense1 .
+
+dbres:form_lacinia_lat a ontolex:Form ;
+    ontolex:writtenRep "lacinia"@la .
+
+dbres:entry_lacinia_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_lacinia_lat_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_lacinia_lat_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_lacinia a ontolex:Form ;
     ontolex:writtenRep "lacinia"@pt,
         "lacínia"@pt .
 
 dbres:form_lacinias a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "lacinias"@pt .
 
 dbres:entry_lacinia_sense1 a ontolex:LexicalSense ;

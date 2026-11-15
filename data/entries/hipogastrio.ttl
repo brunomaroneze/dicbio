@@ -21,6 +21,7 @@
 ### --- VERBETE: HIPOGASTRIO ---
 
 dbres:entry_hipogastrio a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-06-20"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:raissa_buss ;
@@ -34,10 +35,26 @@ dbres:etym_hipogastrio_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_hypogastrium_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico hypogastrium, empregado em textos em latim científico do século XVI (cf., por exemplo, “Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0); este, por sua vez, é uma adaptação da palavra grega hypogástrion (ὑπογάστριον), registrada no dicionário LSJ com o significado de “baixo ventre”. O dicionário Houaiss dá como étimo o adjetivo hupogástrios,os,on, mas este adjetivo tem, no LSJ, apenas o sentido de “sexual”."@pt .
 
-dbres:entry_hypogastrium_sense1 a ontolex:LexicalSense ;
+dbres:entry_hypogastrium a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0" ;
-    ontolex:writtenRep "hypogastrium" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_hypogastrium ;
+    ontolex:sense dbres:entry_hypogastrium_sense1 .
+
+dbres:form_hypogastrium a ontolex:Form ;
+    ontolex:writtenRep "hypogastrium"@la .
+
+dbres:entry_hypogastrium_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_hypogastrium_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_hypogastrium_sense1 a dicbio:Attestation ;
+    dcterms:source "“Opera Chirurgica” de Ambrosius Paraeus: https://www.google.com.br/books/edition/Opera_chirurgica_Ambrosii_Paraei_Galliar/hVpJAAAAcAAJ?hl=pt-BR&gbpv=0" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_hipogastrio a ontolex:Form ;
     ontolex:writtenRep "hipogástrio"@pt .

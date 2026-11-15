@@ -21,6 +21,7 @@
 ### --- VERBETE: EXCRETORIO ---
 
 dbres:entry_excretorio a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-03-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -33,16 +34,33 @@ dbres:etym_excretorio_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_excretorius_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *excretorius*, atestado na obra de Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ), entre outras. Assim, o adjetivo português é claramente um decalque do latim, ainda que, morfologicamente, seja um derivado sufixal. O termo latino é formado a partir do verbo *excerno* (que tem a forma do supino *excretum*), empregado já na Antiguidade com o sentido de \"excretar, eliminar\" (conforme aponta o Oxford Latin Dictionary). É importante observar que a forma *excretum* é homófona do supino do verbo *excresco* \"crescer, inchar\", mas o sentido denota que este último não é a base para a formação do adjetivo *excretorius* em latim."@pt .
 
-dbres:entry_excretorius_sense1 a ontolex:LexicalSense ;
+dbres:entry_excretorius a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" ;
-    ontolex:writtenRep "excretorius" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_excretorius ;
+    ontolex:sense dbres:entry_excretorius_sense1 .
+
+dbres:form_excretorius a ontolex:Form ;
+    ontolex:writtenRep "excretorius"@la .
+
+dbres:entry_excretorius_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_excretorius_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_excretorius_sense1 a dicbio:Attestation ;
+    dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_excretorio a ontolex:Form ;
     ontolex:writtenRep "excretório"@pt .
 
 dbres:form_excretorios a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "excretorios"@pt .
 
 dbres:entry_excretorio_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: SETACEO ---
 
 dbres:entry_setaceo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-21"^^xsd:date ;
     dcterms:creator dbauth:adriane_queiroz,
         dbauth:bruno_maroneze,
@@ -37,10 +38,26 @@ dbres:etym_setaceo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_setaceus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo latino *setaceus, a, um*. Não está registrado nos dicionários de latim da Antiguidade e, portanto, é seguramente criação do latim científico. Está registrado no próprio dicionário de Vandelli. Em latim, é formado pelo substantivo *seta, ae* (também ocorrendo na variante *saeta, ae*), com o significado de “pelo de animal, especialmente grosseiro ou rígido”, acrescido do sufixo adjetivador *-aceus*, com o significado de “semelhante a” (informações extraídas do Oxford Latin Dictionary). Assim, embora não atestado na Antiguidade, parece ser bem-formado de acordo com a morfologia latina. A associação com a seda pode já ter acontecido durante a Idade Média, visto que *saeta* é o étimo de “seda” nas línguas românicas em geral, por via herdada. Assim, o adjetivo *setáceo* adquiriu tanto o sentido de “semelhante a pelos de animal” (sentido mais próximo do latim da Antiguidade) quanto de “semelhante a seda”. O dicionário Houaiss descreve a etimologia da palavra como sendo “seta + áceo”, implicando que a palavra foi formada em português; no entanto, a existência de *setaceus, a, um* no latim científico demonstra que essa descrição é imprecisa."@pt .
 
-dbres:entry_setaceus_sense1 a ontolex:LexicalSense ;
+dbres:entry_setaceus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "setaceus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_setaceus ;
+    ontolex:sense dbres:entry_setaceus_sense1 .
+
+dbres:form_setaceus a ontolex:Form ;
+    ontolex:writtenRep "setaceus"@la .
+
+dbres:entry_setaceus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_setaceus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_setaceus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_setaceo a ontolex:Form ;
     ontolex:writtenRep "Setaceo"@pt,
@@ -48,16 +65,19 @@ dbres:form_setaceo a ontolex:Form ;
         "setáceo"@pt .
 
 dbres:form_setacea a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "setacea"@pt .
 
 dbres:form_setaceas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Setaceas"@pt,
         "setaceas"@pt .
 
 dbres:form_setaceos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "setaceos"@pt .
 
 dbres:entry_setaceo_sense1 a ontolex:LexicalSense ;

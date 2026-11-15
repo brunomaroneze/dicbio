@@ -21,6 +21,7 @@
 ### --- VERBETE: MAMAIS ---
 
 dbres:entry_mamais a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:sammara_valim_santos ;
@@ -35,10 +36,26 @@ dbres:etym_mamais_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_mammalia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo desse termo é o latim científico *mammalia*, forma neutra plural, cujo singular é *mammale*. Ambas as formas latinas, singular e plural, são encontradas em textos em latim científico. Por exemplo, o singular aparece na dissertação \"Siren Lacertina\" de Osterdam, de 1766 (https://www.google.com.br/books/edition/Dissertationes_variae/05TxdEZ4ezsC); o plural aparece na dissertação \"Fundamenta Ornithologica\" de Backman, de 1765 (https://www.google.com.br/books/edition/Dissertationes_variae/YqZ7sGjyOMIC). O gênero neutro latino é explicado por ser provavelmente uma redução da expressão *animal mammale* (ou seja, \"animal mamal\", \"animal provido de mamas\"), expressão essa presente, por exemplo, na referida obra \"Siren Lacertina\" de Osterdam. Assim, o termo português é uma adaptação da forma latina.<br>Em português, antes de Vandelli, o termo já aparece (grafado \"Mamaes\") empregado no \"Compendio de Observaçoens...\" de José Antônio de Sá, de 1783. Assim como Vandelli, Sá também emprega esse termo sempre como substantivo e sempre no plural, razão pela qual optou-se por registrá-lo no plural neste dicionário.<br>O termo \"mamal\" está registrado como adjetivo no dicionário Caldas Aulete (\"Dicionário Contemporâneo da Língua Portuguêsa\", edição de 1958, publicado no Rio de Janeiro pela ed. Delta), que afirma que a sua forma latina seria *Mammalis*."@pt .
 
-dbres:entry_mammalia_sense1 a ontolex:LexicalSense ;
+dbres:entry_mammalia a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Fundamenta Ornithologica\" de Backman, de 1765 (https://www.google.com.br/books/edition/Dissertationes_variae/YqZ7sGjyOMIC" ;
-    ontolex:writtenRep "mammalia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_mammalia ;
+    ontolex:sense dbres:entry_mammalia_sense1 .
+
+dbres:form_mammalia a ontolex:Form ;
+    ontolex:writtenRep "mammalia"@la .
+
+dbres:entry_mammalia_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_mammalia_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_mammalia_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Fundamenta Ornithologica\" de Backman, de 1765 (https://www.google.com.br/books/edition/Dissertationes_variae/YqZ7sGjyOMIC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_mamais a ontolex:Form ;
     ontolex:writtenRep "mamais"@pt .

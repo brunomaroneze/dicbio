@@ -21,6 +21,7 @@
 ### --- VERBETE: ZOOLOGIA ---
 
 dbres:entry_zoologia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-08-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:luana_borges ;
@@ -30,14 +31,30 @@ dbres:entry_zoologia a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_zoologia_sense1 .
 
 dbres:etym_zoologia_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_zoologia_sense1 ;
+    dicbio:semanticEtymon dbres:entry_zoologia_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *zoologia*, já atestado no século XVII (como se percebe no próprio título da obra \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ). Dessa forma, junção dos elementos de origem grega *zoo-* e *-logia* ocorreu já no latim científico, e não em português, como está implícito na descrição etimológica do dicionário Houaiss."@pt ;
     dicbio:confidenceLevel dicbio:probable .
 
-dbres:entry_zoologia_sense1 a ontolex:LexicalSense ;
+dbres:entry_zoologia_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source " \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ" ;
-    ontolex:writtenRep "zoologia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_zoologia_lat ;
+    ontolex:sense dbres:entry_zoologia_lat_sense1 .
+
+dbres:form_zoologia_lat a ontolex:Form ;
+    ontolex:writtenRep "zoologia"@la .
+
+dbres:entry_zoologia_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_zoologia_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_zoologia_lat_sense1 a dicbio:Attestation ;
+    dcterms:source " \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_zoologia a ontolex:Form ;
     ontolex:writtenRep "Zoologia"@pt .

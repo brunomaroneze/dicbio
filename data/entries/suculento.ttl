@@ -21,6 +21,7 @@
 ### --- VERBETE: SUCULENTO ---
 
 dbres:entry_suculento a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-14"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:raissa_buss ;
@@ -36,20 +37,38 @@ dbres:etym_suculento_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_suculentus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo latino *suculentus, a, um*, que já no latim da Antiguidade tinha o sentido de “cheio de suco, suculento”. Segundo o dicionário de Gaffiot, já em latim havia as variantes com -c- (*suculentus*) e com -cc- (*succulentus*). A palavra ingressou na língua portuguesa pela via do latim científico, visto que já era empregada em textos de Botânica em latim (como, por exemplo, o *De Orchide* de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ). No entanto, o contexto mais antigo que encontramos em português até o momento, de 1784, não se refere à Botânica, antecedendo em quatro anos o emprego da palavra em Brotero."@pt .
 
-dbres:entry_suculentus_sense1 a ontolex:LexicalSense ;
+dbres:entry_suculentus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "<i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ" ;
-    ontolex:writtenRep "suculentus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_suculentus ;
+    ontolex:sense dbres:entry_suculentus_sense1 .
+
+dbres:form_suculentus a ontolex:Form ;
+    ontolex:writtenRep "suculentus"@la .
+
+dbres:entry_suculentus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_suculentus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_suculentus_sense1 a dicbio:Attestation ;
+    dcterms:source "<i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_suculento a ontolex:Form ;
     ontolex:writtenRep "suculento"@pt .
 
 dbres:form_succulenta a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "succulenta"@pt .
 
 dbres:form_succulentas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Succulentas"@pt,
         "succulentas"@pt .
 
@@ -57,7 +76,8 @@ dbres:form_succulento a ontolex:Form ;
     ontolex:writtenRep "succulento"@pt .
 
 dbres:form_succulentos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "succulentos"@pt .
 
 dbres:entry_suculento_sense1 a ontolex:LexicalSense ;

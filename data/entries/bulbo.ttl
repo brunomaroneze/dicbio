@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia para cada acepção
 
 dbres:entry_bulbo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -42,16 +43,31 @@ dbres:entry_bulbo_\(1\)_sense1 a ontolex:LexicalSense ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "bulbo (1)" .
 
-dbres:entry_bulbus_sense1 a ontolex:LexicalSense ;
+dbres:entry_bulbus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "bulbus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_bulbus ;
+    ontolex:sense dbres:entry_bulbus_sense1 .
+
+dbres:form_bulbus a ontolex:Form ;
+    ontolex:writtenRep "bulbus"@la .
+
+dbres:entry_bulbus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_bulbus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_bulbus_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_bulbo a ontolex:Form ;
     ontolex:writtenRep "bulbo"@pt .
 
 dbres:form_bulbos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "bulbos"@pt .
 
 dbres:entry_bulbo_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: PECIOLO ---
 
 dbres:entry_peciolo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -34,17 +35,32 @@ dbres:etym_peciolo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_petiolus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *petiolus,i*, que desde a Antiguidade tem o sentido de \"pé pequeno; pé dos frutos, pecíolo\". No entanto, a forma da palavra indica que não se trata de palavra herdada, mas de um empréstimo do latim científico. Vandelli emprega tanto a forma adaptada *peciolo* quanto a forma traduzida *pésinho* (também grafada *pesinho* ou *pezinho*) para traduzir o termo latino *petiolus*, conforme se observa no trecho transcrito. A forma *pezinho* também é empregada pelo autor para traduzir o termo *pedunculus*."@pt .
 
-dbres:entry_petiolus_sense1 a ontolex:LexicalSense ;
+dbres:entry_petiolus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "petiolus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_petiolus ;
+    ontolex:sense dbres:entry_petiolus_sense1 .
+
+dbres:form_petiolus a ontolex:Form ;
+    ontolex:writtenRep "petiolus"@la .
+
+dbres:entry_petiolus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_petiolus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_petiolus_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_peciolo a ontolex:Form ;
     ontolex:writtenRep "peciolo"@pt,
         "pecíolo"@pt .
 
 dbres:form_peciolos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "peciolos"@pt .
 
 dbres:entry_peciolo_sense1 a ontolex:LexicalSense ;

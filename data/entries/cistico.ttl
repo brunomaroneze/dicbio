@@ -21,6 +21,7 @@
 ### --- VERBETE: CISTICO ---
 
 dbres:entry_cistico a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-02-22"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -33,16 +34,33 @@ dbres:etym_cistico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_cysticus_sense1 ;
     dicbio:etymologicalArgumentation "De acordo com o dicionário Houaiss, o adjetivo \"cístico\" é considerado uma formação vernácula, sendo formado pela combinação do radical \"cisto-\" com o sufixo \"-ico\". A forma \"cysticus\" não consta nos dicionários Gaffiot, Oxford Latin Dictionary e Lexicon Totius Latinitatis. No entanto, a expressão \"bilis cystica\" já aparece em latim científico, por exemplo, na obra \"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC). Dessa forma, é possível que o étimo da forma portuguesa seja o latim científico, e não necessariamente uma formação vernácula, ao contrário do que é sugerido pelo dicionário Houaiss."@pt .
 
-dbres:entry_cysticus_sense1 a ontolex:LexicalSense ;
+dbres:entry_cysticus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC" ;
-    ontolex:writtenRep "cysticus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_cysticus ;
+    ontolex:sense dbres:entry_cysticus_sense1 .
+
+dbres:form_cysticus a ontolex:Form ;
+    ontolex:writtenRep "cysticus"@la .
+
+dbres:entry_cysticus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_cysticus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_cysticus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_cistico a ontolex:Form ;
     ontolex:writtenRep "cístico"@pt .
 
 dbres:form_cistica a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "cistica"@pt .
 
 dbres:entry_cistico_sense1 a ontolex:LexicalSense ;

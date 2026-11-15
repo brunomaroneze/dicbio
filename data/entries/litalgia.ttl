@@ -22,6 +22,7 @@
 ### Conferir o URI da etimologia
 
 dbres:entry_litalgia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-05-13"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;

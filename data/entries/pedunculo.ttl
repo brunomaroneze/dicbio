@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia da acepção 2.
 
 dbres:entry_pedunculo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -36,10 +37,24 @@ dbres:etym_pedunculo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_pedunculus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme explica o Dicionário Houaiss, o étimo é o latim *pedunculus,i*, diminutivo de *pes,pedis* (que significa \"pé\"). O dicionário de Gaffiot informa que *pedunculus* ou *pediculus* já na Antiguidade era empregado com o sentido de \"pedúnculo, haste de uma folha\", mas o étimo do termo português é, evidentemente, o latim científico, visto que a palavra não é herdada. Vandelli distingue (embora nem sempre com muita clareza) os conceitos de *pedúnculo* (haste da frutificação), *pecíolo* (haste da folha) e *pedicelo* (ramo de um pedúnculo). Já a definição de Morais Silva não é tão clara, aparentemente confundindo os conceitos."@pt .
 
-dbres:entry_pedunculus_sense1 a ontolex:LexicalSense ;
+dbres:entry_pedunculus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "pedunculus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_pedunculus ;
+    ontolex:sense dbres:entry_pedunculus_sense1 .
+
+dbres:form_pedunculus a ontolex:Form ;
+    ontolex:writtenRep "pedunculus"@la .
+
+dbres:entry_pedunculus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_pedunculus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_pedunculus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_pedunculo a ontolex:Form ;
     ontolex:writtenRep "Pedunculo"@pt,
@@ -47,7 +62,7 @@ dbres:form_pedunculo a ontolex:Form ;
         "pedúnculo"@pt .
 
 dbres:form_pedunculos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "pedunculos"@pt .
 
 dbres:entry_pedunculo_sense1 a ontolex:LexicalSense ;

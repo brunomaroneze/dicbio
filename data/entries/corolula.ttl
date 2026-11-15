@@ -21,6 +21,7 @@
 ### --- VERBETE: COROLULA ---
 
 dbres:entry_corolula a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -33,16 +34,31 @@ dbres:etym_corolula_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_corollula_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *corollula*, atestado no século XVIII (como, por exemplo, na obra *Genera Plantarum*, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ). Trata-se do diminutivo de *corolla*, esta última já um diminutivo (de *corona*, coroa).<br>O termo não aparece em textos de Botânica em pesquisas recentes no Google, o que leva a crer que não é mais usado atualmente."@pt .
 
-dbres:entry_corollula_sense1 a ontolex:LexicalSense ;
+dbres:entry_corollula a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "<i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ" ;
-    ontolex:writtenRep "corollula" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_corollula ;
+    ontolex:sense dbres:entry_corollula_sense1 .
+
+dbres:form_corollula a ontolex:Form ;
+    ontolex:writtenRep "corollula"@la .
+
+dbres:entry_corollula_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_corollula_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_corollula_sense1 a dicbio:Attestation ;
+    dcterms:source "<i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_corolula a ontolex:Form ;
     ontolex:writtenRep "corólula"@pt .
 
 dbres:form_corollulas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "corollulas"@pt .
 
 dbres:entry_corolula_sense1 a ontolex:LexicalSense ;

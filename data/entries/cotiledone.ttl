@@ -21,6 +21,7 @@
 ### --- VERBETE: COTILEDONE ---
 
 dbres:entry_cotiledone a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -35,10 +36,25 @@ dbres:etym_cotiledone_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_cotyledon_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *cotyledon,onis*, empregado, segundo o Dicionário Houaiss, por Lineu em 1751 já com o significado de \"elemento seminal que nutre a planta\". Ainda segundo o Dicionário Houaiss, a palavra latina seria a adaptação do grego </i>kotuledón,ónos</i>, que significa \"cavidade\".<br>Brotero emprega a palavra como sendo do gênero feminino; já Vandelli emprega como sendo masculina, que é também o gênero registrado pelo Dicionário Houaiss."@pt .
 
-dbres:entry_cotyledon_sense1 a ontolex:LexicalSense ;
+dbres:entry_cotyledon a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Lineu" ;
-    ontolex:writtenRep "cotyledon" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_cotyledon_lat ;
+    ontolex:sense dbres:entry_cotyledon_sense1 .
+
+dbres:form_cotyledon_lat a ontolex:Form ;
+    ontolex:writtenRep "cotyledon"@la .
+
+dbres:entry_cotyledon_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_cotyledon_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_cotyledon_sense1 a dicbio:Attestation ;
+    dcterms:source "Lineu" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_cotiledone a ontolex:Form ;
     ontolex:writtenRep "cotilédone"@pt .
@@ -50,7 +66,7 @@ dbres:form_cotyledone a ontolex:Form ;
     ontolex:writtenRep "cotylédone"@pt .
 
 dbres:form_cotyledones a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "cotyledones"@pt,
         "cotylédones"@pt .
 

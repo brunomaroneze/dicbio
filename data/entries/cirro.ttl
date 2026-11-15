@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia da acepção 2
 
 dbres:entry_cirro a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-11-20"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -37,10 +38,25 @@ dbres:etym_cirro_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_cirrus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *cirrus*, que no latim da Antiguidade significava “mecha de cabelo cacheado, cacho de cabelo”, mas também “excrescência em forma de tufo numa planta”, conforme informa o Oxford Latin Dictionary. Aparentemente, o latim científico especializou a grafia *cirrhus* para a acepção da Botânica (“gavinha”) e a grafia *cirrus* para a acepção da Zoologia (apêndice de certos animais). É possível observar isso, por exemplo, no “A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ), que registra apenas *cirrhus*, e no “Zoophylacium Gronovianum”, de Laurens Theodorus Gronovius (1763 - disponível em https://www.google.com.br/books/edition/Zoophylacium_Gronovianum_exhibens_animal/aUxnAAAAcAAJ), que registra apenas *cirrus*. Ainda que haja duas grafias, o mais provável é que o étimo latino seja o mesmo. <br>No dicionário de Vandelli, a forma latina aparece grafada ora como *cirrus*, ora como *cirrhus*, tanto no sentido do apêndice dos animais quanto do das plantas. Porém, o equivalente português em Vandelli é sempre grafado *cirro* ao se referir ao apêndice animal, e *cirrho* ao se referir ao apêndice vegetal (com uma única exceção à p. 236). Já Brotero não emprega esse termo em português, preferindo o equivalente vernáculo *gavinha*."@pt .
 
-dbres:entry_cirrus_sense1 a ontolex:LexicalSense ;
+dbres:entry_cirrus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ" ;
-    ontolex:writtenRep "cirrus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_cirrus ;
+    ontolex:sense dbres:entry_cirrus_sense1 .
+
+dbres:form_cirrus a ontolex:Form ;
+    ontolex:writtenRep "cirrus"@la .
+
+dbres:entry_cirrus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_cirrus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_cirrus_sense1 a dicbio:Attestation ;
+    dcterms:source "“A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_cirro a ontolex:Form ;
     ontolex:writtenRep "cirro"@pt .
@@ -49,11 +65,11 @@ dbres:form_cirrho a ontolex:Form ;
     ontolex:writtenRep "cirrho"@pt .
 
 dbres:form_cirrhos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "cirrhos"@pt .
 
 dbres:form_cirros a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "cirros"@pt .
 
 dbres:entry_cirro_sense1 a ontolex:LexicalSense ;

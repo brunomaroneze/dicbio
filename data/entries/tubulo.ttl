@@ -21,6 +21,7 @@
 ### --- VERBETE: TUBULO ---
 
 dbres:entry_tubulo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:sammara_valim_santos ;
@@ -34,16 +35,31 @@ dbres:etym_tubulo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_tubulus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *tubulus, i*, que é atestado desde a Antiguidade com o sentido de \"pequeno tubo\", conforme atesta o Oxford Language Dictionary. O emprego que Vandelli faz dessa palavra é relativamente obscuro: ele está claramente descrevendo uma estrutura tubular presente nas brânquias de certos peixes, mas não fica claro se esse é o nome técnico dessa estrutura ou se o autor está apenas descrevendo a sua forma. Independentemente disso, o emprego em Vandelli é a data mais recuada da palavra em português até onde foi possível encontrar. É claramente uma palavra erudita, como se percebe pela conservação do -l- intervocálico."@pt .
 
-dbres:entry_tubulus_sense1 a ontolex:LexicalSense ;
+dbres:entry_tubulus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "tubulus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_tubulus ;
+    ontolex:sense dbres:entry_tubulus_sense1 .
+
+dbres:form_tubulus a ontolex:Form ;
+    ontolex:writtenRep "tubulus"@la .
+
+dbres:entry_tubulus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_tubulus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_tubulus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_tubulo a ontolex:Form ;
     ontolex:writtenRep "túbulo"@pt .
 
 dbres:form_tubulos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "tubulos"@pt .
 
 dbres:entry_tubulo_sense1 a ontolex:LexicalSense ;

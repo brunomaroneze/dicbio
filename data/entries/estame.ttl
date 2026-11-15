@@ -21,6 +21,7 @@
 ### --- VERBETE: ESTAME ---
 
 dbres:entry_estame a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -33,16 +34,31 @@ dbres:etym_estame_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_stamen_sense1 ;
     dicbio:etymologicalArgumentation "Como informa o Dicionário Houaiss, o étimo é o latim *stamen, -inis* no sentido de “fio da roca”. A datação informada pelo dicionário Houaiss é provavelmente referente à acepção de “fio de tecer”. O emprego do latim *stamen* na Botânica já ocorre no século XVIII e influenciou a acepção no português."@pt .
 
-dbres:entry_stamen_sense1 a ontolex:LexicalSense ;
+dbres:entry_stamen a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "stamen" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_stamen ;
+    ontolex:sense dbres:entry_stamen_sense1 .
+
+dbres:form_stamen a ontolex:Form ;
+    ontolex:writtenRep "stamen"@la .
+
+dbres:entry_stamen_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_stamen_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_stamen_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_estame a ontolex:Form ;
     ontolex:writtenRep "estame"@pt .
 
 dbres:form_estames a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Estames"@pt,
         "estames"@pt .
 

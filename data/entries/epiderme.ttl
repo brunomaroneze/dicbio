@@ -21,6 +21,7 @@
 ### --- VERBETE: EPIDERME ---
 
 dbres:entry_epiderme a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -33,10 +34,24 @@ dbres:etym_epiderme_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_epidermis_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *epidermis, -is*, com o sentido de “epiderme dos animais”, por sua vez originário do grego *epidermís, -ídos*. Segundo o dicionário de Gaffiot, a palavra latina é atestada na “Ars Veterinaria sive Mulomedicina” de Vegécio (séculos IV-V d.C.). A forma portuguesa não é herdada e sua primeira atestação com essa acepção, de acordo com o Dicionário Houaiss, é a obra “Recopilação da Cirurgia”, de António da Cruz (1601), sob a forma variante *epiderma*. Seu emprego na Botânica parece ter sido introduzido, em português, pela obra de Vandelli (1788)."@pt .
 
-dbres:entry_epidermis_sense1 a ontolex:LexicalSense ;
+dbres:entry_epidermis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "epidermis" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_epidermis ;
+    ontolex:sense dbres:entry_epidermis_sense1 .
+
+dbres:form_epidermis a ontolex:Form ;
+    ontolex:writtenRep "epidermis"@la .
+
+dbres:entry_epidermis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_epidermis_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_epidermis_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_epiderme a ontolex:Form ;
     ontolex:writtenRep "epiderme"@pt .

@@ -21,6 +21,7 @@
 ### --- VERBETE: CILIADO ---
 
 dbres:entry_ciliado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -35,24 +36,42 @@ dbres:etym_ciliado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_ciliatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *cĭlĭātus* (atestado na Antiguidade, conforme registrado no dicionário de Gaffiot), que teria entrado na língua portuguesa por meio do latim científico (visto não ser palavra herdada, como se percebe pela conservação do -l- intervocálico); ou 2 - como adjetivo derivado do substantivo *cílio* acrescido do sufixo -*ado*, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1344; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_ciliatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_ciliatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "ciliatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_ciliatus ;
+    ontolex:sense dbres:entry_ciliatus_sense1 .
+
+dbres:form_ciliatus a ontolex:Form ;
+    ontolex:writtenRep "ciliatus"@la .
+
+dbres:entry_ciliatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_ciliatus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_ciliatus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_ciliado a ontolex:Form ;
     ontolex:writtenRep "ciliado"@pt .
 
 dbres:form_ciliada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Ciliada"@pt .
 
 dbres:form_ciliadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Ciliadas"@pt .
 
 dbres:form_ciliados a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "Ciliados"@pt,
         "ciliados"@pt .
 

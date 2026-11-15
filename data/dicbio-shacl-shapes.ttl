@@ -1,6 +1,15 @@
 ########################################################################
 # SHACL Shapes — Dicionário Histórico de Termos da Biologia
 # Gerado a partir de: protocolo.md (v2) + dicbio-ontology.ttl
+# v2.15 — (1) Gênero neutro aceito também na ENTRADA, mas só em latim ou
+#   grego (nova dsh:NeuterOnlyClassicalShape, que vale para entrada e
+#   forma). (2) owl:sameAs em livros e periódicos passa a Warning (nem
+#   toda obra tem item no Wikidata). (3) Nova dsh:AttestationLinkedShape:
+#   toda atestação precisa de uma acepção que aponte para ela
+#   (dicbio:hasAttestation). (4) Fonte sem data na atestação passa a
+#   Warning (dsh:AttestationSourceWithoutDateNoticeShape); data sem fonte
+#   continua erro. Motivo: as datas das fontes secundárias ainda serão
+#   recuperadas.
 # v2.14 — skos:exactMatch deixou de ser usado em ontolex:LexicalEntry (o
 #   domínio/contradomínio de skos:exactMatch é skos:Concept; usá-lo entre
 #   entradas fazia o reasoner tratar entradas, formas e páginas externas
@@ -238,8 +247,8 @@ dsh:LexicalEntryShape
     ] ;
 
     # lexinfo:gender na ENTRADA vale para substantivos (masc./fem.).
-    # Neutro é reservado a Formas latinas (ver nota geral sobre
-    # verificação condicional por classe gramatical).
+    # Neutro só em entradas latinas ou gregas (étimos) — a restrição de
+    # língua fica em dsh:NeuterOnlyClassicalShape.
     #
     # maxCount 2 (não 1): existem substantivos de gênero oscilante —
     # usados tanto no masculino quanto no feminino na mesma época, sem
@@ -254,8 +263,35 @@ dsh:LexicalEntryShape
         sh:path lexinfo:gender ;
         sh:minCount 0 ;
         sh:maxCount 2 ;
-        sh:in ( lexinfo:masculine lexinfo:feminine ) ;
-        sh:message "lexinfo:gender na Entrada deve ser masculine e/ou feminine (substantivos)." ;
+        sh:in ( lexinfo:masculine lexinfo:feminine lexinfo:neuter ) ;
+        sh:message "lexinfo:gender na Entrada deve ser masculine, feminine ou neuter (este último só em latim/grego)." ;
+    ] .
+
+# Neutro só em latim ou grego: vale para o gênero na ENTRADA e na FORMA
+# (a língua da forma é a da entrada que a contém). Língua ausente =
+# português, portanto neutro sem dcterms:language também é erro.
+dsh:NeuterOnlyClassicalShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf lexinfo:gender ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "lexinfo:neuter só é aceito em entradas (ou formas de entradas) em latim (glotto:lati1261) ou grego (glotto:gree1276)." ;
+        sh:select """
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            PREFIX glotto:  <https://glottolog.org/resource/languoid/id/>
+            SELECT $this
+            WHERE {
+                $this lexinfo:gender lexinfo:neuter .
+                # entrada: língua dela; forma: língua da entrada que a contém
+                OPTIONAL { $this dcterms:language ?l1 }
+                OPTIONAL { ?e (ontolex:canonicalForm|ontolex:otherForm) $this .
+                           ?e dcterms:language ?l2 }
+                BIND (COALESCE(?l1, ?l2) AS ?l)
+                FILTER (!BOUND(?l) || (?l != glotto:lati1261 && ?l != glotto:gree1276))
+            }
+        """ ;
     ] .
 
 # Aviso (não violação) quando a Entrada tem mais de um lexinfo:gender —
@@ -301,13 +337,13 @@ dsh:FormShape
     ] ;
 
     # lexinfo:gender na FORMA vale para adjetivos (masc./fem.) e para
-    # formas latinas eventualmente registradas (neutro).
+    # formas latinas ou gregas (neutro; ver dsh:NeuterOnlyClassicalShape).
     sh:property [
         sh:path lexinfo:gender ;
         sh:minCount 0 ;
         sh:maxCount 1 ;
         sh:in ( lexinfo:masculine lexinfo:feminine lexinfo:neuter ) ;
-        sh:message "lexinfo:gender na Forma deve ser masculine, feminine ou neuter (este último só para formas latinas)." ;
+        sh:message "lexinfo:gender na Forma deve ser masculine, feminine ou neuter (este último só em latim/grego)." ;
     ] ;
 
     sh:property [
@@ -507,7 +543,7 @@ dsh:EtymologyShape
         sh:maxCount 1 ;
         sh:class skos:Concept ;
         sh:in ( dicbio:impossible dicbio:improbable dicbio:plausible dicbio:probable dicbio:certain dicbio:notApplicable ) ;
-        sh:message "Toda hipótese etimológica precisa de dicbio:confidenceLevel, com um dos 5 valores previstos." ;
+        sh:message "Toda hipótese etimológica precisa de dicbio:confidenceLevel, com um dos 6 valores previstos (inclusive notApplicable, para pendingResearch/outOfScope)." ;
     ] ;
 
     sh:property [
@@ -949,21 +985,58 @@ dsh:AttestationShape
         sh:maxCount 1 ;
     ] .
 
+# Toda atestação precisa estar ligada a alguma acepção (dicbio:hasAttestation).
+# Uma atestação solta não data nada. (Quando entrarem as atestações de
+# FORMAS, vindas do córpus, esta regra terá de aceitar também o vínculo
+# com a forma.)
+dsh:AttestationLinkedShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+    sh:property [
+        sh:path [ sh:inversePath dicbio:hasAttestation ] ;
+        sh:minCount 1 ;
+        sh:class ontolex:LexicalSense ;
+        sh:message "Atestação solta: nenhuma acepção aponta para ela com dicbio:hasAttestation." ;
+    ] .
+
+# Data sem fonte: ERRO — datação só se aplica a fontes externas ao córpus.
 dsh:AttestationDateSourceCoOccurrenceShape
     a sh:NodeShape ;
     sh:targetClass dicbio:Attestation ;
 
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "Se a atestação tem dicbio:attestationDate, também precisa ter dcterms:source (e vice-versa) — datação só se aplica a fontes externas ao córpus." ;
+        sh:message "Atestação com dicbio:attestationDate precisa ter dcterms:source — datação só se aplica a fontes externas ao córpus." ;
         sh:select """
             PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
-                { $this dicbio:attestationDate ?d . FILTER NOT EXISTS { $this dcterms:source ?s } }
-                UNION
-                { $this dcterms:source ?s . FILTER NOT EXISTS { $this dicbio:attestationDate ?d } }
+                $this dicbio:attestationDate ?d .
+                FILTER NOT EXISTS { $this dcterms:source ?s }
+            }
+        """ ;
+    ] .
+
+# Fonte sem data: AVISO (v2.15). As fontes secundárias (Gaffiot, OLD etc.)
+# trazem a data, mas ela não foi anotada na primeira fase; fica como
+# pendência visível até ser preenchida. Quando todas estiverem datadas,
+# pode voltar a sh:Violation.
+dsh:AttestationSourceWithoutDateNoticeShape
+    a sh:NodeShape ;
+    sh:targetClass dicbio:Attestation ;
+    sh:severity sh:Warning ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Atestação com dcterms:source mas sem dicbio:attestationDate — recupere a data na fonte." ;
+        sh:select """
+            PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
+            PREFIX dcterms: <http://purl.org/dc/terms/>
+            SELECT $this
+            WHERE {
+                $this dcterms:source ?s .
+                FILTER NOT EXISTS { $this dicbio:attestationDate ?d }
             }
         """ ;
     ] .
@@ -979,14 +1052,14 @@ dsh:AttestationCompletenessNoticeShape
 
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "Atestação sem dicbio:attestedByOccurrence e sem (dicbio:attestationDate + dcterms:source) — parece incompleta." ;
+        sh:message "Atestação sem dicbio:attestedByOccurrence e sem dcterms:source — parece incompleta." ;
         sh:select """
             PREFIX dicbio: <https://dicbio.fflch.usp.br/ontology/>
             PREFIX dcterms: <http://purl.org/dc/terms/>
             SELECT $this
             WHERE {
                 FILTER NOT EXISTS { $this dicbio:attestedByOccurrence ?o }
-                FILTER NOT EXISTS { $this dicbio:attestationDate ?d . $this dcterms:source ?s }
+                FILTER NOT EXISTS { $this dcterms:source ?s }
             }
         """ ;
     ] .
@@ -1214,11 +1287,13 @@ dsh:BookSourceShape
         sh:message "Toda fonte do tipo livro precisa de dcterms:issued." ;
     ] ;
 
+    # Recomendado, não obrigatório: nem todo livro tem item no Wikidata.
     sh:property [
         sh:path owl:sameAs ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:message "Toda fonte do tipo livro precisa de owl:sameAs apontando para o Wikidata." ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se owl:sameAs apontando para o Wikidata, quando a obra tiver item lá." ;
     ] ;
 
     sh:property [
@@ -1362,7 +1437,8 @@ dsh:PeriodicalSourceShape
         sh:path owl:sameAs ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:message "Todo periódico precisa de owl:sameAs apontando para o Wikidata." ;
+        sh:severity sh:Warning ;
+        sh:message "Recomenda-se owl:sameAs apontando para o Wikidata, quando o periódico tiver item lá." ;
     ] .
 
 # ── 10e. Fascículos (bibo:Issue) ──────────────────────────────────────

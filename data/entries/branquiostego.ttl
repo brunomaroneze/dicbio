@@ -24,6 +24,7 @@
 ### Falta acertar as etimologias para cada acepção
 
 dbres:entry_branquiostego a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-14"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:sammara_valim_santos ;
@@ -38,20 +39,38 @@ dbres:etym_branquiostego_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_branchiostegus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo *branchiostegus, a, um*, não atestado no latim da Antiguidade, mas empregado no latim científico, como se pode ler, por exemplo, no \"Systema Naturae\" de Lineu, de 1748 (https://www.google.com.br/books/edition/Caroli_Linn%C3%A6i/Xh8AAAAAQAAJ). O termo latino, por sua vez, é formado pelos radicais gregos *branchio-* (referente às brânquias dos peixes) e *-steg-* (telhado, abrigo). Assim, o sentido pretendido, em latim, parece ser o de \"proteção, abrigo para as brânquias\". Esse adjetivo aparece no texto de Vandelli em três empregos diferentes: a) em referência a \"peixes branquióstegos\" (que talvez sejam os peixes do gênero *Branchiostegus*, conforme se lê no dicionário Houaiss, s.v. \"branquióstego\"); b) na expressão \"membrana branquióstega\" (conferir esse verbete); e c) na expressão \"abertura branquióstega\", que parece se referir à abertura das brânquias."@pt .
 
-dbres:entry_branchiostegus_sense1 a ontolex:LexicalSense ;
+dbres:entry_branchiostegus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Systema Naturae\" de Lineu, de 1748 (https://www.google.com.br/books/edition/Caroli_Linn%C3%A6i/Xh8AAAAAQAAJ" ;
-    ontolex:writtenRep "branchiostegus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_branchiostegus ;
+    ontolex:sense dbres:entry_branchiostegus_sense1 .
+
+dbres:form_branchiostegus a ontolex:Form ;
+    ontolex:writtenRep "branchiostegus"@la .
+
+dbres:entry_branchiostegus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_branchiostegus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_branchiostegus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Systema Naturae\" de Lineu, de 1748 (https://www.google.com.br/books/edition/Caroli_Linn%C3%A6i/Xh8AAAAAQAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_branquiostego a ontolex:Form ;
     ontolex:writtenRep "branquióstego"@pt .
 
 dbres:form_branchiostega a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "branchiostega"@pt .
 
 dbres:form_branchiostegos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "branchiostegos"@pt .
 
 dbres:entry_branquiostego_sense1 a ontolex:LexicalSense ;

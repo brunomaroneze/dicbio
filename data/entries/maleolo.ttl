@@ -21,6 +21,7 @@
 ### --- VERBETE: MALEOLO ---
 
 dbres:entry_maleolo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-10-27"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -35,10 +36,26 @@ dbres:etym_maleolo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_malleolus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *malleolus, i*, que já era empregado com o sentido de \"proeminência do tornozelo\" desde pelo menos o século XVII, como se observa, por exemplo, na obra \"Anatomia\" de Domenico Marchetti, 1656 (https://www.google.com.br/books/edition/Anatomia/4fQGAAAAcAAJ). No latim da Antiguidade, *malleolus* é o diminutivo de *malleus, i* \"martelo\", ou seja, designava um pequeno martelo; segundo o Oxford Latin Dictionary, também poderia designar a cruzeta (técnica de jardinagem que consiste em cortar um ramo em forma de cruz ou martelo, para plantá-lo) ou, ainda, um dardo incendiário. Assim, aparentemente, a forma latina *malleolus* passa a designar a proeminência do tornozelo pela sua semelhança com um pequeno martelo, em período posterior à Antiguidade (possivelmente pós-Renascimento), e passa ao português como um decalque erudito."@pt .
 
-dbres:entry_malleolus_sense1 a ontolex:LexicalSense ;
+dbres:entry_malleolus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Anatomia\" de Domenico Marchetti, 1656 (https://www.google.com.br/books/edition/Anatomia/4fQGAAAAcAAJ)" ;
-    ontolex:writtenRep "malleolus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_malleolus ;
+    ontolex:sense dbres:entry_malleolus_sense1 .
+
+dbres:form_malleolus a ontolex:Form ;
+    ontolex:writtenRep "malleolus"@la .
+
+dbres:entry_malleolus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_malleolus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_malleolus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Anatomia\" de Domenico Marchetti, 1656 (https://www.google.com.br/books/edition/Anatomia/4fQGAAAAcAAJ)" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_maleolo a ontolex:Form ;
     ontolex:writtenRep "maléolo"@pt .
@@ -47,7 +64,7 @@ dbres:form_malleolo a ontolex:Form ;
     ontolex:writtenRep "malleolo"@pt .
 
 dbres:form_malleolos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "malleolos"@pt .
 
 dbres:entry_maleolo_sense1 a ontolex:LexicalSense ;

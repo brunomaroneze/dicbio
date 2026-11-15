@@ -21,6 +21,7 @@
 ### --- VERBETE: PERENE ---
 
 dbres:entry_perene a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,10 +33,25 @@ dbres:etym_perene_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_perennis_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *perennis,e*, com o sentido de \"que dura, sólido, durável, duradouro\". A forma da palavra não permite identificar se é uma palavra herdada ou um empréstimo erudito. A datação informada pelo Dicionário Houaiss é possivelmente para outras acepções fora do âmbito da Botânica."@pt .
 
-dbres:entry_perennis_sense1 a ontolex:LexicalSense ;
+dbres:entry_perennis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "perennis" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_perennis ;
+    ontolex:sense dbres:entry_perennis_sense1 .
+
+dbres:form_perennis a ontolex:Form ;
+    ontolex:writtenRep "perennis"@la .
+
+dbres:entry_perennis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_perennis_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_perennis_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_perene a ontolex:Form ;
     ontolex:writtenRep "perene"@pt .

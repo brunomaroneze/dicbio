@@ -21,6 +21,7 @@
 ### --- VERBETE: CARPO ---
 
 dbres:entry_carpo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -32,10 +33,25 @@ dbres:etym_carpo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_carpus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *carpus*, empregado desde pelo menos o século XVII (por exemplo, na obra \"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC). É, por sua vez, a latinização da forma grega καρπός (karpós), empregada desde a Antiguidade, conforme informa o dicionário de Liddell, Scott e Jones, já com o sentido de \"punho\"."@pt .
 
-dbres:entry_carpus_sense1 a ontolex:LexicalSense ;
+dbres:entry_carpus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC" ;
-    ontolex:writtenRep "carpus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_carpus ;
+    ontolex:sense dbres:entry_carpus_sense1 .
+
+dbres:form_carpus a ontolex:Form ;
+    ontolex:writtenRep "carpus"@la .
+
+dbres:entry_carpus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_carpus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_carpus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_carpo a ontolex:Form ;
     ontolex:writtenRep "carpo"@pt .

@@ -21,6 +21,7 @@
 ### --- VERBETE: FRENICO ---
 
 dbres:entry_frenico a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-04-14"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -34,20 +35,38 @@ dbres:etym_frenico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_phrenicus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *phrenicus, a, um*, que é atestado em textos do século XVII, como, por exemplo, na \"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC), já com o sentido de \"relativo ao diafragma\". Não é registrado nos dicionários Oxford Latin Dictionary nem no Gaffiot, o que indica que o termo é muito provavelmente uma criação do latim científico.<br>Apesar de o étimo ser latino, o termo é claramente decalcado no grego, como se nota pela presença do dígrafo -ph- (que translitera a letra φ grega) e o sufixo *-icus*, também de origem grega. No entanto, o dicionário de Liddell, Scott e Jones também não registra forma equivalente em grego, o que parece novamente indicar uma criação renascentista ou pós-renascentista.<br>A raiz grega que serve de base ao termo é, claramente, o substantivo φρήν (phrén) (genitivo φρενός - phrenós), registrado no dicionário de Liddell, Scott e Jones com o sentido de \"barriga\". Portanto, o adjetivo \"frênico\" seria, etimologicamente, \"relativo à barriga\", o que condiz com o sentido moderno de \"relativo ao diafragma\". No entanto, o grego φρήν também pode ter o sentido de \"mente\" (talvez em decorrência de alguma crença de que a sede das faculdades mentais estaria na barriga), sentido esse que está na base de cognatos como \"frenético\" e \"frenesi\". Em decorrência desse sentido, surge a afirmação de Santucci de que os vasos e nervos do diafragma são assim chamados por causa da relação que têm com a cabeça, e porque uma inflamação no diafragma causaria delírios. Essa afirmação parece ser uma tentativa *a posteriori* de estabelecer uma relação com a raiz grega, visto que a acepção de \"barriga\" já é suficiente para explicar o sentido moderno, de forma concreta e sem recorrer a figuras de linguagem."@pt .
 
-dbres:entry_phrenicus_sense1 a ontolex:LexicalSense ;
+dbres:entry_phrenicus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC" ;
-    ontolex:writtenRep "phrenicus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_phrenicus ;
+    ontolex:sense dbres:entry_phrenicus_sense1 .
+
+dbres:form_phrenicus a ontolex:Form ;
+    ontolex:writtenRep "phrenicus"@la .
+
+dbres:entry_phrenicus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_phrenicus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_phrenicus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_frenico a ontolex:Form ;
     ontolex:writtenRep "frênico"@pt .
 
 dbres:form_phrenicas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "phrenicas"@pt .
 
 dbres:form_phrenicos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "Phrenicos"@pt .
 
 dbres:entry_frenico_sense1 a ontolex:LexicalSense ;

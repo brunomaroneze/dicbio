@@ -21,6 +21,7 @@
 ### --- VERBETE: HERMAFRODITA ---
 
 dbres:entry_hermafrodita a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -34,24 +35,41 @@ dbres:etym_hermafrodita_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_hermaphroditus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *hermaphroditus,a,um*, já atestado no latim clássico (cf. dicionário de Gaffiot) no sentido de \"andrógino, de ambos os sexos\", por sua vez derivado do grego *Hermaphróditos,ou* no sentido de \"Hermafrodito, filho de Hermes e Afrodite\".<br>O Dicionário Houaiss indica que o emprego como adjetivo biforme (*hermafrodito* m, *hermafrodita* f) é anterior ao emprego como uniforme (*hermafrodita* m, f). Vandelli parece empregá-lo como biforme, a julgar pelas expressões “flores hermaphroditos” (com “flores” no masculino, possivelmente por influência do italiano) e “flosculos hermaphroditos”. Todas as ocorrências da forma *hermaphrodita* em Vandelli são com substantivos femininos."@pt .
 
-dbres:entry_hermaphroditus_sense1 a ontolex:LexicalSense ;
+dbres:entry_hermaphroditus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "hermaphroditus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_hermaphroditus ;
+    ontolex:sense dbres:entry_hermaphroditus_sense1 .
+
+dbres:form_hermaphroditus a ontolex:Form ;
+    ontolex:writtenRep "hermaphroditus"@la .
+
+dbres:entry_hermaphroditus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_hermaphroditus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_hermaphroditus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_hermafrodita a ontolex:Form ;
     ontolex:writtenRep "hermafrodita"@pt .
 
 dbres:form_hermaphroditas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "hermaphroditas"@pt .
 
 dbres:form_hermaphroditos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "hermaphroditos"@pt .
 
 dbres:form_hermophroditas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "hermophroditas"@pt .
 
 dbres:entry_hermafrodita_sense1 a ontolex:LexicalSense ;

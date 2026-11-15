@@ -21,6 +21,7 @@
 ### --- VERBETE: LUNULA ---
 
 dbres:entry_lunula a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-05-01"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -31,13 +32,29 @@ dbres:entry_lunula a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_lunula_sense1 .
 
 dbres:etym_lunula_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_lunula_sense1 ;
+    dicbio:semanticEtymon dbres:entry_lunula_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *lunula, ae*, que já apresenta o sentido de \"parte clara da raiz das unhas\" em obras anteriores, como o \"Compedium Anatomicum\" de Heister, 1719 (https://www.google.com.br/books/edition/Laurentii_Heisteri_Compendium_anatomicum/9yNgAAAAcAAJ). Em português, é claramente um latinismo, como fica evidenciado pela permanência do -n- e do -l- intervocálicos.<br>A forma latina *lunula, ae* ocorre na Antiguidade com o sentido de \"ornamento em formato de lua crescente\", registrada no Oxford Latin Dictionary e no Gaffiot. Evidentemente, não é esse o sentido que permanece na Anatomia. A motivação do termo é decorrente do formato semelhante a uma lua crescente, visto que *lunula* é o diminutivo de *Luna* \"Lua\"."@pt .
 
-dbres:entry_lunula_sense1 a ontolex:LexicalSense ;
+dbres:entry_lunula_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Compedium Anatomicum\" de Heister, 1719 (https://www.google.com.br/books/edition/Laurentii_Heisteri_Compendium_anatomicum/9yNgAAAAcAAJ" ;
-    ontolex:writtenRep "lunula" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_lunula_lat ;
+    ontolex:sense dbres:entry_lunula_lat_sense1 .
+
+dbres:form_lunula_lat a ontolex:Form ;
+    ontolex:writtenRep "lunula"@la .
+
+dbres:entry_lunula_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_lunula_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_lunula_lat_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Compedium Anatomicum\" de Heister, 1719 (https://www.google.com.br/books/edition/Laurentii_Heisteri_Compendium_anatomicum/9yNgAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_lunula a ontolex:Form ;
     ontolex:writtenRep "Lunula"@pt,

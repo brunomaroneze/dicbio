@@ -21,6 +21,7 @@
 ### --- VERBETE: MEMBRANACEO ---
 
 dbres:entry_membranaceo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -35,10 +36,24 @@ dbres:etym_membranaceo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_membranaceus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *membranaceus,a,um*, que significa \"feito de uma membrana, formado de uma membrana; liso como uma membrana\", já empregado no latim científico, conforme atesta a obra de Vandelli. O sinônimo “membranoso” também ocorre em Vandelli, na parte reservada à Zoologia."@pt .
 
-dbres:entry_membranaceus_sense1 a ontolex:LexicalSense ;
+dbres:entry_membranaceus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "membranaceus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_membranaceus ;
+    ontolex:sense dbres:entry_membranaceus_sense1 .
+
+dbres:form_membranaceus a ontolex:Form ;
+    ontolex:writtenRep "membranaceus"@la .
+
+dbres:entry_membranaceus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_membranaceus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_membranaceus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_membranaceo a ontolex:Form ;
     ontolex:writtenRep "Membranaceo"@pt,
@@ -46,17 +61,20 @@ dbres:form_membranaceo a ontolex:Form ;
         "membranáceo"@pt .
 
 dbres:form_membranacea a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Membranacea"@pt,
         "membranacea"@pt .
 
 dbres:form_membranaceas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Membranaceas"@pt,
         "membranaceas"@pt .
 
 dbres:form_membranaceos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "membranaceos"@pt .
 
 dbres:entry_membranaceo_sense1 a ontolex:LexicalSense ;

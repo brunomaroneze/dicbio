@@ -21,6 +21,7 @@
 ### --- VERBETE: MUSCULO ---
 
 dbres:entry_musculo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-03-06"^^xsd:date ;
     dcterms:creator dbauth:adriane_queiroz,
         dbauth:bruno_maroneze ;
@@ -35,10 +36,25 @@ dbres:etym_musculo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_musculus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *musculus*, que já apresentava o sentido de 'músculo' na Antiguidade, conforme atesta o Oxford Latin Dictionary (com abonações de Celso, Lucrécio, Apuleio e outros). Como o sentido inicial da palavra seria ‘rato pequeno', 'ratinho' (por ser o diminutivo de *mus* no sentido de 'rato', 'camundongo'), a mudança semântica ocorreu ainda na língua latina. Segundo o dicionário Houaiss, a mudança se deu pela semelhança que apresentam alguns músculos, ao se contraírem, com o movimento rápido do rato.<br>A palavra, ainda que de atestação bem recuada (século XIV, conforme o dicionário Houaiss), entrou na língua portuguesa por via erudita, como atesta o acento proparoxítono e a preservação do -l- intervocálico, por exemplo."@pt .
 
-dbres:entry_musculus_sense1 a ontolex:LexicalSense ;
+dbres:entry_musculus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:adriane_queiroz,
+        dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "musculus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_musculus ;
+    ontolex:sense dbres:entry_musculus_sense1 .
+
+dbres:form_musculus a ontolex:Form ;
+    ontolex:writtenRep "musculus"@la .
+
+dbres:entry_musculus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_musculus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_musculus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_musculo a ontolex:Form ;
     ontolex:writtenRep "MUSCULO"@pt,
@@ -46,7 +62,7 @@ dbres:form_musculo a ontolex:Form ;
         "músculo"@pt .
 
 dbres:form_musculos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "musculos"@pt .
 
 dbres:entry_musculo_sense1 a ontolex:LexicalSense ;

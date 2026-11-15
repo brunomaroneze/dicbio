@@ -21,6 +21,7 @@
 ### --- VERBETE: RETICULADO ---
 
 dbres:entry_reticulado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -33,16 +34,32 @@ dbres:etym_reticulado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_reticulatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *rētĭcŭlātus*, já atestado no latim da Antiguidade (conforme mostra o Oxford Latin Dictonary), com o sentido de \"coberto com rede\". A conservação das consoantes intervocálicas indica que entrou na língua portuguesa como termo erudito, e não herdado. Assim, o termo é um decalque da forma latina. A base morfológica *retículo* é registrada no dicionário Houaiss, mas sem datação, de modo que não parece ser provável a hipótese de o termo ter sido formado por derivação sufixal em português."@pt .
 
-dbres:entry_reticulatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_reticulatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "reticulatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_reticulatus ;
+    ontolex:sense dbres:entry_reticulatus_sense1 .
+
+dbres:form_reticulatus a ontolex:Form ;
+    ontolex:writtenRep "reticulatus"@la .
+
+dbres:entry_reticulatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_reticulatus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_reticulatus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_reticulado a ontolex:Form ;
     ontolex:writtenRep "reticulado"@pt .
 
 dbres:form_reticuladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "reticuladas"@pt .
 
 dbres:entry_reticulado_sense1 a ontolex:LexicalSense ;

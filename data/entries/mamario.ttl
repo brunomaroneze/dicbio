@@ -21,6 +21,7 @@
 ### --- VERBETE: MAMARIO ---
 
 dbres:entry_mamario a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-10-27"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -35,24 +36,43 @@ dbres:etym_mamario_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_mammarius_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *mammarius, a, um*, que já havia sido empregado para se referir às artérias e veias mamárias por Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC). Assim, embora a estrutura morfológica seja de um derivado sufixal (*mama* + o sufixo *-ário*), o termo não foi formado em português, mas se trata, mais propriamente, de um latinismo."@pt .
 
-dbres:entry_mammarius_sense1 a ontolex:LexicalSense ;
+dbres:entry_mammarius a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC" ;
-    ontolex:writtenRep "mammarius" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_mammarius ;
+    ontolex:sense dbres:entry_mammarius_sense1 .
+
+dbres:form_mammarius a ontolex:Form ;
+    ontolex:writtenRep "mammarius"@la .
+
+dbres:entry_mammarius_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_mammarius_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_mammarius_sense1 a dicbio:Attestation ;
+    dcterms:source "Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_mamario a ontolex:Form ;
     ontolex:writtenRep "mamário"@pt .
 
 dbres:form_mamarias a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "mamarias"@pt .
 
 dbres:form_mammarias a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "mammarias"@pt .
 
 dbres:form_mammarios a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "mammarios"@pt .
 
 dbres:entry_mamario_sense1 a ontolex:LexicalSense ;

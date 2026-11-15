@@ -21,6 +21,7 @@
 ### --- VERBETE: ORBITA ---
 
 dbres:entry_orbita a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:rafaela_domingos ;
@@ -32,13 +33,29 @@ dbres:entry_orbita a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_orbita_sense1 .
 
 dbres:etym_orbita_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_orbita_sense1 ;
+    dicbio:semanticEtymon dbres:entry_orbita_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo parece ser o latim científico “orbita”, já empregado com o sentido de “cavidade dos olhos” no século XVI (por exemplo, na obra de Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C). Na Antiguidade, conforme informa o dicionário OLD, o latim “orbita” tem apenas as acepções de “caminho traçado por uma roda”, “movimento dos astros” e “prática regular, rotina”. A acepção da Anatomia, até onde foi possível identificar, surge no período do Renascimento."@pt .
 
-dbres:entry_orbita_sense1 a ontolex:LexicalSense ;
+dbres:entry_orbita_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" ;
-    ontolex:writtenRep "orbita" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_orbita_lat ;
+    ontolex:sense dbres:entry_orbita_lat_sense1 .
+
+dbres:form_orbita_lat a ontolex:Form ;
+    ontolex:writtenRep "orbita"@la .
+
+dbres:entry_orbita_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_orbita_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_orbita_lat_sense1 a dicbio:Attestation ;
+    dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_orbita a ontolex:Form ;
     ontolex:writtenRep "Orbita"@pt,

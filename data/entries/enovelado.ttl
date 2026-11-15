@@ -21,6 +21,7 @@
 ### --- VERBETE: ENOVELADO ---
 
 dbres:entry_enovelado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -44,15 +45,18 @@ dbres:form_enovelado a ontolex:Form ;
     ontolex:writtenRep "enovelado"@pt .
 
 dbres:form_ennovelada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Ennovelada"@pt .
 
 dbres:form_ennoveladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "ennoveladas"@pt .
 
 dbres:form_ennovellada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Ennovellada"@pt .
 
 dbres:entry_enovelado_sense1 a ontolex:LexicalSense ;

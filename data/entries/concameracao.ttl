@@ -21,6 +21,7 @@
 ### --- VERBETE: CONCAMERACAO ---
 
 dbres:entry_concameracao a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-11-06"^^xsd:date ;
     dcterms:creator dbauth:ana_menegassi_rocha,
         dbauth:bruno_maroneze ;
@@ -36,21 +37,37 @@ dbres:etym_concameracao_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_concameratio_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *concameratio*, atestado desde a Antiguidade, porém com o sentido de “abóbada”, “arcada” (conforme informa o Oxford Latin Dictionary). O sentido empregado por Vandelli parece já ocorrer em textos anteriores em latim científico, como, por exemplo, na obra “Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ). O termo parece não ser mais empregado na Biologia no século XXI."@pt .
 
-dbres:entry_concameratio_sense1 a ontolex:LexicalSense ;
+dbres:entry_concameratio a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:ana_menegassi_rocha,
+        dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ" ;
-    ontolex:writtenRep "concameratio" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_concameratio ;
+    ontolex:sense dbres:entry_concameratio_sense1 .
+
+dbres:form_concameratio a ontolex:Form ;
+    ontolex:writtenRep "concameratio"@la .
+
+dbres:entry_concameratio_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_concameratio_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_concameratio_sense1 a dicbio:Attestation ;
+    dcterms:source "“Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_concameracao a ontolex:Form ;
     ontolex:writtenRep "concameraçaõ"@pt,
         "concameração"@pt .
 
 dbres:form_concameracoens a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "concameraçoens"@pt .
 
 dbres:form_concameracoes a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "concamerações"@pt .
 
 dbres:entry_concameracao_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: TUBERCULADO ---
 
 dbres:entry_tuberculado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -34,21 +35,39 @@ dbres:etym_tuberculado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_tuberculatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *tuberculatus*, já empregado em textos em latim do século XVI (como, por exemplo, na obra \"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC); ou 2 - como adjetivo derivado do substantivo *tubérculo* (= \"verruga\") acrescido do sufixo -*ado*, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1668; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_tuberculatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_tuberculatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC" ;
-    ontolex:writtenRep "tuberculatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_tuberculatus ;
+    ontolex:sense dbres:entry_tuberculatus_sense1 .
+
+dbres:form_tuberculatus a ontolex:Form ;
+    ontolex:writtenRep "tuberculatus"@la .
+
+dbres:entry_tuberculatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_tuberculatus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_tuberculatus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_tuberculado a ontolex:Form ;
     ontolex:writtenRep "tuberculado"@pt .
 
 dbres:form_tuberculadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Tuberculadas"@pt,
         "tuberculadas"@pt .
 
 dbres:form_tuberculados a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "tuberculados"@pt .
 
 dbres:entry_tuberculado_sense1 a ontolex:LexicalSense ;

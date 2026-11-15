@@ -21,6 +21,7 @@
 ### --- VERBETE: SEXUAL ---
 
 dbres:entry_sexual a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -31,10 +32,25 @@ dbres:etym_sexual_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_sexualis_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *sexualis, -e*, adjetivo já empregado no contexto da Botânica, conforme atesta, por exemplo, o título da obra “Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC). O Dicionário Houaiss informa que esse mesmo adjetivo já era empregado em latim tardio com o sentido de \"do sexo feminino, feminil, de mulher\"; no entanto, esse emprego provavelmente desapareceu e ressurgiu no latim científico, de onde passou ao português."@pt .
 
-dbres:entry_sexualis_sense1 a ontolex:LexicalSense ;
+dbres:entry_sexualis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC)" ;
-    ontolex:writtenRep "sexualis" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_sexualis ;
+    ontolex:sense dbres:entry_sexualis_sense1 .
+
+dbres:form_sexualis a ontolex:Form ;
+    ontolex:writtenRep "sexualis"@la .
+
+dbres:entry_sexualis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_sexualis_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_sexualis_sense1 a dicbio:Attestation ;
+    dcterms:source "“Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC)" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_sexual a ontolex:Form ;
     ontolex:writtenRep "sexual"@pt .

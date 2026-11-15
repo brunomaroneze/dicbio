@@ -21,6 +21,7 @@
 ### --- VERBETE: DELTOIDE ---
 
 dbres:entry_deltoide a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-23"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:geovanna_lima ;
@@ -35,16 +36,32 @@ dbres:etym_deltoide_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_deltoides_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *deltoides*, não atestado no latim da Antiguidade, mas já empregado para se referir ao músculo do ombro desde o século XVI, como se lê na obra “Opera anatomica\" (1595), de Andreas Du-Laurens (https://www.google.com.br/books/edition/Opera_anatomica_etc_Ed_altera/13lVAAAAcAAJ). O termo latino, por sua vez, é um empréstimo do adjetivo grego δελτοειδής (*deltoeidés*) “em forma de delta (ou seja, triangular)”. Segundo o dicionário de Liddell, Scott e Jones, já na Antiguidade Galeno empregou esse adjetivo para se referir ao músculo do ombro. Dessa forma, o termo passou do grego da Antiguidade para o latim científico e, deste, para o português."@pt .
 
-dbres:entry_deltoides_sense1 a ontolex:LexicalSense ;
+dbres:entry_deltoides a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Opera anatomica\" (1595), de Andreas Du-Laurens (https://www.google.com.br/books/edition/Opera_anatomica_etc_Ed_altera/13lVAAAAcAAJ" ;
-    ontolex:writtenRep "deltoides" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_deltoides_lat ;
+    ontolex:sense dbres:entry_deltoides_sense1 .
+
+dbres:form_deltoides_lat a ontolex:Form ;
+    ontolex:writtenRep "deltoides"@la .
+
+dbres:entry_deltoides_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_deltoides_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_deltoides_sense1 a dicbio:Attestation ;
+    dcterms:source "“Opera anatomica\" (1595), de Andreas Du-Laurens (https://www.google.com.br/books/edition/Opera_anatomica_etc_Ed_altera/13lVAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_deltoide a ontolex:Form ;
     ontolex:writtenRep "deltoide"@pt .
 
 dbres:form_deltoides a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Deltoides"@pt .
 
 dbres:form_deltoydes a ontolex:Form ;

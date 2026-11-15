@@ -21,6 +21,7 @@
 ### --- VERBETE: FOLIACEO ---
 
 dbres:entry_foliaceo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,20 +34,36 @@ dbres:etym_foliaceo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_foliaceus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *foliaceus,a,um*, já empregado no latim científico do século XVIII (conforme atesta a obra de Vandelli) com o sentido de \"que tem o feitio de folha, foliáceo\"."@pt .
 
-dbres:entry_foliaceus_sense1 a ontolex:LexicalSense ;
+dbres:entry_foliaceus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "foliaceus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_foliaceus ;
+    ontolex:sense dbres:entry_foliaceus_sense1 .
+
+dbres:form_foliaceus a ontolex:Form ;
+    ontolex:writtenRep "foliaceus"@la .
+
+dbres:entry_foliaceus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_foliaceus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_foliaceus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_foliaceo a ontolex:Form ;
     ontolex:writtenRep "foliáceo"@pt .
 
 dbres:form_foliacea a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "foliacea"@pt .
 
 dbres:form_foliaceas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "foliaceas"@pt .
 
 dbres:entry_foliaceo_sense1 a ontolex:LexicalSense ;

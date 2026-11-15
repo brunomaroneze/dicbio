@@ -21,6 +21,7 @@
 ### --- VERBETE: SILIQUA ---
 
 dbres:entry_siliqua a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -31,20 +32,34 @@ dbres:entry_siliqua a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_siliqua_sense1 .
 
 dbres:etym_siliqua_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_siliqua_sense1 ;
+    dicbio:semanticEtymon dbres:entry_siliqua_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *siliqua,ae* \"vagem\", empregado desde a Antiguidade (como atesta o dicionário de Gaffiot), mas que no latim científico adquire uma acepção mais precisa no âmbito da Botânica e, assim, passa ao português."@pt .
 
-dbres:entry_siliqua_sense1 a ontolex:LexicalSense ;
+dbres:entry_siliqua_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "siliqua" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_siliqua_lat ;
+    ontolex:sense dbres:entry_siliqua_lat_sense1 .
+
+dbres:form_siliqua_lat a ontolex:Form ;
+    ontolex:writtenRep "siliqua"@la .
+
+dbres:entry_siliqua_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_siliqua_lat_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_siliqua_lat_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_siliqua a ontolex:Form ;
     ontolex:writtenRep "siliqua"@pt,
         "síliqua"@pt .
 
 dbres:form_siliquas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "siliquas"@pt .
 
 dbres:entry_siliqua_sense1 a ontolex:LexicalSense ;

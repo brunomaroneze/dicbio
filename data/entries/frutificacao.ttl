@@ -21,6 +21,7 @@
 ### --- VERBETE: FRUTIFICACAO ---
 
 dbres:entry_frutificacao a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -37,10 +38,25 @@ dbres:etym_frutificacao_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_fructificatio_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *fructificatio,onis*, com o sentido de \"ato de dar frutos\". A palavra já era empregada séculos antes da obra de Vandelli; aparentemente, o autor emprega essa palavra com o sentido de “conjunto de frutos”, ou talvez como um hiperônimo para tipos de fruto diversos. As formas variantes “frutificaçaõ”, “fructificaçaõ”, “fructificaçoens” (pl.) e “frutificações” (pl.) são todas empregadas na obra."@pt .
 
-dbres:entry_fructificatio_sense1 a ontolex:LexicalSense ;
+dbres:entry_fructificatio a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "fructificatio" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_fructificatio ;
+    ontolex:sense dbres:entry_fructificatio_sense1 .
+
+dbres:form_fructificatio a ontolex:Form ;
+    ontolex:writtenRep "fructificatio"@la .
+
+dbres:entry_fructificatio_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_fructificatio_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_fructificatio_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_frutificacao a ontolex:Form ;
     ontolex:writtenRep "Frutificaçaõ"@pt,
@@ -51,15 +67,15 @@ dbres:form_fructificacao a ontolex:Form ;
     ontolex:writtenRep "fructificaçaõ"@pt .
 
 dbres:form_fructificacoens a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "fructificaçoens"@pt .
 
 dbres:form_frutificacoens a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "frutificaçoens"@pt .
 
 dbres:form_frutificacoes a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "frutificações"@pt .
 
 dbres:entry_frutificacao_sense1 a ontolex:LexicalSense ;

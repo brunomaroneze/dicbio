@@ -21,6 +21,7 @@
 ### --- VERBETE: CANALICULADO ---
 
 dbres:entry_canaliculado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-22"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -34,21 +35,38 @@ dbres:etym_canaliculado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_canaliculatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é certamente o latim  *cănālĭcŭlātus*, atestado desde a Antiguidade (conforme registro no Oxford Latin Dictionary). No entanto, o termo não ingressou na língua portuguesa por via herdada (visto não ter sofrido as mutações fonéticas, como a queda do -l- intervocálico, por exemplo), sendo, portanto, um decalque advindo do latim científico. Seria possível analisá-lo como um derivado sufixal a partir de *canalículo*, mas essa análise fica comprometida pelo fato de que a datação disponível para *canalículo* é de 1873 (segundo o dicionário Houaiss), ou seja, uma datação posterior à data que encontramos para *canaliculado*."@pt .
 
-dbres:entry_canaliculatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_canaliculatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "canaliculatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_canaliculatus ;
+    ontolex:sense dbres:entry_canaliculatus_sense1 .
+
+dbres:form_canaliculatus a ontolex:Form ;
+    ontolex:writtenRep "canaliculatus"@la .
+
+dbres:entry_canaliculatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_canaliculatus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_canaliculatus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_canaliculado a ontolex:Form ;
     ontolex:writtenRep "canaliculado"@pt .
 
 dbres:form_canaliculada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Canaliculada"@pt,
         "canaliculada"@pt .
 
 dbres:form_canaliculadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Canaliculadas"@pt .
 
 dbres:entry_canaliculado_sense1 a ontolex:LexicalSense ;

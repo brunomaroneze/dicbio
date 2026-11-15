@@ -21,6 +21,7 @@
 ### --- VERBETE: ESTIGMA ---
 
 dbres:entry_estigma a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -33,16 +34,31 @@ dbres:etym_estigma_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_stigma_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *stigma, atis*, conforme informa o Dicionário Houaiss, que já era empregado, no latim científico do século XVIII, com o sentido que tem na Botânica. A data informada pelo Dicionário Houaiss é possivelmente para outra acepção da mesma palavra."@pt .
 
-dbres:entry_stigma_sense1 a ontolex:LexicalSense ;
+dbres:entry_stigma a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "stigma" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_stigma ;
+    ontolex:sense dbres:entry_stigma_sense1 .
+
+dbres:form_stigma a ontolex:Form ;
+    ontolex:writtenRep "stigma"@la .
+
+dbres:entry_stigma_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_stigma_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_stigma_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_estigma a ontolex:Form ;
     ontolex:writtenRep "estigma"@pt .
 
 dbres:form_estigmas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "estigmas"@pt .
 
 dbres:entry_estigma_sense1 a ontolex:LexicalSense ;

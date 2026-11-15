@@ -22,6 +22,7 @@
 ### Falta revisar a etimologia para a acepção 2
 
 dbres:entry_diafragma a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:raissa_buss ;
@@ -37,16 +38,31 @@ dbres:etym_diafragma_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_diaphragma_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *diaphragma*, que, segundo o dicionário de Gaffiot, é atestado na obra de Célio Aureliano (século V d.C), já designando o mesmo músculo; em latim, por sua vez, a palavra é um empréstimo do grego, significando “divisão” ou “barreira”, mas já designando o mesmo músculo em Platão e em Galeno (conforme informa o dicionário de Liddell, Scott e Jones). Em português, trata-se certamente de um latinismo que entrou provavelmente por meio do latim científico."@pt .
 
-dbres:entry_diaphragma_sense1 a ontolex:LexicalSense ;
+dbres:entry_diaphragma a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "diaphragma" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_diaphragma_lat ;
+    ontolex:sense dbres:entry_diaphragma_sense1 .
+
+dbres:form_diaphragma_lat a ontolex:Form ;
+    ontolex:writtenRep "diaphragma"@la .
+
+dbres:entry_diaphragma_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_diaphragma_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_diaphragma_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_diafragma a ontolex:Form ;
     ontolex:writtenRep "diafragma"@pt .
 
 dbres:form_diafragmas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "diafragmas"@pt .
 
 dbres:form_diaphragma a ontolex:Form ;

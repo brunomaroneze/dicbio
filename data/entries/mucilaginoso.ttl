@@ -21,6 +21,7 @@
 ### --- VERBETE: MUCILAGINOSO ---
 
 dbres:entry_mucilaginoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-07-07"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:geovanna_lima ;
@@ -33,16 +34,33 @@ dbres:etym_mucilaginoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_mucilaginosus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *mucilaginosus*, com o mesmo significado. Essa forma não é registrada em dicionários de latim clássico, como o Gaffiot e o Oxford Latin Dictionary, o que nos leva a entender o termo como originado do latim científico, já que é registrado em livros técnicos, como em “Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ).  De acordo com o dicionário Houaiss, o termo é atestado em 1782, no Dicionário Etimológico Nova Fronteira da Língua Portuguesa, de Antônio Geraldo da Cunha. No entanto, é possível encontrar o termo no livro Anatomia do Corpo Humano (1739), de Bernardo Santucci."@pt .
 
-dbres:entry_mucilaginosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_mucilaginosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ" ;
-    ontolex:writtenRep "mucilaginosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_mucilaginosus ;
+    ontolex:sense dbres:entry_mucilaginosus_sense1 .
+
+dbres:form_mucilaginosus a ontolex:Form ;
+    ontolex:writtenRep "mucilaginosus"@la .
+
+dbres:entry_mucilaginosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_mucilaginosus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_mucilaginosus_sense1 a dicbio:Attestation ;
+    dcterms:source "“Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_mucilaginoso a ontolex:Form ;
     ontolex:writtenRep "mucilaginoso"@pt .
 
 dbres:form_mucilaginosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "mucilaginosas"@pt .
 
 dbres:entry_mucilaginoso_sense1 a ontolex:LexicalSense ;

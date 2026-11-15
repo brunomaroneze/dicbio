@@ -21,6 +21,7 @@
 ### --- VERBETE: UMBILICADO ---
 
 dbres:entry_umbilicado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -34,20 +35,37 @@ dbres:etym_umbilicado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_umbilicatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *umbĭlīcātus* (já atestado na \"História Natural\" de Plínio, conforme informa o Oxford Latin Dictionary). A conservação do -l- intervocálico demonstra tratar-se de forma erudita, sendo, portanto, um decalque do latim. Apesar de ter uma base morfológica (substantivo *umbigo*, já atestada em 1563), a forma esperada por derivação sufixal seria **umbigado*; assim, evidencia-se que Vandelli e Brotero recuperaram a forma latina como base para a forma em língua portuguesa."@pt .
 
-dbres:entry_umbilicatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_umbilicatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "umbilicatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_umbilicatus ;
+    ontolex:sense dbres:entry_umbilicatus_sense1 .
+
+dbres:form_umbilicatus a ontolex:Form ;
+    ontolex:writtenRep "umbilicatus"@la .
+
+dbres:entry_umbilicatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_umbilicatus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_umbilicatus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_umbilicado a ontolex:Form ;
     ontolex:writtenRep "umbilicado"@pt .
 
 dbres:form_umbilicada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Umbilicada"@pt .
 
 dbres:form_umbilicadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "umbilicadas"@pt .
 
 dbres:entry_umbilicado_sense1 a ontolex:LexicalSense ;

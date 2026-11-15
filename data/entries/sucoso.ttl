@@ -21,6 +21,7 @@
 ### --- VERBETE: SUCOSO ---
 
 dbres:entry_sucoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,20 +34,37 @@ dbres:etym_sucoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_sucosus_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o étimo é o latim *sucosus,a,um*, significando \"que contém suco\". A ausência da transformação do *c* intervocálico para *g* revela que a palavra não é herdada. A não-ocorrência da forma latina na obra de Vandelli pode indicar que o termo não entrou na língua portuguesa pelo latim científico e pode ter sido criado por derivação sufixal, e não por empréstimo.Ambas as grafias *sucoso* e *succoso* ocorrem na obra de Vandelli."@pt .
 
-dbres:entry_sucosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_sucosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "sucosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_sucosus ;
+    ontolex:sense dbres:entry_sucosus_sense1 .
+
+dbres:form_sucosus a ontolex:Form ;
+    ontolex:writtenRep "sucosus"@la .
+
+dbres:entry_sucosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_sucosus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_sucosus_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_sucoso a ontolex:Form ;
     ontolex:writtenRep "sucoso"@pt .
 
 dbres:form_succosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "succosa"@pt .
 
 dbres:form_sucosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "sucosa"@pt .
 
 dbres:entry_sucoso_sense1 a ontolex:LexicalSense ;

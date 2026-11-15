@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia da acepção 2
 
 dbres:entry_gema a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -42,20 +43,34 @@ dbres:entry_gema_\(1\)_sense1 a ontolex:LexicalSense ;
     dcterms:source "nossa pesquisa" ;
     ontolex:writtenRep "gema (1)" .
 
-dbres:entry_gemma_sense1 a ontolex:LexicalSense ;
+dbres:entry_gemma a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    # REVISAR: falta dcterms:creator
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "gemma" .
+    # REVISAR: falta lexinfo:partOfSpeech
+    ontolex:canonicalForm dbres:form_gemma ;
+    ontolex:sense dbres:entry_gemma_sense1 .
+
+dbres:form_gemma a ontolex:Form ;
+    ontolex:writtenRep "gemma"@la .
+
+dbres:entry_gemma_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_gemma_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_gemma_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_gema a ontolex:Form ;
     ontolex:writtenRep "gema"@pt .
 
 dbres:form_gemas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "gemas"@pt .
 
 dbres:form_gemmas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "gemmas"@pt .
 
 dbres:entry_gema_sense1 a ontolex:LexicalSense ;

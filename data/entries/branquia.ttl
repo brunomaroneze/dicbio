@@ -22,6 +22,7 @@
 ### --- VERBETE: BRANQUIA ---
 
 dbres:entry_branquia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:sammara_valim_santos ;
@@ -35,16 +36,32 @@ dbres:etym_branquia_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_branchia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *branchia, ae*, empregado desde a Antiguidade já com o sentido de \"órgão respiratório dos peixes\", conforme atesta o Oxford Latin Dictionary. Em latim, é um empréstimo do grego βράγχια, com o mesmo sentido, que já é atestado em Aristóteles (de acordo com o dicionário de Liddell, Scott e Jones). Em português, é certamente palavra erudita, visto não haver atestação anterior a fins do século XVIII.<br>O dicionário Houaiss informa que a primeira atestação é de 1782 e está registrada no Dicionário Histórico do Português Brasileiro (https://dicionarios.fclar.unesp.br/dhpb/). Trata-se do texto de Francisco Antônio de Sampaio \"Historia dos Reinos Vegetal, Animal, e Mineral do Brazil, pertencente à Medicina\" (https://objdigital.bn.br/objdigital2/acervo_digital/div_manuscritos/mss22949/mss22949.pdf), cujo manuscrito, escrito em 1782, permaneceu sem publicação até 1971, no vol. 89 dos Anais da Biblioteca Nacional (https://hemeroteca-pdf.bn.gov.br/402630/per402630_1969_00089.pdf)."@pt .
 
-dbres:entry_branchia_sense1 a ontolex:LexicalSense ;
+dbres:entry_branchia a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "OLD/LSJ" ;
-    ontolex:writtenRep "branchia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_branchia ;
+    ontolex:sense dbres:entry_branchia_sense1 .
+
+dbres:form_branchia a ontolex:Form ;
+    ontolex:writtenRep "branchia"@la .
+
+dbres:entry_branchia_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_branchia_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_branchia_sense1 a dicbio:Attestation ;
+    dcterms:source "OLD/LSJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_branquia a ontolex:Form ;
     ontolex:writtenRep "brânquia"@pt .
 
 dbres:form_branchias a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "branchias"@pt .
 
 dbres:entry_branquia_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: TUNICA ---
 
 dbres:entry_tunica a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -31,20 +32,35 @@ dbres:entry_tunica a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_tunica_sense1 .
 
 dbres:etym_tunica_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_tunica_sense1 ;
+    dicbio:semanticEtymon dbres:entry_tunica_lat_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *tunica,ae*, que já na Antiguidade significava \"vestimenta inferior usada pelos romanos de ambos os sexos\". A acepção da Botânica ocorre também no latim científico (como se observa, por exemplo, na obra “De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ)."@pt .
 
-dbres:entry_tunica_sense1 a ontolex:LexicalSense ;
+dbres:entry_tunica_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ" ;
-    ontolex:writtenRep "tunica" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_tunica_lat ;
+    ontolex:sense dbres:entry_tunica_lat_sense1 .
+
+dbres:form_tunica_lat a ontolex:Form ;
+    ontolex:writtenRep "tunica"@la .
+
+dbres:entry_tunica_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_tunica_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_tunica_lat_sense1 a dicbio:Attestation ;
+    dcterms:source "“De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_tunica a ontolex:Form ;
     ontolex:writtenRep "tunica"@pt,
         "túnica"@pt .
 
 dbres:form_tunicas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "tunicas"@pt .
 
 dbres:entry_tunica_sense1 a ontolex:LexicalSense ;

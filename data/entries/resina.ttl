@@ -21,6 +21,7 @@
 ### --- VERBETE: RESINA ---
 
 dbres:entry_resina a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-04-24"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -30,13 +31,27 @@ dbres:entry_resina a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_resina_sense1 .
 
 dbres:etym_resina_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_resina_sense1 ;
+    dicbio:semanticEtymon dbres:entry_resina_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina *resīna,ae* (com o mesmo sentido), atestada desde a Antiguidade, segundo o Oxford Latin Dictionary. A julgar pela permanência do -n- intervocálico na forma portuguesa, a palavra deve ser considerada erudita (ainda que atestada desde a Idade Média, segundo o dicionário Houaiss), ou, talvez, uma reconstituição erudita posterior (visto que o mesmo dicionário informa que a forma medieval é *resia*)."@pt .
 
-dbres:entry_resina_sense1 a ontolex:LexicalSense ;
+dbres:entry_resina_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "resina" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_resina_lat ;
+    ontolex:sense dbres:entry_resina_lat_sense1 .
+
+dbres:form_resina_lat a ontolex:Form ;
+    ontolex:writtenRep "resina"@la .
+
+dbres:entry_resina_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_resina_lat_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_resina_lat_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_resina a ontolex:Form ;
     ontolex:writtenRep "resina"@pt .

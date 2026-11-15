@@ -7,6 +7,12 @@ definição do étimo, criação de fontes em sources.ttl) fica marcado com
 
 Migrações:
 
+  M0. Étimo com o MESMO IRI da 1ª acepção portuguesa (lema latino igual ao
+      português sem acento: botanica, glandula, placenta...). No grafo as
+      duas acepções se fundem. O bloco do étimo é renomeado para
+      entry_<lema>_lat_senseN e o dicbio:semanticEtymon é atualizado; a M1
+      então o trata como os demais.
+
   M1. Étimo no modelo antigo — uma acepção solta, sem entrada, com
       ontolex:writtenRep, dcterms:language (IRI do Glottolog) e
       dcterms:source:
@@ -193,6 +199,77 @@ def carregar_nomes_existentes():
 
 
 # ----------------------------------------------------------------------------
+# M0: colisão de nome entre o étimo e a acepção portuguesa
+# ----------------------------------------------------------------------------
+def blocos_do_sujeito(texto, nome):
+    """Todas as declarações (ini, fim) cujo sujeito é dbres:<nome>."""
+    padrao = re.compile(r"^dbres:" + re.escape(nome) + r"(?=\s)", re.M)
+    return [(m.start(), fim_da_declaracao(texto, m.start())) for m in padrao.finditer(texto)]
+
+
+def m0_separar_colisoes(texto, prefixos, publicID, usados, arquivo):
+    """Separa étimos que ganharam o mesmo IRI da 1ª acepção portuguesa.
+
+    Ex.: botanica.ttl declara dbres:entry_botanica_sense1 duas vezes — uma
+    como acepção de "botânica", outra como o étimo latino "Botanica" (com
+    writtenRep/language/source). No grafo as duas se fundem. O bloco do
+    étimo é renomeado para entry_<lema>_<sufixo>_senseN, e o
+    dicbio:semanticEtymon das hipóteses passa a apontar para o novo nome.
+    Depois disso, a M1 trata o étimo normalmente.
+    """
+    log = []
+    g = Graph()
+    g.parse(data=texto, format="turtle", publicID=publicID)
+    com_entrada = set(g.objects(None, ONTOLEX.sense))
+    for s in sorted(com_entrada):
+        nome = local(s)
+        if not nome or g.value(s, DCT.language) is None or not isinstance(g.value(s, DCT.language), URIRef):
+            continue
+        m = re.fullmatch(r"entry_(.+)_sense(\d+)", nome)
+        code = str(g.value(s, DCT.language))[len(GLOTTO):]
+        if not m or code not in LINGUAS:
+            continue
+        blocos = blocos_do_sujeito(texto, nome)
+        if len(blocos) != 2:
+            continue
+        etimo = [b for b in blocos if re.search(r"\b(ontolex:writtenRep|dcterms:language)\b", texto[b[0]:b[1]])]
+        if len(etimo) != 1:
+            continue
+        ini, fim = etimo[0]
+        sufixo = LINGUAS[code][1]
+        novo_nome = f"entry_{m.group(1)}_{sufixo}_sense{m.group(2)}"
+        if DBRES + novo_nome in usados or (URIRef(DBRES + novo_nome), None, None) in g:
+            raise ValueError(f"M0: nome {novo_nome} já existe")
+        bloco_etimo = texto[ini:fim]
+        resto = texto[:ini] + texto[fim:]
+        # hipóteses que apontam para o étimo
+        padrao_ref = re.compile(r"(dicbio:semanticEtymon\s+)dbres:" + re.escape(nome) + r"(?=[\s;.,])")
+        antes, n1 = padrao_ref.subn(r"\1dbres:" + novo_nome, texto[:ini])
+        depois, n2 = padrao_ref.subn(r"\1dbres:" + novo_nome, texto[fim:])
+        n_refs = n1 + n2
+        if n_refs == 0:
+            continue
+        novo_texto = antes + "dbres:" + novo_nome + bloco_etimo[len("dbres:" + nome):] + depois
+
+        # conferência: grafo novo == resto (com semanticEtymon renomeado) + étimo renomeado
+        g_resto = Graph().parse(data=resto, format="turtle", publicID=publicID)
+        g_etimo = Graph().parse(data=prefixos + bloco_etimo, format="turtle", publicID=publicID)
+        assert set(g_resto) | set(g_etimo) == set(g), "M0: separação de blocos não reproduz o grafo"
+        novo_iri = URIRef(DBRES + novo_nome)
+        esperado = {(a, p, novo_iri if (p == DICBIO.semanticEtymon and o == s) else o) for a, p, o in g_resto}
+        esperado |= {(novo_iri, p, o) for _, p, o in g_etimo}
+        obtido = set(Graph().parse(data=novo_texto, format="turtle", publicID=publicID))
+        if obtido != esperado:
+            raise AssertionError(f"M0: grafo inesperado ao renomear {nome}")
+        texto = novo_texto
+        g = Graph().parse(data=texto, format="turtle", publicID=publicID)
+        usados[DBRES + novo_nome].add(arquivo.name)
+        log.append(f"M0 {nome}: étimo com o mesmo IRI da acepção portuguesa → renomeado para {novo_nome} "
+                   f"({n_refs} semanticEtymon atualizado(s))")
+    return texto, log
+
+
+# ----------------------------------------------------------------------------
 # Migração de um arquivo
 # ----------------------------------------------------------------------------
 class Migracao:
@@ -200,16 +277,19 @@ class Migracao:
         self.arquivo = arquivo
         bruto = arquivo.read_bytes().decode("utf-8")
         self.crlf = "\r\n" in bruto
-        self.texto = bruto.replace("\r\n", "\n")
+        self.original = bruto.replace("\r\n", "\n")  # texto do arquivo, para o diff
+        self.prefixos = "".join(l + "\n" for l in self.original.splitlines() if l.startswith("@prefix"))
+        publicID = str(arquivo.resolve().as_uri())
+        # M0 roda antes e já se confere sozinha; as demais partem do texto dela
+        self.texto, log_m0 = m0_separar_colisoes(self.original, self.prefixos, publicID, usados, arquivo)
         self.g = Graph()
-        self.g.parse(data=self.texto, format="turtle", publicID=str(arquivo.resolve().as_uri()))
-        self.prefixos = "".join(l + "\n" for l in self.texto.splitlines() if l.startswith("@prefix"))
+        self.g.parse(data=self.texto, format="turtle", publicID=publicID)
         self.usados = usados
         self.fontes = fontes_conhecidas
         self.remover = set()  # triplas removidas
         self.acrescentar = Graph()  # triplas novas
         self.edicoes = []  # (ini, fim, novo_texto)
-        self.log = []  # o que foi feito
+        self.log = list(log_m0)  # o que foi feito
         self.pendencias = []  # o que fica para revisão
 
     # --- registro de edições -------------------------------------------------
@@ -316,7 +396,7 @@ class Migracao:
                     n_at = self.nome_livre(f"attestation_{lema}_sense{m.group(2)}_{slug}", sufixo)
                     corpo = [f"dbres:{n_at} a dicbio:Attestation ;",
                              f"    dcterms:source {pm(fonte)} .",
-                             "    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)"]
+                             "    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)"]
                     if fonte not in self.fontes:
                         corpo.append(f"    # REVISAR: {pm(fonte)} não existe em sources.ttl")
                 else:
@@ -530,11 +610,11 @@ def main():
             print(f"   {l}")
         for p in mig.pendencias:
             print(f"   PENDENTE {p}")
-        if novo != mig.texto:
+        if novo != mig.original:
             total_mod += 1
             if not args.sem_diff:
                 diff = difflib.unified_diff(
-                    mig.texto.splitlines(keepends=True), novo.splitlines(keepends=True),
+                    mig.original.splitlines(keepends=True), novo.splitlines(keepends=True),
                     fromfile=f"a/{arq.name}", tofile=f"b/{arq.name}",
                 )
                 sys.stdout.writelines(diff)

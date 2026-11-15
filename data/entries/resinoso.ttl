@@ -21,6 +21,7 @@
 ### --- VERBETE: RESINOSO ---
 
 dbres:entry_resinoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-04-24"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_resinoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_resinosus_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que o termo é formado por derivação sufixal a partir do substantivo *resina*. No entanto, a forma latina *resinosus, a, um* (com o sentido de “cheio de resina”) já é atestada na Antiguidade, como informa o Oxford Latin Dictionary. Dessa forma, é possível supor que o étimo seja a forma latina."@pt .
 
-dbres:entry_resinosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_resinosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "resinosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_resinosus ;
+    ontolex:sense dbres:entry_resinosus_sense1 .
+
+dbres:form_resinosus a ontolex:Form ;
+    ontolex:writtenRep "resinosus"@la .
+
+dbres:entry_resinosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_resinosus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_resinosus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_resinoso a ontolex:Form ;
     ontolex:writtenRep "resinoso"@pt .
 
 dbres:form_rezinosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "rezinosas"@pt .
 
 dbres:entry_resinoso_sense1 a ontolex:LexicalSense ;

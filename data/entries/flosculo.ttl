@@ -21,6 +21,7 @@
 ### --- VERBETE: FLOSCULO ---
 
 dbres:entry_flosculo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -33,16 +34,30 @@ dbres:etym_flosculo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_flosculus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo, conforme aponta o Dicionário Houaiss, é o latim *flosculus, i*, diminutivo de *flos, oris* \"flor\". O termo latino *flosculus* é referenciado no índice do dicionário de Vandelli, mas não aparece descrito em sua nomenclatura."@pt .
 
-dbres:entry_flosculus_sense1 a ontolex:LexicalSense ;
+dbres:entry_flosculus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "flosculus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_flosculus ;
+    ontolex:sense dbres:entry_flosculus_sense1 .
+
+dbres:form_flosculus a ontolex:Form ;
+    ontolex:writtenRep "flosculus"@la .
+
+dbres:entry_flosculus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_flosculus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_flosculus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_flosculo a ontolex:Form ;
     ontolex:writtenRep "flósculo"@pt .
 
 dbres:form_flosculos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "flosculos"@pt .
 
 dbres:entry_flosculo_sense1 a ontolex:LexicalSense ;

@@ -22,6 +22,7 @@
 ### Falta arrumar a etimologia da acepção 2
 
 dbres:entry_vilo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -36,10 +37,24 @@ dbres:etym_vilo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_villus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *villus,i*, empregado no século XVIII com o mesmo sentido, como mostra o próprio dicionário de Vandelli. Segundo o dicionário de Gaffiot, no latim da Antiguidade essa palavra designava pelos de animais, mas também poderia se referir ao musgo.Esse termo não é registrado no Dicionário Houaiss nem nos dicionários Aulete ou Michaelis. É possivelmente um termo que desapareceu da língua portuguesa."@pt .
 
-dbres:entry_villus_sense1 a ontolex:LexicalSense ;
+dbres:entry_villus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "villus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_villus ;
+    ontolex:sense dbres:entry_villus_sense1 .
+
+dbres:form_villus a ontolex:Form ;
+    ontolex:writtenRep "villus"@la .
+
+dbres:entry_villus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_villus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_villus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_vilo a ontolex:Form ;
     ontolex:writtenRep "vilo"@pt .
@@ -48,7 +63,7 @@ dbres:form_villo a ontolex:Form ;
     ontolex:writtenRep "Villo"@pt .
 
 dbres:form_villos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "villos"@pt .
 
 dbres:entry_vilo_sense1 a ontolex:LexicalSense ;

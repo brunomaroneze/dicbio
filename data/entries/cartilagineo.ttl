@@ -21,6 +21,7 @@
 ### --- VERBETE: CARTILAGINEO ---
 
 dbres:entry_cartilagineo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,20 +34,36 @@ dbres:etym_cartilagineo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_cartilagineus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *cartilagineus,a,um*, com a mesma acepção, conforme mostra o próprio dicionário de Vandelli. Esse termo já era empregado no latim clássico (e está registrado no dicionário de Gaffiot, por exemplo), mas a palavra portuguesa é claramente um empréstimo, e não uma palavra herdada.<br>O Dicionário Houaiss não indica nenhuma rubrica referente à Botânica, mas a acepção de número 3 traz como exemplo a expressão “órgãos vegetais cartilagíneos”, indicando o emprego desse termo em referência a estruturas vegetais."@pt .
 
-dbres:entry_cartilagineus_sense1 a ontolex:LexicalSense ;
+dbres:entry_cartilagineus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "cartilagineus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_cartilagineus ;
+    ontolex:sense dbres:entry_cartilagineus_sense1 .
+
+dbres:form_cartilagineus a ontolex:Form ;
+    ontolex:writtenRep "cartilagineus"@la .
+
+dbres:entry_cartilagineus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_cartilagineus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_cartilagineus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_cartilagineo a ontolex:Form ;
     ontolex:writtenRep "cartilagíneo"@pt .
 
 dbres:form_cartilaginea a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "cartilaginea"@pt .
 
 dbres:form_cartilagineas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "cartilagineas"@pt .
 
 dbres:entry_cartilagineo_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: PARASITICO ---
 
 dbres:entry_parasitico a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_parasitico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_parasiticus_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss propõe que o termo é uma derivação sufixal (*parasita* + *-ico*). Como o dicionário de Vandelli não registra uma forma latina equivalente, não há evidência de que tenha sido um decalque do latim científico.Tanto Vandelli quanto Moraes Silva registram a expressão *planta parasitica*, o que leva a crer que o adjetivo pode ter tido o seu primeiro emprego como parte dessa expressão, e apenas depois tem seu emprego estendido para outros tipos de parasitas."@pt .
 
-dbres:entry_parasiticus_sense1 a ontolex:LexicalSense ;
+dbres:entry_parasiticus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "parasiticus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_parasiticus ;
+    ontolex:sense dbres:entry_parasiticus_sense1 .
+
+dbres:form_parasiticus a ontolex:Form ;
+    ontolex:writtenRep "parasiticus"@la .
+
+dbres:entry_parasiticus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_parasiticus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_parasiticus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_parasitico a ontolex:Form ;
     ontolex:writtenRep "parasítico"@pt .
 
 dbres:form_parasitica a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "parasitica"@pt .
 
 dbres:entry_parasitico_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: CORONARIO ---
 
 dbres:entry_coronario a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-12"^^xsd:date ;
     dcterms:creator dbauth:ana_cristina_lopes,
         dbauth:bruno_maroneze ;
@@ -34,21 +35,39 @@ dbres:etym_coronario_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_coronarius_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *coronarius, a, um*, que já era empregado em obras de anatomia referindo-se aos vasos sanguíneos do coração; por exemplo, a expressão *arteriae coronariae* pode ser encontrada na obra \"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ).<br>O adjetivo latino *coronarius, a, um* está registrado nos dicionários de latim da Antiguidade (Oxford Latin Dictionary e Gaffiot) com o sentido de \"relativo a coroa\"; o substantivo *coronarius, ii* (bem como a sua forma feminina *coronaria, ae*) tem o sentido de \"fabricante ou vendedor(a) de coroas ou guirlandas\". Certamente não é esse último o sentido que aparece empregado no latim científico, mas sim o sentido adjetival \"relativo a coroa\", que foi associado à forma pela qual os vasos coronários recobrem o coração. Assim, ainda que o étimo (mais direto) seja o latim científico, o sentido mais geral do termo remonta ao latim da Antiguidade."@pt .
 
-dbres:entry_coronarius_sense1 a ontolex:LexicalSense ;
+dbres:entry_coronarius a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ" ;
-    ontolex:writtenRep "coronarius" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_coronarius ;
+    ontolex:sense dbres:entry_coronarius_sense1 .
+
+dbres:form_coronarius a ontolex:Form ;
+    ontolex:writtenRep "coronarius"@la .
+
+dbres:entry_coronarius_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_coronarius_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_coronarius_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_coronario a ontolex:Form ;
     ontolex:writtenRep "coronário"@pt .
 
 dbres:form_coronarias a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Coronarias"@pt,
         "coronarias"@pt .
 
 dbres:form_coronarios a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "coronarios"@pt .
 
 dbres:entry_coronario_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: MESENTERICO ---
 
 dbres:entry_mesenterico a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-11-27"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -34,20 +35,38 @@ dbres:etym_mesenterico_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_mesentericus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o adjetivo do latim científico *mesentericus, a, um*, atestado, por exemplo, na obra \"Opera Medica et Physica\", de Thomas Willis, 1676 (https://www.google.com.br/books/edition/Clarissimi_viri_Thom%C3%A6_Willis_opera_medi/VrucCs-1Hh4C). Ainda que, morfologicamente, *mesentérico* seja um derivado sufixal de *mesentério* + *-ico*, é improvável que tenha sido um termo formado na língua portuguesa, como parece implicar a descrição etimológica do dicionário Houaiss."@pt .
 
-dbres:entry_mesentericus_sense1 a ontolex:LexicalSense ;
+dbres:entry_mesentericus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Opera Medica et Physica\", de Thomas Willis, 1676 (https://www.google.com.br/books/edition/Clarissimi_viri_Thom%C3%A6_Willis_opera_medi/VrucCs-1Hh4C" ;
-    ontolex:writtenRep "mesentericus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_mesentericus ;
+    ontolex:sense dbres:entry_mesentericus_sense1 .
+
+dbres:form_mesentericus a ontolex:Form ;
+    ontolex:writtenRep "mesentericus"@la .
+
+dbres:entry_mesentericus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_mesentericus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_mesentericus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Opera Medica et Physica\", de Thomas Willis, 1676 (https://www.google.com.br/books/edition/Clarissimi_viri_Thom%C3%A6_Willis_opera_medi/VrucCs-1Hh4C" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_mesenterico a ontolex:Form ;
     ontolex:writtenRep "mesentérico"@pt .
 
 dbres:form_mesentericas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "mesentericas"@pt .
 
 dbres:form_mesentericos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "mesentericos"@pt .
 
 dbres:entry_mesenterico_sense1 a ontolex:LexicalSense ;

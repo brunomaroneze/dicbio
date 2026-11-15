@@ -21,6 +21,7 @@
 ### --- VERBETE: ENTRECORTADO ---
 
 dbres:entry_entrecortado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -42,7 +43,8 @@ dbres:form_entrecortado a ontolex:Form ;
     ontolex:writtenRep "entrecortado"@pt .
 
 dbres:form_entrecortadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "entrecortadas"@pt .
 
 dbres:entry_entrecortado_sense1 a ontolex:LexicalSense ;

@@ -21,6 +21,7 @@
 ### --- VERBETE: PISTILO ---
 
 dbres:entry_pistilo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -35,10 +36,24 @@ dbres:etym_pistilo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_pistillum_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss informa que a palavra derivaria do “lat. *pistillum* ou *pistillus,i* no sentido de ‘mão de pilão’”; no entanto, é pouco provável que seja uma palavra herdada, visto que a datação é tardia. Assim, não se pode falar que o sentido latino de “mão de pilão” tenha se transformado no sentido de “parte da flor” em português. O emprego da forma latina *pistillum* no latim científico (como atesta o dicionário de Vandelli) deixa claro que o étimo da forma portuguesa é o latim científico, já no sentido corrente de “parte da flor”, e a alteração de sentido se deve a um emprego metafórico já ocorrido no latim científico."@pt .
 
-dbres:entry_pistillum_sense1 a ontolex:LexicalSense ;
+dbres:entry_pistillum a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "pistillum" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_pistillum ;
+    ontolex:sense dbres:entry_pistillum_sense1 .
+
+dbres:form_pistillum a ontolex:Form ;
+    ontolex:writtenRep "pistillum"@la .
+
+dbres:entry_pistillum_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_pistillum_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_pistillum_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_pistilo a ontolex:Form ;
     ontolex:writtenRep "pistilo"@pt .
@@ -48,7 +63,7 @@ dbres:form_pistillo a ontolex:Form ;
         "pistillo"@pt .
 
 dbres:form_pistillos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "pistillos"@pt .
 
 dbres:form_pistilos a ontolex:Form ;

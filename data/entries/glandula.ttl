@@ -21,6 +21,7 @@
 ### --- VERBETE: GLANDULA ---
 
 dbres:entry_glandula a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:raissa_buss ;
@@ -32,20 +33,36 @@ dbres:entry_glandula a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_glandula_sense1 .
 
 dbres:etym_glandula_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_glandula_sense1 ;
+    dicbio:semanticEtymon dbres:entry_glandula_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *glandula*, atestado desde a Antiguidade, conforme informam os dicionários de Gaffiot e o OLD. Em Celso (segundo os mesmos dicionários), parece ter o sentido ora de “glândula”, ora de “amídala”. Em português, é certamente um latinismo, provavelmente originário do latim científico."@pt .
 
-dbres:entry_glandula_sense1 a ontolex:LexicalSense ;
+dbres:entry_glandula_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Gaffiot/OLD" ;
-    ontolex:writtenRep "glandula" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_glandula_lat ;
+    ontolex:sense dbres:entry_glandula_lat_sense1 .
+
+dbres:form_glandula_lat a ontolex:Form ;
+    ontolex:writtenRep "glandula"@la .
+
+dbres:entry_glandula_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_glandula_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_glandula_lat_sense1 a dicbio:Attestation ;
+    dcterms:source "Gaffiot/OLD" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_glandula a ontolex:Form ;
     ontolex:writtenRep "glandula"@pt,
         "glândula"@pt .
 
 dbres:form_glandulas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Glandulas"@pt,
         "glandulas"@pt .
 

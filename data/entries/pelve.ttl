@@ -22,6 +22,7 @@
 ### A etimologia apresentada refere-se à acepção 1. Falta a etimologia da acepção 2.
 
 dbres:entry_pelve a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-07-06"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:geovanna_lima ;
@@ -35,10 +36,26 @@ dbres:etym_pelve_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_pelvis_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *pelvis*, que se refere a \"bacia de metal; caldeirão\", conforme registrado no dicionário de Gaffiot. No entanto, não há registros da forma latina *pelvis* com o sentido de \"cavidade óssea\" nos dicionários de latim da Antiguidade (Gaffiot e Oxford Latin Dictionary), o que leva a crer que o étimo da forma portuguesa nessa acepção surge nos textos do latim científico, já que é possível encontrar textos técnicos do século XVII em que o termo ocorre, como, por exemplo, em \"Opera Omnia\" (1687), de Marcello Malpighi (https://www.google.com.br/books/edition/Opera_omnia/jyNAAAAAcAAJ)."@pt .
 
-dbres:entry_pelvis_sense1 a ontolex:LexicalSenseEtymon ;
+dbres:entry_pelvis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Opera Omnia\" (1687), de Marcello Malpighi (https://www.google.com.br/books/edition/Opera_omnia/jyNAAAAAcAAJ" ;
-    ontolex:writtenRep "pelvis" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_pelvis ;
+    ontolex:sense dbres:entry_pelvis_sense1 .
+
+dbres:form_pelvis a ontolex:Form ;
+    ontolex:writtenRep "pelvis"@la .
+
+dbres:entry_pelvis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_pelvis_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_pelvis_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Opera Omnia\" (1687), de Marcello Malpighi (https://www.google.com.br/books/edition/Opera_omnia/jyNAAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_pelve a ontolex:Form ;
     ontolex:writtenRep "pelve"@pt .

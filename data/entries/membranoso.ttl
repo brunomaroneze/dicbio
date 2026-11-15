@@ -21,6 +21,7 @@
 ### --- VERBETE: MEMBRANOSO ---
 
 dbres:entry_membranoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-10-07"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:luana_borges ;
@@ -34,20 +35,38 @@ dbres:etym_membranoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_membranosus_sense1 ;
     dicbio:etymologicalArgumentation "A forma latina *membranosus* já aparece em textos em latim científico (como, por exemplo, em \"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ). Assim, é mais plausível supor que Brotero tenha buscado o termo no latim científico, em vez de tê-lo criado em português por derivação sufixal.<br>A forma latina *membranaceus, a, um* é atestada desde a Antiguidade (segundo o Oxford Latin Dictionary), com o sentido de \"feito de ou semelhante a uma membrana\", mas a forma *membranosus* parece ser uma inovação do latim cientifico."@pt .
 
-dbres:entry_membranosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_membranosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ" ;
-    ontolex:writtenRep "membranosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_membranosus ;
+    ontolex:sense dbres:entry_membranosus_sense1 .
+
+dbres:form_membranosus a ontolex:Form ;
+    ontolex:writtenRep "membranosus"@la .
+
+dbres:entry_membranosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_membranosus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_membranosus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Corporis Humani Anatomiae\" de Verheyen - https://www.google.com.br/books/edition/Corporis_humani_anatomiae_Corporis_human/qA9FAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_membranoso a ontolex:Form ;
     ontolex:writtenRep "membranoso"@pt .
 
 dbres:form_membranosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "membranosa"@pt .
 
 dbres:form_membranosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Membranosas"@pt,
         "membranosas"@pt .
 

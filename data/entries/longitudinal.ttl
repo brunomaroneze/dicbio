@@ -21,6 +21,7 @@
 ### --- VERBETE: LONGITUDINAL ---
 
 dbres:entry_longitudinal a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -41,7 +42,7 @@ dbres:form_longitudinal a ontolex:Form ;
     ontolex:writtenRep "longitudinal"@pt .
 
 dbres:form_longitudinaes a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Longitudinaes"@pt,
         "longitudinaes"@pt .
 

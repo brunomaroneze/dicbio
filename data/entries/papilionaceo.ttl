@@ -21,6 +21,7 @@
 ### --- VERBETE: PAPILIONACEO ---
 
 dbres:entry_papilionaceo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_papilionaceo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_papilionaceus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *papilionaceus,a,um* (também grafado *papillionaceus* com dois LL), atestado na própria obra de Vandelli, derivado do latim clássico *papilio,onis*, que significa “borboleta”. O Dicionário Houaiss informa que o adjetivo *papilionáceo* deriva do substantivo feminino *papilionácea*, “com troca de sufixo”; porém, a datação informada para o substantivo é 1899, enquanto a datação do adjetivo é 1788 (Vandelli) e 1789 (Moraes Silva). Dessa forma, os dados não corroboram essa descrição do Dicionário Houaiss."@pt .
 
-dbres:entry_papilionaceus_sense1 a ontolex:LexicalSense ;
+dbres:entry_papilionaceus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "papilionaceus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_papilionaceus ;
+    ontolex:sense dbres:entry_papilionaceus_sense1 .
+
+dbres:form_papilionaceus a ontolex:Form ;
+    ontolex:writtenRep "papilionaceus"@la .
+
+dbres:entry_papilionaceus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_papilionaceus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_papilionaceus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_papilionaceo a ontolex:Form ;
     ontolex:writtenRep "papilionáceo"@pt .
 
 dbres:form_papilionaceas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "papilionaceas"@pt .
 
 dbres:entry_papilionaceo_sense1 a ontolex:LexicalSense ;

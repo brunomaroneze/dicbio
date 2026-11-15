@@ -21,6 +21,7 @@
 ### --- VERBETE: ESOFAGO ---
 
 dbres:entry_esofago a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-07-26"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:raissa_buss ;
@@ -35,10 +36,26 @@ dbres:etym_esofago_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_oesophagus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *oesophagus*, atestado já no século XVI (por exemplo, em “De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC). Por estar ausente dos dicionários de Gaffiot e OLD, supõe-se que não existia no latim da Antiguidade. Em latim, é empréstimo do grego οἰσοφάγος, atestado em Hipócrates, Aristóteles e Galeno com o sentido de “goela, esôfago” (segundo o dicionário de Liddell, Scott e Jones)."@pt .
 
-dbres:entry_oesophagus_sense1 a ontolex:LexicalSense ;
+dbres:entry_oesophagus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" ;
-    ontolex:writtenRep "oesophagus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_oesophagus ;
+    ontolex:sense dbres:entry_oesophagus_sense1 .
+
+dbres:form_oesophagus a ontolex:Form ;
+    ontolex:writtenRep "oesophagus"@la .
+
+dbres:entry_oesophagus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_oesophagus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_oesophagus_sense1 a dicbio:Attestation ;
+    dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_esofago a ontolex:Form ;
     ontolex:writtenRep "esôfago"@pt .

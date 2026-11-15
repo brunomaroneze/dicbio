@@ -67,7 +67,7 @@ dbres:entry_angulatus a ontolex:LexicalEntry ;
     dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
     lexinfo:partOfSpeech lexinfo:adjective ;
-    skos:exactMatch <https://lila-erc.eu/data/id/hypolemma/88611> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/hypolemma/88611> ;
     ontolex:canonicalForm dbres:form_angulatus ;
     ontolex:sense dbres:entry_angulatus_sense1 .
 

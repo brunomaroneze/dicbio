@@ -66,7 +66,7 @@ dbres:entry_arbor a ontolex:LexicalEntry ;
     lexinfo:gender lexinfo:feminine ;
     lexinfo:partOfSpeech lexinfo:noun ;
     dcterms:language glotto:lati1261 ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/89780> ;
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/89780> ;
     ontolex:canonicalForm dbres:form_arbor ;
     ontolex:otherForm dbres:form_arborem ;
     ontolex:sense dbres:entry_arbor_sense1 .

@@ -72,6 +72,7 @@ dbres:adiposo_derivation a morph:WordFormationRelation ;
     vartrans:category dicbio:Suffixation .
 
 dbres:entry_adipe a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2026-02-14"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:noun ;

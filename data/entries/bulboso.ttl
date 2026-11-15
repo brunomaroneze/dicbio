@@ -21,6 +21,7 @@
 ### --- VERBETE: BULBOSO ---
 
 dbres:entry_bulboso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -34,24 +35,41 @@ dbres:etym_bulboso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_bulbosus_sense1 ;
     dicbio:etymologicalArgumentation "É possível considerar o termo como tendo se formado por derivação sufixal a partir de “bulbo”, bem como também considerar um empréstimo direto do latim *bulbosus,a,um*, já empregado no latim científico, conforme atesta o dicionário de Vandelli."@pt .
 
-dbres:entry_bulbosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_bulbosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "bulbosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_bulbosus ;
+    ontolex:sense dbres:entry_bulbosus_sense1 .
+
+dbres:form_bulbosus a ontolex:Form ;
+    ontolex:writtenRep "bulbosus"@la .
+
+dbres:entry_bulbosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_bulbosus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_bulbosus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_bulboso a ontolex:Form ;
     ontolex:writtenRep "bulboso"@pt .
 
 dbres:form_bulbosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "bulbosa"@pt .
 
 dbres:form_bulbosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "bulbosas"@pt .
 
 dbres:form_bulbosos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "bulbosos"@pt .
 
 dbres:entry_bulboso_sense1 a ontolex:LexicalSense ;

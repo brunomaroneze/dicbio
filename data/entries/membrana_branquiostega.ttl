@@ -21,6 +21,7 @@
 ### --- VERBETE: MEMBRANA_BRANQUIOSTEGA ---
 
 dbres:entry_membrana_branquiostega a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-14"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:sammara_valim_santos ;
@@ -35,10 +36,26 @@ dbres:etym_membrana_branquiostega_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_membrana_branchiostega_sense1 ;
     dicbio:etymologicalArgumentation "O termo português \"membrana branquióstega\" é um decalque do termo latino *membrana branchiostega*, já empregado em latim científico, como se observa, por exemplo, no \"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C). Sobre a etimologia de \"branquióstego\", conferir esse verbete."@pt .
 
-dbres:entry_membrana_branchiostega_sense1 a ontolex:LexicalSense ;
+dbres:entry_membrana_branchiostega a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C" ;
-    ontolex:writtenRep "membrana branchiostega" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_membrana_branchiostega_lat ;
+    ontolex:sense dbres:entry_membrana_branchiostega_sense1 .
+
+dbres:form_membrana_branchiostega_lat a ontolex:Form ;
+    ontolex:writtenRep "membrana branchiostega"@la .
+
+dbres:entry_membrana_branchiostega_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_membrana_branchiostega_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_membrana_branchiostega_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_membrana_branquiostega a ontolex:Form ;
     ontolex:writtenRep "branquióstega"@pt,

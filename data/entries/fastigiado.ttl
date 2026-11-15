@@ -21,6 +21,7 @@
 ### --- VERBETE: FASTIGIADO ---
 
 dbres:entry_fastigiado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -33,16 +34,32 @@ dbres:etym_fastigiado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_fastigiatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *fastīgiātus* (atestado na Antiguidade, conforme registrado no dicionário de Gaffiot, como variante do adjetivo *fastigatus*), que teria entrado na língua portuguesa por meio do latim científico (visto não ser palavra herdada, como se percebe pela conservação do -g- intervocálico); ou 2 - como adjetivo derivado do substantivo *fastígio* acrescido do sufixo -*ado*, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1548; portanto, no momento da elaboração do dicionário de Vandelli, há a possibilidade de o autor ter utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_fastigiatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_fastigiatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "fastigiatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_fastigiatus ;
+    ontolex:sense dbres:entry_fastigiatus_sense1 .
+
+dbres:form_fastigiatus a ontolex:Form ;
+    ontolex:writtenRep "fastigiatus"@la .
+
+dbres:entry_fastigiatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_fastigiatus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_fastigiatus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_fastigiado a ontolex:Form ;
     ontolex:writtenRep "fastigiado"@pt .
 
 dbres:form_fastigiadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "fastigiadas"@pt .
 
 dbres:entry_fastigiado_sense1 a ontolex:LexicalSense ;

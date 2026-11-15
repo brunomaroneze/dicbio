@@ -21,6 +21,7 @@
 ### --- VERBETE: INSETO ---
 
 dbres:entry_inseto a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-11-21"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -34,10 +35,24 @@ dbres:etym_inseto_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_insectum_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina *insectum, i*, atestada já em Plínio, o Velho (portanto, século I d.C.), segundo o Oxford Latin Dictionary. No entanto, a palavra não é herdada em português (como fica evidente pela ausência da transformação ct > it), mas provavelmente derivada do emprego em latim científico, atestado pelo menos desde o século XVI (cf., por exemplo, a obra “Historiae Animalium”, de Conrad Gessner, publicada entre os anos 1551 e 1558, disponível em https://www.google.com.br/books/edition/Conradi_Gesneri_medici_Tigurini_Historia/J2IQTOBA_tYC). O substantivo *insectum, i*, em latim, é o particípio do verbo *inseco, are* (“cortar, fazer uma incisão”) e significa, literalmente, “cortado, dividido” (ou seja, de corpo segmentado).<br>Para Vandelli (e outros, como o já mencionado Gessner), o conceito de “inseto” engloba também animais como aranhas, escorpiões, caranguejos e lagostas; ou seja, refere-se ao grupo conhecido atualmente como “artrópodes”. O conceito atual de “inseto” é provavelmente do século XIX."@pt .
 
-dbres:entry_insectum_sense1 a ontolex:LexicalSense ;
+dbres:entry_insectum a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "insectum" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_insectum ;
+    ontolex:sense dbres:entry_insectum_sense1 .
+
+dbres:form_insectum a ontolex:Form ;
+    ontolex:writtenRep "insectum"@la .
+
+dbres:entry_insectum_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_insectum_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_insectum_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_inseto a ontolex:Form ;
     ontolex:writtenRep "inseto"@pt .
@@ -47,7 +62,7 @@ dbres:form_insecto a ontolex:Form ;
         "insecto"@pt .
 
 dbres:form_insectos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Insectos"@pt,
         "insectos"@pt .
 

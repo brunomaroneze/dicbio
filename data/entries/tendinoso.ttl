@@ -21,6 +21,7 @@
 ### --- VERBETE: TENDINOSO ---
 
 dbres:entry_tendinoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-07-07"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:geovanna_lima ;
@@ -35,24 +36,43 @@ dbres:etym_tendinoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_tendinosus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *tendinosus*. O termo não é registrado em dicionários de latim clássico, como o Gaffiot e o Oxford Latin Dictionary, mas em textos do latim científico é possível encontrá-lo, como em “Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ). No dicionário Houaiss, o termo é atestado em 1790, no SeabCh. No entanto, é possível encontrar o termo no livro Anatomia do Corpo Humano (1739), de Bernardo Santucci."@pt .
 
-dbres:entry_tendinosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_tendinosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:geovanna_lima ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ" ;
-    ontolex:writtenRep "tendinosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_tendinosus ;
+    ontolex:sense dbres:entry_tendinosus_sense1 .
+
+dbres:form_tendinosus a ontolex:Form ;
+    ontolex:writtenRep "tendinosus"@la .
+
+dbres:entry_tendinosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_tendinosus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_tendinosus_sense1 a dicbio:Attestation ;
+    dcterms:source "“Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_tendinoso a ontolex:Form ;
     ontolex:writtenRep "tendinoso"@pt .
 
 dbres:form_tendinosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "tendinosa"@pt .
 
 dbres:form_tendinosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "tendinosas"@pt .
 
 dbres:form_tendinosos a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "tendinosos"@pt .
 
 dbres:entry_tendinoso_sense1 a ontolex:LexicalSense ;

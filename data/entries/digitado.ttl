@@ -22,6 +22,7 @@
 ### Falta revisar a etimologia para a acepção 2
 
 dbres:entry_digitado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -37,26 +38,44 @@ dbres:etym_digitado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_digitatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *digĭtātus*, atestado desde a Antiguidade (conforme informa o Oxford Latin Dictionary), com o sentido de \"provido de dedos\". Trata-se, portanto, de um decalque do latim, que entrou na língua portuguesa como um empréstimo do latim científico.<br>O dicionário Houaiss registra a forma *dígito* como sinônimo (formal) de *dedo*, datada de 1532. Assim, seria possível hipotetizar que *digitado* seria um derivado sufixal a partir de *dígito* (significando *dedo*, e não *algarismo*, como é o seu sentido atual). No entanto, devido a essa forma ser incomum na língua portuguesa, parece mais provável que *digitado* no sentido empregado pelos cientistas do século XVIII seja de fato um decalque do latim."@pt .
 
-dbres:entry_digitatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_digitatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "digitatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_digitatus ;
+    ontolex:sense dbres:entry_digitatus_sense1 .
+
+dbres:form_digitatus a ontolex:Form ;
+    ontolex:writtenRep "digitatus"@la .
+
+dbres:entry_digitatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_digitatus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_digitatus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_digitado a ontolex:Form ;
     ontolex:writtenRep "digitado"@pt .
 
 dbres:form_digitada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Digitada"@pt,
         "digitada"@pt .
 
 dbres:form_digitadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Digitadas"@pt,
         "digitadas"@pt .
 
 dbres:form_digitados a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "digitados"@pt .
 
 dbres:entry_digitado_sense1 a ontolex:LexicalSense ;

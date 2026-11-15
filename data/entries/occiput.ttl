@@ -21,6 +21,7 @@
 ### --- VERBETE: OCCIPUT ---
 
 dbres:entry_occiput a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:rafaela_domingos ;
@@ -31,13 +32,28 @@ dbres:entry_occiput a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_occiput_sense1 .
 
 dbres:etym_occiput_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_occiput_sense1 ;
+    dicbio:semanticEtymon dbres:entry_occiput_lat_sense1 ;
     dicbio:etymologicalArgumentation "Trata-se de um empréstimo direto do latim, atestado desde a Antiguidade: o dicionário OLD registra as formas sinônimas *occipicium* e *occiput*, já com o sentido de “parte posterior da cabeça”. O dicionário Houaiss registra como sinônimas as formas “occipício”, “occipúcio”, “occipital” e “ócciput”, mas definidas em referência à parte da cabeça, não exatamente ao osso. Também em Santucci se observa oscilação no emprego da palavra: ora refere-se à parte da cabeça, ora ao osso presente nessa parte. A forma “toutiço”, apontada como sinônima por Santucci, parece apresentar essa mesma ambiguidade, ora como a parte da cabeça, ora como o osso ali presente."@pt .
 
-dbres:entry_occiput_sense1 a ontolex:LexicalSense ;
+dbres:entry_occiput_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "occiput" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_occiput_lat ;
+    ontolex:sense dbres:entry_occiput_lat_sense1 .
+
+dbres:form_occiput_lat a ontolex:Form ;
+    ontolex:writtenRep "occiput"@la .
+
+dbres:entry_occiput_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_occiput_lat_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_occiput_lat_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_occiput a ontolex:Form ;
     ontolex:writtenRep "Occiput"@pt,

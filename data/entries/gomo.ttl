@@ -21,6 +21,7 @@
 ### --- VERBETE: GOMO ---
 
 dbres:entry_gomo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -42,7 +43,7 @@ dbres:form_gomo a ontolex:Form ;
     ontolex:writtenRep "gomo"@pt .
 
 dbres:form_gomos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "gomos"@pt .
 
 dbres:entry_gomo_sense1 a ontolex:LexicalSense ;

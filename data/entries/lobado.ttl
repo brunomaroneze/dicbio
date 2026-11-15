@@ -21,6 +21,7 @@
 ### --- VERBETE: LOBADO ---
 
 dbres:entry_lobado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -34,20 +35,38 @@ dbres:etym_lobado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_lobatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *lobatus*, já empregado em textos científicos do século XVII (como, por exemplo, na obra \"Prosopopoeiae Botanicae\" de Virgilio Falugi - https://www.google.com.br/books/edition/Prosopopoeiae_botanicae_sive_Nomenclator/CqS6hxlUbe4C); ou 2 - como adjetivo derivado do substantivo *lobo* (= \"parte de um órgão\") acrescido do sufixo -*ado*, visto que o substantivo teve, segundo o Dicionário Houaiss, sua primeira atestação em 1670; portanto, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_lobatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_lobatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Prosopopoeiae Botanicae\" de Virgilio Falugi - https://www.google.com.br/books/edition/Prosopopoeiae_botanicae_sive_Nomenclator/CqS6hxlUbe4C" ;
-    ontolex:writtenRep "lobatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_lobatus ;
+    ontolex:sense dbres:entry_lobatus_sense1 .
+
+dbres:form_lobatus a ontolex:Form ;
+    ontolex:writtenRep "lobatus"@la .
+
+dbres:entry_lobatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_lobatus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_lobatus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Prosopopoeiae Botanicae\" de Virgilio Falugi - https://www.google.com.br/books/edition/Prosopopoeiae_botanicae_sive_Nomenclator/CqS6hxlUbe4C" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_lobado a ontolex:Form ;
     ontolex:writtenRep "lobado"@pt .
 
 dbres:form_lobada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "lobada"@pt .
 
 dbres:form_lobadas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Lobadas"@pt,
         "lobadas"@pt .
 

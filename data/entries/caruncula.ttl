@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia da acepção 2 e 3
 
 dbres:entry_caruncula a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-11-13"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:matheus_casarin ;
@@ -35,14 +36,30 @@ dbres:entry_caruncula a ontolex:LexicalEntry ;
         dbres:entry_caruncula_sense3 .
 
 dbres:etym_caruncula_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_caruncula_sense1,
+    dicbio:semanticEtymon dbres:entry_caruncula_lat_sense1,
         dbres:entry_caruncula_seminal_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *caruncula*, que tinha, na Antiguidade, o sentido de “pequeno pedaço de carne”, mas já aparece, em Celso (“De Medicina” 6.8.2.A, citado pelo Oxford Language Dictionary), com o sentido de “protuberância” (especificamente dentro das narinas). A palavra entrou em português pela via erudita (como fica evidenciado pela conservação do -u- postônico). No latim científico, *caruncula* parece ter sido empregada para nomear diversas estruturas anatômicas. Por exemplo, a expressão “caruncula lacrymalis” é empregada para nomear as estruturas que produzem as lágrimas no “Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ); na obra “An Anatomical Exposition of the Structure of the Human Body”, de James Benignus Winslow (1756 - https://www.google.com.br/books/edition/An_Anatomical_Exposition_of_the_Structur/vq-wTrSjhGQC), *caruncula* designa uma estrutura presente na próstata. Assim, Vandelli provavelmente buscou esse termo no latim científico para designar diversas estruturas anatômicas animais."@pt .
 # São duas entradas: carúncula e carúncula seminal. Cada uma tem um étimo diferente? É preciso pensar em como registrar os étimos de formas multipalavra.
-dbres:entry_caruncula_sense1 a ontolex:LexicalSense ;
+dbres:entry_caruncula_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ" ;
-    ontolex:writtenRep "caruncula" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_caruncula_lat ;
+    ontolex:sense dbres:entry_caruncula_lat_sense1 .
+
+dbres:form_caruncula_lat a ontolex:Form ;
+    ontolex:writtenRep "caruncula"@la .
+
+dbres:entry_caruncula_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_caruncula_lat_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_caruncula_lat_sense1 a dicbio:Attestation ;
+    dcterms:source "“Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:entry_caruncula_seminal_sense1 a ontolex:LexicalSense ;
     dcterms:language "português" ;
@@ -54,7 +71,7 @@ dbres:form_caruncula a ontolex:Form ;
         "carúncula"@pt .
 
 dbres:form_carunculas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Carunculas"@pt,
         "carunculas"@pt .
 

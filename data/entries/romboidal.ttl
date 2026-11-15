@@ -21,6 +21,7 @@
 ### --- VERBETE: ROMBOIDAL ---
 
 dbres:entry_romboidal a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -31,10 +32,25 @@ dbres:etym_romboidal_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_rhomboidalis_sense1 ;
     dicbio:etymologicalArgumentation "O Dicionário Houaiss afirma se tratar de uma derivação sufixal a partir do substantivo *romboide*, com o acréscimo do sufixo *-al*. O Trésor de la Langue Française afirma que o francês *rhomboïdal* é atestado desde 1671, forma essa que pode ter influenciado a forma portuguesa."@pt .
 
-dbres:entry_rhomboidalis_sense1 a ontolex:LexicalSense ;
+dbres:entry_rhomboidalis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Index Testarum Conchyliorum\" de Gualtieri, 1742 (https://www.google.com.br/books/edition/Index_testarvm_conchyliorvm_qvae_adserva/HoRSuCDGWyIC)" ;
-    ontolex:writtenRep "rhomboidalis" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_rhomboidalis ;
+    ontolex:sense dbres:entry_rhomboidalis_sense1 .
+
+dbres:form_rhomboidalis a ontolex:Form ;
+    ontolex:writtenRep "rhomboidalis"@la .
+
+dbres:entry_rhomboidalis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_rhomboidalis_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_rhomboidalis_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Index Testarum Conchyliorum\" de Gualtieri, 1742 (https://www.google.com.br/books/edition/Index_testarvm_conchyliorvm_qvae_adserva/HoRSuCDGWyIC)" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_romboidal a ontolex:Form ;
     ontolex:writtenRep "romboidal"@pt .

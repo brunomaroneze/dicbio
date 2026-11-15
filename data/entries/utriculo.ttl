@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia da acepção 2
 
 dbres:entry_utriculo a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-10-03"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:luana_borges ;
@@ -36,16 +37,32 @@ dbres:etym_utriculo_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_utriculus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *utriculus*, atestado com o sentido de \"espécie de vaso dos vegetais\" já no século XVII (por exemplo, na obra de Colbert \"Philosophia Vetus et Nova...\", 1682 - https://www.google.com.br/books/edition/PHILOSOPHIA_VETUS_ET_NOVA/S50tZqHVDCkC). Segundo os dicionários Gaffiot e Oxford Latin Dictionary, *utriculus* já aparece na Antiguidade, empregado por Plínio com o sentido de \"casca de certas sementes\". O latim científico pode ter recuperado esse emprego. Em latim, é o diminutivo de *uter, utris*, que significa \"odre, bolsa de couro\".<br>A descrição que Brotero faz do utrículo nos vegetais é confusa. Aparentemente, Brotero entende que há dois tipos de utrículos, os internos e os externos, conforme está descrito na nota de rodapé (c) (p. 253): \"Os utriculos considerados em geral podem ser divididos em internos e externos; os internos dependem da dissecçaõ, e microscopio para se poderem observar, elles saõ destinados à preparaçaõ dos succos proprios, e digestaõ dos succos nutritivos; os externos saõ os que se achaõ na superficie dos vegetaes, huns saõ pouco apparentes, dos quaes ja fiz mençaõ debaixo do nome glandulas utriculares, outros saõ assaz apparentes de modo que ainda mesmo sem lente se podem observar [...].\" Indicamos esses dois tipos como as acepções 1 e 2. Na primeira acepção, parece ser um sinônimo de \"parênquima\", e muito provavelmente deixou de ser empregado com esse sentido na Botânica atual; na segunda acepção, parece ser empregado ainda hoje."@pt .
 
-dbres:entry_utriculus_sense1 a ontolex:LexicalSense ;
+dbres:entry_utriculus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:luana_borges ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Colbert \"Philosophia Vetus et Nova...\", 1682 - https://www.google.com.br/books/edition/PHILOSOPHIA_VETUS_ET_NOVA/S50tZqHVDCkC" ;
-    ontolex:writtenRep "utriculus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_utriculus ;
+    ontolex:sense dbres:entry_utriculus_sense1 .
+
+dbres:form_utriculus a ontolex:Form ;
+    ontolex:writtenRep "utriculus"@la .
+
+dbres:entry_utriculus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_utriculus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_utriculus_sense1 a dicbio:Attestation ;
+    dcterms:source "Colbert \"Philosophia Vetus et Nova...\", 1682 - https://www.google.com.br/books/edition/PHILOSOPHIA_VETUS_ET_NOVA/S50tZqHVDCkC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_utriculo a ontolex:Form ;
     ontolex:writtenRep "utrículo"@pt .
 
 dbres:form_utriculos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Utriculos"@pt,
         "utriculos"@pt .
 

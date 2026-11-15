@@ -21,6 +21,7 @@
 ### --- VERBETE: ESCAMOSO ---
 
 dbres:entry_escamoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,16 +34,31 @@ dbres:etym_escamoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_squamosus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *squamosus, -a, -um* no sentido de “coberto de escamas”, já empregado no latim científico do século XVIII, como atesta a própria citação de Vandelli. O emprego na Botânica foi possivelmente introduzido na língua portuguesa por Vandelli."@pt .
 
-dbres:entry_squamosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_squamosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "squamosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_squamosus ;
+    ontolex:sense dbres:entry_squamosus_sense1 .
+
+dbres:form_squamosus a ontolex:Form ;
+    ontolex:writtenRep "squamosus"@la .
+
+dbres:entry_squamosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_squamosus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_squamosus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_escamoso a ontolex:Form ;
     ontolex:writtenRep "escamoso"@pt .
 
 dbres:form_escamosa a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Escamosa"@pt,
         "escamosa"@pt .
 

@@ -22,6 +22,7 @@
 ### --- VERBETE: BILE ---
 
 dbres:entry_bile a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2024-05-07"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:fabiani_goncalves ;
@@ -34,10 +35,25 @@ dbres:etym_bile_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_bilis_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *bilis*, já atestado desde a Antiguidade com o sentido de \"fluido secretado pelo fígado\" (conforme mostra o Oxford Latin Dictionary). A conservação do -l- intervocálico e a data tardia de registro na língua portuguesa indicam tratar-se de palavra erudita, que certamente entrou na língua por meio do latim científico."@pt .
 
-dbres:entry_bilis_sense1 a ontolex:LexicalSense ;
+dbres:entry_bilis a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "bilis" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_bilis ;
+    ontolex:sense dbres:entry_bilis_sense1 .
+
+dbres:form_bilis a ontolex:Form ;
+    ontolex:writtenRep "bilis"@la .
+
+dbres:entry_bilis_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_bilis_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_bilis_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_bile a ontolex:Form ;
     ontolex:writtenRep "bile"@pt .

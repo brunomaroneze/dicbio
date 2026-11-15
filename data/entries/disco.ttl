@@ -22,6 +22,7 @@
 ### Falta revisar a etimologia para as acepções 2 e 3
 
 dbres:entry_disco a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -35,10 +36,25 @@ dbres:etym_disco_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_discus_sense1 ;
     dicbio:etymologicalArgumentation "Conforme informa o Dicionário Houaiss, o étimo é o latim *discus,i*, adaptação do grego *dískos,ou*, que significa \"peso, prato, objeto de lançamento em exercícios de força\". Conforme se observa na obra de Vandelli, o termo latino *discus* já era empregado no latim científico no âmbito da Botânica e da Zoologia. O termo português é empregado por Vandelli em pelo menos três acepções diferentes, duas delas na Botânica."@pt .
 
-dbres:entry_discus_sense1 a ontolex:LexicalSense ;
+dbres:entry_discus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Dicionário Houaiss" ;
-    ontolex:writtenRep "discus" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_discus ;
+    ontolex:sense dbres:entry_discus_sense1 .
+
+dbres:form_discus a ontolex:Form ;
+    ontolex:writtenRep "discus"@la .
+
+dbres:entry_discus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_discus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_discus_sense1 a dicbio:Attestation ;
+    dcterms:source "Dicionário Houaiss" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_disco a ontolex:Form ;
     ontolex:writtenRep "disco"@pt .

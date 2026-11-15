@@ -21,6 +21,7 @@
 ### --- VERBETE: JARDIM_BOTANICO ---
 
 dbres:entry_jardim_botanico a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -48,7 +49,7 @@ dbres:form_jardim_botanico a ontolex:Form ;
         "jardim botânico"@pt .
 
 dbres:form_jardins_botanicos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "BOTANICOS"@pt,
         "Botanicos"@pt,
         "JARDINS BOTANICOS"@pt,

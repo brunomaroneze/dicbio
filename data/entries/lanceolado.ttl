@@ -21,6 +21,7 @@
 ### --- VERBETE: LANCEOLADO ---
 
 dbres:entry_lanceolado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -33,20 +34,36 @@ dbres:etym_lanceolado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_lanceolatus_sense1 ;
     dicbio:etymologicalArgumentation "*Lanceolado* tem como étimo o latim *lanceolatus* (atestado desde a Antiguidade, conforme se observa em Gaffiot); sendo assim, *lanceolado* é um decalque advindo do latim. Poder-se-ia considerar o substantivo lança como sendo a base morfológica; mas a forma em -*eol*- indica a recuperação da forma latina *lanceola* (diminutivo de *lancea*, “lança”). Dessa forma, em português não parece ser possível estabelecer uma relação de base e derivado entre *lança* e *lanceolado*."@pt .
 
-dbres:entry_lanceolatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_lanceolatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "lanceolatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_lanceolatus ;
+    ontolex:sense dbres:entry_lanceolatus_sense1 .
+
+dbres:form_lanceolatus a ontolex:Form ;
+    ontolex:writtenRep "lanceolatus"@la .
+
+dbres:entry_lanceolatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_lanceolatus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_lanceolatus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_lanceolado a ontolex:Form ;
     ontolex:writtenRep "lanceolado"@pt .
 
 dbres:form_lanceolada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "lanceolada"@pt .
 
 dbres:form_lanceoladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Lanceoladas"@pt,
         "lanceoladas"@pt .
 

@@ -21,6 +21,7 @@
 ### --- VERBETE: ELONGADO ---
 
 dbres:entry_elongado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -33,16 +34,32 @@ dbres:etym_elongado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_elongatus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é, muito provavelmente, o latim *elongatus* (particípio do verbo latino *elongo, are*, atestado, segundo o dicionário de Gaffiot, no texto da Vulgata); assim, trata-se de um decalque do latim. É possível hipotetizar que o verbo *elongar* seja uma retroformação a partir de *elongado*, mas sem datações confiáveis para o verbo, ainda não é possível afirmar com certeza."@pt .
 
-dbres:entry_elongatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_elongatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_gaffiot ;
-    ontolex:writtenRep "elongatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_elongatus ;
+    ontolex:sense dbres:entry_elongatus_sense1 .
+
+dbres:form_elongatus a ontolex:Form ;
+    ontolex:writtenRep "elongatus"@la .
+
+dbres:entry_elongatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_elongatus_sense1_gaffiot .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_elongatus_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_elongado a ontolex:Form ;
     ontolex:writtenRep "elongado"@pt .
 
 dbres:form_elongada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "elongada"@pt .
 
 dbres:entry_elongado_sense1 a ontolex:LexicalSense ;

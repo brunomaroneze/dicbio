@@ -21,6 +21,7 @@
 ### --- VERBETE: FITOLOGIA ---
 
 dbres:entry_fitologia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-12-05"^^xsd:date ;
     dcterms:creator dbauth:dannielly_rodrigues_silva,
         dbauth:bruno_maroneze ;
@@ -34,10 +35,26 @@ dbres:etym_fitologia_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_phytologia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *phytologia*, empregado já no século XVII (como, por exemplo, na obra “Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ). Em latim, é formada pelos elementos de origem grega *phyto-* (planta) e *-logia* (discurso). O fato de não ser atestado nos dicionários de latim e grego referentes ao período da Antiguidade revela tratar-se de uma inovação do latim científico, a partir do qual passou ao português.<br>Em português, não é tão usada quanto o seu sinônimo “Botânica”."@pt .
 
-dbres:entry_phytologia_sense1 a ontolex:LexicalSense ;
+dbres:entry_phytologia a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:dannielly_rodrigues_silva ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" ;
-    ontolex:writtenRep "phytologia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_phytologia_lat ;
+    ontolex:sense dbres:entry_phytologia_sense1 .
+
+dbres:form_phytologia_lat a ontolex:Form ;
+    ontolex:writtenRep "phytologia"@la .
+
+dbres:entry_phytologia_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_phytologia_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_phytologia_sense1 a dicbio:Attestation ;
+    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_fitologia a ontolex:Form ;
     ontolex:writtenRep "Fitologia"@pt .

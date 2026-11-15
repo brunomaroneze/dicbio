@@ -22,6 +22,7 @@
 ### --- VERBETE: BRACTEA ---
 
 dbres:entry_bractea a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -32,13 +33,27 @@ dbres:entry_bractea a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bractea_sense1 .
 
 dbres:etym_bractea_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_bractea_sense1 ;
+    dicbio:semanticEtymon dbres:entry_bractea_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *bractea*, já com o sentido usual da Botânica. No latim da Antiguidade, conforme informa o dicionário de Gaffiot, a palavra designava \"folha de metal, de ouro\"."@pt .
 
-dbres:entry_bractea_sense1 a ontolex:LexicalSense ;
+dbres:entry_bractea_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "bractea" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_bractea_lat ;
+    ontolex:sense dbres:entry_bractea_lat_sense1 .
+
+dbres:form_bractea_lat a ontolex:Form ;
+    ontolex:writtenRep "bractea"@la .
+
+dbres:entry_bractea_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_bractea_lat_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_bractea_lat_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_bractea a ontolex:Form ;
     ontolex:writtenRep "bractea"@pt,
@@ -46,7 +61,7 @@ dbres:form_bractea a ontolex:Form ;
         "bráctea"@pt .
 
 dbres:form_bracteas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Bracteas"@pt,
         "Bractéas"@pt,
         "bracteas"@pt,

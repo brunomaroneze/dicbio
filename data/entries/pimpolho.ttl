@@ -21,6 +21,7 @@
 ### --- VERBETE: PIMPOLHO ---
 
 dbres:entry_pimpolho a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:masculine ;
@@ -42,7 +43,7 @@ dbres:form_pimpolho a ontolex:Form ;
     ontolex:writtenRep "pimpolho"@pt .
 
 dbres:form_pimpolhos a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "Pimpolhos"@pt,
         "pimpolhos"@pt .
 

@@ -21,6 +21,7 @@
 ### --- VERBETE: VERTICILADO ---
 
 dbres:entry_verticilado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-25"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:kamila_barbosa ;
@@ -36,29 +37,49 @@ dbres:etym_verticilado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_verticillatus_sense1 ;
     dicbio:etymologicalArgumentation "Há duas possibilidades de descrição do étimo: 1 - pode ser analisado como um decalque do latim *verticillatus*, já empregado em textos em latim científico do século XVII (como, por exemplo, na obra \"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ); ou 2 - como adjetivo derivado do substantivo *verticilo* acrescido do sufixo -*ado*, visto que o substantivo já é empregado por Brotero em 1788; assim, no momento da elaboração do dicionário de Vandelli e da obra de Brotero, há a possibilidade de os autores terem utilizado o recurso da própria língua portuguesa para introduzir a palavra na língua através do processo de derivação."@pt .
 
-dbres:entry_verticillatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_verticillatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "\"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ" ;
-    ontolex:writtenRep "verticillatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_verticillatus ;
+    ontolex:sense dbres:entry_verticillatus_sense1 .
+
+dbres:form_verticillatus a ontolex:Form ;
+    ontolex:writtenRep "verticillatus"@la .
+
+dbres:entry_verticillatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_verticillatus_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_verticillatus_sense1 a dicbio:Attestation ;
+    dcterms:source "\"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_verticilado a ontolex:Form ;
     ontolex:writtenRep "verticilado"@pt .
 
 dbres:form_verticiladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "verticiladas"@pt .
 
 dbres:form_verticillada a ontolex:Form ;
-    rdfs:label "feminino singular"@pt ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Verticillada"@pt .
 
 dbres:form_verticilladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "Verticilladas"@pt,
         "verticilladas"@pt .
 
 dbres:form_verticillados a ontolex:Form ;
-    rdfs:label "masculino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:masculine ;
     ontolex:writtenRep "Verticillados"@pt,
         "verticillados"@pt .
 

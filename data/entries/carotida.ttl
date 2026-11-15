@@ -21,6 +21,7 @@
 ### --- VERBETE: CAROTIDA ---
 
 dbres:entry_carotida a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2025-09-12"^^xsd:date ;
     dcterms:creator dbauth:ana_cristina_lopes,
         dbauth:bruno_maroneze ;
@@ -35,13 +36,28 @@ dbres:etym_carotida_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_carotides_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é a forma latina *carotides, um*, que, segundo o Oxford Latin Dictionary, já é atestado com o sentido de \"artéria do pescoço\" na obra de Aulo Cornélio Celso (séc. I d.C.). O termo em latim é claramente um empréstimo do grego καρωτίδες, que, segundo o dicionário de Liddell, Scott e Jones, também já era empregado com o mesmo sentido por autores da Antiguidade, como Galeno e Areteu da Capadócia. Esse dicionário ainda afirma que Rufo de Éfeso associa o termo ao verbo καρόω \"atordoar, causar adormecimento\", devido ao efeito conseguido pela compressão dessas artérias.<br>Ainda que o termo seja empregado desde a Antiguidade, sua forma na língua portuguesa é claramente erudita (evidenciada pela conservação das consoantes -t- e -d- intervocálicas), ou seja, o termo entrou na língua portuguesa certamente por meio de textos em latim científico."@pt .
 
-dbres:entry_carotides_sense1 a ontolex:LexicalSense ;
+dbres:entry_carotides a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:ana_cristina_lopes,
+        dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "carotides" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_carotides ;
+    ontolex:sense dbres:entry_carotides_sense1 .
+
+dbres:form_carotides a ontolex:Form ;
+    ontolex:writtenRep "carotides"@la .
+
+dbres:entry_carotides_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_carotides_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_carotides_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_carotida a ontolex:Form ;
-    rdfs:label "adjetivo singular"@pt ;
+    lexinfo:number lexinfo:singular ;
     ontolex:writtenRep "Carotida"@pt,
         "carótida"@pt .
 

@@ -21,6 +21,7 @@
 ### --- VERBETE: OCELADO ---
 
 dbres:entry_ocelado a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-09-15"^^xsd:date ;
     dcterms:creator dbauth:kamila_barbosa ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_ocelado_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_ocellatus_sense1 ;
     dicbio:etymologicalArgumentation "*Ocelado* tem como étimo o latim *ocellatus*. O termo *ocelado* é considerado um decalque advindo do latim, pois, apesar de ter uma base morfológica na língua portuguesa, a datação encontrada para ela é de 1881, ou seja, uma datação posterior a escrita do dicionário de Vandelli (1788). Portanto, no momento da elaboração do dicionário, Vandelli não teria a possibilidade de utilizar o substantivo ocelo para formar uma derivação com o sufixo -*ado*, tendo em vista que essa palavra ainda não fazia parte do vocabulário da língua portuguesa."@pt .
 
-dbres:entry_ocellatus_sense1 a ontolex:LexicalSense ;
+dbres:entry_ocellatus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:kamila_barbosa ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "ocellatus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_ocellatus ;
+    ontolex:sense dbres:entry_ocellatus_sense1 .
+
+dbres:form_ocellatus a ontolex:Form ;
+    ontolex:writtenRep "ocellatus"@la .
+
+dbres:entry_ocellatus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_ocellatus_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_ocellatus_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_ocelado a ontolex:Form ;
     ontolex:writtenRep "ocelado"@pt .
 
 dbres:form_ocelladas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "ocelladas"@pt .
 
 dbres:entry_ocelado_sense1 a ontolex:LexicalSense ;

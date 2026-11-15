@@ -21,6 +21,7 @@
 ### --- VERBETE: VERRUCOSO ---
 
 dbres:entry_verrucoso a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-04-13"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:partOfSpeech lexinfo:adjective ;
@@ -32,16 +33,31 @@ dbres:etym_verrucoso_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_verrucosus_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *verrucosus,a,um*, que significa “que tem verrugas”, atestado desde a Antiguidade (conforme atesta o Oxford Latin Dictionary). O sentido de “semelhante a uma verruga”, que é o encontrado em Vandelli (1788), é possivelmente do latim científico."@pt .
 
-dbres:entry_verrucosus_sense1 a ontolex:LexicalSense ;
+dbres:entry_verrucosus a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:source_old ;
-    ontolex:writtenRep "verrucosus" .
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_verrucosus ;
+    ontolex:sense dbres:entry_verrucosus_sense1 .
+
+dbres:form_verrucosus a ontolex:Form ;
+    ontolex:writtenRep "verrucosus"@la .
+
+dbres:entry_verrucosus_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_verrucosus_sense1_old .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_verrucosus_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_verrucoso a ontolex:Form ;
     ontolex:writtenRep "verrucoso"@pt .
 
 dbres:form_verrucosas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:gender lexinfo:feminine ;
     ontolex:writtenRep "verrucosas"@pt .
 
 dbres:entry_verrucoso_sense1 a ontolex:LexicalSense ;

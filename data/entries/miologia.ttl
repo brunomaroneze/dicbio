@@ -21,6 +21,7 @@
 ### --- VERBETE: MIOLOGIA ---
 
 dbres:entry_miologia a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-08-23"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:rafaela_domingos ;
@@ -34,10 +35,26 @@ dbres:etym_miologia_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_myologia_sense1 ;
     dicbio:etymologicalArgumentation "Trata-se de um cultismo formado pelos elementos de composição de origem grega *mi(o)-* (do grego *mûs, muós* - μῦς, μυός -, “rato”, “músculo”) e *-logia* (indicativo de “ciência”, “arte”, “tratado”). A forma “myologia” é atestada em latim científico desde pelo menos o século XVII (como se observa na obra de Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC). A palavra provavelmente se disseminou a partir do latim científico para as demais línguas europeias."@pt .
 
-dbres:entry_myologia_sense1 a ontolex:LexicalSense ;
+dbres:entry_myologia a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:rafaela_domingos ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC" ;
-    ontolex:writtenRep "myologia" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_myologia_lat ;
+    ontolex:sense dbres:entry_myologia_sense1 .
+
+dbres:form_myologia_lat a ontolex:Form ;
+    ontolex:writtenRep "myologia"@la .
+
+dbres:entry_myologia_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_myologia_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_myologia_sense1 a dicbio:Attestation ;
+    dcterms:source "Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_miologia a ontolex:Form ;
     ontolex:writtenRep "Miologia"@pt .

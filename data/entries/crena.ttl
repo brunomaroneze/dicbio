@@ -21,6 +21,7 @@
 ### --- VERBETE: CRENA ---
 
 dbres:entry_crena a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2022-02-28"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze ;
     lexinfo:gender lexinfo:feminine ;
@@ -30,19 +31,33 @@ dbres:entry_crena a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_crena_sense1 .
 
 dbres:etym_crena_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_crena_sense1 ;
+    dicbio:semanticEtymon dbres:entry_crena_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim científico *crena,ae*, com o mesmo significado, conforme se observa na própria obra de Vandelli. O Dicionário Houaiss afirma que a palavra era empregada no latim tardio com o sentido de “entalhe, fenda”."@pt .
 
-dbres:entry_crena_sense1 a ontolex:LexicalSense ;
+dbres:entry_crena_lat a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source dbsrc:work_diciovandelli ;
-    ontolex:writtenRep "crena" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_crena_lat ;
+    ontolex:sense dbres:entry_crena_lat_sense1 .
+
+dbres:form_crena_lat a ontolex:Form ;
+    ontolex:writtenRep "crena"@la .
+
+dbres:entry_crena_lat_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_crena_lat_sense1_diciovandelli .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_crena_lat_sense1_diciovandelli a dicbio:Attestation ;
+    dcterms:source dbsrc:work_diciovandelli .
+    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
 
 dbres:form_crena a ontolex:Form ;
     ontolex:writtenRep "crena"@pt .
 
 dbres:form_crenas a ontolex:Form ;
-    rdfs:label "plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "crenas"@pt .
 
 dbres:entry_crena_sense1 a ontolex:LexicalSense ;

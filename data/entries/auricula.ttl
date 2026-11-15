@@ -77,7 +77,7 @@ dbres:entry_auricula_lat a ontolex:LexicalEntry ;
     ontolex:canonicalForm dbres:form_auricula_lat ;
     ontolex:sense dbres:entry_auricula_lat_sense1, 
         dbres:entry_auricula_lat_sense2 ;
-    skos:exactMatch <https://lila-erc.eu/data/id/lemma/90761> .
+    dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/90761> .
 
 dbres:form_auricula_lat a ontolex:Form ;
     ontolex:writtenRep "auricula"@la .

@@ -22,6 +22,7 @@
 ### Falta acertar a etimologia das acepções 2 e 3
 
 dbres:entry_papila a ontolex:LexicalEntry ;
+    dcterms:language glotto:port1283 ;
     dcterms:created "2023-10-30"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
         dbauth:matheus_casarin ;
@@ -37,16 +38,32 @@ dbres:etym_papila_sense1 a lemonety:Etymology ;
     dicbio:semanticEtymon dbres:entry_papilla_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *papilla*, que significava, na Antiguidade, “mamilo, bico do seio” (conforme informa o Oxford Latin Dictionary). A forma portuguesa entrou por via erudita, como se percebe pela conservação do -p- intervocálico.<br>O emprego da palavra no latim científico, com sentido diferente do original, é atribuído a Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/)."@pt .
 
-dbres:entry_papilla_sense1 a ontolex:LexicalSense ;
+dbres:entry_papilla a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-15"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:matheus_casarin ;  # REVISAR: criadores copiados da entrada principal
     dcterms:language glotto:lati1261 ;
-    dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" ;
-    ontolex:writtenRep "papilla" .
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    ontolex:canonicalForm dbres:form_papilla ;
+    ontolex:sense dbres:entry_papilla_sense1 .
+
+dbres:form_papilla a ontolex:Form ;
+    ontolex:writtenRep "papilla"@la .
+
+dbres:entry_papilla_sense1 a ontolex:LexicalSense ;
+    dicbio:hasAttestation dbres:attestation_papilla_sense1 .
+    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+
+dbres:attestation_papilla_sense1 a dicbio:Attestation ;
+    dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" .
+    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
+    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
 
 dbres:form_papila a ontolex:Form ;
     ontolex:writtenRep "papila"@pt .
 
 dbres:form_papillas a ontolex:Form ;
-    rdfs:label "feminino plural"@pt ;
+    lexinfo:number lexinfo:plural ;
     ontolex:writtenRep "papillas"@pt .
 
 dbres:entry_papila_sense1 a ontolex:LexicalSense ;
