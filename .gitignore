@@ -38,3 +38,6 @@ ferramentas/
 
 # Testes de consistência com o ROBOT
 scripts/robot_consultas/
+
+# Obras de referência
+ferramentas/lexicos/
