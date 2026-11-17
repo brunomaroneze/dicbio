@@ -20,7 +20,6 @@ dicbio/__pycache__/
 .env
 db.sqlite3
 *.sqlite3
-db.sqlite3-journal
 venv/
 venv_old/
 staticfiles/
@@ -31,3 +30,11 @@ ngrams_original_text.csv
 ngrams_stopwords_removed.csv
 .idea/
 data/termos_extraidos.csv
+
+# ROBOT: ferramenta baixada e relatórios gerados por scripts/testes_robot.py
+ferramentas/robot/robot.jar
+relatorios/robot/*/
+ferramentas/
+
+# Obras de referência
+ferramentas/lexicos/
