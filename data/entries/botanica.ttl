@@ -34,15 +34,21 @@ dbres:entry_botanica a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_botanica_sense1 .
 
 dbres:etym_botanica_sense1 a lemonety:Etymology ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): argumentação própria do projeto; a Institutio Philosophica e o LSJ só atestam
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): étimo no latim científico
+    dicbio:confidenceLevel dicbio:certain ;  # REVISAR (skill): "O étimo é, certamente, o latim científico Botanica", com atestação de mesmo sentido
     dicbio:semanticEtymon dbres:entry_botanica_lat_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é, certamente, o latim científico *Botanica*, já empregado com o sentido de \"ciência dos vegetais\" desde o século XVII (cf., por exemplo, a obra \"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"). O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (*botanikós*) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."@pt .
 
 dbres:entry_botanica_lat a ontolex:LexicalEntry ;
     dcterms:created "2026-11-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
-        dbauth:raissa_buss ;  # REVISAR: criadores copiados da entrada principal
+        dbauth:raissa_buss ;
     dcterms:language glotto:lati1261 ;
-    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR (skill): não está no L&S; substantivo feminino (feminino substantivado do adjetivo grego, conforme a argumentação)
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dbres:form_botanica_lat ;
     ontolex:sense dbres:entry_botanica_lat_sense1 .
 
@@ -50,15 +56,44 @@ dbres:form_botanica_lat a ontolex:Form ;
     ontolex:writtenRep "Botanica"@la .
 
 dbres:entry_botanica_lat_sense1 a ontolex:LexicalSense ;
-    dicbio:hasAttestation dbres:attestation_botanica_lat_sense1 .
-    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+    skos:definition "Ciência dos vegetais."@pt ;  # REVISAR (skill): glosa dada na argumentação ("Botanica, seu plantarum scientia")
+    dicbio:hasAttestation dbres:attestation_botanica_lat_sense1_pourchot ;
+    lemonety:etymology dbres:etym_botanica_lat .
 
-dbres:attestation_botanica_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
+dbres:attestation_botanica_lat_sense1_pourchot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_pourchot_institutio_philosophica_1700 ;
+    skos:note "Na *Institutio Philosophica*, p. 291, lê-se \"Botanica, seu plantarum scientia\"."@pt ;
     dicbio:attestationDate "1700"^^xsd:gYear .
-    # NOTA (datas): O étimo latino é do latim científico e está atestado na obra "Institutio Philosophica..." de 1700. O étimo do latim é o adjetivo grego βοτανικός, atestado em Plutarco (Quaestiones convivales), aprox. 100 d.C.
-    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...)
+
+dbres:etym_botanica_lat a lemonety:Etymology ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): a argumentação do verbete propõe a origem grega; o LSJ só atesta βοτανικός
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): "deriva da forma feminina do adjetivo grego βοτανικός"
+    dicbio:semanticEtymon dbres:entry_botanikos_sense1 ;
+    dicbio:etymologicalArgumentation "O emprego em latim científico deriva da forma feminina do adjetivo grego βοτανικός (*botanikós*) \"relativo às ervas\", atestado desde a Antiguidade (conforme informa o dicionário de Liddell, Scott e Jones)."@pt ;  # REVISAR (skill): trecho copiado sem alteração da argumentação do verbete
+    dicbio:confidenceLevel dicbio:probable .  # REVISAR (skill): afirmação direta com apoio do LSJ
+
+dbres:entry_botanikos a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-17"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:raissa_buss ;
+    dcterms:language glotto:gree1276 ;
+    lexinfo:partOfSpeech lexinfo:adjective ;
+    ontolex:canonicalForm dbres:form_botanikos ;
+    ontolex:sense dbres:entry_botanikos_sense1 .
+
+dbres:form_botanikos a ontolex:Form ;
+    ontolex:writtenRep "βοτανικός"@grc .
+
+dbres:entry_botanikos_sense1 a ontolex:LexicalSense ;
+    skos:definition "Relativo às ervas."@pt ;  # REVISAR (skill): glosa dada na argumentação
+    dicbio:hasAttestation dbres:attestation_botanikos_sense1_lsj .
+
+dbres:attestation_botanikos_sense1_lsj a dicbio:Attestation ;
+    dcterms:source dbsrc:source_LSJ ;
+    skos:note "O dicionário de Liddell, Scott e Jones abona o termo nas *Quaestiones convivales* de Plutarco (c. 100 d.C.)."@pt ;
+    dicbio:attestationDate "0100"^^xsd:gYear .  # REVISAR (skill): ano aproximado (c. 100 d.C.), dado na nota da planilha de datas
 
 dbres:form_botanica a ontolex:Form ;
     ontolex:writtenRep "BOTANICA"@pt,

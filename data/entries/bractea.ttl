@@ -33,28 +33,42 @@ dbres:entry_bractea a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bractea_sense1 .
 
 dbres:etym_bractea_sense1 a lemonety:Etymology ;
-    dicbio:semanticEtymon dbres:entry_bractea_lat_sense1 ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): argumentação própria do projeto; o Gaffiot só informa o sentido antigo
+    dcterms:creator dbauth:bruno_maroneze ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): étimo no latim científico
+    dicbio:confidenceLevel dicbio:probable ;  # REVISAR (skill): "O étimo é o latim científico bractea" afirmado sem ressalva, com atestação em Vandelli
+    dicbio:semanticEtymon dbres:entry_bractea_lat_sense2 ;  # REVISAR (skill): aponta para a acepção científica (sense2); sense1 é a da Antiguidade
     dicbio:etymologicalArgumentation "O étimo é o latim científico *bractea*, já com o sentido usual da Botânica. No latim da Antiguidade, conforme informa o dicionário de Gaffiot, a palavra designava \"folha de metal, de ouro\"."@pt .
 
 dbres:entry_bractea_lat a ontolex:LexicalEntry ;
     dcterms:created "2026-11-15"^^xsd:date ;
-    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
-    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR (skill): L&S "bractĕa (also brattĕa), ae, f."
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dbres:form_bractea_lat ;
-    ontolex:sense dbres:entry_bractea_lat_sense1 .
+    ontolex:sense dbres:entry_bractea_lat_sense1,
+        dbres:entry_bractea_lat_sense2 .
 
 dbres:form_bractea_lat a ontolex:Form ;
     ontolex:writtenRep "bractea"@la .
 
+# REVISAR (skill): a nota da planilha diz que a acepção da Antiguidade é outra; separei em duas acepções (uma por sentido)
 dbres:entry_bractea_lat_sense1 a ontolex:LexicalSense ;
-    dicbio:hasAttestation dbres:attestation_bractea_lat_sense1_diciovandelli .
-    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+    skos:definition "Folha de metal, de ouro."@pt ;  # REVISAR (skill): glosa do Gaffiot dada na argumentação
+    dicbio:hasAttestation dbres:attestation_bractea_lat_sense1_gaffiot .
 
-dbres:attestation_bractea_lat_sense1_diciovandelli a dicbio:Attestation ;
+dbres:attestation_bractea_lat_sense1_gaffiot a dicbio:Attestation ;
+    dcterms:source dbsrc:source_gaffiot .
+    # REVISAR (skill): falta o ano; o texto não diz qual autor o Gaffiot cita (o L&S traz Lucrécio e Virgílio)
+
+dbres:entry_bractea_lat_sense2 a ontolex:LexicalSense ;
+    skos:definition "Folha anexa à flor da florada seguinte, que se diferencia, em certos aspectos, das demais folhas."@pt ;  # REVISAR (skill): a argumentação diz "já com o sentido usual da Botânica"; repeti a definição da acepção portuguesa
+    dicbio:hasAttestation dbres:attestation_bractea_lat_sense2_diciovandelli .
+
+dbres:attestation_bractea_lat_sense2_diciovandelli a dicbio:Attestation ;
     dcterms:source dbsrc:work_diciovandelli ;
     dicbio:attestationDate "1788"^^xsd:gYear .
-    # NOTA (datas): A acepção da Antiguidade é outra, o étimo é do latim científico
 
 dbres:form_bractea a ontolex:Form ;
     ontolex:writtenRep "bractea"@pt,

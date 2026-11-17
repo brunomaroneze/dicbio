@@ -30,15 +30,18 @@ dbres:entry_bifido a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bifido_sense1 .
 
 dbres:etym_bifido_sense1 a lemonety:Etymology ;
-    dicbio:etymologicalProcess dicbio:borrowed ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): argumentação própria do projeto; Gaffiot/OLD só atestam o étimo e o Houaiss é citado só pela data
+    dcterms:creator dbauth:bruno_maroneze ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): "palavra erudita", sem as transformações fonéticas de palavra herdada
+    dicbio:confidenceLevel dicbio:certain ;  # REVISAR (skill): "O étimo é certamente o latim bifidus"; o "provavelmente" só diz respeito ao emprego científico como étimo imediato
     dicbio:semanticEtymon dbres:entry_bifidus_sense1 ;
     dicbio:etymologicalArgumentation """O étimo é certamente o latim *bifidus*, registrado no dicionário de Gaffiot e no Oxford Latin Dictionary com a acepção de "dividido em duas partes". Trata-se de palavra erudita, visto que não sofreu as transformações fonéticas esperadas para uma palavra herdada. O emprego do termo latino *bifidus* na Zoologia e na Botânica data do século XVIII e é, provavelmente, o étimo mais imediato da palavra portuguesa. O dicionário Houaiss apresenta a datação de 1827, de uma obra com a sigla PL, mas que não consta nas fontes de datação apresentadas."""@pt .
 
 dbres:entry_bifidus a ontolex:LexicalEntry ;
     dcterms:created "2026-11-14"^^xsd:date ;
-    dcterms:creator dbauth:bruno_maroneze ;  # REVISAR: criadores copiados da entrada principal
+    dcterms:creator dbauth:bruno_maroneze ;
     dcterms:language glotto:lati1261 ;
-    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR: classe copiada da entrada principal
+    lexinfo:partOfSpeech lexinfo:adjective ;  # REVISAR (skill): L&S "bĭfĭdus, a, um, adj."
     dicbio:externalEntry <https://lila-erc.eu/data/id/lemma/91574> ;
     ontolex:canonicalForm dbres:form_bifidus ;
     ontolex:sense dbres:entry_bifidus_sense1 .
@@ -53,13 +56,14 @@ dbres:entry_bifidus_sense1 a ontolex:LexicalSense ;
 
 dbres:attestation_bifidus_sense1_gaffiot a dicbio:Attestation ;
     dcterms:source dbsrc:source_gaffiot ;
+    skos:note "O dicionário de Gaffiot abona o termo *bifidus* nas *Metamorfoses* de Ovídio."@pt ;
     dicbio:attestationDate "0005"^^xsd:gYear .
-    # NOTA (datas): Na obra "Metamorphoses" de Ovídio
 
 dbres:attestation_bifidus_sense1_old a dicbio:Attestation ;
     dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo *bifidus* nas *Metamorfoses* de Ovídio."@pt ;
     dicbio:attestationDate "0005"^^xsd:gYear .
-    # NOTA (datas): Na obra "Metamorphoses" de Ovídio. Os dois dicionários (Gaffiot e OLD) mencionam os mesmos autores
+    # REVISAR (skill): a argumentação diz que o emprego de bifidus na Zoologia e na Botânica é do séc. XVIII, mas não dá a obra; falta a atestação do latim científico
 
 dbres:form_bifido_accent a ontolex:Form ;
     lexinfo:gender lexinfo:masculine ;

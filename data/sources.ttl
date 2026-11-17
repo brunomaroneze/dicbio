@@ -145,3 +145,10 @@ dbsrc:source_manget a bibo:Book ;
     dcterms:issued "1721"^^xsd:gYear ;
     owl:sameAs <https://www.wikidata.org/wiki/Q138375186> ; # URI universal do Manget, criada por nós, pois o Wikidata ainda não tinha um item para essa obra
     dcterms:hasFormat <https://www.google.com.br/books/edition/Jo_Jacobi_Mangeti_Bibliotheca_chirurgica/X3PTgjP_1CMC> .
+
+# Pourchot, Institutio Philosophica (1700)
+dbsrc:source_pourchot_institutio_philosophica_1700 a bibo:Book ;
+    dcterms:title "Institutio philosophica ad faciliorem veterum ac recentiorum philosophorum intelligentiam comparata" ;  # REVISAR (skill): título completo e autoria inferidos do título abreviado no link do Google Livros; conferir a edição de 1700
+    dcterms:creator <https://www.wikidata.org/entity/Q3719426> ;   # Edmond Pourchot (1651-1734)
+    dcterms:issued "1700"^^xsd:gYear ;
+    foaf:page <https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC> .

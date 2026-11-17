@@ -32,15 +32,21 @@ dbres:entry_bile a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_bile_sense1 .
 
 dbres:etym_bile_sense1 a lemonety:Etymology ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): argumentação própria do projeto; o OLD só atesta o étimo
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:fabiani_goncalves ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): "palavra erudita, que certamente entrou na língua por meio do latim científico"
+    dicbio:confidenceLevel dicbio:certain ;  # REVISAR (skill): étimo afirmado sem ressalva, com apoio fonético (-l- intervocálico) e "certamente"; se o "certamente" valer só para a via erudita, baixar para probable (como em caule)
     dicbio:semanticEtymon dbres:entry_bilis_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *bilis*, já atestado desde a Antiguidade com o sentido de \"fluido secretado pelo fígado\" (conforme mostra o Oxford Latin Dictionary). A conservação do -l- intervocálico e a data tardia de registro na língua portuguesa indicam tratar-se de palavra erudita, que certamente entrou na língua por meio do latim científico."@pt .
 
 dbres:entry_bilis a ontolex:LexicalEntry ;
     dcterms:created "2026-11-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
-        dbauth:fabiani_goncalves ;  # REVISAR: criadores copiados da entrada principal
+        dbauth:fabiani_goncalves ;
     dcterms:language glotto:lati1261 ;
-    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR (skill): L&S "bīlis, is", feminino
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dbres:form_bilis ;
     ontolex:sense dbres:entry_bilis_sense1 .
 
@@ -48,13 +54,14 @@ dbres:form_bilis a ontolex:Form ;
     ontolex:writtenRep "bilis"@la .
 
 dbres:entry_bilis_sense1 a ontolex:LexicalSense ;
+    skos:definition "Fluido secretado pelo fígado."@pt ;  # REVISAR (skill): glosa dada na argumentação
     dicbio:hasAttestation dbres:attestation_bilis_sense1_old .
-    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_bilis_sense1_old a dicbio:Attestation ;
     dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo em Plauto, Cícero, Catão e outros autores."@pt ;
     dicbio:attestationDate "-0200"^^xsd:gYear .
-    # NOTA (datas): O OLD cita Plauto, Cícero, Catão e outros.
+    # REVISAR (skill): a argumentação diz que a palavra entrou pelo latim científico, mas não dá a obra; falta a atestação do latim científico
 
 dbres:form_bile a ontolex:Form ;
     ontolex:writtenRep "bile"@pt .

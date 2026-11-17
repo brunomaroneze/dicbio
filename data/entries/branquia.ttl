@@ -33,15 +33,21 @@ dbres:entry_branquia a ontolex:LexicalEntry ;
     ontolex:sense dbres:entry_branquia_sense1 .
 
 dbres:etym_branquia_sense1 a lemonety:Etymology ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): argumentação própria do projeto; OLD e LSJ só atestam e o Houaiss é citado só pela data
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): "certamente palavra erudita"
+    dicbio:confidenceLevel dicbio:certain ;  # REVISAR (skill): étimo afirmado sem ressalva, mesmo sentido desde a Antiguidade, e "certamente palavra erudita"; se o "certamente" valer só para a via erudita, baixar para probable
     dicbio:semanticEtymon dbres:entry_branchia_sense1 ;
     dicbio:etymologicalArgumentation "O étimo é o latim *branchia, ae*, empregado desde a Antiguidade já com o sentido de \"órgão respiratório dos peixes\", conforme atesta o Oxford Latin Dictionary. Em latim, é um empréstimo do grego βράγχια, com o mesmo sentido, que já é atestado em Aristóteles (de acordo com o dicionário de Liddell, Scott e Jones). Em português, é certamente palavra erudita, visto não haver atestação anterior a fins do século XVIII.<br>O dicionário Houaiss informa que a primeira atestação é de 1782 e está registrada no Dicionário Histórico do Português Brasileiro (https://dicionarios.fclar.unesp.br/dhpb/). Trata-se do texto de Francisco Antônio de Sampaio \"Historia dos Reinos Vegetal, Animal, e Mineral do Brazil, pertencente à Medicina\" (https://objdigital.bn.br/objdigital2/acervo_digital/div_manuscritos/mss22949/mss22949.pdf), cujo manuscrito, escrito em 1782, permaneceu sem publicação até 1971, no vol. 89 dos Anais da Biblioteca Nacional (https://hemeroteca-pdf.bn.gov.br/402630/per402630_1969_00089.pdf)."@pt .
 
 dbres:entry_branchia a ontolex:LexicalEntry ;
     dcterms:created "2026-11-15"^^xsd:date ;
     dcterms:creator dbauth:bruno_maroneze,
-        dbauth:sammara_valim_santos ;  # REVISAR: criadores copiados da entrada principal
+        dbauth:sammara_valim_santos ;
     dcterms:language glotto:lati1261 ;
-    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR: classe copiada da entrada principal
+    lexinfo:partOfSpeech lexinfo:noun ;  # REVISAR (skill): não está no L&S; "branchia, ae" na argumentação → substantivo feminino
+    lexinfo:gender lexinfo:feminine ;
     ontolex:canonicalForm dbres:form_branchia ;
     ontolex:sense dbres:entry_branchia_sense1 .
 
@@ -49,15 +55,46 @@ dbres:form_branchia a ontolex:Form ;
     ontolex:writtenRep "branchia"@la .
 
 dbres:entry_branchia_sense1 a ontolex:LexicalSense ;
-    dicbio:hasAttestation dbres:attestation_branchia_sense1 .
-    # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
+    skos:definition "Órgão respiratório dos peixes."@pt ;  # REVISAR (skill): glosa dada na argumentação
+    dicbio:hasAttestation dbres:attestation_branchia_sense1_old ;
+    lemonety:etymology dbres:etym_branchia_lat .
 
-dbres:attestation_branchia_sense1 a dicbio:Attestation ;
-    dcterms:source "OLD/LSJ" ;
+# REVISAR (skill): a fonte "OLD/LSJ" foi separada: o OLD atesta o latim (Plínio) e o LSJ atesta o grego (Aristóteles), na cadeia abaixo
+dbres:attestation_branchia_sense1_old a dicbio:Attestation ;
+    dcterms:source dbsrc:source_old ;
+    skos:note "O Oxford Latin Dictionary abona o termo em Plínio, o Velho."@pt ;
     dicbio:attestationDate "0077"^^xsd:gYear .
-    # NOTA (datas): OLD realmente cita Plínio, o Velho; o LSJ informa que βράγχια está no Historia Animalium de Aristóteles (antes de 322 a.C.)
-    # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...)
+
+dbres:etym_branchia_lat a lemonety:Etymology ;
+    dcterms:source dbsrc:dicbio_project ;  # REVISAR (skill): a origem grega é afirmada na argumentação do verbete; o LSJ só atesta βράγχια
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    dicbio:etymologicalProcess dicbio:borrowed ;  # REVISAR (skill): "Em latim, é um empréstimo do grego βράγχια"
+    dicbio:semanticEtymon dbres:entry_brankhia_sense1 ;
+    dicbio:etymologicalArgumentation "Em latim, é um empréstimo do grego βράγχια, com o mesmo sentido, que já é atestado em Aristóteles (de acordo com o dicionário de Liddell, Scott e Jones)."@pt ;  # REVISAR (skill): trecho copiado sem alteração da argumentação do verbete
+    dicbio:confidenceLevel dicbio:probable .  # REVISAR (skill): afirmação direta com apoio do LSJ
+
+dbres:entry_brankhia a ontolex:LexicalEntry ;
+    dcterms:created "2026-11-17"^^xsd:date ;
+    dcterms:creator dbauth:bruno_maroneze,
+        dbauth:sammara_valim_santos ;
+    dcterms:language glotto:gree1276 ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:neuter ;  # REVISAR (skill): βράγχια, -ων, τά (neutro plural) no LSJ; não está no texto do verbete
+    ontolex:canonicalForm dbres:form_brankhia ;
+    ontolex:sense dbres:entry_brankhia_sense1 .
+
+dbres:form_brankhia a ontolex:Form ;
+    ontolex:writtenRep "βράγχια"@grc .
+
+dbres:entry_brankhia_sense1 a ontolex:LexicalSense ;
+    skos:definition "Órgão respiratório dos peixes."@pt ;  # REVISAR (skill): a argumentação diz "com o mesmo sentido"
+    dicbio:hasAttestation dbres:attestation_brankhia_sense1_lsj .
+
+dbres:attestation_brankhia_sense1_lsj a dicbio:Attestation ;
+    dcterms:source dbsrc:source_LSJ ;
+    skos:note "O dicionário de Liddell, Scott e Jones abona o termo na *Historia Animalium* de Aristóteles (antes de 322 a.C.)."@pt ;
+    dicbio:attestationDate "-0321"^^xsd:gYear .  # REVISAR (skill): 322 a.C. = -0321 na contagem astronômica do xsd:gYear (como -0044 para 45 a.C. em angulado); é data-limite ("antes de")
 
 dbres:form_branquia a ontolex:Form ;
     ontolex:writtenRep "brânquia"@pt .
