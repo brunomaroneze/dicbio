@@ -1,0 +1,11 @@
+# Mais de um rótulo (rdfs:label ou skos:prefLabel) na mesma língua para o mesmo
+# termo. Substitui a regra multiple_labels do ROBOT, que não considera a língua
+# e por isso acusaria todos os termos bilíngues.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  VALUES ?property { rdfs:label skos:prefLabel }
+  ?entity ?property ?value, ?outro .
+  FILTER(isIRI(?entity) && STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/"))
+  FILTER(LANG(?value) = LANG(?outro) && STR(?value) != STR(?outro))
+}

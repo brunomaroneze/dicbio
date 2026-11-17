@@ -1,0 +1,13 @@
+# Conceito SKOS da ontologia DicBio (inclusive instâncias de subclasses de
+# skos:Concept, como dicbio:EtymologicalProcess) sem skos:inScheme.
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  ?entity rdf:type ?tipo .
+  ?tipo rdfs:subClassOf* skos:Concept .
+  FILTER(STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/ontology/"))
+  FILTER NOT EXISTS { ?entity skos:inScheme ?esquema }
+  BIND(skos:inScheme AS ?property)
+  BIND("conceito sem esquema" AS ?value)
+}

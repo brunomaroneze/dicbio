@@ -1,0 +1,16 @@
+# Uso de propriedade cujo valor é um recurso do DicBio com tipo afirmado, mas
+# nenhum desses tipos é o rdfs:range declarado (nem subclasse dele).
+# Como no domínio, o reasoner apenas inferiria o tipo; aqui se mostra onde.
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  ?property rdfs:range ?contradominio .
+  FILTER(isIRI(?contradominio) && ?contradominio != owl:Thing && ?contradominio != rdfs:Resource)
+  ?entity ?property ?alvo .
+  FILTER(isIRI(?entity) && STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/"))
+  FILTER(isIRI(?alvo) && STRSTARTS(STR(?alvo), "https://dicbio.fflch.usp.br/"))
+  ?alvo rdf:type ?t . FILTER(?t != owl:NamedIndividual)
+  FILTER NOT EXISTS { ?alvo rdf:type ?t2 . ?t2 rdfs:subClassOf* ?contradominio }
+  BIND(CONCAT(STR(?alvo), " — contradomínio esperado: ", STR(?contradominio)) AS ?value)
+}

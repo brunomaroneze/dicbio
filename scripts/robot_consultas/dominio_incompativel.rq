@@ -1,0 +1,18 @@
+# Uso de propriedade cujo rdfs:domain declarado não está entre os tipos
+# AFIRMADOS do sujeito (nem entre as superclasses deles).
+# O reasoner não acusa isso como erro: ele simplesmente infere o tipo do
+# domínio para o sujeito. Esta consulta mostra onde isso acontece, para que
+# se confira se a inferência é a desejada.
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  ?property rdfs:domain ?dominio .
+  FILTER(isIRI(?dominio) && ?dominio != owl:Thing && ?dominio != rdfs:Resource)
+  ?entity ?property ?o .
+  FILTER(isIRI(?entity) && STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/")
+         && !STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/ontology/"))
+  ?entity rdf:type ?t . FILTER(?t != owl:NamedIndividual)
+  FILTER NOT EXISTS { ?entity rdf:type ?t2 . ?t2 rdfs:subClassOf* ?dominio }
+  BIND(CONCAT("domínio esperado: ", STR(?dominio)) AS ?value)
+}

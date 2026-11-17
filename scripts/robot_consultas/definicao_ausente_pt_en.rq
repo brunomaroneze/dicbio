@@ -1,0 +1,19 @@
+# Termo da ontologia DicBio sem texto explicativo em português ou em inglês
+# (rdfs:comment para classes e propriedades; skos:definition para conceitos).
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  VALUES ?base { owl:Class owl:ObjectProperty owl:DatatypeProperty skos:Concept skos:ConceptScheme }
+  VALUES ?lingua { "pt" "en" }
+  ?entity rdf:type ?tipo .
+  ?tipo rdfs:subClassOf* ?base .
+  FILTER(STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/ontology/"))
+  FILTER NOT EXISTS {
+    ?entity rdfs:comment|skos:definition ?texto .
+    FILTER(LANG(?texto) = ?lingua)
+  }
+  BIND(rdfs:comment AS ?property)
+  BIND(CONCAT("falta rdfs:comment/skos:definition @", ?lingua) AS ?value)
+}

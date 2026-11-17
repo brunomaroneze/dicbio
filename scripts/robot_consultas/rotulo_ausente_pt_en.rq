@@ -1,0 +1,19 @@
+# Termo da ontologia DicBio (classe, propriedade, conceito ou esquema) sem
+# rótulo (rdfs:label ou skos:prefLabel) em português ou em inglês.
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  VALUES ?base { owl:Class owl:ObjectProperty owl:DatatypeProperty skos:Concept skos:ConceptScheme }
+  VALUES ?lingua { "pt" "en" }
+  ?entity rdf:type ?tipo .
+  ?tipo rdfs:subClassOf* ?base .
+  FILTER(STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/ontology/"))
+  FILTER NOT EXISTS {
+    ?entity rdfs:label|skos:prefLabel ?rotulo .
+    FILTER(LANG(?rotulo) = ?lingua)
+  }
+  BIND(rdfs:label AS ?property)
+  BIND(CONCAT("falta rótulo @", ?lingua) AS ?value)
+}

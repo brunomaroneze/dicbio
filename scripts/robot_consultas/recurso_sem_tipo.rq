@@ -1,0 +1,13 @@
+# Recurso dos dados do DicBio (verbetes, fontes, autores) que aparece como
+# sujeito mas não tem nenhum rdf:type (além do owl:NamedIndividual que o
+# próprio ROBOT/OWLAPI acrescenta).
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  ?entity ?p ?o .
+  FILTER(isIRI(?entity) && STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/")
+         && !STRSTARTS(STR(?entity), "https://dicbio.fflch.usp.br/ontology/"))
+  FILTER NOT EXISTS { ?entity rdf:type ?t . FILTER(?t != owl:NamedIndividual) }
+  BIND(rdf:type AS ?property)
+  BIND("recurso sem tipo" AS ?value)
+}
