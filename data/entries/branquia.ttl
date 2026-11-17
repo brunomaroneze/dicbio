@@ -53,9 +53,11 @@ dbres:entry_branchia_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_branchia_sense1 a dicbio:Attestation ;
-    dcterms:source "OLD/LSJ" .
+    dcterms:source "OLD/LSJ" ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): OLD realmente cita Plínio, o Velho; o LSJ informa que βράγχια está no Historia Animalium de Aristóteles (antes de 322 a.C.)
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_branquia a ontolex:Form ;
     ontolex:writtenRep "brânquia"@pt .

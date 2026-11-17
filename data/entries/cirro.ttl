@@ -54,9 +54,11 @@ dbres:entry_cirrus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_cirrus_sense1 a dicbio:Attestation ;
-    dcterms:source "“A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ" .
+    dcterms:source "“A Botanical Dictionary”, de Colin Milne (1770 - disponível em https://www.google.com.br/books/edition/A_Botanical_Dictionary_Or_Elements_of_Sy/jbZgAAAAcAAJ" ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): A forma "cirrus" já tinha em Plínio o sentido da botânica atual.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_cirro a ontolex:Form ;
     ontolex:writtenRep "cirro"@pt .

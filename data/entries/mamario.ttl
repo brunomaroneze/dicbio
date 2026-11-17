@@ -53,9 +53,10 @@ dbres:entry_mammarius_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_mammarius_sense1 a dicbio:Attestation ;
-    dcterms:source "Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC" .
+    dcterms:source "Jean Riolan, o Jovem (na obra \"Encheiridium Anatomicum et Pathologicum\", 1649 - https://www.google.com.br/books/edition/Encheiridium_anatomicum_et_pathologicum/jt5OvY3EEvIC" ;
+    dicbio:attestationDate "1649"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_mamario a ontolex:Form ;
     ontolex:writtenRep "mamário"@pt .

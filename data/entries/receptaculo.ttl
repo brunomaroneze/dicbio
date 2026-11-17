@@ -50,9 +50,11 @@ dbres:entry_receptaculum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_receptaculum_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Expositio Florum Compositi\", 1760 (https://www.google.com.br/books/edition/Expositio_characteristica_structurae_flo/J_heAAAAcAAJ)" .
+    dcterms:source "\"Expositio Florum Compositi\", 1760 (https://www.google.com.br/books/edition/Expositio_characteristica_structurae_flo/J_heAAAAcAAJ)" ;
+    dicbio:attestationDate "1760"^^xsd:gYear .
+    # NOTA (datas): A acepção da Antiguidade parece diferente da científica.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_receptaculo a ontolex:Form ;
     ontolex:writtenRep "Receptaculo"@pt,

@@ -57,9 +57,11 @@ dbres:entry_tuberculum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_tuberculum_sense1 a dicbio:Attestation ;
-    dcterms:source "“De ingressu ad infirmos” de Júlio César Claudino, 1617 - https://www.google.com.br/books/edition/Iulii_C%C3%A6saris_Claudini_De_ingressu_ad_i/iPcZtI8R6o8C" .
+    dcterms:source "“De ingressu ad infirmos” de Júlio César Claudino, 1617 - https://www.google.com.br/books/edition/Iulii_C%C3%A6saris_Claudini_De_ingressu_ad_i/iPcZtI8R6o8C" ;
+    dicbio:attestationDate "0030"^^xsd:gYear .
+    # NOTA (datas): Datado em Celso.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_tuberculo a ontolex:Form ;
     ontolex:writtenRep "Tuberculo"@pt,

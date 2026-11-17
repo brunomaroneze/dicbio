@@ -54,9 +54,11 @@ dbres:entry_botanica_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_botanica_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" .
+    dcterms:source "\"Institutio Philosophica...\", disponível em https://www.google.com.br/books/edition/Institutio_philosophica_ad_faciliorem_ve/fk4KQkeAgUsC, onde se lê, à p. 291, \"Botanica, seu plantarum scientia\"" ;
+    dicbio:attestationDate "1700"^^xsd:gYear .
+    # NOTA (datas): O étimo latino é do latim científico e está atestado na obra "Institutio Philosophica..." de 1700. O étimo do latim é o adjetivo grego βοτανικός, atestado em Plutarco (Quaestiones convivales), aprox. 100 d.C.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_botanica a ontolex:Form ;
     ontolex:writtenRep "BOTANICA"@pt,

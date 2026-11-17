@@ -55,9 +55,11 @@ dbres:entry_capsula_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_capsula_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Descriptio comparata mvscvlorvm corporis hvmani et qvadrvpedis\", de 1729 (disponível em https://www.google.com.br/books/edition/Descriptio_comparata_mvscvlorvm_corporis/ddihNnLG1asC?hl=pt-BR&gbpv=1&dq=capsulae&pg=PA165&printsec=frontcover)" .
+    dcterms:source "\"Descriptio comparata mvscvlorvm corporis hvmani et qvadrvpedis\", de 1729 (disponível em https://www.google.com.br/books/edition/Descriptio_comparata_mvscvlorvm_corporis/ddihNnLG1asC?hl=pt-BR&gbpv=1&dq=capsulae&pg=PA165&printsec=frontcover)" ;
+    dicbio:attestationDate "1729"^^xsd:gYear .
+    # NOTA (datas): O sentido científico não é diretamente derivado do sentido da antiguidade.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_capsula a ontolex:Form ;
     ontolex:writtenRep "Capsula"@pt,

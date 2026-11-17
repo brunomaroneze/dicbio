@@ -52,9 +52,11 @@ dbres:entry_cotyledon_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_cotyledon_sense1 a dicbio:Attestation ;
-    dcterms:source "Lineu" .
+    dcterms:source "Lineu" ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): A acepção antiga é o nome de uma planta específica. A acepção científica é de 1751 (Lineu)
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_cotiledone a ontolex:Form ;
     ontolex:writtenRep "cotilédone"@pt .

@@ -56,8 +56,9 @@ dbres:entry_calyx_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_calyx_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): O latim calyx deriva do grego, já com o sentido de "envoltório de um fruto".
 
 dbres:form_calice a ontolex:Form ;
     ontolex:writtenRep "cálice"@pt .

@@ -48,9 +48,11 @@ dbres:entry_rhomboidalis_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_rhomboidalis_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Index Testarum Conchyliorum\" de Gualtieri, 1742 (https://www.google.com.br/books/edition/Index_testarvm_conchyliorvm_qvae_adserva/HoRSuCDGWyIC)" .
+    dcterms:source "\"Index Testarum Conchyliorum\" de Gualtieri, 1742 (https://www.google.com.br/books/edition/Index_testarvm_conchyliorvm_qvae_adserva/HoRSuCDGWyIC)" ;
+    dicbio:attestationDate "1742"^^xsd:gYear .
+    # REVISAR (datas): É preciso rever a desrição etimológica.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_romboidal a ontolex:Form ;
     ontolex:writtenRep "romboidal"@pt .

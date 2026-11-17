@@ -51,8 +51,10 @@ dbres:entry_lacinia_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_lacinia_lat_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "-0200"^^xsd:gYear .
+    # REVISAR (datas): A palavra mudou de sentido, é preciso registrar essa mudança.
+    # REVISAR (datas): o ano -200 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_lacinia a ontolex:Form ;
     ontolex:writtenRep "lacinia"@pt,

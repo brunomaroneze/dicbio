@@ -50,8 +50,10 @@ dbres:entry_cartilagineus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_cartilagineus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): É atestado na Antiguidade, mas a forma portuguesa deriva de um emprego no latim científico ainda a ser encontrado.
+    # REVISAR (datas): o ano 77 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_cartilagineo a ontolex:Form ;
     ontolex:writtenRep "cartilagíneo"@pt .

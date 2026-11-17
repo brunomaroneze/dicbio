@@ -52,8 +52,9 @@ dbres:entry_caulis_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_caulis_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "-0160"^^xsd:gYear .
+    # NOTA (datas): É atestado na Antiguidade, mas a forma portuguesa deriva de um emprego no latim científico ainda a ser encontrado.
 
 dbres:form_caule a ontolex:Form ;
     ontolex:writtenRep "caule"@pt .

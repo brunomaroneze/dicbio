@@ -53,9 +53,11 @@ dbres:entry_orbita_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_orbita_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" .
+    dcterms:source "Jacopo Berengario, de 1521, disponível em https://www.google.com.br/books/edition/Carpi_Commentaria_cum_amplissimis_additi/MvTxTsQ8E04C" ;
+    dicbio:attestationDate "1521"^^xsd:gYear .
+    # REVISAR (datas): Descrever a mudança de sentido em latim.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_orbita a ontolex:Form ;
     ontolex:writtenRep "Orbita"@pt,

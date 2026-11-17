@@ -52,8 +52,9 @@ dbres:entry_pistillum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_pistillum_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "1788"^^xsd:gYear .
+    # NOTA (datas): Parte latina da obra de Vandelli
 
 dbres:form_pistilo a ontolex:Form ;
     ontolex:writtenRep "pistilo"@pt .

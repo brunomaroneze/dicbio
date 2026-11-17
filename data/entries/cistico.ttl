@@ -51,9 +51,10 @@ dbres:entry_cysticus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_cysticus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC" .
+    dcterms:source "\"Regnum animale, sectionibus 3\" de Emanuel König de 1698 (https://www.google.com.br/books/edition/Emanuelis_K%C3%B6nig_Regnum_animale_sectioni/xwMPRS1BbiUC" ;
+    dicbio:attestationDate "1698"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_cistico a ontolex:Form ;
     ontolex:writtenRep "cístico"@pt .

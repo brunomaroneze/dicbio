@@ -53,8 +53,9 @@ dbres:entry_villus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_villus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "1788"^^xsd:gYear .
+    # NOTA (datas): A parte em latim da obra de Vandelli
 
 dbres:form_vilo a ontolex:Form ;
     ontolex:writtenRep "vilo"@pt .

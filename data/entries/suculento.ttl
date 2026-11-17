@@ -54,9 +54,11 @@ dbres:entry_suculentus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_suculentus_sense1 a dicbio:Attestation ;
-    dcterms:source "<i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ" .
+    dcterms:source "<i>De Orchide</i> de Gustav Christian von Handtwig, de 1747 - https://www.google.com.br/books/edition/De_Orchide_Dissertatio_Inavgvralis_Botan/RjNbAAAAcAAJ" ;
+    dicbio:attestationDate "0160"^^xsd:gYear .
+    # NOTA (datas): Atestado em Apuleio com o sentido de "cheio de suco". A atestação de 1747 é no latim científico.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_suculento a ontolex:Form ;
     ontolex:writtenRep "suculento"@pt .

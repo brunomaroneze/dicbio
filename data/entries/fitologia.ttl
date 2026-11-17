@@ -52,9 +52,10 @@ dbres:entry_phytologia_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_phytologia_sense1 a dicbio:Attestation ;
-    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" .
+    dcterms:source "“Phytologia” de Giacinto Ambrosini, de 1666 - https://www.google.com.br/books/edition/Phytologia_hoc_est_de_plantis_etc_Additi/sgZfAAAAcAAJ" ;
+    dicbio:attestationDate "1666"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_fitologia a ontolex:Form ;
     ontolex:writtenRep "Fitologia"@pt .

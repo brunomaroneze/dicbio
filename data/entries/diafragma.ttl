@@ -55,8 +55,9 @@ dbres:entry_diaphragma_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_diaphragma_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "0450"^^xsd:gYear .
+    # REVISAR (datas): Precisa incluir o étimo grego do étimo latino
 
 dbres:form_diafragma a ontolex:Form ;
     ontolex:writtenRep "diafragma"@pt .

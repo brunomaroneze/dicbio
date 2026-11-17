@@ -54,9 +54,11 @@ dbres:entry_concameratio_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_concameratio_sense1 a dicbio:Attestation ;
-    dcterms:source "“Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ" .
+    dcterms:source "“Tentamen Methodi Ostracologicae” de Jacob Theodor Klein, 1753 (https://www.google.com.br/books/edition/Tentamen_methodi_ostracologicae/D-hAAAAAcAAJ" ;
+    dicbio:attestationDate "-0020"^^xsd:gYear .
+    # REVISAR (datas): O sentido da Antiguidade é o de "abóbada", e o empregado em Vandelli é o de cavidade em forma de abóbada. Será preciso também inserir a atestação no latim científico.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_concameracao a ontolex:Form ;
     ontolex:writtenRep "concameraçaõ"@pt,

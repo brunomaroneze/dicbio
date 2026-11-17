@@ -52,8 +52,9 @@ dbres:entry_canaliculatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_canaliculatus_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): É atestado na Antiguidade, mas a forma portuguesa deriva de um emprego no latim científico ainda a ser encontrado.
 
 dbres:form_canaliculado a ontolex:Form ;
     ontolex:writtenRep "canaliculado"@pt .

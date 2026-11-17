@@ -54,8 +54,8 @@ dbres:entry_filamentum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_filamentum_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "0180"^^xsd:gYear .
 
 dbres:form_filamento a ontolex:Form ;
     ontolex:writtenRep "filamento"@pt .

@@ -54,9 +54,11 @@ dbres:entry_verticillatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_verticillatus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ" .
+    dcterms:source "\"Plantarum Historiae Oxoniensis Universalis\" de Robert Morison - https://www.google.com.br/books/edition/Plantarum_historiae_universalis_Oxoniens/L7heAAAAcAAJ" ;
+    dicbio:attestationDate "1699"^^xsd:gYear .
+    # NOTA (datas): Data de Plantarum Historiae Universalis Oxoniensis de Robert Morison
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_verticilado a ontolex:Form ;
     ontolex:writtenRep "verticilado"@pt .

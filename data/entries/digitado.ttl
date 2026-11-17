@@ -55,8 +55,8 @@ dbres:entry_digitatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_digitatus_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
 
 dbres:form_digitado a ontolex:Form ;
     ontolex:writtenRep "digitado"@pt .

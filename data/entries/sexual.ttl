@@ -48,9 +48,10 @@ dbres:entry_sexualis_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_sexualis_sense1 a dicbio:Attestation ;
-    dcterms:source "“Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC)" .
+    dcterms:source "“Examen epicriseos in Systema Plantarum sexuale Cl. Linnaei”, de Siegesbeck, publicado em 1737 (disponível em https://books.google.pt/books?id=8h0OhDnDIvcC)" ;
+    dicbio:attestationDate "1737"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_sexual a ontolex:Form ;
     ontolex:writtenRep "sexual"@pt .

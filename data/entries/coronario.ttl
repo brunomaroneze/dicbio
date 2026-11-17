@@ -52,9 +52,10 @@ dbres:entry_coronarius_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_coronarius_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ" .
+    dcterms:source "\"Opera Omnia Anatomica e Medica\", de Diemerbroeck, publicada em 1688 (https://www.google.com.br/books/edition/Opera_omnia_anatomica_et_medica/oshfAAAAcAAJ" ;
+    dicbio:attestationDate "1688"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_coronario a ontolex:Form ;
     ontolex:writtenRep "coronário"@pt .

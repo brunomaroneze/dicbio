@@ -52,9 +52,10 @@ dbres:entry_myologia_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_myologia_sense1 a dicbio:Attestation ;
-    dcterms:source "Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC" .
+    dcterms:source "Jean Riolan, o Velho, de 1611, disponível em https://www.google.com.br/books/edition/Ioannis_Riolani_Ambiani_medici_Parisiens/zeo7G2IC3iEC" ;
+    dicbio:attestationDate "1611"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_miologia a ontolex:Form ;
     ontolex:writtenRep "Miologia"@pt .

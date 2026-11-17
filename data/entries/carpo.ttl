@@ -49,9 +49,11 @@ dbres:entry_carpus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_carpus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC" .
+    dcterms:source "\"Systema Physicum\" de Friedemann Bechmann, 1664 - https://www.google.com.br/books/edition/Systema_physicum/1XCAVudr-JoC" ;
+    dicbio:attestationDate "1664"^^xsd:gYear .
+    # NOTA (datas): A acepção da Antiguidade é outra, o étimo é do latim científico
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_carpo a ontolex:Form ;
     ontolex:writtenRep "carpo"@pt .

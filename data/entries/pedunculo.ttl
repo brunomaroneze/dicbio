@@ -53,8 +53,9 @@ dbres:entry_pedunculus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_pedunculus_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "-0160"^^xsd:gYear .
+    # NOTA (datas): Gaffiot abona "pediculus" em Catão, mas em "pedunculus" apenas remete para "pediculus". Assim, fica difícil saber se existem abonações para essa forma.
 
 dbres:form_pedunculo a ontolex:Form ;
     ontolex:writtenRep "Pedunculo"@pt,

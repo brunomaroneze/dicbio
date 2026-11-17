@@ -50,9 +50,10 @@ dbres:entry_fecundans_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_fecundans_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC" .
+    dcterms:source "\"Praelectiones Academicae\" de Boerhaave, 1745 - https://www.google.com.br/books/edition/Hermanni_Boerhaave_Praelectiones_academi/yi1URjML52UC" ;
+    dicbio:attestationDate "1745"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_fecundante a ontolex:Form ;
     ontolex:writtenRep "fecundante"@pt .

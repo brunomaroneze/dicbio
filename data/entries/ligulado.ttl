@@ -51,9 +51,11 @@ dbres:entry_ligulatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_ligulatus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Flora Francofurtana…\" de Karl August von Bergen, disponível em: https://www.google.com.br/books/edition/Caroli_Augusti_de_Bergen_Flora_Francofur/8NkTAAAAQAAJ" .
+    dcterms:source "\"Flora Francofurtana…\" de Karl August von Bergen, disponível em: https://www.google.com.br/books/edition/Caroli_Augusti_de_Bergen_Flora_Francofur/8NkTAAAAQAAJ" ;
+    dicbio:attestationDate "1750"^^xsd:gYear .
+    # NOTA (datas): Data da obra "Flora Francofurtana" de Bergen
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_ligulado a ontolex:Form ;
     ontolex:writtenRep "ligulado"@pt .

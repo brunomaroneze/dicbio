@@ -57,9 +57,11 @@ dbres:entry_caruncula_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_caruncula_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "“Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ" .
+    dcterms:source "“Treatise of the human eye” de Peter Degravers (1780 - https://www.google.com.br/books/edition/A_complete_physico_medical_and_chirurgic/0Q1eAAAAcAAJ" ;
+    dicbio:attestationDate "0030"^^xsd:gYear .
+    # NOTA (datas): Celso já usa com o sentido de "protuberância".
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:entry_caruncula_seminal_sense1 a ontolex:LexicalSense ;
     dcterms:language "português" ;

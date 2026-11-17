@@ -51,9 +51,11 @@ dbres:entry_masseter_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_masseter_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "Vesalius, de 1543, disponível em https://www.google.com.br/books/edition/Andreae_Vesalii_Brvxellensis_Scholae_med/DqAtzTRY5foC" .
+    dcterms:source "Vesalius, de 1543, disponível em https://www.google.com.br/books/edition/Andreae_Vesalii_Brvxellensis_Scholae_med/DqAtzTRY5foC" ;
+    dicbio:attestationDate "1543"^^xsd:gYear .
+    # REVISAR (datas): É preciso também descrever o étimo grego da forma latina.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_masseter a ontolex:Form ;
     ontolex:writtenRep "masseter"@pt .

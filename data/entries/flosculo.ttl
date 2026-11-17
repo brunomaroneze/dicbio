@@ -50,8 +50,10 @@ dbres:entry_flosculus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_flosculus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "-0055"^^xsd:gYear .
+    # NOTA (datas): No latim científico, é abonado em Vandelli, 1788.
+    # REVISAR (datas): o ano -55 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_flosculo a ontolex:Form ;
     ontolex:writtenRep "flósculo"@pt .

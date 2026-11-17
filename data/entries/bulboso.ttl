@@ -51,8 +51,10 @@ dbres:entry_bulbosus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_bulbosus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # REVISAR (datas): O étimo é de fato o latim da antiguidade (Plínio). Mas eu havia mencionado a atestação como sendo de Vandelli (1788). Acho que podemos colocar duas atestações, esta e mais uma indicando o Gaffiot, por exemplo, com data de 77 d.C.
+    # REVISAR (datas): o ano 77 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_bulboso a ontolex:Form ;
     ontolex:writtenRep "bulboso"@pt .

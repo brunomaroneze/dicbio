@@ -51,8 +51,9 @@ dbres:entry_insectum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_insectum_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0070"^^xsd:gYear .
+    # NOTA (datas): Atestado já em Plínio, mas a palavra mudou de sentido e em latim científico é atestada em Historiae Animalium de Conrad Gessner (1558)
 
 dbres:form_inseto a ontolex:Form ;
     ontolex:writtenRep "inseto"@pt .

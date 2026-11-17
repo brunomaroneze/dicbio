@@ -51,9 +51,10 @@ dbres:entry_excretorius_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_excretorius_sense1 a dicbio:Attestation ;
-    dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" .
+    dcterms:source "Verheyen (1710 - https://www.google.com.br/books/edition/Corporis_humani_anatomia/BCNgAAAAcAAJ" ;
+    dicbio:attestationDate "1710"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_excretorio a ontolex:Form ;
     ontolex:writtenRep "excretório"@pt .

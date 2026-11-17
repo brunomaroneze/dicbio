@@ -50,8 +50,9 @@ dbres:entry_connivens_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_connivens_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "-0055"^^xsd:gYear .
+    # NOTA (datas): O adjetivo "connivens" não é atestado, mas é o particípio presente do verbo "conniveo", esse sim atestado em Cícero e outros autores (conforme o OLD).
 
 dbres:form_conivente a ontolex:Form ;
     ontolex:writtenRep "conivente"@pt .

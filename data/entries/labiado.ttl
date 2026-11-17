@@ -52,9 +52,11 @@ dbres:entry_labiatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_labiatus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC)" .
+    dcterms:source "\"Synopsis Methodica Stirpium Britannicarum\" de John Ray - https://www.google.com.br/books/edition/Joannis_Raii_Synopsis_methodica_stirpium/RsDQj539RGoC)" ;
+    dicbio:attestationDate "1696"^^xsd:gYear .
+    # NOTA (datas): Data de "Synopsis Methodica Stirpium Britannicarum" de John Ray
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_labiado a ontolex:Form ;
     ontolex:writtenRep "labiado"@pt .

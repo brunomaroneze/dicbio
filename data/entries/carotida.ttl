@@ -53,8 +53,9 @@ dbres:entry_carotides_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_carotides_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0030"^^xsd:gYear .
+    # NOTA (datas): O OLD abona "carotides" na obra de Celso (por volta de 30 d.C.)
 
 dbres:form_carotida a ontolex:Form ;
     lexinfo:number lexinfo:singular ;

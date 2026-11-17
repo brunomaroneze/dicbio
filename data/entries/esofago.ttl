@@ -53,9 +53,11 @@ dbres:entry_oesophagus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_oesophagus_sense1 a dicbio:Attestation ;
-    dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" .
+    dcterms:source "“De Anima”, 1542, https://www.google.com.br/books/edition/De_anima_commentarius_Philippi_Mel_Cum_I/tQ22hca_94oC" ;
+    dicbio:attestationDate "1542"^^xsd:gYear .
+    # REVISAR (datas): É preciso descrever o étimo grego também.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_esofago a ontolex:Form ;
     ontolex:writtenRep "esôfago"@pt .

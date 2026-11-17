@@ -50,8 +50,10 @@ dbres:entry_foliaceus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_foliaceus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "0077"^^xsd:gYear .
+    # NOTA (datas): Gaffiot abona em Plínio. No latim científico, a datação é a própria obra de Vandelli (1788)
+    # REVISAR (datas): o ano 77 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_foliaceo a ontolex:Form ;
     ontolex:writtenRep "foliáceo"@pt .

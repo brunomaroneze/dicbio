@@ -52,9 +52,11 @@ dbres:entry_zoologia_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_zoologia_lat_sense1 a dicbio:Attestation ;
-    dcterms:source " \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ" .
+    dcterms:source " \"Zoologia Parva\", de Giuseppe Lanzoni, de 1669 - https://www.google.com.br/books/edition/Zoologia_Parva/J9Q8AAAAcAAJ" ;
+    dicbio:attestationDate "1669"^^xsd:gYear .
+    # NOTA (datas): Data da obra Zoologia Parva
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_zoologia a ontolex:Form ;
     ontolex:writtenRep "Zoologia"@pt .

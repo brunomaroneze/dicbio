@@ -50,8 +50,8 @@ dbres:entry_resina_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_resina_lat_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "-0160"^^xsd:gYear .
 
 dbres:form_resina a ontolex:Form ;
     ontolex:writtenRep "resina"@pt .

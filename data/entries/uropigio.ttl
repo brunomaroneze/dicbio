@@ -53,8 +53,9 @@ dbres:entry_uropygium_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_uropygium_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "0104"^^xsd:gYear .
+    # REVISAR (datas): Gaffiot abona em Marcial (morto em 104 d.C.), mas há diversas formas variantes em latim e em grego. Será preciso encontrar datações para todas.
 
 dbres:form_uropigio a ontolex:Form ;
     ontolex:writtenRep "uropigio"@pt,

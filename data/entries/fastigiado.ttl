@@ -51,8 +51,9 @@ dbres:entry_fastigiatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_fastigiatus_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "0489"^^xsd:gYear .
+    # REVISAR (datas): Precisa ser revisto. O Gaffiot indica que seria uma variante de "fastigatus", atestado em Sidônio Apolinário (falecido em 489), mas precisamos colocar hipóteses alternativas.
 
 dbres:form_fastigiado a ontolex:Form ;
     ontolex:writtenRep "fastigiado"@pt .

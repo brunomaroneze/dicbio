@@ -50,8 +50,10 @@ dbres:entry_lanceolatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_lanceolatus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "1100"^^xsd:gYear .
+    # NOTA (datas): Gaffiot abona na obra "De viribus herbarum" de Macer Floridus, poema medieval do final do século XI.
+    # REVISAR (datas): o ano 1100 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_lanceolado a ontolex:Form ;
     ontolex:writtenRep "lanceolado"@pt .

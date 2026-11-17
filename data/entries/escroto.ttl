@@ -52,8 +52,9 @@ dbres:entry_scrotum_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_scrotum_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0030"^^xsd:gYear .
+    # REVISAR (datas): Celso. É preciso também encontrar uma atestação no latim científico.
 
 dbres:form_escroto a ontolex:Form ;
     ontolex:writtenRep "escroto"@pt .

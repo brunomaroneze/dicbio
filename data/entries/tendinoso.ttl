@@ -53,9 +53,10 @@ dbres:entry_tendinosus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_tendinosus_sense1 a dicbio:Attestation ;
-    dcterms:source "“Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ" .
+    dcterms:source "“Anatomicae praelectiones”  (1586), de Archangelus Piccolomini (https://www.google.com.br/books/edition/Anatomicae_praelectiones_etc/q3hVAAAAcAAJ" ;
+    dicbio:attestationDate "1586"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_tendinoso a ontolex:Form ;
     ontolex:writtenRep "tendinoso"@pt .

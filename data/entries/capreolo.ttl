@@ -50,8 +50,9 @@ dbres:entry_capreolus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_capreolus_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "1788"^^xsd:gYear .
+    # NOTA (datas): A acepção da Antiguidade é outra, o étimo é do latim científico
 
 dbres:form_capreolo a ontolex:Form ;
     ontolex:writtenRep "capréolo"@pt .

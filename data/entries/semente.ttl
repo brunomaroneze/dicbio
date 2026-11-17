@@ -52,8 +52,9 @@ dbres:entry_sementem_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_sementem_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "-0200"^^xsd:gYear .
+    # REVISAR (datas): O sentido da palavra mudou, tem que ver como registrar isso.
 
 dbres:form_semente a ontolex:Form ;
     ontolex:writtenRep "semente"@pt .

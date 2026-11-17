@@ -50,9 +50,10 @@ dbres:entry_sucosus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_sucosus_sense1 a dicbio:Attestation ;
-    dcterms:source "Dicionário Houaiss" .
+    dcterms:source "Dicionário Houaiss" ;
+    dicbio:attestationDate "0030"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_sucoso a ontolex:Form ;
     ontolex:writtenRep "sucoso"@pt .

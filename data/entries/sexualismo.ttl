@@ -51,9 +51,10 @@ dbres:entry_sexualismus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_sexualismus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ)" .
+    dcterms:source "\"Physiologia Muscorum\" de Necker, publicada em 1774 (https://www.google.com.br/books/edition/N_J_de_Necker_Physiologia_Muscorum_per_e/cLhgAAAAcAAJ)" ;
+    dicbio:attestationDate "1774"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_sexualismo a ontolex:Form ;
     ontolex:writtenRep "sexualismo"@pt .

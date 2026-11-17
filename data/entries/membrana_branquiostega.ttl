@@ -53,9 +53,10 @@ dbres:entry_membrana_branchiostega_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_membrana_branchiostega_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C" .
+    dcterms:source "\"Elenchus Vegetabilium et Animalium\" de Kramer, publicado em 1756 (https://www.google.com.br/books/edition/Elenchus_vegetabilium_et_animalium_per_A/AKK4xTX_LD8C" ;
+    dicbio:attestationDate "1756"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_membrana_branquiostega a ontolex:Form ;
     ontolex:writtenRep "branquióstega"@pt,

@@ -52,12 +52,14 @@ dbres:entry_bifidus_sense1 a ontolex:LexicalSense ;
         dbres:attestation_bifidus_sense1_old .
 
 dbres:attestation_bifidus_sense1_gaffiot a dicbio:Attestation ;
-    dcterms:source dbsrc:source_gaffiot .
-    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
+    dcterms:source dbsrc:source_gaffiot ;
+    dicbio:attestationDate "0005"^^xsd:gYear .
+    # NOTA (datas): Na obra "Metamorphoses" de Ovídio
 
 dbres:attestation_bifidus_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (o SHACL exige data junto com a fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "0005"^^xsd:gYear .
+    # NOTA (datas): Na obra "Metamorphoses" de Ovídio. Os dois dicionários (Gaffiot e OLD) mencionam os mesmos autores
 
 dbres:form_bifido_accent a ontolex:Form ;
     lexinfo:gender lexinfo:masculine ;

@@ -50,9 +50,11 @@ dbres:entry_corollula_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_corollula_sense1 a dicbio:Attestation ;
-    dcterms:source "<i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ" .
+    dcterms:source "<i>Genera Plantarum</i>, de Lineu - https://www.google.com.br/books/edition/Genera_plantarum/tX0ZAAAAYAAJ" ;
+    dicbio:attestationDate "1737"^^xsd:gYear .
+    # NOTA (datas): Data da obra Genera Plantarum de Lineu.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_corolula a ontolex:Form ;
     ontolex:writtenRep "corólula"@pt .

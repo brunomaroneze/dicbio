@@ -51,9 +51,10 @@ dbres:entry_mucilaginosus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_mucilaginosus_sense1 a dicbio:Attestation ;
-    dcterms:source "“Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ" .
+    dcterms:source "“Interpretatio in primam 4. Canon. Avicennae quae de febribus dicitur” (1517), de Hugo Bentius (https://www.google.com.br/books/edition/Interpretatio_in_primam_4_Canon_Avicenna/QhtBAAAAcAAJ" ;
+    dicbio:attestationDate "1517"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_mucilaginoso a ontolex:Form ;
     ontolex:writtenRep "mucilaginoso"@pt .

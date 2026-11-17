@@ -54,9 +54,11 @@ dbres:entry_fructificatio_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_fructificatio_sense1 a dicbio:Attestation ;
-    dcterms:source "Dicionário Houaiss" .
+    dcterms:source "Dicionário Houaiss" ;
+    dicbio:attestationDate "0200"^^xsd:gYear .
+    # NOTA (datas): Gaffiot abona em Tertuliano
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_frutificacao a ontolex:Form ;
     ontolex:writtenRep "Frutificaçaõ"@pt,

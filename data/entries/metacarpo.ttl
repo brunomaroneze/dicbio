@@ -51,9 +51,10 @@ dbres:entry_metacarpus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_metacarpus_sense1 a dicbio:Attestation ;
-    dcterms:source "tradução comentada das obras de Hipócrates e Galeno, escrita por René Chartier e publicada em 1679 (https://www.google.com.br/books/edition/Hippocratis_coi_et_Claudii_Galeni_Opera/Q83btvVqeBoC" .
+    dcterms:source "tradução comentada das obras de Hipócrates e Galeno, escrita por René Chartier e publicada em 1679 (https://www.google.com.br/books/edition/Hippocratis_coi_et_Claudii_Galeni_Opera/Q83btvVqeBoC" ;
+    dicbio:attestationDate "1679"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_metacarpo a ontolex:Form ;
     ontolex:writtenRep "metacarpo"@pt .

@@ -55,9 +55,10 @@ dbres:entry_papilla_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_papilla_sense1 a dicbio:Attestation ;
-    dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" .
+    dcterms:source "Berengario da Carpi e a Marcello Malpighi (segundo o “Dicionário de Etimologia Médico” - https://dicimedico.com/papila/" ;
+    dicbio:attestationDate "-0200"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_papila a ontolex:Form ;
     ontolex:writtenRep "papila"@pt .

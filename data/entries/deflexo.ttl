@@ -49,9 +49,11 @@ dbres:entry_deflexus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_deflexus_sense1 a dicbio:Attestation ;
-    dcterms:source "Dicionário Houaiss" .
+    dcterms:source "Dicionário Houaiss" ;
+    dicbio:attestationDate "1788"^^xsd:gYear .
+    # NOTA (datas): Parte latina de Vandelli
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_deflexo a ontolex:Form ;
     ontolex:writtenRep "deflexo"@pt .

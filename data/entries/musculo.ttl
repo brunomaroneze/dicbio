@@ -53,8 +53,8 @@ dbres:entry_musculus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_musculus_sense1_old a dicbio:Attestation ;
-    dcterms:source dbsrc:source_old .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:source_old ;
+    dicbio:attestationDate "-0200"^^xsd:gYear .
 
 dbres:form_musculo a ontolex:Form ;
     ontolex:writtenRep "MUSCULO"@pt,

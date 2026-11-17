@@ -51,9 +51,11 @@ dbres:entry_gelatinosus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_gelatinosus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ" .
+    dcterms:source "\"Index... Rerum Memorabilium & Notabilium...\" - https://www.google.com.br/books/edition/Miscellanea_Curiosa_medico_physica_acade/gH5EAAAAcAAJ" ;
+    dicbio:attestationDate "1695"^^xsd:gYear .
+    # NOTA (datas): Data do texto "Index .... Rerum Memorabilium et Notabilium"
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_gelatinoso a ontolex:Form ;
     ontolex:writtenRep "gelatinoso"@pt .

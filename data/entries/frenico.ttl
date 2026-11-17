@@ -52,9 +52,10 @@ dbres:entry_phrenicus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_phrenicus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC" .
+    dcterms:source "\"Historia Anatomica\" de André du Laurens, 1602 (disponível em https://www.google.com.br/books/edition/Andreae_Laurentii_Historia_anatomica_hum/x6DTbRHkOlAC" ;
+    dicbio:attestationDate "1602"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_frenico a ontolex:Form ;
     ontolex:writtenRep "frênico"@pt .

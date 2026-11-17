@@ -51,9 +51,11 @@ dbres:entry_tunica_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_tunica_lat_sense1 a dicbio:Attestation ;
-    dcterms:source "“De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ" .
+    dcterms:source "“De radicum in plantis ortu et directione”, de Gottlob Bose, 1754, p. 7, disponível em https://books.google.pt/books?id=VK1JAAAAcAAJ" ;
+    dicbio:attestationDate "1754"^^xsd:gYear .
+    # NOTA (datas): A acepção da Antiguidade é diferente da científica.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_tunica a ontolex:Form ;
     ontolex:writtenRep "tunica"@pt,

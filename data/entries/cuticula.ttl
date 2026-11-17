@@ -50,8 +50,10 @@ dbres:entry_cuticula_lat_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_cuticula_lat_sense1_diciovandelli a dicbio:Attestation ;
-    dcterms:source dbsrc:work_diciovandelli .
-    # REVISAR: falta dicbio:attestationDate (recuperar a data na fonte)
+    dcterms:source dbsrc:work_diciovandelli ;
+    dicbio:attestationDate "0060"^^xsd:gYear .
+    # REVISAR (datas): É preciso ver quando é a primeira atestação no âmbito da Botânica.
+    # REVISAR (datas): o ano 60 não é o da fonte dbsrc:work_diciovandelli (1788); se a data vem de outra obra, a atestação precisa de outra fonte (ou crie uma segunda atestação)
 
 dbres:form_cuticula a ontolex:Form ;
     ontolex:writtenRep "cuticula"@pt,

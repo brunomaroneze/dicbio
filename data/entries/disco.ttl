@@ -52,9 +52,11 @@ dbres:entry_discus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_discus_sense1 a dicbio:Attestation ;
-    dcterms:source "Dicionário Houaiss" .
+    dcterms:source "Dicionário Houaiss" ;
+    dicbio:attestationDate "0160"^^xsd:gYear .
+    # REVISAR (datas): Precisamos incluir atestações para as acepções científicas
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_disco a ontolex:Form ;
     ontolex:writtenRep "disco"@pt .

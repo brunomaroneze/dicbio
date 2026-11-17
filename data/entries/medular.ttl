@@ -51,9 +51,10 @@ dbres:entry_medullaris_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_medullaris_sense1 a dicbio:Attestation ;
-    dcterms:source "“De Atonia Nervorum”, de Johann Christoph von Steinen, 1749, disponível em https://books.google.pt/books?id=Ubav7mRfZ\\_cC" .
+    dcterms:source "“De Atonia Nervorum”, de Johann Christoph von Steinen, 1749, disponível em https://books.google.pt/books?id=Ubav7mRfZ\\_cC" ;
+    dicbio:attestationDate "1749"^^xsd:gYear .
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_medular a ontolex:Form ;
     ontolex:writtenRep "medular"@pt .

@@ -52,9 +52,11 @@ dbres:entry_tuberculatus_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_tuberculatus_sense1 a dicbio:Attestation ;
-    dcterms:source "\"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC" .
+    dcterms:source "\"Lexicon Hebraicum\" de Johann Reuchlin - https://www.google.com.br/books/edition/Ioannis_Reuchlini_Phorcensis_Lexicon_Heb/mcIzkGPlV0UC" ;
+    dicbio:attestationDate "1537"^^xsd:gYear .
+    # NOTA (datas): Data do Lexicon Hebraicum, de Johann Reuchlin
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_tuberculado a ontolex:Form ;
     ontolex:writtenRep "tuberculado"@pt .

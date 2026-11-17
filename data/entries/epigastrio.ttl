@@ -52,9 +52,11 @@ dbres:entry_epigastrium_sense1 a ontolex:LexicalSense ;
     # REVISAR: falta skos:definition (sentido do étimo; ver a argumentação)
 
 dbres:attestation_epigastrium_sense1 a dicbio:Attestation ;
-    dcterms:source "“A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ" .
+    dcterms:source "“A dictionary in Latine and English”, de John Veron, 1575 - https://www.google.com.br/books/edition/A_Dictionary_in_Latine_and_English_corre/H85lAAAAcAAJ" ;
+    dicbio:attestationDate "1575"^^xsd:gYear .
+    # REVISAR (datas): É preciso também descrever a forma grega que é o étimo da forma latina.
     # REVISAR: fonte em texto livre (modelo antigo) — criar a fonte em sources.ttl
-    #          (dbsrc:source_... ou dbsrc:work_...) e acrescentar dicbio:attestationDate
+    #          (dbsrc:source_... ou dbsrc:work_...)
 
 dbres:form_epigastrio a ontolex:Form ;
     ontolex:writtenRep "Epigastrio"@pt,
