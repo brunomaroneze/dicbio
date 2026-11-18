@@ -1,0 +1,14 @@
+<pb facs="fazendeiroimbert_imagens/b29341152_0007.jpg"/>
+<titlePage>
+	<docTitle>
+		<titlePart type="main">MANUAL DO FAZENDEIRO, OU TRATADO DOMÉSTICO SOBRE AS ENFERMIDADES DOS NEGROS,</titlePart>
+	</docTitle>
+	<byline>Por <docAuthor>J. B. A. Imbert</docAuthor>, Doutor em Medicina da Faculdade de Montpellier, Membro Honorario da Sociedade Real de Medicina de Marseille, Membro Correspondente da do Rio de Janeiro, e antigo Cirurgião Ajudante Maior das Armadas Navaes Francezas.</byline>
+	<epigraph xml:lang="fr">
+		<p>En Amérique, sol vierge, riche , sillonné por um peuple é; neufet fort, s'élêve et grandit une société jeune , vipace et puissante, qui s'imposera au monde , et durera bien des siêcies Paréê que cette socióté sera saine des deus lêpres qui ont rongé les Etats anciens ét modernes ; les esclaves, - “et des prolétaires. Eugéne Sub (La Salamandro.)</p>
+	</epigraph>
+	<!-- REVISAR: "Corpus." não aparece na imagem da página de rosto (provável resíduo do OCR) -->
+	<docImprint><pubPlace>RIO DE JANEIRO.</pubPlace>Corpus. NA TYP. IMP. E CONST. DE SEIGNOT-PLANCHER E C.º, 7 rua d’Ouvidor N. 95. <docDate>1834</docDate></docImprint>
+	<pb facs="fazendeiroimbert_imagens/b29341152_0008.jpg"/>
+	<docImprint>Vende-se em casa do AUTOR, rua da Quitande No 109, E na de LAEMERT, Livreiro, na mesma rua No 139.</docImprint>
+</titlePage>
