@@ -1,27 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="tei_dhtb.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<!-- REVISAR: substituir pelo teiHeader definitivo -->
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Manual do Fazendeiro (Imbert, 1834)</title>
+				<title>"Manual do Fazendeiro" de Imbert: transcrição digital</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>Em preparação.</p>
+				<p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+					(https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+					Maroneze.</p>
 			</publicationStmt>
 			<sourceDesc>
-				<p>Em preparação.</p>
+				<bibl><author>IMBERT, Jean-Baptiste Alban</author>. <title>Manual do Fazendeiro, ou
+						Tratado domestico sobre as enfermidades dos negros</title>. <pubPlace>Rio de
+						Janeiro</pubPlace>: Na Typ. Imp. e Const. de Seignot-Plancher e C.ª., <date
+						when="1739">1834</date>. Disponível em:
+					https://archive.org/details/b29341152/page/n5/mode/2up. </bibl>
 			</sourceDesc>
 		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>A ortografia original da obra foi mantida sempre que possível.</p>
+				<p>Cada parágrafo do texto foi marcado com o elemento <gi>p</gi>. As quebras de
+					linha não foram marcadas com nenhum elemento XML.</p>
+				<p>As quebras de página foram marcadas com o elemento <gi>pb</gi>. Nos casos em que
+					a quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
+					inserido antes da palavra quebrada, e a quebra não foi sinalizada.</p>
+				<p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
+					digital Internet Archive. O URL de cada imagem segue o padrão:
+						<code>https://ia600904.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/b29341152/b29341152_jp2.zip&amp;file=b29341152_jp2/b29341152_XXXX.jp2&amp;id=b29341152</code>,
+					onde <code>XXXX</code> é um número sequencial (a página de rosto é 0007).</p>
+			</editorialDecl>
+			<projectDesc>
+				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+					Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+			</projectDesc>
+		</encodingDesc>
 	</teiHeader>
 	<text>
 		<front>
-			<pb facs="fazendeiroimbert_imagens/b29341152_0007.jpg"/>
-			<titlePage>
+			<titlePage facs="fazendeiroimbert_imagens/b29341152_0007.jpg">
 				<docTitle>
-					<titlePart type="main">MANUAL DO FAZENDEIRO, OU TRATADO DOMÉSTICO SOBRE AS
-						ENFERMIDADES DOS NEGROS,</titlePart>
+					<titlePart type="main">MANUAL DO FAZENDEIRO</titlePart>
+					<titlePart type="sub">, OU TRATADO DOMESTICO SOBRE AS ENFERMIDADES DOS
+						NEGROS,</titlePart>
 				</docTitle>
 				<byline>Por <docAuthor>J. B. A. Imbert</docAuthor>, Doutor em Medicina da Faculdade
 					de Montpellier, Membro Honorario da Sociedade Real de Medicina de Marseille,
@@ -32,15 +55,14 @@
 						s'élêve et grandit une société jeune , vipace et puissante, qui s'imposera
 						au monde , et durera bien des siêcies Paréê que cette socióté sera saine des
 						deus lêpres qui ont rongé les Etats anciens ét modernes ; les esclaves, -
-						“et des prolétaires. Eugéne Sub (La Salamandro.)</p>
+						“et des prolétaires. Eugéne Sub (La Salamandre.)</p>
 				</epigraph>
-				<!-- REVISAR: "Corpus." não aparece na imagem da página de rosto (provável resíduo do OCR) -->
-				<docImprint><pubPlace>RIO DE JANEIRO.</pubPlace>Corpus. NA TYP. IMP. E CONST. DE
+				<docImprint><pubPlace>RIO DE JANEIRO.</pubPlace> NA TYP. IMP. E CONST. DE
 					SEIGNOT-PLANCHER E C.º, 7 rua d’Ouvidor N. 95.
 					<docDate>1834</docDate></docImprint>
 				<pb facs="fazendeiroimbert_imagens/b29341152_0008.jpg"/>
-				<docImprint>Vende-se em casa do AUTOR, rua da Quitande No 109, E na de LAEMERT,
-					Livreiro, na mesma rua No 139.</docImprint>
+				<docImprint>Vende-se em casa do AUTOR, rua da Quitanda Nº 109, E na de LAEMERT,
+					Livreiro, na mesma rua N 139.</docImprint>
 			</titlePage>
 			<pb n="v" facs="fazendeiroimbert_imagens/b29341152_0009.jpg"/>
 			<div type="dedication">
@@ -106,12 +128,12 @@
 			<pb n="ix" facs="fazendeiroimbert_imagens/b29341152_0013.jpg"/>
 			<div type="introduction">
 				<head>Introdução</head>
-				<p>Os povos civilisados do Universo têem” geralmente reconhecido a humana Pelado Ra
+				<p>Os povos civilisados do Universo têem geralmente reconhecido a humana necessidade
 					de pôr hum termo a esse abominavel e odioso trafico, designado pelo nome de
 					commercio de escravatura, que durante muiitos seculos tem recrutado escravos
 					nessa parte do mundo, onde a natureza pôz o berço da raça negra, aliás chamada
 					Africana. À Philosophia registra com prazer em seus Annaes hum tal beneficio,
-					que attesta os progressos da razão , assim como os da civilisação. Deve-se
+					que attesta os progressos da razão, assim como os da civilisação. Deve-se
 					svideniáenie este resultado social e Philantropico, á intenção desses Governos
 					Constitucionaes, gloria e honra do seculo que tendem de todas as partes a
 					destruir o velho idolo do despotismo, ou essa vontade de hum só, quasi sempre
@@ -133,9 +155,9 @@
 					tem falado ao futuro; nem podia sem injustiça endereçar-se ao passado: iôra
 					offender direitos adquiridos, e causar perturbação e desarranjo nas fortunas. A
 					escravidão subsiste pois ainda em grande parte nas Ilhas e no Continente
-					Americano, particularmente no Bra- “il; mas aqui será incontestavelmente mais
-					doce e mais humana, pois que a dificuldade de dar substituição ao que se possue
-					fará recorrer aos meios os mais convenientes de conservar o que já se tem. :</p>
+					Americano, particularmente no Brazil; mas aqui será incontestavelmente mais doce
+					e mais humana, pois que a dificuldade de dar substituição ao que se possue fará
+					recorrer aos meios os mais convenientes de conservar o que já se tem. :</p>
 				<p>Lançando a vista sobre a Carta do Brazil, admiramos a sua vasta extensão, que
 					comprehende hum raio de quasi duas mil legoas.. A populacão deste Imperio, rico
 					de todos os presentes da Natureza e chamado .a destinos brilhantes, s a mão da
@@ -9604,12 +9626,11 @@
 					entrada ao ar, guarnecida toda em volta de huma linha de tarimbas, tres palmos
 					acima do chão, cada huma delas composta com hum colchão e hum cobertor.</p>
 				<p>Perto esta huma cazinhola, que serve de infermaria, com sua cozinha, e hum
-					gabinete de
-							botica<!-- nota ausente do TXT, transcrita da imagem --><note><p>Faremos
-							ver quaes os materiaes, que compõe a nossa Botica.</p></note>. Temos
-					tambem telheiros, em que depositamos os productos de nossas terras: n'huma
-					palavra, em fim, dentro da nossa fazenda se acha tudo quanto deve pertencer-lhe,
-					e assim torna-la huma habitação deliciosa, e saudavel.</p>
+					gabinete de botica<note><p>Faremos ver quaes os materiaes, que compõe a nossa
+							Botica.</p></note>. Temos tambem telheiros, em que depositamos os
+					productos de nossas terras: n'huma palavra, em fim, dentro da nossa fazenda se
+					acha tudo quanto deve pertencer-lhe, e assim torna-la huma habitação deliciosa,
+					e saudavel.</p>
 				<p>Quanto aos negros, esses temos nós divididos em 4 classes: comprehende a 1ª os de
 					10 até 18 annos de idade; 2ª os de 18 até 35; 3ª os de 35 até 55; e a 4ª os de
 					55 para cima. A cada huma destas classes está com <pb n="319"
@@ -9956,10 +9977,8 @@
 				<pb n="331" facs="fazendeiroimbert_imagens/b29341152_0353.jpg"/>
 				<div type="subsection">
 					<head>QUADRO DOS MEDICAMENTOS</head>
-					<!-- REVISAR: o impresso traz "PARA O EFFICAZ TRATAMENTO"; o TXT traz "PRONTO" -->
-					<head>QUE SE DEVEM ACHAR EM MAIS OU MENOS QUANTIDADE, NA BOTICA DOMESTICA DE
-						HUMA FAZENDA, PARA O PRONTO TRATAMENTO DAS MOLESTIAS DOS NEGROS.</head>
-					<!-- Tabela remontada a partir das imagens (pp. 331-334): no TXT este trecho estava fora de ordem, incompleto e com grafias modernizadas. O texto segue o impresso; as chaves que agrupam linhas viram cell/@rows; as reticências guia foram omitidas. -->
+					<head>QUE SE DEVEM ACHAR, EM MAIS OU MENOS QUANTIDADE, NA BOTICA DOMESTICA DE
+						HUMA FAZENDA, PARA O EFFICAZ TRATAMENTO DAS MOLESTIAS DOS NEGROS.</head>
 					<table cols="3">
 						<row role="label">
 							<cell role="label">NOMES DOS MEDICAMENTOS.</cell>
