@@ -107,7 +107,7 @@ class Command(BaseCommand):
 
                     for term in terms:
                         token = (term.text or '').strip()
-                        headword = term.get('lemma', token)
+                        headword = ' '.join(term.get('lemma', token).split())
                         orth = term.get('norm', headword)
                         gram = term.get('msd', '')
                         sense_number = term.get('senseNumber', '1')
