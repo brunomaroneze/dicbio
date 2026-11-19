@@ -22,24 +22,59 @@
     </fileDesc>
     <encodingDesc>
       <editorialDecl>
-        <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
-          letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
-        <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
-          incluído antes da palavra, de modo a não quebrá-la.</p>
-        <p>O texto original também pode ser acessado pelo Internet Archive:
-          https://archive.org/details/bub_gb_qCVH54Hs2i0C/</p>
-        <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital
-          Internet Archive. O URL de cada imagem segue o padrão:
-            <code>https://ia802806.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/bub_gb_qCVH54Hs2i0C/bub_gb_qCVH54Hs2i0C_jp2.zip&amp;file=bub_gb_qCVH54Hs2i0C_jp2/bub_gb_qCVH54Hs2i0C_XXXX.jp2&amp;id=bub_gb_qCVH54Hs2i0C</code>,
-          onde <code>XXXX</code> é um número sequencial (a página de rosto é 0000). Neste arquivo
-          transcrito, cada elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o
-          atributo <att>facs</att> com o endereço URL do arquivo da imagem correspondente à página
-          em questão. No entanto, é importante notar que, para a correta validação deste arquivo
-          XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
-          funcionamento correto dos URLs.</p>
-        <p>O sumário foi indicado com o elemento <gi>list</gi>, com cada item do sumário marcado com
-            <gi>item</gi>.</p>
-        <p>A errata foi incluída como uma tabela.</p>
+        <p>A ortografia original da obra foi mantida sempre que possível, sem correções nem
+          modernizações. Procurou-se manter as letras ligadas æ e œ nas transcrições dos nomes em
+          latim.</p>
+        <p>Cada parágrafo foi marcado com o elemento <gi>p</gi>. As quebras de linha não foram
+          marcadas.</p>
+        <p>As quebras de página foram marcadas com o elemento <gi>pb</gi>, cujo atributo
+            <att>n</att> traz o número impresso da página. As páginas sem numeração receberam no
+          atributo <att>n</att> as indicações "não numerada" (seguida de um número sequencial), "em
+          branco" ou "imagem". Quando uma quebra de página ocorre no meio de uma palavra, o elemento
+            <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+        <p>Os cabeçalhos correntes das páginas (título da obra e número da Observação), presentes em
+          uma versão anterior da transcrição, foram eliminados, assim como as indicações de página
+          que haviam sido inseridas no texto. Os reclamos (palavras repetidas no pé da página como
+          antecipação da página seguinte) não foram marcados; em alguns pontos, a palavra aparece
+          repetida na transcrição.</p>
+        <p>As imagens (fac-símiles) das páginas da obra foram obtidas do repositório digital
+          Internet Archive (https://archive.org/details/bub_gb_qCVH54Hs2i0C/) e são armazenadas
+          localmente, na pasta <code>observSemmedo_imagens</code>, com nomes no padrão
+            <code>bub_gb_qCVH54Hs2i0C_XXXX.jpg</code>, onde <code>XXXX</code> é um número sequencial
+          (a página de rosto é 0000). Neste arquivo, cada elemento <gi>pb</gi>, bem como o elemento
+            <gi>titlePage</gi>, contém o atributo <att>facs</att> com o caminho relativo da imagem
+          correspondente. A página 1 corresponde à imagem 0040. As imagens 0605 e 0606, estando
+          duplicadas no repositório Internet Archive, são uma segunda digitalização das páginas 564
+          e 565 (imagens 0603 e 0604) e não foram usadas.</p>
+        <p>Os textos preliminares foram marcados no elemento <gi>front</gi>, com elementos
+            <gi>div</gi> cujo atributo <att>type</att> indica a natureza de cada um:
+          "carta_dedicatoria", "prologo", "poema", "sinopse", "sumário", "parecer", "despacho",
+          "AprovacoesSantoOficio". Os poemas em latim têm o atributo <att>xml:lang</att> com o valor
+          "la".</p>
+        <p>Cada uma das cem Observações (e a Observação CI) foi marcada com o elemento <gi>div</gi>,
+          com o atributo <att>type</att> com o valor "chapter" e o atributo <att>n</att> com o
+          número da Observação em algarismos arábicos. Os títulos foram marcados com o elemento
+            <gi>head</gi>.</p>
+        <p>Os poemas foram marcados com os elementos <gi>lg</gi> (estrofes) e <gi>l</gi> (versos).
+          Nos títulos dos poemas, o elemento <gi>title</gi> foi usado com o atributo
+          <att>type</att>, com os valores "gênero" (para a indicação do gênero do poema, como
+          "ELOGIUM") e "dedicatória" (para a indicação do destinatário).</p>
+        <p>As assinaturas ao final de cartas, pareceres e licenças foram marcadas com o elemento
+            <gi>signed</gi>.</p>
+        <p>O sumário e a sinopse foram transcritos com o elemento <gi>list</gi>, com cada item
+          marcado com <gi>item</gi>; as subdivisões foram marcadas com listas encaixadas. A errata
+          foi transcrita como tabela (<gi>table</gi>), com a linha de cabeçalho marcada com o
+          atributo <att>role</att> com o valor "label".</p>
+        <p>As notas marginais (em sua maioria, referências a autoridades, em latim) foram marcadas
+          com o elemento <gi>note</gi>, inserido no ponto do texto em que aparece a chamada
+          numérica; as notas em latim têm o atributo <att>xml:lang</att> com o valor "la". Nem todas
+          as notas marginais foram transcritas.</p>
+        <p>O elemento <gi>term</gi> assinala os termos do texto que representam entradas do
+          Dicionário Histórico de Termos da Biologia.</p>
+        <p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e <gi>s</gi> têm
+          identificadores (<att>xml:id</att>) no padrão <code>p_semmedo_0001</code>,
+            <code>h_semmedo_0001</code>, <code>i_semmedo_0001</code>, <code>n_semmedo_0001</code> e
+            <code>s_semmedo_0001</code>, respectivamente.</p>
       </editorialDecl>
       <projectDesc>
         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -1880,7 +1915,7 @@
       </div>
 
       <div type="chapter" n="2">
-        <head xml:id="h_semmedo_0012">OBsERVAÇAM II.</head>
+        <head xml:id="h_semmedo_0012">OBSERVAÇAM II.</head>
         <p xml:id="p_semmedo_0022">De huma tosse vehementissima, e repentina, a que sobreveyo hum
           fluxo de sangue pela boca, que teve o Illustrisstrissimo senhor D. Fr. Diogo Ventura
           Hernandes de Angulo Velasco sandoval, Arcebisbo Embaixador de Carlos II. estando em
@@ -10470,7 +10505,7 @@
       </div>
 
       <div type="chapter" n="59">
-        <head xml:id="h_semmedo_0069">OBsERVAÇAM LIX</head>
+        <head xml:id="h_semmedo_0069">OBSERVAÇAM LIX</head>
         <p xml:id="p_semmedo_0667">De huma grande resicaçaõ, &amp; magreza de todo o abdomem,
           procedida de excessivas calmas, de grande fastio, &amp; de vômitos muito continuados.</p>
         <p xml:id="p_semmedo_0668">Thomè Gonçalvez, morador em Lisboa, na rua da Ametade, por

@@ -22,7 +22,7 @@
 		<encodingDesc>
 			<editorialDecl>
 				<p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter
-					as letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
+					as letras ligadas æ e œ nas transcrições dos nomes em latim.</p>
 				<p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
 					rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
 						<gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
@@ -39,6 +39,44 @@
 					elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
 						<att>facs</att> com o endereço URL do arquivo da imagem correspondente à
 					página em questão.</p>
+				<p>Os textos preliminares foram marcados com elementos <gi>div</gi> com o atributo
+						<att>type</att> com os valores "dedication", "foreword", "preface" e
+					"introduction". No corpo do texto, as divisões foram marcadas com elementos
+						<gi>div</gi> com o atributo <att>type</att> com os valores "part", "chapter"
+					e "subchapter", conforme o nível, e o atributo <att>n</att> com a numeração do
+					original, quando houver.</p>
+				<p>Além dos parágrafos (<gi>p</gi>), parte do texto foi segmentada em frases, cada
+					uma marcada com o elemento <gi>s</gi>.</p>
+				<p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto
+					do texto em que aparece a chamada. As notas em latim têm o atributo
+						<att>xml:lang</att> com o valor "la"; os trechos em latim no corpo do texto
+					foram marcados com o elemento <gi>foreign</gi>, com o mesmo atributo.</p>
+				<p>Os termos da Botânica que correspondem a entradas do Dicionário Histórico de
+					Termos da Biologia foram marcados com o elemento <gi>term</gi>, com os seguintes
+					atributos: <att>lemma</att>, com a forma de citação do termo na ortografia atual
+					(por exemplo, "cálice" para "calyz"); <att>norm</att>, com a forma flexionada
+					atualizada, quando difere do lema (por exemplo, "árvores"); <att>msd</att>, com
+					a indicação da flexão ("plural", "feminino singular", "feminino plural",
+					"masculino plural"); e <att>senseNumber</att>, quando o termo é empregado em uma
+					acepção diferente da primeira, remetendo à acepção correspondente no
+					dicionário.</p>
+				<p>Os erros tipográficos evidentes foram mantidos no texto e marcados com o elemento
+						<gi>w</gi>, com a forma correta no atributo <att>norm</att> (por exemplo,
+					"sentimenots", normalizado como "sentimentos"). As formas duvidosas, sem
+					correção proposta, foram marcadas com o elemento <gi>sic</gi>.</p>
+				<p>Algumas referências a espécies vegetais foram marcadas com o elemento
+					<gi>rs</gi>, com o nome científico atual no atributo <att>key</att> e o endereço
+					do item correspondente no Wikidata no atributo <att>ref</att>; o atributo
+						<att>cert</att> indica o grau de certeza da identificação.</p>
+				<p>O símbolo de "volta", usado no original, foi representado pelo elemento
+						<gi>g</gi>, que remete à sua descrição no elemento <gi>charDecl</gi>.</p>
+				<p>Os quadros de oposição de caracteres (por exemplo, "Redondo / Anguloso") foram
+					transcritos como tabelas (<gi>table</gi>).</p>
+				<p>Os elementos <gi>p</gi>, <gi>s</gi>, <gi>head</gi>, <gi>note</gi> e <gi>term</gi>
+					têm identificadores (<att>xml:id</att>) no padrão <code>p_brotero1_0001</code>,
+						<code>s_brotero1_0001</code>, <code>h_brotero1_0001</code>,
+						<code>n_brotero1_0001</code> e <code>t_brotero1_0001</code>,
+					respectivamente.</p>
 			</editorialDecl>
 			<charDecl>
 				<char xml:id="turn">
@@ -1138,9 +1176,9 @@
 							<s xml:id="s_brotero1_0138">A mesma planta succede as vezes ter
 								differentes virtudes, segundo as suas differentes partes, de maneira
 								que se os botanicos seguissem os Autores de Materia Medica, a <term
-									xml:id="t_brotero1_0021">raiz</term> de huma planta muitas
-								vezes deveria ser posta em huma classe, a sua flor em outra, as suas
-									<term lemma="folha" msd="plural" xml:id="t_brotero1_0022"
+									xml:id="t_brotero1_0021">raiz</term> de huma planta muitas vezes
+								deveria ser posta em huma classe, a sua flor em outra, as suas <term
+									lemma="folha" msd="plural" xml:id="t_brotero1_0022"
 									>folhas</term> e tronco em outra, em fim ainda algumas vezes o
 								mesmo fructo, como v. g. a laranja, mereceria de ser posto em
 								differentes Classes.</s>

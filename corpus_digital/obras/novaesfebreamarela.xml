@@ -35,18 +35,47 @@
 				<p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
 					rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
 						<gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+				<p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
+					digital Internet Archive (https://archive.org/details/101464815.nlm.nih.gov/).
+					Cada elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o
+					atributo <att>facs</att> com o endereço URL da imagem correspondente à
+					página.</p>
+				<p>As páginas preliminares (lista dos professores e das matérias da Faculdade, por
+					ano, e dos doutorandos) foram marcadas com elementos <gi>div</gi> cujo atributo
+						<att>type</att> indica o conteúdo de cada uma ("faculty-list", "director",
+					"vice-director", "teaching-staff", "first-academic-year" a
+					"sixth-academic-year", "academic-candidates" etc.). Essas listas foram
+					transcritas como tabelas (<gi>table</gi>), e as listas de nomes dentro das
+					células, com os elementos <gi>list</gi> e <gi>item</gi>.</p>
+				<p>As epígrafes (em francês) foram marcadas com o elemento <gi>epigraph</gi>.</p>
+				<p>As notas do editor, que não fazem parte do original (por exemplo, a indicação de
+					particularidades da impressão), foram marcadas com o elemento <gi>note</gi> e
+					escritas entre colchetes.</p>
+				<p>Os termos que correspondem a entradas do Dicionário Histórico de Termos da
+					Biologia foram marcados com o elemento <gi>term</gi>. O atributo
+						<att>lemma</att> traz a forma de citação do termo na ortografia atual (por
+					exemplo, "febre amarela", "profilaxia"), e o atributo <att>type</att> indica a
+					categoria do termo.</p>
 				<p>Os nomes de doenças foram marcados com o elemento <gi>term</gi> acrescido do
 					atributo <att>type</att> com o valor "illness".</p>
+				<p>Os nomes de sintomas foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "symptom".</p>
 				<p>Os nomes de partes do corpo foram marcados com o elemento <gi>term</gi> acrescido
 					do atributo <att>type</att> com o valor "body-part".</p>
 				<p>Os nomes de plantas foram marcados com o elemento <gi>term</gi> acrescido do
 					atributo <att>type</att> com o valor "plant".</p>
-				<p>Os nomes de sintomas foram marcados com o elemento <gi>term</gi> acrescido do
-					atributo <att>type</att> com o valor "symptom".</p>
+				<p>Os nomes de substâncias químicas e de medicamentos foram marcados com o elemento
+						<gi>term</gi> acrescido do atributo <att>type</att> com o valor
+					"chemical-medicine".</p>
 				<p>Os nomes científicos que aparecem no texto foram marcados com o elemento
 						<gi>name</gi>, o atributo <att>type</att> com o valor "taxon" e o atributo
 						<att>subtype</att> com o valor "species", "genus" ou "family", dependendo do
 					nível taxonômico.</p>
+				<p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e
+						<gi>term</gi> têm identificadores (<att>xml:id</att>) no padrão
+						<code>p_novaes_0001</code>, <code>h_novaes_0001</code>,
+						<code>i_novaes_0001</code>, <code>n_novaes_0001</code> e
+						<code>t_novaes_0001</code>, respectivamente.</p>
 			</editorialDecl>
 			<projectDesc>
 				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -71,10 +100,10 @@
 					Eufrosina Maria de Novaes. Ex 1.º Cirurgião do Exercito e condecorado com a
 					medalha da campanha do Paraguay.</byline>
 				<epigraph>
-					<p xml:id="p_novaes_0001" xml:lang="fr">La plus haute mission de l'homme, après celle du
-						service des autels, est d'être prêtre du feu sacré de la vie, dispensateur
-						des plus beaux dons de Dieu, et maître des forces occultes de la nature,
-						c'este á-dire dêtre medicin. (HUFELAND).</p>
+					<p xml:id="p_novaes_0001" xml:lang="fr">La plus haute mission de l'homme, après
+						celle du service des autels, est d'être prêtre du feu sacré de la vie,
+						dispensateur des plus beaux dons de Dieu, et maître des forces occultes de
+						la nature, c'este á-dire dêtre medicin. (HUFELAND).</p>
 				</epigraph>
 				<docImprint><pubPlace>BAHIA</pubPlace> TYP. DE CANDIDO REIÑALDO DA ROCHA
 						<docDate>1871</docDate>.</docImprint>
@@ -279,12 +308,12 @@
 				<head xml:id="h_novaes_0017">DISSERTAÇÃO</head>
 				<head xml:id="h_novaes_0018">PRIMEIRA PARTE</head>
 				<epigraph>
-					<p xml:id="p_novaes_0007" xml:lang="fr">Les epidemies sont dans l'histoire medicale des
-						peuples, les evènements principaux, les accidents les plus remarquables. It
-						faut en perpetuer le souvenir, afin que les tristes leçons de ces etranges
-						calamitès ne soient, pas entierement perdues pour les génerations qui
-						suivent, afin que les medicins n'entrent pas tout-neufs dans la penible
-						corriere de ce genre d'ètudes. (FLEURY, COUS D'HYGIEE.)</p>
+					<p xml:id="p_novaes_0007" xml:lang="fr">Les epidemies sont dans l'histoire
+						medicale des peuples, les evènements principaux, les accidents les plus
+						remarquables. It faut en perpetuer le souvenir, afin que les tristes leçons
+						de ces etranges calamitès ne soient, pas entierement perdues pour les
+						génerations qui suivent, afin que les medicins n'entrent pas tout-neufs dans
+						la penible corriere de ce genre d'ètudes. (FLEURY, COUS D'HYGIEE.)</p>
 				</epigraph>
 				<p xml:id="p_novaes_0008">Antes de tratarmos propriamente do ponto, julgamos de
 					summa importancia fazer algumas ligeiras considerações sobre a natureza da
@@ -1336,12 +1365,13 @@
 					</table>
 					<p xml:id="p_novaes_0115">Dissolva para tomar as colheres de hora em hora. Ao
 						mesmo tempo applicava compressas d'agua fria sobre o <term type="body-part"
-							xml:id="t_novaes_0124">ventre</term><pb n="22" facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0025.jp2&amp;id=101464815.nlm.nih.gov"/> de concomitancia com os
-						sinapismos nas <term type="body-part" xml:id="t_novaes_0125"
-							lemma="extremidade">extremidades</term>. Quanto finalmente havia
-						cessação dos symptomas mais graves dava <term type="chemical-medicine"
-							xml:id="t_novaes_0378" lemma="limonada clorídrica">limonada
-							chlorydrica</term> aos calices.</p>
+							xml:id="t_novaes_0124">ventre</term><pb n="22"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0025.jp2&amp;id=101464815.nlm.nih.gov"
+						/> de concomitancia com os sinapismos nas <term type="body-part"
+							xml:id="t_novaes_0125" lemma="extremidade">extremidades</term>. Quanto
+						finalmente havia cessação dos symptomas mais graves dava <term
+							type="chemical-medicine" xml:id="t_novaes_0378"
+							lemma="limonada clorídrica">limonada chlorydrica</term> aos calices.</p>
 					<p xml:id="p_novaes_0116">Este tratamento approveitou alguma cousa, pois que de
 						onze doentes que entraram para o Hospital, e destes, 8 em estado grave,</p>
 					<table>
@@ -1529,10 +1559,12 @@
 							lemma="vômito">vomito</term> negro e as <term type="symptom"
 							xml:id="t_novaes_0407" lemma="hemorragia">hemorrhagias</term>.</p>
 					<p xml:id="p_novaes_0133">Diz mais que, para a inoculação exercer a sua virtude
-							preservadoura,<pb n="26" facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0029.jp2&amp;id=101464815.nlm.nih.gov"/> não era necessario que os seus symptomas
-						fossem intensos; que somente bastava os inoculados apresentarem o <term
-							type="symptom" xml:id="t_novaes_0408">enfraquecimento do pulso</term> e
-						uma tendencia hemorrhogica das <term type="body-part" xml:id="t_novaes_0129"
+							preservadoura,<pb n="26"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0029.jp2&amp;id=101464815.nlm.nih.gov"
+						/> não era necessario que os seus symptomas fossem intensos; que somente
+						bastava os inoculados apresentarem o <term type="symptom"
+							xml:id="t_novaes_0408">enfraquecimento do pulso</term> e uma tendencia
+						hemorrhogica das <term type="body-part" xml:id="t_novaes_0129"
 							lemma="gengiva">gengivas</term> Essa substancia depois de ter sido
 						inoculada no <term type="body-part" xml:id="t_novaes_0130">braço</term>,
 						pelo mesmo processo que a vacina, applicava-se sobre as picadas da lanceta

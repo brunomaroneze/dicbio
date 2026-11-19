@@ -21,16 +21,56 @@
 		</fileDesc>
 		<encodingDesc>
 			<editorialDecl>
-				<p>A ortografia original da obra foi mantida sempre que possível.</p>
+				<p>O texto tem como base a transcrição (OCR) disponível no Internet Archive
+					(https://archive.org/details/b29341152/), conferida com as imagens das páginas.
+					A ortografia original foi mantida, sem correções nem modernizações.</p>
 				<p>Cada parágrafo do texto foi marcado com o elemento <gi>p</gi>. As quebras de
-					linha não foram marcadas com nenhum elemento XML.</p>
-				<p>As quebras de página foram marcadas com o elemento <gi>pb</gi>. Nos casos em que
-					a quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
-					inserido antes da palavra quebrada, e a quebra não foi sinalizada.</p>
-				<p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
-					digital Internet Archive. O URL de cada imagem segue o padrão:
-						<code>https://ia600904.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/b29341152/b29341152_jp2.zip&amp;file=b29341152_jp2/b29341152_XXXX.jp2&amp;id=b29341152</code>,
-					onde <code>XXXX</code> é um número sequencial (a página de rosto é 0007).</p>
+					linha não foram marcadas com nenhum elemento XML. As palavras divididas por
+					hífen no fim da linha foram unidas (por exemplo, "cen- sura" foi transcrito como
+					"censura"); o hífen foi mantido apenas nos casos de pronomes enclíticos (por
+					exemplo, "deve-se").</p>
+				<p>As quebras de página foram marcadas com o elemento <gi>pb</gi>, com o número da
+					página no atributo <att>n</att> (em algarismos romanos nas páginas
+					preliminares). Nos casos em que a quebra de página ocorre no meio de uma
+					palavra, o elemento <gi>pb</gi> foi inserido antes da palavra quebrada, e a
+					quebra não foi sinalizada. As assinaturas tipográficas e os números das páginas
+					não foram transcritos.</p>
+				<p>As imagens (fac-símiles) das páginas da obra foram obtidas do repositório digital
+					Internet Archive e são armazenadas localmente, na pasta
+						<code>fazendeiroimbert_imagens</code>, com nomes no padrão
+						<code>b29341152_XXXX.jpg</code>, onde <code>XXXX</code> é um número
+					sequencial (a página de rosto é 0007; a página 1 é 0023). Cada elemento
+						<gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo
+						<att>facs</att> com o caminho relativo da imagem correspondente.</p>
+				<p>Os textos preliminares (dedicatória e introdução) foram marcados no elemento
+						<gi>front</gi>, com elementos <gi>div</gi> com o atributo <att>type</att>
+					com os valores "dedication" e "introduction". No corpo do texto, as divisões
+					foram marcadas com o elemento <gi>div</gi>, com o atributo <att>type</att> com
+					os valores "chapter", "section" e "subsection", conforme o nível, e o atributo
+						<att>n</att> com a numeração do original, quando houver. A conclusão foi
+					marcada com <gi>div</gi> do tipo "conclusion". Os títulos foram marcados com o
+					elemento <gi>head</gi>; em algumas divisões há mais de um <gi>head</gi> (título
+					e subtítulo).</p>
+				<p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto
+					do texto em que aparece a chamada. O texto de cada nota foi marcado com
+						<gi>p</gi>.</p>
+				<p>As receitas foram marcadas com o elemento <gi>list</gi>, com o atributo
+						<att>type</att> com o valor "receita"; o nome da receita, quando presente,
+					foi marcado com <gi>head</gi>, e cada ingrediente com <gi>item</gi>.</p>
+				<p>O "Quadro dos medicamentos" (pp. 331-334), impresso na horizontal, foi transcrito
+					como tabela (<gi>table</gi>, com o atributo <att>cols</att> com o valor "3"), a
+					partir das imagens das páginas. A linha de títulos das colunas, repetida em cada
+					página, foi marcada com o atributo <att>role</att> com o valor "label". As
+					chaves que agrupam várias linhas do impresso foram representadas pelo atributo
+						<att>rows</att> do elemento <gi>cell</gi>; as linhas pontilhadas foram
+					omitidas, e o sinal de repetição "»" foi mantido.</p>
+				<p>O índice e a lista de assinantes foram marcados no elemento <gi>back</gi>, com
+					elementos <gi>div</gi> (com os tipos "index" e "subscribers") contendo,
+					respectivamente, uma lista do tipo "toc" e uma lista do tipo "subscribers".</p>
+				<p>A epígrafe em francês da página de rosto foi marcada com o elemento
+						<gi>epigraph</gi> e o atributo <att>xml:lang</att> com o valor "fr".</p>
+				<p>Os elementos p, head, item e note terão identificadores únicos (xml:id) no padrão
+					p_imbert_0001..., a serem inseridos automaticamente no futuro.</p>
 			</editorialDecl>
 			<projectDesc>
 				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
