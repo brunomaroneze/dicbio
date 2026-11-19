@@ -1,0 +1,357 @@
+PROPOSTAS DE <editorialDecl> PARA OS ARQUIVOS DO CORPUS
+=======================================================
+
+Cada bloco abaixo pode substituir o <editorialDecl> atual do arquivo indicado. As propostas
+partem do texto que já existe em cada arquivo e acrescentam o que falta, com base nas
+etiquetas efetivamente usadas (levantamento feito em 19/11/2026).
+
+Convenções deste rascunho:
+  [CONFERIR: ...]  ponto que depende de informação que só você tem; apagar antes de inserir.
+  Os comentários "ALTERAÇÕES" antes de cada bloco só servem para a conferência.
+
+Ficaram de fora, a pedido: anatomiasantucci.xml e compendio2brotero.xml.
+
+
+-------------------------------------------------------------------------------
+1. observSemmedo.xml
+-------------------------------------------------------------------------------
+ALTERAÇÕES em relação ao texto atual:
+  - as imagens agora são locais (o parágrafo sobre os URLs do Internet Archive foi refeito);
+  - informação sobre a numeração das imagens (incluindo as duas imagens duplicadas);
+  - eliminação dos cabeçalhos correntes e das marcas "PÁGINA N";
+  - páginas sem número, estrutura (divisões, títulos, poemas, assinaturas), notas
+    marginais, termos e xml:id.
+
+<editorialDecl>
+  <p>A ortografia original da obra foi mantida sempre que possível, sem correções nem
+    modernizações. Procurou-se manter as letras ligadas æ e œ nas transcrições dos nomes em
+    latim.</p>
+  <p>Cada parágrafo foi marcado com o elemento <gi>p</gi>. As quebras de linha não foram
+    marcadas.</p>
+  <p>As quebras de página foram marcadas com o elemento <gi>pb</gi>, cujo atributo <att>n</att>
+    traz o número impresso da página. As páginas sem numeração receberam no atributo
+      <att>n</att> as indicações "não numerada" (seguida de um número sequencial), "em branco"
+    ou "imagem". Quando uma quebra de página ocorre no meio de uma palavra, o elemento
+      <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+  <p>Os cabeçalhos correntes das páginas (título da obra e número da Observação), presentes em
+    uma versão anterior da transcrição, foram eliminados, assim como as indicações de página que
+    haviam sido inseridas no texto. Os reclamos (palavras repetidas no pé da página como
+    antecipação da página seguinte) não foram marcados; em alguns pontos, a palavra aparece
+    repetida na transcrição.</p>
+  <p>As imagens (fac-símiles) das páginas da obra foram obtidas do repositório digital Internet
+    Archive (https://archive.org/details/bub_gb_qCVH54Hs2i0C/) e são armazenadas localmente, na
+    pasta <code>observSemmedo_imagens</code>, com nomes no padrão
+      <code>bub_gb_qCVH54Hs2i0C_XXXX.jpg</code>, onde <code>XXXX</code> é um número sequencial
+    (a página de rosto é 0000). Neste arquivo, cada elemento <gi>pb</gi>, bem como o elemento
+      <gi>titlePage</gi>, contém o atributo <att>facs</att> com o caminho relativo da imagem
+    correspondente. A página 1 corresponde à imagem 0040. As imagens 0605 e 0606 são uma segunda
+    digitalização das páginas 564 e 565 (imagens 0603 e 0604) e não foram usadas.</p>
+  <p>Os textos preliminares foram marcados no elemento <gi>front</gi>, com elementos
+      <gi>div</gi> cujo atributo <att>type</att> indica a natureza de cada um: "carta_dedicatoria",
+    "prologo", "poema", "sinopse", "sumário", "parecer", "despacho", "AprovacoesSantoOficio".
+    Os poemas em latim têm o atributo <att>xml:lang</att> com o valor "la". [CONFERIR: há
+    "Despacho" e "despacho" como valores de type; convém uniformizar.]</p>
+  <p>Cada uma das cem Observações (e a Observação CI) foi marcada com o elemento <gi>div</gi>,
+    com o atributo <att>type</att> com o valor "chapter" e o atributo <att>n</att> com o número
+    da Observação em algarismos arábicos. Os títulos foram marcados com o elemento
+      <gi>head</gi>.</p>
+  <p>Os poemas foram marcados com os elementos <gi>lg</gi> (estrofes) e <gi>l</gi> (versos). Nos
+    títulos dos poemas, o elemento <gi>title</gi> foi usado com o atributo <att>type</att>, com
+    os valores "gênero" (para a indicação do gênero do poema, como "ELOGIUM") e "dedicatória"
+    (para a indicação do destinatário).</p>
+  <p>As assinaturas ao final de cartas, pareceres e licenças foram marcadas com o elemento
+      <gi>signed</gi>.</p>
+  <p>O sumário e a sinopse foram transcritos com o elemento <gi>list</gi>, com cada item marcado
+    com <gi>item</gi>; as subdivisões foram marcadas com listas encaixadas. A errata foi
+    transcrita como tabela (<gi>table</gi>), com a linha de cabeçalho marcada com o atributo
+      <att>role</att> com o valor "label".</p>
+  <p>As notas marginais (em sua maioria, referências a autoridades, em latim) foram marcadas com
+    o elemento <gi>note</gi>, inserido no ponto do texto em que aparece a chamada numérica; as
+    notas em latim têm o atributo <att>xml:lang</att> com o valor "la". Nem todas as notas
+    marginais foram transcritas.</p>
+  <p>Os nomes de plantas foram marcados com o elemento <gi>term</gi>. [CONFERIR: confirmar se
+    todos os term deste arquivo são nomes de plantas; há dois com os atributos lemma, norm e msd,
+    como nos arquivos de Brotero e Vandelli.]</p>
+  <p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e <gi>s</gi> têm
+    identificadores (<att>xml:id</att>) no padrão <code>p_semmedo_0001</code>,
+      <code>h_semmedo_0001</code>, <code>i_semmedo_0001</code>, <code>n_semmedo_0001</code> e
+      <code>s_semmedo_0001</code>, respectivamente.</p>
+</editorialDecl>
+
+Observação: não incluí o parágrafo sobre o código de escape de &amp;, porque, com as imagens
+locais, ele deixou de ser necessário.
+
+
+-------------------------------------------------------------------------------
+2. fazendeiroimbert.xml
+-------------------------------------------------------------------------------
+ALTERAÇÕES em relação ao texto atual:
+  - as imagens agora são locais (o parágrafo sobre os URLs foi refeito);
+  - origem do texto (OCR), hifenização de fim de linha, notas, receitas, quadro dos
+    medicamentos, índice, lista de assinantes, divisões.
+  - o arquivo ainda não tem xml:id; deixei o parágrafo correspondente indicado para depois.
+
+<editorialDecl>
+  <p>O texto tem como base a transcrição (OCR) disponível no Internet Archive
+    (https://archive.org/details/b29341152/), conferida com as imagens das páginas. A ortografia
+    original foi mantida, sem correções nem modernizações.</p>
+  <p>Cada parágrafo do texto foi marcado com o elemento <gi>p</gi>. As quebras de linha não
+    foram marcadas com nenhum elemento XML. As palavras divididas por hífen no fim da linha
+    foram unidas (por exemplo, "cen- sura" foi transcrito como "censura"); o hífen foi mantido
+    apenas nos casos de pronomes enclíticos (por exemplo, "deve-se").</p>
+  <p>As quebras de página foram marcadas com o elemento <gi>pb</gi>, com o número da página no
+    atributo <att>n</att> (em algarismos romanos nas páginas preliminares). Nos casos em que a
+    quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi inserido antes
+    da palavra quebrada, e a quebra não foi sinalizada. As assinaturas tipográficas e os
+    números das páginas não foram transcritos.</p>
+  <p>As imagens (fac-símiles) das páginas da obra foram obtidas do repositório digital Internet
+    Archive e são armazenadas localmente, na pasta <code>fazendeiroimbert_imagens</code>, com
+    nomes no padrão <code>b29341152_XXXX.jpg</code>, onde <code>XXXX</code> é um número
+    sequencial (a página de rosto é 0007; a página 1 é 0023). Cada elemento <gi>pb</gi>, bem
+    como o elemento <gi>titlePage</gi>, contém o atributo <att>facs</att> com o caminho relativo
+    da imagem correspondente.</p>
+  <p>Os textos preliminares (dedicatória e introdução) foram marcados no elemento
+      <gi>front</gi>, com elementos <gi>div</gi> com o atributo <att>type</att> com os valores
+    "dedication" e "introduction". No corpo do texto, as divisões foram marcadas com o elemento
+      <gi>div</gi>, com o atributo <att>type</att> com os valores "chapter", "section" e
+    "subsection", conforme o nível, e o atributo <att>n</att> com a numeração do original,
+    quando houver. A conclusão foi marcada com <gi>div</gi> do tipo "conclusion". Os títulos
+    foram marcados com o elemento <gi>head</gi>; em algumas divisões há mais de um
+      <gi>head</gi> (título e subtítulo).</p>
+  <p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto do texto
+    em que aparece a chamada. O texto de cada nota foi marcado com <gi>p</gi>.</p>
+  <p>As receitas foram marcadas com o elemento <gi>list</gi>, com o atributo <att>type</att> com
+    o valor "receita"; o nome da receita, quando presente, foi marcado com <gi>head</gi>, e cada
+    ingrediente com <gi>item</gi>.</p>
+  <p>O "Quadro dos medicamentos" (pp. 331-334), impresso na horizontal, foi transcrito como
+    tabela (<gi>table</gi>, com o atributo <att>cols</att> com o valor "3"), a partir das
+    imagens das páginas. A linha de títulos das colunas, repetida em cada página, foi marcada
+    com o atributo <att>role</att> com o valor "label". As chaves que agrupam várias linhas do
+    impresso foram representadas pelo atributo <att>rows</att> do elemento <gi>cell</gi>; as
+    linhas pontilhadas foram omitidas, e o sinal de repetição "»" foi mantido.</p>
+  <p>O índice e a lista de assinantes foram marcados no elemento <gi>back</gi>, com elementos
+      <gi>div</gi> (com os tipos "index" e "subscribers") contendo, respectivamente, uma lista
+    do tipo "toc" e uma lista do tipo "subscribers".</p>
+  <p>A epígrafe em francês da página de rosto foi marcada com o elemento <gi>epigraph</gi> e o
+    atributo <att>xml:lang</att> com o valor "fr".</p>
+  <p>[CONFERIR: quando os xml:id forem atribuídos, acrescentar um parágrafo no mesmo modelo do
+    arquivo de Semmedo, por exemplo: "Os elementos p, head, item e note têm identificadores
+    (xml:id) no padrão p_imbert_0001..."]</p>
+</editorialDecl>
+
+
+-------------------------------------------------------------------------------
+3. novaesfebreamarela.xml
+-------------------------------------------------------------------------------
+ALTERAÇÕES em relação ao texto atual:
+  - o valor "chemical-medicine" de term/@type (83 ocorrências) não estava descrito;
+  - atributo lemma de term; notas do editor; tabelas e listas das páginas preliminares;
+    epígrafes; imagens; xml:id.
+  - ATENÇÃO: os <pb> das páginas 22 e 26 estão sem o atributo facs; os demais o têm.
+
+<editorialDecl>
+  <p>A ortografia original da obra foi mantida sempre que possível.</p>
+  <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de rodapé.
+    Quando a quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
+    incluído antes da palavra, de modo a não quebrá-la.</p>
+  <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital
+    Internet Archive (https://archive.org/details/101464815.nlm.nih.gov/). Cada elemento
+      <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o atributo <att>facs</att> com
+    o endereço URL da imagem correspondente à página. [CONFERIR: se as imagens forem baixadas
+    como nos outros arquivos, trocar por um texto como o de Semmedo.]</p>
+  <p>As páginas preliminares (lista dos professores e das matérias da Faculdade, por ano, e dos
+    doutorandos) foram marcadas com elementos <gi>div</gi> cujo atributo <att>type</att> indica
+    o conteúdo de cada uma ("faculty-list", "director", "vice-director", "teaching-staff",
+    "first-academic-year" a "sixth-academic-year", "academic-candidates" etc.). Essas listas
+    foram transcritas como tabelas (<gi>table</gi>), e as listas de nomes dentro das células,
+    com os elementos <gi>list</gi> e <gi>item</gi>.</p>
+  <p>As epígrafes (em francês) foram marcadas com o elemento <gi>epigraph</gi>. [CONFERIR:
+    acrescentar xml:lang="fr" às epígrafes, como em Imbert, ou retirar esta menção.]</p>
+  <p>As notas do editor, que não fazem parte do original (por exemplo, a indicação de
+    particularidades da impressão), foram marcadas com o elemento <gi>note</gi> e escritas
+    entre colchetes.</p>
+  <p>Os termos foram marcados com o elemento <gi>term</gi>. O atributo <att>lemma</att> traz a
+    forma de citação do termo na ortografia atual (por exemplo, "febre amarela", "profilaxia"),
+    e o atributo <att>type</att> indica a categoria do termo.</p>
+  <p>Os nomes de doenças foram marcados com o elemento <gi>term</gi> acrescido do atributo
+      <att>type</att> com o valor "illness".</p>
+  <p>Os nomes de sintomas foram marcados com o elemento <gi>term</gi> acrescido do atributo
+      <att>type</att> com o valor "symptom".</p>
+  <p>Os nomes de partes do corpo foram marcados com o elemento <gi>term</gi> acrescido do
+    atributo <att>type</att> com o valor "body-part".</p>
+  <p>Os nomes de plantas foram marcados com o elemento <gi>term</gi> acrescido do atributo
+      <att>type</att> com o valor "plant".</p>
+  <p>Os nomes de substâncias químicas e de medicamentos foram marcados com o elemento
+      <gi>term</gi> acrescido do atributo <att>type</att> com o valor "chemical-medicine".</p>
+  <p>Os nomes científicos que aparecem no texto foram marcados com o elemento <gi>name</gi>, o
+    atributo <att>type</att> com o valor "taxon" e o atributo <att>subtype</att> com o valor
+    "species", "genus" ou "family", dependendo do nível taxonômico.</p>
+  <p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e <gi>term</gi> têm
+    identificadores (<att>xml:id</att>) no padrão <code>p_novaes_0001</code>,
+      <code>h_novaes_0001</code>, <code>i_novaes_0001</code>, <code>n_novaes_0001</code> e
+      <code>t_novaes_0001</code>, respectivamente.</p>
+</editorialDecl>
+
+
+
+-------------------------------------------------------------------------------
+4. compendio1brotero.xml
+-------------------------------------------------------------------------------
+ALTERAÇÕES em relação ao texto atual:
+  - divisões, segmentação em frases (<s>), atributos de <term>, notas, trechos em latim,
+    correções (<w norm>, <sic>), identificação de espécies (<rs>), símbolo especial (<g>),
+    tabelas e xml:id. Os parágrafos sobre ortografia, quebras de página, paginação errônea
+    e imagens foram mantidos.
+
+<editorialDecl>
+  <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
+    letras ligadas æ e œ nas transcrições dos nomes em latim.</p>
+  <p>As quebras de página foram inseridas apenas no texto principal, não nas notas de rodapé.
+    Quando a quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi incluído
+    antes da palavra, de modo a não quebrá-la.</p>
+  <p xml:id="PaginacaoErronea">A numeração das páginas no original impresso contém erros. Após
+    a página 368, a página que deveria ser 369 está numerada como 399, e assim por diante, até a
+    página 400. As páginas erradas estão marcadas com o atributo <att>ana</att> e a indicação
+    "PaginacaoErronea" nos elementos <gi>pb</gi>.</p>
+  <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital da
+    Universidade de Coimbra. O URL de cada imagem segue o padrão:
+      <code>https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/UCFCTBt-B-78-1-15/UCFCTBt-B-78-1-15_item1/UCFCTBt-B-78-1-15_JPG/UCFCTBt-B-78-1-15_JPG_24-C-R0120/UCFCTBt-B-78-1-15_XXXX_PAGE_t24-C-R0120.jpg</code>,
+    onde <code>XXXX</code> é um número sequencial e <code>PAGE</code> é o número da página, seja
+    em romanos, seja em arábicos. Neste arquivo transcrito, cada elemento <gi>pb</gi>, bem como
+    o elemento <gi>titlePage</gi>, contém o atributo <att>facs</att> com o endereço URL do
+    arquivo da imagem correspondente à página em questão.</p>
+  <p>Os textos preliminares foram marcados com elementos <gi>div</gi> com o atributo
+      <att>type</att> com os valores "dedication", "foreword", "preface" e "introduction". No
+    corpo do texto, as divisões foram marcadas com elementos <gi>div</gi> com o atributo
+      <att>type</att> com os valores "part", "chapter" e "subchapter", conforme o nível, e o
+    atributo <att>n</att> com a numeração do original, quando houver.</p>
+  <p>Além dos parágrafos (<gi>p</gi>), o texto foi segmentado em frases, cada uma marcada com o
+    elemento <gi>s</gi>.</p>
+  <p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto do texto
+    em que aparece a chamada. As notas em latim têm o atributo <att>xml:lang</att> com o valor
+    "la"; os trechos em latim no corpo do texto foram marcados com o elemento
+      <gi>foreign</gi>, com o mesmo atributo.</p>
+  <p>Os termos da Botânica foram marcados com o elemento <gi>term</gi>, com os seguintes
+    atributos: <att>lemma</att>, com a forma de citação do termo na ortografia atual (por
+    exemplo, "cálice" para "calyz"); <att>norm</att>, com a forma flexionada atualizada, quando
+    difere do lema (por exemplo, "árvores"); <att>msd</att>, com a indicação da flexão
+    ("plural", "feminino singular", "feminino plural", "masculino plural"); e
+      <att>senseNumber</att>, quando o termo é empregado em uma acepção diferente da primeira.
+    [CONFERIR: senseNumber remete à numeração das acepções no verbete do Dicionário Histórico?]</p>
+  <p>Os erros tipográficos evidentes foram mantidos no texto e marcados com o elemento
+      <gi>w</gi>, com a forma correta no atributo <att>norm</att> (por exemplo,
+    "sentimenots", normalizado como "sentimentos"). As formas duvidosas, sem correção proposta,
+    foram marcadas com o elemento <gi>sic</gi>.</p>
+  <p>Algumas referências a espécies vegetais foram marcadas com o elemento <gi>rs</gi>, com o
+    nome científico atual no atributo <att>key</att> e o endereço do item correspondente no
+    Wikidata no atributo <att>ref</att>; o atributo <att>cert</att> indica o grau de certeza da
+    identificação.</p>
+  <p>O símbolo de "volta", usado no original, foi representado pelo elemento <gi>g</gi>, que
+    remete à sua descrição no elemento <gi>charDecl</gi>.</p>
+  <p>Os quadros de oposição de caracteres (por exemplo, "Redondo / Anguloso") foram transcritos
+    como tabelas (<gi>table</gi>).</p>
+  <p>Os elementos <gi>p</gi>, <gi>s</gi>, <gi>head</gi>, <gi>note</gi> e <gi>term</gi> têm
+    identificadores (<att>xml:id</att>) no padrão <code>p_brotero1_0001</code>,
+      <code>s_brotero1_0001</code>, <code>h_brotero1_0001</code>, <code>n_brotero1_0001</code> e
+      <code>t_brotero1_0001</code>, respectivamente.</p>
+</editorialDecl>
+
+
+-------------------------------------------------------------------------------
+5. diciovandelli.xml
+-------------------------------------------------------------------------------
+ALTERAÇÕES em relação ao texto atual:
+  - correções pequenas no texto existente: "<gi> pb</gi>", "<gi> p</gi>" e "<gi> list</gi>"
+    (espaço dentro de gi); aspas que faltavam em "pela abertura"; parêntese não fechado
+    depois de ALAE;
+  - acréscimos: segmentação em frases, atributos de <term>, <w norm>, <foreign>, notas, as
+    quatro páginas não numeradas sem imagem, lacuna final, xml:id.
+  - os parágrafos específicos do dicionário foram mantidos como estavam.
+
+<editorialDecl>
+  <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
+    letras ligadas æ e œ nas transcrições dos nomes em latim.</p>
+  <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
+    incluído antes da palavra, de modo a não quebrá-la.</p>
+  <p>Os verbetes do dicionário de Vandelli são por vezes muito longos, refletindo todas as
+    possibilidades de classificação dos animais e plantas. Cada um está indicado com o
+    elemento <gi>entry</gi>, com os elementos <gi>form</gi> e <gi>sense</gi> indicando,
+    respectivamente, a cabeça do verbete em latim (com o atributo <att>xml:lang</att> com o
+    valor "la") e a sua explicação em português. Quando há subentradas (em geral, nos casos das
+    subclassificações animais e vegetais, cada uma marcada inicialmente com um travessão),
+    também foram indicadas pelo elemento <gi>entry</gi>, com os respectivos elementos
+      <gi>form</gi> e <gi>sense</gi>.</p>
+  <p>Nos casos em que há quebra de parágrafo dentro do mesmo verbete, o segundo parágrafo está
+    marcado como outro elemento <gi>sense</gi>, mesmo que não seja de fato uma segunda
+    acepção.</p>
+  <p>Algumas subentradas são divididas em grupos (como é o caso, por exemplo, do verbete <ref
+      target="#apertura-branchiarum">APERTURA branchiarum</ref>), e esses grupos são marcados
+    pelo critério de classificação: "pela situação", "pela abertura", "pela figura" etc. Nesses
+    casos, os critérios de classificação foram indicados pelo elemento <gi>dictScrap</gi>.
+    Como esse elemento não pode conter subentradas, não foi possível usá-lo para agrupar todas
+    as subentradas correspondentes, mas apenas o nome do critério de classificação.</p>
+  <p>O elemento <gi>dictScrap</gi> também foi empregado para incluir listas, tabelas e
+    diagramas arbóreos (como é o caso, por exemplo, do verbete <ref target="#alae"
+    >ALAE</ref>).</p>
+  <p>Nos casos em que Vandelli emprega uma chave para associar uma mesma explicação a duas
+    entradas diferentes (como é o caso de <ref target="#fissilis-perfoliata">fissilis e
+      perfoliata</ref>, subentradas de CLAVA), a estratégia adotada aqui foi incluir as duas
+    entradas no mesmo elemento <gi>form</gi>.</p>
+  <p>O trecho entre as páginas 189 e 192, referente à classificação das plantas pelo sistema
+    de Lineu, traz dificuldades na transcrição, decorrentes da natureza do sistema de
+    classificação, que não é arbóreo e, portanto, não pode ser representado por meio de uma
+    hierarquia em XML. Dessa forma, tentou-se fazer uma transcrição aproximada usando os
+    elementos <gi>list</gi> e <gi>item</gi>, mas que certamente conterá imprecisões.</p>
+  <p>Em relação à terminologia da Botânica, há diversos itens numerados, mas que não
+    correspondem a verbetes no mesmo sentido em que está dividida a terminologia da Zoologia.
+    Assim, cada número foi marcado com o elemento <gi>div</gi> com os atributos
+      <att>type</att> (indicando tratar-se de um item da enumeração) e <att>n</att> (seguido
+    da numeração correspondente). Dentro de cada item numerado, os blocos de texto foram
+    marcados com o elemento <gi>p</gi>.</p>
+  <p>Há dois erros de numeração na terminologia da Botânica:</p>
+  <p>1. Não há item com a numeração 125;</p>
+  <p>2. Há dois itens com o número 140. Assim, o segundo foi indicado como 140bis.</p>
+  <p>Na seção dos termos da Mineralogia, cada verbete foi marcado com o elemento
+      <gi>entry</gi>; as subdivisões foram marcadas com o elemento <gi>p</gi>.</p>
+  <p>A lista de sinais químicos à p. 291 foi transcrita usando o elemento <gi>list</gi>, com o
+    atributo <att>type</att> com o valor "sinais". Os sinais não foram reproduzidos pela
+    dificuldade de reproduzi-los usando a codificação UTF-8.</p>
+  <p>As demais divisões do texto foram marcadas com o elemento <gi>div</gi>, com o atributo
+      <att>type</att> com os valores "prefácio", "parte", "subparte", "letra" (para cada letra
+    do dicionário), "legendas", "leg_tabela" e "errata".</p>
+  <p>Além dos parágrafos, o texto corrido foi segmentado em frases, cada uma marcada com o
+    elemento <gi>s</gi>.</p>
+  <p>Os termos foram marcados com o elemento <gi>term</gi>, com os seguintes atributos:
+      <att>lemma</att>, com a forma de citação do termo na ortografia atual (por exemplo,
+    "jardim botânico"); <att>norm</att>, com a forma flexionada atualizada, quando difere do
+    lema; <att>msd</att>, com a indicação da flexão ("plural", "feminino singular", "feminino
+    plural", "masculino plural"); e <att>senseNumber</att>, quando o termo é empregado em uma
+    acepção diferente da primeira. [CONFERIR: o mesmo ponto sobre senseNumber indicado em
+    Brotero.]</p>
+  <p>Os erros tipográficos evidentes foram mantidos no texto e marcados com o elemento
+      <gi>w</gi>, com a forma correta no atributo <att>norm</att> (por exemplo, "vaios",
+    normalizado como "vários").</p>
+  <p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto do texto
+    em que aparece a chamada. Os trechos em latim fora das cabeças de verbete foram marcados com
+    o elemento <gi>foreign</gi> e o atributo <att>xml:lang</att> com o valor "la".</p>
+  <p>As quatro páginas não numeradas do final do volume foram marcadas com elementos
+      <gi>pb</gi> sem o atributo <att>facs</att>. [CONFERIR: motivo, por exemplo, páginas
+    ausentes da digitalização.] Faltam na transcrição as páginas numeradas em romanos (I a
+    XXXVI) que se seguem à página 305.</p>
+  <p>O texto original também pode ser acessado pelo Internet Archive:
+    https://archive.org/details/diccionariodost00vand/</p>
+  <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital
+    Internet Archive. O URL de cada imagem segue o padrão:
+      <code>https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_XXXX.jp2&amp;id=diccionariodost00vand</code>,
+    onde <code>XXXX</code> é um número sequencial (a página de rosto é 0007). Neste arquivo
+    transcrito, cada elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o
+    atributo <att>facs</att> com o endereço URL do arquivo da imagem correspondente à página
+    em questão. No entanto, é importante notar que, para a correta validação deste arquivo
+    XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
+    funcionamento correto dos URLs.</p>
+  <p>Os elementos <gi>p</gi>, <gi>s</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi>,
+      <gi>sense</gi> e <gi>term</gi> têm identificadores (<att>xml:id</att>) no padrão
+      <code>p_vandelli_0001</code>, <code>s_vandelli_0001</code> etc. As entradas referidas em
+    outras partes do texto têm identificadores baseados na própria cabeça do verbete (por
+    exemplo, <code>#alae</code>).</p>
+</editorialDecl>

@@ -19456,7 +19456,7 @@
     </body>
     <back>
       <!-- É preciso corrigir os erros indicados na errata no próprio texto -->
-      <pb n="não numerada 1"/>
+      <pb n="não numerada 1" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0316.jp2&amp;id=diccionariodost00vand"/>
       <div type="errata">
         <table cols="3">
           <row role="label">
@@ -19659,7 +19659,7 @@
             <cell>fig. 8. 1,</cell>
             <cell>fig. 18.</cell>
           </row>
-          <pb n="não numerada 2"/>
+          <pb n="não numerada 2" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0317.jp2&amp;id=diccionariodost00vand"/>
           <row>
             <cell>Pag. 159. lin. 20.</cell>
             <cell>convexo.</cell>
@@ -19746,7 +19746,7 @@
             <cell>Ilha de S. Thomé, e das Molucas.</cell>
           </row>
         </table>
-        <pb n="não numerada 3"/>
+        <pb n="não numerada 3" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0318.jp2&amp;id=diccionariodost00vand"/>
         <table>
           <head xml:id="h_vandelli_0121">Flo. et Epist.</head>
           <row role="label">
@@ -19836,9 +19836,11 @@
           </row>
         </table>
       </div>
-      <pb n="não numerada 4"/>
+      <pb n="i" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0319.jp2&amp;id=diccionariodost00vand"/>
       <!--
                   Faltam as páginas de 305 adiante: I até XXXVI -->
+            <pb n="ii" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0320.jp2&amp;id=diccionariodost00vand"/>
+<pb n="iii" facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0321.jp2&amp;id=diccionariodost00vand"/>
     </back>
   </text>
 </TEI>
