@@ -24,24 +24,19 @@
           letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
         <p>Cada parágrafo do texto foi marcado com o elemento <gi>p</gi>. As quebras de linha não
           foram marcadas com nenhum elemento XML.</p>
-        <p>As notas marginais foram transcritas usando o elemento <gi>note</gi>, antes do parágrafo
-          mais próximo da nota no texto.</p>
         <p>O texto foi transcrito na plataforma Transkribus (com revisão humana) e convertido
           automaticamente para TEI a partir da exportação em PAGE XML. As notas marginais foram
           distinguidas do texto principal pela posição e largura das regiões de texto na página.</p>
         <p>As palavras divididas por hífen no fim da linha foram unidas sem indicação; o hífen foi
           mantido apenas quando separa verbo e pronome (por exemplo, <code>une-se</code>). Quando a
-          palavra está dividida entre duas páginas, o elemento <gi>pb</gi> foi colocado depois da
+          palavra está dividida entre duas páginas, o elemento <gi>pb</gi> foi colocado antes da
           palavra completa.</p>
         <p>Os reclamos (palavras no pé da página que antecipam o início da página seguinte), as
           assinaturas de caderno, os números de página e os títulos correntes não foram
           transcritos.</p>
-        <p>As notas marginais ficam sempre dentro da página em que aparecem e nunca dentro de
-          parágrafos; são colocadas entre os parágrafos mais próximos da sua posição na página.
-          Quando um parágrafo ocupa uma página inteira, ele foi dividido numa fronteira de frase
-          para acomodar as notas, e as partes foram marcadas com o atributo <att>part</att>
-            (<code>I</code>, <code>M</code> e <code>F</code>, para as partes inicial, intermediária
-          e final).</p>
+        <p>As notas marginais foram transcritas com o elemento <gi>note</gi>. Elas ficam sempre
+          dentro da página em que aparecem e nunca dentro de parágrafos; são colocadas entre os
+          parágrafos mais próximos da sua posição na margem.</p>
         <p>Os índices finais (índice da matéria e índice das palavras mais notáveis) foram
           codificados no elemento <gi>back</gi>, cada um num <gi>div</gi> com
             <code>type="índice"</code>; cada entrada é um <gi>item</gi> de <gi>list</gi>, e os

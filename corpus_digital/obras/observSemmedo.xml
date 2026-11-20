@@ -35,8 +35,9 @@
         <p>Os cabeçalhos correntes das páginas (título da obra e número da Observação), presentes em
           uma versão anterior da transcrição, foram eliminados, assim como as indicações de página
           que haviam sido inseridas no texto. Os reclamos (palavras repetidas no pé da página como
-          antecipação da página seguinte) não foram marcados; em alguns pontos, a palavra aparece
-          repetida na transcrição.</p>
+          antecipação da página seguinte) e as assinaturas de caderno não foram transcritos; os
+          parágrafos que, por causa deles, haviam sido divididos na mudança de página foram
+          reunidos.</p>
         <p>As imagens (fac-símiles) das páginas da obra foram obtidas do repositório digital
           Internet Archive (https://archive.org/details/bub_gb_qCVH54Hs2i0C/) e são armazenadas
           localmente, na pasta <code>observSemmedo_imagens</code>, com nomes no padrão
@@ -2859,8 +2860,8 @@
           insoportavel martyrio de lhe arrancarem quatro dentes, cresceraõ os caroços com excesso;
           porque os remedios, que fazem grandes dores, àlem de que assanhaõ, &amp; irritaõ as partes
           dolorosas, attrahem para ellas mais humores.</p>
-        <p xml:id="p_semmedo_0079">4. Nem he para admirar que as unturas de azougue <pb n="51"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0090.jpg"/>fizessem mayor damno; porque,
+        <p xml:id="p_semmedo_0079">4. Nem he para admirar que as unturas de <pb n="51"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0090.jpg"/>azougue fizessem mayor damno; porque,
           como todos sabem, os medicamentos de azougue, por mais bem preparados, &amp; correctos que
           sejaõ, sempre escandalizaõ a garganta, a boca, &amp; o pescoço; porque abrem as veas,
           &amp; glandulas salivaes, &amp; movem para a boca, lingua, &amp; garganta os humores
@@ -3979,8 +3980,8 @@
           brevemente morreria; mayormente vendo que alguns Medicos, de quem fiàra a sua vida,
           estiveraõ muito tempo embaraçados, &amp; perplexos, sem acertar com a causa da
           enfermidade, tendolhe feito mil diligencias, &amp; applicado todas as artes, trabucos,
-          machinas, batarias, &amp; quantos petrechos tem inventado o engenho dos homẽs <pb n="96"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0135.jpg"/>para render a ferocidade de
+          machinas, batarias, &amp; quantos petrechos tem inventado o engenho dos <pb n="96"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0135.jpg"/>homẽs para render a ferocidade de
           tão poderosos inimigos; mas tudo sem alivio; porque as dores sem ter respeito a cousa
           alguma, augmentàraõ cada vez mais a sua crueldade.</p>
         <p xml:id="p_semmedo_0192">2. Nesta desesperaçaõ, quando a mulher impaciente com dores se
@@ -4030,8 +4031,8 @@
           mais tempo doente estava sem comer, tanto mais crueis dores, ancias, tremores, &amp; febre
           padecia, de maneira que nem huma hora podia estar sem comer, mas tanto que comia qualquer
           cousa, se diminuhiaõ logo as dores, os tremores, a febre, &amp; os mais symptomas. O
-          segundo final, por onde julguei <pb n="98"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0137.jpg"/>tinha lombrigas, &amp; que
+          segundo final, por onde <pb n="98"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0137.jpg"/>julguei tinha lombrigas, &amp; que
           ellas eraõ a causa de taõ lamentavel tragedia, foy, porque soube que comendo bons
           alimentos, &amp; em boa quantidade, estava taõ magra, &amp; desfigurada, que parecia o
           retrato da morte; indicio certo de que as lombrigas comiaõ, &amp; roubavaõ todo o
@@ -4082,8 +4083,8 @@
           escondidas, &amp; em lugares taõ distantes, q zombàraõ de taõ admiravel remedio, appellei
           para a agua cozida com <term>escordio</term>, <term>grama</term>, &amp; meya onça de
           azouge: &amp; porqye finalmente vi que nem este remedio obrava conforme a grande
-          confiança, que nelle tinha, recorri <pb n="100"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0139.jpg"/>para a agua de Aspar, da qual
+          confiança, que nelle tinha, <pb n="100"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0139.jpg"/>recorri para a agua de Aspar, da qual
           bebeo huma canada cada dia em jejum por nove dias continuos; porque tinha lido em Henrique
           ab Heers, (3.) &amp; em Domingos Duclos (4.) as admiraveis virtudes, que a agua spadanà
           tem, naõ só para matar lombrigas, mas para hydropesias Asciticas, &amp; leucophlegmaticas,
@@ -4300,8 +4301,8 @@
           sobredito enfermo a chamarme em quatorze de Abril de I687. Bem conheci a gravidade da
           doença, &amp; que os symptomas, que padecia, eraõ mui próprios das hydropesias do bofe;
           porque lhe naõ faltava final algum daqueles,que costumaõ acompanhar huma enfermidade taõ
-          mortal, que ninguem escapa della, &amp; muito menos os homẽs velhos, <pb n="109"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0148.jpg"/>como era o do presente caso;
+          mortal, que ninguem escapa della, &amp; muito menos os homẽs <pb n="109"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0148.jpg"/>velhos, como era o do presente caso;
           comtudo pelo naõ desalentar; lhe naõ dei a entender o grande perigo, em que estava; &amp;
           para me certificar melhor se a doença era, ou naõ era tuberculo, (como os sinaes o
           attestavaõ) lhe tomei o pulso, &amp; por largo espaço de que as pulsações humas vezes se
@@ -8028,7 +8029,7 @@
           ou ba∫tariaõ poucas, &amp; naõ chegaria o doente a tanto perigo.</p>
         <p xml:id="p_semmedo_0465">3. Porèm como o doente e∫colhe∫∫e para ∫e curar a hum Medico, que
           ∫angraria aos defuntos depois de enterrados, quiz e∫te a torto, &amp; a direito, (∫em
-          atender <pb n="258" facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0297.jpg"/>a outra
+          <pb n="258" facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0297.jpg"/>atender a outra
           razaõ mais que porque achou febre) tirar ∫angue, (em que a doença não pecava,) &amp; por
           nenhum modo quiz dar lhe hum vomitorio, ou alguma das ∫obreditas purgas, para de∫pejar do
           e∫tomago os humores, em que ∫e radicava a enfermidade; porque ∫e per∫uadio o tal Medico
@@ -9044,8 +9045,8 @@
           &amp; ordinarios naõ aproveiraõ. (4.)</p>
         <p xml:id="p_semmedo_0553">5. Chegada que foi a dita enfema a esta cidade, fui logo chamado,
           &amp; pelas perguntas que lhe fiz soube que se applicava a muitos exercicios de ler,
-          escrever, cozer, bordar, &amp; cantar, sem reparar que fosse logo <pb n="297"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0336.jpg"/>depois de comer: &amp; como
+          escrever, cozer, bordar, &amp; cantar, sem reparar que fosse <pb n="297"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0336.jpg"/>logo depois de comer: &amp; como
           nenhuma cousa perverte tanto o calor natural do estomago, e entranhas, como o tropel de
           cuidados, com os quaes divertidos o calor, &amp; espiritos das officinas, necessariamente
           se haõ de depravar os cozimentos do estomago, &amp; resultar muitas cruezas com grande
@@ -9095,8 +9096,8 @@
           inflammações da garganta, &amp; chagas causadas de humores morfazes he remedio mui
           decantado: finalmente he o diacodio prodigioso para todas as enfermidades, que procederem
           de humores delgados, acres &amp; mordazes.</p>
-        <p xml:id="p_semmedo_0560">8. Também lhe aconselhei que tomasse todos os dias <pb n="299"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0338.jpg"/>em jejum duas oitavas do
+        <p xml:id="p_semmedo_0560">8. Também lhe aconselhei que tomasse todos os <pb n="299"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0338.jpg"/>dias em jejum duas oitavas do
           seguinte electuário: Tomai de pô de raiz de <term>malvaisco</term>, &amp; de
             <term>alcaçuz</term>, de cada cousa deitas huma onça, de flores de
           <term>papoulas</term>, &amp; de raíz de lírio roxo, de cada cousa deitas duas oitavas de
@@ -11826,8 +11827,8 @@
           circulaçaõ do sangue? Que Medico antes da Chymica soube como o messmo sangue se condensa,
           &amp; se dissoslve? &amp; que delle condensado, &amp; incrassado se segue naõ se circular,
           &amp; da falta da circulaçaõ se sesguem as apolexias mortaes? E pelo contrario do sangue
-          dissolvido, &amp; muito arrarado por <pb n="408"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0447.jpg"/>causa de alguma qualidade
+          dissolvido, &amp; muito arrarado <pb n="408"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0447.jpg"/>por causa de alguma qualidade
           occulta, ou por algua fadiga, &amp; trabalho demasiado se seguem os fluxos de sangue
           incomssiveis? Tudo isto se ignorava antiguamente.</p>
         <p xml:id="p_semmedo_0761">3. Porèm depois que Chymica, &amp; Anatomia derão luz às escuras
@@ -14571,7 +14572,7 @@
           logo a febre, se retiràõ as ancias, &amp; as ourinasmelhoraraõ de maneira, q~ o doente
           ficou saõ.</p>
         <p xml:id="p_semmedo_0983">He cousa lastimosa, &amp; digna de grande sentimento, que sendo
-          sangue o humor <pb n="516" facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0555.jpg"/>mais
+          sangue o <pb n="516" facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0555.jpg"/>humor mais
           benigno que tem o corpo, &amp; o filho mais amado da natureza, (I.) seja sempre o
           criminoso,&amp; a quem se attribuem as culpas de quantas doenças padecem os homês (~).
           Prova seja desta verdade o que vejo, &amp; experimento cada dia no estylo de curar: porque
@@ -14594,8 +14595,8 @@
           naõ só enfraquecem mais que qualquer outra evacuação, mais acrescentaõ as cruezas,
           destroem os cozimentos da mesma sorte, que se tirarem o fogo a huma panela de carne que
           está cozendo, donde se seguem durarem as doenças mais tempo, &amp; convalescerem os
-          doentes mais devagar, ou fazeremse hydropicos, se antes <pb n="517"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0556.jpg"/>disso pela falta das forças
+          doentes mais devagar, ou fazeremse hydropicos, se <pb n="517"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0556.jpg"/>antes disso pela falta das forças
           naõ morrerem; mas como naõ haõ de morrer muitos, se em Portugal reyna a sangria com taõ
           grande imperio, que naõ ha letígio sobre a saude, aonde a sua authoridade naõ dè a
           sentença a seu favor? principalmente em Lisboa, aonde se avalia por delito querer
@@ -14641,8 +14642,8 @@
           vermelhas, grandes anciãs de coraçaõ, fastio, &amp; sobre tudo era necessario, &amp; os
           symptomas cresciaõ, &amp; as ourinas se coravaõ, entendi que a colera era a que fazia a
           febre, &amp; fava aquella dor, &amp; tintura vermelha às ourinas, &amp; que sendo isto
-          assim, o mataria se o sangrasse <pb n="519"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0558.jpg"/>mais, porque o legitimo,
+          assim, o mataria se o <pb n="519"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0558.jpg"/>sangrasse mais, porque o legitimo,
           &amp; verdadeiro remedio avia de ser purgallo, naõ com xarope Ray, nem Perfico, ou aureo
           (como he costume;) porque como neste homem reynavaõ tantos amargores de boca, que saõ
           indicios certos de haver muita colera no estomago seria erro darlhe quatro, ou cinco onças
@@ -14666,8 +14667,8 @@
           sangue, nem inflammaçaõ; &amp; sendo isto verdade, fará hum erro sem desculpa o Medico,
           que sangrar sem examinar primeiro se o enfermo está hydropico, ou cachetico; se padece
           grandes amargores de boca; se fez algum excesso com mulher; se teve alguma grande colica;
-          porque qualquer causa destas <pb n="520"
-            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0559.jpg"/>he capaz de tingir muito as
+          porque qualquer causa <pb n="520"
+            facs="observSemmedo_imagens/bub_gb_qCVH54Hs2i0C_0559.jpg"/>destas he capaz de tingir muito as
           ourinas, &amp; por nenhum modo convem sangrar, como dizem gravissimos Authores, &amp; só
           será acertado o purgar: creaõme que que fallo com a experiencia de muitos annos, &amp; com
           aquelle zelo que hei de allegar a Deos pelo serviço que faço às suas creaturas, &amp; no

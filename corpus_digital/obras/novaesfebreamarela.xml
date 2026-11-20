@@ -71,6 +71,11 @@
 						<gi>name</gi>, o atributo <att>type</att> com o valor "taxon" e o atributo
 						<att>subtype</att> com o valor "species", "genus" ou "family", dependendo do
 					nível taxonômico.</p>
+				<p>As aprovações em letra cursiva ao final da tese foram marcadas num <gi>div</gi>
+					com <att>type</att> "aprovacoes", que contém um <gi>div</gi> para cada despacho
+					("despacho") ou parecer ("parecer"); o texto de cada um é um <gi>p</gi>, e as
+					assinaturas foram marcadas com o elemento <gi>signed</gi>, uma para cada
+					signatário.</p>
 				<p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e
 						<gi>term</gi> têm identificadores (<att>xml:id</att>) no padrão
 						<code>p_novaes_0001</code>, <code>h_novaes_0001</code>,
@@ -1913,19 +1918,26 @@
 			</div>
 			<pb n="33"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0036.jp2&amp;id=101464815.nlm.nih.gov"/>
-			<div>
+			<div type="aprovacoes">
 				<note xml:id="n_novaes_0001">[No original, a página seguinte está em letra
 					caligráfica.]</note>
-				<p xml:id="p_novaes_0188">Remettida á commissão revisora, Bahia e Faculdade de
-					Medicina em 1 de Agosto de 1871,</p>
-				<p xml:id="p_novaes_0189">Dr. Cincinato Pinto.</p>
-				<p xml:id="p_novaes_0190">Esta conforme os Estatutos. Bahia 3 de Agosto de 1871.</p>
-				<p xml:id="p_novaes_0191">Dr. Demetrio.</p>
-				<p xml:id="p_novaes_0192">Dr. V. C. Damazio</p>
-				<p xml:id="p_novaes_0193">Dr. Moura.</p>
-				<p xml:id="p_novaes_0194">Imprima-se. Bahia e Faculdade de Medicina 7 de Agosto de
-					1871.</p>
-				<p xml:id="p_novaes_0195">Dr. Magalhães</p>
+				<div type="despacho">
+					<p xml:id="p_novaes_0188">Remettida á commissão revisora, Bahia e Faculdade de
+						Medicina em 1 de Agosto de 1871,</p>
+					<signed>Dr. Cincinato Pinto.</signed>
+				</div>
+				<div type="parecer">
+					<p xml:id="p_novaes_0190">Esta conforme os Estatutos. Bahia 3 de Agosto de
+						1871.</p>
+					<signed>Dr. Demetrio.</signed>
+					<signed>Dr. V. C. Damazio</signed>
+					<signed>Dr. Moura.</signed>
+				</div>
+				<div type="despacho">
+					<p xml:id="p_novaes_0194">Imprima-se. Bahia e Faculdade de Medicina 7 de Agosto
+						de 1871.</p>
+					<signed>Dr. Magalhães</signed>
+				</div>
 			</div>
 		</back>
 	</text>

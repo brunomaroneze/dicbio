@@ -47,10 +47,14 @@
 					com os valores "dedication" e "introduction". No corpo do texto, as divisões
 					foram marcadas com o elemento <gi>div</gi>, com o atributo <att>type</att> com
 					os valores "chapter", "section" e "subsection", conforme o nível, e o atributo
-						<att>n</att> com a numeração do original, quando houver. A conclusão foi
-					marcada com <gi>div</gi> do tipo "conclusion". Os títulos foram marcados com o
-					elemento <gi>head</gi>; em algumas divisões há mais de um <gi>head</gi> (título
-					e subtítulo).</p>
+						<att>n</att> com a numeração do original, quando houver. O texto de outro
+					autor inserido na obra (a descrição das Bobas pelo Dr. Soares de Meirelles, no
+					capítulo XVIII) foi marcado como <gi>div</gi> do tipo "subsection" com o
+					atributo <att>subtype</att> com o valor "texto_citado", e a assinatura do autor,
+					com o elemento <gi>signed</gi>; o comentário de Imbert que se segue forma outro
+						<gi>div</gi> do tipo "subsection". A conclusão foi marcada com <gi>div</gi>
+					do tipo "conclusion". Os títulos foram marcados com o elemento <gi>head</gi>; em
+					algumas divisões há mais de um <gi>head</gi> (título e subtítulo).</p>
 				<p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto
 					do texto em que aparece a chamada. O texto de cada nota foi marcado com
 						<gi>p</gi>.</p>
@@ -3326,7 +3330,7 @@
 					estamos que nossos leitores, seguindo o nosso exemplo, lhe daráõ o primeiro
 					lugar nesta obra, por ser o que de mais utilidade e interesse ella encerra.</p>
 				<pb n="110" facs="fazendeiroimbert_imagens/b29341152_0132.jpg"/>
-				<div type="subsection">
+				<div type="subsection" subtype="texto_citado">
 					<head>BOBAS, VAWS, OU PIAN.</head>
 					<p>Esta infermidade, que muitos suppoem originariá d' America, não he quanto a
 						mim, se não hum dos muitos funestos legados ou presentes, que nos têem
@@ -3407,7 +3411,9 @@
 						he superfluo indicar os preparados, e as circunstancias , em que devem ser
 						dados, huma vez que tem de consultar o artigo que diz respeito ao mal
 						venereo.</p>
-					<p>Dr. Soares de Meirelles.</p>
+					<signed>Dr. Soares de Meirelles.</signed>
+				</div>
+				<div type="subsection">
 					<p>Combinando o III mo Sr. Dr. Meirellés com a opinião mór parte dos Medicos,
 						que têem escrito sobre as Bobas, ou Pian, tambem julgamos que o tratamento,
 						que melhor convem he o antivenereo; e para este produzir bom resultado, de
