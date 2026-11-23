@@ -1,7 +1,7 @@
 {
   "repositorio": "brunomaroneze/dicbio",
   "pasta_obras": "corpus_digital/obras",
-  "base_imagens": "https://brunomaroneze.github.io/dicbio-imagens/",
+  "base_imagens": "imagens/",
   "obras": [
     {"id": "carvalhoaviso", "titulo": "Aviso á Gente do Mar (Mauran/Carvalho)", "ativa": true},
     {"id": "fazendeiroimbert", "titulo": "Imbert (fazendeiroimbert)", "ativa": false},

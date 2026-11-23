@@ -1,12 +1,15 @@
 """Gera o site de conferência em revisao/_site.
 
-  python revisao/gerar_site.py                   (como no GitHub: imagens da internet)
   python revisao/gerar_site.py --local           (imagens das pastas locais)
   python revisao/gerar_site.py --local --todas   (inclui obras com "ativa": false)
+  python revisao/gerar_site.py --saida PASTA --imagens PASTA   (como na VPS)
+
+Com --imagens, as páginas cujo facs é um endereço da internet usam a cópia
+OBRA_imagens/IDPAGINA.jpg, se existir (ver baixar_imagens.py).
 """
+import argparse
 import json
 import shutil
-import sys
 from pathlib import Path
 
 from nucleo import hash_texto, paginas
@@ -22,10 +25,17 @@ def le(caminho):
 
 
 def main():
-    local, todas = "--local" in sys.argv, "--todas" in sys.argv
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--local", action="store_true")
+    ap.add_argument("--todas", action="store_true")
+    ap.add_argument("--saida", type=Path, default=AQUI / "_site")
+    ap.add_argument("--imagens", type=Path)
+    arg = ap.parse_args()
     cfg = json.loads(le(AQUI / "config.json"))
-    base = f"/{cfg['pasta_obras']}/" if local else cfg["base_imagens"]
-    saida = AQUI / "_site"
+    base = f"/{cfg['pasta_obras']}/" if arg.local else cfg["base_imagens"]
+    # Gera ao lado e só troca no fim: se algo falhar, o site anterior continua no ar.
+    final = arg.saida.resolve()
+    saida = final.with_name(final.name + ".novo")
     if saida.exists():
         shutil.rmtree(saida)
     shutil.copytree(AQUI / "site", saida)
@@ -33,7 +43,7 @@ def main():
     indice = []
     for obra in cfg["obras"]:
         arq = RAIZ / cfg["pasta_obras"] / f"{obra['id']}.xml"
-        if not (obra["ativa"] or todas):
+        if not (obra["ativa"] or arg.todas):
             continue
         if not arq.exists():
             print("AVISO: não existe", arq)
@@ -41,7 +51,11 @@ def main():
         lista = []
         for p in paginas(le(arq)):
             f = p.facs
-            img = f if not f or f.startswith(("http://", "https://")) else base + f
+            remota = f.startswith(("http://", "https://"))
+            img = f if not f or remota else base + f
+            copia = f"{obra['id']}_imagens/{p.id}.jpg"
+            if remota and arg.imagens and (arg.imagens / copia).exists():
+                img = base + copia
             conf = AQUI / "conferidas" / obra["id"] / f"{p.id}.json"
             lista.append({
                 "id": p.id, "n": p.n, "img": img,
@@ -54,6 +68,9 @@ def main():
         print(obra["id"], len(lista), "páginas")
     (saida / "dados" / "indice.json").write_text(
         json.dumps({"repositorio": cfg["repositorio"], "obras": indice}, ensure_ascii=False), encoding="utf-8")
+    if final.exists():
+        shutil.rmtree(final)
+    saida.rename(final)
 
 
 if __name__ == "__main__":
