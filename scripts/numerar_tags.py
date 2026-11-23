@@ -12,7 +12,8 @@ MAPA_OBRAS = {
     "compendio1brotero.xml": "brotero1",
     "compendio2brotero.xml": "brotero2",
     "diciovandelli.xml": "vandelli",
-    "observSemmedo.xml": "semmedo"
+    "observSemmedo.xml": "semmedo",
+    "novaesfebreamarela.xml": "novaes",
 }
 DIRETORIO_CORPUS = "corpus_digital/obras/"
 

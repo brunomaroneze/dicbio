@@ -20,28 +20,30 @@
     <encodingDesc>
       <editorialDecl>
         <p>A ortografia original da obra foi mantida sempre que possível. Procurou-se manter as
-          letras ligadas œ e æ nas transcrições dos nomes em latim.</p>
-        <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento <gi> pb</gi> foi
+          letras ligadas æ e œ nas transcrições dos nomes em latim.</p>
+        <p>Quando uma quebra de página ocorre no meio de uma palavra, o elemento <gi>pb</gi> foi
           incluído antes da palavra, de modo a não quebrá-la.</p>
         <p>Os verbetes do dicionário de Vandelli são por vezes muito longos, refletindo todas as
           possibilidades de classificação dos animais e plantas. Cada um está indicado com o
           elemento <gi>entry</gi>, com os elementos <gi>form</gi> e <gi>sense</gi> indicando,
-          respectivamente, a cabeça do verbete em latim e a sua explicação em português. Quando há
-          subentradas (em geral, nos casos das subclassificações animais e vegetais, cada uma
-          marcada inicialmente com um travessão), também foram indicadas pelo elemento
-            <gi>entry</gi>, com os respectivos elementos <gi>form</gi> e <gi>sense</gi>.</p>
+          respectivamente, a cabeça do verbete em latim (com o atributo <att>xml:lang</att> com o
+          valor "la") e a sua explicação em português. Quando há subentradas (em geral, nos casos
+          das subclassificações animais e vegetais, cada uma marcada inicialmente com um travessão),
+          também foram indicadas pelo elemento <gi>entry</gi>, com os respectivos elementos
+            <gi>form</gi> e <gi>sense</gi>.</p>
         <p>Nos casos em que há quebra de parágrafo dentro do mesmo verbete, o segundo parágrafo está
           marcado como outro elemento <gi>sense</gi>, mesmo que não seja de fato uma segunda
           acepção.</p>
         <p>Algumas subentradas são divididas em grupos (como é o caso, por exemplo, do verbete <ref
             target="#apertura-branchiarum">APERTURA branchiarum</ref>), e esses grupos são marcados
-          pelo critério de classificação: "pela situação", "pela abertura, "pela figura" etc. Nesses
-          casos, os critérios de classificação foram indicados pelo elemento <gi>dictScrap</gi>.
-          Como esse elemento não pode conter subentradas, não foi possível usá-lo para agrupar todas
-          as subentradas correspondentes, mas apenas o nome do critério de classificação.</p>
+          pelo critério de classificação: "pela situação", "pela abertura", "pela figura" etc.
+          Nesses casos, os critérios de classificação foram indicados pelo elemento
+            <gi>dictScrap</gi>. Como esse elemento não pode conter subentradas, não foi possível
+          usá-lo para agrupar todas as subentradas correspondentes, mas apenas o nome do critério de
+          classificação.</p>
         <p>O elemento <gi>dictScrap</gi> também foi empregado para incluir listas, tabelas e
           diagramas arbóreos (como é o caso, por exemplo, do verbete <ref target="#alae"
-          >ALAE</ref>.</p>
+          >ALAE</ref>).</p>
         <p>Nos casos em que Vandelli emprega uma chave para associar uma mesma explicação a duas
           entradas diferentes (como é o caso de <ref target="#fissilis-perfoliata">fissilis e
             perfoliata</ref>, subentradas de CLAVA), a estratégia adotada aqui foi incluir as duas
@@ -61,10 +63,44 @@
         <p>1. Não há item com a numeração 125;</p>
         <p>2. Há dois itens com o número 140. Assim, o segundo foi indicado como 140bis.</p>
         <p>Na seção dos termos da Mineralogia, cada verbete foi marcado com o elemento
-            <gi>entry</gi>; as subdivisões foram marcadas com o elemento <gi> p</gi>.</p>
-        <p>A lista de sinais químicos à p. 291 foi transcrita usando o elemento <gi> list</gi>. Os
-          sinais não foram reproduzidos pela dificuldade de reproduzi-los usando a codificação
-          UTF-8.</p>
+            <gi>entry</gi>; as subdivisões foram marcadas com o elemento <gi>p</gi>.</p>
+        <p>A lista de sinais químicos à p. 291 foi transcrita usando o elemento <gi>list</gi>, com o
+          atributo <att>type</att> com o valor "sinais". Os sinais não foram reproduzidos pela
+          dificuldade de reproduzi-los usando a codificação UTF-8.</p>
+        <p>As demais divisões do texto foram marcadas com o elemento <gi>div</gi>, com o atributo
+            <att>type</att> com os valores "prefácio", "parte", "subparte", "letra" (para cada letra
+          do dicionário), "legendas", "leg_tabela" e "errata".</p>
+        <p>Além dos parágrafos, o texto corrido foi segmentado em frases, cada uma marcada com o
+          elemento <gi>s</gi>.</p>
+        <p>Os termos que correspondem a entradas no Dicionário Histórico de Termos da Biologia foram
+          marcados com o elemento <gi>term</gi>, com os seguintes atributos: <att>lemma</att>, com a
+          forma de citação do termo na ortografia atual (por exemplo, "jardim botânico");
+            <att>norm</att>, com a forma flexionada atualizada, quando difere do lema;
+            <att>msd</att>, com a indicação da flexão ("plural", "feminino singular", "feminino
+          plural", "masculino plural"); e <att>senseNumber</att>, quando o termo é empregado em uma
+          acepção diferente da primeira, associada ao número da acepção no dicionário.</p>
+        <p>Os erros tipográficos evidentes foram mantidos no texto e marcados com o elemento
+            <gi>w</gi>, com a forma correta no atributo <att>norm</att> (por exemplo, "vaios",
+          normalizado como "vários").</p>
+        <p>As notas de rodapé foram marcadas com o elemento <gi>note</gi>, inserido no ponto do
+          texto em que aparece a chamada. Os trechos em latim fora das cabeças de verbete foram
+          marcados com o elemento <gi>foreign</gi> e o atributo <att>xml:lang</att> com o valor
+          "la".</p>
+        <p>As páginas sem numeração que se seguem ao texto (incluindo a errata) foram marcadas com
+          elementos <gi>pb</gi> cujo atributo <att>n</att> traz a indicação "não numerada", seguida
+          de um número sequencial.</p>
+        <p>Os índices finais (páginas i a xxxvi, numeradas em algarismos romanos) foram transcritos
+          a partir das imagens das páginas e marcados no elemento <gi>back</gi>, com dois elementos
+            <gi>div</gi> com o atributo <att>type</att> com o valor "index": o índice do reino
+          animal (páginas i a xxiii) e o índice da terminologia botânica (páginas xxiv a xxxvi). Os
+          títulos dos índices foram marcados com o elemento <gi>head</gi>. Cada grupo de entradas
+          iniciadas pela mesma letra foi marcado com o elemento <gi>list</gi>, com o atributo
+            <att>type</att> com o valor "index" e a letra no elemento <gi>head</gi>; cada entrada
+          foi marcada com o elemento <gi>item</gi>. A disposição do original em três colunas não foi
+          representada. O travessão, que no original substitui a primeira palavra da entrada
+          anterior, foi mantido; as chaves que associam duas ou mais formas a um mesmo complemento
+          foram representadas pelo sinal ")". A pontuação, a grafia e os números de página do
+          original foram mantidos, inclusive quando contêm erros evidentes.</p>
         <p>O texto original também pode ser acessado pelo Internet Archive:
           https://archive.org/details/diccionariodost00vand/</p>
         <p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório digital
@@ -76,6 +112,11 @@
           em questão. No entanto, é importante notar que, para a correta validação deste arquivo
           XML, foi necessário usar o código de escape para &amp;, que precisa ser substituído para o
           funcionamento correto dos URLs.</p>
+        <p>Os elementos <gi>p</gi>, <gi>s</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi>,
+            <gi>sense</gi> e <gi>term</gi> têm identificadores (<att>xml:id</att>) no padrão
+            <code>p_vandelli_0001</code>, <code>s_vandelli_0001</code> etc. As entradas referidas em
+          outras partes do texto têm identificadores baseados na própria cabeça do verbete (por
+          exemplo, <code>#alae</code>).</p>
       </editorialDecl>
       <projectDesc>
         <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -19456,7 +19497,8 @@
     </body>
     <back>
       <!-- É preciso corrigir os erros indicados na errata no próprio texto -->
-      <pb n="não numerada 1"/>
+      <pb n="não numerada 1"
+        facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0316.jp2&amp;id=diccionariodost00vand"/>
       <div type="errata">
         <table cols="3">
           <row role="label">
@@ -19659,7 +19701,8 @@
             <cell>fig. 8. 1,</cell>
             <cell>fig. 18.</cell>
           </row>
-          <pb n="não numerada 2"/>
+          <pb n="não numerada 2"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0317.jp2&amp;id=diccionariodost00vand"/>
           <row>
             <cell>Pag. 159. lin. 20.</cell>
             <cell>convexo.</cell>
@@ -19746,7 +19789,8 @@
             <cell>Ilha de S. Thomé, e das Molucas.</cell>
           </row>
         </table>
-        <pb n="não numerada 3"/>
+        <pb n="não numerada 3"
+          facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0318.jp2&amp;id=diccionariodost00vand"/>
         <table>
           <head xml:id="h_vandelli_0121">Flo. et Epist.</head>
           <row role="label">
@@ -19836,9 +19880,3770 @@
           </row>
         </table>
       </div>
-      <pb n="não numerada 4"/>
-      <!--
-                  Faltam as páginas de 305 adiante: I até XXXVI -->
+      <pb n="i"
+        facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0319.jp2&amp;id=diccionariodost00vand"/>
+      <div type="index">
+        <head>INDEX DO REINO ANIMAL.</head>
+        <list type="index">
+          <head>A.</head>
+          <item>Abbreviata Cauda Pag. 2. 130.</item>
+          <item>— Elytra. 89.</item>
+          <item>— Lingua. 99.</item>
+          <item>— Proboscis. 108.</item>
+          <item>— Stria. 158.</item>
+          <item>Abbreviati Palpi. 106.</item>
+          <item>Abbreviatum Sternum 112.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Abbreviatus Aculeus. 77.</item>
+          <item>Abdomen. 13. 31.</item>
+          <item>Abdominales Mammae. 7.</item>
+          <item>— Pinnae ventrales. 67.</item>
+          <item>— Pedes. 107.</item>
+          <item>Abdominalis. 31.</item>
+          <item>— Folliculus. 5.</item>
+          <item>Abdomen. 74.</item>
+          <item>Abnormes Oculi. 55.</item>
+          <item>Abnormis Apertura. 33.</item>
+          <item>Abrupta Cauda. 3. 130.</item>
+          <item>— Columella. 118. 132.</item>
+          <item>— Linea lateralis. 46.</item>
+          <item>Abruptus. 1.</item>
+          <item>Abscondita Mandibula. 101.</item>
+          <item>Acaulis Cornus 3.</item>
+          <item>Accessoria ad cardinem Testa. 161.</item>
+          <item>Acetabulum. 118.</item>
+          <item>Acerosi Dentes. 42.</item>
+          <item>Aculeata Linea lateralis. 46.</item>
+          <item>— Opercula. 57.</item>
+          <item>— Spira. 154.</item>
+          <item>Aculeatae Antennae. 83.</item>
+          <item>— Branchiae. 36.</item>
+          <item>— Pinnae. 65.</item>
+          <item>Aculeato-ciliatus sulcus. 159.</item>
+          <item>Aculeatus. 1.</item>
+          <item>— Thorax. 115.</item>
+          <item>Aculeatum Abdomen. 77.</item>
+          <item>— Caput. 39.</item>
+          <item>Aculeus. 1. 77.</item>
+          <item>Acuminata Elytra. 92.</item>
+          <item>— Frons. 93.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Opercula. 56.</item>
+          <item>— Testa. 161.</item>
+          <item>Acuminatae Alae. 81.</item>
+          <item>— Antennae. 84.</item>
+          <item>— Nates. 146.</item>
+          <item>— Pinnae. 65.</item>
+          <item>— Pinnae Pectorales. 67.</item>
+          <item>Acuminatum Abdomen. 77.</item>
+          <item>— Labium. 97.</item>
+          <item>— Sternum. 112.</item>
+          <item>Acuminatus Thorax. 114.</item>
+          <item>Acus. 118.</item>
+          <item>Acuta Apertura utrinque. 123.</item>
+          <item>— Cauda. 86. 130.</item>
+          <item>— Lingua. 19. 47. 98.</item>
+          <item>— Squama. 155.</item>
+          <item>Acutae Alae. 81.</item>
+          <item>— Costae. 135.</item>
+          <item>— Maxillae. 48.</item>
+          <item>— Nymphae. 147.</item>
+          <item>Acuti Dentes. 41.</item>
+          <item>Acutum caput. 37.</item>
+          <item>— Rostrum. 110. 59.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Acutus sulcus. 159.</item>
+          <item>Adactylus. 28.</item>
+          <item>Additamentum. 31.</item>
+          <item>Adhaerens Maxilla. 99.</item>
+          <item>Adiposa Pinna. 10. 66.</item>
+          <item>Adiposus. 31.</item>
+          <item>Adnata Maxilla. 99.</item>
+          <item>Adnatum Abdomen. 74.</item>
+          <item>Aduncum Rostrum. 24.</item>
+          <item>Aegagropila. 1.</item>
+          <item>Aeneus color. 88.</item>
+          <item>Aequale Labrum. 142.</item>
+          <item>Aequalis Anfractus. 120.</item>
+          <item>— Cauda. 15.</item>
+          <item>— Pinna Ani. 63.</item>
+          <item>— Pinna Caudae. 63.</item>
+          <item>Aequales Maxillae. 49.</item>
+          <item>— Palpi. 105.</item>
+          <item>— Pinnae. 65.</item>
+          <item>Aequilaterae Valvae. 171.</item>
+          <item>Aequilibres Pinnae Dorsales. 64.</item>
+          <item>Aequivalves. 171.</item>
+          <item>Aequivalvis Testa. 161.</item>
+          <item>Ala. 28.</item>
+          <item>Alae. 78. 13. 118.</item>
+          <pb n="ii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0320.jp2&amp;id=diccionariodost00vand"/>
+          <item>— membranaceae. 78.</item>
+          <item>Albidus color. 88.</item>
+          <item>Alepidota Opercula. 58.</item>
+          <item>Alepidotum. 32. 28.</item>
+          <item>— Caput. 38.</item>
+          <item>Alula. 13.</item>
+          <item>Ambulatorius Pes. 22.</item>
+          <item>Amplae Squamae. 71.</item>
+          <item>Ampliata Apertura. 123.</item>
+          <item>— latere Testa. 162.</item>
+          <item>Ampulacea. 118.</item>
+          <item>Analis. 32.</item>
+          <item>— Dens. 136.</item>
+          <item>— Pinna. 62.</item>
+          <item>Anastomosis. 81. 122.</item>
+          <item>Anceps. 32. 122.</item>
+          <item>— Anfractus. 119.</item>
+          <item>— Corpus. 134.</item>
+          <item>— Testa. 161.</item>
+          <item>— Rostrum. 24. 60.</item>
+          <item>Androgynus 118.</item>
+          <item>Anfractus. 119.</item>
+          <item>Angularis. 32.</item>
+          <item>Angulata Tibia. 116.</item>
+          <item>— Varix nodis. 172.</item>
+          <item>Angulatae Alae. 81.</item>
+          <item>— Maxillae. 146.</item>
+          <item>Angulatum femur. 92.</item>
+          <item>— Labrum. 142.</item>
+          <item>Angulatus sulcus. 159.</item>
+          <item>Angulosa Cauda. 36.</item>
+          <item>— Stella. 156.</item>
+          <item>Angustatum Caput. 38.</item>
+          <item>— antice Caput. 84.</item>
+          <item>Angustissima Rima. 152.</item>
+          <item>Annexa Lingua. 47.</item>
+          <item>— Opercula. 56.</item>
+          <item>Annexus. 32.</item>
+          <item>Annulata Cauda. 3.</item>
+          <item>Annulatum. 32.</item>
+          <item>— Corpus. 173.</item>
+          <item>Annullatus Anfractus. 119.</item>
+          <item>— Clypeus. 87.</item>
+          <item>Annuli. 28.</item>
+          <item>Antagonista. 1.</item>
+          <item>Antennae. 81.</item>
+          <item>Anteriores Alae. 79.</item>
+          <item>— Nates. 52.</item>
+          <item>Antica pars Testae. 161.</item>
+          <item>Anticum Labium. 141.</item>
+          <item>— Os. 148.</item>
+          <item>Anticus Dens. 136.</item>
+          <item>Antiquata Testa. 122.</item>
+          <item>Anus. 13. 32. 122.</item>
+          <item>Apertura. 123.</item>
+          <item>— Branchiarum. 32.</item>
+          <item>Apex. 125.</item>
+          <item>Apodes. 33.</item>
+          <item>Apodum corpus. 134.</item>
+          <item>Apophysis. 126.</item>
+          <item>Appendix. 126.</item>
+          <item>Approximatae Antennae. 84.</item>
+          <item>— Nates. 146.</item>
+          <item>Approximati Oculi. 103.</item>
+          <item>Approximatus Dens 4. 136.</item>
+          <item>Aptera Cauda. 33.</item>
+          <item>Apterus. 33.</item>
+          <item>Apterygia Cauda. 36.</item>
+          <item>Apterygium. 33.</item>
+          <item>— Dorsum. 43.</item>
+          <item>Apterygius. 28.</item>
+          <item>Arcuata Apertura. 33. 123.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Pinna Caudae. 63.</item>
+          <item>— Testa. 162.</item>
+          <item>Arcuatum Rostrum. 24. 110.</item>
+          <item>Arcuatus. 126.</item>
+          <item>— Ordo. 128.</item>
+          <item>— Rictus. 58.</item>
+          <item>Arguta Spira. 153.</item>
+          <item>Aristatae Antennae. 84.</item>
+          <item>Arma. 1. 13.</item>
+          <item>Armilla. 14.</item>
+          <item>Articulata Cauda. 85.</item>
+          <item>— Mandibula. 101</item>
+          <item>— Stirps. 157.</item>
+          <item>Articulatum. 34.</item>
+          <item>Articulus. 126.</item>
+          <item>Artus. 14. 34. 84.</item>
+          <item>Asper. 126.</item>
+          <item>— Porus. 150.</item>
+          <item>Aspera Lingua. 47.</item>
+          <item>— Opercula. 57.</item>
+          <item>Asperae Pinnae. 65.</item>
+          <item>— Squamae. 71.</item>
+          <item>Asperum Palatum. 61.</item>
+          <item>Assurgens. 34.</item>
+          <item>Assurgentes Pinnae. 65.</item>
+          <item>Ater color. 88.</item>
+          <item>Attenuata Elytra. 90.</item>
+          <item>Attennuatae Antennae. 82.</item>
+          <item>Attenuatum Corpus. 173.</item>
+          <item>— Labrum. 142.</item>
+          <item>— Os. 148.</item>
+          <item>Aurantius color. 88.</item>
+          <item>Aureus color. 88.</item>
+          <item>Auricula. 1. 14. 127.</item>
+          <item>Auriformes Nates. 146.</item>
+          <item>Auriformis Testa. 162.</item>
+          <item>Auris. 1.</item>
+          <item>Aurita. 127.</item>
+          <item>— Testa. 162.</item>
+          <item>Axillae. 14.</item>
+          <item>Azureus color. 88.</item>
+        </list>
+        <list type="index">
+          <head>B.</head>
+          <item>Bacillus. 127.</item>
+          <pb n="iii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0321.jp2&amp;id=diccionariodost00vand"/>
+          <item>Barba. 2. 14.</item>
+          <item>Barbata Bucca. 2.</item>
+          <item>— Testa. 162.</item>
+          <item>Barbatae antennae. 83</item>
+          <item>Barbatum Abdomen. 77.</item>
+          <item>Basis. 127.</item>
+          <item>Biauritus. 2.</item>
+          <item>Bibula Stirps. 157.</item>
+          <item>Biclavatae Antennae. 82.</item>
+          <item>Bicoloratus. 34.</item>
+          <item>Bicorne Abdomen. 76.</item>
+          <item>Bicornis Frons. 94.</item>
+          <item>Bidentata Cauda. 130.</item>
+          <item>— Mandibula. 101.</item>
+          <item>Bidentatum Labium. 142.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Bidentatus Cardo. 128.</item>
+          <item>Bifariam. 14.</item>
+          <item>Bifaria Stella. 158.</item>
+          <item>Bifida Lingua. 19. 47.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Pinna. 63.</item>
+          <item>— Mandibula. 101.</item>
+          <item>Bifidae Nares. 63.</item>
+          <item>Bifidi Palpi. 105.</item>
+          <item>Bifidum Labium. 6.</item>
+          <item>— Rostrum. 59.</item>
+          <item>— Sternum. 112.</item>
+          <item>— Labrum. 98.</item>
+          <item>Bifidus. 34.</item>
+          <item>Bifidus Anfractus. 119.</item>
+          <item>— Dens. 136.</item>
+          <item>— Umbilicus. 174.</item>
+          <item>Bifurcata Mandibula. 102.</item>
+          <item>Bilabiata Apertura. 123.</item>
+          <item>Biloba Testa. 162.</item>
+          <item>Bilobum Labium. 142.</item>
+          <item>Bilocularis. 2. 145.</item>
+          <item>Bimarginata Apertura. 123.</item>
+          <item>Binatus. 34.</item>
+          <item>Binati Oculi. 54.</item>
+          <item>Bipartita Tentacula. 160.</item>
+          <item>Bipartitus Anfractus. 119.</item>
+          <item>Bipes. 14.</item>
+          <item>Biplicata Testa. 162.</item>
+          <item>Biradiata Membrana Branchiostega. 51.</item>
+          <item>Biseta Cauda. 86.</item>
+          <item>Bisulcus pes. 9.</item>
+          <item>Bivalvis. 127.</item>
+          <item>Biunguiculata Mandibula. 102.</item>
+          <item>Brachiata. 127.</item>
+          <item>Brachiatum Abdomen 76.</item>
+          <item>Brachiformia Tentacula. 160.</item>
+          <item>Brachium. 14. 127.</item>
+          <item>Brachiura Cauda. 15.</item>
+          <item>Branchiae. 34.</item>
+          <item>Branchialis Pinna. 62.</item>
+          <item>Branchiostega. 36.</item>
+          <item>Breve Rostrum. 60.</item>
+          <item>Brevis Cauda. 130.</item>
+          <item>Brevissima Lingua. 19.</item>
+          <item>Brevissimum Abdomen. 74.</item>
+          <item>Bronchiales Pedes. 107.</item>
+          <item>Brunneus Color. 88.</item>
+          <item>Bucca. 2.</item>
+          <item>Byssus. 127.</item>
+        </list>
+        <list type="index">
+          <head>C.</head>
+          <item>Calcaria. 14.</item>
+          <item>Callosus Thorax. 116.</item>
+          <item>Callum. 2. 128.</item>
+          <item>Calybeus color. 88.</item>
+          <item>Canaliculata Frons 94.</item>
+          <item>— Proboscis. 107.</item>
+          <item>— Spira. 156.</item>
+          <item>— Tibia. 117.</item>
+          <item>Canaliculato-tubulosa Spira. 156.</item>
+          <item>Canaliculatum Abdomen. 76.</item>
+          <item>— Femur. 92.</item>
+          <item>— Haustellum. 95.</item>
+          <item>— Rostrum. 109.</item>
+          <item>— Corpus. 134.</item>
+          <item>Canaliculatus Anfractus. 119.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Margo. 145.</item>
+          <item>— Thorax. 115.</item>
+          <item>Canaliculus. 128.</item>
+          <item>Canalis. 128.</item>
+          <item>Cancellatus. 37.</item>
+          <item>Cancellatus Anfractus 119.</item>
+          <item>Cancelli. 128.</item>
+          <item>Candidus color. 88.</item>
+          <item>Canescens. 88.</item>
+          <item>Canus. 88.</item>
+          <item>Capillaria Tentacula. 160.</item>
+          <item>Capistrum. 14.</item>
+          <item>Capitata Spira. 154.</item>
+          <item>Caput. 15. 37. 84.</item>
+          <item>Cardinalis Margo. 145.</item>
+          <item>Cardo. 128.</item>
+          <item>Carina. 129.</item>
+          <item>Carinata Cauda. 36.</item>
+          <item>— Frons. 94.</item>
+          <item>— Gula. 44.</item>
+          <item>— Lingua. 47.</item>
+          <item>— Testa. 162.</item>
+          <item>Carinatae Maxillae. 48.</item>
+          <item>— Costae. 136.</item>
+          <item>Carinato-striatus <pb n="iv"
+              facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0322.jp2&amp;id=diccionariodost00vand"
+            />Anfractus. 119.</item>
+          <item>Carinatum. 39.</item>
+          <item>— Abdomen. 31. 76.</item>
+          <item>— Corpus. 173.</item>
+          <item>— Labium. 97.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Carinatus. 129.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Thorax. 115.</item>
+          <item>Cariosa Spira. 154.</item>
+          <item>Cariosus Apex. 125.</item>
+          <item>Carnosae Pinnae. 66.</item>
+          <item>Carnosa Lingua. 19. 47.</item>
+          <item>— Opercula. 56.</item>
+          <item>Carpus. 15.</item>
+          <item>Cartilaginea Lingua. 19. 47.</item>
+          <item>Cartilago. 129.</item>
+          <item>Caruncula. 15.</item>
+          <item>Carunculata Cera. 16.</item>
+          <item>Carunculatae. Nares. 8.</item>
+          <item>Castaneus Color. 88.</item>
+          <item>Cathaphractum Corpus. 38.</item>
+          <item>Cataphractus. 2. 39.</item>
+          <item>Cathetoplateum. 39.</item>
+          <item>— Rostrum. 59.</item>
+          <item>Cathetoplateus. 28.</item>
+          <item>Cauda. 15. 28. 36. 85. 130.</item>
+          <item>Caudalis Pinna. 62.</item>
+          <item>Caudatae Alae. 81.</item>
+          <item>Caudata Testa. 162.</item>
+          <item>— Columella. 132.</item>
+          <item>— Vagina. 171.</item>
+          <item>Caudatio. 86.</item>
+          <item>Cecae Alae. 80.</item>
+          <item>Cellula. 131.</item>
+          <item>Centrale Os. 148.</item>
+          <item>Centralis sipho. 153.</item>
+          <item>Cera. 16.</item>
+          <item>Cervicalis Apertura. 33.</item>
+          <item>Cervix. 16.</item>
+          <item>Chela. 86.</item>
+          <item>Chelata Cauda. 85.</item>
+          <item>Chelifera Mandibula. 102.</item>
+          <item>— Tentacula. 160.</item>
+          <item>Cheliferi Palpi. 105.</item>
+          <item>Chelatus Tarsus. 113.</item>
+          <item>Cicatrix. 131.</item>
+          <item>Ciliaris Cardo. 128.</item>
+          <item>Ciliata Lingua. 19.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Tibia. 117.</item>
+          <item>— Opercula. 56.</item>
+          <item>Ciliatae Alae. 81</item>
+          <item>— Squamae. 71.</item>
+          <item>Ciliato-spinosa intus Auricula. 127.</item>
+          <item>Ciliatum Labium. 97.</item>
+          <item>Ciliatus. 39.</item>
+          <item>Ciliatus Clypeus. 87.</item>
+          <item>— Tarsus. 113.</item>
+          <item>— Thorax. 116.</item>
+          <item>Cingulum. 131.</item>
+          <item>Circumdata spinis Cauda. 130.</item>
+          <item>Circularis Rictus. 59.</item>
+          <item>Circumferentia. 131.</item>
+          <item>Cirrhi. 131.</item>
+          <item>Cirrhosae Maxillae. 50.</item>
+          <item>Cirrhosum Caput. 39.</item>
+          <item>— Os. 148.</item>
+          <item>Cirrosus. 131.</item>
+          <item>Cirrhus. 28. 39.</item>
+          <item>Clava. 86.</item>
+          <item>Clavicula. 16.</item>
+          <item>Clavata Testa. 162.</item>
+          <item>Clavatae Alae. 80.</item>
+          <item>— Antennae. 82.</item>
+          <item>Clavati Palpi. 104.</item>
+          <item>Clavatum Abdomen. 75.</item>
+          <item>— Femur. 93.</item>
+          <item>Clavatus Aculeus. 1.</item>
+          <item>Clausa Cauda. 130.</item>
+          <item>— Rima. 150.</item>
+          <item>— Vulva. 135.</item>
+          <item>Clausus Anus. 122.</item>
+          <item>— Umbilicus. 174.</item>
+          <item>Clypeatum Caput. 39.</item>
+          <item>Clypeus. 40. 86. 131.</item>
+          <item>Coadunatae Pinnae Ventrales. 68.</item>
+          <item>Coalita Pinna Ani. 60.</item>
+          <item>— Pinna Caudae. 64.</item>
+          <item>Coalitae Pinnae Dorsales. 64.</item>
+          <item>Coalitum Caput. 84.</item>
+          <item>Coalitus. 40.</item>
+          <item>— Truncus. 117.</item>
+          <item>Coarctata Apertura. 123.</item>
+          <item>— Pupa. 108.</item>
+          <item>— Testa. 162.</item>
+          <item>Coarctatum Labium. 142.</item>
+          <item>Coccineus. 88.</item>
+          <item>Coelata Opercula. 57.</item>
+          <item>Coelatus 40.</item>
+          <item>Coeruleus. 88.</item>
+          <item>Cochleari-hemisphaerica Spira. 156.</item>
+          <item>Coleopterum. 87.</item>
+          <item>Collare. 28.</item>
+          <item>Collaris. 3.</item>
+          <item>Collum. 16.</item>
+          <item>Color. 87. 88.</item>
+          <item>Columella. 132.</item>
+          <item>Coma. 3.</item>
+          <item>Comosa Auris. 1.</item>
+          <item>— Cauda. 3.</item>
+          <item>Compedes. 16.</item>
+          <item>Complanatus Unguis. 12.</item>
+          <item>Completa Pupa. 108</item>
+          <pb n="v"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0323.jp2&amp;id=diccionariodost00vand"/>
+          <item>Complicatus Dens. 136.</item>
+          <item>Compositae Pinnae. 62.</item>
+          <item>Compositi Oculi 103.</item>
+          <item>Compressa. 17.</item>
+          <item>— Caruncula. 15.</item>
+          <item>— Maxilla. 99.</item>
+          <item>— Spira. 156.</item>
+          <item>— Testa. 162.</item>
+          <item>— Tibia. 116.</item>
+          <item>— Vagina. 171.</item>
+          <item>Compressiuscula Testa 162.</item>
+          <item>Compresso-linearis Apertura. 123.</item>
+          <item>Compresso-plana Testa. 162.</item>
+          <item>Compressum Abdomen. 75.</item>
+          <item>— Radium. 151.</item>
+          <item>— Rostrum. 24.</item>
+          <item>Compressus Aculeus. 77.</item>
+          <item>— Anfractus. 119.</item>
+          <item>— Anus. 122.</item>
+          <item>— Dens. 4.</item>
+          <item>— Tarsus. 113.</item>
+          <item>Concamerata Isthmis Testa. 162.</item>
+          <item>Concameratio. 133.</item>
+          <item>Concatenatum Punctum. 150.</item>
+          <item>Concava Mandibula. 101.</item>
+          <item>— Spira. 156.</item>
+          <item>Concavae Costae. 135.</item>
+          <item>Concolor. 88.</item>
+          <item>Concolores Alae. 80.</item>
+          <item>Concreta Pinna. 29.</item>
+          <item>Confusi Dentes. 43.</item>
+          <item>Conglomerato-lamellosa Stella. 156.</item>
+          <item>Conica Spira. 153.</item>
+          <item>— Testa. 163.</item>
+          <item>Conici Dentes. 41.</item>
+          <item>Conico-convexa Spira. 154.</item>
+          <item>Conico-ovatum Rostrum. 24.</item>
+          <item>Conicum. 40.</item>
+          <item>— Abdomen. 75.</item>
+          <item>— Rostrum. 109. 24.</item>
+          <item>Conicus Clypeus. 86.</item>
+          <item>Connata Maxilla. 99.</item>
+          <item>Connatae Antennae. 84.</item>
+          <item>Contigua Spira. 154.</item>
+          <item>— Stella. 156.</item>
+          <item>Contiguus Anfractus. 119.</item>
+          <item>Continua Testa. 163.</item>
+          <item>Continuata Varix. 172.</item>
+          <item>Contorta Concha. 134.</item>
+          <item>Contortus Cornus. 3.</item>
+          <item>Contraria Spira. 154.</item>
+          <item>Contrarius Anfractus. 119.</item>
+          <item>Convallis. 133.</item>
+          <item>Convexa Stella. 156.</item>
+          <item>— utrinque Testa. 163</item>
+          <item>Convexi Oculi. 54.</item>
+          <item>Convexiuscula Spira. 154.</item>
+          <item>Convexum Labium. 142</item>
+          <item>— Radium. 151.</item>
+          <item>Convoluta. 134.</item>
+          <item>Convoluta Testa. 163.</item>
+          <item>Convolutae Alae. 79.</item>
+          <item>Convolutum Labium. 97.</item>
+          <item>Cordata Testa. 163.</item>
+          <item>— Apertura. 123.</item>
+          <item>Cordatum Labium. 96</item>
+          <item>— Thorax. 170.</item>
+          <item>Cordatus Anus. 123</item>
+          <item>Cordiformis Anus 123.</item>
+          <item>Cornea. 16.</item>
+          <item>— Frons. 93.</item>
+          <item>— Lingua. 98.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Proboscis. 108.</item>
+          <item>— Stirps. 157.</item>
+          <item>— Testa. 163.</item>
+          <item>Corneum Labium. 98.</item>
+          <item>— Os. 148.</item>
+          <item>Corniculata Cauda. 85.</item>
+          <item>Corniformes Nates. 146.</item>
+          <item>Cornus. 3.</item>
+          <item>Cornutum Femur. 93.</item>
+          <item>— Sternum. 112.</item>
+          <item>Cornutus Clypeus. 87.</item>
+          <item>— Thorax. 115.</item>
+          <item>Coronata acuta Spira. 154.</item>
+          <item>— Papillis Testa. 163.</item>
+          <item>Coronatum Dorsum. 138.</item>
+          <item>— spinis Labium. 142</item>
+          <item>Coronatus. 134.</item>
+          <item>— Anfractus. 119.</item>
+          <item>Corpus. 134.</item>
+          <item>Corticata Testa. 163.</item>
+          <item>Costa. 133.</item>
+          <item>Costae. 135.</item>
+          <item>Costa Cardinis. 129.</item>
+          <item>Costata Testa. 163.</item>
+          <item>Cotyledones. 135.</item>
+          <item>Crassus Dens. 136.</item>
+          <item>Crenatus. 133.</item>
+          <item>Crenulatus. 135.</item>
+          <item>Crista. 135. 17. 29.</item>
+          <item>Crusta. 133.</item>
+          <item>Crassa Lingua. 47.</item>
+          <item>— Membrana Branchiostega. 51.</item>
+          <item>Crassum Caput. 38.</item>
+          <item>Crenata Elytra. 91.</item>
+          <pb n="vi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0324.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Stria. 112. 158.</item>
+          <item>Crenatae Alae. 81.</item>
+          <item>Crenatum Labium. 97.</item>
+          <item>— Labrum extus. 142</item>
+          <item>Crenatus Clypeus. 87.</item>
+          <item>— Margo. 145.</item>
+          <item>Crenulatum Labium. 142.</item>
+          <item>— Labrum. 142.</item>
+          <item>Crenulatus Margo. 145.</item>
+          <item>— Umbilicus. 174.</item>
+          <item>Crepitaculum. 28.</item>
+          <item>Crispata Testa. 163.</item>
+          <item>Cristatae Nares. 8.</item>
+          <item>Cristatus Anfractus. 119.</item>
+          <item>— Thorax. 115.</item>
+          <item>Croceus. 88.</item>
+          <item>Cruciata Elytra. 91.</item>
+          <item>Crystum. 16.</item>
+          <item>Cultratum. 40.</item>
+          <item>— Haustellum. 95.</item>
+          <item>— Rostrum. 24.</item>
+          <item>Cuneata Cauda. 15.</item>
+          <item>Cuneiforme. 41.</item>
+          <item>— Caput. 37.</item>
+          <item>Cuneiformes Palpi. 105.</item>
+          <item>Cupreus. 88.</item>
+          <item>Cursorii Pedes. 107.</item>
+          <item>Cursorius Pes. 22.</item>
+          <item>Curvato-multangulus Anfractus. 119.</item>
+          <item>Curvatum Rostrum. 24.</item>
+          <item>Cuspidata Pinna Caudae. 63.</item>
+          <item>Cuspidato-conicus Dens. 4.</item>
+          <item>Cuspidatum Rostrum. 59.</item>
+          <item>Cuspidatus. 41.</item>
+          <item>Cyaneus. 88</item>
+          <item>Cylindrica Mandibula. 101.</item>
+          <item>— Maxilla. 99.</item>
+          <item>— Proboscis. 107.</item>
+          <item>— Tibia. 116.</item>
+          <item>Cylindricae Antennae 83.</item>
+          <item>Cylindrici Palpi. 105.</item>
+          <item>Cylindrico-umbilicata Testa. 163.</item>
+          <item>Cylindricum Abdomen. 75.</item>
+          <item>— Haustellum. 95.</item>
+          <item>— Labium. 96.</item>
+          <item>— Os. 148.</item>
+          <item>— Rostrum. 25. 59. 109. 152.</item>
+          <item>— Thorax. 170.</item>
+          <item>Cylindricus Aculeus. 77.</item>
+          <item>— Anfractus. 119.</item>
+          <item>— Clypeus. 86.</item>
+          <item>— Tarsus. 113.</item>
+          <item>— Tubus. 170.</item>
+          <item>Cylindroides Testa. 163.</item>
+          <item>Cystiferus Dorsus. 4.</item>
+          <item>— Umbilicus. 3.</item>
+          <item>Curva Cauda. 130.</item>
+        </list>
+        <list type="index">
+          <head>D.</head>
+          <item>Deciduae Squamae. 71</item>
+          <item>Deciduus. 41.</item>
+          <item>Declinata Pinna Ani. 63.</item>
+          <item>Declinatae Pinnae. 65.</item>
+          <item>Declive Caput. 37.</item>
+          <item>Decollata Elytra. 92.</item>
+          <item>Decollatus Apex. 125.</item>
+          <item>Decorticatae Nates. 146.</item>
+          <item>Decussata Stria. 158.</item>
+          <item>— Varix. 172.</item>
+          <item>Deflexa Cauda. 3.</item>
+          <item>— Crista. 17.</item>
+          <item>— Elytra. 90.</item>
+          <item>Deflexae Alae. 80.</item>
+          <item>Deflexus Thorax. 116.</item>
+          <item>Dehiscens Apertura. 123.</item>
+          <item>— ad cardinem Sulcus. 159.</item>
+          <item>Deltoideae. Alae. 79.</item>
+          <item>Dens. 4. 136.</item>
+          <item>Densae Squamae. 71.</item>
+          <item>Dentata Apertura. 123</item>
+          <item>— Apertura utrinque 123.</item>
+          <item>— Cauda. 85.</item>
+          <item>— Columella. 132.</item>
+          <item>— Elytra. 91.</item>
+          <item>— Linea lateralis. 46.</item>
+          <item>— Lingua. 47.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Rima. 152.</item>
+          <item>— Tibia. 117.</item>
+          <item>Dentatae Antennae. 84</item>
+          <item>— Maxillae. 49.</item>
+          <item>— Patellae. 137.</item>
+          <item>Dentatum Abdomen. 77.</item>
+          <item>— Femur. 93.</item>
+          <item>— Labium. 97.</item>
+          <item>— Labrum. 142.</item>
+          <item>Dentatus Anus. 123.</item>
+          <item>— Thorax. 116.</item>
+          <item>— Sulcus. 159.</item>
+          <item>Dentes. 4. 41. 137.</item>
+          <item>Denticulata Columella. 132.</item>
+          <item>— Lingua. 47.</item>
+          <item>— Mandibula. 102.</item>
+          <item>— Stria. 158.</item>
+          <item>Denticulatae Maxillae. 49.</item>
+          <pb n="vii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0325.jp2&amp;id=diccionariodost00vand"/>
+          <item>Denticulato-ciliata Lingua. 7.</item>
+          <item>Denticulatum Labrum 143.</item>
+          <item>— Palatum. 61.</item>
+          <item>— Rostrum. 25.</item>
+          <item>Denticulatus Dens. 5.</item>
+          <item>Denticuli. 137.</item>
+          <item>Denticulus Umbilicalis. 174.</item>
+          <item>Dentiformes Nymphae 147.</item>
+          <item>Denudatae Branchiae 35.</item>
+          <item>Dependens Coma. 3.</item>
+          <item>Depressae Costae. 135.</item>
+          <item>Depressum Abdomen. 74.</item>
+          <item>— Corpus. 134.</item>
+          <item>— Rostrum. 25.</item>
+          <item>Depressus Cardo. 129.</item>
+          <item>— Cornus. 3.</item>
+          <item>— Dens. 136.</item>
+          <item>Descendens Linea lateralis. 46.</item>
+          <item>Desinens in canalem Apertura. 124.</item>
+          <item>Detrita Columella. 137.</item>
+          <item>— Spira. 137. 154.</item>
+          <item>Diacanthum. 43.</item>
+          <item>Diaphragma. 137.</item>
+          <item>Dichotomae Antennae 82.</item>
+          <item>Dichotomus. 137.</item>
+          <item>Didactylae Pinnae. 43.</item>
+          <item>— Pinnae ventrales. 68.</item>
+          <item>Didactylis Manus. 9.</item>
+          <item>Didactylus. 5.</item>
+          <item>— Pes. 9. 22.</item>
+          <item>Diducta antice Apertura. 123.</item>
+          <item>Difformes Pinnae ventrales. 68.</item>
+          <item>Difformis Mandibula. 101.</item>
+          <item>Digitatum Labium. 142.</item>
+          <item>Digitatus. 137.</item>
+          <item>Digiti. 17. 43.</item>
+          <item>Digitiformis Testa. 163.</item>
+          <item>Digitus. 137.</item>
+          <item>Dilatata Apertura usque in apicem. 124.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Testa antice. 163.</item>
+          <item>Dilatatum Femur. 92.</item>
+          <item>— Labrum. 143.</item>
+          <item>Dimidiata Opercula. 56.</item>
+          <item>Diphylla Opercula. 56.</item>
+          <item>Diphyllus. 43.</item>
+          <item>Dipterigia Cauda. 37.</item>
+          <item>Dipterigium Dorsum. 43.</item>
+          <item>Dipterigius. 43.</item>
+          <item>Discreta Pinna. 29.</item>
+          <item>Discus. 138.</item>
+          <item>Disjunctus Anfractus. 119.</item>
+          <item>Dissectae Nates. 146.</item>
+          <item>Dissepimentum. 138.</item>
+          <item>Dissimiles Dentes. 42.</item>
+          <item>— Branchiae. 35.</item>
+          <item>Distans Anfractus. 120</item>
+          <item>Distantes Antennae. 84.</item>
+          <item>— Oculi. 103.</item>
+          <item>— Nates. 147.</item>
+          <item>Disticha Cauda. 3.</item>
+          <item>Distincta Pinna Ani. 62.</item>
+          <item>— Varix. 172.</item>
+          <item>Distinctae Pinnae Dorsales. 64.</item>
+          <item>Distinctum Caput. 84.</item>
+          <item>Distinctus Anfractus canali. 120.</item>
+          <item>Divaricata Testa. 164.</item>
+          <item>Divaricatus Dens. 136.</item>
+          <item>Divergentes Dentes. 42.</item>
+          <item>Divisus Anfractus sutura elevata. 120.</item>
+          <item>Dorsales Pedes. 107.</item>
+          <item>— Pinnae. 61.</item>
+          <item>Dorsalis Clypeus. 132.</item>
+          <item>Dorsata Testa. 164.</item>
+          <item>Dorsum. 17. 43. 138.</item>
+          <item>Duplex Anfractus. 120</item>
+          <item>— Dens. 136.</item>
+          <item>Duplicata sutura. 160.</item>
+          <item>Duplicatum Radium. 151.</item>
+          <item>Duplicatus Dens. 4.</item>
+        </list>
+        <list type="index">
+          <head>E.</head>
+          <item>Ecaudata Apertura. 124.</item>
+          <item>— Testa. 164.</item>
+          <item>Ecaudatum Corpus 134.</item>
+          <item>Ecaudatus. 5.</item>
+          <item>Echinatum Radium. 151.</item>
+          <item>Edentula Apertura. 124.</item>
+          <item>— Testa. 164</item>
+          <item>Edentulae Maxillae. 49.</item>
+          <item>Edentulum Palatum. 61.</item>
+          <item>— Os. 89. 148.</item>
+          <item>Edentulus. 5.</item>
+          <item>— Cardo. 129.</item>
+          <item>Effusa Apertura. 124.</item>
+          <item>Elatae Nares. 8.</item>
+          <pb n="viii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0326.jp2&amp;id=diccionariodost00vand"/>
+          <item>Elevata Spira. 154.</item>
+          <item>— Stria. 158.</item>
+          <item>Elevatae Costae. 135.</item>
+          <item>Elevatum Cingulum. 131.</item>
+          <item>Elevatus Anfractus. 120.</item>
+          <item>Elongati Palpi. 106.</item>
+          <item>Elongata Cauda. 2. 130</item>
+          <item>— Elytra. 90.</item>
+          <item>— Galea. 94.</item>
+          <item>— Proboscis. 108.</item>
+          <item>— Spira. 154.</item>
+          <item>Elongatus Aculeus. 77.</item>
+          <item>— Conus. 138.</item>
+          <item>Elongatum Caput. 38.</item>
+          <item>— Labium. 98.</item>
+          <item>— Rostrum. 110. 152.</item>
+          <item>— Sternum. 112.</item>
+          <item>Elytra. 78. 89.</item>
+          <item>Emarginata Lingua. 19</item>
+          <item>— Pinna Caudae. 63.</item>
+          <item>— Basis. 127.</item>
+          <item>— Testa. 164.</item>
+          <item>Emarginatae Alae. 81.</item>
+          <item>Emarginati Dentes. 42.</item>
+          <item>Emarginatum Labium 97.</item>
+          <item>— Labrum. 143.</item>
+          <item>— Rostrum. 25.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Emarginatus Clypeus. 87.</item>
+          <item>Eminens Porus. 150.</item>
+          <item>— Stella. 156.</item>
+          <item>Ensiformes Antennae. 82.</item>
+          <item>Entomologia. 92.</item>
+          <item>Entomologus 92.</item>
+          <item>Epidermis. 138.</item>
+          <item>Epigastrium. 92.</item>
+          <item>Erecta Cauda. 130.</item>
+          <item>— Crista. 17.</item>
+          <item>— Stria. 158.</item>
+          <item>— Testa. 164.</item>
+          <item>Erectae Alae. 80.</item>
+          <item>Erectiuscula Spina. 153.</item>
+          <item>Erectus Dens. 136.</item>
+          <item>— Pilus. 10.</item>
+          <item>Erosae Alae. 81.</item>
+          <item>Erosus Thorax. 116.</item>
+          <item>Exasperata Testa suturis. 164.</item>
+          <item>Exasperatum Corpus. 173.</item>
+          <item>Excavata Mandibula. 101.</item>
+          <item>Excavatae Antennae. 83.</item>
+          <item>Excavato-occultata Spira. 155.</item>
+          <item>Excipiens Vagina. 171.</item>
+          <item>Excisae Maxillae. 146.</item>
+          <item>— Nates. 146.</item>
+          <item>Excisus Cardo. 129.</item>
+          <item>Excretio. 92.</item>
+          <item>Exerta Cauda. 130.</item>
+          <item>— Columella. 132.</item>
+          <item>— Mandibula. 101.</item>
+          <item>Exertae Alae. 79.</item>
+          <item>Exertus. 5.</item>
+          <item>— Aculeus. 78.</item>
+          <item>— Dens. 4.</item>
+          <item>— Umbilicus. 174.</item>
+          <item>Exesus. 138.</item>
+          <item>Exiguae Pinnae. 65.</item>
+          <item>Exoleta Stria. 158.</item>
+          <item>Explanata Cauda. 140.</item>
+          <item>Explanatum Labium. 142.</item>
+          <item>— Radium. 151.</item>
+          <item>Explanatus Aculeus. 1</item>
+          <item>Exquisita Spira. 154.</item>
+          <item>Exquisitus Apex. 125.</item>
+          <item>Extensilis Lingua. 7.</item>
+          <item>Exumbilicata Testa. 164.</item>
+        </list>
+        <list type="index">
+          <head>F.</head>
+          <item>Falcata Cauda. 130.</item>
+          <item>— Columella. 139.</item>
+          <item>— Tibia. 117.</item>
+          <item>Falcatae Alae. 80.</item>
+          <item>— Pinnae Pectorales. 67.</item>
+          <item>Falcatum Abdomen. 75</item>
+          <item>Falcatus. 44.</item>
+          <item>Fasciae. 139.</item>
+          <item>Fasciatae Alae. 80.</item>
+          <item>Fasciatus. 139.</item>
+          <item>— Clypeus. 87.</item>
+          <item>Fasciculata Crista. 17.</item>
+          <item>— Elytra. 90.</item>
+          <item>— Tentacula. 161.</item>
+          <item>Fasciculus. 5.</item>
+          <item>— Pediformis. 139.</item>
+          <item>Fasciculatum Abdomen. 76.</item>
+          <item>Fasciculatus Tubus. 171.</item>
+          <item>Fastigiata Barba. 2.</item>
+          <item>— Elytra. 92.</item>
+          <item>— Frons. 6.</item>
+          <item>— Testa. 164.</item>
+          <item>Fastigiatus Pilus. 9.</item>
+          <item>Faux. 139.</item>
+          <item>Femora. 17.</item>
+          <item>Femur. 92.</item>
+          <item>Fenestratae Alae. 80.</item>
+          <item>Ferrugineus. 88.</item>
+          <item>Fibroso-articulata stirps. 157.</item>
+          <item>Filamintosa Stirps. 157</item>
+          <item>Filatae Antennae. 82.</item>
+          <item>Filiforme Corpus. 173</item>
+          <item>— Radium. 151.</item>
+          <pb n="ix"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0327.jp2&amp;id=diccionariodost00vand"/>
+          <item>Filiformes Antennae. 82.</item>
+          <item>— Palpi. 104.</item>
+          <item>Filiformis Lingua. 7. 19.</item>
+          <item>— Testa. 164.</item>
+          <item>— Tubus. 171.</item>
+          <item>Fissa Lingua. 19.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Manus. 9.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Fissae Antennae. 83.</item>
+          <item>Fissi Palpi. 106.</item>
+          <item>Fissiles Antennae. 83.</item>
+          <item>Fissilis Clava. 86.</item>
+          <item>Fissum Labium. 97.</item>
+          <item>— Labrum. 143.</item>
+          <item>Fissura. 139.</item>
+          <item>Fissus Pes. 5. 9. 22.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Digitus. 137.</item>
+          <item>Fistula. 5.</item>
+          <item>Fistulosa Opercula. 56.</item>
+          <item>Fistulosus. 44.</item>
+          <item>Fixum Corpus. 134.</item>
+          <item>Flabelliformes Antennae. 82.</item>
+          <item>Flava Cera. 16.</item>
+          <item>Flexa Cauda. 85.</item>
+          <item>— Testa ad latus. 164</item>
+          <item>Flexile Haustellum. 96.</item>
+          <item>Flexilia Elytra. 90.</item>
+          <item>Flexilis. 44.</item>
+          <item>Flexuosa Cauda. 130.</item>
+          <item>— Testa. 164.</item>
+          <item>Flexuosus. 44.</item>
+          <item>Flocosa Cauda. 3.</item>
+          <item>Florem in verticem vibrans Stirps. 157.</item>
+          <item>Fluviatilis. 139.</item>
+          <item>Foliaceum Abdomen. 77.</item>
+          <item>Foliaceus Thorax. 116</item>
+          <item>Foliatum Abdomen. 76.</item>
+          <item>Foliatus Nasus. 8.</item>
+          <item>Folliculus. 5.</item>
+          <item>Foramen. 139.</item>
+          <item>Foraminulum. 139.</item>
+          <item>Forcipata Cauda. 85.</item>
+          <item>— Mandibula. 101.</item>
+          <item>Forficata Cauda. 16.</item>
+          <item>Forficatum Rostrum. 25.</item>
+          <item>Fornicale Labium. 142</item>
+          <item>Fornicata Costa. 133.</item>
+          <item>— Galea. 94.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Spina. 133.</item>
+          <item>— Squama. 156.</item>
+          <item>— Tibia. 116.</item>
+          <item>Fornicatae Maxillae. 50.</item>
+          <item>— Nares. 20.</item>
+          <item>Fornicato-squamosa Testa. 164.</item>
+          <item>Fornicatum Labium. 97.</item>
+          <item>— Haustellum. 95.</item>
+          <item>— Rostrum. 25.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Fornicatus Clypeus. 86.</item>
+          <item>— Sulcus. 159.</item>
+          <item>— Umbo. 175.</item>
+          <item>Fornix Umbonis. 175.</item>
+          <item>Fossorii Pedes. 107.</item>
+          <item>Fossula. 139.</item>
+          <item>Fracta Proboscis. 108.</item>
+          <item>Fragilis Testa. 164.</item>
+          <item>Frondosa Tentacula. 161.</item>
+          <item>Frondoso-trifariam Testa. 164.</item>
+          <item>Frondosus Anfractus. 120.</item>
+          <item>Frons. 6. 18. 93.</item>
+          <item>Frontales Oculi. 103.</item>
+          <item>Frontalis Crista. 17.</item>
+          <item>Fuscescens. 88.</item>
+          <item>Fulcratum Femur. 92.</item>
+          <item>Fuliginosus. 88.</item>
+          <item>Fulvus. 88.</item>
+          <item>Fuscus. 88.</item>
+          <item>Fusiformis Testa. 164.</item>
+        </list>
+        <list type="index">
+          <head>G.</head>
+          <item>Galea 94.</item>
+          <item>Gelatinosa Stirps. 157.</item>
+          <item>Gelatinosum Corpus. 134.</item>
+          <item>Gemina Pinna Ani. 62.</item>
+          <item>Geminae Nares. 53.</item>
+          <item>Geminatae Pinnae Pectorales. 66.</item>
+          <item>Geminatum Labium. 6.</item>
+          <item>Geminatus. 44.</item>
+          <item>Gena. 18.</item>
+          <item>Geniculata Proboscis. 108.</item>
+          <item>Geniculatum Haustellum. 95.</item>
+          <item>Geniculum. 140.</item>
+          <item>Gibba: Gibbosa Testa. 164.</item>
+          <item>— Elytra. 90.</item>
+          <item>— Vulva. 175.</item>
+          <item>Gibbae Nates. 147.</item>
+          <item>Gibber Narium. 18.</item>
+          <item>Gibbere compresso Dorsum. 138.</item>
+          <item>Gibbosus Anfractus. 120.</item>
+          <item>Gibbum Callum. 128.</item>
+          <item>— Corpus. 134.</item>
+          <item>— Haustellum. 95.</item>
+          <item>— Labium. 97. 142.</item>
+          <pb n="x"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0328.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Labrum. 143.</item>
+          <item>Gibbus Umbilicus. 174.</item>
+          <item>Gingiva. 140.</item>
+          <item>Glaber. 6.</item>
+          <item>— Articulus. 126.</item>
+          <item>— Thorax. 115.</item>
+          <item>— Radium. 151.</item>
+          <item>Glaberrima Cauda. 130.</item>
+          <item>Glaberrimus. 140.</item>
+          <item>Glabra Elytra. 91.</item>
+          <item>— Frons. 93.</item>
+          <item>— Lingua. 47.</item>
+          <item>— Opercula. 57.</item>
+          <item>— Stria. 158.</item>
+          <item>— Tibia. 117.</item>
+          <item>— Vulva. 175.</item>
+          <item>Glabrum Abdomen. 44.</item>
+          <item>— Caput. 38.</item>
+          <item>— Palatum. 61.</item>
+          <item>Glaucus. 88.</item>
+          <item>Glans 140.</item>
+          <item>Globosa Crista. 17.</item>
+          <item>Globosi Oculi. 55.</item>
+          <item>Globosum. 44.</item>
+          <item>Glomerata Testa. 165.</item>
+          <item>Glomeratae Cellulae. 140.</item>
+          <item>Granulosi Dentes. 41.</item>
+          <item>Gressorius Pes. 22. 107.</item>
+          <item>Griseus color. 89.</item>
+          <item>Gula. 18. 44. 95.</item>
+          <item>Gularis. 45.</item>
+          <item>— Membrana Branchiostega. 51.</item>
+          <item>— Anus. 32.</item>
+          <item>— Apertura. 33.</item>
+        </list>
+        <list type="index">
+          <head>H.</head>
+          <item>Hamoso-forcipata Cauda. 85.</item>
+          <item>Hamosum Abdomen. 75.</item>
+          <item>Hastatum Abdomen. 76.</item>
+          <item>— Labium. 97.</item>
+          <item>Haustelliformis Proboscis. 107.</item>
+          <item>Haustellum. 95.</item>
+          <item>Helvolus. 6. 89.</item>
+          <item>Hemilytrum. 96.</item>
+          <item>Hemisphaerica Testa. 165.</item>
+          <item>— Concava Stella. 156</item>
+          <item>— Maxilla. 146.</item>
+          <item>Heptadactylum Labrum. 143.</item>
+          <item>Heptaphyllae Antennae. 82.</item>
+          <item>Hexadactylum Labrum. 143.</item>
+          <item>Hians. 6. 140.</item>
+          <item>— Apertura. 124.</item>
+          <item>— Testa. 165.</item>
+          <item>Hiantes Nymphae. 147</item>
+          <item>Hipocrateriformis. 140.</item>
+          <item>Hirta Frons. 94.</item>
+          <item>Hirtum Abdomen. 76.</item>
+          <item>Hispida Tentacula. 161.</item>
+          <item>— Testa. 165.</item>
+          <item>Humeri. 18.</item>
+          <item>Hyalinus color. 89.</item>
+          <item>Hyemare. 29.</item>
+          <item>Hymen. 140.</item>
+          <item>Hypocondria. 18.</item>
+          <item>Hypocondrium. 6.</item>
+          <item>Hypocrateriformis Stella. 156.</item>
+        </list>
+        <list type="index">
+          <head>I.</head>
+          <item>Ima Linea lateralis. 46.</item>
+          <item>Imae Pinnae Pectorales. 66.</item>
+          <item>Imbricata Cauda. 28.</item>
+          <item>— Stria. 158.</item>
+          <item>— Squama. 156.</item>
+          <item>— Testa. 165.</item>
+          <item>Imbricatae Squamae. 70.</item>
+          <item>Imbrices. 141.</item>
+          <item>Imbricatim. 18.</item>
+          <item>Imbricatum squamis Radium. 151.</item>
+          <item>Imbricatus squamis Sulcus. 159.</item>
+          <item>— Anfractus. 120.</item>
+          <item>Immarginatum. 96.</item>
+          <item>Immersa-Stella. 156.</item>
+          <item>Immobiles Dentes. 43.</item>
+          <item>— Maxillae. 49.</item>
+          <item>Impennes. 18.</item>
+          <item>Impinnis. 6.</item>
+          <item>Impositum Abdomen. 74.</item>
+          <item>Impressus Anus. 123.</item>
+          <item>Inaequales Anfractus. 120.</item>
+          <item>— Nares. 53.</item>
+          <item>— Palpi. 105.</item>
+          <item>Inaurita Testa. 165.</item>
+          <item>Inaequivalvis Testa. 165</item>
+          <item>Incarnatus color. 89.</item>
+          <item>Incisio. 141.</item>
+          <item>Incisores Dentes. 4.</item>
+          <item>Incisus. 141.</item>
+          <item>Inclusus Dens. 4.</item>
+          <item>Incompleta Pupa. 108.</item>
+          <item>Incospicua Membrana Branchiostega. 51.</item>
+          <item>Incrassato-marginatus Anfractus. 120.</item>
+          <item>Incrassatum Labium. 97.</item>
+          <pb n="xi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0329.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Labrum. 143.</item>
+          <item>— Femur. 92.</item>
+          <item>Incrassatus Clypeus. 87.</item>
+          <item>Incubatio. 18.</item>
+          <item>Incumbentes Alae 80.</item>
+          <item>Incurvata Cauda. 3.</item>
+          <item>Incurvatae Nates. 147.</item>
+          <item>Incurvatum Rostrum. 25.</item>
+          <item>Incurvatus. 141</item>
+          <item>— Dens. 5.</item>
+          <item>Incurvi Dentes. 137.</item>
+          <item>Incurvum Femur. 92.</item>
+          <item>— Rostrum. 25.</item>
+          <item>Indivisus Anfractus. 120.</item>
+          <item>Inerme Caput. 39.</item>
+          <item>— Femur. 93.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Inermia Elytra. 91.</item>
+          <item>Inermis Mandibula. 101.</item>
+          <item>— Spira. 154.</item>
+          <item>— Tibia. 117.</item>
+          <item>— Thorax. 116.</item>
+          <item>Infarcto-incurvatum. 25.</item>
+          <item>Inferae Maxillae. 49.</item>
+          <item>Inferior Margo. 145.</item>
+          <item>Inferus Rictus. 58.</item>
+          <item>Inflexa Proboscis. 107.</item>
+          <item>— Testa. 165.</item>
+          <item>— Vulva. 175.</item>
+          <item>Inflexae Nates. 147.</item>
+          <item>— Nymphae. 147.</item>
+          <item>Inflexum Haustellum. 95.</item>
+          <item>— Rostrum. 60. 109.</item>
+          <item>Infundibuliformis Nasus. 8.</item>
+          <item>Inflexus Margo. 145.</item>
+          <item>Ingens Rictus. 59.</item>
+          <item>Inguinales Mammae. 7.</item>
+          <item>Insertus Dens. 136.</item>
+          <item>Integer Canalis. 128.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Digitus. 138.</item>
+          <item>— Margo. 145.</item>
+          <item>Integerrimus Margo. 145.</item>
+          <item>Integra Apertura. 124</item>
+          <item>— Cauda. 16. 130.</item>
+          <item>— Lingua. 19. 47.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Integrum Abdomen. 76.</item>
+          <item>— Labium. 97.</item>
+          <item>— Labrum. 98.</item>
+          <item>— Sternum. 112.</item>
+          <item>Interrupta Stria. 158.</item>
+          <item>— Testa. 165.</item>
+          <item>Interruptae Pinnae. 65</item>
+          <item>Interscapulium. 18.</item>
+          <item>Interstitia. 141.</item>
+          <item>Intestina. 141.</item>
+          <item>— Vermes 173.</item>
+          <item>Intestinum. 141.</item>
+          <item>Involvens Clypeus. 86.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Involuta Lingua. 144.</item>
+          <item>— Testa. 165.</item>
+          <item>Iris. 45.</item>
+          <item>Irregulares Antennae. 82.</item>
+          <item>Isthmum. 141.</item>
+          <item>Juba. 6.</item>
+          <item>Jubata Cauda. 3.</item>
+          <item>Jugulares Pinnae Ventrales. 67.</item>
+        </list>
+        <list type="index">
+          <head>L.</head>
+          <item>Labia. 45. 141.</item>
+          <item>Labiatae Maxillae. 48.</item>
+          <item>— Patellae. 141.</item>
+          <item>Labium. 6. 96. 141. 142.</item>
+          <item>— Fornicatum. 48.</item>
+          <item>Lacera Lingua. 19.</item>
+          <item>— Penna. 22.</item>
+          <item>Laciniatae Alae. 79.</item>
+          <item>Laciniosus. 143.</item>
+          <item>Lacuna. 7. 144.</item>
+          <item>Lacunosae Valvae. 171.</item>
+          <item>Lacunosum Labium. 6.</item>
+          <item>Lacunosus Sulcus. 159.</item>
+          <item>Laeve Corpus. 173.</item>
+          <item>— Labrum. 143.</item>
+          <item>— Radium. 151.</item>
+          <item>— Rostrum. 152.</item>
+          <item>Laeves Costae. 135.</item>
+          <item>Laevia Elytra. 90.</item>
+          <item>Laevigata Cauda. 130.</item>
+          <item>— Spira. 154.</item>
+          <item>— Varix. 172.</item>
+          <item>Laevis Anfractus. 121.</item>
+          <item>— Columella. 132.</item>
+          <item>— Frons. 93. 139.</item>
+          <item>— Spina. 153.</item>
+          <item>— Stria. 158.</item>
+          <item>— Testa. 165.</item>
+          <item>— Thorax. 115.</item>
+          <item>— Umbo. 175.</item>
+          <item>Lamellosa Pubes. 150.</item>
+          <item>Lamellatum Abdomen. 77.</item>
+          <item>— Rostrum. 109.</item>
+          <item>Lamellatus Anfractus. 120.</item>
+          <item>Lanata Testa. 165.</item>
+          <item>Lanceolatae Alae. 79.</item>
+          <item>Lanceolatum. 45.</item>
+          <item>Lancolatus Dens. 136.</item>
+          <item>— Thorax. 114.</item>
+          <item>Laniarii Dentes. 4.</item>
+          <item>Lapidea Stirps. 157.</item>
+          <item>Larva. 98.</item>
+          <pb n="xii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0330.jp2&amp;id=diccionariodost00vand"/>
+          <item>Lata Membrana Branchiostega. 51.</item>
+          <item>Latera. 45.</item>
+          <item>Laterale Labium. 142.</item>
+          <item>Laterales Branchiae. 35.</item>
+          <item>— Oculi. 54. 103.</item>
+          <item>Lateralia Tentacula. 161.</item>
+          <item>Lateralis Apertura. 33.</item>
+          <item>— Cardo. 129.</item>
+          <item>— Dens. 136.</item>
+          <item>— Membrana Branchiostega. 51.</item>
+          <item>Latitudo. 144.</item>
+          <item>Latum Caput. 38.</item>
+          <item>Laxi Coni. 144.</item>
+          <item>Levia Opercula. 57.</item>
+          <item>Levis Aculeus. 78.</item>
+          <item>— Linea Lateralis. 46.</item>
+          <item>Lentiformis Testa. 165.</item>
+          <item>Libera Lingua. 47.</item>
+          <item>— Stirps. 157.</item>
+          <item>Liberum Corpus. 134.</item>
+          <item>Ligamen. 144.</item>
+          <item>Limbus. 144.</item>
+          <item>Linea lateralis. 45.</item>
+          <item>Lineae. 144.</item>
+          <item>Lineare Abdomen. 75.</item>
+          <item>— Callum. 128.</item>
+          <item>— Labium. 97.</item>
+          <item>Lineares Alae. 79.</item>
+          <item>— Nares. 20.</item>
+          <item>Linearia Elytra. 90.</item>
+          <item>Linearis. 46.</item>
+          <item>— Apertura. 124.</item>
+          <item>— Rictus. 58.</item>
+          <item>— Testa. 165.</item>
+          <item>Lineata Elytra. 91.</item>
+          <item>Lineatum Scutellum. 111.</item>
+          <item>Lineatus. 47.</item>
+          <item>— Anfractus. 121.</item>
+          <item>Lingua. 7. 19. 47. 98. 144.</item>
+          <item>Linguaeforme Labium 97.</item>
+          <item>Linguaeformes Palpi. 105.</item>
+          <item>Linguaeformis Maxilla. 99.</item>
+          <item>— Testa. 165.</item>
+          <item>Lithophyta. 144.</item>
+          <item>Litterata Vulva. 175.</item>
+          <item>Lividus Color. 89.</item>
+          <item>Lobata Caruncula. 15</item>
+          <item>— Pinna Caudae. 63.</item>
+          <item>Lobatum Abdomen. 76.</item>
+          <item>— Femur. 93.</item>
+          <item>Lobatus. 145.</item>
+          <item>— Dens. 5.</item>
+          <item>— Pes. 22.</item>
+          <item>Lobus. 99.</item>
+          <item>Locularis. 145.</item>
+          <item>Longior Cardo. 129.</item>
+          <item>— Thorax. 114.</item>
+          <item>Longissima Lingua. 19. 99.</item>
+          <item>Longissimae Alae. 79.</item>
+          <item>— Pinnae Pectorales. 67.</item>
+          <item>— Pinnae Ventrales. 68.</item>
+          <item>Longissimum Abdomen. 74.</item>
+          <item>Longitudinales Pinnae Dorsales. 64.</item>
+          <item>Longitudinalis. 145.</item>
+          <item>— Apertura. 124.</item>
+          <item>— Cardo. 129.</item>
+          <item>— Sutura Elytrorum. 91.</item>
+          <item>— Pinna Ani. 62.</item>
+          <item>— Varix. 172.</item>
+          <item>Longum Rostrum. 60.</item>
+          <item>Longitudo. 145.</item>
+          <item>Longiuscula Spira. 154</item>
+          <item>Lorica. 48.</item>
+          <item>Loricata Linea. 48.</item>
+          <item>— Linea lateralis. 46.</item>
+          <item>Loricatum. 29.</item>
+          <item>— Caput. 38.</item>
+          <item>Lorum. 19.</item>
+          <item>Lubricus. 48.</item>
+          <item>Lumbares Pinnae Dorsales. 64.</item>
+          <item>Lumbriciformis Lingua. 19.</item>
+          <item>Lunaris Thorax. 114.</item>
+          <item>Lunata Cauda. 130.</item>
+          <item>— Tentacula apice. 161.</item>
+          <item>Lunato-oblonga Apertura. 124.</item>
+          <item>Lunatum Corpus. 134</item>
+          <item>Lunatus Anus. 123.</item>
+          <item>— Cornus. 3.</item>
+          <item>Lunulis notatus Sulcus. 159.</item>
+          <item>Luridus Color. 89.</item>
+          <item>Lutea Cera. 16.</item>
+        </list>
+        <list type="index">
+          <head>M.</head>
+          <item>Macrolepidotus. 48.</item>
+          <item>Macroura Cauda. 16.</item>
+          <item>Macrourus. 20.</item>
+          <item>Macula. 7. 145.</item>
+          <item>Magna Apertura. 33.</item>
+          <item>Magni Oculi. 55.</item>
+          <item>Mammae. 7.</item>
+          <item>Mandibulae. 100.</item>
+          <item>Manicata Tibia. 117.</item>
+          <item>Manicatus. 7.</item>
+          <item>Manifesta Spira. 154.</item>
+          <item>Manus. 9.</item>
+          <item>Marginales. Oculi. 54.</item>
+          <pb n="xiii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0331.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Nares. 52.</item>
+          <item>Marginalis Anus. 122.</item>
+          <item>Marginata Apertura. 124.</item>
+          <item>— Elytra. 91.</item>
+          <item>— Sutura. 160.</item>
+          <item>— Testa. 166.</item>
+          <item>Marginatae Nares supra. 20.</item>
+          <item>Marginatum Corpus. 134.</item>
+          <item>— Dorsum. 138.</item>
+          <item>— Labrum. 143.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Marginatus Anfractus. 121.</item>
+          <item>— Thorax. 99. 116.</item>
+          <item>Margo. 145.</item>
+          <item>Masticans Dens. 136.</item>
+          <item>Maxillae. 48. 99.</item>
+          <item>Maximae Maxillae. 49</item>
+          <item>Maxillae. 146.</item>
+          <item>Maxillosum. 100.</item>
+          <item>Media Linea Lateralis 46.</item>
+          <item>— Pinna Ani. 62.</item>
+          <item>Mediae Maxillae. 49.</item>
+          <item>— Nares. 52.</item>
+          <item>— Pinnae Pectorales. 66.</item>
+          <item>Mediocre Caput. 38.</item>
+          <item>Mediocres Dentes. 42.</item>
+          <item>— Maxillae. 49.</item>
+          <item>Mediocria Elytra. 89.</item>
+          <item>Mediocris Aculeus. 77</item>
+          <item>— Apertura. 33.</item>
+          <item>— Cauda. 16. 130.</item>
+          <item>— Rictus. 59.</item>
+          <item>Medius Anus. 32.</item>
+          <item>Membrana Branchiostega. 50.</item>
+          <item>— Nictitans. 20. 52.</item>
+          <item>Membranacea Caruncula. 15.</item>
+          <item>— Lingua. 98.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Proboscis. 108.</item>
+          <item>— Stria. 15.</item>
+          <item>— Testa. 166.</item>
+          <item>Membranaceum Labium. 98.</item>
+          <item>— Radium. 151.</item>
+          <item>Membranaceus Clypeus. 132.</item>
+          <item>— Margo. 145.</item>
+          <item>— Sulcus. 159.</item>
+          <item>Metamorphosis. 102.</item>
+          <item>Minima Opercula. 57.</item>
+          <item>Minimae Maxillae. 49.</item>
+          <item>Minimi Dentes. 42.</item>
+          <item>Minuta Stella. 156.</item>
+          <item>Mobiles Dentes. 43.</item>
+          <item>Mobilia Opercula. 56.</item>
+          <item>Mobilis. 52.</item>
+          <item>Molares Dentes. 4.</item>
+          <item>Molles Squamae. 71.</item>
+          <item>Mollia Elytra 90.</item>
+          <item>— Opercula. 56.</item>
+          <item>Moniliformes Antennae. 82.</item>
+          <item>— Palpi 104.</item>
+          <item>Moniliformis Sulcus. 159.</item>
+          <item>Monogamia. 8.</item>
+          <item>Monopterygium Dorsum. 43.</item>
+          <item>Monopterygius. 50.</item>
+          <item>Monathalamia. 145.</item>
+          <item>Mucronata Elytra. 92</item>
+          <item>— Spira. 154.</item>
+          <item>— Varix. 172.</item>
+          <item>Mucronatae Patellae. 146.</item>
+          <item>Mucronatum Labrum. 143.</item>
+          <item>Mucronatus. 8.</item>
+          <item>— Digitus. 138.</item>
+          <item>— Thorax. 114.</item>
+          <item>Multiarticulatae Antennae. 83.</item>
+          <item>Multidentata Mandibula. 101.</item>
+          <item>Multimaxillosum. 100</item>
+          <item>Multisulcata Testa. 166.</item>
+          <item>Muricata Cauda. 36. 130.</item>
+          <item>Multiradiatae Pinnae Ventrales. 68.</item>
+          <item>Muricata. 146.</item>
+          <item>— Stria. 158.</item>
+          <item>— Testa. 166.</item>
+          <item>Muricatum. 29.</item>
+          <item>— Cingulum. 131.</item>
+          <item>— Labrum. 143.</item>
+          <item>Muricatus Anfractus. 121.</item>
+          <item>— Sulcus. 160.</item>
+          <item>— Thorax. 115.</item>
+          <item>Murinus Color. 89.</item>
+          <item>Mutica Tibia. 117.</item>
+          <item>Muticae Pinnae Ventrales. 68.</item>
+          <item>Muticum Labrum. 143.</item>
+          <item>Muticus. 8. 52.</item>
+          <item>— Dorsus. 113.</item>
+          <item>Mutilato-truncata Spira. 154.</item>
+          <item>Mystax. 20. 52.</item>
+          <item>Mystaces. 8.</item>
+        </list>
+        <list type="index">
+          <head>N.</head>
+          <item>Nares. 8 20. 52.</item>
+          <item>Naribus Caruncula. 15</item>
+          <item>Nasus. 8.</item>
+          <item>Natatorii Pedes. 107.</item>
+          <item>Natatorius Pês. 22.</item>
+          <item>Nates. 146.</item>
+          <pb n="xiv"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0332.jp2&amp;id=diccionariodost00vand"/>
+          <item>Navicularis Testa. 166.</item>
+          <item>Nebulosus. 89. 147.</item>
+          <item>Neritoidei. 147.</item>
+          <item>Neutra. 102.</item>
+          <item>Nigricans color. 89.</item>
+          <item>Nitida Opercula. 57.</item>
+          <item>— Testa. 166.</item>
+          <item>Nivosus. 147.</item>
+          <item>Nodosa Testa. 166.</item>
+          <item>Nodoso-vesiculare Radium. 151.</item>
+          <item>Nodosus Sulcus. 160.</item>
+          <item>Nodulosa Varix. 172.</item>
+          <item>Nodulosus Anfractus. 121.</item>
+          <item>Nucha. 21. 53.</item>
+          <item>Nuda Bucca. 2.</item>
+          <item>— Cauda. 2.</item>
+          <item>— Cutis. 21.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Opercula. 57.</item>
+          <item>Nudae Alae. 80.</item>
+          <item>— Maxillae. 48.</item>
+          <item>Nudi Oculi. 55.</item>
+          <item>Nulla Pinna Caudae. 64.</item>
+          <item>— Opercula. 57.</item>
+          <item>Nutans Caput. 85.</item>
+          <item>Nymphae. 147.</item>
+        </list>
+        <list type="index">
+          <head>O.</head>
+          <item>Obconicae Antennae. 83.</item>
+          <item>Obconicum Labium. 97.</item>
+          <item>Obcordatum Thorax. 170.</item>
+          <item>Obcordatus Anus. 123.</item>
+          <item>Obliqua Columella. 132.</item>
+          <item>— Testa. 166.</item>
+          <item>Obliquata Columella. 132.</item>
+          <item>— Stria. 159.</item>
+          <item>Obliquus Rictus. 58.</item>
+          <item>— Sipho. 153.</item>
+          <item>Obliterata Auricula. 127.</item>
+          <item>— Linea lateralis. 46.</item>
+          <item>— Spira. 155.</item>
+          <item>Obliteratum Radium. 151.</item>
+          <item>Oblonga Apertura. 124.</item>
+          <item>— Testa. 166.</item>
+          <item>Oblongae Alae. 79.</item>
+          <item>— Nares. 20.</item>
+          <item>Oblongi Oculi. 55. 103.</item>
+          <item>Oblongiuscula Apertura. 124.</item>
+          <item>Oblongum Corpus. 134.</item>
+          <item>Obovata Apertura. 125.</item>
+          <item>— Testa. 166.</item>
+          <item>Obsoleta Squama. 156.</item>
+          <item>— Stria. 159.</item>
+          <item>— Tentacula. 161.</item>
+          <item>Obsoletior Margo. 145</item>
+          <item>Obsoletum Labium. 140.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Obsoletus Aculeus. 77.</item>
+          <item>— Anfractus. 121.</item>
+          <item>— Porus. 150.</item>
+          <item>Obtecta Pupa. 108.</item>
+          <item>Obtectus Umbilicus. 174.</item>
+          <item>Obtusa Cauda. 86. 131</item>
+          <item>— Galea. 94.</item>
+          <item>— Lingua. 19. 47. 98.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Obtusae Alae. 81.</item>
+          <item>— Antennae. 84.</item>
+          <item>Obtusata Spira. 155.</item>
+          <item>Obtusatum Labrum. 143.</item>
+          <item>Obtusi Dentes. 41.</item>
+          <item>Obtusum Abdomen. 77.</item>
+          <item>— Caput. 37.</item>
+          <item>— Labium. 97.</item>
+          <item>— Rostrum. 59. 110. 111.</item>
+          <item>Obtusus Anfractus. 121.</item>
+          <item>Obvelatum membranis reflexis Corpus. 134.</item>
+          <item>Occipitales Branchiae 35.</item>
+          <item>— Pinnae Dorsales. 64.</item>
+          <item>Occipitalis Apertura. 33.</item>
+          <item>— Crista. 17.</item>
+          <item>Occiput. 21.</item>
+          <item>Occultae Branchiae. 35.</item>
+          <item>Ocellata Penna. 22.</item>
+          <item>Ocellatae Alae. 80.</item>
+          <item>Ocellus. 103.</item>
+          <item>Octodentatus Apex 126.</item>
+          <item>Oculi. 54. 102.</item>
+          <item>Occultata Spira. 155.</item>
+          <item>Oculus. 148.</item>
+          <item>Occursans Dens. 5.</item>
+          <item>Olivaceus color. 89.</item>
+          <item>Opaca Testa. 166.</item>
+          <item>Opercula Branchiarum. 55.</item>
+          <item>Operculata Apertura. 33.</item>
+          <item>Operculatae Branchiae 35.</item>
+          <pb n="xv"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0333.jp2&amp;id=diccionariodost00vand"/>
+          <item>Operculum. 148.</item>
+          <item>Opposita Varix. 172.</item>
+          <item>Oppositae Alae. 118.</item>
+          <item>Orbicularis Apertura. 125.</item>
+          <item>— Pupilla. 10.</item>
+          <item>— Stella. 156.</item>
+          <item>Orbiculata Apertura. 125.</item>
+          <item>Orbiculata Testa. 166.</item>
+          <item>Orbiculatae Squamae. 71.</item>
+          <item>Orbiculatum Abdomen. 75.</item>
+          <item>— Corpus. 135.</item>
+          <item>— Labium. 97.</item>
+          <item>— Os. 58.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Orbiculatus Thorax. 114.</item>
+          <item>Orbita 21.</item>
+          <item>Ordinati Dentes. 43.</item>
+          <item>Os. 103. 148.</item>
+          <item>Ossea Crusta. 134.</item>
+          <item>— Opercula. 56.</item>
+          <item>Ossicula Palati. 60.</item>
+          <item>Osseum Radium. 151.</item>
+          <item>Ovale Corpus. 135.</item>
+          <item>Ovales Nares. 53.</item>
+          <item>— Squamae. 71.</item>
+          <item>Ovalis Testa. 166.</item>
+          <item>— Unguis. 12.</item>
+          <item>Ovata Apertura. 33. 125.</item>
+          <item>— Squama. 156.</item>
+          <item>— Vulva. 175.</item>
+          <item>Ovatae Nares. 20.</item>
+          <item>Ovatum. 60.</item>
+          <item>— Abdomen. 75.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Ovatus Anus. 123.</item>
+          <item>— Thorax. 114.</item>
+          <item>Ovoideus. 149.</item>
+          <item>Ovum. 21.</item>
+        </list>
+        <list type="index">
+          <head>P.</head>
+          <item>Palatum. 60. 149.</item>
+          <item>Paleare. 21.</item>
+          <item>Palearia. 9.</item>
+          <item>— Carunculata. 21.</item>
+          <item>Palma. 9.</item>
+          <item>Palmata Manus. 19.</item>
+          <item>Palmatae Antenae. 82.</item>
+          <item>Palmatum Labrum. 143.</item>
+          <item>Palmatus Pes. 9.</item>
+          <item>Palpebra. 9. 21.</item>
+          <item>Palpebrae. 61.</item>
+          <item>Palpi. 103.</item>
+          <item>Papillari Apice Spira. 155.</item>
+          <item>Papillosa Cera. 16.</item>
+          <item>— Lingua. 47.</item>
+          <item>Papillosum Abdomen. 77.</item>
+          <item>— Caput. 39.</item>
+          <item>— Palatum. 61.</item>
+          <item>Papillosus. 61.</item>
+          <item>— Apex. 126.</item>
+          <item>Papullosus. 149.</item>
+          <item>Papyraceus 249.</item>
+          <item>Parallela Stria. 159.</item>
+          <item>Paralleli Dentes. 42.</item>
+          <item>Parallelipipeda. 166.</item>
+          <item>Parallelus. 9.</item>
+          <item>Parasitica Testa. 167.</item>
+          <item>Paries. 149.</item>
+          <item>Parvae Nares. 53.</item>
+          <item>— Squamae. 71.</item>
+          <item>Parvus Rictus. 59.</item>
+          <item>Patella Femorum. 93.</item>
+          <item>Patens membrana Branchiostega. 51.</item>
+          <item>Patentes Alae. 80.</item>
+          <item>Patula Auris. 1.</item>
+          <item>— Cauda. 131.</item>
+          <item>— Squama. 156.</item>
+          <item>Patulae Nares 20.</item>
+          <item>Patulus Pilus. 10.</item>
+          <item>— Dens. 137.</item>
+          <item>— Umbilicus. 174.</item>
+          <item>Pauci-articulatae Antennae. 83.</item>
+          <item>Pecten. 106.</item>
+          <item>Pectinata 149.</item>
+          <item>— Testa. 167.</item>
+          <item>Pectinatae Antennae. 83.</item>
+          <item>— Branchiae. 36.</item>
+          <item>Pectinato-fissiles Antennae. 83.</item>
+          <item>Pectorales Pedes. 107.</item>
+          <item>— Pinnae. 61.</item>
+          <item>Pectoralis Anus. 32.</item>
+          <item>Pectoris Barba. 14.</item>
+          <item>Pectus. 21. 106.</item>
+          <item>Pedatio. 106.</item>
+          <item>Pedicillum. 21.</item>
+          <item>Pedunculata Tentacula. 161.</item>
+          <item>— Glans. 140.</item>
+          <item>Pedunculatae Antennae 84.</item>
+          <item>Pedunculati Oculi. 103.</item>
+          <item>Pedes. 9. 106.</item>
+          <item>— aequilibres. 21.</item>
+          <item>Pes. 22.</item>
+          <item>Pellucida Testa. 167.</item>
+          <item>Pellucidum Abdomen 76.</item>
+          <item>Penetrans Dens. 137.</item>
+          <item>Penna. 21.</item>
+          <item>Pennacea Lingua. 19.</item>
+          <item>Penicellata Cauda. 86.</item>
+          <item>— Tentacula. 161.</item>
+          <item>Perfoliata Clava. 86.</item>
+          <item>— Testa. 167.</item>
+          <item>Perfoliatae Antennae. 83.</item>
+          <item>Perforata Cauda. 131.</item>
+          <pb n="xvi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0334.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Columella. 132.</item>
+          <item>Perforato Nati. 147.</item>
+          <item>Perforatus Apex. 126.</item>
+          <item>Perlucens Pilus. 10.</item>
+          <item>Perpendiculare Labium. 142.</item>
+          <item>Perpendicularis Pupilla. 10.</item>
+          <item>Pertusum Punctum. 150.</item>
+          <item>Pervia Testa. 167.</item>
+          <item>Pervius Umbilicus. 174.</item>
+          <item>Pes. 149.</item>
+          <item>Petiolatum Abdomen. 74.</item>
+          <item>Piceus Color. 89.</item>
+          <item>Pileum. 10.</item>
+          <item>Pileus. 23. 149.</item>
+          <item>Pilosa Elytra. 90.</item>
+          <item>— Frons. 94.</item>
+          <item>— Tibia. 117.</item>
+          <item>Pilosae Alae. 80.</item>
+          <item>— Antennae. 83.</item>
+          <item>Pilosi Palpi. 105.</item>
+          <item>Pilosum Abdomen. 76.</item>
+          <item>Pilosus Thorax. 115.</item>
+          <item>Pilus. 9.</item>
+          <item>Pinna. 10. 29.</item>
+          <item>— Ani. 62.</item>
+          <item>— Caudae. 63.</item>
+          <item>— Spuria. 61.</item>
+          <item>Pinnata Cauda. 3. 37.</item>
+          <item>Pinnae. 61.</item>
+          <item>— Dorsales. 64.</item>
+          <item>— Pectorales. 66.</item>
+          <item>— Spuriae. 68.</item>
+          <item>— Ventrales. 67.</item>
+          <item>Pinnatae Maxillae. 146</item>
+          <item>Pinnatus. 10. 69.</item>
+          <item>— Pes. 22.</item>
+          <item>Pollicata Tibia. 117.</item>
+          <item>Polyacanthum. 43.</item>
+          <item>Polyacanthus. 69.</item>
+          <item>Polyedrum Rostrum. 25.</item>
+          <item>Polygonus. 69.</item>
+          <item>Polythalamia. 149.</item>
+          <item>— Testa 167.</item>
+          <item>Porcata Elytra. 91.</item>
+          <item>Porosa Linea Lateralis. 46.</item>
+          <item>— Stirps. 158.</item>
+          <item>Porrectus Dens. 4.</item>
+          <item>Porus. 149.</item>
+          <item>Porus Oleiferus. 2.</item>
+          <item>Posteri Oculi. 54.</item>
+          <item>Posterior Margo. 145.</item>
+          <item>Posticum Labium. 141.</item>
+          <item>Postremae Nares. 52.</item>
+          <item>Plagioplateae Maxillae. 48.</item>
+          <item>Plagioplateum. 69.</item>
+          <item>— Rostrum. 59.</item>
+          <item>Plana Cauda. 131.</item>
+          <item>— Columella. 132.</item>
+          <item>— Elytra. 90.</item>
+          <item>— Gula. 44.</item>
+          <item>— Lingua. 19.</item>
+          <item>— Spira. 155.</item>
+          <item>— Vulva. 175.</item>
+          <item>Plani Dentes. 42.</item>
+          <item>— Oculi. 54.</item>
+          <item>Planiuscula Cauda. 131.</item>
+          <item>Planiusculum Corpus. 173.</item>
+          <item>— Labium. 142.</item>
+          <item>— Radium. 151.</item>
+          <item>Planiusculus Anfractus. 121.</item>
+          <item>Planum Abdomen. 31.</item>
+          <item>— Caput. 38.</item>
+          <item>— Corpus. 135.</item>
+          <item>— Labium. 142.</item>
+          <item>Planus Thorax. 114.</item>
+          <item>— Dens. 136. 137.</item>
+          <item>Pluma. 23.</item>
+          <item>Plicata Columella. 132.</item>
+          <item>— Spira. 155.</item>
+          <item>— Testa. 167.</item>
+          <item>Plicatae Alae. 79.</item>
+          <item>Plicatilis Crista. 17.</item>
+          <item>Plicato-striatus Anfractus. 121.</item>
+          <item>Plicatum Abdomen 76</item>
+          <item>Plicatus Anfractus. 121.</item>
+          <item>— Apex. 126.</item>
+          <item>— Margo 145.</item>
+          <item>— Thorax. 115.</item>
+          <item>Plumatae Antennae. 84.</item>
+          <item>Plumbeus Color. 89.</item>
+          <item>Plumosa Tentacula. 161.</item>
+          <item>Prehensilis Cauda. 2.</item>
+          <item>Primarius Dens. 137.</item>
+          <item>Primores Remiges. 24.</item>
+          <item>Proboscis. 10. 107.</item>
+          <item>Productiuscula Columella. 132.</item>
+          <item>Prominens Cauda. 131</item>
+          <item>— Abdomen. 31.</item>
+          <item>Prominentes Valvae. 172.</item>
+          <item>— Nymphae. 147.</item>
+          <item>Prominula Cauda. 131.</item>
+          <item>— Spira. 155.</item>
+          <item>Prominuli Oculi. 103.</item>
+          <item>Prominulum Labium. 142.</item>
+          <item>Prominulus Porus. 150</item>
+          <item>Proportionale Caput. 38.</item>
+          <item>— Rostrum. 60.</item>
+          <item>Proportionales Pinnae Pectorales. 67</item>
+          <item>— Pinnae Ventrales. 68.</item>
+          <pb n="xvii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0335.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Oculi. 55.</item>
+          <item>Protuberantes Oculi. 54.</item>
+          <item>Protuberantia. 150.</item>
+          <item>Pubes. 150.</item>
+          <item>Punctata Elytra. 90.</item>
+          <item>— Frons. 93.</item>
+          <item>— Testa. 167.</item>
+          <item>Punctatae Squamae. 71.</item>
+          <item>Punctato-striata Elytra 90.</item>
+          <item>Punctatum Abdomen. 76.</item>
+          <item>— Corpus. 135.</item>
+          <item>Punctum. 150.</item>
+          <item>Punctatus. 69.</item>
+          <item>— Thorax. 115.</item>
+          <item>Pupa. 108.</item>
+          <item>Pubescens Frons. 94.</item>
+          <item>Pupilla. 10. 69.</item>
+          <item>Pupillatae Alae. 80.</item>
+          <item>Pupillatus Ocellus. 109.</item>
+          <item>Pyramidata Vagina. 171.</item>
+        </list>
+        <list type="index">
+          <head>Q.</head>
+          <item>Quadratum Labium. 97.</item>
+          <item>— Scutellum. 111.</item>
+          <item>Quadratus Clypeus. 86.</item>
+          <item>Quadrifidum Labium. 98.</item>
+          <item>Quadrilobus Pes. 9.</item>
+          <item>Quadriplicata, quinqueplicata, quintuplicata Columella. 132.</item>
+          <item>Quadridentatus Apex. 126.</item>
+          <item>Quicunx. 23.</item>
+          <item>Quinquefidum Labium. 98.</item>
+          <item>Quinquevalve Os. 148.</item>
+        </list>
+        <list type="index">
+          <head>R.</head>
+          <item>Rachis. 23.</item>
+          <item>Radiata Opercula. 57.</item>
+          <item>— Testa. 167.</item>
+          <item>Radiatum Rostrum. 152.</item>
+          <item>Radiatus. 69. 151.</item>
+          <item>Radicata Testa. 167.</item>
+          <item>Radii. 69.</item>
+          <item>Radium. 150.</item>
+          <item>Radius. 151.</item>
+          <item>Ramentaceae Pinnae. 66</item>
+          <item>Ramentum. 69.</item>
+          <item>Ramificatio. 152.</item>
+          <item>Ramosa Spira. 153.</item>
+          <item>— Tentacula. 161.</item>
+          <item>Ramoso-sulcata Testa. 167.</item>
+          <item>Raptorii Pedes. 107.</item>
+          <item>Rarae Squamae. 71.</item>
+          <item>Reconditum Abdomen. 75.</item>
+          <item>Reconditus Aculeus. 77.</item>
+          <item>Recta Cauda. 131. 85.</item>
+          <item>— Spina. 153.</item>
+          <item>— Mandibula. 101.</item>
+          <item>— Testa. 167.</item>
+          <item>Recti Dentes. 42.</item>
+          <item>Rectrices. 24.</item>
+          <item>Rectum Haustellum. 95.</item>
+          <item>— Rostrum. 25.</item>
+          <item>Rectus canalis. 128.</item>
+          <item>Recumbens Dens. 4.</item>
+          <item>Recurva Cauda. 3. 131. 85.</item>
+          <item>Recurvae, Recurvatae Nates. 147.</item>
+          <item>Recurvata Cauda. 3. 131.</item>
+          <item>— Crista. 17.</item>
+          <item>— Pinna. 22.</item>
+          <item>Recurvato-contorta Columella. 132.</item>
+          <item>Recurvatus Cardo. 129.</item>
+          <item>— Cornus. 3.</item>
+          <item>Recurvum Rostrum. 25.</item>
+          <item>Recurvus Apex. 126.</item>
+          <item>— Dens. 137.</item>
+          <item>Reflexa Apertura. 125.</item>
+          <item>Reflexae Nates. 147.</item>
+          <item>Reflexile sursum Abdomen. 109.</item>
+          <item>Reflexum Rostrum. 60.</item>
+          <item>Reflexus Cardo. 129.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Sulcus. 160.</item>
+          <item>Remiges Pennae. 24.</item>
+          <item>Remota Pinna Ani 62.</item>
+          <item>Remotae Nares. 52.</item>
+          <item>— Pinnae Ventrales. 68.</item>
+          <item>— Squamae. 70.</item>
+          <item>Remoti Oculi. 54.</item>
+          <item>Remotissima Stria. 159</item>
+          <item>Remotus Anus. 32.</item>
+          <item>— Dens. 4. 137.</item>
+          <item>— Sulcus. 160.</item>
+          <item>Repanda Apertura. 33.</item>
+          <item>Repando-labyrinthiformis Stella. 156.</item>
+          <item>Repens Corpus. 135.</item>
+          <item>Resimus Nasus. 8.</item>
+          <item>Respirare arbitrarie. 29.</item>
+          <item>Resupinata Apertura. 125.</item>
+          <item>Resupinatus Cornus. 3.</item>
+          <item>Reticulatae Alae. 80.</item>
+          <item>Reticulato-striata Testa. 167.</item>
+          <pb n="xviii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0336.jp2&amp;id=diccionariodost00vand"/>
+          <item>Reticulatus. 69. 152.</item>
+          <item>Reticulum. 152.</item>
+          <item>Retracta Proboscis. 108</item>
+          <item>Retractae Nymphae. 147.</item>
+          <item>Retractile Os. 148.</item>
+          <item>Retractilis. 10.</item>
+          <item>Retroctatilis. 12.</item>
+          <item>Retractae Branchiae. 35.</item>
+          <item>Retrorsum versus. 3.</item>
+          <item>Retroflexi Dentes. 42.</item>
+          <item>Retusa Columella. 133</item>
+          <item>Retuso-umbilicata Spira. 155.</item>
+          <item>Retusum Labrum. 143.</item>
+          <item>— Labium. 142.</item>
+          <item>Retusus Anus. 123.</item>
+          <item>— Thorax. 114.</item>
+          <item>Reversa Squama. 30.</item>
+          <item>Revoluta Penna. 22.</item>
+          <item>Reversae Alae. 79.</item>
+          <item>Rhomboides Palpi. 105</item>
+          <item>Rhomboideae Alae. 79.</item>
+          <item>Rigida Elytra. 90.</item>
+          <item>Rima. 152.</item>
+          <item>— Umbilicalis. 174.</item>
+          <item>Rictus. 24. 29. 58. 69.</item>
+          <item>Rostrata Frons. 93.</item>
+          <item>— Testa. 167.</item>
+          <item>Rostratum Caput. 38.</item>
+          <item>Rostrum. 24. 59. 69. 109. 152.</item>
+          <item>Rotunda Pinna Caudae. 63.</item>
+          <item>Rotundae Nares. 53.</item>
+          <item>Rotundata Elytra. 91.</item>
+          <item>Rotundatae Alae. 79.</item>
+          <item>— Pinnae pectorales. 67.</item>
+          <item>Rotundati Oculi. 103.</item>
+          <item>Rotundatum Abdomen. 75.</item>
+          <item>— Labium. 97.</item>
+          <item>— Labrum. 143.</item>
+          <item>— Radium. 151.</item>
+          <item>— Rostrum. 109.</item>
+          <item>Rotundatus Clypeus. 86.</item>
+          <item>— Anfractus. 121.</item>
+          <item>— Apex. 126.</item>
+          <item>Rubeus Color. 89.</item>
+          <item>Rudis Testa. 168.</item>
+          <item>Rufescens Color. 89.</item>
+          <item>Rufo-fuscus Color. 89.</item>
+          <item>Rufus Color. 89.</item>
+          <item>Rugae. 30.</item>
+          <item>Rugosa Carina. 129.</item>
+          <item>— Columella. 133.</item>
+          <item>— Elytra. 91.</item>
+          <item>— Pubes. 150.</item>
+          <item>— Spira. 155.</item>
+          <item>— Testa. 168.</item>
+          <item>— Varix. 172.</item>
+          <item>Rugosum Dorsum. 138</item>
+          <item>— Labrum. 142.</item>
+          <item>Rugosus Sulcus. 160.</item>
+          <item>— Thorax. 115.</item>
+        </list>
+        <list type="index">
+          <head>S.</head>
+          <item>Saccata Testa. 168.</item>
+          <item>Sagittatus. 10.</item>
+          <item>Sagulum. 152.</item>
+          <item>Saltatorii Pedes. 107.</item>
+          <item>Sanguineus Color. 89.</item>
+          <item>Scaber. 10. 69. 110.</item>
+          <item>— Clypeus. 87.</item>
+          <item>— Porus. 150.</item>
+          <item>— Thorax. 116.</item>
+          <item>Scabra Elytra. 90.</item>
+          <item>— Frons. 94.</item>
+          <item>— Varix. 172.</item>
+          <item>Scabrae Maxillae. 50.</item>
+          <item>Scabrum Caput. 38.</item>
+          <item>— Labrum. 143.</item>
+          <item>— Radium. 151.</item>
+          <item>Scansorius Pes. 22.</item>
+          <item>Scapulares Pinnae Dorsales. 64.</item>
+          <item>Scapus Rectricum. 26</item>
+          <item>Scrobiculata Varix 172. 152.</item>
+          <item>Scrobiculato-canaliculatus Digitus. 138.</item>
+          <item>Scriptus Anfractus. 122.</item>
+          <item>Scrobiculatus Anfractus. 121.</item>
+          <item>Scrobiculum. 152.</item>
+          <item>Scutata Frons. 93.</item>
+          <item>Scutatum Scutellum. 111.</item>
+          <item>Scutatus Tarsus. 113.</item>
+          <item>Scutellatus. 110.</item>
+          <item>Scutellum. 70. 30. 110</item>
+          <item>Scutum. 11. 30.</item>
+          <item>Secundariae Remiges. 24.</item>
+          <item>Securiformes Antennae. 83.</item>
+          <item>Semicaudatus. 11.</item>
+          <item>Semicircularis Rictus. 59.</item>
+          <item>Semiclausus Umbilicus. 174.</item>
+          <item>Semicompleta Pupa. 108.</item>
+          <item>Semiconici Dentes. 42.</item>
+          <item>Semicordata Apertura. 125.</item>
+          <item>Semilongitudinales Pinnae Dorsales. 64.</item>
+          <item>Semilunaris. 152.</item>
+          <item>Seminuda Apertura. 33.</item>
+          <item>Semisagittati Dentes. 42.</item>
+          <item>Semisagittatus. 70.</item>
+          <item>Semipalmatus Pes. 23.</item>
+          <pb n="xix"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0337.jp2&amp;id=diccionariodost00vand"/>
+          <item>Semipatens Membrana Branchiostega. 51.</item>
+          <item>Semitecti Oculi. 55.</item>
+          <item>Senectam exuere. 30.</item>
+          <item>Septemplicata Columella. 133.</item>
+          <item>Sepulta Mandibula. 101.</item>
+          <item>Seriatus. 152.</item>
+          <item>Serrata Elytra. 91.</item>
+          <item>— Opercula. 57.</item>
+          <item>— Tibia. 117.</item>
+          <item>Serratae Antennae. 83.</item>
+          <item>— Squamae. 71.</item>
+          <item>Serrati Dentes. 42.</item>
+          <item>Serratum Abdomen. 76. 31.</item>
+          <item>— Femur. 93.</item>
+          <item>— Rostrum. 25.</item>
+          <item>Serratus. 153.</item>
+          <item>— Aculeus. 78.</item>
+          <item>— Dens. 4.</item>
+          <item>— Thorax. 115.</item>
+          <item>Sesquialterus. 111.</item>
+          <item>Sessile Abdomen. 74.</item>
+          <item>— Callum. 128.</item>
+          <item>Sessilis. 11.</item>
+          <item>Seta. 11.</item>
+          <item>Setacea Cauda. 85.</item>
+          <item>— Spina. 153.</item>
+          <item>— Tentacula. 161.</item>
+          <item>Setaceae Antennae. 82</item>
+          <item>Setaceum Haustellum. 95.</item>
+          <item>— Rostrum. 109.</item>
+          <item>Setariae Antennae. 82</item>
+          <item>Setarium Labium. 98.</item>
+          <item>Setifera Verruca. 12.</item>
+          <item>Setosa Cauda. 85.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Sexdentatum Scutellum. 111.</item>
+          <item>Sexplicata Columella. 133.</item>
+          <item>Similes Dentes. 43.</item>
+          <item>Simplices Branchiae. 35.</item>
+          <item>— Oculi. 103.</item>
+          <item>— Pinnae. 62.</item>
+          <item>Simplex Lingua. 7.</item>
+          <item>Smplicia Opercula. 55.</item>
+          <item>Simum Rostrum. 25.</item>
+          <item>Sinister Anfractus. 122.</item>
+          <item>— Canalis. 128.</item>
+          <item>Sinuata Elytra. 91.</item>
+          <item>Sinuosa Apertura. 125.</item>
+          <item>Sinuosus. 153.</item>
+          <item>Sinus. 153.</item>
+          <item>Sipho. 153.</item>
+          <item>Siphunculus. 153.</item>
+          <item>Solida Testa. 168.</item>
+          <item>Solidae Antennae. 83.</item>
+          <item>Solidus Dens. 137.</item>
+          <item>Solitaria Linea Lateralis. 46.</item>
+          <item>— Opercula. 56.</item>
+          <item>— Pinna Caudae. 63.</item>
+          <item>— Ani. 62.</item>
+          <item>— Varix. 172.</item>
+          <item>Solitariae Nares. 53.</item>
+          <item>— Pinnae Ventrales. 68.</item>
+          <item>— Pinnae. 65.</item>
+          <item>Solitarius. 11.</item>
+          <item>— Dens. 4.</item>
+          <item>Solutus Digitus. 137.</item>
+          <item>Solutum antice &amp; postice Labrum 143.</item>
+          <item>Spadiceus Color. 89.</item>
+          <item>Spata. 153.</item>
+          <item>Spatiformis Dens. 4.</item>
+          <item>Spatulatum Rostrum. 25.</item>
+          <item>Speculum Alarum. 26.</item>
+          <item>Sphaerici Oculi. 103.</item>
+          <item>Sphaeroideus. 153.</item>
+          <item>Spinosum Femur. 93.</item>
+          <item>Spina. 153.</item>
+          <item>— axillaris. 26.</item>
+          <item>Spinosa Elytra. 91.</item>
+          <item>— Pubes. 150.</item>
+          <item>Spira. 155.</item>
+          <item>— Testa. 168.</item>
+          <item>— Tibia. 117.</item>
+          <item>Spinoso-radiatus Anfractus. 121.</item>
+          <item>Spinosum. 153.</item>
+          <item>— Abdomen. 153.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Spinosus Anfractus. 121.</item>
+          <item>— Tarsus. 113.</item>
+          <item>— Thorax. 116.</item>
+          <item>Spira. 153.</item>
+          <item>Spiracula. 112.</item>
+          <item>Spirales Nates. 147.</item>
+          <item>Spiralis Aculeus. 77.</item>
+          <item>— Columella. 133.</item>
+          <item>— Lingua. 144.</item>
+          <item>— Testa. 168.</item>
+          <item>Spirula. 155.</item>
+          <item>Spongiosa Caruncula. 15.</item>
+          <item>Spongiosus Tarsus. 113.</item>
+          <item>Squama. 11. 30. 155.</item>
+          <item>Squamae. 70.</item>
+          <item>Squamata Elytra. 90.</item>
+          <item>Squamatae Alae. 80.</item>
+          <item>— Antennae. 83.</item>
+          <item>Squamosa Opercula. 58.</item>
+          <item>— Testa. 168.</item>
+          <item>Squamosae Pinnae. 66.</item>
+          <item>Squamosum. 72.</item>
+          <item>— Caput. 38.</item>
+          <item>Stemmata. 112.</item>
+          <item>Sternum. 26. 112.</item>
+          <item>Stigma. 112.</item>
+          <pb n="xx"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0338.jp2&amp;id=diccionariodost00vand"/>
+          <item>Stirps. 157.</item>
+          <item>Stria. 112.</item>
+          <item>— 158.</item>
+          <item>Striatae Alae. 80.</item>
+          <item>— Costae. 135.</item>
+          <item>— Lineae. 144.</item>
+          <item>— Squamae. 71.</item>
+          <item>Striata Basis. 127.</item>
+          <item>— Elytra. 90.</item>
+          <item>— Faux. 139.</item>
+          <item>— oblique Columella 133.</item>
+          <item>— Opercula. 57.</item>
+          <item>— Stella. 157.</item>
+          <item>— Testa. 168.</item>
+          <item>— Vulva. 175.</item>
+          <item>Striato-scabra Pubes. 150.</item>
+          <item>Striatum Labrum. 143.</item>
+          <item>— Radium. 151.</item>
+          <item>Striatus. 11.</item>
+          <item>— Anfractus. 121.</item>
+          <item>— Anus. 123.</item>
+          <item>— Articulus. 126.</item>
+          <item>— Thorax. 115.</item>
+          <item>Strigae. 26.</item>
+          <item>Strigatae Alae. 80.</item>
+          <item>Strumarius Thorax. 114</item>
+          <item>Stuposa Stirps. 158.</item>
+          <item>Stuposi Palpi. 105.</item>
+          <item>Stylatum Abdomen. 77.</item>
+          <item>Sub. 11.</item>
+          <item>Subaequilatera Testa. 168.</item>
+          <item>Subacuta Spina. 153.</item>
+          <item>Subadscendens Cauda. 131.</item>
+          <item>Subalterna Varix. 172</item>
+          <item>Subangulata Testa. 168.</item>
+          <item>Subangulatus Anfractus. 121.</item>
+          <item>Subarcuata Opercula. 56.</item>
+          <item>Subaurita Testa. 168.</item>
+          <item>Subbarbata Bucca. 2.</item>
+          <item>Subbirostris Testa. 168.</item>
+          <item>Subbivalvis Testa. 168</item>
+          <item>Subcarinata Testa. 168</item>
+          <item>Subciliata Lingua. 7.</item>
+          <item>Subcoarctata Apertura. 125.</item>
+          <item>Subconica Testa. 168.</item>
+          <item>Subconsolidatus Umbilicus. 174.</item>
+          <item>Subcordata Testa. 168</item>
+          <item>Subcordatus Umbilicus. 174.</item>
+          <item>Subcoriacea Crusta. 133.</item>
+          <item>Subcoronata Spira. 155.</item>
+          <item>Subcultratum Rostrum. 26.</item>
+          <item>Subcurvata Testa. 168.</item>
+          <item>Subcylindrica Testa. 169.</item>
+          <item>Subcylindricum Corpus. 135.</item>
+          <item>Subdentata Carina. 129</item>
+          <item>Subdentatum Labrum. 143.</item>
+          <item>Subdiaphana Testa. 168.</item>
+          <item>Subedentula Columella. 133.</item>
+          <item>Subeffusa Apertura. 125.</item>
+          <item>Subemarginata Basis. 127.</item>
+          <item>Submarginatus Anfractus. 121.</item>
+          <item>Subfastigiata Testa. 168.</item>
+          <item>Subgranulata Spira. 155.</item>
+          <item>Subimbricatus Sulcus. 160.</item>
+          <item>Sublaterale Labium. 142.</item>
+          <item>Sublateralis Sipho. 153.</item>
+          <item>— Cardo. 129.</item>
+          <item>Sublobatus Dens. 4.</item>
+          <item>Submembranaceum foraminulum. 139.</item>
+          <item>Submucronatae Nates. 147.</item>
+          <item>Subnodosa Spira. 155.</item>
+          <item>Subnutans Rostrum. 112.</item>
+          <item>Subobtectus Umbilicus. 175.</item>
+          <item>Subopposita Varix. 172.</item>
+          <item>Suborbiculata Apertura. 125.</item>
+          <item>Subperforata Columella. 133.</item>
+          <item>Subplicata Columella. 133.</item>
+          <item>Subplicatum Labrum. 143.</item>
+          <item>Subquadratum Caput. 37.</item>
+          <item>Subramosa Tentacula. 161.</item>
+          <item>Subremotus Anus. 122</item>
+          <item>Subhromboidea Testa 168.</item>
+          <item>Subrotundum Scutellum. 111.</item>
+          <item>Subrotundae Alae. 118.</item>
+          <item>Subrostrata Testa. 169.</item>
+          <item>Subrugosa Testa. 169.</item>
+          <item>Subspirales Nates. 147</item>
+          <item>Subsquamosum Corpus. 135.</item>
+          <pb n="xxi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0339.jp2&amp;id=diccionariodost00vand"/>
+          <item>Subsulcatus Anfractus 121.</item>
+          <item>Subtomentosus Pubes. 150.</item>
+          <item>Subturrita Testa. 169.</item>
+          <item>Sublata Cauda. 131.</item>
+          <item>— Spina. 153.</item>
+          <item>— Testa. 169.</item>
+          <item>Subulata Lingua. 47.</item>
+          <item>Subulatae antennae. 82</item>
+          <item>— Maxillae. 48.</item>
+          <item>Subulati Palpi. 105.</item>
+          <item>Subulatum Corpus. 135.</item>
+          <item>— Rostrum. 26. 110.</item>
+          <item>Subulatus Clypeus. 86</item>
+          <item>— Dens. 136. 137.</item>
+          <item>— Unguis. 12.</item>
+          <item>Subumbilicata Columella. 133.</item>
+          <item>Subundulata Stria. 159</item>
+          <item>Succenturiatus. 11.</item>
+          <item>Subfalcatus Margo. 145</item>
+          <item>Sulcata Elytra. 91.</item>
+          <item>— Frons. 94.</item>
+          <item>— Stria. 159.</item>
+          <item>Sulcatum Scutellum. 111.</item>
+          <item>— Rostrum. 110.</item>
+          <item>Sulcatus. 11.</item>
+          <item>— Anfractus. 121.</item>
+          <item>— Cardo. 129.</item>
+          <item>— Thorax. 115.</item>
+          <item>Sulcus. 159.</item>
+          <item>Summitas. 100.</item>
+          <item>Supercilium. 26.</item>
+          <item>Superus Rictus. 58.</item>
+          <item>Supra-aculeata Lingua. 7.</item>
+          <item>Suprema Linea Lateralis. 46.</item>
+          <item>Supremae Maxillae. 49.</item>
+          <item>— Nares. 52.</item>
+          <item>— Pinnae pectorales. 66.</item>
+          <item>Supremi Oculi. 54.</item>
+          <item>Sutura. 11. 160.</item>
+          <item>Suturae. 112.</item>
+          <item>— Anfractus. 121.</item>
+        </list>
+        <list type="index">
+          <head>T.</head>
+          <item>Talum. 12.</item>
+          <item>Tarsus. 113.</item>
+          <item>Tecta Membrana Branchiostega. 51.</item>
+          <item>Tectae Alae. 79.</item>
+          <item>Tecti Oculi. 55.</item>
+          <item>Tectrices. 27.</item>
+          <item>Telifera Cauda. 86.</item>
+          <item>Tempora. 26.</item>
+          <item>Tenaces Squamae. 71.</item>
+          <item>Tentaculatio. 113.</item>
+          <item>Tentaculatum Abdomen. 76.</item>
+          <item>Tentaculatus Thorax. 116.</item>
+          <item>Tentaculum. 72.</item>
+          <item>Tenuior Cardo. 129.</item>
+          <item>Teres. 72.</item>
+          <item>— Anfractus. 121.</item>
+          <item>— Cauda. 36.</item>
+          <item>— Corpus. 173.</item>
+          <item>— Lingua. 7. 19.</item>
+          <item>— Stella. 157.</item>
+          <item>— Rostrum. 26.</item>
+          <item>Tergum. 114.</item>
+          <item>Terminales Maxillae. 49.</item>
+          <item>Terminalis Cardo. 129</item>
+          <item>— Porus. 149.</item>
+          <item>— Stella. 157.</item>
+          <item>Terni Dentes 6.</item>
+          <item>Tessellatae Alae. 81.</item>
+          <item>Testa. 30.</item>
+          <item>Testae innati Oculi. 103.</item>
+          <item>Testaceus. 170.</item>
+          <item>— Color. 89.</item>
+          <item>Testatum Abdomen. 76.</item>
+          <item>Testatus Thorax. 114.</item>
+          <item>Tetradactylis Manus. 9</item>
+          <item>Tetradactylum Labrum. 143.</item>
+          <item>Tetragona Cauda. 36.</item>
+          <item>Tetraphylla Opercula. 56.</item>
+          <item>Tetrapodum. 30.</item>
+          <item>Thalamus. 170.</item>
+          <item>Thoracicae Pinnae Ventrales. 67.</item>
+          <item>Thoracicus. 72. 114. 170.</item>
+          <item>Tibia. 27. 116.</item>
+          <item>Tomentosa Elytra. 9.</item>
+          <item>Tomentosum Abdomen. 76.</item>
+          <item>Tomentosus Thorax. 115.</item>
+          <item>Tophus. 12.</item>
+          <item>Torosus Articulus. 126 170.</item>
+          <item>Torta Columella. 133.</item>
+          <item>Torulosus Anfractus 122.</item>
+          <item>Transversa Apertura antice. 126.</item>
+          <item>— Basis. 127.</item>
+          <item>— Stria. 159.</item>
+          <item>Transversale Labium. 142.</item>
+          <item>Transversales Lineae. 144.</item>
+          <item>Transversalis. 170.</item>
+          <item>— Apertura. 125.</item>
+          <item>— Sutura Elytrorum. 91.</item>
+          <item>Transversus Rictus. 58</item>
+          <pb n="xxii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0340.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Thorax. 114.</item>
+          <item>Trapezia Testa. 169.</item>
+          <item>Triacanthum. 43.</item>
+          <item>Triangulare Scutellum. 111.</item>
+          <item>Triangulares Palpi. 105.</item>
+          <item>Triangularis Tibia. 116.</item>
+          <item>Triangulata Pinna Ani. 63.</item>
+          <item>Triangulo-rotundata Testa. 169.</item>
+          <item>Tricuspidatus Dens. 5.</item>
+          <item>Trydactylus Pes. 23.</item>
+          <item>Tridentata Columella 133.</item>
+          <item>Trifida Pinna Caudae. 63.</item>
+          <item>Trifidum Labium. 98.</item>
+          <item>Trigona Varix. 172.</item>
+          <item>Trigonum. 72.</item>
+          <item>— Caput. 37.</item>
+          <item>Triloba Cauda. 131.</item>
+          <item>— Macula. 7.</item>
+          <item>— Testa. 169.</item>
+          <item>Trilobum Labrum. 143.</item>
+          <item>Tryphylla Opercula. 56.</item>
+          <item>Triplicata Columella. 133.</item>
+          <item>— Testa. 169.</item>
+          <item>Tripterygium. 72.</item>
+          <item>Triqueter elevatus. Sulcus. 160.</item>
+          <item>Triqueter Testa. 169.</item>
+          <item>Triquetrum Rostrum. 60.</item>
+          <item>Triseta Cauda. 86.</item>
+          <item>Trivalvis. 170.</item>
+          <item>Truncata Cauda. 131.</item>
+          <item>— Columella. 133.</item>
+          <item>— Elytra. 92.</item>
+          <item>— Galea. 94.</item>
+          <item>— Lingua. 19.</item>
+          <item>— Mandibula. 102.</item>
+          <item>— Maxilla. 100.</item>
+          <item>— Stella. 157.</item>
+          <item>— Testa. 169.</item>
+          <item>Truncatae Alae. 81.</item>
+          <item>— Nymphae. 147.</item>
+          <item>Truncati Palpi. 106.</item>
+          <item>Truncatum Labium. 142. 97.</item>
+          <item>— Scutellum. 111.</item>
+          <item>— Sternum. 112.</item>
+          <item>Truncatus Cardo. 129.</item>
+          <item>— Cornus. 170.</item>
+          <item>Truncus. 27. 72. 117.</item>
+          <item>Tuberculata Elytra. 90.</item>
+          <item>— Frons. 94.</item>
+          <item>— Stria. 159.</item>
+          <item>— Testa. 169.</item>
+          <item>— Tibia. 117.</item>
+          <item>— Varix. 172.</item>
+          <item>Tuberculatae Costae. 135.</item>
+          <item>— Branchiae. 35.</item>
+          <item>Tuberculatum Caput. 39.</item>
+          <item>— Corpus. 173.</item>
+          <item>— Labium. 142.</item>
+          <item>— Palatum. 61.</item>
+          <item>Tuberculatus Thorax 115.</item>
+          <item>Tuberculum. 170.</item>
+          <item>Tuberosum. 73.</item>
+          <item>Tubulosa Apertura. 33</item>
+          <item>— Glans. 140.</item>
+          <item>— Stirps. 158.</item>
+          <item>— Testa. 169.</item>
+          <item>Tubulosae Nares. 20. 53.</item>
+          <item>Tubulosus Rictus. 59.</item>
+          <item>Tubus. 170.</item>
+          <item>Tumida Vulva. 175.</item>
+          <item>Tumidus Umbo. 175.</item>
+          <item>Turbinata Testa. 169.</item>
+          <item>— Concha. 171.</item>
+          <item>Turbinatus Porus. 171. 150.</item>
+          <item>Turbinato-concava Stella. 157.</item>
+          <item>Turgidi Palpi. 105.</item>
+          <item>Turrita. 171.</item>
+          <item>— Frons. 93. Testa. 169.</item>
+          <item>Turritus. 171.</item>
+        </list>
+        <list type="index">
+          <head>V.</head>
+          <item>Vacuus Dens. 136.</item>
+          <item>Vagina. 171.</item>
+          <item>Vaginata Lingua. 47.</item>
+          <item>Vaginatae Maxillae. 50.</item>
+          <item>Validus Unguis. 12.</item>
+          <item>Valvae s: Valvulae. 171.</item>
+          <item>Varicosa Testa. 169.</item>
+          <item>Varicosum Labium. 6.</item>
+          <item>Variegatus. 73.</item>
+          <item>Variolosus Thorax. 115.</item>
+          <item>Ventralis Pinna. 62.</item>
+          <item>— Porus. 149.</item>
+          <item>Ventricosa Gula. 44.</item>
+          <item>Ventricosum. 73.</item>
+          <item>— Rostrum. 26.</item>
+          <item>Verruca. 12.</item>
+          <item>Verrucosa Elytra. 90.</item>
+          <item>Verrucosum Dorsum. 138.</item>
+          <item>Verrucosus. 117.</item>
+          <item>— Sulcus. 160.</item>
+          <item>Vertex. 27.</item>
+          <item>Verticales Oculi. 54.</item>
+          <item>Verticalis Anus. 122.</item>
+          <item>— Caruncula. 15.</item>
+          <item>— Crista. 17.</item>
+          <pb n="xxiii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0341.jp2&amp;id=diccionariodost00vand"/>
+          <item>— Rictus. 58.</item>
+          <item>Verticillata Cauda. 28</item>
+          <item>Vesicularis Frons. 93.</item>
+          <item>— Radius. 151.</item>
+          <item>Vesiculosa Maxilla. 100.</item>
+          <item>Vesiculosum Labium. 98.</item>
+          <item>Vesiculosi Palpi. 105.</item>
+          <item>Vibrissa. 12.</item>
+          <item>Vibrissatus. 12.</item>
+          <item>Vibrissae. 27.</item>
+          <item>Vicinae Branchiae. 35</item>
+          <item>— Nares. 53</item>
+          <item>— Pinnae Ventrales. 67.</item>
+          <item>Vicini Oculi. 54.</item>
+          <item>Vicinus Anus. 32.</item>
+          <item>Villosa Cauda. 85.</item>
+          <item>Villosus. 12.</item>
+          <item>— Tarsus. 113.</item>
+          <item>Violaceus Calor. 89.</item>
+          <item>Virgata Macula. 7.</item>
+          <item>Viridis Cera. 16.</item>
+          <item>Vitta. 30. 117.</item>
+          <item>Vittatus. 73.</item>
+          <item>Volatiles Pinnae Pectorales. 67.</item>
+          <item>Vulva. 175.</item>
+        </list>
+        <list type="index">
+          <head>U.</head>
+          <item>Umbilicalis Folliculus 6.</item>
+          <item>Umbilicata Testa. 170</item>
+          <item>Umbilicatus Apex. 126.</item>
+          <item>Umbilicus. 3.</item>
+          <item>Umbo. 175.</item>
+          <item>Unica Stella. 157.</item>
+          <item>Uncinatae Antennae. 83.</item>
+          <item>Uncinatum Rostrum. 26.</item>
+          <item>Unicornis Frons. 94.</item>
+          <item>Ungiculata Cauda. 87.</item>
+          <item>— Mandibula. 102.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Unguiculati Palpi. 106</item>
+          <item>Unguiculatum Os. 148</item>
+          <item>— Rostrum. 26.</item>
+          <item>Unguiculatus Margo. 145.</item>
+          <item>— Tarsus. 113.</item>
+          <item>Unguis. 12. 27.</item>
+          <item>Ungula. 12.</item>
+          <item>Unidentata Mandibula. 101.</item>
+          <item>— Maxilla. 100.</item>
+          <item>Unidentatus Cardo. 129.</item>
+          <item>Unilabiata Apertura 125.</item>
+          <item>Unilocularis. 145.</item>
+          <item>— Testa. 170.</item>
+          <item>Uniradiata. 73.</item>
+          <item>— Membrana Branchiostega. 51.</item>
+          <item>Uniseta Cauda. 86.</item>
+          <item>Univalvis Testa. 170.</item>
+          <item>Urceolatum foramen. 175.</item>
+          <item>— Foraminulum. 139.</item>
+          <item>Uropygium. 27.</item>
+        </list>
+        <list type="index">
+          <head>Z.</head>
+          <item>Zoologia. 13.</item>
+          <item>Zoologus. 13.</item>
+          <item>Zona. 175.</item>
+          <item>Zoophyta. 176.</item>
+        </list>
+      </div>
+      <pb n="xxiv"
+        facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0342.jp2&amp;id=diccionariodost00vand"/>
+      <div type="index">
+        <head>INDEX DA TERMINOLOGIA BOTANICA.</head>
+        <list type="index">
+          <head>A.</head>
+          <item>Abbreviatum perianth. 109.</item>
+          <item>Abortiens flos, vid. masculus.</item>
+          <item>Abruptum pinnatum. fol. 59.</item>
+          <item>Acaulis herba. 8.</item>
+          <item>Acerosum fol. 56.</item>
+          <item>— pericarp. 139.</item>
+          <item>Acotyledones. 174.</item>
+          <item>Aculeatus caulis 19.</item>
+          <item>Aculeatum fol. 52.</item>
+          <item>— Perianth. 110.</item>
+          <item>— Petiolum. 67.</item>
+          <item>Aculeus. 84.</item>
+          <item>Acuminatum fol. 47.</item>
+          <item>Acute crenatum fol. 44.</item>
+          <item>Acutum fol. 39. 47.</item>
+          <item>— perianth. 110.</item>
+          <item>Adnatum fol. 37.</item>
+          <item>Adnatus petiolus. 65.</item>
+          <item>Adnatae stipulae. 71.</item>
+          <item>Adpressum fol. 33.</item>
+          <item>Adpressus pedunculus. 91.</item>
+          <item>Adscendens pedunculus. 91.</item>
+          <item>— Truncus. 11.</item>
+          <item>Adversum folium. 34.</item>
+          <item>Aequalis caulis. 21.</item>
+          <item>— corolla. 120. 122.</item>
+          <item>— Stylus ad stamina. 136.</item>
+          <item>Aequale perianthium. 108.</item>
+          <item>— nectarium. 130.</item>
+          <item>— filamentum. 130.</item>
+          <item>Aggregatus flos. 159</item>
+          <item>Alae corollae papilionaceae. 123.</item>
+          <item>— seminum. 173.</item>
+          <item>Alatus caulis 20.</item>
+          <item>— petiolus. 63.</item>
+          <item>Alatum folium. 54. 59</item>
+          <item>Albus color. 125.</item>
+          <item>Alburnum. 7.</item>
+          <item>Algae. 14.</item>
+          <item>Alterna filamenta calyci. 129.</item>
+          <item>— folia. 31.</item>
+          <item>Alterni pedunculi. 89.</item>
+          <item>— rami. 25.</item>
+          <item>Alterne ) Alternatim ) Pinnatum folium. 59.</item>
+          <item>Amentum. 116.</item>
+          <item>Amentaceus flos. 159.</item>
+          <item>Amplexicaule folium. 37.</item>
+          <item>— petiolum. 65.</item>
+          <item>Anceps caulis. 14.</item>
+          <item>— folium. 56.</item>
+          <item>Angulatus Caulis. 14.</item>
+          <item>— Stylus. 135.</item>
+          <item>— petiolus. 63.</item>
+          <item>Angulatum Stigma. 138.</item>
+          <item>Annullus trunci. 7.</item>
+          <item>Annua radix. 2.</item>
+          <item>— planta. pag. 4.</item>
+          <item>Anthera. 131.</item>
+          <item>Apertura Antherae. 131.</item>
+          <item>— floris. 181.</item>
+          <item>Apetalus flos. 158.</item>
+          <item>Apetala corolla. 12.</item>
+          <item>Aphyllus caulis. 16.</item>
+          <item>Appendiculatus petiolus. 65.</item>
+          <item>Appressum fol. 33.</item>
+          <item>— peduncul. 91.</item>
+          <item>Approximata folia. 31</item>
+          <item>— vulva. 119.</item>
+          <item>Arbores. p. 14.</item>
+          <item>Arboreus truncus. 9.</item>
+          <item>Arista. 115. 116.</item>
+          <item>Aristatus pappus. 153.</item>
+          <item>Arma. 84.</item>
+          <item>Arrectum folium. 33.</item>
+          <item>Articulate pinnatum folium. 59.</item>
+          <item>Articulata radix. 4.</item>
+          <item>— arista 115.</item>
+          <item>— siliqua 140.</item>
+          <item>— spica. 99.</item>
+          <item>Articulatum folium. 59.</item>
+          <item>— legumen. 142.</item>
+          <item>— pericarpium. 139.</item>
+          <item>Articulatus caulis. 22.</item>
+          <item>— petiolus. 67.</item>
+          <item>Articulus. 22.</item>
+          <item>Assurgens folium. 33.</item>
+          <item>— petiolus. 66.</item>
+          <pb n="xxv"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0343.jp2&amp;id=diccionariodost00vand"/>
+          <item>Attenuatus pedunculus 93.</item>
+          <item>Avenium folium. 50.</item>
+          <item>Aura seminalis. 132.</item>
+          <item>Auritum fol. vid. hastatum.</item>
+          <item>Axillae. 29.</item>
+          <item>Axillaris cirrhus 76.</item>
+          <item>— pedunculus. 88.</item>
+          <item>— Spina. 85.</item>
+        </list>
+        <list type="index">
+          <head>B.</head>
+          <item>Bacca. 146.</item>
+          <item>Barba. 79. 123.</item>
+          <item>Barbatum folium. 52.</item>
+          <item>— Stigma. 138.</item>
+          <item>Bifaria fol. 31.</item>
+          <item>Bifidia corolla. 121.</item>
+          <item>Bifidae furcae. 84.</item>
+          <item>Bifidum folium. 43.</item>
+          <item>— perianthium. 107.</item>
+          <item>Bifidus cirrhus. 77.</item>
+          <item>— Stylus 136.</item>
+          <item>Biflora gluma. 114.</item>
+          <item>Biflorus pedunculus. 91.</item>
+          <item>— petiolus. 62.</item>
+          <item>Bigeminatum s: ) Bigeminum. ) folium. 60.</item>
+          <item>Bijugum folium. 59.</item>
+          <item>Bilabiata corolla vid. ringens.</item>
+          <item>Bilobum folium. 43.</item>
+          <item>Bilocularis anthera. 131.</item>
+          <item>— bacca 146.</item>
+          <item>Biloculare legumen. 142.</item>
+          <item>— pericarpium. 139.</item>
+          <item>— semen. 151.</item>
+          <item>Binatum folium. 59.</item>
+          <item>Bini flores. 94.</item>
+          <item>Binum folium. 31.</item>
+          <item>Bipartita corolla. 121.</item>
+          <item>Bipartitum folium. 43.</item>
+          <item>— perianthium. 107</item>
+          <item>Bipinnatum folium. 60</item>
+          <item>Biternatum folium. 60</item>
+          <item>Bivalvis foliculus. 143</item>
+          <item>— gluma. 114.</item>
+          <item>— Spatha. 117.</item>
+          <item>Brachiatus caulis. 22.</item>
+          <item>Bractea. 87.</item>
+          <item>Bracteata cyma. 161.</item>
+          <item>Bracteatus pedunculus 93.</item>
+          <item>— verticillus. 95.</item>
+          <item>Breves rami. 27.</item>
+          <item>Brevis petiolus. 64.</item>
+          <item>Breve nectarium. 130</item>
+          <item>Brevissimae stipulae. 75.</item>
+          <item>Brevissimus stylus. 136</item>
+          <item>— petiolus. 64.</item>
+          <item>Bulbifer caulis. 20.</item>
+          <item>Bulbosa radix. 6.</item>
+          <item>Bullatum folium. 50.</item>
+        </list>
+        <list type="index">
+          <head>C.</head>
+          <item>Caducae bracteae. 87.</item>
+          <item>— stipulae. 70.</item>
+          <item>Caduca corolla. 124.</item>
+          <item>Caducus calyx. 105.</item>
+          <item>Calcar corollae. 126. 123.</item>
+          <item>Calyx perianthium. 105.</item>
+          <item>Callosum semen. 152.</item>
+          <item>— nectarium. 126.</item>
+          <item>Calycinae spinae. 85.</item>
+          <item>Calyculatus calyx. s. perianthium. 111.</item>
+          <item>Calyculus seminis. 154</item>
+          <item>Calyptra musci. 118.</item>
+          <item>Calyx. 105.</item>
+          <item>Campanulata corolla. 123.</item>
+          <item>Canaliculatum folium 53.</item>
+          <item>— petiolum. 63.</item>
+          <item>— stigma. 138.</item>
+          <item>Capillare filamentum. 128.</item>
+          <item>— folium. 42.</item>
+          <item>— nectarium. 128.</item>
+          <item>Capillares glandulae. 82.</item>
+          <item>Capillaris pappus. 153</item>
+          <item>— stylus. 135.</item>
+          <item>Capitatum stigma. 138</item>
+          <item>Capitulum. 96. 131.</item>
+          <item>Capreoli. 76.</item>
+          <item>Capsula. 139.</item>
+          <item>Carina papilionacae corollae. 123.</item>
+          <item>Carinatum folium. 54.</item>
+          <item>Carnosum folium. 55.</item>
+          <item>Cartilagineum folium. 44.</item>
+          <item>Cartilagineus arilus. 149.</item>
+          <item>Caryophillata corolla. 123.</item>
+          <item>Castratum stamen. 130</item>
+          <item>Cauda seminis. 154.</item>
+          <item>Caudex ascendens, descendens. 8. 38.</item>
+          <item>Caulescens planta. 8.</item>
+          <item>Caulinus bulbus. 166.</item>
+          <item>— pedunculus. 88.</item>
+          <item>Caulinum folium. 29.</item>
+          <item>Caulis. 8.</item>
+          <item>Cernua umbella. 162.</item>
+          <item>Cernuus flos. 94.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Ciliata corolla. 174.</item>
+          <item>Ciliatum folium. 44.</item>
+          <item>— perianthium. 107.</item>
+          <pb n="xxvi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0344.jp2&amp;id=diccionariodost00vand"/>
+          <item>— spica. 99.</item>
+          <item>Cirrhifer pedunculus. 88.</item>
+          <item>Cirrhosum folium. 47.</item>
+          <item>— pinnatum. fol. 59.</item>
+          <item>Cirrhus 76.</item>
+          <item>Clavata corolla. 123.</item>
+          <item>Clavatus pedunculus. 93.</item>
+          <item>— petiolus. 63.</item>
+          <item>— stylus. 135.</item>
+          <item>Coadunatum fol. 31.</item>
+          <item>Coarctata panicula. 103.</item>
+          <item>Coarctati rami. 26.</item>
+          <item>Coarctatus pedunculus. 91.</item>
+          <item>Colorata bractea. 87.</item>
+          <item>— gluma. 114.</item>
+          <item>Coloratum folium 48.</item>
+          <item>Columella capsulae. 139.</item>
+          <item>Coma. 87.</item>
+          <item>Communis pedunculus. 88.</item>
+          <item>Commune perianthium. 111.</item>
+          <item>— receptaculum. 156</item>
+          <item>Comosa spica. 99.</item>
+          <item>Compactum fol. 55.</item>
+          <item>Completus flos. 158.</item>
+          <item>Composita corolla. 124</item>
+          <item>— fructificatio. 104.</item>
+          <item>— spica. 97.</item>
+          <item>— umbella. 160.</item>
+          <item>Compositum fol. 59.</item>
+          <item>Compositus corymbus. 100.</item>
+          <item>— flos. 158.</item>
+          <item>— racemus. 102.</item>
+          <item>Compressa siliqua. 140</item>
+          <item>Compressus caulis. 14</item>
+          <item>Compressum fol. 59.</item>
+          <item>Connatae, coalitae antherae. 131.</item>
+          <item>Concava corolla. 123.</item>
+          <item>— umbella. 161.</item>
+          <item>Concavae glandulae. 82.</item>
+          <item>Concavum folium. 53.</item>
+          <item>— stigma. 138.</item>
+          <item>— receptaculum. 157</item>
+          <item>Conceptaculum. 143.</item>
+          <item>Concha s: Carina, 123.</item>
+          <item>Conferti rami. 25.</item>
+          <item>— verticilli. 95.</item>
+          <item>Confertum folium. 54. 31.</item>
+          <item>Confluentia folia. 31.</item>
+          <item>Conglomerati flores. 62 171.</item>
+          <item>Conicum receptaculum. 157.</item>
+          <item>Conjugatum folium. 59.</item>
+          <item>Conjugatus racemus. 102.</item>
+          <item>Connata anthera. 131.</item>
+          <item>— filamenta. 130.</item>
+          <item>— folia. 37.</item>
+          <item>Connatum nectarium. 130.</item>
+          <item>Connivens corolla. 123</item>
+          <item>Contortum legumen. 142.</item>
+          <item>— pericarpium. 139.</item>
+          <item>Contrarium dissepimentum siliquae. 139.</item>
+          <item>Convexum folium. 52.</item>
+          <item>— receptaculum. 157.</item>
+          <item>Convexa umbella. 161.</item>
+          <item>Convolutus cirrhus. 78</item>
+          <item>Conicum receptaculum. 157.</item>
+          <item>Conus. v. Strobilus. 147.</item>
+          <item>Copiosi flores. 94.</item>
+          <item>Corculum seminis. 148.</item>
+          <item>Cordatum folium. 42.</item>
+          <item>— stigma. 138</item>
+          <item>— semen. 150.</item>
+          <item>Cordata siliqua. 140.</item>
+          <item>Cornutum nectarium. 126.</item>
+          <item>Corolla. 120.</item>
+          <item>Corona seminis. 153.</item>
+          <item>Coroniforme stigma. 138.</item>
+          <item>Corticalis gemma 166.</item>
+          <item>Corymbus. 100.</item>
+          <item>Cortex radicis. 1.</item>
+          <item>— Trunci. 7.</item>
+          <item>Cotyledon. 49.</item>
+          <item>Crassities. 10.</item>
+          <item>— styli. 136.</item>
+          <item>Crenatum folium-obtuse-duplicate-44.</item>
+          <item>Crenata corolla. 124.</item>
+          <item>Crispum folium. 53.</item>
+          <item>Crispa planta. 171.</item>
+          <item>Cruciata corolla. 123</item>
+          <item>Cruciatum stigma. 138</item>
+          <item>Cubitalis mensura. 174.</item>
+          <item>Cucullatum folium. 53.</item>
+          <item>Culmus. 8.</item>
+          <item>Cuneiforme filamentum. 128.</item>
+          <item>— folium. 39.</item>
+          <item>— nectarium. 128.</item>
+          <item>Cuspidatum folium. 47.</item>
+          <item>Cuticula radicis. 1.</item>
+          <item>— trunci. 7.</item>
+          <item>Cyathiformis corolla. 123.</item>
+          <item>Cylindrica spica. 98.</item>
+          <pb n="xxvii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0345.jp2&amp;id=diccionariodost00vand"/>
+          <item>Cylindricus stylus. 135</item>
+          <item>Cylindricum folium. 53.</item>
+          <item>Cyma. 163.</item>
+          <item>Cymosus flos. 163.</item>
+        </list>
+        <list type="index">
+          <head>D.</head>
+          <item>Daedaleum folium. 45.</item>
+          <item>Decaphyllus calyx s. perianthium. 106. 110.</item>
+          <item>Decidua bractea. 87.</item>
+          <item>Deciduum folium. 58</item>
+          <item>Deciduae stipulae. 70.</item>
+          <item>Deciduus calyx. 105.</item>
+          <item>Declinatus caulis. 11.</item>
+          <item>Declinata corolla. 124.</item>
+          <item>Declinatum folium. 33</item>
+          <item>Declinatus pedunculus. 9.</item>
+          <item>Decompositum folium 60.</item>
+          <item>Decompositus flos. 158.</item>
+          <item>Decumbens caulis. 11.</item>
+          <item>Decurrens folium. 17.</item>
+          <item>— petiolus. 65.</item>
+          <item>Decurrentes stipulae. 71.</item>
+          <item>Decursive pinnatum folium. 59.</item>
+          <item>Decussata folia. 32.</item>
+          <item>Defloratio. 90.</item>
+          <item>Deflexi rami. 26.</item>
+          <item>Dehiscentia antherae. 131.</item>
+          <item>Deltoideum folium. 41.</item>
+          <item>Demersum folium. 35.</item>
+          <item>Dentatum folium. 44.</item>
+          <item>— semen. 151.</item>
+          <item>Dentata radix. 4.</item>
+          <item>— corolla. 124.</item>
+          <item>Dentatae stipulae. 74.</item>
+          <item>Dependens folium. 33.</item>
+          <item>— racemus. 102.</item>
+          <item>Depressum folium. 54.</item>
+          <item>— oblique stigma. 138</item>
+          <item>Dextrorsum volubilis 13.</item>
+          <item>Dianthera. 127.</item>
+          <item>Dichotomus caulis. 22</item>
+          <item>— stylus. 136.</item>
+          <item>Dicocca capsula. 139.</item>
+          <item>Dicotyledon. 149.</item>
+          <item>Didymus. 132.</item>
+          <item>Didyma capsula. 139.</item>
+          <item>Diffusus caulis. 11.</item>
+          <item>Diffusa panicula. 103</item>
+          <item>Digitatum folium. 39. 59.</item>
+          <item>Digynia. 135.</item>
+          <item>Dimidiatum capitulum. 96.</item>
+          <item>Dimidiata spatha. 117.</item>
+          <item>Dipetala corolla. 121.</item>
+          <item>Diphyllus calyx. s. perianthium. 106.</item>
+          <item>Discus. 158.</item>
+          <item>Dispermum. 150.</item>
+          <item>Dissectum folium. 43.</item>
+          <item>Dissepimentum capsulae. 139.</item>
+          <item>— siliquae. 141.</item>
+          <item>— valvis ( contrarium ( parallelum</item>
+          <item>Disperma bacca. 146.</item>
+          <item>Distans verticillus. 95.</item>
+          <item>Distemonis. 127.</item>
+          <item>Disticha folia. 31.</item>
+          <item>— spica. 97.</item>
+          <item>Distichi rami. 25.</item>
+          <item>Distincta anthera. 131</item>
+          <item>Divaricatus caulis. 23.</item>
+          <item>— ramus. 169.</item>
+          <item>Divisa corolla. 124.</item>
+          <item>Divisae spinae. 85.</item>
+          <item>Dodecaphyllus calyx s. perianth. 106.</item>
+          <item>Dodrantalis mensura. 10.</item>
+          <item>Dolabriforme folium. 56.</item>
+          <item>Dorsalis arista. 115.</item>
+          <item>Drupa 144.</item>
+          <item>Duplicate ( crenatum ) ( serratum ) folium. 44.</item>
+          <item>Duplicato ( pinnatum ) ( ternatum ) folium. 60.</item>
+          <item>Duplicatus flos. 171.</item>
+        </list>
+        <list type="index">
+          <head>E.</head>
+          <item>Echinatum. 151.</item>
+          <item>— pollen. 132.</item>
+          <item>— pericarpium. 139.</item>
+          <item>— semen. 151.</item>
+          <item>Ellipticum folium. 39</item>
+          <item>Emarginatum filamentum. 128.</item>
+          <item>— folium. 46.</item>
+          <item>— stigma. 138.</item>
+          <item>— nectarium. 128.</item>
+          <item>Endecaphyllus calyx s: perianth. 106.</item>
+          <item>Enerve folium. 49.</item>
+          <item>Enodis caulis. 21.</item>
+          <item>Ensiforme folium. 56.</item>
+          <item>Erecta corolla. 123.</item>
+          <item>Erecta umbella. 162.</item>
+          <item>Erectus caulis. 11.</item>
+          <item>— flos. 94.</item>
+          <item>— petiolus. 66.</item>
+          <item>— racemus. 102.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Erectae stipulae. 73.</item>
+          <item>Erectum folium. 33.</item>
+          <item>— perianthium. 108.</item>
+          <pb n="xxviii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0346.jp2&amp;id=diccionariodost00vand"/>
+          <item>Erosum folium. 45</item>
+          <item>Extrafoliaceae stipulae. 69.</item>
+          <item>Extrafoliaceus pedunculus. 88.</item>
+        </list>
+        <list type="index">
+          <head>F.</head>
+          <item>Farctum folium. 11.</item>
+          <item>Farctus truncus. 9.</item>
+          <item>Fasciata planta. 171.</item>
+          <item>Fascicularis radix 5.</item>
+          <item>Fasciculata folia. 31.</item>
+          <item>Fasciculus. 96.</item>
+          <item>Fastigiatus caulis. 23.</item>
+          <item>— flos. 62.</item>
+          <item>Fastigiata umbella. 161.</item>
+          <item>Faux corollae. 123.</item>
+          <item>Femina planta. 17.</item>
+          <item>Fibrosa radix 3.</item>
+          <item>Filamentum. 127.</item>
+          <item>Filiformis pedunculus 93.</item>
+          <item>— stylus. 135</item>
+          <item>Filiforme stigma. 138</item>
+          <item>Fissa corolla. 121.</item>
+          <item>— folia. 43.</item>
+          <item>Fissae stipulae. 74.</item>
+          <item>Fissum stigma. 137.</item>
+          <item>— folium. 43.</item>
+          <item>Fissus calyx s. perianth. 107.</item>
+          <item>Fistulosus truncus. 9.</item>
+          <item>Flaccidus pedunculus. 91.</item>
+          <item>— racemus. 102.</item>
+          <item>Flagella. 24.</item>
+          <item>Flexuosus caulis. 13.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Florale folium 29.</item>
+          <item>Floralis gemma. 166.</item>
+          <item>Floris perianthium. 105.</item>
+          <item>— receptaculum. 155</item>
+          <item>Flosculosa corolla. 124</item>
+          <item>Flosculus. 155.</item>
+          <item>Flos. 94. 159.</item>
+          <item>— simplex. 155.</item>
+          <item>Flores submersi. 132.</item>
+          <item>Folia. 28. 105. 125.</item>
+          <item>Foliaceae glandulae. 82.</item>
+          <item>Foliacea spica. 99.</item>
+          <item>Foliaceum stigma. 138</item>
+          <item>Foliaris cirrhus. 76.</item>
+          <item>— gemma. 166.</item>
+          <item>— spina 85.</item>
+          <item>Foliatus caulis. 16.</item>
+          <item>— pedunculus. 93.</item>
+          <item>— racemus. 102.</item>
+          <item>— Thyrsus. 101.</item>
+          <item>Foliatio. 167.</item>
+          <item>Foliosum capitulum. 96.</item>
+          <item>Folliculus. 143.</item>
+          <item>Frons. 24.</item>
+          <item>Fructificatio. 104. 94. ejus perianthium. 105. ejus partes. 104. receptaculum.
+            155.</item>
+          <item>Fructus. 104.</item>
+          <item>Fructus perianthium. 105.</item>
+          <item>— essentia. 94.</item>
+          <item>— receptaculum. 155</item>
+          <item>Fructescentia. 104. 181.</item>
+          <item>Fructescens. ) Fruticosus. ) truncus. 9.</item>
+          <item>Fulcra. 62.</item>
+          <item>Fulcrati rami. 26.</item>
+          <item>Furcae. 84.</item>
+          <item>Fusiformis radix. 3.</item>
+        </list>
+        <list type="index">
+          <head>G.</head>
+          <item>Galea corollae ringentis. 120.</item>
+          <item>Geminae stipulae. 68.</item>
+          <item>Geminum folium. 29.</item>
+          <item>Geminus calyx. 105.</item>
+          <item>Geminatus pedunculus. 90.</item>
+          <item>Gemma. 166.</item>
+          <item>Geniculata arista. 115</item>
+          <item>Geniculatus caulis. 13</item>
+          <item>— pedunculus. 93.</item>
+          <item>Germen. 134.</item>
+          <item>Gibbum folium. 54.</item>
+          <item>Glabra gluma. 114.</item>
+          <item>Glaber caulis. 19.</item>
+          <item>— folium. 48.</item>
+          <item>— petiolus. 67.</item>
+          <item>Glandulae. 82.</item>
+          <item>Glandulosum folium. 40</item>
+          <item>Globosa corolla. 123.</item>
+          <item>— radix. 5.</item>
+          <item>Globosum capitulum. 96.</item>
+          <item>— stigma. 138.</item>
+          <item>— perianthium. 168.</item>
+          <item>Globosus strobilus. 146.</item>
+          <item>Glochides. 81.</item>
+          <item>Glomerata spica. 97.</item>
+          <item>Gluma. 113.</item>
+          <item>Glumosus flos. 159.</item>
+          <item>Glutinositas. 83.</item>
+          <item>Granulata radix. 6.</item>
+          <item>Gymnodispermum. 150.</item>
+          <item>Gymnospermia planta. 149.</item>
+        </list>
+        <list type="index">
+          <head>H.</head>
+          <item>Halitus elasticus pollinis. 132.</item>
+          <item>Hami. 81.</item>
+          <item>— seminis. 154.</item>
+          <pb n="xxix"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0347.jp2&amp;id=diccionariodost00vand"/>
+          <item>Hamosae setae 80.</item>
+          <item>Hastatum folium. 42.</item>
+          <item>Heptaphyllus calyx s. perianthium. 106.</item>
+          <item>Herbaceus truncus. 9.</item>
+          <item>Herba. 1.</item>
+          <item>Hermaphrodita planta &amp; flos. 172.</item>
+          <item>Hexagonus caulis. 15.</item>
+          <item>Hexaphyllus calyx s. perianth. 106.</item>
+          <item>Hexapoda mensura. 10.</item>
+          <item>Hilum. 149.</item>
+          <item>Hirsuta corolla. 124.</item>
+          <item>Hirsutum filamentum. 128.</item>
+          <item>— nectarium. 128.</item>
+          <item>Hirtutus caulis. 19</item>
+          <item>Hirtus caulis 19.</item>
+          <item>Hispida gluma. 114.</item>
+          <item>Hispidum folium. 52.</item>
+          <item>Hispidus caulis. 19.</item>
+          <item>Horizontale folium. 33.</item>
+          <item>Horizontales flores. 94.</item>
+          <item>Horizontalis radix. 4.</item>
+          <item>Hypocrateriformis corolla. 123.</item>
+        </list>
+        <list type="index">
+          <head>I.</head>
+          <item>Imbricata folia. 3.</item>
+          <item>— spica 99.</item>
+          <item>Imbricatus calyx s. perianthium. 111.</item>
+          <item>— truncus. 16.</item>
+          <item>Impari pinnatum folium. 59.</item>
+          <item>Inaequale filamentum. 130.</item>
+          <item>— perianthium. 108.</item>
+          <item>— nectarium. 130.</item>
+          <item>Inaequalis corolla. 120 122.</item>
+          <item>Inanis truncus. 9.</item>
+          <item>Incisum folium s. dissectum. 44.</item>
+          <item>Incompletus flos. 158.</item>
+          <item>Incrassati pedunculi. 93.</item>
+          <item>Incumbens anthera. 131.</item>
+          <item>Incurvatum folium. 33</item>
+          <item>Incurvatus caulis. 11</item>
+          <item>Incurvus aculeus. 84.</item>
+          <item>— hamus seminis. 154</item>
+          <item>Inferum germen. 134.</item>
+          <item>— perianthium. 110.</item>
+          <item>Inferus calyx s. flos. 134.</item>
+          <item>Inflatum legumen. 142</item>
+          <item>— perianth. 108.</item>
+          <item>— pericarpium. 119.</item>
+          <item>Inflexum folium. 33.</item>
+          <item>Inflexus caulis 11.</item>
+          <item>Inflexi rami. 26.</item>
+          <item>Inflorescentia. 94.</item>
+          <item>Infundibiliformis corolla. 123.</item>
+          <item>Insertus petiolus. 65.</item>
+          <item>Insertum folium. 37. 54.</item>
+          <item>Integer caulis. 21.</item>
+          <item>Integra corolla. 124.</item>
+          <item>Integrum folium. 41.</item>
+          <item>— perianthium. 107.</item>
+          <item>Integerrimae stipulae. 74.</item>
+          <item>Integerrimum folium. 44.</item>
+          <item>Interfoliacei pedunculi. 88.</item>
+          <item>Interrupta spica. 98.</item>
+          <item>Interrupte pinnatum folium. 59.</item>
+          <item>Interfoliaceae stipulae. 69.</item>
+          <item>Involucratus verticillus 95.</item>
+          <item>Involucrum. 112.</item>
+          <item>Irregulare filamentum 130.</item>
+          <item>— nectarium. 130.</item>
+          <item>Irregularis corolla. 122.</item>
+        </list>
+        <list type="index">
+          <head>L.</head>
+          <item>Labia corollae. 123.</item>
+          <item>Lacera corolla. 120. 123.</item>
+          <item>Lacerum folium. 45.</item>
+          <item>Laciniae corollae. 120 123.</item>
+          <item>— filamenti. 127.</item>
+          <item>— stigmatis. 137.</item>
+          <item>— nectarii. 127.</item>
+          <item>Laciniatum folium. 43</item>
+          <item>Lacunosum folium 50.</item>
+          <item>Laxus caulis. 18.</item>
+          <item>Lamina corollae. 120.</item>
+          <item>Lana. 79.</item>
+          <item>Lanatum folium. 52.</item>
+          <item>Lanatus caulis. 19.</item>
+          <item>Lanceolata siliqua. 140</item>
+          <item>Lanceolatae stipulae. 72.</item>
+          <item>Lanceolatum folium. 40.</item>
+          <item>Laterales flores. 94.</item>
+          <item>— stipulae. 69.</item>
+          <item>Lateralis anthera. 31. 131.</item>
+          <item>Laterifolii pedunculi. 88.</item>
+          <item>Latifolia planta. 171.</item>
+          <item>Laxus caulis. 11.</item>
+          <item>— racemus. 102.</item>
+          <item>Legumen. 142.</item>
+          <item>Liber trunci. 7.</item>
+          <item>Ligulata corolla s. 124.</item>
+          <pb n="xxx"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0348.jp2&amp;id=diccionariodost00vand"/>
+          <item>Limbus corollae. s. flos 124.</item>
+          <item>Limbus corollae. 120.</item>
+          <item>Linea mensura 104. 71</item>
+          <item>Linearae folium 40</item>
+          <item>Linearis petiolus. 63.</item>
+          <item>— spica. 99.</item>
+          <item>Lineatum folium. 49.</item>
+          <item>Ligulata corolla. 124.</item>
+          <item>Ligulatus flos. 56. 158</item>
+          <item>Linguiforme folium. 56.</item>
+          <item>Lobata siliqua. 140.</item>
+          <item>Lobatum folium. 43.</item>
+          <item>Loculamentum capsulae Loculi. 139.</item>
+          <item>— antherae. 131.</item>
+          <item>— baccae. 146.</item>
+          <item>— seminis. 151.</item>
+          <item>Longa filamenta 130.</item>
+          <item>Longae stipulae. 75.</item>
+          <item>Longi rami. 17.</item>
+          <item>Longum nectarium. 130.</item>
+          <item>— perianthium. 109.</item>
+          <item>Longus stylus. 136.</item>
+          <item>— petiolus. 63.</item>
+          <item>Lucidum folium. 48.</item>
+          <item>Lunatae stipulae. 72.</item>
+          <item>Lunatum folium. 42.</item>
+          <item>Lyratum folium. 43.</item>
+        </list>
+        <list type="index">
+          <head>M.</head>
+          <item>Magnitudo vid. Mensura.</item>
+          <item>Marcescens flos contabascit, nec decidit.</item>
+          <item>— corolla. 124.</item>
+          <item>— stylus. 136.</item>
+          <item>— stigma. 138.</item>
+          <item>Mediocres stipulae. 75</item>
+          <item>Mediocris petiolus. 64</item>
+          <item>Medulla radicis. 1.</item>
+          <item>— carnosa, lignosa 1.</item>
+          <item>— trunci. 7.</item>
+          <item>Membranaceum folium. 54</item>
+          <item>Membranaceus petiolus. 61.</item>
+          <item>Membranatus caulis. 20.</item>
+          <item>Mensura magnitudinis, crassitiei. 10.</item>
+          <item>— folii. 57.</item>
+          <item>— pedunculi. 92.</item>
+          <item>— petioli. 64.</item>
+          <item>— ramorum. 27.</item>
+          <item>Monandria. 127.</item>
+          <item>Monanthera. 127.</item>
+          <item>Monocotyledon. 149.</item>
+          <item>Monogynia. 135.</item>
+          <item>Monopetala corolla. 171.</item>
+          <item>Monophylla spatha. 117.</item>
+          <item>Monophyllus calyx s. perianthium. 106.</item>
+          <item>— involucrum 112.</item>
+          <item>Monosperema bacca. 146.</item>
+          <item>Monospermum. 150.</item>
+          <item>Monostemonis. 127.</item>
+          <item>Mucronatum folium. 47.</item>
+          <item>Multangularis caulis. 15.</item>
+          <item>Multicapsularis capsula. 139.</item>
+          <item>Multidenta corolla. 121.</item>
+          <item>Multifidum perianthium. 107.</item>
+          <item>Multifidus cirrhus. 77.</item>
+          <item>— stylus. 136.</item>
+          <item>— folium. 43.</item>
+          <item>Multiflora gluma. 114</item>
+          <item>Multiflorus spadix. 164.</item>
+          <item>— petiolus. 62.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Multilocularis capsula. 139.</item>
+          <item>Multipartita corolla. 121.</item>
+          <item>Multipartitum folium. 43.</item>
+          <item>— perianthium. 107.</item>
+          <item>Multivalvis gluma. 114.</item>
+          <item>Muricatus caulis. 19.</item>
+          <item>Mutica gluma. 115.</item>
+        </list>
+        <list type="index">
+          <head>N.</head>
+          <item>Natans folium. 35.</item>
+          <item>Nectarium. 126.</item>
+          <item>Nervosum folium. 49.</item>
+          <item>Nidulantia semina. 146 139.</item>
+          <item>Nitidum folium. 48.</item>
+          <item>Nucleus. 154.</item>
+          <item>Nuda cyma. 163.</item>
+          <item>Nudum amentum. 116</item>
+          <item>— capitulum. 96.</item>
+          <item>— receptaculum. 156</item>
+          <item>— folium. 48.</item>
+          <item>— semen. 149.</item>
+          <item>Nudus caulis. 16.</item>
+          <item>— pedunculus. 93.</item>
+          <item>— petiolus. 67.</item>
+          <item>— racemus. 102.</item>
+          <item>— Thyrsus. 101.</item>
+          <item>— verticillus. 95.</item>
+          <item>— flos. 158.</item>
+          <item>Nutans umbella. 162.</item>
+          <item>— caulis. 11.</item>
+          <item>— pedunculus. 91.</item>
+          <item>— flos. 94.</item>
+          <item>Numerus foliorum. 30.</item>
+          <item>Nux. 154.</item>
+          <pb n="xxxi"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0349.jp2&amp;id=diccionariodost00vand"
+          />
+        </list>
+        <list type="index">
+          <head>O.</head>
+          <item>Obliqua calyptra. 118</item>
+          <item>Obliquum folium. 34.</item>
+          <item>Obliquus caulis. 11.</item>
+          <item>Oblongum folium. 39.</item>
+          <item>Ob ( cordatum ) ( ovatum ) folium. 34</item>
+          <item>— ( cordata ) ( ovata ) siliqua. 140.</item>
+          <item>Obsolete lobatum folium. 43.</item>
+          <item>Obtusum folium. 46.</item>
+          <item>— perianthium. 110.</item>
+          <item>Obtuse crenatum folium. 44.</item>
+          <item>— stigma. 138.</item>
+          <item>Obverse ( cordatum ) ( ovatum ) folium. 34.</item>
+          <item>Obversum folium. 34.</item>
+          <item>Octona folia. 32.</item>
+          <item>Octoni rami. 25.</item>
+          <item>Octophyllus calyx s. perianthium. 106.</item>
+          <item>Opposita filamenta calyci. 129.</item>
+          <item>Oppositi-rami. 25.</item>
+          <item>Oppositum folium. 32.</item>
+          <item>Oppositus pedunculus 89.</item>
+          <item>Opposite pinnatum folium. 59.</item>
+          <item>Oppositifolii pedunculi. 88.</item>
+          <item>Oppositifoliaceae stipulae. 69.</item>
+          <item>Orbiculatum folium. 38.</item>
+          <item>— stigma. 138.</item>
+          <item>Orgya mensura. 10.</item>
+          <item>Osseum semen. 152.</item>
+          <item>Ovale folium. 38.</item>
+          <item>Ovata spica. 98.</item>
+          <item>Ovatum folium. 38.</item>
+          <item>— stigma. 138.</item>
+          <item>— legumen. 142.</item>
+          <item>Ovarium. 134.</item>
+        </list>
+        <list type="index">
+          <head>P.</head>
+          <item>Paginae folii. 48.</item>
+          <item>Palatum corollae. 123.</item>
+          <item>Palea. 156.</item>
+          <item>Paleaceum receptaculum. 166.</item>
+          <item>Paleaceus pappus. 153</item>
+          <item>Palmaris mensura. 10.</item>
+          <item>Palmata radix. 5.</item>
+          <item>Palmatum folium. 43.</item>
+          <item>Palmites. 24.</item>
+          <item>Panduriforme folium. 42.</item>
+          <item>Panicula. 103.</item>
+          <item>Paniculatus caulis. 23.</item>
+          <item>Papilionacea corolla. 123.</item>
+          <item>Papillosum ) Papulosum ) folium. 51.</item>
+          <item>Pappus. 153.</item>
+          <item>Parabolicum folium. 19.</item>
+          <item>Parallelum dissepimentum 141. ss 139.</item>
+          <item>Partes fructificationis. 104.</item>
+          <item>— corollae petali. 120.</item>
+          <item>Partialis umbella. 160.</item>
+          <item>Partiale involucrum. 112.</item>
+          <item>— perianthium. 112.</item>
+          <item>Partita corolla. 121.</item>
+          <item>Partitum folium. 43.</item>
+          <item>— perianthium. 107.</item>
+          <item>Patens caulis. 23.</item>
+          <item>— corolla. 123.</item>
+          <item>— folium. 33.</item>
+          <item>— pedunculus. 91.</item>
+          <item>— perianthium. 108.</item>
+          <item>— petiolus. 66.</item>
+          <item>Patentes rami. 27.</item>
+          <item>— stipulae. 73.</item>
+          <item>Patentissima corolla. 123.</item>
+          <item>Pedalis mensura. 10.</item>
+          <item>Pedatum folium 59.</item>
+          <item>Pedatus racemus. 102</item>
+          <item>Pedicellus. 88.</item>
+          <item>Pedunculares glandulae. 82.</item>
+          <item>Peduncularis cirrhus. 76.</item>
+          <item>Pedunculati flores. 94.</item>
+          <item>— verticilli. 95.</item>
+          <item>Pedunculus. 88.</item>
+          <item>Pelta. 104.</item>
+          <item>Peltatum folium. 36.</item>
+          <item>— stigma. 138.</item>
+          <item>Pendulus Pedunculus. 91.</item>
+          <item>— racemus. 102.</item>
+          <item>Pentagonus caulis. 15.</item>
+          <item>Pentaphyllus calyx s. perianthium. 106.</item>
+          <item>Perenne folium. 58.</item>
+          <item>Perennis radix. 2.</item>
+          <item>Perfoliatum folium. 37</item>
+          <item>Perianthium. 105.</item>
+          <item>Pericarpium. 139. 116 125.</item>
+          <item>Persistens bractea. 87.</item>
+          <item>— stipula. 70.</item>
+          <item>— folium. 58.</item>
+          <item>— calyx. 105.</item>
+          <item>— stylus. 136.</item>
+          <item>— perianthium. 110.</item>
+          <item>— corolla. 124.</item>
+          <item>— stigma. 138.</item>
+          <item>Perpendicularis radix. 4.</item>
+          <pb n="xxxii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0350.jp2&amp;id=diccionariodost00vand"/>
+          <item>Personata corolla. 123.</item>
+          <item>Petalinum nectarium. 126.</item>
+          <item>Petalodes flos. 120.</item>
+          <item>Petalum. 120.</item>
+          <item>Petiolaris cirrhus. 76</item>
+          <item>— gemma. 166.</item>
+          <item>— glandula. 82.</item>
+          <item>— pedunculus. 88.</item>
+          <item>Petiolatum folium. 36.</item>
+          <item>Petiolus. 62.</item>
+          <item>Pileus fungorum. 131</item>
+          <item>Pilosum folium. 52.</item>
+          <item>— receptaculum. 156</item>
+          <item>— semen. 154.</item>
+          <item>Pilosus caulis. 19.</item>
+          <item>Pili. 79.</item>
+          <item>Pinnatifidum folium. 43.</item>
+          <item>Pinnatum folium. 59.</item>
+          <item>Pistillum. 133.</item>
+          <item>Plana umbella. 161.</item>
+          <item>Planum filamentum. 128.</item>
+          <item>— folium. 53.</item>
+          <item>— nectarium. 128.</item>
+          <item>— receptaculum. 157</item>
+          <item>Plicata corolla. 124.</item>
+          <item>Plicatum folium. 53.</item>
+          <item>Plumatae setae. 80.</item>
+          <item>Plumosus pappus. 153</item>
+          <item>Plumosum stigma. 138</item>
+          <item>— semen. 154.</item>
+          <item>Plumula. 148.</item>
+          <item>Pollen. 132.</item>
+          <item>Pollicaris mensura. 10.</item>
+          <item>Polycotyledon. 149.</item>
+          <item>Polygonus caulis. 15.</item>
+          <item>Polyginia. 135.</item>
+          <item>Polypetala corolla. 121</item>
+          <item>Polyphyllum involucrum. 112.</item>
+          <item>Polyphyllus calyx. s. perianthium. 112.</item>
+          <item>Polysperma bacca. 146.</item>
+          <item>Polyspermum. 150.</item>
+          <item>Polystachius caulis. 97.</item>
+          <item>Pomum. 145.</item>
+          <item>Praemorsa radix. 3.</item>
+          <item>Praemorsum folium. 46.</item>
+          <item>Praesentes stipulae. 69</item>
+          <item>Prismaticum pericarpium. 139.</item>
+          <item>Procumbens caulis. 11</item>
+          <item>Prolifer caulis. 22.</item>
+          <item>— umbella. 160.</item>
+          <item>Propago. 154.</item>
+          <item>— musci. 148.</item>
+          <item>— seminis. 154.</item>
+          <item>Proportio. 10.</item>
+          <item>Proprium nectarium. 126.</item>
+          <item>— perianthium. 106. 112.</item>
+          <item>— receptaculum. 155.</item>
+          <item>Pubes. 79.</item>
+          <item>Pubescens folium. 39</item>
+          <item>— stigma. 138.</item>
+          <item>Pulposum folium. 55.</item>
+          <item>Pungentes stimuli. 36.</item>
+        </list>
+        <list type="index">
+          <head>Q.</head>
+          <item>Quadrangulare folium 41.</item>
+          <item>Quadrangularis caulis 15.</item>
+          <item>Quadrifidus calyx s. perianthium. 107.</item>
+          <item>— stylus. 136.</item>
+          <item>Quadrijugum folium. 59.</item>
+          <item>Quadripartitum folium. 43.</item>
+          <item>Quadriqueter caulis. 15.</item>
+          <item>Quaterna. ) Quina. ) folia. 31. 32.</item>
+          <item>Quaterni ) Quini. ) rami. 25.</item>
+          <item>Quinatum folium. 59.</item>
+          <item>Quinqueangulare folium. 41</item>
+          <item>Quinqueangularis caulis. 15.</item>
+          <item>Quinquefida corolla. 121.</item>
+          <item>Quinquefidum folium. 43.</item>
+          <item>— perianthium. 107.</item>
+          <item>Quinquefidus stylus. 136.</item>
+          <item>Quinquelobum folium 43.</item>
+          <item>Quinquepartita cyma. 163.</item>
+          <item>Quinquepartitum folium. 43.</item>
+          <item>Quinqueter caulis. 15.</item>
+          <item>Quinquejugum folium 59.</item>
+          <item>Racemus. 102.</item>
+          <item>Rachis. 116. 164.</item>
+          <item>Radiata corolla. 124.</item>
+          <item>— umbella. 161.</item>
+          <item>Radiatus flos. 158.</item>
+          <item>Radicale folium 29.</item>
+          <item>Radicalis pedunculus. 88.</item>
+          <item>Radicatus caulis. 12.</item>
+          <item>Radicatum. s. radicans folium. 35.</item>
+          <item>Radiatus flos. 158.</item>
+          <item>Radius. 158.</item>
+          <item>Radix. 1.</item>
+          <item>Rameum folium. 29.</item>
+          <item>Rameus pedunculus. 88.</item>
+          <item>Rami. 24.</item>
+          <pb n="xxxiii"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0351.jp2&amp;id=diccionariodost00vand"/>
+          <item>— radicis 1.</item>
+          <item>Ramosissimus caulis. 23.</item>
+          <item>Ramosa cyma. 163.</item>
+          <item>— radix. 3.</item>
+          <item>— spica. 99.</item>
+          <item>Ramosae setae. 80.</item>
+          <item>Ramosum folium. 59.</item>
+          <item>Ramosus spadix. 164.</item>
+          <item>— caulis. 23.</item>
+          <item>Receptaculum. 155.</item>
+          <item>Reclinata folia. 33.</item>
+          <item>Recta arista. 115.</item>
+          <item>— calyptra. 118.</item>
+          <item>Recti aculei. 84.</item>
+          <item>Rectiformis corolla. 123.</item>
+          <item>Rectissima folia. 33.</item>
+          <item>Recurvata arista. 115.</item>
+          <item>Recurvatum folium. 33.</item>
+          <item>Recurvatus aculeus. 84.</item>
+          <item>— petiolus. 66.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Recutita bacca. 146.</item>
+          <item>Reflexae stipulae. 73.</item>
+          <item>Reflexi rami. 26.</item>
+          <item>Reflexum filamentum. 128.</item>
+          <item>— folium. 33.</item>
+          <item>— perianthium. 108.</item>
+          <item>— nectarium. 128.</item>
+          <item>Refractus s. retrofractus folliculus. 143</item>
+          <item>Regularis corolla. 122</item>
+          <item>Remota volva. 119.</item>
+          <item>Remotum folium. 31.</item>
+          <item>Reniforme folium. 42.</item>
+          <item>Repandum folium. 45.</item>
+          <item>Repens caulis. 12.</item>
+          <item>— radix. 4.</item>
+          <item>Resupinatum folium. 34.</item>
+          <item>Resupinatus pedunculus. 91.</item>
+          <item>Retefolii. 28.</item>
+          <item>Retroflexi rami. 26.</item>
+          <item>Retrofractus s. refractus pedunculus. 91.</item>
+          <item>Retusum folium. 46.</item>
+          <item>Revoluta corolla. 124</item>
+          <item>Revolutum folium. 33</item>
+          <item>Revolutus cirrhus. 78.</item>
+          <item>Rhombeum folium. 41</item>
+          <item>Rictus corollae. 123.</item>
+          <item>Rigida folia. 33.</item>
+          <item>Rigidus caulis. 17.</item>
+          <item>Ringens corolla. 123</item>
+          <item>Rosacea corolla. 123.</item>
+          <item>Rostellum. 148.</item>
+          <item>Rotata corolla. 123.</item>
+          <item>Rotundatum folium. 40.</item>
+          <item>Rugosum folium. 53.</item>
+          <item>Runcinatum folium. 42.</item>
+        </list>
+        <list type="index">
+          <head>S.</head>
+          <item>Sagittata stipula. 72.</item>
+          <item>Sagittatum folium. 42.</item>
+          <item>Sarmentosus caulis. 12.</item>
+          <item>Scaber caulis. 19.</item>
+          <item>Scabrum folium. 52.</item>
+          <item>Semen. 151.</item>
+          <item>Scabrities. 79.</item>
+          <item>Scandens caulis. 13.</item>
+          <item>Scapus. 8.</item>
+          <item>Scariosum folium. 54.</item>
+          <item>— perianthium. 11.</item>
+          <item>Scutellum. 104.</item>
+          <item>Secunda spica. 97.</item>
+          <item>Secundi flores. 94.</item>
+          <item>Secundus racemus. 102.</item>
+          <item>Sejugum folium. 59.</item>
+          <item>Semen. 125. 139. 148.</item>
+          <item>— nidulans baccae. 146.</item>
+          <item>Seminis essentia. 148.</item>
+          <item>— fertilitas. 150.</item>
+          <item>— receptaculum. 155</item>
+          <item>Semiamplexicaule folium. 37.</item>
+          <item>Seminale folium. 29.</item>
+          <item>Sempervirens folium. 58.</item>
+          <item>Semiteres caulis. 14.</item>
+          <item>— petiolus. 63.</item>
+          <item>Sena folia. 29.</item>
+          <item>Seni rami. 25.</item>
+          <item>Septeni rami. 25.</item>
+          <item>Sericeum folium. 52.</item>
+          <item>Serrata corolla. 124.</item>
+          <item>— stipula. 74.</item>
+          <item>Serratum folium. 44.</item>
+          <item>— perianthium. 108.</item>
+          <item>Sessile folium. 37.</item>
+          <item>Sessilis flos. 94.</item>
+          <item>— pappus. 153.</item>
+          <item>— verticillus. 95.</item>
+          <item>Setae. 80.</item>
+          <item>Setosum folium. 42.</item>
+          <item>— receptaculum. 156</item>
+          <item>Setosus stylus. 135.</item>
+          <item>Sexangularis caulis. 15.</item>
+          <item>Sicca drupa. 144.</item>
+          <item>Silicula. 140.</item>
+          <item>Siliqua. 140.</item>
+          <item>Simplex cauda sem. 154.</item>
+          <item>— caulis. 21.</item>
+          <item>— flos. 155.</item>
+          <item>— fructificatio. 104.</item>
+          <item>— Racemus. 102.</item>
+          <item>— spadix. 164.</item>
+          <item>— spica. 97.</item>
+          <item>— spina. 85.</item>
+          <item>— umbella. 150.</item>
+          <pb n="xxxiv"
+            facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0352.jp2&amp;id=diccionariodost00vand"/>
+          <item>— radix. 4.</item>
+          <item>— calyx. 105.</item>
+          <item>— folium. 59.</item>
+          <item>Simplices setae. 80.</item>
+          <item>Simplicissimus caulis. 21.</item>
+          <item>Sinistrorsum volubilis 13.</item>
+          <item>Sinuatum folium. 43.</item>
+          <item>Solidus bulbus. 166.</item>
+          <item>— caulis. 9.</item>
+          <item>Solitariae stipulae. 68.</item>
+          <item>Solitarius flos. 94.</item>
+          <item>— pedunculus. 90.</item>
+          <item>Spadix. 164.</item>
+          <item>Spadiceus flos. 164.</item>
+          <item>Sparsi flores. 94.</item>
+          <item>— pedunculi. 89.</item>
+          <item>— rami. 25.</item>
+          <item>Sparsum folium. 31.</item>
+          <item>Spatha. 117.</item>
+          <item>Spathulatum folium. 39</item>
+          <item>Spica. 97.</item>
+          <item>Spicilla s. spicula. 97.</item>
+          <item>Spina. 85.</item>
+          <item>Spinescens petiolus. 67</item>
+          <item>— stipula. 70.</item>
+          <item>Spinosum folium. 44.</item>
+          <item>— perianthium. 110.</item>
+          <item>Spinosus caulis. 10.</item>
+          <item>Spirale filamentum. 128.</item>
+          <item>— nectarium. 128.</item>
+          <item>Spithama mensura. 10</item>
+          <item>Squamatum amentum. 116.</item>
+          <item>— folium. 32.</item>
+          <item>Squamatus bulbus. 166</item>
+          <item>— caulis. 16.</item>
+          <item>— pedunculus. 93.</item>
+          <item>Squarrosum folium. 43</item>
+          <item>Squarrosus calyx s. perianthium. 111.</item>
+          <item>Stamen. 127.</item>
+          <item>Stellata folia. 32.</item>
+          <item>Stellatae setae. 80.</item>
+          <item>Stigma. 137.</item>
+          <item>Stimuli. 86.</item>
+          <item>Stipes. 8.</item>
+          <item>Stippitatus pappus. 153</item>
+          <item>Stipula. 68.</item>
+          <item>Stipulares glandulae. 82.</item>
+          <item>Stipularis gemma. 166</item>
+          <item>Stipulatus caulis. 20.</item>
+          <item>Stoloniferus caulis. 11.</item>
+          <item>Striatum folium. 49.</item>
+          <item>— stigma. 138.</item>
+          <item>Striatus caulis. 18.</item>
+          <item>Striatum folium. 33.</item>
+          <item>Striatus caulis. 11.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Strictum folium. 33.</item>
+          <item>Strictus caulis. 11.</item>
+          <item>Strigae. 79.</item>
+          <item>Strigosum folium. 52.</item>
+          <item>Strobilus. 147.</item>
+          <item>Stylus. 135.</item>
+          <item>Subamplexicaule folium. 37.</item>
+          <item>Subaxillare folium. 29</item>
+          <item>Subcordatum folium. 34.</item>
+          <item>Subdivisus caulis. 17.</item>
+          <item>Suberosus caulis. 17.</item>
+          <item>Submersum folium. 35</item>
+          <item>Subovatum folium. 34</item>
+          <item>Subramosus caulis. 23.</item>
+          <item>Subrotunda siliqua. 140.</item>
+          <item>Subrotundum folium. 38.</item>
+          <item>— capitulum. 96.</item>
+          <item>Subulatae stipulae. 72.</item>
+          <item>Subulatum filamentum 128.</item>
+          <item>— folium. 40. 56.</item>
+          <item>— nectarium. 128.</item>
+          <item>— receptaculum. 157</item>
+          <item>Subulatus stylus. 135.</item>
+          <item>Succulenta drupa. 144.</item>
+          <item>Succulentus arillus. 149.</item>
+          <item>Suffruticosus truncus. 9.</item>
+          <item>Sulcatum folium. 49.</item>
+          <item>Sulcatus caulis. 18.</item>
+          <item>Superum perianthium. 110.</item>
+          <item>Superus calyx s. flos, germen. 134.</item>
+          <item>Supradecompositum folium. 61.</item>
+          <item>Suprafoliaceus pedunculus. 88.</item>
+        </list>
+        <list type="index">
+          <head>T.</head>
+          <item>Tectum semen. 149.</item>
+          <item>Tenue folium. 55.</item>
+          <item>Tenuis stylus. 136.</item>
+          <item>Teres caulis. 14.</item>
+          <item>— folium. 54.</item>
+          <item>— pedunculus. 93.</item>
+          <item>— petiolus. 63.</item>
+          <item>Tergeminum folium. 61.</item>
+          <item>Terminalis arista. 115</item>
+          <item>— flos. 94.</item>
+          <item>— pedunculus. 88.</item>
+          <item>— spina. 85.</item>
+          <item>Terna folia. 31. 32.</item>
+          <item>Terni flores. 94.</item>
+          <item>— rami. 25.</item>
+          <item>Ternatum folium s. trinatum. 59.</item>
+          <item>Tessellata folia. 39.</item>
+          <item>Tetaedra siliqua. 140.</item>
+          <item>Tetragonus caulis. 15.</item>
+          <item>Tetrapetala corolla. 121. 123.</item>
+          <item>Tetraphyllum <pb n="xxxv"
+              facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0353.jp2&amp;id=diccionariodost00vand"
+            />involucrum. 112.</item>
+          <item>Tetraphyllus calyx s. perianthium. 106.</item>
+          <item>Thyrsus. 101.</item>
+          <item>Tomentosum folium. 52.</item>
+          <item>Tomentosus caulis. 19.</item>
+          <item>Tomentum. 79.</item>
+          <item>Torosum pericarpium 139.</item>
+          <item>Tortilis arista. 115.</item>
+          <item>Torulosa siliqua. 140.</item>
+          <item>Transversum dissipimentum siliquae. 141.</item>
+          <item>Trapeziforme folium. 41.</item>
+          <item>Triangulare folium. 41.</item>
+          <item>Triangularis caulis. 15</item>
+          <item>Tricapsulare perianthium. 139.</item>
+          <item>Tricocca capsula. 139.</item>
+          <item>Trifida cyma. 163.</item>
+          <item>Trifidae furcae. 84.</item>
+          <item>Trifidum folium. 43.</item>
+          <item>— perianthium s. calyx. 107.</item>
+          <item>Trifidus cirrhus. 77.</item>
+          <item>— stylus. 136.</item>
+          <item>Triglochis. 81.</item>
+          <item>— hamus sem: 154.</item>
+          <item>Trigonus caulis. 15.</item>
+          <item>Trijugum folium. 59.</item>
+          <item>Trilobum folium. 43.</item>
+          <item>— stigma. 138.</item>
+          <item>Triloculare pericarpium. 139.</item>
+          <item>Trilocularis bacca. 146.</item>
+          <item>Trinerve folium. 49.</item>
+          <item>Tripartita cyma. 163.</item>
+          <item>Tripartitum folium. 43.</item>
+          <item>— perianthium. 107.</item>
+          <item>Tripetala corolla. 121.</item>
+          <item>Triphyllum perianthium s. calyx. 106.</item>
+          <item>Tripinnatum ) — cum impari ) — — bigeminum ) folium 61</item>
+          <item>Triplicato ( pinnatum ) ( ternatum )</item>
+          <item>Triplinerve folium. 49</item>
+          <item>Triquetra siliqua. 140</item>
+          <item>Triqueter caulis. 15.</item>
+          <item>— pedunculus. 93.</item>
+          <item>— petiolus. 63.</item>
+          <item>Triquetrum folium 56</item>
+          <item>Trisperma bacca. 146.</item>
+          <item>Triternatum folium. 61.</item>
+          <item>Truncatum folium. 46.</item>
+          <item>— stigma 138.</item>
+          <item>— perianthium. 158.</item>
+          <item>Truncus. 7. 31. 1.</item>
+          <item>Tuberosa radix. 5.</item>
+          <item>Tuberculum. 104.</item>
+          <item>Tuber. 166.</item>
+          <item>Tubulosa corolla. 124</item>
+          <item>Tubulosum folium. 55</item>
+          <item>— perianthium. 108</item>
+          <item>Tubulosus flos. 158.</item>
+          <item>Tubus corollae. 120.</item>
+          <item>Tunicatus bulbus. 166</item>
+          <item>— caulis. 17.</item>
+          <item>Turbinatum pomum. 145.</item>
+          <item>— perianthium 116.</item>
+          <item>— pericarpium. 139.</item>
+          <item>Turgidum legumen. 142.</item>
+          <item>Turiones. 166.</item>
+        </list>
+        <list type="index">
+          <head>V.</head>
+          <item>Vaginans folium. 37.</item>
+          <item>— petiolus. 65.</item>
+          <item>— stipula. 71.</item>
+          <item>— caulis. 16.</item>
+          <item>Valva glumae. 113.</item>
+          <item>Valvula capsulae. 139.</item>
+          <item>Venosum folium. 155.</item>
+          <item>Ventricosa spica. 98.</item>
+          <item>— corolla. 123.</item>
+          <item>Versatilis anthera. 131</item>
+          <item>Verticale folium. 34.</item>
+          <item>Verticales flores. 94.</item>
+          <item>Verticaliter cordat. ovat. folium. 34.</item>
+          <item>Verticillata folia. 32.</item>
+          <item>Verticillati rami. 25.</item>
+          <item>Verticillatus pedunculus. 89.</item>
+          <item>Verticillus. 95.</item>
+          <item>Vexillum papilionaceae corollae. 123.</item>
+          <item>Villosum folium. 52.</item>
+          <item>— receptaculum. 156.</item>
+          <item>Villosus caulis. 19.</item>
+          <item>Villus. 79.</item>
+          <item>Virgatus caulis. 23.</item>
+          <item>Viscidum folium. 51.</item>
+          <item>Viscositas. 83.</item>
+          <item>Volva. 119.</item>
+          <item>Volubilis caulis. 13.</item>
+        </list>
+        <list type="index">
+          <head>U.</head>
+          <item>Umbella. 160.</item>
+          <item>— sessilis. 90.</item>
+          <item>— spuria 160.</item>
+          <item>Umbellatus flos. 160.</item>
+          <item>Umbellula. 160.</item>
+          <item>Umbilicatum folium vid. peltatum.</item>
+          <item>Uncinatum stigma. 138.</item>
+          <item>Undatum folium. 53.</item>
+          <item>Undulata corolla. 124 <pb n="xxxvi"
+              facs="https://ia800403.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/diccionariodost00vand/diccionariodost00vand_jp2.zip&amp;file=diccionariodost00vand_jp2/diccionariodost00vand_0354.jp2&amp;id=diccionariodost00vand"
+            />125.</item>
+          <item>Undulatum folium. 53.</item>
+          <item>Unguis corollae. 120.</item>
+          <item>Unguicularis mensura caulis. 10.</item>
+          <item>Unica spica. 97.</item>
+          <item>— anthera. 131.</item>
+          <item>Unicus flos. 94.</item>
+          <item>Uniflora gluma. 114.</item>
+          <item>Uniflorus spadix. 164.</item>
+          <item>— petiolus. 62.</item>
+          <item>— pedunculus. 91.</item>
+          <item>Unilabiata corolla vid ringens.</item>
+          <item>Unilaterales flores. 94</item>
+          <item>— racemi. 102.</item>
+          <item>Uniloculare legumen. 142.</item>
+          <item>— semen. 151.</item>
+          <item>Unilocularis anthera. 131.</item>
+          <item>— bacca. 146.</item>
+          <item>— capsula. 139.</item>
+          <item>Universale involucrum. 112.</item>
+          <item>Universalis umbella. 160.</item>
+          <item>Univalvis gluma. 114.</item>
+          <item>— spatha. 117.</item>
+          <item>Urceolatum vid. ventricosum.</item>
+          <item>Urens caulis. 19.</item>
+          <item>Urentes stimuli. 86.</item>
+          <item>Utriculi. 82.</item>
+        </list>
+      </div>
     </back>
   </text>
 </TEI>

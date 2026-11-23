@@ -1,0 +1,1944 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="tei_dhtb.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="null"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>"Qual o melhor tratamento da febre amarela" de Novais: Transcrição
+					digital</title>
+				<respStmt>
+					<resp>Transcrição e codificação TEI realizada por</resp>
+					<name>Beyonce Jeannot</name>
+				</respStmt>
+				<respStmt>
+					<resp>Revisão da transcrição e da codificação TEI realizada por</resp>
+					<name>Bruno Oliveira Maroneze</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
+					(https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+					Maroneze.</p>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<author>NOVAES, Clementino Ribeiro de</author>. <title>Qual o melhor tratamento
+						da febre amarela</title>. <pubPlace>Salvador</pubPlace>: Imprensa da
+					Faculdade de Medicina da Bahia, <date when="1871">1871</date>. Disponível em:
+					https://repositorio.ufba.br/bitstream/ri/24821/1/Clementino%20Ribeiro%20de%20Novaes%20%28TI-1871%29.pdf.
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>A ortografia original da obra foi mantida sempre que possível.</p>
+				<p>As quebras de página foram inseridas apenas no texto principal, não nas notas de
+					rodapé. Quando a quebra de página ocorre no meio de uma palavra, o elemento
+						<gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la.</p>
+				<p>As imagens (fac-símiles) das páginas da obra estão hospedadas no repositório
+					digital Internet Archive (https://archive.org/details/101464815.nlm.nih.gov/).
+					Cada elemento <gi>pb</gi>, bem como o elemento <gi>titlePage</gi>, contém o
+					atributo <att>facs</att> com o endereço URL da imagem correspondente à
+					página.</p>
+				<p>As páginas preliminares (lista dos professores e das matérias da Faculdade, por
+					ano, e dos doutorandos) foram marcadas com elementos <gi>div</gi> cujo atributo
+						<att>type</att> indica o conteúdo de cada uma ("faculty-list", "director",
+					"vice-director", "teaching-staff", "first-academic-year" a
+					"sixth-academic-year", "academic-candidates" etc.). Essas listas foram
+					transcritas como tabelas (<gi>table</gi>), e as listas de nomes dentro das
+					células, com os elementos <gi>list</gi> e <gi>item</gi>.</p>
+				<p>As epígrafes (em francês) foram marcadas com o elemento <gi>epigraph</gi>.</p>
+				<p>As notas do editor, que não fazem parte do original (por exemplo, a indicação de
+					particularidades da impressão), foram marcadas com o elemento <gi>note</gi> e
+					escritas entre colchetes.</p>
+				<p>Os termos que correspondem a entradas do Dicionário Histórico de Termos da
+					Biologia foram marcados com o elemento <gi>term</gi>. O atributo
+						<att>lemma</att> traz a forma de citação do termo na ortografia atual (por
+					exemplo, "febre amarela", "profilaxia"), e o atributo <att>type</att> indica a
+					categoria do termo.</p>
+				<p>Os nomes de doenças foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "illness".</p>
+				<p>Os nomes de sintomas foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "symptom".</p>
+				<p>Os nomes de partes do corpo foram marcados com o elemento <gi>term</gi> acrescido
+					do atributo <att>type</att> com o valor "body-part".</p>
+				<p>Os nomes de plantas foram marcados com o elemento <gi>term</gi> acrescido do
+					atributo <att>type</att> com o valor "plant".</p>
+				<p>Os nomes de substâncias químicas e de medicamentos foram marcados com o elemento
+						<gi>term</gi> acrescido do atributo <att>type</att> com o valor
+					"chemical-medicine".</p>
+				<p>Os nomes científicos que aparecem no texto foram marcados com o elemento
+						<gi>name</gi>, o atributo <att>type</att> com o valor "taxon" e o atributo
+						<att>subtype</att> com o valor "species", "genus" ou "family", dependendo do
+					nível taxonômico.</p>
+				<p>As aprovações em letra cursiva ao final da tese foram marcadas num <gi>div</gi>
+					com <att>type</att> "aprovacoes", que contém um <gi>div</gi> para cada despacho
+					("despacho") ou parecer ("parecer"); o texto de cada um é um <gi>p</gi>, e as
+					assinaturas foram marcadas com o elemento <gi>signed</gi>, uma para cada
+					signatário.</p>
+				<p>Os elementos <gi>p</gi>, <gi>head</gi>, <gi>item</gi>, <gi>note</gi> e
+						<gi>term</gi> têm identificadores (<att>xml:id</att>) no padrão
+						<code>p_novaes_0001</code>, <code>h_novaes_0001</code>,
+						<code>i_novaes_0001</code>, <code>n_novaes_0001</code> e
+						<code>t_novaes_0001</code>, respectivamente.</p>
+			</editorialDecl>
+			<projectDesc>
+				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
+					Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+			</projectDesc>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<pb n="cover"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0000.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div type="cover">
+				<head xml:id="h_novaes_0001">THESE DE CLEMENTINO RIBEIRO DE NOVAES</head>
+				<docDate>1871</docDate>
+			</div>
+			<titlePage
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0002.jp2&amp;id=101464815.nlm.nih.gov">
+				<titlePart>THESE QUE SUSTENTA EM NOVEMBRO DE 1871 PERANTE A FACULDADE DE MEDICINA DA
+					BAHIA AFIM DE OBTER O GRÁU DE DOUTOR EM MEDICINA</titlePart>
+				<byline><docAuthor>Clementino Ribeiro de Novaes</docAuthor> NATURAL DESTA PROVINCIA,
+					Filho legitimo do Tenente-Coronel Jose Antonio Ribeiro de Novaes, e de D.
+					Eufrosina Maria de Novaes. Ex 1.º Cirurgião do Exercito e condecorado com a
+					medalha da campanha do Paraguay.</byline>
+				<epigraph>
+					<p xml:id="p_novaes_0001" xml:lang="fr">La plus haute mission de l'homme, après
+						celle du service des autels, est d'être prêtre du feu sacré de la vie,
+						dispensateur des plus beaux dons de Dieu, et maître des forces occultes de
+						la nature, c'este á-dire dêtre medicin. (HUFELAND).</p>
+				</epigraph>
+				<docImprint><pubPlace>BAHIA</pubPlace> TYP. DE CANDIDO REIÑALDO DA ROCHA
+						<docDate>1871</docDate>.</docImprint>
+			</titlePage>
+			<pb n="0"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0003.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div type="faculty-list">
+				<head xml:id="h_novaes_0002">FACULDADE DE MEDICINA DA BAHIA.</head>
+				<div type="director">
+					<head xml:id="h_novaes_0003">DIRECTOR</head>
+					<p xml:id="p_novaes_0002"> . . . . . . . . . . . . . . . . . . . . .</p>
+				</div>
+				<div type="vice-director">
+					<head xml:id="h_novaes_0004">VICE-DIRECTOR</head>
+					<p xml:id="p_novaes_0003">O EXM. SR. CONSELHEIRO DR. VICENTE FERREIRA DE
+						MAGALHÃES.</p>
+				</div>
+				<div type="teaching-staff">
+					<head xml:id="h_novaes_0005">LENES PROPRIETARIOS.</head>
+					<div type="first-academic-year">
+						<head xml:id="h_novaes_0006">1.º anno.</head>
+						<table>
+							<row>
+								<cell>Os Srs. Doutores</cell>
+								<cell>Materias que leccionão</cell>
+							</row>
+							<row>
+								<cell>Cons. Vicente Ferreira de Magalhães</cell>
+								<cell>Physica em geral, e particularmente em suas applicações á
+									Medicina.</cell>
+							</row>
+							<row>
+								<cell>Francisco Rodrigues da Silva</cell>
+								<cell>Chimica e Mineralogia.</cell>
+							</row>
+							<row>
+								<cell>Adriano Alves de Lima Gordilho</cell>
+								<cell>Anatomia descriptiva.</cell>
+							</row>
+						</table>
+					</div>
+					<div type="second-academic-year">
+						<head xml:id="h_novaes_0007">2.º anno.</head>
+						<table>
+							<row>
+								<cell>Antonio de Cerqueira Pinto</cell>
+								<cell>Chimica organica.</cell>
+							</row>
+							<row>
+								<cell>Jeronymo Sodré Pereira</cell>
+								<cell>Physiologia.</cell>
+							</row>
+							<row>
+								<cell>Antonio Mariano do Bomfim</cell>
+								<cell>Botanica e Zoologia.</cell>
+							</row>
+							<row>
+								<cell>Adriano Alves de Lima Gordilho</cell>
+								<cell>Repetição de Anatomia descriptiva.</cell>
+							</row>
+						</table>
+					</div>
+					<div type="third-academic-year">
+						<head xml:id="h_novaes_0008">3.º anno.</head>
+						<table>
+							<row>
+								<cell>Cons. Elias José Pedrosa</cell>
+								<cell>Anatomia geral e pathologica.</cell>
+							</row>
+							<row>
+								<cell>José de Goes Siqueira</cell>
+								<cell>Pathologia geral.</cell>
+							</row>
+							<row>
+								<cell>Jeronymo Sodré Pereira</cell>
+								<cell>Phisiologia.</cell>
+							</row>
+						</table>
+					</div>
+					<div type="fourth-academic-year">
+						<head xml:id="h_novaes_0009">4.º anno.</head>
+						<table>
+							<row>
+								<cell>Cons. Manuel Ladislau Aranha Dantas</cell>
+								<cell>Pathologia externa.</cell>
+							</row>
+							<row>
+								<cell>. . . . . . . . . . . .</cell>
+								<cell>Pathologia interna.</cell>
+							</row>
+							<row>
+								<cell>Cons. Mathias Moreira Sampaio</cell>
+								<cell>Partos, molestias de mulheres pejadas e de meninos
+									recemnascidos.</cell>
+							</row>
+						</table>
+					</div>
+					<div type="fifth-academic-year">
+						<head xml:id="h_novaes_0010">5.º anno.</head>
+						<table>
+							<row>
+								<cell>. . . . . . . . . . . .</cell>
+								<cell>Continuação de Pathologia interna.</cell>
+							</row>
+							<row>
+								<cell>. . . . . . . . . . . .</cell>
+								<cell>Materia medica e therapeutica.</cell>
+							</row>
+							<row>
+								<cell>José Antonio de Freitas</cell>
+								<cell>Anatomia topographica, Medicina operatoria e
+									apparelhos.</cell>
+							</row>
+						</table>
+					</div>
+					<div type="sixth-academic-year">
+						<head xml:id="h_novaes_0011">6.º anno.</head>
+						<table>
+							<row>
+								<cell>. . . . . . . . . . . .</cell>
+								<cell>Pharmacia.</cell>
+							</row>
+							<row>
+								<cell>Salustiano Ferreira Souto</cell>
+								<cell>Medicina legal.</cell>
+							</row>
+							<row>
+								<cell>Domingos Rodrigues Seixas</cell>
+								<cell>Hygiene e Historia da Medicina.</cell>
+							</row>
+							<row>
+								<cell>. . . . . . . . . . . .</cell>
+								<cell>Clinica externa do 3.º e 4.º anno.</cell>
+							</row>
+							<row>
+								<cell>Antonio Januario de Faria</cell>
+								<cell>Clinica interna do 5.º e 6.º anno.</cell>
+							</row>
+						</table>
+					</div>
+				</div>
+				<div type="academic-candidates">
+					<head xml:id="h_novaes_0012">OPPOSITORES</head>
+					<table>
+						<row>
+							<cell><list>
+									<item xml:id="i_novaes_0001">Rozendo Aprigio Pereira
+										Guimarães</item>
+									<item xml:id="i_novaes_0002">Ignacio José da Cunha</item>
+									<item xml:id="i_novaes_0003">Pedro Ribeiro de Araujo</item>
+									<item xml:id="i_novaes_0004">José Ignacio de Barros
+										Pimentel</item>
+									<item xml:id="i_novaes_0005">Virgilio Climaco Damazio</item>
+								</list></cell>
+							<cell>Secção Accessoria.</cell>
+						</row>
+						<row>
+							<cell><list>
+									<item xml:id="i_novaes_0006">José Affonso Paraizo de
+										Moura</item>
+									<item xml:id="i_novaes_0007">Augusto Gonsalves Martins</item>
+									<item xml:id="i_novaes_0008">Domingos Carlos da Silva</item>
+									<item xml:id="i_novaes_0009">Antonio Pácifico Pereira</item>
+								</list></cell>
+							<cell>Secção Cirurgica.</cell>
+						</row>
+						<row>
+							<cell><list>
+									<item xml:id="i_novaes_0010">Demetrio Cyriaco Tourinho</item>
+									<item xml:id="i_novaes_0011">Luiz Alvares dos Santos</item>
+									<item xml:id="i_novaes_0012">Ramiro Affonso Monteiro</item>
+									<item xml:id="i_novaes_0013">Egas Carlos Moniz Sodré de
+										Aragão</item>
+									<item xml:id="i_novaes_0014">Claudemiro Augusto de Moraes
+										Caldas</item>
+								</list></cell>
+							<cell>Secção Medica.</cell>
+						</row>
+					</table>
+				</div>
+				<div type="secretary">
+					<head xml:id="h_novaes_0013">SECRETARIO</head>
+					<p xml:id="p_novaes_0004">O SR. DR. CINCINNATO PINTO DA SILVA.</p>
+				</div>
+				<div type="administrative-officer">
+					<head xml:id="h_novaes_0014">OFFICIAL DA SECRETARIA</head>
+					<p xml:id="p_novaes_0005">O SR. DR. THOMAZ DE AQUINO GASPAR.</p>
+				</div>
+				<div type="disclaimer">
+					<p xml:id="p_novaes_0006">A Faculdade não approva nem reprova as opiniões
+						emittidas nesta these.</p>
+				</div>
+			</div>
+		</front>
+		<body>
+			<pb n="1"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0004.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div>
+				<head xml:id="h_novaes_0015">SECÇÃO MEDICA.</head>
+				<head xml:id="h_novaes_0016">Qual o melhor tratamento da <term type="illness"
+						xml:id="t_novaes_0184" lemma="febre amarela">febre amarella</term> ?</head>
+				<head xml:id="h_novaes_0017">DISSERTAÇÃO</head>
+				<head xml:id="h_novaes_0018">PRIMEIRA PARTE</head>
+				<epigraph>
+					<p xml:id="p_novaes_0007" xml:lang="fr">Les epidemies sont dans l'histoire
+						medicale des peuples, les evènements principaux, les accidents les plus
+						remarquables. It faut en perpetuer le souvenir, afin que les tristes leçons
+						de ces etranges calamitès ne soient, pas entierement perdues pour les
+						génerations qui suivent, afin que les medicins n'entrent pas tout-neufs dans
+						la penible corriere de ce genre d'ètudes. (FLEURY, COUS D'HYGIEE.)</p>
+				</epigraph>
+				<p xml:id="p_novaes_0008">Antes de tratarmos propriamente do ponto, julgamos de
+					summa importancia fazer algumas ligeiras considerações sobre a natureza da
+					molestia, de modo que possamos entrar com mais segurança no tratamento
+					therapeutico: procuraremos definil-a e tambem apresentar, se bem que mui
+					perfunctoriamente, o seu esboço historico, e finalmente trataremos do seu modo
+					de propagação, para podermos tambem tratar da sua <term lemma="profilaxia"
+						xml:id="t_novaes_0461">prophylaxia</term>.</p>
+				<p xml:id="p_novaes_0009">Sabemos que não podemos dar uma definição completa e
+					satisfatoria do que seja <term type="illness" xml:id="t_novaes_0185"
+						lemma="febre amarela">febre amarella</term>, ja pela exiguidade de nossas
+					forças, já pela incerteza que ainda hoje reina na sciencia a respeito d'esta
+					molestia: com tudo procuraremos descrevêl-a, ainda que resumidamente, de maneira
+					que consigamos dar uma idéa mais ou menos approximada do que ella seja.</p>
+				<pb n="2"
+					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0005.jp2&amp;id=101464815.nlm.nih.gov"/>
+				<p xml:id="p_novaes_0010">A <term type="illness" xml:id="t_novaes_0186"
+						lemma="febre amarela">febre amarella</term>, tambem chamada, <term
+						type="illness" xml:id="t_novaes_0187" lemma="febre de Sião">febre de
+						Sian</term>, <term type="illness" xml:id="t_novaes_0188"
+						lemma="febre ictérica maligna">febre icterica maligna</term>, <term
+						type="illness" xml:id="t_novaes_0189" lemma="febre marítima">febre
+						maritima</term>, <term type="illness" xml:id="t_novaes_0190"
+						lemma="febre gastro-hepática">febre gastro-hepatica</term>, <term
+						type="illness" xml:id="t_novaes_0191" lemma="febre pútrida contínua">febre
+						putrida continua</term>, <term type="illness" xml:id="t_novaes_0192"
+						lemma="tipo americano">typo americano</term>, <term type="illness"
+						xml:id="t_novaes_0193" lemma="ictérico">icterico</term> ou <term
+						xml:id="t_novaes_0462">bilioso</term>, <term type="illness"
+						xml:id="t_novaes_0194" lemma="vômito negro dos italianos">vomito negro dos
+						italianos</term> e <term type="illness" xml:id="t_novaes_0195"
+						lemma="vômito preto dos espanhóis">vomito preto dos hespanhòes</term>, é uma
+					molestia propria á certos climas quentes, é uma pyrexia proveniente de um
+					envenenamento do sangue ordinariamente epidemica, podendo tambem tornar-se
+					endemica e exporadica, tendo por caracteres principaes a <term type="symptom"
+						xml:id="t_novaes_0196" lemma="amarelidão">amarellidão</term> dos <term
+						type="body-part" xml:id="t_novaes_0001" lemma="tegumento">tegumentos</term>
+					o <term xml:id="t_novaes_0197" lemma="vômito">vomito</term> negro e as <term
+						type="symptom" xml:id="t_novaes_0198" lemma="hemorragia"
+					>hemorrhagias</term>.</p>
+				<div>
+					<head xml:id="h_novaes_0019">HISTORIA.</head>
+					<p xml:id="p_novaes_0011">Completamente desconhecida dos antigos, a <term
+							type="illness" xml:id="t_novaes_0199" lemma="febre amarela">febre
+							amarella</term> foi por muito tempo confundida com as molestias
+						pestilenciaes, até qne em 1494 o apparecimento d'este terrivel flagello em
+						Haity prendeu a attenção de muitos medicos, que, dedicados á sciencia, para
+						ahi foram intrepidos estudar a causa de tão notavel acontecimento.</p>
+					<p xml:id="p_novaes_0012">Podemos dizer hoje ella teve o seu berço nas Antilhas;
+						e como duvidar-se conhecendo-se as condições climatericas d'aquellas
+						ilhas?</p>
+					<p xml:id="p_novaes_0013">Oriunda d'este vasto archipelago, fez gaandes estragos
+						em quasi todas as ilhas e d'ahi transportada para America do Norte em 1793,
+						ceifoi horrivelmente a cidade de Phyladelphia</p>
+					<p xml:id="p_novaes_0014">D'ahi invadio desassombrada o continente Europeu,
+						segundo alguns, pelas communicações frequentes que se davam entre estes dous
+						territorios, communicações que eram promovidas sobre tudo pela ambição dos
+						hespanhões, que iam em busca do ouro em tão remotas plagas, d'onde
+						juntamente com elle traziam impressa no rosto a côr amarella que tanta
+						semelhança lhes dava com o metal que de lá traziam.</p>
+					<p xml:id="p_novaes_0015">As epidemias de Cadix de 1803 á 1808, á de Barcellona
+						em 1822, as de Gibraltar em 1828 e as da Italia (em Liorne) foram as mais
+						mortiferas do continente Europeu.</p>
+					<p xml:id="p_novaes_0016">Não contente de tão grandes conquistas firmou o seu
+						dominio na Africa e ahi, no Senegal, em Serra Leôa, nas ilhas Canarias e
+						ilha da<pb n="3"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0006.jp2&amp;id=101464815.nlm.nih.gov"
+						/> Ascenção, qual outro flagello da idade antiga, devastou a humanidade
+						deixando o seu caminho fatal semeiado de cadaveres e cobrindo todos estes
+						logares de luctuosa tristeza.</p>
+					<p xml:id="p_novaes_0017">Afanos no seu peregrinar eil-a que de novo surge no
+						sólo Americanos O Brazil não podendo escapar as garras d'este inimigo
+						invisivel que, como diz Foissac, é mais terrivel que Timour e Attila, e que
+						nem os mares, nem os montes, nem as muralhas, nem os exercitos tem o poder
+						de contel-o, tornou se por sua vez o theatro de suas devastações! E então,
+						em 1686 apresentou se em Pernambuco levando á sepultura centenares de
+						victimas.</p>
+					<p xml:id="p_novaes_0018">Do Recife passou a molestia á Olinda em 1691 e á seus
+						reconcavos, sendo muito poucas as pessôas que, pela malignidade e vehemencia
+						d mal ficavam isentas.</p>
+					<p xml:id="p_novaes_0019">A Bahia no mesmo anno resentio-se do mal; porém 1849 e
+						1850 foram as épocas mais calamitosas para estas duas provincias, bem como
+						para a do Rio de Janeiro.</p>
+					<p xml:id="p_novaes_0020">Infelizmente o monstro das Antilhas encontrou na terra
+						da Santa Cruz condições favoraveis para o seu desenvolvimento e para sua
+						propagação!</p>
+					<p xml:id="p_novaes_0021">Assim é que constituio-se nosso hospede e hospede bem
+						importuno, pois que de quando em quando sóe encommodar-nos com suas visitas,
+						produzindo sempre desastrosos effeitos.</p>
+					<p xml:id="p_novaes_0022">Ainda em 1869 tivemos a sua visita funesta na capital
+						do imperio, apparecendo tambem no ancoradouro da Bahia quatro marinheiros de
+							<term type="illness" xml:id="t_novaes_0200" lemma="febre amarela">febre
+							amarella</term>, que pertenciam á curveta italiana Guiscardo procedente
+						do Rio de Janeiro; d'estes falleceram trez no Hospital da Caridade, não
+						tendo os propagado o mal nem dentro e nem fóra do Hospital.</p>
+					<p xml:id="p_novaes_0023">Em Janeiro de 1870 desenvolveu-se epidemicamente no
+						Rio de Janeiro. Em Abril do mesmo anno apresentou-se de novo na Bahia, onde
+						visitou as freguezias da Victoria e S. Pedro, e igualmente o Hospital da
+						Caridade.</p>
+					<p xml:id="p_novaes_0024">A' 29 de Janeiro do corrente anno entrou em nosso
+						porto o vapor inglez Douro procedente da Europa com escala por Pernambuco,
+							onde<pb n="4"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0007.jp2&amp;id=101464815.nlm.nih.gov"
+						/> reinava a <term type="illness" xml:id="t_novaes_0201"
+							lemma="febre amarela">febre amarella</term> por mar e por terra; apezar
+						de trazer carta suja foi admittido a livre pratica. Logo no dia 30 foram
+						recolhidos ao Hospital da Caridade dous marinheiros atacados do <term
+							type="illness" xml:id="t_novaes_0202" lemma="tifo icteroide">typho
+							icteroide</term>.</p>
+					<p xml:id="p_novaes_0025">Durante o mez de Fevereiro foram recolhidos á este
+						Hospital mais onze affectados do mesmo mal, e até o dia 28 d'este mez já
+						havia 25 victimas no seio da população.</p>
+					<p xml:id="p_novaes_0026">Durante os mezes de Março, Abril, Maio, Junho e Julho,
+						continuou o mal sempre crescente tendo todavia maior intencidade no
+						ancoradouro</p>
+					<p xml:id="p_novaes_0027">Ainda no corrente anno appareceu na republica
+						Argentina (em Buenos-Ayres, Entre-Rios e Corrientes) uma febre epidemica,
+						cujo diagnostico não está ainda perfeitamente esclarecido, mas que, pelos
+						estragos que em tão pouco tempo causou á aquelles lugares, e pelo <term
+							type="symptom" xml:id="t_novaes_0203" lemma="vômito">vomito</term> negro
+						que dizem ter apparecido em alguns doentes, é supposta ser a <term
+							type="illness" xml:id="t_novaes_0204" lemma="febre amarela">febre
+							amarella</term>.</p>
+				</div>
+				<div type="subchapter">
+					<head xml:id="h_novaes_0020">NATURESA DA <term type="illness"
+							xml:id="t_novaes_0205" lemma="febre amarela">FEBRE
+						AMARELLA</term>.</head>
+					<p xml:id="p_novaes_0028">Muitas hypotheses têm sido apresentadas para
+						explicação da natureza da <term type="illness" xml:id="t_novaes_0206"
+							lemma="febre amarela">febre amarella</term>; porem todas ellas tem sido
+						infructiferas, e o véo de tão grande mysterio até hoje não tem podido ssr
+						descortinado.</p>
+					<p xml:id="p_novaes_0029">A anatomia pathologica vem demonstraranos que a <term
+							type="illness" xml:id="t_novaes_0207" lemma="febre amarela">febre
+							amarella</term> não é uma <term type="illness" xml:id="t_novaes_0208"
+							>gastrite</term> e muito menos uma <term type="illness"
+							xml:id="t_novaes_0209" lemma="inflamação hepato-gástrica">inflammação
+							hepato-gastrica</term>, como queria Thomazini: alem das altêrações do
+							<term type="body-part" xml:id="t_novaes_0002" lemma="estômago"
+							>estomago</term> não serem constantes e as do <term type="body-part"
+							xml:id="t_novaes_0003" lemma="fígado">figado</term> serem-no sempre, com
+						tudo, estas alterações não nos podem explicar os graves symptomas que tem
+						por epilogo a morte.</p>
+					<p xml:id="p_novaes_0030">Tambem não podemos admittir a identidade que observou
+						Chervim entre esta molestia e a <term type="illness" xml:id="t_novaes_0210"
+							lemma="febre intermitente">febre intermittente</term>, onmo sendo o grão
+						mais elevado dos diversos accideutes que o miasma paludoso pode
+						produzir.</p>
+					<p xml:id="p_novaes_0031">As observações de Chervim, apezar de muito curiosas,
+						não escapam á esta humilde objecção. Porque o <term type="chemical-medicine"
+							xml:id="t_novaes_0211" lemma="sulfato de quinina">sulphato de
+							quinina</term> não apresenia na <term type="illness"
+							xml:id="t_novaes_0212" lemma="febre amarela">febre amarella</term> os
+						brilhantes resultados que apresenta quando é empregado contra a <term
+							type="illness" xml:id="t_novaes_0213" lemma="febre intermitente">febre
+							intermittente</term>? Alem d'isso a existencia da <term type="illness"
+							xml:id="t_novaes_0214" lemma="febre amarela">febre amarella</term> em
+						lugares não paludosos vem dizer-nos anenhuma analogia com a <term
+							type="illness" xml:id="t_novaes_0215" lemma="febre intermitente">febre
+							intermittente</term>, visto como esta geralmente se apresenta nos
+						lugares onde existem materias vegeto-animaes em estado de putrefacção.</p>
+					<pb n="5"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0008.jp2&amp;id=101464815.nlm.nih.gov"/>
+					<p xml:id="p_novaes_0032">Podemos reconhecer, e aqui mesmo confessamos, que a
+							<term type="illness" xml:id="t_novaes_0216" lemma="febre amarela">febre
+							amarella</term> algumas vezes pode revertir o typo intermittente e
+						manifestar accessos periodicos.</p>
+					<p xml:id="p_novaes_0033">Mas que concluir-se se as duas molestias podem muita
+						vez complicar-se, e os symptomas de uma serem suffocados pela predominancia
+						de outra?</p>
+					<p xml:id="p_novaes_0034">E nem se nos diga que a <term type="illness"
+							xml:id="t_novaes_0217" lemma="febre amarela">febre amarella</term> pode
+						ser comparada com uma <term type="illness" xml:id="t_novaes_0218">icterice
+							grave</term> por apresentar o doente a côr amarella da <term
+							type="body-part" xml:id="t_novaes_0004" lemma="pele">pelle</term>,
+						porque esta <term type="illness" xml:id="t_novaes_0219">icterice</term> é
+						hematogena e não hepatogena; isto é, a côr amarella que apresentam os
+						doentes não é devida a substancia corante da bilis derramada no sangue, e
+						sim aos glodulos vermelhos d'este liquido, que, em completo estado de
+						dissolução, se introduzem nos <term type="body-part" xml:id="t_novaes_0005"
+							lemma="vaso capilar">vazos capilares</term>.</p>
+					<p xml:id="p_novaes_0035">Keraudrin parece partilhar d'essa opinião, dizendo
+						muito expressivamente «pode-se comparar áqui a côr icterica a côr amarella
+						que t[ILEGÍVEL: p. 5]a <term type="body-part" xml:id="t_novaes_0006"
+							lemma="pele">pelle</term> no lugar em que tem sido contusa.»</p>
+					<p xml:id="p_novaes_0036">Deixando de lado todas estas hypotheses, consideramos
+						a <term type="illness" xml:id="t_novaes_0220" lemma="febre amarela">febre
+							amarella</term> como um envenenamento de todo organismo, (totius
+						substantia de Dutrouleau) em que este reagindo dá lugar a manifestação de
+						tão graves symptomas, quer de lado geral da nutrição, quer dos phenomenos
+						propriamente inherentes ao systema nervoso da vida de relação.</p>
+				</div>
+				<div>
+					<head xml:id="h_novaes_0021">A <term type="illness" xml:id="t_novaes_0221"
+							lemma="febre amarela">febre amarella</term> é ou não contagiosa ?</head>
+					<p xml:id="p_novaes_0037">E' esta uma questão de alta importancia sobre a qual
+						grandes debates se tem suscitado na sciencia; uns admittem o contagio,
+						outros o negam; entre uns e outros ha vultos eminentes. Entretanto este
+						problema de tão difficil resolução acha-se ainda sujeito ao nebuloso dominio
+						das hypotheses.</p>
+					<p xml:id="p_novaes_0038">Nós, pela leitura que temos feito de diversos authores
+						que especialmente se occupam da <term type="illness" xml:id="t_novaes_0222"
+							lemma="febre amarela">febre amarella</term>, e entre elles, Dutroulau,
+						Griezinger e Saint-Vel, somos levados a crer que esta molestia é
+						infecto-contangiosa.</p>
+					<p xml:id="p_novaes_0039">Admittimos o contangio directo e indirecto, aquelle
+						correspoude <pb n="6"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0009.jp2&amp;id=101464815.nlm.nih.gov"
+						/>as molestias virulentas, este as molestias que se propagam á individuos
+						sem ser por meio da inoculação, e sim por meio de emanações, reproduzindo-se
+						quasi sempre com os mesmos caracteres. São estes os dous modos que
+						admittimos para a transmissão do contagio, isto é, a germinação sobre a
+						parte e absorpção sobre os <term type="body-part" xml:id="t_novaes_0007"
+							lemma="tegumento">tegumentos</term>.</p>
+					<p xml:id="p_novaes_0040">Como infectuosa só ha um meio de transmissão, é a
+						absorpção pulmonar ou cutanea. Na infecção é necessario que haja um fóco e
+						que actuem sobre elle as condições do sólo e meteorologicas. No contagio, o
+						foco é o proprio individuo affectado, as mercadorias e as vestimentas, o que
+						tem sido cabalmente provado pela importação d'esta molestia.</p>
+					<p xml:id="p_novaes_0041">E quando os inumeros factos observados não bastassem
+						para comprovar de modo irrefragavel a propriedade contagiosa da <term
+							type="illness" xml:id="t_novaes_0223" lemma="febre amarela">febre
+							amarella</term>, cuja causa até hoje desconhecida, mas que por sua
+						natureza ninguem lhe poderá [ILEGÍVEL: p. 6] a sua especifidade pois que
+						atacando grande numero de individuos se reproduz quasi sempre com os mesmos
+						caracteres e symptomas, e ainda mais pela immunidade maior ou menor de que
+						parecem gozar quando uma vez acomettidos, nos induzem a não poder duvidar
+						absolutamente do caracter nimiamente contágioso d'esta enfermidade.</p>
+					<p xml:id="p_novaes_0042">Temos visto ainda que ella raras vezes se apresenta
+						expontaneamente, e que a chegada de navios procedentes de portos infectos é
+						a causa mais frequente de seu desenvolvimento, e que só o desemdarque de
+						pessoas affectadas vem produzir o constante foco da molestia.</p>
+					<p xml:id="p_novaes_0043">Bem alto fallam em favor d'essa opinião os factos
+						dados em paizes em que a policia sanitaria e o governo velam pela saude do
+						povo. Para melhor corroborar o que temos dito, citaremos aqui alguns factos
+						de contagio observados por medicos distinctos.</p>
+					<p xml:id="p_novaes_0044">O Dr. Lind refere que tendo sido aberto na
+						Philadelphia um bahú de um moço que morrera de <term type="illness"
+							xml:id="t_novaes_0224" lemma="febre amarela">febre amarella</term> na
+						Barbada, todas as pessoas que assistiram a este acto foram atacadas da mesma
+						molestia que logo depois assolou a cidade.</p>
+					<p xml:id="p_novaes_0045">O mesmo author diz que a epidemia, que devastou Cadix
+						em 1764, foi importada por um navio que alli aportara procedente da America,
+						que a<pb n="7"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0010.jp2&amp;id=101464815.nlm.nih.gov"
+						/> molestia, principiando nas tabernas em que estavam alojados os
+						marinheiros, communicou-se as casas vesinhas, habitadas pela classe
+						indigonte, e assim se propagou por toda cidade.</p>
+					<p xml:id="p_novaes_0046">O Dr. Bally diz que a epidemia, que se manifestou em
+						1793 no continente da America, foi levada das Antilhas pelos colonos
+						fráncezes, que então para alli emigraram para não serem victimas da matança
+						geral.</p>
+					<p xml:id="p_novaes_0047">O Dr. Moreau de Jonés refere o seguinte facto; em 1808
+						o brigue francez Palinuro foi ancorar no porto Forte-Real da Martinica: a
+							<term type="illness" xml:id="t_novaes_0225" lemma="febre amarela">febre
+							amarella</term> communicou-se immediatamente a equipagem; a mortandade
+						tornou-se consideravel. O governador, esperando que a molestia diminuisse de
+						intencidade em pleno mar, mandou que essa embarcação fosse cruzar:
+						cumprio-se a ordem. O brigue inglez Carnation, vindo da Europa, não tendo
+						arribado e nem tendo doentes a seu bordo, achou-se nas aguas do Palinuro;
+						trávaram combate: o capitão francez ordenou abordagem; a maior parte da sua
+						equipagem foi passado para o Palinuro e um grande numero d'ella atacada da
+							<term type="illness" xml:id="t_novaes_0226" lemma="febre amarela">febre
+							amarella</term>. O mesmo refere muitos outros casos identicos que não
+						deixam á menor duvida sobre o contagio da <term type="illness"
+							xml:id="t_novaes_0227" lemma="febre amarela">febre amarella</term>.</p>
+					<p xml:id="p_novaes_0048">Os Drs. Villalba, Arejula, Palloni, Bonneau, Sulpicy,
+						Pym, Lining, Caillot, Mitchell, Parizet etc, observaram casos analogos aos
+						que acabamos de referir, e julgaram a molestia eminentemente contagiosa.</p>
+					<p xml:id="p_novaes_0049">Aqui entre nós deu-se o facto seguinte: a gazeta
+						medica da Bahia de 15 de Setembro de 1869 diz que em meiado de Abril do
+						mesmo anno entrou no nosso porto, procedente do Rio da Prata por Santa
+						Catharina e Rio de Janeiro, onde permaneceu por muitos dias, a corveta
+						italiana Guiscardo. No dia 23 de Abril foi conduzido ao Hospital da Caridade
+						um marinheiro, por alguns dos tripolantes do vaso, ja quasi morto. No dia
+						seguinte entraram mais trez do mesmo navio, e todos accommettidos de <term
+							type="illness" xml:id="t_novaes_0228" lemma="febre amarela">febre
+							amarella</term>: um esteve na enfermaria de S. Francisco, e dous em S.
+						José. O Sr. P. L.... chamado para confessar os doentes por conhecer a lingua
+						italiana foi affectado da <term type="illness" xml:id="t_novaes_0229"
+							lemma="febre amarela">febre amarella</term> por contagio.</p>
+				</div>
+			</div>
+			<div>
+				<head xml:id="h_novaes_0022">SEGUNDA PARTE Tratamento therapeutico.</head>
+				<epigraph>
+					<p xml:id="p_novaes_0050">Si tu ne peux as soulager, sache au moins ne point
+						nuire. (HUFELAND).</p>
+				</epigraph>
+				<pb n="8"
+					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0011.jp2&amp;id=101464815.nlm.nih.gov"/>
+				<p xml:id="p_novaes_0051">E' esta, por sem duvida, a parte mais difficil e
+					importante de nossa dissertação.</p>
+				<p xml:id="p_novaes_0052">E' na procura dos meios que o medico deve empregar para
+					debellar este mal, que os seus <term type="body-part" xml:id="t_novaes_0008"
+						lemma="olho">olhos</term> penetrantes prescrutam no organismo do enfermo a
+					causa de seus soffrimentos.</p>
+				<p xml:id="p_novaes_0053">Por maiores porem que tenham sido as vigilias que locubrem
+					a sua vida, por mais ricas e brilhantes que tenham sido as conquistas feitas
+					pelos pathologistas, ainda o talento investigador do pratico não poude
+					descrimina a causa directa de tão atroz soffrimento.</p>
+				<p xml:id="p_novaes_0054">A anatomia pathologica, que tanto tem contribuido para dar
+					a pathologia interna os fóros de sciencia, ainda não pronunciou a sua ultima
+					palavra sobre e conhecimto intimo de outras molestias, e muito menos sobre a
+					pathogenia da <term type="illness" xml:id="t_novaes_0230" lemma="febre amarela"
+						>febre amarella</term>.</p>
+				<p xml:id="p_novaes_0055">A materia medica e a therapeutica que, tão importantes
+					descobrimentos tem feito, tanto no reino organico como inorganico, ellas que
+					cada dia devassam novos horisontes e attingem zonas mais luminosas, vacillam
+					ainda duvidosas á cata de um agente que, senão especifico pelo menos efficaz,
+					possa expellir do seio da economia o principio deleterio que com tanta violencia
+					pretende aniquilal-a.</p>
+				<p xml:id="p_novaes_0056">E' pois no tratamento d'esta enfermidede que os recursos
+					do medico devem ser variados, porque desconhecendo a natureza ou antes a
+					essencia do mal, somente lhe resta a applicação dos meios indirectos.</p>
+				<p xml:id="p_novaes_0057">E' per tanto o tratamento symptomatico que elle tem de
+					preencher, e <pb n="9"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0012.jp2&amp;id=101464815.nlm.nih.gov"
+					/>assim mesmo este deve ser modificado em vista da intensidade dos phenomenos, e
+					das condições inherentes ao individuo, e ao contrario não se póde explicar os
+					diversos modos de tratamento que nas monographias d'esta enfermidade apresentam
+					os praticos.</p>
+				<p xml:id="p_novaes_0058">Sendo certo que a <term type="illness"
+						xml:id="t_novaes_0231" lemma="febre amarela">febre amarella</term> tem
+					periodos bem definidos, que difficilmente podem escapar aos <term
+						type="body-part" xml:id="t_novaes_0009" lemma="olho">olhos</term> do
+					clinico, vamos apresentar os meios que podemos empregar em cada um desses
+					periodos.</p>
+				<p xml:id="p_novaes_0059">No primeiro periodo, denominado prodromico, e em que os
+					individuos accusam uma especie de <term type="symptom" xml:id="t_novaes_0232"
+						lemma="mal-estar">máo estar</term>, <term type="symptom"
+						xml:id="t_novaes_0233" lemma="calafrio">calafrios</term>, <term
+						type="symptom" xml:id="t_novaes_0234" lemma="cefalalgia frontal">cephalalgia
+						frontal</term>, e o facto bem caracteristico da <term type="symptom"
+						xml:id="t_novaes_0235" lemma="raquialgia">rhachialgia</term>, quasi todos os
+					praticos aconselham que a todo transe se provoque a <term type="symptom"
+						xml:id="t_novaes_0236" lemma="diaforese">diaphorese</term> e que se promova
+					o excitamento da <term type="body-part" xml:id="t_novaes_0010" lemma="pele"
+						>pelle</term>: o <term type="plant" xml:id="t_novaes_0011" lemma="acônito"
+						>aconito</term>, o acetado de ammonea, as infusões de <term type="plant"
+						xml:id="t_novaes_0012">sabugueiro</term>, <term type="plant"
+						xml:id="t_novaes_0013">borragem</term>, as bebidas quentes e mornas, que
+					contenham aromas pouco energicos, bem como as infuzões de <term type="plant"
+						xml:id="t_novaes_0014">melissa</term>, de <term type="plant"
+						xml:id="t_novaes_0015">chá</term>, <term type="plant" xml:id="t_novaes_0016"
+						lemma="tília">tilia</term>, <term type="plant" xml:id="t_novaes_0017"
+						>arnica</term>, grellos de <term type="plant" xml:id="t_novaes_0018"
+						lemma="laranjeira">larangeiras</term>, as <term type="chemical-medicine"
+						xml:id="t_novaes_0237" lemma="tintura canforada">tincturas
+						camphoradas</term>, as bebidas aciduladas com vinagre e com sumo de limão,
+					são prescriptas de concomitancia com os revulsivos cutaneos, os pediluvios, e os
+					banhos quentes e mornos, excitando-se a <term type="body-part"
+						xml:id="t_novaes_0019" lemma="pele">pelle</term> do doente ao enxugar-se-lhe
+					o corpo. Tem se colhido bons resultados pelo emprego d'essa medicação no
+					principio da invasão do mal, e principalmente quando ha <term type="symptom"
+						xml:id="t_novaes_0238" lemma="dor">dores</term> nos <term type="body-part"
+						xml:id="t_novaes_0020" lemma="rim">rins</term>, <term type="symptom"
+						xml:id="t_novaes_0239">frio geral</term>, <term type="symptom"
+						xml:id="t_novaes_0240" lemma="cólica">colicas</term> e calor nos <term
+						type="body-part" xml:id="t_novaes_0021" lemma="intestino"
+					>intestinos</term>.</p>
+				<p xml:id="p_novaes_0060">Ainda n'este periodo o distincto lente de clinica interna,
+					o Sr. Dr. Torres Homem no Rio de Janeirv, preconisara muito a seguiute
+					formula.</p>
+				<table>
+					<row>
+						<cell>R.—Infusão de <term type="plant" xml:id="t_novaes_0022"
+								>sabugueiro</term></cell>
+						<cell>seis onças.</cell>
+					</row>
+					<row>
+						<cell><term type="chemical-medicine" xml:id="t_novaes_0241"
+								lemma="acetato de amônia">Acetato de ammonea</term></cell>
+						<cell>duas oitavas.</cell>
+					</row>
+					<row>
+						<cell>Tinctura de <term type="plant" xml:id="t_novaes_0023" lemma="acônito"
+								>aconito</term></cell>
+						<cell>vinte gottas.</cell>
+					</row>
+					<row>
+						<cell>Dita de <term type="plant" xml:id="t_novaes_0024" lemma="beladona"
+								>belladona</term></cell>
+						<cell>quinze gottas.</cell>
+					</row>
+					<row>
+						<cell>Xarope de flôres de <term type="plant" xml:id="t_novaes_0025"
+								lemma="laranjeira">larangeira</term></cell>
+						<cell>uma onça.</cell>
+					</row>
+					<row>
+						<cell>Misture para tomar aos calices,</cell>
+					</row>
+				</table>
+				<p xml:id="p_novaes_0061">Tivemos occasião de observar que n'este periodo a
+					medicação tonica em começo produzio grandes resultados, por isso que os doentes
+					melhoravam vizivelmente com o uso das infusões de <term type="plant"
+						xml:id="t_novaes_0026" lemma="quássia">quassia</term>, <term type="plant"
+						xml:id="t_novaes_0027">simaruba</term>, <term type="plant"
+						xml:id="t_novaes_0028">genciana</term>, tinctura de <term type="plant"
+						xml:id="t_novaes_0029">calumba</term> e tambem a agua ingleza.</p>
+				<pb n="10"
+					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0013.jp2&amp;id=101464815.nlm.nih.gov"/>
+				<p xml:id="p_novaes_0062">Esse tratamento foi adoptado na casa de Saude de Sr.
+					Fancisco, para onde foram recolhidos 68 doentes, cujo tratamento acompanhamos á
+					convite do nosso illustre mestre o Sr. Dr. Domingos Rodrigues Seixas. Quando
+					esses meios são infructiferos, então vê-se a intensidade dos phenomenos
+					descriptos no primeiro periodo tornar-se maior, e á elles ajuntar-se o <term
+						type="symptom" xml:id="t_novaes_0242" lemma="vômito mucoso">vomito
+						mucoso</term>, a <term type="symptom" xml:id="t_novaes_0243"
+						lemma="dor epigástrica">dôr epigastrica</term>, a <term type="symptom"
+						xml:id="t_novaes_0244" lemma="turgência">turgencia</term> da <term
+						type="body-part" xml:id="t_novaes_0030">face</term>, a injecção das <term
+						type="body-part" xml:id="t_novaes_0031" lemma="conjuntiva"
+						>conjuctivas</term>, ar <term type="symptom" xml:id="t_novaes_0245"
+						>constipação</term> ou a <term type="symptom" xml:id="t_novaes_0246"
+						>soltura</term> de <term type="body-part" xml:id="t_novaes_0032"
+						>ventre</term> etc.</p>
+				<p xml:id="p_novaes_0063">Este constitue o segundo periodo. E' n'essa occasião que a
+					medicação evacuante tem sido applicada com grandes vantagens por todos os
+					medicos que tem tratado da <term type="illness" xml:id="t_novaes_0247"
+						lemma="febre amarela">febre amarella</term>, e principalmente pelos
+					inglezes, Norte Americanos, e Brazileiros, e sobre tudo nas luctuosas épocas de
+					1849 e 1850, quando as provincias do Rio de Janeiro e Bahia foram devastadas por
+					esta terrivel molestia.</p>
+				<p xml:id="p_novaes_0064">Os purgativos oleosos e salinos, e entre elles os que tem
+					sido mais recommendados, são o oleo de <term type="plant" xml:id="t_novaes_0033"
+						lemma="rícino">ricino</term>, os <term type="chemical-medicine"
+						xml:id="t_novaes_0248" lemma="sulfato de magnésia e soda">sulphatos de
+						magnesia e soda</term>, a pôlpa de <term type="plant" xml:id="t_novaes_0034"
+						lemma="tamarindo">tamarindos</term>, o maná, o tartrato, acido de potassa e
+					o <term type="chemical-medicine" xml:id="t_novaes_0249" lemma="calomelano"
+						>calomelanos</term>: de entre estes ainda os que tem sido mais geralmente
+					empregados são o oleo de <term type="plant" xml:id="t_novaes_0035"
+						lemma="rícino">ricino</term> e os <term type="chemical-medicine"
+						xml:id="t_novaes_0250" lemma="sulfato de magnésia e soda">sulphatos de
+						magnesia e sóda</term>. O oleo de <term type="plant" xml:id="t_novaes_0036"
+						lemma="cróton">Croton</term> fôra tambem preconisado pelos Drs. Tegart e
+					Macheto, quando praticaram nas antilhas inglezas. O Dr. Tegart diz que uma ou
+					duas gottas d'esta substancia postas sobre a <term type="body-part"
+						xml:id="t_novaes_0037" lemma="língua">lingua</term> não só excitam a acção
+					dos <term type="body-part" xml:id="t_novaes_0038" lemma="intestino"
+						>intestinos</term> como tambem a dos <term type="body-part"
+						xml:id="t_novaes_0039" lemma="rim">rins</term>.</p>
+				<p xml:id="p_novaes_0065">De todos os purgativos porem, aqulle que fôra preconizado
+					como meio quasi especifico para o tratamento da <term type="illness"
+						xml:id="t_novaes_0251" lemma="febre amarela">febre amarella</term>, foi o
+						<term type="chemical-medicine" xml:id="t_novaes_0252" lemma="calomelano"
+						>calomelanos</term>. Os factos citados pelos medicos inglezes e Norte
+					Americanos e por muitos outros adeptos d'este medicamento, parecem provar os
+					melhores resultados. Porém nós, guardadas todas as conveniencias, regeitamos
+					este meio, porque na <term type="illness" xml:id="t_novaes_0253"
+						lemma="febre amarela">febre amarella</term> estando toda massa sanguinea no
+					maior grão de deluição, existindo por assim dizer uma dyscrazia do sangue, e
+					sendo o <term type="chemical-medicine" xml:id="t_novaes_0254" lemma="calomelano"
+						>calomelanos</term> um diluente de primeira força, um alterantbem conhecido,
+					parece-nos curial que por este meio vamos tornar o sangue mais fluido e por
+					tanto tornar o estado do doente mais grave, pelas<pb n="11"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0014.jp2&amp;id=101464815.nlm.nih.gov"
+					/> circunstancias que mais tarde hão de por força sobrevir, oque não acontece
+					com os outros purgativos, que alem de não produzirem os inconvenieentes que
+					acabamos de referir, tem a nosso modo de ver, não só a vantagem de oppôr uma
+					dirivação ás <term type="symptom" xml:id="t_novaes_0255" lemma="congestão"
+						>congestões</term> sanguineas, despertando o erythismo do systema nervoso, e
+					ao mesmo tempo podem favorecer a a eliminação do agente morbifico.</p>
+				<p xml:id="p_novaes_0066">Quando no decurso d'este periodo sobrevem phenomenos
+					ataxicos, taes como <term type="symptom" xml:id="t_novaes_0256" lemma="delírio"
+						>dilirio</term>, <term type="symptom" xml:id="t_novaes_0257"
+					>agitação</term>, <term type="symptom" xml:id="t_novaes_0258"
+						lemma="sobressalto">sobre-salto</term> dos <term type="body-part"
+						xml:id="t_novaes_0040" lemma="tendão">tendões</term>, <term type="symptom"
+						xml:id="t_novaes_0259" lemma="contratura">contracturas</term>, certas <term
+						type="symptom" xml:id="t_novaes_0260" lemma="congestão">congestões</term>, e
+					se as <term type="symptom" xml:id="t_novaes_0261" lemma="dor epigástrica">dores
+						epigastricas</term> augmentam, então conjunctamente com estes meios á que
+					nos referimos, empregaremos os sinapismos de mostarda, os visicatorios volantes,
+					e ainda os sudoriferos, pois que alem de combaterem esses phenomes podem
+					coadjuvar (os ultimos) á sahida do agente deleterio.</p>
+				<p xml:id="p_novaes_0067">Tambem as compressas de agua fria e de agua avinagrada, a
+					agua sedativa de Raspail, quando a <term type="symptom" xml:id="t_novaes_0262"
+						lemma="cefalalgia">cephalalgia</term> é rebelde, tem dado resultados
+					satisfatorios.</p>
+				<p xml:id="p_novaes_0068">E'ra n'este periodo, e muita vez desde o principio da
+					molestia que a sangria fôra preconisada, e de tal modo que, mesmo sem notavel
+					excitação manifestar-se, muitos medicos sangravam os seus doentes.</p>
+				<p xml:id="p_novaes_0069">A Escola de Broussais tinha então toda vóga. A sciencia
+					porém progredira, e em face dos factos hoje colhidos por observadores de grande
+					nota, este meio, que bem se pode chamar de barbaro, deve ser inteiramente
+					proscripto. A pathologia deve lavrar um protesto solemne contra semelhante
+					tratamento. Ainda quando a <term type="illness" xml:id="t_novaes_0263"
+						lemma="febre amarela">febre amarella</term> ataque um individuo de
+					constituição robusta e temperamento sanguineo, quando a febre se mostrar em um
+					grão assaz intenso, de modo que receiemos <term type="symptom"
+						xml:id="t_novaes_0264" lemma="congestão">congestões</term> para orgaõs
+					importantes, outros meios teremos de reconhecida vanagem.</p>
+				<p xml:id="p_novaes_0070">N'esta molestia em que, para nós ha um envenenamento geral
+					da economia, procedendo d'ahi o consideravel <term type="symptom"
+						xml:id="t_novaes_0265">abatimento</term> das forças, como poderemos tirar
+					sangue? Como roubarmos ao organismo uma parte de que elle tanto precisa para
+					reagir? Eliminaremos o principio morbifico <pb n="12"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0015.jp2&amp;id=101464815.nlm.nih.gov"
+					/>diminuindo a massa do sangue? E em taes casos a convalença não será muito mais
+					longa? Portanto proscrevemos sempre a sangria, e estamos certos de que se os
+					praticos, aliás de grande nota, que tanto a preconisavam, tivessem de tratar
+					hoje da <term type="illness" xml:id="t_novaes_0266" lemma="febre amarela">febre
+						amarella</term>, não dariam á sangria tanta importancia como n'aquelles
+					tempos. Até as sangrias locaes, as ventosas e as sanguessugas são para nós
+					contra-indicadas em razão da tendencia que ha para as <term type="symptom"
+						xml:id="t_novaes_0267" lemma="hemorragia">hemorrhagias</term>: qualquer
+					escoriação póde com muita facilidade dar em resultado um escorrimento
+					abundantissimo de sangue, occazionando muitas vezes até a morte.</p>
+				<p xml:id="p_novaes_0071">Quando n'este periodo a <term type="symptom"
+						xml:id="t_novaes_0268" lemma="sede">sêde</term> for intensa e a <term
+						type="body-part" xml:id="t_novaes_0041" lemma="língua">lingua</term> secca,
+					a administração das bebidas geladas, as limonadas mais de acidos vegetaes do que
+					mineraes, tem dado bons resultados no tratamento d'esta molestia. Muitas vezes
+					porem os doentes não podem suportar as limonadas geladas! porque estas
+					provocam-lhes os <term type="symptom" xml:id="t_novaes_0269" lemma="vômito"
+						>vomitos</term>: então a agua fresca, a agua gazoza adoçada —com o xarope de
+					limão, constituem uma bebida assaz agradavel, e que muito alliviam aos doentes
+					que se escaldam pela febre.</p>
+				<p xml:id="p_novaes_0072">Os vomitivos apezar de serem eminentemente contra
+					indicados por muitos praticos, em razão das <term type="symptom"
+						xml:id="t_novaes_0270" lemma="hemorragia">hemorrhagias</term> gastricas e da
+					presença do sangue no <term type="body-part" xml:id="t_novaes_0042"
+						lemma="estômago">estomago</term>, principaes causas dos <term type="symptom"
+						xml:id="t_novaes_0271" lemma="vômito">vomitos</term> e das <term
+						type="symptom" xml:id="t_novaes_0272" lemma="náusea">nauseas</term> nos
+					doentes de <term type="illness" xml:id="t_novaes_0273" lemma="febre amarela"
+						>febre amarella</term>, outros ha porem, que asseveram ter tirado muito bom
+					proveito pela applicação d'elles.</p>
+				<p xml:id="p_novaes_0073">Infelizmente á esta terrivel molestia não se pode applicar
+					o theorema, vomito cura-se com vomito; mas tambem não se deve excluir
+					absolutamente as indicações emeticas, e somos de opinião que em alguns casos e
+					circunstancias os vomitivos podem favorecer o curativo da <term type="illness"
+						xml:id="t_novaes_0274" lemma="febre amarela">febre amarella</term>. Assim
+					pois nós não os indicamos como tharapeutica geral para todos os casos e
+					circunstancias, como discussivos para expellir o principio morbifico e como
+					evacuantes para desembaraçar o apparelho digestivo, porque sabemos que elles
+					podem, irritando o <term type="body-part" xml:id="t_novaes_0043"
+						lemma="estômago">estomago</term>, aggravar o mal apressando as <term
+						type="symptom" xml:id="t_novaes_0275" lemma="hemorragia">hemorrhagias</term>
+					e o apparecimento do <term type="symptom" xml:id="t_novaes_0276" lemma="vômito"
+						>vomito</term> negro, que sendo um symptoma gravissimo devemos tanto mais
+					evital-o.</p>
+				<p xml:id="p_novaes_0074">Banil-os totalmente, esqueceriamo-nos de que a pratica tem
+						provado<pb n="13"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0016.jp2&amp;id=101464815.nlm.nih.gov"
+					/> que elles são proveitosos no principio da molestia, e sobre tudo quando a
+						<term type="body-part" xml:id="t_novaes_0044" lemma="língua">lingua</term>
+					se achar saburrosa, quando houver <term type="symptom" xml:id="t_novaes_0277"
+						lemma="mau gosto">máo gosto</term>, <term type="symptom"
+						xml:id="t_novaes_0278" lemma="hálito fétido">halito fetido</term>, alguma
+						<term type="symptom" xml:id="t_novaes_0279" lemma="cefalalgia"
+						>cephalalgia</term>, e sem que a molestia esteja muito adiantada, não
+					havendo notavel inflammação no <term type="body-part" xml:id="t_novaes_0045"
+						lemma="estômago">estomago</term>.</p>
+				<p xml:id="p_novaes_0075">Mas ainda n'estes casos, receiamos a applicação do <term
+						type="chemical-medicine" xml:id="t_novaes_0280" lemma="tártaro emético"
+						>tartáro emetico</term>, em razão da grande prostação que elle produz nos
+					doentes, e ainda pela irritação que naturalmente produzirá na <term
+						type="body-part" xml:id="t_novaes_0046">mucosa</term> do <term
+						type="body-part" xml:id="t_novaes_0047" lemma="estômago">estomago</term>:
+					nós damos a preferencia a <term type="plant" xml:id="t_novaes_0048"
+						lemma="ipecacuanha">epecacuanha</term>, porque alem de não irritar tanto o
+						<term type="body-part" xml:id="t_novaes_0049" lemma="estômago"
+						>estomago</term> e nem abater tanto o organismo enfermo, tem a vantagem de
+					chamar para a <term type="body-part" xml:id="t_novaes_0050" lemma="pele"
+						>pelle</term> a transpiração, o que nos parece de não pequena vantagem.</p>
+				<p xml:id="p_novaes_0076">Ainda n'estes casos, e talvez com mais prudencia, alguns
+					praticos aconselham que se faça vomitar o doente pela ingestão de grandes
+					quantidades de agua morna, ou ingerindo copos de azeite, segundo praticavam os
+					mexicamos.</p>
+				<p xml:id="p_novaes_0077">Quando no segundo periodo sobrevém os <term type="symptom"
+						xml:id="t_novaes_0281" lemma="vômito nervoso">vomitos nervosos</term>
+					acompanhados de repetidos <term type="symptom" xml:id="t_novaes_0282"
+						lemma="soluço">soluços</term>, symptoma que, seja dito de passagem, é bem
+					difficil de combater-se na maioria dos casos, tem sido applicados os
+					antispasmodicos, e entre elles o <term type="chemical-medicine"
+						xml:id="t_novaes_0283" lemma="éter">ether</term>, o castorios, o almiscar, a
+						<term type="chemical-medicine" xml:id="t_novaes_0284" lemma="cânfora"
+						>camphora</term> conjunctamente com o gêlo, o vinho branco, a poção
+					antivomitiva de Riviére, e com quanto não sejam infalliveis esses seus meios,
+					todavia tem dado resultados satisfatorios.</p>
+				<p xml:id="p_novaes_0078">Para combater a <term type="symptom"
+						xml:id="t_novaes_0285" lemma="insônia">insomnia</term> e a <term
+						type="symptom" xml:id="t_novaes_0286">agitação</term>, que muita vez
+					apparecem n'este periodo, tem se lançado mão do <term type="chemical-medicine"
+						xml:id="t_novaes_0287" lemma="ópio">opio</term>, quer interna quer
+					externamente. O Sr. Griezinger preconisa muito o <term type="chemical-medicine"
+						xml:id="t_novaes_0288" lemma="ácido cianídrico">acido cyanhydrico</term>
+					como poderoso calmante.</p>
+				<p xml:id="p_novaes_0079">O <term type="symptom" xml:id="t_novaes_0289"
+						lemma="delírio furioso">delirio furioso</term>, as <term type="symptom"
+						xml:id="t_novaes_0290" lemma="cefalalgia persistente">cephalalgias
+						persistentes</term> e outros phenomenos de excitação, foram vantajosamente
+					combatidos, pelos Srs. Dutroulau, Griezinger, Saint-Vel e Chapius, por meio dos
+					banhos gelados e das affusões d'agua fria. Por este meio tonico e refrigerante,
+					elles conseguiam grandes subtrações de calor, e a diminuição de numero das
+					pulsações: a <term type="symptom" xml:id="t_novaes_0291" lemma="cefalalgia"
+						>cephalalgia</term> diminuia, e muitas vezes apparecia a emissão das urinas
+					nos casos de <term type="symptom" xml:id="t_novaes_0292" lemma="anúria"
+						>anuria</term>.</p>
+				<p xml:id="p_novaes_0080">Os mesmos praticos exerciam uma especie de hydrotherapia
+						submettendo<pb n="14"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0017.jp2&amp;id=101464815.nlm.nih.gov"
+					/> o doente a um banho de agua fria por alguns minutos, depois retiravam-no,
+					enxugavam-no, envolviam-no em um panno molhado! e depois em uma colcha de lã:
+					collocavam-no sobre o leito, e fazendo beber grande porção de agua fria gelada,
+					dava-se uma transpiração abundante, o doente sentia mais socego, e consiliava o
+					somno por algumas horas.</p>
+				<p xml:id="p_novaes_0081">Acreditamos muito neste meio curativo, visto como se elle
+					por si só não modifica a gravidade do mal, ao menos retarda por algum tempo a
+					apparição dos accidentes nervosos, e previne uma forte fluxão de sangue para a
+						<term type="body-part" xml:id="t_novaes_0051">cabeça</term>. O Sr. Dr.
+					Pereira Rego no Rio de Janeiro preconisou a pomada de <term type="plant"
+						xml:id="t_novaes_0052" lemma="beladona">belladona</term> e <term
+						type="plant" xml:id="t_novaes_0053" lemma="louro-cereja">louro cereja</term>
+					para fricções na <term type="body-part" xml:id="t_novaes_0054"
+						lemma="coluna vertebral">columna vertebral</term>, nos phenomenos ataxicos
+					acompanhados de <term type="symptom" xml:id="t_novaes_0293" lemma="sobressalto"
+						>sobre-salto</term> dos <term type="body-part" xml:id="t_novaes_0055"
+						lemma="tendão">tendões</term> e convulsões. O mesmo clinico empregou, e diz
+					qne com bons resultados, o emplastro de theriaga sobre a região epigasdrica para
+					combater o <term type="symptom" xml:id="t_novaes_0294" lemma="vômito nervoso"
+						>vomito nervoso</term>.</p>
+				<p xml:id="p_novaes_0082">A febre n'este periodo, que as vezes é muito consideravel,
+					tem sido combatida, pela infusão de <term type="plant" xml:id="t_novaes_0056"
+						lemma="serpentária-da-virgínia">serpentaria de virginia</term> ou pelo
+					cosimento antifebril de Lewis, e este medicamente fôra muito preconisado pelo
+					Exm. Sr. Barão de Petropoles, distincto clinico do Rio de Janeiro.</p>
+				<p xml:id="p_novaes_0083">Todos esses medicamentos que acabamos de indicar,
+					acompanhados dos tonicos, tem sido proveitosos no segundo poriodo da <term
+						type="illness" xml:id="t_novaes_0295" lemma="febre amarela">febre
+						amarella</term>.</p>
+				<p xml:id="p_novaes_0084">Tratemos agora da remissão, tambem chamada falsa tregua,
+					que ha entre o segundo e o terceiro periodos, onde distingue-se, sem muita
+					difficuldade a suspensão dos accidentes: é n'esta occasião que muitas vezes os
+					doentes apresentam um bem estar e uma melhora que soem enganar aos medicos, e
+					persuadil-os de que a molestia marcha para a cura: mas de repente exacerbam-se
+					os symptomas ja descriptos e ainda mais o apparecimento de outros mais terriveis
+					complicam o estado do doente, e a esperança pouco a pouco parece abandonar ao
+					medico que lucta com um inimigo desconhecido e traiçoeiro.</p>
+				<p xml:id="p_novaes_0085">Era n'essa occasião que muitos praticos costumavam lançar
+					mão do <term type="chemical-medicine" xml:id="t_novaes_0296"
+						lemma="sulfato de quinina">sulphato de quinina</term> e muitos ainda desde o
+					principio da molestia que o applicavam como especifico para essa enfermidade. E'
+					que elles, seduzidos <pb n="15"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0018.jp2&amp;id=101464815.nlm.nih.gov"
+					/>pelos brilhantes resultados que dá o <term type="chemical-medicine"
+						xml:id="t_novaes_0297" lemma="sulfato de quinina">sulphato de quinina</term>
+					contra <term type="illness" xml:id="t_novaes_0298" lemma="febre intermitente"
+						>febre intermittente</term>, enxergavam naturalmente alguma analogia entre
+					esta e a <term type="illness" xml:id="t_novaes_0299" lemma="febre amarela">febre
+						amarella</term>, analogia levada até a natureza das duas molestias, por isso
+					que o tratamento era identico.</p>
+				<p xml:id="p_novaes_0086">Hoje porem, que a pratica se tem esclarecido, que graças
+					aos trabalhos modernos de Griesinger, Saint-Paiz, Dutroulau e Saint-Vel, se tem
+					chegado a bem distinguir estas duas entidades morbidas, já o <term
+						type="chemical-medicine" xml:id="t_novaes_0300" lemma="sulfato de quinina"
+						>sulphato de quinina</term> tem deixado de gosar do titulo de medicamento
+					especifico para a <term type="illness" xml:id="t_novaes_0301"
+						lemma="febre amarela">febre amarella</term> como o é para a
+					intermittente.</p>
+				<p xml:id="p_novaes_0087">Assim pois, logo que a remissão se manifestasse e debaixo
+					de qualquer forma que a <term type="illness" xml:id="t_novaes_0302"
+						lemma="febre amarela">febre amarella</term> se apresentasse, elles davam em
+					alta dóse o <term type="chemical-medicine" xml:id="t_novaes_0303"
+						lemma="sulfato de quinina">sulphato de quinina</term>, não tendo em
+					resultado senão ver a molestia progredir em seus symptomas pela acção altamente
+					hypostenizante da <term type="chemical-medicine" xml:id="t_novaes_0304"
+						>quinina</term> sobre o systema nervoso cerebro-spinhal. Empregado portanto
+					no principio da molestia, augmenta a <term type="symptom" xml:id="t_novaes_0305"
+						>agitação</term> e a anciedade ao doente, produzindo os zunidos dos <term
+						type="body-part" xml:id="t_novaes_0057" lemma="ouvido">ouvidos</term> e o
+					enfraquecimento da <term type="body-part" xml:id="t_novaes_0058">vista</term>,
+					emfim predispondo-o a uma <term type="symptom" xml:id="t_novaes_0306"
+						lemma="adinamia">adynamia</term> consideravel.</p>
+				<p xml:id="p_novaes_0088">Apezar do que acabamos de dizer a respeito do <term
+						type="chemical-medicine" xml:id="t_novaes_0307" lemma="sulfato de quinina"
+						>sulphato de quinina</term> empregado contra a <term type="illness"
+						xml:id="t_novaes_0308" lemma="febre amarela">febre amarella</term>, não
+					podemos negar a utilidade que d'elle se pode tirar, porém em circumstancias
+					muito restrictas.</p>
+				<p xml:id="p_novaes_0089">Quando pois a <term type="illness" xml:id="t_novaes_0309"
+						lemma="febre amarela">febre amarella</term> apresentar symptomas de
+					intermittente e quando o doente apresentar-se abatido pela força do veneno, que
+					tanto deprime o systema nervoso, o <term type="chemical-medicine"
+						xml:id="t_novaes_0310" lemma="sulfato de quinina">sulphato de quinina</term>
+					será applicado com grandes vantagens: no primeiro caso em alta dóse como
+					antipyretico; no segundo em dóses fraccionadas como tonico das forças radicaes
+					do organismo.</p>
+				<p xml:id="p_novaes_0090">Ainda á respeito do <term type="chemical-medicine"
+						xml:id="t_novaes_0311" lemma="sulfato de quinina">sulphato de quinina</term>
+					não nos podemos subtrahir á umas observações que nos fizeram acreditar na
+					vantagem de sua applicação, quando a <term type="illness" xml:id="t_novaes_0312"
+						lemma="febre amarela">febre amarella</term> apresentava symptomas de <term
+						type="illness" xml:id="t_novaes_0313" lemma="febre perniciosa">febre
+						perniciosa</term>, revelando-se por phenomenos de <term type="symptom"
+						xml:id="t_novaes_0314">ataxia</term>, <term type="symptom"
+						xml:id="t_novaes_0315">exaltação cerebral</term>, e pela <term
+						type="body-part" xml:id="t_novaes_0059" lemma="língua">lingua</term> secca e
+					queimada até a ponta, <term type="body-part" xml:id="t_novaes_0060"
+						lemma="língua">lingua</term> que humedecia passado o paroxismo. Estes factos
+					foram por nós observados na caza de saude de S. Francisco: á estes doentes o
+					emprego do <term type="chemical-medicine" xml:id="t_novaes_0316"
+						lemma="sulfato de quinina">sulphato de quinina</term> em alta dose evitava
+						a<pb n="16"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0019.jp2&amp;id=101464815.nlm.nih.gov"
+					/> reapparição dos paroxismos e, extinguindo a consideravel aridez da <term
+						type="body-part" xml:id="t_novaes_0061" lemma="língua">lingua</term>,
+					concorria para o seu restabelecimento ajudado dos tonicos em alta dose.</p>
+				<div>
+					<head xml:id="h_novaes_0023">TERCEIRO PERIODO</head>
+					<p xml:id="p_novaes_0091">E' n'este periodo que devemos applicar toda attenção,
+						afim de podermos seguir a marcha sempre crescente da molestia. Aqui duas
+						grandes indicações devem ser preenchidas: primeiro, as que dependem da
+						predominancia dos symptomas: segundo, as que são fornecidas pelo estado
+						geral do doente.</p>
+					<p xml:id="p_novaes_0092">Trez symptomas bastante graves caracterisam
+						propriamente este periodo; são os <term type="symptom"
+							xml:id="t_novaes_0317" lemma="vômito negro">vomitos negros</term>, os
+							<term type="symptom" xml:id="t_novaes_0318" lemma="acidente cerebral"
+							>accidentes cerebraes</term> e as <term type="symptom"
+							xml:id="t_novaes_0319" lemma="hemorragia">hemorrhagias</term>: tratemos
+						de cada um d'elles em particular.</p>
+					<p xml:id="p_novaes_0093">O vomito em taes casos ou é nervoso e sympatico ou é
+						essencial e <term type="symptom" xml:id="t_novaes_0320" lemma="hemorrágico"
+							>hemorrhagico</term>. No primeiro caso elle compõe-se de bilis ou de um
+						liquido anegrado; n'este caso applicamos os sinapismos na região
+						epigastrica, e os vesicatorios volantes. Muitos aconselham os causticos, os
+						quaes não achamos muito prudentes pela razão não só de facilitar a <term
+							type="symptom" xml:id="t_novaes_0321" lemma="hemorragia"
+							>hemorrhagia</term> pela excoriação que produzem, como ainda pela
+						tendencia que tem a ferida para a gangrena.</p>
+					<p xml:id="p_novaes_0094">O doente deve tomar poucas bebidas, e estas devem ser
+						agua gazosa ou agua simples gelada: e se aos doentes não repugnarem os
+						acidos, pode-se administrar as limonadas vegetaes, as laranjadas, a limonada
+						citrica, assim como o vinho branco misturado com agua de Seltz. O Dr.
+						Lacaill diz ter obtido resultados lisongeiros pela applicação do <term
+							type="chemical-medicine" xml:id="t_novaes_0322"
+							lemma="bissulfito de cal">bisulphito de cal</term>. Os medicos inglezes
+						usavam dar aos seus doentes o vinho de Champanha e a cerveja no sentido,
+						talvez, de que elles oppondo-se aos <term type="symptom"
+							xml:id="t_novaes_0323" lemma="vômito">vomitos</term> ainda obrem como
+						tonicos. Ainda aqui os antipasmodicos tem dado bons resultados; entre elles,
+						o <term type="chemical-medicine" xml:id="t_novaes_0324" lemma="éter"
+							>ether</term>, a <term type="plant" xml:id="t_novaes_0062"
+							lemma="beladona">belladona</term>, o extracto de <term type="plant"
+							xml:id="t_novaes_0063">valeriana</term> e a <term
+							type="chemical-medicine" xml:id="t_novaes_0325" lemma="cânfora"
+							>camphora</term>, acompanhados do uso constante das infusões de <term
+							type="plant" xml:id="t_novaes_0064" lemma="quássia">quassia</term>,
+							<term type="plant" xml:id="t_novaes_0065">simaruba</term>
+						<term type="plant" xml:id="t_novaes_0066">genciana</term>, e da agua
+						ingleza, que como tonicos tem triumphado d'este terrivel symptoma. Nos casos
+						em que o vomito é essencial e <term type="symptom" xml:id="t_novaes_0326"
+							lemma="hemorrágico">hemorrhagico</term>,<pb n="17"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0020.jp2&amp;id=101464815.nlm.nih.gov"
+						/> e composto de materia negra, ja quasi que todos os recursos são
+						infructiferos; com tudo não devemos crusar os <term type="body-part"
+							xml:id="t_novaes_0067" lemma="braço">braços</term>, e então lançaremos
+						mão dos adstrigentes, bem como a <term type="plant" xml:id="t_novaes_0068"
+							lemma="ratânia">ratanhia</term>, o <term type="chemical-medicine"
+							xml:id="t_novaes_0327" lemma="perclorureto de ferro">perchlorureto de
+							ferro</term> e a <term type="chemical-medicine" xml:id="t_novaes_0328"
+							>ergotina</term>: de todos estes, o <term type="chemical-medicine"
+							xml:id="t_novaes_0329" lemma="perclorureto de ferro">perchlorureto de
+							ferro</term> tem dado melhores resultados, porque alem de oppôr-se a
+							<term type="symptom" xml:id="t_novaes_0330" lemma="hemorragia"
+							>hemorrhagia</term> do <term type="body-part" xml:id="t_novaes_0069"
+							lemma="estômago">estomago</term>, ainda é um restaurativo das forças
+						abatidas do doente. Tambem tem sido empregados o gêlo internamente, as
+						limonadas mineraes geladas, o elixir paregorico, com resultados
+						satisfatorios.</p>
+					<p xml:id="p_novaes_0095">Os antisepticos tem sido empregados com vantagem
+						n'este caso, e d'entre elles merecem especial menção, o <term
+							type="chemical-medicine" xml:id="t_novaes_0331" lemma="ácido fênico"
+							>acido phenico</term>, e o <term type="chemical-medicine"
+							xml:id="t_novaes_0332" lemma="creosoto">creozoto</term> que tem dado
+						bons resultados quer tomados em poções internamente quer em clysteres: pois
+						elles tem o poder não só de impedir a putrefacção do sangue como de
+						neutralisal-a quando ja existe.</p>
+					<p xml:id="p_novaes_0096">Ainda n'este caso temos visto darem bons resultados os
+						tonicos, cuja perseverança deve ser rigorosamente observada; pois, a nosso
+						modo de ver, a medicação tonica deve formar a base do tratamento da <term
+							type="illness" xml:id="t_novaes_0333" lemma="febre amarela">febre
+							amarella</term>, porque sendo geralmente admittido que n'essa molestia
+						ha uma intoxicação lenta do sangue, e que este liquido alterado vae produzir
+						em toda economia o desarranjo de suas funcções, que o individuo pode
+						apresentar desde o principio grande prostação de forças, que a <term
+							type="symptom" xml:id="t_novaes_0334" lemma="adinamia">adynamia</term>
+						tende a proseguir com toda intensidade, e o sangue em um grau extraordinario
+						de dissolução da lugar a <term type="symptom" xml:id="t_novaes_0335"
+							lemma="hemorragia">hemorrhagias</term> até no proprio tecido do <term
+							type="body-part" xml:id="t_novaes_0070">derma</term>, e ainda mais o
+						organismo profundamente abalado em seus eixos lucta contra um inimigo
+						desconhecido, e que n'esta lucta suprema, denominada agonia, em que o doente
+						ja exhausto espera a cada momento deixar a vida pela morte, não podemos
+						deixar de reconhecer que só a medicação tonica poderá produzir verdadeiras
+						resurreições, como por mais de uma vez tivemos occasião de ver.</p>
+					<p xml:id="p_novaes_0097">Tratemos agora dos phenomenos cerebraes: esses podem
+						exacerbar-se e então devem ser empregados os narcoticos e os calmantes, de
+						entre os narcoticos, a <term type="chemical-medicine" xml:id="t_novaes_0336"
+							lemma="codeína">codeina</term> e o <term type="chemical-medicine"
+							xml:id="t_novaes_0337" lemma="sulfato de morfina">sulphato de
+							morphina</term> tem dado bons resultados se os doentes não poderem
+						tolerar esta medicação, então applicaremos um <term type="chemical-medicine"
+							xml:id="t_novaes_0338" lemma="sal de morfina">sal de morphina</term>
+						pelo methodo endermico, sendo preferivel o sulphato:<pb n="18"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0021.jp2&amp;id=101464815.nlm.nih.gov"
+						/> de entre os calmantes, a agua de <term type="plant"
+							xml:id="t_novaes_0071" lemma="louro-cereja">louro cereja</term> em uma
+						infusão de <term type="plant" xml:id="t_novaes_0072" lemma="tília"
+							>tilia</term> com xarope de flores de <term type="plant"
+							xml:id="t_novaes_0073" lemma="laranjeira">larangeira</term>, tem sido
+						preconisada com bom resultado.</p>
+					<p xml:id="p_novaes_0098">Ainda para debellar-se esses phenomenos tem se
+						applicado as compressas geladas sobre a <term type="body-part"
+							xml:id="t_novaes_0074">fronte</term>, os sinapismos entre as <term
+							type="body-part" xml:id="t_novaes_0075" lemma="espádua">espadoas</term>
+						e nas <term type="body-part" xml:id="t_novaes_0076" lemma="extremidade"
+							>extremidades</term> inferiores, os clysteres emolientes e purgativos
+						conjunctamente com os drasticos, com o fim de operarem para o <term
+							type="body-part" xml:id="t_novaes_0077" lemma="reto">recto</term> uma
+						derivação que naturalmente minorará esses phenomenos: entre os drastiticos
+						os que tem sido mais usados são, a <term type="plant" xml:id="t_novaes_0078"
+							>jalapa</term>, á <term type="plant" xml:id="t_novaes_0079"
+							lemma="escamônea">escamonêa</term>, á <term type="plant"
+							xml:id="t_novaes_0080" lemma="coloquíntida">coloquintida</term>, e o
+						purgante de Leroy.</p>
+					<p xml:id="p_novaes_0099">Passemos as <term type="symptom"
+							xml:id="t_novaes_0339" lemma="hemorragia">hemorrhagias</term> que
+						constituem, por certo, o symptoma mais aterrador e ao mesmo tempo o mais
+						difficil de debellar-se. Tem ellas zombado de todos os meios: o frio e os
+						adstringentes debalde tem sido empregados: só os tonicos tem apresentado
+						resultados mais favoraveis; e esta medicação tem bastante fundamento,
+						porque, se como ja vimos, ha dyscrazia do sangue, so os tonicos poderão
+						reconstituilo: devemos pois dar o vinho do Porto generoso, a agua ingleza,
+							<term type="plant" xml:id="t_novaes_0081">angeciana</term>, os caldos
+						frios, a <term type="plant" xml:id="t_novaes_0082">simaruba</term> e a <term
+							type="plant" xml:id="t_novaes_0083" lemma="quássia">quassia</term>.</p>
+					<p xml:id="p_novaes_0100">Serve de exemplo ao que levamos dito um caso que
+						observamos na casa de saude de S. Francisco: n'um doente, marinheiro inglez
+						cuja tendencia á <term type="symptom" xml:id="t_novaes_0340"
+							lemma="hemorragia">hemorrhagia</term> foi tão consideravel que, essa até
+						manifestou-se nos <term type="body-part" xml:id="t_novaes_0084" lemma="vaso"
+							>vasos</term> da <term type="body-part" xml:id="t_novaes_0085"
+							>perna</term> em forma de abscessos metastazicos' prorompendo pela <term
+							type="body-part" xml:id="t_novaes_0086">pele</term> que afinal tomou a
+						forma de ulcera hemorrhagica, N'este doente o uso dos tonicos, com
+						perseverança, dêbellou por sua acção interna e fortificante do sangue, a
+							<term type="symptom" xml:id="t_novaes_0341" lemma="hemorragia"
+							>hemorrhagia</term>, que gradualmente cedia a proporção que se
+						augmentava a doze dos tonicos, vindo ainda estes heroicos medicamentos á
+						produzirem vantajosos effeitos em applicações topicas sobre as ulceras.</p>
+					<p xml:id="p_novaes_0101">Tratemos agora de certos symptomas que ainda se podem
+						apresentar complicando esta enfermidade, e os meios que geralmente tem sido
+						empregados para combatel-os.</p>
+					<p xml:id="p_novaes_0102">As <term type="illness" xml:id="t_novaes_0342"
+							lemma="parotidite">parotidites</term> trazem quasi sempre uma terminação
+						fatal á <term type="illness" xml:id="t_novaes_0343" lemma="febre amarela"
+							>febre amarella</term>, sendo muito mais grave nas crianças, segundo o
+						Sr. Cornillac. <pb n="19"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0022.jp2&amp;id=101464815.nlm.nih.gov"
+						/>Quasi todos os praticos combatem este symptoma de duas maneiras; ou
+						applicam os emollientes afim de formarem-se os abcessos e praticarem depois
+						a sua abertura, ou applicam sobre a parte inflammada um pedaço de <term
+							type="chemical-medicine" xml:id="t_novaes_0344" lemma="potassa cáustica"
+							>potassa caustica</term>, de modo que produza uma abertura antes da
+						formação do fóco purulento, fixando d'esta arte a fluxão sobre a glandula e
+						prevenindo a roabsorpção ou a metastaze.</p>
+					<p xml:id="p_novaes_0103">Nós observamos alguns casos d'estes em que tiramos
+						bons resultados por meio das fricções com <term type="chemical-medicine"
+							xml:id="t_novaes_0345">pomada mercurial</term> e <term type="plant"
+							xml:id="t_novaes_0087" lemma="beladona">belladona</term>, junctamente
+						com os gargarejos de cosimento de <term type="plant" xml:id="t_novaes_0088"
+							lemma="malva">malvas</term> e de <term type="plant"
+							xml:id="t_novaes_0089">quina</term> para combater a inflammação da <term
+							type="body-part" xml:id="t_novaes_0090">garganta</term>.</p>
+					<p xml:id="p_novaes_0104">A <term type="symptom" xml:id="t_novaes_0346"
+							lemma="supressão da secreção urinária">suppressão da secreção
+							urinaria</term>, é tambem um symptoma quasi sempre infallivel e
+						incommodativo. Os meios mais empregados para combater este symptoma eram os
+						dicereticos, e especialmente o <term type="chemical-medicine"
+							xml:id="t_novaes_0347" lemma="nitrato de potassa">nitrato de
+							potassa</term>, o <term type="chemical-medicine" xml:id="t_novaes_0348"
+							>subcarbonato</term>, o acetato e o bicarbonato, porem sem nenhum
+						proveito na maioria dos casos.</p>
+					<p xml:id="p_novaes_0105">Pensamos que a <term type="symptom"
+							xml:id="t_novaes_0349" lemma="supressão da secreção urinária">suppressão
+							da secreção urinaria</term> nos doentes de <term type="illness"
+							xml:id="t_novaes_0350" lemma="febre amarela">febre amarella</term> é uma
+						consequencia ou effeito da pertubação geral das funcções organicas, e que
+						não póde por conseguinte ser combatida por um especifico que tem a
+						propriedade de excitar a actividade vital dos <term type="body-part"
+							xml:id="t_novaes_0091" lemma="rim">rins</term>, e neste caso pensamos
+						que devem ser contra indicados os diureticos especificos. Mas tem-se
+						aconselhado as bebidas mucilaginosas, o cosimento de raiz de <term
+							type="plant" xml:id="t_novaes_0092" lemma="alteia">althêa</term>, o de
+							<term type="plant" xml:id="t_novaes_0093" lemma="grama">gramma</term>,
+						as bebidas frias e refrigerantes, para combaterem a irritação e inflammação:
+						e se bem que não sejam diureticos especificos, tem sido como taes empregados
+						quando a secreção das urinas diminui-se por causa irritante local ou geral e
+						por tanto n'estes casos são bem aconselhados. O Sr. Dr. Pereira Rego diz ter
+						feito reapparecer a urina pelo uso das fricções com <term
+							type="chemical-medicine" xml:id="t_novaes_0351"
+							lemma="essência de terebintina">essencia de therebentina</term> na
+						região lombar e com os <term type="chemical-medicine" xml:id="t_novaes_0352"
+							lemma="clister canforado">clysteres camphorados</term>.</p>
+					<p xml:id="p_novaes_0106">Os <term type="symptom" xml:id="t_novaes_0353"
+							lemma="soluço">soluços</term> que ordinariamonte tornam-se por demais
+						rebeldes no fim da molestia, tem algumas vezes obedecido ao emprego <term
+							type="chemical-medicine" xml:id="t_novaes_0354" lemma="clorofórmio"
+							>chloroformio</term>, do <term type="chemical-medicine"
+							xml:id="t_novaes_0355" lemma="valerianato de zinco">valerianato de
+							zinco</term>, da <term type="plant" xml:id="t_novaes_0094"
+							lemma="beladona">belladona</term>, e ainda pela applicação dos
+						sinapismos sobre a região epigastrica; porem na maior parte das vezes<pb
+							n="20"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0023.jp2&amp;id=101464815.nlm.nih.gov"
+						/> elles são fataes, e muito contribuem para o termo proximo da
+						molestia.</p>
+					<p xml:id="p_novaes_0107">Pelo que temos exposto ja se vê a nossa humilde
+						opinião a respeito do tratamento da <term type="illness"
+							xml:id="t_novaes_0356" lemma="febre amarela">febre amarella</term>,
+						terminaremos em resumo mencionando quaes os meios que mais tem aproveitado,
+						indicando apenas os periodos da molestia em que elles são appicados.</p>
+					<p xml:id="p_novaes_0108">Assim pois vemos que, no primeiro periodo, são
+						geralmente empregados, o <term type="plant" xml:id="t_novaes_0095"
+							lemma="acônito">aconito</term>, o <term type="chemical-medicine"
+							xml:id="t_novaes_0357" lemma="acetato de amônia">acetato de
+							ammonea</term>, as infusões de <term type="plant" xml:id="t_novaes_0096"
+							>sabugueiro</term>, <term type="plant" xml:id="t_novaes_0097"
+							>borragem</term>, <term type="plant" xml:id="t_novaes_0098"
+							lemma="tília">tilia</term>, <term type="plant" xml:id="t_novaes_0099"
+							>chá</term>, <term type="plant" xml:id="t_novaes_0100">melissa</term>,
+							<term type="plant" xml:id="t_novaes_0101">arnica</term>, grellos de
+							<term type="plant" xml:id="t_novaes_0102" lemma="laranjeira"
+							>larangeira</term>, as <term type="chemical-medicine"
+							xml:id="t_novaes_0358" lemma="tintura canforada">tincturas
+							camphoradas</term>, as bebidas aciduladas, os revulsivos cutaneos, os
+						pediluvios, os banhos quentes e mornos seguidos de fricções seccas pela
+						superficie cutanea etc.</p>
+					<p xml:id="p_novaes_0109">No segundo periodo, os purgativos oleosos e salinos,
+						bem como o oleo de <term type="plant" xml:id="t_novaes_0103" lemma="rícino"
+							>ricino</term>, os <term type="chemical-medicine" xml:id="t_novaes_0359"
+							lemma="sulfato de magnésia e soda">sulphatos de magnesia e soda</term>,
+						a polpa de <term type="plant" xml:id="t_novaes_0104" lemma="tamarindo"
+							>tamarindos</term>, o maná, <term type="chemical-medicine"
+							xml:id="t_novaes_0360" lemma="tartrato ácido de potassa">tartrato acido
+							de potassa</term>, e o oleo de <term type="plant" xml:id="t_novaes_0105"
+							lemma="cróton">croton</term>: os revulsivos, e entre elles os sinapismos
+						de <term type="plant" xml:id="t_novaes_0106" lemma="mostarda"
+							>mustarda</term>, os visicatorios volantes, os sudorificos, as
+						compressas d'agua fria, a agua sedativa de Raspail, as bebidas geladas, as
+						limonadas mais de acido vegetaes do que mineraes, e a agua gazoza; os
+						vomitivos, e entra elles a <term type="plant" xml:id="t_novaes_0107"
+							lemma="ipecacuanha">epecacuanha</term> em certos e determinados casos;
+						os antipasmodicos, e de preferencia o <term type="chemical-medicine"
+							xml:id="t_novaes_0361" lemma="éter">ether</term>, o castores; o
+						almiscar, a <term type="chemical-medicine" xml:id="t_novaes_0362"
+							lemma="cânfora">camphora</term>; os antivomitivos, a poção de Riviére, o
+						vinho branco, e o gelo; os narcoticos, e entre elles as preparações de <term
+							type="chemical-medicine" xml:id="t_novaes_0363" lemma="ópio"
+						>opio</term>, e o <term type="chemical-medicine" xml:id="t_novaes_0364"
+							lemma="ácido cianídrico">acido cyanhydrico</term>; os calmantes, as
+						affusões de agua fria, a agua de <term type="plant" xml:id="t_novaes_0108"
+							lemma="louro-cereja">louro cereja</term>, a morphina, e o emplastro de
+						theriaga; os antifebris, a <term type="plant" xml:id="t_novaes_0109"
+							lemma="serpentária-da-virgínia">serpentaria de verginea</term>, a <term
+							type="plant" xml:id="t_novaes_0110">quina</term>, e o cozimento
+						antifebril de Lewis; os tonicos, e o <term type="chemical-medicine"
+							xml:id="t_novaes_0365" lemma="sulfato de quinina">sulphato de
+							quinina</term> em certas circunstancias.</p>
+					<p xml:id="p_novaes_0110">No terceiro periodo, ainda são indicados os
+						sinapismos, os visicatorios volantes, a agua simples gelada, a agua gazoza,
+						as limonadas vegetaes, a agua de Seltz, a <term type="chemical-medicine"
+							xml:id="t_novaes_0366" lemma="limonada clorídrica">limonada
+							chlorydrica</term>, os antispasmodicos, os antivomitivos, e entre elles
+						a cerveja, a Champanha e o <term type="chemical-medicine"
+							xml:id="t_novaes_0367" lemma="bissulfito de cal">bisulphito de
+							cal</term> os adstringentes, bem como a <term type="chemical-medicine"
+							xml:id="t_novaes_0368">ergotina</term>, o perchlorureto de<pb n="21"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0024.jp2&amp;id=101464815.nlm.nih.gov"
+						/> ferro e o gelo: os anticepticos, o <term type="chemical-medicine"
+							xml:id="t_novaes_0369" lemma="ácido fênico">acido phenico</term>, o
+							<term type="chemical-medicine" xml:id="t_novaes_0370" lemma="creosoto"
+							>creozoto</term>, e ainda o <term type="chemical-medicine"
+							xml:id="t_novaes_0371" lemma="bissulfito de cal">bisulphito de
+							cal</term> a morphina e seus saes, ou injeridos em poções ou pelo
+						methodo endermico: as compressas geladas, os drasticos, e entre elles a
+							<term type="plant" xml:id="t_novaes_0111">jalapa</term>, a <term
+							type="plant" xml:id="t_novaes_0112" lemma="escamônea">escamonêa</term>,
+						a <term type="plant" xml:id="t_novaes_0113" lemma="coloquíntida"
+							>coloquintida</term> e o Leroy: e sempre os tonicos, sendo d'entre elles
+						os mais empregados, a <term type="plant" xml:id="t_novaes_0114"
+							>simaruba</term>, a <term type="plant" xml:id="t_novaes_0115"
+							lemma="quássia">quassia</term>, <term type="plant"
+							xml:id="t_novaes_0116">angeciana</term>, a agua ingleza, os caldos
+						frios, e o vinho do Porto generoso, tambem as bebidas mucilaginosas e
+						diureticas, o cosimento de raiz de <term type="plant" xml:id="t_novaes_0117"
+							lemma="alteia">althêa</term>, e de <term type="plant"
+							xml:id="t_novaes_0118" lemma="grama">gramma</term>, as fricções com
+							<term type="chemical-medicine" xml:id="t_novaes_0372"
+							lemma="essência de terebintina">essencia de therebentina</term>, e os
+							<term type="chemical-medicine" xml:id="t_novaes_0373"
+							lemma="clister canforado">clysteres camphorados</term>.</p>
+					<p xml:id="p_novaes_0111">São estes os medicamentos que até hoje tem os praticos
+						empregado para combater a <term type="illness" xml:id="t_novaes_0374"
+							lemma="febre amarela">febre amarella</term>: infelizmente ainda não nos
+						é dado dizer que elles são os especificos ou os infalliveis para esta
+						terrivel molestia; mas podemos assegurar que são os que tem áproveitado, e
+						por conseguinte são considerados como o melhor tratamento até a presente
+						época.</p>
+					<p xml:id="p_novaes_0112">Aqui transcrevemos o tratamento empregado no Hospital
+						da Santa Casa da Misericordia no corrente anno, o qual nos foi fornecido
+						pelo medico interno do mesmo Hospital, o Illm. Sr. Dr. José Ignacio de
+						Oliveira.</p>
+					<p xml:id="p_novaes_0113">No primeiro periodo applicara o olheo de <term
+							type="plant" xml:id="t_novaes_0119" lemma="rícino">ricino</term>
+						acompanhado da applicação continuada de sinapismos nas <term
+							type="body-part" xml:id="t_novaes_0120" lemma="extremidade"
+							>extremidades</term>. Se os doentes apresentavam <term type="symptom"
+							xml:id="t_novaes_0375" lemma="cefalalgia">cephalalgia</term>, applicava
+						na <term type="body-part" xml:id="t_novaes_0121">fronte</term> compressas
+						embebidas n'agua sedativa.</p>
+					<p xml:id="p_novaes_0114">No segundo periodo, quando os symptomas mais graves
+						denunciavam-se, era prescripta a seguinte formula:</p>
+					<table>
+						<row>
+							<cell>R.—Infuzão de <term type="plant" xml:id="t_novaes_0122"
+									lemma="serpentária-da-virgínia">serpentaria de
+								Virginia</term></cell>
+							<cell>500 grammas</cell>
+						</row>
+						<row>
+							<cell>Tinctura de <term type="plant" xml:id="t_novaes_0123">quina</term>
+								<term type="chemical-medicine" xml:id="t_novaes_0376"
+									lemma="acetato de amônia">Acetato de ammonea</term></cell>
+							<cell>ãa 4 grammas.</cell>
+						</row>
+						<row>
+							<cell><term type="chemical-medicine" xml:id="t_novaes_0377"
+									lemma="sulfato de soda">Sulphato de sóda</term> 12
+								grammas.</cell>
+						</row>
+					</table>
+					<p xml:id="p_novaes_0115">Dissolva para tomar as colheres de hora em hora. Ao
+						mesmo tempo applicava compressas d'agua fria sobre o <term type="body-part"
+							xml:id="t_novaes_0124">ventre</term><pb n="22"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0025.jp2&amp;id=101464815.nlm.nih.gov"
+						/> de concomitancia com os sinapismos nas <term type="body-part"
+							xml:id="t_novaes_0125" lemma="extremidade">extremidades</term>. Quanto
+						finalmente havia cessação dos symptomas mais graves dava <term
+							type="chemical-medicine" xml:id="t_novaes_0378"
+							lemma="limonada clorídrica">limonada chlorydrica</term> aos calices.</p>
+					<p xml:id="p_novaes_0116">Este tratamento approveitou alguma cousa, pois que de
+						onze doentes que entraram para o Hospital, e destes, 8 em estado grave,</p>
+					<table>
+						<row>
+							<cell>Sahiram curados</cell>
+							<cell>6</cell>
+						</row>
+						<row>
+							<cell>Falleceram</cell>
+							<cell>4</cell>
+						</row>
+						<row>
+							<cell>Sahio para tratar-se fóra</cell>
+							<cell>1</cell>
+						</row>
+					</table>
+					<p xml:id="p_novaes_0117">No hospital de Mont-Serrat, sob a direcção do nosso
+						distincto mestre o Illm. Sr. Dr. Luiz Alvares, o tratamento seguido foi o
+						que se segue.</p>
+					<p xml:id="p_novaes_0118">Admittida a pathogenia da <term type="illness"
+							xml:id="t_novaes_0379" lemma="febre amarela">febre amarella</term> como
+						um envenenamento do sangue (<term type="illness" xml:id="t_novaes_0380"
+							>septicemia</term>,) apenas entraram os doentes para aquelle hospital se
+						chegavam no periodo da invasão da molestia, tomavam um emetocathartico
+							(<term type="chemical-medicine" xml:id="t_novaes_0381"
+							lemma="tártaro emético">tartaro emetico</term> e <term
+							type="chemical-medicine" xml:id="t_novaes_0382" lemma="sulfato de soda"
+							>sulphato de sóda</term>.) A diaphoreze era entretida no dia seguinte
+						por uma poção diaphoretica com <term type="chemical-medicine"
+							xml:id="t_novaes_0383" lemma="acetato de amônia">acetato de
+							ammonea</term>, <term type="chemical-medicine" xml:id="t_novaes_0384"
+							lemma="álcool">alcool</term>, ou agua de <term type="plant"
+							xml:id="t_novaes_0126" lemma="hortelã-pimenta">hortelaã pimenta</term> e
+						continuava o tratamento com os purgantes. Se apresentavam-se symptomas que
+						indicavam a eminencia do <term type="symptom" xml:id="t_novaes_0385"
+							lemma="vômito negro">vomito negro</term>, tomavam os doentes n'este
+						periodo uma porção, em que entrava a proporção de vinte gottas de <term
+							type="chemical-medicine" xml:id="t_novaes_0386"
+							lemma="perclorureto de ferro">perchlorureto de ferro</term> para uma
+						libra de agua, dada as colheres, e applicava-se um sinapismo na região do
+							<term type="body-part" xml:id="t_novaes_0127" lemma="estômago"
+							>estomago</term>. Se o vomito, não obstante, tinha lugar, augmentavam-se
+						a dóze do perchlorureto, ou empregava-se um preparado de <term
+							type="chemical-medicine" xml:id="t_novaes_0387">tanino</term>, ou
+						ratanha. Da mesma maneira eram combatidas as <term type="symptom"
+							xml:id="t_novaes_0388" lemma="hemorragia intestina">hemorrhagias
+							intestinas</term> que as vezes acompanham ou substituem o <term
+							type="symptom" xml:id="t_novaes_0389" lemma="vômito">vomito</term>
+						negro, Quando symptomas ataxico-adynamicos se manifestavam, empregavam-se
+						preparações antispasmodicos (castorio, almiscar etc,) e applicavam-se
+						vesicatorios nas barrigas das <term type="body-part" xml:id="t_novaes_0128"
+							lemma="perna">pernas</term>, que eram curados com pommada de <term
+							type="chemical-medicine" xml:id="t_novaes_0390"
+							lemma="sulfato de quinina">sulphato de quinina</term>. Quando se
+						apresentava a <term type="symptom" xml:id="t_novaes_0391"
+							lemma="sufusão ictérica">suffusão icterica</term>, davam-se os purgantes
+						salinos, e o <term type="chemical-medicine" xml:id="t_novaes_0392"
+							lemma="bicarbonato de soda">bicarbonato de sóda</term>, Esse tratamento,
+						que só éra modificado,<pb n="23"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0026.jp2&amp;id=101464815.nlm.nih.gov"
+						/> quando era opportuna a modificação, deu felizes resultados, como se póde
+						deprehender da estatistica d'esse hospital desde o dia 22 de Abril, em que
+						foi aberto, até o ultimo de Junho; e que vae junto. Do dia 22 de Abril até o
+						ultimo de Junho.</p>
+					<table>
+						<row>
+							<cell>Entraram</cell>
+							<cell>251</cell>
+						</row>
+						<row>
+							<cell>Sahiram curados</cell>
+							<cell>179</cell>
+						</row>
+						<row>
+							<cell>Falleceram</cell>
+							<cell>47</cell>
+						</row>
+						<row>
+							<cell>Ficaram existindo</cell>
+							<cell>25</cell>
+						</row>
+					</table>
+					<p xml:id="p_novaes_0119">Observações.—Dos fallecidos, um entrou já agonisante e
+						durou poucas horas; nove tiveram <term type="symptom" xml:id="t_novaes_0393"
+							lemma="vômito">vomito</term> negro; e quatro entraram graves com
+						symptomas ataxo-adynamicos.</p>
+					<p xml:id="p_novaes_0120">Dos que sahiram curados, vinte entraram graves, tendo
+						trez destes, <term type="symptom" xml:id="t_novaes_0394"
+							lemma="vômito negro">vomito negro</term>: treze entraram em estado
+						duvidoso, apresentando trez a <term type="illness" xml:id="t_novaes_0395"
+							lemma="forma tífica">forma typhica</term>: e quarenta e oito no periodo
+						invasor da molestia. Dos existentes, quatorze entraram graves, tendo cinco
+						destes, <term type="symptom" xml:id="t_novaes_0396" lemma="vômito"
+							>vomito</term> negro: dous aprezentando a <term type="illness"
+							xml:id="t_novaes_0397" lemma="forma tífica">forma typhica</term>: dous
+						duvidozos e este no periodo de invazão da molestia. Regulou a mortalidade
+						total em dezoito e meio por cento.</p>
+				</div>
+				<div>
+					<head xml:id="h_novaes_0024">PROPHILAXIA</head>
+					<p xml:id="p_novaes_0121">Sendo a <term type="illness" xml:id="t_novaes_0398"
+							lemma="febre amarela">febre amarella</term> uma molestia
+						infecto-contagiosa, como já dissemos em uma parte d'este trabalho claro está
+						que a hygiene publica bem como a individual devem lançar mãos de seus
+						recursos para, senão extingir, ao menos minorar os seus males.</p>
+					<p xml:id="p_novaes_0122">Quanto ao que diz respeito á hygiene publica, ao
+						governo compete, de combinação com a sciencia velar pelo bem estar do
+						povo.</p>
+					<p xml:id="p_novaes_0123">Assim pois, reinando a epidemia em um pôrto, achamos
+						de grande necessidade que todos os navios que chegarem á esse porto sejão<pb
+							n="24"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0027.jp2&amp;id=101464815.nlm.nih.gov"
+						/> afastados do ancoradouro; que os seus passageiros sejam desembarcado em
+						lugar distante da cidade: que esses passageiros estejam debaixo da
+						vigilancia de um medico sendo convenientemente alimentados, e obrigados a
+						observarem todos os preceitos impostos pelo medico. Não deveriam expor-se ao
+						rigôr do sol, nem entregar-se-hão á excessos de qualidade alguma, como por
+						exemplo, o abuso dos alcoolicos, a dormida ao relento aos resfriamentos, e
+						nem deverão comer fructos verdes. Quando apparecer entre elles casos da
+						molestia ou mesmo algum caso duvidoso, o medico deve tomar todo cuidado,
+						mandando o doente para o lazareto, que n'esta occasião deverá o governo ter
+						criado. Aquelles porem que se conservarem incolumes, deverão passsar de
+						vezem quando ao centro da cidade, afim de que pouco a pouco se aclimem.</p>
+					<p xml:id="p_novaes_0124">Como ja dissemos, os navios estando afastados do
+						ancoradouro e em um lugar cuja ventilação seja franca e livre, e que alem
+						disto estejam ao abrigo das emanações putridas que possam vir de terra,
+						então proceder-se-ha a descarga do navio, que melhor será feita pelos
+						habitantes do lugar do que pela tripolação, pois é certo que as fadigas e o
+						cançaço muito predispõem os individuos á contrahirem o mal.</p>
+					<p xml:id="p_novaes_0125">Dedois de descarregado, o navio deve ser lavado com
+						todo cuidado, desde o tombadilho até e quilha, onde dizem os authores, que
+						se desenvoérem gazes maphiticos provenientes da mistura d'agua doce com a
+						salgada.</p>
+					<p xml:id="p_novaes_0126">Depois de lavado o navio, deve-se immediatamento
+						proceder a desinfecção: o <term type="chemical-medicine"
+							xml:id="t_novaes_0399" lemma="cloro">chloro</term>, o <term
+							type="chemical-medicine" xml:id="t_novaes_0400" lemma="enxofre"
+							>enchofre</term>, o <term type="chemical-medicine"
+							xml:id="t_novaes_0401" lemma="ácido fênico">acido phenico</term>, e o
+						Labarraque tem real applicação n'estes casos.</p>
+					<p xml:id="p_novaes_0127">A commissão medica que fôr encarregada de assistir a
+						descarga do navio, deve velar com toda attenção á este acto, ordenando que
+						se abram todas as escotilhas, afim de que se dê a ventilação no interior do
+						navio.</p>
+					<p xml:id="p_novaes_0128">O governo humanitario, como deve ser, e principalmente
+						n'estas occasiões, tudo deve fazer em beneficio do povo; assim achamos de
+						summa importancia que seja criada uma commissão medica, para examinar a<pb
+							n="25"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0028.jp2&amp;id=101464815.nlm.nih.gov"
+						/> carne, e os diversos generos alimenticios que sahem dos mercados,
+						armazens, e vendas para o consumo do povo, devendo ser estes generos da
+						melhor qualidade.</p>
+					<p xml:id="p_novaes_0129">Deve haver todo aceio na cidade, afastando-se para
+						longe todas as materias em estado de putrefacção, evitando-se as aguas
+						estagnadas enterrando-se os animaes mortos, emfim, evitar-sehão todas as
+						causas que sejam capazes de dar incremento ao desenvolvimento da molestia.
+						Os quarteis, e as casas de prisão devem ser cuidadosamente aceiadas. Deve-se
+						evitar a aglomeração de povo em logares circunscriptos, bem como nos
+						templos, theatros etc, em razão da viciação do ar, que n'estes lugares
+						torno-se insufficiente.</p>
+					<p xml:id="p_novaes_0130">A classe pobre que entre nós é inteiramente balda de
+						recursos, que para bem dizer, vive em um estado de mizeria deploravel, muito
+						precisa da intervenção do governo nas occasiões de epidemias, afim de que
+						este lhe porporcione os meios de emigração para fora da cidade, onde a
+						infeliz pobreza vive encerrada em cubiculos immundos, em que o mal parece
+						auinhar-se para depois fazer explosão. Os cadaveres devem ser immediatamente
+						sepultados, e desinfectados os colxões, lençóes e mais objectos que servirem
+						durante a molestia.</p>
+					<p xml:id="p_novaes_0131">Ainda lembramos como medida publica, a inoculação, que
+						em 1855 o Dr. Cuilherme Lambert Humboldt, lembrou com meio preservativo
+						contra a <term type="illness" xml:id="t_novaes_0402" lemma="febre amarela"
+							>febre amarella</term>.</p>
+					<p xml:id="p_novaes_0132">Este meio preservativo consistia na inoculação de uma
+						substancia, cujo principio activo era o venêna de uma serpente, que sendo
+						inoculada ou preservava os individuos para sempre da <term type="illness"
+							xml:id="t_novaes_0403" lemma="febre amarela">febre amarella</term>, ou
+						se a contrahiam, era benigna e raramente d'ella pesreciam. Diz o Dr.
+						Humboldt, que no decurso de 9 annos, inoculára 1438 individuos; destes só
+						vira 7 serem affectados da <term type="illness" xml:id="t_novaes_0404"
+							lemma="febre amarela">febre amarella</term>, e destes 7, apenas morreram
+						2. Que em 386 inoculados em Nova-Orleans, sendo depois alguns affectados da
+							<term type="illness" xml:id="t_novaes_0405" lemma="febre amarela">febre
+							amarella</term>, em nenhum se manifestaram os symptomas aterradores
+						d'esta molestia, isto é, o <term type="symptom" xml:id="t_novaes_0406"
+							lemma="vômito">vomito</term> negro e as <term type="symptom"
+							xml:id="t_novaes_0407" lemma="hemorragia">hemorrhagias</term>.</p>
+					<p xml:id="p_novaes_0133">Diz mais que, para a inoculação exercer a sua virtude
+							preservadoura,<pb n="26"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0029.jp2&amp;id=101464815.nlm.nih.gov"
+						/> não era necessario que os seus symptomas fossem intensos; que somente
+						bastava os inoculados apresentarem o <term type="symptom"
+							xml:id="t_novaes_0408">enfraquecimento do pulso</term> e uma tendencia
+						hemorrhogica das <term type="body-part" xml:id="t_novaes_0129"
+							lemma="gengiva">gengivas</term> Essa substancia depois de ter sido
+						inoculada no <term type="body-part" xml:id="t_novaes_0130">braço</term>,
+						pelo mesmo processo que a vacina, applicava-se sobre as picadas da lanceta
+						uma pequena cruz de malta de esparadrape. Se no fim de alguns minutos
+						levantava-se o apparelho encontrava-se o seguinte: ao redor das picadas uma
+						pequena elevação em forma de <term type="symptom" xml:id="t_novaes_0409"
+							lemma="pápula branca">papula branca</term> diaphana, análoga a dentada
+						de um mosquito; esse phenomeno era visivel no fim de 5 minutos, e no fim de
+						12 á 24 horas não existia mais. Logo depois da inoculação manifestava-se no
+							<term type="body-part" xml:id="t_novaes_0131">antebraço</term> uma
+						sensação de <term type="symptom" xml:id="t_novaes_0410">comichão</term> e de
+							<term type="symptom" xml:id="t_novaes_0411">entorpecimento</term>,
+						ligeiro phenomeno anestesico que durava de 2 á 4 dias. No momento da
+						inoculação a molestia delineava-se pela <term type="symptom"
+							xml:id="t_novaes_0412" lemma="síncope">syncope</term>, que passava
+						rapidamente, ou ainda por um <term type="symptom" xml:id="t_novaes_0413"
+							>tremor nervoso</term> que era mais raro, mas que durava por mais tempo:
+						o pulso accelerava-se sob a impressão do abalo do momento. No fim de 7 horas
+						o pulso era modificado de uma maneira permanente; era mais frequente ou mais
+						lento, mais forte ou mais fraco; no fim de 11 horas, havia <term
+							type="symptom" xml:id="t_novaes_0415" lemma="calor febril">calor
+							febril</term>; no de 14 horas, <term type="symptom"
+							xml:id="t_novaes_0416" lemma="cefalalgia">cephalalgia</term>, <term
+							type="symptom" xml:id="t_novaes_0417">anorexia</term> e <term
+							type="symptom" xml:id="t_novaes_0418" lemma="sede intensa">sêde
+							intensa</term> no fim de 16 horas, <term type="symptom"
+							xml:id="t_novaes_0419" lemma="turgência">turgencia</term> da <term
+							type="body-part" xml:id="t_novaes_0132">face</term>, injecção das <term
+							type="body-part" xml:id="t_novaes_0133" lemma="conjuntiva"
+							>conjunctivas</term> e <term type="symptom" xml:id="t_novaes_0420"
+							>lacrimejamento</term>; no fim de 18 horas, <term type="symptom"
+							xml:id="t_novaes_0421" lemma="dor">dôr</term> nas <term type="body-part"
+							xml:id="t_novaes_0134" lemma="gengiva">gengivas</term>, cujos bordos
+						coravam-se ao redor dos <term type="body-part" xml:id="t_novaes_0135"
+							lemma="dente">dentes</term>, <term type="symptom" xml:id="t_novaes_0422"
+							lemma="dor">dôr</term> nas <term type="body-part" xml:id="t_novaes_0136"
+							lemma="glândula salivar">glandulas salivares</term> e na direcção dos
+						differentes <term type="body-part" xml:id="t_novaes_0137"
+							lemma="ramo nervoso">ramos nervosos</term> da <term type="body-part"
+							xml:id="t_novaes_0138">face</term> e do <term type="body-part"
+							xml:id="t_novaes_0139" lemma="crânio">craneo</term>; no fim de 19 horas
+							<term type="symptom" xml:id="t_novaes_0423" lemma="dor">dôres</term> na
+							<term type="body-part" xml:id="t_novaes_0140" lemma="maxila"
+							>maxilla</term> inferior, na direcção do <term type="body-part"
+							xml:id="t_novaes_0141" lemma="nervo maxilar inferior">nervo maxillar
+							inferior</term> e <term type="symptom" xml:id="t_novaes_0424"
+							>abatimento</term>; no fim de 20 horas, gosto amargo, <term
+							type="symptom" xml:id="t_novaes_0425" lemma="sonolência"
+							>somnolencia</term>, <term type="symptom" xml:id="t_novaes_0426"
+							lemma="coriza">corisa</term>, e <term type="symptom"
+							xml:id="t_novaes_0427">edema</term> da <term type="body-part"
+							xml:id="t_novaes_0142">face</term>; no fim de 20 horas, gosto amargo,
+							<term type="symptom" xml:id="t_novaes_0428" lemma="sonolência"
+							>somnolencia</term>, <term type="symptom" xml:id="t_novaes_0429"
+							lemma="coriza">corisa</term> e <term type="symptom"
+							xml:id="t_novaes_0430">edema</term> da <term type="body-part"
+							xml:id="t_novaes_0143">face</term>; no fim de 2 horas, sentimento de
+							<term type="symptom" xml:id="t_novaes_0431" lemma="constrição"
+							>constricção</term> na <term type="body-part" xml:id="t_novaes_0144"
+							>garganta</term> sem modificação visivel da <term type="body-part"
+							xml:id="t_novaes_0145">mucosa</term>, no fim de 23 horas, <term
+							type="symptom" xml:id="t_novaes_0432" lemma="sufusão ictérica">suffusão
+							icterica</term>; no fim de 24 horas, <term type="symptom"
+							xml:id="t_novaes_0433" lemma="hemorragia">hemorrhagia</term> das
+						geugivas; no fim de 28 horas, <term type="illness" xml:id="t_novaes_0434"
+							lemma="angina tensilar">angina tensillar</term>; no fim de 30 horas
+							<term type="symptom" xml:id="t_novaes_0435" lemma="raquialgia"
+							>rhachialgia</term>; no fim de 36 horas, <term type="symptom"
+							xml:id="t_novaes_0436">edema</term> das <term type="body-part"
+							xml:id="t_novaes_0146" lemma="pálpebra">palpebras</term>; no fim de 38
+						horas, <term type="symptom" xml:id="t_novaes_0437"
+							lemma="dor muscular e articular">dôres musculares e articulares</term>;
+						no fim de 40 horas, <term type="symptom" xml:id="t_novaes_0438"
+							>odontalgia</term>; emfim depois de 72 horas, <term type="symptom"
+							xml:id="t_novaes_0439">edema</term> do <term type="body-part"
+							xml:id="t_novaes_0147" lemma="lábio">labio</term> inferior.</p>
+					<pb n="27"
+						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0030.jp2&amp;id=101464815.nlm.nih.gov"/>
+					<p xml:id="p_novaes_0134">Tal era o modo porque se manifestava a molestia
+						provocada pela inoculação. Logo depois da inoculação, era administrado um
+						xarope composto d'esta maneira:</p>
+					<table>
+						<row>
+							<cell>R.—Xarope de <term type="plant" xml:id="t_novaes_0148"
+									lemma="eupatório">eupatorio</term> (<name type="taxon"
+									subtype="species">mikania guaco</name>)</cell>
+							<cell>187 grammas</cell>
+						</row>
+						<row>
+							<cell>Dito de <term type="plant" xml:id="t_novaes_0150" lemma="ruibardo"
+									>rhuibardo</term></cell>
+							<cell>125 grammas</cell>
+						</row>
+						<row>
+							<cell><term type="chemical-medicine" xml:id="t_novaes_0440"
+									lemma="iodureto de potássio">Iodureto de potassio</term></cell>
+							<cell>4 grammas</cell>
+						</row>
+						<row>
+							<cell>Goma gutta</cell>
+							<cell>12 grammas</cell>
+						</row>
+						<row>
+							<cell>Misture.</cell>
+						</row>
+					</table>
+					<p xml:id="p_novaes_0135">Este medicamento era administrado do seguinte modo: no
+						primeiro dia, uma colher de sôpa de 2 em 2 horas; no segundo dia uma colher
+						pe 4 em 4 horas, no terceiro dia uma colher de manhã e outra á tarde.</p>
+					<p xml:id="p_novaes_0136">Se os symptomas apresentavam violencia, elle demiuuia
+						os intervallos e dava com o xarope uma chicara de <term type="plant"
+							xml:id="t_novaes_0151">chá</term> de 2 em 2 horas. E quando os symptomas
+						eram muito intensos, eram combatidos pelo <term type="chemical-medicine"
+							xml:id="t_novaes_0441" lemma="sulfato de quinina">sulphato de
+							quinina</term>.</p>
+					<p xml:id="p_novaes_0137">Vemos pois, que grande parte dos symptomas fornecidos
+						pela inoculação, não deixam de ter grande analogia com os da <term
+							type="illness" xml:id="t_novaes_0442" lemma="febre amarela">febre
+							amarella</term> Quem sabe se da mesma maneira que a vacina, que foi
+						considerada como uma utopia, esta substancia inoculavel não venha para o
+						futuro trazer a humanidade immensos beneficios?</p>
+					<p xml:id="p_novaes_0138">Lembramos este facto, apenas como novidade, sem
+						emittirmos nenhum juizo sobre elle: deixemos qne o futuro possr demonstrar a
+						suá utilidade ou por ventura a sua banalidade.</p>
+					<p xml:id="p_novaes_0139">Ainda a hygiene dá uma serie de conselhos, que devem
+						ser observados pelo individuo particularmente. Os medicos que exercerem a
+						clinica na cidade, devem com prudencia instruirem aos individuos de que ha
+						epedemia, afim de que elles não fiquem na ignorancia, não se deixem apoderar
+						pelo terror, e procurem acautelar-se das intempereis da<pb n="28"
+							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0031.jp2&amp;id=101464815.nlm.nih.gov"
+						/> estação, não commettendo certas imprudencias, e procurem evitar tudo
+						quanto lhes possa fazer mal.</p>
+					<p xml:id="p_novaes_0140">Cada individuo deve ter a sua habitação bem aceiada,
+						convenientemente arejada, arredando de suas immediações todas as substancias
+						que se possam putrefazer. Deve cada individuo cuidar de si, nutrindo-se
+						moderamente de alimentos cuja digestibilidade seja facil, evitando o uso
+						immoderado das bebidas alcoolicas, dos prazeres venereos, emfim evitará
+						todas as causas que tendem á enfraquecer o organismo, pois sabemos que a
+							<term type="illness" xml:id="t_novaes_0443" lemma="febre amarela">febre
+							amarella</term> combate com victoria segura as suas victimas quando ja
+						se acham fracas.</p>
+					<p xml:id="p_novaes_0141">Muitos praticos aconselham que se faça uso de
+						laxativos brandos como preservativos, pois elles conservam sempre livre o
+						turbo digestivo. As vestimentas devem ser apropriadas as estações. As
+						grandes vigilias, os trabalhos intellectuaes, as fadigas moraes, devem ser
+						evitadas, pois enfraquecendo o organismo predispoem-no a facilmente
+						contrahir a molestia.</p>
+					<p xml:id="p_novaes_0142">Nas casas em que existirem doentes de <term
+							type="illness" xml:id="t_novaes_0444" lemma="febre amarela">febre
+							amarella</term>, achamos conveniente que se proceda a inhumação das
+						materias fecaes e que se use constantemente dos disinfectantes.</p>
+					<p xml:id="p_novaes_0143">São estes os conselhos que a hygiene dá, e que segundo
+						nos parece, muito devem servir, a aquelles que commettendo qnanta sorte de
+						extravagancia ha, abusam completamente do bem mais precioso que possuimos—a
+						saude.</p>
+					<p xml:id="p_novaes_0144">Aqui concluimos o nosso pequeno trabalho, certos de
+						que leva o cunho da inperfeição; pois alem de faltar-nos os recursos mais
+						necessarios, falta-nos tambem o habito de escrever para o publico: e se não
+						fossemos obrigados pela imperiosa lei do dever, por certo que nos
+						conservariamo-nos mais profundo e absoluto silencio. Resta-nos um consolo, é
+						que se por um lado falta-nos a intelligencia, por outro sóbram-nos os bons
+						desejos, que esperamos ser bem acolhidos pela benevolencia de nossos
+						Mestres.</p>
+				</div>
+			</div>
+		</body>
+		<back>
+			<pb n="29"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0032.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div>
+				<head xml:id="h_novaes_0025">SECÇÃO CIRURGICA FERIDAS POR ARMA DE FOGO.
+					PROPOSIÇÕES.</head>
+				<p xml:id="p_novaes_0145">1.ª—As feridas por arma de fogo são produzidas por
+					projectis arremessados pela explosão da polvora. </p>
+				<p xml:id="p_novaes_0146">2.ª—As feridas por arma de fogo são essencialmente
+					contuzas, tendo os seus bordos geralmente seccos, anegrados, abertos e
+					echymosados.</p>
+				<p xml:id="p_novaes_0147">3.ª—Em geral póde-se, sem muita difficuldade, nos
+					ferimentos por arma de fogo distinguir-se as aberturas de entrada e de sahida da
+					bala.</p>
+				<p xml:id="p_novaes_0148">4.ª—A abertura de entrada é geralmente regular e contuza,
+					tendo as <term type="body-part" xml:id="t_novaes_0152" lemma="parte mole">partes
+						molles</term> dirigidas para dentro; a da sahida é menos contuza, mais
+					irregular, e as <term type="body-part" xml:id="t_novaes_0153" lemma="parte mole"
+						>partes molles</term> são projectadas para fóra.</p>
+				<p xml:id="p_novaes_0149">5.ª—Pela existencia de uma só abertura, não deve o
+					cirurgião absolutamente inferir que existe n'ella o projectil: assim como pela
+					existencia de duas aberturas não deve elle affirmar a não existencia de corpo
+					extranho.</p>
+				<p xml:id="p_novaes_0150">6.ª—Para examinar se ha ou não corpo extranho em uma
+					ferida o melhor instrumento de que o cirurgião póde dispor é o proprio dêdo.</p>
+				<p xml:id="p_novaes_0151">7.ª—Nos casos em que os projectis se acharem profundamente
+					situados, e escaparem aos meios de investigação ordinarios, é de grande recurso
+					o emprego do instrumento inventado por Nelaton, na occasião do ferimento do
+					General Garibaldi.</p>
+				<p xml:id="p_novaes_0152">8.ª—Modernamente o emprego das sondas electricas tem sido
+					de grande vantagem.</p>
+				<p xml:id="p_novaes_0153">9.ª—O prognostico das feridas por arma de fogo é quasi
+					sempre grave e algumas vezes mortal.</p>
+				<p xml:id="p_novaes_0154">10.—Em certos casos as amputações são reclamadas em
+					consequencia desses ferimentos, e as vezes ellas devem ser praticadas
+					immediatamente.</p>
+				<p xml:id="p_novaes_0155">11.—E' de grande necessidade a observancia dos meios
+					hygienicos no tratamento das feridas por arma de fogo.</p>
+				<p xml:id="p_novaes_0156">12.—A hydrotherapia, o oleo de <term type="plant"
+						xml:id="t_novaes_0154" lemma="copaíba">copahiba</term>, a <term
+						type="chemical-medicine" xml:id="t_novaes_0445" lemma="glicerina"
+						>glycerina</term>, o <term type="chemical-medicine" xml:id="t_novaes_0446"
+						lemma="ácido fênico">acido phenico</term>, a <term type="chemical-medicine"
+						xml:id="t_novaes_0447" lemma="tintura de iodo">tinctura de iodo</term>; o
+						<term type="chemical-medicine" xml:id="t_novaes_0448"
+						lemma="álcool canforado">alcool camphorado</term>, e o Labarraque, são hoje
+					empregados com muita vantagem no tratamento das feridas por arma de fogo.</p>
+			</div>
+			<pb n="30"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0033.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div>
+				<head xml:id="h_novaes_0026">SECÇÃO MEDICA Acção physiologica e therapeutica do
+						<term type="plant" xml:id="t_novaes_0155">café</term> e do <term
+						type="plant" xml:id="t_novaes_0156">chá</term> PROPOSICÕES.</head>
+				<epigraph>
+					<p xml:id="p_novaes_0157">C'est toi, divin <term type="plant"
+							xml:id="t_novaes_0157">café</term>, dont l'aimable liqueur Sans alterer
+						la tête, épanouit le cœur, (DÉLILE.)</p>
+				</epigraph>
+				<p xml:id="p_novaes_0158">1.ª—O <term type="plant" xml:id="t_novaes_0158"
+						>café</term> pertence a familia das Rubiaceas, a tribu das cofeaceas, é
+					conhecido pelo nome de <name type="taxon" subtype="species">coffœa
+						arabica</name>.</p>
+				<p xml:id="p_novaes_0159">2.ª—O principio activo do <term type="plant"
+						xml:id="t_novaes_0160">café</term> e a <term type="chemical-medicine"
+						xml:id="t_novaes_0449" lemma="cafeína">cafeina</term>. Encontra-se n'elle
+					celluloze-glycose, dextrina, acido vegetal indeterminado, legumina, caseina,
+					oleo essencial concreto, essencia aromatica, substancias gordas, e substancias
+					mineraes.</p>
+				<p xml:id="p_novaes_0160">3.ª—E' principalmente sobre o systema nervoso que o <term
+						type="plant" xml:id="t_novaes_0161">café</term> dirije a sua acção.</p>
+				<p xml:id="p_novaes_0161">4.ª—O <term type="plant" xml:id="t_novaes_0162"
+						>café</term> estimulando o <term type="body-part" xml:id="t_novaes_0163"
+						lemma="cérebro">cerebro</term> sem perturbal-o, como os alcoolicos, produz
+					nas pessôas nervosas um estado erethil e vaporoso, facilita o trabalho
+					intellectual, desenvolve as idéas e é por isso chamado por Cabanis, o alimento
+					do genio.</p>
+				<p xml:id="p_novaes_0162">5.ª—O abuso do <term type="plant" xml:id="t_novaes_0164"
+						>café</term> pelas pessoas nervosas e não habituadas á seu uso produz a
+						<term type="symptom" xml:id="t_novaes_0450" lemma="insônia">insomnia</term>,
+					o <term type="symptom" xml:id="t_novaes_0451">tremor</term> dos <term
+						type="body-part" xml:id="t_novaes_0165" lemma="membro">membros</term>, as
+						<term type="symptom" xml:id="t_novaes_0452" lemma="palpitação"
+						>palpitações</term> do <term type="body-part" xml:id="t_novaes_0166"
+						>coração</term> e o enfraquecimento do <term type="body-part"
+						xml:id="t_novaes_0167" lemma="órgão">orgão</term> da digestão.</p>
+				<p xml:id="p_novaes_0163">6.ª—Depois da comida não só o <term type="plant"
+						xml:id="t_novaes_0168">café</term> deleita-nos immenso o sentido do gosto,
+					como ainda favorece a digestão excitando o <term type="body-part"
+						xml:id="t_novaes_0169" lemma="estômago">estomago</term>.</p>
+				<p xml:id="p_novaes_0164">7.ª—O <term type="plant" xml:id="t_novaes_0170"
+						>café</term> é empregado nas <term type="symptom" xml:id="t_novaes_0453"
+						lemma="cefalalgia nervosa">cephalalgias nervosas</term>, <term
+						type="symptom" xml:id="t_novaes_0454" lemma="congestão cerebral">congestões
+						cerebraes</term>, <term type="illness" xml:id="t_novaes_0455"
+						lemma="hérnia estrangulada">hernias estranguladas</term>, <term
+						type="illness" xml:id="t_novaes_0456" lemma="cólera-morbus"
+						>cholera-morbus</term> e em outros estados morbidos.</p>
+				<p xml:id="p_novaes_0165">8.ª—O <term type="plant" xml:id="t_novaes_0171"
+						>café</term>, por suas propriedades estimulantes, é empregado para combater
+					a acção do <term type="chemical-medicine" xml:id="t_novaes_0457" lemma="ópio"
+						>opio</term> dos alcoolicos.</p>
+				<p xml:id="p_novaes_0166">9.ª—O <term type="plant" xml:id="t_novaes_0172"
+					>chá</term>, <name type="taxon" subtype="species">thea sinensis</name>, da
+					familia das <name type="taxon" subtype="family">Theaceas</name>, do genero <name
+						type="taxon" subtype="genus">thea</name>.</p>
+				<p xml:id="p_novaes_0167">10.—O principio activo do <term type="plant"
+						xml:id="t_novaes_0175">chá</term> é a <term type="chemical-medicine"
+						xml:id="t_novaes_0458" lemma="teína">thêna</term>. N'elle se encontra pela
+					analyse, oleo essencial, chlorafila, cêra, rezina, gomma, <term
+						type="chemical-medicine" xml:id="t_novaes_0459">tanino</term>, materia
+					extrativa, lenhoso e tambem a <term type="chemical-medicine"
+						xml:id="t_novaes_0460" lemma="cofeína">cofeina</term>.</p>
+				<p xml:id="p_novaes_0168">11.—O <term type="plant" xml:id="t_novaes_0176">chá</term>
+					até certo tempo se era usado como bebida agradavel e de luxo: depois dos
+					trabalhos de Péligot, que reconheceu n'elle a existencia de grandes proporções
+					em principios azotados, foi collocado entre os alimentos nutritivos.</p>
+				<p xml:id="p_novaes_0169">12.—Os individuos, cujas digestões são vagarosas e
+					tardias, devem fazer uso da infusão de <term type="plant" xml:id="t_novaes_0177"
+						>chá</term> em pequena quantidade, afim de que este como digestivo ajude o
+						<term type="body-part" xml:id="t_novaes_0178" lemma="estômago"
+						>estomago</term> a digerir os alimentos solidos de que se acha
+					sobrecarregado.</p>
+			</div>
+			<pb n="31"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0034.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div>
+				<head xml:id="h_novaes_0027">SECÇÃO ACCESSORIA Como reconheer-se que houve aborto em
+					um caso medico-legal ? PROPOSIÇÕES.</head>
+				<p xml:id="p_novaes_0170">1.ª—Aborto em Medicina-legal, é a expulsão violenta e
+					prematura do producto da concepção.</p>
+				<p xml:id="p_novaes_0171">2.ª—Ainda são mnito obscuras e difficeis as questões que
+					offerece o estudo do aborto em Medicina-legal.</p>
+				<p xml:id="p_novaes_0172">3.ª—Este crime é quasi quotidianamente praticado no Brasil
+					por mães escravas, que procuram por este meio barbaro, subtrahir ao azorrague do
+					captiveiro o fructo de seus amores.</p>
+				<p xml:id="p_novaes_0173">4.ª—Este crime, que deve ser indagado severamente pela
+					justiça, e rigorosamente punido pelas leis, passa quasi sempre impune e
+					desconhecido entre nós.</p>
+				<p xml:id="p_novaes_0174">5.ª—Para provocar-se o aborto são empregados os meios
+					indirectos ou substancias therapeuticas, e os meios directos ou processos
+					cirurgicos.</p>
+				<p xml:id="p_novaes_0175">6.ª—As substancias therapeuticas empregadas como abortivas
+					são muitas vezes falliveis.</p>
+				<p xml:id="p_novaes_0176">7.ª—Os processos cirurgicos gozam incontestavelmente de
+					maior efficacia.</p>
+				<p xml:id="p_novaes_0177">8.ª—O <term type="plant" xml:id="t_novaes_0179">centeio
+						espigado</term> deixa de ser considerado como agente poderoso para provocar
+					o aborto, porque elle não determina a contractilidade do <term type="body-part"
+						xml:id="t_novaes_0180" lemma="útero">utero</term> sem que haja trabalho em
+					começo.</p>
+				<p xml:id="p_novaes_0178">9.ª—Entre os diversos meios abortivos, a electricidade é
+					modernamente empregada como menos perigosa a vida da mulher.</p>
+				<p xml:id="p_novaes_0179">10.—Não deve o medico legista prescindir de examinar o
+					producto expellido pelo <term type="body-part" xml:id="t_novaes_0181"
+						lemma="útero">utero</term>, para reconhecer se houve ou não aborto.</p>
+				<p xml:id="p_novaes_0180">11.—Tambem deve elle prestar attenção as alterações que
+					apresentam os <term type="body-part" xml:id="t_novaes_0182" lemma="órgão"
+						>orgãos</term> genitaes da mulher, para maior clareza do diagnostico.</p>
+				<p xml:id="p_novaes_0181">12.—Não deve o medico legista esquecer-se dos precedentes
+					da mulher, que são de algum valor para o caso em questão.</p>
+			</div>
+			<pb n="32"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0035.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div>
+				<head xml:id="h_novaes_0028">HYP CRATIS APHORISMI</head>
+				<p xml:id="p_novaes_0182">I Vita brevis, ars longa, occasio prœceps, experientia
+					fallax, judicium difficile. (Sect. 1ª aph. 1).</p>
+				<p xml:id="p_novaes_0183">II In febribus, ex somnis pavores, aut convulsiones,
+					malum. (Sect. 4ª aph. 67).</p>
+				<p xml:id="p_novaes_0184">III Ubi somnus delirium sedat, bonum. (Sect. 2. aph.
+					2).</p>
+				<p xml:id="p_novaes_0185">IV Ad extremos morbos, extrema remedia, exquisite optima.
+					(Sect. 2ª aph. 6).</p>
+				<p xml:id="p_novaes_0186">V Vulneri convulsio superveniens, lethale. (Sect. 5ª aph.
+					2ª).</p>
+				<p xml:id="p_novaes_0187">VI Mulier in <term type="body-part" xml:id="t_novaes_0183"
+						lemma="útero">utero</term> gerens sectâ venâ abortit, et magis, si major
+					fuefœtus. (Sect. 5ª aph. 31).</p>
+			</div>
+			<pb n="33"
+				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0036.jp2&amp;id=101464815.nlm.nih.gov"/>
+			<div type="aprovacoes">
+				<note xml:id="n_novaes_0001">[No original, a página seguinte está em letra
+					caligráfica.]</note>
+				<div type="despacho">
+					<p xml:id="p_novaes_0188">Remettida á commissão revisora, Bahia e Faculdade de
+						Medicina em 1 de Agosto de 1871,</p>
+					<signed>Dr. Cincinato Pinto.</signed>
+				</div>
+				<div type="parecer">
+					<p xml:id="p_novaes_0190">Esta conforme os Estatutos. Bahia 3 de Agosto de
+						1871.</p>
+					<signed>Dr. Demetrio.</signed>
+					<signed>Dr. V. C. Damazio</signed>
+					<signed>Dr. Moura.</signed>
+				</div>
+				<div type="despacho">
+					<p xml:id="p_novaes_0194">Imprima-se. Bahia e Faculdade de Medicina 7 de Agosto
+						de 1871.</p>
+					<signed>Dr. Magalhães</signed>
+				</div>
+			</div>
+		</back>
+	</text>
+</TEI>

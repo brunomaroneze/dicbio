@@ -30,3 +30,23 @@ ngrams_original_text.csv
 ngrams_stopwords_removed.csv
 .idea/
 data/termos_extraidos.csv
+
+# ROBOT: ferramenta baixada e relatórios gerados por scripts/testes_robot.py
+ferramentas/robot/robot.jar
+relatorios/robot/*/
+ferramentas/
+
+# Obras de referência
+ferramentas/lexicos/
+
+# Imagens digitalizadas das obras do corpus
+corpus_digital/obras/fazendeiroimbert_imagens/
+corpus_digital/obras/observSemmedo_imagens/
+
+corpus_digital/obras/brotero2transkribus/
+corpus_digital/obras/carvalhoavisotranskribus/
+corpus_digital/obras/carvalhoaviso_imagens/
+
+# Site de conferência gerado localmente
+revisao/_site/
+revisao/_site.novo/

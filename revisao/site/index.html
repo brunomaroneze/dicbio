@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conferência de transcrições</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+  <select id="obra" aria-label="Obra"></select>
+  <button id="ant" title="Página anterior">◀</button>
+  <select id="pagina" aria-label="Página"></select>
+  <button id="prox" title="Próxima página">▶</button>
+  <button id="pend">Próxima não conferida</button>
+  <span id="progresso"></span>
+  <button id="ajudaBt">Instruções</button>
+  <button id="confirma" hidden>Já cliquei em Create: limpar rascunho</button>
+  <button id="enviar" class="forte" disabled>Enviar</button>
+</header>
+<main>
+  <section id="lado-img">
+    <div id="zoom"><button id="menos" aria-label="Diminuir">−</button><button id="ajusta">Ajustar</button><button id="mais" aria-label="Aumentar">+</button>
+      <a id="abre" target="_blank" rel="noopener">Abrir imagem</a></div>
+    <p id="semimg" hidden>Não foi possível carregar a imagem desta página.</p>
+    <div id="moldura"><img id="img" alt="Imagem da página"></div>
+  </section>
+  <section id="lado-txt">
+    <div id="teclas"></div>
+    <div id="situacao"></div>
+    <div id="texto"></div>
+    <label>Observações para o coordenador (texto faltando, trecho ilegível, parágrafo a dividir…)
+      <textarea id="obs" rows="2"></textarea></label>
+    <p><button id="salvar" class="forte">Página conferida: salvar e avançar</button>
+      <button id="desfaz">Descartar alterações desta página</button></p>
+  </section>
+</main>
+<dialog id="ajuda">
+  <h2>Como conferir</h2>
+  <ol>
+    <li>Compare o texto com a imagem e corrija só o que estiver diferente do impresso.</li>
+    <li><b>Não modernize a ortografia</b> nem corrija erros que estejam no próprio livro. O “s longo” (ſ) é transcrito como “s” comum.</li>
+    <li>Não transcreva títulos correntes, números de página nem reclamos. Palavras divididas por hífen no fim da linha ficam unidas.</li>
+    <li>Uma palavra dividida entre duas páginas aparece inteira em uma só delas (em geral, na página seguinte).</li>
+    <li>Marcas como ⟦1⟧ indicam o lugar de uma nota: não as altere.</li>
+    <li>Se faltar um parágrafo ou houver algo que você não consiga resolver, escreva em “Observações”.</li>
+    <li>Ao terminar a página, clique em “Página conferida”, mesmo que não tenha mudado nada.</li>
+    <li>As páginas salvas ficam só neste navegador até você clicar em “Enviar”. Na tela do GitHub que se abre, clique em <b>Create</b>. É preciso já estar conectado à sua conta do GitHub.</li>
+  </ol>
+  <button id="fecha">Fechar</button>
+</dialog>
+<dialog id="longo">
+  <h2>Último passo</h2>
+  <p>O envio é grande e foi copiado. Abra o GitHub, clique no campo de texto, cole com <b>Ctrl+V</b> e clique em <b>Create</b>. Depois volte aqui e feche esta janela.</p>
+  <textarea id="copia" rows="4" readonly></textarea>
+  <p><a id="irGit" target="_blank" rel="noopener">Abrir o GitHub</a> <button id="fechaLongo">Fechar</button></p>
+</dialog>
+<script src="diff.js"></script><script src="app.js"></script>
+</body>
+</html>
