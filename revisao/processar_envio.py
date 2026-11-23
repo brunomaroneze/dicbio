@@ -81,7 +81,7 @@ def processa(issue):
     if len(titulo) > 120:
         titulo = f"Conferência de {obra['id']}: {len(nomes)} páginas (p. {nomes[0]} a {nomes[-1]})"
     corpo = [f"**{obra['titulo']}**", "",
-             f"Conferido por @{login}. Closes #{issue['number']}.", "",
+             f"Conferido por @{login}. Envio: #{issue['number']}.", "",
              f"Páginas: {', '.join(nomes)}. Correções: {len(rel)}.", ""]
     for p in d["paginas"]:
         if p.get("obs", "").strip():

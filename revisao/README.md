@@ -4,10 +4,10 @@ Tela em que o revisor compara a imagem de cada página com o texto, sem ver o XM
 
 ## Como funciona
 
-1. Na VPS, uma tarefa agendada baixa o `main` a cada 5 minutos e executa `gerar_site.py`, que extrai dos XML o texto de cada página. A tela e as imagens ficam no mesmo endereço, protegidas por senha.
+1. Na VPS, uma tarefa agendada baixa o `develop` a cada 5 minutos e executa `gerar_site.py`, que extrai dos XML o texto de cada página. A tela e as imagens ficam no mesmo endereço, protegidas por senha.
 2. O revisor corrige, salva uma ou mais páginas e clica em "Enviar". Abre-se uma issue já preenchida.
 3. O workflow `conferencia-pr.yml` verifica se o revisor está em `revisores.txt`, aplica as correções e abre o pull request.
-4. Aceito o pull request, a issue se fecha, a página fica registrada em `conferidas/` e a tela é atualizada.
+4. Aceito o pull request (dirigido ao `develop`), o workflow `conferencia-fechar.yml` fecha a issue, a página fica registrada em `conferidas/` e a tela é atualizada.
 
 As tags nunca são alteradas: se a correção mudasse alguma, o envio seria recusado, com um comentário na issue.
 
@@ -16,10 +16,10 @@ As tags nunca são alteradas: se a correção mudasse alguma, o envio seria recu
 1. No painel do domínio, criar um registro `A` para o subdomínio (por exemplo, `conferencia`), com o IP da VPS. Conferir com `getent hosts conferencia.DOMINIO`.
 2. Na VPS:
 
-       git clone --depth 1 -b main https://github.com/brunomaroneze/dicbio.git ~/dicbio-instalar
-       sudo bash ~/dicbio-instalar/revisao/vps/instalar.sh conferencia.DOMINIO main
+       git clone --depth 1 -b develop https://github.com/brunomaroneze/dicbio.git ~/dicbio-instalar
+       sudo bash ~/dicbio-instalar/revisao/vps/instalar.sh conferencia.DOMINIO develop
 
-   Para testar antes do merge, usar o nome da branch em lugar de `main` nos dois comandos. Depois do merge, apagar `~/dicbio-instalar` e executar os dois comandos de novo, com `main`.
+   Para a VPS seguir outro ramo: `echo RAMO | sudo tee /srv/dicbio/ramo.txt`.
 3. Ativar o HTTPS **antes** de criar senhas: `sudo certbot --nginx --redirect -d conferencia.DOMINIO`
 4. Criar os acessos (ver abaixo).
 5. Enviar as imagens locais. No computador (PowerShell):
@@ -29,7 +29,7 @@ As tags nunca são alteradas: se a correção mudasse alguma, o envio seria recu
 
 6. No GitHub, em *Settings > Actions > General*, marcar *Allow GitHub Actions to create and approve pull requests*.
 
-O workflow só funciona depois que estiver no `main`.
+Os workflows precisam estar no `main` e no `develop`: o que cria o pull request roda a partir do `main`, e o que fecha a issue, a partir do `develop`. O ramo de destino está em `conferencia-pr.yml`.
 
 ## Uso cotidiano
 
@@ -42,7 +42,7 @@ O workflow só funciona depois que estiver no `main`.
        sudo truncate -s 0 /srv/dicbio/publicado.txt
        sudo systemctl start dicbio-conferencia.service
 
-- **Conflito entre pull requests:** fechar e reabrir a issue; o pull request é refeito sobre o `main` atual.
+- **Conflito entre pull requests:** fechar e reabrir a issue; o pull request é refeito sobre o `develop` atual.
 - **A tela não atualiza:** `journalctl -u dicbio-conferencia -n 30`
 
 ## Teste local

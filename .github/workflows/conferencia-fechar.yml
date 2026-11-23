@@ -1,0 +1,26 @@
+# O "Closes #n" do GitHub só funciona em merges no ramo padrão (main). Como as
+# conferências vão para o develop, este workflow fecha a issue depois do merge.
+name: Conferência aceita
+on:
+  pull_request:
+    types: [closed]
+    branches: [develop]
+permissions:
+  issues: write
+jobs:
+  fechar-issue:
+    if: >-
+      github.event.pull_request.merged &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'conferencia/issue-')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RAMO: ${{ github.event.pull_request.head.ref }}
+      PR: ${{ github.event.pull_request.number }}
+    steps:
+      - run: |
+          N="${RAMO#conferencia/issue-}"
+          [[ "$N" =~ ^[0-9]+$ ]] || exit 1
+          gh issue close "$N" --comment "Conferência aceita em #$PR. Obrigado!"
