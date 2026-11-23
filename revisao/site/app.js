@@ -52,7 +52,7 @@ function mostra(i) {
     ta.addEventListener('focus', () => ultimo = ta);
     ta.addEventListener('input', () => {
       altura(ta); marca(div, s, ta.value);
-      const r = rascunho(p); r.ok = false;
+      const r = rascunho(p); r.ok = false; delete r.env;
       if (limpa(ta.value) === limpa(s.t)) delete r.t[k]; else r.t[k] = { h: s.h, txt: ta.value };
       grava();
     });
@@ -67,10 +67,12 @@ function mostra(i) {
   atualiza();
 }
 async function abre(id, pagId) {
+  pendentes = new Set();
   const dados = await (await fetch('dados/' + id + '.json', { cache: 'no-cache' })).json();
   obra = id; $('obra').value = id; pags = dados;
   try { rasc = JSON.parse(localStorage.getItem(chave())) || {}; } catch { rasc = {}; }
   const mudaram = [];
+  limpaEnviadas();
   for (const id of Object.keys(rasc)) {
     const p = pags.find(x => x.id === id);
     if (!p) { delete rasc[id]; continue; }
@@ -82,9 +84,18 @@ async function abre(id, pagId) {
   if (mudaram.length) alert('O texto mudou no site depois do seu rascunho. Confira de novo: p. ' + mudaram.join(', '));
   $('pagina').replaceChildren(...pags.map((p, i) => new Option('', i)));
   mostra(Math.max(0, pags.findIndex(p => p.id === pagId)));
-  grava();
+  grava(); botaoConfirma();
   buscaPendentes();
 }
+// Tira do rascunho o que foi enviado e já chegou ao GitHub, mesmo sem confirmação manual.
+// r.env guarda a situação da página no momento do envio.
+function limpaEnviadas() {
+  for (const p of pags) {
+    const e = rasc[p.id]?.env;
+    if (e && ((p.conferida && !e.conferida) || (pendentes.has(p.id) && !e.pendente))) delete rasc[p.id];
+  }
+}
+function botaoConfirma() { $('confirma').hidden = !Object.values(rasc).some(r => r.env); }
 // Páginas já enviadas cujo pull request ainda não foi aceito.
 async function buscaPendentes() {
   pendentes = new Set();
@@ -99,7 +110,7 @@ async function buscaPendentes() {
       if (!m) continue;
       try { const d = JSON.parse(m[1]); if (d.obra === obra) d.paginas.forEach(p => pendentes.add(p.id)); } catch { }
     }
-    atualiza();
+    limpaEnviadas(); grava(); botaoConfirma();
   } catch { }
 }
 $('pend').onclick = () => {
@@ -115,7 +126,7 @@ $('salvar').onclick = () => {
 $('desfaz').onclick = () => {
   if (rasc[pags[atual].id] && confirm('Descartar as alterações desta página?')) { delete rasc[pags[atual].id]; grava(); mostra(atual); }
 };
-$('obs').oninput = () => { const r = rascunho(pags[atual]); r.obs = $('obs').value; r.ok = false; grava(); };
+$('obs').oninput = () => { const r = rascunho(pags[atual]); r.obs = $('obs').value; r.ok = false; delete r.env; grava(); };
 function montaEnvio() {
   const prontas = pags.filter(p => rasc[p.id]?.ok);
   const dados = { v: 1, obra, paginas: prontas.map(p => ({
@@ -138,15 +149,16 @@ $('enviar').onclick = async () => {
     try { await navigator.clipboard.writeText(corpo); } catch { $('copia').select(); }
     await new Promise(r => $('longo').addEventListener('close', r, { once: true }));
   }
-  $('confirma').hidden = false;
-  $('confirma').onclick = () => {
-    prontas.forEach(p => { delete rasc[p.id]; pendentes.add(p.id); });
-    $('confirma').hidden = true; grava(); mostra(atual);
-  };
+  prontas.forEach(p => rasc[p.id].env = { conferida: !!p.conferida, pendente: pendentes.has(p.id) });
+  grava(); botaoConfirma();
+};
+$('confirma').onclick = () => {
+  pags.filter(p => rasc[p.id]?.env).forEach(p => { delete rasc[p.id]; pendentes.add(p.id); });
+  grava(); botaoConfirma(); mostra(atual);
 };
 $('ant').onclick = () => mostra(atual - 1); $('prox').onclick = () => mostra(atual + 1);
 $('pagina').onchange = e => mostra(+e.target.value);
-$('obra').onchange = e => { $('confirma').hidden = true; abre(e.target.value); };
+$('obra').onchange = e => { abre(e.target.value); };
 $('ajudaBt').onclick = () => $('ajuda').showModal(); $('fecha').onclick = () => $('ajuda').close(); $('fechaLongo').onclick = () => $('longo').close();
 $('img').onerror = () => { $('semimg').hidden = false; $('img').hidden = true; };
 function aplicaZoom(z) { zoom = Math.max(50, Math.min(400, z)); $('img').style.width = zoom + '%'; }
