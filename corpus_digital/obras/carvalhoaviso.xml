@@ -84,6 +84,8 @@
                         <gi>div</gi> do tipo "receituario", com um <gi>div</gi> do tipo "formula"
                     para cada fórmula numerada (atributo <att>n</att>); a tábua dos capítulos forma
                     um <gi>div</gi> do tipo "sumario", com uma <gi>list</gi> para cada Parte.</p>
+                <p>O capítulo de número 12 da segunda parte foi impresso erroneamente com o número
+                    VIII.</p>
             </editorialDecl>
             <projectDesc>
                 <p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
@@ -584,9 +586,8 @@
                     aonde naõ ha Cirurgiões, cuidei em me fazer intelligivel a huns, e a outros naõ
                     usando dos termos da Arte, sem ser a proposito, e pondo tudo o que digo tanto a
                     respeito das doenças, como dos remedios por hum modo proprio, e acommodado á sua
-                    capacidade. No paragrofo, na pagina xxi, que declara,</p>
-                <p>que havia de dar no fim deste Livro hum conhecimento das Drogas, naõ me se
-                    permitio licença.</p>
+                    capacidade. No paragrofo, na pagina xxi, que declara, que havia de dar no fim
+                    deste Livro hum conhecimento das Drogas, naõ me se permitio licença.</p>
             </div>
             <pb n="não numerada 10" facs="carvalhoaviso_imagens/carvalhoaviso_0032.jpg"/>
             <div type="errata">
@@ -1322,21 +1323,21 @@
                         tem experimentado incommodo algum. Mr. de Bougaincille na relaçaõ da sua
                         viagem ao redor do Mundo, diz mesmo por hum modo expresso, que elle deve ao
                         uso da agoa distillada por esta maquina a saude da sua Equipagem<note>(d)
-                            Naõ se póde fazer differença alguma nem pe lo gosto, nem pelo cheiro
+                            Naõ se póde fazer differença alguma nem pelo gosto, nem pelo cheiro
                             entre a agoa do mar distillada com a maquina de Mr. Poissonnier, e a
-                            agoa commua do río, ou da fonte. Achando-me en já ha alguns annos em
-                            Marselha sui vistar hum Car taõ pratico na navegaçaõ do Oceano, porque
+                            agoa commua do rio, ou da fonte. Achando-me eu já ha alguns annos em
+                            Marselha fui vistar hum Capitaõ pratico na navegaçaõ do Oceano, porque
                             me haviaõ dito, que elle possuia huma destas maquinas, e que distillava
                             agoa do mar para beber: e com ef feito o Capitaõ me fez trazer duas
                             garrafas, das quaes huma era cheia de agoa do mar distillada, e a outra
                             da agoa da fonte dos Agostinhos; provei-as am bas, mas depois não soube
-                            fazer differença algumentre ellas.</note>. E como o mo <pb n="32"
-                            facs="carvalhoaviso_imagens/carvalhoaviso_0065.jpg"/>do de destillar a
+                            fazer differença algumentre ellas.</note>. E como o <pb n="32"
+                            facs="carvalhoaviso_imagens/carvalhoaviso_0065.jpg"/>modo de destillar a
                         agoa do mar nos Navios he hum objecto que interessa todas as Nações, que
                         commerceaõ pelos mares, por isso Poisson mer deu conta da sua descoberta á
                         Academia das Sciencias de Pariz em 1764. A Academia desde logo fez verificar
                         a bondade, e as vantagens desta maquina distillatoria por hum numero
-                        sufficiente de experiencias; com tudo humInglez chamado Mi. Irvine quiz
+                        sufficiente de experiencias; com tudo humInglez chamado Mr. Irvine quiz
                         usurpar a honra desta descoberta, e appropriar se da invençaõ de
                         Poissonnier; em consequencia disto elle a appresentou ao Parlamento de
                         Inglaterra, e alcançou huma recompensa de 50oo libras de tença, mas outro
@@ -2301,29 +2302,29 @@
                         todas as glandulas salivaes e faz estas partes, que saõ os principaes assen
                         tos do Escorbuto, mais dispostas a serem ata cadas por elle.</p>
                     <p>Tambem se deve reconhecer outra causa remota do Escorbuto na falta de
-                        alimentos fres cos; a prova disto he palpavel, e evidente, pois que he raro,
+                        alimentos frescos; a prova disto he palpavel, e evidente, pois que he raro,
                         que esta doença ataque aEquipagens das embarcações, que tem a com modidade
-                        de os procurarem de tempo em tem po, se se pede huma prova mais forte do
-                        queu proponho, achar-se-ha no que tem succedido muitas vezes as Tropas de
-                        huma C dade, que chega a estar sitiada por largo tem po, e que tem falta de
-                        prov mentos frescos (br os que põe o cerco, ainda que estejaõ expo tos ás
-                        mesmas fadigas, e a todas as injurias de ar, saõ pouco sujeitos ao
+                        de os procurarem de tempo em tempo, se se pede huma prova mais forte do queu
+                        proponho, achar-se-ha no que tem succedido muitas vezes as Tropas de huma
+                        Cidade, que chega a estar sitiada por largo tempo, e que tem falta de
+                        provimentos frescos<note>(b) Assegura-se, que as Tropas, que compunhaõ a
+                            Guarnição de Gibraltar estavaõ em hum deploravel estado no tempo do
+                            ultimo sitio, que esta Fortaleza experimentou, e que morrião em grande
+                            mmero de Escorbuto, a pezar de que esta Praça fosse provida de viveres
+                            por muitas vezes.</note>; os que põe o cerco, ainda que estejaõ expostos
+                        ás mesmas fadigas, e a todas as injurias de ar, saõ pouco sujeitos ao
                         Escorbuto, porque na sua vontade está o sustentarem-se de fructas de
                         legumes, e de hortaliças frescas, ao me mo tempo que os cercados, que naõ
-                        tem otros provimentos senaõ carne, e peixes salga dos, toucinho, queijo, e
-                        outros, que saõ qusi os mesmos, que se achaõ nos Navios, sacruelmente
+                        tem outros provimentos senaõ carne, e peixes salgados, toucinho, queijo, e
+                        outros, que saõ quasi os mesmos, que se achaõ nos Navios, saõ cruelmente
                         atacados delle, morrem aos centos, e naõ recobraõ a sua saude, senaõ depois
-                        de <pb n="81" facs="carvalhoaviso_imagens/carvalhoaviso_0112.jpg"/>lvantado
+                        de <pb n="81" facs="carvalhoaviso_imagens/carvalhoaviso_0112.jpg"/>levantado
                         o cerco, quando elles podem procurar alimentos frescos. O mesmo succede aos
                         Marinheiros, que no tempo do curso de huma prolongada, e trabalhoza
                         navegaçaõ tem adquirido o Escorbuto pela falta de alimentos frescos, para
                         logo se curaõ promptamente, e com facilidade, desde que tem a ventura de
                         chegarem, o de fazerem certa assistencia em hum porto, aonde achem estes
-                        alimentos em abundancia.<note>(b) Assegura-se, que as Tropas, que compunhaõ
-                            a Guarnição de Gibraltar estavaõ em hum deplorvel estado no tempo do
-                            ultimo sitio, que esta Fortaleza experimentou, e que morrião em grande
-                            mmero de Escorbuto, a pezar de que esta Praça solprovida de viveres por
-                            muitas vezes,</note></p>
+                        alimentos em abundancia.</p>
                     <p>Os melhores alimentos frescos capazes de preservar, e de curar huma Equipagem
                         do Escorhuto, saõ as fructas, as hortaliças, e todos os que saõ tirados do
                         reino vegetal; asim eu penso, que he sem razaõ, que se quercria fazer
@@ -4741,23 +4742,25 @@
                     <div type="secao">
                         <pb n="235" facs="carvalhoaviso_imagens/carvalhoaviso_0226.jpg"/>
                         <head>Da Dysenteria.</head>
-                        <p>Differença, que ha entre a diarrhéa, e H a ayseneria () he, que ma
-                            primeira o doentes naõ lançaõ senaõ erremetros puros, liquidos, em lugar
-                            que ra segunda estes xesmos excremenros saõ nisturados com sangue, o que
-                            faz esta ultima doença mais impertuna, que a primeira. Ella he quasi
-                            sempre acompanhada de colicas, e de tenesmo, que he hum desejo frequente
-                            de ir á cadeira furada, com dôres.</p>
+                        <p>A Differença, que ha entre a diarrhéa, e a dysenteria<note>(*) A
+                                verdadeira differença consiste em que a Disenteria vem com dôres, e
+                                a diarrhéa naõ. Not. do Trad.</note> he, que ma primeira o doentes
+                            naõ lançaõ senaõ erremetros puros, liquidos, em lugar que ra segunda
+                            estes mesmos excrementos saõ misturados com sangue, o que faz esta
+                            ultima doença mais importuna, que a primeira. Ella he quasi sempre
+                            acompanhada de colicas, e de tenesmo, que he hum desejo frequente de ir
+                            á cadeira furada, com dôres.</p>
                         <p>Esta doença começa muitas vezes por hum frio geral em todas as partes do
                             corpo, e cipalmente no ventre; o calor, os incómmodos, as dôres
                             violentas, as colicas, e as dores vivas no ventre, faz os symptomas, que
-                            se seguem depois do frio; muiras rezes mesmo, antes que se faça
-                            evacuaçaõ alguma, experimentaón os doentes vertigens, desmaios, nauseas,
-                            dôres de estomago, e de sejos de vomitar, o pulso naõ he muito
-                            levantado, elle he muiras vezes sraco, e pequeno, a lirgua he secca,
-                            arida, e carregada de hum sedimenr0 amarellado, as eracuações de ventre
-                            saõ amarellas, e biliosas no principio, mas depois se fazem viscosas,
-                            tomaõ differentes misturas de verde, de escuro, e de negro, saõ tinctas
-                                <pb n="236" facs="carvalhoaviso_imagens/carvalhoaviso_0227.jpg"/>de
+                            se seguem depois do frio; muitas vezes mesmo, antes que se faça
+                            evacuaçaõ alguma, experimentaõ os doentes vertigens, desmaios, nauseas,
+                            dôres de estomago, e desejos de vomitar, o pulso naõ he muito levantado,
+                            elle he muitas vezes fraco, e pequeno, a lingua he secca, arida, e
+                            carregada de hum sedimento amarellado, as evacuações de ventre saõ
+                            amarellas, e biliosas no principio, mas depois se fazem viscosas, tomaõ
+                            differentes misturas de verde, de escuro, e de negro, saõ tinctas <pb
+                                n="236" facs="carvalhoaviso_imagens/carvalhoaviso_0227.jpg"/>de
                             sangue, e se assimilhaõ á lavadura da carne crua, humas vezes saõ mais
                             liquidas, outras menos, e exhalaõ lium cheiro fetido, quanto mais se
                             augmenta o doença, tanto saõ mais frequentes, dolorosas, e fedorentas as
@@ -4765,8 +4768,7 @@
                             vezes estaõ os doertes indo á bacia a cada instante sem lançar materia
                             alguma, excepto algumas viscosidade sanguinolentas, que irritaõ, e
                             escaldaõ a ertremidade do intestino, debilitaõ os doentes, e
-                                esgoraõ-nos.<note>(*) A verdadeira differença consiste em que a
-                                Disenteria vem com dôres, e a diarthéa naõ. Nor. do Trad.</note></p>
+                            esgoraõ-nos.</p>
                         <p>Para fazer parar os progressos da dysente ria naõ ha remedio mais
                             efficaz, que a infusaõ de cipó dado conforme se determina na formula, ou
                             receita do N. 29; este he o famoso remedio de Mr. Helvecio, depois do
@@ -5099,22 +5101,23 @@
                         depois a vir outra vez; neste intervallo se formaõ oestrucções, e esta
                         quantidade de differentes remedios tomados sem preparo algum, e sem dieta, e
                         que no seu fundo naõ são sensõ Quina ma disfarçada, e mascarada debaixo de
-                        alguma forma, ou algum purgante drastico (), incendiaõ o sangue, encrespaõ o
-                        estomago, os intestinos, ou tripas, endurecem as glandulas do mesenterio,
-                        produzem demoras de circulaçaõ no figado, no baço, no pancreas, donde se
-                        seguem doenças muito mais <pb n="252"
+                        alguma forma, ou algum purgante drastico<note>(*) Chamaõ-se purgantes
+                            drasticos os que purgaé com violencia; taes saõ a tarraço, e os ouims
+                            iutna malos, a laureola, o trovisco, os pepinos de S. Gregorio; estas
+                            plantas purgaõ até sangue; certos Marinheiros robustos talvez que tenhão
+                            sido cura dos de alguma febre de accesso rebelde com similhantes
+                            remedios; mas o seu usa naõ he sem perigo, muitos outros morreriaõ por
+                            ter usado delles.</note>, incendiaõ o sangue, encrespaõ o estomago, os
+                        intestinos, ou tripas, endurecem as glandulas do mesenterio, produzem
+                        demoras de circulaçaõ no figado, no baço, no pancreas, donde se seguem
+                        doenças muito mais <pb n="252"
                             facs="carvalhoaviso_imagens/carvalhoaviso_0243.jpg"/>perigosas, e mais
                         difficeis de curar, do que as febres intermittentes, tal he o effeito da
                         Quina, quando se toma sem cautela, e sem preparo. As plantas, que saõ
                         purgantes drasticos, naõ saõ menos perniciosas, ellas irritaõ, até mesmo
                         corroem o estomago, e os intestinos, produzem purgações excessivas,
                         diarrhéas, dy sentcrias, e outras doenças graves, que muitas vezes se fazem
-                            mortaes.<note>(*) Chamaõ-se purgantes drasticos os que purgaé com
-                            violencia; taes saõ a tarraço, e os ouims iutna malos, a laureola, o
-                            trovisco, os pepinos de S. Gregorio; estas plantas purgaõ até sangue;
-                            certos Marinheiros robustos talvez que tenhão sido cura dos de alguma
-                            febre de accesso rebelde com similhantes remedios; mas o seu usa naõ he
-                            sem perigo, muitos outros morreriaõ por ter usado delles.</note></p>
+                        mortaes.</p>
                     <p>Se se pezarem bem todas estas razões, que saõ fundadas sobre a natureza da
                         doença, e dos remedios, e que eu poderia confirmar com huma infinidade de
                         provas, que a observaçaõ. e huma prática de trinta annos, me tem
@@ -7377,30 +7380,30 @@
                         por isso eu lho rou a explicar.</p>
                     <p>Tomardõ huma liga de atar as mas, hum nastro, ou fitta de linha, de seda, de
                         algodaõ em muitas dobras, ainda mesmo huma, ou muitas meadas de linha, com
-                        que se faraõ duas voltas para cima da ferida (), que se seguraraõ <pb
-                            n="360" facs="carvalhoaviso_imagens/carvalhoaviso_0351.jpg"/>com hum no,
-                        mas de modo que fiquem assas laxas para poder passar huma almofadinha de
-                        panno branco, e hum pão de meio palmo de comprimento, que se voltará em
-                        forma de arrocho, quasi como fazem os carreiros, quando querem segurar seus
-                        fardos sobre hum carro; hir-se-ha apertando o Torniquete gradualmente, até
-                        que o sangue naõ esguiche mais; neste instante da se o Torniquere a segurar
-                        a algũma outra pessoa, que terá cuidado de o conservar neste estado por todo
-                        o tempo, em que se estiver limpando a ferida, em que ella se enxugue, e em
-                        que se lhe applique a isca de couro. Depois de se ter posto a isca de couro
-                        no lugar cobre-se com fios seccos, ou arrolha-se a ferida com elles, e
-                        torna-se a cobrir com hum, ou muitos chumaços, e segurar-se tudo com huma
-                        ligadura hum pouco apertada. Quando se acapar de fazer a ligadura,
-                        affroxa-se o Torniquete tanto ou quanto, para ver se o sangue está bem
-                        parado, e se naõ transuda ao travez do apparelho; uinda que o sangue esteja
-                        parado, com tudo sempre he necessario naõ tirar de todo o Torniquete, basta
-                        alarga-lo hum pouco, e deixa-lo sempre ahi, para se <pb n="361"
-                            facs="carvalhoaviso_imagens/carvalhoaviso_0352.jpg"/>popoder tornar a
-                        servir delle promptamente, logo que a hemorrhagia tornar a
-                            apparecer.<note>(*) Sendo a ferida do joelho para baixo, se fará. a
-                            ligadura tres, ou quatro dedos acima do joelho pondo o chumaço da parte
-                            interna da coxa, em cima da arteria; e sendo a ferida do cotovelo para
-                            baixo, se fará a ligadura do cotovelo para cima, pondo o chumaço na
-                            parte interna do braço, aonde va a arteria. Nor. do Ttaduct.</note></p>
+                        que se faraõ duas voltas para cima da ferida<note>(*) Sendo a ferida do
+                            joelho para baixo, se fará. a ligadura tres, ou quatro dedos acima do
+                            joelho pondo o chumaço da parte interna da coxa, em cima da arteria; e
+                            sendo a ferida do cotovelo para baixo, se fará a ligadura do cotovelo
+                            para cima, pondo o chumaço na parte interna do braço, aonde vai a
+                            arteria. Not. do Traduct.</note>, que se seguraraõ <pb n="360"
+                            facs="carvalhoaviso_imagens/carvalhoaviso_0351.jpg"/>com hum nó, mas de
+                        modo que fiquem assas laxas para poder passar huma almofadinha de panno
+                        branco, e hum pão de meio palmo de comprimento, que se voltará em forma de
+                        arrocho, quasi como fazem os carreiros, quando querem segurar seus fardos
+                        sobre hum carro; hir-se-ha apertando o Torniquete gradualmente, até que o
+                        sangue naõ esguiche mais; neste instante da se o Torniquere a segurar a
+                        algũma outra pessoa, que terá cuidado de o conservar neste estado por todo o
+                        tempo, em que se estiver limpando a ferida, em que ella se enxugue, e em que
+                        se lhe applique a isca de couro. Depois de se ter posto a isca de couro no
+                        lugar cobre-se com fios seccos, ou arrolha-se a ferida com elles, e torna-se
+                        a cobrir com hum, ou muitos chumaços, e segurar-se tudo com huma ligadura
+                        hum pouco apertada. Quando se acapar de fazer a ligadura, affroxa-se o
+                        Torniquete tanto ou quanto, para ver se o sangue está bem parado, e se naõ
+                        transuda ao travez do apparelho; uinda que o sangue esteja parado, com tudo
+                        sempre he necessario naõ tirar de todo o Torniquete, basta alarga-lo hum
+                        pouco, e deixa-lo sempre ahi, para se <pb n="361"
+                            facs="carvalhoaviso_imagens/carvalhoaviso_0352.jpg"/>poder tornar a
+                        servir delle promptamente, logo que a hemorrhagia tornar a apparecer.</p>
                     <p>Huma vez que o sangue estiver parado, ficará o ferido em hum perfeito
                         descanço; sangrar-se ha huma, ou duas vezes para prevenir a febre, ou
                         faze-la menos forte, e naõ se levantará o primeiro apparelho senaõ dous, ou
@@ -7809,37 +7812,36 @@
                         o mesmo successo, principalmente depois de ter adquirido algum pequeno
                         conhecimento sobre esta materia, que eu vou a cuidar de a pôr em termos
                         habeis de cada hum a perceber? Alem disto naõ sabem todos que a necessidade
-                        he mãi da industria</p>
-                    <p>Para conhecer ()), e estar certo, que hum <pb n="381"
-                            facs="carvalhoaviso_imagens/carvalhoaviso_0372.jpg"/>osso está quebrado,
-                        he precizo que duas pessoas peguem com a maõ no membro, buo por cima, outra
-                        por barro da parte, aonde o ferido sente a maior dor; em cuanto has deas
-                        pessoas moverem suavamente a parte, huma terceira correrá com a maón toda a
-                        extensaón do membro; e se alguma destas tres pessoas ouvir hum pequeño
-                        estalo, como de lenha cuando do arde, na parte, pode se estar seguro, que o
-                        oso está quebrado na parte, aonde tem ouvido este estrono. Se se ajuntar a
-                        este sinal, que he o mais seguro, a inchaçaón, a dor, a deformidade de
-                        membro, a impoten cia de o mejer, entaón ya se mó pode duvidar mais de que
-                        haja fractura, ou quebradura. Reconhecido asim o mal, en cuanto has duas
-                        pessoas que pegaó com a maón nas duas estremidades, ou nas duas pontas do
-                        oso quebras do, e puxaón o membro, cada huma de seu do por movimentos, ou
-                        puxões progressivos, a terceira o abraza com as suas duas mañs juntas no
-                        lugar, aonde se tem feito ouvir o estrondo; se ella sentir desigualdades
-                        debaixo dos seus dedos, comprimirá, empurrará estas desiGualdades, e
-                        igualará tanto, como puder, así ¿Cuas pontas do oso quebrado huma contra a
-                        outra; as esquirolas, ou as porzóes de oso, se se acharem, seraõ repostas
-                        nos leus lugares, e a fractura será posta em boa situaçaõ. O succeso tratada
-                        por Mr. Pott, por isso julguei faria melhor em traduzir o seu Novo Metlodo
-                        de tratar as fractaras, e Luxações. <pb n="382"
-                            facs="carvalhoaviso_imagens/carvalhoaviso_0373.jpg"/>cesso desta
-                        operaçaõ he seguro, e certo, se o ferido se achar alliviado, se naõ sentir
-                        mais dôr, ou se a sentir muito pequena, se a deformidade do membro
-                        desapparecer; se se não sentir mais desigualdade alguma, finalmente se
-                        comparando o membro ferido com o que esta saõ, se acharem ambos
-                            iguaes.<note>(*) Este breve tratado do Auctor sobre as frac turas e
-                            luxações preclzarla de se fazer mais claro, e simples por meio de humas
-                            Notas, que sahiriaõ extensas, mas como nós temos esta materia muito
-                            bem</note></p>
+                        he mãi da industria?</p>
+                    <p>Para conhecer<note>(*) Este breve tratado do Auctor sobre as fracturas e
+                            luxações precizaria de se fazer mais claro, e simples por meio de humas
+                            Notas, que sahiriaõ extensas, mas como nós temos esta materia muito bem
+                            tratada por Mr. Pott, por isso julguei faria melhor em traduzir o seu
+                            Novo Methodo de tratar as fracturas, e Luxações.</note>, e estar certo,
+                        que hum <pb n="381" facs="carvalhoaviso_imagens/carvalhoaviso_0372.jpg"
+                        />osso está quebrado, he precizo que duas pessoas peguem com a maõ no
+                        membro, huma por cima, outra por barro da parte, aonde o ferido sente a
+                        maior dor; em quanto as duas pessoas moverem suavemente a parte, huma
+                        terceira correrá com a maõ toda a extensaõ do membro; e se alguma destas
+                        tres pessoas ouvir hum pequeño estalo, como de lenha quando arde, na parte,
+                        pode se estar seguro, que o oso está quebrado na parte, aonde tem ouvido
+                        este estrono. Se se ajuntar a este sinal, que he o mais seguro, a inchaçaõ,
+                        a dor, a deformidade de membro, a impotencia de o mejer, entaón ya se mó
+                        pode duvidar mais de que haja fractura, ou quebradura. Reconhecido asim o
+                        mal, em quanto as duas pessoas que pegaõ com a maõ nas duas estremidades, ou
+                        nas duas pontas do osso quebrado, e puxaõ o membro, cada huma de seu lado
+                        por movimentos, ou puxões progressivos, a terceira o abraça com as suas duas
+                        maõs juntas no lugar, aonde se tem feito ouvir o estrondo; se ella sentir
+                        desigualdades debaixo dos seus dedos, comprimirá, empurrará estas
+                        desigualdades, e igualará tanto, como puder, as duas pontas do osso quebrado
+                        huma contra a outra; as esquirolas, ou as porções de osso, se se acharem,
+                        seraõ repostas nos seus lugares, e a fractura será posta em boa situaçaõ. O
+                            <pb n="382" facs="carvalhoaviso_imagens/carvalhoaviso_0373.jpg"
+                        />successo desta operaçaõ he seguro, e certo, se o ferido se achar
+                        alliviado, se naõ sentir mais dôr, ou se a sentir muito pequena, se a
+                        deformidade do membro desapparecer; se se não sentir mais desigualdade
+                        alguma, finalmente se comparando o membro ferido com o que esta saõ, se
+                        acharem ambos iguaes.</p>
                     <p>Naõ basta ter chegadas huma para a outra as pontas do osso quebrado, he
                         precizo para obter huma perfeita cura conserva-las neste estado, até que
                         ellas estejaõ, por assim dizer soldadas humas com as outras, prevenir, ou
@@ -8207,7 +8209,7 @@
                 <div type="chapter" n="6">
                     <head>CAPITULO VI.</head>
                     <p>Da mordedura dos animaes venenosos.</p>
-                    <p>S Marinheiros, que aportaõ muitissmas Cvezes em paizes desconhecidos, estaõ
+                    <p>OS Marinheiros, que aportaõ muitissmas vezes em paizes desconhecidos, estaõ
                         muito mais expostos, que os outros homens a serem mordidos por serpentes, e
                         outros animaes venenosos, de que naõ podem na maior parte tempo preservarse,
                         ou livrarse a pezar de todas as cautelas, que a prudencia os obrigue a
@@ -8232,31 +8234,31 @@
                         parte mordida huma ligadura hum pouco apertada, para impedir, que o veneno
                         venha mais para cima, e depois em sarjar a ferida com huma Lanceta, hum
                         Bisturim, ou hum canivete de aparar pennas, para a fazer alliviar de todo o
-                        sangue, que tiver. Enche-se entaõ esta ferida de boa theriaga, (I) e
+                        sangue, que tiver. Enche-se entaõ esta ferida de boa theriaga,<note>(1) Eu
+                            penso, que se se misturassem na theriaga, cuja boa qualidade naõ he
+                            sempre certa nos navios mercantis, algumas gottas de alkali volatil
+                            fluido, ou de agoa de luce, ficaria o remedio sendo melhor.</note> e
                         cobre-se com hum <pb n="401"
                             facs="carvalhoaviso_imagens/carvalhoaviso_0392.jpg"/>pedaço de panno de
                         linho em forma de emplastro, que será guarnecido desta droga; e faz-se
-                        engulir logo immediatamente áquelle, que foi mordido duas oitavas (2), que
-                        se desfaráõ em hum meio cópo de bom vinho. Este remedio procura
-                        ordinariamente hum suor salutifero, que faz transpirar para fóra o pouco
-                        veneno, que pode ter passado para o sanque, destroe aquelle que pode estar
-                        encerrado na ferida, e impede os máos effeitos, que esle teria pudido
-                            produzir.<note>(1) Eu penso, que se se misturassem na theriaga, cuja boa
-                            qualidade naõ he sempre certa nos navios mercantis, algumas gottas de
-                            alkali volatil fluido, ou de agoa de luce, ficaria o remedio sendo
-                            melhor. (2) Póde-se mesmo ajuntar á theriaga, que as pessoas mordidas
-                            tomarem interiormente, a mesma quantidade de alkali volatil fluido, de
-                            agoa de luce, ou de espirito volatil de sal ammoniaco, ou darlhos
-                            separadamente em hum caldo, em huma chcara de cha, na mesma dose, que se
-                            pode augmentar segundo o effeito que produzir este remedio, que todos os
+                        engulir logo immediatamente áquelle, que foi mordido duas oitavas<note>(2)
+                            Póde-se mesmo ajuntar á theriaga, que as pessoas mordidas tomarem
+                            interiormente, a mesma quantidade de alkali volatil fluido, de agoa de
+                            luce, ou de espirito volatil de sal ammoniaco, ou darlhos separadamente
+                            em hum caldo, em huma chcara de cha, na mesma dose, que se pode
+                            augmentar segundo o effeito que produzir este remedio, que todos os
                             medicos reconhecem hoje em dia pur especifico na mordedura da vibora, e
-                            de todos os outros animaes venenosos</note></p>
-                    <p>Este methodo he mais simples, e menos cruel, que as caurerizações feitas com
-                        o ferro em braza, ou as queimaduras feitas com azcite fervendo, que se está
+                            de todos os outros animaes venenosos.</note>, que se desfaráõ em hum
+                        meio cópo de bom vinho. Este remedio procura ordinariamente hum suor
+                        salutifero, que faz transpirar para fóra o pouco veneno, que pode ter
+                        passado para o sanque, destroe aquelle que pode estar encerrado na ferida, e
+                        impede os máos effeitos, que elle teria pudido produzir.</p>
+                    <p>Este methodo he mais simples, e menos cruel, que as cauterizações feitas com
+                        o ferro em braza, ou as queimaduras feitas com azeite fervendo, que se está
                         no uso de empregar para estas castas de mordeduras; naõ se devem pois
                         empregar outros, ao menos que se naõ conheçaõ, e quando se achem á maõ
-                        especificos particulares, que ja foraõ ex perimentados Zz ii para <pb
-                            n="402" facs="carvalhoaviso_imagens/carvalhoaviso_0393.jpg"/>para estas
+                        especificos particulares, que ja foraõ experimentados para <pb n="402"
+                            facs="carvalhoaviso_imagens/carvalhoaviso_0393.jpg"/>para estas
                         mordeduras, que os naturaes do paiz conhecem.</p>
                 </div>
                 <div type="chapter" n="7">
@@ -8315,11 +8317,11 @@
                         naõ devem esperar cura, em lugar que os primeiros, quero dizer, aquelles,
                         cujas hernias entraõ facilmente no ventre, podem esperar ver suas hernias
                         curadas por meio de remedios<note>(i) O melhor remedio, que se póde applicar
-                            sobre as hernias, he o seguinte. Tomai casca de cartalho em ró, de que
+                            sobre as hernias, he o seguinte. Tomai casca de carvalho em pó, de que
                             se servem os Cortidores, e pêz negro, que fica no fundo dos alambiques
                             na distillaçaõ do oleo de therebintina, de cada hum duas onças,
                             coltorar, ou vitriolo calcinado ae o ponto de vermelhidaõ, huma onça,
-                            miſturai tudo com meia onça de ſebo derretido para fazer hum emplastro,
+                            misturai tudo com meia onça de sebo derretido para fazer hum emplastro,
                             que se applicará debaixo da ligadura, depois que a hernia tiver sido
                             reduzida, quero dizer, depois que se tiver feito entrar no ventre. Este
                             emplastro applicado sobre es hernias novas cura-as muitissimas vezes sem
@@ -9024,8 +9026,9 @@
                             he hum signal muito mão, principalmente se o pulso ao mesiuo tempo fôr
                             fraco, pequeno, e abatido.</p>
                         <p>Depois de ter tirado a pelle, que formava as empollas, trata-se a ferida
-                            que daqui resulta com hum papel pardo() barrado de unguento basilicaõ do
-                            N. 38, e continuaõ-se estes <pb n="438"
+                            que daqui resulta com hum papel pardo<note>(*) Ou panno, porque o papel
+                                pardo repassa muito.</note> barrado de unguento basilicaõ do N. 38,
+                            e continuaõ-se estes <pb n="438"
                                 facs="carvalhoaviso_imagens/carvalhoaviso_0429.jpg"/>curativos de
                             manhã, e de tarde para conservar a suppuraçaõ, ou fazer materia. Se ella
                             se forma, como deve ser, isto he hum bom signal para o doente, e para a
@@ -9035,8 +9038,7 @@
                             pó, o que excitará novas em polas, e procurará huma suppuraçãõ mais abun
                             dante. Quando o doente se achar melhor, sec car-se-ha a ferida, por
                             assim dizer, por si mes ma; e ajudar-se-ha a sua cura, tratando-a com o
-                            ceroto, que apontamos no Capitulo da Queimadura.<note>(*) Ou panno,
-                                porque o papel pardo repassa muito.</note></p>
+                            ceroto, que apontamos no Capitulo da Queimadura.</p>
                         <p>Pode succeder, que a applicaçaõ dos em plastros vesicatorios produza hum
                             ardor, e mesmo huma retençaõ de ourina, em tal caso he precizo, que os
                             Marinheiros se não horrori zem; este symptoma será bem de pressa
