@@ -1,0 +1,53 @@
+name: Conferência para pull request
+on:
+  issues:
+    types: [opened, edited, reopened]
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+concurrency:
+  group: conferencia-${{ github.event.issue.number }}
+jobs:
+  criar-pr:
+    if: >-
+      github.repository == 'brunomaroneze/dicbio' &&
+      github.event.issue.state == 'open' &&
+      startsWith(github.event.issue.title, '[Conferência]')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ISSUE: ${{ github.event.issue.number }}
+      BASE: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Aplicar as correções
+        run: python3 -B revisao/processar_envio.py
+      - name: Criar ou atualizar o pull request
+        run: |
+          RAMO="conferencia/issue-$ISSUE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$RAMO"
+          git add corpus_digital/obras/*.xml revisao/conferidas
+          git commit -F "$RUNNER_TEMP/commit.txt"
+          git push --force origin "$RAMO"
+          gh label create conferencia --color 1d76db 2>/dev/null || true
+          gh issue edit "$ISSUE" --add-label conferencia
+          PR=$(gh pr list --head "$RAMO" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$PR" ]; then
+            gh pr edit "$PR" --body-file "$RUNNER_TEMP/corpo.md"
+          else
+            gh pr create --base "$BASE" --head "$RAMO" \
+              --title "$(cat "$RUNNER_TEMP/titulo.txt")" --body-file "$RUNNER_TEMP/corpo.md"
+          fi
+      - name: Avisar em caso de erro
+        if: failure()
+        run: |
+          if [ ! -f "$RUNNER_TEMP/erro.md" ]; then
+            echo "Ocorreu um erro inesperado; veja a aba Actions." > "$RUNNER_TEMP/erro.md"
+          fi
+          gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/erro.md"

@@ -1,0 +1,15 @@
+{
+  "repositorio": "brunomaroneze/dicbio",
+  "pasta_obras": "corpus_digital/obras",
+  "base_imagens": "https://brunomaroneze.github.io/dicbio-imagens/",
+  "obras": [
+    {"id": "carvalhoaviso", "titulo": "Aviso á Gente do Mar (Mauran/Carvalho)", "ativa": true},
+    {"id": "fazendeiroimbert", "titulo": "Imbert (fazendeiroimbert)", "ativa": false},
+    {"id": "observSemmedo", "titulo": "Semmedo (observSemmedo)", "ativa": false},
+    {"id": "anatomiasantucci", "titulo": "Santucci (anatomiasantucci)", "ativa": false},
+    {"id": "diciovandelli", "titulo": "Vandelli (diciovandelli)", "ativa": false},
+    {"id": "novaesfebreamarela", "titulo": "Novaes (novaesfebreamarela)", "ativa": false},
+    {"id": "compendio1brotero", "titulo": "Brotero, tomo 1 (compendio1brotero)", "ativa": false},
+    {"id": "compendio2brotero", "titulo": "Brotero, tomo 2 (compendio2brotero)", "ativa": false}
+  ]
+}
