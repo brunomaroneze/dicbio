@@ -594,107 +594,122 @@
                 <head>ERRATAS.</head>
                 <table>
                     <row role="label">
-                        <cell>Pag. Lin.</cell>
+                        <cell>Pag.</cell>
+                        <cell>Lin.</cell>
                         <cell>Erros.</cell>
                         <cell>Emendas.</cell>
                     </row>
                     <row>
-                        <cell/>
-                        <cell>encreaõ</cell>
-                        <cell>e</cell>
+                        <cell>10</cell>
+                        <cell>4</cell>
+                        <cell>encrespraõ</cell>
+                        <cell>encrespaõ</cell>
                     </row>
                     <row>
-                        <cell>35</cell>
+                        <cell>18</cell>
+                        <cell>27</cell>
                         <cell>sahivde</cell>
                         <cell>sahindo</cell>
                     </row>
                     <row>
+                        <cell>38</cell>
                         <cell>22</cell>
-                        <cell>entrague</cell>
+                        <cell>entragues</cell>
                         <cell>entregues</cell>
                     </row>
                     <row>
-                        <cell/>
+                        <cell>47</cell>
+                        <cell>13</cell>
                         <cell>procura</cell>
                         <cell>procurar</cell>
                     </row>
                     <row>
+                        <cell>63</cell>
                         <cell>12</cell>
                         <cell>tenfas</cell>
-                        <cell>rensas</cell>
+                        <cell>tensas</cell>
                     </row>
                     <row>
-                        <cell>102 12</cell>
+                        <cell>102</cell>
+                        <cell>12</cell>
                         <cell>pravavel</cell>
-                        <cell>prora vel</cell>
+                        <cell>provavel</cell>
                     </row>
                     <row>
                         <cell>110</cell>
-                        <cell>porque</cell>
+                        <cell>29</cell>
+                        <cell>porqne</cell>
                         <cell>porque</cell>
                     </row>
                     <row>
                         <cell>121</cell>
-                        <cell>la vaute</cell>
-                        <cell>lerante</cell>
+                        <cell>7</cell>
+                        <cell>lavaute</cell>
+                        <cell>levante</cell>
                     </row>
                     <row>
                         <cell>131</cell>
+                        <cell>30</cell>
                         <cell>sazer</cell>
                         <cell>fazer</cell>
                     </row>
                     <row>
                         <cell>133</cell>
+                        <cell>11</cell>
                         <cell>cercbro</cell>
                         <cell>cerebro</cell>
                     </row>
                     <row>
-                        <cell>22o</cell>
-                        <cell>inflamace</cell>
+                        <cell>220</cell>
+                        <cell>9</cell>
+                        <cell>inflamaceõ</cell>
                         <cell>inflammaçaõ</cell>
                     </row>
                     <row>
-                        <cell>22</cell>
-                        <cell>irrirrnte</cell>
+                        <cell>222</cell>
+                        <cell>14</cell>
+                        <cell>irritrnte</cell>
                         <cell>irritante</cell>
                     </row>
                     <row>
-                        <cell>233</cell>
-                        <cell>demiuuin</cell>
+                        <cell>231</cell>
+                        <cell>4</cell>
+                        <cell>demiuuindo</cell>
                         <cell>diminuindo</cell>
                     </row>
                     <row>
                         <cell>270</cell>
-                        <cell>caracterezad</cell>
+                        <cell>19</cell>
+                        <cell>caracterezaõ</cell>
                         <cell>caracterizaõ</cell>
                     </row>
                     <row>
                         <cell>269</cell>
-                        <cell>acompanheo-</cell>
+                        <cell>9</cell>
+                        <cell>acompanheo</cell>
                         <cell>acompanhaõ</cell>
                     </row>
                     <row>
                         <cell>356</cell>
+                        <cell>29</cell>
                         <cell>agmentando</cell>
                         <cell>augmentando</cell>
                     </row>
                     <row>
-                        <cell/>
+                        <cell>376</cell>
+                        <cell>7</cell>
                         <cell>pizados</cell>
                         <cell>pezados</cell>
                     </row>
                     <row>
                         <cell>395</cell>
+                        <cell>12</cell>
                         <cell>poncos</cell>
                         <cell>poucos</cell>
                     </row>
                     <row>
-                        <cell>450 receita n. 8. lin. 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
+                        <cell>450</cell>
+                        <cell>receita n. 8. lin. 6</cell>
                         <cell>depis</cell>
                         <cell>depois</cell>
                     </row>
