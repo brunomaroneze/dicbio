@@ -4,12 +4,12 @@
   "base_imagens": "imagens/",
   "obras": [
     {"id": "carvalhoaviso", "titulo": "Aviso á Gente do Mar (Mauran/Carvalho)", "ativa": true},
-    {"id": "fazendeiroimbert", "titulo": "Imbert (fazendeiroimbert)", "ativa": false},
-    {"id": "observSemmedo", "titulo": "Semmedo (observSemmedo)", "ativa": false},
-    {"id": "anatomiasantucci", "titulo": "Santucci (anatomiasantucci)", "ativa": false},
-    {"id": "diciovandelli", "titulo": "Vandelli (diciovandelli)", "ativa": false},
-    {"id": "novaesfebreamarela", "titulo": "Novaes (novaesfebreamarela)", "ativa": false},
-    {"id": "compendio1brotero", "titulo": "Brotero, tomo 1 (compendio1brotero)", "ativa": false},
-    {"id": "compendio2brotero", "titulo": "Brotero, tomo 2 (compendio2brotero)", "ativa": false}
+    {"id": "observSemmedo", "titulo": "Observações Médicas Doutrinais (Semedo)", "ativa": true},
+    {"id": "anatomiasantucci", "titulo": "Anatomia do Corpo Humano (Santucci)", "ativa": true},
+    {"id": "diciovandelli", "titulo": "Diccionario dos Termos Technicos (Vandelli)", "ativa": true},
+    {"id": "compendio1brotero", "titulo": "Compendio de Botanica, tomo 1 (Brotero)", "ativa": true},
+    {"id": "compendio2brotero", "titulo": "Compendio de Botanica, tomo 2 (Brotero)", "ativa": true},
+    {"id": "fazendeiroimbert", "titulo": "Manual do Fazendeiro (Imbert)", "ativa": true},
+    {"id": "novaesfebreamarela", "titulo": "Febre amarela (Novais)", "ativa": true}
   ]
 }
