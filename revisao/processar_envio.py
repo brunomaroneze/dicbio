@@ -13,6 +13,8 @@ from pathlib import Path
 from gerar_site import AQUI, RAIZ, le
 from nucleo import ErroConferencia, aplica, paginas
 
+DONO = "brunomaroneze"    # dono do token usado pela VPS
+
 
 def cerca(linhas, lingua=""):
     return f"```{lingua}\n" + "\n".join(linhas).replace("`", "ˋ") + "\n```"
@@ -54,6 +56,13 @@ def processa(issue):
     except ValueError:
         raise ErroConferencia("os dados da conferência estão incompletos; copie e cole de novo")
     valida(d)
+    # Nos envios feitos pela VPS, a issue é do dono do token e o revisor vem nos dados.
+    revisor, citado = login, f"@{login}"
+    if "revisor" in d and login.lower() == DONO:
+        revisor = d["revisor"]
+        if not isinstance(revisor, str) or not re.fullmatch(r"[\w.-]{1,40}", revisor):
+            raise ErroConferencia("nome de revisor inválido")
+        citado = f"**{revisor}**"
     cfg = json.loads(le(AQUI / "config.json"))
     obra = next((o for o in cfg["obras"] if o["id"] == d.get("obra") and o["ativa"]), None)
     if obra is None:
@@ -72,7 +81,7 @@ def processa(issue):
     for p in d["paginas"]:
         pag = por_id[p["id"]]
         nomes.append(pag.n)
-        reg = {"n": pag.n, "revisor": login, "data": datetime.date.today().isoformat(),
+        reg = {"n": pag.n, "revisor": revisor, "data": datetime.date.today().isoformat(),
                "issue": issue["number"], "obs": p.get("obs", "")}
         (pasta / f"{pag.id}.json").write_text(
             json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -81,7 +90,7 @@ def processa(issue):
     if len(titulo) > 120:
         titulo = f"Conferência de {obra['id']}: {len(nomes)} páginas (p. {nomes[0]} a {nomes[-1]})"
     corpo = [f"**{obra['titulo']}**", "",
-             f"Conferido por @{login}. Envio: #{issue['number']}.", "",
+             f"Conferido por {citado}. Envio: #{issue['number']}.", "",
              f"Páginas: {', '.join(nomes)}. Correções: {len(rel)}.", ""]
     for p in d["paginas"]:
         if p.get("obs", "").strip():
@@ -101,7 +110,7 @@ def processa(issue):
         if len(texto) > 40000:
             texto = "(lista de correções muito longa; veja a aba *Files changed*)"
         corpo += [texto]
-    return titulo, "\n".join(corpo)[:64000]
+    return titulo, "\n".join(corpo)[:64000], revisor
 
 
 def main():
@@ -109,7 +118,7 @@ def main():
     issue = evento["issue"]
     saida = Path(os.environ["RUNNER_TEMP"])
     try:
-        titulo, corpo = processa(issue)
+        titulo, corpo, revisor = processa(issue)
     except ErroConferencia as e:
         (saida / "erro.md").write_text(
             f"Não foi possível processar esta conferência: {e}.\n\n"
@@ -120,7 +129,9 @@ def main():
     (saida / "corpo.md").write_text(corpo, encoding="utf-8")
     u = issue["user"]
     (saida / "commit.txt").write_text(
-        f"{titulo}\n\nCo-authored-by: {u['login']} <{u['id']}+{u['login']}@users.noreply.github.com>\n",
+        f"{titulo}\n\n" + (
+            f"Co-authored-by: {u['login']} <{u['id']}+{u['login']}@users.noreply.github.com>\n"
+            if revisor == u["login"] else f"Conferido por: {revisor}\n"),
         encoding="utf-8")
 
 

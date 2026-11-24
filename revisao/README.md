@@ -5,8 +5,8 @@ Tela em que o revisor compara a imagem de cada página com o texto, sem ver o XM
 ## Como funciona
 
 1. Na VPS, uma tarefa agendada baixa o `develop` a cada 5 minutos e executa `gerar_site.py`, que extrai dos XML o texto de cada página. A tela e as imagens ficam no mesmo endereço, protegidas por senha.
-2. O revisor corrige, salva uma ou mais páginas e clica em "Enviar". Abre-se uma issue já preenchida.
-3. O workflow `conferencia-pr.yml` verifica se o revisor está em `revisores.txt`, aplica as correções e abre o pull request.
+2. O revisor corrige, salva uma ou mais páginas e clica em "Enviar". Um serviço na VPS (`vps/envio.py`) cria uma issue com um token do projeto; o revisor não precisa de conta no GitHub.
+3. O workflow `conferencia-pr.yml` verifica se o autor da issue (o dono do token) está em `revisores.txt`, aplica as correções e abre o pull request.
 4. Aceito o pull request (dirigido ao `develop`), o workflow `conferencia-fechar.yml` fecha a issue, a página fica registrada em `conferidas/` e a tela é atualizada.
 
 As tags nunca são alteradas: se a correção mudasse alguma, o envio seria recusado, com um comentário na issue.
@@ -33,8 +33,10 @@ Os workflows precisam estar no `main` e no `develop`: o que cria o pull request 
 
 ## Uso cotidiano
 
-- **Incluir revisor:** na VPS, `sudo htpasswd -B /etc/nginx/dicbio.htpasswd NOME` (o programa pede a senha); e incluir o usuário do GitHub em `revisores.txt`.
-- **Remover revisor:** `sudo htpasswd -D /etc/nginx/dicbio.htpasswd NOME`; e retirá-lo de `revisores.txt`.
+- **Incluir revisor:** na VPS, `sudo htpasswd -B /etc/nginx/dicbio.htpasswd NOME` (o programa pede a senha). O nome (letras, números, ponto, hífen ou sublinhado) fica público nos pull requests e em `conferidas/`.
+- **Remover revisor:** `sudo htpasswd -D /etc/nginx/dicbio.htpasswd NOME`.
+- **Token do GitHub** (*fine-grained*, só o repositório `dicbio`, só *Issues: Read and write*): instalar com `sudo bash revisao/vps/instalar_envio.sh`. Para trocar quando vencer: `sudo rm /etc/dicbio/token` e executar o instalador de novo.
+- **O envio falha:** `journalctl -u dicbio-envio -n 30`
 - **Nova obra:** mudar `ativa` para `true` no `config.json`.
 - **Copiar imagens do Internet Archive ou de Coimbra** (na VPS; repetir o primeiro comando se houver erros):
 

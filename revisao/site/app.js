@@ -135,12 +135,32 @@ function montaEnvio() {
   })) };
   const json = JSON.stringify(dados).replace(/`/g, '\\u0060');
   const ns = prontas.map(p => p.n).join(', ');
-  return { prontas, corpo: 'Não altere o texto abaixo. Basta clicar no botão de envio.\n\n```json\n' + json + '\n```\n',
+  return { prontas, dados, corpo: 'Não altere o texto abaixo. Basta clicar no botão de envio.\n\n```json\n' + json + '\n```\n',
     titulo: `[Conferência] ${obra}: p. ` + (ns.length > 80 ? prontas.length + ' páginas' : ns) };
 }
+// Envio pelo serviço da VPS. Devolve o número da issue, ou null se o serviço não existe aqui.
+async function enviaDireto(dados) {
+  const r = await fetch('api/enviar', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Conferencia': '1' }, body: JSON.stringify(dados) });
+  if ([404, 405, 501].includes(r.status)) return null;
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || !j.issue) throw new Error(j.erro || 'erro ' + r.status);
+  return j.issue;
+}
 $('enviar').onclick = async () => {
-  const { prontas, corpo, titulo } = montaEnvio();
+  const { prontas, dados, corpo, titulo } = montaEnvio();
   if (corpo.length > 60000) return alert('Há páginas demais para um só envio. Desmarque algumas (edite e deixe sem salvar) e envie em partes.');
+  const destaObra = obra;
+  document.body.inert = true; $('enviar').textContent = 'Enviando…';
+  let issue = null;
+  try { issue = await enviaDireto(dados); }
+  catch (e) { atualiza(); return alert('O envio não deu certo: ' + e.message + '.\n\nSuas correções continuam salvas. Tente de novo daqui a pouco.'); }
+  finally { document.body.inert = false; }
+  if (issue && obra === destaObra) {
+    prontas.forEach(p => { delete rasc[p.id]; pendentes.add(p.id); });
+    grava(); botaoConfirma(); mostra(atual);
+    return alert(`Conferência enviada (nº ${issue}). Obrigado!`);
+  }
+  // Sem o serviço (teste local): abre a issue preenchida no GitHub.
   const base = `https://github.com/${repo}/issues/new?title=` + encodeURIComponent(titulo);
   const url = base + '&body=' + encodeURIComponent(corpo);
   if (url.length < 6000) window.open(url, '_blank', 'noopener');

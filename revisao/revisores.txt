@@ -1,2 +1,3 @@
-# Um nome de usuário do GitHub por linha. Só estes podem enviar conferências.
+# Contas do GitHub cujas issues de conferência são aceitas, uma por linha.
+# Os envios da tela usam a conta do dono do token; os alunos não entram aqui.
 brunomaroneze
