@@ -35,15 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    // Se a imagem não carregar (certificado inválido na origem, por exemplo), oferece o link.
+    // Sem imagem no site: aviso e, se houver, link para a imagem no site de origem.
     const avisoImagem = document.getElementById('imagem-indisponivel');
-    imgDisplay.addEventListener('error', () => {
-        const url = activePageMarker && activePageMarker.dataset.facs;
-        if (!url || !avisoImagem) return;
-        avisoImagem.querySelector('a').href = url;
-        avisoImagem.hidden = false;
+    function mostrarImagemIndisponivel() {
         imgDisplay.style.display = 'none';
-    });
+        if (!avisoImagem) return;
+        const origem = activePageMarker && activePageMarker.dataset.origem;
+        const link = avisoImagem.querySelector('a');
+        link.hidden = !origem;
+        if (origem) link.href = origem;
+        avisoImagem.hidden = false;
+    }
+    imgDisplay.addEventListener('error', mostrarImagemIndisponivel);
     imgDisplay.addEventListener('load', () => {
         if (avisoImagem) avisoImagem.hidden = true;
         imgDisplay.style.display = 'block';
@@ -86,8 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 imgDisplay.alt = `Imagem da página ${pageNum || 'desconhecida'}`;
             } else {
-                imgDisplay.src = ''; // Limpa a imagem se não houver URL
-                imgDisplay.alt = `Imagem não disponível para a página ${pageNum || 'desconhecida'}`;
+                imgDisplay.removeAttribute('src');
+                imgDisplay.alt = '';
+                mostrarImagemIndisponivel();
             }
             const real = activePageMarker.dataset.paginaReal;
             legendaDisplay.textContent = `Página: ${pageNum || '?'}${real ? `, recte ${real}` : ''}`;

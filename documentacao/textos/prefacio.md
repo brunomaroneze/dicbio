@@ -26,7 +26,7 @@ Seus objetivos específicos são:
 Este dicionário destina-se principalmente a pesquisadores das áreas de Linguística Histórica, Lexicografia, Terminologia, História da Ciência e História da Língua Portuguesa. Também interessará especialmente a biólogos e professores de Biologia.
 
 ## Organização do *site*
-Os verbetes do dicionário podem ser consultados na aba **Consulta**. Os textos que compõem o córpus deste dicionário podem ser consultados em **Córpus**, ao lado das imagens das obras e com *links* para os verbetes no próprio texto. A descrição detalhada do córpus são encontradas [aqui](../corpus/).
+Os verbetes do dicionário podem ser consultados na aba **Consulta**. Os textos que compõem o córpus deste dicionário podem ser consultados em **Córpus**, ao lado das imagens das obras (quando disponíveis) e com *links* para os verbetes no próprio texto. A descrição detalhada do córpus é encontrada [aqui](../corpus/).
 
 Em **Documentação** encontram-se diversos textos de apoio a respeito do Dicionário.
 
@@ -48,6 +48,9 @@ No período de 2023 a 2024, o projeto contou com o financiamento do Conselho Nac
 
 O projeto é filiado ao [**Núcleo de Apoio à Pesquisa em Etimologia e História da Língua Portuguesa**](https://nehilp.prp.usp.br/), coordenado pela Prof.ª Dr.ª Vanessa Martins do Monte.
 
+## Parcerias
+O projeto mantém parceria com a **Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo (FFLCH-USP)** e com a **Universidade Federal do Rio Grande do Sul (UFRGS)**. Ambas as parcerias envolvem a participação de membros na equipe e o compartilhamento de materiais de pesquisa.
+
 ## Financiamento
 O projeto contou com o valiosíssimo financiamento do CNPq por meio do Edital Pró-Humanidades 2022, sob a forma de bolsas de Iniciação Científica e de Apoio Técnico, no período de 2023-2024.
 
@@ -60,7 +63,7 @@ A redação dos primeiros verbetes e a criação da parte computacional do dicio
 
 A parceria com o projeto [**Corpus Histórico da Linguagem da Medicina em Português (Século XVIII)**](https://sites.google.com/view/projeto38597/p%C3%A1gina-inicial), coordenado pela Profa. Dra. **Maria José Bocorny Finatto**, tem possibilitado uma importante troca de materiais de pesquisa, em especial o texto das "Observações Médicas" de Semedo.
 
-A hospedagem do dicionário no servidor da FFLCH-USP foi possível graças à importante parceria com o **NEHiLP** e ao valioso auxílio dos técnicos **Thiago Gomes Veríssimo** e **Ricardo Fontoura**.
+O dicionário esteve inicialmente hospedado no servidor da FFLCH-USP, graças à importante parceria com o **NEHiLP** e ao valioso auxílio dos técnicos **Thiago Gomes Veríssimo** e **Ricardo Fontoura**.
 
 Agradecemos a **Ligeia Lugli** (University of London) pelas valiosas orientações a respeito de como implementar um dicionário eletrônico *online*.
 

@@ -153,13 +153,10 @@ CORPUS_XML_ROOT = BASE_DIR / 'corpus_digital' / 'obras'
 IMAGENS_ROOT = Path(os.environ.get('IMAGENS_ROOT') or CORPUS_XML_ROOT)
 IMAGENS_URL = '/imagens/'
 
-# Obras cujas imagens não podem ser copiadas em site aberto (Universidade de Coimbra,
-# sem autorização até agora): o site só aponta para a página de origem. Ao retirar uma
-# obra daqui, retirar também o bloqueio no nginx (ver implantacao/README.md).
-OBRAS_SEM_COPIA_PUBLICA = {'compendio1brotero', 'compendio2brotero'}
-
-# Obras exibidas com o aviso "Transcrição em revisão" (nome do arquivo XML, sem extensão)
-OBRAS_EM_REVISAO = {'carvalhoaviso'}
+# Obras (nome do arquivo XML, sem extensão) cujas imagens podem ser exibidas no site.
+# Nas demais aparece "Imagem indisponível", até que as licenças sejam verificadas.
+# Ao incluir uma obra, liberar também a pasta no nginx (ver implantacao/README.md).
+OBRAS_COM_IMAGENS = {'carvalhoaviso'}
 
 # --- Configuração de Cache ---
 CACHES = {

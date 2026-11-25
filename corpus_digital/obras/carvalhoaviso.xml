@@ -49,7 +49,7 @@
                     indicações "não numerada" (seguida de um número sequencial) ou "em branco".
                     Quando uma quebra de página ocorre no meio de uma palavra, o elemento
                         <gi>pb</gi> foi incluído antes da palavra, de modo a não quebrá-la. A
-                    numeração impressa salta da página 8 para a 199, sem perda de texto. As
+                    numeração impressa salta da página 158 para a 199, sem perda de texto. As
                     páginas 38 e 39 faltam na digitalização; o lugar delas está marcado com o
                     elemento <gi>gap</gi>.</p>
                 <p>As imagens (fac-símiles) das páginas são armazenadas localmente, na pasta

@@ -40,8 +40,9 @@ def nome(el):
 def imagens(caminho_xml):
     """Endereço da imagem de cada <pb>, na ordem do texto.
 
-    Imagens locais e cópias feitas por revisao/baixar_imagens.py são servidas pelo
-    próprio site; sem cópia, fica o endereço original.
+    Só nas OBRAS_COM_IMAGENS há imagem no próprio site (local ou copiada por
+    revisao/baixar_imagens.py). Nas outras, e onde não há cópia, fica o endereço
+    original, que o site oferece apenas como link.
     """
     with open(caminho_xml, encoding='utf-8', newline='') as f:
         lista = paginas(f.read())
@@ -51,12 +52,13 @@ def imagens(caminho_xml):
         if p.n in ('folha de rosto', 'sem indicação'):  # não vêm de um <pb>
             continue
         url = p.facs
+        liberada = obra in settings.OBRAS_COM_IMAGENS
         if url.startswith(('http://', 'https://')):
             copia = f'{obra}_imagens/{p.id}.jpg'
-            if obra not in settings.OBRAS_SEM_COPIA_PUBLICA and (raiz / copia).exists():
+            if liberada and (raiz / copia).exists():
                 url = settings.IMAGENS_URL + copia
         elif url:
-            url = settings.IMAGENS_URL + url
+            url = settings.IMAGENS_URL + url if liberada else ''
         urls.append(url)
     return urls
 
@@ -69,7 +71,7 @@ def marca_pagina(pb, url):
         'id': pb.get(XML_ID) or 'pagina_' + n.replace(' ', '_'),
         'class': 'marcador-pagina', 'data-pagina-numero': n})
     if url:
-        marca.set('data-facs', url)
+        marca.set('data-origem' if url.startswith('http') else 'data-facs', url)
     real = pb.get('nReal')
     if real:
         marca.set('data-pagina-real', real)

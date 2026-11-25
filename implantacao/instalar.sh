@@ -122,12 +122,12 @@ server {
     location /media/ {
         alias $BASE/atual/mediafiles/;
     }
-    location /imagens/ {
-        alias $IMAGENS/;
+    # Só as obras com imagens liberadas; repetir o bloco para cada nova obra.
+    location /imagens/carvalhoaviso_imagens/ {
+        alias $IMAGENS/carvalhoaviso_imagens/;
         add_header Cache-Control "public, max-age=604800";
     }
-    # Imagens da Universidade de Coimbra: sem autorização para site aberto.
-    location ~ ^/imagens/compendio[12]brotero_imagens/ {
+    location /imagens/ {
         return 404;
     }
     # O banco é refeito a cada atualização; a administração não é usada.

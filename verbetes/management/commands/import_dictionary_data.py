@@ -7,6 +7,34 @@ from django.conf import settings
 from verbetes.models import Verbete, Definition, OcorrenciaCorpus
 
 
+MARCA_PROVISORIA = 'verbete provisório'
+
+
+def verbetes_ocultos(data_dir):
+    """Verbetes provisórios, que não entram no site.
+
+    O verbete é provisório enquanto a coluna Credits ou alguma das suas definições
+    contiver "Verbete provisório", ou enquanto alguma definição estiver vazia.
+    Devolve os lemas ocultos e os que já foram editados só em parte.
+    """
+    verbetes = pd.read_csv(data_dir / 'DadosDoDicionario.csv', dtype=str, keep_default_na=False)
+    definicoes = pd.read_csv(data_dir / 'definitions.csv', dtype=str, keep_default_na=False)
+    por_lema = {}
+    for lema, texto in zip(definicoes['Headword'], definicoes['Definition']):
+        por_lema.setdefault(lema.strip(), []).append(texto.strip().lower())
+    ocultos, parciais = set(), set()
+    for lema, creditos in zip(verbetes['Headword'], verbetes['Credits']):
+        lema = lema.strip()
+        textos = por_lema.get(lema, [])
+        creditos_ok = MARCA_PROVISORIA not in creditos.lower()
+        definicoes_ok = bool(textos) and all(t and MARCA_PROVISORIA not in t for t in textos)
+        if not (creditos_ok and definicoes_ok):
+            ocultos.add(lema)
+            if creditos_ok or definicoes_ok:
+                parciais.add(lema)
+    return ocultos, parciais
+
+
 class Command(BaseCommand):
     help = 'Importa/Atualiza dados de Verbetes, Definições e Ocorrências a partir de CSVs.'
 
@@ -40,6 +68,13 @@ class Command(BaseCommand):
 
         data_dir = settings.BASE_DIR / "data"
 
+        ocultos, parciais = verbetes_ocultos(data_dir)
+        Verbete.objects.filter(termo__in=ocultos).delete()
+        self.stdout.write(self.style.NOTICE(f'Verbetes provisórios (ocultos): {len(ocultos)}'))
+        for lema in sorted(parciais):
+            self.stdout.write(self.style.WARNING(
+                f'  Ainda oculto, editado só em parte (Credits ou definições): {lema}'))
+
         # --- Limpeza de Dados (se --clear-all for usado) ---
         if clear_all:
             self.stdout.write(self.style.WARNING('Apagando todos os dados de Ocorrências, Definições e Verbetes...'))
@@ -68,6 +103,8 @@ class Command(BaseCommand):
             for index, row in df.iterrows():
                 try:
                     termo = str(row['Headword']).strip()
+                    if termo in ocultos:
+                        continue
                     
                     # update_or_create: encontra pelo 'termo' ou cria um novo
                     # Ele também cuida da geração do slug se 'blank=True' e 'prepopulated_fields'
@@ -102,10 +139,12 @@ class Command(BaseCommand):
             if not csv_path.exists():
                 raise CommandError(f"Arquivo CSV não encontrado: {csv_path}")
 
-            df = pd.read_csv(csv_path)
+            df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
 
             for index, row in df.iterrows():
                 headword = str(row['Headword']).strip()
+                if headword in ocultos:
+                    continue
                 sensenumber = int(row['SenseNumber'])
                 definicao_texto = str(row['Definition']).strip()
 
@@ -152,6 +191,8 @@ class Command(BaseCommand):
             for index, row in df.iterrows():
                 try:
                     headword = ' '.join(str(row['Headword']).split())
+                    if headword in ocultos:
+                        continue
                     sense_number = int(row['SenseNumber'])
 
                     verbete = verbetes_por_termo.get(headword)
