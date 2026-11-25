@@ -21,7 +21,7 @@ O site usa `/srv/dicbio/imagens`, a mesma pasta da conferência, mas **sem senha
     sudo truncate -s 0 /srv/dicbio/site/publicado.txt
     sudo systemctl start dicbio-site-atualizar.service
 
-Para liberar uma obra: incluí-la em `OBRAS_COM_IMAGENS`, em `dicbio/settings.py`; acrescentar o nome do arquivo XML à lista da linha `location ~ ^/imagens/`, em `/etc/nginx/sites-available/dicbio-site` e em `instalar.sh`; depois, `sudo nginx -t && sudo systemctl reload nginx`.
+Para liberar uma obra: incluí-la, com o crédito, em `OBRAS_COM_IMAGENS`, em `dicbio/settings.py`; acrescentar o nome do arquivo XML à lista da linha `location ~ ^/imagens/`, em `/etc/nginx/sites-available/dicbio-site` e em `instalar.sh`; depois, `sudo nginx -t && sudo systemctl reload nginx`.
 
 ## Uso cotidiano
 

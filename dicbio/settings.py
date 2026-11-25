@@ -156,11 +156,19 @@ IMAGENS_URL = '/imagens/'
 # Obras (nome do arquivo XML, sem extensão) cujas imagens podem ser exibidas no site.
 # Nas demais aparece "Imagem indisponível", até que as licenças sejam verificadas.
 # Ao incluir uma obra, liberar também a pasta no nginx (ver implantacao/README.md).
+# O valor é o crédito mostrado sob a imagem: instituição, endereço e situação legal.
 OBRAS_COM_IMAGENS = {
-    'carvalhoaviso',     # cedidas ao projeto
-    'diciovandelli',     # Internet Archive/BHL: "Not in copyright"
-    'fazendeiroimbert',  # Internet Archive (Wellcome Library): Public Domain Mark 1.0
-    'observSemmedo',     # Internet Archive (Google Books): Public Domain Mark 1.0
+    'carvalhoaviso': (
+        'Biblioteca Pública de Évora, Coleção Manizola', '', 'imagens cedidas ao projeto'),
+    'diciovandelli': (
+        'Smithsonian Libraries / Biodiversity Heritage Library, via Internet Archive',
+        'https://archive.org/details/diccionariodost00vand', 'sem restrições conhecidas de direito autoral'),
+    'fazendeiroimbert': (
+        'Wellcome Library, via Internet Archive',
+        'https://archive.org/details/b29341152', 'domínio público'),
+    'observSemmedo': (
+        'Biblioteca Nacional Central de Roma / Google, via Internet Archive',
+        'https://archive.org/details/bub_gb_qCVH54Hs2i0C', 'domínio público'),
 }
 
 # --- Configuração de Cache ---

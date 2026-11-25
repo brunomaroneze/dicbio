@@ -64,6 +64,11 @@
                 <img id="imagem-pagina-ativa" src="" alt="Imagem da página"
                     class="figure-img img-fluid rounded shadow-sm">
                 <figcaption id="legenda-pagina-ativa" class="figure-caption text-center mt-2">Página: -</figcaption>
+                {% if credito_imagens %}
+                {% with instituicao=credito_imagens.0 endereco=credito_imagens.1 situacao=credito_imagens.2 %}
+                <p class="small text-muted mb-0">Imagens: {% if endereco %}<a href="{{ endereco }}" target="_blank" rel="noopener">{{ instituicao }}</a>{% else %}{{ instituicao }}{% endif %} ({{ situacao }}).</p>
+                {% endwith %}
+                {% endif %}
             </figure>
             <p id="imagem-indisponivel" class="small" hidden>Imagem indisponível.
                 <a target="_blank" rel="noopener">Ver no site de origem</a></p>

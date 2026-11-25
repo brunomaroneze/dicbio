@@ -29,9 +29,14 @@ def home(request, slug=None):
                 "<p><em>Execute o processamento com saída em arquivo para gerar o conteúdo desta obra.</em></p>"
             )
 
+    credito_imagens = None
+    if obra_selecionada:
+        credito_imagens = settings.OBRAS_COM_IMAGENS.get(Path(obra_selecionada.caminho_arquivo).stem)
+
     context = {
         'obras': obras_list,                     # Lista de obras para a navegação lateral
         'obra_atual': obra_selecionada,          # A obra que está sendo visualizada (pode ser None)
+        'credito_imagens': credito_imagens,
         'conteudo_html': html_da_obra_para_exibir # O HTML da obra atual para ser renderizado
     }
 

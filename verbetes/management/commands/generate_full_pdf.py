@@ -8,7 +8,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.template.loader import render_to_string
 from django.conf import settings
 from verbetes.models import Verbete
-from django.db.models.functions import Lower
+from verbetes.views import remover_acentos
 import logging
 
 # Configura o log para mostrar erros do WeasyPrint no terminal
@@ -74,7 +74,7 @@ class Command(BaseCommand):
                         print(f"   - [ERRO] Arquivo NÃO encontrado no disco!")
                 # ------------------------
 
-                titulo = md.Meta.get('title', [caminho.stem.replace('_', ' ').title()])[0]
+                titulo = md.Meta.get('titulo', [caminho.stem.replace('_', ' ').title()])[0]
                 return {
                     'titulo': titulo,
                     'conteudo_html': html_content,
@@ -106,10 +106,10 @@ class Command(BaseCommand):
                     textos_apoio.append(text_data)
 
         # --- 2. COLETA E PROCESSAMENTO DOS VERBETES ---
-        all_verbetes = Verbete.objects.all().prefetch_related(
+        all_verbetes = sorted(Verbete.objects.prefetch_related(
             'definicoes',                  
             'definicoes__ocorrencias',     
-        ).order_by(Lower('termo')) 
+        ), key=lambda v: remover_acentos(v.termo))
 
         processed_verbetes_for_pdf = []
         for verbete in all_verbetes:
