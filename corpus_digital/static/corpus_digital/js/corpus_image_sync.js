@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função que rola o texto para um marcador específico
     function scrollToMarker(marker) {
         if (!marker) return;
+        segurarPaginaAtiva();
         // Calcula a posição do marcador relativa ao topo do container de texto e centraliza um pouco
         const scrollOffset = marker.offsetTop - textoContainer.offsetTop - (textoContainer.clientHeight * 0.3);
         textoContainer.scrollTo({
@@ -103,24 +104,43 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // --- LÓGICA DO INTERSECTION OBSERVER (SIMPLIFICADA E CORRIGIDA) ---
-    const observerOptions = {
-        root: textoContainer, // O elemento de rolagem é o container de texto
-        rootMargin: "-40% 0px -60% 0px", // Uma linha imaginária a 40% do topo
-        threshold: 0
-    };
-    
-    const intersectionCallback = (entries) => {
-        // Encontra o último marcador que está INTERSECTANDO (visível na zona de observação)
-        const visibleMarkers = entries.filter(entry => entry.isIntersecting);
-        if (visibleMarkers.length > 0) {
-            // Pega o último da lista, que geralmente é o mais relevante ao rolar para baixo
-            const markerToActivate = visibleMarkers[visibleMarkers.length - 1].target;
-            updateActivePage(markerToActivate);
+    // --- ROLAGEM DO TEXTO ---
+    // A página ativa é a do último marcador acima de uma linha a 40% do topo;
+    // no início do texto, é sempre a primeira.
+    // Durante a rolagem provocada pelos botões, vale a página que eles escolheram:
+    // páginas curtas (folha de rosto, em branco) podem não alcançar essa linha.
+    let rolagemAutomatica = null;
+
+    function segurarPaginaAtiva() {
+        clearTimeout(rolagemAutomatica);
+        rolagemAutomatica = setTimeout(() => { rolagemAutomatica = null; }, 200);
+    }
+
+    function ativarPaginaVisivel() {
+        let visivel = marcadores[0];
+        if (textoContainer.scrollTop > 1) {
+            const linha = textoContainer.getBoundingClientRect().top + textoContainer.clientHeight * 0.4;
+            for (const marcador of marcadores) {
+                if (marcador.getBoundingClientRect().top > linha) break;
+                visivel = marcador;
+            }
         }
-    };
-    const observer = new IntersectionObserver(intersectionCallback, observerOptions);
-    marcadores.forEach(marcador => observer.observe(marcador));
+        updateActivePage(visivel);
+    }
+
+    let quadroPedido = false;
+    textoContainer.addEventListener('scroll', () => {
+        if (rolagemAutomatica !== null) {
+            segurarPaginaAtiva(); // até que a rolagem automática termine
+            return;
+        }
+        if (quadroPedido) return;
+        quadroPedido = true;
+        requestAnimationFrame(() => {
+            quadroPedido = false;
+            if (rolagemAutomatica === null) ativarPaginaVisivel();
+        });
+    });
 
 
     // --- LÓGICA DOS BOTÕES ---
@@ -130,8 +150,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (currentIndex > 0) {
                 const prevMarker = marcadores[currentIndex - 1];
                 scrollToMarker(prevMarker);
-                // A atualização da imagem será feita pelo IntersectionObserver ao rolar,
-                // mas podemos chamar diretamente para uma resposta mais rápida.
                 updateActivePage(prevMarker);
             }
         });

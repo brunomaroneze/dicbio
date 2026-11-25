@@ -38,7 +38,7 @@ def nome(el):
 
 
 def imagens(caminho_xml):
-    """Endereço da imagem de cada <pb>, na ordem do texto.
+    """Endereço da imagem de cada <pb> e <titlePage facs>, na ordem do texto.
 
     Só nas OBRAS_COM_IMAGENS há imagem no próprio site (local ou copiada por
     revisao/baixar_imagens.py). Nas outras, e onde não há cópia, fica o endereço
@@ -49,7 +49,7 @@ def imagens(caminho_xml):
     raiz, obra = Path(settings.IMAGENS_ROOT), Path(caminho_xml).stem
     urls = []
     for p in lista:
-        if p.n in ('folha de rosto', 'sem indicação'):  # não vêm de um <pb>
+        if p.n == 'sem indicação':  # texto antes da primeira página marcada
             continue
         url = p.facs
         liberada = obra in settings.OBRAS_COM_IMAGENS
@@ -63,20 +63,26 @@ def imagens(caminho_xml):
     return urls
 
 
-def marca_pagina(pb, url):
-    n = pb.get('n', '?')
+def marca_pagina(el, url):
+    """Põe o marcador no lugar do <pb> ou, na folha de rosto, antes do <titlePage>."""
+    rosto = nome(el) == 'titlePage'
+    n = 'folha de rosto' if rosto else el.get('n', '?')
     caixa = etree.Element('span', {'class': 'page-break-indicator'})
     etree.SubElement(caixa, 'span', {'class': 'page-separator'})
     marca = etree.SubElement(caixa, 'span', {
-        'id': pb.get(XML_ID) or 'pagina_' + n.replace(' ', '_'),
+        'id': (not rosto and el.get(XML_ID)) or 'pagina_' + n.replace(' ', '_'),
         'class': 'marcador-pagina', 'data-pagina-numero': n})
     if url:
         marca.set('data-origem' if url.startswith('http') else 'data-facs', url)
-    real = pb.get('nReal')
+    if rosto:
+        marca.text = f'[{n}] '
+        el.addprevious(caixa)
+        return
+    real = el.get('nReal')
     if real:
         marca.set('data-pagina-real', real)
     marca.text = f'[p. {n}, recte {real}] ' if real else f'[p. {n}] '
-    pai = nome(pb.getparent())
+    pai = nome(el.getparent())
     if pai == 'list':
         fora = etree.Element('li', {'class': 'quebra-pagina'})
         fora.append(caixa)
@@ -85,9 +91,9 @@ def marca_pagina(pb, url):
         etree.SubElement(fora, 'td', {'colspan': '99'}).append(caixa)
     else:
         fora = caixa
-    fora.tail = pb.tail
-    pb.tail = None
-    pb.getparent().replace(pb, fora)
+    fora.tail = el.tail
+    el.tail = None
+    el.getparent().replace(el, fora)
 
 
 def slug_do_termo(term):
@@ -104,11 +110,13 @@ def converter(caminho_xml, slugs_verbetes):
     if texto is None:
         return '<p>(Sem conteúdo na seção TEI text)</p>'
 
-    pbs, urls = list(texto.iter(f'{TEI}pb')), imagens(caminho_xml)
-    if len(pbs) != len(urls):
-        raise ValueError(f'{len(pbs)} quebras de página, mas {len(urls)} imagens')
-    for pb, url in zip(pbs, urls):
-        marca_pagina(pb, url)
+    pags = [el for el in texto.iter(f'{TEI}pb', f'{TEI}titlePage')
+            if nome(el) == 'pb' or el.get('facs')]
+    urls = imagens(caminho_xml)
+    if len(pags) != len(urls):
+        raise ValueError(f'{len(pags)} páginas marcadas, mas {len(urls)} imagens')
+    for el, url in zip(pags, urls):
+        marca_pagina(el, url)
 
     # Só há link quando o verbete existe.
     for term in list(texto.iter(f'{TEI}term')):
