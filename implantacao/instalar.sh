@@ -126,6 +126,10 @@ server {
         alias $IMAGENS/;
         add_header Cache-Control "public, max-age=604800";
     }
+    # Imagens da Universidade de Coimbra: sem autorização para site aberto.
+    location ~ ^/imagens/compendio[12]brotero_imagens/ {
+        return 404;
+    }
     # O banco é refeito a cada atualização; a administração não é usada.
     location /admin {
         return 404;

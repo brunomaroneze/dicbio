@@ -115,11 +115,11 @@
                                     {{ exemplo.data }}
                                     {% endif %}
                                     ,
-                                    <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#pagina_{{ exemplo.pagina_obra }}"
+                                    <a href="{% url 'corpus_digital:obra_detalhe' exemplo.slug_obra %}#{{ exemplo.pagina_id }}"
                                         class="text-decoration-none text-dark">
                                         {{ exemplo.titulo_obra }}
                                         {% if exemplo.pagina_obra %}
-                                        , p. {{ exemplo.pagina_obra|replace_chars:"_, " }}
+                                        , p. {{ exemplo.pagina_obra }}
                                         {% endif %}
                                     </a>
                                     )

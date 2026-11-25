@@ -35,6 +35,20 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
+    // Se a imagem não carregar (certificado inválido na origem, por exemplo), oferece o link.
+    const avisoImagem = document.getElementById('imagem-indisponivel');
+    imgDisplay.addEventListener('error', () => {
+        const url = activePageMarker && activePageMarker.dataset.facs;
+        if (!url || !avisoImagem) return;
+        avisoImagem.querySelector('a').href = url;
+        avisoImagem.hidden = false;
+        imgDisplay.style.display = 'none';
+    });
+    imgDisplay.addEventListener('load', () => {
+        if (avisoImagem) avisoImagem.hidden = true;
+        imgDisplay.style.display = 'block';
+    });
+
     let activePageMarker = null; // Guarda o elemento DOM do marcador atualmente ativo
 
     // Função que rola o texto para um marcador específico
@@ -75,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 imgDisplay.src = ''; // Limpa a imagem se não houver URL
                 imgDisplay.alt = `Imagem não disponível para a página ${pageNum || 'desconhecida'}`;
             }
-            legendaDisplay.textContent = `Página: ${pageNum || '?'}`;
+            const real = activePageMarker.dataset.paginaReal;
+            legendaDisplay.textContent = `Página: ${pageNum || '?'}${real ? `, recte ${real}` : ''}`;
             
             // Atualiza o estado dos botões
             if (prevPageBtn) prevPageBtn.disabled = (currentIndex <= 0);

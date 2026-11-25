@@ -76,7 +76,9 @@ class Command(BaseCommand):
                 title_text = re.sub(r'\s+', ' ', title_text).strip()
                 
                 # Extrair autor
-                author_text = bibl_element.findtext('tei:author', default='(Sem autor)', namespaces=ns_tei)
+                author_text = '; '.join(
+                    ''.join(a.itertext()) for a in bibl_element.findall('tei:author', namespaces=ns_tei)
+                ) or '(Sem autor)'
                 author_text = re.sub(r'\s+', ' ', author_text).strip()
                 
                 # Extrair data (do atributo @when se existir, senão o texto do elemento)

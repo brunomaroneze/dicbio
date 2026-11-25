@@ -122,10 +122,14 @@ class Command(BaseCommand):
                         nearest_pb_el = term.xpath('./preceding::tei:pb[1]', namespaces=ns)
                         page_raw = nearest_pb_el[0].get('n', '?') if nearest_pb_el else '?'
                         
-                        # --- AQUI ESTÁ A MUDANÇA ---
-                        # Formata o número da página para substituir espaços por underscores
-                        page = page_raw.replace(" ", "_")
-                        # --- FIM DA MUDANÇA ---
+                        page, page_id = page_raw, ''
+                        if nearest_pb_el:
+                            pb = nearest_pb_el[0]
+                            if pb.get('nReal'):
+                                page = f"{page_raw}, recte {pb.get('nReal')}"
+                            # A mesma âncora que tei_html.py usa no HTML da obra
+                            page_id = (pb.get('{http://www.w3.org/XML/1998/namespace}id')
+                                       or 'pagina_' + page_raw.replace(' ', '_'))
 
                         # Sentença com destaque do token usando marcação intermediária [[b]]
                         sentence_text_raw = ''.join(parent.itertext(with_tail=True)).strip()
@@ -161,7 +165,8 @@ class Command(BaseCommand):
                             date,
                             title,       # Título da Obra
                             slug_obra,   # Slug da Obra
-                            page         # Número da Página (para a coluna 'page_num') - AGORA COM UNDERSCORES
+                            page,        # Número da página, como será exibido
+                            page_id      # Âncora da página no HTML da obra
                         ])
 
                     all_rows.extend(rows_for_current_file)
@@ -182,7 +187,7 @@ class Command(BaseCommand):
                         writer = csv.writer(f)
                         writer.writerow([
                             "token", "Headword", "orth", "gram", "SenseNumber",
-                            "sentence", "author_surname", "date", "title", "slug_obra", "page_num" # Header do CSV
+                            "sentence", "author_surname", "date", "title", "slug_obra", "page_num", "page_id" # Header do CSV
                         ])
                         writer.writerows(all_rows)
                     self.stdout.write(self.style.SUCCESS(f'✔️ CSV gerado com sucesso: {output_csv_path}'))

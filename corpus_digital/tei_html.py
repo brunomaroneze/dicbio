@@ -53,7 +53,7 @@ def imagens(caminho_xml):
         url = p.facs
         if url.startswith(('http://', 'https://')):
             copia = f'{obra}_imagens/{p.id}.jpg'
-            if (raiz / copia).exists():
+            if obra not in settings.OBRAS_SEM_COPIA_PUBLICA and (raiz / copia).exists():
                 url = settings.IMAGENS_URL + copia
         elif url:
             url = settings.IMAGENS_URL + url
@@ -70,7 +70,10 @@ def marca_pagina(pb, url):
         'class': 'marcador-pagina', 'data-pagina-numero': n})
     if url:
         marca.set('data-facs', url)
-    marca.text = f'[p. {n}] '
+    real = pb.get('nReal')
+    if real:
+        marca.set('data-pagina-real', real)
+    marca.text = f'[p. {n}, recte {real}] ' if real else f'[p. {n}] '
     pai = nome(pb.getparent())
     if pai == 'list':
         fora = etree.Element('li', {'class': 'quebra-pagina'})

@@ -138,7 +138,7 @@ class Command(BaseCommand):
             if not csv_path.exists():
                 raise CommandError(f"Arquivo CSV não encontrado: {csv_path}. Certifique-se de ter rodado import_corpus_data primeiro.")
 
-            df = pd.read_csv(csv_path)
+            df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
 
             verbetes_por_termo = {verbete.termo: verbete for verbete in Verbete.objects.all()}
 
@@ -177,6 +177,7 @@ class Command(BaseCommand):
                         titulo_obra=row.get('title', ''),
                         slug_obra=row.get('slug_obra', ''),
                         pagina_obra=row.get('page_num', ''),
+                        pagina_id=row.get('page_id', ''),
                     )
                     self.stdout.write(self.style.SUCCESS(f"✔️ Salvo Ocorrência: {verbete.termo} ({sense_number}) na linha {index}"))
                 except Verbete.DoesNotExist:

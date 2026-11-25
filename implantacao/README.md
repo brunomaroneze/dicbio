@@ -21,6 +21,8 @@ O site usa `/srv/dicbio/imagens`, a mesma pasta da conferência, mas **sem senha
     sudo truncate -s 0 /srv/dicbio/site/publicado.txt
     sudo systemctl start dicbio-site-atualizar.service
 
+As imagens dos dois tomos do Brotero (Universidade de Coimbra) **não** são publicadas. Se houver autorização: retirar as obras de `OBRAS_SEM_COPIA_PUBLICA`, em `dicbio/settings.py`, e o bloco `compendio[12]brotero` de `/etc/nginx/sites-available/dicbio-site` e de `instalar.sh`; depois, `sudo nginx -t && sudo systemctl reload nginx`.
+
 ## Uso cotidiano
 
 - **Publicar:** levar as mudanças ao `main`. Para não esperar: `sudo systemctl start dicbio-site-atualizar.service`

@@ -40,6 +40,9 @@
             <div class="mb-4 border-bottom pb-2">
                 <h2 class="mb-0 h4">{{ obra_atual.titulo }}</h2>
                 <p class="text-muted mb-0 small">{{ obra_atual.autor }}</p>
+                {% if em_revisao %}
+                <p class="alert alert-warning py-1 px-2 mt-2 mb-0 small">Transcrição em revisão: o texto pode conter erros. Confira com a imagem da página.</p>
+                {% endif %}
             </div>
             {% endif %}
 
@@ -63,6 +66,8 @@
                     class="figure-img img-fluid rounded shadow-sm">
                 <figcaption id="legenda-pagina-ativa" class="figure-caption text-center mt-2">Página: -</figcaption>
             </figure>
+            <p id="imagem-indisponivel" class="small" hidden>A imagem não pôde ser exibida aqui.
+                <a target="_blank" rel="noopener">Ver a imagem no site de origem</a></p>
             <div class="d-flex justify-content-center mt-3">
                 <button class="btn btn-outline-secondary btn-sm me-2" id="prev-page-btn">
                     <i class="bi bi-arrow-left"></i> Página Anterior

@@ -90,7 +90,7 @@
 	</teiHeader>
 	<text>
 		<front>
-			<pb n="cover"
+			<pb xml:id="pb_novaes_0001" n="cover"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0000.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div type="cover">
 				<head xml:id="h_novaes_0001">THESE DE CLEMENTINO RIBEIRO DE NOVAES</head>
@@ -113,7 +113,7 @@
 				<docImprint><pubPlace>BAHIA</pubPlace> TYP. DE CANDIDO REIÑALDO DA ROCHA
 						<docDate>1871</docDate>.</docImprint>
 			</titlePage>
-			<pb n="0"
+			<pb xml:id="pb_novaes_0002" n="0"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0003.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div type="faculty-list">
 				<head xml:id="h_novaes_0002">FACULDADE DE MEDICINA DA BAHIA.</head>
@@ -304,7 +304,7 @@
 			</div>
 		</front>
 		<body>
-			<pb n="1"
+			<pb xml:id="pb_novaes_0003" n="1"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0004.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0015">SECÇÃO MEDICA.</head>
@@ -333,7 +333,7 @@
 					forças, já pela incerteza que ainda hoje reina na sciencia a respeito d'esta
 					molestia: com tudo procuraremos descrevêl-a, ainda que resumidamente, de maneira
 					que consigamos dar uma idéa mais ou menos approximada do que ella seja.</p>
-				<pb n="2"
+				<pb xml:id="pb_novaes_0004" n="2"
 					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0005.jp2&amp;id=101464815.nlm.nih.gov"/>
 				<p xml:id="p_novaes_0010">A <term type="illness" xml:id="t_novaes_0186"
 						lemma="febre amarela">febre amarella</term>, tambem chamada, <term
@@ -384,7 +384,7 @@
 						mortiferas do continente Europeu.</p>
 					<p xml:id="p_novaes_0016">Não contente de tão grandes conquistas firmou o seu
 						dominio na Africa e ahi, no Senegal, em Serra Leôa, nas ilhas Canarias e
-						ilha da<pb n="3"
+						ilha da<pb xml:id="pb_novaes_0005" n="3"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0006.jp2&amp;id=101464815.nlm.nih.gov"
 						/> Ascenção, qual outro flagello da idade antiga, devastou a humanidade
 						deixando o seu caminho fatal semeiado de cadaveres e cobrindo todos estes
@@ -420,7 +420,7 @@
 						Caridade.</p>
 					<p xml:id="p_novaes_0024">A' 29 de Janeiro do corrente anno entrou em nosso
 						porto o vapor inglez Douro procedente da Europa com escala por Pernambuco,
-							onde<pb n="4"
+							onde<pb xml:id="pb_novaes_0006" n="4"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0007.jp2&amp;id=101464815.nlm.nih.gov"
 						/> reinava a <term type="illness" xml:id="t_novaes_0201"
 							lemma="febre amarela">febre amarella</term> por mar e por terra; apezar
@@ -481,7 +481,7 @@
 							type="illness" xml:id="t_novaes_0215" lemma="febre intermitente">febre
 							intermittente</term>, visto como esta geralmente se apresenta nos
 						lugares onde existem materias vegeto-animaes em estado de putrefacção.</p>
-					<pb n="5"
+					<pb xml:id="pb_novaes_0007" n="5"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0008.jp2&amp;id=101464815.nlm.nih.gov"/>
 					<p xml:id="p_novaes_0032">Podemos reconhecer, e aqui mesmo confessamos, que a
 							<term type="illness" xml:id="t_novaes_0216" lemma="febre amarela">febre
@@ -526,7 +526,7 @@
 						Griezinger e Saint-Vel, somos levados a crer que esta molestia é
 						infecto-contangiosa.</p>
 					<p xml:id="p_novaes_0039">Admittimos o contangio directo e indirecto, aquelle
-						correspoude <pb n="6"
+						correspoude <pb xml:id="pb_novaes_0008" n="6"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0009.jp2&amp;id=101464815.nlm.nih.gov"
 						/>as molestias virulentas, este as molestias que se propagam á individuos
 						sem ser por meio da inoculação, e sim por meio de emanações, reproduzindo-se
@@ -563,7 +563,7 @@
 						molestia que logo depois assolou a cidade.</p>
 					<p xml:id="p_novaes_0045">O mesmo author diz que a epidemia, que devastou Cadix
 						em 1764, foi importada por um navio que alli aportara procedente da America,
-						que a<pb n="7"
+						que a<pb xml:id="pb_novaes_0009" n="7"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0010.jp2&amp;id=101464815.nlm.nih.gov"
 						/> molestia, principiando nas tabernas em que estavam alojados os
 						marinheiros, communicou-se as casas vesinhas, habitadas pela classe
@@ -609,7 +609,7 @@
 					<p xml:id="p_novaes_0050">Si tu ne peux as soulager, sache au moins ne point
 						nuire. (HUFELAND).</p>
 				</epigraph>
-				<pb n="8"
+				<pb xml:id="pb_novaes_0010" n="8"
 					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0011.jp2&amp;id=101464815.nlm.nih.gov"/>
 				<p xml:id="p_novaes_0051">E' esta, por sem duvida, a parte mais difficil e
 					importante de nossa dissertação.</p>
@@ -636,7 +636,7 @@
 					do medico devem ser variados, porque desconhecendo a natureza ou antes a
 					essencia do mal, somente lhe resta a applicação dos meios indirectos.</p>
 				<p xml:id="p_novaes_0057">E' per tanto o tratamento symptomatico que elle tem de
-					preencher, e <pb n="9"
+					preencher, e <pb xml:id="pb_novaes_0011" n="9"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0012.jp2&amp;id=101464815.nlm.nih.gov"
 					/>assim mesmo este deve ser modificado em vista da intensidade dos phenomenos, e
 					das condições inherentes ao individuo, e ao contrario não se póde explicar os
@@ -721,7 +721,7 @@
 						xml:id="t_novaes_0027">simaruba</term>, <term type="plant"
 						xml:id="t_novaes_0028">genciana</term>, tinctura de <term type="plant"
 						xml:id="t_novaes_0029">calumba</term> e tambem a agua ingleza.</p>
-				<pb n="10"
+				<pb xml:id="pb_novaes_0012" n="10"
 					facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0013.jp2&amp;id=101464815.nlm.nih.gov"/>
 				<p xml:id="p_novaes_0062">Esse tratamento foi adoptado na casa de Saude de Sr.
 					Fancisco, para onde foram recolhidos 68 doentes, cujo tratamento acompanhamos á
@@ -777,7 +777,7 @@
 					sendo o <term type="chemical-medicine" xml:id="t_novaes_0254" lemma="calomelano"
 						>calomelanos</term> um diluente de primeira força, um alterantbem conhecido,
 					parece-nos curial que por este meio vamos tornar o sangue mais fluido e por
-					tanto tornar o estado do doente mais grave, pelas<pb n="11"
+					tanto tornar o estado do doente mais grave, pelas<pb xml:id="pb_novaes_0013" n="11"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0014.jp2&amp;id=101464815.nlm.nih.gov"
 					/> circunstancias que mais tarde hão de por força sobrevir, oque não acontece
 					com os outros purgativos, que alem de não produzirem os inconvenieentes que
@@ -819,7 +819,7 @@
 					da economia, procedendo d'ahi o consideravel <term type="symptom"
 						xml:id="t_novaes_0265">abatimento</term> das forças, como poderemos tirar
 					sangue? Como roubarmos ao organismo uma parte de que elle tanto precisa para
-					reagir? Eliminaremos o principio morbifico <pb n="12"
+					reagir? Eliminaremos o principio morbifico <pb xml:id="pb_novaes_0014" n="12"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0015.jp2&amp;id=101464815.nlm.nih.gov"
 					/>diminuindo a massa do sangue? E em taes casos a convalença não será muito mais
 					longa? Portanto proscrevemos sempre a sangria, e estamos certos de que se os
@@ -866,7 +866,7 @@
 						>vomito</term> negro, que sendo um symptoma gravissimo devemos tanto mais
 					evital-o.</p>
 				<p xml:id="p_novaes_0074">Banil-os totalmente, esqueceriamo-nos de que a pratica tem
-						provado<pb n="13"
+						provado<pb xml:id="pb_novaes_0015" n="13"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0016.jp2&amp;id=101464815.nlm.nih.gov"
 					/> que elles são proveitosos no principio da molestia, e sobre tudo quando a
 						<term type="body-part" xml:id="t_novaes_0044" lemma="língua">lingua</term>
@@ -924,7 +924,7 @@
 					nos casos de <term type="symptom" xml:id="t_novaes_0292" lemma="anúria"
 						>anuria</term>.</p>
 				<p xml:id="p_novaes_0080">Os mesmos praticos exerciam uma especie de hydrotherapia
-						submettendo<pb n="14"
+						submettendo<pb xml:id="pb_novaes_0016" n="14"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0017.jp2&amp;id=101464815.nlm.nih.gov"
 					/> o doente a um banho de agua fria por alguns minutos, depois retiravam-no,
 					enxugavam-no, envolviam-no em um panno molhado! e depois em uma colcha de lã:
@@ -967,7 +967,7 @@
 					mão do <term type="chemical-medicine" xml:id="t_novaes_0296"
 						lemma="sulfato de quinina">sulphato de quinina</term> e muitos ainda desde o
 					principio da molestia que o applicavam como especifico para essa enfermidade. E'
-					que elles, seduzidos <pb n="15"
+					que elles, seduzidos <pb xml:id="pb_novaes_0017" n="15"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0018.jp2&amp;id=101464815.nlm.nih.gov"
 					/>pelos brilhantes resultados que dá o <term type="chemical-medicine"
 						xml:id="t_novaes_0297" lemma="sulfato de quinina">sulphato de quinina</term>
@@ -1027,7 +1027,7 @@
 					foram por nós observados na caza de saude de S. Francisco: á estes doentes o
 					emprego do <term type="chemical-medicine" xml:id="t_novaes_0316"
 						lemma="sulfato de quinina">sulphato de quinina</term> em alta dose evitava
-						a<pb n="16"
+						a<pb xml:id="pb_novaes_0018" n="16"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0019.jp2&amp;id=101464815.nlm.nih.gov"
 					/> reapparição dos paroxismos e, extinguindo a consideravel aridez da <term
 						type="body-part" xml:id="t_novaes_0061" lemma="língua">lingua</term>,
@@ -1077,7 +1077,7 @@
 						<term type="plant" xml:id="t_novaes_0066">genciana</term>, e da agua
 						ingleza, que como tonicos tem triumphado d'este terrivel symptoma. Nos casos
 						em que o vomito é essencial e <term type="symptom" xml:id="t_novaes_0326"
-							lemma="hemorrágico">hemorrhagico</term>,<pb n="17"
+							lemma="hemorrágico">hemorrhagico</term>,<pb xml:id="pb_novaes_0019" n="17"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0020.jp2&amp;id=101464815.nlm.nih.gov"
 						/> e composto de materia negra, ja quasi que todos os recursos são
 						infructiferos; com tudo não devemos crusar os <term type="body-part"
@@ -1129,7 +1129,7 @@
 							morphina</term> tem dado bons resultados se os doentes não poderem
 						tolerar esta medicação, então applicaremos um <term type="chemical-medicine"
 							xml:id="t_novaes_0338" lemma="sal de morfina">sal de morphina</term>
-						pelo methodo endermico, sendo preferivel o sulphato:<pb n="18"
+						pelo methodo endermico, sendo preferivel o sulphato:<pb xml:id="pb_novaes_0020" n="18"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0021.jp2&amp;id=101464815.nlm.nih.gov"
 						/> de entre os calmantes, a agua de <term type="plant"
 							xml:id="t_novaes_0071" lemma="louro-cereja">louro cereja</term> em uma
@@ -1183,7 +1183,7 @@
 							lemma="parotidite">parotidites</term> trazem quasi sempre uma terminação
 						fatal á <term type="illness" xml:id="t_novaes_0343" lemma="febre amarela"
 							>febre amarella</term>, sendo muito mais grave nas crianças, segundo o
-						Sr. Cornillac. <pb n="19"
+						Sr. Cornillac. <pb xml:id="pb_novaes_0021" n="19"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0022.jp2&amp;id=101464815.nlm.nih.gov"
 						/>Quasi todos os praticos combatem este symptoma de duas maneiras; ou
 						applicam os emollientes afim de formarem-se os abcessos e praticarem depois
@@ -1238,7 +1238,7 @@
 							xml:id="t_novaes_0355" lemma="valerianato de zinco">valerianato de
 							zinco</term>, da <term type="plant" xml:id="t_novaes_0094"
 							lemma="beladona">belladona</term>, e ainda pela applicação dos
-						sinapismos sobre a região epigastrica; porem na maior parte das vezes<pb
+						sinapismos sobre a região epigastrica; porem na maior parte das vezes<pb xml:id="pb_novaes_0022"
 							n="20"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0023.jp2&amp;id=101464815.nlm.nih.gov"
 						/> elles são fataes, e muito contribuem para o termo proximo da
@@ -1303,7 +1303,7 @@
 						a cerveja, a Champanha e o <term type="chemical-medicine"
 							xml:id="t_novaes_0367" lemma="bissulfito de cal">bisulphito de
 							cal</term> os adstringentes, bem como a <term type="chemical-medicine"
-							xml:id="t_novaes_0368">ergotina</term>, o perchlorureto de<pb n="21"
+							xml:id="t_novaes_0368">ergotina</term>, o perchlorureto de<pb xml:id="pb_novaes_0023" n="21"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0024.jp2&amp;id=101464815.nlm.nih.gov"
 						/> ferro e o gelo: os anticepticos, o <term type="chemical-medicine"
 							xml:id="t_novaes_0369" lemma="ácido fênico">acido phenico</term>, o
@@ -1370,7 +1370,7 @@
 					</table>
 					<p xml:id="p_novaes_0115">Dissolva para tomar as colheres de hora em hora. Ao
 						mesmo tempo applicava compressas d'agua fria sobre o <term type="body-part"
-							xml:id="t_novaes_0124">ventre</term><pb n="22"
+							xml:id="t_novaes_0124">ventre</term><pb xml:id="pb_novaes_0024" n="22"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0025.jp2&amp;id=101464815.nlm.nih.gov"
 						/> de concomitancia com os sinapismos nas <term type="body-part"
 							xml:id="t_novaes_0125" lemma="extremidade">extremidades</term>. Quanto
@@ -1435,7 +1435,7 @@
 							lemma="sufusão ictérica">suffusão icterica</term>, davam-se os purgantes
 						salinos, e o <term type="chemical-medicine" xml:id="t_novaes_0392"
 							lemma="bicarbonato de soda">bicarbonato de sóda</term>, Esse tratamento,
-						que só éra modificado,<pb n="23"
+						que só éra modificado,<pb xml:id="pb_novaes_0025" n="23"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0026.jp2&amp;id=101464815.nlm.nih.gov"
 						/> quando era opportuna a modificação, deu felizes resultados, como se póde
 						deprehender da estatistica d'esse hospital desde o dia 22 de Abril, em que
@@ -1486,7 +1486,7 @@
 						governo compete, de combinação com a sciencia velar pelo bem estar do
 						povo.</p>
 					<p xml:id="p_novaes_0123">Assim pois, reinando a epidemia em um pôrto, achamos
-						de grande necessidade que todos os navios que chegarem á esse porto sejão<pb
+						de grande necessidade que todos os navios que chegarem á esse porto sejão<pb xml:id="pb_novaes_0026"
 							n="24"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0027.jp2&amp;id=101464815.nlm.nih.gov"
 						/> afastados do ancoradouro; que os seus passageiros sejam desembarcado em
@@ -1523,7 +1523,7 @@
 						navio.</p>
 					<p xml:id="p_novaes_0128">O governo humanitario, como deve ser, e principalmente
 						n'estas occasiões, tudo deve fazer em beneficio do povo; assim achamos de
-						summa importancia que seja criada uma commissão medica, para examinar a<pb
+						summa importancia que seja criada uma commissão medica, para examinar a<pb xml:id="pb_novaes_0027"
 							n="25"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0028.jp2&amp;id=101464815.nlm.nih.gov"
 						/> carne, e os diversos generos alimenticios que sahem dos mercados,
@@ -1564,7 +1564,7 @@
 							lemma="vômito">vomito</term> negro e as <term type="symptom"
 							xml:id="t_novaes_0407" lemma="hemorragia">hemorrhagias</term>.</p>
 					<p xml:id="p_novaes_0133">Diz mais que, para a inoculação exercer a sua virtude
-							preservadoura,<pb n="26"
+							preservadoura,<pb xml:id="pb_novaes_0028" n="26"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0029.jp2&amp;id=101464815.nlm.nih.gov"
 						/> não era necessario que os seus symptomas fossem intensos; que somente
 						bastava os inoculados apresentarem o <term type="symptom"
@@ -1646,7 +1646,7 @@
 							>odontalgia</term>; emfim depois de 72 horas, <term type="symptom"
 							xml:id="t_novaes_0439">edema</term> do <term type="body-part"
 							xml:id="t_novaes_0147" lemma="lábio">labio</term> inferior.</p>
-					<pb n="27"
+					<pb xml:id="pb_novaes_0029" n="27"
 						facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0030.jp2&amp;id=101464815.nlm.nih.gov"/>
 					<p xml:id="p_novaes_0134">Tal era o modo porque se manifestava a molestia
 						provocada pela inoculação. Logo depois da inoculação, era administrado um
@@ -1698,7 +1698,7 @@
 						ser observados pelo individuo particularmente. Os medicos que exercerem a
 						clinica na cidade, devem com prudencia instruirem aos individuos de que ha
 						epedemia, afim de que elles não fiquem na ignorancia, não se deixem apoderar
-						pelo terror, e procurem acautelar-se das intempereis da<pb n="28"
+						pelo terror, e procurem acautelar-se das intempereis da<pb xml:id="pb_novaes_0030" n="28"
 							facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0031.jp2&amp;id=101464815.nlm.nih.gov"
 						/> estação, não commettendo certas imprudencias, e procurem evitar tudo
 						quanto lhes possa fazer mal.</p>
@@ -1737,7 +1737,7 @@
 			</div>
 		</body>
 		<back>
-			<pb n="29"
+			<pb xml:id="pb_novaes_0031" n="29"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0032.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0025">SECÇÃO CIRURGICA FERIDAS POR ARMA DE FOGO.
@@ -1784,7 +1784,7 @@
 						lemma="álcool canforado">alcool camphorado</term>, e o Labarraque, são hoje
 					empregados com muita vantagem no tratamento das feridas por arma de fogo.</p>
 			</div>
-			<pb n="30"
+			<pb xml:id="pb_novaes_0032" n="30"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0033.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0026">SECÇÃO MEDICA Acção physiologica e therapeutica do
@@ -1860,7 +1860,7 @@
 						>estomago</term> a digerir os alimentos solidos de que se acha
 					sobrecarregado.</p>
 			</div>
-			<pb n="31"
+			<pb xml:id="pb_novaes_0033" n="31"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0034.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0027">SECÇÃO ACCESSORIA Como reconheer-se que houve aborto em
@@ -1898,7 +1898,7 @@
 				<p xml:id="p_novaes_0181">12.—Não deve o medico legista esquecer-se dos precedentes
 					da mulher, que são de algum valor para o caso em questão.</p>
 			</div>
-			<pb n="32"
+			<pb xml:id="pb_novaes_0034" n="32"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0035.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div>
 				<head xml:id="h_novaes_0028">HYP CRATIS APHORISMI</head>
@@ -1916,7 +1916,7 @@
 						lemma="útero">utero</term> gerens sectâ venâ abortit, et magis, si major
 					fuefœtus. (Sect. 5ª aph. 31).</p>
 			</div>
-			<pb n="33"
+			<pb xml:id="pb_novaes_0035" n="33"
 				facs="https://ia600608.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/101464815.nlm.nih.gov/101464815_jp2.zip&amp;file=101464815_jp2/101464815_0036.jp2&amp;id=101464815.nlm.nih.gov"/>
 			<div type="aprovacoes">
 				<note xml:id="n_novaes_0001">[No original, a página seguinte está em letra

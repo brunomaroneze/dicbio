@@ -48,6 +48,7 @@ class OcorrenciaCorpus(models.Model):
     titulo_obra = models.CharField(max_length=200, blank=True)
     slug_obra = models.SlugField(max_length=150, blank=True)
     pagina_obra = models.CharField(max_length=50, blank=True)
+    pagina_id = models.CharField(max_length=50, blank=True)
     data = models.CharField(max_length=50, blank=True)
 
     def __str__(self):

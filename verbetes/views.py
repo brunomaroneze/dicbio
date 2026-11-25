@@ -41,7 +41,7 @@ def verbete_detalhe(request, slug):
         exemplo = {
            'token': o.token, 'gram': gram, 'frase': o.frase, 'autor': autor,
            'data': o.data, 'titulo_obra': o.titulo_obra, 'slug_obra': o.slug_obra,
-           'pagina_obra': o.pagina_obra,
+           'pagina_obra': o.pagina_obra, 'pagina_id': o.pagina_id,
         }
         grupo = exemplos_tmp[str(sense)][token_ocorrencia][gram][autor]
         tam = len(o.frase)

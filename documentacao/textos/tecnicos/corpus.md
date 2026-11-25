@@ -19,7 +19,7 @@ Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O có
 
 - IMBERT, Jean-Baptiste Alban. [**Manual do Fazendeiro, ou Tratado domestico sobre as enfermidades dos negros**](https://archive.org/details/b29341152/page/n5/mode/2up). Rio de Janeiro: Na Typ. Imp. e Const. de Seignot-Plancher e C.ª, 1834.
 
-- MAURAN, M. G. **Aviso á Gente do Mar sobre a sua saúde**. Obra necessaria aos cirurgiões de navios, e em geral a todos os marinheiros, que andaõ embarcados em navios, aonde naõ ha cirurgiões. Traduzido da nova edição francesa e aumentado com algumas notas por Bernardo José de Carvalho. Lisboa: Na R. Typ. de Joaõ Antonio da Silva, 1794. Exemplar da Biblioteca Pública de Évora (Manizola, 4985).
+- MAURAN, G.; CARVALHO, B. J. **Aviso a’ Gente do Mar sobre a sua Saude**. Lisboa: R. Typ. de João Antonio da Silva, 1794. Trad. adapt. da ed. original francesa, com notas de Bernardo José de Carvalho. Original digitalizado da Coleção Manizola da Biblioteca Pública de Évora (BPE), Portugal. BPE (Setor de Reservados): PE-RES HEM - Maniz 4985 REGISTO: 75422.
 
 - NOVAES, Clementino Ribeiro de. [**Qual o melhor tratamento da febre amarela**](https://repositorio.ufba.br/bitstream/ri/24821/1/Clementino%20Ribeiro%20de%20Novaes%20%28TI-1871%29.pdf). Salvador: Imprensa da Faculdade de Medicina da Bahia, 1871.
 
