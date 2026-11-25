@@ -16,12 +16,12 @@ A cada 10 minutos, a VPS verifica se o `main` mudou. Se mudou, prepara uma vers�
 
 ## Imagens
 
-O site usa `/srv/dicbio/imagens`, a mesma pasta da conferência, mas **sem senha** e só para as obras liberadas (por enquanto, o *Aviso à Gente do Mar*). Nas demais aparece "Imagem indisponível" e, se houver, o link para o `facs` original. Para copiar as imagens de uma obra, ver `revisao/README.md`. Depois de copiar, refazer o site:
+O site usa `/srv/dicbio/imagens`, a mesma pasta da conferência, mas **sem senha** e só para as obras liberadas (Carvalho, Imbert, Semedo e Vandelli). Nas demais aparece "Imagem indisponível" e, se houver, o link para o `facs` original. Para copiar as imagens de uma obra, ver `revisao/README.md`. Depois de copiar, refazer o site:
 
     sudo truncate -s 0 /srv/dicbio/site/publicado.txt
     sudo systemctl start dicbio-site-atualizar.service
 
-Para liberar uma obra: incluí-la em `OBRAS_COM_IMAGENS`, em `dicbio/settings.py`; repetir o bloco `carvalhoaviso_imagens`, com o nome da nova pasta, em `/etc/nginx/sites-available/dicbio-site` e em `instalar.sh`; depois, `sudo nginx -t && sudo systemctl reload nginx`.
+Para liberar uma obra: incluí-la em `OBRAS_COM_IMAGENS`, em `dicbio/settings.py`; acrescentar o nome do arquivo XML à lista da linha `location ~ ^/imagens/`, em `/etc/nginx/sites-available/dicbio-site` e em `instalar.sh`; depois, `sudo nginx -t && sudo systemctl reload nginx`.
 
 ## Uso cotidiano
 

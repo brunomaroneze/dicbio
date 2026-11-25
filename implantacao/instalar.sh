@@ -122,9 +122,9 @@ server {
     location /media/ {
         alias $BASE/atual/mediafiles/;
     }
-    # Só as obras com imagens liberadas; repetir o bloco para cada nova obra.
-    location /imagens/carvalhoaviso_imagens/ {
-        alias $IMAGENS/carvalhoaviso_imagens/;
+    # Só as obras com imagens liberadas (OBRAS_COM_IMAGENS, em dicbio/settings.py).
+    location ~ ^/imagens/((?:carvalhoaviso|diciovandelli|fazendeiroimbert|observSemmedo)_imagens/.+)\$ {
+        alias $IMAGENS/\$1;
         add_header Cache-Control "public, max-age=604800";
     }
     location /imagens/ {

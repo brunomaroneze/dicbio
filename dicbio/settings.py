@@ -156,7 +156,12 @@ IMAGENS_URL = '/imagens/'
 # Obras (nome do arquivo XML, sem extensão) cujas imagens podem ser exibidas no site.
 # Nas demais aparece "Imagem indisponível", até que as licenças sejam verificadas.
 # Ao incluir uma obra, liberar também a pasta no nginx (ver implantacao/README.md).
-OBRAS_COM_IMAGENS = {'carvalhoaviso'}
+OBRAS_COM_IMAGENS = {
+    'carvalhoaviso',     # cedidas ao projeto
+    'diciovandelli',     # Internet Archive/BHL: "Not in copyright"
+    'fazendeiroimbert',  # Internet Archive (Wellcome Library): Public Domain Mark 1.0
+    'observSemmedo',     # Internet Archive (Google Books): Public Domain Mark 1.0
+}
 
 # --- Configuração de Cache ---
 CACHES = {
