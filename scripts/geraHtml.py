@@ -156,7 +156,7 @@ def generate_html(verbete):
             
             <div class="citation">
                 <p>Como citar este verbete:</p>
-                <p>{autores_citacao}. {verbete['headword'].capitalize()}. In: MARONEZE, Bruno (coord.) <b>Dicionário Histórico de Termos da Biologia</b>. 2022-2025. Disponível em: https://dicbio.fflch.usp.br/. Acesso em: {data_acesso}.</p>
+                <p>{autores_citacao}. {verbete['headword'].capitalize()}. In: MARONEZE, Bruno (coord.) <b>Dicionário Histórico de Termos da Biologia</b>. 2022-2025. Disponível em: https://dicbio.org/. Acesso em: {data_acesso}.</p>
             </div>
         </div>
     </body>

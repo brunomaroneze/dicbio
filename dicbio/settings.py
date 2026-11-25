@@ -90,33 +90,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dicbio.wsgi.application'
 
 
-# --- CONFIGURAÇÃO DO BANCO DE DADOS (DINÂMICA) ---
+# --- CONFIGURAÇÃO DO BANCO DE DADOS ---
 DJANGO_ENV = os.environ.get('DJANGO_ENV', 'development') # Padrão para 'development'
 
-if DJANGO_ENV == 'production':
-    # Configuração para MariaDB/MySQL (para o servidor de produção)
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': os.environ.get('MYSQL_NAME'),
-            'USER': os.environ.get('MYSQL_USER'),
-            'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
-            'HOST': os.environ.get('MYSQL_HOST'),
-            'PORT': os.environ.get('MYSQL_PORT'),
-            'OPTIONS': {
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-                'charset': 'utf8mb4',
-            },
-        }
+# SQLite também em produção: o banco é só de leitura e é refeito a partir dos
+# arquivos do repositório a cada atualização do site (ver implantacao/).
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # criado pelo "migrate", se não existir
     }
-else:
-    # Configuração para SQLite (para desenvolvimento local)
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3', # Ele criará este arquivo se não existir
-        }
-    }
+}
 # -----------------------------------------------------------------
 
 
@@ -163,6 +147,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # --- MINHAS CONFIGURAÇÕES PERSONALIZADAS ---
 # Caminho para a pasta raiz onde os arquivos XML do corpus estão armazenados
 CORPUS_XML_ROOT = BASE_DIR / 'corpus_digital' / 'obras'
+
+# Imagens das obras: IMAGENS_ROOT contém as pastas OBRA_imagens. Em produção,
+# quem serve IMAGENS_URL é o nginx.
+IMAGENS_ROOT = Path(os.environ.get('IMAGENS_ROOT') or CORPUS_XML_ROOT)
+IMAGENS_URL = '/imagens/'
 
 # --- Configuração de Cache ---
 CACHES = {

@@ -79,6 +79,7 @@
 }
 
 .page-separator {
+    display: block;
     border: 0; /* Remove a borda padrão para usar background */
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Linha que some nas pontas */
@@ -100,3 +101,25 @@
     background-color: #0d6efd; /* Azul primário do Bootstrap */
     font-weight: bold;
 }
+
+/* --- Elementos TEI convertidos em HTML --- */
+.page-break-indicator { display: block; }
+.tei-p { margin-bottom: 1rem; }
+.tei-head { margin-top: 1.5rem; }
+h3.tei-head { font-size: 1.35rem; }
+h4.tei-head { font-size: 1.2rem; }
+h5.tei-head, h6.tei-head { font-size: 1.05rem; }
+.tei-lista { margin-bottom: 1rem; }
+.tei-lista > .tei-head { font-weight: bold; margin-top: 0.5rem; }
+/* As obras já trazem seus próprios números e letras de enumeração. */
+.tei-list { list-style: none; padding-left: 1.5em; margin-bottom: 0; }
+.tei-table { width: 100%; margin-bottom: 1rem; border-collapse: collapse; font-size: 0.9em; }
+.tei-table .tei-cell { padding: 0.25rem 0.5rem; border: 1px solid #dee2e6; vertical-align: top; }
+.tei-table caption { caption-side: top; }
+.tei-lg { margin: 0.75rem 0; }
+.tei-l { padding-left: 2em; }
+.tei-entry { margin: 0.35rem 0; padding-left: 1.5em; }
+.tei-form { font-weight: bold; }
+.tei-signed, .tei-closer { text-align: right; margin-bottom: 1rem; }
+.tei-trailer, .title-page-content { text-align: center; }
+.tei-byline, .tei-titlePart, .tei-docImprint, .tei-salute, .tei-trailer { margin-bottom: 0.75rem; }

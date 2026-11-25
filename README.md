@@ -12,7 +12,7 @@ Os objetivos são:
 - Disponibilizar os dados em formatos reutilizáveis (XML e RDF).
 
 O *Dicionário Histórico de Termos da Biologia* é consultável neste link:
-https://dicbio.fflch.usp.br
+https://dicbio.org
 
 ## Principais recursos
 No site do projeto, é possível:
@@ -62,11 +62,11 @@ Para executar o site localmente, as seguintes etapas são necessárias:
 1. Clonar o repositório (comando ```git clone https://github.com/brunomaroneze/dicbio```);
 2. Criar um ambiente virtual (comando ```python -m venv venv```);
 3. Instalar as dependências necessárias (comando ```pip install -r requirements.txt```);
-4. Gerar a lista de contextos do *corpus* (comando ```python manage.py extract_corpus_terms --force-regen```);
-5. Gerar os metadados das obras do *corpus* (comando ```python manage.py import_obra_metadata```);
-6. Converter os arquivos XML do *corpus* para HTML (comando ```python manage.py processar_obras_tei --force```);
+4. Criar o banco de dados (comando ```python manage.py migrate```);
+5. Gerar a lista de contextos do *corpus* (comando ```python manage.py extract_corpus_terms --force-regen```);
+6. Gerar os metadados das obras do *corpus* (comando ```python manage.py import_obra_metadata```);
 7. Extrair os dados dos verbetes dos arquivos CSV (comando ```python manage.py import_dictionary_data```);
-8. Popular o banco de dados (comando ```python manage.py migrate```);
+8. Converter os arquivos XML do *corpus* para HTML (comando ```python manage.py processar_obras_tei --force```), depois dos verbetes, porque só há *link* para verbete que existe;
 9. Rodar o servidor local (comando ```python manage.py runserver```).
 
 ## Como colaborar com o projeto
@@ -77,7 +77,7 @@ O coordenador do projeto pode ser contatado pelo e-mail brunomaroneze@ufgd.edu.b
 
 ## Documentação
 
-A documentação detalhada pode ser acessada em https://dicbio.fflch.usp.br/documentacao/.
+A documentação detalhada pode ser acessada em https://dicbio.org/documentacao/.
 
 ## Financiamento
 

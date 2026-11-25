@@ -8,14 +8,14 @@
 			</titleStmt>
 			<publicationStmt>
 				<p>Transcrito para uso do projeto Dicionário Histórico de Termos da Biologia
-					(https://dicbio.fflch.usp.br/), coordenado pelo Prof. Dr. Bruno Oliveira
+					(https://dicbio.org/), coordenado pelo Prof. Dr. Bruno Oliveira
 					Maroneze.</p>
 			</publicationStmt>
 			<sourceDesc>
 				<bibl><author>IMBERT, Jean-Baptiste Alban</author>. <title>Manual do Fazendeiro, ou
 						Tratado domestico sobre as enfermidades dos negros</title>. <pubPlace>Rio de
 						Janeiro</pubPlace>: Na Typ. Imp. e Const. de Seignot-Plancher e C.ª., <date
-						when="1739">1834</date>. Disponível em:
+						when="1834">1834</date>. Disponível em:
 					https://archive.org/details/b29341152/page/n5/mode/2up. </bibl>
 			</sourceDesc>
 		</fileDesc>
@@ -78,7 +78,7 @@
 			</editorialDecl>
 			<projectDesc>
 				<p>Este arquivo foi produzido para uso no projeto "Dicionário Histórico de Termos da
-					Biologia", acessível pelo site https://dicbio.fflch.usp.br/.</p>
+					Biologia", acessível pelo site https://dicbio.org/.</p>
 			</projectDesc>
 		</encodingDesc>
 	</teiHeader>

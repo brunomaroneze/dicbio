@@ -6,7 +6,7 @@ autores: Bruno Maroneze
 # Córpus
 O **Dicionário Histórico de Termos da Biologia** é inteiramente baseado num córpus formado por textos científicos publicados em língua portuguesa. Esse córpus (assim como o próprio dicionário) está em contínua atualização (cf. "Política de disponibilização dos dados") e disponível integralmente (no repositório *GitHub*), por ser constituído apenas por textos em domínio público.
 
-Optou-se por, inicialmente, incluir no córpus apenas textos do século XVIII (por ser este um momento histórico altamente significativo no desenvolvimento da Ciência, especialmente em língua portuguesa); posteriormente, pretende-se incluir outros períodos históricos (tanto anteriores quanto posteriores).
+Optou-se por, inicialmente, incluir no córpus textos do século XVIII (por ser este um momento histórico altamente significativo no desenvolvimento da Ciência, especialmente em língua portuguesa). Posteriormente, o córpus passou a incluir também textos do século XIX; pretende-se, ainda, ampliá-lo com outros períodos históricos.
 
 Os textos que compõem o córpus (cf. "Textos que compõem o córpus", abaixo) estão disponibilizados em formato .xml (cf. "Política de disponibilização dos dados"), com as etiquetas descritas abaixo; o *script* que extrai as informações dos textos (cf. "Estrutura computacional") também disponível no repositório *GitHub*.
 
@@ -15,11 +15,21 @@ Os textos que integram o córpus podem ser encontrados nos *links* abaixo. O có
 
 - BROTERO, Félix de Avelar. [**Compendio de Botanica**](https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html). Vol. 1. Paris: Vende-se em Lisboa, em caza de Paulo Martin, Mercador de Livros, 1788.
 
+- BROTERO, Félix de Avelar. [**Compendio de Botanica**](https://digitalis-dsp.uc.pt/botanica/UCFCTBt-B-78-1-15_2/UCFCTBt-B-78-1-15_2_item1/index.html). Vol. 2. Paris: Vende-se em Lisboa, em caza de Paulo Martin, Mercador de Livros, 1788.
+
+- IMBERT, Jean-Baptiste Alban. [**Manual do Fazendeiro, ou Tratado domestico sobre as enfermidades dos negros**](https://archive.org/details/b29341152/page/n5/mode/2up). Rio de Janeiro: Na Typ. Imp. e Const. de Seignot-Plancher e C.ª, 1834.
+
+- MAURAN, M. G. **Aviso á Gente do Mar sobre a sua saúde**. Obra necessaria aos cirurgiões de navios, e em geral a todos os marinheiros, que andaõ embarcados em navios, aonde naõ ha cirurgiões. Traduzido da nova edição francesa e aumentado com algumas notas por Bernardo José de Carvalho. Lisboa: Na R. Typ. de Joaõ Antonio da Silva, 1794. Exemplar da Biblioteca Pública de Évora (Manizola, 4985).
+
+- NOVAES, Clementino Ribeiro de. [**Qual o melhor tratamento da febre amarela**](https://repositorio.ufba.br/bitstream/ri/24821/1/Clementino%20Ribeiro%20de%20Novaes%20%28TI-1871%29.pdf). Salvador: Imprensa da Faculdade de Medicina da Bahia, 1871.
+
 - SANTUCCI, Bernardo. [**Anatomia do corpo humano**](https://books.google.com.br/books/about/Anatomia_do_corpo_humano.html?id=D83JL7ybBeUC&redir_esc=y). Lisboa: na Officina de Antonio Pedrozo Galram, 1739.
 
 - SEMEDO, João Curvo. [**Observaçoens Medicas Doutrinaes**](https://archive.org/details/bub_gb_qCVH54Hs2i0C/page/n1/mode/2up). Lisboa: na Officina de Antonio Pedrozo Galram, 1707.
 
 - VANDELLI, Domingos. [**Diccionario dos termos technicos de Historia Natural**](https://purl.pt/13958). Coimbra: na Real Officina da Universidade, 1788.
+
+As transcrições encontram-se em diferentes estágios de revisão e continuam sendo conferidas com as imagens das obras. Nem todas as obras têm, até o momento, os termos etiquetados e vinculados aos verbetes.
 
 ### Formatação do córpus
 Os textos que compõem o córpus estão sendo etiquetados com o emprego de etiquetas XML (também chamados de "elementos XML") que seguem o padrão [Text Encoding Initiative](https://tei-c.org/)). Os arquivos com a extensão .xml, bem como o arquivo RELAX-NG (*tei_dhtb.rng*) que contém as instruções para o emprego das etiquetas, estão disponíveis no repositório *GitHub* (cf. "Política de disponibilização dos dados").

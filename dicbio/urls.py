@@ -39,3 +39,4 @@ urlpatterns = [
 if settings.DEBUG:
     # Serve arquivos de mídia (como o PDF gerado) durante o desenvolvimento
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.IMAGENS_URL, document_root=settings.IMAGENS_ROOT)

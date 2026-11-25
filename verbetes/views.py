@@ -130,6 +130,7 @@ def concordancia_por_definicao(request, def_id):
 # Nova view para exibir verbete a partir do arquivo Turtle
 
 import rdflib
+from functools import lru_cache
 from django.shortcuts import render
 from rdflib import Namespace, Literal
 from django.http import HttpResponse
@@ -189,14 +190,19 @@ def buscar_contexto_no_xml(xml_id):
     except Exception as e:
         return f"[Erro ao processar XML: {str(e)}]"
 
-# Carregamos os dois grafos (Dicionário e Índice de Exemplos)
-G = rdflib.Graph()
-G.parse("data/entries/DicionarioBiologia.ttl", format="turtle")
-G.parse("data/corpus_index.ttl", format="turtle") # <--- Novo arquivo de índice NIF
+# Os dois grafos (Dicionário e Índice de Exemplos) só são lidos no primeiro acesso
+# à rota de teste, para o restante do site não depender dos arquivos Turtle.
+@lru_cache(maxsize=1)
+def carregar_grafo():
+    g = rdflib.Graph()
+    g.parse(settings.BASE_DIR / "data" / "entries" / "DicionarioBiologia.ttl", format="turtle")
+    g.parse(settings.BASE_DIR / "data" / "corpus_index.ttl", format="turtle")
+    return g
 
 def verbete_pelo_turtle(request, lema):
-    # 1. Verifique se o grafo carregou (Debug simples)
-    if len(G) == 0:
+    try:
+        G = carregar_grafo()
+    except (OSError, ValueError, SyntaxError):
         return HttpResponse("Erro: O arquivo Turtle não foi carregado corretamente.")
 
     # 2. Monte a URI da entrada usando o lema que vem da URL (que já é um slug)
@@ -206,7 +212,10 @@ def verbete_pelo_turtle(request, lema):
     ns = {
         "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "etym": "http://lari-datasets.ilc.cnr.it/lemonEty#",
+        "lemonety": "http://lari-datasets.ilc.cnr.it/lemonEty#",
+        # Os verbetes usam http e o índice do córpus usa https (a unificar com o URI permanente)
+        "dicbioh": "http://dicbio.fflch.usp.br/ontology/",
+        "dicbio": "https://dicbio.fflch.usp.br/ontology/",
         "lexinfo": "http://www.lexinfo.net/ontology/3.0/lexinfo#",
         "itsrdf": "http://www.w3.org/2005/11/its/rdf#", # <--- Para o link do corpus
         "nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#", # <--- Para o corpus
@@ -225,7 +234,7 @@ def verbete_pelo_turtle(request, lema):
         
         # 1. Propriedades Fixas do Sentido
         OPTIONAL { ?sense skos:definition ?definition . }
-        OPTIONAL { ?sense lemonety:etymology [ rdfs:comment ?etymComment ] . }
+        OPTIONAL { ?sense lemonety:etymology/(rdfs:comment|dicbio:etymologicalArgumentation|dicbioh:etymologicalArgumentation) ?etymComment . }
         
         # 2. Captura Genérica de Outras Propriedades
         OPTIONAL { 

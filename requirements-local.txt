@@ -1,0 +1,3 @@
+# Só no computador local: gera o PDF (manage.py generate_full_pdf).
+-r requirements.txt
+weasyprint==69.0
