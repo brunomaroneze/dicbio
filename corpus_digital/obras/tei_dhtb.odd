@@ -51,7 +51,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-03-09T22:15:25.201Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.1.2" when="2025-07-11T02:21:48.340Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.3.2" when="2026-02-26T20:40:28.212Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.3.3" when="2026-11-20T20:52:46.812Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2025-03-09T22:15:25.201Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.1.2" when="2025-07-11T02:21:48.340Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.3.2" when="2026-02-26T20:40:28.212Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo><appInfo><application ident="RomaJS" version="1.3.3" when="2026-11-25T00:54:41.304Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -117,7 +117,7 @@
         <classRef key="model.formPart"/>
         <classRef key="model.titlepagePart"/>
         <classRef key="model.frontPart"/>
-      <moduleRef key="tagdocs" include="att gi code"/><moduleRef key="figures" include="table row cell figure figDesc"/><classRef key="att.global.linking"/><classRef key="att.global.facs"/><classSpec ident="model.formPart" type="model" mode="delete"/><moduleRef key="gaiji" include="g charDecl char unicodeProp mapping"/><moduleRef key="namesdates" include="persName"/></schemaSpec>
+      <moduleRef key="tagdocs" include="att gi code"/><moduleRef key="figures" include="table row cell figure figDesc"/><classRef key="att.global.linking"/><classRef key="att.global.facs"/><classSpec ident="model.formPart" type="model" mode="delete"/><moduleRef key="gaiji" include="g charDecl char unicodeProp mapping"/><moduleRef key="namesdates" include="persName"/><elementSpec ident="pb" mode="change"><attList><attDef ident="nReal"><datatype><dataRef name="string"/></datatype><valDesc versionDate="2026-11-25" xml:lang="en"/></attDef></attList></elementSpec></schemaSpec>
     </body>
   </text>
 </TEI>
