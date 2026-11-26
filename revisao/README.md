@@ -35,7 +35,9 @@ Os workflows precisam estar no `main` e no `develop`: o que cria o pull request 
 
 - **Incluir revisor:** na VPS, `sudo htpasswd -B /etc/nginx/dicbio.htpasswd NOME` (o programa pede a senha). O nome (letras, números, ponto, hífen ou sublinhado) fica público nos pull requests e em `conferidas/`.
 - **Remover revisor:** `sudo htpasswd -D /etc/nginx/dicbio.htpasswd NOME`.
-- **Token do GitHub** (*fine-grained*, só o repositório `dicbio`, só *Issues: Read and write*): instalar com `sudo bash revisao/vps/instalar_envio.sh`. Para trocar quando vencer: `sudo rm /etc/dicbio/token` e executar o instalador de novo.
+- **Login:** os revisores entram por um formulário (`/entrar`); o login vale por 30 dias naquele navegador, e `/sair` encerra a sessão. Trocar a senha de alguém ou removê-lo do arquivo de senhas encerra as sessões dele na hora. Depois de 10 senhas erradas para o mesmo usuário, ele fica bloqueado por 15 minutos. Antes era usada a janela de senha do próprio navegador (`auth_basic`), que a rede de algumas universidades bloqueia; a configuração antiga do nginx ficou em `/etc/dicbio/nginx-antes-do-login.conf`.
+- **Tentativas de login:** `journalctl -u dicbio-envio -n 30` (mostra quem entrou, senhas erradas e o IP).
+- **Token do GitHub** (*fine-grained*, só o repositório `dicbio`, só *Issues: Read and write*): instalar com `sudo bash revisao/vps/instalar_envio.sh`, que também instala o login. Para trocar quando vencer: `sudo rm /etc/dicbio/token` e executar o instalador de novo.
 - **O envio falha:** `journalctl -u dicbio-envio -n 30`
 - **Nova obra:** mudar `ativa` para `true` no `config.json`.
 - **Copiar imagens do Internet Archive ou de Coimbra** (na VPS; repetir o primeiro comando se houver erros):
